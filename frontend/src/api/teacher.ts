@@ -65,7 +65,7 @@ export const useTeacherChapter = (chapterId: string, includeAssets = false) => {
       educationClient
         .get<{ success: boolean; chapter?: Chapter; error?: string }>(
           `/api/education/get-chapter?chapter_id=${encodeURIComponent(chapterId)}${includeAssets ? "&include_assets=1&compact_strings=1" : ""}`,
-          { signal, timeout: 60000 },
+          { signal },
         )
         .then((r) => unpackCourseware(r.data)),
     enabled: Boolean(chapterId),

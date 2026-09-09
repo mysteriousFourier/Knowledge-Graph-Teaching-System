@@ -12,7 +12,6 @@ export const educationClient: AxiosInstance = axios.create({
 export const maintenanceClient: AxiosInstance = axios.create({
   baseURL: config.maintenanceApiBaseUrl,
   headers: { "Content-Type": "application/json" },
-  timeout: 30000,
 })
 
 educationClient.interceptors.request.use((request) => {

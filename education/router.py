@@ -9,6 +9,7 @@ import logging
 import os
 import posixpath
 import re
+import shutil
 import tempfile
 import threading
 import uuid
@@ -1451,7 +1452,83 @@ def _externalize_rendered_pages(pages: list[dict], namespace: str) -> list[dict]
             digest = hashlib.md5(image_bytes).hexdigest()[:10]
             item["image"] = f"/api/education/rendered-pages/{safe_namespace}/{filename}?v={digest}"
         converted.append(item)
+    if converted:
+        output_dir.mkdir(parents=True, exist_ok=True)
+        manifest_path = output_dir / "pages.json"
+        manifest_path.write_text(json.dumps(converted, ensure_ascii=False), encoding="utf-8")
     return converted
+
+
+def _load_rendered_page_cache(namespace: str) -> list[dict]:
+    safe_namespace = _safe_render_namespace(namespace)
+    if safe_namespace != namespace:
+        return []
+    manifest_path = RENDERED_PAGE_DIR / safe_namespace / "pages.json"
+    try:
+        pages = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return []
+    if not isinstance(pages, list):
+        return []
+    for page in pages:
+        if not isinstance(page, dict):
+            return []
+        image = str(page.get("image") or "")
+        filename = Path(image.split("?", 1)[0]).name
+        if not re.fullmatch(r"page_\d+\.(?:png|jpg|jpeg)", filename, re.I):
+            return []
+        if not (RENDERED_PAGE_DIR / safe_namespace / filename).is_file():
+            return []
+    return pages
+
+
+def _cleanup_rendered_pages(pages: Any) -> None:
+    namespaces: set[str] = set()
+    for page in pages if isinstance(pages, list) else []:
+        if not isinstance(page, dict):
+            continue
+        match = re.search(r"/api/education/rendered-pages/([^/]+)/", str(page.get("image") or ""))
+        if match:
+            namespaces.add(_safe_render_namespace(match.group(1)))
+    # A ZIP content hash can be shared by multiple records; retain caches that
+    # are still referenced by another persisted chapter or project.
+    referenced: set[str] = set()
+    try:
+        for chapter in chapter_store.list_chapters():
+            for page in chapter.get("rendered_pages") or []:
+                if not isinstance(page, dict):
+                    continue
+                match = re.search(r"/api/education/rendered-pages/([^/]+)/", str(page.get("image") or ""))
+                if match:
+                    referenced.add(_safe_render_namespace(match.group(1)))
+    except Exception:
+        logger.debug("Unable to scan chapter rendered-page references", exc_info=True)
+    project_dir = RUNTIME_DIR / "courseware" / "projects"
+    try:
+        for manifest_path in project_dir.rglob("*.json"):
+            try:
+                record = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except (OSError, ValueError, TypeError):
+                continue
+            project_pages = record.get("rendered_pages") or [] if isinstance(record, dict) else []
+            for page in project_pages:
+                if not isinstance(page, dict):
+                    continue
+                match = re.search(r"/api/education/rendered-pages/([^/]+)/", str(page.get("image") or ""))
+                if match:
+                    referenced.add(_safe_render_namespace(match.group(1)))
+    except OSError:
+        logger.debug("Unable to scan project rendered-page references", exc_info=True)
+    for namespace in namespaces:
+        if namespace in referenced:
+            continue
+        target = (RENDERED_PAGE_DIR / namespace).resolve()
+        try:
+            target.relative_to(RENDERED_PAGE_DIR.resolve())
+        except ValueError:
+            continue
+        if target.is_dir():
+            shutil.rmtree(target, ignore_errors=True)
 
 
 def _render_courseware_pdf_pages(tex_content: str, asset_map: Any = None, namespace: str | None = None) -> tuple[list[dict], str]:
@@ -1466,8 +1543,12 @@ def _render_courseware_pdf_pages(tex_content: str, asset_map: Any = None, namesp
         return [], str(exc)
 
 
-def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str) -> tuple[list[dict], str]:
+def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str, namespace: str | None = None) -> tuple[list[dict], str]:
     """Compile the uploaded ZIP as a real LaTeX project, preserving its assets."""
+    render_namespace = namespace or hashlib.md5(file_bytes).hexdigest()
+    cached = _load_rendered_page_cache(render_namespace)
+    if cached:
+        return cached, ""
     try:
         with zipfile.ZipFile(io.BytesIO(file_bytes)) as archive, tempfile.TemporaryDirectory(prefix="kg-courseware-zip-") as temp_name:
             temp_dir = Path(temp_name).resolve()
@@ -1496,8 +1577,7 @@ def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str) ->
             if not tex_path.is_file():
                 return [], "ZIP 主 TeX 文件不存在"
             pdf_bytes = _compile_latex_file_to_pdf_bytes(tex_path)
-            namespace = hashlib.md5(file_bytes).hexdigest()
-            return _externalize_rendered_pages(_render_pdf_bytes_to_pages(pdf_bytes), namespace), ""
+            return _externalize_rendered_pages(_render_pdf_bytes_to_pages(pdf_bytes), render_namespace), ""
     except zipfile.BadZipFile as exc:
         return [], f"ZIP 文件损坏：{exc}"
     except Exception as exc:
@@ -1511,12 +1591,12 @@ def _update_courseware_render_job(job_id: str, **updates: Any) -> None:
             job.update(updates)
 
 
-def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str) -> None:
+def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str, namespace: str) -> None:
     _update_courseware_render_job(job_id, status="running", started_at=datetime.now().isoformat())
     try:
         # The executor has one worker deliberately: LaTeX and PDF rasterization
         # can briefly use more memory than the uploaded archive itself.
-        rendered_pages, render_error = _render_zip_courseware_pdf_pages(zip_path.read_bytes(), tex_source_file)
+        rendered_pages, render_error = _render_zip_courseware_pdf_pages(zip_path.read_bytes(), tex_source_file, namespace)
         if render_error:
             _update_courseware_render_job(
                 job_id,
@@ -1551,7 +1631,7 @@ def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str
             logger.warning("Unable to remove queued courseware archive %s", zip_path)
 
 
-def _queue_courseware_render(file_bytes: bytes, tex_source_file: str) -> str:
+def _queue_courseware_render(file_bytes: bytes, tex_source_file: str, namespace: str) -> str:
     job_id = uuid.uuid4().hex
     COURSEWARE_RENDER_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
     zip_path = COURSEWARE_RENDER_QUEUE_DIR / f"{job_id}.zip"
@@ -1562,10 +1642,11 @@ def _queue_courseware_render(file_bytes: bytes, tex_source_file: str) -> str:
             "status": "queued",
             "rendered_pages": [],
             "rendered_page_count": 0,
+            "namespace": namespace,
             "created_at": datetime.now().isoformat(),
         }
     try:
-        COURSEWARE_RENDER_EXECUTOR.submit(_run_courseware_render_job, job_id, zip_path, tex_source_file)
+        COURSEWARE_RENDER_EXECUTOR.submit(_run_courseware_render_job, job_id, zip_path, tex_source_file, namespace)
     except Exception:
         with COURSEWARE_RENDER_JOBS_LOCK:
             COURSEWARE_RENDER_JOBS.pop(job_id, None)
@@ -2585,8 +2666,6 @@ async def upload_graph(file: UploadFile = File(...)):
         file_bytes = await file.read()
         if not file_bytes:
             raise HTTPException(status_code=400, detail="上传的文件为空")
-        if len(file_bytes) > 50 * 1024 * 1024:
-            raise HTTPException(status_code=400, detail="文件大小超过 50MB 限制")
 
         if lower_name.endswith((".db", ".sqlite", ".sqlite3")):
             result = import_graph_db_payload(file_bytes)
@@ -2751,10 +2830,12 @@ async def get_rendered_page_image(namespace: str, filename: str):
 @router.delete("/education/delete-chapter")
 async def delete_chapter(chapter_id: str):
     try:
+        existing = chapter_store.get_chapter(chapter_id) or {}
         result = chapter_store.delete_chapter(chapter_id)
         if not result.get("success"):
             return {"success": False, "error": "Chapter not found", "chapter_id": chapter_id}
         result["tts_cache"] = clear_course_tts_cache(chapter_id)
+        _cleanup_rendered_pages(existing.get("rendered_pages"))
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Delete chapter failed: {str(e)}")
@@ -3772,12 +3853,17 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         if file.filename.lower().endswith(".zip"):
-            render_job_id = _queue_courseware_render(
-                file_bytes,
-                parse_result.get("tex_source_file") or "",
-            )
-            rendered_pages = []
+            namespace = hashlib.md5(file_bytes).hexdigest()
+            rendered_pages = _load_rendered_page_cache(namespace)
             render_error = ""
+            if rendered_pages:
+                render_job_id = ""
+            else:
+                render_job_id = _queue_courseware_render(
+                    file_bytes,
+                    parse_result.get("tex_source_file") or "",
+                    namespace,
+                )
         else:
             render_job_id = ""
             rendered_pages, render_error = _render_courseware_pdf_pages(
@@ -3947,9 +4033,11 @@ async def load_courseware_project_route(project_id: str, course_id: Optional[str
 @router.delete("/education/courseware/projects/{project_id}")
 async def delete_courseware_project_route(project_id: str, course_id: Optional[str] = None):
     try:
+        existing = load_courseware_project(project_id, course_id) or {}
         deleted = delete_courseware_project(project_id, course_id)
         if not deleted:
             raise HTTPException(status_code=404, detail="课件项目不存在")
+        _cleanup_rendered_pages(existing.get("rendered_pages"))
         return {"success": True, "project_id": project_id, "message": "课件项目已删除"}
     except HTTPException:
         raise

@@ -266,8 +266,6 @@ server {
     listen 80;
     server_name _;
 
-    client_max_body_size 32m;
-
     location ~ /\.(?!well-known) {
         return 404;
     }
@@ -282,10 +280,10 @@ server {
     location ~ ^/api/education/(generate-slide-lectures|upload-ppt|upload-ppt-preview|generate-ppt-tex|generate-lecture)$ {
         proxy_pass http://127.0.0.1:8000;
         proxy_http_version 1.1;
-        proxy_read_timeout 600s;
-        proxy_send_timeout 600s;
-        proxy_connect_timeout 30s;
-        send_timeout 600s;
+        proxy_read_timeout 0;
+        proxy_send_timeout 0;
+        proxy_connect_timeout 0;
+        send_timeout 0;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -295,10 +293,24 @@ server {
     location ~ ^/api/tts/(synthesize|segments)$ {
         proxy_pass http://127.0.0.1:8000;
         proxy_http_version 1.1;
-        proxy_read_timeout 1800s;
-        proxy_send_timeout 1800s;
-        proxy_connect_timeout 30s;
-        send_timeout 1800s;
+        proxy_read_timeout 0;
+        proxy_send_timeout 0;
+        proxy_connect_timeout 0;
+        send_timeout 0;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Course reads can include persisted courseware metadata and rendered-page
+    # references. Do not fail them because of a fixed proxy read timeout.
+    location ~ ^/api/education/(courses(?:/.*)?|list-chapters|get-chapter|courseware/projects(?:/.*)?)$ {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_http_version 1.1;
+        proxy_read_timeout 0;
+        proxy_send_timeout 0;
+        send_timeout 0;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -330,7 +342,7 @@ curl -s http://127.0.0.1:8000/api/maintenance/graph/scope-tree | python3 -c 'imp
 curl -s http://127.0.0.1/api/health
 ```
 
-逐页讲解、PPT/TeX 生成和整章讲稿生成会等待外部模型或 LaTeX 返回，耗时可能超过 Nginx 默认 60 秒。上面的单独 `location` 把这些长任务接口的 `proxy_read_timeout` 提高到 600 秒。ZIP 课件预览会先完成轻量解析并立即返回，PDF/LaTeX 预渲染进入单 worker 队列，前端通过渲染任务状态接口轮询结果；这样不会在上传请求内同时解压、编译和 rasterize，也不会新增或收紧上传大小限制。上传阶段不会加载未引用的大图片，真正渲染时才从队列 ZIP 读取资源。TTS 在 1 GB VM 上单段合成可能超过 10 分钟，因此 `/api/tts/synthesize` 使用 1800 秒，避免前端看到 `Request failed with status code 504`，而后端仍在继续生成。dotfile 规则用于让 `/.env` 这类扫描请求直接返回 404，避免被 SPA fallback 误判为有效路径。
+逐页讲解、PPT/TeX 生成和整章讲稿生成会等待外部模型或 LaTeX 返回。所有教育接口代理的读写、连接和发送超时均设为 `0`，不设置固定秒数上限。课程读取不会因固定时限中断。ZIP 课件预览会先完成轻量解析并立即返回，PDF/LaTeX 预渲染进入单 worker 队列，前端通过渲染任务状态接口轮询结果；渲染完成的页面会持久化到 `APP_RUNTIME_DIR/courseware/rendered-pages`，后续相同 ZIP 直接复用缓存，删除课件时同步清理不再被引用的缓存。上传阶段不会加载未引用的大图片，真正渲染时才从队列 ZIP 读取资源，也不会新增或收紧上传大小限制。dotfile 规则用于让 `/.env` 这类扫描请求直接返回 404，避免被 SPA fallback 误判为有效路径。
 
 如果由 Nginx 直接服务前端静态资源，把构建产物复制到 Web 可读目录，避免 Nginx 无法遍历 `/home/azureuser`：
 

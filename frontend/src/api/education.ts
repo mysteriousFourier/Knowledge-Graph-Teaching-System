@@ -66,7 +66,7 @@ export const useTestDeepSeekConfig = () => {
   return useMutation({
     mutationFn: () =>
       educationClient
-        .post<DeepSeekConfigTestResponse>("/api/test-deepseek-config", {}, { timeout: 30000 })
+        .post<DeepSeekConfigTestResponse>("/api/test-deepseek-config", {})
         .then((r) => r.data),
   })
 }
@@ -78,8 +78,6 @@ export const useGenerateLecture = () => {
         .post<GenerateLectureResponse>("/api/education/generate-lecture", {
           chapter_id: data.chapter_id || `chapter_${Date.now()}`,
           ...data,
-        }, {
-          timeout: 0,
         })
         .then((r) => r.data),
   })
@@ -144,7 +142,6 @@ export const useUploadGraph = () => {
       return educationClient
         .post<UploadGraphResponse>("/api/education/upload-graph", formData, {
           headers: { "Content-Type": "multipart/form-data" },
-          timeout: 120000,
         })
         .then((r) => r.data)
     },
@@ -159,7 +156,6 @@ export const usePreviewPpt = () => {
       return educationClient
         .post<PptPreviewResponse>("/api/education/upload-ppt-preview", formData, {
           headers: { "Content-Type": "multipart/form-data" },
-          timeout: 600000,
         })
         .then((r) => r.data)
     },
@@ -168,9 +164,7 @@ export const usePreviewPpt = () => {
 
 export const getCoursewareRenderJob = (jobId: string) =>
   educationClient
-    .get<CoursewareRenderJobResponse>(`/api/education/courseware/render-jobs/${encodeURIComponent(jobId)}`, {
-      timeout: 30000,
-    })
+    .get<CoursewareRenderJobResponse>(`/api/education/courseware/render-jobs/${encodeURIComponent(jobId)}`)
     .then((r) => r.data)
 
 export const useGeneratePptTex = () => {
@@ -182,9 +176,6 @@ export const useGeneratePptTex = () => {
           {
             graph_scope: data.graph_scope || "subtree",
             ...data,
-          },
-          {
-            timeout: 0,
           },
         )
         .then((r) => r.data),
@@ -199,8 +190,6 @@ export const usePreviewTex = () => {
           filename: data.filename || "edited.tex",
           tex_content: data.tex_content,
           asset_map: data.asset_map,
-        }, {
-          timeout: 60000,
         })
         .then((r) => r.data),
   })
@@ -217,7 +206,6 @@ export const useUploadCoursewareAssets = () => {
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
-            timeout: 60000,
           },
         )
         .then((r) => r.data)
@@ -233,7 +221,6 @@ export const useUploadCoursewareStyleReference = () => {
       return educationClient
         .post<CoursewareStyleReferenceResponse>("/api/education/courseware/style-reference", formData, {
           headers: { "Content-Type": "multipart/form-data" },
-          timeout: 60000,
         })
         .then((r) => r.data)
     },
@@ -263,7 +250,6 @@ export const useSaveCoursewareProject = () => {
         .post<{ success: boolean; project_id: string; project: CoursewareProject; message?: string }>(
           "/api/education/courseware/projects",
           data,
-          { timeout: 60000 },
         )
         .then((r) => r.data),
   })
@@ -284,7 +270,7 @@ export const useCoursewareProject = (projectId: string, courseId = "") => {
     queryKey: ["courseware-project", projectId, courseId],
     queryFn: ({ signal }) =>
       educationClient
-        .get<{ success: boolean; project: CoursewareProject }>(`/api/education/courseware/projects/${encodeURIComponent(projectId)}`, { params: { course_id: courseId || undefined, compact_strings: 1 }, signal, timeout: 0 })
+        .get<{ success: boolean; project: CoursewareProject }>(`/api/education/courseware/projects/${encodeURIComponent(projectId)}`, { params: { course_id: courseId || undefined, compact_strings: 1 }, signal })
         .then((r) => unpackCourseware(r.data)),
     enabled: Boolean(projectId),
     staleTime: 5 * 60 * 1000,
@@ -310,7 +296,6 @@ export const useExportCoursewarePptx = () => {
         .post<{ success: boolean; ppt_artifact: PptArtifact; artifact: PptArtifact }>(
           "/api/education/courseware/export-pptx",
           data,
-          { timeout: 120000 },
         )
         .then((r) => r.data),
   })
@@ -337,7 +322,6 @@ export const useGenerateSlideLectures = () => {
         .post<{ success: boolean; job_id: string; status: string; created_at?: string; error?: string }>(
           "/api/education/generate-slide-lectures/jobs",
           payload,
-          { timeout: 30000 },
         )
         .then((r) => r.data)
       if (!started.success || !started.job_id) {
@@ -345,9 +329,7 @@ export const useGenerateSlideLectures = () => {
       }
       onJobStarted?.({ job_id: started.job_id, status: started.status, created_at: started.created_at })
 
-      const startedAt = Date.now()
-      const maxWaitMs = 30 * 60 * 1000
-      while (Date.now() - startedAt < maxWaitMs) {
+      while (true) {
         await new Promise((resolve) => window.setTimeout(resolve, 3000))
         const job = await educationClient
           .get<{
@@ -360,7 +342,6 @@ export const useGenerateSlideLectures = () => {
             elapsed_seconds?: number
           }>(
           `/api/education/generate-slide-lectures/jobs/${encodeURIComponent(started.job_id)}`,
-            { timeout: 0 },
           )
           .then((r) => r.data)
         onProgress?.(job)
@@ -383,16 +364,14 @@ export const getSlideLectureJob = (jobId: string) =>
       stage?: string
       message?: string
       elapsed_seconds?: number
-    }>(`/api/education/generate-slide-lectures/jobs/${encodeURIComponent(jobId)}`, { timeout: 0 })
+    }>(`/api/education/generate-slide-lectures/jobs/${encodeURIComponent(jobId)}`)
     .then((r) => r.data)
 
 export const usePlanSlideSpeech = () => {
   return useMutation({
     mutationFn: (data: PlanSlideSpeechRequest) =>
       educationClient
-        .post<PlanSlideSpeechResponse>("/api/education/plan-slide-speech", data, {
-          timeout: 120000,
-        })
+        .post<PlanSlideSpeechResponse>("/api/education/plan-slide-speech", data)
         .then((r) => r.data),
   })
 }
@@ -437,7 +416,6 @@ export const useGeneratePptLectures = () => {
       return educationClient
         .post<PptUploadResponse>("/api/education/upload-ppt", formData, {
           headers: { "Content-Type": "multipart/form-data" },
-          timeout: 600000,
         })
         .then((r) => r.data)
     },
@@ -449,43 +427,32 @@ export const getTtsStatus = () =>
 
 export const synthesizeTts = (data: TtsSynthesizeRequest) =>
   educationClient
-    .post<TtsSynthesizeResponse>("/api/tts/synthesize", data, {
-      timeout: 0,
-    })
+    .post<TtsSynthesizeResponse>("/api/tts/synthesize", data)
     .then((r) => r.data)
 
 export const splitTtsSegments = (data: TtsSegmentRequest) =>
   educationClient
-    .post<TtsSegmentsResponse>("/api/tts/segments", data, {
-      timeout: 60000,
-    })
+    .post<TtsSegmentsResponse>("/api/tts/segments", data)
     .then((r) => r.data)
 
 export const createCourseTtsJob = (data: TtsCourseJobRequest) =>
   educationClient
-    .post<TtsCourseJobResponse>("/api/tts/course-jobs", data, {
-      timeout: 30000,
-    })
+    .post<TtsCourseJobResponse>("/api/tts/course-jobs", data)
     .then((r) => r.data)
 
 export const getCourseTtsJob = (jobId: string) =>
   educationClient
-    .get<TtsCourseJobResponse>(`/api/tts/course-jobs/${encodeURIComponent(jobId)}`, {
-      timeout: 0,
-    })
+    .get<TtsCourseJobResponse>(`/api/tts/course-jobs/${encodeURIComponent(jobId)}`)
     .then((r) => r.data)
 
 export const getLatestCourseTtsJob = (chapterId: string) =>
   educationClient
     .get<TtsLatestCourseJobResponse>("/api/tts/course-jobs/latest/by-chapter", {
       params: { chapter_id: chapterId },
-      timeout: 0,
     })
     .then((r) => r.data)
 
 export const stopCourseTtsJob = (jobId: string) =>
   educationClient
-    .post<TtsCourseJobResponse>(`/api/tts/course-jobs/${encodeURIComponent(jobId)}/stop`, {}, {
-      timeout: 30000,
-    })
+    .post<TtsCourseJobResponse>(`/api/tts/course-jobs/${encodeURIComponent(jobId)}/stop`, {})
     .then((r) => r.data)

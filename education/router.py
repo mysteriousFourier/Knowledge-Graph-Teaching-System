@@ -10,8 +10,10 @@ import os
 import posixpath
 import re
 import tempfile
+import threading
 import uuid
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
@@ -105,6 +107,11 @@ load_root_env()
 router = APIRouter(prefix="/api", tags=["education"])
 logger = logging.getLogger(__name__)
 RENDERED_PAGE_DIR = RUNTIME_DIR / "courseware" / "rendered-pages"
+COURSEWARE_RENDER_QUEUE_DIR = RUNTIME_DIR / "courseware" / "render-queue"
+COURSEWARE_RENDER_JOBS: Dict[str, Dict[str, Any]] = {}
+COURSEWARE_RENDER_JOBS_LOCK = threading.Lock()
+COURSEWARE_RENDER_EXECUTOR = ThreadPoolExecutor(max_workers=1, thread_name_prefix="courseware-render")
+
 
 DEFAULT_SLIDE_LECTURE_DURATION_MINUTES = 10.0
 DEFAULT_SLIDE_LECTURE_SPEECH_RATE_CPM = 250
@@ -1497,6 +1504,85 @@ def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str) ->
         return [], str(exc)
 
 
+def _update_courseware_render_job(job_id: str, **updates: Any) -> None:
+    with COURSEWARE_RENDER_JOBS_LOCK:
+        job = COURSEWARE_RENDER_JOBS.get(job_id)
+        if job is not None:
+            job.update(updates)
+
+
+def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str) -> None:
+    _update_courseware_render_job(job_id, status="running", started_at=datetime.now().isoformat())
+    try:
+        # The executor has one worker deliberately: LaTeX and PDF rasterization
+        # can briefly use more memory than the uploaded archive itself.
+        rendered_pages, render_error = _render_zip_courseware_pdf_pages(zip_path.read_bytes(), tex_source_file)
+        if render_error:
+            _update_courseware_render_job(
+                job_id,
+                status="failed",
+                rendered_pages=[],
+                rendered_page_count=0,
+                render_error=render_error,
+                finished_at=datetime.now().isoformat(),
+            )
+        else:
+            _update_courseware_render_job(
+                job_id,
+                status="completed",
+                rendered_pages=rendered_pages,
+                rendered_page_count=len(rendered_pages),
+                finished_at=datetime.now().isoformat(),
+            )
+    except Exception as exc:
+        logger.exception("Courseware render job %s failed", job_id)
+        _update_courseware_render_job(
+            job_id,
+            status="failed",
+            rendered_pages=[],
+            rendered_page_count=0,
+            render_error=str(exc),
+            finished_at=datetime.now().isoformat(),
+        )
+    finally:
+        try:
+            zip_path.unlink(missing_ok=True)
+        except Exception:
+            logger.warning("Unable to remove queued courseware archive %s", zip_path)
+
+
+def _queue_courseware_render(file_bytes: bytes, tex_source_file: str) -> str:
+    job_id = uuid.uuid4().hex
+    COURSEWARE_RENDER_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
+    zip_path = COURSEWARE_RENDER_QUEUE_DIR / f"{job_id}.zip"
+    zip_path.write_bytes(file_bytes)
+    with COURSEWARE_RENDER_JOBS_LOCK:
+        COURSEWARE_RENDER_JOBS[job_id] = {
+            "job_id": job_id,
+            "status": "queued",
+            "rendered_pages": [],
+            "rendered_page_count": 0,
+            "created_at": datetime.now().isoformat(),
+        }
+    try:
+        COURSEWARE_RENDER_EXECUTOR.submit(_run_courseware_render_job, job_id, zip_path, tex_source_file)
+    except Exception:
+        with COURSEWARE_RENDER_JOBS_LOCK:
+            COURSEWARE_RENDER_JOBS.pop(job_id, None)
+        zip_path.unlink(missing_ok=True)
+        raise
+    return job_id
+
+
+@router.get("/education/courseware/render-jobs/{job_id}")
+async def get_courseware_render_job(job_id: str):
+    with COURSEWARE_RENDER_JOBS_LOCK:
+        job = dict(COURSEWARE_RENDER_JOBS.get(job_id) or {})
+    if not job:
+        raise HTTPException(status_code=404, detail="渲染任务不存在或已过期")
+    return {"success": True, **job}
+
+
 def _chapter_list_item(chapter: Dict[str, Any]) -> Dict[str, Any]:
     content = str(chapter.get("content") or "")
     rendered_pages = chapter.get("rendered_pages") or []
@@ -2763,9 +2849,6 @@ async def upload_ppt(
         if len(file_bytes) == 0:
             raise HTTPException(status_code=400, detail="上传的文件为空")
 
-        if len(file_bytes) > 50 * 1024 * 1024:
-            raise HTTPException(status_code=400, detail="文件大小超过 50MB 限制")
-
         from KGTS.education.ppt_parser import parse_courseware, build_ppt_lecture_prompt_data
 
         parse_result = parse_courseware(file_bytes, file.filename)
@@ -3679,7 +3762,6 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
         file_bytes = await file.read()
         if len(file_bytes) == 0:
             raise HTTPException(status_code=400, detail="上传的文件为空")
-
         from KGTS.education.ppt_parser import parse_courseware, build_ppt_lecture_prompt_data
 
         parse_result = parse_courseware(file_bytes, file.filename)
@@ -3690,10 +3772,14 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         if file.filename.lower().endswith(".zip"):
-            rendered_pages, render_error = _render_zip_courseware_pdf_pages(
-                file_bytes, parse_result.get("tex_source_file") or ""
+            render_job_id = _queue_courseware_render(
+                file_bytes,
+                parse_result.get("tex_source_file") or "",
             )
+            rendered_pages = []
+            render_error = ""
         else:
+            render_job_id = ""
             rendered_pages, render_error = _render_courseware_pdf_pages(
                 parse_result.get("tex_content") or "", editable_model.get("assets") or {}
             )
@@ -3712,9 +3798,14 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
             "source_tex": parse_result.get("tex_content") or "",
             "missing_image_refs": parse_result.get("missing_image_refs") or [],
             "rendered_pages": rendered_pages,
+            **({"render_job_id": render_job_id, "render_status": "queued"} if render_job_id else {}),
             **({"render_source": "latex_project" if file.filename.lower().endswith(".zip") else "latex"} if rendered_pages else {}),
             **({"render_error": render_error} if render_error else {}),
-            **({"warning": image_warning} if image_warning else {}),
+            **({
+                "warning": "；".join(
+                    item for item in (image_warning, render_error) if item
+                )
+            } if image_warning or render_error else {}),
         }
 
     except HTTPException:

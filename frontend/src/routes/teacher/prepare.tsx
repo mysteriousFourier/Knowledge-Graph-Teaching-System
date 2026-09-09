@@ -46,6 +46,7 @@ import {
   createCourseTtsJob,
   getCourseTtsJob,
   getLatestCourseTtsJob,
+  getCoursewareRenderJob,
   getSlideLectureJob,
   getTtsStatus,
   stopCourseTtsJob,
@@ -1516,6 +1517,54 @@ function TeacherPreparePage() {
   }, [preview?.slides, selectedIndex])
 
   useEffect(() => {
+    const jobId = preview?.render_job_id
+    if (!jobId || preview?.render_status === "completed" || preview?.render_status === "failed") return
+    let cancelled = false
+    let timer: number | undefined
+
+    const poll = async () => {
+      try {
+        const job = await getCoursewareRenderJob(jobId)
+        if (cancelled) return
+        if (job.status === "completed" || job.status === "failed") {
+          setPreview((previous) => {
+            if (!previous || previous.render_job_id !== jobId) return previous
+            const pages = job.rendered_pages || []
+            const renderError = job.render_error || ""
+            return attachRenderedPagesToPreview({
+              ...previous,
+              render_status: job.status,
+              rendered_pages: pages,
+              render_source: pages.length ? "latex_project" : previous.render_source,
+              render_error: renderError || undefined,
+              warning: [previous.warning, renderError].filter(Boolean).join("；") || undefined,
+            })
+          })
+          setStatus(
+            job.status === "completed"
+              ? `PDF 预览渲染完成${job.rendered_page_count ? `：${job.rendered_page_count} 页` : ""}`
+              : `PDF 预览渲染失败，已保留解析内容：${job.render_error || "任务失败"}`,
+          )
+          return
+        }
+        setPreview((previous) => (previous && previous.render_job_id === jobId ? { ...previous, render_status: job.status } : previous))
+        setStatus(job.status === "queued" ? "课件已解析，PDF 预览正在排队" : "课件已解析，PDF 预览渲染中")
+        timer = window.setTimeout(poll, 2500)
+      } catch (error) {
+        if (cancelled) return
+        setStatus(`PDF 预览任务查询失败，将继续重试：${errorMessage(error)}`)
+        timer = window.setTimeout(poll, 5000)
+      }
+    }
+
+    void poll()
+    return () => {
+      cancelled = true
+      if (timer) window.clearTimeout(timer)
+    }
+  }, [preview?.render_job_id])
+
+  useEffect(() => {
     const project = savedCoursewareProject.data?.project
     if (!chapterId || !chapterId.startsWith("cw_") || !project || loadedRecordId === project.id) return
     restoreCoursewareProject(project, "project")
@@ -1900,7 +1949,11 @@ function TeacherPreparePage() {
     const result = await previewPpt.mutateAsync(selectedFile)
     applyPreviewResult(result, selectedFile.name.replace(/\.[^.]+$/, ""))
     setLectureNodeIds(pptNodeIds)
-    setStatus(result.warning || "")
+    setStatus(
+      result.render_job_id
+        ? "课件已解析，PDF 预览正在排队"
+        : result.warning || "",
+    )
   }
 
   const handleGenerateLectures = async () => {

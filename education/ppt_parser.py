@@ -128,7 +128,9 @@ def parse_zip_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any
             return {"success": False, "error": f"ZIP 中的 TeX 文件解析失败: {decode_result['error']}"}
 
         tex_text = _normalize_text_newlines(decode_result["text"])
-        asset_map = _build_zip_image_asset_map(archive, names)
+        # Index only images referenced by the TeX source. Large images stay as
+        # metadata-only entries; PDF rendering can read the original ZIP later.
+        asset_map = _build_zip_image_asset_map(archive, names, tex_text=tex_text)
         slides = _slides_from_text(
             tex_text,
             filename=f"{filename}:{tex_name}" if filename else tex_name,
@@ -321,19 +323,51 @@ def _select_tex_entry(names: List[str]) -> str:
     return tex_names[0]
 
 
-def _build_zip_image_asset_map(archive: zipfile.ZipFile, names: List[str]) -> Dict[str, Dict[str, Any]]:
+def _build_zip_image_asset_map(
+    archive: zipfile.ZipFile,
+    names: List[str],
+    *,
+    tex_text: str = "",
+) -> Dict[str, Dict[str, Any]]:
     assets: Dict[str, Dict[str, Any]] = {}
+    refs = {
+        _normalize_archive_path(ref).lower()
+        for _options, ref in _latex_image_refs(tex_text)
+        if ref.strip()
+    }
     for name in names:
         extension = posixpath.splitext(name)[1].lower()
         if extension not in IMAGE_EXTENSIONS:
             continue
+        normalized = _normalize_archive_path(name)
+        if refs:
+            candidates = {
+                normalized.lower(),
+                posixpath.basename(normalized).lower(),
+                _strip_archive_extension(normalized).lower(),
+                _strip_archive_extension(posixpath.basename(normalized)).lower(),
+            }
+            if not any(ref in candidates for ref in refs):
+                continue
         try:
-            data = archive.read(name)
+            info = archive.getinfo(name)
         except Exception:
             continue
         mime_type = mimetypes.guess_type(name)[0] or "application/octet-stream"
-        asset = {"name": name, "bytes": data, "mime_type": mime_type}
-        normalized = _normalize_archive_path(name)
+        # Avoid inflating large compressed images during upload/preview.
+        if info.file_size <= MAX_INLINE_IMAGE_BYTES:
+            try:
+                data = archive.read(name)
+            except Exception:
+                continue
+        else:
+            data = b""
+        asset = {
+            "name": name,
+            "bytes": data,
+            "mime_type": mime_type,
+            "oversized": info.file_size > MAX_INLINE_IMAGE_BYTES,
+        }
         without_extension = _strip_archive_extension(normalized)
         assets.setdefault(normalized, asset)
         assets.setdefault(without_extension, asset)
@@ -486,7 +520,7 @@ def _images_from_text_chunk(chunk: str, image_assets: Dict[str, Dict[str, Any]],
             continue
         seen.add(source_path)
         image_bytes = asset.get("bytes") or b""
-        oversized = len(image_bytes) > MAX_INLINE_IMAGE_BYTES
+        oversized = bool(asset.get("oversized")) or len(image_bytes) > MAX_INLINE_IMAGE_BYTES
         data_uri = None
         if image_bytes and not oversized:
             encoded = base64.b64encode(image_bytes).decode("utf-8")

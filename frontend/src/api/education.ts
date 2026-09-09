@@ -4,6 +4,7 @@ import { unpackCourseware } from "./coursewareTransport"
 import type {
   CoursewareAsset,
   CoursewareProject,
+  CoursewareRenderJobResponse,
   CoursewareStyleReferenceResponse,
   EditableSlideModel,
   GenerateLectureRequest,
@@ -164,6 +165,13 @@ export const usePreviewPpt = () => {
     },
   })
 }
+
+export const getCoursewareRenderJob = (jobId: string) =>
+  educationClient
+    .get<CoursewareRenderJobResponse>(`/api/education/courseware/render-jobs/${encodeURIComponent(jobId)}`, {
+      timeout: 30000,
+    })
+    .then((r) => r.data)
 
 export const useGeneratePptTex = () => {
   return useMutation({

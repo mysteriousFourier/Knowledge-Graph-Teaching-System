@@ -611,11 +611,25 @@ export interface PptPreviewResponse {
   layout?: EditableSlideModel["layout"]
   source_tex?: string
   rendered_pages?: RenderedCoursewarePage[]
+  render_job_id?: string
+  render_status?: "queued" | "running" | "completed" | "failed" | string
   render_source?: string
   render_error?: string
   warning?: string
   missing_image_refs?: string[]
   error?: string
+}
+
+export interface CoursewareRenderJobResponse {
+  success: boolean
+  job_id: string
+  status: "queued" | "running" | "completed" | "failed" | string
+  rendered_pages?: RenderedCoursewarePage[]
+  rendered_page_count?: number
+  render_error?: string
+  created_at?: string
+  started_at?: string
+  finished_at?: string
 }
 
 export interface PptTexGenerateResponse extends PptPreviewResponse {

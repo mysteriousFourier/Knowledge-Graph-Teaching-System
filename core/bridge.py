@@ -857,6 +857,16 @@ class ChapterStore:
         self.progress_file = progress_file
         self.chapters_file.parent.mkdir(parents=True, exist_ok=True)
         self.progress_file.parent.mkdir(parents=True, exist_ok=True)
+        self._chapters_cache_signature: tuple[int, int] | None = None
+        self._chapters_cache: Dict[str, Dict[str, Any]] | None = None
+        self._deleted_chapter_ids_cache: set[str] | None = None
+
+    def _chapters_file_signature(self) -> tuple[int, int] | None:
+        try:
+            stat = self.chapters_file.stat()
+        except OSError:
+            return None
+        return (stat.st_mtime_ns, stat.st_size)
 
     def _load_json(self, path: Path) -> Dict[str, Any]:
         if not path.exists():
@@ -871,6 +881,9 @@ class ChapterStore:
         path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     def _load_chapters(self) -> Dict[str, Dict[str, Any]]:
+        signature = self._chapters_file_signature()
+        if signature == self._chapters_cache_signature and self._chapters_cache is not None:
+            return self._chapters_cache
         raw = self._load_json(self.chapters_file)
         chapters = raw.get("chapters")
         deleted = set(raw.get("deleted_chapters") or [])
@@ -909,6 +922,9 @@ class ChapterStore:
                 self._save_chapters(merged)
             except OSError:
                 pass
+        self._chapters_cache_signature = self._chapters_file_signature()
+        self._chapters_cache = merged
+        self._deleted_chapter_ids_cache = deleted
         return merged
 
     def _save_chapters(self, chapters: Dict[str, Dict[str, Any]]) -> None:
@@ -921,11 +937,21 @@ class ChapterStore:
                 "deleted_chapters": deleted if isinstance(deleted, list) else [],
             },
         )
+        self._chapters_cache_signature = self._chapters_file_signature()
+        self._chapters_cache = chapters
+        self._deleted_chapter_ids_cache = {str(item) for item in deleted} if isinstance(deleted, list) else set()
 
     def _load_deleted_chapter_ids(self) -> set[str]:
+        signature = self._chapters_file_signature()
+        if signature == self._chapters_cache_signature and self._deleted_chapter_ids_cache is not None:
+            return self._deleted_chapter_ids_cache
         raw = self._load_json(self.chapters_file)
         deleted = raw.get("deleted_chapters")
-        return {str(item) for item in deleted} if isinstance(deleted, list) else set()
+        result = {str(item) for item in deleted} if isinstance(deleted, list) else set()
+        self._chapters_file_signature()
+        self._chapters_cache_signature = self._chapters_file_signature()
+        self._deleted_chapter_ids_cache = result
+        return result
 
     def _save_deleted_chapter_ids(self, deleted: set[str]) -> None:
         raw = self._load_json(self.chapters_file)
@@ -937,6 +963,9 @@ class ChapterStore:
                 "deleted_chapters": sorted(item for item in deleted if item),
             },
         )
+        self._chapters_cache_signature = self._chapters_file_signature()
+        self._chapters_cache = chapters if isinstance(chapters, dict) else {}
+        self._deleted_chapter_ids_cache = set(deleted)
 
     def _clear_deleted_chapter_ids(self, *ids: str) -> None:
         deleted = self._load_deleted_chapter_ids()

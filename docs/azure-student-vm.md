@@ -270,6 +270,15 @@ server {
         return 404;
     }
 
+    # Rendered pages are immutable cache artifacts; serve them without using
+    # the single FastAPI worker that handles course metadata and jobs.
+    location ^~ /api/education/rendered-pages/ {
+        alias /home/azureuser/kgts/.runtime/courseware/rendered-pages/;
+        access_log off;
+        expires 1y;
+        add_header Cache-Control public;
+    }
+
     location /assets/ {
         root /var/www/kgts;
         try_files $uri =404;

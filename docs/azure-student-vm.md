@@ -280,10 +280,12 @@ server {
     location ~ ^/api/education/(generate-slide-lectures|upload-ppt|upload-ppt-preview|generate-ppt-tex|generate-lecture)$ {
         proxy_pass http://127.0.0.1:8000;
         proxy_http_version 1.1;
-        proxy_read_timeout 0;
-        proxy_send_timeout 0;
-        proxy_connect_timeout 0;
-        send_timeout 0;
+        # Nginx 1.18 treats a zero timeout as an immediate timeout. Keep a
+        # practically unlimited duration for long-running education jobs.
+        proxy_read_timeout 365d;
+        proxy_send_timeout 365d;
+        proxy_connect_timeout 365d;
+        send_timeout 365d;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -293,10 +295,10 @@ server {
     location ~ ^/api/tts/(synthesize|segments)$ {
         proxy_pass http://127.0.0.1:8000;
         proxy_http_version 1.1;
-        proxy_read_timeout 0;
-        proxy_send_timeout 0;
-        proxy_connect_timeout 0;
-        send_timeout 0;
+        proxy_read_timeout 365d;
+        proxy_send_timeout 365d;
+        proxy_connect_timeout 365d;
+        send_timeout 365d;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -308,9 +310,10 @@ server {
     location ~ ^/api/education/(courses(?:/.*)?|list-chapters|get-chapter|courseware/projects(?:/.*)?)$ {
         proxy_pass http://127.0.0.1:8000;
         proxy_http_version 1.1;
-        proxy_read_timeout 0;
-        proxy_send_timeout 0;
-        send_timeout 0;
+        proxy_read_timeout 365d;
+        proxy_send_timeout 365d;
+        proxy_connect_timeout 365d;
+        send_timeout 365d;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

@@ -1100,6 +1100,16 @@ class ChapterStore:
         record = self._best_chapter_record(chapters, aliases)
         previous_lecture_content = record.get("lecture_content")
         previous_slide_lectures = record.get("slide_lectures")
+        courseware_changed = (
+            tex_content is not None and tex_content != record.get("tex_content")
+        ) or (
+            ppt_slides is not None and ppt_slides != record.get("ppt_slides")
+        )
+        if courseware_changed:
+            record["lecture_content"] = ""
+            record["slide_lectures"] = []
+            record["lecture_learning_plan"] = None
+            record["lecture_consistency_report"] = None
         record.update(
             {
                 "id": resolved_id,
@@ -1107,7 +1117,7 @@ class ChapterStore:
                 "title": title,
                 "content": content if content is not None else record.get("content", ""),
                 "graph_data": graph_data if graph_data is not None else record.get("graph_data"),
-                "lecture_content": record.get("lecture_content"),
+                "lecture_content": record.get("lecture_content", ""),
                 "lecture_learning_plan": record.get("lecture_learning_plan"),
                 "lecture_consistency_report": record.get("lecture_consistency_report"),
                 "exercises": record.get("exercises"),
@@ -1118,7 +1128,7 @@ class ChapterStore:
                 "source_node_ids": source_node_ids if source_node_ids is not None else record.get("source_node_ids"),
                 "source_scope": source_scope if source_scope is not None else record.get("source_scope"),
                 "ppt_slides": ppt_slides if ppt_slides is not None else record.get("ppt_slides"),
-                "slide_lectures": slide_lectures if slide_lectures is not None else record.get("slide_lectures"),
+                "slide_lectures": slide_lectures if slide_lectures is not None else record.get("slide_lectures", []),
                 "tex_content": tex_content if tex_content is not None else record.get("tex_content"),
                 "editable_model": editable_model if editable_model is not None else record.get("editable_model"),
                 "asset_map": asset_map if asset_map is not None else record.get("asset_map"),
@@ -1138,6 +1148,8 @@ class ChapterStore:
         if content is not None and content != previous_lecture_content:
             _clear_tts_course_audio(resolved_id)
         if slide_lectures is not None and slide_lectures != previous_slide_lectures:
+            _clear_tts_course_audio(resolved_id)
+        if courseware_changed:
             _clear_tts_course_audio(resolved_id)
         self._store_chapter_record(chapters, resolved_id, record, aliases)
         self._save_chapters(chapters)

@@ -162,6 +162,13 @@ export const usePreviewPpt = () => {
   })
 }
 
+export const clearCourseware = (chapterId: string) =>
+  educationClient
+    .post<{ success: boolean; chapter_id: string; cleared?: boolean }>("/api/education/clear-courseware", null, {
+      params: { chapter_id: chapterId },
+    })
+    .then((r) => r.data)
+
 export const getCoursewareRenderJob = (jobId: string) =>
   educationClient
     .get<CoursewareRenderJobResponse>(`/api/education/courseware/render-jobs/${encodeURIComponent(jobId)}`)

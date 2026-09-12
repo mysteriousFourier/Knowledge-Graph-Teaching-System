@@ -266,6 +266,12 @@ server {
     listen 80;
     server_name _;
 
+    # Courseware ZIP uploads can contain embedded PDF/image assets. Keep the
+    # proxy limit above the application limit and allow slow upstream links to
+    # finish without returning a premature 408/413 response.
+    client_max_body_size 64m;
+    client_body_timeout 365d;
+
     location ~ /\.(?!well-known) {
         return 404;
     }

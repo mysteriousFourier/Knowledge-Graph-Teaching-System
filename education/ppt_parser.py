@@ -151,6 +151,42 @@ def parse_zip_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any
         archive.close()
 
 
+def parse_zip_courseware_file(file_path: str | Path, filename: str = "") -> Dict[str, Any]:
+    """Parse a ZIP from disk so large uploads are not copied into RAM."""
+    try:
+        archive = zipfile.ZipFile(file_path)
+    except (OSError, zipfile.BadZipFile) as exc:
+        return {"success": False, "error": f"ZIP parse failed: {exc}"}
+
+    try:
+        names = [name for name in archive.namelist() if not name.endswith("/") and not name.startswith("__MACOSX/")]
+        tex_name = _select_tex_entry(names)
+        if not tex_name:
+            return {"success": False, "error": "No .tex source found in ZIP"}
+        decode_result = _decode_text_bytes(archive.read(tex_name))
+        if not decode_result["success"]:
+            return {"success": False, "error": f"TeX decode failed: {decode_result['error']}"}
+        tex_text = _normalize_text_newlines(decode_result["text"])
+        asset_map = _build_zip_image_asset_map(archive, names, tex_text=tex_text)
+        slides = _slides_from_text(
+            tex_text,
+            filename=f"{filename}:{tex_name}" if filename else tex_name,
+            image_assets=asset_map,
+            tex_base_dir=posixpath.dirname(tex_name),
+        )
+        return {
+            "success": True,
+            "slide_count": len(slides),
+            "slides": slides,
+            "full_text": "\n\n---\n\n".join(str(slide.get("raw_text") or "") for slide in slides),
+            "tex_content": tex_text,
+            "tex_source_file": tex_name,
+            "missing_image_refs": _collect_missing_image_refs(slides),
+        }
+    finally:
+        archive.close()
+
+
 def parse_docx_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any]:
     try:
         with zipfile.ZipFile(io.BytesIO(file_bytes)) as archive:
@@ -333,7 +369,7 @@ def _build_zip_image_asset_map(
     refs = {
         _normalize_archive_path(ref).lower()
         for _options, ref in _latex_image_refs(tex_text)
-        if ref.strip()
+        if ref.strip() and "#" not in ref
     }
     for name in names:
         extension = posixpath.splitext(name)[1].lower()
@@ -347,7 +383,12 @@ def _build_zip_image_asset_map(
                 _strip_archive_extension(normalized).lower(),
                 _strip_archive_extension(posixpath.basename(normalized)).lower(),
             }
-            if not any(ref in candidates for ref in refs):
+            if not any(
+                ref in candidates
+                or normalized.lower().endswith("/" + ref)
+                or _strip_archive_extension(normalized).lower().endswith("/" + ref)
+                for ref in refs
+            ):
                 continue
         try:
             info = archive.getinfo(name)
@@ -404,6 +445,11 @@ def _slides_from_text(
         slides.append(
             {
                 "index": index,
+                "slide_id": f"slide-{index}",
+                "parent_slide_index": index,
+                "overlay_index": 1,
+                "overlay_count": 1,
+                "rendered_page_index": index - 1,
                 "title": title,
                 "body_texts": body_texts or [body],
                 "tables": [],
@@ -483,7 +529,115 @@ def _slides_from_latex(
                 "layout": layout,
             }
         )
-    return slides
+    # Expand each parsed frame into stable animation steps after the regular
+    # extraction pass. This keeps layout/image handling in one place while
+    # making overlay pages first-class records.
+    expanded: List[Dict[str, Any]] = []
+    for base in slides:
+        source_body = str(base.get("source_body_tex") or "")
+        bodies = _expand_latex_overlay_bodies(source_body)
+        overlay_count = len(bodies)
+        parent_index = int(base.get("index") or len(expanded) + 1)
+        for overlay_index, body_source in enumerate(bodies, 1):
+            body = (_latex_titlepage_body(metadata) if "\\titlepage" in source_body else _latex_body_to_markdown(body_source)).strip()
+            image_source = (str(base.get("source_tex") or "") + "\n" + body_source) if "\\titlepage" in source_body else body_source
+            images = _images_from_text_chunk(image_source, image_assets, tex_base_dir)
+            if "\\titlepage" in source_body and not images:
+                images = list(base.get("images") or [])
+            missing = _missing_image_refs_from_text_chunk(image_source, image_assets, tex_base_dir)
+            layout = _infer_latex_frame_layout(
+                body_source,
+                images,
+                content_markdown=body,
+                image_assets=image_assets,
+                tex_base_dir=tex_base_dir,
+                is_titlepage="\\titlepage" in source_body,
+            )
+            if base.get("layout", {}).get("canvas"):
+                layout["canvas"] = base["layout"]["canvas"]
+            item = dict(base)
+            item.update(
+                {
+                    "index": len(expanded) + 1,
+                    "slide_id": f"frame-{parent_index}-overlay-{overlay_index}",
+                    "parent_slide_index": parent_index,
+                    "overlay_index": overlay_index,
+                    "overlay_count": overlay_count,
+                    "rendered_page_index": len(expanded),
+                    "body_texts": [body] if body else [],
+                    "image_count": len(images),
+                    "images": images,
+                    "missing_image_refs": missing,
+                    "raw_text": _build_raw_text(str(base.get("title") or ""), [body] if body else [], [], ""),
+                    "source_body_tex": body_source.strip(),
+                    "layout": layout,
+                }
+            )
+            expanded.append(item)
+    return expanded
+
+
+def _overlay_spec_visible(spec: str, overlay_index: int) -> bool:
+    value = str(spec or "").strip()
+    if not value:
+        return True
+    for part in value.split(","):
+        part = part.strip()
+        match = re.fullmatch(r"(\d+)\s*-\s*(\d+)?", part)
+        if match:
+            if int(match.group(1)) <= overlay_index <= int(match.group(2) or 10**9):
+                return True
+        elif part.isdigit() and int(part) == overlay_index:
+            return True
+    return False
+
+
+def _max_latex_overlay_index(body: str) -> int:
+    values: List[int] = []
+    for spec in re.findall(r"\\(?:onslide|only|uncover|visible|item)\s*<\s*([^>]+)", body or ""):
+        for part in spec.split(","):
+            match = re.search(r"(\d+)\s*-\s*(\d+)?", part)
+            if match:
+                values.append(int(match.group(2) or match.group(1)))
+            elif part.strip().isdigit():
+                values.append(int(part.strip()))
+    return max(values or [1], default=1)
+
+
+def _expand_latex_overlay_bodies(body: str) -> List[str]:
+    source = body or ""
+    count = max(_max_latex_overlay_index(source), len(re.findall(r"\\pause\b", source)) + 1)
+    pause_parts = re.split(r"\\pause(?:\s*<[^>]*>)?", source)
+    result: List[str] = []
+    for overlay_index in range(1, count + 1):
+        current = "\\pause".join(pause_parts[:overlay_index]) if len(pause_parts) > 1 else source
+        pattern = re.compile(r"\\(only|uncover|visible|onslide)\s*<([^>]+)>\s*\{")
+        while True:
+            match = pattern.search(current)
+            if not match:
+                break
+            content, end = _read_latex_braced_group(current, match.end() - 1)
+            replacement = content if _overlay_spec_visible(match.group(2), overlay_index) else ""
+            current = current[:match.start()] + replacement + current[end:]
+        current = re.sub(
+            r"\\item\s*<([^>]+)>",
+            lambda match: r"\item " if _overlay_spec_visible(match.group(1), overlay_index) else "",
+            current,
+        )
+        # Standalone onslide commands act as visibility switches until the
+        # next switch. This covers the common ``onslide<2-> text`` form.
+        chunks: List[str] = []
+        cursor = 0
+        visible = True
+        for match in re.finditer(r"\\onslide\s*<([^>]+)>", current):
+            if visible:
+                chunks.append(current[cursor:match.start()])
+            visible = _overlay_spec_visible(match.group(1), overlay_index)
+            cursor = match.end()
+        if visible:
+            chunks.append(current[cursor:])
+        result.append("".join(chunks).replace("\\pause", "").strip())
+    return result or [source.strip()]
 
 
 def _collect_missing_image_refs(slides: List[Dict[str, Any]]) -> List[str]:
@@ -561,6 +715,10 @@ def _missing_image_refs_from_text_chunk(chunk: str, image_assets: Dict[str, Dict
 
 def _latex_image_refs(chunk: str) -> List[tuple[str, str]]:
     refs = re.findall(r"\\includegraphics(?:\[([^\]]*)\])?\{([^}]+)\}", chunk or "")
+    for match in re.finditer(r"\\StepImageFrame(?![A-Za-z@])\s*\{([^{}]+)\}", chunk or ""):
+        value = match.group(1).strip()
+        if value and "#" not in value:
+            refs.append((r"width=6.2992in,height=3.5433in", value if "/" in value else f"assets/{value}"))
     for command, default_options in LATEX_IMAGE_COMMAND_DEFAULT_OPTIONS.items():
         pattern = re.compile(rf"\\{re.escape(command)}(?![A-Za-z@])(?:\[[^\]]*\])?\{{([^{{}}]+)\}}")
         for match in pattern.finditer(chunk or ""):
@@ -709,6 +867,7 @@ def _image_appears_before_text(body: str) -> bool:
     image_positions = [match.start() for match in re.finditer(r"\\includegraphics(?![A-Za-z@])", text)]
     for command in LATEX_IMAGE_COMMAND_DEFAULT_OPTIONS:
         image_positions.extend(match.start() for match in re.finditer(rf"\\{re.escape(command)}(?![A-Za-z@])", text))
+    image_positions.extend(match.start() for match in re.finditer(r"\\StepImageFrame(?![A-Za-z@])", text))
     first_image = min(image_positions) if image_positions else -1
     if first_image < 0:
         return False
@@ -967,7 +1126,10 @@ def _skip_latex_modifiers(text: str, cursor: int) -> int:
 def _split_latex_frames(text: str) -> List[Dict[str, str]]:
     frames: List[Dict[str, str]] = []
     begin_pattern = re.compile(r"\\begin\{frame\}")
-    position = 0
+    # Ignore frame-like code in macro definitions and the preamble. Only
+    # content after ``\begin{document}`` contributes pages.
+    document_start = text.find(r"\begin{document}")
+    position = document_start + len(r"\begin{document}") if document_start >= 0 else 0
 
     while True:
         begin_match = begin_pattern.search(text, position)
@@ -992,6 +1154,45 @@ def _split_latex_frames(text: str) -> List[Dict[str, str]]:
             "source_end": source_end,
         })
         position = cursor + end_match.end()
+
+    # Full-slide image macros are standalone pages in editable decks. Treat
+    # each invocation as a frame so page counts and ordering are preserved.
+    macro_pattern = re.compile(r"\\StepImageFrame(?![A-Za-z@])")
+    position = document_start + len(r"\begin{document}") if document_start >= 0 else 0
+    while True:
+        match = macro_pattern.search(text, position)
+        if not match:
+            break
+        cursor = _skip_latex_whitespace(text, match.end())
+        if cursor >= len(text) or text[cursor] != "{":
+            position = match.end()
+            continue
+        _argument, source_end = _read_latex_braced_group(text, cursor)
+        if source_end <= cursor:
+            position = match.end()
+            continue
+        if "#" in _argument:
+            position = source_end
+            continue
+        # A macro used inside an explicit frame is content of that frame, not
+        # an additional page. Standalone invocations are the only ones that
+        # need synthetic frame records.
+        if any(
+            int(frame.get("source_start") or 0) <= match.start() < int(frame.get("source_end") or 0)
+            for frame in frames
+        ):
+            position = source_end
+            continue
+        frames.append({
+            "title": "",
+            "body": text[match.start():source_end],
+            "source": text[match.start():source_end],
+            "source_start": match.start(),
+            "source_end": source_end,
+        })
+        position = source_end
+
+    frames.sort(key=lambda frame: int(frame.get("source_start") or 0))
 
     return frames
 
@@ -1158,6 +1359,7 @@ def _replace_tikz_nodes_with_content(text: str) -> str:
 
 
 def _remove_custom_latex_image_commands(text: str) -> str:
+    text = re.sub(r"\\StepImageFrame(?![A-Za-z@])\s*\{[^{}]+\}", "", text)
     for command in LATEX_IMAGE_COMMAND_DEFAULT_OPTIONS:
         text = re.sub(rf"\\{re.escape(command)}(?![A-Za-z@])(?:\[[^\]]*\])?\{{[^{{}}]+\}}", "", text)
     return text
@@ -1462,6 +1664,11 @@ def build_ppt_lecture_prompt_data(parse_result: Dict[str, Any]) -> Dict[str, Any
         slide_details.append(
             {
                 "index": slide["index"],
+                "slide_id": slide.get("slide_id") or f"slide-{slide['index']}",
+                "parent_slide_index": slide.get("parent_slide_index", slide["index"]),
+                "overlay_index": slide.get("overlay_index", 1),
+                "overlay_count": slide.get("overlay_count", 1),
+                "rendered_page_index": slide.get("rendered_page_index", slide["index"] - 1),
                 "title": slide.get("title", ""),
                 "content": "\n".join(slide.get("body_texts", [])),
                 "notes": slide.get("notes", ""),

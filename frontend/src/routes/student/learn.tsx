@@ -53,7 +53,7 @@ function LearnPage() {
     getSegmentText: (segment) => {
       if (isCoursewareChapter) {
         const slide = coursewareSlides[segment]
-        const lecture = slideLectures.find((item) => item.index === slide?.index && item.lecture?.trim())
+        const lecture = slideLectures.find((item) => ((slide?.slide_id && item.slide_id === slide.slide_id) || item.index === slide?.index) && item.lecture?.trim())
         return lecture?.lecture || slide?.notes || slide?.content || slide?.raw_text || ""
       }
       return selectedContent
@@ -61,14 +61,14 @@ function LearnPage() {
     getSegmentSpeechCues: (segment) => {
       if (!isCoursewareChapter) return undefined
       const slide = coursewareSlides[segment]
-      return slideLectures.find((item) => item.index === slide?.index && item.lecture?.trim())?.speech_cues
+      return slideLectures.find((item) => ((slide?.slide_id && item.slide_id === slide.slide_id) || item.index === slide?.index) && item.lecture?.trim())?.speech_cues
     },
   })
   const currentSlide = playback.currentSegment
   const currentCoursewareSlide = coursewareSlides[currentSlide]
   const currentSlideLecture = useMemo(() => {
     if (!isCoursewareChapter || !slideLectures.length || !currentCoursewareSlide) return undefined
-    return slideLectures.find((item) => item.index === currentCoursewareSlide.index && item.lecture?.trim())
+    return slideLectures.find((item) => ((currentCoursewareSlide.slide_id && item.slide_id === currentCoursewareSlide.slide_id) || item.index === currentCoursewareSlide.index) && item.lecture?.trim())
   }, [currentCoursewareSlide, isCoursewareChapter, slideLectures])
   const questionContext = isCoursewareChapter
     ? `章节标题：${selectedChapter?.title || ""}\n\n当前页：第 ${currentCoursewareSlide?.index || currentSlide + 1} 页 ${currentCoursewareSlide?.title || ""}\n\n页面内容：\n${currentCoursewareSlide?.content || currentCoursewareSlide?.raw_text || ""}\n\n页面讲稿：\n${currentSlideLecture?.lecture || ""}`
@@ -309,7 +309,11 @@ function attachRenderedPagesToSlides(
   if (!renderedPages?.length) return slides
   return slides.map((slide, index) => ({
     ...slide,
-    rendered_page: slide.rendered_page || renderedPages.find((page) => page?.page_index === slide.index - 1) || renderedPages[index],
+    rendered_page:
+      slide.rendered_page ||
+      renderedPages.find((page) => slide.slide_id && page?.slide_id === slide.slide_id) ||
+      renderedPages.find((page) => page?.page_index === (slide.rendered_page_index ?? slide.index - 1)) ||
+      renderedPages[index],
   }))
 }
 

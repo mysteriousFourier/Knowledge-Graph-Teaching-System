@@ -412,6 +412,11 @@ export interface PptTable {
 
 export interface PptSlideDetail {
   index: number
+  slide_id?: string
+  parent_slide_index?: number
+  overlay_index?: number
+  overlay_count?: number
+  rendered_page_index?: number
   title?: string
   content?: string
   notes?: string
@@ -467,6 +472,7 @@ export interface PptSlideDetail {
 
 export interface RenderedCoursewarePage {
   page_index: number
+  slide_id?: string
   image: string
   width: number
   height: number
@@ -487,6 +493,10 @@ export interface PptArtifact {
 
 export interface PptSlideLecture {
   index: number
+  slide_id?: string
+  parent_slide_index?: number
+  overlay_index?: number
+  overlay_count?: number
   title?: string
   lecture: string
   skipped: boolean

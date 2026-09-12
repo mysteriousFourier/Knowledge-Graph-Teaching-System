@@ -40,6 +40,7 @@ import {
   usePlanSlideSpeech,
   usePreviewTex,
   usePreviewPpt,
+  clearCourseware,
   useSaveCoursewareProject,
   useUploadCoursewareAssets,
   useUploadCoursewareStyleReference,
@@ -187,9 +188,9 @@ function clampLectureDurationMinutes(value: number) {
 }
 
 function mergeSlideLectures(previous: PptSlideLecture[], incoming: PptSlideLecture[]) {
-  const byIndex = new Map(previous.map((lecture) => [lecture.index, lecture]))
+  const byIndex = new Map(previous.map((lecture) => [lecture.slide_id || `index-${lecture.index}`, lecture]))
   incoming.forEach((lecture) => {
-    byIndex.set(lecture.index, lecture)
+    byIndex.set(lecture.slide_id || `index-${lecture.index}`, lecture)
   })
   return Array.from(byIndex.values()).sort((a, b) => a.index - b.index)
 }
@@ -1382,7 +1383,7 @@ function TeacherPreparePage() {
   const { data: lectureNodeContext, isLoading: lectureContextLoading } = useGraphNodeContext(lectureNodeIds, shouldLoadGraphScope)
 
   const selectedSlide = preview?.slides.find((slide) => slide.index === selectedIndex)
-  const selectedLecture = slideLectures.find((lecture) => lecture.index === selectedIndex)
+  const selectedLecture = slideLectures.find((lecture) => lecture.slide_id === selectedSlide?.slide_id) || slideLectures.find((lecture) => lecture.index === selectedIndex)
   const selectedSlideFeedback = selectedSlide ? slideFeedbackDrafts[selectedSlide.index] || "" : ""
   const nodes = useMemo(() => scopeTreeData?.nodes || [], [scopeTreeData?.nodes])
   const relationships = useMemo(() => scopeTreeData?.relationships || [], [scopeTreeData?.relationships])
@@ -1429,18 +1430,18 @@ function TeacherPreparePage() {
     chapterId: chapterId || preview?.chapter_title,
     getSegmentId: (segment) => {
       const slide = preview?.slides[segment]
-      return slide ? `slide-${slide.index}` : `slide-${segment + 1}`
+      return slide?.slide_id || `slide-${slide?.index || segment + 1}`
     },
     getSegmentText: (segment) => {
       const slide = preview?.slides[segment]
       if (!slide) return ""
-      const lecture = slideLectures.find((item) => item.index === slide.index)
+      const lecture = slideLectures.find((item) => (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index)
       return lecture?.lecture || slide.notes || slide.content || slide.raw_text || ""
     },
     getSegmentSpeechCues: (segment) => {
       const slide = preview?.slides[segment]
       if (!slide) return undefined
-      return slideLectures.find((item) => item.index === slide.index)?.speech_cues
+      return slideLectures.find((item) => (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index)?.speech_cues
     },
   })
   const imageBySourcePath = useMemo(() => {
@@ -1742,7 +1743,7 @@ function TeacherPreparePage() {
   }, [isPreviewFullscreen])
 
   const resetGeneratedLectures = () => {
-    lecturePlayback.pause()
+    lecturePlayback.reset(0)
     courseAudioAbortRef.current = true
     if (activeCourseAudioJob) {
       void stopCourseTtsJob(activeCourseAudioJob.jobId).catch(() => undefined)
@@ -1936,6 +1937,11 @@ function TeacherPreparePage() {
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0]
     if (!selectedFile) return
+    // A new upload replaces the current chapter's courseware and all derived audio.
+    lecturePlayback.reset(0)
+    setSlideLectures([])
+    setCourseAudioProgress(emptyCourseAudioProgress)
+    setActiveCourseAudioJob(null)
     setMode("upload")
     setFile(selectedFile)
     setProjectId("")
@@ -1946,6 +1952,9 @@ function TeacherPreparePage() {
     setPptArtifact(null)
     resetGeneratedLectures()
     setStatus("")
+    if (chapterId) {
+      void clearCourseware(chapterId).catch(() => undefined)
+    }
     const result = await previewPpt.mutateAsync(selectedFile)
     applyPreviewResult(result, selectedFile.name.replace(/\.[^.]+$/, ""))
     setLectureNodeIds(pptNodeIds)
@@ -2127,7 +2136,7 @@ function TeacherPreparePage() {
       })
       setSlideLectures((previous) =>
         previous.map((item) =>
-          item.index === selectedLecture.index
+          (selectedLecture.slide_id ? item.slide_id === selectedLecture.slide_id : item.index === selectedLecture.index)
             ? {
                 ...item,
                 speech_cues: result.speech_cues || [],
@@ -2162,7 +2171,7 @@ function TeacherPreparePage() {
     const slides = preview?.slides || []
     const lectureItems = slides
       .map((slide, position) => {
-        const lecture = slideLectures.find((item) => item.index === slide.index)
+        const lecture = slideLectures.find((item) => (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index)
         const text = (lecture?.lecture || slide.notes || slide.content || slide.raw_text || "").trim()
         const speechCues = (lecture?.speech_cues || []).filter((cue) => cue.target_text?.trim())
         return {

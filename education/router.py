@@ -864,10 +864,13 @@ async def _generate_slide_lectures_sync(
         chapter_title = request.chapter_title or selected_context.get("chapter_title") or "图谱生成课件"
         mark("graphrag", "正在构建 GraphRAG 章节上下文")
         target_slide_indices = _normalize_target_slide_indices(request.target_slide_indices, request.slides)
+        target_slide_ids = {str(item).strip() for item in (request.target_slide_ids or []) if str(item).strip()}
         base_query_slides = [
             slide
             for slide in request.slides
-            if not target_slide_indices or int(slide.get("index")) in set(target_slide_indices)
+            if (not target_slide_indices and not target_slide_ids)
+            or int(slide.get("index")) in set(target_slide_indices or [])
+            or str(slide.get("slide_id") or "") in target_slide_ids
         ]
         base_query = "\n\n".join(str(slide.get("raw_text") or slide.get("content") or slide.get("title") or "") for slide in base_query_slides)[:1400]
         route_warnings: List[str] = []
@@ -924,6 +927,7 @@ async def _generate_slide_lectures_sync(
             slide_feedback=request.slide_feedback or {},
             style_reference_guidance=style_reference_guidance,
             target_slide_indices=target_slide_indices,
+            target_slide_ids=target_slide_ids,
             pacing_by_index=pacing["slides"],
             speech_rate_cpm=pacing["speech_rate_cpm"],
             progress=progress,
@@ -1543,14 +1547,17 @@ def _render_courseware_pdf_pages(tex_content: str, asset_map: Any = None, namesp
         return [], str(exc)
 
 
-def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str, namespace: str | None = None) -> tuple[list[dict], str]:
+def _render_zip_courseware_pdf_pages(file_source: bytes | Path, tex_source_file: str, namespace: str | None = None) -> tuple[list[dict], str]:
     """Compile the uploaded ZIP as a real LaTeX project, preserving its assets."""
-    render_namespace = namespace or hashlib.md5(file_bytes).hexdigest()
+    render_namespace = namespace or (
+        hashlib.md5(file_source).hexdigest() if isinstance(file_source, bytes) else _file_md5(file_source)
+    )
     cached = _load_rendered_page_cache(render_namespace)
     if cached:
         return cached, ""
     try:
-        with zipfile.ZipFile(io.BytesIO(file_bytes)) as archive, tempfile.TemporaryDirectory(prefix="kg-courseware-zip-") as temp_name:
+        archive_source = io.BytesIO(file_source) if isinstance(file_source, bytes) else file_source
+        with zipfile.ZipFile(archive_source) as archive, tempfile.TemporaryDirectory(prefix="kg-courseware-zip-") as temp_name:
             temp_dir = Path(temp_name).resolve()
             source_name = str(tex_source_file or "").replace("\\", "/").lstrip("/")
             if not source_name or any(part in {"", ".", ".."} for part in Path(source_name).parts):
@@ -1568,7 +1575,8 @@ def _render_zip_courseware_pdf_pages(file_bytes: bytes, tex_source_file: str, na
                     target.mkdir(parents=True, exist_ok=True)
                 else:
                     target.parent.mkdir(parents=True, exist_ok=True)
-                    target.write_bytes(archive.read(info))
+                    with archive.open(info) as source, target.open("wb") as output:
+                        shutil.copyfileobj(source, output, length=1024 * 1024)
             tex_path = (temp_dir / source_name).resolve()
             try:
                 tex_path.relative_to(temp_dir)
@@ -1596,7 +1604,7 @@ def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str
     try:
         # The executor has one worker deliberately: LaTeX and PDF rasterization
         # can briefly use more memory than the uploaded archive itself.
-        rendered_pages, render_error = _render_zip_courseware_pdf_pages(zip_path.read_bytes(), tex_source_file, namespace)
+        rendered_pages, render_error = _render_zip_courseware_pdf_pages(zip_path, tex_source_file, namespace)
         if render_error:
             _update_courseware_render_job(
                 job_id,
@@ -1631,11 +1639,11 @@ def _run_courseware_render_job(job_id: str, zip_path: Path, tex_source_file: str
             logger.warning("Unable to remove queued courseware archive %s", zip_path)
 
 
-def _queue_courseware_render(file_bytes: bytes, tex_source_file: str, namespace: str) -> str:
+def _queue_courseware_render_path(zip_path: Path, tex_source_file: str, namespace: str) -> str:
     job_id = uuid.uuid4().hex
     COURSEWARE_RENDER_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
-    zip_path = COURSEWARE_RENDER_QUEUE_DIR / f"{job_id}.zip"
-    zip_path.write_bytes(file_bytes)
+    queued_path = COURSEWARE_RENDER_QUEUE_DIR / f"{job_id}.zip"
+    zip_path.replace(queued_path)
     with COURSEWARE_RENDER_JOBS_LOCK:
         COURSEWARE_RENDER_JOBS[job_id] = {
             "job_id": job_id,
@@ -1646,13 +1654,48 @@ def _queue_courseware_render(file_bytes: bytes, tex_source_file: str, namespace:
             "created_at": datetime.now().isoformat(),
         }
     try:
-        COURSEWARE_RENDER_EXECUTOR.submit(_run_courseware_render_job, job_id, zip_path, tex_source_file, namespace)
+        COURSEWARE_RENDER_EXECUTOR.submit(_run_courseware_render_job, job_id, queued_path, tex_source_file, namespace)
     except Exception:
         with COURSEWARE_RENDER_JOBS_LOCK:
             COURSEWARE_RENDER_JOBS.pop(job_id, None)
-        zip_path.unlink(missing_ok=True)
+        queued_path.unlink(missing_ok=True)
         raise
     return job_id
+
+
+def _queue_courseware_render(file_bytes: bytes, tex_source_file: str, namespace: str) -> str:
+    """Backward-compatible queue helper for callers that already have bytes."""
+    COURSEWARE_RENDER_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
+    staged_path = COURSEWARE_RENDER_QUEUE_DIR / f"upload-{uuid.uuid4().hex}.zip"
+    staged_path.write_bytes(file_bytes)
+    try:
+        return _queue_courseware_render_path(staged_path, tex_source_file, namespace)
+    except Exception:
+        staged_path.unlink(missing_ok=True)
+        raise
+
+
+def _stage_uploaded_zip(upload: UploadFile) -> Path:
+    COURSEWARE_RENDER_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
+    staged_path = COURSEWARE_RENDER_QUEUE_DIR / f"upload-{uuid.uuid4().hex}.zip"
+    try:
+        with staged_path.open("wb") as target:
+            shutil.copyfileobj(upload.file, target, length=1024 * 1024)
+    except Exception:
+        staged_path.unlink(missing_ok=True)
+        raise
+    if staged_path.stat().st_size <= 0:
+        staged_path.unlink(missing_ok=True)
+        raise ValueError("涓婁紶鐨勬枃浠朵负绌?")
+    return staged_path
+
+
+def _file_md5(path: Path) -> str:
+    digest = hashlib.md5()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 @router.get("/education/courseware/render-jobs/{job_id}")
@@ -2347,12 +2390,19 @@ def _merge_existing_slide_lectures(
         if isinstance(item, dict) and isinstance(item.get("index"), int)
     }
     merged: List[Dict[str, Any]] = []
+    generated_by_id = {str(item.get("slide_id")): item for item in generated_slide_lectures if isinstance(item, dict) and item.get("slide_id")}
+    existing_by_id = {str(item.get("slide_id")): item for item in (existing_slide_lectures or []) if isinstance(item, dict) and item.get("slide_id")}
     for slide in slides:
         if not isinstance(slide, dict) or not isinstance(slide.get("index"), int):
             continue
         index = int(slide["index"])
-        if index in generated_by_index:
+        slide_id = str(slide.get("slide_id") or "")
+        if slide_id and slide_id in generated_by_id:
+            merged.append(generated_by_id[slide_id])
+        elif index in generated_by_index:
             merged.append(generated_by_index[index])
+        elif slide_id and slide_id in existing_by_id:
+            merged.append(dict(existing_by_id[slide_id]))
         elif index in existing_by_index:
             existing = dict(existing_by_index[index])
             if not existing.get("title") and slide.get("title"):
@@ -2362,6 +2412,7 @@ def _merge_existing_slide_lectures(
             merged.append(
                 {
                     "index": index,
+                    "slide_id": slide.get("slide_id"),
                     "title": slide.get("title", ""),
                     "lecture": "",
                     "skipped": True,
@@ -2827,6 +2878,27 @@ async def get_rendered_page_image(namespace: str, filename: str):
     return FileResponse(path, media_type=media_type)
 
 
+@router.post("/education/clear-courseware")
+async def clear_courseware(chapter_id: str):
+    try:
+        existing = chapter_store.get_chapter(chapter_id)
+        if not existing:
+            return {"success": True, "chapter_id": chapter_id, "cleared": False}
+        _cleanup_rendered_pages(existing.get("rendered_pages"))
+        chapter_store.save_chapter(
+            title=existing.get("title") or chapter_id,
+            content=existing.get("content") or "",
+            chapter_id=chapter_id,
+            ppt_slides=[], slide_lectures=[], tex_content="", editable_model={}, asset_map={},
+            rendered_pages=[], render_source="", render_error="", ppt_artifact={},
+            lecture_source_node_ids=[], lecture_pacing={}, sync_backend=False,
+        )
+        clear_course_tts_cache(chapter_id)
+        return {"success": True, "chapter_id": chapter_id, "cleared": True}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Clear courseware failed: {e}")
+
+
 @router.delete("/education/delete-chapter")
 async def delete_chapter(chapter_id: str):
     try:
@@ -3169,6 +3241,7 @@ async def _generate_per_slide_lectures(
     slide_feedback: Optional[Dict[int, str]] = None,
     style_reference_guidance: str = "",
     target_slide_indices: Optional[List[int]] = None,
+    target_slide_ids: Optional[set[str]] = None,
     pacing_by_index: Optional[Dict[int, Dict[str, Any]]] = None,
     speech_rate_cpm: int = DEFAULT_SLIDE_LECTURE_SPEECH_RATE_CPM,
     progress: Optional[Callable[[str, str], None]] = None,
@@ -3180,10 +3253,11 @@ async def _generate_per_slide_lectures(
     results_by_index: Dict[int, Dict[str, Any]] = {}
     work_items: List[Dict[str, Any]] = []
     target_set = set(target_slide_indices or [])
+    target_ids = target_slide_ids or set()
     speech_rate_cpm = _normalize_slide_lecture_speech_rate_cpm(speech_rate_cpm)
     for slide in slide_details:
         slide_index = slide.get("index")
-        if target_set and slide_index not in target_set:
+        if (target_set or target_ids) and slide_index not in target_set and str(slide.get("slide_id") or "") not in target_ids:
             continue
         pacing = (pacing_by_index or {}).get(int(slide_index)) if isinstance(slide_index, int) else None
         slide_text = _compact_slide_for_lecture(slide, max_chars=1200)
@@ -3197,6 +3271,10 @@ async def _generate_per_slide_lectures(
                 results_by_index[slide_index] = _attach_slide_lecture_timing(
                     {
                         "index": slide["index"],
+                        "slide_id": slide.get("slide_id"),
+                        "parent_slide_index": slide.get("parent_slide_index"),
+                        "overlay_index": slide.get("overlay_index"),
+                        "overlay_count": slide.get("overlay_count"),
                         "title": slide.get("title", ""),
                         "lecture": "",
                         "skipped": True,
@@ -3543,6 +3621,10 @@ async def _try_generate_slide_lecture_item(
     except Exception as exc:
         return {
             "index": item.get("slide", {}).get("index"),
+            "slide_id": item.get("slide", {}).get("slide_id"),
+            "parent_slide_index": item.get("slide", {}).get("parent_slide_index"),
+            "overlay_index": item.get("slide", {}).get("overlay_index"),
+            "overlay_count": item.get("slide", {}).get("overlay_count"),
             "title": item.get("slide", {}).get("title", ""),
             "lecture": "",
             "skipped": True,
@@ -3608,6 +3690,10 @@ def _finalize_slide_lecture_result(
     learning_plan = item.get("learning_plan") or {}
     return _attach_slide_lecture_timing({
         "index": slide["index"],
+        "slide_id": slide.get("slide_id"),
+        "parent_slide_index": slide.get("parent_slide_index"),
+        "overlay_index": slide.get("overlay_index"),
+        "overlay_count": slide.get("overlay_count"),
         "title": slide.get("title", ""),
         "lecture": lecture,
         "skipped": not lecture.strip(),
@@ -3831,8 +3917,52 @@ def _format_ppt_generation_context(
     )
 
 
+async def _upload_zip_preview_streaming(file: UploadFile) -> dict[str, Any]:
+    from KGTS.education.ppt_parser import build_ppt_lecture_prompt_data, parse_zip_courseware_file
+    staged_zip_path = await asyncio.to_thread(_stage_uploaded_zip, file)
+    try:
+        parse_result = await asyncio.to_thread(parse_zip_courseware_file, staged_zip_path, file.filename or "")
+        if not parse_result.get("success"):
+            raise HTTPException(status_code=400, detail=parse_result.get("error", "ZIP parse failed"))
+        prompt_data = build_ppt_lecture_prompt_data(parse_result)
+        editable_model = build_editable_model(parse_result, prompt_data)
+        image_warning = _courseware_image_warning(parse_result)
+        namespace = await asyncio.to_thread(_file_md5, staged_zip_path)
+        rendered_pages = _load_rendered_page_cache(namespace)
+        if rendered_pages:
+            staged_zip_path.unlink(missing_ok=True)
+            render_job_id = ""
+        else:
+            render_job_id = _queue_courseware_render_path(staged_zip_path, parse_result.get("tex_source_file") or "", namespace)
+            staged_zip_path = None
+        return {
+            "success": True,
+            "chapter_title": prompt_data["chapter_title"],
+            "slide_count": prompt_data["total_slides"],
+            "slides": prompt_data["slide_details"],
+            "full_text": prompt_data["chapter_content"],
+            "tex_content": parse_result.get("tex_content") or "",
+            "tex_source_file": parse_result.get("tex_source_file") or "",
+            "editable_model": editable_model,
+            "asset_map": editable_model.get("assets") or {},
+            "layout": editable_model.get("layout") or {},
+            "source_tex": parse_result.get("tex_content") or "",
+            "missing_image_refs": parse_result.get("missing_image_refs") or [],
+            "rendered_pages": rendered_pages,
+            **({"render_job_id": render_job_id, "render_status": "queued"} if render_job_id else {}),
+            **({"render_source": "latex_project"} if rendered_pages else {}),
+            **({"warning": image_warning} if image_warning else {}),
+        }
+    finally:
+        if staged_zip_path is not None:
+            staged_zip_path.unlink(missing_ok=True)
+
+
 @router.post("/education/upload-ppt-preview")
 async def upload_ppt_preview(file: UploadFile = File(...)):
+    if file.filename and file.filename.lower().endswith(".zip"):
+        return await _upload_zip_preview_streaming(file)
+
     if not file.filename:
         raise HTTPException(status_code=400, detail="未提供文件名")
 

@@ -255,6 +255,37 @@ class CoursewareParserTest(unittest.TestCase):
         self.assertEqual(slide["images"][0]["source_path"], "course/fig/chart.PNG")
         self.assertTrue(str(slide["images"][0]["data_uri"]).startswith("data:image/png;base64,"))
 
+    def test_tex_standalone_step_image_macros_count_as_pages(self):
+        tex = r"""
+\documentclass{beamer}
+\usepackage{graphicx}
+\newcommand{\StepImageFrame}[1]{%
+  \begin{frame}[plain]{}
+    \includegraphics[width=\textwidth]{assets/#1}%
+  \end{frame}}
+\begin{document}
+\StepImageFrame{slide01.png}
+\begin{frame}{Text}
+  A text slide.
+\end{frame}
+\StepImageFrame{slide02.png}
+\end{document}
+"""
+        payload = io.BytesIO()
+        with zipfile.ZipFile(payload, "w") as archive:
+            archive.writestr("main.tex", tex)
+            archive.writestr("assets/slide01.png", TINY_PNG)
+            archive.writestr("assets/slide02.png", TINY_PNG)
+
+        parsed = parse_courseware(payload.getvalue(), "lecture.zip")
+
+        self.assertEqual(parsed["slide_count"], 3)
+        self.assertEqual(parsed["missing_image_refs"], [])
+        self.assertEqual(
+            [slide["images"][0]["source_path"] for slide in parsed["slides"] if slide["images"]],
+            ["assets/slide01.png", "assets/slide02.png"],
+        )
+
     def test_tex_canvas_layout_comment_round_trips(self):
         tex = r'''
 \documentclass{beamer}

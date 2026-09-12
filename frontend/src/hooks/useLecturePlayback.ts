@@ -135,6 +135,7 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   const synthesizedRef = useRef(new Map<string, Promise<TtsSynthesizeResponse>>())
   const currentSegmentRef = useRef(initialSegment)
   const forceNextPlayRef = useRef(false)
+  const pausedRef = useRef(false)
 
   const hasSegments = segmentCount > 0
   const providerReady = provider !== "loading" && provider !== "none"
@@ -194,7 +195,15 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   }, [])
 
   const pause = useCallback(() => {
+    pausedRef.current = true
+    setIsPlaying(false)
+    setIsLoadingAudio(false)
+    audioRef.current?.pause()
+  }, [])
+
+  const cancelPlayback = useCallback(() => {
     requestIdRef.current += 1
+    pausedRef.current = false
     setIsPlaying(false)
     setIsLoadingAudio(false)
     setChunkInfo(initialChunkInfo)
@@ -202,14 +211,14 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   }, [stopAudio])
 
   const setCurrentSegment = useCallback((next: number | ((current: number) => number)) => {
-    pause()
+    cancelPlayback()
     setCurrentSegmentState((current) => {
       const value = typeof next === "function" ? next(current) : next
       const clamped = Math.min(Math.max(value, 0), Math.max(segmentCount - 1, 0))
       currentSegmentRef.current = clamped
       return clamped
     })
-  }, [pause, segmentCount])
+  }, [cancelPlayback, segmentCount])
 
   const seekAudio = useCallback((percent: number) => {
     const audio = audioRef.current
@@ -252,6 +261,19 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   const play = useCallback(async (segmentOverride?: number) => {
     if (!hasSegments) return
     setPlaybackError("")
+
+    if (pausedRef.current && !segmentOverride && audioRef.current && audioRef.current.src && audioRef.current.src !== SILENT_WAV_DATA_URI) {
+      pausedRef.current = false
+      setIsPlaying(true)
+      try {
+        await audioRef.current.play()
+      } catch (error) {
+        setIsPlaying(false)
+        setPlaybackError(getErrorMessage(error, "闊抽鎾斁澶辫触"))
+      }
+      return
+    }
+    pausedRef.current = false
 
     if (provider === "loading") {
       setIsPlaying(false)
@@ -436,14 +458,14 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   }
 
   const reset = (segment = 0) => {
-    pause()
+    cancelPlayback()
     const clamped = Math.min(Math.max(segment, 0), Math.max(segmentCount - 1, 0))
     currentSegmentRef.current = clamped
     setCurrentSegmentState(clamped)
   }
 
   const replay = (segment = currentSegment) => {
-    pause()
+    cancelPlayback()
     const clamped = Math.min(Math.max(segment, 0), Math.max(segmentCount - 1, 0))
     currentSegmentRef.current = clamped
     setCurrentSegmentState(clamped)
@@ -453,7 +475,7 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   }
 
   const regenerate = (segment = currentSegment) => {
-    pause()
+    cancelPlayback()
     const clamped = Math.min(Math.max(segment, 0), Math.max(segmentCount - 1, 0))
     const sourceText = getSegmentText?.(clamped)?.trim()
     if (!sourceText) {
@@ -478,8 +500,8 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
   }
 
   useEffect(() => {
-    return () => pause()
-  }, [pause])
+    return () => cancelPlayback()
+  }, [cancelPlayback])
 
   const statusText = useMemo(() => {
     if (!hasSegments) return "暂无可播放内容"

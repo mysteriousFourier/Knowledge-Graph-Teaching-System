@@ -85,7 +85,7 @@ class GenerateSlideLecturesRequest(BaseModel):
     slides: List[Dict[str, Any]] = Field(default_factory=list, description="Generated slide/page details")
     tex_content: Optional[str] = Field(None, description="Generated TeX source")
     style: str = Field("引导式教学", description="Teaching style")
-    target_duration_minutes: Optional[float] = Field(10, ge=0.1, le=180, description="Target lecture duration for the whole courseware")
+    target_duration_minutes: Optional[float] = Field(135, ge=0.1, le=180, description="Target lecture duration for the whole courseware")
     speech_rate_cpm: Optional[int] = Field(250, ge=80, le=800, description="Estimated Chinese characters per minute")
     source_node_id: Optional[str] = Field(None, description="Graph node ID used as the lecture source")
     source_node_ids: Optional[List[str]] = Field(None, description="Graph node IDs used as lecture sources")

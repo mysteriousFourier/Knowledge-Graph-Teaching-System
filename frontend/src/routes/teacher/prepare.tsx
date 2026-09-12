@@ -324,6 +324,11 @@ function safeDownloadFilename(value: string) {
 function compactSlideForLectureRequest(slide: PptSlideDetail): PptSlideDetail {
   return {
     index: slide.index,
+    slide_id: slide.slide_id,
+    parent_slide_index: slide.parent_slide_index,
+    overlay_index: slide.overlay_index,
+    overlay_count: slide.overlay_count,
+    rendered_page_index: slide.rendered_page_index,
     title: slide.title,
     content: slide.content,
     notes: slide.notes,
@@ -331,6 +336,8 @@ function compactSlideForLectureRequest(slide: PptSlideDetail): PptSlideDetail {
     tables: slide.tables?.slice(0, 2).map((table) => ({ rows: table.rows.slice(0, 8) })),
     layout: slide.layout,
     image_count: slide.image_count,
+    images: (slide.images || []).slice(0, 3),
+    rendered_page: slide.rendered_page,
   }
 }
 
@@ -384,7 +391,10 @@ function attachRenderedPagesToPreview(result: PptPreviewResponse): PptPreviewRes
     ...result,
     slides: result.slides.map((slide, index) => ({
       ...slide,
-      rendered_page: renderedPages.find((page) => page.page_index === slide.index - 1) || renderedPages[index],
+      rendered_page:
+        renderedPages.find((page) => slide.slide_id && page.slide_id === slide.slide_id) ||
+        renderedPages.find((page) => page.page_index === (slide.rendered_page_index ?? slide.index - 1)) ||
+        renderedPages[index],
     })),
   }
 }

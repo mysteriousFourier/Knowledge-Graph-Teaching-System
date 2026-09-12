@@ -452,6 +452,7 @@ class DeepSeekAPIClient:
         max_tokens: int = 2000,
         system_prompt: Optional[str] = None,
         read_timeout_seconds: object = _DEFAULT_TIMEOUT,
+        image_urls: Optional[List[str]] = None,
     ) -> str:
         if not self.api_key:
             raise ValueError("未配置 DeepSeek API 密钥，请设置 DEEPSEEK_API_KEY 环境变量")
@@ -460,12 +461,20 @@ class DeepSeekAPIClient:
             "Content-Type": "application/json",
             "Authorization": f"Bearer {self.api_key}",
         }
+        user_content: Any = prompt
+        valid_image_urls = [str(value).strip() for value in (image_urls or []) if str(value).strip()]
+        if valid_image_urls:
+            user_content = [{"type": "text", "text": prompt}]
+            user_content.extend(
+                {"type": "image_url", "image_url": {"url": image_url}}
+                for image_url in valid_image_urls[:3]
+            )
         payload = {
             "model": self.model,
             "max_tokens": max_tokens,
             "messages": [
                 {"role": "system", "content": system_prompt or "You are a concise, reliable teaching assistant."},
-                {"role": "user", "content": prompt},
+                {"role": "user", "content": user_content},
             ],
             "temperature": 0.3,
         }

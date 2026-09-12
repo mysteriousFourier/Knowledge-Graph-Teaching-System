@@ -1791,6 +1791,56 @@ def _slide_visible_images(slide: Dict[str, Any]) -> List[Dict[str, Any]]:
     return images
 
 
+def _vision_data_uri(value: Any) -> str:
+    image = str(value or "").strip()
+    if image.startswith("data:image/") and ";base64," in image:
+        return image if len(image) <= 8 * 1024 * 1024 else ""
+    match = re.search(r"/api/education/rendered-pages/([^/]+)/([^/?]+)", image)
+    if not match:
+        return image if image.startswith(("https://", "http://")) else ""
+    namespace = _safe_render_namespace(match.group(1))
+    filename = Path(match.group(2)).name
+    if namespace != match.group(1) or not re.fullmatch(r"page_\d+\.(?:png|jpg|jpeg)", filename, re.I):
+        return ""
+    path = (RENDERED_PAGE_DIR / namespace / filename).resolve()
+    try:
+        path.relative_to(RENDERED_PAGE_DIR.resolve())
+        payload = path.read_bytes()
+    except (ValueError, OSError):
+        return ""
+    if not payload or len(payload) > 6 * 1024 * 1024:
+        return ""
+    mime = "image/jpeg" if path.suffix.lower() in {".jpg", ".jpeg"} else "image/png"
+    return f"data:{mime};base64,{base64.b64encode(payload).decode('ascii')}"
+
+
+def _slide_vision_image_urls(slides: List[Dict[str, Any]], slide: Dict[str, Any]) -> List[str]:
+    candidates: List[str] = []
+    parent_index = slide.get("parent_slide_index")
+    overlay_index = int(slide.get("overlay_index") or 1)
+    if overlay_index > 1:
+        previous = next(
+            (
+                item for item in slides
+                if item.get("parent_slide_index") == parent_index
+                and int(item.get("overlay_index") or 1) == overlay_index - 1
+            ),
+            None,
+        )
+        if previous:
+            candidates.append(str((previous.get("rendered_page") or {}).get("image") or ""))
+    candidates.append(str((slide.get("rendered_page") or {}).get("image") or ""))
+    candidates.extend(str(image.get("data_uri") or "") for image in _slide_visible_images(slide))
+    result: List[str] = []
+    for candidate in candidates:
+        data_uri = _vision_data_uri(candidate)
+        if data_uri and data_uri not in result:
+            result.append(data_uri)
+        if len(result) >= 3:
+            break
+    return result
+
+
 def _compact_source_for_response(item: Any, content_chars: int = 180) -> Dict[str, Any]:
     if not isinstance(item, dict):
         return {}
@@ -3261,7 +3311,8 @@ async def _generate_per_slide_lectures(
             continue
         pacing = (pacing_by_index or {}).get(int(slide_index)) if isinstance(slide_index, int) else None
         slide_text = _compact_slide_for_lecture(slide, max_chars=1200)
-        if not slide_text.strip():
+        vision_image_urls = _slide_vision_image_urls(slide_details, slide)
+        if not slide_text.strip() and not vision_image_urls:
             learning_plan = _fallback_slide_learning_plan(
                 chapter_title=chapter_title,
                 slide=slide,
@@ -3295,7 +3346,7 @@ async def _generate_per_slide_lectures(
             "content": (
                 f"Selected graph subtree context:\n{_truncate_for_prompt(selected_graph_context, 900)}\n\nPPT slide content:\n{slide_text}"
                 if selected_graph_context
-                else slide_text
+                else slide_text or "[Visual slide: inspect the attached current-step image.]"
             ),
         }
         slide_graphrag_context = None
@@ -3374,6 +3425,8 @@ async def _generate_per_slide_lectures(
         requirements = [
             *build_lecture_gc_dpg_requirements(style, slide_level=True),
             "Use only content visible on this slide as the primary teaching object: its title, bullet text, formulas, tables, and images/figure labels. Do not teach figures, examples, or graph entities that are not visible on the current slide.",
+            "Inspect every attached slide image directly. Describe and explain meaningful visual evidence such as axes, labels, arrows, highlighted regions, diagrams, equations, and changes revealed by the animation; never infer image content from the filename alone.",
+            "When two slide images are attached, the first is the previous animation step and the second is the current step. Focus the lecture on what becomes newly visible or changes in the second image, without repeating the unchanged visual content.",
             "If you mention a figure such as Figure 26.5, it must appear in the current slide text or current slide image metadata. Otherwise do not mention it.",
             "Start with a concise overview of this slide's topic. When helpful, add one sentence explaining how the previous slide leads into this slide.",
             "When the slide is a bullet list, first restate the visible bullet points in your own classroom wording, then explain each point. Do not skip bullet restatement.",
@@ -3423,6 +3476,7 @@ Selected graph subtree context:
 
 Chapter topic: {chapter_title}
 Current slide: {slide['index']}
+Animation step: {slide.get('overlay_index') or 1}/{slide.get('overlay_count') or 1}
 {selected_context_text}
 
 Slide content:
@@ -3462,6 +3516,7 @@ Output only the final slide lecture script."""
             "graph_paths": graph_paths,
             "formula_context": formula_context,
             "learning_plan": learning_plan,
+            "vision_image_urls": vision_image_urls,
         })
 
     async def run_items(
@@ -3601,6 +3656,7 @@ async def _try_generate_slide_lecture_item(
                 ),
                 system_prompt=KG_CONSTRAINED_SYSTEM_PROMPT,
                 read_timeout_seconds=_slide_lecture_read_timeout(phase),
+                image_urls=item.get("vision_image_urls") or None,
             ),
             expand_labels=True,
         )
@@ -3795,6 +3851,7 @@ async def _complete_short_slide_lecture_with_flash(
                 max_tokens=min(3000, max(600, gap * 3)),
                 system_prompt=KG_CONSTRAINED_SYSTEM_PROMPT,
                 read_timeout_seconds=_slide_lecture_completion_timeout(),
+                image_urls=item.get("vision_image_urls") or None,
             ),
             expand_labels=True,
         )

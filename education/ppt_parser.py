@@ -226,8 +226,10 @@ def parse_pdf_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any
         chunks = []
         for index, page in enumerate(reader.pages, 1):
             text = (page.extract_text() or "").strip()
-            if text:
-                chunks.append(f"# 第 {index} 页\n{text}")
+            # Keep one parser slide per PDF page, including scanned/empty-text
+            # pages. The visual PDF renderer is authoritative for the preview;
+            # extracted text is only used for lecture/search context.
+            chunks.append(f"# 第 {index} 页\n{text}".rstrip())
     except Exception as exc:
         return {"success": False, "error": f"PDF 文件解析失败: {exc}"}
 
@@ -237,6 +239,7 @@ def parse_pdf_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any
         "slide_count": len(slides),
         "slides": slides,
         "full_text": "\n\n---\n\n".join(str(slide.get("raw_text") or "") for slide in slides),
+        "pdf_page_count": len(reader.pages),
     }
 
 

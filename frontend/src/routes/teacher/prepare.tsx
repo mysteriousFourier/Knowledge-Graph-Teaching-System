@@ -2829,11 +2829,11 @@ function TeacherPreparePage() {
       <div className="space-y-6">
         {preview?.render_error ? (
           <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-            LaTeX 编译未成功，备课页暂时显示解析预览；安装/修复 LaTeX 编译器后会显示与 Overleaf 一致的 PDF 页面。错误：{preview.render_error}
+            {preview.render_source === "pdf" ? "PDF 页面渲染失败，暂时显示解析内容" : "LaTeX 编译未成功，备课页暂时显示解析预览；安装/修复 LaTeX 编译器后会显示 PDF 页面"}。错误：{preview.render_error}
           </div>
         ) : preview?.rendered_pages?.length ? (
           <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
-            当前使用 LaTeX 编译后的 PDF 页面预览，备课页与授课页会显示同一份页面渲染结果。
+            {preview.render_source === "pdf" ? "当前显示上传 PDF 的原始页面，备课页与授课页会使用同一份页面" : "当前使用 LaTeX 编译后的 PDF 页面预览，备课页与授课页会显示同一份页面渲染结果"}。
           </div>
         ) : null}
 
@@ -3055,7 +3055,7 @@ function TeacherPreparePage() {
 
         <section className="rounded-xl border bg-card">
           <div className="flex flex-col gap-3 border-b p-4 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="font-semibold">页面内容 / TeX</h2>
+            <h2 className="font-semibold">{preview?.render_source === "pdf" ? "PDF 页面" : "页面内容 / TeX"}</h2>
             <ArtifactLinks artifact={pptArtifact} artifactUrl={artifactUrl} />
           </div>
           <div className="grid grid-cols-1 gap-4 p-4 xl:grid-cols-[240px_minmax(0,1fr)] 2xl:grid-cols-[260px_minmax(0,1fr)]">
@@ -3630,8 +3630,10 @@ function SlidePreview({
   const editableObjects = useMemo(() => modelSlide?.objects || modelSlide?.items || [], [modelSlide?.items, modelSlide?.objects])
   const modelCanvasItems = useMemo(() => editableCanvasItemsFromModel(editableModel, slide.index), [editableModel, slide.index])
   const canvasItems = useMemo(() => (modelCanvasItems.length ? modelCanvasItems : canvasLayoutFromSlide(slide)), [modelCanvasItems, slide])
-  const canEdit = Boolean(frameDraft || editableModel)
   const renderedPage = slide.rendered_page
+  // Uploaded PDFs are immutable visual pages; text/canvas editing applies to
+  // source-backed courseware only.
+  const canEdit = Boolean(frameDraft || editableModel) && !(renderedPage && !frameDraft && !slide.source_tex)
 
   const updateDraft = (nextDraft: string) => {
     if (nextDraft !== frameDraft) onFrameDraftChange(nextDraft)

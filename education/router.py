@@ -3061,6 +3061,22 @@ async def upload_ppt(
         prompt_data = build_ppt_lecture_prompt_data(parse_result)
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
+        is_pdf_upload = file.filename.lower().endswith(".pdf")
+        rendered_pages: list[dict] = []
+        render_error = ""
+        render_source = ""
+        if is_pdf_upload:
+            # A PDF is already the final visual artifact. Render those exact
+            # pages instead of attempting to reconstruct them from extracted
+            # text or compiling an empty TeX document.
+            render_source = "pdf"
+            try:
+                rendered_pages = _externalize_rendered_pages(
+                    _render_pdf_bytes_to_pages(file_bytes),
+                    hashlib.md5(file_bytes).hexdigest(),
+                )
+            except Exception as exc:
+                render_error = str(exc)
 
         chapter_title = prompt_data["chapter_title"]
         effective_teacher_guidance, teacher_profile = _resolve_teacher_guidance(
@@ -3126,6 +3142,9 @@ async def upload_ppt(
                 "layout": editable_model.get("layout") or {},
                 "source_tex": parse_result.get("tex_content") or "",
                 "missing_image_refs": parse_result.get("missing_image_refs") or [],
+                "rendered_pages": rendered_pages,
+                **({"render_source": render_source} if render_source else {}),
+                **({"render_error": render_error} if render_error else {}),
                 "lecture_content": "",
                 "slide_lectures": slide_lectures,
                 "lecture_pacing": _summarize_slide_lecture_pacing(slide_lectures, pacing),
@@ -3199,6 +3218,9 @@ async def upload_ppt(
                 "layout": editable_model.get("layout") or {},
                 "source_tex": parse_result.get("tex_content") or "",
                 "missing_image_refs": parse_result.get("missing_image_refs") or [],
+                "rendered_pages": rendered_pages,
+                **({"render_source": render_source} if render_source else {}),
+                **({"render_error": render_error} if render_error else {}),
                 "lecture_content": "",
                 "slide_lectures": slide_lectures,
                 "source_node_id": normalized_source_node_ids[0] if normalized_source_node_ids else None,
@@ -3246,6 +3268,9 @@ async def upload_ppt(
             "layout": editable_model.get("layout") or {},
             "source_tex": parse_result.get("tex_content") or "",
             "missing_image_refs": parse_result.get("missing_image_refs") or [],
+            "rendered_pages": rendered_pages,
+            **({"render_source": render_source} if render_source else {}),
+            **({"render_error": render_error} if render_error else {}),
             "lecture_content": lecture_content,
             "slide_lectures": slide_lectures,
             "lecture_pacing": _summarize_slide_lecture_pacing(slide_lectures, pacing),
@@ -4039,10 +4064,26 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
         prompt_data = build_ppt_lecture_prompt_data(parse_result)
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
-        if file.filename.lower().endswith(".zip"):
+        is_pdf_upload = file.filename.lower().endswith(".pdf")
+        if is_pdf_upload:
+            # A PDF is already the final visual artifact. Render its original
+            # pages directly; extracted text is only for lecture/search use.
+            render_source = "pdf"
+            try:
+                rendered_pages = _externalize_rendered_pages(
+                    _render_pdf_bytes_to_pages(file_bytes),
+                    hashlib.md5(file_bytes).hexdigest(),
+                )
+                render_error = ""
+            except Exception as exc:
+                rendered_pages = []
+                render_error = str(exc)
+            render_job_id = ""
+        elif file.filename.lower().endswith(".zip"):
             namespace = hashlib.md5(file_bytes).hexdigest()
             rendered_pages = _load_rendered_page_cache(namespace)
             render_error = ""
+            render_source = "latex_project" if rendered_pages else ""
             if rendered_pages:
                 render_job_id = ""
             else:
@@ -4056,6 +4097,7 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
             rendered_pages, render_error = _render_courseware_pdf_pages(
                 parse_result.get("tex_content") or "", editable_model.get("assets") or {}
             )
+            render_source = "latex" if rendered_pages else ""
 
         return {
             "success": True,
@@ -4072,7 +4114,7 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
             "missing_image_refs": parse_result.get("missing_image_refs") or [],
             "rendered_pages": rendered_pages,
             **({"render_job_id": render_job_id, "render_status": "queued"} if render_job_id else {}),
-            **({"render_source": "latex_project" if file.filename.lower().endswith(".zip") else "latex"} if rendered_pages else {}),
+            **({"render_source": render_source} if render_source else {}),
             **({"render_error": render_error} if render_error else {}),
             **({
                 "warning": "；".join(
@@ -4160,7 +4202,7 @@ async def save_courseware_project_route(request: CoursewareProjectSaveRequest):
     try:
         model = request.editable_model or {}
         tex_content = request.tex_content or (model.get("source_tex") if isinstance(model, dict) else "")
-        if not tex_content and model:
+        if not tex_content and model and request.render_source != "pdf":
             tex_content = serialize_editable_model_to_tex(model, title=request.title)
         if isinstance(model, dict) and tex_content and not model.get("source_tex"):
             model = {**model, "source_tex": tex_content}

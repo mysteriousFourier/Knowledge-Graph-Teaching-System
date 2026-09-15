@@ -2075,6 +2075,12 @@ def _latex_graphic_targets(latex: str) -> list[str]:
         target = match.group(1).strip().replace("\\", "/")
         if target and target not in targets:
             targets.append(target)
+    # StepImageFrame wraps includegraphics inside a custom macro, so the
+    # normal graphic command scan cannot see the actual asset argument.
+    for match in re.finditer(r"\\StepImageFrame(?![A-Za-z@])\s*\{([^{}]+)\}", latex or ""):
+        target = "assets/" + match.group(1).strip().replace("\\", "/").lstrip("./")
+        if target != "assets/" and target not in targets:
+            targets.append(target)
     return targets
 
 

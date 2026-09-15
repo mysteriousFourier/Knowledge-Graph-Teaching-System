@@ -2112,6 +2112,9 @@ def _materialize_latex_assets(temp_dir: Path, latex: str, asset_urls: dict[str, 
             continue
         source_path = _resolve_uploaded_asset_path(source_value) if source_value else _resolve_uploaded_asset_path(normalized)
         if not source_path:
+            if "#" not in normalized and Path(normalized).suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp"}:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                output_path.write_bytes(_MISSING_IMAGE_PNG)
             continue
         output_path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source_path, output_path)
@@ -4860,3 +4863,6 @@ async def upload_image(file: UploadFile = File(...)):
     except Exception as exc:
         logger.error("Beamer image upload error: %s", exc)
         return JSONResponse(content={"error": str(exc)}, status_code=500)
+_MISSING_IMAGE_PNG = base64.b64decode(
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
+)

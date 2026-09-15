@@ -12,7 +12,7 @@ import { RichTextContent } from "@/components/renderers/RichTextContent"
 import { useLecturePlayback } from "@/hooks/useLecturePlayback"
 import { cn } from "@/lib/utils"
 import type { Chapter } from "@/types/chapter"
-import type { CoursewareAsset, EditableSlideObject, PptSlideDetail } from "@/types/education"
+import type { CoursewareAsset, EditableSlideObject, PptSlideDetail, PptSlideLecture } from "@/types/education"
 
 export const Route = createFileRoute("/teacher/lecture")({
   component: LecturePage,
@@ -38,6 +38,23 @@ type CanvasItem = {
 
 const CANVAS_WIDTH = 1000
 const CANVAS_HEIGHT = 562.5
+
+function syncEditedSlideLectures(content: string, slideLectures: PptSlideLecture[]) {
+  if (!slideLectures.length) return slideLectures
+
+  const sections = content.split(/\r?\n\s*---\s*\r?\n(?=\s*##\s*第\s*\d+\s*页(?:[：:\s]|$))/)
+  const lectureByIndex = new Map<number, string>()
+  for (const section of sections) {
+    const match = section.match(/^\s*##\s*第\s*(\d+)\s*页(?:[：:][^\r\n]*)?\r?\n+([\s\S]*?)\s*$/)
+    if (!match) continue
+    const index = Number(match[1])
+    if (!Number.isFinite(index) || lectureByIndex.has(index)) return null
+    lectureByIndex.set(index, match[2].trim() === "_本页未生成文案_" ? "" : match[2].trim())
+  }
+
+  if (slideLectures.some((item) => !lectureByIndex.has(item.index))) return null
+  return slideLectures.map((item) => ({ ...item, lecture: lectureByIndex.get(item.index) ?? item.lecture }))
+}
 
 function LecturePage() {
   const { chapterId, courseId } = Route.useSearch()
@@ -160,14 +177,21 @@ function LecturePage() {
 
   const handleSave = async () => {
     if (!selectedChapter) return
+    const updatedSlideLectures = syncEditedSlideLectures(draftContent, slideLectures)
+    if (updatedSlideLectures === null) {
+      setSaveMessage("保存失败：请保留每页讲稿的“## 第 N 页”标题和分页线")
+      return
+    }
     const result = await saveLecture.mutateAsync({
       chapter_id: selectedChapter.id,
       course_id: courseId || selectedChapter.course_id,
       lecture_content: draftContent,
       learning_plan: selectedChapter.lecture_learning_plan,
+      slide_lectures: updatedSlideLectures.length ? updatedSlideLectures : undefined,
     })
     if (result.success) {
       await Promise.all([
+        queryClient.invalidateQueries({ queryKey: ["teacher-chapter", selectedChapter.id] }),
         queryClient.invalidateQueries({ queryKey: ["teacher-chapters"] }),
         queryClient.invalidateQueries({ queryKey: ["student-chapters"] }),
       ])

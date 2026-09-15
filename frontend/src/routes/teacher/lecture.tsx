@@ -42,18 +42,23 @@ const CANVAS_HEIGHT = 562.5
 function syncEditedSlideLectures(content: string, slideLectures: PptSlideLecture[]) {
   if (!slideLectures.length) return slideLectures
 
-  const sections = content.split(/\r?\n\s*---\s*\r?\n(?=\s*##\s*第\s*\d+\s*页(?:[：:\s]|$))/)
+  const headings = [...content.matchAll(/^[ \t]*##[ \t]+(?:第[ \t]*)?(\d+)[ \t]*页(?:[：:][^\r\n]*)?[ \t]*$/gm)]
   const lectureByIndex = new Map<number, string>()
-  for (const section of sections) {
-    const match = section.match(/^\s*##\s*第\s*(\d+)\s*页(?:[：:][^\r\n]*)?\r?\n+([\s\S]*?)\s*$/)
-    if (!match) continue
-    const index = Number(match[1])
-    if (!Number.isFinite(index) || lectureByIndex.has(index)) return null
-    lectureByIndex.set(index, match[2].trim() === "_本页未生成文案_" ? "" : match[2].trim())
+  for (let position = 0; position < headings.length; position += 1) {
+    const heading = headings[position]
+    const nextHeading = headings[position + 1]
+    const index = Number(heading[1])
+    if (!Number.isFinite(index)) continue
+    let body = content.slice(heading.index! + heading[0].length, nextHeading?.index ?? content.length)
+    body = body.replace(/^\s*---\s*/m, "").replace(/\s*---\s*$/m, "").trim()
+    lectureByIndex.set(index, body === "_本页未生成文案_" ? "" : body)
   }
 
-  if (slideLectures.some((item) => !lectureByIndex.has(item.index))) return null
-  return slideLectures.map((item) => ({ ...item, lecture: lectureByIndex.get(item.index) ?? item.lecture }))
+  // Keep untouched pages when a teacher intentionally removes a page heading;
+  // recognized pages still update without requiring separator lines.
+  return slideLectures.map((item) =>
+    lectureByIndex.has(item.index) ? { ...item, lecture: lectureByIndex.get(item.index) || "" } : item,
+  )
 }
 
 function LecturePage() {
@@ -178,10 +183,6 @@ function LecturePage() {
   const handleSave = async () => {
     if (!selectedChapter) return
     const updatedSlideLectures = syncEditedSlideLectures(draftContent, slideLectures)
-    if (updatedSlideLectures === null) {
-      setSaveMessage("保存失败：请保留每页讲稿的“## 第 N 页”标题和分页线")
-      return
-    }
     const result = await saveLecture.mutateAsync({
       chapter_id: selectedChapter.id,
       course_id: courseId || selectedChapter.course_id,

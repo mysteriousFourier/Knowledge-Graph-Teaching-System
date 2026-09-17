@@ -315,6 +315,7 @@ export interface CoursewareAsset {
   tex_ref?: string
   mime_type?: string
   data_uri?: string | null
+  path?: string
   aliases?: string[]
   slide_indices?: number[]
   figure_refs?: string[]
@@ -401,6 +402,7 @@ export interface CoursewareProject {
   lecture_target_duration_minutes?: number
   lecture_speech_rate_cpm?: number
   lecture_pacing?: SlideLecturePacingSummary
+  slide_lectures?: PptSlideLecture[]
   slide_count?: number
   created_at?: string
   updated_at?: string

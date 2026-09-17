@@ -436,6 +436,7 @@ function chapterToCoursewareProject(chapter: Chapter): CoursewareProject | null 
     render_error: chapter.render_error,
     ppt_artifact: chapter.ppt_artifact,
     source_node_ids: chapter.source_node_ids,
+    slide_lectures: chapter.slide_lectures,
     created_at: typeof chapter.created_at === "number" ? String(chapter.created_at) : chapter.created_at,
     updated_at: typeof chapter.updated_at === "number" ? String(chapter.updated_at) : chapter.updated_at,
   }
@@ -1831,7 +1832,7 @@ function TeacherPreparePage() {
     setPptArtifact(project.ppt_artifact || null)
     setPptNodeIds(project.source_node_ids || [])
     setLectureNodeIds(project.source_node_ids || [])
-    setSlideLectures([])
+    setSlideLectures(project.slide_lectures || [])
     setLectureSourceScope(null)
     setDriftReport(null)
     restoreLectureTiming(project)
@@ -2580,6 +2581,7 @@ function TeacherPreparePage() {
       lecture_target_duration_minutes: targetDurationMinutes,
       lecture_speech_rate_cpm: DEFAULT_SPEECH_RATE_CPM,
       lecture_pacing: currentLecturePacingForSave(),
+      slide_lectures: slideLectures,
     })
     setProjectId(result.project_id)
     navigate({ to: "/teacher/prepare", search: { chapterId: result.project_id, nodeId: "", courseId }, replace: true })

@@ -2130,8 +2130,13 @@ def _materialize_latex_assets(temp_dir: Path, latex: str, asset_urls: dict[str, 
                 output_path.parent.mkdir(parents=True, exist_ok=True)
                 output_path.write_bytes(_MISSING_IMAGE_PNG)
             continue
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source_path, output_path)
+        materialized_path = output_path
+        # TeX commonly omits the extension (e.g. {fig/chart}); preserve the
+        # stored image suffix so graphicx can find fig/chart.png.
+        if not Path(normalized).suffix and source_path.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".tif", ".tiff", ".svg"}:
+            materialized_path = Path(str(output_path) + source_path.suffix.lower())
+        materialized_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source_path, materialized_path)
 
 
 def _compile_latex_to_pdf_bytes(latex: str, asset_urls: dict[str, str] | None = None) -> bytes:

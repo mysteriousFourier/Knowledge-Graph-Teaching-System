@@ -69,6 +69,7 @@ class CoursewareProjectSaveRequest(BaseModel):
     lecture_target_duration_minutes: Optional[float] = Field(None, ge=0.1, le=180, description="Persisted target duration for slide lectures")
     lecture_speech_rate_cpm: Optional[int] = Field(None, ge=80, le=800, description="Persisted speech rate for slide lectures")
     lecture_pacing: Optional[Dict[str, Any]] = Field(None, description="Persisted lecture pacing summary")
+    slide_lectures: Optional[List[Dict[str, Any]]] = Field(None, description="Per-slide teaching copy retained when courseware is replaced")
 
 
 class CoursewareExportPptxRequest(BaseModel):

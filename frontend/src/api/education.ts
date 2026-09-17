@@ -252,6 +252,7 @@ export const useSaveCoursewareProject = () => {
       lecture_target_duration_minutes?: number
       lecture_speech_rate_cpm?: number
       lecture_pacing?: unknown
+      slide_lectures?: unknown[]
     }) =>
       educationClient
         .post<{ success: boolean; project_id: string; project: CoursewareProject; message?: string }>(

@@ -86,7 +86,7 @@ from KGTS.education.ppt_tex_generator import (
     build_tex_from_slides,
     normalize_generated_slides,
 )
-from KGTS.education.ppt_parser import SUPPORTED_COURSEWARE_EXTENSIONS, SUPPORTED_COURSEWARE_FORMATS_TEXT
+from KGTS.education.ppt_parser import IMAGE_EXTENSIONS, MAX_INLINE_IMAGE_BYTES, SUPPORTED_COURSEWARE_EXTENSIONS, SUPPORTED_COURSEWARE_FORMATS_TEXT
 from KGTS.education.courseware_editor import (
     assets_from_upload,
     build_editable_model,
@@ -101,7 +101,7 @@ from KGTS.education.courseware_editor import (
 from KGTS.education.courseware_style import build_style_reference_guidance, build_style_reference_profile
 from KGTS.education.teacher_profile import merge_teacher_guidance
 from KGTS.education.course_store import course_store
-from KGTS.education.beamer_full_router import _compile_latex_file_to_pdf_bytes, _compile_latex_to_pdf_bytes, _render_pdf_bytes_to_pages
+from KGTS.education.beamer_full_router import UPLOAD_DIR, _compile_latex_file_to_pdf_bytes, _compile_latex_to_pdf_bytes, _render_pdf_bytes_to_pages, _resolve_uploaded_asset_path
 
 load_root_env()
 
@@ -112,6 +112,7 @@ COURSEWARE_RENDER_QUEUE_DIR = RUNTIME_DIR / "courseware" / "render-queue"
 COURSEWARE_RENDER_JOBS: Dict[str, Dict[str, Any]] = {}
 COURSEWARE_RENDER_JOBS_LOCK = threading.Lock()
 COURSEWARE_RENDER_EXECUTOR = ThreadPoolExecutor(max_workers=1, thread_name_prefix="courseware-render")
+COURSEWARE_ASSET_UPLOAD_DIR = UPLOAD_DIR / "courseware"
 
 
 DEFAULT_SLIDE_LECTURE_DURATION_MINUTES = 135.0
@@ -131,6 +132,96 @@ def _courseware_image_warning(parse_result: Dict[str, Any]) -> str:
     if tex_source:
         return f"检测到未匹配的图片引用：{shown}{suffix}。请确认 ZIP 中包含与 {tex_source} 相对路径一致的图片文件。"
     return f"检测到未匹配的图片引用：{shown}{suffix}。单独上传 .tex 不包含 fig 等相对路径图片；请上传包含 .tex 和图片目录的 ZIP，或用“图片包”补充资源。"
+
+
+def _safe_courseware_asset_path(value: Any) -> str:
+    """Return a safe, archive-relative image path or an empty string."""
+    normalized = str(value or "").strip().replace("\\", "/").lstrip("/")
+    parts = [part for part in normalized.split("/") if part]
+    if not parts or any(part in {".", ".."} for part in parts):
+        return ""
+    result = "/".join(parts)
+    return result if posixpath.splitext(result)[1].lower() in IMAGE_EXTENSIONS else ""
+
+
+def _courseware_asset_upload_url(namespace: str, relative_path: str) -> str:
+    return f"/beamer-generator/uploads/courseware/{_safe_render_namespace(namespace)}/{relative_path}"
+
+
+def _persist_courseware_zip_assets_from_archive(
+    archive: zipfile.ZipFile,
+    asset_map: Any,
+    namespace: str,
+) -> dict[str, dict[str, Any]]:
+    """Persist ZIP images so a later TeX edit never depends on browser base64.
+
+    Larger images deliberately have no ``data_uri``.  The upload staging ZIP is
+    short-lived, therefore store each referenced image under the existing
+    beamer uploads root before the render worker removes that ZIP.
+    """
+    if not isinstance(asset_map, dict):
+        return {}
+    archive_entries: dict[str, str] = {}
+    for name in archive.namelist():
+        safe_name = _safe_courseware_asset_path(name)
+        if safe_name:
+            archive_entries.setdefault(safe_name.lower(), name)
+
+    safe_namespace = _safe_render_namespace(namespace)
+    output_root = COURSEWARE_ASSET_UPLOAD_DIR / safe_namespace
+    persisted: dict[str, dict[str, Any]] = {}
+    for key, raw in asset_map.items():
+        if not isinstance(raw, dict):
+            continue
+        item = dict(raw)
+        relative_path = _safe_courseware_asset_path(
+            item.get("source_path") or item.get("name") or item.get("tex_ref")
+        )
+        archive_name = archive_entries.get(relative_path.lower()) if relative_path else None
+        if archive_name and relative_path:
+            target = (output_root / relative_path).resolve()
+            try:
+                target.relative_to(output_root.resolve())
+                target.parent.mkdir(parents=True, exist_ok=True)
+                with archive.open(archive_name) as source, target.open("wb") as destination:
+                    shutil.copyfileobj(source, destination)
+                item["path"] = _courseware_asset_upload_url(safe_namespace, relative_path)
+            except (OSError, zipfile.BadZipFile):
+                logger.warning("Unable to persist courseware image %s", relative_path, exc_info=True)
+        persisted[str(key)] = item
+    return persisted
+
+
+def _persist_courseware_zip_assets(zip_path: Path, asset_map: Any, namespace: str) -> dict[str, dict[str, Any]]:
+    with zipfile.ZipFile(zip_path) as archive:
+        return _persist_courseware_zip_assets_from_archive(archive, asset_map, namespace)
+
+
+def _persist_courseware_upload_assets(file_bytes: bytes, filename: str, asset_map: Any) -> dict[str, dict[str, Any]]:
+    """Persist assets uploaded through the image-package endpoint as well."""
+    namespace = hashlib.md5(file_bytes).hexdigest()
+    if str(filename or "").lower().endswith(".zip"):
+        with zipfile.ZipFile(io.BytesIO(file_bytes)) as archive:
+            return _persist_courseware_zip_assets_from_archive(archive, asset_map, namespace)
+
+    persisted = {str(key): dict(raw) for key, raw in (asset_map or {}).items() if isinstance(raw, dict)}
+    if not persisted:
+        return persisted
+    relative_path = _safe_courseware_asset_path(filename)
+    if not relative_path:
+        return persisted
+    output_root = COURSEWARE_ASSET_UPLOAD_DIR / _safe_render_namespace(namespace)
+    target = (output_root / relative_path).resolve()
+    try:
+        target.relative_to(output_root.resolve())
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(file_bytes)
+        url = _courseware_asset_upload_url(namespace, relative_path)
+        for item in persisted.values():
+            item["path"] = url
+    except OSError:
+        logger.warning("Unable to persist courseware upload %s", filename, exc_info=True)
+    return persisted
 
 
 def _resolve_teacher_guidance(
@@ -1440,24 +1531,36 @@ def _courseware_parser_assets_from_map(asset_map: Any) -> dict[str, dict[str, An
         if not isinstance(raw, dict):
             continue
         data_uri = str(raw.get("data_uri") or raw.get("url") or "").strip()
-        if not data_uri.startswith("data:") or "," not in data_uri:
-            continue
-        header, payload = data_uri.split(",", 1)
-        try:
-            image_bytes = base64.b64decode(payload, validate=False)
-        except (ValueError, TypeError):
-            continue
         source_path = str(raw.get("source_path") or raw.get("name") or raw.get("tex_ref") or key or "")
         source_path = source_path.strip().replace("\\", "/").lstrip("./")
         if not source_path:
             continue
-        mime_type = str(raw.get("mime_type") or header[5:].split(";", 1)[0] or "application/octet-stream")
+        header = ""
+        image_bytes = b""
+        if data_uri.startswith("data:") and "," in data_uri:
+            header, payload = data_uri.split(",", 1)
+            try:
+                image_bytes = base64.b64decode(payload, validate=False)
+            except (ValueError, TypeError):
+                continue
+        else:
+            stored_path = _resolve_uploaded_asset_path(str(raw.get("path") or ""))
+            if not stored_path:
+                continue
+            try:
+                # Keep the parser payload small.  Compilation receives the
+                # durable upload URL separately and copies the original file.
+                if stored_path.stat().st_size <= MAX_INLINE_IMAGE_BYTES:
+                    image_bytes = stored_path.read_bytes()
+            except OSError:
+                continue
+        mime_type = str(raw.get("mime_type") or (header[5:].split(";", 1)[0] if header else "") or "application/octet-stream")
         parser_asset = {
             "name": source_path,
             "tex_ref": str(raw.get("tex_ref") or source_path),
             "bytes": image_bytes,
             "mime_type": mime_type,
-            "oversized": bool(raw.get("oversized")),
+            "oversized": bool(raw.get("oversized")) or not image_bytes,
         }
         candidates = {
             source_path,
@@ -1490,7 +1593,9 @@ def _merge_courseware_asset_maps(*maps: Any) -> dict[str, dict[str, Any]]:
             item = dict(raw)
             data_uri = str(item.get("data_uri") or item.get("url") or "").strip()
             if not data_uri and key in merged:
-                item["data_uri"] = merged[key].get("data_uri")
+                for field in ("data_uri", "url", "path"):
+                    if not item.get(field) and merged[key].get(field):
+                        item[field] = merged[key][field]
             asset_id = str(item.get("id") or key or "").strip()
             if not asset_id:
                 continue
@@ -4086,6 +4191,15 @@ async def _upload_zip_preview_streaming(file: UploadFile) -> dict[str, Any]:
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         namespace = await asyncio.to_thread(_file_md5, staged_zip_path)
+        # Render jobs delete their staged ZIP after compiling.  Preserve all
+        # referenced image files now so a later /preview-tex request can
+        # still materialize images that were too large for a browser data URI.
+        editable_model["assets"] = await asyncio.to_thread(
+            _persist_courseware_zip_assets,
+            staged_zip_path,
+            editable_model.get("assets"),
+            namespace,
+        )
         rendered_pages = _load_rendered_page_cache(namespace)
         if rendered_pages:
             staged_zip_path.unlink(missing_ok=True)
@@ -4267,7 +4381,11 @@ async def upload_courseware_assets(file: UploadFile = File(...)):
         file_bytes = await file.read()
         if not file_bytes:
             raise HTTPException(status_code=400, detail="上传的文件为空")
-        assets = assets_from_upload(file_bytes, file.filename)
+        assets = _persist_courseware_upload_assets(
+            file_bytes,
+            file.filename,
+            assets_from_upload(file_bytes, file.filename),
+        )
         return {
             "success": True,
             "asset_map": assets,
@@ -4307,6 +4425,7 @@ async def save_courseware_project_route(request: CoursewareProjectSaveRequest):
                 "lecture_target_duration_minutes": request.lecture_target_duration_minutes,
                 "lecture_speech_rate_cpm": request.lecture_speech_rate_cpm,
                 "lecture_pacing": request.lecture_pacing,
+                "slide_lectures": request.slide_lectures,
             }
         )
         return {"success": True, "project": record, "project_id": record["id"], "message": "课件项目保存成功"}

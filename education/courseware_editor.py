@@ -261,6 +261,7 @@ def save_courseware_project(payload: Dict[str, Any]) -> Dict[str, Any]:
         "lecture_target_duration_minutes": payload.get("lecture_target_duration_minutes"),
         "lecture_speech_rate_cpm": payload.get("lecture_speech_rate_cpm"),
         "lecture_pacing": payload.get("lecture_pacing"),
+        "slide_lectures": payload.get("slide_lectures") if isinstance(payload.get("slide_lectures"), list) else previous.get("slide_lectures") or [],
         "created_at": previous.get("created_at") or now,
         "updated_at": now,
     }

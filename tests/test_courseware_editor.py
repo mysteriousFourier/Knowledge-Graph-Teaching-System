@@ -15,7 +15,7 @@ import KGTS.education.courseware_editor as editor
 import KGTS.education.beamer_full_router as beamer_router
 import KGTS.education.router as education_router
 from KGTS.models.education import PreviewTexRequest
-from KGTS.education.ppt_parser import build_ppt_lecture_prompt_data, parse_courseware
+from KGTS.education.ppt_parser import MAX_INLINE_IMAGE_BYTES, build_ppt_lecture_prompt_data, parse_courseware
 
 
 TINY_PNG = base64.b64decode(
@@ -352,6 +352,73 @@ class CoursewareEditorTest(unittest.TestCase):
                 education_router._courseware_asset_urls_from_map(captured["assets"]),
             )
             self.assertEqual((Path(temp_dir) / "fig" / "chart.png").read_bytes(), TINY_PNG)
+
+    def test_preview_tex_reuses_persisted_oversized_zip_image_after_edit(self):
+        tex = r"""
+\documentclass{beamer}
+\begin{document}
+\begin{frame}{Large Figure}
+  \includegraphics[width=0.5\textwidth]{fig/chart}
+\end{frame}
+\end{document}
+"""
+        image_bytes = TINY_PNG + b"x" * (MAX_INLINE_IMAGE_BYTES + 1)
+        old_upload_dir = beamer_router.UPLOAD_DIR
+        old_router_upload_dir = education_router.UPLOAD_DIR
+        old_asset_upload_dir = education_router.COURSEWARE_ASSET_UPLOAD_DIR
+        original_render = education_router._render_courseware_pdf_pages
+        captured = {}
+
+        def fake_render(tex_content, assets, namespace=None):
+            captured["assets"] = assets
+            return [], ""
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            workspace = Path(temp_dir)
+            upload_dir = workspace / "uploads"
+            zip_path = workspace / "deck.zip"
+            with zipfile.ZipFile(zip_path, "w") as archive:
+                archive.writestr("main.tex", tex)
+                archive.writestr("fig/chart.png", image_bytes)
+            parsed = parse_courseware(zip_path.read_bytes(), "deck.zip")
+            model = editor.build_editable_model(parsed, build_ppt_lecture_prompt_data(parsed))
+            beamer_router.UPLOAD_DIR = upload_dir
+            education_router.UPLOAD_DIR = upload_dir
+            education_router.COURSEWARE_ASSET_UPLOAD_DIR = upload_dir / "courseware"
+            education_router._render_courseware_pdf_pages = fake_render
+            try:
+                assets = education_router._persist_courseware_zip_assets(zip_path, model["assets"], "large-image")
+                result = asyncio.run(education_router.preview_tex(PreviewTexRequest(tex_content=tex, asset_map=assets)))
+                self.assertEqual(result["missing_image_refs"], [])
+                persisted = next(asset for asset in assets.values() if asset.get("source_path") == "fig/chart.png")
+                self.assertTrue(str(persisted.get("path") or "").startswith("/beamer-generator/uploads/courseware/"))
+                with tempfile.TemporaryDirectory() as render_dir:
+                    beamer_router._materialize_latex_assets(
+                        Path(render_dir), tex, education_router._courseware_asset_urls_from_map(captured["assets"])
+                    )
+                    self.assertEqual((Path(render_dir) / "fig" / "chart.png").read_bytes(), image_bytes)
+            finally:
+                education_router._render_courseware_pdf_pages = original_render
+                beamer_router.UPLOAD_DIR = old_upload_dir
+                education_router.UPLOAD_DIR = old_router_upload_dir
+                education_router.COURSEWARE_ASSET_UPLOAD_DIR = old_asset_upload_dir
+
+    def test_project_save_retains_slide_lectures(self):
+        old_project_dir = editor.PROJECT_DIR
+        with tempfile.TemporaryDirectory() as temp_dir:
+            editor.PROJECT_DIR = Path(temp_dir) / "projects"
+            try:
+                project = editor.save_courseware_project(
+                    {
+                        "title": "Deck",
+                        "editable_model": {"slides": []},
+                        "slide_lectures": [{"index": 1, "slide_id": "slide-1", "lecture": "原始文案"}],
+                    }
+                )
+                loaded = editor.load_courseware_project(project["id"])
+                self.assertEqual(loaded["slide_lectures"][0]["lecture"], "原始文案")
+            finally:
+                editor.PROJECT_DIR = old_project_dir
 
 
 if __name__ == "__main__":

@@ -1431,6 +1431,82 @@ def _courseware_asset_urls_from_map(asset_map: Any) -> dict[str, str]:
     return asset_urls
 
 
+def _courseware_parser_assets_from_map(asset_map: Any) -> dict[str, dict[str, Any]]:
+    """Convert persisted editor assets into the parser's in-memory lookup."""
+    if not isinstance(asset_map, dict):
+        return {}
+    parser_assets: dict[str, dict[str, Any]] = {}
+    for key, raw in asset_map.items():
+        if not isinstance(raw, dict):
+            continue
+        data_uri = str(raw.get("data_uri") or raw.get("url") or "").strip()
+        if not data_uri.startswith("data:") or "," not in data_uri:
+            continue
+        header, payload = data_uri.split(",", 1)
+        try:
+            image_bytes = base64.b64decode(payload, validate=False)
+        except (ValueError, TypeError):
+            continue
+        source_path = str(raw.get("source_path") or raw.get("name") or raw.get("tex_ref") or key or "")
+        source_path = source_path.strip().replace("\\", "/").lstrip("./")
+        if not source_path:
+            continue
+        mime_type = str(raw.get("mime_type") or header[5:].split(";", 1)[0] or "application/octet-stream")
+        parser_asset = {
+            "name": source_path,
+            "tex_ref": str(raw.get("tex_ref") or source_path),
+            "bytes": image_bytes,
+            "mime_type": mime_type,
+            "oversized": bool(raw.get("oversized")),
+        }
+        candidates = {
+            source_path,
+            posixpath.splitext(source_path)[0],
+            posixpath.basename(source_path),
+            posixpath.splitext(posixpath.basename(source_path))[0],
+        }
+        candidates.update(str(alias or "").strip().replace("\\", "/").lstrip("./") for alias in raw.get("aliases") or [])
+        for candidate in candidates:
+            if candidate:
+                parser_assets.setdefault(candidate, parser_asset)
+    return parser_assets
+
+
+def _merge_courseware_asset_maps(*maps: Any) -> dict[str, dict[str, Any]]:
+    """Keep uploaded image data available when edited TeX is reparsed.
+
+    Parsing an edited frame can produce a partial asset map (or no map when
+    the frame only changes text).  Preserve the previously uploaded bytes and
+    normalize the common TeX path variants so compilation is independent of
+    whether the source uses ``fig/foo.png``, ``figures/foo.png`` or ``foo.png``.
+    """
+    merged: dict[str, dict[str, Any]] = {}
+    for source in maps:
+        if not isinstance(source, dict):
+            continue
+        for key, raw in source.items():
+            if not isinstance(raw, dict):
+                continue
+            item = dict(raw)
+            data_uri = str(item.get("data_uri") or item.get("url") or "").strip()
+            if not data_uri and key in merged:
+                item["data_uri"] = merged[key].get("data_uri")
+            asset_id = str(item.get("id") or key or "").strip()
+            if not asset_id:
+                continue
+            item["id"] = asset_id
+            aliases = set(str(alias).replace("\\", "/").lstrip("./") for alias in item.get("aliases") or [])
+            for value in (item.get("source_path"), item.get("tex_ref"), item.get("name")):
+                normalized = str(value or "").replace("\\", "/").lstrip("./")
+                if normalized:
+                    aliases.update({normalized, normalized.removeprefix("figures/"), normalized.removeprefix("fig/")})
+                    aliases.add(f"fig/{normalized.split('/')[-1]}")
+                    aliases.add(normalized.split("/")[-1])
+            item["aliases"] = sorted(alias for alias in aliases if alias)
+            merged[asset_id] = item
+    return merged
+
+
 def _safe_render_namespace(value: str) -> str:
     safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", value or "").strip("._")
     return safe[:96] or "preview"
@@ -4138,7 +4214,11 @@ async def preview_tex(request: PreviewTexRequest):
     try:
         from KGTS.education.ppt_parser import parse_text_courseware, build_ppt_lecture_prompt_data
 
-        parse_result = parse_text_courseware(tex_content.encode("utf-8"), request.filename or "edited.tex")
+        parse_result = parse_text_courseware(
+            tex_content.encode("utf-8"),
+            request.filename or "edited.tex",
+            image_assets=_courseware_parser_assets_from_map(request.asset_map),
+        )
         if not parse_result.get("success"):
             raise HTTPException(status_code=400, detail=parse_result.get("error", "TeX 解析失败"))
 
@@ -4147,7 +4227,11 @@ async def preview_tex(request: PreviewTexRequest):
         image_warning = _courseware_image_warning(parse_result)
         # The client retains uploaded images between edits. Parsing edited TeX
         # can omit those assets, so use the supplied map while recompiling.
-        render_assets = request.asset_map or editable_model.get("assets") or {}
+        render_assets = _merge_courseware_asset_maps(
+            request.asset_map,
+            editable_model.get("assets") if isinstance(editable_model, dict) else None,
+        )
+        editable_model["assets"] = render_assets
         rendered_pages, render_error = _render_courseware_pdf_pages(tex_content, render_assets)
         return {
             "success": True,

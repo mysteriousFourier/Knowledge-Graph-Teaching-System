@@ -83,7 +83,13 @@ def parse_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any]:
     return {"success": False, "error": f"仅支持 {SUPPORTED_COURSEWARE_FORMATS_TEXT} 格式"}
 
 
-def parse_text_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, Any]:
+def parse_text_courseware(
+    file_bytes: bytes,
+    filename: str = "",
+    *,
+    image_assets: Dict[str, Dict[str, Any]] | None = None,
+    tex_base_dir: str = "",
+) -> Dict[str, Any]:
     decode_result = _decode_text_bytes(file_bytes)
     if not decode_result["success"]:
         return {"success": False, "error": f"文本课件解析失败: {decode_result['error']}"}
@@ -99,7 +105,12 @@ def parse_text_courseware(file_bytes: bytes, filename: str = "") -> Dict[str, An
         text = _json_to_text(text)
     if lower_name.endswith(".tex"):
         text = _normalize_text_newlines(text)
-    slides = _slides_from_text(text, filename)
+    slides = _slides_from_text(
+        text,
+        filename,
+        image_assets=image_assets,
+        tex_base_dir=tex_base_dir,
+    )
     missing_image_refs = _collect_missing_image_refs(slides)
     return {
         "success": True,

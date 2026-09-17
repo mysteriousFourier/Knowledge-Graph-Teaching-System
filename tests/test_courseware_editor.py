@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import asyncio
 import io
 import sys
 import tempfile
@@ -11,6 +12,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 import KGTS.education.courseware_editor as editor
+import KGTS.education.beamer_full_router as beamer_router
+import KGTS.education.router as education_router
+from KGTS.models.education import PreviewTexRequest
 from KGTS.education.ppt_parser import build_ppt_lecture_prompt_data, parse_courseware
 
 
@@ -294,6 +298,60 @@ class CoursewareEditorTest(unittest.TestCase):
                 self.assertEqual(loaded["editable_model"]["source_tex"], loaded["tex_content"])
             finally:
                 editor.PROJECT_DIR = old_project_dir
+
+    def test_preview_tex_reuses_uploaded_image_assets_after_edit(self):
+        tex = r"""
+\documentclass{beamer}
+\begin{document}
+\begin{frame}{Edited title}
+  \includegraphics[width=0.5\textwidth]{fig/chart}
+\end{frame}
+\end{document}
+"""
+        asset_id = "asset-existing-image"
+        data_uri = "data:image/png;base64," + base64.b64encode(TINY_PNG).decode("ascii")
+        asset_map = {
+            asset_id: {
+                "id": asset_id,
+                "name": "chart.png",
+                "source_path": "fig/chart.png",
+                "tex_ref": "fig/chart",
+                "mime_type": "image/png",
+                "data_uri": data_uri,
+                "aliases": ["fig/chart.png", "fig/chart", "chart.png", "chart"],
+            }
+        }
+        captured = {}
+        original_render = education_router._render_courseware_pdf_pages
+
+        def fake_render(tex_content, assets, namespace=None):
+            captured["tex_content"] = tex_content
+            captured["assets"] = assets
+            return [{"page_index": 0, "image": "/rendered/page.png"}], ""
+
+        education_router._render_courseware_pdf_pages = fake_render
+        try:
+            result = asyncio.run(
+                education_router.preview_tex(
+                    PreviewTexRequest(tex_content=tex, filename="edited.tex", asset_map=asset_map)
+                )
+            )
+        finally:
+            education_router._render_courseware_pdf_pages = original_render
+
+        self.assertEqual(result["missing_image_refs"], [])
+        self.assertEqual(result["slides"][0]["images"][0]["data_uri"], data_uri)
+        image_object = next(item for item in result["editable_model"]["slides"][0]["objects"] if item["type"] == "image")
+        self.assertEqual(result["editable_model"]["assets"][image_object["asset_id"]]["data_uri"], data_uri)
+        self.assertEqual(captured["tex_content"], tex)
+        self.assertTrue(any(asset.get("data_uri") == data_uri for asset in captured["assets"].values()))
+        with tempfile.TemporaryDirectory() as temp_dir:
+            beamer_router._materialize_latex_assets(
+                Path(temp_dir),
+                tex,
+                education_router._courseware_asset_urls_from_map(captured["assets"]),
+            )
+            self.assertEqual((Path(temp_dir) / "fig" / "chart.png").read_bytes(), TINY_PNG)
 
 
 if __name__ == "__main__":

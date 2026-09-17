@@ -40,7 +40,6 @@ import {
   usePlanSlideSpeech,
   usePreviewTex,
   usePreviewPpt,
-  clearCourseware,
   useSaveCoursewareProject,
   useUploadCoursewareAssets,
   useUploadCoursewareStyleReference,
@@ -193,6 +192,24 @@ function mergeSlideLectures(previous: PptSlideLecture[], incoming: PptSlideLectu
     byIndex.set(lecture.slide_id || `index-${lecture.index}`, lecture)
   })
   return Array.from(byIndex.values()).sort((a, b) => a.index - b.index)
+}
+
+function inheritSlideLecturesForSlides(slides: PptSlideDetail[], previous: PptSlideLecture[]) {
+  const bySlideId = new Map(previous.filter((lecture) => lecture.slide_id).map((lecture) => [lecture.slide_id, lecture]))
+  const byIndex = new Map(previous.map((lecture) => [lecture.index, lecture]))
+  return slides.flatMap((slide) => {
+    const inherited = (slide.slide_id ? bySlideId.get(slide.slide_id) : undefined) || byIndex.get(slide.index)
+    if (!inherited) return []
+    return [{
+      ...inherited,
+      index: slide.index,
+      slide_id: slide.slide_id,
+      parent_slide_index: slide.parent_slide_index,
+      overlay_index: slide.overlay_index,
+      overlay_count: slide.overlay_count,
+      title: slide.title || inherited.title,
+    }]
+  })
 }
 
 function hasUsableSlideLecture(lecture?: PptSlideLecture): lecture is PptSlideLecture & { lecture: string } {
@@ -1947,31 +1964,27 @@ function TeacherPreparePage() {
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0]
     if (!selectedFile) return
-    // A new upload replaces the current chapter's courseware and all derived audio.
-    lecturePlayback.reset(0)
-    setSlideLectures([])
-    setCourseAudioProgress(emptyCourseAudioProgress)
-    setActiveCourseAudioJob(null)
+    // Keep the existing per-page copy when only the visual courseware is
+    // replaced. Audio remains derived state and is regenerated separately.
+    const previousSlideLectures = slideLectures
     setMode("upload")
     setFile(selectedFile)
     setProjectId("")
-    setLoadedRecordId("")
     resetTexState("")
     setEditableModel(null)
     setAssetMap({})
     setPptArtifact(null)
     resetGeneratedLectures()
     setStatus("")
-    if (chapterId) {
-      void clearCourseware(chapterId).catch(() => undefined)
-    }
     const result = await previewPpt.mutateAsync(selectedFile)
     applyPreviewResult(result, selectedFile.name.replace(/\.[^.]+$/, ""))
+    const inheritedSlideLectures = inheritSlideLecturesForSlides(result.slides, previousSlideLectures)
+    setSlideLectures(inheritedSlideLectures)
     setLectureNodeIds(pptNodeIds)
     setStatus(
       result.render_job_id
         ? "课件已解析，PDF 预览正在排队"
-        : result.warning || "",
+        : result.warning || (inheritedSlideLectures.length ? `已继承 ${inheritedSlideLectures.length} 页原文案` : ""),
     )
   }
 

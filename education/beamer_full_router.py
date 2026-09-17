@@ -2105,8 +2105,22 @@ def _materialize_latex_assets(temp_dir: Path, latex: str, asset_urls: dict[str, 
                 break
         if source_value.startswith("data:") and "," in source_value:
             try:
-                output_path.parent.mkdir(parents=True, exist_ok=True)
-                output_path.write_bytes(base64.b64decode(source_value.split(",", 1)[1], validate=False))
+                materialized_path = output_path
+                if Path(normalized).suffix.lower() not in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".tif", ".tiff", ".svg"}:
+                    mime_type = source_value[5:].split(";", 1)[0].lower()
+                    extension = {
+                        "image/png": ".png",
+                        "image/jpeg": ".jpg",
+                        "image/gif": ".gif",
+                        "image/webp": ".webp",
+                        "image/bmp": ".bmp",
+                        "image/tiff": ".tiff",
+                        "image/svg+xml": ".svg",
+                    }.get(mime_type, "")
+                    if extension:
+                        materialized_path = Path(str(output_path) + extension)
+                materialized_path.parent.mkdir(parents=True, exist_ok=True)
+                materialized_path.write_bytes(base64.b64decode(source_value.split(",", 1)[1], validate=False))
             except Exception:
                 pass
             continue

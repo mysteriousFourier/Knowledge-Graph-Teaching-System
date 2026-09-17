@@ -195,10 +195,16 @@ function mergeSlideLectures(previous: PptSlideLecture[], incoming: PptSlideLectu
 }
 
 function inheritSlideLecturesForSlides(slides: PptSlideDetail[], previous: PptSlideLecture[]) {
-  const bySlideId = new Map(previous.filter((lecture) => lecture.slide_id).map((lecture) => [lecture.slide_id, lecture]))
-  const byIndex = new Map(previous.map((lecture) => [lecture.index, lecture]))
-  return slides.flatMap((slide) => {
-    const inherited = (slide.slide_id ? bySlideId.get(slide.slide_id) : undefined) || byIndex.get(slide.index)
+  const bySlideId = new Map(previous.filter((lecture) => lecture.slide_id).map((lecture) => [String(lecture.slide_id), lecture]))
+  const byIndex = new Map(previous.map((lecture) => [String(Number(lecture.index)), lecture]))
+  return slides.flatMap((slide, position) => {
+    // Historical records sometimes contain string page numbers, and imported
+    // files can regenerate slide IDs. Fall back to the stable visual order so
+    // replacing a deck does not silently discard the teacher's existing copy.
+    const inherited =
+      (slide.slide_id ? bySlideId.get(String(slide.slide_id)) : undefined) ||
+      byIndex.get(String(Number(slide.index))) ||
+      previous[position]
     if (!inherited) return []
     return [{
       ...inherited,
@@ -1342,6 +1348,7 @@ function TeacherPreparePage() {
   const [frameDrafts, setFrameDrafts] = useState<Record<number, string>>({})
   const [pptArtifact, setPptArtifact] = useState<PptArtifact | null>(null)
   const [slideLectures, setSlideLectures] = useState<PptSlideLecture[]>([])
+  const slideLecturesRef = useRef<PptSlideLecture[]>([])
   const [selectedIndex, setSelectedIndex] = useState(1)
   const [pptNodeIds, setPptNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
   const [lectureNodeIds, setLectureNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
@@ -1363,6 +1370,10 @@ function TeacherPreparePage() {
   const [status, setStatus] = useState("")
   const courseAudioAbortRef = useRef(false)
   const recoveredCourseAudioKeyRef = useRef("")
+
+  useEffect(() => {
+    slideLecturesRef.current = slideLectures
+  }, [slideLectures])
 
   // Saved courseware opens directly in the editor and does not need the graph tree.
   useEffect(() => {
@@ -1770,7 +1781,7 @@ function TeacherPreparePage() {
     }
   }, [isPreviewFullscreen])
 
-  const resetGeneratedLectures = () => {
+  const resetGeneratedLectures = (options: { preserveSlideLectures?: boolean } = {}) => {
     lecturePlayback.reset(0)
     courseAudioAbortRef.current = true
     if (activeCourseAudioJob) {
@@ -1780,7 +1791,7 @@ function TeacherPreparePage() {
     setActiveCourseAudioJob(null)
     writeStoredCourseAudioJob(null)
     setActiveSlideLectureJob(null)
-    setSlideLectures([])
+    if (!options.preserveSlideLectures) setSlideLectures([])
     setLectureSourceScope(null)
     setDriftReport(null)
   }
@@ -1967,7 +1978,14 @@ function TeacherPreparePage() {
     if (!selectedFile) return
     // Keep the existing per-page copy when only the visual courseware is
     // replaced. Audio remains derived state and is regenerated separately.
-    const previousSlideLectures = slideLectures
+    const persistedSlideLectures = chapterId.startsWith("cw_")
+      ? savedCoursewareProject.data?.project?.slide_lectures || []
+      : savedTeacherChapter.data?.chapter?.slide_lectures || []
+    const previousSlideLectures = slideLectures.length
+      ? slideLectures
+      : slideLecturesRef.current.length
+        ? slideLecturesRef.current
+        : persistedSlideLectures
     setMode("upload")
     setFile(selectedFile)
     setProjectId("")
@@ -1975,16 +1993,17 @@ function TeacherPreparePage() {
     setEditableModel(null)
     setAssetMap({})
     setPptArtifact(null)
-    resetGeneratedLectures()
+    resetGeneratedLectures({ preserveSlideLectures: true })
     setStatus("")
     const result = await previewPpt.mutateAsync(selectedFile)
     applyPreviewResult(result, selectedFile.name.replace(/\.[^.]+$/, ""))
     const inheritedSlideLectures = inheritSlideLecturesForSlides(result.slides, previousSlideLectures)
+    slideLecturesRef.current = inheritedSlideLectures
     setSlideLectures(inheritedSlideLectures)
     setLectureNodeIds(pptNodeIds)
     setStatus(
       result.render_job_id
-        ? "课件已解析，PDF 预览正在排队"
+        ? `课件已解析，PDF 预览正在排队${inheritedSlideLectures.length ? `；已继承 ${inheritedSlideLectures.length} 页原文案` : ""}`
         : result.warning || (inheritedSlideLectures.length ? `已继承 ${inheritedSlideLectures.length} 页原文案` : ""),
     )
   }

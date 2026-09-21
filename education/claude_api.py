@@ -393,6 +393,7 @@ class DeepSeekAPIClient:
         )
         requirements = [
             *build_lecture_gc_dpg_requirements(style),
+            "严格模仿教师画像中的风格指纹和成品示例：保持现场讲课的口语节奏、‘我们/大家/咱们’视角、问题驱动和例子回扣；只迁移表达方式，不复制示例中的事实或句子。‘照顾学生知识差异’只用于课程第一课或首次导入，后续课程不要重复这段开场，直接承接前置内容进入本课主题。",
             "Generate a complete lecture script with Markdown level-2/level-3 headings, not just an outline.",
             "Cover: opening, core concept explanation, relation path, example or derivation, classroom questions, common mistakes, and closing summary.",
             "Use an evidence-first order: start from chapter content and retrieved evidence, then connect only the few necessary terms into a coherent teaching flow.",

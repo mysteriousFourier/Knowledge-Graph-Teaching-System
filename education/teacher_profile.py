@@ -108,6 +108,8 @@ def format_teacher_profile_guidance(profile: Optional[Dict[str, Any]], max_chars
     ]
     sections = (
         ("硬性禁止", profile.get("forbidden_patterns")),
+        ("风格指纹", profile.get("style_signature")),
+        ("成品示例（只模仿表达，不照抄事实）", profile.get("style_exemplars")),
         ("课件到讲稿扩展", profile.get("source_to_speech_expansion")),
         ("知识图谱扩展", profile.get("knowledge_graph_expansion")),
         ("授课结构", profile.get("lesson_structure")),

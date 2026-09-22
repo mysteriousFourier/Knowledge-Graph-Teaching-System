@@ -385,6 +385,12 @@ function LecturePage() {
             </div>
           ) : isCoursewareChapter && coursewareSlides.length ? (
             <>
+              <PlaybackProgress
+                progress={playback.progress}
+                statusText={playback.statusText}
+                audioPosition={playback.audioPosition}
+                onSeek={playback.seekAudio}
+              />
               <div>
                 <div className="border-b p-4 xl:p-5">
                   {currentCoursewareSlide ? (
@@ -434,13 +440,6 @@ function LecturePage() {
                 </section>
               </div>
 
-              <PlaybackProgress
-                progress={playback.progress}
-                statusText={playback.statusText}
-                audioPosition={playback.audioPosition}
-                onSeek={playback.seekAudio}
-              />
-
               <Pager
                 current={currentSlide}
                 total={coursewareSlides.length}
@@ -451,6 +450,12 @@ function LecturePage() {
             </>
           ) : markdownSlides.length > 0 ? (
             <>
+              <PlaybackProgress
+                progress={playback.progress}
+                statusText={playback.statusText}
+                audioPosition={playback.audioPosition}
+                onSeek={playback.seekAudio}
+              />
               <div className="min-h-[240px] p-4 sm:min-h-[300px] sm:p-6">
                 <RichTextContent content={markdownSlides[currentSlide]} />
                 <LectureReviewPanel
@@ -459,13 +464,6 @@ function LecturePage() {
                   consistencyReport={selectedChapter.lecture_consistency_report}
                 />
               </div>
-
-              <PlaybackProgress
-                progress={playback.progress}
-                statusText={playback.statusText}
-                audioPosition={playback.audioPosition}
-                onSeek={playback.seekAudio}
-              />
 
               <Pager
                 current={currentSlide}
@@ -617,13 +615,21 @@ function LectureFullscreenView({
   const pageAspect = renderedPageAspectNumber(slide.rendered_page)
 
   return (
-    <div className="fixed inset-0 z-[80] flex flex-col bg-slate-950 text-white">
-      <main className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden p-0 sm:p-1">
+    <div className="fixed inset-0 z-[80] flex flex-col overflow-hidden bg-slate-950 text-white">
+      <button
+        type="button"
+        onClick={onExit}
+        className="absolute right-3 top-3 z-10 inline-flex min-h-10 items-center gap-2 rounded-lg border border-white/20 bg-slate-950/85 px-3 text-sm font-medium text-white shadow-lg backdrop-blur transition hover:bg-slate-800"
+      >
+        <Minimize2 size={17} />
+        退出全屏
+      </button>
+      <main className="relative flex min-h-0 flex-1 basis-0 items-center justify-center overflow-hidden p-0 sm:p-1">
         <div
-          className="relative max-h-[calc(100dvh-112px)] max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15 sm:max-h-[calc(100dvh-92px)]"
+          className="relative max-h-full max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
           style={{
             aspectRatio: renderedPageAspectRatio(slide.rendered_page),
-            width: `min(100vw, calc((100dvh - 112px) * ${pageAspect}))`,
+            width: `min(100vw, calc((100dvh - 164px) * ${pageAspect}))`,
           }}
         >
           {hasVisualContent ? (
@@ -634,7 +640,7 @@ function LectureFullscreenView({
         </div>
       </main>
 
-      <footer className="border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
+      <footer className="max-h-[42dvh] shrink-0 overflow-y-auto border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
         <div className="mx-auto max-w-[1800px]">
           <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/60">
             <span>课程进度</span>

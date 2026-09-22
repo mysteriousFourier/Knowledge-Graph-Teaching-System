@@ -4,7 +4,7 @@ from KGTS.education.router import _plan_slide_speech_cues_with_model
 from KGTS.models.education import PlanSlideSpeechRequest
 
 
-def test_plan_slide_speech_falls_back_to_normalized_cue(monkeypatch):
+def test_plan_slide_speech_disables_repeat_cues(monkeypatch):
     async def fail_model_call(*args, **kwargs):
         raise RuntimeError("model unavailable")
 
@@ -22,6 +22,4 @@ def test_plan_slide_speech_falls_back_to_normalized_cue(monkeypatch):
         )
     )
 
-    assert len(cues) == 1
-    assert cues[0]["type"] == "repeat"
-    assert cues[0]["target_text"] in lecture
+    assert cues == []

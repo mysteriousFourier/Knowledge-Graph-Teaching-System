@@ -731,6 +731,7 @@ def build_lecture_gc_dpg_requirements(style: str, *, slide_level: bool = False) 
         "When introducing a core concept, formula, theorem, or example from the evidence, keep its original term or formula label in the first mention, then explain it naturally.",
         "Mention technical terms only where they are needed to explain a definition, formula, relation, example, or misconception.",
         "Avoid clustered lists of names or concepts. Prefer short explanatory paragraphs, examples, teacher questions, and transitions.",
+        "State each concept and conclusion once. Never repeat or restate a point for emphasis; every idea should be explained in one clear pass.",
         "Keep English source terms, formulas, variables, and key definitions in English when the source is English; Chinese explanation may support but must not change the meaning.",
         "Do not add provenance labels, entity sections, extraction sections, AI-origin labels, HTML spans, JSON, notes, or self-check text.",
     ]

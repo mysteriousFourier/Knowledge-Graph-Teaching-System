@@ -2454,11 +2454,10 @@ def _attach_slide_lecture_timing(
     speech_rate_cpm: int,
 ) -> Dict[str, Any]:
     lecture = str(item.get("lecture") or "")
-    if "speech_cues" not in item:
-        item["speech_cues"] = _fallback_speech_cues_for_lecture(lecture, max_cues=1)
-    else:
-        item["speech_cues"] = normalize_speech_cues(lecture, item.get("speech_cues"), max_repeat_cues=2)
-    spoken_text = apply_speech_cues_for_tts(lecture, item.get("speech_cues") or [])
+    # Keep the field stable for older clients, but never generate or apply
+    # repeat cues. Each point should be spoken once without emphasis loops.
+    item["speech_cues"] = []
+    spoken_text = lecture
     estimated_chars = _count_speech_chars(spoken_text)
     target_chars = int((pacing or {}).get("target_chars") or max(estimated_chars, 0))
     item["target_chars"] = target_chars
@@ -2529,44 +2528,9 @@ def _parse_speech_plan_payload(raw: str) -> List[Dict[str, Any]]:
 
 
 async def _plan_slide_speech_cues_with_model(request: PlanSlideSpeechRequest) -> List[Dict[str, str]]:
-    lecture = str(request.lecture or "").strip()
-    max_cues = max(0, min(int(request.max_cues or 1), 3))
-    if not lecture or max_cues <= 0:
-        return []
-    slide = request.slide or {}
-    slide_text = _compact_slide_for_lecture(slide, max_chars=900) if isinstance(slide, dict) else ""
-    prompt = f"""请为一页 PPT 讲稿生成语音规划，只标记真正需要口播重复的重点。
-
-课程标题：{request.chapter_title or ""}
-页面标题：{slide.get("title", "") if isinstance(slide, dict) else ""}
-
-页面内容：
-{slide_text}
-
-讲稿正文：
-{lecture}
-
-约束：
-1. 只返回 JSON，不要解释。
-2. JSON 格式为 {{"speech_cues":[{{"type":"repeat","target_text":"讲稿中的原句或短语","style":"key_point","priority":1}}]}}。
-3. target_text 必须是讲稿正文中逐字存在的连续文本，不要改写，不要新增讲稿里没有的句子。
-4. 最多返回 {max_cues} 个重点；如果没有值得重复的重点，返回 {{"speech_cues":[]}}。
-5. target_text 长度控制在 10 到 80 个字符，优先选择承载本页结论、定义、公式含义或易错点的短句。
-"""
-    if request.teacher_guidance:
-        prompt += "\n教师强调偏好：\n" + _truncate_for_prompt(str(request.teacher_guidance), 500)
-    client = DeepSeekAPIClient(api_key=request.api_key, model=request.model or get_deepseek_model("flash"))
-    try:
-        raw = await client._call_deepseek(
-            prompt,
-            max_tokens=900,
-            system_prompt=KG_CONSTRAINED_SYSTEM_PROMPT,
-            read_timeout_seconds=60,
-        )
-        cues = normalize_speech_cues(lecture, _parse_speech_plan_payload(raw), max_repeat_cues=max_cues)
-    except Exception:
-        cues = []
-    return cues or _fallback_speech_cues_for_lecture(lecture, max_cues=max_cues)
+    # Repetition planning is intentionally disabled. Keep this endpoint
+    # available so older clients can call it, but return no cues.
+    return []
 
 
 def _summarize_slide_lecture_pacing(slide_lectures: List[Dict[str, Any]], pacing: Dict[str, Any]) -> Dict[str, Any]:
@@ -3643,6 +3607,7 @@ async def _generate_per_slide_lectures(
             "When the same symbol can mean different things elsewhere, explain only the meaning in this slide/chapter scope.",
             "If a formula is derived from earlier formulas, mention the immediate derivation dependency in teacher-friendly language.",
             "Use the neighboring-slide context only to add one natural transition sentence when helpful; do not teach the previous or next slide here.",
+            "State every concept, conclusion, and instruction once. Do not repeat a sentence, restate a key point, or add emphasis by saying the same thing again.",
             "If you ask a classroom question, answer it immediately after asking. Keep the question supportive rather than requiring students to solve a new open-ended problem alone.",
             "Output directly usable Markdown prose for this slide. Do not output analysis, reasoning, planning notes, entity selection notes, or comments about the prompt.",
         ]

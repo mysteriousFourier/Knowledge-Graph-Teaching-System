@@ -28,7 +28,7 @@ from KGTS.core.tts_service import (
     tts_audio_cache,
     validate_wav_audio_file,
 )
-from KGTS.core.tts_text import apply_speech_cues_for_tts, normalize_tts_text
+from KGTS.core.tts_text import normalize_tts_text
 from KGTS.core.tts_text import resolve_genie_tts_language
 
 
@@ -229,8 +229,9 @@ def _normalize_payload_text(
     *,
     provider: str | None = None,
 ):
-    cues = [cue.model_dump() if hasattr(cue, "model_dump") else cue.dict() for cue in speech_cues or []]
-    planned_text = apply_speech_cues_for_tts(text, cues)
+    # Ignore legacy repeat cues so cached and newly synthesized audio always
+    # uses the original narration exactly once.
+    planned_text = str(text or "")
     return normalize_tts_text(
         planned_text,
         default_language,
@@ -407,7 +408,9 @@ async def _run_course_tts_job(job_id: str, request: TtsCourseJobRequest) -> None
             for slide in request.slides:
                 if job.get("cancel_requested"):
                     break
-                speech_cues = [cue for cue in slide.speech_cues or [] if cue.target_text.strip()]
+                # Repeat cues are legacy metadata only; they must not affect
+                # the generated course audio or its cache key.
+                speech_cues: list[TtsSpeechCue] = []
                 should_split = len(slide.text) > request.max_chars and not single_request
                 if should_split:
                     _update_course_job(

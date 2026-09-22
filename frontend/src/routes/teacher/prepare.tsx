@@ -37,7 +37,6 @@ import {
   useGeneratePptTex,
   useGenerateSlideLectures,
   useGraphNodeContext,
-  usePlanSlideSpeech,
   usePreviewTex,
   usePreviewPpt,
   useSaveCoursewareProject,
@@ -77,7 +76,6 @@ import type {
   PptSlideLecture,
   SourceDriftReport,
   CoursewareProject,
-  SpeechCue,
   TtsCourseJobResponse,
 } from "@/types/education"
 import type { Chapter } from "@/types/chapter"
@@ -1391,7 +1389,6 @@ function TeacherPreparePage() {
   const generateUploadedPptLectures = useGeneratePptLectures()
   const generatePptTex = useGeneratePptTex()
   const generateSlideLectures = useGenerateSlideLectures()
-  const planSlideSpeech = usePlanSlideSpeech()
   const deleteCoursewareProject = useDeleteCoursewareProject()
   const deleteChapter = useDeleteChapter()
   const saveChapter = useSaveChapter()
@@ -1444,7 +1441,6 @@ function TeacherPreparePage() {
   const hasGeneratedSlideLectures = useMemo(() => slideLectures.some(hasUsableSlideLecture), [slideLectures])
   const durationDraftChanged = durationDraftMinutes !== targetDurationMinutes
   const selectedLectureError = selectedLecture?.error?.trim() || ""
-  const selectedSpeechCueCount = selectedLecture?.speech_cues?.length || 0
   const lectureStatusText = hasUsableSlideLecture(selectedLecture)
     ? "已生成"
     : selectedLectureError
@@ -2166,34 +2162,6 @@ function TeacherPreparePage() {
     }
   }
 
-  const handlePlanCurrentSpeech = async () => {
-    if (!preview?.slides.length || !selectedSlide || !selectedLecture?.lecture?.trim()) return
-    setStatus("")
-    try {
-      const result = await planSlideSpeech.mutateAsync({
-        chapter_title: effectiveCoursewareTitle(),
-        slide: compactSlideForLectureRequest(selectedSlide),
-        lecture: selectedLecture.lecture,
-        max_cues: 1,
-        teacher_guidance: teacherGuidance,
-      })
-      setSlideLectures((previous) =>
-        previous.map((item) =>
-          (selectedLecture.slide_id ? item.slide_id === selectedLecture.slide_id : item.index === selectedLecture.index)
-            ? {
-                ...item,
-                speech_cues: result.speech_cues || [],
-                estimated_chars: result.estimated_chars ?? item.estimated_chars,
-              }
-            : item,
-        ),
-      )
-      setStatus((result.speech_cues || []).length ? `已更新第 ${selectedLecture.index} 页语音规划` : `第 ${selectedLecture.index} 页没有需要重复强调的重点`)
-    } catch (error) {
-      setStatus(`语音规划生成失败：${errorMessage(error)}`)
-    }
-  }
-
   const handleStopCourseAudio = async () => {
     courseAudioAbortRef.current = true
     if (!activeCourseAudioJob) {
@@ -2216,12 +2184,10 @@ function TeacherPreparePage() {
       .map((slide, position) => {
         const lecture = slideLectures.find((item) => (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index)
         const text = (lecture?.lecture || slide.notes || slide.content || slide.raw_text || "").trim()
-        const speechCues = (lecture?.speech_cues || []).filter((cue) => cue.target_text?.trim())
         return {
           slide,
           position,
           text,
-          speechCues,
         }
       })
       .filter((item) => item.text)
@@ -2254,7 +2220,7 @@ function TeacherPreparePage() {
           slide_index: Number(item.slide.index),
           position: item.position,
           text: item.text,
-          speech_cues: item.speechCues as SpeechCue[],
+          speech_cues: [],
         })),
       })
       const storedJob = {
@@ -3178,9 +3144,7 @@ function TeacherPreparePage() {
             <div className="flex flex-wrap items-center gap-2">
               <h2 className="font-semibold">对应讲解</h2>
               <span className="text-xs text-muted-foreground">状态：{lectureStatusText}</span>
-              <span className="text-xs text-muted-foreground">
-                语音规划：{selectedSpeechCueCount ? `已标记 ${selectedSpeechCueCount} 个重点` : "未标记"}
-              </span>
+              <span className="text-xs text-muted-foreground">语音：按讲稿顺序逐页朗读</span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               {preview?.slides.length ? (
@@ -3195,15 +3159,6 @@ function TeacherPreparePage() {
               >
                 <Clipboard size={15} />
                 复制
-              </button>
-              <button
-                onClick={handlePlanCurrentSpeech}
-                disabled={!selectedLecture?.lecture || planSlideSpeech.isPending}
-                className="inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm text-muted-foreground hover:bg-accent disabled:opacity-50"
-                title="只重算当前页语音重点，不改写讲稿正文"
-              >
-                {planSlideSpeech.isPending ? <LoadingSpinner size={15} /> : <Wand2 size={15} />}
-                语音规划
               </button>
               <button
                 onClick={lecturePlayback.toggle}

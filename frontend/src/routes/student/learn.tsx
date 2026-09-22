@@ -196,12 +196,6 @@ function LearnPage() {
                   当前状态：{statusLabel(selectedProgress.status)} · 正确 {selectedProgress.correct_count || 0} · 错误 {selectedProgress.wrong_count || 0}
                 </div>
               )}
-              <PlaybackProgress
-                progress={playback.progress}
-                statusText={playback.statusText}
-                audioPosition={playback.audioPosition}
-                onSeek={playback.seekAudio}
-              />
               <div className="p-4">
                 {isCoursewareChapter && currentCoursewareSlide ? (
                   <div className="space-y-5">
@@ -221,6 +215,12 @@ function LearnPage() {
                   <EmptyState title="暂无内容" description="该章节暂无课程内容" />
                 )}
               </div>
+              <PlaybackProgress
+                progress={playback.progress}
+                statusText={playback.statusText}
+                audioPosition={playback.audioPosition}
+                onSeek={playback.seekAudio}
+              />
               {isCoursewareChapter && coursewareSlides.length ? (
                 <StudyPager
                   current={currentSlide}

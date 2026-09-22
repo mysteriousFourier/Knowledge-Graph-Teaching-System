@@ -385,12 +385,6 @@ function LecturePage() {
             </div>
           ) : isCoursewareChapter && coursewareSlides.length ? (
             <>
-              <PlaybackProgress
-                progress={playback.progress}
-                statusText={playback.statusText}
-                audioPosition={playback.audioPosition}
-                onSeek={playback.seekAudio}
-              />
               <div>
                 <div className="border-b p-4 xl:p-5">
                   {currentCoursewareSlide ? (
@@ -440,6 +434,13 @@ function LecturePage() {
                 </section>
               </div>
 
+              <PlaybackProgress
+                progress={playback.progress}
+                statusText={playback.statusText}
+                audioPosition={playback.audioPosition}
+                onSeek={playback.seekAudio}
+              />
+
               <Pager
                 current={currentSlide}
                 total={coursewareSlides.length}
@@ -450,12 +451,6 @@ function LecturePage() {
             </>
           ) : markdownSlides.length > 0 ? (
             <>
-              <PlaybackProgress
-                progress={playback.progress}
-                statusText={playback.statusText}
-                audioPosition={playback.audioPosition}
-                onSeek={playback.seekAudio}
-              />
               <div className="min-h-[240px] p-4 sm:min-h-[300px] sm:p-6">
                 <RichTextContent content={markdownSlides[currentSlide]} />
                 <LectureReviewPanel
@@ -464,6 +459,13 @@ function LecturePage() {
                   consistencyReport={selectedChapter.lecture_consistency_report}
                 />
               </div>
+
+              <PlaybackProgress
+                progress={playback.progress}
+                statusText={playback.statusText}
+                audioPosition={playback.audioPosition}
+                onSeek={playback.seekAudio}
+              />
 
               <Pager
                 current={currentSlide}
@@ -616,12 +618,12 @@ function LectureFullscreenView({
 
   return (
     <div className="fixed inset-0 z-[80] flex flex-col bg-slate-950 text-white">
-      <main className="flex min-h-0 flex-1 items-center justify-center p-3 sm:p-5">
+      <main className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden p-0 sm:p-1">
         <div
-          className="relative max-h-[calc(100dvh-150px)] overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
+          className="relative max-h-[calc(100dvh-112px)] max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15 sm:max-h-[calc(100dvh-92px)]"
           style={{
             aspectRatio: renderedPageAspectRatio(slide.rendered_page),
-            width: `min(100%, calc((100dvh - 150px) * ${pageAspect}))`,
+            width: `min(100vw, calc((100dvh - 112px) * ${pageAspect}))`,
           }}
         >
           {hasVisualContent ? (
@@ -632,8 +634,20 @@ function LectureFullscreenView({
         </div>
       </main>
 
-      <footer className="border-t border-white/10 bg-slate-950/95 px-3 py-3 shadow-2xl sm:px-5">
-        <div className="mx-auto grid max-w-7xl gap-3 lg:grid-cols-[auto_minmax(220px,1fr)_auto_auto_minmax(240px,0.65fr)_auto] lg:items-center">
+      <footer className="border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
+        <div className="mx-auto max-w-[1800px]">
+          <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/60">
+            <span>课程进度</span>
+            <span>{playback.progress.total > 0 ? `${playback.progress.ready}/${playback.progress.total}` : "--"}</span>
+          </div>
+          <div className="h-1 overflow-hidden rounded-full bg-white/15" aria-label="课程进度">
+            <div
+              className="h-full rounded-full bg-primary transition-[width] duration-300"
+              style={{ width: `${playback.progress.total > 0 ? Math.max(playback.progress.percent, playback.progress.isActive ? 6 : 0) : 0}%` }}
+            />
+          </div>
+        </div>
+        <div className="mx-auto mt-2 grid max-w-[1800px] gap-2 lg:grid-cols-[auto_minmax(220px,1fr)_auto_auto_minmax(220px,0.65fr)_auto] lg:items-center">
           <button
             type="button"
             onClick={onPrev}

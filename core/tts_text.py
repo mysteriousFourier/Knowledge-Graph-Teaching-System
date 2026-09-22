@@ -959,14 +959,9 @@ def normalize_speech_cues(text: str, speech_cues: list[dict[str, Any]] | None, *
 
 
 def apply_speech_cues_for_tts(text: str, speech_cues: list[dict[str, Any]] | None) -> str:
-    result = str(text or "")
-    for cue in normalize_speech_cues(result, speech_cues):
-        target = cue["target_text"]
-        if target not in result:
-            continue
-        replacement = f"{target}。这个关键点我们再说一遍，{target}。"
-        result = result.replace(target, replacement, 1)
-    return result
+    # Speech cues are retained as a backwards-compatible payload field, but
+    # narration must remain a single pass: no cue may inject repeated text.
+    return str(text or "")
 
 
 def remove_parenthetical_asides_for_speech(text: str) -> str:

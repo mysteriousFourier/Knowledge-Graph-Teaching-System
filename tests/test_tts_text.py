@@ -69,12 +69,12 @@ def test_normalize_tts_text_does_not_repeat_markdown_bold_emphasis() -> None:
     assert normalized.count("最终响应依赖有效群体大小") == 1
 
 
-def test_apply_speech_cues_repeats_valid_target_text() -> None:
+def test_apply_speech_cues_ignores_legacy_repeat_target_text() -> None:
     text = "最终响应依赖有效群体大小。后面我们再看固定概率。"
     planned = apply_speech_cues_for_tts(text, [{"type": "repeat", "target_text": "最终响应依赖有效群体大小"}])
 
-    assert "这个关键点我们再说一遍" in planned
-    assert planned.count("最终响应依赖有效群体大小") == 2
+    assert planned == text
+    assert planned.count("最终响应依赖有效群体大小") == 1
 
 
 def test_normalize_speech_cues_rejects_missing_target_text() -> None:

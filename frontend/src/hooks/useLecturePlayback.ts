@@ -295,7 +295,9 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
       setPlaybackError("当前片段没有可朗读文本")
       return
     }
-    const speechCues = getSegmentSpeechCues?.(resolvedSegment)?.filter((cue) => cue.target_text?.trim()) || []
+    // Repetition cues are intentionally disabled. Older saved lectures may
+    // still contain them, but playback must read each sentence only once.
+    const speechCues: SpeechCue[] = []
 
     const forceSynthesis = forceNextPlayRef.current
     forceNextPlayRef.current = false
@@ -482,12 +484,10 @@ export function useLecturePlayback({ segmentCount, initialSegment = 0, getSegmen
       setPlaybackError("当前片段没有可朗读文本")
       return
     }
-    const speechCues = getSegmentSpeechCues?.(clamped)?.filter((cue) => cue.target_text?.trim()) || []
-    const cueHash = stableSpeechCueHash(speechCues)
     const segmentId = getSegmentId?.(clamped) || `segment-${clamped + 1}`
     const chunkKeyPrefix = chapterId ? `${chapterId}:${segmentId}:` : `${sourceText}:`
     for (const key of Array.from(synthesizedRef.current.keys())) {
-      if (key.startsWith(chunkKeyPrefix) || key.includes(`${stableTextHash(sourceText)}:${cueHash}`)) {
+      if (key.startsWith(chunkKeyPrefix) || key.includes(stableTextHash(sourceText))) {
         synthesizedRef.current.delete(key)
       }
     }

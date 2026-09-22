@@ -399,6 +399,7 @@ class DeepSeekAPIClient:
             "Use an evidence-first order: start from chapter content and retrieved evidence, then connect only the few necessary terms into a coherent teaching flow.",
             "When graph relation paths are provided, use them to decide the teaching order instead of listing graph entities.",
             "When formula derivation or scoped symbol context is provided, explain only the symbols in the current chapter/formula scope and mention immediate derivation dependencies where useful.",
+            "State each concept and conclusion once. Do not repeat, restate, or emphasize a point by saying the same idea multiple times.",
             "Keep the length around 1400-2200 Chinese characters when possible; if the material is complex, prioritize completeness and do not cut off abruptly.",
             "Output only the lecture script itself.",
         ]

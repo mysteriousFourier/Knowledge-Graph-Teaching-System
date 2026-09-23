@@ -390,6 +390,13 @@ function LecturePage() {
                 audioPosition={playback.audioPosition}
                 onSeek={playback.seekAudio}
               />
+              <Pager
+                current={currentSlide}
+                total={coursewareSlides.length}
+                onPrev={() => playback.setCurrentSegment((prev) => prev - 1)}
+                onNext={() => playback.setCurrentSegment((prev) => prev + 1)}
+                onJump={(next) => playback.setCurrentSegment(next)}
+              />
               <div>
                 <div className="border-b p-4 xl:p-5">
                   {currentCoursewareSlide ? (
@@ -429,13 +436,6 @@ function LecturePage() {
                 </section>
               </div>
 
-              <Pager
-                current={currentSlide}
-                total={coursewareSlides.length}
-                onPrev={() => playback.setCurrentSegment((prev) => prev - 1)}
-                onNext={() => playback.setCurrentSegment((prev) => prev + 1)}
-                onJump={(next) => playback.setCurrentSegment(next)}
-              />
             </>
           ) : markdownSlides.length > 0 ? (
             <>
@@ -445,11 +445,6 @@ function LecturePage() {
                 audioPosition={playback.audioPosition}
                 onSeek={playback.seekAudio}
               />
-              <div className="min-h-[240px] p-4 sm:min-h-[300px] sm:p-6">
-                <RichTextContent content={markdownSlides[currentSlide]} />
-                <SourceNodeSummary nodeIds={selectedChapter.lecture_source_node_ids || selectedChapter.source_node_ids} />
-              </div>
-
               <Pager
                 current={currentSlide}
                 total={markdownSlides.length}
@@ -457,6 +452,11 @@ function LecturePage() {
                 onNext={() => playback.setCurrentSegment((prev) => prev + 1)}
                 onJump={(next) => playback.setCurrentSegment(next)}
               />
+              <div className="min-h-[240px] p-4 sm:min-h-[300px] sm:p-6">
+                <RichTextContent content={markdownSlides[currentSlide]} />
+                <SourceNodeSummary nodeIds={selectedChapter.lecture_source_node_ids || selectedChapter.source_node_ids} />
+              </div>
+
             </>
           ) : (
             <div className="p-8">

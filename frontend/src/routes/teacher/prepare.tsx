@@ -8,6 +8,7 @@ import {
   Clipboard,
   Copy,
   Download,
+  Edit3,
   FileText,
   FileUp,
   ImagePlus,
@@ -191,6 +192,31 @@ function mergeSlideLectures(previous: PptSlideLecture[], incoming: PptSlideLectu
     byIndex.set(lecture.slide_id || `index-${lecture.index}`, lecture)
   })
   return Array.from(byIndex.values()).sort((a, b) => a.index - b.index)
+}
+
+function updateSlideLectureText(slideLectures: PptSlideLecture[], slide: PptSlideDetail, lecture: string) {
+  const matchesSlide = (item: PptSlideLecture) =>
+    (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index
+  let updated = false
+  const next = slideLectures.map((item) => {
+    if (!matchesSlide(item)) return item
+    updated = true
+    return { ...item, lecture }
+  })
+  if (updated) return next
+  return [
+    ...next,
+    { index: slide.index, slide_id: slide.slide_id, title: slide.title, lecture, skipped: false },
+  ].sort((a, b) => a.index - b.index)
+}
+
+function mergeSlideLectureContent(slideLectures: PptSlideLecture[]) {
+  return slideLectures
+    .map((item) => {
+      const body = item.lecture?.trim() || "_本页未生成文案_"
+      return `## 第${item.index} 页：${item.title || ""}\n\n${body}`
+    })
+    .join("\n\n---\n\n")
 }
 
 function inheritSlideLecturesForSlides(slides: PptSlideDetail[], previous: PptSlideLecture[]) {
@@ -1348,6 +1374,8 @@ function TeacherPreparePage() {
   const [pptArtifact, setPptArtifact] = useState<PptArtifact | null>(null)
   const [slideLectures, setSlideLectures] = useState<PptSlideLecture[]>([])
   const slideLecturesRef = useRef<PptSlideLecture[]>([])
+  const [editingLectureIndex, setEditingLectureIndex] = useState<number | null>(null)
+  const [lectureDraft, setLectureDraft] = useState("")
   const [selectedIndex, setSelectedIndex] = useState(1)
   const [pptNodeIds, setPptNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
   const [lectureNodeIds, setLectureNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
@@ -1421,6 +1449,7 @@ function TeacherPreparePage() {
 
   const selectedSlide = preview?.slides.find((slide) => slide.index === selectedIndex)
   const selectedLecture = slideLectures.find((lecture) => lecture.slide_id === selectedSlide?.slide_id) || slideLectures.find((lecture) => lecture.index === selectedIndex)
+  const isEditingSelectedLecture = editingLectureIndex === selectedIndex
   const selectedSlideFeedback = selectedSlide ? slideFeedbackDrafts[selectedSlide.index] || "" : ""
   const nodes = useMemo(() => scopeTreeData?.nodes || [], [scopeTreeData?.nodes])
   const relationships = useMemo(() => scopeTreeData?.relationships || [], [scopeTreeData?.relationships])
@@ -2111,6 +2140,52 @@ function TeacherPreparePage() {
     }))
   }
 
+  const handleStartCurrentLectureEdit = () => {
+    if (!selectedSlide) return
+    setEditingLectureIndex(selectedSlide.index)
+    setLectureDraft(selectedLecture?.lecture || "")
+    lecturePlayback.pause()
+    setStatus("")
+  }
+
+  const handleCancelCurrentLectureEdit = () => {
+    setEditingLectureIndex(null)
+    setLectureDraft("")
+    setStatus("")
+  }
+
+  const handleSaveCurrentLecture = async () => {
+    if (!selectedSlide || editingLectureIndex !== selectedSlide.index) return
+    const updatedSlideLectures = updateSlideLectureText(slideLectures, selectedSlide, lectureDraft)
+    const previousSlideLectures = slideLectures
+    setSlideLectures(updatedSlideLectures)
+    try {
+      if (chapterId && !chapterId.startsWith("cw_")) {
+        const result = await saveLecture.mutateAsync({
+          chapter_id: chapterId,
+          course_id: courseId || undefined,
+          lecture_content: mergeSlideLectureContent(updatedSlideLectures),
+          learning_plan: savedTeacherChapter.data?.chapter?.lecture_learning_plan,
+          slide_lectures: updatedSlideLectures,
+        })
+        if (!result.success) throw new Error("保存本页讲稿失败")
+        await Promise.all([
+          queryClient.invalidateQueries({ queryKey: ["teacher-chapter", chapterId] }),
+          queryClient.invalidateQueries({ queryKey: ["teacher-chapters"] }),
+          queryClient.invalidateQueries({ queryKey: ["student-chapters"] }),
+        ])
+      } else if (chapterId.startsWith("cw_") || projectId) {
+        await handleSaveCoursewareProject(updatedSlideLectures)
+      }
+      setEditingLectureIndex(null)
+      setLectureDraft("")
+      setStatus(`第 ${selectedSlide.index} 页讲稿已保存`)
+    } catch (error) {
+      setSlideLectures(previousSlideLectures)
+      setStatus(`第 ${selectedSlide.index} 页讲稿保存失败：${errorMessage(error)}`)
+    }
+  }
+
   const handleRegenerateCurrentLecture = async () => {
     if (!preview?.slides.length || !selectedSlide) return
     setStatus("")
@@ -2545,7 +2620,7 @@ function TeacherPreparePage() {
     setStatus("已移除参考风格约束")
   }
 
-  const handleSaveCoursewareProject = async () => {
+  const handleSaveCoursewareProject = async (lectures = slideLectures) => {
     if (!editableModel) return
     const title = effectiveCoursewareTitle(file?.name.replace(/\.[^.]+$/, ""), "未命名课件")
     const modelForSave = currentEditableModelForSave(title)
@@ -2567,7 +2642,7 @@ function TeacherPreparePage() {
       lecture_target_duration_minutes: targetDurationMinutes,
       lecture_speech_rate_cpm: DEFAULT_SPEECH_RATE_CPM,
       lecture_pacing: currentLecturePacingForSave(),
-      slide_lectures: slideLectures,
+      slide_lectures: lectures,
     })
     setProjectId(result.project_id)
     navigate({ to: "/teacher/prepare", search: { chapterId: result.project_id, nodeId: "", courseId }, replace: true })
@@ -2800,7 +2875,7 @@ function TeacherPreparePage() {
             整理布局
           </button>
           <button
-            onClick={handleSaveCoursewareProject}
+            onClick={() => handleSaveCoursewareProject()}
             disabled={!editableModel || saveCoursewareProject.isPending}
             className="inline-flex items-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent disabled:opacity-50"
           >
@@ -3064,6 +3139,7 @@ function TeacherPreparePage() {
               slides={preview?.slides || []}
               selectedIndex={selectedIndex}
               isLoading={isGeneratingPpt}
+              disabled={editingLectureIndex !== null}
               onSelect={setSelectedIndex}
             />
             <div className="min-w-0 space-y-4">
@@ -3153,9 +3229,37 @@ function TeacherPreparePage() {
                   第 {selectedIndex} / {preview.slides.length} 页
                 </span>
               ) : null}
+              {isEditingSelectedLecture ? (
+                <>
+                  <button
+                    onClick={handleSaveCurrentLecture}
+                    disabled={saveLecture.isPending || saveCoursewareProject.isPending}
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-2.5 py-1 text-sm font-medium text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
+                  >
+                    {saveLecture.isPending || saveCoursewareProject.isPending ? <LoadingSpinner size={15} /> : <Save size={15} />}
+                    保存本页
+                  </button>
+                  <button
+                    onClick={handleCancelCurrentLectureEdit}
+                    disabled={saveLecture.isPending || saveCoursewareProject.isPending}
+                    className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-sm hover:bg-accent disabled:opacity-50"
+                  >
+                    取消
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={handleStartCurrentLectureEdit}
+                  disabled={!selectedSlide || isGeneratingLectures}
+                  className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-sm text-primary hover:bg-primary/10 disabled:opacity-50"
+                >
+                  <Edit3 size={15} />
+                  编辑本页
+                </button>
+              )}
               <button
                 onClick={handleCopy}
-                disabled={!selectedLecture?.lecture}
+                disabled={!selectedLecture?.lecture || isEditingSelectedLecture}
                 className="inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm text-muted-foreground hover:bg-accent disabled:opacity-50"
               >
                 <Clipboard size={15} />
@@ -3163,7 +3267,7 @@ function TeacherPreparePage() {
               </button>
               <button
                 onClick={lecturePlayback.toggle}
-                disabled={!selectedLecture?.lecture}
+                disabled={!selectedLecture?.lecture || isEditingSelectedLecture}
                 className={cn(
                   "inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm hover:bg-accent disabled:opacity-50",
                   lecturePlayback.isPlaying ? "text-amber-700" : "text-primary",
@@ -3175,7 +3279,7 @@ function TeacherPreparePage() {
               </button>
               <button
                 onClick={() => lecturePlayback.replay(Math.max(0, (preview?.slides || []).findIndex((slide) => slide.index === selectedIndex)))}
-                disabled={!selectedLecture?.lecture}
+                disabled={!selectedLecture?.lecture || isEditingSelectedLecture}
                 className="inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm text-muted-foreground hover:bg-accent disabled:opacity-50"
               >
                 <RotateCcw size={15} />
@@ -3200,7 +3304,16 @@ function TeacherPreparePage() {
                 <div className="mt-2 text-xs text-muted-foreground">点击“重生成当前页”时仅作用于当前页，不影响其他页面文案。</div>
               </div>
             ) : null}
-            {hasUsableSlideLecture(selectedLecture) ? (
+            {isEditingSelectedLecture ? (
+              <textarea
+                value={lectureDraft}
+                onChange={(event) => setLectureDraft(event.target.value)}
+                placeholder="输入本页讲稿，支持 Markdown、$...$ 和 $$...$$ 公式"
+                aria-label={`第 ${selectedIndex} 页讲稿`}
+                autoFocus
+                className="min-h-[220px] w-full resize-y rounded-lg border bg-background px-3 py-2.5 font-mono text-sm leading-relaxed focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
+            ) : hasUsableSlideLecture(selectedLecture) ? (
               <div className="space-y-4">
                 <SourceNodeSummary nodeIds={selectedLecture.source_node_ids || lectureNodeIds || pptNodeIds} />
                 <RichTextContent content={selectedLecture.lecture} />
@@ -3417,11 +3530,13 @@ function SlideList({
   slides,
   selectedIndex,
   isLoading,
+  disabled = false,
   onSelect,
 }: {
   slides: PptSlideDetail[]
   selectedIndex: number
   isLoading: boolean
+  disabled?: boolean
   onSelect: (index: number) => void
 }) {
   return (
@@ -3438,9 +3553,10 @@ function SlideList({
             <button
               key={slide.index}
               onClick={() => onSelect(slide.index)}
+              disabled={disabled}
               title={`第 ${slide.index} 页：${slide.title || "无标题"}`}
               className={cn(
-                "w-full rounded-lg border px-3 py-2 text-left text-sm transition-colors",
+                "w-full rounded-lg border px-3 py-2 text-left text-sm transition-colors disabled:cursor-not-allowed disabled:opacity-60",
                 selectedIndex === slide.index ? "border-primary bg-primary/10 text-primary" : "hover:bg-accent",
               )}
             >

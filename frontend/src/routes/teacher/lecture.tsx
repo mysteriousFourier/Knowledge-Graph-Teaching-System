@@ -613,23 +613,62 @@ function LectureFullscreenView({
   const hasVisualContent = Boolean(slide.title || slide.content || slide.raw_text || images.length || slide.tables?.length)
   const canSeek = Boolean(playback.audioPosition.seekable)
   const pageAspect = renderedPageAspectNumber(slide.rendered_page)
+  const coursePercent = total > 0 ? ((current + 1) / total) * 100 : 0
 
   return (
     <div className="fixed inset-0 z-[80] flex flex-col overflow-hidden bg-slate-950 text-white">
-      <button
-        type="button"
-        onClick={onExit}
-        className="absolute right-3 top-3 z-10 inline-flex min-h-10 items-center gap-2 rounded-lg border border-white/20 bg-slate-950/85 px-3 text-sm font-medium text-white shadow-lg backdrop-blur transition hover:bg-slate-800"
-      >
-        <Minimize2 size={17} />
-        退出全屏
-      </button>
+      <header className="shrink-0 border-b border-white/10 bg-slate-950/95 px-3 py-2 shadow-xl sm:px-4">
+        <div className="mx-auto max-w-[1800px] space-y-2">
+          <div className="flex items-center gap-3">
+            <div className="min-w-0 flex-1">
+              <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/70">
+                <span>课程进度</span>
+                <span>第 {current + 1} / {total} 页</span>
+              </div>
+              <input
+                type="range"
+                min={1}
+                max={Math.max(total, 1)}
+                step={1}
+                value={current + 1}
+                aria-label="全屏课程进度"
+                onChange={(event) => onJump(Number(event.target.value) - 1)}
+                className="h-2 w-full cursor-pointer accent-primary"
+                style={{ backgroundSize: `${coursePercent}% 100%` }}
+              />
+            </div>
+            <button
+              type="button"
+              onClick={onExit}
+              className="inline-flex min-h-10 shrink-0 items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-3 text-sm font-medium text-white shadow-lg transition hover:bg-white/20"
+            >
+              <Minimize2 size={17} />
+              退出全屏
+            </button>
+          </div>
+          <div className="grid gap-1 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center sm:gap-3">
+            <span className="text-[11px] text-white/70">单页语音进度</span>
+            <input
+              type="range"
+              min={0}
+              max={100}
+              step={0.1}
+              value={playback.audioPosition.percent || 0}
+              disabled={!canSeek}
+              aria-label="全屏单页语音进度"
+              onChange={(event) => playback.seekAudio(Number(event.target.value))}
+              className="h-2 w-full cursor-pointer accent-primary disabled:cursor-not-allowed disabled:opacity-35"
+            />
+            <span className="truncate text-right text-[11px] text-white/70 sm:max-w-64">{playback.statusText}</span>
+          </div>
+        </div>
+      </header>
       <main className="relative flex min-h-0 flex-1 basis-0 items-center justify-center overflow-hidden p-0 sm:p-1">
         <div
           className="relative max-h-full max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
           style={{
             aspectRatio: renderedPageAspectRatio(slide.rendered_page),
-            width: `min(100vw, calc((100dvh - 164px) * ${pageAspect}))`,
+            width: `min(100vw, calc((100dvh - 154px) * ${pageAspect}))`,
           }}
         >
           {hasVisualContent ? (
@@ -640,20 +679,8 @@ function LectureFullscreenView({
         </div>
       </main>
 
-      <footer className="max-h-[42dvh] shrink-0 overflow-y-auto border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
-        <div className="mx-auto max-w-[1800px]">
-          <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/60">
-            <span>课程进度</span>
-            <span>{playback.progress.total > 0 ? `${playback.progress.ready}/${playback.progress.total}` : "--"}</span>
-          </div>
-          <div className="h-1 overflow-hidden rounded-full bg-white/15" aria-label="课程进度">
-            <div
-              className="h-full rounded-full bg-primary transition-[width] duration-300"
-              style={{ width: `${playback.progress.total > 0 ? Math.max(playback.progress.percent, playback.progress.isActive ? 6 : 0) : 0}%` }}
-            />
-          </div>
-        </div>
-        <div className="mx-auto mt-2 grid max-w-[1800px] gap-2 lg:grid-cols-[auto_minmax(220px,1fr)_auto_auto_minmax(220px,0.65fr)_auto] lg:items-center">
+      <footer className="max-h-[34dvh] shrink-0 overflow-y-auto border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
+        <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-center gap-2">
           <button
             type="button"
             onClick={onPrev}
@@ -663,22 +690,6 @@ function LectureFullscreenView({
             <ChevronLeft size={18} />
             上一页
           </button>
-          <div className="min-w-0 space-y-1">
-            <div className="flex items-center justify-between gap-3 text-xs text-white/70">
-              <span>第 {current + 1} 页</span>
-              <span>共 {total} 页</span>
-            </div>
-            <input
-              type="range"
-              min={1}
-              max={Math.max(total, 1)}
-              step={1}
-              value={current + 1}
-              aria-label="全屏课件页面"
-              onChange={(event) => onJump(Number(event.target.value) - 1)}
-              className="h-2 w-full cursor-pointer accent-primary"
-            />
-          </div>
           <button
             type="button"
             onClick={onNext}
@@ -723,28 +734,6 @@ function LectureFullscreenView({
               重生成
             </button>
           </div>
-          <div className="min-w-0 space-y-1">
-            <div className="truncate text-xs text-white/70">{playback.statusText}</div>
-            <input
-              type="range"
-              min={0}
-              max={100}
-              step={0.1}
-              value={playback.audioPosition.percent || 0}
-              disabled={!canSeek}
-              aria-label="全屏语音播放进度"
-              onChange={(event) => playback.seekAudio(Number(event.target.value))}
-              className="h-2 w-full cursor-pointer accent-primary disabled:cursor-not-allowed disabled:opacity-35"
-            />
-          </div>
-          <button
-            type="button"
-            onClick={onExit}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/8 px-4 text-sm font-medium text-white transition hover:bg-white/15"
-          >
-            <Minimize2 size={17} />
-            退出
-          </button>
         </div>
       </footer>
     </div>

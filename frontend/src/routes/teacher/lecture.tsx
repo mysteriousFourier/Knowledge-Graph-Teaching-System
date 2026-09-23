@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router"
 import { useQueryClient } from "@tanstack/react-query"
-import { useEffect, useMemo, useState, type ReactNode } from "react"
+import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react"
 import { BookOpen, ChevronLeft, ChevronRight, Edit3, Eye, Maximize2, Minimize2, Pause, Play, RefreshCw, RotateCcw, Save, Trash2, X } from "lucide-react"
 import { useDeleteChapter, useSaveLecture, useTeacherChapter, useTeacherChapters } from "@/api/teacher"
 import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
@@ -726,11 +726,19 @@ function LectureFullscreenView({
   const pageAspect = renderedPageAspectNumber(slide.rendered_page)
   const coursePercent = total > 0 ? ((current + 1) / total) * 100 : 0
 
+  useEffect(() => {
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [])
+
   return (
-    <div className="fixed inset-0 z-[80] flex flex-col overflow-hidden bg-slate-950 text-white">
+    <div className="lecture-fullscreen fixed inset-0 z-[80] flex flex-col overflow-hidden bg-slate-950 text-white" role="dialog" aria-modal="true" aria-label="全屏授课">
       <header className="shrink-0 border-b border-white/10 bg-slate-950/95 px-2 py-1.5 shadow-xl sm:px-3">
         <div className="mx-auto max-w-[1800px] space-y-1.5">
-          <div className="flex items-center gap-3">
+          <div className="lecture-fullscreen-controls flex items-center gap-3">
             <div className="min-w-0 flex-1">
               <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/70">
                 <span>课程进度</span>
@@ -792,11 +800,11 @@ function LectureFullscreenView({
       </header>
       <main className="relative flex min-h-0 flex-1 basis-0 items-center justify-center overflow-hidden p-0 sm:p-1">
         <div
-          className="relative max-h-full max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
+          className="lecture-fullscreen-slide relative max-h-full max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
           style={{
             aspectRatio: renderedPageAspectRatio(slide.rendered_page),
-            width: `min(100vw, calc((100dvh - 82px) * ${pageAspect}))`,
-          }}
+            "--lecture-slide-aspect": pageAspect,
+          } as CSSProperties}
         >
           {hasVisualContent ? (
             <ReadonlySlideFrame slide={slide} images={images} assetMap={assetMap} />

@@ -228,10 +228,29 @@
     width: min(100%, calc((100vh - 250px) * 16 / 9));
   }
 
+  .lecture-fullscreen-slide {
+    width: min(100vw, calc((100vh - 82px) * var(--lecture-slide-aspect)));
+  }
+
   @supports (height: 100dvh) {
     .kgts-slide-stage {
       width: min(100%, calc((100dvh - 250px) * 16 / 9));
     }
+
+    .lecture-fullscreen-slide {
+      width: min(100vw, calc((100dvh - 82px) * var(--lecture-slide-aspect)));
+    }
+  }
+
+  /* Qaxbrowser 1.1.46149.52 exposes the Chrome 102 viewport behavior.
+     Keep the fullscreen slide on the stable vh unit there; 100dvh is not
+     consistently implemented by that embedded Chromium build. */
+  .qax-chromium-102 .lecture-fullscreen-slide {
+    width: min(100vw, calc((100vh - 82px) * var(--lecture-slide-aspect)));
+  }
+
+  .qax-browser .lecture-fullscreen-controls {
+    flex-wrap: wrap;
   }
 
   .studio-shell {

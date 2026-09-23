@@ -60,6 +60,31 @@ function syncEditedSlideLectures(content: string, slideLectures: PptSlideLecture
   )
 }
 
+function mergeSlideLectureContent(slideLectures: PptSlideLecture[]) {
+  return slideLectures
+    .map((item) => {
+      const body = item.lecture?.trim() || "_本页未生成文案_"
+      return `## 第${item.index} 页：${item.title || ""}\n\n${body}`
+    })
+    .join("\n\n---\n\n")
+}
+
+function updateSlideLecture(slideLectures: PptSlideLecture[], slide: PptSlideDetail, lecture: string) {
+  const matchesSlide = (item: PptSlideLecture) =>
+    (slide.slide_id && item.slide_id === slide.slide_id) || item.index === slide.index
+  let updated = false
+  const next = slideLectures.map((item) => {
+    if (!matchesSlide(item)) return item
+    updated = true
+    return { ...item, lecture }
+  })
+  if (updated) return next
+  return [
+    ...next,
+    { index: slide.index, slide_id: slide.slide_id, title: slide.title, lecture, skipped: false },
+  ].sort((a, b) => a.index - b.index)
+}
+
 function LecturePage() {
   const { chapterId, courseId } = Route.useSearch()
   const queryClient = useQueryClient()
@@ -67,6 +92,8 @@ function LecturePage() {
   const [isEditing, setIsEditing] = useState(false)
   const [editorMode, setEditorMode] = useState<"edit" | "preview">("edit")
   const [draftContent, setDraftContent] = useState("")
+  const [editingSlideIndex, setEditingSlideIndex] = useState<number | null>(null)
+  const [slideDraftContent, setSlideDraftContent] = useState("")
   const [saveMessage, setSaveMessage] = useState("")
   const [isPresentationFullscreen, setIsPresentationFullscreen] = useState(false)
 
@@ -122,11 +149,20 @@ function LecturePage() {
   }, [chapterId, chapters, selectedChapterId])
 
   const currentCoursewareSlide = coursewareSlides[currentSlide]
-  const currentSlideLecture = useMemo(() => {
+  const currentSlideLectureRecord = useMemo(() => {
     if (!slideLectures.length || !currentCoursewareSlide) return undefined
-    return slideLectures.find((item) => ((currentCoursewareSlide.slide_id && item.slide_id === currentCoursewareSlide.slide_id) || item.index === currentCoursewareSlide.index) && item.lecture?.trim())
+    return slideLectures.find(
+      (item) =>
+        (currentCoursewareSlide.slide_id && item.slide_id === currentCoursewareSlide.slide_id) ||
+        item.index === currentCoursewareSlide.index,
+    )
   }, [currentCoursewareSlide, slideLectures])
-  const canNavigateSlides = !isEditing && segmentCount > 1
+  const currentSlideLecture = useMemo(
+    () => (currentSlideLectureRecord?.lecture?.trim() ? currentSlideLectureRecord : undefined),
+    [currentSlideLectureRecord],
+  )
+  const isEditingCurrentSlide = editingSlideIndex === currentCoursewareSlide?.index
+  const canNavigateSlides = !isEditing && !isEditingCurrentSlide && segmentCount > 1
 
   useEffect(() => {
     if (!canNavigateSlides) return
@@ -165,16 +201,55 @@ function LecturePage() {
 
   const handleStartEdit = () => {
     setDraftContent(selectedChapter?.lecture_content || "")
+    setEditingSlideIndex(null)
+    setSlideDraftContent("")
     setIsEditing(true)
     setEditorMode("edit")
     playback.pause()
     setSaveMessage("")
   }
 
+  const handleStartSlideEdit = () => {
+    if (!currentCoursewareSlide) return
+    setEditingSlideIndex(currentCoursewareSlide.index)
+    setSlideDraftContent(currentSlideLectureRecord?.lecture || "")
+    setSaveMessage("")
+    playback.pause()
+  }
+
+  const handleCancelSlideEdit = () => {
+    setEditingSlideIndex(null)
+    setSlideDraftContent("")
+    setSaveMessage("")
+  }
+
+  const handleSaveSlideEdit = async () => {
+    if (!selectedChapter || !currentCoursewareSlide || !isEditingCurrentSlide) return
+    const updatedSlideLectures = updateSlideLecture(slideLectures, currentCoursewareSlide, slideDraftContent)
+    const result = await saveLecture.mutateAsync({
+      chapter_id: selectedChapter.id,
+      course_id: courseId || selectedChapter.course_id,
+      lecture_content: mergeSlideLectureContent(updatedSlideLectures),
+      learning_plan: selectedChapter.lecture_learning_plan,
+      slide_lectures: updatedSlideLectures,
+    })
+    if (!result.success) return
+    await Promise.all([
+      queryClient.invalidateQueries({ queryKey: ["teacher-chapter", selectedChapter.id] }),
+      queryClient.invalidateQueries({ queryKey: ["teacher-chapters"] }),
+      queryClient.invalidateQueries({ queryKey: ["student-chapters"] }),
+    ])
+    setEditingSlideIndex(null)
+    setSlideDraftContent("")
+    setSaveMessage(`第 ${currentCoursewareSlide.index} 页讲稿已保存`)
+  }
+
   const handleCancelEdit = () => {
     setDraftContent("")
     setIsEditing(false)
     setEditorMode("edit")
+    setEditingSlideIndex(null)
+    setSlideDraftContent("")
     setSaveMessage("")
     playback.reset(0)
   }
@@ -213,6 +288,8 @@ function LecturePage() {
     setDraftContent("")
     setIsEditing(false)
     setEditorMode("edit")
+    setEditingSlideIndex(null)
+    setSlideDraftContent("")
     setSaveMessage("")
     playback.reset(0)
     await Promise.all([
@@ -242,6 +319,8 @@ function LecturePage() {
               setIsEditing(false)
               setEditorMode("edit")
               setDraftContent("")
+              setEditingSlideIndex(null)
+              setSlideDraftContent("")
               setSaveMessage("")
             }}
             className="w-full px-3 py-2.5 bg-background border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
@@ -390,12 +469,13 @@ function LecturePage() {
                 audioPosition={playback.audioPosition}
                 onSeek={playback.seekAudio}
               />
-              <Pager
-                current={currentSlide}
-                total={coursewareSlides.length}
-                onPrev={() => playback.setCurrentSegment((prev) => prev - 1)}
-                onNext={() => playback.setCurrentSegment((prev) => prev + 1)}
-                onJump={(next) => playback.setCurrentSegment(next)}
+                  <Pager
+                    current={currentSlide}
+                    total={coursewareSlides.length}
+                    disabled={isEditingCurrentSlide}
+                    onPrev={() => playback.setCurrentSegment((prev) => prev - 1)}
+                    onNext={() => playback.setCurrentSegment((prev) => prev + 1)}
+                    onJump={(next) => playback.setCurrentSegment(next)}
               />
               <div>
                 <div className="border-b p-4 xl:p-5">
@@ -409,6 +489,7 @@ function LecturePage() {
                       <SlideSideNav
                         current={currentSlide}
                         total={coursewareSlides.length}
+                        disabled={isEditingCurrentSlide}
                         onPrev={() => playback.setCurrentSegment((current) => current - 1)}
                         onNext={() => playback.setCurrentSegment((current) => current + 1)}
                       />
@@ -421,9 +502,51 @@ function LecturePage() {
                   <div className="mx-auto max-w-5xl">
                     <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                       <div className="text-sm font-semibold">第 {currentCoursewareSlide?.index || currentSlide + 1} 页讲稿</div>
-                      <div className="text-xs text-muted-foreground">只显示当前课件页对应文案</div>
+                      <div className="flex items-center gap-2">
+                        <div className="text-xs text-muted-foreground">只显示当前课件页对应文案</div>
+                        {isEditingCurrentSlide ? (
+                          <>
+                            <button
+                              type="button"
+                              onClick={handleSaveSlideEdit}
+                              disabled={saveLecture.isPending}
+                              className="inline-flex items-center gap-1 rounded-md bg-primary px-2.5 py-1 text-xs font-medium text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
+                            >
+                              <Save size={13} />
+                              {saveLecture.isPending ? "保存中..." : "保存本页"}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={handleCancelSlideEdit}
+                              disabled={saveLecture.isPending}
+                              className="inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-xs font-medium hover:bg-accent disabled:opacity-50"
+                            >
+                              <X size={13} />
+                              取消
+                            </button>
+                          </>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={handleStartSlideEdit}
+                            className="inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-xs font-medium text-primary hover:bg-primary/10"
+                          >
+                            <Edit3 size={13} />
+                            编辑本页
+                          </button>
+                        )}
+                      </div>
                     </div>
-                    {currentSlideLecture?.lecture ? (
+                    {isEditingCurrentSlide ? (
+                      <textarea
+                        value={slideDraftContent}
+                        onChange={(event) => setSlideDraftContent(event.target.value)}
+                        placeholder="输入本页讲稿，支持 Markdown、$...$ 和 $$...$$ 公式"
+                        aria-label={`第 ${currentCoursewareSlide?.index || currentSlide + 1} 页讲稿`}
+                        className="min-h-[220px] w-full resize-y rounded-lg border bg-background px-3 py-2.5 font-mono text-sm leading-relaxed focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                        autoFocus
+                      />
+                    ) : currentSlideLecture?.lecture ? (
                       <RichTextContent content={currentSlideLecture.lecture} />
                     ) : (
                       <EmptyState title="暂无本页讲稿" description="逐页讲稿需要在备课工作台生成；这里不会混用整章文案。" />
@@ -495,12 +618,14 @@ function isInteractiveElement(target: EventTarget | null) {
 function Pager({
   current,
   total,
+  disabled = false,
   onPrev,
   onNext,
   onJump,
 }: {
   current: number
   total: number
+  disabled?: boolean
   onPrev: () => void
   onNext: () => void
   onJump: (next: number) => void
@@ -509,7 +634,7 @@ function Pager({
     <div className="grid gap-4 border-t bg-muted/25 p-4 md:grid-cols-[auto_minmax(220px,1fr)_auto] md:items-center">
       <button
         onClick={onPrev}
-        disabled={current === 0}
+        disabled={disabled || current === 0}
         className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border bg-background px-5 text-base font-medium shadow-sm transition-colors hover:bg-accent disabled:opacity-50"
       >
         <ChevronLeft size={20} />
@@ -528,12 +653,13 @@ function Pager({
           value={current + 1}
           aria-label="课件页面"
           onChange={(event) => onJump(Number(event.target.value) - 1)}
-          className="h-3 w-full cursor-pointer accent-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          disabled={disabled}
+          className="h-3 w-full cursor-pointer accent-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50"
         />
       </div>
       <button
         onClick={onNext}
-        disabled={current === total - 1}
+        disabled={disabled || current === total - 1}
         className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-primary px-5 text-base font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 disabled:opacity-50"
       >
         下一页
@@ -546,13 +672,13 @@ function Pager({
   )
 }
 
-function SlideSideNav({ current, total, onPrev, onNext }: { current: number; total: number; onPrev: () => void; onNext: () => void }) {
+function SlideSideNav({ current, total, disabled = false, onPrev, onNext }: { current: number; total: number; disabled?: boolean; onPrev: () => void; onNext: () => void }) {
   return (
     <div className="pointer-events-none absolute inset-y-10 left-0 right-0 hidden items-center justify-between px-2 md:flex">
       <button
         type="button"
         onClick={onPrev}
-        disabled={current === 0}
+        disabled={disabled || current === 0}
         aria-label="上一页"
         className="pointer-events-auto flex h-16 w-12 items-center justify-center rounded-lg border bg-background/90 text-foreground shadow-sm backdrop-blur transition hover:bg-accent disabled:opacity-30"
       >
@@ -561,7 +687,7 @@ function SlideSideNav({ current, total, onPrev, onNext }: { current: number; tot
       <button
         type="button"
         onClick={onNext}
-        disabled={current === total - 1}
+        disabled={disabled || current === total - 1}
         aria-label="下一页"
         className="pointer-events-auto flex h-16 w-12 items-center justify-center rounded-lg border bg-background/90 text-foreground shadow-sm backdrop-blur transition hover:bg-accent disabled:opacity-30"
       >

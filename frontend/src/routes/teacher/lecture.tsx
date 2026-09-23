@@ -617,8 +617,8 @@ function LectureFullscreenView({
 
   return (
     <div className="fixed inset-0 z-[80] flex flex-col overflow-hidden bg-slate-950 text-white">
-      <header className="shrink-0 border-b border-white/10 bg-slate-950/95 px-3 py-2 shadow-xl sm:px-4">
-        <div className="mx-auto max-w-[1800px] space-y-2">
+      <header className="shrink-0 border-b border-white/10 bg-slate-950/95 px-2 py-1.5 shadow-xl sm:px-3">
+        <div className="mx-auto max-w-[1800px] space-y-1.5">
           <div className="flex items-center gap-3">
             <div className="min-w-0 flex-1">
               <div className="mb-1 flex items-center justify-between gap-3 text-[11px] text-white/70">
@@ -637,12 +637,28 @@ function LectureFullscreenView({
                 style={{ backgroundSize: `${coursePercent}% 100%` }}
               />
             </div>
+            <button type="button" onClick={onPrev} disabled={current === 0} className="inline-flex min-h-8 items-center gap-1 rounded-md border border-white/15 bg-white/8 px-2 text-xs font-medium text-white hover:bg-white/15 disabled:opacity-35">
+              <ChevronLeft size={15} />上一页
+            </button>
+            <button type="button" onClick={onNext} disabled={current === total - 1} className="inline-flex min-h-8 items-center gap-1 rounded-md bg-primary px-2 text-xs font-medium text-primary-foreground hover:bg-primary/90 disabled:opacity-35">
+              下一页<ChevronRight size={15} />
+            </button>
+            <button type="button" onClick={playback.toggle} disabled={!playback.hasSegments} className={cn("inline-flex min-h-8 items-center gap-1 rounded-md px-2 text-xs font-medium disabled:opacity-35", playback.isPlaying ? "bg-amber-200 text-slate-950 hover:bg-amber-100" : "bg-white text-slate-950 hover:bg-white/90")} title={playback.providerLabel}>
+              {playback.isPlaying || playback.isLoadingAudio ? <Pause size={15} /> : <Play size={15} />}
+              {playback.isPlaying || playback.isLoadingAudio ? "暂停" : "播放"}
+            </button>
+            <button type="button" onClick={() => playback.replay(current)} disabled={!playback.hasSegments} className="inline-flex min-h-8 items-center gap-1 rounded-md border border-white/15 bg-white/8 px-2 text-xs font-medium text-white hover:bg-white/15 disabled:opacity-35" title={playback.providerLabel}>
+              <RotateCcw size={14} />重播
+            </button>
+            <button type="button" onClick={onRegenerate} disabled={!playback.hasSegments || playback.isLoadingAudio} className="inline-flex min-h-8 items-center gap-1 rounded-md border border-white/15 bg-white/8 px-2 text-xs font-medium text-white hover:bg-white/15 disabled:opacity-35" title="重新生成当前页语音并覆盖缓存">
+              <RefreshCw size={14} className={playback.isLoadingAudio ? "animate-spin" : ""} />重生成
+            </button>
             <button
               type="button"
               onClick={onExit}
-              className="inline-flex min-h-10 shrink-0 items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-3 text-sm font-medium text-white shadow-lg transition hover:bg-white/20"
+              className="inline-flex min-h-8 shrink-0 items-center gap-1 rounded-md border border-white/20 bg-white/10 px-2 text-xs font-medium text-white shadow-lg transition hover:bg-white/20"
             >
-              <Minimize2 size={17} />
+              <Minimize2 size={15} />
               退出全屏
             </button>
           </div>
@@ -668,7 +684,7 @@ function LectureFullscreenView({
           className="relative max-h-full max-w-full overflow-hidden rounded-sm bg-white text-slate-950 shadow-2xl ring-1 ring-white/15"
           style={{
             aspectRatio: renderedPageAspectRatio(slide.rendered_page),
-            width: `min(100vw, calc((100dvh - 154px) * ${pageAspect}))`,
+            width: `min(100vw, calc((100dvh - 82px) * ${pageAspect}))`,
           }}
         >
           {hasVisualContent ? (
@@ -679,7 +695,7 @@ function LectureFullscreenView({
         </div>
       </main>
 
-      <footer className="max-h-[34dvh] shrink-0 overflow-y-auto border-t border-white/10 bg-slate-950/95 px-2 py-2 shadow-2xl sm:px-4">
+      <footer className="hidden">
         <div className="mx-auto flex max-w-[1800px] flex-wrap items-center justify-center gap-2">
           <button
             type="button"

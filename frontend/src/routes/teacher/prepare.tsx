@@ -62,6 +62,7 @@ import {
 } from "@/components/common/GraphScopeSelector"
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import { PlaybackProgress } from "@/components/common/PlaybackProgress"
+import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
 import { RichTextContent } from "@/components/renderers/RichTextContent"
 import { TTS_CHUNK_CHARS, useLecturePlayback } from "@/hooks/useLecturePlayback"
 import type {
@@ -3201,8 +3202,7 @@ function TeacherPreparePage() {
             ) : null}
             {hasUsableSlideLecture(selectedLecture) ? (
               <div className="space-y-4">
-                <DriftTrace driftReport={driftReport} />
-                <EvidenceTrace lecture={selectedLecture} />
+                <SourceNodeSummary nodeIds={selectedLecture.source_node_ids || lectureNodeIds || pptNodeIds} />
                 <RichTextContent content={selectedLecture.lecture} />
               </div>
             ) : selectedLectureError ? (

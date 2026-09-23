@@ -3,8 +3,7 @@ import { useQueryClient } from "@tanstack/react-query"
 import { useEffect, useMemo, useState, type ReactNode } from "react"
 import { BookOpen, ChevronLeft, ChevronRight, Edit3, Eye, Maximize2, Minimize2, Pause, Play, RefreshCw, RotateCcw, Save, Trash2, X } from "lucide-react"
 import { useDeleteChapter, useSaveLecture, useTeacherChapter, useTeacherChapters } from "@/api/teacher"
-import { EvidenceSummary } from "@/components/common/EvidenceSummary"
-import { LectureReviewPanel } from "@/components/common/LectureReviewPanel"
+import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
 import { EmptyState } from "@/components/common/EmptyState"
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import { PlaybackProgress } from "@/components/common/PlaybackProgress"
@@ -422,19 +421,9 @@ function LecturePage() {
                     ) : (
                       <EmptyState title="暂无本页讲稿" description="逐页讲稿需要在备课工作台生成；这里不会混用整章文案。" />
                     )}
-                    {(currentSlideLecture?.learning_plan || currentSlideLecture?.sources?.length) && (
-                      <div className="mt-4">
-                        <EvidenceSummary
-                          learningPlan={currentSlideLecture.learning_plan}
-                          sources={currentSlideLecture.sources}
-                        />
-                      </div>
-                    )}
-                    <LectureReviewPanel
+                    <SourceNodeSummary
                       className="mt-4"
-                      learningPlan={currentSlideLecture?.learning_plan}
-                      sources={currentSlideLecture?.sources}
-                      consistencyReport={currentSlideLecture?.consistency_report}
+                      nodeIds={currentSlideLecture?.source_node_ids || selectedChapter.lecture_source_node_ids || selectedChapter.source_node_ids}
                     />
                   </div>
                 </section>
@@ -458,11 +447,7 @@ function LecturePage() {
               />
               <div className="min-h-[240px] p-4 sm:min-h-[300px] sm:p-6">
                 <RichTextContent content={markdownSlides[currentSlide]} />
-                <LectureReviewPanel
-                  className="mt-6"
-                  learningPlan={selectedChapter.lecture_learning_plan}
-                  consistencyReport={selectedChapter.lecture_consistency_report}
-                />
+                <SourceNodeSummary nodeIds={selectedChapter.lecture_source_node_ids || selectedChapter.source_node_ids} />
               </div>
 
               <Pager

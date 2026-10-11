@@ -144,8 +144,15 @@ def _looks_like_temporary_chapter_id(value: Any) -> bool:
 def _resolve_chapter_storage_id(chapter_id: Optional[str], title: Optional[str]) -> str:
     title_based_id = canonical_chapter_id(title=title)
     raw_id = str(chapter_id or "").strip()
+    # A newly created lesson is sent with a temporary id such as
+    # ``ppt_<timestamp>``. Keep that id stable so two lessons with the same
+    # title remain separate records. Existing canonical ids still take the
+    # normal path below, while requests without an id retain title-based
+    # addressing for backwards compatibility.
+    if raw_id and _looks_like_temporary_chapter_id(raw_id):
+        return canonical_chapter_id(chapter_id=raw_id) or raw_id
     id_based = canonical_chapter_id(chapter_id=chapter_id)
-    if title_based_id and (_looks_like_temporary_chapter_id(raw_id) or not id_based):
+    if title_based_id and not id_based:
         return title_based_id
     return canonical_chapter_id(chapter_id, title) or raw_id or title_based_id
 
@@ -1006,6 +1013,7 @@ class ChapterStore:
         chapter_id: Optional[str] = None,
         title: Optional[str] = None,
     ) -> List[str]:
+        raw_id = str(chapter_id or "").strip()
         target_id = canonical_chapter_id(chapter_id, title)
         target_identity = _chapter_identity({"id": target_id or chapter_id or "", "title": title or ""})
         aliases: List[str] = []
@@ -1018,7 +1026,9 @@ class ChapterStore:
             if target_identity and _chapter_identity(record) == target_identity:
                 aliases.append(key)
                 continue
-            if title and str(record.get("title") or "").strip() == str(title).strip():
+            # Title-only matching is useful for legacy calls that omit an id,
+            # but it must not merge a new lesson carrying an explicit id.
+            if not raw_id and title and str(record.get("title") or "").strip() == str(title).strip():
                 aliases.append(key)
         return aliases
 

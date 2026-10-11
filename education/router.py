@@ -939,6 +939,7 @@ async def _generate_slide_lectures_sync(
             progress(stage, message)
 
     source_node_ids = _normalize_source_node_ids(request.source_node_id, request.source_node_ids)
+    transcript_text = _normalize_transcript_text(request.transcript_text)
     if not source_node_ids:
         source_node_ids = _normalize_source_node_ids(None, request.ppt_source_node_ids)
     if not source_node_ids and not request.allow_no_node:
@@ -1021,6 +1022,7 @@ async def _generate_slide_lectures_sync(
             target_slide_ids=target_slide_ids,
             pacing_by_index=pacing["slides"],
             speech_rate_cpm=pacing["speech_rate_cpm"],
+            transcript_text=transcript_text,
             progress=progress,
         )
         if _nonempty_slide_lecture_count(slide_lectures) == 0 and any(_compact_slide_for_lecture(slide).strip() for slide in request.slides):
@@ -1474,6 +1476,76 @@ def _build_slide_transition_context(slides: List[Dict[str, Any]], slide_index: A
         next_slide = ordered[position + 1]
         lines.append(f"Next slide: {_truncate_for_prompt(_compact_slide_for_lecture(next_slide, max_chars=360), 360)}")
     return "\n\n".join(lines)
+
+
+_TRANSCRIPT_LINE_RE = re.compile(r"^\s*\[([^\]]+)\]\s*(.+?)\s*$")
+
+
+def _normalize_transcript_text(value: Any, *, max_chars: int = 120000) -> str:
+    """Keep a timestamped transcript bounded before it reaches an LLM prompt."""
+    text = str(value or "").replace("\x00", "").strip()
+    if not text:
+        return ""
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    # Preserve timestamp lines and ordinary transcript lines, while dropping
+    # tool metadata headers that do not help the teaching model.
+    useful = [line for line in lines if not line.startswith("# Transcription") and not line.startswith("# Model") and not line.startswith("# Language")]
+    return "\n".join(useful)[:max_chars]
+
+
+def _transcript_excerpt_for_slide(transcript_text: str, slide_text: str, *, max_chars: int = 1800) -> str:
+    """Select speech lines that overlap the current slide topic.
+
+    The ASR text is intentionally treated as fallible evidence. Keyword
+    matching keeps prompts small and avoids asking the model to blindly copy a
+    long, noisy lecture transcript into every slide.
+    """
+    transcript = _normalize_transcript_text(transcript_text)
+    if not transcript:
+        return ""
+    lines = [line for line in transcript.splitlines() if line.strip()]
+    slide_tokens = _slide_match_tokens(slide_text)
+    scored: List[tuple[int, int, str]] = []
+    for index, line in enumerate(lines):
+        match = _TRANSCRIPT_LINE_RE.match(line)
+        speech = match.group(2) if match else line
+        tokens = _slide_match_tokens(speech)
+        score = len(tokens & slide_tokens)
+        if score:
+            scored.append((score, -index, line))
+    if not scored:
+        # A short opening excerpt still gives the model a chance to recover
+        # lecturer terminology when ASR wording does not match the slide.
+        selected = lines[:4]
+    else:
+        scored.sort(reverse=True)
+        selected = [line for _, _, line in sorted(scored[:8], key=lambda item: -item[1])]
+    output: List[str] = []
+    current = 0
+    for line in selected:
+        if current + len(line) + 1 > max_chars:
+            break
+        output.append(line)
+        current += len(line) + 1
+    return "\n".join(output)
+
+
+def _animation_group_context(slides: List[Dict[str, Any]], slide: Dict[str, Any]) -> str:
+    """Describe the current animation group without creating a page transition."""
+    parent = slide.get("parent_slide_index")
+    count = int(slide.get("overlay_count") or 1)
+    index = int(slide.get("overlay_index") or 1)
+    if count <= 1:
+        return ""
+    group = [item for item in slides if item.get("parent_slide_index") == parent]
+    prior = [item for item in group if int(item.get("overlay_index") or 1) < index]
+    if not prior:
+        return f"这是连续动画组的第 {index}/{count} 步；后续步骤会继续展开本页主题。"
+    prior_text = _compact_slide_for_lecture(prior[-1], max_chars=420)
+    return (
+        f"这是连续动画组的第 {index}/{count} 步。上一动画步已经呈现：{prior_text}\n"
+        "本步只讲新增、变化或被强调的内容，不重复上一动画步已经讲过的背景、标题和结论。"
+    )
 
 
 def _slide_feedback_for_index(slide_feedback: Optional[Dict[int, str]], slide_index: Any) -> str:
@@ -2191,6 +2263,22 @@ def _count_speech_chars(text: str) -> int:
     return len(re.findall(r"[\u4e00-\u9fff]|[A-Za-z0-9]+", str(text or "")))
 
 
+def _slide_lecture_char_cap(slide: Optional[Dict[str, Any]] = None) -> int:
+    """Keep a single page speakable even when the course target is long."""
+    try:
+        cap = int(os.getenv("KGTS_SLIDE_LECTURE_MAX_CHARS_PER_SLIDE", "650"))
+    except (TypeError, ValueError):
+        cap = 650
+    cap = max(120, min(cap, 2000))
+    if isinstance(slide, dict) and int(slide.get("overlay_index") or 1) > 1:
+        try:
+            animation_cap = int(os.getenv("KGTS_SLIDE_LECTURE_MAX_CHARS_PER_ANIMATION_STEP", "420"))
+        except (TypeError, ValueError):
+            animation_cap = 420
+        cap = min(cap, max(100, min(animation_cap, 1200)))
+    return cap
+
+
 def _slide_budget_source_text(slide: Dict[str, Any]) -> str:
     layout = slide.get("layout") if isinstance(slide.get("layout"), dict) else {}
     if str(layout.get("mode") or "") == "title":
@@ -2280,7 +2368,10 @@ def _build_slide_lecture_pacing(
     by_index: Dict[int, Dict[str, Any]] = {}
     for slide in normalized_slides:
         index = int(slide["index"])
-        target_chars = max(1, allocations.get(index, 1))
+        target_chars = min(
+            max(1, allocations.get(index, 1)),
+            _slide_lecture_char_cap(slide),
+        )
         by_index[index] = {
             "target_chars": target_chars,
             "source_chars": raw_counts.get(index, 0),
@@ -2351,7 +2442,10 @@ def _apply_model_slide_lecture_allocations(
     next_slides: Dict[int, Dict[str, Any]] = {}
     for raw_index, item in base_slides.items():
         index = int(raw_index)
-        target_chars = max(1, allocations_by_index.get(index, int(item.get("target_chars") or 1)))
+        target_chars = min(
+            max(1, allocations_by_index.get(index, int(item.get("target_chars") or 1))),
+            _slide_lecture_char_cap(),
+        )
         next_slides[index] = {
             **item,
             "target_chars": target_chars,
@@ -3182,6 +3276,7 @@ async def upload_ppt(
     source_node_ids: Optional[List[str]] = Form(None),
     graph_scope: Optional[str] = Form(None),
     teacher_guidance: Optional[str] = Form(None),
+    transcript_text: Optional[str] = Form(None),
     course_id: Optional[str] = Form(None),
     teacher_profile_id: Optional[str] = Form(None),
     allow_no_node: bool = Form(False),
@@ -3231,6 +3326,7 @@ async def upload_ppt(
             profile_id=teacher_profile_id,
         )
         chapter_content = prompt_data["chapter_content"]
+        transcript_text = _normalize_transcript_text(transcript_text)
         slide_details = prompt_data["slide_details"]
         normalized_source_node_ids = _normalize_source_node_ids(source_node_id, source_node_ids)
         auto_selected_nodes = False
@@ -3345,6 +3441,7 @@ async def upload_ppt(
             slide_feedback={},
             pacing_by_index=pacing["slides"],
             speech_rate_cpm=pacing["speech_rate_cpm"],
+            transcript_text=transcript_text,
         )
         if _nonempty_slide_lecture_count(slide_lectures) == 0 and any(_compact_slide_for_lecture(slide).strip() for slide in slide_details):
             message = _slide_lecture_error_summary(slide_lectures) or "AI 未返回任何逐页讲解内容，请检查 DeepSeek 配置、模型返回或稍后重试。"
@@ -3464,6 +3561,7 @@ async def _generate_per_slide_lectures(
     target_slide_ids: Optional[set[str]] = None,
     pacing_by_index: Optional[Dict[int, Dict[str, Any]]] = None,
     speech_rate_cpm: int = DEFAULT_SLIDE_LECTURE_SPEECH_RATE_CPM,
+    transcript_text: str = "",
     progress: Optional[Callable[[str, str], None]] = None,
 ) -> List[Dict]:
     def mark(stage: str, message: str) -> None:
@@ -3587,6 +3685,8 @@ async def _generate_per_slide_lectures(
         graph_paths = graph_paths_for_evidence(slide_graph_data, prompt_evidence, limit=4)[:4]
         formula_context = ((slide_graphrag_context or {}).get("formula_context") or formula_context_for_text(slide_text, limit=4))[:4]
         transition_context = _build_slide_transition_context(slide_details, slide.get("index"))
+        animation_context = _animation_group_context(slide_details, slide)
+        transcript_excerpt = _transcript_excerpt_for_slide(transcript_text, slide_text)
         visible_elements = _format_slide_visible_elements_for_prompt(slide)
         page_feedback = _slide_feedback_for_index(slide_feedback, slide.get("index"))
         sources = prompt_evidence
@@ -3607,6 +3707,8 @@ async def _generate_per_slide_lectures(
             "When the same symbol can mean different things elsewhere, explain only the meaning in this slide/chapter scope.",
             "If a formula is derived from earlier formulas, mention the immediate derivation dependency in teacher-friendly language.",
             "Use the neighboring-slide context only to add one natural transition sentence when helpful; do not teach the previous or next slide here.",
+            "For consecutive animation steps, skip introductions and transition language. Explain only what is newly revealed or changed on this step.",
+            "The speech transcript is noisy reference evidence. Use it to recover the lecturer's terminology and emphasis, but correct obvious ASR errors against the slide, PDF, and graph; never copy uncertain wording as fact.",
             "State every concept, conclusion, and instruction once. Do not repeat a sentence, restate a key point, or add emphasis by saying the same thing again.",
             "If you ask a classroom question, answer it immediately after asking. Keep the question supportive rather than requiring students to solve a new open-ended problem alone.",
             "Output directly usable Markdown prose for this slide. Do not output analysis, reasoning, planning notes, entity selection notes, or comments about the prompt.",
@@ -3618,6 +3720,9 @@ async def _generate_per_slide_lectures(
                 requirements.append(
                     f"Target pacing for this slide: about {target_chars} Chinese characters, approximately {max(1, round(target_seconds / 60, 1))} minutes at {speech_rate_cpm} characters per minute. "
                     "Stay close to this budget with natural classroom prose; do not pad with empty transitions and do not remove required factual explanations just to hit the number exactly."
+                )
+                requirements.append(
+                    f"Hard brevity limit: keep this page under {_slide_lecture_char_cap(slide)} spoken characters; prioritize the slide's central idea and omit secondary background."
                 )
         if teacher_guidance:
             requirements.append(
@@ -3643,12 +3748,19 @@ async def _generate_per_slide_lectures(
 Selected graph subtree context:
 {_truncate_for_prompt(selected_graph_context, 900)}
 """
+        transcript_context_text = (
+            f"\nTimestamped speech transcript excerpt (noisy reference):\n{transcript_excerpt}\n"
+            if transcript_excerpt else ""
+        )
+        animation_context_text = f"\nAnimation-group context:\n{animation_context}\n" if animation_context else ""
         prompt = f"""You are a teacher. Generate the lecture script for one PPT slide.
 
 Chapter topic: {chapter_title}
 Current slide: {slide['index']}
 Animation step: {slide.get('overlay_index') or 1}/{slide.get('overlay_count') or 1}
 {selected_context_text}
+{animation_context_text}
+{transcript_context_text}
 
 Slide content:
 {slide_text}
@@ -3678,6 +3790,7 @@ Output only the final slide lecture script."""
             "slide_text": slide_text,
             "prompt": prompt,
             "pacing": pacing,
+            "transcript_excerpt": transcript_excerpt,
             "sources": sources,
             "source_node_ids": slide_source_node_ids,
             "retrieval_mode": (slide_graphrag_context or {}).get("retrieval_mode"),

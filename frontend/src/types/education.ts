@@ -675,6 +675,7 @@ export interface GenerateSlideLecturesRequest {
   source_node_ids?: string[]
   graph_scope?: "subtree" | string
   teacher_guidance?: string
+  transcript_text?: string
   slide_feedback?: Record<number, string>
   style_reference?: CoursewareStyleReference | null
   target_slide_indices?: number[]

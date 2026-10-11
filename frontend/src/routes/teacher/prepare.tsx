@@ -1382,6 +1382,8 @@ function TeacherPreparePage() {
   const [expandedNodeIds, setExpandedNodeIds] = useState<Set<string>>(new Set(["toc::root"]))
   const [treeSearch, setTreeSearch] = useState("")
   const [teacherGuidance, setTeacherGuidance] = useState("")
+  const [transcriptText, setTranscriptText] = useState("")
+  const [transcriptFileName, setTranscriptFileName] = useState("")
   const [allowNoNodeGeneration, setAllowNoNodeGeneration] = useState(false)
   const [slideFeedbackDrafts, setSlideFeedbackDrafts] = useState<Record<number, string>>({})
   const [styleReference, setStyleReference] = useState<CoursewareStyleReference | null>(null)
@@ -2034,6 +2036,15 @@ function TeacherPreparePage() {
     )
   }
 
+  const handleTranscriptChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedFile = event.target.files?.[0]
+    if (!selectedFile) return
+    const text = await selectedFile.text()
+    setTranscriptText(text.slice(0, 120000))
+    setTranscriptFileName(selectedFile.name)
+    setStatus(`已载入逐字稿：${selectedFile.name}`)
+  }
+
   const handleGenerateLectures = async () => {
     if (!preview?.slides.length) return
     setStatus("")
@@ -2046,6 +2057,7 @@ function TeacherPreparePage() {
         speechRateCpm: DEFAULT_SPEECH_RATE_CPM,
         sourceNodeIds: lectureNodeIds.length ? lectureNodeIds : pptNodeIds,
         teacherGuidance,
+        transcriptText,
         allowNoNode: allowNoNodeGeneration,
       })
       if (!result.success) {
@@ -2094,6 +2106,7 @@ function TeacherPreparePage() {
         source_node_ids: sourceNodeIds,
         graph_scope: "subtree",
         teacher_guidance: teacherGuidance,
+        transcript_text: transcriptText || undefined,
         style_reference: styleReference,
         ppt_source_node_ids: pptNodeIds,
         ppt_source_scope: pptSourceScope,
@@ -3093,6 +3106,11 @@ function TeacherPreparePage() {
               图片包
               <input type="file" accept=".zip,.png,.jpg,.jpeg,.gif,.webp,.bmp,.tif,.tiff,.svg" onChange={handleAssetUpload} className="hidden" />
             </label>
+            <label className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent">
+              <FileText size={16} />
+              载入逐字稿
+              <input type="file" accept=".txt,.md" onChange={handleTranscriptChange} className="hidden" />
+            </label>
           </div>
             {styleReference?.profile ? (
               <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border bg-muted/30 px-3 py-2 text-xs text-muted-foreground">
@@ -3121,6 +3139,7 @@ function TeacherPreparePage() {
           ) : (
             <div className="mt-3 text-xs text-muted-foreground">可上传已有 {COURSEWARE_FORMAT_LABEL} 课件，也可直接由图谱生成。</div>
           )}
+          {transcriptFileName ? <div className="mt-1 text-xs text-muted-foreground">已载入逐字稿参考：{transcriptFileName}</div> : null}
           <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border bg-muted/30 px-3 py-2 text-xs text-muted-foreground">
             <span>总预算约 {totalTargetChars} 字</span>
             <span>已生成约 {generatedLectureChars} 字 / {formatDuration(generatedLectureSeconds)}</span>

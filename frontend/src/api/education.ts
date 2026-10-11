@@ -393,6 +393,7 @@ export const useGeneratePptLectures = () => {
       speechRateCpm,
       sourceNodeIds,
       teacherGuidance,
+      transcriptText,
       courseId,
       teacherProfileId,
       allowNoNode,
@@ -403,6 +404,7 @@ export const useGeneratePptLectures = () => {
       speechRateCpm?: number
       sourceNodeIds?: string[]
       teacherGuidance?: string
+      transcriptText?: string
       courseId?: string
       teacherProfileId?: string
       allowNoNode?: boolean
@@ -418,6 +420,7 @@ export const useGeneratePptLectures = () => {
         formData.append("graph_scope", "subtree")
       }
       if (teacherGuidance?.trim()) formData.append("teacher_guidance", teacherGuidance.trim())
+      if (transcriptText?.trim()) formData.append("transcript_text", transcriptText.trim())
       if (courseId?.trim()) formData.append("course_id", courseId.trim())
       if (teacherProfileId?.trim()) formData.append("teacher_profile_id", teacherProfileId.trim())
       if (allowNoNode) formData.append("allow_no_node", "true")

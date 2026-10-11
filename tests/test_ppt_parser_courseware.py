@@ -10,6 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from KGTS.education.ppt_parser import build_ppt_lecture_prompt_data, parse_courseware
+from KGTS.education.router import _animation_group_context, _transcript_excerpt_for_slide
 
 
 TINY_PNG = base64.b64decode(
@@ -18,6 +19,24 @@ TINY_PNG = base64.b64decode(
 
 
 class CoursewareParserTest(unittest.TestCase):
+    def test_transcript_excerpt_is_topic_scoped(self):
+        transcript = """# Model: iic/SenseVoiceSmall
+[00:00:01 - 00:00:04] 这里先回顾遗传方差和加性方差。
+[00:00:05 - 00:00:08] 连锁影响重组率。
+[00:00:09 - 00:00:12] 这是一段无关的课堂闲聊。
+"""
+        excerpt = _transcript_excerpt_for_slide(transcript, "遗传方差 加性方差")
+        self.assertIn("遗传方差", excerpt)
+        self.assertNotIn("无关的课堂闲聊", excerpt)
+
+    def test_animation_group_context_requests_delta_only(self):
+        slides = [
+            {"index": 1, "parent_slide_index": 1, "overlay_index": 1, "overlay_count": 2, "content": "基础概念"},
+            {"index": 2, "parent_slide_index": 1, "overlay_index": 2, "overlay_count": 2, "content": "基础概念\n新增公式"},
+        ]
+        context = _animation_group_context(slides, slides[1])
+        self.assertIn("新增、变化", context)
+        self.assertIn("第 2/2 步", context)
     def test_tex_zip_beamer_preview_is_browsable(self):
         tex = r"""
 \documentclass{ctexbeamer}

@@ -8,6 +8,14 @@
 
 查询召回最多 128 个候选，再按关系扩展两跳；默认最多 24 个上下文节点，单节点最多 900 字符，总内容默认 12,000 字符。公式、例题、推导、前置关系、节点 ID 和来源信息保留，关系三元组直接进入模型上下文。选择课程后，查询限制在子树及直接引用中；显式空范围不会意外搜索全库。查询上下文不再加载全图，旧检索的前 5,000 节点限制也已移除。
 
+## 上下文缓存
+
+GraphRAG 上下文组装现在使用独立的 SQLite 持久缓存，默认位于 `.runtime/context-cache/context-cache.sqlite3`。缓存键包含规范化查询、课程/节点范围、检索参数、上下文长度和图数据库版本；图数据库、WAL 或共享内存文件发生变化时，旧键不会再次命中。缓存只保存可重建的检索证据和上下文，不保存用户问题的最终模型回答，因此不会把用户私有答案跨请求复用。
+
+默认上限为 128 条、32 MiB、1 小时 TTL，并按最近访问时间清理。可通过 `KGTS_CONTEXT_CACHE_ENABLED=0` 关闭，或调整 `KGTS_CONTEXT_CACHE_MAX_ENTRIES`、`KGTS_CONTEXT_CACHE_TTL_SECONDS`、`KGTS_CONTEXT_CACHE_MAX_BYTES`。健康接口会返回 `context_cache` 的命中、未命中、写入和清理计数。
+
+这个实现采用了开源 RAG 项目中常见的三种做法：LangChain 的可替换 cache backend 思路、LlamaIndex 对 embedding/response cache 的内容键设计，以及 Microsoft GraphRAG 对昂贵中间结果按输入版本复用的思路。这里选择 SQLite/file backend，是因为 Azure 单 worker 的内存约束不适合为缓存额外常驻 Redis；最终 LLM 输出仍不缓存，避免模型、权限和提示词变化造成陈旧结果。
+
 这是无神经模型的局部 GraphRAG，不等同于 Microsoft GraphRAG 的全库社区发现、LLM 社区报告和全局 map-reduce。BM25 不具备神经 embedding 的跨语言或同义改写能力。需要这类语义召回时可切回现有 `hybrid` 和 CPU 模型，但不能把两种检索质量视为相同。
 
 ## 现有 VM 启用

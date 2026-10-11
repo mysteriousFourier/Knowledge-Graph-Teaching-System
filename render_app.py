@@ -58,6 +58,7 @@ from education.beamer_full_router import router as beamer_generator_router  # no
 from core.bridge import delete_generated_lecture_nodes, _is_generated_shell_chapter_node  # noqa: E402
 from education.tts_router import router as tts_router  # noqa: E402
 from core.path_policy import project_local_only  # noqa: E402
+from core import context_cache  # noqa: E402
 from core.seed import ensure_seed_graph  # noqa: E402
 from core.tts_service import get_tts_status, run_tts_startup_cleanup  # noqa: E402
 
@@ -379,6 +380,7 @@ async def health_check() -> dict[str, Any]:
         "service": "render-single-fastapi",
         "graph_db_path": _graph_db_path() or "default",
         "retrieval_mode": os.getenv("KGTS_RETRIEVAL_MODE", "hybrid"),
+        "context_cache": context_cache.status(),
     }
 
 

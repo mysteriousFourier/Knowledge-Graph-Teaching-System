@@ -7,6 +7,7 @@ import os
 from typing import Any, Dict, Iterable, List, Optional, Set
 
 from KGTS.core.bridge import build_frontend_graph, get_graph_schema, search_nodes, semantic_search
+from KGTS.core import context_cache
 from KGTS.education.kg_constraints import formula_context_for_text, graph_paths_for_evidence
 
 
@@ -44,6 +45,56 @@ def build_node_context(node_id: str, *, max_nodes: int = 260) -> Dict[str, Any]:
 
 
 def build_graphrag_context(
+    query: str,
+    *,
+    seed_node_ids: Optional[Iterable[str]] = None,
+    allowed_node_ids: Optional[Iterable[str]] = None,
+    limit: int = 6,
+    max_nodes: int = 260,
+    expansion_limit: int = 24,
+) -> Dict[str, Any]:
+    """Build or reuse a deterministic GraphRAG context payload."""
+    seeds = _normalize_node_ids(seed_node_ids or [])
+    allowed = _normalize_node_ids(allowed_node_ids or [])
+    identity = {
+        "kind": "graphrag",
+        "graph_revision": context_cache.graph_revision(),
+        "query": " ".join(str(query or "").split()).casefold(),
+        "seed_node_ids": seeds,
+        # None means global scope; [] is an explicit empty scope and must not
+        # share a cache entry with the global query.
+        "allowed_node_ids": None if allowed_node_ids is None else sorted(allowed),
+        "limit": int(limit or 6),
+        "max_nodes": int(max_nodes or 260),
+        "expansion_limit": int(expansion_limit or 24),
+        "retrieval_mode": os.getenv("KGTS_RETRIEVAL_MODE", "hybrid").strip().lower(),
+        "context_chars": os.getenv("KGTS_RAG_CONTEXT_CHARS", "12000"),
+    }
+    cache_key = context_cache.make_key(identity)
+    cached = context_cache.get(cache_key)
+    if cached is not None:
+        cached["context_cache_hit"] = True
+        stats = cached.get("retrieval_stats")
+        if isinstance(stats, dict):
+            cached["retrieval_stats"] = {**stats, "context_cache_hit": True}
+        return cached
+    result = _build_graphrag_context_uncached(
+        query,
+        seed_node_ids=seeds,
+        allowed_node_ids=allowed if allowed_node_ids is not None else None,
+        limit=limit,
+        max_nodes=max_nodes,
+        expansion_limit=expansion_limit,
+    )
+    result["context_cache_hit"] = False
+    stats = result.get("retrieval_stats")
+    if isinstance(stats, dict):
+        result["retrieval_stats"] = {**stats, "context_cache_hit": False}
+    context_cache.set(cache_key, result)
+    return result
+
+
+def _build_graphrag_context_uncached(
     query: str,
     *,
     seed_node_ids: Optional[Iterable[str]] = None,
@@ -165,6 +216,27 @@ def build_graphrag_context(
 
 
 def build_node_contexts(node_ids: Iterable[str], *, max_nodes: int = 260) -> Dict[str, Any]:
+    """Build or reuse a selected graph subtree context."""
+    normalized_ids = _normalize_node_ids(node_ids)
+    identity = {
+        "kind": "node_contexts",
+        "graph_revision": context_cache.graph_revision(),
+        "node_ids": normalized_ids,
+        "max_nodes": int(max_nodes or 260),
+        "retrieval_mode": os.getenv("KGTS_RETRIEVAL_MODE", "hybrid").strip().lower(),
+    }
+    cache_key = context_cache.make_key(identity)
+    cached = context_cache.get(cache_key)
+    if cached is not None:
+        cached["context_cache_hit"] = True
+        return cached
+    result = _build_node_contexts_uncached(normalized_ids, max_nodes=max_nodes)
+    result["context_cache_hit"] = False
+    context_cache.set(cache_key, result)
+    return result
+
+
+def _build_node_contexts_uncached(node_ids: Iterable[str], *, max_nodes: int = 260) -> Dict[str, Any]:
     node_ids = list(node_ids)
     if os.getenv("KGTS_RETRIEVAL_MODE", "hybrid").strip().lower() == "sparse_hybrid":
         from KGTS.core.graph_service import GraphService

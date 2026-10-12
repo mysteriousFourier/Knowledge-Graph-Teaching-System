@@ -1,0 +1,1239 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter20",
+  "count": 6,
+  "tables": [
+    {
+      "id": "20.1",
+      "label_format": "Table 20.1",
+      "title": "Table 20.1 Summary of a two-way analysis of variance with interaction, assuming a perfectly balanced design.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td>Sires</td><td>$ N_{s} - 1 $</td><td>$ nN_{d} \\sum_{i}(\\bar{z}_{i} - \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{d}\\sigma_{s}^{2} $</td></tr><tr><td>Dams</td><td>$ N_{d} - 1 $</td><td>$ nN_{s} \\sum_{j}(\\bar{z}_{j} - \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{s}\\sigma_{d}^{2} $</td></tr><tr><td>Interaction</td><td>$ (N_{d} - 1)(N_{s} - 1) $</td><td>$ n \\sum_{i,j}(\\bar{z}_{ij} - \\bar{z}_{i} - \\bar{z}_{j} + \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Error</td><td>$ N_{s}N_{d}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\bar{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td colspan=\"2\">Var(e) = MS_{e}</td><td>Var[Var(e)] = $ 2(MS_{e})^{2} $</td><td></td></tr><tr><td colspan=\"2\">Var(I) = $ \\frac{MS_{I} - MS_{e}}{n} $</td><td>Var[Var(I)] = $ \\frac{2}{n^{2}} \\left[ \\frac{(MS_{I})^{2}}{df_{I} + 2} + \\frac{(MS_{e})^{2}}{df_{e} + 2} \\right] $</td><td></td></tr><tr><td colspan=\"2\">Var(d) = $ \\frac{MS_{d} - MS_{I}}{nN_{s}} $</td><td>Var[Var(d)] = $ \\frac{2}{(nN_{s})^{2}} \\left[ \\frac{(MS_{d})^{2}}{df_{d} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $</td><td></td></tr><tr><td colspan=\"2\">Var(s) = $ \\frac{MS_{s} - MS_{I}}{nN_{d}} $</td><td>Var[Var(s)] = $ \\frac{2}{(nN_{d})^{2}} \\left[ \\frac{(MS_{s})^{2}}{df_{s} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $</td><td></td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "df",
+          "Sums of Squares",
+          "E(MS)"
+        ],
+        [
+          "Sires",
+          "$ N_{s} - 1 $",
+          "$ nN_{d} \\sum_{i}(\\bar{z}_{i} - \\bar{z})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{d}\\sigma_{s}^{2} $"
+        ],
+        [
+          "Dams",
+          "$ N_{d} - 1 $",
+          "$ nN_{s} \\sum_{j}(\\bar{z}_{j} - \\bar{z})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{s}\\sigma_{d}^{2} $"
+        ],
+        [
+          "Interaction",
+          "$ (N_{d} - 1)(N_{s} - 1) $",
+          "$ n \\sum_{i,j}(\\bar{z}_{ij} - \\bar{z}_{i} - \\bar{z}_{j} + \\bar{z})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+        ],
+        [
+          "Error",
+          "$ N_{s}N_{d}(n - 1) $",
+          "$ \\sum_{i,j,k}(z_{ijk} - \\bar{z}_{ij})^{2} $",
+          "$ \\sigma_{e}^{2} $"
+        ],
+        [
+          "Var(e) = MS_{e}",
+          "Var[Var(e)] = $ 2(MS_{e})^{2} $",
+          ""
+        ],
+        [
+          "Var(I) = $ \\frac{MS_{I} - MS_{e}}{n} $",
+          "Var[Var(I)] = $ \\frac{2}{n^{2}} \\left[ \\frac{(MS_{I})^{2}}{df_{I} + 2} + \\frac{(MS_{e})^{2}}{df_{e} + 2} \\right] $",
+          ""
+        ],
+        [
+          "Var(d) = $ \\frac{MS_{d} - MS_{I}}{nN_{s}} $",
+          "Var[Var(d)] = $ \\frac{2}{(nN_{s})^{2}} \\left[ \\frac{(MS_{d})^{2}}{df_{d} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $",
+          ""
+        ],
+        [
+          "Var(s) = $ \\frac{MS_{s} - MS_{I}}{nN_{d}} $",
+          "Var[Var(s)] = $ \\frac{2}{(nN_{d})^{2}} \\left[ \\frac{(MS_{s})^{2}}{df_{s} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $",
+          ""
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: The lower-left half of the table gives estimators for the variance components $ \\sigma_{e}^{2} $, $ \\sigma_{I}^{2} $, $ \\sigma_{d}^{2} $, and $ \\sigma_{s}^{2} $. Large-sample variance expressions (derived under the assumption of normality by using Equation 18.19) appear to their right; the square roots of these provide standard errors. $ N_{s} $ and $ N_{d} $ are the numbers of sires and dams, and n is the number of progeny measured per family. $ MS_{d} $, $ MS_{s} $, $ MS_{I} $, and $ MS_{e} $ are, respectively, the observed mean squares for dams, sires, interactions, and errors; these are obtained by dividing the respective observed sums of squares by their associated degrees of freedom (df).",
+          "source_page": 612,
+          "bbox": [
+            143.0,
+            839.0,
+            1103.0,
+            1084.0
+          ],
+          "source_block_ids": [
+            "p612:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 612,
+          "title": "Table 20.1 Summary of a two-way analysis of variance with interaction, assuming a perfectly balanced design.",
+          "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td>Sires</td><td>$ N_{s} - 1 $</td><td>$ nN_{d} \\sum_{i}(\\bar{z}_{i} - \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{d}\\sigma_{s}^{2} $</td></tr><tr><td>Dams</td><td>$ N_{d} - 1 $</td><td>$ nN_{s} \\sum_{j}(\\bar{z}_{j} - \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{s}\\sigma_{d}^{2} $</td></tr><tr><td>Interaction</td><td>$ (N_{d} - 1)(N_{s} - 1) $</td><td>$ n \\sum_{i,j}(\\bar{z}_{ij} - \\bar{z}_{i} - \\bar{z}_{j} + \\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Error</td><td>$ N_{s}N_{d}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\bar{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td colspan=\"2\">Var(e) = MS_{e}</td><td>Var[Var(e)] = $ 2(MS_{e})^{2} $</td><td></td></tr><tr><td colspan=\"2\">Var(I) = $ \\frac{MS_{I} - MS_{e}}{n} $</td><td>Var[Var(I)] = $ \\frac{2}{n^{2}} \\left[ \\frac{(MS_{I})^{2}}{df_{I} + 2} + \\frac{(MS_{e})^{2}}{df_{e} + 2} \\right] $</td><td></td></tr><tr><td colspan=\"2\">Var(d) = $ \\frac{MS_{d} - MS_{I}}{nN_{s}} $</td><td>Var[Var(d)] = $ \\frac{2}{(nN_{s})^{2}} \\left[ \\frac{(MS_{d})^{2}}{df_{d} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $</td><td></td></tr><tr><td colspan=\"2\">Var(s) = $ \\frac{MS_{s} - MS_{I}}{nN_{d}} $</td><td>Var[Var(s)] = $ \\frac{2}{(nN_{d})^{2}} \\left[ \\frac{(MS_{s})^{2}}{df_{s} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $</td><td></td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "df",
+              "Sums of Squares",
+              "E(MS)"
+            ],
+            [
+              "Sires",
+              "$ N_{s} - 1 $",
+              "$ nN_{d} \\sum_{i}(\\bar{z}_{i} - \\bar{z})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{d}\\sigma_{s}^{2} $"
+            ],
+            [
+              "Dams",
+              "$ N_{d} - 1 $",
+              "$ nN_{s} \\sum_{j}(\\bar{z}_{j} - \\bar{z})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{s}\\sigma_{d}^{2} $"
+            ],
+            [
+              "Interaction",
+              "$ (N_{d} - 1)(N_{s} - 1) $",
+              "$ n \\sum_{i,j}(\\bar{z}_{ij} - \\bar{z}_{i} - \\bar{z}_{j} + \\bar{z})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+            ],
+            [
+              "Error",
+              "$ N_{s}N_{d}(n - 1) $",
+              "$ \\sum_{i,j,k}(z_{ijk} - \\bar{z}_{ij})^{2} $",
+              "$ \\sigma_{e}^{2} $"
+            ],
+            [
+              "Var(e) = MS_{e}",
+              "Var[Var(e)] = $ 2(MS_{e})^{2} $",
+              ""
+            ],
+            [
+              "Var(I) = $ \\frac{MS_{I} - MS_{e}}{n} $",
+              "Var[Var(I)] = $ \\frac{2}{n^{2}} \\left[ \\frac{(MS_{I})^{2}}{df_{I} + 2} + \\frac{(MS_{e})^{2}}{df_{e} + 2} \\right] $",
+              ""
+            ],
+            [
+              "Var(d) = $ \\frac{MS_{d} - MS_{I}}{nN_{s}} $",
+              "Var[Var(d)] = $ \\frac{2}{(nN_{s})^{2}} \\left[ \\frac{(MS_{d})^{2}}{df_{d} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $",
+              ""
+            ],
+            [
+              "Var(s) = $ \\frac{MS_{s} - MS_{I}}{nN_{d}} $",
+              "Var[Var(s)] = $ \\frac{2}{(nN_{d})^{2}} \\left[ \\frac{(MS_{s})^{2}}{df_{s} + 2} + \\frac{(MS_{I})^{2}}{df_{I} + 2} \\right] $",
+              ""
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: The lower-left half of the table gives estimators for the variance components $ \\sigma_{e}^{2} $, $ \\sigma_{I}^{2} $, $ \\sigma_{d}^{2} $, and $ \\sigma_{s}^{2} $. Large-sample variance expressions (derived under the assumption of normality by using Equation 18.19) appear to their right; the square roots of these provide standard errors. $ N_{s} $ and $ N_{d} $ are the numbers of sires and dams, and n is the number of progeny measured per family. $ MS_{d} $, $ MS_{s} $, $ MS_{I} $, and $ MS_{e} $ are, respectively, the observed mean squares for dams, sires, interactions, and errors; these are obtained by dividing the respective observed sums of squares by their associated degrees of freedom (df).",
+              "source_page": 612,
+              "bbox": [
+                143.0,
+                839.0,
+                1103.0,
+                1084.0
+              ],
+              "source_block_ids": [
+                "p612:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            123.0,
+            191.0,
+            1080.0,
+            839.0
+          ],
+          "caption_bbox": [
+            119.0,
+            115.0,
+            1076.0,
+            205.0
+          ],
+          "source_block_ids": [
+            "p612:b3"
+          ],
+          "caption_source_block_ids": [
+            "p612:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_002",
+        "page": 612,
+        "pages": [
+          612
+        ],
+        "bbox": [
+          123.0,
+          191.0,
+          1080.0,
+          839.0
+        ],
+        "caption_bbox": [
+          119.0,
+          115.0,
+          1076.0,
+          205.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "20.2",
+      "label_format": "Table 20.2",
+      "title": "Table 20.2 Relationships between the variance components from the Cockerham-Weir and Comstock-Robinson models, and their descriptions in terms of covariances between relatives.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Cockerham-Weir</td><td>Comstock-Robinson</td><td>Covariance between Sibs</td></tr><tr><td>$ \\sigma_{n}^{2} $</td><td>$ \\sigma_{d,s} $</td><td>$ \\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{p}^{2} $</td><td>$ \\sigma_{s}^{2}-\\sigma_{d,s} $</td><td>$ \\sigma(\\text{PHS})-\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{m}^{2} $</td><td>$ \\sigma_{d}^{2}-\\sigma_{d,s} $</td><td>$ \\sigma(\\text{MHS})-\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{t}^{2} $</td><td>$ \\sigma_{I_{d},I_{s}} $</td><td>$ \\sigma(\\text{RFS})-2\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{k}^{2} $</td><td>$ \\sigma_{I}^{2}-\\sigma_{I_{d},I_{s}} $</td><td>$ \\sigma(\\text{FS})+2\\sigma(\\text{RHS}) $</td></tr><tr><td></td><td></td><td>$ -\\sigma(\\text{MHS})-\\sigma(\\text{PHS})-\\sigma(\\text{RFS}) $</td></tr></table>",
+      "rows": [
+        [
+          "Cockerham-Weir",
+          "Comstock-Robinson",
+          "Covariance between Sibs"
+        ],
+        [
+          "$ \\sigma_{n}^{2} $",
+          "$ \\sigma_{d,s} $",
+          "$ \\sigma(\\text{RHS}) $"
+        ],
+        [
+          "$ \\sigma_{p}^{2} $",
+          "$ \\sigma_{s}^{2}-\\sigma_{d,s} $",
+          "$ \\sigma(\\text{PHS})-\\sigma(\\text{RHS}) $"
+        ],
+        [
+          "$ \\sigma_{m}^{2} $",
+          "$ \\sigma_{d}^{2}-\\sigma_{d,s} $",
+          "$ \\sigma(\\text{MHS})-\\sigma(\\text{RHS}) $"
+        ],
+        [
+          "$ \\sigma_{t}^{2} $",
+          "$ \\sigma_{I_{d},I_{s}} $",
+          "$ \\sigma(\\text{RFS})-2\\sigma(\\text{RHS}) $"
+        ],
+        [
+          "$ \\sigma_{k}^{2} $",
+          "$ \\sigma_{I}^{2}-\\sigma_{I_{d},I_{s}} $",
+          "$ \\sigma(\\text{FS})+2\\sigma(\\text{RHS}) $"
+        ],
+        [
+          "",
+          "",
+          "$ -\\sigma(\\text{MHS})-\\sigma(\\text{PHS})-\\sigma(\\text{RFS}) $"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: PHS, MHS, and FS denote conventional paternal half sibs, maternal half sibs, and full sibs, while RHS and RFS refer to reciprocal half sibs and reciprocal full sibs. Reciprocal half sibs share one parent, which is the father of one and the mother of the other. With reciprocal full sibs, the father of one individual is the mother of the other, and vice versa.",
+          "source_page": 618,
+          "bbox": [
+            136.0,
+            550.0,
+            1095.0,
+            698.0
+          ],
+          "source_block_ids": [
+            "p618:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 618,
+          "title": "Table 20.2 Relationships between the variance components from the Cockerham-Weir and Comstock-Robinson models, and their descriptions in terms of covariances between relatives.",
+          "html": "<table><tr><td>Cockerham-Weir</td><td>Comstock-Robinson</td><td>Covariance between Sibs</td></tr><tr><td>$ \\sigma_{n}^{2} $</td><td>$ \\sigma_{d,s} $</td><td>$ \\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{p}^{2} $</td><td>$ \\sigma_{s}^{2}-\\sigma_{d,s} $</td><td>$ \\sigma(\\text{PHS})-\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{m}^{2} $</td><td>$ \\sigma_{d}^{2}-\\sigma_{d,s} $</td><td>$ \\sigma(\\text{MHS})-\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{t}^{2} $</td><td>$ \\sigma_{I_{d},I_{s}} $</td><td>$ \\sigma(\\text{RFS})-2\\sigma(\\text{RHS}) $</td></tr><tr><td>$ \\sigma_{k}^{2} $</td><td>$ \\sigma_{I}^{2}-\\sigma_{I_{d},I_{s}} $</td><td>$ \\sigma(\\text{FS})+2\\sigma(\\text{RHS}) $</td></tr><tr><td></td><td></td><td>$ -\\sigma(\\text{MHS})-\\sigma(\\text{PHS})-\\sigma(\\text{RFS}) $</td></tr></table>",
+          "rows": [
+            [
+              "Cockerham-Weir",
+              "Comstock-Robinson",
+              "Covariance between Sibs"
+            ],
+            [
+              "$ \\sigma_{n}^{2} $",
+              "$ \\sigma_{d,s} $",
+              "$ \\sigma(\\text{RHS}) $"
+            ],
+            [
+              "$ \\sigma_{p}^{2} $",
+              "$ \\sigma_{s}^{2}-\\sigma_{d,s} $",
+              "$ \\sigma(\\text{PHS})-\\sigma(\\text{RHS}) $"
+            ],
+            [
+              "$ \\sigma_{m}^{2} $",
+              "$ \\sigma_{d}^{2}-\\sigma_{d,s} $",
+              "$ \\sigma(\\text{MHS})-\\sigma(\\text{RHS}) $"
+            ],
+            [
+              "$ \\sigma_{t}^{2} $",
+              "$ \\sigma_{I_{d},I_{s}} $",
+              "$ \\sigma(\\text{RFS})-2\\sigma(\\text{RHS}) $"
+            ],
+            [
+              "$ \\sigma_{k}^{2} $",
+              "$ \\sigma_{I}^{2}-\\sigma_{I_{d},I_{s}} $",
+              "$ \\sigma(\\text{FS})+2\\sigma(\\text{RHS}) $"
+            ],
+            [
+              "",
+              "",
+              "$ -\\sigma(\\text{MHS})-\\sigma(\\text{PHS})-\\sigma(\\text{RFS}) $"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: PHS, MHS, and FS denote conventional paternal half sibs, maternal half sibs, and full sibs, while RHS and RFS refer to reciprocal half sibs and reciprocal full sibs. Reciprocal half sibs share one parent, which is the father of one and the mother of the other. With reciprocal full sibs, the father of one individual is the mother of the other, and vice versa.",
+              "source_page": 618,
+              "bbox": [
+                136.0,
+                550.0,
+                1095.0,
+                698.0
+              ],
+              "source_block_ids": [
+                "p618:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            127.0,
+            230.0,
+            1087.0,
+            543.0
+          ],
+          "caption_bbox": [
+            121.0,
+            115.0,
+            1082.0,
+            232.0
+          ],
+          "source_block_ids": [
+            "p618:b3"
+          ],
+          "caption_source_block_ids": [
+            "p618:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_004",
+        "page": 618,
+        "pages": [
+          618
+        ],
+        "bbox": [
+          127.0,
+          230.0,
+          1087.0,
+          543.0
+        ],
+        "caption_bbox": [
+          121.0,
+          115.0,
+          1082.0,
+          232.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "20.3",
+      "label_format": "Table 20.3",
+      "title": "Table 20.3 Summary of the analysis of variance of a factorial mating design involving reciprocal crosses between two distinct sets of parents, for a perfectly balanced design.",
+      "table_type": "numbered",
+      "html": "<table><tr><td colspan=\"4\">reciprocal crosses between two distinct sets of parents, for a perfectly balanced design.</td></tr><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td rowspan=\"2\">Dams</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{d}^{2} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Sires</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{2})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{s}^{2} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{1})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Interact.</td><td rowspan=\"2\">$ 2(N_{1} - 1)(N_{2} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Error</td><td rowspan=\"2\">$ 2N_{1}N_{2}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td>$ (z_{jik} - \\overline{z}_{ji})^{2} $</td><td></td></tr><tr><td>Factor</td><td>df</td><td>Sums of Cross Products</td><td>E(MCP)</td></tr><tr><td rowspan=\"2\">d,s</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})(\\overline{z}_{i} - \\overline{z}_{2}) $</td><td>$ n\\sigma_{Id,Is} + nN'\\sigma_{d,s} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})(\\overline{z}_{j} - \\overline{z}_{1}) $</td><td></td></tr><tr><td rowspan=\"2\">Id,Is</td><td rowspan=\"2\">$ (N_{1} - 1)(N_{2} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1}) $</td><td>$ n\\sigma_{Id,Is} $</td></tr><tr><td>$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2}) $</td><td></td></tr><tr><td>Var(e) = MS_e</td><td></td><td>Var[Var(e)] = $ 2(MS_e)^{2} $</td><td></td></tr><tr><td>Var(I) = $ \\frac{MS_I - MS_e}{n} $</td><td></td><td>Var[Var(I)] = $ \\frac{2}{n^2}\\left[\\frac{(MS_I)^{2}}{df_I + 2} + \\frac{(MS_e)^{2}}{df_e + 2}\\right] $</td><td></td></tr><tr><td>Var(d) = $ \\frac{MS_d - MS_I}{nN'} $</td><td></td><td>Var[Var(d)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_d)^{2}}{df_d + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $</td><td></td></tr><tr><td>Var(s) = $ \\frac{MS_s - MS_I}{nN'} $</td><td></td><td>Var[Var(s)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_s)^{2}}{df_s + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $</td><td></td></tr><tr><td>Cov(Id,Is) = $ \\frac{MCP_{Id,Is}}{n} $</td><td></td><td>Var[Cov(Id,Is)] = $ \\frac{2(MCP_{Id,Is})^{2}}{n^{2}(df_{Id,Is} + 2)} $</td><td></td></tr><tr><td>Cov(d,s) = $ \\frac{MCP_{d,s} - MCP_{Id,Is}}{nN'} $</td><td></td><td></td><td></td></tr><tr><td colspan=\"4\">$$ \\mathrm{Var}[\\mathrm{Cov}(d,s)]=\\frac{2}{(nN^{\\prime})^{2}}\\left[\\frac{(\\mathrm{MCP}_{d,s})^{2}}{\\mathrm{df}_{d,s}+2}+\\frac{(\\mathrm{MCP}_{I_{d},I_{s}})^{2}}{\\mathrm{df}_{I_{d},I_{s}}+2}\\right] $$</td></tr></table>",
+      "rows": [
+        [
+          "reciprocal crosses between two distinct sets of parents, for a perfectly balanced design."
+        ],
+        [
+          "Factor",
+          "df",
+          "Sums of Squares",
+          "E(MS)"
+        ],
+        [
+          "Dams",
+          "$ N_{1} + N_{2} - 2 $",
+          "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{d}^{2} $"
+        ],
+        [
+          "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})^{2} $",
+          ""
+        ],
+        [
+          "Sires",
+          "$ N_{1} + N_{2} - 2 $",
+          "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{2})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{s}^{2} $"
+        ],
+        [
+          "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{1})^{2} $",
+          ""
+        ],
+        [
+          "Interact.",
+          "$ 2(N_{1} - 1)(N_{2} - 1) $",
+          "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+        ],
+        [
+          "$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2})^{2} $",
+          ""
+        ],
+        [
+          "Error",
+          "$ 2N_{1}N_{2}(n - 1) $",
+          "$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $",
+          "$ \\sigma_{e}^{2} $"
+        ],
+        [
+          "$ (z_{jik} - \\overline{z}_{ji})^{2} $",
+          ""
+        ],
+        [
+          "Factor",
+          "df",
+          "Sums of Cross Products",
+          "E(MCP)"
+        ],
+        [
+          "d,s",
+          "$ N_{1} + N_{2} - 2 $",
+          "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})(\\overline{z}_{i} - \\overline{z}_{2}) $",
+          "$ n\\sigma_{Id,Is} + nN'\\sigma_{d,s} $"
+        ],
+        [
+          "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})(\\overline{z}_{j} - \\overline{z}_{1}) $",
+          ""
+        ],
+        [
+          "Id,Is",
+          "$ (N_{1} - 1)(N_{2} - 1) $",
+          "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1}) $",
+          "$ n\\sigma_{Id,Is} $"
+        ],
+        [
+          "$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2}) $",
+          ""
+        ],
+        [
+          "Var(e) = MS_e",
+          "",
+          "Var[Var(e)] = $ 2(MS_e)^{2} $",
+          ""
+        ],
+        [
+          "Var(I) = $ \\frac{MS_I - MS_e}{n} $",
+          "",
+          "Var[Var(I)] = $ \\frac{2}{n^2}\\left[\\frac{(MS_I)^{2}}{df_I + 2} + \\frac{(MS_e)^{2}}{df_e + 2}\\right] $",
+          ""
+        ],
+        [
+          "Var(d) = $ \\frac{MS_d - MS_I}{nN'} $",
+          "",
+          "Var[Var(d)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_d)^{2}}{df_d + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $",
+          ""
+        ],
+        [
+          "Var(s) = $ \\frac{MS_s - MS_I}{nN'} $",
+          "",
+          "Var[Var(s)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_s)^{2}}{df_s + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $",
+          ""
+        ],
+        [
+          "Cov(Id,Is) = $ \\frac{MCP_{Id,Is}}{n} $",
+          "",
+          "Var[Cov(Id,Is)] = $ \\frac{2(MCP_{Id,Is})^{2}}{n^{2}(df_{Id,Is} + 2)} $",
+          ""
+        ],
+        [
+          "Cov(d,s) = $ \\frac{MCP_{d,s} - MCP_{Id,Is}}{nN'} $",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$$ \\mathrm{Var}[\\mathrm{Cov}(d,s)]=\\frac{2}{(nN^{\\prime})^{2}}\\left[\\frac{(\\mathrm{MCP}_{d,s})^{2}}{\\mathrm{df}_{d,s}+2}+\\frac{(\\mathrm{MCP}_{I_{d},I_{s}})^{2}}{\\mathrm{df}_{I_{d},I_{s}}+2}\\right] $$"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: $ i = 1, \\ldots, N_{1} $ and $ j = 1, \\ldots, N_{2} $ denote the numbers of parents in the two sets, and n is the number of progeny per mating. $ \\overline{z}_1 $ is the mean phenotype observed with set 1 as dams, and $ \\overline{z}_2 $ with set 2 as dams. $ \\overline{z}_i $. is the mean phenotype observed for all progeny from dam $ i $, and $ \\overline{z}_{.i} $ for all progeny from sire $ i $. $ N' = 2N_1N_2/(N_1 + N_2) $. MS and MCP denote observed mean squares and cross-products, obtained by dividing the observed sums of squares and cross-products by their associated degrees of freedom (df).",
+          "source_page": 619,
+          "bbox": [
+            36.0,
+            1479.0,
+            994.0,
+            1541.0
+          ],
+          "source_block_ids": [
+            "p619:b5",
+            "p620:b2"
+          ],
+          "source_page_end": 620,
+          "continuation_bboxes": [
+            {
+              "source_page": 620,
+              "bbox": [
+                124.0,
+                119.0,
+                1085.0,
+                295.0
+              ]
+            }
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 619,
+          "title": "Table 20.3 Summary of the analysis of variance of a factorial mating design involving reciprocal crosses between two distinct sets of parents, for a perfectly balanced design.",
+          "html": "<table><tr><td colspan=\"4\">reciprocal crosses between two distinct sets of parents, for a perfectly balanced design.</td></tr><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td rowspan=\"2\">Dams</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{d}^{2} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Sires</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{2})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{s}^{2} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{1})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Interact.</td><td rowspan=\"2\">$ 2(N_{1} - 1)(N_{2} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2})^{2} $</td><td></td></tr><tr><td rowspan=\"2\">Error</td><td rowspan=\"2\">$ 2N_{1}N_{2}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td>$ (z_{jik} - \\overline{z}_{ji})^{2} $</td><td></td></tr><tr><td>Factor</td><td>df</td><td>Sums of Cross Products</td><td>E(MCP)</td></tr><tr><td rowspan=\"2\">d,s</td><td rowspan=\"2\">$ N_{1} + N_{2} - 2 $</td><td>$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})(\\overline{z}_{i} - \\overline{z}_{2}) $</td><td>$ n\\sigma_{Id,Is} + nN'\\sigma_{d,s} $</td></tr><tr><td>$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})(\\overline{z}_{j} - \\overline{z}_{1}) $</td><td></td></tr><tr><td rowspan=\"2\">Id,Is</td><td rowspan=\"2\">$ (N_{1} - 1)(N_{2} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1}) $</td><td>$ n\\sigma_{Id,Is} $</td></tr><tr><td>$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2}) $</td><td></td></tr><tr><td>Var(e) = MS_e</td><td></td><td>Var[Var(e)] = $ 2(MS_e)^{2} $</td><td></td></tr><tr><td>Var(I) = $ \\frac{MS_I - MS_e}{n} $</td><td></td><td>Var[Var(I)] = $ \\frac{2}{n^2}\\left[\\frac{(MS_I)^{2}}{df_I + 2} + \\frac{(MS_e)^{2}}{df_e + 2}\\right] $</td><td></td></tr><tr><td>Var(d) = $ \\frac{MS_d - MS_I}{nN'} $</td><td></td><td>Var[Var(d)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_d)^{2}}{df_d + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $</td><td></td></tr><tr><td>Var(s) = $ \\frac{MS_s - MS_I}{nN'} $</td><td></td><td>Var[Var(s)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_s)^{2}}{df_s + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $</td><td></td></tr><tr><td>Cov(Id,Is) = $ \\frac{MCP_{Id,Is}}{n} $</td><td></td><td>Var[Cov(Id,Is)] = $ \\frac{2(MCP_{Id,Is})^{2}}{n^{2}(df_{Id,Is} + 2)} $</td><td></td></tr><tr><td>Cov(d,s) = $ \\frac{MCP_{d,s} - MCP_{Id,Is}}{nN'} $</td><td></td><td></td><td></td></tr><tr><td colspan=\"4\">$$ \\mathrm{Var}[\\mathrm{Cov}(d,s)]=\\frac{2}{(nN^{\\prime})^{2}}\\left[\\frac{(\\mathrm{MCP}_{d,s})^{2}}{\\mathrm{df}_{d,s}+2}+\\frac{(\\mathrm{MCP}_{I_{d},I_{s}})^{2}}{\\mathrm{df}_{I_{d},I_{s}}+2}\\right] $$</td></tr></table>",
+          "rows": [
+            [
+              "reciprocal crosses between two distinct sets of parents, for a perfectly balanced design."
+            ],
+            [
+              "Factor",
+              "df",
+              "Sums of Squares",
+              "E(MS)"
+            ],
+            [
+              "Dams",
+              "$ N_{1} + N_{2} - 2 $",
+              "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{d}^{2} $"
+            ],
+            [
+              "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})^{2} $",
+              ""
+            ],
+            [
+              "Sires",
+              "$ N_{1} + N_{2} - 2 $",
+              "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{2})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN'\\sigma_{s}^{2} $"
+            ],
+            [
+              "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{1})^{2} $",
+              ""
+            ],
+            [
+              "Interact.",
+              "$ 2(N_{1} - 1)(N_{2} - 1) $",
+              "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+            ],
+            [
+              "$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2})^{2} $",
+              ""
+            ],
+            [
+              "Error",
+              "$ 2N_{1}N_{2}(n - 1) $",
+              "$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $",
+              "$ \\sigma_{e}^{2} $"
+            ],
+            [
+              "$ (z_{jik} - \\overline{z}_{ji})^{2} $",
+              ""
+            ],
+            [
+              "Factor",
+              "df",
+              "Sums of Cross Products",
+              "E(MCP)"
+            ],
+            [
+              "d,s",
+              "$ N_{1} + N_{2} - 2 $",
+              "$ nN_{2}\\sum_{i}^{N_{1}}(\\overline{z}_{i} - \\overline{z}_{1})(\\overline{z}_{i} - \\overline{z}_{2}) $",
+              "$ n\\sigma_{Id,Is} + nN'\\sigma_{d,s} $"
+            ],
+            [
+              "$ + nN_{1}\\sum_{j}^{N_{2}}(\\overline{z}_{j} - \\overline{z}_{2})(\\overline{z}_{j} - \\overline{z}_{1}) $",
+              ""
+            ],
+            [
+              "Id,Is",
+              "$ (N_{1} - 1)(N_{2} - 1) $",
+              "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{1}) $",
+              "$ n\\sigma_{Id,Is} $"
+            ],
+            [
+              "$ (z_{ji} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z}_{2}) $",
+              ""
+            ],
+            [
+              "Var(e) = MS_e",
+              "",
+              "Var[Var(e)] = $ 2(MS_e)^{2} $",
+              ""
+            ],
+            [
+              "Var(I) = $ \\frac{MS_I - MS_e}{n} $",
+              "",
+              "Var[Var(I)] = $ \\frac{2}{n^2}\\left[\\frac{(MS_I)^{2}}{df_I + 2} + \\frac{(MS_e)^{2}}{df_e + 2}\\right] $",
+              ""
+            ],
+            [
+              "Var(d) = $ \\frac{MS_d - MS_I}{nN'} $",
+              "",
+              "Var[Var(d)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_d)^{2}}{df_d + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $",
+              ""
+            ],
+            [
+              "Var(s) = $ \\frac{MS_s - MS_I}{nN'} $",
+              "",
+              "Var[Var(s)] = $ \\frac{2}{(nN')^{2}}\\left[\\frac{(MS_s)^{2}}{df_s + 2} + \\frac{(MS_I)^{2}}{df_I + 2}\\right] $",
+              ""
+            ],
+            [
+              "Cov(Id,Is) = $ \\frac{MCP_{Id,Is}}{n} $",
+              "",
+              "Var[Cov(Id,Is)] = $ \\frac{2(MCP_{Id,Is})^{2}}{n^{2}(df_{Id,Is} + 2)} $",
+              ""
+            ],
+            [
+              "Cov(d,s) = $ \\frac{MCP_{d,s} - MCP_{Id,Is}}{nN'} $",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$$ \\mathrm{Var}[\\mathrm{Cov}(d,s)]=\\frac{2}{(nN^{\\prime})^{2}}\\left[\\frac{(\\mathrm{MCP}_{d,s})^{2}}{\\mathrm{df}_{d,s}+2}+\\frac{(\\mathrm{MCP}_{I_{d},I_{s}})^{2}}{\\mathrm{df}_{I_{d},I_{s}}+2}\\right] $$"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: $ i = 1, \\ldots, N_{1} $ and $ j = 1, \\ldots, N_{2} $ denote the numbers of parents in the two sets, and n is the number of progeny per mating. $ \\overline{z}_1 $ is the mean phenotype observed with set 1 as dams, and $ \\overline{z}_2 $ with set 2 as dams. $ \\overline{z}_i $. is the mean phenotype observed for all progeny from dam $ i $, and $ \\overline{z}_{.i} $ for all progeny from sire $ i $. $ N' = 2N_1N_2/(N_1 + N_2) $. MS and MCP denote observed mean squares and cross-products, obtained by dividing the observed sums of squares and cross-products by their associated degrees of freedom (df).",
+              "source_page": 619,
+              "bbox": [
+                36.0,
+                1479.0,
+                994.0,
+                1541.0
+              ],
+              "source_block_ids": [
+                "p619:b5",
+                "p620:b2"
+              ],
+              "source_page_end": 620,
+              "continuation_bboxes": [
+                {
+                  "source_page": 620,
+                  "bbox": [
+                    124.0,
+                    119.0,
+                    1085.0,
+                    295.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "bbox": [
+            48.0,
+            152.0,
+            1030.0,
+            1492.0
+          ],
+          "caption_bbox": [
+            76.0,
+            122.0,
+            1036.0,
+            212.0
+          ],
+          "source_block_ids": [
+            "p619:b3",
+            "p619:b4"
+          ],
+          "caption_source_block_ids": [
+            "p619:b2"
+          ],
+          "manual_correction": {
+            "kind": "paddle_overlap_table_bottom",
+            "reason": "Paddle table HTML duplicated a clipped formula; PDF formula block is authoritative",
+            "source_page": 619,
+            "source_block_ids": [
+              "p619:b3",
+              "p619:b4"
+            ],
+            "bbox": [
+              48.0,
+              152.0,
+              1030.0,
+              1492.0
+            ],
+            "verification": "human_visual_check_against_source_pdf"
+          }
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_004",
+        "page": 619,
+        "pages": [
+          619,
+          620
+        ],
+        "bbox": [
+          48.0,
+          152.0,
+          1030.0,
+          1492.0
+        ],
+        "caption_bbox": [
+          76.0,
+          122.0,
+          1036.0,
+          212.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "20.4",
+      "label_format": "Table 20.4",
+      "title": "Table 20.4 Summary of the analysis of variance for an incomplete diallel (no reciprocal or within-line crosses) for an otherwise balanced design, involving N parental genotypes and n progeny per full-sib family.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>Degrees of Freedom</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td rowspan=\"2\">GCA</td><td rowspan=\"2\">N-1</td><td rowspan=\"2\">$ \\frac{n(N-1)^{2}}{N-2}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $</td></tr><tr><td>+n(N-2) $ \\sigma_{GCA}^{2} $</td></tr><tr><td>SCA</td><td>$ \\frac{N(N-3)}{2} $</td><td>$ n\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z})^{2}-SS_{GCA} $</td><td>$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $</td></tr><tr><td>Error</td><td>$ (n-1)\\left[\\frac{N(N-1)}{2}-1\\right] $</td><td>$ \\sum_{i<j}\\sum_{k}(z_{ijk}-\\bar{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "Degrees of Freedom",
+          "Sums of Squares",
+          "E(MS)"
+        ],
+        [
+          "GCA",
+          "N-1",
+          "$ \\frac{n(N-1)^{2}}{N-2}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^{2} $",
+          "$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $"
+        ],
+        [
+          "+n(N-2) $ \\sigma_{GCA}^{2} $"
+        ],
+        [
+          "SCA",
+          "$ \\frac{N(N-3)}{2} $",
+          "$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $"
+        ],
+        [
+          "Error",
+          "$ (n-1)\\left[\\frac{N(N-1)}{2}-1\\right] $",
+          "$ \\sigma_{e}^{2} $"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: $ z_{ijk} $ is the phenotype of the kth offspring from cross $ i \\times j $, $ \\bar{z}_{ij} $ is the mean phenotype of offspring from cross $ i \\times j $, and $ \\bar{z}_{i} $ is the mean phenotype of offspring from parent $ i $ averaged over all mates. SS $ _{GCA} $ denotes the sum of squares associated with general combining ability.",
+          "source_page": 624,
+          "bbox": [
+            136.0,
+            624.0,
+            1095.0,
+            771.0
+          ],
+          "source_block_ids": [
+            "p624:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 624,
+          "title": "Table 20.4 Summary of the analysis of variance for an incomplete diallel (no reciprocal or within-line crosses) for an otherwise balanced design, involving N parental genotypes and n progeny per full-sib family.",
+          "html": "<table><tr><td>Factor</td><td>Degrees of Freedom</td><td>Sums of Squares</td><td>E(MS)</td></tr><tr><td rowspan=\"2\">GCA</td><td rowspan=\"2\">N-1</td><td rowspan=\"2\">$ \\frac{n(N-1)^{2}}{N-2}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^{2} $</td><td>$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $</td></tr><tr><td>+n(N-2) $ \\sigma_{GCA}^{2} $</td></tr><tr><td>SCA</td><td>$ \\frac{N(N-3)}{2} $</td><td>$ n\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z})^{2}-SS_{GCA} $</td><td>$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $</td></tr><tr><td>Error</td><td>$ (n-1)\\left[\\frac{N(N-1)}{2}-1\\right] $</td><td>$ \\sum_{i<j}\\sum_{k}(z_{ijk}-\\bar{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "Degrees of Freedom",
+              "Sums of Squares",
+              "E(MS)"
+            ],
+            [
+              "GCA",
+              "N-1",
+              "$ \\frac{n(N-1)^{2}}{N-2}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^{2} $",
+              "$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $"
+            ],
+            [
+              "+n(N-2) $ \\sigma_{GCA}^{2} $"
+            ],
+            [
+              "SCA",
+              "$ \\frac{N(N-3)}{2} $",
+              "$ \\sigma_{e}^{2}+n\\sigma_{SCA}^{2} $"
+            ],
+            [
+              "Error",
+              "$ (n-1)\\left[\\frac{N(N-1)}{2}-1\\right] $",
+              "$ \\sigma_{e}^{2} $"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: $ z_{ijk} $ is the phenotype of the kth offspring from cross $ i \\times j $, $ \\bar{z}_{ij} $ is the mean phenotype of offspring from cross $ i \\times j $, and $ \\bar{z}_{i} $ is the mean phenotype of offspring from parent $ i $ averaged over all mates. SS $ _{GCA} $ denotes the sum of squares associated with general combining ability.",
+              "source_page": 624,
+              "bbox": [
+                136.0,
+                624.0,
+                1095.0,
+                771.0
+              ],
+              "source_block_ids": [
+                "p624:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            124.0,
+            229.0,
+            1081.0,
+            619.0
+          ],
+          "caption_bbox": [
+            119.0,
+            121.0,
+            1078.0,
+            233.0
+          ],
+          "source_block_ids": [
+            "p624:b3"
+          ],
+          "caption_source_block_ids": [
+            "p624:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_006",
+        "page": 624,
+        "pages": [
+          624
+        ],
+        "bbox": [
+          124.0,
+          229.0,
+          1081.0,
+          619.0
+        ],
+        "caption_bbox": [
+          119.0,
+          121.0,
+          1078.0,
+          233.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "20.5",
+      "label_format": "Table 20.5",
+      "title": "Table 20.5 Summary of the analysis of variance for a diallel mating design involving reciprocal crosses between lines but no crosses within lines.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>Expected Mean Squares</td></tr><tr><td rowspan=\"2\">GCA</td><td rowspan=\"2\">N-1</td><td>$ \\frac{n(N-1)^2}{2(N-2)}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $</td></tr><tr><td>+(\\bar{z}_{.i}-\\bar{z})^2</td><td>+\\frac{n(N-2)}{2}(\\sigma_m^2+\\sigma_p^2+4\\sigma_n^2)</td></tr><tr><td rowspan=\"2\">SCA</td><td rowspan=\"2\">$ \\frac{N}{2}(N-3) $</td><td>$ \\frac{n}{2}\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $</td></tr><tr><td>+(\\bar{z}_{ji}-\\bar{z})^2-SSGCA</td><td></td></tr><tr><td>RGCA</td><td>N-1</td><td>$ \\frac{n(N-1)}{2N}\\sum_{i}(\\bar{z}_{i}.-\\bar{z}_{.i})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+\\frac{nN}{2}(\\sigma_m^2+\\sigma_p^2) $</td></tr><tr><td rowspan=\"2\">RSCA</td><td rowspan=\"2\">$ \\frac{N-1}{2}(N-2) $</td><td>$ \\frac{n}{2}\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z}_{ji})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2 $</td></tr><tr><td>-SSRGCA</td><td></td></tr><tr><td>Error</td><td>N(N-1)(n-1)</td><td>$ \\sum_{i,\\tau}(z_{ijk}-\\bar{z}_{ij})^2 $</td><td>$ \\sigma_e^2 $</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "df",
+          "Sums of Squares",
+          "Expected Mean Squares"
+        ],
+        [
+          "GCA",
+          "N-1",
+          "$ \\frac{n(N-1)^2}{2(N-2)}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^2 $",
+          "$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $"
+        ],
+        [
+          "+(\\bar{z}_{.i}-\\bar{z})^2",
+          "+\\frac{n(N-2)}{2}(\\sigma_m^2+\\sigma_p^2+4\\sigma_n^2)"
+        ],
+        [
+          "SCA",
+          "$ \\frac{N}{2}(N-3) $",
+          "$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $"
+        ],
+        [
+          "+(\\bar{z}_{ji}-\\bar{z})^2-SSGCA",
+          ""
+        ],
+        [
+          "RGCA",
+          "N-1",
+          "$ \\frac{n(N-1)}{2N}\\sum_{i}(\\bar{z}_{i}.-\\bar{z}_{.i})^2 $",
+          "$ \\sigma_e^2+n\\sigma_k^2+\\frac{nN}{2}(\\sigma_m^2+\\sigma_p^2) $"
+        ],
+        [
+          "RSCA",
+          "$ \\frac{N-1}{2}(N-2) $",
+          "$ \\sigma_e^2+n\\sigma_k^2 $"
+        ],
+        [
+          "-SSRGCA",
+          ""
+        ],
+        [
+          "Error",
+          "N(N-1)(n-1)",
+          "$ \\sum_{i,\\tau}(z_{ijk}-\\bar{z}_{ij})^2 $",
+          "$ \\sigma_e^2 $"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: N is the number of parental lines, and n is the number of progeny evaluated per cross. $ \\bar{z}_{i} $ is the mean phenotype observed for all progeny from mother i, and $ \\bar{z}_{i} $ for all progeny from father i. $ \\bar{z}_{ij} $ is the mean phenotype of progeny of the mating between the ith dam and the jth sire, and $ \\bar{z}_{ji} $ is the mean of the reciprocal cross. $ z_{ijk} $ is the observed phenotype of the kth offspring of the $ i \\times j $ cross. RGCA and RSCA refer respectively to reciprocal general and specific combining abilities. The expected mean squares are given in terms of variance components associated with the Cockerham-Weir model.",
+          "source_page": 627,
+          "bbox": [
+            54.0,
+            851.0,
+            1017.0,
+            1086.0
+          ],
+          "source_block_ids": [
+            "p627:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 627,
+          "title": "Table 20.5 Summary of the analysis of variance for a diallel mating design involving reciprocal crosses between lines but no crosses within lines.",
+          "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>Expected Mean Squares</td></tr><tr><td rowspan=\"2\">GCA</td><td rowspan=\"2\">N-1</td><td>$ \\frac{n(N-1)^2}{2(N-2)}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $</td></tr><tr><td>+(\\bar{z}_{.i}-\\bar{z})^2</td><td>+\\frac{n(N-2)}{2}(\\sigma_m^2+\\sigma_p^2+4\\sigma_n^2)</td></tr><tr><td rowspan=\"2\">SCA</td><td rowspan=\"2\">$ \\frac{N}{2}(N-3) $</td><td>$ \\frac{n}{2}\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $</td></tr><tr><td>+(\\bar{z}_{ji}-\\bar{z})^2-SSGCA</td><td></td></tr><tr><td>RGCA</td><td>N-1</td><td>$ \\frac{n(N-1)}{2N}\\sum_{i}(\\bar{z}_{i}.-\\bar{z}_{.i})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2+\\frac{nN}{2}(\\sigma_m^2+\\sigma_p^2) $</td></tr><tr><td rowspan=\"2\">RSCA</td><td rowspan=\"2\">$ \\frac{N-1}{2}(N-2) $</td><td>$ \\frac{n}{2}\\sum_{i<j}(\\bar{z}_{ij}-\\bar{z}_{ji})^2 $</td><td>$ \\sigma_e^2+n\\sigma_k^2 $</td></tr><tr><td>-SSRGCA</td><td></td></tr><tr><td>Error</td><td>N(N-1)(n-1)</td><td>$ \\sum_{i,\\tau}(z_{ijk}-\\bar{z}_{ij})^2 $</td><td>$ \\sigma_e^2 $</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "df",
+              "Sums of Squares",
+              "Expected Mean Squares"
+            ],
+            [
+              "GCA",
+              "N-1",
+              "$ \\frac{n(N-1)^2}{2(N-2)}\\sum_{i}(\\bar{z}_{i}.-\\bar{z})^2 $",
+              "$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $"
+            ],
+            [
+              "+(\\bar{z}_{.i}-\\bar{z})^2",
+              "+\\frac{n(N-2)}{2}(\\sigma_m^2+\\sigma_p^2+4\\sigma_n^2)"
+            ],
+            [
+              "SCA",
+              "$ \\frac{N}{2}(N-3) $",
+              "$ \\sigma_e^2+n\\sigma_k^2+2n\\sigma_t^2 $"
+            ],
+            [
+              "+(\\bar{z}_{ji}-\\bar{z})^2-SSGCA",
+              ""
+            ],
+            [
+              "RGCA",
+              "N-1",
+              "$ \\frac{n(N-1)}{2N}\\sum_{i}(\\bar{z}_{i}.-\\bar{z}_{.i})^2 $",
+              "$ \\sigma_e^2+n\\sigma_k^2+\\frac{nN}{2}(\\sigma_m^2+\\sigma_p^2) $"
+            ],
+            [
+              "RSCA",
+              "$ \\frac{N-1}{2}(N-2) $",
+              "$ \\sigma_e^2+n\\sigma_k^2 $"
+            ],
+            [
+              "-SSRGCA",
+              ""
+            ],
+            [
+              "Error",
+              "N(N-1)(n-1)",
+              "$ \\sum_{i,\\tau}(z_{ijk}-\\bar{z}_{ij})^2 $",
+              "$ \\sigma_e^2 $"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: N is the number of parental lines, and n is the number of progeny evaluated per cross. $ \\bar{z}_{i} $ is the mean phenotype observed for all progeny from mother i, and $ \\bar{z}_{i} $ for all progeny from father i. $ \\bar{z}_{ij} $ is the mean phenotype of progeny of the mating between the ith dam and the jth sire, and $ \\bar{z}_{ji} $ is the mean of the reciprocal cross. $ z_{ijk} $ is the observed phenotype of the kth offspring of the $ i \\times j $ cross. RGCA and RSCA refer respectively to reciprocal general and specific combining abilities. The expected mean squares are given in terms of variance components associated with the Cockerham-Weir model.",
+              "source_page": 627,
+              "bbox": [
+                54.0,
+                851.0,
+                1017.0,
+                1086.0
+              ],
+              "source_block_ids": [
+                "p627:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            61.0,
+            195.0,
+            1040.0,
+            864.0
+          ],
+          "caption_bbox": [
+            78.0,
+            124.0,
+            1037.0,
+            210.0
+          ],
+          "source_block_ids": [
+            "p627:b3"
+          ],
+          "caption_source_block_ids": [
+            "p627:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_007",
+        "page": 627,
+        "pages": [
+          627
+        ],
+        "bbox": [
+          61.0,
+          195.0,
+          1040.0,
+          864.0
+        ],
+        "caption_bbox": [
+          78.0,
+          124.0,
+          1037.0,
+          210.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "20.6",
+      "label_format": "Table 20.6",
+      "title": "Table 20.6 Composite genetic parameters used in the Hayman-Jinks analysis. Summations are over loci, each indexed by l.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Arbitrary Gene Frequencies</td><td colspan=\"2\">p_{l}=q_{l}=0.5</td></tr><tr><td>f=0</td><td>f=1</td></tr><tr><td>D</td><td>2 \\sum p_{l}q_{l}(1+f)a_{l}^{2}</td><td>\\sum a_{l}^{2}/2</td><td>\\sum a_{l}^{2}</td></tr><tr><td>H_{1}</td><td>\\frac{1}{2} \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1+f)(a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/16</td><td>\\sum(a_{l}k_{l})^{2}/4</td></tr><tr><td>H_{2}</td><td>\\sum[p_{l}q_{l}(1+f)a_{l}k_{l}]^{2}</td><td>\\sum(a_{l}k_{l})^{2}/16</td><td>\\sum(a_{l}k_{l})^{2}/4</td></tr><tr><td>H_{3}</td><td>2 \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1-f)(a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/4</td><td>0</td></tr><tr><td>H_{4}</td><td>2 \\sum(1-f)(1+f)(p_{l}q_{l}a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/8</td><td>0</td></tr><tr><td>G_{1}</td><td>\\sum p_{l}q_{l}(p_{l}-q_{l})(1+f)a_{l}^{2}k_{l}</td><td>0</td><td>0</td></tr><tr><td>G_{2}</td><td>\\sum p_{l}q_{l}(p_{l}-q_{l})(1-f)a_{l}^{2}k_{l}</td><td>0</td><td>0</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Arbitrary Gene Frequencies",
+          "p_{l}=q_{l}=0.5"
+        ],
+        [
+          "f=0",
+          "f=1"
+        ],
+        [
+          "D",
+          "2 \\sum p_{l}q_{l}(1+f)a_{l}^{2}",
+          "2",
+          "sum a_{l}^{2}"
+        ],
+        [
+          "H_{1}",
+          "sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1+f)(a_{l}k_{l})^{2}",
+          "16",
+          "4"
+        ],
+        [
+          "H_{2}",
+          "sum[p_{l}q_{l}(1+f)a_{l}k_{l}]^{2}",
+          "16",
+          "4"
+        ],
+        [
+          "H_{3}",
+          "2 \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1-f)(a_{l}k_{l})^{2}",
+          "4",
+          "0"
+        ],
+        [
+          "H_{4}",
+          "2 \\sum(1-f)(1+f)(p_{l}q_{l}a_{l}k_{l})^{2}",
+          "8",
+          "0"
+        ],
+        [
+          "G_{1}",
+          "sum p_{l}q_{l}(p_{l}-q_{l})(1+f)a_{l}^{2}k_{l}",
+          "0",
+          "0"
+        ],
+        [
+          "G_{2}",
+          "sum p_{l}q_{l}(p_{l}-q_{l})(1-f)a_{l}^{2}k_{l}",
+          "0",
+          "0"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: f refers to the level of inbreeding in the parents. The columns labeled f = 0 and f = 1 refer to the special cases in which the two genes per heterozygous locus are in equal frequencies $ p_l = q_l = 0.5 $, as would be the case when all parents are descended from a cross between two inbred lines.",
+          "source_page": 633,
+          "bbox": [
+            71.0,
+            617.0,
+            1031.0,
+            766.0
+          ],
+          "source_block_ids": [
+            "p633:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 633,
+          "title": "Table 20.6 Composite genetic parameters used in the Hayman-Jinks analysis. Summations are over loci, each indexed by l.",
+          "html": "<table><tr><td rowspan=\"2\"></td><td rowspan=\"2\">Arbitrary Gene Frequencies</td><td colspan=\"2\">p_{l}=q_{l}=0.5</td></tr><tr><td>f=0</td><td>f=1</td></tr><tr><td>D</td><td>2 \\sum p_{l}q_{l}(1+f)a_{l}^{2}</td><td>\\sum a_{l}^{2}/2</td><td>\\sum a_{l}^{2}</td></tr><tr><td>H_{1}</td><td>\\frac{1}{2} \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1+f)(a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/16</td><td>\\sum(a_{l}k_{l})^{2}/4</td></tr><tr><td>H_{2}</td><td>\\sum[p_{l}q_{l}(1+f)a_{l}k_{l}]^{2}</td><td>\\sum(a_{l}k_{l})^{2}/16</td><td>\\sum(a_{l}k_{l})^{2}/4</td></tr><tr><td>H_{3}</td><td>2 \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1-f)(a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/4</td><td>0</td></tr><tr><td>H_{4}</td><td>2 \\sum(1-f)(1+f)(p_{l}q_{l}a_{l}k_{l})^{2}</td><td>\\sum(a_{l}k_{l})^{2}/8</td><td>0</td></tr><tr><td>G_{1}</td><td>\\sum p_{l}q_{l}(p_{l}-q_{l})(1+f)a_{l}^{2}k_{l}</td><td>0</td><td>0</td></tr><tr><td>G_{2}</td><td>\\sum p_{l}q_{l}(p_{l}-q_{l})(1-f)a_{l}^{2}k_{l}</td><td>0</td><td>0</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Arbitrary Gene Frequencies",
+              "p_{l}=q_{l}=0.5"
+            ],
+            [
+              "f=0",
+              "f=1"
+            ],
+            [
+              "D",
+              "2 \\sum p_{l}q_{l}(1+f)a_{l}^{2}",
+              "2",
+              "sum a_{l}^{2}"
+            ],
+            [
+              "H_{1}",
+              "sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1+f)(a_{l}k_{l})^{2}",
+              "16",
+              "4"
+            ],
+            [
+              "H_{2}",
+              "sum[p_{l}q_{l}(1+f)a_{l}k_{l}]^{2}",
+              "16",
+              "4"
+            ],
+            [
+              "H_{3}",
+              "2 \\sum p_{l}q_{l}[1-2p_{l}q_{l}(1-f)](1-f)(a_{l}k_{l})^{2}",
+              "4",
+              "0"
+            ],
+            [
+              "H_{4}",
+              "2 \\sum(1-f)(1+f)(p_{l}q_{l}a_{l}k_{l})^{2}",
+              "8",
+              "0"
+            ],
+            [
+              "G_{1}",
+              "sum p_{l}q_{l}(p_{l}-q_{l})(1+f)a_{l}^{2}k_{l}",
+              "0",
+              "0"
+            ],
+            [
+              "G_{2}",
+              "sum p_{l}q_{l}(p_{l}-q_{l})(1-f)a_{l}^{2}k_{l}",
+              "0",
+              "0"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: f refers to the level of inbreeding in the parents. The columns labeled f = 0 and f = 1 refer to the special cases in which the two genes per heterozygous locus are in equal frequencies $ p_l = q_l = 0.5 $, as would be the case when all parents are descended from a cross between two inbred lines.",
+              "source_page": 633,
+              "bbox": [
+                71.0,
+                617.0,
+                1031.0,
+                766.0
+              ],
+              "source_block_ids": [
+                "p633:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            73.0,
+            202.0,
+            1034.0,
+            625.0
+          ],
+          "caption_bbox": [
+            84.0,
+            123.0,
+            1042.0,
+            208.0
+          ],
+          "source_block_ids": [
+            "p633:b3"
+          ],
+          "caption_source_block_ids": [
+            "p633:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter20",
+        "unit_id": "Genetics_chapter20_010",
+        "page": 633,
+        "pages": [
+          633
+        ],
+        "bbox": [
+          73.0,
+          202.0,
+          1034.0,
+          625.0
+        ],
+        "caption_bbox": [
+          84.0,
+          123.0,
+          1042.0,
+          208.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

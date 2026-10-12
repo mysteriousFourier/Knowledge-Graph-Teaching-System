@@ -1,0 +1,214 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter23",
+  "count": 4,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter23:1",
+      "example_ref": "Genetics_chapter23:1",
+      "chapter": "Genetics_chapter23",
+      "label": "Example 1",
+      "title": "Example 1. Consider the genetic covariance between mother y and offspring x. Since maternal effects are assumed present, we also need to consider the mothers z and w of y and x, re",
+      "source_file": "Genetics_chapter23_002.json",
+      "start_block_index": 17,
+      "end_source_file": "Genetics_chapter23_002.json",
+      "end_block_index": 30,
+      "block_ids": [
+        "p703:b6",
+        "p703:b7",
+        "p704:b2",
+        "p704:b3",
+        "p704:b4",
+        "p704:b5",
+        "p704:b6",
+        "p704:b7",
+        "p704:b8",
+        "p704:b9",
+        "p704:b10",
+        "p704:b11",
+        "p704:b12",
+        "p705:b2"
+      ],
+      "content_markdown": "Example 1. Consider the genetic covariance between mother y and offspring x. Since maternal effects are assumed present, we also need to consider the mothers z and w of y and x, respectively. Here y = w, whereas z represents individual x's maternal grandmother (as shown in the left of the accompanying figure on the next page).\n\nFor this set of relationships, $ 2\\Theta_{xy} = 1/2 $, $ 2\\Theta_{xz} = 1/4 $, $ 2\\Theta_{wz} = 1/2 $, and since w and y represent the same individual, $ 2\\Theta_{yw} = 2\\Theta_{yy} = 1 $. Because an individual inherits only one gene from each parent, $ \\Delta_{xy} = \\Delta_{xz} = \\Delta_{wz} = 0 $, but again, since w is y, $ \\Delta_{yw} = \\Delta_{yy} = 1 $. Making the appropriate substitutions in\n\n![Source illustration p704 b2](figures/examples/Genetics_p704_b2.png)\n\nEquations 23.3a-d, the genetic covariance between mother and offspring is found to be\n\n[[FORMULA:Genetics_chapter23_formula007]]\n\nFrom arguments presented above, the environmental covariance between mother and offspring can be expressed as\n\n[[FORMULA:Genetics_chapter23_formula008]]\n\nOn the other hand, a father-offspring relationship can be represented by letting the offspring be $x$, the father be $y$, and the paternal grandmother be $z$ (as shown in the right of the accompanying figure). We then have the coefficients $2\\Theta_{xy} = 1/2$, $2\\Theta_{xz} = 1/4$, and since the father and mother of $x$ are assumed to be unrelated, $2\\Theta_{yw} = 2\\Theta_{wz} = 0$. All of the $\\Delta$ coefficients are also zero in this case. Summing up the terms,\n\n[[FORMULA:Genetics_chapter23_formula009]]\n\nAs noted above, the second term represents the covariance between the maternal effect expressed in the father (via z) and the direct effects of the genes of z, one-quarter of which are transmitted to x. Assuming the father is derived from a different maternal lineage than its mate, the environmental covariance between father and offspring is zero.\n\nThus, the expected difference between the mother-offspring and father-offspring covariances is\n\n[[FORMULA:Genetics_chapter23_formula010]]\n\nThe first term (in parentheses) is the covariance between all of the direct effects on a mother's phenotype and the maternal effect she contributes to her offspring's phenotype. The second term is half the additive genetic variance for maternal effects; it arises because a mother transmits half the genes that determine her maternal effect to her progeny. The third term is the fraction of the environmental maternal effect on the mother that is transmitted to her offspring (through, for example, physiological effects or cultural inheritance).\n\nLet the difference between the regressions of offspring on mother and offspring on father be m. Since the final two terms in the preceding equation are necessarily positive, one would ordinarily expect m to be positive. However, the opposite has sometimes been observed. For example, Falconer (1965a) found the difference between regressions to be -0.13 for litter size in mice, and Janssen et al. (1988) obtained a difference of approximately -0.5 for age at maturity in springtails. Such a pronounced reduction of the mother-offspring regression relative to that for father-offspring provides a strong indication that the covariance between direct and maternal effects is negative, i.e., that genes whose direct effects cause an increase in the expression of the trait have an antagonistic effect on the trait's expression through their maternal effects.",
+      "content_plain": "Example 1. Consider the genetic covariance between mother y and offspring x. Since maternal effects are assumed present, we also need to consider the mothers z and w of y and x, respectively. Here y = w, whereas z represents individual x's maternal grandmother (as shown in the left of the accompanying figure on the next page).\n\nFor this set of relationships,  2\\Theta_{xy} = 1/2 ,  2\\Theta_{xz} = 1/4 ,  2\\Theta_{wz} = 1/2 , and since w and y represent the same individual,  2\\Theta_{yw} = 2\\Theta_{yy} = 1 . Because an individual inherits only one gene from each parent,  \\Delta_{xy} = \\Delta_{xz} = \\Delta_{wz} = 0 , but again, since w is y,  \\Delta_{yw} = \\Delta_{yy} = 1 . Making the appropriate substitutions in\n\n![Source illustration p704 b2](figures/examples/Genetics_p704_b2.png)\n\nEquations 23.3a-d, the genetic covariance between mother and offspring is found to be\n\n[[FORMULA:Genetics_chapter23_formula007]]\n\nFrom arguments presented above, the environmental covariance between mother and offspring can be expressed as\n\n[[FORMULA:Genetics_chapter23_formula008]]\n\nOn the other hand, a father-offspring relationship can be represented by letting the offspring be x, the father be y, and the paternal grandmother be z (as shown in the right of the accompanying figure). We then have the coefficients 2\\Theta_{xy} = 1/2, 2\\Theta_{xz} = 1/4, and since the father and mother of x are assumed to be unrelated, 2\\Theta_{yw} = 2\\Theta_{wz} = 0. All of the \\Delta coefficients are also zero in this case. Summing up the terms,\n\n[[FORMULA:Genetics_chapter23_formula009]]\n\nAs noted above, the second term represents the covariance between the maternal effect expressed in the father (via z) and the direct effects of the genes of z, one-quarter of which are transmitted to x. Assuming the father is derived from a different maternal lineage than its mate, the environmental covariance between father and offspring is zero.\n\nThus, the expected difference between the mother-offspring and father-offspring covariances is\n\n[[FORMULA:Genetics_chapter23_formula010]]\n\nThe first term (in parentheses) is the covariance between all of the direct effects on a mother's phenotype and the maternal effect she contributes to her offspring's phenotype. The second term is half the additive genetic variance for maternal effects; it arises because a mother transmits half the genes that determine her maternal effect to her progeny. The third term is the fraction of the environmental maternal effect on the mother that is transmitted to her offspring (through, for example, physiological effects or cultural inheritance).\n\nLet the difference between the regressions of offspring on mother and offspring on father be m. Since the final two terms in the preceding equation are necessarily positive, one would ordinarily expect m to be positive. However, the opposite has sometimes been observed. For example, Falconer (1965a) found the difference between regressions to be -0.13 for litter size in mice, and Janssen et al. (1988) obtained a difference of approximately -0.5 for age at maturity in springtails. Such a pronounced reduction of the mother-offspring regression relative to that for father-offspring provides a strong indication that the covariance between direct and maternal effects is negative, i.e., that genes whose direct effects cause an increase in the expression of the trait have an antagonistic effect on the trait's expression through their maternal effects.",
+      "formula_refs": [
+        "Genetics_chapter23_formula007",
+        "Genetics_chapter23_formula008",
+        "Genetics_chapter23_formula009",
+        "Genetics_chapter23_formula010"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p704_b2.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 705,
+          "y": 511.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 703
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter23:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter23:2",
+      "example_ref": "Genetics_chapter23:2",
+      "chapter": "Genetics_chapter23",
+      "label": "Example 2",
+      "title": "Example 2. Here we consider a two-character situation (from Lande and Price 1989) in which only one of the four possible maternal effect coefficients is nonzero. Adult size (charac",
+      "source_file": "Genetics_chapter23_009.json",
+      "start_block_index": 33,
+      "end_source_file": "Genetics_chapter23_009.json",
+      "end_block_index": 41,
+      "block_ids": [
+        "p722:b3",
+        "p722:b4",
+        "p722:b5",
+        "p722:b6",
+        "p722:b7",
+        "p722:b8",
+        "p722:b9",
+        "p722:b10",
+        "p723:b2"
+      ],
+      "content_markdown": "Example 2. Here we consider a two-character situation (from Lande and Price 1989) in which only one of the four possible maternal effect coefficients is nonzero. Adult size (character 1) of a mother has a direct maternal effect on her offspring's size at birth (character 2) so that $ m_{21} = m \\neq 0 $, but no direct effect on the offspring's size at maturity ( $ m_{11} = 0 $). Furthermore, the mother's size at birth has no maternal influence on her offspring's size at birth ( $ m_{22} = 0 $) or maturity ( $ m_{12} = 0 $). Thus, all of the elements of M are zero but $ m_{21} $. If there are no other maternal characters influencing size at birth or maturity, and the other assumptions of the Kirkpatrick-Lande model are met, then unbiased definitions of the expected values of the parent-offspring covariance matrices are given by Equations 23.16a,b, which reduce to\n\n[[FORMULA:Genetics_chapter23_formula036]]\n\nwhere $ A_{1} $ denotes the direct additive effect on adult size, and $ A_{2} $ the direct additive effect on size at birth.\n\nProvided that observed values of the elements of the two parent-offspring covariance matrices, $ C^m $ and $ C^f $, are available along with estimates of the phenotypic variance of the maternal trait, $ \\sigma_{z_1}^2 $, and the phenotypic covariance between the two traits, $ \\sigma_{z_1,z_2} $, estimates of the genetic variances and covariance and of the maternal effect coefficient can be acquired by equating the observed elements of $ C^m $ and $ C^f $ to their expectations. For example, letting subscripts denote the rows and columns of matrix elements,\n\n[[FORMULA:Genetics_chapter23_formula037]]\n\n[[FORMULA:Genetics_chapter23_formula038]]\n\n[[FORMULA:Genetics_chapter23_formula039]]\n\n[[FORMULA:Genetics_chapter23_formula040]]\n\nApplying this model to weight data for Darwin’s finches (Price and Grant 1985) and great tits (van Noordwijk 1984), Lande and Price (1989) obtained estimates of $ m_{21} = 0.6 $ and 0.3 respectively. Assuming the model is valid, these results suggest that the maternal contribution to hatchling body size associated with maternal adult size can be quite substantial in birds with maternal care.",
+      "content_plain": "Example 2. Here we consider a two-character situation (from Lande and Price 1989) in which only one of the four possible maternal effect coefficients is nonzero. Adult size (character 1) of a mother has a direct maternal effect on her offspring's size at birth (character 2) so that  m_{21} = m \\neq 0 , but no direct effect on the offspring's size at maturity (  m_{11} = 0 ). Furthermore, the mother's size at birth has no maternal influence on her offspring's size at birth (  m_{22} = 0 ) or maturity (  m_{12} = 0 ). Thus, all of the elements of M are zero but  m_{21} . If there are no other maternal characters influencing size at birth or maturity, and the other assumptions of the Kirkpatrick-Lande model are met, then unbiased definitions of the expected values of the parent-offspring covariance matrices are given by Equations 23.16a,b, which reduce to\n\n[[FORMULA:Genetics_chapter23_formula036]]\n\nwhere  A_{1}  denotes the direct additive effect on adult size, and  A_{2}  the direct additive effect on size at birth.\n\nProvided that observed values of the elements of the two parent-offspring covariance matrices,  C^m  and  C^f , are available along with estimates of the phenotypic variance of the maternal trait,  \\sigma_{z_1}^2 , and the phenotypic covariance between the two traits,  \\sigma_{z_1,z_2} , estimates of the genetic variances and covariance and of the maternal effect coefficient can be acquired by equating the observed elements of  C^m  and  C^f  to their expectations. For example, letting subscripts denote the rows and columns of matrix elements,\n\n[[FORMULA:Genetics_chapter23_formula037]]\n\n[[FORMULA:Genetics_chapter23_formula038]]\n\n[[FORMULA:Genetics_chapter23_formula039]]\n\n[[FORMULA:Genetics_chapter23_formula040]]\n\nApplying this model to weight data for Darwin’s finches (Price and Grant 1985) and great tits (van Noordwijk 1984), Lande and Price (1989) obtained estimates of  m_{21} = 0.6  and 0.3 respectively. Assuming the model is valid, these results suggest that the maternal contribution to hatchling body size associated with maternal adult size can be quite substantial in birds with maternal care.",
+      "formula_refs": [
+        "Genetics_chapter23_formula036",
+        "Genetics_chapter23_formula037",
+        "Genetics_chapter23_formula038",
+        "Genetics_chapter23_formula039",
+        "Genetics_chapter23_formula040"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 723,
+          "y": 332.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 722
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter23:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter23:3",
+      "example_ref": "Genetics_chapter23:3",
+      "chapter": "Genetics_chapter23",
+      "label": "Example 3",
+      "title": "Example 3. Consider the case in which the only intrafamilial effects on the phenotype derive from fathers and mothers. Equation 23.19 then reduces to",
+      "source_file": "Genetics_chapter23_010.json",
+      "start_block_index": 4,
+      "end_source_file": "Genetics_chapter23_010.json",
+      "end_block_index": 18,
+      "block_ids": [
+        "p724:b2",
+        "p724:b3",
+        "p724:b4",
+        "p724:b5",
+        "p724:b6",
+        "p724:b7",
+        "p724:b8",
+        "p724:b9",
+        "p724:b10",
+        "p724:b11",
+        "p724:b12",
+        "p725:b2",
+        "p725:b3",
+        "p725:b4",
+        "p725:b5"
+      ],
+      "content_markdown": "Example 3. Consider the case in which the only intrafamilial effects on the phenotype derive from fathers and mothers. Equation 23.19 then reduces to\n\n[[FORMULA:Genetics_chapter23_formula042]]\n\nSuch a model should provide a reasonable description of prereproductive.traits of organisms, provided that interactions with sibs during development are either nonexistent or have negligible phenotypic consequences. How does this model alter our interpretations of the covariances between relatives compared to the maternal-effects model?\n\nFirst, we note that the phenotypic covariance between relatives x and y can be written\n\n[[FORMULA:Genetics_chapter23_formula043]]\n\nThus, six types of factors can contribute to the resemblance between relatives: variances associated with direct, maternal, and paternal effects, and covariances between direct and maternal effects, between direct and paternal effects, and between maternal and paternal effects.\n\nThe first four terms of this equation (i.e., those involving direct and/or maternal effects) have all been described above (Table 23.1). The next two terms, which describe the covariance between direct and paternal effects, can be evaluated by extending the procedures used earlier in the chapter. For example, for the genetic covariance of direct and paternal effects, we let s denote the father of x and t denote the father of y. Modifying Equations 23.3a,b, we then obtain\n\n[[FORMULA:Genetics_chapter23_formula044]]\n\nFor most relationships, simple expressions for the contributions of $ \\sigma_{A_0,A_p} $ and $ \\sigma_{D_0,D_p} $ to the phenotypic covariance can be obtained by reversing the sexes in Table 23.1. For example, when $ y = s $ is the father of $ x $, then $ \\Theta_{xt} = 1/8 $, $ \\Theta_{ys} = 1/2 $, $ \\Delta_{xt} = 0 $, and $ \\Delta_{ys} = 1 $, yielding\n\n[[FORMULA:Genetics_chapter23_formula045]]\n\nThis equation has the same structure as the covariance between direct and maternal effects when $y$ is the mother of $x$ (Table 23.1). Similar procedures show that the covariance of direct and paternal effects contributes $\\sigma_{A_o,A_p}/4$ to the mother-offspring covariance, which compares with the contribution of the covariance of direct and maternal effects to the father-offspring covariance, $\\sigma_{A_o,A_m}/4$. Comparable analogies can be used to deduce the contribution of $\\sigma_{A_p}^2$ to phenotypic resemblance.\n\nFinally, we consider the genetic covariance between maternal and paternal effects. Here we let s and w denote the father and mother of x and t and z denote the father and mother of y, which leads to\n\n[[FORMULA:Genetics_chapter23_formula046]]\n\nFor all of the relationships given in Table 23.1, except reciprocal sibs, this covariance is equal to zero because the dams are unrelated to the sires. In the case of reciprocal full sibs, $ w = t $ and $ s = z $, so the covariance is $ 2(\\sigma_{A_m}, A_p + \\sigma_{D_m}, D_p) $. For reciprocal half-sibs, the father of $ x $ is the mother of $ y $, but the other parents are unrelated. This reduces the covariance to $ (\\sigma_{A_m}, A_p + \\sigma_{D_m}, D_p) $.\n\nFrom these results, it is clear that by adding terms in $ \\sigma_{A_p}^2 $, $ \\sigma_{D_p}^2 $, $ \\sigma_{A_o,A_p} $, and $ \\sigma_{D_o,D_p} $, the presence of genetic paternal effects can substantially complicate the expressions for the covariance between relatives beyond those described in Table 23.1. We leave it to the reader to work out the additional contributions from environmental paternal effects. The addition of more terms to a model describing the resemblance between relatives can only magnify the difficulties in achieving clean estimates of causal components of variance. Nevertheless, some of the empirical procedures for detecting maternal effects described in this chapter suggest ways in which paternal effects might be detected. For example, for species in which it is possible to cross-foster with respect to sire, a simple means of testing for paternal effects would be to estimate the foster child-foster father covariance. Factorial designs incorporating reciprocal crosses can also be useful in this regard (Chapter 20).",
+      "content_plain": "Example 3. Consider the case in which the only intrafamilial effects on the phenotype derive from fathers and mothers. Equation 23.19 then reduces to\n\n[[FORMULA:Genetics_chapter23_formula042]]\n\nSuch a model should provide a reasonable description of prereproductive.traits of organisms, provided that interactions with sibs during development are either nonexistent or have negligible phenotypic consequences. How does this model alter our interpretations of the covariances between relatives compared to the maternal-effects model?\n\nFirst, we note that the phenotypic covariance between relatives x and y can be written\n\n[[FORMULA:Genetics_chapter23_formula043]]\n\nThus, six types of factors can contribute to the resemblance between relatives: variances associated with direct, maternal, and paternal effects, and covariances between direct and maternal effects, between direct and paternal effects, and between maternal and paternal effects.\n\nThe first four terms of this equation (i.e., those involving direct and/or maternal effects) have all been described above (Table 23.1). The next two terms, which describe the covariance between direct and paternal effects, can be evaluated by extending the procedures used earlier in the chapter. For example, for the genetic covariance of direct and paternal effects, we let s denote the father of x and t denote the father of y. Modifying Equations 23.3a,b, we then obtain\n\n[[FORMULA:Genetics_chapter23_formula044]]\n\nFor most relationships, simple expressions for the contributions of  \\sigma_{A_0,A_p}  and  \\sigma_{D_0,D_p}  to the phenotypic covariance can be obtained by reversing the sexes in Table 23.1. For example, when  y = s  is the father of  x , then  \\Theta_{xt} = 1/8 ,  \\Theta_{ys} = 1/2 ,  \\Delta_{xt} = 0 , and  \\Delta_{ys} = 1 , yielding\n\n[[FORMULA:Genetics_chapter23_formula045]]\n\nThis equation has the same structure as the covariance between direct and maternal effects when y is the mother of x (Table 23.1). Similar procedures show that the covariance of direct and paternal effects contributes \\sigma_{A_o,A_p}/4 to the mother-offspring covariance, which compares with the contribution of the covariance of direct and maternal effects to the father-offspring covariance, \\sigma_{A_o,A_m}/4. Comparable analogies can be used to deduce the contribution of \\sigma_{A_p}^2 to phenotypic resemblance.\n\nFinally, we consider the genetic covariance between maternal and paternal effects. Here we let s and w denote the father and mother of x and t and z denote the father and mother of y, which leads to\n\n[[FORMULA:Genetics_chapter23_formula046]]\n\nFor all of the relationships given in Table 23.1, except reciprocal sibs, this covariance is equal to zero because the dams are unrelated to the sires. In the case of reciprocal full sibs,  w = t  and  s = z , so the covariance is  2(\\sigma_{A_m}, A_p + \\sigma_{D_m}, D_p) . For reciprocal half-sibs, the father of  x  is the mother of  y , but the other parents are unrelated. This reduces the covariance to  (\\sigma_{A_m}, A_p + \\sigma_{D_m}, D_p) .\n\nFrom these results, it is clear that by adding terms in  \\sigma_{A_p}^2 ,  \\sigma_{D_p}^2 ,  \\sigma_{A_o,A_p} , and  \\sigma_{D_o,D_p} , the presence of genetic paternal effects can substantially complicate the expressions for the covariance between relatives beyond those described in Table 23.1. We leave it to the reader to work out the additional contributions from environmental paternal effects. The addition of more terms to a model describing the resemblance between relatives can only magnify the difficulties in achieving clean estimates of causal components of variance. Nevertheless, some of the empirical procedures for detecting maternal effects described in this chapter suggest ways in which paternal effects might be detected. For example, for species in which it is possible to cross-foster with respect to sire, a simple means of testing for paternal effects would be to estimate the foster child-foster father covariance. Factorial designs incorporating reciprocal crosses can also be useful in this regard (Chapter 20).",
+      "formula_refs": [
+        "Genetics_chapter23_formula042",
+        "Genetics_chapter23_formula043",
+        "Genetics_chapter23_formula044",
+        "Genetics_chapter23_formula045",
+        "Genetics_chapter23_formula046"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 725,
+          "y": 925.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 724
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter23:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter23:4",
+      "example_ref": "Genetics_chapter23:4",
+      "chapter": "Genetics_chapter23",
+      "label": "Example 4",
+      "title": "Example 4. For organisms that invest substantially in postnatal parental care, it is conceivable that progeny, through their demands on parental resources, can affect aspects of a ",
+      "source_file": "Genetics_chapter23_010.json",
+      "start_block_index": 19,
+      "end_source_file": "Genetics_chapter23_010.json",
+      "end_block_index": 24,
+      "block_ids": [
+        "p725:b6",
+        "p725:b7",
+        "p725:b8",
+        "p725:b9",
+        "p726:b2",
+        "p726:b3"
+      ],
+      "content_markdown": "Example 4. For organisms that invest substantially in postnatal parental care, it is conceivable that progeny, through their demands on parental resources, can affect aspects of a parent's phenotype. A simple way to test for such effects is to consider pairs of unrelated parents mated to the same individual:\n\n![Source illustration p725 b7](figures/examples/Genetics_p725_b7.png)\n\nIn this case, even under the complete model (Equation 23.19), the paired parents would share no direct, maternal, paternal, or sib effects. However, their offspring would be related as half-sibs. Denoting the offspring of the two individuals by w and z, and noting $ 2\\Theta_{wz} = 1/4 $, the expected (postreproductive) phenotypic covariance between unrelated parents mated to the same individual is\n\n[[FORMULA:Genetics_chapter23_formula047]]\n\nwhere $ G_{rw} $ and $ E_{rw} $ denote the genetic and environmental effects of progeny w on the phenotype of the maternal parent, and we assume that environmental progeny effects are uncorrelated\n\nThus, four times the phenotypic covariance between unrelated individuals sharing half-sib progeny provides an estimate of the genetic variance associated with offspring effects, $ \\sigma_{Gr}^{2} $. Additional ideas on the analysis of offspring (fetal) effects can be found in Bar-Anan et al. (1976) and Van Vleck (1978), who present evidence that a negative genetic correlation exists between direct genetic and fetal effects operating on calving ability in cattle.",
+      "content_plain": "Example 4. For organisms that invest substantially in postnatal parental care, it is conceivable that progeny, through their demands on parental resources, can affect aspects of a parent's phenotype. A simple way to test for such effects is to consider pairs of unrelated parents mated to the same individual:\n\n![Source illustration p725 b7](figures/examples/Genetics_p725_b7.png)\n\nIn this case, even under the complete model (Equation 23.19), the paired parents would share no direct, maternal, paternal, or sib effects. However, their offspring would be related as half-sibs. Denoting the offspring of the two individuals by w and z, and noting  2\\Theta_{wz} = 1/4 , the expected (postreproductive) phenotypic covariance between unrelated parents mated to the same individual is\n\n[[FORMULA:Genetics_chapter23_formula047]]\n\nwhere  G_{rw}  and  E_{rw}  denote the genetic and environmental effects of progeny w on the phenotype of the maternal parent, and we assume that environmental progeny effects are uncorrelated\n\nThus, four times the phenotypic covariance between unrelated individuals sharing half-sib progeny provides an estimate of the genetic variance associated with offspring effects,  \\sigma_{Gr}^{2} . Additional ideas on the analysis of offspring (fetal) effects can be found in Bar-Anan et al. (1976) and Van Vleck (1978), who present evidence that a negative genetic correlation exists between direct genetic and fetal effects operating on calving ability in cattle.",
+      "formula_refs": [
+        "Genetics_chapter23_formula047"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p725_b7.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 726,
+          "y": 484.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 725
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter23:4]]",
+      "book": "Genetics"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter8_007",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Addition and Subtraction"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Addition and Subtraction",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Addition and Subtraction"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Addition and Subtraction",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b12"
+      ],
+      "bbox": [
+        59.0,
+        1191.0,
+        383.0,
+        1224.0
+      ],
+      "raw_text": "Addition and Subtraction"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Addition and subtraction of matrices is straightforward. To form a new matrix $ \\mathbf{A} + \\mathbf{B} = \\mathbf{C} $, $ \\mathbf{A} $ and $ \\mathbf{B} $ must have the same dimensions. One then simply adds the corresponding elements, $ C_{ij} = A_{ij} + B_{ij} $. Subtraction is defined similarly. For example, if",
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b13"
+      ],
+      "bbox": [
+        55.0,
+        1235.0,
+        1018.0,
+        1365.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula016]]",
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b14"
+      ],
+      "bbox": [
+        317.0,
+        1361.0,
+        750.0,
+        1432.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "then",
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b15"
+      ],
+      "bbox": [
+        57.0,
+        1440.0,
+        120.0,
+        1468.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula017]]",
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b16"
+      ],
+      "bbox": [
+        181.0,
+        1465.0,
+        884.0,
+        1537.0
+      ]
+    }
+  ]
+}

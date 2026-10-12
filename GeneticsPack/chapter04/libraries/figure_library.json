@@ -1,0 +1,279 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter4",
+  "count": 8,
+  "figures": [
+    {
+      "id": "4.1",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.1",
+      "placeholder": "[[FIGURE:4.1]]",
+      "see_placeholder": "[[SEE_FIGURE:4.1]]",
+      "asset_path": "figures/Genetics_4.1.png",
+      "caption": "Figure 4.1 Idealized schematic of meiotic production of gametes. Only a single chromosome pair is shown. At the onset of meiosis, sister chromatids are formed by duplication and the homologous pairs come together to form a tetrad; although it is not shown, some exchange of material (crossing-over) between homologues may occur at this time. Two meiotic divisions (reductional and equational) then produce four haploid products. The maternal and paternal chromosomes migrate to opposite cells during the reductional division, and the sister chromatids are isolated into four potential haploid gametes after the equational division.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 71,
+      "raw_bbox": [
+        237.0,
+        119.0,
+        821.0,
+        861.0
+      ],
+      "source_block_ids": [
+        "p71:b2"
+      ],
+      "caption_block": {
+        "source_page": 71,
+        "printed_page": 51,
+        "source_block_ids": [
+          "p71:b3"
+        ],
+        "bbox": [
+          97.0,
+          877.0,
+          964.0,
+          1130.0
+        ]
+      }
+    },
+    {
+      "id": "4.2",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.2",
+      "placeholder": "[[FIGURE:4.2]]",
+      "see_placeholder": "[[SEE_FIGURE:4.2]]",
+      "asset_path": "figures/Genetics_4.2.png",
+      "caption": "Figure 4.2 The dynamics of gene frequency change for an X-linked gene, $B_{1}$, under random mating. An extreme case is illustrated — initially, all females are homozygous for the $B_{1}$ gene, $p_{1f}(0) = 1$, while all of the males are haploid for the alternate allele, $p_{1m}(0) = 0$. Consequently, all males contain the $B_{1}$ allele in the following generation, while all females are heterozygous. The dotted line represents the population level gene frequency, $p_{1} = [p_{1m}(0) + 2p_{1f}(0)] / 3 = 0.67$, towards which both of the sexes converge over time.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 73,
+      "raw_bbox": [
+        177.0,
+        121.0,
+        902.0,
+        735.0
+      ],
+      "source_block_ids": [
+        "p73:b2"
+      ],
+      "caption_block": {
+        "source_page": 73,
+        "printed_page": 53,
+        "source_block_ids": [
+          "p73:b3"
+        ],
+        "bbox": [
+          89.0,
+          750.0,
+          957.0,
+          981.0
+        ]
+      }
+    },
+    {
+      "id": "4.3",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.3",
+      "placeholder": "[[FIGURE:4.3]]",
+      "see_placeholder": "[[SEE_FIGURE:4.3]]",
+      "asset_path": "figures/Genetics_4.3.png",
+      "caption": "Figure 4.3 The production of three types of (diploid) gametes by a tetraploid individual. This example focuses upon a single paternally derived allele, $ B_{1} $. The letters f and m refer to chromosomes derived from fathers and mothers. With four chromosomes (rather than the two of a diploid), the reductional division of meiosis isolates two chromosomes at random into each of the resulting two cells. Subsequent equational division generates the gamete types shown at the right. Here c is the probability that the allele of interest will become associated with itself during gametogenesis as a result of a double reduction. If this does not occur (probability = 1 - c), there is a 2/3 chance that chromosome $ B_{1} $ will be associated in a gamete with a maternally derived chromosome and a 1/3 chance that it will be associated with the other paternally derived chromosome.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 75,
+      "raw_bbox": [
+        86.0,
+        127.0,
+        1010.0,
+        906.0
+      ],
+      "source_block_ids": [
+        "p75:b2"
+      ],
+      "caption_block": {
+        "source_page": 75,
+        "printed_page": 55,
+        "source_block_ids": [
+          "p75:b3"
+        ],
+        "bbox": [
+          90.0,
+          921.0,
+          958.0,
+          1266.0
+        ]
+      }
+    },
+    {
+      "id": "4.4",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.4",
+      "placeholder": "[[FIGURE:4.4]]",
+      "see_placeholder": "[[SEE_FIGURE:4.4]]",
+      "asset_path": "figures/Genetics_4.4.png",
+      "caption": "Figure 4.4 Two ways of representing genotypic values for a diallelic locus.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 78,
+      "raw_bbox": [
+        318.0,
+        109.0,
+        916.0,
+        352.0
+      ],
+      "source_block_ids": [
+        "p78:b2"
+      ],
+      "caption_block": {
+        "source_page": 78,
+        "printed_page": 58,
+        "source_block_ids": [
+          "p78:b3"
+        ],
+        "bbox": [
+          190.0,
+          358.0,
+          1006.0,
+          414.0
+        ]
+      }
+    },
+    {
+      "id": "4.5",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.5",
+      "placeholder": "[[FIGURE:4.5]]",
+      "see_placeholder": "[[SEE_FIGURE:4.5]]",
+      "asset_path": "figures/Genetics_4.5.png",
+      "caption": "Figure 4.5 The relationship between the activity of a gene product and the flux or concentration of an end-product in an enzymatic pathway. BB represents the “wild-type” genotype. Upward and downward mutations with the same magnitude of change in enzyme activity are represented as $ b^{+} $ and $ b^{-} $ alleles.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 80,
+      "raw_bbox": [
+        263.0,
+        114.0,
+        988.0,
+        571.0
+      ],
+      "source_block_ids": [
+        "p80:b2"
+      ],
+      "caption_block": {
+        "source_page": 80,
+        "printed_page": 60,
+        "source_block_ids": [
+          "p80:b3"
+        ],
+        "bbox": [
+          198.0,
+          580.0,
+          1065.0,
+          724.0
+        ]
+      }
+    },
+    {
+      "id": "4.6",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.6",
+      "placeholder": "[[FIGURE:4.6]]",
+      "see_placeholder": "[[SEE_FIGURE:4.6]]",
+      "asset_path": "figures/Genetics_4.6.png",
+      "caption": "Figure 4.6 Linear least-squares regression of the genotypic value of a single locus G on the gene content ( $ N_{2} $). From left to right, the points represent the $ B_{1}B_{1} $, $ B_{1}B_{2} $, and $ B_{2}B_{2} $ genotypes. Solid circles represent the true genotypic values, while open circles are the values expected on the basis of average effects ( $ \\widehat{G} $). The deviation between G and $ \\widehat{G} $ for each genotype is $ \\delta $, the dominance deviation.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 82,
+      "raw_bbox": [
+        263.0,
+        114.0,
+        1005.0,
+        830.0
+      ],
+      "source_block_ids": [
+        "p82:b2"
+      ],
+      "caption_block": {
+        "source_page": 82,
+        "printed_page": 62,
+        "source_block_ids": [
+          "p82:b3"
+        ],
+        "bbox": [
+          209.0,
+          855.0,
+          1076.0,
+          1029.0
+        ]
+      }
+    },
+    {
+      "id": "4.7",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.7",
+      "placeholder": "[[FIGURE:4.7]]",
+      "see_placeholder": "[[SEE_FIGURE:4.7]]",
+      "asset_path": "figures/Genetics_4.7.png",
+      "caption": "Figure 4.7 The slope $ \\alpha $ of the linear least-squares regression of genotypic value on gene content as a function of allele frequency, $ p_{2} $, and degree of dominance, k. The lines denote the regressions, with each of the three points (representing genotypic values) being weighted by their frequency (denoted by the differentiated circles). The columns of graphs give results for different gene frequencies ( $ p_{2} = 0.50 $, 0.75, and 0.90), whereas the rows give results for different modes of gene action ( $ k = 0.00 $, additivity; $ k = 0.75 $, partial dominance; and $ k = 2.00 $, overdominance). Note that, except for the case of complete additivity, the regressions differ with different allele frequencies. In the case of overdominance, the slope changes sign as the allele frequency changes; when $ p_{2} = 0.75 $, the slope is zero, i.e., there is no additive genetic variance. For all cases when $ p_{2} = p_{1} = 0.5 $, the slope $ \\alpha = a $ regardless of the degree of dominance.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 84,
+      "raw_bbox": [
+        169.0,
+        113.0,
+        1094.0,
+        788.0
+      ],
+      "source_block_ids": [
+        "p84:b2"
+      ],
+      "caption_block": {
+        "source_page": 84,
+        "printed_page": 64,
+        "source_block_ids": [
+          "p84:b3"
+        ],
+        "bbox": [
+          202.0,
+          814.0,
+          1071.0,
+          1183.0
+        ]
+      }
+    },
+    {
+      "id": "4.8",
+      "chapter": "Genetics_chapter4",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter4:4.8",
+      "placeholder": "[[FIGURE:4.8]]",
+      "see_placeholder": "[[SEE_FIGURE:4.8]]",
+      "asset_path": "figures/Genetics_4.8.png",
+      "caption": "Figure 4.8 The dependence of the components of genetic variance at a locus on the frequency of the $ B_{2} $ allele. The solid line denotes the total genetic variance, the dashed line $ (- - -) $ the additive genetic variance, and the dotted line $ \\left(\\cdots\\right) $ the dominance genetic variance. Four cases are illustrated: $ k = 0 $ (additivity), $ k = +1 $ (dominance of the $ B_{2} $ allele), $ k = -1 $ (dominance of the $ B_{1} $ allele), and $ k = +2 $ (a case of overdominance). In the case of additivity, all of the genetic variance is of the additive type. The vertical axes are scaled such that, for any particular case, the actual variances are obtainable by multiplying by $ a^{2} $, where a is half the difference between homozygous $ B_{1}B_{1} $ and $ B_{2}B_{2} $ genotypic values.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 86,
+      "raw_bbox": [
+        174.0,
+        112.0,
+        1107.0,
+        1062.0
+      ],
+      "source_block_ids": [
+        "p86:b2"
+      ],
+      "caption_block": {
+        "source_page": 86,
+        "printed_page": 66,
+        "source_block_ids": [
+          "p86:b3"
+        ],
+        "bbox": [
+          220.0,
+          1079.0,
+          1088.0,
+          1363.0
+        ]
+      }
+    }
+  ]
+}

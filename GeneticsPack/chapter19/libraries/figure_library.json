@@ -1,0 +1,75 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter19",
+  "count": 2,
+  "figures": [
+    {
+      "id": "19.1",
+      "chapter": "Genetics_chapter19",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter19:19.1",
+      "placeholder": "[[FIGURE:19.1]]",
+      "see_placeholder": "[[SEE_FIGURE:19.1]]",
+      "asset_path": "figures/Genetics_19.1.png",
+      "caption": "Figure 19.1 The monozygotic-twin half-sib design. Each pedigree contains two full-sib families derived from a pair of monozygotic twins, in this case the two sets of females denoted by the shaded circles.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 601,
+      "raw_bbox": [
+        235.0,
+        113.0,
+        967.0,
+        512.0
+      ],
+      "source_block_ids": [
+        "p601:b2"
+      ],
+      "caption_block": {
+        "source_page": 601,
+        "printed_page": 581,
+        "source_block_ids": [
+          "p601:b3"
+        ],
+        "bbox": [
+          178.0,
+          521.0,
+          1042.0,
+          633.0
+        ]
+      }
+    },
+    {
+      "id": "19.2",
+      "chapter": "Genetics_chapter19",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter19:19.2",
+      "placeholder": "[[FIGURE:19.2]]",
+      "see_placeholder": "[[SEE_FIGURE:19.2]]",
+      "asset_path": "figures/Genetics_19.2.png",
+      "caption": "Figure 19.2 A nested design for the quantitative-genetic analysis of a population of clones. In this example, four descendants are measured for each clone, pairs of which have descended from different sublines.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 606,
+      "raw_bbox": [
+        260.0,
+        142.0,
+        865.0,
+        548.0
+      ],
+      "source_block_ids": [
+        "p606:b2"
+      ],
+      "caption_block": {
+        "source_page": 606,
+        "printed_page": 586,
+        "source_block_ids": [
+          "p606:b3"
+        ],
+        "bbox": [
+          120.0,
+          561.0,
+          987.0,
+          676.0
+        ]
+      }
+    }
+  ]
+}

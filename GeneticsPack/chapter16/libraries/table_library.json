@@ -1,0 +1,504 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter16",
+  "count": 3,
+  "tables": [
+    {
+      "id": "16.1",
+      "label_format": "Table 16.1",
+      "title": "Table 16.1 Types of marker-informative matings.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Fully informative: $ M_{i}M_{j} \\times M_{k}M_{\\ell} $</td></tr><tr><td>Parents are different marker heterozygotes. All offspring are informative in distinguishing alternative alleles from both parents.</td></tr><tr><td>Backcross: $ M_{i}M_{j} \\times M_{k}M_{k} $</td></tr><tr><td>One parent is a marker heterozygote, the other a marker homozygote. All offspring informative in distinguishing heterozygous parent's alternative alleles.</td></tr><tr><td>Intercross: $ M_{i}M_{j} \\times M_{i}M_{j} $</td></tr><tr><td>Both parents are the same marker heterozygote. Only homozygous offspring informative in distinguishing alternative parental alleles.</td></tr><tr><td>Note: Here $ i, j, k, $ and $ \\ell $ index different marker alleles.</td></tr></table>",
+      "rows": [
+        [
+          "Fully informative: $ M_{i}M_{j} \\times M_{k}M_{\\ell} $"
+        ],
+        [
+          "Parents are different marker heterozygotes. All offspring are informative in distinguishing alternative alleles from both parents."
+        ],
+        [
+          "Backcross: $ M_{i}M_{j} \\times M_{k}M_{k} $"
+        ],
+        [
+          "One parent is a marker heterozygote, the other a marker homozygote. All offspring informative in distinguishing heterozygous parent's alternative alleles."
+        ],
+        [
+          "Intercross: $ M_{i}M_{j} \\times M_{i}M_{j} $"
+        ],
+        [
+          "Both parents are the same marker heterozygote. Only homozygous offspring informative in distinguishing alternative parental alleles."
+        ],
+        [
+          "Note: Here $ i, j, k, $ and $ \\ell $ index different marker alleles."
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 507,
+          "title": "Table 16.1 Types of marker-informative matings.",
+          "html": "<table><tr><td>Fully informative: $ M_{i}M_{j} \\times M_{k}M_{\\ell} $</td></tr><tr><td>Parents are different marker heterozygotes. All offspring are informative in distinguishing alternative alleles from both parents.</td></tr><tr><td>Backcross: $ M_{i}M_{j} \\times M_{k}M_{k} $</td></tr><tr><td>One parent is a marker heterozygote, the other a marker homozygote. All offspring informative in distinguishing heterozygous parent's alternative alleles.</td></tr><tr><td>Intercross: $ M_{i}M_{j} \\times M_{i}M_{j} $</td></tr><tr><td>Both parents are the same marker heterozygote. Only homozygous offspring informative in distinguishing alternative parental alleles.</td></tr><tr><td>Note: Here $ i, j, k, $ and $ \\ell $ index different marker alleles.</td></tr></table>",
+          "rows": [
+            [
+              "Fully informative: $ M_{i}M_{j} \\times M_{k}M_{\\ell} $"
+            ],
+            [
+              "Parents are different marker heterozygotes. All offspring are informative in distinguishing alternative alleles from both parents."
+            ],
+            [
+              "Backcross: $ M_{i}M_{j} \\times M_{k}M_{k} $"
+            ],
+            [
+              "One parent is a marker heterozygote, the other a marker homozygote. All offspring informative in distinguishing heterozygous parent's alternative alleles."
+            ],
+            [
+              "Intercross: $ M_{i}M_{j} \\times M_{i}M_{j} $"
+            ],
+            [
+              "Both parents are the same marker heterozygote. Only homozygous offspring informative in distinguishing alternative parental alleles."
+            ],
+            [
+              "Note: Here $ i, j, k, $ and $ \\ell $ index different marker alleles."
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            87.0,
+            186.0,
+            1038.0,
+            686.0
+          ],
+          "caption_bbox": [
+            85.0,
+            139.0,
+            631.0,
+            173.0
+          ],
+          "source_block_ids": [
+            "p507:b3"
+          ],
+          "caption_source_block_ids": [
+            "p507:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter16",
+        "unit_id": "Genetics_chapter16_002",
+        "page": 507,
+        "pages": [
+          507
+        ],
+        "bbox": [
+          87.0,
+          186.0,
+          1038.0,
+          686.0
+        ],
+        "caption_bbox": [
+          85.0,
+          139.0,
+          631.0,
+          173.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "16.2",
+      "label_format": "Table 16.2",
+      "title": "Table 16.2 Sample sizes required to have a 90% chance of detecting a linked QTL using ANOVA with significance level $ \\alpha = 0.05 $.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td colspan=\"2\">$ \\Delta = 0.10 $</td><td colspan=\"2\">$ \\Delta = 0.05 $</td><td colspan=\"2\">$ \\Delta = 0.01 $</td></tr><tr><td>N</td><td>n</td><td>$ N_{T} $</td><td>n</td><td>$ N_{T} $</td><td>n</td><td>$ N_{T} $</td></tr><tr><td>5</td><td>150</td><td>1,505</td><td>290</td><td>2,905</td><td>1450</td><td>14,505</td></tr><tr><td>20</td><td>40</td><td>1,620</td><td>110</td><td>4,420</td><td>540</td><td>21,620</td></tr><tr><td>100</td><td>22</td><td>4,500</td><td>40</td><td>8,100</td><td>200</td><td>40,100</td></tr><tr><td>200</td><td>14</td><td>5,800</td><td>28</td><td>11,400</td><td>132</td><td>53,000</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "$ \\Delta = 0.10 $",
+          "$ \\Delta = 0.05 $",
+          "$ \\Delta = 0.01 $"
+        ],
+        [
+          "N",
+          "n",
+          "$ N_{T} $",
+          "n",
+          "$ N_{T} $",
+          "n",
+          "$ N_{T} $"
+        ],
+        [
+          "5",
+          "150",
+          "1,505",
+          "290",
+          "2,905",
+          "1450",
+          "14,505"
+        ],
+        [
+          "20",
+          "40",
+          "1,620",
+          "110",
+          "4,420",
+          "540",
+          "21,620"
+        ],
+        [
+          "100",
+          "22",
+          "4,500",
+          "40",
+          "8,100",
+          "200",
+          "40,100"
+        ],
+        [
+          "200",
+          "14",
+          "5,800",
+          "28",
+          "11,400",
+          "132",
+          "53,000"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 514,
+          "title": "Table 16.2 Sample sizes required to have a 90% chance of detecting a linked QTL using ANOVA with significance level $ \\alpha = 0.05 $.",
+          "html": "<table><tr><td></td><td colspan=\"2\">$ \\Delta = 0.10 $</td><td colspan=\"2\">$ \\Delta = 0.05 $</td><td colspan=\"2\">$ \\Delta = 0.01 $</td></tr><tr><td>N</td><td>n</td><td>$ N_{T} $</td><td>n</td><td>$ N_{T} $</td><td>n</td><td>$ N_{T} $</td></tr><tr><td>5</td><td>150</td><td>1,505</td><td>290</td><td>2,905</td><td>1450</td><td>14,505</td></tr><tr><td>20</td><td>40</td><td>1,620</td><td>110</td><td>4,420</td><td>540</td><td>21,620</td></tr><tr><td>100</td><td>22</td><td>4,500</td><td>40</td><td>8,100</td><td>200</td><td>40,100</td></tr><tr><td>200</td><td>14</td><td>5,800</td><td>28</td><td>11,400</td><td>132</td><td>53,000</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "$ \\Delta = 0.10 $",
+              "$ \\Delta = 0.05 $",
+              "$ \\Delta = 0.01 $"
+            ],
+            [
+              "N",
+              "n",
+              "$ N_{T} $",
+              "n",
+              "$ N_{T} $",
+              "n",
+              "$ N_{T} $"
+            ],
+            [
+              "5",
+              "150",
+              "1,505",
+              "290",
+              "2,905",
+              "1450",
+              "14,505"
+            ],
+            [
+              "20",
+              "40",
+              "1,620",
+              "110",
+              "4,420",
+              "540",
+              "21,620"
+            ],
+            [
+              "100",
+              "22",
+              "4,500",
+              "40",
+              "8,100",
+              "200",
+              "40,100"
+            ],
+            [
+              "200",
+              "14",
+              "5,800",
+              "28",
+              "11,400",
+              "132",
+              "53,000"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            111.0,
+            220.0,
+            1049.0,
+            446.0
+          ],
+          "caption_bbox": [
+            103.0,
+            137.0,
+            1060.0,
+            199.0
+          ],
+          "source_block_ids": [
+            "p514:b3"
+          ],
+          "caption_source_block_ids": [
+            "p514:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter16",
+        "unit_id": "Genetics_chapter16_005",
+        "page": 514,
+        "pages": [
+          514
+        ],
+        "bbox": [
+          111.0,
+          220.0,
+          1049.0,
+          446.0
+        ],
+        "caption_bbox": [
+          103.0,
+          137.0,
+          1060.0,
+          199.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "16.3",
+      "label_format": "Table 16.3",
+      "title": "Table 16.3 Probability of various pairs of marker genotypes in relatives as a function of the number of genes ibd between these relatives.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Type</td><td>Marker pairs</td><td>$ \\Pr(M \\mid \\text{i}=0) $</td><td>$ \\Pr(M \\mid \\text{i}=1) $</td><td>$ \\Pr(M \\mid \\text{i}=2) $</td></tr><tr><td>I</td><td>$ M_{j}M_{j}, M_{j}M_{j} $</td><td>$ p_{j}^{4} $</td><td>$ p_{j}^{3} $</td><td>$ p_{j}^{2} $</td></tr><tr><td>II</td><td>$ M_{j}M_{j}, M_{k}M_{k} $</td><td>$ 2p_{j}^{2}p_{k}^{2} $</td><td>0</td><td>0</td></tr><tr><td>III</td><td>$ M_{j}M_{j}, M_{j}M_{k} $</td><td>$ 4p_{j}^{3}p_{k} $</td><td>$ 2p_{j}^{2}p_{k} $</td><td>0</td></tr><tr><td>IV</td><td>$ M_{j}M_{j}, M_{k}M_{\\ell} $</td><td>$ 4p_{j}^{2}p_{k}p_{\\ell} $</td><td>0</td><td>0</td></tr><tr><td>V</td><td>$ M_{j}M_{k}, M_{j}M_{k} $</td><td>$ 4p_{j}^{2}p_{k}^{2} $</td><td>$ p_{j}p_{k}(p_{j}+p_{k}) $</td><td>$ 2p_{j}p_{k} $</td></tr><tr><td>VI</td><td>$ M_{j}M_{k}, M_{j}M_{\\ell} $</td><td>$ 8p_{j}^{2}p_{k}p_{\\ell} $</td><td>$ 2p_{j}p_{k}p_{\\ell} $</td><td>0</td></tr><tr><td>VII</td><td>$ M_{j}M_{k}, M_{\\ell}M_{m} $</td><td>$ 8p_{j}p_{k}p_{\\ell}p_{m} $</td><td>0</td><td>0</td></tr></table>",
+      "rows": [
+        [
+          "Type",
+          "Marker pairs",
+          "$ \\Pr(M \\mid \\text{i}=0) $",
+          "$ \\Pr(M \\mid \\text{i}=1) $",
+          "$ \\Pr(M \\mid \\text{i}=2) $"
+        ],
+        [
+          "I",
+          "$ M_{j}M_{j}, M_{j}M_{j} $",
+          "$ p_{j}^{4} $",
+          "$ p_{j}^{3} $",
+          "$ p_{j}^{2} $"
+        ],
+        [
+          "II",
+          "$ M_{j}M_{j}, M_{k}M_{k} $",
+          "$ 2p_{j}^{2}p_{k}^{2} $",
+          "0",
+          "0"
+        ],
+        [
+          "III",
+          "$ M_{j}M_{j}, M_{j}M_{k} $",
+          "$ 4p_{j}^{3}p_{k} $",
+          "$ 2p_{j}^{2}p_{k} $",
+          "0"
+        ],
+        [
+          "IV",
+          "$ M_{j}M_{j}, M_{k}M_{\\ell} $",
+          "$ 4p_{j}^{2}p_{k}p_{\\ell} $",
+          "0",
+          "0"
+        ],
+        [
+          "V",
+          "$ M_{j}M_{k}, M_{j}M_{k} $",
+          "$ 4p_{j}^{2}p_{k}^{2} $",
+          "$ p_{j}p_{k}(p_{j}+p_{k}) $",
+          "$ 2p_{j}p_{k} $"
+        ],
+        [
+          "VI",
+          "$ M_{j}M_{k}, M_{j}M_{\\ell} $",
+          "$ 8p_{j}^{2}p_{k}p_{\\ell} $",
+          "$ 2p_{j}p_{k}p_{\\ell} $",
+          "0"
+        ],
+        [
+          "VII",
+          "$ M_{j}M_{k}, M_{\\ell}M_{m} $",
+          "$ 8p_{j}p_{k}p_{\\ell}p_{m} $",
+          "0",
+          "0"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Elston 1990b.",
+          "source_page": 530,
+          "bbox": [
+            116.0,
+            604.0,
+            345.0,
+            633.0
+          ],
+          "source_block_ids": [
+            "p530:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Haseman and Elston (1972) note that there are seven different types of marker pairs. Of these, three share no alleles ibd (Types II, IV, and VII), two share either zero or one alleles (Types III and VI), and two (Types I, V) can share zero, one, or two alleles ibd. Note that j, k, l and m index different alleles.",
+          "source_page": 530,
+          "bbox": [
+            114.0,
+            631.0,
+            1072.0,
+            756.0
+          ],
+          "source_block_ids": [
+            "p530:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 530,
+          "title": "Table 16.3 Probability of various pairs of marker genotypes in relatives as a function of the number of genes ibd between these relatives.",
+          "html": "<table><tr><td>Type</td><td>Marker pairs</td><td>$ \\Pr(M \\mid \\text{i}=0) $</td><td>$ \\Pr(M \\mid \\text{i}=1) $</td><td>$ \\Pr(M \\mid \\text{i}=2) $</td></tr><tr><td>I</td><td>$ M_{j}M_{j}, M_{j}M_{j} $</td><td>$ p_{j}^{4} $</td><td>$ p_{j}^{3} $</td><td>$ p_{j}^{2} $</td></tr><tr><td>II</td><td>$ M_{j}M_{j}, M_{k}M_{k} $</td><td>$ 2p_{j}^{2}p_{k}^{2} $</td><td>0</td><td>0</td></tr><tr><td>III</td><td>$ M_{j}M_{j}, M_{j}M_{k} $</td><td>$ 4p_{j}^{3}p_{k} $</td><td>$ 2p_{j}^{2}p_{k} $</td><td>0</td></tr><tr><td>IV</td><td>$ M_{j}M_{j}, M_{k}M_{\\ell} $</td><td>$ 4p_{j}^{2}p_{k}p_{\\ell} $</td><td>0</td><td>0</td></tr><tr><td>V</td><td>$ M_{j}M_{k}, M_{j}M_{k} $</td><td>$ 4p_{j}^{2}p_{k}^{2} $</td><td>$ p_{j}p_{k}(p_{j}+p_{k}) $</td><td>$ 2p_{j}p_{k} $</td></tr><tr><td>VI</td><td>$ M_{j}M_{k}, M_{j}M_{\\ell} $</td><td>$ 8p_{j}^{2}p_{k}p_{\\ell} $</td><td>$ 2p_{j}p_{k}p_{\\ell} $</td><td>0</td></tr><tr><td>VII</td><td>$ M_{j}M_{k}, M_{\\ell}M_{m} $</td><td>$ 8p_{j}p_{k}p_{\\ell}p_{m} $</td><td>0</td><td>0</td></tr></table>",
+          "rows": [
+            [
+              "Type",
+              "Marker pairs",
+              "$ \\Pr(M \\mid \\text{i}=0) $",
+              "$ \\Pr(M \\mid \\text{i}=1) $",
+              "$ \\Pr(M \\mid \\text{i}=2) $"
+            ],
+            [
+              "I",
+              "$ M_{j}M_{j}, M_{j}M_{j} $",
+              "$ p_{j}^{4} $",
+              "$ p_{j}^{3} $",
+              "$ p_{j}^{2} $"
+            ],
+            [
+              "II",
+              "$ M_{j}M_{j}, M_{k}M_{k} $",
+              "$ 2p_{j}^{2}p_{k}^{2} $",
+              "0",
+              "0"
+            ],
+            [
+              "III",
+              "$ M_{j}M_{j}, M_{j}M_{k} $",
+              "$ 4p_{j}^{3}p_{k} $",
+              "$ 2p_{j}^{2}p_{k} $",
+              "0"
+            ],
+            [
+              "IV",
+              "$ M_{j}M_{j}, M_{k}M_{\\ell} $",
+              "$ 4p_{j}^{2}p_{k}p_{\\ell} $",
+              "0",
+              "0"
+            ],
+            [
+              "V",
+              "$ M_{j}M_{k}, M_{j}M_{k} $",
+              "$ 4p_{j}^{2}p_{k}^{2} $",
+              "$ p_{j}p_{k}(p_{j}+p_{k}) $",
+              "$ 2p_{j}p_{k} $"
+            ],
+            [
+              "VI",
+              "$ M_{j}M_{k}, M_{j}M_{\\ell} $",
+              "$ 8p_{j}^{2}p_{k}p_{\\ell} $",
+              "$ 2p_{j}p_{k}p_{\\ell} $",
+              "0"
+            ],
+            [
+              "VII",
+              "$ M_{j}M_{k}, M_{\\ell}M_{m} $",
+              "$ 8p_{j}p_{k}p_{\\ell}p_{m} $",
+              "0",
+              "0"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Elston 1990b.",
+              "source_page": 530,
+              "bbox": [
+                116.0,
+                604.0,
+                345.0,
+                633.0
+              ],
+              "source_block_ids": [
+                "p530:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Haseman and Elston (1972) note that there are seven different types of marker pairs. Of these, three share no alleles ibd (Types II, IV, and VII), two share either zero or one alleles (Types III and VI), and two (Types I, V) can share zero, one, or two alleles ibd. Note that j, k, l and m index different alleles.",
+              "source_page": 530,
+              "bbox": [
+                114.0,
+                631.0,
+                1072.0,
+                756.0
+              ],
+              "source_block_ids": [
+                "p530:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            116.0,
+            209.0,
+            1064.0,
+            591.0
+          ],
+          "caption_bbox": [
+            113.0,
+            135.0,
+            1070.0,
+            198.0
+          ],
+          "source_block_ids": [
+            "p530:b3"
+          ],
+          "caption_source_block_ids": [
+            "p530:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter16",
+        "unit_id": "Genetics_chapter16_014",
+        "page": 530,
+        "pages": [
+          530
+        ],
+        "bbox": [
+          116.0,
+          209.0,
+          1064.0,
+          591.0
+        ],
+        "caption_bbox": [
+          113.0,
+          135.0,
+          1070.0,
+          198.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

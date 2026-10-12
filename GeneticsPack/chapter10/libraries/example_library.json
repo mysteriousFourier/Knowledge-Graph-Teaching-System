@@ -1,0 +1,80 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter10",
+  "count": 2,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter10:1",
+      "example_ref": "Genetics_chapter10:1",
+      "chapter": "Genetics_chapter10",
+      "label": "Example 1",
+      "title": "Example 1. A large empirical study with the flour beetle Tribolium castaneum provides some perspective on this principle. López-Fanjul and Jódar (1977) derived 105 lines from a lar",
+      "source_file": "Genetics_chapter10_003.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_chapter10_003.json",
+      "end_block_index": 3,
+      "block_ids": [
+        "p273:b6"
+      ],
+      "content_markdown": "Example 1. A large empirical study with the flour beetle Tribolium castaneum provides some perspective on this principle. López-Fanjul and Jódar (1977) derived 105 lines from a large base population and maintained them by single brother-sister matings for 8 generations (to f = 0.785). Despite the large sample sizes, the authors could find no evidence that inbreeding causes a shift in the mean rate of egg laying by virgin females at 33 or 28°C. Independent estimates of the heritabilities for these traits, obtained by full-sib correlation and daughter-mother regression, were 0.34 ± 0.02 and 0.33 ± 0.01 at 33°C, and 0.33 ± 0.02 and 0.26 ± 0.02 at 28°C. Recalling from Chapter 7 that heritabilities estimated from full-sib analysis are inflated by dominance genetic variance relative to those obtained by parent-offspring analysis, only for the second temperature is there any evidence of dominance genetic variance, and this is slight. Thus, the absence of inbreeding depression for rate of egg laying by virgins is not surprising. However, the study population was not immune to the effects of inbreeding, since two other traits, the rate of egg laying by fertilized females and egg viability, exhibited substantial declines with inbreeding.",
+      "content_plain": "Example 1. A large empirical study with the flour beetle Tribolium castaneum provides some perspective on this principle. López-Fanjul and Jódar (1977) derived 105 lines from a large base population and maintained them by single brother-sister matings for 8 generations (to f = 0.785). Despite the large sample sizes, the authors could find no evidence that inbreeding causes a shift in the mean rate of egg laying by virgin females at 33 or 28°C. Independent estimates of the heritabilities for these traits, obtained by full-sib correlation and daughter-mother regression, were 0.34 ± 0.02 and 0.33 ± 0.01 at 33°C, and 0.33 ± 0.02 and 0.26 ± 0.02 at 28°C. Recalling from Chapter 7 that heritabilities estimated from full-sib analysis are inflated by dominance genetic variance relative to those obtained by parent-offspring analysis, only for the second temperature is there any evidence of dominance genetic variance, and this is slight. Thus, the absence of inbreeding depression for rate of egg laying by virgins is not surprising. However, the study population was not immune to the effects of inbreeding, since two other traits, the rate of egg laying by fertilized females and egg viability, exhibited substantial declines with inbreeding.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 273,
+          "y": 1198.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 273
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter10:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter10:2",
+      "example_ref": "Genetics_chapter10:2",
+      "chapter": "Genetics_chapter10",
+      "label": "Example 2",
+      "title": "Example 2. Consider an experimental design in which the means of $L = 10$ full-sib mated lines are assayed from generation 0 with $f = 0$ to generation",
+      "source_file": "Genetics_chapter10_006.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_chapter10_006.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p281:b5",
+        "p282:b2"
+      ],
+      "content_markdown": "Example 2. Consider an experimental design in which the means of $L = 10$ full-sib mated lines are assayed from generation 0 with $f = 0$ to generation\n\n9 with $f(k) = 0.859$ (obtained using Equation 10.5b). Reading off Figure 10.5 at $f(k) = 0.859$, we find the point on the ordinate to be 2.5. The expected sampling variance of the slope $I$ under the null model of no inbreeding depression is obtained by multiplying 2.5 by $\\sigma_A^2 / L$, which gives $\\sigma_A^2 / 4$. If an estimate of $\\sigma_A^2$ is available, then in this case, two standard errors of the slope is estimated by $\\sqrt{\\mathrm{Var}(A)}$. Since our treatment ignores environmental sources of variance, it is clear that with this design any regression coefficient whose absolute value is less than the square root of the additive genetic variance in the base population must be considered consistent with the null model of no inbreeding depression.",
+      "content_plain": "Example 2. Consider an experimental design in which the means of L = 10 full-sib mated lines are assayed from generation 0 with f = 0 to generation\n\n9 with f(k) = 0.859 (obtained using Equation 10.5b). Reading off Figure 10.5 at f(k) = 0.859, we find the point on the ordinate to be 2.5. The expected sampling variance of the slope I under the null model of no inbreeding depression is obtained by multiplying 2.5 by \\sigma_A^2 / L, which gives \\sigma_A^2 / 4. If an estimate of \\sigma_A^2 is available, then in this case, two standard errors of the slope is estimated by \\sqrt{\\mathrm{Var}(A)}. Since our treatment ignores environmental sources of variance, it is clear that with this design any regression coefficient whose absolute value is less than the square root of the additive genetic variance in the base population must be considered consistent with the null model of no inbreeding depression.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 282,
+          "y": 452.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 281
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter10:2]]",
+      "book": "Genetics"
+    }
+  ]
+}

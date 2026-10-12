@@ -1,0 +1,180 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter21",
+  "count": 5,
+  "figures": [
+    {
+      "id": "21.1",
+      "chapter": "Genetics_chapter21",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter21:21.1",
+      "placeholder": "[[FIGURE:21.1]]",
+      "see_placeholder": "[[SEE_FIGURE:21.1]]",
+      "asset_path": "figures/Genetics_21.1.png",
+      "caption": "Figure 21.1 Comparison of genetic vs. phenotypic correlations for pairs of morphological traits in the sand cricket, Gryllus firmus. Results are given for the two sexes, raised in two environments that varied in temperature and photoperiod. (From Roff 1995.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 652,
+      "raw_bbox": [
+        157.0,
+        175.0,
+        1083.0,
+        1167.0
+      ],
+      "source_block_ids": [
+        "p652:b2"
+      ],
+      "caption_block": {
+        "source_page": 652,
+        "printed_page": 632,
+        "source_block_ids": [
+          "p652:b3"
+        ],
+        "bbox": [
+          190.0,
+          1191.0,
+          1057.0,
+          1312.0
+        ]
+      }
+    },
+    {
+      "id": "21.2",
+      "chapter": "Genetics_chapter21",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter21:21.2",
+      "placeholder": "[[FIGURE:21.2]]",
+      "see_placeholder": "[[SEE_FIGURE:21.2]]",
+      "asset_path": "figures/Genetics_21.2.png",
+      "caption": "Figure 21.2 Sampling distributions of the additive genetic correlation estimated with regression of single offspring on N single parents, using simulated data sets. In all cases, both characters have heritabilities equal to 0.4. Values of the underlying parameters are: (A) $ \\rho_z = 0.0 $, $ \\rho_A = 0.0 $, $ N = 200 $; (B) $ \\rho_z = 0.0 $, $ \\rho_A = 0.0 $, $ N = 1000 $; (C) $ \\dot{\\rho}_z = 0.5 $, $ \\rho_A = 0.5 $, $ N = 200 $; (D) $ \\rho_z = 0.5 $, $ \\rho_A = 0.5 $, $ N = 1000 $. (From Brown 1969.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 655,
+      "raw_bbox": [
+        102.0,
+        137.0,
+        1001.0,
+        791.0
+      ],
+      "source_block_ids": [
+        "p655:b2",
+        "p655:b3",
+        "p655:b4",
+        "p655:b5"
+      ],
+      "caption_block": {
+        "source_page": 655,
+        "printed_page": 635,
+        "source_block_ids": [
+          "p655:b6"
+        ],
+        "bbox": [
+          107.0,
+          825.0,
+          970.0,
+          1004.0
+        ]
+      }
+    },
+    {
+      "id": "21.3",
+      "chapter": "Genetics_chapter21",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter21:21.3",
+      "placeholder": "[[FIGURE:21.3]]",
+      "see_placeholder": "[[SEE_FIGURE:21.3]]",
+      "asset_path": "figures/Genetics_21.3.png",
+      "caption": "Figure 21.3 Bias in the expected genetic correlation between two characters when the phenotypic variance of character 1 in the parents has been modified to $ (1 - k)\\sigma_z^2(1) $ but has been unaccounted for in the analysis. Solid circles: correlation based on covariance of offspring character 2 on parent character 1; open squares: correlation based on covariance of offspring character 1 on parent character 2; solid line: average. Left: $ h_1^2 = 0.3 $, $ h_2^2 = 0.7 $. Right: $ h_1^2 = 0.7 $, $ h_2^2 = 0.3 $. The true value $ \\rho_A $ is 0.5 in both examples. (From Lande and Price 1989.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 658,
+      "raw_bbox": [
+        147.0,
+        148.0,
+        1109.0,
+        548.0
+      ],
+      "source_block_ids": [
+        "p658:b2"
+      ],
+      "caption_block": {
+        "source_page": 658,
+        "printed_page": 638,
+        "source_block_ids": [
+          "p658:b4"
+        ],
+        "bbox": [
+          191.0,
+          600.0,
+          1053.0,
+          807.0
+        ]
+      }
+    },
+    {
+      "id": "21.4",
+      "chapter": "Genetics_chapter21",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter21:21.4",
+      "placeholder": "[[FIGURE:21.4]]",
+      "see_placeholder": "[[SEE_FIGURE:21.4]]",
+      "asset_path": "figures/Genetics_21.4.png",
+      "caption": "Figure 21.4 Intraspecific lines of allometric growth for brain:body size vs. the interspecific pattern. (Solid lines give the regression, and solid dots the means, for individual species; the dashed line is the regression of the species means.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 665,
+      "raw_bbox": [
+        243.0,
+        132.0,
+        836.0,
+        698.0
+      ],
+      "source_block_ids": [
+        "p665:b2"
+      ],
+      "caption_block": {
+        "source_page": 665,
+        "printed_page": 645,
+        "source_block_ids": [
+          "p665:b3"
+        ],
+        "bbox": [
+          104.0,
+          749.0,
+          969.0,
+          839.0
+        ]
+      }
+    },
+    {
+      "id": "21.5",
+      "chapter": "Genetics_chapter21",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter21:21.5",
+      "placeholder": "[[FIGURE:21.5]]",
+      "see_placeholder": "[[SEE_FIGURE:21.5]]",
+      "asset_path": "figures/Genetics_21.5.png",
+      "caption": "Figure 21.5 Reduction with age of the genetic correlation between final adult brain and age-specific body weights. (From Riska and Atchley 1985.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 666,
+      "raw_bbox": [
+        259.0,
+        165.0,
+        995.0,
+        745.0
+      ],
+      "source_block_ids": [
+        "p666:b2"
+      ],
+      "caption_block": {
+        "source_page": 666,
+        "printed_page": 646,
+        "source_block_ids": [
+          "p666:b3"
+        ],
+        "bbox": [
+          187.0,
+          777.0,
+          1053.0,
+          839.0
+        ]
+      }
+    }
+  ]
+}

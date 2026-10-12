@@ -1,0 +1,762 @@
+{
+  "id": "PopGen_chapter2_004",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "subsections": [
+      "2.2 THE HARDY-WEINBERG PRINCIPLE"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "inline_2",
+      "inline_3",
+      "inline_4"
+    ],
+    "section_level_1": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "section_level_2": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+    "heading_path": [
+      "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "2.2 THE HARDY-WEINBERG PRINCIPLE"
+    ],
+    "display_heading": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+    "table_reference_keys": [
+      "popgen_chapter2:inline_2",
+      "popgen_chapter2:inline_3",
+      "popgen_chapter2:inline_4"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b2"
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Genotype frequencies are determined in part by the pattern of mating. In this section, we consider the consequences of random mating in the model with nonoverlapping generations. To deduce the genotype frequencies under random mating, additional assumptions are needed. First, the allele frequencies should not change from one generation to the next because of systematic evolutionary forces, the most important of which are mutation, migration, and natural selection. For the moment, these evolutionary forces are assumed to be absent or negligibly small in magnitude. (Their effects are discussed in Chapters 4 and 5.) Second, the population must be large enough in size that the allele frequencies are not subject to change merely because of sampling error. Variation in allele frequency owing to sampling error in small populations is called random genetic drift and is the subject of Chapter 3. Although random genetic drift is present unless the population is infinite in size, the magnitude of the effect on allele frequency over a small number of generations is usually sufficiently small that the process can be ignored if population size is 500 or more. The qualifier \"over a small number of generations\" is important because the effects of random genetic drift are cumulative. Considered over a sufficiently large number of generations, random genetic drift can be important even in populations of size $ 10^{6} $ or more.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b3"
+      ],
+      "source_bboxes": [
+        [
+          296.0,
+          386.0,
+          1050.0,
+          894.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "4f1996a8851df3265b8013cd94bfd950d53ad04096f03def7c6ad2d7f931d6b7",
+      "inline_styles": [
+        {
+          "start": 846,
+          "end": 866,
+          "style": "italic",
+          "text": "random genetic drift",
+          "source_page": 62,
+          "source_block_ids": [
+            "PopGen_chapter2:p004:b3"
+          ],
+          "source_bboxes": [
+            [
+              296.0,
+              386.0,
+              1050.0,
+              894.0
+            ]
+          ],
+          "source_content_sha256": "c3543807b6dab37929ced9fdc758d891a318dd05b5fc6df30aed35ef7b826535",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p004:b3": "c3543807b6dab37929ced9fdc758d891a318dd05b5fc6df30aed35ef7b826535"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Before proceeding further, it may be helpful to summarize the assumptions that we are making:\n\n• The organism is diploid.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b4",
+        "PopGen_chapter2:p004:b5"
+      ],
+      "source_bboxes": [
+        [
+          299.0,
+          895.0,
+          1052.0,
+          948.0
+        ],
+        [
+          326.0,
+          965.0,
+          585.0,
+          987.0
+        ]
+      ],
+      "provenance_score": 0.474227,
+      "content_sha256": "52cac40cb391b17c1df1a68b2f69f7a9f0d798edbffb2495eec6a28b800ed066",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Reproduction is sexual.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b6"
+      ],
+      "source_bboxes": [
+        [
+          326.0,
+          993.0,
+          577.0,
+          1013.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "2ede0d66754b5c7ecaf571f8686fc532272b11037830db04dad3d59dd65e3b33",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Generations are nonoverlapping.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b7"
+      ],
+      "source_bboxes": [
+        [
+          326.0,
+          1019.0,
+          671.0,
+          1041.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1948417ba869c106729cc3404ab474a8bcdd9906b56b05ee9ed8da8d33498f0f",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• The gene under consideration has two alleles.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b8"
+      ],
+      "source_bboxes": [
+        [
+          326.0,
+          1043.0,
+          797.0,
+          1066.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1bb88c53934e1f38125348e3ad3138d01d8ba48432789d89573d711335e9111f",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• The allele frequencies are identical in males and females.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b9"
+      ],
+      "source_bboxes": [
+        [
+          326.0,
+          1068.0,
+          902.0,
+          1092.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "89bd7d6ea7d40e57db3f99f7d362ec1c17487b6fe03c5d7d2ba971d6866a4def",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Mating is random.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b10"
+      ],
+      "source_bboxes": [
+        [
+          327.0,
+          1100.0,
+          530.0,
+          1120.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "917d91601241bbd2bf1d527d903be02c92bfd2ecd3122200c2188aabe577c502",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Population size is very large (in theory, infinite).",
+      "source_page": 66,
+      "source_pages": [
+        66
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p008:b6"
+      ],
+      "source_bboxes": [
+        [
+          281.0,
+          785.0,
+          1035.0,
+          1264.0
+        ]
+      ],
+      "provenance_score": 0.756098,
+      "content_sha256": "3dfd5aa637fe12be67aa91477b789c3be39f997dcb8270ea66447b563e269e4b",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Migration is negligible.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b12"
+      ],
+      "source_bboxes": [
+        [
+          328.0,
+          1153.0,
+          577.0,
+          1176.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "b7d8986ab9b1b6afe01a841a2a9b638c5da89ac6da218aaad000b70e64ec19d0",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Mutation can be ignored.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b13"
+      ],
+      "source_bboxes": [
+        [
+          328.0,
+          1179.0,
+          595.0,
+          1200.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "499bc144b2fb7f0b0664e890c32ca598a16e4951e5cb004d66ce8d41f372720c",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "• Natural selection does not affect the alleles under consideration.",
+      "source_page": 99,
+      "source_pages": [
+        99
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p041:b3",
+        "PopGen_chapter2:p041:b4"
+      ],
+      "source_bboxes": [
+        [
+          105.0,
+          652.0,
+          857.0,
+          809.0
+        ],
+        [
+          103.0,
+          812.0,
+          855.0,
+          944.0
+        ]
+      ],
+      "provenance_score": 0.719298,
+      "content_sha256": "75bf75148acd04363e47fcee5cb39ca235ffdfab41fd086ff703132006468048",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Collectively, these assumptions summarize the Hardy-Weinberg model, named after the English mathematician G. H. Hardy (1877–1947) and the German physiologist Wilhelm Weinberg (1862–1937), who, in 1908, independently formulated the model and deduced its theoretical predictions of genotype frequency.",
+      "source_page": 62,
+      "source_pages": [
+        62
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p004:b15"
+      ],
+      "source_bboxes": [
+        [
+          304.0,
+          1241.0,
+          1057.0,
+          1378.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a4d8b04581e154877fadb13071926f3daacb0afd07e859299243be650f399113",
+      "inline_styles": [
+        {
+          "start": 46,
+          "end": 66,
+          "style": "italic",
+          "text": "Hardy-Weinberg model",
+          "source_page": 62,
+          "source_block_ids": [
+            "PopGen_chapter2:p004:b15"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              1241.0,
+              1057.0,
+              1378.0
+            ]
+          ],
+          "source_content_sha256": "aa0112d1cc79a45e00c45ba3932cfd0ad39a66902a5caf201d827a902529489b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p004:b15": "aa0112d1cc79a45e00c45ba3932cfd0ad39a66902a5caf201d827a902529489b"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "In the Hardy-Weinberg model, the mathematical relation between the allele frequencies and the genotype frequencies is given by $$ AA:p^{2}\\qquad Aa:2pq\\qquad aa:q^{2} $$ in which $ p^{2} $, $ 2pq $, and $ q^{2} $ are the frequencies of the genotypes AA, Aa, and aa in zygotes of any generation, p and q are the allele frequencies of A and a in gametes of the previous generation, and $ p + q = 1 $. The frequencies displayed in Equation 2.1 constitute the Hardy-Weinberg principle or the Hardy-Weinberg equilibrium (HWE).",
+      "source_page": 63,
+      "source_pages": [
+        63
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p005:b1",
+        "PopGen_chapter2:p005:b2",
+        "PopGen_chapter2:p005:b3"
+      ],
+      "source_bboxes": [
+        [
+          116.0,
+          198.0,
+          870.0,
+          250.0
+        ],
+        [
+          330.0,
+          264.0,
+          657.0,
+          291.0
+        ],
+        [
+          113.0,
+          303.0,
+          870.0,
+          434.0
+        ]
+      ],
+      "provenance_score": 0.966321,
+      "content_sha256": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+      "inline_styles": [
+        {
+          "start": 250,
+          "end": 252,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b1",
+            "PopGen_chapter2:p005:b2",
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              116.0,
+              198.0,
+              870.0,
+              250.0
+            ],
+            [
+              330.0,
+              264.0,
+              657.0,
+              291.0
+            ],
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b1": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b2": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b3": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945"
+          }
+        },
+        {
+          "start": 254,
+          "end": 256,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b1",
+            "PopGen_chapter2:p005:b2",
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              116.0,
+              198.0,
+              870.0,
+              250.0
+            ],
+            [
+              330.0,
+              264.0,
+              657.0,
+              291.0
+            ],
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b1": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b2": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b3": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945"
+          }
+        },
+        {
+          "start": 262,
+          "end": 264,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b1",
+            "PopGen_chapter2:p005:b2",
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              116.0,
+              198.0,
+              870.0,
+              250.0
+            ],
+            [
+              330.0,
+              264.0,
+              657.0,
+              291.0
+            ],
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b1": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b2": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945",
+            "PopGen_chapter2:p005:b3": "0e9d875f2b1e7332f83eb7457c4835495be7643e3cbbc6fb6d024240132ab945"
+          }
+        },
+        {
+          "start": 456,
+          "end": 480,
+          "style": "bold",
+          "text": "Hardy-Weinberg principle",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b3": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81"
+          }
+        },
+        {
+          "start": 488,
+          "end": 514,
+          "style": "bold",
+          "text": "Hardy-Weinberg equilibrium",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b3": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81"
+          }
+        },
+        {
+          "start": 516,
+          "end": 519,
+          "style": "bold",
+          "text": "HWE",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b3": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "One rationale for the Hardy-Weinberg principle displayed in Equation 2.1 is based on the outcome of repeated and independent trials. With random mating, the choices of male gamete and female gamete are independent trials, and so pairs of gametes carrying the alleles AA, Aa, or aa are expected in proportions given by $ (pA + qa)^2 = p^2AA + 2pqAa + q^2aa $. A graphical illustration of the rationale of independent trials is shown in Figure 2.2. The chance of two A-bearing gametes coming together is $ p \\times p = p^2 $ and that of two a-bearing gametes coming together is $ q \\times q = q^2 $; for the heterozygote, the chance is $ p \\times q + q \\times p = 2pq $ because the female gamete could carry A and the male gamete carry a, or the other way around.",
+      "source_page": 63,
+      "source_pages": [
+        63
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p005:b4"
+      ],
+      "source_bboxes": [
+        [
+          110.0,
+          437.0,
+          867.0,
+          702.0
+        ]
+      ],
+      "provenance_score": 0.965217,
+      "content_sha256": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 267,
+          "end": 269,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b4"
+          ],
+          "source_bboxes": [
+            [
+              110.0,
+              437.0,
+              867.0,
+              702.0
+            ]
+          ],
+          "source_content_sha256": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b4": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80"
+          }
+        },
+        {
+          "start": 271,
+          "end": 273,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b4"
+          ],
+          "source_bboxes": [
+            [
+              110.0,
+              437.0,
+              867.0,
+              702.0
+            ]
+          ],
+          "source_content_sha256": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b4": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80"
+          }
+        },
+        {
+          "start": 278,
+          "end": 280,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b4"
+          ],
+          "source_bboxes": [
+            [
+              110.0,
+              437.0,
+              867.0,
+              702.0
+            ]
+          ],
+          "source_content_sha256": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b4": "84d3121ca02a291bdd4686dedd6ba562ee3cdc61747c511f8f7a39eac5fe3c80"
+          }
+        }
+      ]
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 2.1 The assumption that random mating of individuals is equivalent to random union of gametes (see [[see_figure:2.2]]) can be used to explore the consequences of random mating when the allele frequencies are different in males and females. Imagine an autosomal gene with alleles A and a in a population in which the allele frequencies in females are p and q, respectively, with $ p + q = 1 $, and in which the corresponding allele frequencies in males are $ p' $ and $ q' $ ($ p' + q' = 1 $). After one generation of random mating, what are the genotype frequencies in females and males? What are the allele frequencies in females and males? What does this result imply about HWE in subsequent generations?",
+      "source_page": 64,
+      "source_pages": [
+        64
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p006:b1",
+        "PopGen_chapter2:p006:b2",
+        "PopGen_chapter2:p006:b3"
+      ],
+      "source_bboxes": [
+        [
+          172.0,
+          216.0,
+          599.0,
+          411.0
+        ],
+        [
+          170.0,
+          455.0,
+          599.0,
+          772.0
+        ],
+        [
+          626.0,
+          215.0,
+          1052.0,
+          410.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "9ae9e5f38cd595fc5428a423459c6883b6cd5a397d2b6a969cc516c1557b5ad9",
+      "problem_id": "2.1",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER For this situation a Punnett square like that in Figure 2.2 would have allele frequencies $ p $ and $ q $ across the top, since these are the frequencies of $ A $ and $ a $ in female gametes; and it would have $ p' $ and $ q' $ along the side, since these are the frequencies of $ A $ and $ a $ in male gametes. After one generation of random mating, therefore, the genotype frequencies are $ pp' (AA) $, $ pq' + qp' (Aa) $, and $ qq' (aa) $. These frequencies apply equally to female and male offspring, since both parents contribute equally to the inheritance of an autosomal gene. The allele frequencies in both sexes in the offspring generation are therefore $ p^* = pp' + (pq' + qp') / 2 = (2pp' + pq' + qp') / 2 = [p(p' + q') + p' (p + q)] / 2 = (p + p') / 2 $ for $ A $ and likewise $ q^* = (q + q') / 2 $ for $ a $. (Note that these values are the averages of the allele frequencies in females and males of the previous generation.) Therefore, one generation of random mating is sufficient to equalize the allele frequencies in the sexes, and in subsequent generations the genotype frequencies will be given by the HWE with $ p = p^* $ and $ q = q^* $.",
+      "source_page": 64,
+      "source_pages": [
+        64
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p006:b2",
+        "PopGen_chapter2:p006:b4"
+      ],
+      "source_bboxes": [
+        [
+          170.0,
+          455.0,
+          599.0,
+          772.0
+        ],
+        [
+          626.0,
+          454.0,
+          1054.0,
+          749.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "704691546f2f3d139a6565c24ea8cf8b40031f2cc350d9ef2c74847c5255d223",
+      "problem_id": "2.1",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "Genetics_chapter22_006",
+  "metadata": {
+    "chapter": "Genetics_chapter22",
+    "section": "FURTHER CHARACTERIZATION OF INTERACTION EFFECTS",
+    "subsections": [],
+    "section_level_1": "FURTHER CHARACTERIZATION OF INTERACTION EFFECTS",
+    "section_level_2": null,
+    "heading_path": [
+      "FURTHER CHARACTERIZATION OF INTERACTION EFFECTS"
+    ],
+    "display_heading": "FURTHER CHARACTERIZATION OF INTERACTION EFFECTS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 684,
+      "printed_page": 664,
+      "source_block_ids": [
+        "p684:b3"
+      ],
+      "bbox": [
+        142.0,
+        456.0,
+        958.0,
+        489.0
+      ],
+      "raw_text": "FURTHER CHARACTERIZATION OF INTERACTION EFFECTS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The methods outlined in the previous sections of this chapter serve merely to test whether a significant amount of genotype × environment interaction exists within a population and to provide quantitative estimates of the amount of phenotypic variance associated with interaction effects. An absence of interaction variance implies that the reaction norms of different genotypes are essentially parallel, in which case the population mean reaction norm provides a good indication of the pattern of response to environmental change. On the other hand, the presence of significant interaction variance raises numerous questions. Can the interaction effects be broken down further into biologically interpretable components? To what extent are some genotypes more sensitive to environmental change than others? Is there a correlation between a genotype’s stability of phenotypic expression across environments and its average performance?",
+      "source_page": 684,
+      "printed_page": 664,
+      "source_block_ids": [
+        "p684:b4"
+      ],
+      "bbox": [
+        143.0,
+        521.0,
+        1105.0,
+        908.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If the environments in which genotypes are assayed are characterized for different chemical, physical, or biological properties, it is possible to partition the interaction effects into components depending on these features. That is, the interaction effect of genetic group j in environment i could be described as",
+      "source_page": 684,
+      "printed_page": 664,
+      "source_block_ids": [
+        "p684:b5"
+      ],
+      "bbox": [
+        144.0,
+        907.0,
+        1106.0,
+        1039.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter22_formula023]]",
+      "source_page": 684,
+      "printed_page": 664,
+      "source_block_ids": [
+        "p684:b6"
+      ],
+      "bbox": [
+        502.0,
+        1054.0,
+        747.0,
+        1137.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ x_{il} $ is the measure of the lth feature of the ith environment, $ \\beta_{jl} $ is the partial regression coefficient of the jth genotype's interaction effects ( $ I_{ij} $) on the $ x_{il} $, and $ \\epsilon_{ij} $ is the deviation of $ I_{ij} $ from the regression prediction. Although this approach can provide insight into the special features of the environment that contribute to interaction effects, it has the disadvantage of demanding data on numerous aspects of the environment, few or none of which may actually be of direct relevance to the study organism.",
+      "source_page": 684,
+      "printed_page": 664,
+      "source_block_ids": [
+        "p684:b8"
+      ],
+      "bbox": [
+        145.0,
+        1151.0,
+        1108.0,
+        1382.0
+      ]
+    }
+  ]
+}

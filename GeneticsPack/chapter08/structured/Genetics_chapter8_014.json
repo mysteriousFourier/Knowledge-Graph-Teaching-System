@@ -1,0 +1,85 @@
+{
+  "id": "Genetics_chapter8_014",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Computing Inverses"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Computing Inverses",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Computing Inverses"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Computing Inverses",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 206,
+      "printed_page": 186,
+      "source_block_ids": [
+        "p206:b12"
+      ],
+      "bbox": [
+        152.0,
+        1369.0,
+        412.0,
+        1402.0
+      ],
+      "raw_text": "Computing Inverses"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The general solution of a matrix inverse is",
+      "source_page": 206,
+      "printed_page": 186,
+      "source_block_ids": [
+        "p206:b13"
+      ],
+      "bbox": [
+        151.0,
+        1408.0,
+        658.0,
+        1444.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula058]]",
+      "source_page": 206,
+      "printed_page": 186,
+      "source_block_ids": [
+        "p206:b14"
+      ],
+      "bbox": [
+        478.0,
+        1460.0,
+        780.0,
+        1540.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ A_{ij}^{-1} $ denotes the $ ij $th element of $ A^{-1} $, and $ A_{ij} $ denotes the $ ij $th minor of A. It can be seen from Equation 8.13 that a matrix can only be inverted if it has a nonzero determinant. Thus, a matrix is singular if its determinant is zero. This occurs whenever a matrix contains a row (or column) that can be written as a weighted sum of any other rows (or columns). In the context of our linear model, Equation 8.4, this happens if one of the $ n $ equations can be written as a combination of the others, a situation that is equivalent to there being $ n $ unknowns but less than $ n $ independent equations.",
+      "source_page": 207,
+      "printed_page": 187,
+      "source_block_ids": [
+        "p207:b2"
+      ],
+      "bbox": [
+        62.0,
+        122.0,
+        1028.0,
+        404.0
+      ]
+    }
+  ]
+}

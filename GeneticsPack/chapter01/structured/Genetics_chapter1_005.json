@@ -1,0 +1,52 @@
+{
+  "id": "Genetics_chapter1_005",
+  "metadata": {
+    "chapter": "Genetics_chapter1",
+    "section": "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+    "subsections": [],
+    "section_level_1": "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+    "section_level_2": null,
+    "heading_path": [
+      "THE MAJOR GOALS OF QUANTITATIVE GENETICS"
+    ],
+    "display_heading": "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 31,
+      "printed_page": 11,
+      "source_block_ids": [
+        "p31:b4"
+      ],
+      "bbox": [
+        53.0,
+        939.0,
+        743.0,
+        983.0
+      ],
+      "raw_text": "THE MAJOR GOALS OF QUANTITATIVE GENETICS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Before proceeding, we give a very brief summary of the main issues to be addressed in the remainder of the book:",
+      "source_page": 31,
+      "printed_page": 11,
+      "source_block_ids": [
+        "p31:b5"
+      ],
+      "bbox": [
+        50.0,
+        1003.0,
+        1007.0,
+        1082.0
+      ]
+    }
+  ]
+}

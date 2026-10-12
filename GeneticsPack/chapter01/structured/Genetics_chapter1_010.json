@@ -1,0 +1,55 @@
+{
+  "id": "Genetics_chapter1_010",
+  "metadata": {
+    "chapter": "Genetics_chapter1",
+    "section": "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+    "subsections": [
+      "The Development of Predictive Models for Evolutionary Change"
+    ],
+    "section_level_1": "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+    "section_level_2": "The Development of Predictive Models for Evolutionary Change",
+    "heading_path": [
+      "THE MAJOR GOALS OF QUANTITATIVE GENETICS",
+      "The Development of Predictive Models for Evolutionary Change"
+    ],
+    "display_heading": "THE MAJOR GOALS OF QUANTITATIVE GENETICS / The Development of Predictive Models for Evolutionary Change",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 34,
+      "printed_page": 14,
+      "source_block_ids": [
+        "p34:b2"
+      ],
+      "bbox": [
+        136.0,
+        129.0,
+        936.0,
+        170.0
+      ],
+      "raw_text": "The Development of Predictive Models for Evolutionary Change"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Much attention has been given to the predictive power of quantitative-genetic theory. For breeders facing a large economic investment in an artificial selection program, a fundamental issue is the magnitude of selection gain that is to be expected following a certain period of selection at a specified intensity. Models that provide reasonable predictions, at least for periods of a dozen generations or so, have long been available. These will be taken up in detail in our next book. For now, we simply emphasize that the application of all such models requires information on the components of variation and covariation of the selected traits, the primary topics of this volume.",
+      "source_page": 34,
+      "printed_page": 14,
+      "source_block_ids": [
+        "p34:b3"
+      ],
+      "bbox": [
+        136.0,
+        170.0,
+        1100.0,
+        471.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "PopGen_chapter3_009",
+  "metadata": {
+    "chapter": "PopGen_chapter3",
+    "section": "RANDOM GENETIC DRIFT: Introduction",
+    "subsections": [
+      "3.5 EFFECTIVE POPULATION SIZE"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "RANDOM GENETIC DRIFT: Introduction",
+    "section_level_2": "3.5 EFFECTIVE POPULATION SIZE",
+    "heading_path": [
+      "RANDOM GENETIC DRIFT: Introduction",
+      "3.5 EFFECTIVE POPULATION SIZE"
+    ],
+    "display_heading": "3.5 EFFECTIVE POPULATION SIZE",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter3:p027:b2"
+      ]
+    },
+    "chapter_title": "Random Genetic Drift"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As we saw in the Drosophila experiments in Figure 3.12, populations generally fluctuate in allele frequency by an amount greater than $ pq/(2N) $. No real population can be expected to satisfy the assumptions of a theoretically ideal population in all respects. Hence, in any actual case, there must be corrections for such complications as fluctuations in population size, unequal numbers of males and females, skewed distributions in family size, population structure, and so forth <sup>[140,181]</sup>. The effects of these complicating circumstances on the change in allele frequencies and rates of allele fixation can be approximated by calculating the effective size of the population and using this value in the theory for an ideal population. That is, the effective population size of an actual population is the number of individuals in a theoretically ideal population having the same magnitude of random genetic drift as the actual population. There are three kinds of effective population size based on how we choose to measure “magnitude,” namely: (1) the change in probability of identity by descent (F), (2) the change in variance in allele frequency, or (3) the rate of loss of heterozygosity. These are called the inbreeding effective size, the variance effective size, and the eigenvalue effective size, respectively.",
+      "source_page": 135,
+      "source_pages": [
+        135
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p027:b3"
+      ],
+      "source_bboxes": [
+        [
+          118.0,
+          390.0,
+          872.0,
+          867.0
+        ]
+      ],
+      "provenance_score": 0.999088,
+      "content_sha256": "d0b2f62f7dee7ca328eb52939421e6b2d18b0c829a35342a7e24ca41d9d18c4a",
+      "inline_styles": [
+        {
+          "start": 17,
+          "end": 39,
+          "style": "italic",
+          "text": "Drosophila experiments",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              390.0,
+              872.0,
+              867.0
+            ]
+          ],
+          "source_content_sha256": "d0b2f62f7dee7ca328eb52939421e6b2d18b0c829a35342a7e24ca41d9d18c4a",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b3": "d0b2f62f7dee7ca328eb52939421e6b2d18b0c829a35342a7e24ca41d9d18c4a"
+          }
+        },
+        {
+          "start": 672,
+          "end": 686,
+          "style": "italic",
+          "text": "effective size",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              390,
+              872,
+              867
+            ]
+          ],
+          "source_content_sha256": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b3": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1"
+          }
+        },
+        {
+          "start": 778,
+          "end": 803,
+          "style": "bold",
+          "text": "effective population size",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              390,
+              872,
+              867
+            ]
+          ],
+          "source_content_sha256": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b3": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1"
+          }
+        },
+        {
+          "start": 1245,
+          "end": 1270,
+          "style": "italic",
+          "text": "inbreeding effective size",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          }
+        },
+        {
+          "start": 1276,
+          "end": 1299,
+          "style": "italic",
+          "text": "variance effective size",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          }
+        },
+        {
+          "start": 1309,
+          "end": 1334,
+          "style": "italic",
+          "text": "eigenvalue effective size",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Wright <sup>[782]</sup> first worked out the effective population size by considering the increase in identity by descent in various situations. As noted, the effective population size can also be calculated by determining the rate of change in variance in allele frequency among subpopulations, and Kimura and Crow <sup>[349]</sup> first applied this approach to the problem of overlapping generations. Usually, the inbreeding effective size and the variance effective size are the same, but exceptions do occur. Similarly, the variance effective size and the eigenvalue effective size can be distinct <sup>[179,181]</sup>. Some of the various factors that require calculation of an effective population size will now be illustrated. We will focus on the inbreeding effective size because this concept is the most widely used.",
+      "source_page": 135,
+      "source_pages": [
+        135
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p027:b4"
+      ],
+      "source_bboxes": [
+        [
+          115.0,
+          870.0,
+          869.0,
+          1162.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "d8ea2d52c188c1a08aca5ff72c27508693090e3c0b66f6608597f775d0f623f3",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "id": "PopGen_chapter6_029",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.5 MIGRATION",
+    "subsections": [
+      "PROBLEMS"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "6.5 MIGRATION",
+    "section_level_2": "PROBLEMS",
+    "heading_path": [
+      "6.5 MIGRATION",
+      "PROBLEMS"
+    ],
+    "display_heading": "PROBLEMS",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p055:b6"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "content": "1. Explain why the concept of identity by descent (autozygosity) is fundamental to an understanding of the effects of inbreeding. Under what circumstances can the probability of autozygosity in a population increase without any increase in homozygosity?",
+      "source_page": 325,
+      "source_pages": [
+        325
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p055:b7"
+      ],
+      "source_bboxes": [
+        [
+          124.0,
+          1009.0,
+          861.0,
+          1115.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "854617ca34522e38b7e5cd06aac0833aff27c37120db013308b52f527c3b7aed",
+      "problem_id": "6.E1",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "2. The coefficient of consanguinity between two individuals is the probability that two alleles of a gene, one drawn at random from each of the individuals, are identical by descent. How is the coefficient of consanguinity between two individuals related to the inbreeding coefficient of a hypothetical offspring of these two individuals?",
+      "source_page": 325,
+      "source_pages": [
+        325
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p055:b8"
+      ],
+      "source_bboxes": [
+        [
+          122.0,
+          1125.0,
+          860.0,
+          1258.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1ccd9de01ef9aecc9a77fe87b9b8167fff5b3603345e871b8e4f800f43ebefdd",
+      "problem_id": "6.E2",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "problem_id": "6.E3",
+      "content": "3. Consider two alleles A and a at frequencies $ \\frac{1}{2} $ and $ \\frac{1}{2} $ in a population in which the inbreeding coefficient equals $ F $. What value of $ F $ results in genotype frequencies of 1/3:1/3:1/3?",
+      "source_page": 325,
+      "source_pages": [
+        325
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p055:b9"
+      ],
+      "source_bboxes": [
+        [
+          120.0,
+          1267.0,
+          858.0,
+          1348.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "exact",
+      "content_sha256": "1becae95dc2464704a13276e98dbe4175924df744f95fc908f5fa4eba40eda65",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "4. Show that $ p^2(1 - F) + pF = p^2 + pqF = p - (1 - F)pq $, when q = 1 - p.",
+      "source_page": 326,
+      "source_pages": [
+        326
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p056:b1"
+      ],
+      "source_bboxes": [
+        [
+          282.0,
+          214.0,
+          952.0,
+          240.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "595ddadd7dd9752bcdabb0eb8597865f6b3e264620a2155dce38f501784cd12c",
+      "problem_id": "6.E4",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "5. In a population of monoecious plants in Hardy-Weinberg proportions for two alleles with allele frequency p, what is the variance in allele frequency among plants? What is the variance if the population were completely inbred? If a random mating population were to undergo repeated self-fertilization, what would the variance be when the inbreeding coefficient equals F?",
+      "source_page": 326,
+      "source_pages": [
+        326
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p056:b2"
+      ],
+      "source_bboxes": [
+        [
+          282.0,
+          250.0,
+          1019.0,
+          407.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ffb654436a72e8c900abae1fe914a587de91fa1bd057e6235c3429068e0c35ae",
+      "problem_id": "6.E5",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "6. Equation 6.7 can also apply to the probability of autozygosity for X-linked genes provided that (a) males are regarded as having an inbreeding coefficient of 1, and (b) any path with two consecutive males is disregarded. Explain why these provisions are necessary.",
+      "source_page": 326,
+      "source_pages": [
+        326
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p056:b3"
+      ],
+      "source_bboxes": [
+        [
+          283.0,
+          419.0,
+          1020.0,
+          526.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "174bf7650d238c300a90d35024802ba3f3195b36f9aa7a3048bbf76ef9dad535",
+      "problem_id": "6.E6",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "7. What is the inbreeding coefficient of individual K in the accompanying pedigree, assuming that none of the individuals at the top of the pedigree is inbred.\n\n[[see_figure:problem_6.7]]",
+      "source_page": 326,
+      "source_pages": [
+        326
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p056:b4",
+        "PopGen_chapter6:p056:b3"
+      ],
+      "source_bboxes": [
+        [
+          284.0,
+          536.0,
+          1020.0,
+          615.0
+        ],
+        [
+          283.0,
+          419.0,
+          1020.0,
+          526.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "851ef4a7381f912c631a7302e034275ec867906048466a25837b4c55cbf953d4",
+      "problem_id": "6.E7",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "8. The accompanying pedigree shows several generations of half-sib mating. Assuming that the individuals in generation 0 have $ F_{0}=0 $, what are the inbreeding coefficients of the individuals in generations 1, 2, 3, and 4?\n\n[[see_figure:problem_6.8]]",
+      "source_page": 326,
+      "source_pages": [
+        326
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p056:b6"
+      ],
+      "source_bboxes": [
+        [
+          285.0,
+          894.0,
+          1022.0,
+          994.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "145a5593af5e10a35953c9353e488dabdcbb265abea099c17cee3ce10d982ac5",
+      "problem_id": "6.E8",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "9. Assuming $ F_{A}=F_{B}=0 $, calculate the inbreeding coefficient for each of the individuals C–I in the accompanying pedigree (see figure at right).\n\n[[see_figure:problem_6.9]]",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b1",
+        "PopGen_chapter6:p057:b5"
+      ],
+      "source_bboxes": [
+        [
+          132.0,
+          205.0,
+          866.0,
+          259.0
+        ],
+        [
+          889.0,
+          212.0,
+          980.0,
+          479.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "53a9ff92bf29b0388d7f376d34bbd1b892524687cd50babcf3de91837442e2d2",
+      "problem_id": "6.E9",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "10. Derive a recursion equation for $ F_{t} $ for repeated parent-offspring mating, and calculate $ F_{t} $ for t = 0 to 5.",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b2",
+        "PopGen_chapter6:p057:b3",
+        "PopGen_chapter6:p057:b1"
+      ],
+      "source_bboxes": [
+        [
+          119.0,
+          267.0,
+          866.0,
+          319.0
+        ],
+        [
+          118.0,
+          329.0,
+          866.0,
+          408.0
+        ],
+        [
+          132.0,
+          205.0,
+          866.0,
+          259.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "be29548f28be377d960092341a04dde2b74764b9be3f67fcd5a146529f4b1fb5",
+      "problem_id": "6.E10",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "11. For a gene with two alleles and $p = 0.3$, what are the expected genotype frequencies after five generations of sib mating? What are the expected genotype frequencies after one additional generation of random mating? ",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b3",
+        "PopGen_chapter6:p057:b2"
+      ],
+      "source_bboxes": [
+        [
+          118.0,
+          329.0,
+          866.0,
+          408.0
+        ],
+        [
+          119.0,
+          267.0,
+          866.0,
+          319.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "fd113b51f45b0e5aa78bb46a641a6629f91f663c8a34d41730b7b6d45c8fe8f5",
+      "problem_id": "6.E11",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "problem_id": "6.E12",
+      "content": "12. With two alleles and $ p = \\frac{1}{2} $, what are the expected genotype frequencies in a random-mating population and among the offspring of first cousins? How great is the decrease in heterozygosity in the inbred population relative to the random-mating population?",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b4"
+      ],
+      "source_bboxes": [
+        [
+          117.0,
+          416.0,
+          864.0,
+          523.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "exact",
+      "content_sha256": "f64e0c2234277ebf3f08f750be3af7772df16c0548429e2a3cf0c54180a008f2",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "problem_id": "6.E13",
+      "content": "13. If the frequency of an autosomal recessive disorder is 1/1600 among unrelated parents, what is the expected frequency among the offspring of first cousins?",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b6"
+      ],
+      "source_bboxes": [
+        [
+          113.0,
+          533.0,
+          862.0,
+          608.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "exact",
+      "content_sha256": "a68104dc07abaf8ec3d55c28f5a0108313bed6e9a959017a9124a7c5b1522244",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "14. For a recessive allele at frequency q in a population in which one percent of the matings are between first cousins, but otherwise occur at random, the proportion of affected individuals having first-cousin parents is $ (1 + 15q)/(1 + 1599q) $. Calculate this ratio for q = 0.1, 0.05, 0.01, 0.005, and 0.001. Interpret the result when q = 1.",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b7"
+      ],
+      "source_bboxes": [
+        [
+          114.0,
+          622.0,
+          861.0,
+          754.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "75aa55dee2d4c503f983ea322d140b148923c5d2aa55e27d028d8c04d8eb946b",
+      "problem_id": "6.E14",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "15. Two-way hybrid corn is produced by crossing two different inbred lines; three-way hybrids are produced by crossing a two-way hybrid with an unrelated inbred; and four-way hybrids are produced by crossing two different two-way hybrids. What is the inbreeding coefficient of the offspring of randomly mated two-way, three-way, or four-way hybrids? (Hint: Consider the allele frequencies in gametes.)",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b8"
+      ],
+      "source_bboxes": [
+        [
+          112.0,
+          764.0,
+          858.0,
+          924.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "d480483a66ee2a461beeb978918f5804fda3b94bcdb4f8e30983b90974ec98bd",
+      "problem_id": "6.E15",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "16. If a population is maintained by self-fertilization in even-numbered generations and by random mating in odd-numbered generations, what happens to the inbreeding coefficient?",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b9"
+      ],
+      "source_bboxes": [
+        [
+          108.0,
+          933.0,
+          856.0,
+          1013.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1f35581295801bddd9984a2100d5372aacbc59c2510b1b0cfa2e5e98aed05bca",
+      "problem_id": "6.E16",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "17. Consider a population of plants in which, in each generation, a fraction S of the population (a random sample of all individuals) undergoes self-fertilization, and the remaining fraction 1 - S undergoes outcrossing (random mating). Assuming that there is no heredity tendency for the plants to self-fertilize or outcross, show that the magnitude of the inbreeding coefficient F at equilibrium equals $ S/(2 - S) $.",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b10"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          1022.0,
+          855.0,
+          1183.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "db6f3d427d94e0d2ad5798a8c2d958e42bf0760fed06d12023119be7f132dbc5",
+      "problem_id": "6.E17",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "18. Two diploid random mating populations have allele frequencies $ q + \\varepsilon $ and $ q - \\varepsilon $ for a recessive allele of a gene. What are the frequencies of homozygous recessives before and after population fusion?",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b11"
+      ],
+      "source_bboxes": [
+        [
+          105.0,
+          1192.0,
+          855.0,
+          1272.0
+        ]
+      ],
+      "provenance_score": 0.888889,
+      "content_sha256": "e755f53e4c7d3b0f9d3e5714f6316c2fec88ad4f98ae18d9b30287b89a63980b",
+      "problem_id": "6.E18",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "19. Show that $ F_{IT} = F_{IS} + F_{ST} - F_{IS}F_{ST} $ and interpret the expression.",
+      "source_page": 327,
+      "source_pages": [
+        327
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p057:b12"
+      ],
+      "source_bboxes": [
+        [
+          104.0,
+          1280.0,
+          739.0,
+          1312.0
+        ]
+      ],
+      "provenance_score": 0.8,
+      "content_sha256": "b4ba91d6d04fd04c286f929e9f9bcc61bd58dc10ac1c4b629541db3fbaa052a2",
+      "problem_id": "6.E19",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "20. Calculate $ F_{ST} $ among the three random-mating populations below based on the specified allele frequencies. What is the maximum value of $ F_{ST} $ in this situation?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b1"
+      ],
+      "source_bboxes": [
+        [
+          270.0,
+          203.0,
+          1021.0,
+          280.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5f9cb3e2a22f8e2535fa47e3da7825b9359e57e676ca6863bfa5d22c628c789e",
+      "problem_id": "6.E20",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "21. Calculate $ F_{IS} $, $ F_{ST} $, and $ F_{IT} $ for the populations with the genotype frequencies shown in the following table:",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b3"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          429.0,
+          1024.0,
+          479.0
+        ]
+      ],
+      "provenance_score": 0.977778,
+      "content_sha256": "5ed4b09094da0f003fec7dd52b60bfe45a727e346e2fe397f4f5017ac52dd049",
+      "problem_id": "6.E21",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

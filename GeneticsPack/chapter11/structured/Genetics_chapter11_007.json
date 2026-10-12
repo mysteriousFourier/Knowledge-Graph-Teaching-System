@@ -1,0 +1,101 @@
+{
+  "id": "Genetics_chapter11_007",
+  "metadata": {
+    "chapter": "Genetics_chapter11",
+    "section": "STABILIZING THE VARIANCE",
+    "subsections": [
+      "General Variance-stabilizing Transformations"
+    ],
+    "section_level_1": "STABILIZING THE VARIANCE",
+    "section_level_2": "General Variance-stabilizing Transformations",
+    "heading_path": [
+      "STABILIZING THE VARIANCE",
+      "General Variance-stabilizing Transformations"
+    ],
+    "display_heading": "STABILIZING THE VARIANCE / General Variance-stabilizing Transformations",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 315,
+      "printed_page": 295,
+      "source_block_ids": [
+        "p315:b7"
+      ],
+      "bbox": [
+        53.0,
+        1056.0,
+        623.0,
+        1099.0
+      ],
+      "raw_text": "General Variance-stabilizing Transformations"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "For more complicated relationships between means and standard deviations, a general formula exists for ascertaining the correct variance-stabilizing transformation. Given the relationship $ \\sigma_{z}=f(\\mu_{z}) $, the appropriate transform is given by a result due to Fisher,",
+      "source_page": 315,
+      "printed_page": 295,
+      "source_block_ids": [
+        "p315:b8"
+      ],
+      "bbox": [
+        49.0,
+        1099.0,
+        1013.0,
+        1241.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter11_formula012]]",
+      "source_page": 315,
+      "printed_page": 295,
+      "source_block_ids": [
+        "p315:b9"
+      ],
+      "bbox": [
+        441.0,
+        1230.0,
+        614.0,
+        1299.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $C$ is an arbitrary nonnegative constant, generally chosen to set the rescaled variance equal to one. The rescaled character $y$ has a variance that is independent of the mean in any particular population. Thus, the procedure for obtaining a variance-stabilizing transform for any standard deviation-mean relationship, $f(\\bar{z})$, is simple. A fit for the function $f(\\bar{z})$ is obtained by a least-squares polynomial (or some other nonlinear) regression, and Equation 11.8 is solved using the estimated regression coefficients.",
+      "source_page": 315,
+      "printed_page": 295,
+      "source_block_ids": [
+        "p315:b11"
+      ],
+      "bbox": [
+        44.0,
+        1300.0,
+        1008.0,
+        1541.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter11:3]]",
+      "source_page": 316,
+      "source_block_ids": [
+        "p316:b2",
+        "p316:b3",
+        "p316:b4"
+      ],
+      "bbox": [
+        177.0,
+        196.0,
+        1040.0,
+        268.0
+      ]
+    }
+  ]
+}

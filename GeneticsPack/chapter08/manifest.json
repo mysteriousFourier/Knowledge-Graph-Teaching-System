@@ -1,0 +1,14 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter8",
+  "counts": {
+    "structured": 22,
+    "formulas": 140,
+    "tables": 0,
+    "figures": 0,
+    "examples": 11,
+    "image_files": 0
+  },
+  "textbook": "textbook.md",
+  "figures": []
+}

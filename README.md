@@ -130,6 +130,10 @@ python render_app.py
 - `.runtime/`：运行时生成的章节、日志和缓存
 - `structured/`：可公开提交的课程结构化数据
 - `data/seed/`：可提交的启动种子数据
+
+### 独立书籍图谱
+
+`data/seed/graph_registry.json` 注册彼此独立的 SQLite 图谱。当前包含现有种子图谱、`popgen`（`Pack/PopGen_chapters_2_3_4_6`）和 `genetics`（`GeneticsPack`）。默认 `semantic_search` 会逐图谱检索并在结果中保留 `graph_id`、书名和原始节点 ID；各书不会合并到同一数据库。使用 `python scripts/build_book_graphs.py` 可从两个书包重复构建。
 - `.runtime/knowledge_graph.db`：默认运行时图谱数据库位置
 - `backend/vector_index_system/knowledge_graph/`：旧版图谱页面和兼容工具目录
 

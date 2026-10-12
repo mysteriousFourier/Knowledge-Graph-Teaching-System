@@ -1,0 +1,339 @@
+{
+  "id": "Genetics_chapter7_006",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "THE GENETIC COVARIANCE BETWEEN RELATIVES",
+    "subsections": [],
+    "section_level_1": "THE GENETIC COVARIANCE BETWEEN RELATIVES",
+    "section_level_2": null,
+    "heading_path": [
+      "THE GENETIC COVARIANCE BETWEEN RELATIVES"
+    ],
+    "display_heading": "THE GENETIC COVARIANCE BETWEEN RELATIVES",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 157,
+      "printed_page": 137,
+      "source_block_ids": [
+        "p157:b14"
+      ],
+      "bbox": [
+        47.0,
+        1343.0,
+        740.0,
+        1374.0
+      ],
+      "raw_text": "THE GENETIC COVARIANCE BETWEEN RELATIVES"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The bulk of the credit goes to Fisher (1918) and Wright (1921b) for elucidating the connection between the phenotypic resemblance of relatives and the types of genetic variance in populations. However, despite the tremendous advances in these",
+      "source_page": 157,
+      "printed_page": 137,
+      "source_block_ids": [
+        "p157:b15"
+      ],
+      "bbox": [
+        44.0,
+        1407.0,
+        1006.0,
+        1505.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:7.1]]",
+      "source_page": 158,
+      "printed_page": 138,
+      "source_block_ids": [
+        "p158:b3"
+      ],
+      "bbox": [
+        155.0,
+        219.0,
+        1099.0,
+        726.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "papers, a number of problems remained. Wright did not pursue nonadditive gene action beyond dominance and even then ran into difficulties. Fisher incorporated epistasis but only of the additive × additive type. In 1954, Cockerham and Kempthorne independently published papers outlining how the earlier results could be generalized to include any type of gene action. Both authors arrived at the same result by very different routes, but Kempthorne’s approach is simpler by far and is the one that we will pursue. Cockerham’s name will appear many times throughout the book in other contexts.",
+      "source_page": 158,
+      "printed_page": 138,
+      "source_block_ids": [
+        "p158:b4"
+      ],
+      "bbox": [
+        146.0,
+        806.0,
+        1107.0,
+        1063.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "At the outset, it must be emphasized that the simple results that will emerge below are not obtained without making a lot of assumptions: (1) all of the genetic variation is attributable to diploid, autosomal loci; (2) mating is random; (3) all loci are unlinked and in gametic phase equilibrium; (4) there is no genetic variation for maternal effects; (5) genotype-environment covariance and interaction are unimportant; (6) there is no sexual dimorphism; and (7) selection is not operating on the population. In due course, we will relax all of these conditions.",
+      "source_page": 158,
+      "printed_page": 138,
+      "source_block_ids": [
+        "p158:b5"
+      ],
+      "bbox": [
+        147.0,
+        1064.0,
+        1108.0,
+        1287.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Our first task is to decompose the total genetic covariance between relatives into fundamental components that describe the various types of gene action. We accomplish this by following the logic used in Chapter 5 to partition the genetic variance. Consider a collection of pairs of individuals all of the same type of relationship, and let x and y represent the members of a random pair. From Equation 5.7, taking things out only to the two-locus effects, the genotypic values of the two individuals may be written as",
+      "source_page": 158,
+      "printed_page": 138,
+      "source_block_ids": [
+        "p158:b6",
+        "p159:b2"
+      ],
+      "bbox": [
+        148.0,
+        1288.0,
+        1110.0,
+        1482.0
+      ],
+      "source_page_end": 159
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula013]]",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b3"
+      ],
+      "bbox": [
+        87.0,
+        185.0,
+        985.0,
+        311.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula014]]",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b4"
+      ],
+      "bbox": [
+        88.0,
+        312.0,
+        983.0,
+        443.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where i, j and k, l represent genes at the first and second loci. Fisher (1918) showed that just as the different types of effects are uncorrelated within individuals, they are also uncorrelated between individuals, provided the preceding assumptions are met. Consequently, the genetic covariance between relatives can be expanded into a series of terms, each describing the covariance between the same kinds of effects in two individuals:",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b6"
+      ],
+      "bbox": [
+        53.0,
+        494.0,
+        1013.0,
+        687.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula015]]",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b7"
+      ],
+      "bbox": [
+        65.0,
+        707.0,
+        935.0,
+        746.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that if x = y, Equation 7.11 reduces to Equation 5.8, the usual expression for the genetic variance.",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b9"
+      ],
+      "bbox": [
+        51.0,
+        762.0,
+        1010.0,
+        827.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The remaining task is to express the terms in Equation 7.11 in terms of variance components and coefficients of relationship. We will do this only for the first three terms and then give the general result. First, we evaluate the additive genetic covariance at locus 1. Since the mean value of the effects is zero by definition (Chapter 5), the covariance between $x$ and $y$ caused by the additive effects is equal to the expectation of the cross-product, $E[(\\alpha_i^x + \\alpha_j^x)(\\alpha_i^y + \\alpha_j^y)]$. Consider one of the four terms in the expansion, $E(\\alpha_i^x \\alpha_i^y)$. The two genes of interest may be identical by descent, with probability $\\Theta_{xy}$, in which case $E(\\alpha_i^x \\alpha_i^y) = E(\\alpha_i^2)$, which is half the additive genetic variance attributable to locus 1. If the two genes are not identical by descent, then they must be distributed independently so that $E(\\alpha_i^x \\alpha_i^y) = [E(\\alpha_i)]^2 = 0$. These same arguments can be applied to the remaining three terms in $E[(\\alpha_i^x + \\alpha_j^x)(\\alpha_i^y + \\alpha_j^y)]$. Thus, the additive genetic covariance is $4\\Theta_{xy}E(\\alpha_i^2)$, which is twice the additive genetic variance at the locus times the probability that randomly drawn genes from $x$ and $y$ are identical by descent. Noting that this result applies to all loci and that the distributions of effects at different loci are independent under the assumptions of the model, the additive genetic covariance, obtained by summing over loci, reduces to $\\sigma_A(x, y) = 2\\Theta_{xy} \\sigma_A^2$.",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b10"
+      ],
+      "bbox": [
+        48.0,
+        827.0,
+        1010.0,
+        1379.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We now move on to the dominance genetic covariance, which for locus 1 is $ E(\\delta_{ij}^{x},\\delta_{ij}^{y}) $. If x and y are identical by descent for both genes at this locus, then $ E(\\delta_{ij}^{x},\\delta_{ij}^{y})=E(\\delta_{ij}^{2}) $, which is the dominance genetic variance attributable to locus 1.",
+      "source_page": 159,
+      "printed_page": 139,
+      "source_block_ids": [
+        "p159:b11"
+      ],
+      "bbox": [
+        48.0,
+        1372.0,
+        1004.0,
+        1476.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The probability of such identity is $ \\Delta_{xy} $. On the other hand, if x and y do not have identical genotypes by descent, the dominance effects must be distributed independently, and hence $ E(\\delta_{ij}^x \\delta_{ij}^y) = E^2(\\delta_{ij}) = 0 $. Again, since these arguments apply to every locus, the dominance genetic covariance, obtained by summing over all loci, is $ \\sigma_D(x, y) = \\Delta_{xu} \\sigma_D^2 $.",
+      "source_page": 160,
+      "printed_page": 140,
+      "source_block_ids": [
+        "p160:b2"
+      ],
+      "bbox": [
+        139.0,
+        133.0,
+        1099.0,
+        293.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Finally, we consider the epistatic genetic covariance caused by additive × additive effects. For any pair of loci, this involves the 16 cross-product terms in the expectation $ E\\{[(\\alpha\\alpha)_{ik}^x + (\\alpha\\alpha)_{il}^x + (\\alpha\\alpha)_{jk}^x + (\\alpha\\alpha)_{jl}^x][(\\alpha\\alpha)_{ik}^y + (\\alpha\\alpha)_{il}^y + (\\alpha\\alpha)_{jk}^y + (\\alpha\\alpha)_{jl}^y]\\} $. Since the results are the same for all terms, it is sufficient to evaluate only one of them. The term $ E[(\\alpha\\alpha)_{ik}^x (\\alpha\\alpha)_{ik}^y] $ is equivalent to $ E[(\\alpha\\alpha)^2] $ provided that two conditions hold — a random gene drawn from the first locus in x must be identical by descent with one drawn from y, and the same condition must hold at the second locus. If identity by descent does not arise simultaneously for gene pairs drawn from both loci, $ E[(\\alpha\\alpha)_{ik}^x (\\alpha\\alpha)_{ik}^y] = [E(\\alpha\\alpha)]^2 = 0 $. Now, under the assumption of gametic phase equilibrium, the probability of identity by descent at locus 1 is independent of that at locus 2. Both probabilities are $ \\Theta_{xy} $. Thus, the probability of joint identity by descent is $ \\Theta_{xy}^2 $, and the covariance caused by additive × additive epistasis between loci 1 and 2 is $ 16 \\Theta_{xy}^2 E[(\\alpha\\alpha)^2] $. Noting that $ E[(\\alpha\\alpha)^2] $ is one-fourth the additive × additive genetic variance for a single pair of loci, and summing over all pairs, $ \\sigma_{AA}(x, y) = (2 \\Theta_{xy})^2 \\sigma_{AA}^2 $.",
+      "source_page": 160,
+      "printed_page": 140,
+      "source_block_ids": [
+        "p160:b3"
+      ],
+      "bbox": [
+        143.0,
+        296.0,
+        1101.0,
+        775.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "All three of the terms evaluated reduce to simple functions of identity coefficients and a component of genetic variance, and the same is true for all higher-order terms. Due to the independent distributions of genes at different loci under the assumptions of the model, any covariance due to higher-order epistatic effects is equal to the product of the identity for each component additive effect, the probability of identity for each component dominance effect, and the corresponding variance component. Thus, the covariance attributable to additive × dominance epistasis is $ 2\\Theta_{xy}\\Delta_{xy}\\sigma_{AD}^{2} $ because there is one additive and one dominance effect involved, while that caused by dominance × dominance epistasis is $ \\Delta_{xy}^{2}\\sigma_{DD}^{2} $ because there are two dominance but no additive effects involved. Letting n be the number of additive effects and m be the number of dominance effects in a type of gene action, the expression for the covariance between relatives becomes",
+      "source_page": 160,
+      "printed_page": 140,
+      "source_block_ids": [
+        "p160:b4"
+      ],
+      "bbox": [
+        145.0,
+        775.0,
+        1106.0,
+        1162.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula016]]",
+      "source_page": 160,
+      "printed_page": 140,
+      "source_block_ids": [
+        "p160:b5"
+      ],
+      "bbox": [
+        261.0,
+        1174.0,
+        994.0,
+        1302.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Drawing from the coefficients $ \\Theta_{xy} $ and $ \\Delta_{xy} $ given in Table 7.1, explicit expressions for the genetic covariances of common types of relatives are given in Table 7.2. Although these expressions are only expanded to include two-locus epistasis, several things are immediately apparent. First, gene action involving dominance only rarely contributes to the covariance between relatives. It requires that each parent of x be related to a different parent of y. Such relationships (full sibs,",
+      "source_page": 160,
+      "printed_page": 140,
+      "source_block_ids": [
+        "p160:b7"
+      ],
+      "bbox": [
+        149.0,
+        1311.0,
+        1109.0,
+        1509.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:7.2]]",
+      "source_page": 161,
+      "printed_page": 141,
+      "source_block_ids": [
+        "p161:b3"
+      ],
+      "bbox": [
+        55.0,
+        244.0,
+        1009.0,
+        805.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "double first cousins, and monozygotic twins) are said to be collateral. Second, the coefficient for $ \\sigma_{AA}^{2} $ declines more rapidly with the distance of the relationship than does that for $ \\sigma_{A}^{2} $. As noted in Chapters 4 and 5, because the additive genetic variance is a function of all higher-order types of gene action, these results should not be misconstrued to mean that the resemblance between relatives is influenced only slightly by dominance and epistatic gene action.",
+      "source_page": 161,
+      "printed_page": 141,
+      "source_block_ids": [
+        "p161:b5"
+      ],
+      "bbox": [
+        47.0,
+        1004.0,
+        1006.0,
+        1197.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The most useful feature of the expressions in Table 7.2 involves their different coefficients, which permit the estimation of the different variance components from linear combinations of different observed genetic covariances between relatives. For example, ignoring higher-order epistasis and environmental sources of covariance, $ 8 \\times \\text{[parent-offspring covariance} - (2 \\times \\text{half-sib covariance})] $ has an expected value of $ 8\\left[\\left(\\sigma_{A}^{2}/2 + \\sigma_{AA}^{2}/4\\right) - 2\\left(\\sigma_{A}^{2}/4 + \\sigma_{AA}^{2}/16\\right)\\right] = \\sigma_{AA}^{2} $. Similarly, $ 2 \\times \\left[(4 \\times \\text{half-sib covariance}) - (\\text{parent-offspring covariance})\\right] $ has an expected value of $ \\sigma_{A}^{2} $. Subsequent examples in this chapter will illustrate the utility of these kinds of manipulations.",
+      "source_page": 161,
+      "printed_page": 141,
+      "source_block_ids": [
+        "p161:b6"
+      ],
+      "bbox": [
+        45.0,
+        1199.0,
+        1005.0,
+        1485.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter7_003",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "MEASURES OF RELATEDNESS",
+    "subsections": [
+      "Coefficients of Identity"
+    ],
+    "section_level_1": "MEASURES OF RELATEDNESS",
+    "section_level_2": "Coefficients of Identity",
+    "heading_path": [
+      "MEASURES OF RELATEDNESS",
+      "Coefficients of Identity"
+    ],
+    "display_heading": "MEASURES OF RELATEDNESS / Coefficients of Identity",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 149,
+      "printed_page": 129,
+      "source_block_ids": [
+        "p149:b4"
+      ],
+      "bbox": [
+        59.0,
+        837.0,
+        351.0,
+        869.0
+      ],
+      "raw_text": "Coefficients of Identity"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Consider a single locus in two diploid individuals. For the four genes involved, there are 15 possible configurations of identity by descent due to the fact that identity may exist within as well as between individuals (Gillois 1964; Figure 7.2). Individuals that contain pairs of alleles that are identical by descent are said to be inbred. If we ignore the distinction between maternally and paternally derived genes, the 15 possible configurations reduce to nine identity states. These range from state 1 in which the two individuals are inbred and share a gene that is identical by descent (so that all four genes are identical by descent) to state 9 in which none of the four genes are identical by descent. Many situations exist in which further simplification can be justified. For example, in large random-mating populations, the probability of the first six identity states is essentially zero.",
+      "source_page": 149,
+      "printed_page": 129,
+      "source_block_ids": [
+        "p149:b5"
+      ],
+      "bbox": [
+        57.0,
+        880.0,
+        1017.0,
+        1235.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Associated with each of the nine identity states are probabilities, $ \\Delta_1 $ to $ \\Delta_9 $, which Jacquard (1974) called condensed coefficients of identity (Figure 7.2). These coefficients provide a complete description of the probability distribution of identity by descent between single loci of two individuals. The values that they take on depend on the relationship. For example, suppose that $ x $ is a parent and $ y $ its offspring, and that neither is inbred. Then, since an individual inherits one and only one gene from its parent, $ \\Delta_8 = 1 $ and all other $ \\Delta_i = 0 $. For noninbred full sibs, there is a 0.5 probability of inheriting the same paternal",
+      "source_page": 149,
+      "printed_page": 129,
+      "source_block_ids": [
+        "p149:b6"
+      ],
+      "bbox": [
+        55.0,
+        1234.0,
+        1016.0,
+        1489.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:7.2]]",
+      "source_page": 150,
+      "printed_page": 130,
+      "source_block_ids": [
+        "p150:b5"
+      ],
+      "bbox": [
+        192.0,
+        1387.0,
+        1057.0,
+        1479.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "gene and, independently, a 0.5 probability of inheriting the same maternal gene. Thus, $ \\Delta_7 = 0.25 $ (both pairs of genes are identical by descent), $ \\Delta_8 = 0.50 $ (one pair of genes is identical by descent), and $ \\Delta_9 = 0.25 $ (there is no identity by descent at the locus), and all other $ \\Delta_i = 0 $.",
+      "source_page": 151,
+      "printed_page": 131,
+      "source_block_ids": [
+        "p151:b2"
+      ],
+      "bbox": [
+        67.0,
+        134.0,
+        1026.0,
+        264.0
+      ]
+    }
+  ]
+}

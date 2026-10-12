@@ -1,0 +1,185 @@
+{
+  "id": "PopGen_chapter3_016",
+  "metadata": {
+    "chapter": "PopGen_chapter3",
+    "section": "3.6 GENE TREES AND COALESCENCE",
+    "subsections": [
+      "Coalescence with Population Growth"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "3.6 GENE TREES AND COALESCENCE",
+    "section_level_2": "Coalescence with Population Growth",
+    "heading_path": [
+      "3.6 GENE TREES AND COALESCENCE",
+      "Coalescence with Population Growth"
+    ],
+    "display_heading": "Coalescence with Population Growth",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter3:p040:b3"
+      ]
+    },
+    "chapter_title": "Random Genetic Drift"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Changes in population size affect the probability distribution of the coalescent times. In populations of constant size, the coalescent trees typically have a sparse number of nodes and relatively long branches near the root (the root is the allele at which all lineages in the sample ultimately coalesce, the most recent common ancestor of all the alleles in the sample). This pattern can be seen in the “expected” coalescent tree in [[see_figure:3.15]].",
+      "source_page": 148,
+      "source_pages": [
+        148
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p040:b4"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          873.0,
+          1023.0,
+          1030.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "b8737194f513139fc41ca9cfd24ce9826e000bceb248cd57006064891a798235",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "In a population that is growing exponentially from an initial size of $ N(0) $, the size at any time t is given by $ N(t) = N(0)\\exp(rt) $, where r is the exponential rate of growth. If both $ N(0) $ and r are large, the coalescent trees are distorted such that they will have more and shorter branches near the root. The reason is that, in an expanding population, it takes longer for alleles to “find” each other starting at the tips and going back in time. Felsenstein’s <sup>[197]</sup> bugs-in-a-box analogy helps to understand this point, because in a box that is expanding in size, the bugs will take longer to bump into each other. In the extreme case of a very large $ N(0) $ and r, the coalescences all take place very near the root, resulting in what is often called star phylogeny. (Thinking forward in time about a rapidly expanding population, the lineage of each allele has a very low probability of extinction, and so all the lineages persist and a graph of their genealogical relations resembles a star.) Because coalescent trees in a rapidly expanding population have many short branches near the root, it is reasonable to suppose that, as r decreases, the coalescent events will be less concentrated near the root and will gradually move away from the root toward the tips. The number of branches near the root will decrease, and the branch lengths near the root will become longer until, when r = 0, the coalescent trees will assume the form of those with a constant population size.",
+      "source_page": 148,
+      "source_pages": [
+        148,
+        149
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p040:b5",
+        "PopGen_chapter3:p041:b1"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          1033.0,
+          1024.0,
+          1381.0
+        ],
+        [
+          119.0,
+          210.0,
+          872.0,
+          393.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "babb81f01b190354b0915d825b2eaf154468f76c74cea33456b3a0216242d9cf",
+      "inline_styles": [
+        {
+          "start": 768,
+          "end": 782,
+          "style": "bold",
+          "text": "star phylogeny",
+          "source_page": 148,
+          "source_block_ids": [
+            "PopGen_chapter3:p040:b5"
+          ],
+          "source_bboxes": [
+            [
+              267,
+              1033,
+              1024,
+              1381
+            ]
+          ],
+          "source_content_sha256": "3289d515e26e179c2076349e7b31cee07e367ec306baed395fe261dc893e1ae3",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p040:b5": "3289d515e26e179c2076349e7b31cee07e367ec306baed395fe261dc893e1ae3"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The pattern of branching in coalescent trees can be used to make inferences about historical patterns of population growth <sup>[170]</sup>. We will illustrate this point using a method proposed by Pybus et al. <sup>[580]</sup> for estimating the growth rate of viral populations, in their case human immunodeficiency virus type 1 (HIV-1). They observed that, in simulated coalescent trees in samples of size $k=400$ from populations with a constant population size, the vast majority (=95%) of trees had three or fewer nodes between the root and the mid-depth point of the tree. (The mid-depth point of a tree is halfway between the tree's root and its tips.) A smoothed version of their simulation results is shown in Figure 3.16. This pattern is not expected in population that is undergoing rapid growth with an exponential rate of increase of $r$. In a growing population more nodes are expected near the root. Furthermore, the proportion of trees with three or fewer nodes between the root and the mid-depth point is linearly related to the logarithm of the product of the current population size and the rate of exponential growth, which Pybus et al. <sup>[580]</sup> show how to estimate in the case of HIV-1.",
+      "source_page": 149,
+      "source_pages": [
+        149,
+        150
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p041:b2",
+        "PopGen_chapter3:p042:b1"
+      ],
+      "source_bboxes": [
+        [
+          114.0,
+          397.0,
+          870.0,
+          742.0
+        ],
+        [
+          251.0,
+          210.0,
+          1005.0,
+          314.0
+        ]
+      ],
+      "provenance_score": 0.838311,
+      "content_sha256": "976b9548c5f449f0ec77ef869fa22906ad63c41a1a484c9030531fa6df4c6149",
+      "inline_styles": [
+        {
+          "start": 599,
+          "end": 614,
+          "style": "italic",
+          "text": "mid-depth point",
+          "source_page": 149,
+          "source_block_ids": [
+            "PopGen_chapter3:p041:b2"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              397,
+              870,
+              742
+            ]
+          ],
+          "source_content_sha256": "ba611d877a0956f2eddea728df2327ff57a69503ca8386f00cfaf578b149c657",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p041:b2": "ba611d877a0956f2eddea728df2327ff57a69503ca8386f00cfaf578b149c657"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The mid-depth method has the drawback that it treats the coalescent tree as known, when it would be more appropriate to average over all possible coalescent trees compatible with the data, each weighed in proportion to its probability. Other methods for estimating population growth rates from coalescent trees are examined in Emerson et al. <sup>[170]</sup>. By comparing data to simulations, it is also possible to fit more complex demographic histories, such as past population bottlenecks <sup>[721]</sup>.",
+      "source_page": 150,
+      "source_pages": [
+        150
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p042:b2"
+      ],
+      "source_bboxes": [
+        [
+          252.0,
+          318.0,
+          1006.0,
+          504.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "36c1cf9ced22ac9b3e2f1aa47060859c51ebdee277099ba6351a4ee490c31d4c",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

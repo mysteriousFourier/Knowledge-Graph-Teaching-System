@@ -1,0 +1,409 @@
+{
+  "id": "PopGen_chapter6_017",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.3 THE WAHLUND PRINCIPLE",
+    "subsections": [
+      "Genotype Frequencies in Subdivided Populations"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "6.3 THE WAHLUND PRINCIPLE",
+    "section_level_2": "Genotype Frequencies in Subdivided Populations",
+    "heading_path": [
+      "6.3 THE WAHLUND PRINCIPLE",
+      "Genotype Frequencies in Subdivided Populations"
+    ],
+    "display_heading": "Genotype Frequencies in Subdivided Populations",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p035:b10"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In many organisms in which the population structure is hierarchical, it is useful to be able to calculate directly the average genotype frequencies across all subpopulations. Equations 6.12 through 6.14 make it possible to deduce the average genotype frequencies. To do this, first note that $ R_{fused} $ in Equation 6.12 equals $ \\overline{q}^2 $ and $ P_{fused} $ in Equation 6.13 equals $ \\overline{p}^2 $. Hence Equation 6.12 implies the average genotype frequency of aa among the subpopulations is given by $ \\sigma_q^2 + \\bar{p} \\bar{q} $, and Equation 6.13 implies the average genotype frequency of AA among the subpopulations is given by $ \\sigma_p^2 + \\bar{p} \\bar{q} $. Since there are only two alleles, $ \\sigma_q^2 = \\sigma_p^2 = \\sigma^2 $, and Equation 6.14 says that $ \\sigma^2 = F_{\\mathrm{ST}} \\times \\bar{p} \\times \\bar{q} $. Putting all this together, the average genotype frequency of AA across subpopulations must equal $ \\bar{p}^2 + F_{\\mathrm{ST}} \\bar{p} \\bar{q} $, and the average genotype frequency of aa across subpopulations must equal $ \\bar{q}^2 + F_{\\mathrm{ST}} \\bar{p} \\bar{q} $. Because every genotype that is not homozygous must be heterozygous, the average genotype frequency of heterozygotes across subpopulations is given by $ 1 - (\\overline{p}^2 + F_{ST} \\overline{p} \\overline{q}) - (\\overline{q}^2 + F_{ST} \\overline{p} \\overline{q}) $. Note that $ 1 - \\overline{p}^2 - \\overline{q}^2 = 2 \\overline{p} \\overline{q} $, and so the average frequency of heterozygotes simplifies to $ 2 \\overline{p} \\overline{q} - 2 \\overline{p} \\overline{q} F_{ST} $.",
+      "source_page": 305,
+      "source_pages": [
+        305,
+        306
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p035:b11",
+        "PopGen_chapter6:p036:b1",
+        "PopGen_chapter6:p036:b2"
+      ],
+      "source_bboxes": [
+        [
+          101.0,
+          1243.0,
+          857.0,
+          1378.0
+        ],
+        [
+          270.0,
+          210.0,
+          1019.0,
+          397.0
+        ],
+        [
+          270.0,
+          399.0,
+          1019.0,
+          505.0
+        ]
+      ],
+      "provenance_score": 0.749559,
+      "content_sha256": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 473,
+          "end": 475,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 305,
+          "source_block_ids": [
+            "PopGen_chapter6:p035:b11",
+            "PopGen_chapter6:p036:b1",
+            "PopGen_chapter6:p036:b2"
+          ],
+          "source_bboxes": [
+            [
+              101.0,
+              1243.0,
+              857.0,
+              1378.0
+            ],
+            [
+              270.0,
+              210.0,
+              1019.0,
+              397.0
+            ],
+            [
+              270.0,
+              399.0,
+              1019.0,
+              505.0
+            ]
+          ],
+          "source_content_sha256": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p035:b11": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b1": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b2": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30"
+          }
+        },
+        {
+          "start": 607,
+          "end": 609,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 305,
+          "source_block_ids": [
+            "PopGen_chapter6:p035:b11",
+            "PopGen_chapter6:p036:b1",
+            "PopGen_chapter6:p036:b2"
+          ],
+          "source_bboxes": [
+            [
+              101.0,
+              1243.0,
+              857.0,
+              1378.0
+            ],
+            [
+              270.0,
+              210.0,
+              1019.0,
+              397.0
+            ],
+            [
+              270.0,
+              399.0,
+              1019.0,
+              505.0
+            ]
+          ],
+          "source_content_sha256": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p035:b11": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b1": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b2": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30"
+          }
+        },
+        {
+          "start": 906,
+          "end": 908,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 305,
+          "source_block_ids": [
+            "PopGen_chapter6:p035:b11",
+            "PopGen_chapter6:p036:b1",
+            "PopGen_chapter6:p036:b2"
+          ],
+          "source_bboxes": [
+            [
+              101.0,
+              1243.0,
+              857.0,
+              1378.0
+            ],
+            [
+              270.0,
+              210.0,
+              1019.0,
+              397.0
+            ],
+            [
+              270.0,
+              399.0,
+              1019.0,
+              505.0
+            ]
+          ],
+          "source_content_sha256": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p035:b11": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b1": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b2": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30"
+          }
+        },
+        {
+          "start": 1029,
+          "end": 1031,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 305,
+          "source_block_ids": [
+            "PopGen_chapter6:p035:b11",
+            "PopGen_chapter6:p036:b1",
+            "PopGen_chapter6:p036:b2"
+          ],
+          "source_bboxes": [
+            [
+              101.0,
+              1243.0,
+              857.0,
+              1378.0
+            ],
+            [
+              270.0,
+              210.0,
+              1019.0,
+              397.0
+            ],
+            [
+              270.0,
+              399.0,
+              1019.0,
+              505.0
+            ]
+          ],
+          "source_content_sha256": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p035:b11": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b1": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30",
+            "PopGen_chapter6:p036:b2": "f09e27838c0ac16bdb74641b126aa0b8bbfdbff7d34df778e12ac034162e4c30"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Consequently, the genotype frequencies averaged across subpopulations in a subdivided population can be written as: $$ \\begin{aligned}&a a:\\overline{q}^{2}+\\overline{p}\\overline{q}F_{ST}\\\\ &\\\\ &Aa:2\\overline{p}\\overline{q}-2\\overline{p}\\overline{q}F_{ST}\\\\ &\\\\ &aa:\\overline{q}^{2}+\\overline{p}\\overline{q}F_{ST}\\\\ \\end{aligned} $$",
+      "source_page": 306,
+      "source_pages": [
+        306
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p036:b3",
+        "PopGen_chapter6:p036:b4"
+      ],
+      "source_bboxes": [
+        [
+          270.0,
+          506.0,
+          1019.0,
+          557.0
+        ],
+        [
+          569.0,
+          571.0,
+          735.0,
+          712.0
+        ]
+      ],
+      "provenance_score": 0.547826,
+      "content_sha256": "a60f4e2928de4203683698c562c35b57965bf98733e5b9b39788c4de17ce3d96",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "These genotype frequencies depart from the Hardy-Weinberg principle in having an excess of homozygotes and a deficiency of heterozygotes. This result may seem somewhat paradoxical because, within any particular subpopulation, mating is random and the genotype frequencies do obey the Hardy-Weinberg principle. The reason for the departure from Hardy-Weinberg equilibrium in the population as a whole is that the subpopulations differ in allele frequency. Because the allele frequencies differ, random mating within each subpopulation is not equivalent to random mating among all the organisms in the entire population. From the expressions in Equation 6.15, it is clear that the value of $ F_{ST} $ determines the degree of departure from Hardy-Weinberg equilibrium. If $ F_{ST} = 0 $, the second term in each expression vanishes, and the genotype frequencies reduce to the Hardy-Weinberg frequencies; on the other hand, $ F_{ST} = 0 $ means that there is no variation in allele frequency among the subpopulations for the gene in question. Because $ F_{ST} $ may vary from one gene to the next, other genes in the same subpopulations may have nonzero values of $ F_{ST} $. The extreme case is $ F_{ST} = 1 $, which happens when two subpopulations are fixed for alternative alleles. In this case, the average allele frequencies are $ \\frac{1}{2} $ for each allele, and the average genotype frequencies of AA, Aa, and aa across subpopulations are $ \\frac{1}{2} $, 0, and $ \\frac{1}{2} $, respectively. This case is illustrated in [[see_figure:6.12]].",
+      "source_page": 306,
+      "source_pages": [
+        306
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p036:b5",
+        "PopGen_chapter6:p036:b6"
+      ],
+      "source_bboxes": [
+        [
+          271.0,
+          746.0,
+          1022.0,
+          985.0
+        ],
+        [
+          272.0,
+          987.0,
+          1025.0,
+          1305.0
+        ]
+      ],
+      "provenance_score": 0.940249,
+      "content_sha256": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 1404,
+          "end": 1406,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 306,
+          "source_block_ids": [
+            "PopGen_chapter6:p036:b5",
+            "PopGen_chapter6:p036:b6"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              746.0,
+              1022.0,
+              985.0
+            ],
+            [
+              272.0,
+              987.0,
+              1025.0,
+              1305.0
+            ]
+          ],
+          "source_content_sha256": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p036:b5": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+            "PopGen_chapter6:p036:b6": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4"
+          }
+        },
+        {
+          "start": 1408,
+          "end": 1410,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 306,
+          "source_block_ids": [
+            "PopGen_chapter6:p036:b5",
+            "PopGen_chapter6:p036:b6"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              746.0,
+              1022.0,
+              985.0
+            ],
+            [
+              272.0,
+              987.0,
+              1025.0,
+              1305.0
+            ]
+          ],
+          "source_content_sha256": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p036:b5": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+            "PopGen_chapter6:p036:b6": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4"
+          }
+        },
+        {
+          "start": 1416,
+          "end": 1418,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 306,
+          "source_block_ids": [
+            "PopGen_chapter6:p036:b5",
+            "PopGen_chapter6:p036:b6"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              746.0,
+              1022.0,
+              985.0
+            ],
+            [
+              272.0,
+              987.0,
+              1025.0,
+              1305.0
+            ]
+          ],
+          "source_content_sha256": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p036:b5": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4",
+            "PopGen_chapter6:p036:b6": "4c13ff808cbcf24558636d7bad62d3624c50faf880e1b8415b617a8030a4b1a4"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The genotype frequencies in Equation 6.15 may remind you of those in Equation 3.15, where population subdivision was examined from the standpoint of random genetic drift. There we noted that $ F_t $ meant the value of $ F_{ST} $ in generation $ t $, and in Equation 6.15 $ F_{ST} $ is also time dependent, although the time dependence is not explicit. The only other difference is that $ p_0 $ and $ q_0 $ in Equation 3.15 are replaced by $ \\overline{p} $ and $ \\overline{q} $ in Equation 6.15. In the special case when the alleles are selectively neutral, then the equations are identical, because if all subpopulations have the same initial frequency $ p_0 $, then $ E(\\overline{p}) = p_0 $. On the other hand, if there is selection, then $ E(\\overline{p}) $ will not in general equal $ p_0 $, and therein lies an important difference between the equations.",
+      "source_page": 306,
+      "source_pages": [
+        306,
+        307
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p036:b7",
+        "PopGen_chapter6:p037:b1"
+      ],
+      "source_bboxes": [
+        [
+          273.0,
+          1307.0,
+          1023.0,
+          1361.0
+        ],
+        [
+          112.0,
+          203.0,
+          864.0,
+          416.0
+        ]
+      ],
+      "provenance_score": 0.938486,
+      "content_sha256": "c82215748b8fd58b9e2e3b4554e71f1e19e0bda5392b5032588090d840a645c4",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

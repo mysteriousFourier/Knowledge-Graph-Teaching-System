@@ -1,0 +1,226 @@
+{
+  "id": "PopGen_chapter2_022",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "subsections": [
+      "SUMMARY"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "section_level_2": "SUMMARY",
+    "heading_path": [
+      "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "SUMMARY"
+    ],
+    "display_heading": "SUMMARY",
+    "heading_source": {
+      "source_block_ids": []
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "3. The HWE has simple extensions to multiple alleles and X-linked genes.",
+      "source_page": 84,
+      "source_pages": [
+        84,
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b4",
+        "PopGen_chapter2:p026:b6"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          455.0,
+          998.0,
+          477.0
+        ],
+        [
+          290.0,
+          1252.0,
+          478.0,
+          1273.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "cf28130f0a0447fee720e71fd980c8351fb61d8e98acd3d994bbcaf4c0c9e4d2",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "4. Statistical tests for HWE are often based on the chi-square test for goodness of fit, but this test is compromised when the sample size is too small or multiple tests are performed. For small samples, HWE can be tested by exact tests or permutation tests.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b5"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          481.0,
+          1010.0,
+          585.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1d88c92dad8deb261d01bb829455fa8ecdab38359130372b9d17bb40808883cd",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "5. When large numbers of statistical tests are performed, it is important to choose the significance criterion to achieve a suitable balance between the rate of false positives (the probability of rejection, given the null hypothesis is true) and the false discovery rate (the probability that the null hypothesis is true, given that it is rejected).",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b6"
+      ],
+      "source_bboxes": [
+        [
+          266.0,
+          589.0,
+          1010.0,
+          719.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "f42b6df569877f5d55570b00a579cc2fa3f77d7c7b8d7a0e5741ca0682321338",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "6. Linkage is the tendency for the alleles of genes that are sufficiently close together in the same chromosome to remain together in inheritance. Linkage disequilibrium refers to any nonrandom association between the alleles of different genes.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b7"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          723.0,
+          1010.0,
+          825.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "b215eb8ecf1f7624c72287625dd95505f4033594eb7cedcb6fba01fe2d8bef88",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "7. Linkage disequilibrium is measured by the linkage disequilibrium parameter $ D = P_{AB}P_{ab} - P_{Ab}P_{aB} $, where $ P_{AB} $ represents the frequency of the gametes carrying the alleles A and B, and so forth for the other symbols.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b8"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          829.0,
+          1011.0,
+          907.0
+        ]
+      ],
+      "provenance_score": 0.907514,
+      "content_sha256": "cfb551c01e6e5469140712d049eed76e1c824772df8fa384d316a4b19be14cf9",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "8. Linkage disequilibrium is often reported as $ D' $, which represents the value of D as a fraction of its maximum (or minimum) possible value, or as $ r^{2} $, where $ \\sqrt{r^{2}} $ is the correlation coefficient in state of alleles in the same gamete. $ D' $ and $ r^{2} $ capture different aspects of the nonrandom association between alleles in gametes.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b8",
+        "PopGen_chapter2:p044:b9"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          829.0,
+          1011.0,
+          907.0
+        ],
+        [
+          268.0,
+          910.0,
+          1012.0,
+          1039.0
+        ]
+      ],
+      "provenance_score": 0.91635,
+      "content_sha256": "98895c78cd6f958a694168bb70ba089c3cf88827785996897d9a077919127859",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "9. Linkage disequilibrium is typically found between the alleles of genes that are close together along the chromosome. It is also common between the alleles of genes prevented from undergoing recombination through a chromosomal abnormality, such as an inversion. Organisms that undergo high levels of inbreeding, as through self-fertilization, may also display significant linkage disequilibrium, owing to the reduced opportunities for recombination.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b10"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          1043.0,
+          1012.0,
+          1225.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "50217f0c66aceeed39c17825e2892a3ec15c6b51401ae2e26d58a734de649c50",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "10. The alleles of genes that are not linked (even alleles of genes in different chromosomes) may show linkage disequilibrium when populations with different gametic frequencies are mixed together by population fusion of high levels of migration.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b11"
+      ],
+      "source_bboxes": [
+        [
+          259.0,
+          1230.0,
+          1012.0,
+          1336.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "2cc6d4a251eb2ed128747dae891fcdcd91d0a1a3092cb9dd158cf7558b2db0d6",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

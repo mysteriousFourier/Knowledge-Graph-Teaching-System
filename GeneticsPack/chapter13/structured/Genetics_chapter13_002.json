@@ -1,0 +1,67 @@
+{
+  "id": "Genetics_chapter13_002",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "ELEMENTARY TESTS",
+    "subsections": [],
+    "section_level_1": "ELEMENTARY TESTS",
+    "section_level_2": null,
+    "heading_path": [
+      "ELEMENTARY TESTS"
+    ],
+    "display_heading": "ELEMENTARY TESTS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 368,
+      "printed_page": 348,
+      "source_block_ids": [
+        "p368:b2"
+      ],
+      "bbox": [
+        140.0,
+        134.0,
+        426.0,
+        165.0
+      ],
+      "raw_text": "ELEMENTARY TESTS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "While detection of major genes is not an easy task, it is facilitated considerably with experimental populations in which controlled breeding designs can be implemented. For example, a population segregating a major allele initially at low frequency is expected to show a significant increase in heritability after only a few generations of selection (Latter 1965, Frankham and Nurthen 1981), reflecting the increase in additive genetic variation as the rare major allele increases in frequency. Heritability can likewise show a sudden decrease if the selected major gene has a moderate to high initial frequency.",
+      "source_page": 368,
+      "printed_page": 348,
+      "source_block_ids": [
+        "p368:b3"
+      ],
+      "bbox": [
+        139.0,
+        193.0,
+        1100.0,
+        457.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A related approach for detecting major genes using selection is the select-and-backcross method (reviewed by Wright 1952, 1968). The procedure is simple. Two populations differing in the character are crossed, with the largest $ F_{1} $ individuals backcrossed to individuals from the parental population with the smaller mean character value. Continual selection for large character value followed by backcrossing to the smaller line removes genes (from the large line) of minor effect while retaining genes having large effects (Wright's leading factors). The ability to maintain a large character value in the face of continual backcrossing to the smaller line suggests the presence of major genes. Wright (1968) successfully used this approach to isolate leading factors for several traits in guinea pigs, and the Booroola gene in sheep (Examples 3 and 4 in Chapter 4) was detected in this manner (Piper and Bindon 1988). Natural populations that are unamenable to controlled breeding generally preclude such approaches, but as shown below, a random collection of individuals from such a population can sometimes be informative.",
+      "source_page": 368,
+      "printed_page": 348,
+      "source_block_ids": [
+        "p368:b4"
+      ],
+      "bbox": [
+        143.0,
+        447.0,
+        1106.0,
+        937.0
+      ]
+    }
+  ]
+}

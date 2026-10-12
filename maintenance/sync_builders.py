@@ -1010,6 +1010,12 @@ def _build_figure_source(path: Path) -> SourceSpec:
     relations: List[Dict[str, Any]] = []
     chapters: Dict[str, str] = {}
     figures = payload.get("figures")
+    if isinstance(figures, list):
+        figures = {
+            str(item.get("id") or index): item
+            for index, item in enumerate(figures, start=1)
+            if isinstance(item, dict)
+        }
     if not isinstance(figures, dict):
         return SourceSpec(source_key=f"library::{path.name}", file_hash=file_hash, nodes=[], relations=[], chapters={})
 
@@ -1026,6 +1032,15 @@ def _build_figure_source(path: Path) -> SourceSpec:
         container_node_id = _RESOURCE_CONTAINER_BY_NODE_ID.get(node_id, container_node_id)
         label = str(item.get("label") or f"Figure {figure_id}")
         content = str(item.get("caption") or label)
+        figure_metadata = {
+            "figure_id": figure_id,
+            "asset_path": item.get("asset_path"),
+            "caption": item.get("caption"),
+            "page": item.get("page"),
+            "source_pdf": item.get("source_pdf"),
+        }
+        if item.get("confidence") is not None:
+            figure_metadata["confidence"] = item.get("confidence")
         nodes.append(
             _node_payload(
                 node_id=node_id,
@@ -1034,14 +1049,7 @@ def _build_figure_source(path: Path) -> SourceSpec:
                 label=label,
                 chapter=chapter,
                 source_file=source_file,
-                extra_metadata={
-                    "figure_id": figure_id,
-                    "asset_path": item.get("asset_path"),
-                    "caption": item.get("caption"),
-                    "page": item.get("page"),
-                    "source_pdf": item.get("source_pdf"),
-                    "confidence": item.get("confidence"),
-                },
+                extra_metadata=figure_metadata,
             )
         )
         relations.append(

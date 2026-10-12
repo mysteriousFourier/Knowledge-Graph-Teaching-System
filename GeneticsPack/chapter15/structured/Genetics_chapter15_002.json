@@ -1,0 +1,54 @@
+{
+  "id": "Genetics_chapter15_002",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "FOUNDATIONS OF LINE-CROSS MAPPING",
+    "subsections": [],
+    "section_level_1": "FOUNDATIONS OF LINE-CROSS MAPPING",
+    "section_level_2": null,
+    "heading_path": [
+      "FOUNDATIONS OF LINE-CROSS MAPPING"
+    ],
+    "display_heading": "FOUNDATIONS OF LINE-CROSS MAPPING",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 445,
+      "printed_page": 425,
+      "source_block_ids": [
+        "p445:b4"
+      ],
+      "bbox": [
+        59.0,
+        1273.0,
+        641.0,
+        1314.0
+      ],
+      "raw_text": "FOUNDATIONS OF LINE-CROSS MAPPING"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The idea behind using marker information to map and characterize QTLs is quite simple: by crossing two inbred lines, linkage disequilibrium is created between loci that differ between the lines, and this in turn creates associations between marker loci and linked segregating QTLs. A large number of experimental designs and statistical methodologies have been developed to exploit this information. Our attempt to make this field more accessible starts with an overview of some of the basic experimental designs and some of the key tools for the analysis of results from these designs.",
+      "source_page": 445,
+      "printed_page": 425,
+      "source_block_ids": [
+        "p445:b5",
+        "p446:b2"
+      ],
+      "bbox": [
+        56.0,
+        1335.0,
+        1017.0,
+        1485.0
+      ],
+      "source_page_end": 446
+    }
+  ]
+}

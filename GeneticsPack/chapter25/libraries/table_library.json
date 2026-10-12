@@ -1,0 +1,563 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter25",
+  "count": 2,
+  "tables": [
+    {
+      "id": "25.1",
+      "label_format": "Table 25.1",
+      "title": "Table 25.1 Estimates of the heritability of three human congenital disorders obtained by the methods of Crittenden-Falconer (Equation 25.1a), Edwards (Equation 25.2), and Reich et al. (Equation 25.3), as described in the text.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td colspan=\"2\">Incidence</td><td rowspan=\"2\">x_{p}</td><td rowspan=\"2\">x_{r}</td><td rowspan=\"2\">p(x_{p})</td><td colspan=\"3\">Heritability</td></tr><tr><td>Disease</td><td>$ \\Phi_{p} $</td><td>$ \\Phi_{r} $</td><td>(25.1a)</td><td>(25.2)</td><td>(25.3)</td></tr><tr><td>Harelip</td><td>0.001</td><td></td><td>3.090</td><td></td><td>0.003</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.500</td><td></td><td>0.000</td><td></td><td>1.03</td><td>0.99</td><td>1.03</td></tr><tr><td>1st degree</td><td></td><td>0.040</td><td></td><td>1.751</td><td></td><td>0.89</td><td>0.90</td><td>0.86</td></tr><tr><td>2nd degree</td><td></td><td>0.007</td><td></td><td>2.457</td><td></td><td>0.84</td><td>0.81</td><td>0.83</td></tr><tr><td>3rd degree</td><td></td><td>0.003</td><td></td><td>2.748</td><td></td><td>0.91</td><td>0.86</td><td>0.90</td></tr><tr><td>Club Foot</td><td>0.001</td><td></td><td>3.090</td><td></td><td>0.003</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.325</td><td></td><td>0.454</td><td></td><td>0.88</td><td>0.88</td><td>0.86</td></tr><tr><td>1st degree</td><td></td><td>0.021</td><td></td><td>2.034</td><td></td><td>0.70</td><td>0.70</td><td>0.68</td></tr><tr><td>2nd degree</td><td></td><td>0.006</td><td></td><td>2.512</td><td></td><td>0.77</td><td>0.74</td><td>0.75</td></tr><tr><td>3rd degree</td><td></td><td>0.002</td><td></td><td>2.878</td><td></td><td>0.57</td><td>0.53</td><td>0.56</td></tr><tr><td>Schizophrenia</td><td>0.010</td><td></td><td>2.326</td><td></td><td>0.027</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.443</td><td></td><td>0.143</td><td></td><td>0.81</td><td>0.92</td><td>0.83</td></tr><tr><td>1st degree</td><td></td><td>0.077</td><td></td><td>1.426</td><td></td><td>0.67</td><td>0.75</td><td>0.74</td></tr><tr><td>2nd degree</td><td></td><td>0.027</td><td></td><td>1.927</td><td></td><td>0.59</td><td>0.63</td><td>0.63</td></tr><tr><td>3rd degree</td><td></td><td>0.016</td><td></td><td>2.144</td><td></td><td>0.54</td><td>0.56</td><td>0.56</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Incidence",
+          "x_{p}",
+          "x_{r}",
+          "p(x_{p})",
+          "Heritability"
+        ],
+        [
+          "Disease",
+          "$ \\Phi_{p} $",
+          "$ \\Phi_{r} $",
+          "(25.1a)",
+          "(25.2)",
+          "(25.3)"
+        ],
+        [
+          "Harelip",
+          "0.001",
+          "",
+          "3.090",
+          "",
+          "0.003",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MZ",
+          "",
+          "0.500",
+          "",
+          "0.000",
+          "",
+          "1.03",
+          "0.99",
+          "1.03"
+        ],
+        [
+          "1st degree",
+          "",
+          "0.040",
+          "",
+          "1.751",
+          "",
+          "0.89",
+          "0.90",
+          "0.86"
+        ],
+        [
+          "2nd degree",
+          "",
+          "0.007",
+          "",
+          "2.457",
+          "",
+          "0.84",
+          "0.81",
+          "0.83"
+        ],
+        [
+          "3rd degree",
+          "",
+          "0.003",
+          "",
+          "2.748",
+          "",
+          "0.91",
+          "0.86",
+          "0.90"
+        ],
+        [
+          "Club Foot",
+          "0.001",
+          "",
+          "3.090",
+          "",
+          "0.003",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MZ",
+          "",
+          "0.325",
+          "",
+          "0.454",
+          "",
+          "0.88",
+          "0.88",
+          "0.86"
+        ],
+        [
+          "1st degree",
+          "",
+          "0.021",
+          "",
+          "2.034",
+          "",
+          "0.70",
+          "0.70",
+          "0.68"
+        ],
+        [
+          "2nd degree",
+          "",
+          "0.006",
+          "",
+          "2.512",
+          "",
+          "0.77",
+          "0.74",
+          "0.75"
+        ],
+        [
+          "3rd degree",
+          "",
+          "0.002",
+          "",
+          "2.878",
+          "",
+          "0.57",
+          "0.53",
+          "0.56"
+        ],
+        [
+          "Schizophrenia",
+          "0.010",
+          "",
+          "2.326",
+          "",
+          "0.027",
+          "",
+          "",
+          ""
+        ],
+        [
+          "MZ",
+          "",
+          "0.443",
+          "",
+          "0.143",
+          "",
+          "0.81",
+          "0.92",
+          "0.83"
+        ],
+        [
+          "1st degree",
+          "",
+          "0.077",
+          "",
+          "1.426",
+          "",
+          "0.67",
+          "0.75",
+          "0.74"
+        ],
+        [
+          "2nd degree",
+          "",
+          "0.027",
+          "",
+          "1.927",
+          "",
+          "0.59",
+          "0.63",
+          "0.63"
+        ],
+        [
+          "3rd degree",
+          "",
+          "0.016",
+          "",
+          "2.144",
+          "",
+          "0.54",
+          "0.56",
+          "0.56"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Incidence data are from Carter (1965, 1969) and McGue et al. (1983). $ \\Phi_{p} $ and $ \\Phi_{r} $ are, respectively, the incidences of the disorders in the population and in relatives of affected individuals. MZ denotes monozygotic twins; first-degree relatives include parent-offspring and full-sibs; second-degree relatives include aunt (uncle)-niece (nephew); and third-degree relatives are first cousins. Each of the methods gives an estimate of the regression between relatives for inferred phenotypes on the underlying scale. The heritabilities are computed by dividing the estimated regression by twice the coefficient of coancestry (1, 1/2, 1/4, and 1/8 for monozygotic twins, and first-, second-, and third-degree relatives, respectively).",
+          "source_page": 746,
+          "bbox": [
+            137.0,
+            883.0,
+            1096.0,
+            1153.0
+          ],
+          "source_block_ids": [
+            "p746:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 746,
+          "title": "Table 25.1 Estimates of the heritability of three human congenital disorders obtained by the methods of Crittenden-Falconer (Equation 25.1a), Edwards (Equation 25.2), and Reich et al. (Equation 25.3), as described in the text.",
+          "html": "<table><tr><td></td><td colspan=\"2\">Incidence</td><td rowspan=\"2\">x_{p}</td><td rowspan=\"2\">x_{r}</td><td rowspan=\"2\">p(x_{p})</td><td colspan=\"3\">Heritability</td></tr><tr><td>Disease</td><td>$ \\Phi_{p} $</td><td>$ \\Phi_{r} $</td><td>(25.1a)</td><td>(25.2)</td><td>(25.3)</td></tr><tr><td>Harelip</td><td>0.001</td><td></td><td>3.090</td><td></td><td>0.003</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.500</td><td></td><td>0.000</td><td></td><td>1.03</td><td>0.99</td><td>1.03</td></tr><tr><td>1st degree</td><td></td><td>0.040</td><td></td><td>1.751</td><td></td><td>0.89</td><td>0.90</td><td>0.86</td></tr><tr><td>2nd degree</td><td></td><td>0.007</td><td></td><td>2.457</td><td></td><td>0.84</td><td>0.81</td><td>0.83</td></tr><tr><td>3rd degree</td><td></td><td>0.003</td><td></td><td>2.748</td><td></td><td>0.91</td><td>0.86</td><td>0.90</td></tr><tr><td>Club Foot</td><td>0.001</td><td></td><td>3.090</td><td></td><td>0.003</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.325</td><td></td><td>0.454</td><td></td><td>0.88</td><td>0.88</td><td>0.86</td></tr><tr><td>1st degree</td><td></td><td>0.021</td><td></td><td>2.034</td><td></td><td>0.70</td><td>0.70</td><td>0.68</td></tr><tr><td>2nd degree</td><td></td><td>0.006</td><td></td><td>2.512</td><td></td><td>0.77</td><td>0.74</td><td>0.75</td></tr><tr><td>3rd degree</td><td></td><td>0.002</td><td></td><td>2.878</td><td></td><td>0.57</td><td>0.53</td><td>0.56</td></tr><tr><td>Schizophrenia</td><td>0.010</td><td></td><td>2.326</td><td></td><td>0.027</td><td></td><td></td><td></td></tr><tr><td>MZ</td><td></td><td>0.443</td><td></td><td>0.143</td><td></td><td>0.81</td><td>0.92</td><td>0.83</td></tr><tr><td>1st degree</td><td></td><td>0.077</td><td></td><td>1.426</td><td></td><td>0.67</td><td>0.75</td><td>0.74</td></tr><tr><td>2nd degree</td><td></td><td>0.027</td><td></td><td>1.927</td><td></td><td>0.59</td><td>0.63</td><td>0.63</td></tr><tr><td>3rd degree</td><td></td><td>0.016</td><td></td><td>2.144</td><td></td><td>0.54</td><td>0.56</td><td>0.56</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Incidence",
+              "x_{p}",
+              "x_{r}",
+              "p(x_{p})",
+              "Heritability"
+            ],
+            [
+              "Disease",
+              "$ \\Phi_{p} $",
+              "$ \\Phi_{r} $",
+              "(25.1a)",
+              "(25.2)",
+              "(25.3)"
+            ],
+            [
+              "Harelip",
+              "0.001",
+              "",
+              "3.090",
+              "",
+              "0.003",
+              "",
+              "",
+              ""
+            ],
+            [
+              "MZ",
+              "",
+              "0.500",
+              "",
+              "0.000",
+              "",
+              "1.03",
+              "0.99",
+              "1.03"
+            ],
+            [
+              "1st degree",
+              "",
+              "0.040",
+              "",
+              "1.751",
+              "",
+              "0.89",
+              "0.90",
+              "0.86"
+            ],
+            [
+              "2nd degree",
+              "",
+              "0.007",
+              "",
+              "2.457",
+              "",
+              "0.84",
+              "0.81",
+              "0.83"
+            ],
+            [
+              "3rd degree",
+              "",
+              "0.003",
+              "",
+              "2.748",
+              "",
+              "0.91",
+              "0.86",
+              "0.90"
+            ],
+            [
+              "Club Foot",
+              "0.001",
+              "",
+              "3.090",
+              "",
+              "0.003",
+              "",
+              "",
+              ""
+            ],
+            [
+              "MZ",
+              "",
+              "0.325",
+              "",
+              "0.454",
+              "",
+              "0.88",
+              "0.88",
+              "0.86"
+            ],
+            [
+              "1st degree",
+              "",
+              "0.021",
+              "",
+              "2.034",
+              "",
+              "0.70",
+              "0.70",
+              "0.68"
+            ],
+            [
+              "2nd degree",
+              "",
+              "0.006",
+              "",
+              "2.512",
+              "",
+              "0.77",
+              "0.74",
+              "0.75"
+            ],
+            [
+              "3rd degree",
+              "",
+              "0.002",
+              "",
+              "2.878",
+              "",
+              "0.57",
+              "0.53",
+              "0.56"
+            ],
+            [
+              "Schizophrenia",
+              "0.010",
+              "",
+              "2.326",
+              "",
+              "0.027",
+              "",
+              "",
+              ""
+            ],
+            [
+              "MZ",
+              "",
+              "0.443",
+              "",
+              "0.143",
+              "",
+              "0.81",
+              "0.92",
+              "0.83"
+            ],
+            [
+              "1st degree",
+              "",
+              "0.077",
+              "",
+              "1.426",
+              "",
+              "0.67",
+              "0.75",
+              "0.74"
+            ],
+            [
+              "2nd degree",
+              "",
+              "0.027",
+              "",
+              "1.927",
+              "",
+              "0.59",
+              "0.63",
+              "0.63"
+            ],
+            [
+              "3rd degree",
+              "",
+              "0.016",
+              "",
+              "2.144",
+              "",
+              "0.54",
+              "0.56",
+              "0.56"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Incidence data are from Carter (1965, 1969) and McGue et al. (1983). $ \\Phi_{p} $ and $ \\Phi_{r} $ are, respectively, the incidences of the disorders in the population and in relatives of affected individuals. MZ denotes monozygotic twins; first-degree relatives include parent-offspring and full-sibs; second-degree relatives include aunt (uncle)-niece (nephew); and third-degree relatives are first cousins. Each of the methods gives an estimate of the regression between relatives for inferred phenotypes on the underlying scale. The heritabilities are computed by dividing the estimated regression by twice the coefficient of coancestry (1, 1/2, 1/4, and 1/8 for monozygotic twins, and first-, second-, and third-degree relatives, respectively).",
+              "source_page": 746,
+              "bbox": [
+                137.0,
+                883.0,
+                1096.0,
+                1153.0
+              ],
+              "source_block_ids": [
+                "p746:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            138.0,
+            247.0,
+            1094.0,
+            873.0
+          ],
+          "caption_bbox": [
+            136.0,
+            139.0,
+            1096.0,
+            232.0
+          ],
+          "source_block_ids": [
+            "p746:b3"
+          ],
+          "caption_source_block_ids": [
+            "p746:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter25",
+        "unit_id": "Genetics_chapter25_003",
+        "page": 746,
+        "pages": [
+          746
+        ],
+        "bbox": [
+          138.0,
+          247.0,
+          1094.0,
+          873.0
+        ],
+        "caption_bbox": [
+          136.0,
+          139.0,
+          1096.0,
+          232.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "25.2",
+      "label_format": "Table 25.2",
+      "title": "Table 25.2 Incidence of pyloric stenosis in a human population.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Propositi</td><td rowspan=\"2\">Incidence in Population</td><td colspan=\"2\">Incidence Among First-degree Relatives</td></tr><tr><td>Male</td><td>Female</td></tr><tr><td>Male</td><td>0.005</td><td>0.050</td><td>0.022</td></tr><tr><td>Female</td><td>0.001</td><td>0.171</td><td>0.066</td></tr></table>",
+      "rows": [
+        [
+          "Propositi",
+          "Incidence in Population",
+          "Incidence Among First-degree Relatives"
+        ],
+        [
+          "Male",
+          "Female"
+        ],
+        [
+          "Male",
+          "0.005",
+          "0.050",
+          "0.022"
+        ],
+        [
+          "Female",
+          "0.001",
+          "0.171",
+          "0.066"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 751,
+          "title": "Table 25.2 Incidence of pyloric stenosis in a human population.",
+          "html": "<table><tr><td rowspan=\"2\">Propositi</td><td rowspan=\"2\">Incidence in Population</td><td colspan=\"2\">Incidence Among First-degree Relatives</td></tr><tr><td>Male</td><td>Female</td></tr><tr><td>Male</td><td>0.005</td><td>0.050</td><td>0.022</td></tr><tr><td>Female</td><td>0.001</td><td>0.171</td><td>0.066</td></tr></table>",
+          "rows": [
+            [
+              "Propositi",
+              "Incidence in Population",
+              "Incidence Among First-degree Relatives"
+            ],
+            [
+              "Male",
+              "Female"
+            ],
+            [
+              "Male",
+              "0.005",
+              "0.050",
+              "0.022"
+            ],
+            [
+              "Female",
+              "0.001",
+              "0.171",
+              "0.066"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            65.0,
+            1285.0,
+            1015.0,
+            1507.0
+          ],
+          "caption_bbox": [
+            62.0,
+            1234.0,
+            764.0,
+            1266.0
+          ],
+          "source_block_ids": [
+            "p751:b8"
+          ],
+          "caption_source_block_ids": [
+            "p751:b7"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter25",
+        "unit_id": "Genetics_chapter25_005",
+        "page": 751,
+        "pages": [
+          751
+        ],
+        "bbox": [
+          65.0,
+          1285.0,
+          1015.0,
+          1507.0
+        ],
+        "caption_bbox": [
+          62.0,
+          1234.0,
+          764.0,
+          1266.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

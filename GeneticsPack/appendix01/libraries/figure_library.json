@@ -1,0 +1,279 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_appendix1",
+  "count": 8,
+  "figures": [
+    {
+      "id": "A2.1",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A2.1",
+      "placeholder": "[[FIGURE:A2.1]]",
+      "see_placeholder": "[[SEE_FIGURE:A2.1]]",
+      "asset_path": "figures/Genetics_A2.1.png",
+      "caption": "Figure A2.1 Path diagram for the variable y in terms of three explanatory variables $ (z_{1}, z_{2}, \\text{and } z_{3}) $ and a residual error $ (e) $. p denotes a path coefficient and $ \\rho $ a correlation.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 836,
+      "raw_bbox": [
+        334.0,
+        167.0,
+        921.0,
+        401.0
+      ],
+      "source_block_ids": [
+        "p836:b2"
+      ],
+      "caption_block": {
+        "source_page": 836,
+        "printed_page": 816,
+        "source_block_ids": [
+          "p836:b3"
+        ],
+        "bbox": [
+          190.0,
+          431.0,
+          1049.0,
+          519.0
+        ]
+      }
+    },
+    {
+      "id": "A2.2",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A2.2",
+      "placeholder": "[[FIGURE:A2.2]]",
+      "see_placeholder": "[[SEE_FIGURE:A2.2]]",
+      "asset_path": "figures/Genetics_A2.2.png",
+      "caption": "Figure A2.2 Path diagram for a system in which two dependent variables (x and y) are jointly influenced by three explanatory variables $ (z_{1}, z_{2}, \\text{ and } z_{3}) $ and residuals $ (e_{x} \\text{ and } e_{y}) $, which may be correlated.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 838,
+      "raw_bbox": [
+        256.0,
+        140.0,
+        976.0,
+        378.0
+      ],
+      "source_block_ids": [
+        "p838:b2"
+      ],
+      "caption_block": {
+        "source_page": 838,
+        "printed_page": 818,
+        "source_block_ids": [
+          "p838:b3"
+        ],
+        "bbox": [
+          185.0,
+          409.0,
+          1047.0,
+          499.0
+        ]
+      }
+    },
+    {
+      "id": "A2.3",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A2.3",
+      "placeholder": "[[FIGURE:A2.3]]",
+      "see_placeholder": "[[SEE_FIGURE:A2.3]]",
+      "asset_path": "figures/Genetics_A2.3.png",
+      "caption": "Figure A2.3 Wright’s (1921a) path diagram, slightly modified, for the phenotypes of parents and offspring. Variables are defined in the text.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 840,
+      "raw_bbox": [
+        320.0,
+        133.0,
+        919.0,
+        681.0
+      ],
+      "source_block_ids": [
+        "p840:b2"
+      ],
+      "caption_block": {
+        "source_page": 840,
+        "printed_page": 820,
+        "source_block_ids": [
+          "p840:b3"
+        ],
+        "bbox": [
+          189.0,
+          707.0,
+          1049.0,
+          773.0
+        ]
+      }
+    },
+    {
+      "id": "A2.4",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A2.4",
+      "placeholder": "[[FIGURE:A2.4]]",
+      "see_placeholder": "[[SEE_FIGURE:A2.4]]",
+      "asset_path": "figures/Genetics_A2.4.png",
+      "caption": "Figure A2.4 Path diagram for the phenotypic correlation between two characters $ (z_{x} $ and $ z_{y}) $ in terms of genetic values $ (G_{x} $ and $ G_{y}) $ and environmental deviations $ (E_{x} $ and $ E_{y}) $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 842,
+      "raw_bbox": [
+        329.0,
+        133.0,
+        924.0,
+        481.0
+      ],
+      "source_block_ids": [
+        "p842:b2"
+      ],
+      "caption_block": {
+        "source_page": 842,
+        "printed_page": 822,
+        "source_block_ids": [
+          "p842:b3"
+        ],
+        "bbox": [
+          189.0,
+          509.0,
+          1050.0,
+          599.0
+        ]
+      }
+    },
+    {
+      "id": "A2.5",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A2.5",
+      "placeholder": "[[FIGURE:A2.5]]",
+      "see_placeholder": "[[SEE_FIGURE:A2.5]]",
+      "asset_path": "figures/Genetics_A2.5.png",
+      "caption": "Figure A2.5 Path diagram for weight at day 26 as a function of five growth components for a population of feral pigeons. Numbers on the single-headed arrows are the path coefficients. The correlations between explanatory variables are given in Table A2.1.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 844,
+      "raw_bbox": [
+        325.0,
+        130.0,
+        922.0,
+        665.0
+      ],
+      "source_block_ids": [
+        "p844:b2"
+      ],
+      "caption_block": {
+        "source_page": 844,
+        "printed_page": 824,
+        "source_block_ids": [
+          "p844:b3"
+        ],
+        "bbox": [
+          193.0,
+          692.0,
+          1058.0,
+          816.0
+        ]
+      }
+    },
+    {
+      "id": "A5.1",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A5.1",
+      "placeholder": "[[FIGURE:A5.1]]",
+      "see_placeholder": "[[SEE_FIGURE:A5.1]]",
+      "asset_path": "figures/Genetics_A5.1.png",
+      "caption": "Figure A5.1 Power (1−β) and significance (α) of a normally (left) and F-distributed test statistics (right). The distributions of the test statistic under the null hypothesis (H₀) and at a particular parameter value under the alternative hypothesis (H₁) are shown. Under the null hypothesis, the probability that the test statistic exceeds a critical value (Tₑ, Fₑ) is α, and we define this as the significance of the test. The power of the test for a particular value of the alternative hypothesis is the probability that the test statistic exceeds the critical value, and we denote this by 1 − β. Hence, β is the probability that the test statistic is below the critical value (a false negative).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 881,
+      "raw_bbox": [
+        253.0,
+        1005.0,
+        835.0,
+        1196.0
+      ],
+      "source_block_ids": [
+        "p881:b4"
+      ],
+      "caption_block": {
+        "source_page": 881,
+        "printed_page": 861,
+        "source_block_ids": [
+          "p881:b5"
+        ],
+        "bbox": [
+          109.0,
+          1238.0,
+          975.0,
+          1502.0
+        ]
+      }
+    },
+    {
+      "id": "A5.2",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A5.2",
+      "placeholder": "[[FIGURE:A5.2]]",
+      "see_placeholder": "[[SEE_FIGURE:A5.2]]",
+      "asset_path": "figures/Genetics_A5.2.png",
+      "caption": "Figure A5.2 Areas under the normal curve for one-sided (left) and two-sided (right) tests of significance at level $ \\alpha $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 883,
+      "raw_bbox": [
+        238.0,
+        145.0,
+        851.0,
+        324.0
+      ],
+      "source_block_ids": [
+        "p883:b2"
+      ],
+      "caption_block": {
+        "source_page": 883,
+        "printed_page": 863,
+        "source_block_ids": [
+          "p883:b3"
+        ],
+        "bbox": [
+          109.0,
+          351.0,
+          974.0,
+          412.0
+        ]
+      }
+    },
+    {
+      "id": "A5.3",
+      "chapter": "Genetics_appendix1",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_appendix1:A5.3",
+      "placeholder": "[[FIGURE:A5.3]]",
+      "see_placeholder": "[[SEE_FIGURE:A5.3]]",
+      "asset_path": "figures/Genetics_A5.3.png",
+      "caption": "Figure A5.3 The probability distribution function for a noncentral $ \\chi^2 $. As the noncentrality parameter $ \\lambda $ increases, the distribution is pulled to the right. We plot here a $ \\chi^2 $ random variable with $ n = 5 $ degrees of freedom and noncentrality parameters $ \\lambda = 0 $ (a central $ \\chi^2 $), 1, and 5.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 891,
+      "raw_bbox": [
+        293.0,
+        130.0,
+        786.0,
+        470.0
+      ],
+      "source_block_ids": [
+        "p891:b2"
+      ],
+      "caption_block": {
+        "source_page": 891,
+        "printed_page": 871,
+        "source_block_ids": [
+          "p891:b3"
+        ],
+        "bbox": [
+          106.0,
+          495.0,
+          970.0,
+          626.0
+        ]
+      }
+    }
+  ]
+}

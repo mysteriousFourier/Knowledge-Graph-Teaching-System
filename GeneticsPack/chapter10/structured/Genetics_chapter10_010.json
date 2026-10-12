@@ -1,0 +1,279 @@
+{
+  "id": "Genetics_chapter10_010",
+  "metadata": {
+    "chapter": "Genetics_chapter10",
+    "section": "THE EVIDENCE",
+    "subsections": [],
+    "section_level_1": "THE EVIDENCE",
+    "section_level_2": null,
+    "heading_path": [
+      "THE EVIDENCE"
+    ],
+    "display_heading": "THE EVIDENCE",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 285,
+      "printed_page": 265,
+      "source_block_ids": [
+        "p285:b3"
+      ],
+      "bbox": [
+        71.0,
+        254.0,
+        290.0,
+        287.0
+      ],
+      "raw_text": "THE EVIDENCE"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Although few of the existing studies of inbreeding depression have fully accounted for all of the difficulties pointed out above, the aggregate of evidence for inbreeding depression is overwhelming. While substantial variation of inbreeding depression exists among species (and among characters within species), almost all organisms exhibit it to some degree. Here we only summarize some of the better-documented cases. An extensive survey of the early literature is available in Wright (1978), and recent reviews may be found in Shields (1982), Charlesworth and Charlesworth (1987), Thornhill (1993), and Husband and Schemske (1996).",
+      "source_page": 285,
+      "printed_page": 265,
+      "source_block_ids": [
+        "p285:b4"
+      ],
+      "bbox": [
+        68.0,
+        319.0,
+        1030.0,
+        587.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "More and better data on the phenotypic consequences of inbreeding are available for maize than for any other organism. Hallauer and Miranda (1981) review the evidence, which was recognized as early as 1876 by Darwin. There have been some very well conceived experiments involving prolonged selfing and full-sib mating in lines derived from a genetically diverse base population (Sing et al. 1967, Hallauer and Sears 1973, Cornelius and Dudley 1974, Good and Hallauer 1977, Lamkey and Smith 1987, Benson and Hallauer 1994). The experiments are very large (involving up to 250 independent lines), and the potential influence of temporal changes in the environment has been minimized by the simultaneous analysis of stored seed. Almost without exception, vegetative, reproductive, and physiological characters exhibit significant shifts in the mean phenotype with inbreeding. Cases have arisen in which the regressions of $ \\bar{z} $ on f appear to be nonlinear (Hallauer and Sears 1973, Good and Hallauer 1977), but in all cases the departure from linearity is small. Two characters that give no evidence of nonlinearity are total grain yield and plant height (Figure 10.6). Starting from a genetically diverse base population, complete inbreeding results in an approximately 65% decline in yield and an approximately 25% decline in plant height.",
+      "source_page": 285,
+      "printed_page": 265,
+      "source_block_ids": [
+        "p285:b5"
+      ],
+      "bbox": [
+        57.0,
+        575.0,
+        1027.0,
+        1130.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Several independent investigations of inbreeding depression have been performed with laboratory stocks of Drosophila (Table 10.2). Although substantial variation exists among the results from different studies, a pattern emerges. Primary fitness characters such as viability, fertility, and egg production tend to exhibit very high levels of inbreeding depression (averaging approximately 50%), while morphological characters (bristle numbers, body weight and length), which are perhaps more remotely related to fitness, change by only a few percent, if at all. The latter traits are known to exhibit substantial levels of additive genetic variance, while the fitness characters tend to have lower heritabilities (Mousseau and Roff 1987). Thus, in Drosophila there appears to be a major difference in the",
+      "source_page": 285,
+      "printed_page": 265,
+      "source_block_ids": [
+        "p285:b6"
+      ],
+      "bbox": [
+        50.0,
+        1117.0,
+        1017.0,
+        1451.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:10.6]]",
+      "source_page": 286,
+      "printed_page": 266,
+      "source_block_ids": [
+        "p286:b3"
+      ],
+      "bbox": [
+        175.0,
+        559.0,
+        1049.0,
+        775.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "way the genetic variance for morphological and fitness characters is partitioned — mostly additive for the former, mostly dominant for the latter.",
+      "source_page": 286,
+      "printed_page": 266,
+      "source_block_ids": [
+        "p286:b4"
+      ],
+      "bbox": [
+        138.0,
+        826.0,
+        1099.0,
+        902.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Selection theory helps explain why the additive genetic variance for fitness should be low and why dominance should be directional for fitness-related characters. Alleles with favorable effects on fitness should move rapidly towards fixation, regardless of their degree of dominance, and dominant alleles with deleterious effects will be eliminated rapidly. However, deleterious recessive alleles will be maintained at low frequencies by mutation pressure. For characters only weakly related to fitness or under stabilizing selection for an intermediate optimum, directional dominance may be less pronounced since mutations that cause a shift in the mean in either direction will be selectively equivalent.",
+      "source_page": 286,
+      "printed_page": 266,
+      "source_block_ids": [
+        "p286:b5"
+      ],
+      "bbox": [
+        139.0,
+        892.0,
+        1105.0,
+        1189.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Several large surveys provide firm empirical justification for the incest taboos that exist in humans. Rarely is it possible to obtain data for more extreme situations than first- and second-cousin marriages, but by linear extrapolation the data are sufficient to demonstrate that more extreme inbreeding would lead to substantial depression in body size and IQ (Table 10.3). The consequences of inbreeding for juvenile mortality and the incidence of congenital effects in man are well known and are examined in the next section from a somewhat different perspective. One precautionary note is in order here. Analyses based on inbreeding depression that rely on natural mating assemblages (as is always true in human",
+      "source_page": 286,
+      "printed_page": 266,
+      "source_block_ids": [
+        "p286:b6"
+      ],
+      "bbox": [
+        145.0,
+        1179.0,
+        1111.0,
+        1482.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:10.2]]",
+      "source_page": 287,
+      "printed_page": 267,
+      "source_block_ids": [
+        "p287:b3"
+      ],
+      "bbox": [
+        52.0,
+        203.0,
+        1030.0,
+        1249.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:10.3]]",
+      "source_page": 288,
+      "printed_page": 268,
+      "source_block_ids": [
+        "p288:b3"
+      ],
+      "bbox": [
+        132.0,
+        247.0,
+        1094.0,
+        762.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "studies) run the potential risk that progeny with different levels of f are products of genotypically different groups of parents. If parents that tend to inbreed also tend to be genetically low on the fitness scale, the apparent level of inbreeding depression in the progeny may be exaggerated substantially.",
+      "source_page": 288,
+      "printed_page": 268,
+      "source_block_ids": [
+        "p288:b4"
+      ],
+      "bbox": [
+        142.0,
+        810.0,
+        1106.0,
+        961.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Extensive reviews exist on the deleterious consequences of inbreeding in domesticated mammals: beef cattle (Dinkel et al. 1968), dairy cattle (Turton 1981), dogs (Scott and Fuller 1965), horses (Cothran et al. 1986), sheep (Lamberson and Thomas 1984, Wiener et al. 1992a–c), and swine (Dickerson et al. 1954, Bereskin et al. 1968). A nonlinear response of the mean phenotype to the inbreeding coefficient has been seen in many of these studies. However, since few studies incorporate appropriate controls or account for the nonindependence of data in inbred lines, it is difficult to say whether the apparent nonlinearities in the data are simply statistical artifacts, as opposed to real reflections of directional epistasis. In organisms with extensive parental care, still another explanation exists. If maternal performance (the ability to raise young) is adversely affected by inbreeding, then an individual's phenotype will be influenced not only by its own level of inbreeding but also by that of its mother.",
+      "source_page": 288,
+      "printed_page": 268,
+      "source_block_ids": [
+        "p288:b5"
+      ],
+      "bbox": [
+        145.0,
+        941.0,
+        1116.0,
+        1377.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An elegant experiment performed with laboratory mice (White 1972) illustrates this point. When progeny with several different levels of inbreeding were crossfostered with mothers inbred to different degrees, maternal inbreeding was found to have approximately half the impact on juvenile weight as individual inbreeding (Figure 10.7). Other experiments with mice have verified the effects of maternal inbreeding on progeny performance (Bowman and Falconer 1960,",
+      "source_page": 288,
+      "printed_page": 268,
+      "source_block_ids": [
+        "p288:b6"
+      ],
+      "bbox": [
+        156.0,
+        1355.0,
+        1120.0,
+        1569.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:10.7]]",
+      "source_page": 289,
+      "printed_page": 269,
+      "source_block_ids": [
+        "p289:b3"
+      ],
+      "bbox": [
+        97.0,
+        749.0,
+        964.0,
+        878.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Falconer and Roberts 1960, McCarthy 1967, Nagai et al. 1971), and convincing but less extensive data exist for humans (Schull et al. 1970), sheep (Wiener et al. 1992a-c), and birds (Sittmann et al. 1966, van Noordwijk and Scharloo 1981).",
+      "source_page": 289,
+      "printed_page": 269,
+      "source_block_ids": [
+        "p289:b4"
+      ],
+      "bbox": [
+        48.0,
+        931.0,
+        1007.0,
+        1039.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A second point that has received substantial attention in the animal breeding literature is heterosis × environment interaction (Orozco 1976, Barlow 1981, Sheridan 1981, Cunningham 1982). Although the general opinion is that heterosis is more pronounced in suboptimal environments, there are many exceptions to this pattern, and few of the data bearing on the subject come from well-designed experiments. As noted above, heterosis between breeds need not have the same genetic basis as inbreeding depression within populations. However, experiments with Drosophila support the contention that inbreeding depression is more severe in stressful environments (Hoffmann and Parsons 1991, Miller 1994), as do those with the flour beetle Tribolium (Pray et al. 1994) and with mice (Jiménez et al. 1994). On the other hand, in a very large study comparing 38 human populations, Bittles and Neel (1994) found that the effects of inbreeding on survival to age 10 were independent of the mortality rate of noninbred progeny, which ranged from 3 to 40%. Likewise, while numerous studies with plants have documented increased inbreeding depression under extreme conditions (Antonovics 1968, Schemske because the progeny genotypes are essentially identical to those of their mothers. Once this situation has been reached, from the standpoint of the current population, there is no inbreeding depression. However, as noted above, this need not be the case from the standpoint of the ancestral population if, during the inbreeding process, different deleterious recessive genes have become fixed within different selfing lineages.",
+      "source_page": 289,
+      "printed_page": 269,
+      "source_block_ids": [
+        "p289:b5",
+        "p290:b2"
+      ],
+      "bbox": [
+        39.0,
+        1030.0,
+        1007.0,
+        1517.0
+      ],
+      "source_page_end": 290
+    },
+    {
+      "type": "discussion",
+      "content": "The latter point is nicely illustrated by a study of self-fertilized lines of the normally outcrossing aquatic plant Eichhornia paniculata (Barrett and Charlesworth 1991). Inbreeding caused an immediate depression in fitness, but after only two generations of selfing, there was no further decline, suggesting that the vast majority of loci affecting fitness had become homozygous within lines. Nevertheless, despite the absence of inbreeding depression within the derived lines, crosses between lines exhibited a substantial increase in mean fitness, as expected if the different lines had become fixed for different deleterious recessives. Over time, as new deleterious mutations become sequestered in different selfing lineages, the beneficial effects of outcrossing are expected to increase further (Lynch et al. 1995b). Enhanced fitness in outcrossed progeny of normally self-fertilizing plants has been demonstrated in numerous species (Levin 1989, Charlesworth et al. 1990, Holtsford and Ellstrand 1990, Ågren and Schemske 1993, Van Treuren et al. 1993, Latta and Ritland 1994, Johnston and Schoen 1995). Clearly, the absence of local inbreeding depression provides no information about the mutation load harbored by a population.",
+      "source_page": 290,
+      "printed_page": 270,
+      "source_block_ids": [
+        "p290:b3"
+      ],
+      "bbox": [
+        132.0,
+        345.0,
+        1098.0,
+        873.0
+      ]
+    }
+  ]
+}

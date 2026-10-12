@@ -1,0 +1,30 @@
+{
+  "schema": "kgts.graph_registry.v1",
+  "retrieval": {
+    "mode": "cross_graph",
+    "independent_graphs": true
+  },
+  "graphs": [
+    {
+      "graph_id": "legacy_seed",
+      "book": "KGTS existing seed graph",
+      "source_pack": "data/seed/knowledge_graph.db",
+      "db_path": "data/seed/knowledge_graph.db",
+      "enabled": true
+    },
+    {
+      "graph_id": "popgen",
+      "book": "Principles of Population Genetics",
+      "source_pack": "Pack/PopGen_chapters_2_3_4_6",
+      "db_path": "data/seed/graphs/popgen/knowledge_graph.db",
+      "enabled": true
+    },
+    {
+      "graph_id": "genetics",
+      "book": "Genetics and Analysis of Quantitative Traits",
+      "source_pack": "GeneticsPack",
+      "db_path": "data/seed/graphs/genetics/knowledge_graph.db",
+      "enabled": true
+    }
+  ]
+}

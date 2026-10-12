@@ -1,0 +1,695 @@
+{
+  "id": "PopGen_chapter2_024",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "subsections": [
+      "PROBLEMS"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "section_level_2": "PROBLEMS",
+    "heading_path": [
+      "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "PROBLEMS"
+    ],
+    "display_heading": "PROBLEMS",
+    "heading_source": {
+      "source_block_ids": []
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "content": "3. The accompanying table shows the observed numbers of AA, Aa, and aa genotypes in samples of size 100 from each of four populations. Calculate the chi-square value for goodness of fit to Hardy-Weinberg proportions and the associated P value for each sample. For which samples can the hypothesis of Hardy-Weinberg proportions be rejected?",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b6"
+      ],
+      "source_bboxes": [
+        [
+          122.0,
+          720.0,
+          863.0,
+          852.0
+        ]
+      ],
+      "provenance_score": 0.99639,
+      "content_sha256": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1",
+      "problem_id": "2.E3",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 56,
+          "end": 58,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b6"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              720.0,
+              863.0,
+              852.0
+            ]
+          ],
+          "source_content_sha256": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b6": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1"
+          }
+        },
+        {
+          "start": 60,
+          "end": 62,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b6"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              720.0,
+              863.0,
+              852.0
+            ]
+          ],
+          "source_content_sha256": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b6": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1"
+          }
+        },
+        {
+          "start": 68,
+          "end": 70,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b6"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              720.0,
+              863.0,
+              852.0
+            ]
+          ],
+          "source_content_sha256": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b6": "497291200685b13bf722abc79f9e1c57f5a853ba0da2191118e4dd1b96e788c1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_6]]",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b7"
+      ],
+      "source_bboxes": [
+        [
+          160.0,
+          863.0,
+          666.0,
+          994.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "problem_id": "2.E3",
+      "source_locator_mode": "exact",
+      "content_sha256": "f1c401d70defe90f7d3e47bd25608078cf15f4042f9bc1e8dae6803e06bd052c",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "4. Charles Darwin could have discovered segregation had he known what to look for, because Mendelian segregation occurred in at least one of his own experiments. Darwin <sup>[294]</sup> studied flower shape in the snapdragon Antirrhinum majus. In a cross between a true-breeding strain with regular (peloric) flowers and a true-breeding strain with irregular (normal) flowers, all of the $ F_1 $ progeny had normal flowers. Crosses of $ F_1 \\times F_1 $ yielded 88 normal and 37 peloric plants. Perform a chi-square test assuming a 3: 1 ratio of phenotypes in the $ F_2 $ generation. Is the peloric or normal allele dominant?",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b8"
+      ],
+      "source_bboxes": [
+        [
+          117.0,
+          1007.0,
+          861.0,
+          1243.0
+        ]
+      ],
+      "provenance_score": 0.987879,
+      "content_sha256": "2aee9c934b57b9b256cc2ffba8cec9a9e29682bafe5f3cf8c24bb74ab353a28d",
+      "problem_id": "2.E4",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 230,
+          "end": 247,
+          "style": "italic",
+          "text": "Antirrhinum majus",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b8"
+          ],
+          "source_bboxes": [
+            [
+              117,
+              1007,
+              861,
+              1243
+            ]
+          ],
+          "source_content_sha256": "d3a5be56725e845265f09f15cddd8ae076a00c7ba6596cf6248d505c99b8513a",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b8": "d3a5be56725e845265f09f15cddd8ae076a00c7ba6596cf6248d505c99b8513a"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "5. For a mating between genotypes that are heterozygous for the alleles of each of three unlinked genes, when one allele of each gene is dominant, there are eight phenotypic classes among the offspring. What are the expected phenotypic ratios? Mendel carried out such an experiment and obtained the phenotypic ratio 269:98:86:88:30:34:27:7 among a total of 639 progeny. (He commented that this particular experiment required the most time and effort of any of his crosses.) Calculate the chi-square and associated probability.",
+      "source_page": 103,
+      "source_pages": [
+        103,
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b9",
+        "PopGen_chapter2:p046:b1"
+      ],
+      "source_bboxes": [
+        [
+          116.0,
+          1257.0,
+          859.0,
+          1337.0
+        ],
+        [
+          291.0,
+          200.0,
+          1005.0,
+          333.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "720d9d93466de87efa7ab19717ec2fdd7bf8d13437e4836706bc10b770adef9f",
+      "problem_id": "2.E5",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "6. When mating is random for a gene with two alleles A and a at frequencies p and q, show that the genotype frequencies of AA, Aa, and aa are approximately 1 - 2q, 2q, and 0 when q is so small that $ q^{2} $ is approximately 0.",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b2"
+      ],
+      "source_bboxes": [
+        [
+          270.0,
+          344.0,
+          1006.0,
+          449.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263",
+      "problem_id": "2.E6",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 123,
+          "end": 125,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 104,
+          "source_block_ids": [
+            "PopGen_chapter2:p046:b2"
+          ],
+          "source_bboxes": [
+            [
+              270.0,
+              344.0,
+              1006.0,
+              449.0
+            ]
+          ],
+          "source_content_sha256": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p046:b2": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263"
+          }
+        },
+        {
+          "start": 127,
+          "end": 129,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 104,
+          "source_block_ids": [
+            "PopGen_chapter2:p046:b2"
+          ],
+          "source_bboxes": [
+            [
+              270.0,
+              344.0,
+              1006.0,
+              449.0
+            ]
+          ],
+          "source_content_sha256": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p046:b2": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263"
+          }
+        },
+        {
+          "start": 135,
+          "end": 137,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 104,
+          "source_block_ids": [
+            "PopGen_chapter2:p046:b2"
+          ],
+          "source_bboxes": [
+            [
+              270.0,
+              344.0,
+              1006.0,
+              449.0
+            ]
+          ],
+          "source_content_sha256": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p046:b2": "095b8111601fd6a2732dcc0e9e384ae61a36f5a5ed6d1750742fe88609359263"
+          }
+        }
+      ]
+    },
+    {
+      "type": "problem",
+      "content": "7. For a trait due to a rare X-linked recessive allele, show that the frequency of heterozygous carrier females is approximately equal to two times the frequency of affected males. Calculate the exact frequencies for an X-linked recessive allele with an allele frequency of 0.1.",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b3"
+      ],
+      "source_bboxes": [
+        [
+          271.0,
+          460.0,
+          1007.0,
+          564.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "e8206b6bb0bfe2924d2d21e73f72b8bc57b215d5f449ad382138745b919a8f0c",
+      "problem_id": "2.E7",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "8. What is the analogue of the Hardy-Weinberg principle for a gene with two alleles in a so-called autotetraploid, in which each chromosome is present in four copies that segregate randomly during meiosis so that each gamete receives two of the chromosomes.",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b4"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          576.0,
+          1008.0,
+          681.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5eb9181cfd52717364f4b1c95435c8dae9f47a2fa29e7d94f2848090d5659146",
+      "problem_id": "2.E8",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "9. A number of relationships between the allele frequencies of two alleles follows from the definition of p and q such that $ p + q = 1 $. Show that",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b5"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          692.0,
+          1008.0,
+          744.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "e9a2dcb78199611b8a63c70c85648657f2af8ecdf9da0a1549c73876de269d9e",
+      "problem_id": "2.E9",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(a) $$ p^{2}+pq=p $$\n(b) $$ p-q=1-2q $$\n(c) $$ p^{2}+q^{2}=1-2pq $$\n(d) $$ (p-q)^{2}=1-4pq $$",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b6",
+        "PopGen_chapter2:p046:b7"
+      ],
+      "source_bboxes": [
+        [
+          340.0,
+          759.0,
+          367.0,
+          848.0
+        ],
+        [
+          376.0,
+          758.0,
+          532.0,
+          848.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "6c46ba9874e52c566685dc6c3f026ff39357f5768f4c9ba18541b36fd42449f0",
+      "problem_id": "2.E9",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "10. The accompanying gel diagram shows the banding patterns observed for an esterase enzyme in 1000 individuals of the black-tailed jackrabbit, Lepus californicus, in which four alleles $ A_{1}-A_{4} $ encode polypeptide chains that differ in their electrophoretic mobility. Estimate the allele frequency for each allele, the expected number of each genotype assuming Hardy-Weinberg proportions, the chi-square value for goodness of fit, the number of degrees of freedom, and the corresponding P value. Interpret the P value in terms of whether it supports or rejects the hypothesis of Hardy-Weinberg proportions.\n\n[[see_figure:problem_2.10]]",
+      "source_page": 104,
+      "source_pages": [
+        104
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p046:b8"
+      ],
+      "source_bboxes": [
+        [
+          260.0,
+          857.0,
+          1011.0,
+          1097.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "78f4a5209157a3e84791cda36b16d9e47c39bb434b91d45822d39402baa1f53d",
+      "problem_id": "2.E10",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 144,
+          "end": 162,
+          "style": "italic",
+          "text": "Lepus californicus",
+          "source_page": 104,
+          "source_block_ids": [
+            "PopGen_chapter2:p046:b8"
+          ],
+          "source_bboxes": [
+            [
+              260,
+              857,
+              1011,
+              1097
+            ]
+          ],
+          "source_content_sha256": "05a70c2ec8f737571d812f975764ce851d101e51abd808ab2a20258cfef93013",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p046:b8": "05a70c2ec8f737571d812f975764ce851d101e51abd808ab2a20258cfef93013"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "problem",
+      "content": "11. In a population undergoing random mating for a single gene with a dominant and recessive allele, show that the allele frequency of the recessive allele among individuals with the dominant phenotype is $ q/(1 + q) $, where $ q $ is the allele frequency of the recessive in the whole population. Then show that the frequency of homozygous recessive genotypes from dominant $ \\times $ dominant matings is $ [q/(1 + q)]^2 $, and from dominant $ \\times $ recessive matings is $ q/(1 + q) $. Note that the latter is equal to the square root of the former. These proportions are called Snyder's ratios and were once used to test human traits for simple recessive inheritance.",
+      "source_page": 105,
+      "source_pages": [
+        105
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b1"
+      ],
+      "source_bboxes": [
+        [
+          111.0,
+          199.0,
+          860.0,
+          435.0
+        ]
+      ],
+      "provenance_score": 0.978641,
+      "content_sha256": "f7221e9dcd794ae8a77fdc21812353d9ba09a7a0d53bab9ce6d5a024a42002b4",
+      "problem_id": "2.E11",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 583,
+          "end": 598,
+          "style": "italic",
+          "text": "Snyder's ratios",
+          "source_page": 105,
+          "source_block_ids": [
+            "PopGen_chapter2:p047:b1"
+          ],
+          "source_bboxes": [
+            [
+              111,
+              199,
+              860,
+              435
+            ]
+          ],
+          "source_content_sha256": "2f8cfaf37fbb8e07869ad8c6e66011483ec661809f5abf0dc7b51b8c90d0e2a8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p047:b1": "2f8cfaf37fbb8e07869ad8c6e66011483ec661809f5abf0dc7b51b8c90d0e2a8"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "12. Consider a gene A with alleles $ A_1 $ and $ A_2 $ at frequencies $ x_1 $ and $ x_2 $, and a different gene B in the same population with alleles $ B_1 $, $ B_2 $, and $ B_3 $ at frequencies $ y_1 $, $ y_2 $, and $ y_3 $. What are the expected frequencies of gametes with linkage equilibrium assuming that $ x_1 = 0.3 $, $ y_1 = 0.2 $, and $ y_2 = 0.3 $?",
+      "source_page": 105,
+      "source_pages": [
+        105
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b2"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          447.0,
+          859.0,
+          555.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "d29a8c020147a2bae1deccc6533879652faa1792e790ddf266bee6127644b267",
+      "problem_id": "2.E12",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "13. For a gene two alleles A and a, and another gene in the same population with alleles B and b, let $ p_{A} $ and $ q_{a} $ be the allele frequencies of A and a, and let $ p_{B} $ and $ q_{b} $ be those of B and b. Set $ p_{A} = 0.7 $ and $ P_{B} = 0.3 $.\n\n(a) What are the expected frequencies of all possible gametes assuming linkage equilibrium?\n\n(b) What are the expected frequencies of all possible gametes if there is linkage disequilibrium with D equal to 50% of its theoretical maximum?",
+      "source_page": 105,
+      "source_pages": [
+        105
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b3",
+        "PopGen_chapter2:p047:b4",
+        "PopGen_chapter2:p047:b5"
+      ],
+      "source_bboxes": [
+        [
+          106.0,
+          563.0,
+          858.0,
+          643.0
+        ],
+        [
+          136.0,
+          651.0,
+          857.0,
+          703.0
+        ],
+        [
+          136.0,
+          713.0,
+          856.0,
+          765.0
+        ]
+      ],
+      "provenance_score": 0.987013,
+      "content_sha256": "59e9ffdb40743d25814a083fbdf34673d020fa734b1a3833fd7d636957ac1ff1",
+      "problem_id": "2.E13",
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "14. The accompanying table shows the estimated gametic frequencies for the alleles of two genes in a number of populations. For each population, calculate the values of $ D' $ and $ r^2 $. Which populations show the least amount of linkage disequilibrium? Which show the greatest amounts of linkage disequilibrium? Are there any that show relatively large linkage disequilibrium according to $ D' $ but not according to $ r^2 $?",
+      "source_page": 105,
+      "source_pages": [
+        105
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b6"
+      ],
+      "source_bboxes": [
+        [
+          103.0,
+          776.0,
+          856.0,
+          934.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "47fb6a5523404f64609e18a71856e7f19d8ee44653b0c72c9ceca83d780defe4",
+      "problem_id": "2.E14",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_7]]",
+      "source_page": 105,
+      "source_pages": [
+        105
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b7"
+      ],
+      "source_bboxes": [
+        [
+          154.0,
+          944.0,
+          736.0,
+          1105.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "problem_id": "2.E14",
+      "source_locator_mode": "exact",
+      "content_sha256": "8eb25caa7e7252fc7879b15af0b74e05592150a9da836f9d47f21499cfb0f198",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "15. To see how population admixture can cause linkage disequilibrium (even for genes in different chromosomes), consider the three situations in the accompanying table. Each example gives the gametic frequencies in two subpopulations, both of which are in linkage equilibrium for the alleles A, a and B, b of two genes. The gametic frequencies in the two populations are denoted P1 and P2 with appropriate subscripts for the alleles in the gametes. For each example, verify the absence of linkage disequilibrium in each original subpopulation. Then assume that the two subpopulations in each example undergo admixture in equal proportions, and calculate the values of $ D' $ and $ r^{2} $ in the resulting admixed population.",
+      "source_page": 105,
+      "source_pages": [
+        105,
+        106
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p047:b8",
+        "PopGen_chapter2:p048:b1"
+      ],
+      "source_bboxes": [
+        [
+          100.0,
+          1116.0,
+          852.0,
+          1330.0
+        ],
+        [
+          307.0,
+          207.0,
+          1017.0,
+          287.0
+        ]
+      ],
+      "provenance_score": 0.998299,
+      "content_sha256": "4c40cde8fc32fd485f191ec7129dc87e96f5cdf57c8b2cb0fd37a203c73e786a",
+      "problem_id": "2.E15",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_8]]",
+      "source_page": 106,
+      "source_pages": [
+        106
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p048:b2"
+      ],
+      "source_bboxes": [
+        [
+          353.0,
+          296.0,
+          911.0,
+          536.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "problem_id": "2.E15",
+      "source_locator_mode": "exact",
+      "content_sha256": "b0b832039a0a6ab44c955c0d87afb038248b551d6a54165bdd011b91ee526148",
+      "inline_styles": []
+    }
+  ]
+}

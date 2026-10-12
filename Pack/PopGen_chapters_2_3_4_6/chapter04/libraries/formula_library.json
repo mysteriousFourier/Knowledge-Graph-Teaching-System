@@ -1,0 +1,2303 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter4",
+  "count": 28,
+  "formulas": [
+    {
+      "id": "4.1",
+      "label_format": "[4.1]",
+      "latex": "p_{t}=p_{0}(1-\\mu)^{t_{ 环 }}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_003",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Irreversible Mutation",
+        "heading_path": [
+          "4.1 MUTATION",
+          "Irreversible Mutation"
+        ],
+        "source_pages": [
+          167
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p003:b13"
+        ],
+        "source_bboxes": [
+          [
+            380,
+            713,
+            542,
+            744
+          ]
+        ]
+      },
+      "context": "= 1 $ because A and a are the only alleles considered.\nNext we will deduce a formula for the allele frequency $ p_{t} $ in terms of the allele frequency $ p_{t-1} $ in the previous generation. In generation t, $ p_{t} $ includes all the A alleles in generation t that did not mutate in that generation, and so $$ p_{t}=p_{t-1}\\left(1-\\mu\\right) $$ $$ \\vec{p}_{t} $$ $$ p_{0}=1 $$\nHowever, by the same reasoning, $ p_{t-1} $ includes all A alleles in generation t-1 that did not mutate in that generation, and so $ p_{t-1} = p_{t-2} \\times (1 - \\mu) $. Substituting this equation into the one above yields $$ p_{t}=p_{t-2}\\left(1-\\mu\\right)^{2} $$\nContinuing in the same manner leads eventually to $$ p_{t}=p_{0}(1-\\mu)^{t_{ 环 }} $$\nThe effect of mutation pressure on allele frequency is illustrated in Figure 4.1 for the case $ \\mu = 10^{-4} $. The allele frequency of $ A $ decreases very slowly, almost linearly at first because the governing term in Equation 4.1, $ (1 - \\mu)^t $, is approximated by $ 1 - \\mu t $ when $ t $ is sufficiently small. After 1000 generations, the allele frequency of $ A $ is still 0.90; however, at $ t = 10,000 $ generations, $ p_t = 0.37 $; and at $ t = 20,000 $ generations, $ p_t = 0.14 $.\nOne instructive way to analyze Equation 4.1 is to consider the time required to reduce the allele frequency of A by half. To find the “half-life” of the process, set $ p_t =",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 3,
+        "formula_bbox": [
+          380,
+          713,
+          542,
+          744
+        ],
+        "label_bbox": [
+          740,
+          715,
+          784,
+          738
+        ],
+        "api_label": "[4.1]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.0
+      },
+      "equation_number": "4.1",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.1 MUTATION",
+        "Irreversible Mutation"
+      ],
+      "subsection": "Irreversible Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "4.1 MUTATION",
+          "Irreversible Mutation"
+        ],
+        "subsection": "Irreversible Mutation",
+        "source_pages": [
+          167
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p003:b13"
+        ],
+        "source_bboxes": [
+          [
+            380,
+            713,
+            542,
+            744
+          ]
+        ],
+        "audit_evidence_sha256": "2f9fdb532e9e306efba7ed5e70c637152908e2b91258528d3e58c16e1109bd05"
+      }
+    },
+    {
+      "id": "4.10",
+      "label_format": "[4.10]",
+      "latex": "mu}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_008",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b11"
+        ],
+        "source_bboxes": [
+          [
+            479,
+            716,
+            661,
+            767
+          ]
+        ]
+      },
+      "context": "so the equilibrium value of the autozygosity. Because of the assumption in the infinite-alleles model that each allele in the population arises only once, all genotypes that are homozygotes must also be autozygous. Therefore, $ \\hat{F} $ can also be interpreted as the equilibrium value of the proportion of homozygous genotypes.\nIn Equation 4.9, N should be interpreted as the effective population size, $ N_{e} $, defined in Chapter 3 as the size of an ideal population that has the same rate of increase in homozygosity as the population in question. In population genetics, the usual symbol for $ 4N_{e}\\mu $ is $ \\theta $, so that $ \\theta = 4N_{e}\\mu $, and Equation 4.9 can be rewritten as $$ \\hat{F}=\\frac{1}{1+\\theta}=\\frac{1}{1+4N_{e}\\mu} $$ Because any genotype that is not homozygous is heterozygous, it follows that the proportion of heterozygous genotypes in a population is given by $ 1 - \\hat{F} $. In the infinite-alleles model, therefore, the heterozygosity is given by Equation 4.10 as $$ 1-\\hat{F}=\\frac{\\theta}{1+\\theta}=\\frac{4N_{e}\\mu}{1+4N_{e}\\mu} $$ where again $\\theta = 4N_e\\mu$. Figure 4.7 shows the equilibrium homozygosity $[1/(1+\\theta)]$ and heterozygosity $[\\theta/(1+\\theta)]$ for a range of values of $\\theta = 4N_e\\mu$. The illustration shows that there is a rather narrow range of $4N_e\\mu$ over which an intermediate level of genetic variation (heterozygosity) i",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 14,
+        "formula_bbox": [
+          479,
+          716,
+          661,
+          767
+        ],
+        "label_bbox": [
+          858,
+          725,
+          914,
+          748
+        ],
+        "api_label": "[4.10]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "4.10",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.4 THE INFINITE-ALLELES MODEL"
+      ],
+      "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b11"
+        ],
+        "source_bboxes": [
+          [
+            479,
+            716,
+            661,
+            767
+          ]
+        ],
+        "audit_evidence_sha256": "7e461da419cdb236e5fbc2dd812c0aa817638c7dde556dea512482542ab081e3"
+      }
+    },
+    {
+      "id": "4.11",
+      "label_format": "[4.11]",
+      "latex": "1-\\hat{F}=\\frac{\\theta}{1+\\theta}=\\frac{4N_{e}\\mu}{1+4N_{e}\\mu}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_008",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b12"
+        ],
+        "source_bboxes": [
+          [
+            471,
+            882,
+            677,
+            935
+          ]
+        ]
+      },
+      "context": "homozygous genotypes.\nIn Equation 4.9, N should be interpreted as the effective population size, $ N_{e} $, defined in Chapter 3 as the size of an ideal population that has the same rate of increase in homozygosity as the population in question. In population genetics, the usual symbol for $ 4N_{e}\\mu $ is $ \\theta $, so that $ \\theta = 4N_{e}\\mu $, and Equation 4.9 can be rewritten as $$ \\hat{F}=\\frac{1}{1+\\theta}=\\frac{1}{1+4N_{e}\\mu} $$ Because any genotype that is not homozygous is heterozygous, it follows that the proportion of heterozygous genotypes in a population is given by $ 1 - \\hat{F} $. In the infinite-alleles model, therefore, the heterozygosity is given by Equation 4.10 as $$ 1-\\hat{F}=\\frac{\\theta}{1+\\theta}=\\frac{4N_{e}\\mu}{1+4N_{e}\\mu} $$ where again $\\theta = 4N_e\\mu$. Figure 4.7 shows the equilibrium homozygosity $[1/(1+\\theta)]$ and heterozygosity $[\\theta/(1+\\theta)]$ for a range of values of $\\theta = 4N_e\\mu$. The illustration shows that there is a rather narrow range of $4N_e\\mu$ over which an intermediate level of genetic variation (heterozygosity) is maintained. For example, the equilibrium heterozygosity is in the range 0.2 to 0.8 only when $4N_e\\mu$ is in the range 0.25 to 4. In reality, however, as is clear from Figure 1.8, the heterozygosity for electrophoretic variants in protein molecules is smaller than 0.2, and often much smaller than 0.2 (in ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 14,
+        "formula_bbox": [
+          471,
+          882,
+          677,
+          935
+        ],
+        "label_bbox": [
+          859,
+          892,
+          915,
+          915
+        ],
+        "api_label": "[4.11]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "4.11",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.4 THE INFINITE-ALLELES MODEL"
+      ],
+      "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b12"
+        ],
+        "source_bboxes": [
+          [
+            471,
+            882,
+            677,
+            935
+          ]
+        ],
+        "audit_evidence_sha256": "49844d1d4113ccaa0aa7064f52f9337d37441070f892fb65b790cc982d315a7b"
+      }
+    },
+    {
+      "id": "4.12",
+      "label_format": "[4.12]",
+      "latex": "E(k)=1+\\frac{\\theta}{\\theta+1}+\\frac{\\theta}{\\theta+2}+\\cdots+\\frac{\\theta}{\\theta+n-1}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_009",
+        "chapter": "PopGen_chapter4",
+        "subsection": "The Ewens Sampling Formula",
+        "heading_path": [
+          "4.4 THE INFINITE-ALLELES MODEL",
+          "The Ewens Sampling Formula"
+        ],
+        "source_pages": [
+          181
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p017:b7"
+        ],
+        "source_bboxes": [
+          [
+            286,
+            709,
+            602,
+            763
+          ]
+        ]
+      },
+      "context": "ele present six times in the sample, one allele represented four times, two alleles each represented twice, and six alleles each represented only once. Such a description of the sample is called the allelic configuration of the sample. A remarkable finding of Ewens (1972) was that the expected allelic configuration of a sample drawn from a steady-state population obeying the infinite-alleles model under neutral mutation and random genetic drift (measured as $ \\theta = 4N\\mu $) is completely determined by the sample size n and the number of observed alleles k. In particular, Ewens (1972) showed that the expected number k of alleles in a sample of size n is a simple function of $ \\theta $: $$ E(k)=1+\\frac{\\theta}{\\theta+1}+\\frac{\\theta}{\\theta+2}+\\cdots+\\frac{\\theta}{\\theta+n-1} $$\nIf $ \\theta $ is very small, $ E(k) \\approx 1 $, whereas for very large $ \\theta $, $ E(k) $ approaches n, implying that for a large enough population with a high enough mutation rate, every allele that is sampled will be different. The form of Equation 4.12 suggests that, as the sample size increases, more alleles will be found, but that there is a diminishing return in finding new alleles when the sample size increases. When $ E(k) $ is plotted against $ \\theta $ (Figure 4.8), the increase in the expected number of alleles is greatest for larger sample sizes when the population is highly diverse (lar",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 17,
+        "formula_bbox": [
+          286,
+          709,
+          602,
+          763
+        ],
+        "label_bbox": [
+          728,
+          725,
+          783,
+          749
+        ],
+        "api_label": "[4.12]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "4.12",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.4 THE INFINITE-ALLELES MODEL",
+        "The Ewens Sampling Formula"
+      ],
+      "subsection": "The Ewens Sampling Formula",
+      "audit_provenance": {
+        "heading_path": [
+          "4.4 THE INFINITE-ALLELES MODEL",
+          "The Ewens Sampling Formula"
+        ],
+        "subsection": "The Ewens Sampling Formula",
+        "source_pages": [
+          181
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p017:b7"
+        ],
+        "source_bboxes": [
+          [
+            286,
+            709,
+            602,
+            763
+          ]
+        ],
+        "audit_evidence_sha256": "62d0ed8a885d5b703a761b1d1fc36015a6e40a29744dec45991a955cc9263f75"
+      }
+    },
+    {
+      "id": "4.13",
+      "label_format": "[4.13]",
+      "latex": "theta)}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_009",
+        "chapter": "PopGen_chapter4",
+        "subsection": "The Ewens Sampling Formula",
+        "heading_path": [
+          "4.4 THE INFINITE-ALLELES MODEL",
+          "The Ewens Sampling Formula"
+        ],
+        "source_pages": [
+          182
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p018:b9"
+        ],
+        "source_bboxes": [
+          [
+            412,
+            857,
+            754,
+            919
+          ]
+        ]
+      },
+      "context": ", but a larger sample size should yield a greater number of distinct alleles. The curves are not dramatically different for different sample sizes $(n)$, mainly because an increase in sample size reveals a greater number of low-frequency alleles, and low-frequency alleles do not contribute very much to the homozygosity $F$.\nMaking use of Ewen's result, Karlin and McGregor (1972) found an explicit formula for the expected allele frequency configuration in samples. In particular, they showed that the probability that a sample of size n containing k distinct alleles will contain exactly $ n_{1} $ alleles of type 1, $ n_{2} $ alleles of type 2,..., $ n_{k} $ alleles is of type k, is given by $$ \\Pr\\left\\{n_{1},n_{2},\\cdots,n_{k},k\\right\\}=\\frac{n!\\theta^{k}}{k!n_{1}n_{2}\\cdots n_{k}S_{n}(\\theta)} $$ where $S_{n}(\\theta)=\\theta(\\theta+1)(\\theta+2)\\cdots(\\theta+n-1)$. This equation provides the basis for comparing the allele configuration observed in samples with those expected under the infinite-alleles model with neutrality. [See Ewens (2004) for additional and more advanced discussion.]",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 18,
+        "formula_bbox": [
+          412,
+          857,
+          754,
+          919
+        ],
+        "label_bbox": [
+          866,
+          879,
+          922,
+          902
+        ],
+        "api_label": "[4.13]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "4.13",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.4 THE INFINITE-ALLELES MODEL",
+        "The Ewens Sampling Formula"
+      ],
+      "subsection": "The Ewens Sampling Formula",
+      "audit_provenance": {
+        "heading_path": [
+          "4.4 THE INFINITE-ALLELES MODEL",
+          "The Ewens Sampling Formula"
+        ],
+        "subsection": "The Ewens Sampling Formula",
+        "source_pages": [
+          182
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p018:b9"
+        ],
+        "source_bboxes": [
+          [
+            412,
+            857,
+            754,
+            919
+          ]
+        ],
+        "audit_evidence_sha256": "0b50ca7c73b72bc223c9a802f173adce113096ad0b0b8aaae3f4deb0f37d61f3"
+      }
+    },
+    {
+      "id": "4.14",
+      "label_format": "[4.14]",
+      "latex": "right)^{i}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          187
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p023:b9"
+        ],
+        "source_bboxes": [
+          [
+            336,
+            766,
+            552,
+            821
+          ]
+        ]
+      },
+      "context": " mismatches is therefore $ 0 + 4 + 4 + 4 + 4 + 8 = 24 $ among a total of 6 pairwise comparisons, and so in this example $ \\Pi = 24/6 = 4 $. With the concepts of segregating sites and nucleotide mismatches in mind, we can proceed to examine some of the properties of the infinite-sites model of neutral evolution. First, consider a sample consisting of only two sequences. In this case, the number of segregating sites S and the average number of number of nucleotide mismatches $ \\Pi $ are identical, because there is only one pairwise sequence comparison. For a sample of size 2, Watterson (1975) showed that the probability that the number of segregating sites S equals any number i is given by $$ \\Pr\\left\\{S=i\\right\\}=\\frac{1}{\\left(1+\\theta\\right)}\\left(\\frac{\\theta}{1+\\theta}\\right)^{i} $$ where $ \\theta = 4N_e\\mu $. We emphasize that, in this formulation, $ \\mu $ is the mutation rate across the entire nucleotide sequence. (Formally, $ \\mu $ can be considered as the sum of the per-nucleotide mutation rate across all the nucleotide sites present in the sequence.)\nA particular case of Equation 4.14 gives the probability that two sequences have no mismatches $ (i=0) $, and hence are identical. Substituting i=0 into Equation 4.14, we obtain $$ \\Pr\\left\\{S=0\\right\\}=\\frac{1}{1+\\theta} $$\nNote that right-hand side of Equation 4.15 for the infinite-sites model is the same as the right-han",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 23,
+        "formula_bbox": [
+          336,
+          766,
+          552,
+          821
+        ],
+        "label_bbox": [
+          726,
+          779,
+          782,
+          801
+        ],
+        "api_label": "[4.14]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.5
+      },
+      "equation_number": "4.14",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          187
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p023:b9"
+        ],
+        "source_bboxes": [
+          [
+            336,
+            766,
+            552,
+            821
+          ]
+        ],
+        "audit_evidence_sha256": "b8246501d1f142a7cca351c782a650644d8169087a44373beb67cca7725ddd03"
+      }
+    },
+    {
+      "id": "4.15",
+      "label_format": "[4.15]",
+      "latex": "theta}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          188
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p024:b9"
+        ],
+        "source_bboxes": [
+          [
+            508,
+            272,
+            660,
+            314
+          ]
+        ]
+      },
+      "context": " For a sample of size 2, Watterson (1975) showed that the probability that the number of segregating sites S equals any number i is given by $$ \\Pr\\left\\{S=i\\right\\}=\\frac{1}{\\left(1+\\theta\\right)}\\left(\\frac{\\theta}{1+\\theta}\\right)^{i} $$ where $ \\theta = 4N_e\\mu $. We emphasize that, in this formulation, $ \\mu $ is the mutation rate across the entire nucleotide sequence. (Formally, $ \\mu $ can be considered as the sum of the per-nucleotide mutation rate across all the nucleotide sites present in the sequence.)\nA particular case of Equation 4.14 gives the probability that two sequences have no mismatches $ (i=0) $, and hence are identical. Substituting i=0 into Equation 4.14, we obtain $$ \\Pr\\left\\{S=0\\right\\}=\\frac{1}{1+\\theta} $$\nNote that right-hand side of Equation 4.15 for the infinite-sites model is the same as the right-hand side of Equation 4.10 for the steady-state autozygosity in the infinite-alleles model. The reason is that, in a sample of size 2 in both models, the probability that the sequences are identical is also the probability of autozygosity. From Equation 4.14 for a sample of size 2, it can be shown that the mean and variance in the number of segregating sites S are given by $ E(S) = \\theta $ and $ V(S) = \\theta + \\theta^2 $. As noted, for a sample of size 2, the average number of pairwise mismatches $ \\Pi $ is equal to the number of segregating sites, an",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 24,
+        "formula_bbox": [
+          508,
+          272,
+          660,
+          314
+        ],
+        "label_bbox": [
+          867,
+          277,
+          924,
+          300
+        ],
+        "api_label": "[4.15]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "4.15",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          188
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p024:b9"
+        ],
+        "source_bboxes": [
+          [
+            508,
+            272,
+            660,
+            314
+          ]
+        ],
+        "audit_evidence_sha256": "70a4febcb9eb0b970e2ebc5fe17419c24d43faba3d6929189871b61ab769a52d"
+      }
+    },
+    {
+      "id": "4.16",
+      "label_format": "[4.16]",
+      "latex": "E(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b16"
+        ],
+        "source_bboxes": [
+          [
+            386,
+            355,
+            503,
+            414
+          ]
+        ]
+      },
+      "context": "mulated set of data with no recombination (larger variance, black bars) and a simulated set of data with free recombination (smaller variance, gray bars). Because of this difference, the relationship between the mean and the variance in the mismatch distribution has been used to make inferences about the extent of intragenic recombination (Hudson 1987, Wakeley 1997).\nImportant sampling properties of the infinite-sites model with neutral evolution and no recombination were first discovered by Watterson (1975), who examined both the number of segregating sites and the average number of pairwise mismatches. The expected number of segregating sites in a sample of size n sequences is given by $$ E(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i} $$\nThis equation was already derived in Chapter 3 (see Equation 3.41) based on the expected total length of the branches in a coalescent tree. Here $ \\theta = 4N_e\\mu $, where $ \\mu $ is the mutation rate across the entire nucleotide sequence. The variance in the number of segregating sites in a sample of size $ n $ equals $$ V(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i}+\\theta^{2}\\sum_{i=1}^{n-1}\\frac{1}{i^{2}} $$\nThis expression for the variance is for the case of no recombination. It turns out that recombination does not affect $ E(S) $, but it reduces $ V(S) $. In the extreme case of free recombination between adjacent nucleotide sites, the number of segre",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          386,
+          355,
+          503,
+          414
+        ],
+        "label_bbox": [
+          728,
+          372,
+          783,
+          395
+        ],
+        "api_label": "[4.16]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "4.16",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b16"
+        ],
+        "source_bboxes": [
+          [
+            386,
+            355,
+            503,
+            414
+          ]
+        ],
+        "audit_evidence_sha256": "523be54c95736815d45a62557b82fca0739971e7f093f3c248a16692caadb16c"
+      }
+    },
+    {
+      "id": "4.17",
+      "label_format": "[4.17]",
+      "latex": "V(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i}+\\theta^{2}\\sum_{i=1}^{n-1}\\frac{1}{i^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b17"
+        ],
+        "source_bboxes": [
+          [
+            338,
+            527,
+            547,
+            587
+          ]
+        ]
+      },
+      "context": ").\nImportant sampling properties of the infinite-sites model with neutral evolution and no recombination were first discovered by Watterson (1975), who examined both the number of segregating sites and the average number of pairwise mismatches. The expected number of segregating sites in a sample of size n sequences is given by $$ E(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i} $$\nThis equation was already derived in Chapter 3 (see Equation 3.41) based on the expected total length of the branches in a coalescent tree. Here $ \\theta = 4N_e\\mu $, where $ \\mu $ is the mutation rate across the entire nucleotide sequence. The variance in the number of segregating sites in a sample of size $ n $ equals $$ V(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i}+\\theta^{2}\\sum_{i=1}^{n-1}\\frac{1}{i^{2}} $$\nThis expression for the variance is for the case of no recombination. It turns out that recombination does not affect $ E(S) $, but it reduces $ V(S) $. In the extreme case of free recombination between adjacent nucleotide sites, the number of segregating sites along the sequence has a Poisson distribution, and in this case the variance equals the mean.\nNow consider the average number of pairwise mismatches $ \\Pi $ among a set of sequences. An important result is that in a sample of size n at steady state, $$ E(\\varPi)=\\theta $$\nHere again in $\\theta = 4N_{e}\\mu$, the symbol $\\mu$ refers to the mutation rate ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          338,
+          527,
+          547,
+          587
+        ],
+        "label_bbox": [
+          725,
+          540,
+          780,
+          563
+        ],
+        "api_label": "[4.17]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.5
+      },
+      "equation_number": "4.17",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b17"
+        ],
+        "source_bboxes": [
+          [
+            338,
+            527,
+            547,
+            587
+          ]
+        ],
+        "audit_evidence_sha256": "f00d4e21e5e5e54f7bc68e16e78bfb7194c95afb2d5c819d1228872d2c800357"
+      }
+    },
+    {
+      "id": "4.18",
+      "label_format": "[4.18]",
+      "latex": "E(\\varPi)=\\theta",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b18"
+        ],
+        "source_bboxes": [
+          [
+            394,
+            770,
+            479,
+            795
+          ]
+        ]
+      },
+      "context": "eotide sequence. The variance in the number of segregating sites in a sample of size $ n $ equals $$ V(S)=\\theta\\sum_{i=1}^{n-1}\\frac{1}{i}+\\theta^{2}\\sum_{i=1}^{n-1}\\frac{1}{i^{2}} $$\nThis expression for the variance is for the case of no recombination. It turns out that recombination does not affect $ E(S) $, but it reduces $ V(S) $. In the extreme case of free recombination between adjacent nucleotide sites, the number of segregating sites along the sequence has a Poisson distribution, and in this case the variance equals the mean.\nNow consider the average number of pairwise mismatches $ \\Pi $ among a set of sequences. An important result is that in a sample of size n at steady state, $$ E(\\varPi)=\\theta $$\nHere again in $\\theta = 4N_{e}\\mu$, the symbol $\\mu$ refers to the mutation rate across the entire nucleotide sequence.\nWhen there is no recombination between nucleotide sites, the variance in II was found by Tajima (1983) to be $$ V(\\Pi)=\\frac{n+1}{3(n-1)}\\theta+\\frac{2(n^{2}+n+3)}{9n(n-1)}\\theta^{2} $$ where $ \\theta $ is defined as in Equation 4.18. Again, recombination reduces the variance in the average number of pairwise mismatches (see Figure 4.13 for the case n = 2). It is not difficult to see intuitively why the variance is reduced—recombination shuffles the variation among alleles, reducing the average number of sites by which random pairs of alleles differ. Wak",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          394,
+          770,
+          479,
+          795
+        ],
+        "label_bbox": [
+          721,
+          774,
+          777,
+          798
+        ],
+        "api_label": "[4.18]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.5
+      },
+      "equation_number": "4.18",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b18"
+        ],
+        "source_bboxes": [
+          [
+            394,
+            770,
+            479,
+            795
+          ]
+        ],
+        "audit_evidence_sha256": "2f577f84578c840fac0aa44962ff376e2eccd89531355426df892e542524a186"
+      }
+    },
+    {
+      "id": "4.19",
+      "label_format": "[4.19]",
+      "latex": "V(\\Pi)=\\frac{n+1}{3(n-1)}\\theta+\\frac{2(n^{2}+n+3)}{9n(n-1)}\\theta^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_011",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b19"
+        ],
+        "source_bboxes": [
+          [
+            283,
+            913,
+            585,
+            970
+          ]
+        ]
+      },
+      "context": "n. It turns out that recombination does not affect $ E(S) $, but it reduces $ V(S) $. In the extreme case of free recombination between adjacent nucleotide sites, the number of segregating sites along the sequence has a Poisson distribution, and in this case the variance equals the mean.\nNow consider the average number of pairwise mismatches $ \\Pi $ among a set of sequences. An important result is that in a sample of size n at steady state, $$ E(\\varPi)=\\theta $$\nHere again in $\\theta = 4N_{e}\\mu$, the symbol $\\mu$ refers to the mutation rate across the entire nucleotide sequence.\nWhen there is no recombination between nucleotide sites, the variance in II was found by Tajima (1983) to be $$ V(\\Pi)=\\frac{n+1}{3(n-1)}\\theta+\\frac{2(n^{2}+n+3)}{9n(n-1)}\\theta^{2} $$ where $ \\theta $ is defined as in Equation 4.18. Again, recombination reduces the variance in the average number of pairwise mismatches (see Figure 4.13 for the case n = 2). It is not difficult to see intuitively why the variance is reduced—recombination shuffles the variation among alleles, reducing the average number of sites by which random pairs of alleles differ. Wakeley (1997) gives a more advanced treatment of this subject.\n[[TABLE:4.1]]",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          283,
+          913,
+          585,
+          970
+        ],
+        "label_bbox": [
+          719,
+          925,
+          774,
+          948
+        ],
+        "api_label": "[4.19]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "4.19",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          189
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p025:b19"
+        ],
+        "source_bboxes": [
+          [
+            283,
+            913,
+            585,
+            970
+          ]
+        ],
+        "audit_evidence_sha256": "faa8d666d130b4cc490d659e7e4d754d6cf278793f6f6e9739a9cfa03975a6bc"
+      }
+    },
+    {
+      "id": "4.2",
+      "label_format": "[4.2]",
+      "latex": "p_{t}=p_{t-1}(1-\\mu)+(1-p_{t-1})\\nu",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_004",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Irreversible Mutation",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b13"
+        ],
+        "source_bboxes": [
+          [
+            450,
+            603,
+            690,
+            630
+          ]
+        ]
+      },
+      "context": "les from forward mutation is exactly offset by the gain of A alleles from reverse mutation.\nTo deduce the point of equilibrium, suppose that the rate of forward mutation from A to a is $ \\mu $ per generation and that the rate of reverse mutation from a to A is v per generation. Let $ p_t $ and $ q_t $ denote the allele frequencies of A and a in generation t, so that $ p_t + q_t = 1 $: An A allele in generation t can originate in either of two ways. It could have been an A allele in generation t - 1 that escaped mutation to a (which happens with probability $ 1 - \\mu $), or it could have been an a allele in generation t - 1 that mutated to A (which happens with probability v). In symbols, $$ p_{t}=p_{t-1}(1-\\mu)+(1-p_{t-1})\\nu $$\nTo solve this equation for $ p_{t} $, note that Equation 4.2 can be written in the form $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{t-1}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v) $$ Because the relation between $ p_{t-1} $ and $ p_{t-2} $ is the same as that between $ p_{t} $ and $ p_{t-1} $, the solution to Equation 4.3 is obtained by successive substitutions as $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{0}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v)^{t} $$\nTo understand what happens to the allele frequency in the long run, consider Equation 4.4 in the case when $t$ is very large, for example $10^5$ or $10^6$ generations. Even though $1 - \\mu - v$ is ordinarily close to $1$, the value of $t$.",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 6,
+        "formula_bbox": [
+          450,
+          603,
+          690,
+          630
+        ],
+        "label_bbox": [
+          868,
+          602,
+          912,
+          625
+        ],
+        "api_label": "[4.2]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "4.2",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "Irreversible Mutation"
+      ],
+      "subsection": "Irreversible Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "subsection": "Irreversible Mutation",
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b13"
+        ],
+        "source_bboxes": [
+          [
+            450,
+            603,
+            690,
+            630
+          ]
+        ],
+        "audit_evidence_sha256": "fb7b4e0c9a79e3f7c8ad5283429af0557bf566fa566e47ebf7251448d12da054"
+      }
+    },
+    {
+      "id": "4.20",
+      "label_format": "[4.20]",
+      "latex": "E(S^{*})=E(S)\\;/\\;L\\quad V(S^{*})=V(S)\\;/\\;L^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_012",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Nucleotide Polymorphism and Nucleotide Diversity"
+        ],
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b16"
+        ],
+        "source_bboxes": [
+          [
+            436,
+            411,
+            733,
+            439
+          ]
+        ]
+      },
+      "context": "One limitation of S and $ \\Pi $ as measures of nucleotide variation in a population is that each quantity depends on the length of the sequences that are compared; these differ from gene to gene and from one study to another. The dependence on sequence length can be eliminated by expressing both the number of segregating sites S and the average number of pairwise mismatches II as a proportion of the total number of sites. To be specific, suppose that a sample consists of n aligned sequences each of length L. Then the proportion of segregating sites among all sites compared equals S/L. There is no established symbol for this quantity, but it is sometimes called the nucleotide polymorphism. For the sake of consistency, we shall denote the nucleotide polymorphism by the symbol $ S^{*} $, so that $ S^{*} = S/L $. Since L is a constant, it follows that the mean and variance of $ S^{*} $ are given by $$ E(S^{*})=E(S)\\;/\\; L\\quad V(S^{*})=V(S)\\;/\\; L^{2} $$\nExpressions for $ E(S) $ and $ V(S) $ in the case of no recombination are found in Equations 4.16 and 4.17. Although $ S^{*} $ does not depend on the sequence length, it does depend on the sample size, as is evident from Equation 4.16. On the other hand, the dependence on sample size is fairly weak unless the samples are very small (see [[SEE_TABLE:1.2]]).\nSimilarly, the average proportion of pairwise mismatches in sequences of len",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          436,
+          411,
+          733,
+          439
+        ],
+        "label_bbox": [
+          865,
+          411,
+          921,
+          434
+        ],
+        "api_label": "[4.20]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "4.20",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Nucleotide Polymorphism and Nucleotide Diversity"
+      ],
+      "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Nucleotide Polymorphism and Nucleotide Diversity"
+        ],
+        "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b16"
+        ],
+        "source_bboxes": [
+          [
+            436,
+            411,
+            733,
+            439
+          ]
+        ],
+        "audit_evidence_sha256": "b1d3bdd19cf8596b1671894fc240ff25b55494581fe9bdcc6cf85fe25056b99b"
+      }
+    },
+    {
+      "id": "4.21",
+      "label_format": "[4.21]",
+      "latex": "E(\\pi)=E(\\Pi)/L\\quad V(\\pi)=V(\\Pi)/L^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_012",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Nucleotide Polymorphism and Nucleotide Diversity"
+        ],
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b17"
+        ],
+        "source_bboxes": [
+          [
+            429,
+            676,
+            737,
+            704
+          ]
+        ]
+      },
+      "context": "d V(S^{*})=V(S)\\;/\\; L^{2} $$\nExpressions for $ E(S) $ and $ V(S) $ in the case of no recombination are found in Equations 4.16 and 4.17. Although $ S^{*} $ does not depend on the sequence length, it does depend on the sample size, as is evident from Equation 4.16. On the other hand, the dependence on sample size is fairly weak unless the samples are very small (see [[SEE_TABLE:1.2]]).\nSimilarly, the average proportion of pairwise mismatches in sequences of length L is given by $ \\Pi/L $. This quantity does have an established symbol, namely $ \\pi = \\Pi/L $, and it is called the nucleotide diversity (Nei and Li 1979). Because L is a constant, the mean and variance of $ \\pi $ are given by $$ E(\\pi)=E(\\Pi)/L\\quad V(\\pi)=V(\\Pi)/L^{2} $$\nExpressions for $ E(\\Pi) $ and $ V(\\Pi) $ in the case of no recombination are given in Equations 4.18 and 4.19.",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          429,
+          676,
+          737,
+          704
+        ],
+        "label_bbox": [
+          866,
+          677,
+          923,
+          699
+        ],
+        "api_label": "[4.21]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.0
+      },
+      "equation_number": "4.21",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Nucleotide Polymorphism and Nucleotide Diversity"
+      ],
+      "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Nucleotide Polymorphism and Nucleotide Diversity"
+        ],
+        "subsection": "Nucleotide Polymorphism and Nucleotide Diversity",
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b17"
+        ],
+        "source_bboxes": [
+          [
+            429,
+            676,
+            737,
+            704
+          ]
+        ],
+        "audit_evidence_sha256": "70a7340b3e8c3ea24c372ae74d4f158dc9880e0501261061df1dbd68d7dc5c3c"
+      }
+    },
+    {
+      "id": "4.22",
+      "label_format": "[4.22]",
+      "latex": "frac{1}{n-1}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_013",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Tajima's D Statistic",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b18"
+        ],
+        "source_bboxes": [
+          [
+            451,
+            869,
+            717,
+            925
+          ]
+        ]
+      },
+      "context": "Equation 4.16 provides a method for estimating the parameter $ \\theta = 4N\\mu $ based on the number of segregating sites in a sample S. If we define $$ \\alpha=\\sum_{i=1}^{n-1}\\frac{1}{i}=1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n-1} $$ then Equation 4.16 yields the estimate $$ \\hat{\\theta}=S/a $$\nLikewise, Equation 4.18 provides a method for estimating $ \\theta $ based on the average number of pairwise mismatches $ \\Pi $, and in this case the estimate is very direct: $$ \\hat{\\theta}=\\Pi $$\nTajima (1989) proposed that the difference between the estimates of $ \\theta $ in Equations 4.23 and 4.24 could be used as a test of goodness of fit to the infinite-alleles model, and this test has come into widespread use. The rationale is that the number of segregating sites and the average number of pairwise mismatches differ primarily because the former is indifferent to the relative frequencies of the polymorphic nucleotides at a site. The two values lead to consistent estimates for $ \\theta $ anyway, unless some evolutionary process causes a discrepancy from the assumptions of the infinite-alleles model. Tajima's test is based on the difference $ \\Pi - S/a $. If the infinite-alleles model holds (or any discrepancies are too small to invalidate Equations 4.23 and 4.24), then the difference $ \\Pi - S/a $ will equal 0. The major discrepancies occur in two situations: - The frequencies of ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          451,
+          869,
+          717,
+          925
+        ],
+        "label_bbox": [
+          868,
+          881,
+          924,
+          904
+        ],
+        "api_label": "[4.22]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "4.22",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Tajima's D Statistic"
+      ],
+      "subsection": "Tajima's D Statistic",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "subsection": "Tajima's D Statistic",
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b18"
+        ],
+        "source_bboxes": [
+          [
+            451,
+            869,
+            717,
+            925
+          ]
+        ],
+        "audit_evidence_sha256": "fccb8bf9d17813a38265d67e1e5f5d954fbf3786d7c8b45c58165f001247a209"
+      }
+    },
+    {
+      "id": "4.23",
+      "label_format": "[4.23]",
+      "latex": "a",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_013",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Tajima's D Statistic",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b19"
+        ],
+        "source_bboxes": [
+          [
+            547,
+            968,
+            623,
+            994
+          ]
+        ]
+      },
+      "context": "Equation 4.16 provides a method for estimating the parameter $ \\theta = 4N\\mu $ based on the number of segregating sites in a sample S. If we define $$ \\alpha=\\sum_{i=1}^{n-1}\\frac{1}{i}=1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n-1} $$ then Equation 4.16 yields the estimate $$ \\hat{\\theta}=S/a $$\nLikewise, Equation 4.18 provides a method for estimating $ \\theta $ based on the average number of pairwise mismatches $ \\Pi $, and in this case the estimate is very direct: $$ \\hat{\\theta}=\\Pi $$\nTajima (1989) proposed that the difference between the estimates of $ \\theta $ in Equations 4.23 and 4.24 could be used as a test of goodness of fit to the infinite-alleles model, and this test has come into widespread use. The rationale is that the number of segregating sites and the average number of pairwise mismatches differ primarily because the former is indifferent to the relative frequencies of the polymorphic nucleotides at a site. The two values lead to consistent estimates for $ \\theta $ anyway, unless some evolutionary process causes a discrepancy from the assumptions of the infinite-alleles model. Tajima's test is based on the difference $ \\Pi - S/a $. If the infinite-alleles model holds (or any discrepancies are too small to invalidate Equations 4.23 and 4.24), then the difference $ \\Pi - S/a $ will equal 0. The major discrepancies occur in two situations: - The frequencies of ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          547,
+          968,
+          623,
+          994
+        ],
+        "label_bbox": [
+          869,
+          969,
+          924,
+          992
+        ],
+        "api_label": "[4.23]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "4.23",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Tajima's D Statistic"
+      ],
+      "subsection": "Tajima's D Statistic",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "subsection": "Tajima's D Statistic",
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b19"
+        ],
+        "source_bboxes": [
+          [
+            547,
+            968,
+            623,
+            994
+          ]
+        ],
+        "audit_evidence_sha256": "a8cce26673f10860b376ca91a025f756b4711d373cf5d44ff1047107f8477b6c"
+      }
+    },
+    {
+      "id": "4.24",
+      "label_format": "[4.24]",
+      "latex": "Pi",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_013",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Tajima's D Statistic",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b20"
+        ],
+        "source_bboxes": [
+          [
+            555,
+            1075,
+            614,
+            1102
+          ]
+        ]
+      },
+      "context": "Equation 4.16 provides a method for estimating the parameter $ \\theta = 4N\\mu $ based on the number of segregating sites in a sample S. If we define $$ \\alpha=\\sum_{i=1}^{n-1}\\frac{1}{i}=1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n-1} $$ then Equation 4.16 yields the estimate $$ \\hat{\\theta}=S/a $$\nLikewise, Equation 4.18 provides a method for estimating $ \\theta $ based on the average number of pairwise mismatches $ \\Pi $, and in this case the estimate is very direct: $$ \\hat{\\theta}=\\Pi $$\nTajima (1989) proposed that the difference between the estimates of $ \\theta $ in Equations 4.23 and 4.24 could be used as a test of goodness of fit to the infinite-alleles model, and this test has come into widespread use. The rationale is that the number of segregating sites and the average number of pairwise mismatches differ primarily because the former is indifferent to the relative frequencies of the polymorphic nucleotides at a site. The two values lead to consistent estimates for $ \\theta $ anyway, unless some evolutionary process causes a discrepancy from the assumptions of the infinite-alleles model. Tajima's test is based on the difference $ \\Pi - S/a $. If the infinite-alleles model holds (or any discrepancies are too small to invalidate Equations 4.23 and 4.24), then the difference $ \\Pi - S/a $ will equal 0. The major discrepancies occur in two situations: - The frequencies of ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          555,
+          1075,
+          614,
+          1102
+        ],
+        "label_bbox": [
+          869,
+          1078,
+          925,
+          1100
+        ],
+        "api_label": "[4.24]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "4.24",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Tajima's D Statistic"
+      ],
+      "subsection": "Tajima's D Statistic",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "subsection": "Tajima's D Statistic",
+        "source_pages": [
+          190
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p026:b20"
+        ],
+        "source_bboxes": [
+          [
+            555,
+            1075,
+            614,
+            1102
+          ]
+        ],
+        "audit_evidence_sha256": "f36bc77b11f0b00b274147c4d578533f1d2d84dd1bad1cbd28f3040e806c1249"
+      }
+    },
+    {
+      "id": "4.25",
+      "label_format": "[4.25]",
+      "latex": "D=\\frac{\\prod-S/a}{\\sqrt{V(\\prod-S/a)}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_013",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Tajima's D Statistic",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "source_pages": [
+          192
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p028:b9"
+        ],
+        "source_bboxes": [
+          [
+            511,
+            526,
+            660,
+            582
+          ]
+        ]
+      },
+      "context": "ore often it suggests that the singletons represent slightly deleterious alleles held at low frequency by selection. When this is observed for nonsynonymous nucleotide polymorphisms in protein-coding regions, it is usually interpreted to imply that many amino acid polymorphisms are slightly deleterious and held at low frequency in the population by a balance between selection tending to drive them out and recurrent mutation producing new deleterious alleles.\nTajima’s (1989) test is actually based on a normalized version of II – S/a, where the magnitude of the difference is expressed as a multiple of the standard deviation of the difference. The resulting statistic is known as Tajima’s D: $$ D=\\frac{\\prod-S/a}{\\sqrt{V(\\prod-S/a)}} $$\nAn explicit formula for the denominator in Equation 4.25 can be found in Tajima's paper. The original intent was that the statistical significance of any observed value of Tajima's D could be based on the mean and variance of the distribution of $ \\Pi - S/a $. But the distribution of $ \\Pi - S/a $ is very complex, and at the present time most tests of significance are based on comparing an observed value of Tajima's D against simulated values obtained from coalescent simulations as described in the answer to Problem 4.4.",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          511,
+          526,
+          660,
+          582
+        ],
+        "label_bbox": [
+          866,
+          542,
+          922,
+          565
+        ],
+        "api_label": "[4.25]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "4.25",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "Tajima's D Statistic"
+      ],
+      "subsection": "Tajima's D Statistic",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "Tajima's D Statistic"
+        ],
+        "subsection": "Tajima's D Statistic",
+        "source_pages": [
+          192
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p028:b9"
+        ],
+        "source_bboxes": [
+          [
+            511,
+            526,
+            660,
+            582
+          ]
+        ],
+        "audit_evidence_sha256": "e8d33ae3c803c976a5a3b3856cfec681435bd9a87f0f0c9744a84dc0ddd19ebc"
+      }
+    },
+    {
+      "id": "4.26",
+      "label_format": "[4.26]",
+      "latex": "E(\\eta_{e})=4N_{e}\\mu=\\theta",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_014",
+        "chapter": "PopGen_chapter4",
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "source_pages": [
+          194
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p030:b13"
+        ],
+        "source_bboxes": [
+          [
+            515,
+            1180,
+            669,
+            1208
+          ]
+        ]
+      },
+      "context": "on polymorphisms in the sample allow a comparison of the total lengths of the external and internal branches of the coalescent tree.\nTo do this comparison, we need to consider where mutations may occur along the branches, and for this purpose let $ \\mu $ represent the rate of mutation along the total length of the DNA sequence in each sampled allele, and as usual let $ \\theta = 4N_e\\mu $. The number of mutations along the external branches is usually denoted $ \\eta_e $, and its expected value is given by the product of the expected external branch lengths and the mutation rate, or $ 4N_e \\times \\mu $. In other words the expected number of singleton polymorphisms in the sample is given by $$ E(\\eta_{e})=4N_{e}\\mu=\\theta $$\nLetting $ \\eta_{i} $ denote the number of mutations along the internal branches, simi- lar reasoning indicates that the expected number of nonsingleton polymorphisms in the sample is given by $$ E(\\eta_{i})=(a-1)4N_{e}\\mu=(a-1)\\theta $$\nEquations 4.26 and 4.27 yield estimated $ \\theta $ based either on the number of singleton polymorphisms or the number of nonsingleton polymorphism. Furthermore, for samples sizes of about 10 or greater, $ \\eta_{e} $ and $ \\eta_{i} $ are nearly independent of one another (Li 1997).\nThe Fu and Li (1993) test is based on the difference between the two estimates of $ \\theta $ implied by Equations 4.26 and 4.27, namely, $$ G=\\frac{",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 30,
+        "formula_bbox": [
+          515,
+          1180,
+          669,
+          1208
+        ],
+        "label_bbox": [
+          874,
+          1181,
+          929,
+          1205
+        ],
+        "api_label": "[4.26]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "4.26",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "The Fu and Li Test of Fit to Neutral Coalescence"
+      ],
+      "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "source_pages": [
+          194
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p030:b13"
+        ],
+        "source_bboxes": [
+          [
+            515,
+            1180,
+            669,
+            1208
+          ]
+        ],
+        "audit_evidence_sha256": "a701b2ef0db0d6641da3c78b1b7b9887cab5775202efabcded2c416cc165e393"
+      }
+    },
+    {
+      "id": "4.27",
+      "label_format": "[4.27]",
+      "latex": "E(\\eta_{i})=(a-1)4N_{e}\\mu=(a-1)\\theta",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_014",
+        "chapter": "PopGen_chapter4",
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b11"
+        ],
+        "source_bboxes": [
+          [
+            326,
+            237,
+            576,
+            265
+          ]
+        ]
+      },
+      "context": "or this purpose let $ \\mu $ represent the rate of mutation along the total length of the DNA sequence in each sampled allele, and as usual let $ \\theta = 4N_e\\mu $. The number of mutations along the external branches is usually denoted $ \\eta_e $, and its expected value is given by the product of the expected external branch lengths and the mutation rate, or $ 4N_e \\times \\mu $. In other words the expected number of singleton polymorphisms in the sample is given by $$ E(\\eta_{e})=4N_{e}\\mu=\\theta $$\nLetting $ \\eta_{i} $ denote the number of mutations along the internal branches, simi- lar reasoning indicates that the expected number of nonsingleton polymorphisms in the sample is given by $$ E(\\eta_{i})=(a-1)4N_{e}\\mu=(a-1)\\theta $$\nEquations 4.26 and 4.27 yield estimated $ \\theta $ based either on the number of singleton polymorphisms or the number of nonsingleton polymorphism. Furthermore, for samples sizes of about 10 or greater, $ \\eta_{e} $ and $ \\eta_{i} $ are nearly independent of one another (Li 1997).\nThe Fu and Li (1993) test is based on the difference between the two estimates of $ \\theta $ implied by Equations 4.26 and 4.27, namely, $$ G=\\frac{\\eta_{e}-\\eta_{i}/(a-1)}{\\sqrt{V[\\eta_{e}-\\eta_{i}/(a-1)]}} $$ where G is the test statistic and V indicates the variance. As with other such tests, perhaps the best way to obtain a P-value is to estimate the null distribution ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 31,
+        "formula_bbox": [
+          326,
+          237,
+          576,
+          265
+        ],
+        "label_bbox": [
+          731,
+          242,
+          788,
+          265
+        ],
+        "api_label": "[4.27]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "4.27",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "The Fu and Li Test of Fit to Neutral Coalescence"
+      ],
+      "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b11"
+        ],
+        "source_bboxes": [
+          [
+            326,
+            237,
+            576,
+            265
+          ]
+        ],
+        "audit_evidence_sha256": "4dd3774b37a67baa15874678a07ef0d28e1c48b3d32cedfdc7b36b4d8fd1e231"
+      }
+    },
+    {
+      "id": "4.28",
+      "label_format": "[4.28]",
+      "latex": "G=\\frac{\\eta_{e}-\\eta_{i}/(a-1)}{\\sqrt{V[\\eta_{e}-\\eta_{i}/(a-1)]}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_014",
+        "chapter": "PopGen_chapter4",
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b12"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            428,
+            548,
+            486
+          ]
+        ]
+      },
+      "context": "n by $$ E(\\eta_{e})=4N_{e}\\mu=\\theta $$\nLetting $ \\eta_{i} $ denote the number of mutations along the internal branches, simi- lar reasoning indicates that the expected number of nonsingleton polymorphisms in the sample is given by $$ E(\\eta_{i})=(a-1)4N_{e}\\mu=(a-1)\\theta $$\nEquations 4.26 and 4.27 yield estimated $ \\theta $ based either on the number of singleton polymorphisms or the number of nonsingleton polymorphism. Furthermore, for samples sizes of about 10 or greater, $ \\eta_{e} $ and $ \\eta_{i} $ are nearly independent of one another (Li 1997).\nThe Fu and Li (1993) test is based on the difference between the two estimates of $ \\theta $ implied by Equations 4.26 and 4.27, namely, $$ G=\\frac{\\eta_{e}-\\eta_{i}/(a-1)}{\\sqrt{V[\\eta_{e}-\\eta_{i}/(a-1)]}} $$ where G is the test statistic and V indicates the variance. As with other such tests, perhaps the best way to obtain a P-value is to estimate the null distribution of G from neutral coalescent simulations and then compare the observed value of G with the simulated values.\nFu and Li (1993) suggest that G might be a useful test statistic in cases in which most new mutations are deleterious, because in such cases the number of singletons will be increased relative to the number of nonsingletons. The reasoning is that if most new mutations are harmful, they may appear in samples as singletons, but most of them will be elimina",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 31,
+        "formula_bbox": [
+          351,
+          428,
+          548,
+          486
+        ],
+        "label_bbox": [
+          730,
+          439,
+          785,
+          463
+        ],
+        "api_label": "[4.28]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.0
+      },
+      "equation_number": "4.28",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "The Fu and Li Test of Fit to Neutral Coalescence"
+      ],
+      "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b12"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            428,
+            548,
+            486
+          ]
+        ],
+        "audit_evidence_sha256": "b226db0d7e24c79fca4ed32d8293f8f74961692f65d41183d5779dc8f69c71ab"
+      }
+    },
+    {
+      "id": "4.3",
+      "label_format": "[4.3]",
+      "latex": "p_{t}-\\frac{v}{\\mu+v}=\\left(p_{t-1}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_004",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Irreversible Mutation",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b14"
+        ],
+        "source_bboxes": [
+          [
+            410,
+            678,
+            729,
+            735
+          ]
+        ]
+      },
+      "context": "ppose that the rate of forward mutation from A to a is $ \\mu $ per generation and that the rate of reverse mutation from a to A is v per generation. Let $ p_t $ and $ q_t $ denote the allele frequencies of A and a in generation t, so that $ p_t + q_t = 1 $: An A allele in generation t can originate in either of two ways. It could have been an A allele in generation t - 1 that escaped mutation to a (which happens with probability $ 1 - \\mu $), or it could have been an a allele in generation t - 1 that mutated to A (which happens with probability v). In symbols, $$ p_{t}=p_{t-1}(1-\\mu)+(1-p_{t-1})\\nu $$\nTo solve this equation for $ p_{t} $, note that Equation 4.2 can be written in the form $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{t-1}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v) $$ Because the relation between $ p_{t-1} $ and $ p_{t-2} $ is the same as that between $ p_{t} $ and $ p_{t-1} $, the solution to Equation 4.3 is obtained by successive substitutions as $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{0}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v)^{t} $$\nTo understand what happens to the allele frequency in the long run, consider Equation 4.4 in the case when $t$ is very large, for example $10^5$ or $10^6$ generations. Even though $1 - \\mu - v$ is ordinarily close to $1$, the value of $t$. eventually becomes so large that $(1 - \\mu - v)^t$ becomes approximately 0. Thus, the whole right-hand term in Equation 4.4 goes ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 6,
+        "formula_bbox": [
+          410,
+          678,
+          729,
+          735
+        ],
+        "label_bbox": [
+          868,
+          693,
+          912,
+          716
+        ],
+        "api_label": "[4.3]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.0
+      },
+      "equation_number": "4.3",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "Irreversible Mutation"
+      ],
+      "subsection": "Irreversible Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "subsection": "Irreversible Mutation",
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b14"
+        ],
+        "source_bboxes": [
+          [
+            410,
+            678,
+            729,
+            735
+          ]
+        ],
+        "audit_evidence_sha256": "0d64f325ac4230bedeebac7a3fd6d03a009996c0d82094b31a5bfafdd7839319"
+      }
+    },
+    {
+      "id": "4.4",
+      "label_format": "[4.4]",
+      "latex": "p_{t}-\\frac{v}{\\mu+v}=\\left(p_{0}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v)^{t}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_004",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Irreversible Mutation",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b15"
+        ],
+        "source_bboxes": [
+          [
+            414,
+            794,
+            725,
+            850
+          ]
+        ]
+      },
+      "context": "An A allele in generation t can originate in either of two ways. It could have been an A allele in generation t - 1 that escaped mutation to a (which happens with probability $ 1 - \\mu $), or it could have been an a allele in generation t - 1 that mutated to A (which happens with probability v). In symbols, $$ p_{t}=p_{t-1}(1-\\mu)+(1-p_{t-1})\\nu $$\nTo solve this equation for $ p_{t} $, note that Equation 4.2 can be written in the form $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{t-1}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v) $$ Because the relation between $ p_{t-1} $ and $ p_{t-2} $ is the same as that between $ p_{t} $ and $ p_{t-1} $, the solution to Equation 4.3 is obtained by successive substitutions as $$ p_{t}-\\frac{v}{\\mu+v}=\\left(p_{0}-\\frac{v}{\\mu+v}\\right)(1-\\mu-v)^{t} $$\nTo understand what happens to the allele frequency in the long run, consider Equation 4.4 in the case when $t$ is very large, for example $10^5$ or $10^6$ generations. Even though $1 - \\mu - v$ is ordinarily close to $1$, the value of $t$. eventually becomes so large that $(1 - \\mu - v)^t$ becomes approximately 0. Thus, the whole right-hand term in Equation 4.4 goes to 0, and so $p_t$ eventually attains a value that remains the same generation after generation. Such a value of $p$ is called an equilibrium value, which we will denote by $\\hat{p}$. In case of reversible mutation, the equilibrium is found by equating the l",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 6,
+        "formula_bbox": [
+          414,
+          794,
+          725,
+          850
+        ],
+        "label_bbox": [
+          868,
+          810,
+          912,
+          832
+        ],
+        "api_label": "[4.4]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "4.4",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "Irreversible Mutation"
+      ],
+      "subsection": "Irreversible Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "subsection": "Irreversible Mutation",
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b15"
+        ],
+        "source_bboxes": [
+          [
+            414,
+            794,
+            725,
+            850
+          ]
+        ],
+        "audit_evidence_sha256": "8aae051ddac009db09e57e9394a591fcd686d7d37ffc5d4fe85db3d1f5a5a165"
+      }
+    },
+    {
+      "id": "4.5",
+      "label_format": "[4.5]",
+      "latex": "mu+v}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_004",
+        "chapter": "PopGen_chapter4",
+        "subsection": "Irreversible Mutation",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b16"
+        ],
+        "source_bboxes": [
+          [
+            528,
+            1087,
+            617,
+            1136
+          ]
+        ]
+      },
+      "context": "ht)(1-\\mu-v)^{t} $$\nTo understand what happens to the allele frequency in the long run, consider Equation 4.4 in the case when $t$ is very large, for example $10^5$ or $10^6$ generations. Even though $1 - \\mu - v$ is ordinarily close to $1$, the value of $t$. eventually becomes so large that $(1 - \\mu - v)^t$ becomes approximately 0. Thus, the whole right-hand term in Equation 4.4 goes to 0, and so $p_t$ eventually attains a value that remains the same generation after generation. Such a value of $p$ is called an equilibrium value, which we will denote by $\\hat{p}$. In case of reversible mutation, the equilibrium is found by equating the left-hand side of Equation 4.4 to 0, and therefore $$ \\hat{p}=\\frac{v}{\\mu+v} $$\nThere is a simple intuitive explanation as to why Equation 4.5 gives the equilibrium with reversible mutation. Since A alleles become a alleles at a rate $ \\mu $ per generation, and a alleles revert to A alleles at a rate $ \\nu $ per generation, at equilibrium one might expect the ratio of allele frequencies to be the recipro- cal of the ratio of the mutation rates, or $ \\hat{p}/\\hat{q}=v/\\mu $. Because $ \\hat{q}=1-\\hat{p} $, this reasoning implies that $ \\hat{p}=v/(\\mu+v) $, as verified in Equation 4.5.\nThe manner in which $ p_t $ converges to its equilibrium value is shown in Figure 4.4 for the case $ \\mu = 10^{-4} $ and $ v = 10^{-5} $. Note that, whatever the i",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 6,
+        "formula_bbox": [
+          528,
+          1087,
+          617,
+          1136
+        ],
+        "label_bbox": [
+          869,
+          1099,
+          913,
+          1121
+        ],
+        "api_label": "[4.5]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "4.5",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "Irreversible Mutation"
+      ],
+      "subsection": "Irreversible Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "Irreversible Mutation"
+        ],
+        "subsection": "Irreversible Mutation",
+        "source_pages": [
+          170
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p006:b16"
+        ],
+        "source_bboxes": [
+          [
+            528,
+            1087,
+            617,
+            1136
+          ]
+        ],
+        "audit_evidence_sha256": "d6f0662ce5d106fb773e060f67ea4b0d3e1ffb4bdab77861e8031296f9119295"
+      }
+    },
+    {
+      "id": "4.6",
+      "label_format": "[4.6]",
+      "latex": "right]^{2N}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_005",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+        ],
+        "source_pages": [
+          172
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p008:b8"
+        ],
+        "source_bboxes": [
+          [
+            467,
+            1193,
+            686,
+            1256
+          ]
+        ]
+      },
+      "context": " allele is terminated. To be precise, in a population of constant size, each allele in generation $ t $ has a chance of approximately $ e^{-1} = 0.368 $ of not being represented in generation $ t + 1 $. To understand why, consider the allele designated $ \\alpha_1 $. The frequency of $ \\alpha_1 $ in the gamete pool is $ 1/(2N) $, and the frequency of all other alleles together is therefore $ 1 - 1/(2N) $. Because the genotypes in generation $ t + 1 $ are formed by the random selection of 2N alleles from the pool of gametes, the distribution of the number of $ \\alpha_1 $ and non- $ \\alpha_1 $ alleles present in generation $ t + 1 $ is given by successive terms in the binomial distribution: $$ \\left[\\frac{1}{2N}\\alpha_{1}+\\left(1-\\frac{1}{2N}\\right)\\alpha\\right]^{2N} $$ in which $ \\alpha $ represents the collection of all alleles other than $ \\alpha_{1} $. Hence, the probability that $ \\alpha_{1} $ is not represented in generation $ t+1 $ is given by $$ \\left(1-\\frac{1}{2N}\\right)^{2N}\\approx e^{-1}=0.368. $$\nThe approximation is very good even when N is quite small. For example, when N = 10, the left-hand side of Equation 4.7 equals 0.358, and, when N = 20, the left-hand side equals 0.363.\nThe important implication of Equation 4.7 is that, owing to random genetic drift, the ancestral lineage of each allele faces a substantial risk of extinction in each generation. As time goes on",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 8,
+        "formula_bbox": [
+          467,
+          1193,
+          686,
+          1256
+        ],
+        "label_bbox": [
+          873,
+          1210,
+          917,
+          1233
+        ],
+        "api_label": "[4.6]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "4.6",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+      ],
+      "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+        ],
+        "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+        "source_pages": [
+          172
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p008:b8"
+        ],
+        "source_bboxes": [
+          [
+            467,
+            1193,
+            686,
+            1256
+          ]
+        ],
+        "audit_evidence_sha256": "ea794310dde9ee21d840b1cd132c93a4576abbfbd781226a03b9af2a56a90be0"
+      }
+    },
+    {
+      "id": "4.7",
+      "label_format": "[4.7]",
+      "latex": "approx e^{-1}=0.368.",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_005",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+        ],
+        "source_pages": [
+          173
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p009:b8"
+        ],
+        "source_bboxes": [
+          [
+            338,
+            1050,
+            563,
+            1108
+          ]
+        ]
+      },
+      "context": ". The frequency of $ \\alpha_1 $ in the gamete pool is $ 1/(2N) $, and the frequency of all other alleles together is therefore $ 1 - 1/(2N) $. Because the genotypes in generation $ t + 1 $ are formed by the random selection of 2N alleles from the pool of gametes, the distribution of the number of $ \\alpha_1 $ and non- $ \\alpha_1 $ alleles present in generation $ t + 1 $ is given by successive terms in the binomial distribution: $$ \\left[\\frac{1}{2N}\\alpha_{1}+\\left(1-\\frac{1}{2N}\\right)\\alpha\\right]^{2N} $$ in which $ \\alpha $ represents the collection of all alleles other than $ \\alpha_{1} $. Hence, the probability that $ \\alpha_{1} $ is not represented in generation $ t+1 $ is given by $$ \\left(1-\\frac{1}{2N}\\right)^{2N}\\approx e^{-1}=0.368. $$\nThe approximation is very good even when N is quite small. For example, when N = 10, the left-hand side of Equation 4.7 equals 0.358, and, when N = 20, the left-hand side equals 0.363.\nThe important implication of Equation 4.7 is that, owing to random genetic drift, the ancestral lineage of each allele faces a substantial risk of extinction in each generation. As time goes on, the lineages progressively disappear, one or a few at a time. Eventually, a time is reached at which all lineages except one have become extinct. At that time, every allele in the population is identical by descent with a particular allele present in an ancestral",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 9,
+        "formula_bbox": [
+          338,
+          1050,
+          563,
+          1108
+        ],
+        "label_bbox": [
+          745,
+          1065,
+          789,
+          1088
+        ],
+        "api_label": "[4.7]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "4.7",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+      ],
+      "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT"
+        ],
+        "subsection": "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+        "source_pages": [
+          173
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p009:b8"
+        ],
+        "source_bboxes": [
+          [
+            338,
+            1050,
+            563,
+            1108
+          ]
+        ],
+        "audit_evidence_sha256": "dae64565abe11c18aa2288bbf0191c5a9f9934d01127f2ec19d2b529f1f4820a"
+      }
+    },
+    {
+      "id": "4.8",
+      "label_format": "[4.8]",
+      "latex": "F_{t}=\\left(\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}+\\left(1-\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}F_{t-1}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_008",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "source_pages": [
+          177
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p013:b6"
+        ],
+        "source_bboxes": [
+          [
+            260,
+            1146,
+            622,
+            1200
+          ]
+        ]
+      },
+      "context": "ability of identity by descent in this case is $(1-\\mu)^2$. Now consider the genotype $\\alpha_i\\alpha_j$. These alleles are identical by descent only if two randomly chosen alleles in generation $t-1$ are identical by descent and if neither allele mutated in the course of one generation. Therefore, the probability of identity by descent in this case is $F_{t-1}(1-\\mu)^2$. Because each of the labeled $\\alpha's$ in Figure 4.5 has the same frequency in the gamete pool, namely $1/(2N)$, the probability of a combination like $\\alpha_i\\alpha_j$ is $1/(2N)$ and the probability of a combination like $\\alpha_i\\alpha_j$ is $1-1/(2N)$. Putting all this together, the recurrence equation for $F_t$ is $$ F_{t}=\\left(\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}+\\left(1-\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}F_{t-1} $$\nEventually an equilibrium value of $F$, call it $\\hat{F}$, is attained in which the increase in autozygosity from random genetic drift in any generation is exactly offset by the decrease in autozygosity from new mutations. The equilibrium can be found by equating $F_t = F_{t-1} = \\hat{F}$ in Equation 4.8 and solving. Ignoring terms in $\\mu^2$ and those in $\\mu/N$ because they are expected to be negligibly small, the solution is $$ \\hat{F}=\\frac{1}{1+4N\\mu} $$ to an excellent approximation. Therefore, the number of selectively neutral alleles increases under mutation pressure unti",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 13,
+        "formula_bbox": [
+          260,
+          1146,
+          622,
+          1200
+        ],
+        "label_bbox": [
+          738,
+          1164,
+          782,
+          1187
+        ],
+        "api_label": "[4.8]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "4.8",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.4 THE INFINITE-ALLELES MODEL"
+      ],
+      "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "source_pages": [
+          177
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p013:b6"
+        ],
+        "source_bboxes": [
+          [
+            260,
+            1146,
+            622,
+            1200
+          ]
+        ],
+        "audit_evidence_sha256": "5d344be9079987d3aed76fb97be028c9af8cf9cacb0007213421b415b4e77319"
+      }
+    },
+    {
+      "id": "4.9",
+      "label_format": "[4.9]",
+      "latex": "mu}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter4_008",
+        "chapter": "PopGen_chapter4",
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b10"
+        ],
+        "source_bboxes": [
+          [
+            517,
+            332,
+            628,
+            380
+          ]
+        ]
+      },
+      "context": "1/(2N)$ and the probability of a combination like $\\alpha_i\\alpha_j$ is $1-1/(2N)$. Putting all this together, the recurrence equation for $F_t$ is $$ F_{t}=\\left(\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}+\\left(1-\\frac{1}{2N}\\right)\\left(1-\\mu\\right)^{2}F_{t-1} $$\nEventually an equilibrium value of $F$, call it $\\hat{F}$, is attained in which the increase in autozygosity from random genetic drift in any generation is exactly offset by the decrease in autozygosity from new mutations. The equilibrium can be found by equating $F_t = F_{t-1} = \\hat{F}$ in Equation 4.8 and solving. Ignoring terms in $\\mu^2$ and those in $\\mu/N$ because they are expected to be negligibly small, the solution is $$ \\hat{F}=\\frac{1}{1+4N\\mu} $$ to an excellent approximation. Therefore, the number of selectively neutral alleles increases under mutation pressure until $ \\hat{F} $ satisfies Equation 4.9. Since it is the equilibrium value of the probability of identity by descent, $ \\hat{F} $ is also the equilibrium value of the autozygosity. Because of the assumption in the infinite-alleles model that each allele in the population arises only once, all genotypes that are homozygotes must also be autozygous. Therefore, $ \\hat{F} $ can also be interpreted as the equilibrium value of the proportion of homozygous genotypes.\nIn Equation 4.9, N should be interpreted as the effective population size, $ N_{e} $, d",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter4.pdf",
+        "pdf_page": 14,
+        "formula_bbox": [
+          517,
+          332,
+          628,
+          380
+        ],
+        "label_bbox": [
+          868,
+          341,
+          912,
+          365
+        ],
+        "api_label": "[4.9]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "4.9",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.4 THE INFINITE-ALLELES MODEL"
+      ],
+      "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "source_pages": [
+          178
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p014:b10"
+        ],
+        "source_bboxes": [
+          [
+            517,
+            332,
+            628,
+            380
+          ]
+        ],
+        "audit_evidence_sha256": "724e11fcb7f9b0bc100c9d7190762adcbd7a6ad9b98fc7198ecbcadd92684092"
+      }
+    }
+  ]
+}

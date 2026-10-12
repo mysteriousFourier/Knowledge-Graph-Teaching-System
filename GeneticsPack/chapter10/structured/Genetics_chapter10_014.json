@@ -1,0 +1,117 @@
+{
+  "id": "Genetics_chapter10_014",
+  "metadata": {
+    "chapter": "Genetics_chapter10",
+    "section": "THE NUMBER OF LETHAL EQUIVALENTS",
+    "subsections": [
+      "Results from Plants"
+    ],
+    "section_level_1": "THE NUMBER OF LETHAL EQUIVALENTS",
+    "section_level_2": "Results from Plants",
+    "heading_path": [
+      "THE NUMBER OF LETHAL EQUIVALENTS",
+      "Results from Plants"
+    ],
+    "display_heading": "THE NUMBER OF LETHAL EQUIVALENTS / Results from Plants",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 295,
+      "printed_page": 275,
+      "source_block_ids": [
+        "p295:b7"
+      ],
+      "bbox": [
+        53.0,
+        1282.0,
+        304.0,
+        1317.0
+      ],
+      "raw_text": "Results from Plants"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Equation 10.21b has been used extensively in estimating the number of lethal equivalents in coniferous trees of economic importance. The usual approach has been to compare self-pollinations to outcrosses using a mixture of pollen from several distant trees. Most of the emphasis has been on embryonic mortality, which is easily assayed by counting unfilled seeds. The number of lethal equivalents expressed at this stage is exceptionally high, ranging from one to five per gamete (Table 10.6). Most studies show a high variance in the number of lethal equivalents per individual, with few individuals completely free of them and some carrying as many as 30 (Figure 10.10). Longer-term studies (Park and Fowler 1982, 1984, Fowler and Park 1983) indicate that most of the lethal equivalents affecting survival are expressed at the embryonic stage, with approximately one to two additional lethal equivalents per gamete influencing subsequent survivorship. It is conceivable that the extraordinarily high mutation load in conifers is a consequence of their long generation time, which may magnify the mutation rate on a per generation basis. Fundamentally different results arise with short-lived herbaceous plants, where B for probability of germination is consistently less than one",
+      "source_page": 295,
+      "printed_page": 275,
+      "source_block_ids": [
+        "p295:b8",
+        "p296:b5"
+      ],
+      "bbox": [
+        49.0,
+        1323.0,
+        1012.0,
+        1506.0
+      ],
+      "source_page_end": 296
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:10.6]]",
+      "source_page": 296,
+      "printed_page": 276,
+      "source_block_ids": [
+        "p296:b3"
+      ],
+      "bbox": [
+        128.0,
+        203.0,
+        1110.0,
+        1022.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:10.10]]",
+      "source_page": 297,
+      "printed_page": 277,
+      "source_block_ids": [
+        "p297:b3"
+      ],
+      "bbox": [
+        113.0,
+        525.0,
+        978.0,
+        608.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "(Table 10.6). Such plants do, however, express additional lethal equivalents in the form of survival to maturity and reproductive performance (see Charlesworth and Charlesworth 1987 for a summary).",
+      "source_page": 297,
+      "printed_page": 277,
+      "source_block_ids": [
+        "p297:b4"
+      ],
+      "bbox": [
+        62.0,
+        648.0,
+        1022.0,
+        769.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Hedrick (1987b) has reviewed the extensive literature on genetic load in ferns. The majority of studies have been performed by selfing gametophytes and counting the proportion of spores that germinate, ignoring the load expressed subsequent to germination. Again, the mean number of lethal equivalents per gamete, which ranges from 0 to 1.3, appears to be substantially lower than that found in conifers. Although the fern data are still limited, they suggest that the species-specific loads are inversely proportional to the frequency of self-fertilization in nature, as expected when inbreeding purges lethals from a population.",
+      "source_page": 297,
+      "printed_page": 277,
+      "source_block_ids": [
+        "p297:b5"
+      ],
+      "bbox": [
+        55.0,
+        746.0,
+        1020.0,
+        1030.0
+      ]
+    }
+  ]
+}

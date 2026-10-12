@@ -1,0 +1,239 @@
+{
+  "id": "Genetics_chapter3_009",
+  "metadata": {
+    "chapter": "Genetics_chapter3",
+    "section": "CORRELATION",
+    "subsections": [],
+    "section_level_1": "CORRELATION",
+    "section_level_2": null,
+    "heading_path": [
+      "CORRELATION"
+    ],
+    "display_heading": "CORRELATION",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 59,
+      "printed_page": 39,
+      "source_block_ids": [
+        "p59:b11"
+      ],
+      "bbox": [
+        42.0,
+        1281.0,
+        255.0,
+        1315.0
+      ],
+      "raw_text": "CORRELATION"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "For purposes of hypothesis testing, it is often desirable to use a dimensionless measure of association. The most frequently used measure in bivariate analysis is the correlation coefficient,",
+      "source_page": 59,
+      "printed_page": 39,
+      "source_block_ids": [
+        "p59:b12"
+      ],
+      "bbox": [
+        38.0,
+        1345.0,
+        998.0,
+        1457.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula032]]",
+      "source_page": 59,
+      "printed_page": 39,
+      "source_block_ids": [
+        "p59:b13"
+      ],
+      "bbox": [
+        352.0,
+        1479.0,
+        673.0,
+        1558.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that $ r(x,y) $ is symmetrical, i.e., $ r(x,y) = r(y,x) $. Thus, where there is no ambiguity as to the variables being considered, we abbreviate $ r(x,y) $ as $ r $. The parametric correlation coefficient is denoted by $ \\rho(x,y) $ (or $ \\rho $) and equals $ \\sigma(x,y)/\\sigma(x)\\sigma(y) $. The least-squares regression coefficient is related to the correlation coefficient by",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b2"
+      ],
+      "bbox": [
+        132.0,
+        119.0,
+        1094.0,
+        302.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula033]]",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b3"
+      ],
+      "bbox": [
+        492.0,
+        290.0,
+        740.0,
+        378.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An advantage of correlations over covariances is that the former are scale independent. This can be seen by noting that if w and c are constants,",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b5"
+      ],
+      "bbox": [
+        142.0,
+        379.0,
+        1098.0,
+        463.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula034]]",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b6"
+      ],
+      "bbox": [
+        179.0,
+        471.0,
+        983.0,
+        557.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thus scaling $x$ and $y$ by constants does not change the correlation coefficient, although the variances and covariances are affected. Since $r$ is dimensionless with limits of $\\pm1$, it gives a direct measure of the degree of association: if $|r|$ is close to one, $x$ and $y$ are very strongly associated in a linear fashion, while if $|r|$ is close to zero, they are not.",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b8"
+      ],
+      "bbox": [
+        145.0,
+        563.0,
+        1106.0,
+        740.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The correlation coefficient has other useful properties. First, $r$ is a standardized regression coefficient (the regression coefficient resulting from rescaling $x$ and $y$ such that each has unit variance). Letting $x' = x / \\sqrt{\\mathrm{Var}(x)}$ and $y' = y / \\sqrt{\\mathrm{Var}(y)}$ gives $\\mathrm{Var}(x') = \\mathrm{Var}(y') = 1$, implying",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b9"
+      ],
+      "bbox": [
+        149.0,
+        725.0,
+        1108.0,
+        874.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula035]]",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b10"
+      ],
+      "bbox": [
+        258.0,
+        883.0,
+        923.0,
+        966.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thus, when variables are standardized, the regression coefficient is equal to the correlation coefficient regardless of whether $ x' $ or $ y' $ is chosen as the predictor variable.",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b12"
+      ],
+      "bbox": [
+        154.0,
+        977.0,
+        1113.0,
+        1084.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Second, the squared correlation coefficient measures the proportion of the variance in y that is explained by assuming that $ E(y|x) $ is linear. The variance of the response variable y has two components: $ r^{2} $ Var(y), the amount of variance accounted for by the linear model (the regression variance), and $ (1 - r^{2}) $ Var(y), the remaining variance not accountable by the regression (the residual variance). To obtain this result, we derive the variance of the residual deviation defined in Equation 3.13a,",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b13"
+      ],
+      "bbox": [
+        155.0,
+        1073.0,
+        1117.0,
+        1280.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula036]]",
+      "source_page": 60,
+      "printed_page": 40,
+      "source_block_ids": [
+        "p60:b14"
+      ],
+      "bbox": [
+        306.0,
+        1289.0,
+        976.0,
+        1548.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter3:2]]",
+      "source_page": 61,
+      "source_block_ids": [
+        "p61:b2",
+        "p61:b3",
+        "p61:b4",
+        "p61:b5",
+        "p61:b6",
+        "p61:b7",
+        "p61:b8",
+        "p61:b9",
+        "p61:b10"
+      ],
+      "bbox": [
+        103.0,
+        198.0,
+        975.0,
+        488.0
+      ]
+    }
+  ]
+}

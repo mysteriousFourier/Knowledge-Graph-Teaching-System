@@ -1,0 +1,212 @@
+{
+  "id": "Genetics_chapter15_017",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+    "subsections": [
+      "Detecting Multiple Linked QTLs Using Standard Marker-Trait Regressions"
+    ],
+    "section_level_1": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+    "section_level_2": "Detecting Multiple Linked QTLs Using Standard Marker-Trait Regressions",
+    "heading_path": [
+      "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+      "Detecting Multiple Linked QTLs Using Standard Marker-Trait Regressions"
+    ],
+    "display_heading": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD / Detecting Multiple Linked QTLs Using Standard Marker-Trait Regressions",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b3"
+      ],
+      "bbox": [
+        75.0,
+        193.0,
+        1036.0,
+        310.0
+      ],
+      "raw_text": "Detecting Multiple Linked QTLs Using Standard Marker-Trait Regressions\nConsider the standard multiple regression of trait value on the single-locus genotypes at each of n markers,"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Consider the standard multiple regression of trait value on the single-locus genotypes at each of n markers,",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b3"
+      ],
+      "bbox": [
+        75.0,
+        193.0,
+        1036.0,
+        310.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula081]]",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b4"
+      ],
+      "bbox": [
+        399.0,
+        357.0,
+        708.0,
+        445.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $j$ indexes the individual being considered, and the $x_{kj}$ are given by Equation 15.28b. A rather remarkable finding, due to Wright and Mowers (1994) and Whittaker et al. (1996), is that the regression coefficients $b_{k}$ for adjacent markers provide information on whether these markers flank a QTL. Further, the $b_{k}$ can be used in many cases to obtain direct estimates of OTL effect and position.",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b6"
+      ],
+      "bbox": [
+        72.0,
+        488.0,
+        1034.0,
+        657.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "When a QTL is isolated — an interval contains a single QTL and both flanking intervals are free of QTLs — the regression coefficients for the two markers immediately flanking the QTL depend only on this QTL and are not influenced by other linked QTLs (Stam 1991, Zeng 1993). A consequence of this finding is that markers flanking a QTL have regression coefficients of the same sign, while markers not adjacent to a QTL (i.e., there is at least one marker in the regression between the marker of interest and the nearest QTL) have expected regression coefficients of zero. Hence, one can simply scan the regression coefficients to see which intervals show support for a OTL (see Example 10).",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b7"
+      ],
+      "bbox": [
+        68.0,
+        650.0,
+        1033.0,
+        948.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Whittaker et al. (1996) further show, for an isolated additive QTL, that the regression coefficients for the flanking markers can be directly used to estimate QTL effect and position. Suppose the markers i and $ i+1 $ flank an isolated QTL. Whittaker et al. found that for an $ F_{2} $ population, the estimated distance from marker i to the QTL is",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b8"
+      ],
+      "bbox": [
+        66.0,
+        938.0,
+        1029.0,
+        1111.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula082]]",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b9"
+      ],
+      "bbox": [
+        305.0,
+        1154.0,
+        777.0,
+        1247.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\theta_{i}=c_{i,i+1} $ is the distance between the markers. Likewise, an estimate of the QTL's additive effect $ a_{i} $, independent of amount of dominance at this QTL, is given by",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b11"
+      ],
+      "bbox": [
+        60.0,
+        1289.0,
+        1023.0,
+        1398.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula083]]",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b12"
+      ],
+      "bbox": [
+        258.0,
+        1407.0,
+        820.0,
+        1479.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where both $b_{i}$ and $b_{i+1}$ have the same sign as $a$.",
+      "source_page": 481,
+      "printed_page": 461,
+      "source_block_ids": [
+        "p481:b14"
+      ],
+      "bbox": [
+        60.0,
+        1505.0,
+        624.0,
+        1547.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter15:10]]",
+      "source_page": 482,
+      "source_block_ids": [
+        "p482:b2",
+        "p482:b3",
+        "p482:b4",
+        "p482:b5",
+        "p482:b6",
+        "p482:b7",
+        "p483:b2",
+        "p483:b3",
+        "p483:b4"
+      ],
+      "bbox": [
+        172.0,
+        201.0,
+        1036.0,
+        383.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Whittaker et al. (1996) make a final important point that applies to all multiple-QTL methods. Unless a QTL is isolated — it is the only QTL in a particular interval and the flanking intervals lack QTLs — these methods cannot separate out the effects of multiple linked QTLs. In particular, if an interval contains multiple QTLs, we cannot estimate their effects and positions (or even the correct number of QTLs), a point stressed by McMillan and Robertson (1974). (See Example 2 from Chapter 14.) While one obvious solution is simply to increase the marker density to the point where each QTL is indeed isolated, any increase in the marker density must be accompanied by a sufficient increase in sample size to ensure that a sufficient number of recombination events have occurred between adjacent markers.",
+      "source_page": 483,
+      "printed_page": 463,
+      "source_block_ids": [
+        "p483:b5"
+      ],
+      "bbox": [
+        75.0,
+        578.0,
+        1041.0,
+        936.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "Genetics_chapter12_002",
+  "metadata": {
+    "chapter": "Genetics_chapter12",
+    "section": "THE GENETIC BASIS OF QUANTITATIVE-GENETIC VARIATION",
+    "subsections": [],
+    "section_level_1": "THE GENETIC BASIS OF QUANTITATIVE-GENETIC VARIATION",
+    "section_level_2": null,
+    "heading_path": [
+      "THE GENETIC BASIS OF QUANTITATIVE-GENETIC VARIATION"
+    ],
+    "display_heading": "THE GENETIC BASIS OF QUANTITATIVE-GENETIC VARIATION",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 336,
+      "printed_page": 316,
+      "source_block_ids": [
+        "p336:b2"
+      ],
+      "bbox": [
+        130.0,
+        131.0,
+        981.0,
+        168.0
+      ],
+      "raw_text": "THE GENETIC BASIS OF QUANTITATIVE-GENETIC VARIATION"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Problems with the actual molecular characterization of loci aside, precise analysis of the phenotypic effects of individual loci underlying quantitative traits has remained elusive for a purely statistical reason. As noted in Chapter 9, limitations introduced by linkage restrict analysis to effective factors (linked regions of the genome that may contain several loci influencing the trait), which can lead to biased estimates of the effects of individual loci. For example, if a factor contains linked loci at which alleles influencing character expression are in coupling phase (++ and --), the effects of individual loci will be overestimated, while if the alleles are in repulsion phase (+- and --), the effects will be underestimated. The larger the average size of an unrecombined region, the greater the opportunity for bias from lumping the effects of several loci.",
+      "source_page": 336,
+      "printed_page": 316,
+      "source_block_ids": [
+        "p336:b3"
+      ],
+      "bbox": [
+        127.0,
+        196.0,
+        1093.0,
+        552.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Because of this empirical restriction of dealing with factors rather than individual loci, we need a reasonable term for a locus at which segregation contributes to the variance of a quantitative character. Mather (1941) suggested the term polygene for a gene of small effect underlying a character. However, for reasons to be discussed below, the distinction between major genes (sometimes referred to as oligogenes) and polygenes is by no means straightforward. A less ambiguous approach is to refer to a locus underlying a quantitative character as a QTL, for quantitative-trait locus, as suggested by Geldermann (1975).",
+      "source_page": 336,
+      "printed_page": 316,
+      "source_block_ids": [
+        "p336:b4"
+      ],
+      "bbox": [
+        132.0,
+        546.0,
+        1095.0,
+        812.0
+      ]
+    }
+  ]
+}

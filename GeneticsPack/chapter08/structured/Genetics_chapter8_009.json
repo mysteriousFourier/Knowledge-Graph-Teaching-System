@@ -1,0 +1,139 @@
+{
+  "id": "Genetics_chapter8_009",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Multiplication"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Multiplication",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Multiplication"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Multiplication",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    }
+  },
+  "blocks": [
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:2]]",
+      "source_page": 201,
+      "source_block_ids": [
+        "p201:b6",
+        "p201:b7",
+        "p201:b8",
+        "p201:b9",
+        "p201:b10",
+        "p201:b11",
+        "p201:b12",
+        "p201:b13",
+        "p201:b14",
+        "p201:b15"
+      ],
+      "bbox": [
+        113.0,
+        517.0,
+        684.0,
+        548.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Certain dimensional properties must be satisfied when two matrices are to be multiplied. Specifically, since the dot product is defined only for vectors of the same length, for the matrix product MN to be defined, the number of columns in M must equal the number of rows in N. Thus, while",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b2"
+      ],
+      "bbox": [
+        134.0,
+        134.0,
+        1094.0,
+        264.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula030]]",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b3"
+      ],
+      "bbox": [
+        264.0,
+        288.0,
+        782.0,
+        360.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "is undefined.",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b4"
+      ],
+      "bbox": [
+        807.0,
+        304.0,
+        969.0,
+        340.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Writing $ \\mathbf{M}_{r \\times c} \\mathbf{N}_{c \\times b} = \\mathbf{L}_{r \\times b} $ shows that the inner indices must match, while the outer indices (r and b) give the number of rows and columns of the resulting matrix. The order in which matrices are multiplied is critical. In general, AB is not equal to BA. For example, when the order of the matrices in Example 2 is reversed,",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b5"
+      ],
+      "bbox": [
+        137.0,
+        384.0,
+        1095.0,
+        545.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula031]]",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b6"
+      ],
+      "bbox": [
+        299.0,
+        539.0,
+        925.0,
+        641.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Since order is important in matrix multiplication, it has specific terminology. For the product AB, we say that matrix B is premultiplied by the matrix A, or that matrix A is postmultiplied by the matrix B.",
+      "source_page": 202,
+      "printed_page": 182,
+      "source_block_ids": [
+        "p202:b7"
+      ],
+      "bbox": [
+        138.0,
+        653.0,
+        1096.0,
+        754.0
+      ]
+    }
+  ]
+}

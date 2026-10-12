@@ -1,0 +1,1657 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter10",
+  "count": 6,
+  "tables": [
+    {
+      "id": "10.1",
+      "label_format": "Table 10.1",
+      "title": "Table 10.1 Genotypic frequencies and fitnesses under the two dominance hypotheses for inbreeding depression.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Genotype</td><td rowspan=\"2\">Frequency</td><td colspan=\"2\">Fitness</td><td rowspan=\"2\">Phenotype for Arbitrary Character</td></tr><tr><td>Partial Dominance</td><td>Overdominance</td></tr><tr><td>BB</td><td>$ p^{2}(1-f)+pf $</td><td>1</td><td>1-t</td><td>2a</td></tr><tr><td>Bb</td><td>$ 2pq(1-f) $</td><td>1-hs</td><td>1</td><td>$ (1+k)a $</td></tr><tr><td>bb</td><td>$ q^{2}(1-f)+qf $</td><td>1-s</td><td>1-s</td><td>0</td></tr></table>",
+      "rows": [
+        [
+          "Genotype",
+          "Frequency",
+          "Fitness",
+          "Phenotype for Arbitrary Character"
+        ],
+        [
+          "Partial Dominance",
+          "Overdominance"
+        ],
+        [
+          "BB",
+          "$ p^{2}(1-f)+pf $",
+          "1",
+          "1-t",
+          "2a"
+        ],
+        [
+          "Bb",
+          "$ 2pq(1-f) $",
+          "1-hs",
+          "1",
+          "$ (1+k)a $"
+        ],
+        [
+          "bb",
+          "$ q^{2}(1-f)+qf $",
+          "1-s",
+          "1-s",
+          "0"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Two alleles (B, b) are assumed to be present, with respective frequencies p and q.",
+          "source_page": 269,
+          "bbox": [
+            67.0,
+            457.0,
+            993.0,
+            507.0
+          ],
+          "source_block_ids": [
+            "p269:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 269,
+          "title": "Table 10.1 Genotypic frequencies and fitnesses under the two dominance hypotheses for inbreeding depression.",
+          "html": "<table><tr><td rowspan=\"2\">Genotype</td><td rowspan=\"2\">Frequency</td><td colspan=\"2\">Fitness</td><td rowspan=\"2\">Phenotype for Arbitrary Character</td></tr><tr><td>Partial Dominance</td><td>Overdominance</td></tr><tr><td>BB</td><td>$ p^{2}(1-f)+pf $</td><td>1</td><td>1-t</td><td>2a</td></tr><tr><td>Bb</td><td>$ 2pq(1-f) $</td><td>1-hs</td><td>1</td><td>$ (1+k)a $</td></tr><tr><td>bb</td><td>$ q^{2}(1-f)+qf $</td><td>1-s</td><td>1-s</td><td>0</td></tr></table>",
+          "rows": [
+            [
+              "Genotype",
+              "Frequency",
+              "Fitness",
+              "Phenotype for Arbitrary Character"
+            ],
+            [
+              "Partial Dominance",
+              "Overdominance"
+            ],
+            [
+              "BB",
+              "$ p^{2}(1-f)+pf $",
+              "1",
+              "1-t",
+              "2a"
+            ],
+            [
+              "Bb",
+              "$ 2pq(1-f) $",
+              "1-hs",
+              "1",
+              "$ (1+k)a $"
+            ],
+            [
+              "bb",
+              "$ q^{2}(1-f)+qf $",
+              "1-s",
+              "1-s",
+              "0"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Two alleles (B, b) are assumed to be present, with respective frequencies p and q.",
+              "source_page": 269,
+              "bbox": [
+                67.0,
+                457.0,
+                993.0,
+                507.0
+              ],
+              "source_block_ids": [
+                "p269:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            66.0,
+            209.0,
+            1022.0,
+            475.0
+          ],
+          "caption_bbox": [
+            71.0,
+            128.0,
+            1030.0,
+            205.0
+          ],
+          "source_block_ids": [
+            "p269:b3"
+          ],
+          "caption_source_block_ids": [
+            "p269:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_002",
+        "page": 269,
+        "pages": [
+          269
+        ],
+        "bbox": [
+          66.0,
+          209.0,
+          1022.0,
+          475.0
+        ],
+        "caption_bbox": [
+          71.0,
+          128.0,
+          1030.0,
+          205.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "10.2",
+      "label_format": "Table 10.2",
+      "title": "Table 10.2 A survey of the inbreeding depression observed in laboratory populations of Drosophila.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Character</td><td>I. D.</td><td>Reference</td></tr><tr><td rowspan=\"2\">Competitive ability</td><td>0.84</td><td>Latter et al. 1995</td></tr><tr><td>0.97</td><td>Latter and Sved 1994</td></tr><tr><td rowspan=\"5\">Egg-to-adult viability</td><td>0.57</td><td>Garcia et al. 1994</td></tr><tr><td>0.44</td><td>Mackay 1985a</td></tr><tr><td>0.66 $ ^{*} $</td><td>Malogolowkin-Cohen et al. 1964</td></tr><tr><td>0.48 $ ^{*} $</td><td>Dobzhansky et al. 1963</td></tr><tr><td>0.06</td><td>Tantaway and Reeve 1956</td></tr><tr><td rowspan=\"3\">Female fertility</td><td>0.81</td><td>Mackay 1985a</td></tr><tr><td>0.18</td><td>Tantaway and Reeve 1956</td></tr><tr><td>0.35</td><td>Hollingsworth and Maynard Smith 1955</td></tr><tr><td rowspan=\"4\">Female rate of reproduction</td><td>0.32</td><td>Latter et al. 1995</td></tr><tr><td>0.56</td><td>Mackay 1985a</td></tr><tr><td>0.96</td><td>Hollingsworth and Maynard Smith 1955</td></tr><tr><td>0.57</td><td>Marinkovic 1967</td></tr><tr><td rowspan=\"3\">Male mating ability</td><td>0.52 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.92</td><td>Partridge et al. 1985</td></tr><tr><td>0.76</td><td>Sharp 1984</td></tr><tr><td>Male longevity</td><td>0.18 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td rowspan=\"2\">Male fertility</td><td>0.00 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.22 $ ^{*} $</td><td>Dobzhansky and Spassky 1963</td></tr><tr><td rowspan=\"2\">Male weight</td><td>0.07 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.10</td><td>Mackay 1985a</td></tr><tr><td>Female weight</td><td>-0.10</td><td>Kidwell and Kidwell 1966</td></tr><tr><td rowspan=\"3\">Abdominal bristle number</td><td>0.05</td><td>Mackay 1985a</td></tr><tr><td>0.06</td><td>Kidwell and Kidwell 1966</td></tr><tr><td>0.00</td><td>Rasmuson 1952</td></tr><tr><td rowspan=\"2\">Sternopleural bristle number</td><td>-0.01</td><td>Mackay 1985a</td></tr><tr><td>0.00</td><td>Rasmuson 1952</td></tr><tr><td rowspan=\"2\">Wing length</td><td>0.03</td><td>Tantaway 1957</td></tr><tr><td>0.01</td><td>Tantaway and Reeve 1956</td></tr><tr><td>Thorax length</td><td>0.02</td><td>Tantaway 1957</td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "I. D.",
+          "Reference"
+        ],
+        [
+          "Competitive ability",
+          "0.84",
+          "Latter et al. 1995"
+        ],
+        [
+          "0.97",
+          "Latter and Sved 1994"
+        ],
+        [
+          "Egg-to-adult viability",
+          "0.57",
+          "Garcia et al. 1994"
+        ],
+        [
+          "0.44",
+          "Mackay 1985a"
+        ],
+        [
+          "0.66 $ ^{*} $",
+          "Malogolowkin-Cohen et al. 1964"
+        ],
+        [
+          "0.48 $ ^{*} $",
+          "Dobzhansky et al. 1963"
+        ],
+        [
+          "0.06",
+          "Tantaway and Reeve 1956"
+        ],
+        [
+          "Female fertility",
+          "0.81",
+          "Mackay 1985a"
+        ],
+        [
+          "0.18",
+          "Tantaway and Reeve 1956"
+        ],
+        [
+          "0.35",
+          "Hollingsworth and Maynard Smith 1955"
+        ],
+        [
+          "Female rate of reproduction",
+          "0.32",
+          "Latter et al. 1995"
+        ],
+        [
+          "0.56",
+          "Mackay 1985a"
+        ],
+        [
+          "0.96",
+          "Hollingsworth and Maynard Smith 1955"
+        ],
+        [
+          "0.57",
+          "Marinkovic 1967"
+        ],
+        [
+          "Male mating ability",
+          "0.52 $ ^{*} $",
+          "Hughes 1995"
+        ],
+        [
+          "0.92",
+          "Partridge et al. 1985"
+        ],
+        [
+          "0.76",
+          "Sharp 1984"
+        ],
+        [
+          "Male longevity",
+          "0.18 $ ^{*} $",
+          "Hughes 1995"
+        ],
+        [
+          "Male fertility",
+          "0.00 $ ^{*} $",
+          "Hughes 1995"
+        ],
+        [
+          "0.22 $ ^{*} $",
+          "Dobzhansky and Spassky 1963"
+        ],
+        [
+          "Male weight",
+          "0.07 $ ^{*} $",
+          "Hughes 1995"
+        ],
+        [
+          "0.10",
+          "Mackay 1985a"
+        ],
+        [
+          "Female weight",
+          "-0.10",
+          "Kidwell and Kidwell 1966"
+        ],
+        [
+          "Abdominal bristle number",
+          "0.05",
+          "Mackay 1985a"
+        ],
+        [
+          "0.06",
+          "Kidwell and Kidwell 1966"
+        ],
+        [
+          "0.00",
+          "Rasmuson 1952"
+        ],
+        [
+          "Sternopleural bristle number",
+          "-0.01",
+          "Mackay 1985a"
+        ],
+        [
+          "0.00",
+          "Rasmuson 1952"
+        ],
+        [
+          "Wing length",
+          "0.03",
+          "Tantaway 1957"
+        ],
+        [
+          "0.01",
+          "Tantaway and Reeve 1956"
+        ],
+        [
+          "Thorax length",
+          "0.02",
+          "Tantaway 1957"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: All data are for D. melanogaster, except for D. subobscura (Hollingsworth and Maynard Smith 1955), D. pseudoobscura (Dobzhansky and Spassky 1963, Dobzhansky et al. 1963, and Marinkovic 1967), and D. willistoni (Malogolowkin-Cohen et al. 1964).",
+          "source_page": 287,
+          "bbox": [
+            43.0,
+            1233.0,
+            1004.0,
+            1339.0
+          ],
+          "source_block_ids": [
+            "p287:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Records are given as I.D. = 1 - $ (\\bar{z}_{I}/\\bar{z}_{O}) $, where $ \\bar{z}_{O} $ and $ \\bar{z}_{I} $ are the means of the random mating base and the completely inbred population (obtained by linear extrapolation). Results marked with an asterisk were obtained from studies involving only one or two chromosomes; in these cases, extrapolation to the entire genome was done by assuming that each major chromosome arm constitutes 20% of the genome, and that the effects are multiplicative across chromosomes. Negative values imply an increase in character value with inbreeding.",
+          "source_page": 287,
+          "bbox": [
+            38.0,
+            1317.0,
+            1005.0,
+            1528.0
+          ],
+          "source_block_ids": [
+            "p287:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 287,
+          "title": "Table 10.2 A survey of the inbreeding depression observed in laboratory populations of Drosophila.",
+          "html": "<table><tr><td>Character</td><td>I. D.</td><td>Reference</td></tr><tr><td rowspan=\"2\">Competitive ability</td><td>0.84</td><td>Latter et al. 1995</td></tr><tr><td>0.97</td><td>Latter and Sved 1994</td></tr><tr><td rowspan=\"5\">Egg-to-adult viability</td><td>0.57</td><td>Garcia et al. 1994</td></tr><tr><td>0.44</td><td>Mackay 1985a</td></tr><tr><td>0.66 $ ^{*} $</td><td>Malogolowkin-Cohen et al. 1964</td></tr><tr><td>0.48 $ ^{*} $</td><td>Dobzhansky et al. 1963</td></tr><tr><td>0.06</td><td>Tantaway and Reeve 1956</td></tr><tr><td rowspan=\"3\">Female fertility</td><td>0.81</td><td>Mackay 1985a</td></tr><tr><td>0.18</td><td>Tantaway and Reeve 1956</td></tr><tr><td>0.35</td><td>Hollingsworth and Maynard Smith 1955</td></tr><tr><td rowspan=\"4\">Female rate of reproduction</td><td>0.32</td><td>Latter et al. 1995</td></tr><tr><td>0.56</td><td>Mackay 1985a</td></tr><tr><td>0.96</td><td>Hollingsworth and Maynard Smith 1955</td></tr><tr><td>0.57</td><td>Marinkovic 1967</td></tr><tr><td rowspan=\"3\">Male mating ability</td><td>0.52 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.92</td><td>Partridge et al. 1985</td></tr><tr><td>0.76</td><td>Sharp 1984</td></tr><tr><td>Male longevity</td><td>0.18 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td rowspan=\"2\">Male fertility</td><td>0.00 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.22 $ ^{*} $</td><td>Dobzhansky and Spassky 1963</td></tr><tr><td rowspan=\"2\">Male weight</td><td>0.07 $ ^{*} $</td><td>Hughes 1995</td></tr><tr><td>0.10</td><td>Mackay 1985a</td></tr><tr><td>Female weight</td><td>-0.10</td><td>Kidwell and Kidwell 1966</td></tr><tr><td rowspan=\"3\">Abdominal bristle number</td><td>0.05</td><td>Mackay 1985a</td></tr><tr><td>0.06</td><td>Kidwell and Kidwell 1966</td></tr><tr><td>0.00</td><td>Rasmuson 1952</td></tr><tr><td rowspan=\"2\">Sternopleural bristle number</td><td>-0.01</td><td>Mackay 1985a</td></tr><tr><td>0.00</td><td>Rasmuson 1952</td></tr><tr><td rowspan=\"2\">Wing length</td><td>0.03</td><td>Tantaway 1957</td></tr><tr><td>0.01</td><td>Tantaway and Reeve 1956</td></tr><tr><td>Thorax length</td><td>0.02</td><td>Tantaway 1957</td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "I. D.",
+              "Reference"
+            ],
+            [
+              "Competitive ability",
+              "0.84",
+              "Latter et al. 1995"
+            ],
+            [
+              "0.97",
+              "Latter and Sved 1994"
+            ],
+            [
+              "Egg-to-adult viability",
+              "0.57",
+              "Garcia et al. 1994"
+            ],
+            [
+              "0.44",
+              "Mackay 1985a"
+            ],
+            [
+              "0.66 $ ^{*} $",
+              "Malogolowkin-Cohen et al. 1964"
+            ],
+            [
+              "0.48 $ ^{*} $",
+              "Dobzhansky et al. 1963"
+            ],
+            [
+              "0.06",
+              "Tantaway and Reeve 1956"
+            ],
+            [
+              "Female fertility",
+              "0.81",
+              "Mackay 1985a"
+            ],
+            [
+              "0.18",
+              "Tantaway and Reeve 1956"
+            ],
+            [
+              "0.35",
+              "Hollingsworth and Maynard Smith 1955"
+            ],
+            [
+              "Female rate of reproduction",
+              "0.32",
+              "Latter et al. 1995"
+            ],
+            [
+              "0.56",
+              "Mackay 1985a"
+            ],
+            [
+              "0.96",
+              "Hollingsworth and Maynard Smith 1955"
+            ],
+            [
+              "0.57",
+              "Marinkovic 1967"
+            ],
+            [
+              "Male mating ability",
+              "0.52 $ ^{*} $",
+              "Hughes 1995"
+            ],
+            [
+              "0.92",
+              "Partridge et al. 1985"
+            ],
+            [
+              "0.76",
+              "Sharp 1984"
+            ],
+            [
+              "Male longevity",
+              "0.18 $ ^{*} $",
+              "Hughes 1995"
+            ],
+            [
+              "Male fertility",
+              "0.00 $ ^{*} $",
+              "Hughes 1995"
+            ],
+            [
+              "0.22 $ ^{*} $",
+              "Dobzhansky and Spassky 1963"
+            ],
+            [
+              "Male weight",
+              "0.07 $ ^{*} $",
+              "Hughes 1995"
+            ],
+            [
+              "0.10",
+              "Mackay 1985a"
+            ],
+            [
+              "Female weight",
+              "-0.10",
+              "Kidwell and Kidwell 1966"
+            ],
+            [
+              "Abdominal bristle number",
+              "0.05",
+              "Mackay 1985a"
+            ],
+            [
+              "0.06",
+              "Kidwell and Kidwell 1966"
+            ],
+            [
+              "0.00",
+              "Rasmuson 1952"
+            ],
+            [
+              "Sternopleural bristle number",
+              "-0.01",
+              "Mackay 1985a"
+            ],
+            [
+              "0.00",
+              "Rasmuson 1952"
+            ],
+            [
+              "Wing length",
+              "0.03",
+              "Tantaway 1957"
+            ],
+            [
+              "0.01",
+              "Tantaway and Reeve 1956"
+            ],
+            [
+              "Thorax length",
+              "0.02",
+              "Tantaway 1957"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: All data are for D. melanogaster, except for D. subobscura (Hollingsworth and Maynard Smith 1955), D. pseudoobscura (Dobzhansky and Spassky 1963, Dobzhansky et al. 1963, and Marinkovic 1967), and D. willistoni (Malogolowkin-Cohen et al. 1964).",
+              "source_page": 287,
+              "bbox": [
+                43.0,
+                1233.0,
+                1004.0,
+                1339.0
+              ],
+              "source_block_ids": [
+                "p287:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Records are given as I.D. = 1 - $ (\\bar{z}_{I}/\\bar{z}_{O}) $, where $ \\bar{z}_{O} $ and $ \\bar{z}_{I} $ are the means of the random mating base and the completely inbred population (obtained by linear extrapolation). Results marked with an asterisk were obtained from studies involving only one or two chromosomes; in these cases, extrapolation to the entire genome was done by assuming that each major chromosome arm constitutes 20% of the genome, and that the effects are multiplicative across chromosomes. Negative values imply an increase in character value with inbreeding.",
+              "source_page": 287,
+              "bbox": [
+                38.0,
+                1317.0,
+                1005.0,
+                1528.0
+              ],
+              "source_block_ids": [
+                "p287:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            52.0,
+            203.0,
+            1030.0,
+            1249.0
+          ],
+          "caption_bbox": [
+            77.0,
+            120.0,
+            1037.0,
+            213.0
+          ],
+          "source_block_ids": [
+            "p287:b3"
+          ],
+          "caption_source_block_ids": [
+            "p287:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_010",
+        "page": 287,
+        "pages": [
+          287
+        ],
+        "bbox": [
+          52.0,
+          203.0,
+          1030.0,
+          1249.0
+        ],
+        "caption_bbox": [
+          77.0,
+          120.0,
+          1037.0,
+          213.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "10.3",
+      "label_format": "Table 10.3",
+      "title": "Table 10.3 Decrease in the mean expected upon complete inbreeding in humans, equal to the mean for noninbred individuals minus the expectation at $f = 1$ (obtained by linear extrapolation).",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Trait</td><td>Site</td><td>I</td><td>Reference</td></tr><tr><td rowspan=\"2\">Birth weight (kg)</td><td>Japan</td><td>5.4 $ ^{*} $</td><td>Morton 1958</td></tr><tr><td>United States</td><td>1.7</td><td>Slatis and Hoene 1961</td></tr><tr><td rowspan=\"4\">Adult height (cm)</td><td>Hutterites, U. S.</td><td>56</td><td>Barrai et al. 1964</td></tr><tr><td>Italy</td><td>3</td><td>Mange 1964</td></tr><tr><td>Japan</td><td>20</td><td>Schull 1962</td></tr><tr><td></td><td>21</td><td>Neel et al. 1970</td></tr><tr><td rowspan=\"4\">IQ</td><td>Japan</td><td>42</td><td>Neel et al. 1970</td></tr><tr><td></td><td>43</td><td>Kudo et al. 1972</td></tr><tr><td></td><td>73</td><td>Schull and Neel 1965</td></tr><tr><td>United States</td><td>42</td><td>Slatis and Hoene 1961</td></tr><tr><td>Prereproductive survival (%)</td><td>Global</td><td>70</td><td>Bittles and Neel 1994</td></tr><tr><td colspan=\"4\">$ ^{*} $This value is obviously too high since it gives a birth weight less than zero.</td></tr></table>",
+      "rows": [
+        [
+          "Trait",
+          "Site",
+          "I",
+          "Reference"
+        ],
+        [
+          "Birth weight (kg)",
+          "Japan",
+          "5.4 $ ^{*} $",
+          "Morton 1958"
+        ],
+        [
+          "United States",
+          "1.7",
+          "Slatis and Hoene 1961"
+        ],
+        [
+          "Adult height (cm)",
+          "Hutterites, U. S.",
+          "56",
+          "Barrai et al. 1964"
+        ],
+        [
+          "Italy",
+          "3",
+          "Mange 1964"
+        ],
+        [
+          "Japan",
+          "20",
+          "Schull 1962"
+        ],
+        [
+          "",
+          "21",
+          "Neel et al. 1970"
+        ],
+        [
+          "IQ",
+          "Japan",
+          "42",
+          "Neel et al. 1970"
+        ],
+        [
+          "",
+          "43",
+          "Kudo et al. 1972"
+        ],
+        [
+          "",
+          "73",
+          "Schull and Neel 1965"
+        ],
+        [
+          "United States",
+          "42",
+          "Slatis and Hoene 1961"
+        ],
+        [
+          "Prereproductive survival (%)",
+          "Global",
+          "70",
+          "Bittles and Neel 1994"
+        ],
+        [
+          "$ ^{*} $This value is obviously too high since it gives a birth weight less than zero."
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 288,
+          "title": "Table 10.3 Decrease in the mean expected upon complete inbreeding in humans, equal to the mean for noninbred individuals minus the expectation at $f = 1$ (obtained by linear extrapolation).",
+          "html": "<table><tr><td>Trait</td><td>Site</td><td>I</td><td>Reference</td></tr><tr><td rowspan=\"2\">Birth weight (kg)</td><td>Japan</td><td>5.4 $ ^{*} $</td><td>Morton 1958</td></tr><tr><td>United States</td><td>1.7</td><td>Slatis and Hoene 1961</td></tr><tr><td rowspan=\"4\">Adult height (cm)</td><td>Hutterites, U. S.</td><td>56</td><td>Barrai et al. 1964</td></tr><tr><td>Italy</td><td>3</td><td>Mange 1964</td></tr><tr><td>Japan</td><td>20</td><td>Schull 1962</td></tr><tr><td></td><td>21</td><td>Neel et al. 1970</td></tr><tr><td rowspan=\"4\">IQ</td><td>Japan</td><td>42</td><td>Neel et al. 1970</td></tr><tr><td></td><td>43</td><td>Kudo et al. 1972</td></tr><tr><td></td><td>73</td><td>Schull and Neel 1965</td></tr><tr><td>United States</td><td>42</td><td>Slatis and Hoene 1961</td></tr><tr><td>Prereproductive survival (%)</td><td>Global</td><td>70</td><td>Bittles and Neel 1994</td></tr><tr><td colspan=\"4\">$ ^{*} $This value is obviously too high since it gives a birth weight less than zero.</td></tr></table>",
+          "rows": [
+            [
+              "Trait",
+              "Site",
+              "I",
+              "Reference"
+            ],
+            [
+              "Birth weight (kg)",
+              "Japan",
+              "5.4 $ ^{*} $",
+              "Morton 1958"
+            ],
+            [
+              "United States",
+              "1.7",
+              "Slatis and Hoene 1961"
+            ],
+            [
+              "Adult height (cm)",
+              "Hutterites, U. S.",
+              "56",
+              "Barrai et al. 1964"
+            ],
+            [
+              "Italy",
+              "3",
+              "Mange 1964"
+            ],
+            [
+              "Japan",
+              "20",
+              "Schull 1962"
+            ],
+            [
+              "",
+              "21",
+              "Neel et al. 1970"
+            ],
+            [
+              "IQ",
+              "Japan",
+              "42",
+              "Neel et al. 1970"
+            ],
+            [
+              "",
+              "43",
+              "Kudo et al. 1972"
+            ],
+            [
+              "",
+              "73",
+              "Schull and Neel 1965"
+            ],
+            [
+              "United States",
+              "42",
+              "Slatis and Hoene 1961"
+            ],
+            [
+              "Prereproductive survival (%)",
+              "Global",
+              "70",
+              "Bittles and Neel 1994"
+            ],
+            [
+              "$ ^{*} $This value is obviously too high since it gives a birth weight less than zero."
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            132.0,
+            247.0,
+            1094.0,
+            762.0
+          ],
+          "caption_bbox": [
+            124.0,
+            140.0,
+            1084.0,
+            258.0
+          ],
+          "source_block_ids": [
+            "p288:b3"
+          ],
+          "caption_source_block_ids": [
+            "p288:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_010",
+        "page": 288,
+        "pages": [
+          288
+        ],
+        "bbox": [
+          132.0,
+          247.0,
+          1094.0,
+          762.0
+        ],
+        "caption_bbox": [
+          124.0,
+          140.0,
+          1084.0,
+          258.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "10.4",
+      "label_format": "Table 10.4",
+      "title": "Table 10.4 Estimates of the effective number of lethals per gamete for vertebrates (bounded by $B$ to $A + B$).",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Trait</td><td>A</td><td>B</td><td>Reference</td></tr><tr><td rowspan=\"9\">Humans</td><td>Survival to maturity</td><td></td><td></td><td></td></tr><tr><td>France, 1919–1925</td><td>0.16</td><td>2.87</td><td>Morton et al. 1956</td></tr><tr><td>Chicago, 1936–1956</td><td>0.18</td><td>1.55</td><td>Slatis et al. 1958</td></tr><tr><td>Fukuoka, Japan</td><td>0.07</td><td>0.67</td><td>Yamaguchi et al. 1970</td></tr><tr><td>Nagasaki, Hiroshima, and Hirado, 1948–65</td><td>0.10</td><td>0.67</td><td>Schull and Neel 1972</td></tr><tr><td>Survival to age 10</td><td>0.20</td><td>0.70</td><td>Bittles and Neel 1994 $ ^{*} $</td></tr><tr><td>Conspicuous abnormalities</td><td>0.10</td><td>1.16</td><td>Slatis et al. 1958</td></tr><tr><td>Mental retardation</td><td>0.01</td><td>0.80</td><td>Morton 1978</td></tr><tr><td>Congenital heart disease</td><td>0.01</td><td>0.32</td><td>Gev et al. 1986</td></tr><tr><td>Speke's gazelle</td><td>1-year viability</td><td>0.42</td><td>3.75</td><td>Templeton and Read 1984</td></tr><tr><td>European bison</td><td>2-year viability</td><td>0.26</td><td>0.13</td><td>Slatis 1960</td></tr><tr><td>Sheep</td><td>Survival, 1.5–5 years</td><td>0.09</td><td>0.39</td><td>Wiener et al. 1992 $ ^{*} $</td></tr><tr><td>Swine</td><td>Embryo survival</td><td>0.27</td><td>1.01</td><td>Pisani and Kerr 1961</td></tr><tr><td>Cattle</td><td>Survival through calving</td><td></td><td></td><td></td></tr><tr><td>Holstein</td><td></td><td>0.16</td><td>0.02</td><td>Pisani and Kerr 1961</td></tr><tr><td>Jersey</td><td></td><td>0.18</td><td>1.15</td><td></td></tr><tr><td>Hereford</td><td></td><td>0.19</td><td>0.64</td><td>MacNeil et al. 1989 $ ^{*} $</td></tr><tr><td>Great tit</td><td>Survival to fledging</td><td>0.36</td><td>0.84</td><td>van Noordwijk and Scharloo 1981</td></tr><tr><td>Japanese quail</td><td>16-week survival</td><td>0.60</td><td>1.91</td><td>Sittmann et al. 1966</td></tr><tr><td>Chicken</td><td>18-month survival</td><td>0.82</td><td>2.10</td><td>Pisani and Kerr 1961</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Trait",
+          "A",
+          "B",
+          "Reference"
+        ],
+        [
+          "Humans",
+          "Survival to maturity",
+          "",
+          "",
+          ""
+        ],
+        [
+          "France, 1919–1925",
+          "0.16",
+          "2.87",
+          "Morton et al. 1956"
+        ],
+        [
+          "Chicago, 1936–1956",
+          "0.18",
+          "1.55",
+          "Slatis et al. 1958"
+        ],
+        [
+          "Fukuoka, Japan",
+          "0.07",
+          "0.67",
+          "Yamaguchi et al. 1970"
+        ],
+        [
+          "Nagasaki, Hiroshima, and Hirado, 1948–65",
+          "0.10",
+          "0.67",
+          "Schull and Neel 1972"
+        ],
+        [
+          "Survival to age 10",
+          "0.20",
+          "0.70",
+          "Bittles and Neel 1994 $ ^{*} $"
+        ],
+        [
+          "Conspicuous abnormalities",
+          "0.10",
+          "1.16",
+          "Slatis et al. 1958"
+        ],
+        [
+          "Mental retardation",
+          "0.01",
+          "0.80",
+          "Morton 1978"
+        ],
+        [
+          "Congenital heart disease",
+          "0.01",
+          "0.32",
+          "Gev et al. 1986"
+        ],
+        [
+          "Speke's gazelle",
+          "1-year viability",
+          "0.42",
+          "3.75",
+          "Templeton and Read 1984"
+        ],
+        [
+          "European bison",
+          "2-year viability",
+          "0.26",
+          "0.13",
+          "Slatis 1960"
+        ],
+        [
+          "Sheep",
+          "Survival, 1.5–5 years",
+          "0.09",
+          "0.39",
+          "Wiener et al. 1992 $ ^{*} $"
+        ],
+        [
+          "Swine",
+          "Embryo survival",
+          "0.27",
+          "1.01",
+          "Pisani and Kerr 1961"
+        ],
+        [
+          "Cattle",
+          "Survival through calving",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Holstein",
+          "",
+          "0.16",
+          "0.02",
+          "Pisani and Kerr 1961"
+        ],
+        [
+          "Jersey",
+          "",
+          "0.18",
+          "1.15",
+          ""
+        ],
+        [
+          "Hereford",
+          "",
+          "0.19",
+          "0.64",
+          "MacNeil et al. 1989 $ ^{*} $"
+        ],
+        [
+          "Great tit",
+          "Survival to fledging",
+          "0.36",
+          "0.84",
+          "van Noordwijk and Scharloo 1981"
+        ],
+        [
+          "Japanese quail",
+          "16-week survival",
+          "0.60",
+          "1.91",
+          "Sittmann et al. 1966"
+        ],
+        [
+          "Chicken",
+          "18-month survival",
+          "0.82",
+          "2.10",
+          "Pisani and Kerr 1961"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: All estimates were obtained by regression, except those marked by an asterisk, which were obtained with Equations 10.21a,b.",
+          "source_page": 293,
+          "bbox": [
+            47.0,
+            1073.0,
+            1010.0,
+            1158.0
+          ],
+          "source_block_ids": [
+            "p293:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 293,
+          "title": "Table 10.4 Estimates of the effective number of lethals per gamete for vertebrates (bounded by $B$ to $A + B$).",
+          "html": "<table><tr><td>Species</td><td>Trait</td><td>A</td><td>B</td><td>Reference</td></tr><tr><td rowspan=\"9\">Humans</td><td>Survival to maturity</td><td></td><td></td><td></td></tr><tr><td>France, 1919–1925</td><td>0.16</td><td>2.87</td><td>Morton et al. 1956</td></tr><tr><td>Chicago, 1936–1956</td><td>0.18</td><td>1.55</td><td>Slatis et al. 1958</td></tr><tr><td>Fukuoka, Japan</td><td>0.07</td><td>0.67</td><td>Yamaguchi et al. 1970</td></tr><tr><td>Nagasaki, Hiroshima, and Hirado, 1948–65</td><td>0.10</td><td>0.67</td><td>Schull and Neel 1972</td></tr><tr><td>Survival to age 10</td><td>0.20</td><td>0.70</td><td>Bittles and Neel 1994 $ ^{*} $</td></tr><tr><td>Conspicuous abnormalities</td><td>0.10</td><td>1.16</td><td>Slatis et al. 1958</td></tr><tr><td>Mental retardation</td><td>0.01</td><td>0.80</td><td>Morton 1978</td></tr><tr><td>Congenital heart disease</td><td>0.01</td><td>0.32</td><td>Gev et al. 1986</td></tr><tr><td>Speke's gazelle</td><td>1-year viability</td><td>0.42</td><td>3.75</td><td>Templeton and Read 1984</td></tr><tr><td>European bison</td><td>2-year viability</td><td>0.26</td><td>0.13</td><td>Slatis 1960</td></tr><tr><td>Sheep</td><td>Survival, 1.5–5 years</td><td>0.09</td><td>0.39</td><td>Wiener et al. 1992 $ ^{*} $</td></tr><tr><td>Swine</td><td>Embryo survival</td><td>0.27</td><td>1.01</td><td>Pisani and Kerr 1961</td></tr><tr><td>Cattle</td><td>Survival through calving</td><td></td><td></td><td></td></tr><tr><td>Holstein</td><td></td><td>0.16</td><td>0.02</td><td>Pisani and Kerr 1961</td></tr><tr><td>Jersey</td><td></td><td>0.18</td><td>1.15</td><td></td></tr><tr><td>Hereford</td><td></td><td>0.19</td><td>0.64</td><td>MacNeil et al. 1989 $ ^{*} $</td></tr><tr><td>Great tit</td><td>Survival to fledging</td><td>0.36</td><td>0.84</td><td>van Noordwijk and Scharloo 1981</td></tr><tr><td>Japanese quail</td><td>16-week survival</td><td>0.60</td><td>1.91</td><td>Sittmann et al. 1966</td></tr><tr><td>Chicken</td><td>18-month survival</td><td>0.82</td><td>2.10</td><td>Pisani and Kerr 1961</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Trait",
+              "A",
+              "B",
+              "Reference"
+            ],
+            [
+              "Humans",
+              "Survival to maturity",
+              "",
+              "",
+              ""
+            ],
+            [
+              "France, 1919–1925",
+              "0.16",
+              "2.87",
+              "Morton et al. 1956"
+            ],
+            [
+              "Chicago, 1936–1956",
+              "0.18",
+              "1.55",
+              "Slatis et al. 1958"
+            ],
+            [
+              "Fukuoka, Japan",
+              "0.07",
+              "0.67",
+              "Yamaguchi et al. 1970"
+            ],
+            [
+              "Nagasaki, Hiroshima, and Hirado, 1948–65",
+              "0.10",
+              "0.67",
+              "Schull and Neel 1972"
+            ],
+            [
+              "Survival to age 10",
+              "0.20",
+              "0.70",
+              "Bittles and Neel 1994 $ ^{*} $"
+            ],
+            [
+              "Conspicuous abnormalities",
+              "0.10",
+              "1.16",
+              "Slatis et al. 1958"
+            ],
+            [
+              "Mental retardation",
+              "0.01",
+              "0.80",
+              "Morton 1978"
+            ],
+            [
+              "Congenital heart disease",
+              "0.01",
+              "0.32",
+              "Gev et al. 1986"
+            ],
+            [
+              "Speke's gazelle",
+              "1-year viability",
+              "0.42",
+              "3.75",
+              "Templeton and Read 1984"
+            ],
+            [
+              "European bison",
+              "2-year viability",
+              "0.26",
+              "0.13",
+              "Slatis 1960"
+            ],
+            [
+              "Sheep",
+              "Survival, 1.5–5 years",
+              "0.09",
+              "0.39",
+              "Wiener et al. 1992 $ ^{*} $"
+            ],
+            [
+              "Swine",
+              "Embryo survival",
+              "0.27",
+              "1.01",
+              "Pisani and Kerr 1961"
+            ],
+            [
+              "Cattle",
+              "Survival through calving",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Holstein",
+              "",
+              "0.16",
+              "0.02",
+              "Pisani and Kerr 1961"
+            ],
+            [
+              "Jersey",
+              "",
+              "0.18",
+              "1.15",
+              ""
+            ],
+            [
+              "Hereford",
+              "",
+              "0.19",
+              "0.64",
+              "MacNeil et al. 1989 $ ^{*} $"
+            ],
+            [
+              "Great tit",
+              "Survival to fledging",
+              "0.36",
+              "0.84",
+              "van Noordwijk and Scharloo 1981"
+            ],
+            [
+              "Japanese quail",
+              "16-week survival",
+              "0.60",
+              "1.91",
+              "Sittmann et al. 1966"
+            ],
+            [
+              "Chicken",
+              "18-month survival",
+              "0.82",
+              "2.10",
+              "Pisani and Kerr 1961"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: All estimates were obtained by regression, except those marked by an asterisk, which were obtained with Equations 10.21a,b.",
+              "source_page": 293,
+              "bbox": [
+                47.0,
+                1073.0,
+                1010.0,
+                1158.0
+              ],
+              "source_block_ids": [
+                "p293:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            50.0,
+            203.0,
+            1033.0,
+            1081.0
+          ],
+          "caption_bbox": [
+            71.0,
+            124.0,
+            1031.0,
+            205.0
+          ],
+          "source_block_ids": [
+            "p293:b3"
+          ],
+          "caption_source_block_ids": [
+            "p293:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_012",
+        "page": 293,
+        "pages": [
+          293
+        ],
+        "bbox": [
+          50.0,
+          203.0,
+          1033.0,
+          1081.0
+        ],
+        "caption_bbox": [
+          71.0,
+          124.0,
+          1031.0,
+          205.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "10.5",
+      "label_format": "Table 10.5",
+      "title": "Table 10.5 Partitioning of the total number of lethal equivalents $ (B_{T}) $ into the subcomponents resulting from detrimental $ (B_{D}) $ and lethal $ (B_{L}) $ factors.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Chromosome</td><td>N</td><td>$ B_{T} $</td><td>$ B_{D} $</td><td>$ B_{L} $</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>II</td><td>16</td><td>0.483</td><td>0.236</td><td>0.247</td></tr><tr><td>III</td><td>3</td><td>0.691</td><td>0.284</td><td>0.407</td></tr><tr><td rowspan=\"2\">Drosophila pseudoobscura</td><td>II</td><td>3</td><td>0.450</td><td>0.246</td><td>0.204</td></tr><tr><td>III</td><td>1</td><td>0.578</td><td>0.352</td><td>0.226</td></tr><tr><td rowspan=\"2\">Drosophila willistoni</td><td>II</td><td>1</td><td>0.766</td><td>0.380</td><td>0.386</td></tr><tr><td>III</td><td>1</td><td>0.690</td><td>0.506</td><td>0.184</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Chromosome",
+          "N",
+          "$ B_{T} $",
+          "$ B_{D} $",
+          "$ B_{L} $"
+        ],
+        [
+          "Drosophila melanogaster",
+          "II",
+          "16",
+          "0.483",
+          "0.236",
+          "0.247"
+        ],
+        [
+          "III",
+          "3",
+          "0.691",
+          "0.284",
+          "0.407"
+        ],
+        [
+          "Drosophila pseudoobscura",
+          "II",
+          "3",
+          "0.450",
+          "0.246",
+          "0.204"
+        ],
+        [
+          "III",
+          "1",
+          "0.578",
+          "0.352",
+          "0.226"
+        ],
+        [
+          "Drosophila willistoni",
+          "II",
+          "1",
+          "0.766",
+          "0.380",
+          "0.386"
+        ],
+        [
+          "III",
+          "1",
+          "0.690",
+          "0.506",
+          "0.184"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: N is the number of studies, over which the data, summarized from Simmons and Crow (1977), are averaged.",
+          "source_page": 295,
+          "bbox": [
+            71.0,
+            500.0,
+            1029.0,
+            584.0
+          ],
+          "source_block_ids": [
+            "p295:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 295,
+          "title": "Table 10.5 Partitioning of the total number of lethal equivalents $ (B_{T}) $ into the subcomponents resulting from detrimental $ (B_{D}) $ and lethal $ (B_{L}) $ factors.",
+          "html": "<table><tr><td>Species</td><td>Chromosome</td><td>N</td><td>$ B_{T} $</td><td>$ B_{D} $</td><td>$ B_{L} $</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>II</td><td>16</td><td>0.483</td><td>0.236</td><td>0.247</td></tr><tr><td>III</td><td>3</td><td>0.691</td><td>0.284</td><td>0.407</td></tr><tr><td rowspan=\"2\">Drosophila pseudoobscura</td><td>II</td><td>3</td><td>0.450</td><td>0.246</td><td>0.204</td></tr><tr><td>III</td><td>1</td><td>0.578</td><td>0.352</td><td>0.226</td></tr><tr><td rowspan=\"2\">Drosophila willistoni</td><td>II</td><td>1</td><td>0.766</td><td>0.380</td><td>0.386</td></tr><tr><td>III</td><td>1</td><td>0.690</td><td>0.506</td><td>0.184</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Chromosome",
+              "N",
+              "$ B_{T} $",
+              "$ B_{D} $",
+              "$ B_{L} $"
+            ],
+            [
+              "Drosophila melanogaster",
+              "II",
+              "16",
+              "0.483",
+              "0.236",
+              "0.247"
+            ],
+            [
+              "III",
+              "3",
+              "0.691",
+              "0.284",
+              "0.407"
+            ],
+            [
+              "Drosophila pseudoobscura",
+              "II",
+              "3",
+              "0.450",
+              "0.246",
+              "0.204"
+            ],
+            [
+              "III",
+              "1",
+              "0.578",
+              "0.352",
+              "0.226"
+            ],
+            [
+              "Drosophila willistoni",
+              "II",
+              "1",
+              "0.766",
+              "0.380",
+              "0.386"
+            ],
+            [
+              "III",
+              "1",
+              "0.690",
+              "0.506",
+              "0.184"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: N is the number of studies, over which the data, summarized from Simmons and Crow (1977), are averaged.",
+              "source_page": 295,
+              "bbox": [
+                71.0,
+                500.0,
+                1029.0,
+                584.0
+              ],
+              "source_block_ids": [
+                "p295:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            74.0,
+            218.0,
+            1032.0,
+            508.0
+          ],
+          "caption_bbox": [
+            77.0,
+            137.0,
+            1037.0,
+            219.0
+          ],
+          "source_block_ids": [
+            "p295:b3"
+          ],
+          "caption_source_block_ids": [
+            "p295:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_013",
+        "page": 295,
+        "pages": [
+          295
+        ],
+        "bbox": [
+          74.0,
+          218.0,
+          1032.0,
+          508.0
+        ],
+        "caption_bbox": [
+          77.0,
+          137.0,
+          1037.0,
+          219.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "10.6",
+      "label_format": "Table 10.6",
+      "title": "Table 10.6 Estimates of lethal equivalents per gamete affecting early embryonic survival in conifers and herbaceous angiosperms.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>B</td><td>Reference</td></tr><tr><td>Conifers</td><td></td><td></td></tr><tr><td>Nobel fir (Abies procera)</td><td>1.7</td><td>Sorensen et al. 1976</td></tr><tr><td>Tamarack (Larix laricina)</td><td>5.4</td><td>Park and Fowler 1982</td></tr><tr><td>Norway spruce (Picea abies)</td><td>4.8</td><td>Koski 1971</td></tr><tr><td>White spruce (Picea glauca)</td><td>5.0</td><td>Fowler and Park 1983</td></tr><tr><td></td><td>4.4</td><td>Coles and Fowler 1976</td></tr><tr><td>Black spruce (Picea mariana)</td><td>2.4</td><td>Park and Fowler 1984</td></tr><tr><td>Ponderosa pine (Pinus ponderosa)</td><td>2.0</td><td>Sorensen 1970</td></tr><tr><td>Scots pine (Pinus sylvestris)</td><td>4.4</td><td>Koski 1971</td></tr><tr><td></td><td>3.6</td><td>Savolainen et al. 1992</td></tr><tr><td>Loblolly pine (Pinus taeda)</td><td>4.2</td><td>Franklin 1972</td></tr><tr><td></td><td>4.8</td><td>Bishir and Namkoong 1987</td></tr><tr><td>Virginia pine (Pinus virginiana)</td><td>5.0</td><td>Bishir and Namkoong 1987</td></tr><tr><td>Douglas fir (Pseudotsuga menziesii)</td><td>5.0</td><td>Sorensen 1969</td></tr><tr><td>Short-lived angiosperms</td><td></td><td></td></tr><tr><td>Begonia hirsuta</td><td>0.04</td><td>Ågren and Schemske 1993</td></tr><tr><td>Begonia semiovata</td><td>0.11</td><td>Ågren and Schemske 1993</td></tr><tr><td>Clarkia tembloriensis</td><td>0.07</td><td>Holtsford and Ellstrand 1990</td></tr><tr><td>Lychnis flos-cuculi</td><td>0.39</td><td>Hauser and Loeschcke 1994</td></tr><tr><td>Mimulus guttatus</td><td>0.16</td><td>Latta and Ritland 1994</td></tr><tr><td>Raphanus sativus</td><td>0.01</td><td>Nason and Ellstrand 1995</td></tr><tr><td>Salvia pratensis</td><td>0.67</td><td>Ouborg and Van Treuren 1994</td></tr><tr><td>Schiedea lydgatei</td><td>0.91</td><td>Norman et al. 1995</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "B",
+          "Reference"
+        ],
+        [
+          "Conifers",
+          "",
+          ""
+        ],
+        [
+          "Nobel fir (Abies procera)",
+          "1.7",
+          "Sorensen et al. 1976"
+        ],
+        [
+          "Tamarack (Larix laricina)",
+          "5.4",
+          "Park and Fowler 1982"
+        ],
+        [
+          "Norway spruce (Picea abies)",
+          "4.8",
+          "Koski 1971"
+        ],
+        [
+          "White spruce (Picea glauca)",
+          "5.0",
+          "Fowler and Park 1983"
+        ],
+        [
+          "",
+          "4.4",
+          "Coles and Fowler 1976"
+        ],
+        [
+          "Black spruce (Picea mariana)",
+          "2.4",
+          "Park and Fowler 1984"
+        ],
+        [
+          "Ponderosa pine (Pinus ponderosa)",
+          "2.0",
+          "Sorensen 1970"
+        ],
+        [
+          "Scots pine (Pinus sylvestris)",
+          "4.4",
+          "Koski 1971"
+        ],
+        [
+          "",
+          "3.6",
+          "Savolainen et al. 1992"
+        ],
+        [
+          "Loblolly pine (Pinus taeda)",
+          "4.2",
+          "Franklin 1972"
+        ],
+        [
+          "",
+          "4.8",
+          "Bishir and Namkoong 1987"
+        ],
+        [
+          "Virginia pine (Pinus virginiana)",
+          "5.0",
+          "Bishir and Namkoong 1987"
+        ],
+        [
+          "Douglas fir (Pseudotsuga menziesii)",
+          "5.0",
+          "Sorensen 1969"
+        ],
+        [
+          "Short-lived angiosperms",
+          "",
+          ""
+        ],
+        [
+          "Begonia hirsuta",
+          "0.04",
+          "Ågren and Schemske 1993"
+        ],
+        [
+          "Begonia semiovata",
+          "0.11",
+          "Ågren and Schemske 1993"
+        ],
+        [
+          "Clarkia tembloriensis",
+          "0.07",
+          "Holtsford and Ellstrand 1990"
+        ],
+        [
+          "Lychnis flos-cuculi",
+          "0.39",
+          "Hauser and Loeschcke 1994"
+        ],
+        [
+          "Mimulus guttatus",
+          "0.16",
+          "Latta and Ritland 1994"
+        ],
+        [
+          "Raphanus sativus",
+          "0.01",
+          "Nason and Ellstrand 1995"
+        ],
+        [
+          "Salvia pratensis",
+          "0.67",
+          "Ouborg and Van Treuren 1994"
+        ],
+        [
+          "Schiedea lydgatei",
+          "0.91",
+          "Norman et al. 1995"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Estimates for conifers were taken directly from the literature, while those for angiosperms were computed from data on percent germination for outcrossed and selfed seed.",
+          "source_page": 296,
+          "bbox": [
+            144.0,
+            1019.0,
+            1107.0,
+            1127.0
+          ],
+          "source_block_ids": [
+            "p296:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 296,
+          "title": "Table 10.6 Estimates of lethal equivalents per gamete affecting early embryonic survival in conifers and herbaceous angiosperms.",
+          "html": "<table><tr><td>Species</td><td>B</td><td>Reference</td></tr><tr><td>Conifers</td><td></td><td></td></tr><tr><td>Nobel fir (Abies procera)</td><td>1.7</td><td>Sorensen et al. 1976</td></tr><tr><td>Tamarack (Larix laricina)</td><td>5.4</td><td>Park and Fowler 1982</td></tr><tr><td>Norway spruce (Picea abies)</td><td>4.8</td><td>Koski 1971</td></tr><tr><td>White spruce (Picea glauca)</td><td>5.0</td><td>Fowler and Park 1983</td></tr><tr><td></td><td>4.4</td><td>Coles and Fowler 1976</td></tr><tr><td>Black spruce (Picea mariana)</td><td>2.4</td><td>Park and Fowler 1984</td></tr><tr><td>Ponderosa pine (Pinus ponderosa)</td><td>2.0</td><td>Sorensen 1970</td></tr><tr><td>Scots pine (Pinus sylvestris)</td><td>4.4</td><td>Koski 1971</td></tr><tr><td></td><td>3.6</td><td>Savolainen et al. 1992</td></tr><tr><td>Loblolly pine (Pinus taeda)</td><td>4.2</td><td>Franklin 1972</td></tr><tr><td></td><td>4.8</td><td>Bishir and Namkoong 1987</td></tr><tr><td>Virginia pine (Pinus virginiana)</td><td>5.0</td><td>Bishir and Namkoong 1987</td></tr><tr><td>Douglas fir (Pseudotsuga menziesii)</td><td>5.0</td><td>Sorensen 1969</td></tr><tr><td>Short-lived angiosperms</td><td></td><td></td></tr><tr><td>Begonia hirsuta</td><td>0.04</td><td>Ågren and Schemske 1993</td></tr><tr><td>Begonia semiovata</td><td>0.11</td><td>Ågren and Schemske 1993</td></tr><tr><td>Clarkia tembloriensis</td><td>0.07</td><td>Holtsford and Ellstrand 1990</td></tr><tr><td>Lychnis flos-cuculi</td><td>0.39</td><td>Hauser and Loeschcke 1994</td></tr><tr><td>Mimulus guttatus</td><td>0.16</td><td>Latta and Ritland 1994</td></tr><tr><td>Raphanus sativus</td><td>0.01</td><td>Nason and Ellstrand 1995</td></tr><tr><td>Salvia pratensis</td><td>0.67</td><td>Ouborg and Van Treuren 1994</td></tr><tr><td>Schiedea lydgatei</td><td>0.91</td><td>Norman et al. 1995</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "B",
+              "Reference"
+            ],
+            [
+              "Conifers",
+              "",
+              ""
+            ],
+            [
+              "Nobel fir (Abies procera)",
+              "1.7",
+              "Sorensen et al. 1976"
+            ],
+            [
+              "Tamarack (Larix laricina)",
+              "5.4",
+              "Park and Fowler 1982"
+            ],
+            [
+              "Norway spruce (Picea abies)",
+              "4.8",
+              "Koski 1971"
+            ],
+            [
+              "White spruce (Picea glauca)",
+              "5.0",
+              "Fowler and Park 1983"
+            ],
+            [
+              "",
+              "4.4",
+              "Coles and Fowler 1976"
+            ],
+            [
+              "Black spruce (Picea mariana)",
+              "2.4",
+              "Park and Fowler 1984"
+            ],
+            [
+              "Ponderosa pine (Pinus ponderosa)",
+              "2.0",
+              "Sorensen 1970"
+            ],
+            [
+              "Scots pine (Pinus sylvestris)",
+              "4.4",
+              "Koski 1971"
+            ],
+            [
+              "",
+              "3.6",
+              "Savolainen et al. 1992"
+            ],
+            [
+              "Loblolly pine (Pinus taeda)",
+              "4.2",
+              "Franklin 1972"
+            ],
+            [
+              "",
+              "4.8",
+              "Bishir and Namkoong 1987"
+            ],
+            [
+              "Virginia pine (Pinus virginiana)",
+              "5.0",
+              "Bishir and Namkoong 1987"
+            ],
+            [
+              "Douglas fir (Pseudotsuga menziesii)",
+              "5.0",
+              "Sorensen 1969"
+            ],
+            [
+              "Short-lived angiosperms",
+              "",
+              ""
+            ],
+            [
+              "Begonia hirsuta",
+              "0.04",
+              "Ågren and Schemske 1993"
+            ],
+            [
+              "Begonia semiovata",
+              "0.11",
+              "Ågren and Schemske 1993"
+            ],
+            [
+              "Clarkia tembloriensis",
+              "0.07",
+              "Holtsford and Ellstrand 1990"
+            ],
+            [
+              "Lychnis flos-cuculi",
+              "0.39",
+              "Hauser and Loeschcke 1994"
+            ],
+            [
+              "Mimulus guttatus",
+              "0.16",
+              "Latta and Ritland 1994"
+            ],
+            [
+              "Raphanus sativus",
+              "0.01",
+              "Nason and Ellstrand 1995"
+            ],
+            [
+              "Salvia pratensis",
+              "0.67",
+              "Ouborg and Van Treuren 1994"
+            ],
+            [
+              "Schiedea lydgatei",
+              "0.91",
+              "Norman et al. 1995"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Estimates for conifers were taken directly from the literature, while those for angiosperms were computed from data on percent germination for outcrossed and selfed seed.",
+              "source_page": 296,
+              "bbox": [
+                144.0,
+                1019.0,
+                1107.0,
+                1127.0
+              ],
+              "source_block_ids": [
+                "p296:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            128.0,
+            203.0,
+            1110.0,
+            1022.0
+          ],
+          "caption_bbox": [
+            121.0,
+            123.0,
+            1088.0,
+            202.0
+          ],
+          "source_block_ids": [
+            "p296:b3"
+          ],
+          "caption_source_block_ids": [
+            "p296:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter10",
+        "unit_id": "Genetics_chapter10_014",
+        "page": 296,
+        "pages": [
+          296
+        ],
+        "bbox": [
+          128.0,
+          203.0,
+          1110.0,
+          1022.0
+        ],
+        "caption_bbox": [
+          121.0,
+          123.0,
+          1088.0,
+          202.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

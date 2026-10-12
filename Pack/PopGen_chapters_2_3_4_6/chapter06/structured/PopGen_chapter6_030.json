@@ -1,0 +1,403 @@
+{
+  "id": "PopGen_chapter6_030",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "subsections": [
+      "22. What is the inbreeding coefficient in a population of size 50 that undergoes"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "section_level_2": "22. What is the inbreeding coefficient in a population of size 50 that undergoes",
+    "heading_path": [
+      "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+      "22. What is the inbreeding coefficient in a population of size 50 that undergoes"
+    ],
+    "display_heading": "22. What is the inbreeding coefficient in a population of size 50 that undergoes",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b6"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "problem_id": "6.E22",
+      "content": "22. What is the inbreeding coefficient in a population of size 50 that undergoes",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b6"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          626.0,
+          1025.0,
+          678.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact",
+      "content_sha256": "2869ef3e90ced2fc6da3bd5a96a386ebf7550ad83d671a45e05f70042c8be91e",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(a) exactly 47 generations of random mating followed by three generations of sib mating?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b7"
+      ],
+      "source_bboxes": [
+        [
+          309.0,
+          689.0,
+          1025.0,
+          739.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5a855f5570d293316d3a1a8d4cdc53e4b414625846a733bd656fdd086850d8b7",
+      "problem_id": "6.E22",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(b) 50 generations of random mating?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b8"
+      ],
+      "source_bboxes": [
+        [
+          311.0,
+          752.0,
+          691.0,
+          776.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ac39f47c9b671de0860265d57106acba4cd93ea98bf4615243c1fc8be42ada46",
+      "problem_id": "6.E22",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "23. If a mainland population of snails has an allele frequency of 0.8 and an island population has a frequency of 0.2, how many generations are required for the island population to achieve an allele frequency of 0.5, given a migration rate of 0.01?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b9"
+      ],
+      "source_bboxes": [
+        [
+          273.0,
+          786.0,
+          1026.0,
+          892.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "7b96f74a413572a3207419bafa04e28a56257ad2d7b9098b8749d95e47303efb",
+      "problem_id": "6.E23",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "24. If four populations with allele frequencies 0.2, 0.4, 0.6, and 0.8 undergo migration according to the island model with m = 0.05, what are the expected allele frequencies after 10 generations?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b10"
+      ],
+      "source_bboxes": [
+        [
+          274.0,
+          902.0,
+          1027.0,
+          981.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "0a4fac9ada4f1878638a03a723d9c4545ac9946396f08afc5642b980e52b4f9b",
+      "problem_id": "6.E24",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "25. In the island model of migration, how does the variance in allele frequency among populations at time t, $ \\sigma_{t}^{2} $, change as a function of m and t?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b11"
+      ],
+      "source_bboxes": [
+        [
+          274.0,
+          991.0,
+          1027.0,
+          1045.0
+        ]
+      ],
+      "provenance_score": 0.940678,
+      "content_sha256": "3f75b7362b40430662d19c295fe332ca27cbca6777c8ce6f7b702f6f0015075c",
+      "problem_id": "6.E25",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "26. When random genetic drift is offset by migration among populations in the island model, what value of m is necessary to keep the equilibrium value of F smaller than 0.05?",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b12"
+      ],
+      "source_bboxes": [
+        [
+          271.0,
+          1054.0,
+          1027.0,
+          1131.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "9094dae990f4c913683de950dbe2609c173a685221ca05298f3fea9315438eb4",
+      "problem_id": "6.E26",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "27. Two island populations 1 and 2 are shown in the accompanying diagram. In population 1 the allele frequency of A in generation t is $ x_t $, and in population 2 it is $ y_t $. In every generation, a fraction u > 0 of the alleles in population 1 is removed and replaced with alleles from population 2, and a fraction v > 0 of the alleles in population 2 is removed and replaced with alleles from population 1.\n\n[[see_figure:problem_6.27]]",
+      "source_page": 328,
+      "source_pages": [
+        328
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p058:b13",
+        "PopGen_chapter6:p058:b14"
+      ],
+      "source_bboxes": [
+        [
+          271.0,
+          1143.0,
+          1028.0,
+          1301.0
+        ],
+        [
+          519.0,
+          1311.0,
+          787.0,
+          1411.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "db69644f91f9c687ec9ab06e697595a844bcea234f8fbe9d226f371e4a907224",
+      "problem_id": "6.E27",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "The equations relating $ x_{t} $ to $ x_{t-1} $ and $ y_{t} $ to $ y_{t-1} $ are $$ x_{t}=x_{t-1}(1-u)+y_{t-1}u $$ $$ y_{t}=y_{t-1}(1-v)+x_{t-1}v $$",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b1"
+      ],
+      "source_bboxes": [
+        [
+          155.0,
+          206.0,
+          634.0,
+          234.0
+        ]
+      ],
+      "provenance_score": 0.951613,
+      "content_sha256": "c6a5e9f866d4874eb12d5fb94ad5f3cfa4ac88d163311185269825e6a7bb0458",
+      "problem_id": "6.E27",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(a) Derive an expression for $ x_t - y_t $ in terms of $ x_0 - y_0 $, and conclude that the equilibrium frequency $ \\hat{x} $ of A in population 1 equals the equilibrium frequency $ \\hat{y} $ of A in population 2.",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b3"
+      ],
+      "source_bboxes": [
+        [
+          152.0,
+          321.0,
+          865.0,
+          400.0
+        ]
+      ],
+      "provenance_score": 0.931507,
+      "content_sha256": "7f1cfc69f1e9cddae9759c6c0254d02c11ea5670bd13abfeeece282d0c5306a6",
+      "problem_id": "6.E27",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(b) Derive an expression for $ vx_{t} + uy_{t} $ in terms of $ x_{0} $ and $ y_{0} $, and conclude that the equilibrium frequencies are given by $$ \\hat{x}=\\hat{y}=\\frac{v x_{0}+u y_{0}}{u+v} $$",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b4"
+      ],
+      "source_bboxes": [
+        [
+          152.0,
+          409.0,
+          865.0,
+          462.0
+        ]
+      ],
+      "provenance_score": 0.877193,
+      "content_sha256": "70b4ea772224f4894a3123a7389f72bcfac4feebffe4969ca44048e75a20dd38",
+      "problem_id": "6.E27",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "(c) Explain how the approach to equilibrium differs between the case 0 < u + v < 1 and the case 1 < u + v < 2.",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b6"
+      ],
+      "source_bboxes": [
+        [
+          149.0,
+          536.0,
+          865.0,
+          585.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "babcda07e2342e62f1a58eb6839419c04457e19539502a6d27df4bfef73a2739",
+      "problem_id": "6.E27",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "28. In the Swabian Alps in Southern Germany, a verdant meadow serves as home to subpopulations of the incredible edible snail Helix pomatia. The subpopulations differ in the allele frequency of a mutation affecting shell coloration. A river meanders through the meadow from west to east, and a prominent knoll interrupts it from north to south. The accompanying crude diagram of the site shows the estimated allele frequency in a sample taken at each of 12 collection sites.\n\n[[see_figure:problem_6.28]]",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b7"
+      ],
+      "source_bboxes": [
+        [
+          113.0,
+          598.0,
+          863.0,
+          783.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "35f235a50a47eeb6087a6cbdbeb872d85e372e568654a90694f04a848006dbdc",
+      "inline_styles": [
+        {
+          "start": 126,
+          "end": 139,
+          "style": "italic",
+          "text": "Helix pomatia",
+          "source_page": 329,
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b7"
+          ],
+          "source_bboxes": [
+            [
+              113,
+              598,
+              863,
+              783
+            ]
+          ],
+          "source_content_sha256": "0344a8c342235a33373486279e047b43390c886b21029d8f792ea5fde195be1b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p059:b7": "0344a8c342235a33373486279e047b43390c886b21029d8f792ea5fde195be1b"
+          }
+        }
+      ],
+      "problem_id": "6.E28",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "problem",
+      "content": "Assuming that the differences in allele frequency are due mainly to random genetic drift, does the river or the knoll seem to be the stronger isolating barrier between the snail subpopulations? To solve this problem, first consider the subpopulation as divided into regions above (A) and below (B) the river (R), or as divided into regions west (W) or east (E) of the knoll (K). You should calculate $ F_{SR'} $, $ F_{KT} $, and $ F_{ST} $ for the division based on the river, and $ F_{SK'} $, $ F_{KT'} $, and $ F_{ST} $ for the division based on the knoll. The relative values of $ F_{SR} $ and $ F_{KT} $ should tell you whether the river or the knoll is the more significant barrier to genetic exchange.",
+      "source_page": 329,
+      "source_pages": [
+        329
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p059:b9"
+      ],
+      "source_bboxes": [
+        [
+          143.0,
+          1089.0,
+          860.0,
+          1329.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "2ce5028c0b10f45dcf404a5c55bda39089c16fad18a0fb354877cd435ea1261e",
+      "problem_id": "6.E28",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

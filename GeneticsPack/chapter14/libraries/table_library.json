@@ -1,0 +1,960 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter14",
+  "count": 3,
+  "tables": [
+    {
+      "id": "14.1",
+      "label_format": "Table 14.1",
+      "title": "Table 14.1 The genetic architecture of various characters in Drosophila inferred by chromosomal assay.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Character</td><td colspan=\"2\">Dominance</td><td rowspan=\"2\">Epistasis</td><td rowspan=\"2\">Reference</td></tr><tr><td>Present</td><td>Directional</td></tr><tr><td>Fitness-related Characters</td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"3\">Viability</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Breese and Mather 1960</td></tr><tr><td>—</td><td>—</td><td>Yes</td><td>Seager and Ayala 1982</td></tr><tr><td>No</td><td>—</td><td>Weak</td><td>Ferrari 1987</td></tr><tr><td>Male mating activity</td><td>—</td><td>—</td><td>No</td><td>Kosuda 1993</td></tr><tr><td>Egg hatchability</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Kearsey and Kojima 1967</td></tr><tr><td>Fecundity</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>Egg-pupal survival</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td rowspan=\"2\">Development time</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>No</td><td>—</td><td>Weak</td><td>Ferrari 1987</td></tr><tr><td>Progeny yield</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Barnes 1966</td></tr><tr><td>Egg production</td><td></td><td></td><td></td><td></td></tr><tr><td>D. melanogaster</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>D. pseudoobscura</td><td>Yes</td><td>—</td><td>Yes</td><td>Kojima and Kelleher 1963</td></tr><tr><td>Physiological Characters</td><td></td><td></td><td></td><td></td></tr><tr><td>DDT-resistance</td><td>Yes</td><td>No</td><td>Yes</td><td>Dapkus and Merrell 1977</td></tr><tr><td>ADH activity</td><td>Yes</td><td>Yes</td><td>Yes</td><td>McDonald and Ayala 1978</td></tr><tr><td>G6PD activity</td><td>—</td><td>—</td><td>Yes</td><td>Miyashita and Laurie-Ahlberg 1984</td></tr><tr><td>6PGD activity</td><td>—</td><td>—</td><td>Yes</td><td></td></tr><tr><td>Morphological Characters</td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\">Abdominal bristles</td><td>Weak</td><td>No</td><td>Weak</td><td>Keller and Mitchell 1962</td></tr><tr><td>Weak</td><td>No</td><td>Weak</td><td>Breese and Mather 1957</td></tr><tr><td rowspan=\"2\">Sternopleural bristles</td><td>Weak</td><td>No</td><td>Weak</td><td>Breese and Mather 1957</td></tr><tr><td>Weak</td><td>No</td><td>No</td><td>J. Hill 1964</td></tr><tr><td rowspan=\"2\">Thorax length</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Robertson 1954</td></tr><tr><td>Weak</td><td>No</td><td>Weak</td><td>Keller and Mitchell 1962</td></tr><tr><td rowspan=\"2\">Wing length</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Robertson 1954</td></tr><tr><td>No</td><td>—</td><td>No</td><td>Keller and Mitchell 1962</td></tr><tr><td>Body weight</td><td></td><td></td><td></td><td></td></tr><tr><td>D. melanogaster</td><td>No</td><td>—</td><td>Weak</td><td>Kearsey and Kojima 1967</td></tr><tr><td>D. pseudoobscura</td><td>Weak</td><td>No</td><td>Weak</td><td>Frahm and Kojima 1966</td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "Dominance",
+          "Epistasis",
+          "Reference"
+        ],
+        [
+          "Present",
+          "Directional"
+        ],
+        [
+          "Fitness-related Characters",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Viability",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Breese and Mather 1960"
+        ],
+        [
+          "—",
+          "—",
+          "Yes",
+          "Seager and Ayala 1982"
+        ],
+        [
+          "No",
+          "—",
+          "Weak",
+          "Ferrari 1987"
+        ],
+        [
+          "Male mating activity",
+          "—",
+          "—",
+          "No",
+          "Kosuda 1993"
+        ],
+        [
+          "Egg hatchability",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Kearsey and Kojima 1967"
+        ],
+        [
+          "Fecundity",
+          "Yes",
+          "Yes",
+          "—",
+          "Keller and Mitchell 1964"
+        ],
+        [
+          "Egg-pupal survival",
+          "Yes",
+          "Yes",
+          "—",
+          "Keller and Mitchell 1964"
+        ],
+        [
+          "Development time",
+          "Yes",
+          "Yes",
+          "—",
+          "Keller and Mitchell 1964"
+        ],
+        [
+          "No",
+          "—",
+          "Weak",
+          "Ferrari 1987"
+        ],
+        [
+          "Progeny yield",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Barnes 1966"
+        ],
+        [
+          "Egg production",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "D. melanogaster",
+          "Yes",
+          "Yes",
+          "—",
+          "Keller and Mitchell 1964"
+        ],
+        [
+          "D. pseudoobscura",
+          "Yes",
+          "—",
+          "Yes",
+          "Kojima and Kelleher 1963"
+        ],
+        [
+          "Physiological Characters",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "DDT-resistance",
+          "Yes",
+          "No",
+          "Yes",
+          "Dapkus and Merrell 1977"
+        ],
+        [
+          "ADH activity",
+          "Yes",
+          "Yes",
+          "Yes",
+          "McDonald and Ayala 1978"
+        ],
+        [
+          "G6PD activity",
+          "—",
+          "—",
+          "Yes",
+          "Miyashita and Laurie-Ahlberg 1984"
+        ],
+        [
+          "6PGD activity",
+          "—",
+          "—",
+          "Yes",
+          ""
+        ],
+        [
+          "Morphological Characters",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Abdominal bristles",
+          "Weak",
+          "No",
+          "Weak",
+          "Keller and Mitchell 1962"
+        ],
+        [
+          "Weak",
+          "No",
+          "Weak",
+          "Breese and Mather 1957"
+        ],
+        [
+          "Sternopleural bristles",
+          "Weak",
+          "No",
+          "Weak",
+          "Breese and Mather 1957"
+        ],
+        [
+          "Weak",
+          "No",
+          "No",
+          "J. Hill 1964"
+        ],
+        [
+          "Thorax length",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Robertson 1954"
+        ],
+        [
+          "Weak",
+          "No",
+          "Weak",
+          "Keller and Mitchell 1962"
+        ],
+        [
+          "Wing length",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Robertson 1954"
+        ],
+        [
+          "No",
+          "—",
+          "No",
+          "Keller and Mitchell 1962"
+        ],
+        [
+          "Body weight",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "D. melanogaster",
+          "No",
+          "—",
+          "Weak",
+          "Kearsey and Kojima 1967"
+        ],
+        [
+          "D. pseudoobscura",
+          "Weak",
+          "No",
+          "Weak",
+          "Frahm and Kojima 1966"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Expanded from a shorter table in Kearsey and Kojima (1967).",
+          "source_page": 396,
+          "bbox": [
+            149.0,
+            1300.0,
+            888.0,
+            1346.0
+          ],
+          "source_block_ids": [
+            "p396:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Source: Unless otherwise indicated, all analyses are for D. melanogaster. Most of these results were obtained by comparing differences between selected lines. Results for many characters were obtained by both whole and sectional chromosomal assays. Directional dominance occurs when multiple assayed regions show the same direction of dominance (e.g., high values tending to be dominant over low values). Features not examined are denoted by —.",
+          "source_page": 396,
+          "bbox": [
+            149.0,
+            1324.0,
+            1113.0,
+            1526.0
+          ],
+          "source_block_ids": [
+            "p396:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 396,
+          "title": "Table 14.1 The genetic architecture of various characters in Drosophila inferred by chromosomal assay.",
+          "html": "<table><tr><td rowspan=\"2\">Character</td><td colspan=\"2\">Dominance</td><td rowspan=\"2\">Epistasis</td><td rowspan=\"2\">Reference</td></tr><tr><td>Present</td><td>Directional</td></tr><tr><td>Fitness-related Characters</td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"3\">Viability</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Breese and Mather 1960</td></tr><tr><td>—</td><td>—</td><td>Yes</td><td>Seager and Ayala 1982</td></tr><tr><td>No</td><td>—</td><td>Weak</td><td>Ferrari 1987</td></tr><tr><td>Male mating activity</td><td>—</td><td>—</td><td>No</td><td>Kosuda 1993</td></tr><tr><td>Egg hatchability</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Kearsey and Kojima 1967</td></tr><tr><td>Fecundity</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>Egg-pupal survival</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td rowspan=\"2\">Development time</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>No</td><td>—</td><td>Weak</td><td>Ferrari 1987</td></tr><tr><td>Progeny yield</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Barnes 1966</td></tr><tr><td>Egg production</td><td></td><td></td><td></td><td></td></tr><tr><td>D. melanogaster</td><td>Yes</td><td>Yes</td><td>—</td><td>Keller and Mitchell 1964</td></tr><tr><td>D. pseudoobscura</td><td>Yes</td><td>—</td><td>Yes</td><td>Kojima and Kelleher 1963</td></tr><tr><td>Physiological Characters</td><td></td><td></td><td></td><td></td></tr><tr><td>DDT-resistance</td><td>Yes</td><td>No</td><td>Yes</td><td>Dapkus and Merrell 1977</td></tr><tr><td>ADH activity</td><td>Yes</td><td>Yes</td><td>Yes</td><td>McDonald and Ayala 1978</td></tr><tr><td>G6PD activity</td><td>—</td><td>—</td><td>Yes</td><td>Miyashita and Laurie-Ahlberg 1984</td></tr><tr><td>6PGD activity</td><td>—</td><td>—</td><td>Yes</td><td></td></tr><tr><td>Morphological Characters</td><td></td><td></td><td></td><td></td></tr><tr><td rowspan=\"2\">Abdominal bristles</td><td>Weak</td><td>No</td><td>Weak</td><td>Keller and Mitchell 1962</td></tr><tr><td>Weak</td><td>No</td><td>Weak</td><td>Breese and Mather 1957</td></tr><tr><td rowspan=\"2\">Sternopleural bristles</td><td>Weak</td><td>No</td><td>Weak</td><td>Breese and Mather 1957</td></tr><tr><td>Weak</td><td>No</td><td>No</td><td>J. Hill 1964</td></tr><tr><td rowspan=\"2\">Thorax length</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Robertson 1954</td></tr><tr><td>Weak</td><td>No</td><td>Weak</td><td>Keller and Mitchell 1962</td></tr><tr><td rowspan=\"2\">Wing length</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Robertson 1954</td></tr><tr><td>No</td><td>—</td><td>No</td><td>Keller and Mitchell 1962</td></tr><tr><td>Body weight</td><td></td><td></td><td></td><td></td></tr><tr><td>D. melanogaster</td><td>No</td><td>—</td><td>Weak</td><td>Kearsey and Kojima 1967</td></tr><tr><td>D. pseudoobscura</td><td>Weak</td><td>No</td><td>Weak</td><td>Frahm and Kojima 1966</td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "Dominance",
+              "Epistasis",
+              "Reference"
+            ],
+            [
+              "Present",
+              "Directional"
+            ],
+            [
+              "Fitness-related Characters",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Viability",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Breese and Mather 1960"
+            ],
+            [
+              "—",
+              "—",
+              "Yes",
+              "Seager and Ayala 1982"
+            ],
+            [
+              "No",
+              "—",
+              "Weak",
+              "Ferrari 1987"
+            ],
+            [
+              "Male mating activity",
+              "—",
+              "—",
+              "No",
+              "Kosuda 1993"
+            ],
+            [
+              "Egg hatchability",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Kearsey and Kojima 1967"
+            ],
+            [
+              "Fecundity",
+              "Yes",
+              "Yes",
+              "—",
+              "Keller and Mitchell 1964"
+            ],
+            [
+              "Egg-pupal survival",
+              "Yes",
+              "Yes",
+              "—",
+              "Keller and Mitchell 1964"
+            ],
+            [
+              "Development time",
+              "Yes",
+              "Yes",
+              "—",
+              "Keller and Mitchell 1964"
+            ],
+            [
+              "No",
+              "—",
+              "Weak",
+              "Ferrari 1987"
+            ],
+            [
+              "Progeny yield",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Barnes 1966"
+            ],
+            [
+              "Egg production",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D. melanogaster",
+              "Yes",
+              "Yes",
+              "—",
+              "Keller and Mitchell 1964"
+            ],
+            [
+              "D. pseudoobscura",
+              "Yes",
+              "—",
+              "Yes",
+              "Kojima and Kelleher 1963"
+            ],
+            [
+              "Physiological Characters",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "DDT-resistance",
+              "Yes",
+              "No",
+              "Yes",
+              "Dapkus and Merrell 1977"
+            ],
+            [
+              "ADH activity",
+              "Yes",
+              "Yes",
+              "Yes",
+              "McDonald and Ayala 1978"
+            ],
+            [
+              "G6PD activity",
+              "—",
+              "—",
+              "Yes",
+              "Miyashita and Laurie-Ahlberg 1984"
+            ],
+            [
+              "6PGD activity",
+              "—",
+              "—",
+              "Yes",
+              ""
+            ],
+            [
+              "Morphological Characters",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Abdominal bristles",
+              "Weak",
+              "No",
+              "Weak",
+              "Keller and Mitchell 1962"
+            ],
+            [
+              "Weak",
+              "No",
+              "Weak",
+              "Breese and Mather 1957"
+            ],
+            [
+              "Sternopleural bristles",
+              "Weak",
+              "No",
+              "Weak",
+              "Breese and Mather 1957"
+            ],
+            [
+              "Weak",
+              "No",
+              "No",
+              "J. Hill 1964"
+            ],
+            [
+              "Thorax length",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Robertson 1954"
+            ],
+            [
+              "Weak",
+              "No",
+              "Weak",
+              "Keller and Mitchell 1962"
+            ],
+            [
+              "Wing length",
+              "Yes",
+              "Yes",
+              "Yes",
+              "Robertson 1954"
+            ],
+            [
+              "No",
+              "—",
+              "No",
+              "Keller and Mitchell 1962"
+            ],
+            [
+              "Body weight",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "D. melanogaster",
+              "No",
+              "—",
+              "Weak",
+              "Kearsey and Kojima 1967"
+            ],
+            [
+              "D. pseudoobscura",
+              "Weak",
+              "No",
+              "Weak",
+              "Frahm and Kojima 1966"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Expanded from a shorter table in Kearsey and Kojima (1967).",
+              "source_page": 396,
+              "bbox": [
+                149.0,
+                1300.0,
+                888.0,
+                1346.0
+              ],
+              "source_block_ids": [
+                "p396:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Source: Unless otherwise indicated, all analyses are for D. melanogaster. Most of these results were obtained by comparing differences between selected lines. Results for many characters were obtained by both whole and sectional chromosomal assays. Directional dominance occurs when multiple assayed regions show the same direction of dominance (e.g., high values tending to be dominant over low values). Features not examined are denoted by —.",
+              "source_page": 396,
+              "bbox": [
+                149.0,
+                1324.0,
+                1113.0,
+                1526.0
+              ],
+              "source_block_ids": [
+                "p396:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            127.0,
+            194.0,
+            1095.0,
+            1299.0
+          ],
+          "caption_bbox": [
+            120.0,
+            125.0,
+            1078.0,
+            202.0
+          ],
+          "source_block_ids": [
+            "p396:b3"
+          ],
+          "caption_source_block_ids": [
+            "p396:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter14",
+        "unit_id": "Genetics_chapter14_004",
+        "page": 396,
+        "pages": [
+          396
+        ],
+        "bbox": [
+          127.0,
+          194.0,
+          1095.0,
+          1299.0
+        ],
+        "caption_bbox": [
+          120.0,
+          125.0,
+          1078.0,
+          202.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "14.2",
+      "label_format": "Table 14.2",
+      "title": "Table 14.2 Properties of the most commonly used classes of molecular marker loci.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>RFLP</td><td>RAPD</td><td>Microsatellite DNA</td></tr><tr><td>Number of alleles/locus</td><td>Few</td><td>Few</td><td>Many</td></tr><tr><td>Genomic abundance</td><td>High</td><td>Very high</td><td>Medium</td></tr><tr><td>Marker dominance</td><td>Codominant</td><td>Dominant</td><td>Codominant</td></tr><tr><td>Amount of DNA required</td><td>2–10 $ \\mu $g</td><td>10–25 ng</td><td>50–100 ng</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "RFLP",
+          "RAPD",
+          "Microsatellite DNA"
+        ],
+        [
+          "Number of alleles/locus",
+          "Few",
+          "Few",
+          "Many"
+        ],
+        [
+          "Genomic abundance",
+          "High",
+          "Very high",
+          "Medium"
+        ],
+        [
+          "Marker dominance",
+          "Codominant",
+          "Dominant",
+          "Codominant"
+        ],
+        [
+          "Amount of DNA required",
+          "2–10 $ \\mu $g",
+          "10–25 ng",
+          "50–100 ng"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Rafalski and Tingey 1993.",
+          "source_page": 407,
+          "bbox": [
+            71.0,
+            390.0,
+            432.0,
+            430.0
+          ],
+          "source_block_ids": [
+            "p407:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: RFLP = restriction fragment length polymorphism, and RAPD = randomly amplified polymorphic DNA.",
+          "source_page": 407,
+          "bbox": [
+            68.0,
+            419.0,
+            1024.0,
+            511.0
+          ],
+          "source_block_ids": [
+            "p407:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 407,
+          "title": "Table 14.2 Properties of the most commonly used classes of molecular marker loci.",
+          "html": "<table><tr><td></td><td>RFLP</td><td>RAPD</td><td>Microsatellite DNA</td></tr><tr><td>Number of alleles/locus</td><td>Few</td><td>Few</td><td>Many</td></tr><tr><td>Genomic abundance</td><td>High</td><td>Very high</td><td>Medium</td></tr><tr><td>Marker dominance</td><td>Codominant</td><td>Dominant</td><td>Codominant</td></tr><tr><td>Amount of DNA required</td><td>2–10 $ \\mu $g</td><td>10–25 ng</td><td>50–100 ng</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "RFLP",
+              "RAPD",
+              "Microsatellite DNA"
+            ],
+            [
+              "Number of alleles/locus",
+              "Few",
+              "Few",
+              "Many"
+            ],
+            [
+              "Genomic abundance",
+              "High",
+              "Very high",
+              "Medium"
+            ],
+            [
+              "Marker dominance",
+              "Codominant",
+              "Dominant",
+              "Codominant"
+            ],
+            [
+              "Amount of DNA required",
+              "2–10 $ \\mu $g",
+              "10–25 ng",
+              "50–100 ng"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Rafalski and Tingey 1993.",
+              "source_page": 407,
+              "bbox": [
+                71.0,
+                390.0,
+                432.0,
+                430.0
+              ],
+              "source_block_ids": [
+                "p407:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: RFLP = restriction fragment length polymorphism, and RAPD = randomly amplified polymorphic DNA.",
+              "source_page": 407,
+              "bbox": [
+                68.0,
+                419.0,
+                1024.0,
+                511.0
+              ],
+              "source_block_ids": [
+                "p407:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            72.0,
+            170.0,
+            1030.0,
+            417.0
+          ],
+          "caption_bbox": [
+            77.0,
+            128.0,
+            983.0,
+            186.0
+          ],
+          "source_block_ids": [
+            "p407:b3"
+          ],
+          "caption_source_block_ids": [
+            "p407:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter14",
+        "unit_id": "Genetics_chapter14_007",
+        "page": 407,
+        "pages": [
+          407
+        ],
+        "bbox": [
+          72.0,
+          170.0,
+          1030.0,
+          417.0
+        ],
+        "caption_bbox": [
+          77.0,
+          128.0,
+          983.0,
+          186.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "14.3",
+      "label_format": "Table 14.3",
+      "title": "Table 14.3 The relationship between map distance and physical distance.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Haploid Genome Size (kilobase pairs)</td><td>Map Length (centiMorgans)</td><td>Kilobases/centiMorgan</td></tr><tr><td>Yeast</td><td>$ 2.2 \\times 10^{4} $</td><td>3,700</td><td>6</td></tr><tr><td>Neurospora</td><td>$ 4.2 \\times 10^{4} $</td><td>500</td><td>80</td></tr><tr><td>Arabidopsis</td><td>$ 7.0 \\times 10^{4} $</td><td>500</td><td>140</td></tr><tr><td>Drosophila</td><td>$ 2.0 \\times 10^{5} $</td><td>290</td><td>700</td></tr><tr><td>Tomato</td><td>$ 7.2 \\times 10^{5} $</td><td>1,400</td><td>510</td></tr><tr><td>Human</td><td>$ 3.0 \\times 10^{6} $</td><td>2,710</td><td>1,110</td></tr><tr><td>Corn</td><td>$ 3.0 \\times 10^{6} $</td><td>1,400</td><td>2,140</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Haploid Genome Size (kilobase pairs)",
+          "Map Length (centiMorgans)",
+          "Kilobases/centiMorgan"
+        ],
+        [
+          "Yeast",
+          "$ 2.2 \\times 10^{4} $",
+          "3,700",
+          "6"
+        ],
+        [
+          "Neurospora",
+          "$ 4.2 \\times 10^{4} $",
+          "500",
+          "80"
+        ],
+        [
+          "Arabidopsis",
+          "$ 7.0 \\times 10^{4} $",
+          "500",
+          "140"
+        ],
+        [
+          "Drosophila",
+          "$ 2.0 \\times 10^{5} $",
+          "290",
+          "700"
+        ],
+        [
+          "Tomato",
+          "$ 7.2 \\times 10^{5} $",
+          "1,400",
+          "510"
+        ],
+        [
+          "Human",
+          "$ 3.0 \\times 10^{6} $",
+          "2,710",
+          "1,110"
+        ],
+        [
+          "Corn",
+          "$ 3.0 \\times 10^{6} $",
+          "1,400",
+          "2,140"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Catchside 1977, Shields 1989.",
+          "source_page": 410,
+          "bbox": [
+            150.0,
+            1387.0,
+            547.0,
+            1426.0
+          ],
+          "source_block_ids": [
+            "p410:b6"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: These data are rather crude approximations, averaged over the entire genome and do not account for the substantial variation in map-distance relationships that can exist within and between individuals.",
+          "source_page": 410,
+          "bbox": [
+            149.0,
+            1404.0,
+            1112.0,
+            1517.0
+          ],
+          "source_block_ids": [
+            "p410:b7"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 410,
+          "title": "Table 14.3 The relationship between map distance and physical distance.",
+          "html": "<table><tr><td>Species</td><td>Haploid Genome Size (kilobase pairs)</td><td>Map Length (centiMorgans)</td><td>Kilobases/centiMorgan</td></tr><tr><td>Yeast</td><td>$ 2.2 \\times 10^{4} $</td><td>3,700</td><td>6</td></tr><tr><td>Neurospora</td><td>$ 4.2 \\times 10^{4} $</td><td>500</td><td>80</td></tr><tr><td>Arabidopsis</td><td>$ 7.0 \\times 10^{4} $</td><td>500</td><td>140</td></tr><tr><td>Drosophila</td><td>$ 2.0 \\times 10^{5} $</td><td>290</td><td>700</td></tr><tr><td>Tomato</td><td>$ 7.2 \\times 10^{5} $</td><td>1,400</td><td>510</td></tr><tr><td>Human</td><td>$ 3.0 \\times 10^{6} $</td><td>2,710</td><td>1,110</td></tr><tr><td>Corn</td><td>$ 3.0 \\times 10^{6} $</td><td>1,400</td><td>2,140</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Haploid Genome Size (kilobase pairs)",
+              "Map Length (centiMorgans)",
+              "Kilobases/centiMorgan"
+            ],
+            [
+              "Yeast",
+              "$ 2.2 \\times 10^{4} $",
+              "3,700",
+              "6"
+            ],
+            [
+              "Neurospora",
+              "$ 4.2 \\times 10^{4} $",
+              "500",
+              "80"
+            ],
+            [
+              "Arabidopsis",
+              "$ 7.0 \\times 10^{4} $",
+              "500",
+              "140"
+            ],
+            [
+              "Drosophila",
+              "$ 2.0 \\times 10^{5} $",
+              "290",
+              "700"
+            ],
+            [
+              "Tomato",
+              "$ 7.2 \\times 10^{5} $",
+              "1,400",
+              "510"
+            ],
+            [
+              "Human",
+              "$ 3.0 \\times 10^{6} $",
+              "2,710",
+              "1,110"
+            ],
+            [
+              "Corn",
+              "$ 3.0 \\times 10^{6} $",
+              "1,400",
+              "2,140"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Catchside 1977, Shields 1989.",
+              "source_page": 410,
+              "bbox": [
+                150.0,
+                1387.0,
+                547.0,
+                1426.0
+              ],
+              "source_block_ids": [
+                "p410:b6"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: These data are rather crude approximations, averaged over the entire genome and do not account for the substantial variation in map-distance relationships that can exist within and between individuals.",
+              "source_page": 410,
+              "bbox": [
+                149.0,
+                1404.0,
+                1112.0,
+                1517.0
+              ],
+              "source_block_ids": [
+                "p410:b7"
+              ]
+            }
+          ],
+          "bbox": [
+            143.0,
+            1079.0,
+            1100.0,
+            1386.0
+          ],
+          "caption_bbox": [
+            138.0,
+            1043.0,
+            941.0,
+            1091.0
+          ],
+          "source_block_ids": [
+            "p410:b5"
+          ],
+          "caption_source_block_ids": [
+            "p410:b4"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter14",
+        "unit_id": "Genetics_chapter14_009",
+        "page": 410,
+        "pages": [
+          410
+        ],
+        "bbox": [
+          143.0,
+          1079.0,
+          1100.0,
+          1386.0
+        ],
+        "caption_bbox": [
+          138.0,
+          1043.0,
+          941.0,
+          1091.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

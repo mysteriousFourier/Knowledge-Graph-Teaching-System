@@ -1,0 +1,148 @@
+{
+  "id": "Genetics_chapter14_004",
+  "metadata": {
+    "chapter": "Genetics_chapter14",
+    "section": "CLASSICAL APPROACHES",
+    "subsections": [
+      "Thoday's Method"
+    ],
+    "section_level_1": "CLASSICAL APPROACHES",
+    "section_level_2": "Thoday's Method",
+    "heading_path": [
+      "CLASSICAL APPROACHES",
+      "Thoday's Method"
+    ],
+    "display_heading": "CLASSICAL APPROACHES / Thoday's Method",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 395,
+      "printed_page": 375,
+      "source_block_ids": [
+        "p395:b4"
+      ],
+      "bbox": [
+        59.0,
+        896.0,
+        286.0,
+        931.0
+      ],
+      "raw_text": "Thoday's Method"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "1 today (1961, 1979) introduced a considerable refinement for crude chromosomal assays. His method is of substantial interest for purely historical reasons, but it also points out potential limitations of the flanking-marker mapping methods discussed in subsequent chapters. Consider a hypothetical QTL between two linked markers, with allele Q fixed in one inbred line (the tester line, also fixed for alleles A and B at the flanking marker loci), and q in another line (fixed for markers a and b). Substituting an aqb chromosome into the tester line gives AQB/aqb heterozygotes, and these individuals are subsequently backcrossed to the tester line. Recombinant aB progeny are then scored for the trait of interest. Since these recombinant chromosomes are either aqB or aQB, a QTL with detectable effects is indicated by the presence of two distinct character classes (corresponding to QQ and Qq individuals). The presence of a linked QTL outside of the interval can also generate distinct classes, but this is not an issue if only one recombination event occurs per chromosome. The main limitation of Thoday's method is the difficulty of isolating single recombinant chromosomes and propagating them intact (without further recombination) in organisms other than Drosophila.",
+      "source_page": 395,
+      "printed_page": 375,
+      "source_block_ids": [
+        "p395:b5"
+      ],
+      "bbox": [
+        45.0,
+        938.0,
+        1016.0,
+        1472.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:14.1]]",
+      "source_page": 396,
+      "printed_page": 376,
+      "source_block_ids": [
+        "p396:b3"
+      ],
+      "bbox": [
+        127.0,
+        194.0,
+        1095.0,
+        1299.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter14:1]]",
+      "source_page": 397,
+      "source_block_ids": [
+        "p397:b2"
+      ],
+      "bbox": [
+        113.0,
+        182.0,
+        988.0,
+        589.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "McMillan and Robertson (1974) found that the power of Thoday’s method is generally very poor. For high power, both the number of recombinant chromosomes (N) and the number of replicates (n) per recombinant chromosome need to be large. Even if a factor has a large effect, it will remain undetected unless the sample of recombinant chromosomes contains both factor alleles, which requires a sufficiently large N. To see this result, set the distance between the two markers to one, and let $ f(0 \\leq f \\leq 1) $ denote the relative distance between factor and marker A, so that a fraction f of the aB recombinants are aqB and 1 - f are aQB. The probability that N recombinant (aB) chromosomes all contain the same QTL allele is $ f^N + (1 - f)^N $. If f is close to zero or one, N has to be considerable for a sample to contain a sufficient number of both QTL genotypes for detection. The power for detection is maximized when the factor is exactly between the two markers. Graphs of power are given by McMillan and Robertson (1974).",
+      "source_page": 397,
+      "printed_page": 377,
+      "source_block_ids": [
+        "p397:b3"
+      ],
+      "bbox": [
+        50.0,
+        627.0,
+        1017.0,
+        1073.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thoday’s method can be extended to allow for multiple factors between two markers, but not without complications. As shown in Example 2, the estimation of map distances and effects of multiple QTLs between markers critically assumes that all QTL alleles in the line being examined have the same directional effect (McMillan and Robertson 1974). The following caveat will be a recurring theme as we continue to consider molecular-marker approaches: these methods can be compromised if the line being examined contains linked QTL alleles of opposite effects. Data from inbred lines show that such situations are not uncommon (Chapter 15).",
+      "source_page": 397,
+      "printed_page": 377,
+      "source_block_ids": [
+        "p397:b4"
+      ],
+      "bbox": [
+        39.0,
+        1043.0,
+        1006.0,
+        1331.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter14:2]]",
+      "source_page": 397,
+      "source_block_ids": [
+        "p397:b5",
+        "p398:b2",
+        "p398:b3",
+        "p398:b4",
+        "p398:b5",
+        "p398:b6"
+      ],
+      "bbox": [
+        83.0,
+        1363.0,
+        948.0,
+        1510.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:14.1]]",
+      "source_page": 399,
+      "printed_page": 379,
+      "source_block_ids": [
+        "p399:b3"
+      ],
+      "bbox": [
+        106.0,
+        953.0,
+        972.0,
+        1138.0
+      ]
+    }
+  ]
+}

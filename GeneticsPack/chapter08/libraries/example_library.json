@@ -1,0 +1,569 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter8",
+  "count": 11,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter8:1",
+      "example_ref": "Genetics_chapter8:1",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 1",
+      "title": "Example 1. A morphological analysis of a pentatomid bug (Euschistus variolarius) population performed by Lande and Arnold (1983) provides a good example of the insight that can be ",
+      "source_file": "Genetics_chapter8_003.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_chapter8_003.json",
+      "end_block_index": 13,
+      "block_ids": [
+        "p197:b7",
+        "p197:b8",
+        "p197:b9",
+        "p198:b2",
+        "p198:b3"
+      ],
+      "content_markdown": "Example 1. A morphological analysis of a pentatomid bug (Euschistus variolarius) population performed by Lande and Arnold (1983) provides a good example of the insight that can be gained from a multivariate approach. The bugs were collected along the shore of Lake Michigan after a storm. Of the 94 individuals that were recovered, 39 were alive. All individuals were measured for four characters: head and thorax width, and scutellum and forewing length. The data were then logarithmically transformed to more closely approximate normality (Chapter 11). All surviving bugs were assumed to have equal fitness (W = 1), and all dead bugs to have zero fitness (W = 0). Hence, mean fitness is the fraction p of individuals that survived, giving relative fitnesses, $ w = W / \\overline{W} $, as\n\n[[FORMULA:Genetics_chapter8_formula010]]\n\nThe selection differential for each of the characters is simply the difference between the mean phenotype of the 39 survivors and the mean of the entire sample. These are reported in units of phenotypic standard deviations in the following table, along with the partial regression coefficients of relative fitness on the four morphological characters. Here * and ** indicate significance at the 5% and 1% levels. All of the phenotypic correlations are highly significant.\n\n<table><tr><td>Character</td><td>Selection Differential</td><td colspan=\"2\">Partial Regression Coef. of Fitness</td><td colspan=\"3\">Phenotypic Correlations</td></tr><tr><td>$ z_{i} $</td><td>$ S_{i} $</td><td>$ b_{i} $</td><td>H</td><td>T</td><td>S</td><td>F</td></tr><tr><td>Head (H)</td><td>-0.11</td><td>-0.7</td><td>1.00</td><td>0.72</td><td>0.50</td><td>0.60</td></tr><tr><td>Thorax (T)</td><td>-0.06</td><td>11.6 $ ^{**} $</td><td></td><td>1.00</td><td>0.59</td><td>0.71</td></tr><tr><td>Scutellum (S)</td><td>-0.28 $ ^{*} $</td><td>-2.8</td><td></td><td></td><td>1.00</td><td>0.62</td></tr><tr><td>Forewing (F)</td><td>-0.43 $ ^{**} $</td><td>-16.6 $ ^{**} $</td><td></td><td></td><td></td><td>1.00</td></tr></table>\n\nThe estimates of the partial regression coefficients nicely illustrate two points discussed earlier. First, despite the strong directional selection operating directly on thorax size, the selection differential for thorax size is negligible. This lack of apparent selection results because the positive correlation between thorax width and wing length is coupled with negative forces of selection on the latter character. Second, there is a significant negative selection differential on scutellum length even though there is no significant direct selection on the character. The negative selection differential is largely an indirect consequence of the strong selection for smaller wing length.",
+      "content_plain": "Example 1. A morphological analysis of a pentatomid bug (Euschistus variolarius) population performed by Lande and Arnold (1983) provides a good example of the insight that can be gained from a multivariate approach. The bugs were collected along the shore of Lake Michigan after a storm. Of the 94 individuals that were recovered, 39 were alive. All individuals were measured for four characters: head and thorax width, and scutellum and forewing length. The data were then logarithmically transformed to more closely approximate normality (Chapter 11). All surviving bugs were assumed to have equal fitness (W = 1), and all dead bugs to have zero fitness (W = 0). Hence, mean fitness is the fraction p of individuals that survived, giving relative fitnesses,  w = W / \\overline{W} , as\n\n[[FORMULA:Genetics_chapter8_formula010]]\n\nThe selection differential for each of the characters is simply the difference between the mean phenotype of the 39 survivors and the mean of the entire sample. These are reported in units of phenotypic standard deviations in the following table, along with the partial regression coefficients of relative fitness on the four morphological characters. Here  and  indicate significance at the 5% and 1% levels. All of the phenotypic correlations are highly significant.\n\n<table><tr><td>Character</td><td>Selection Differential</td><td colspan=\"2\">Partial Regression Coef. of Fitness</td><td colspan=\"3\">Phenotypic Correlations</td></tr><tr><td> z_{i} </td><td> S_{i} </td><td> b_{i} </td><td>H</td><td>T</td><td>S</td><td>F</td></tr><tr><td>Head (H)</td><td>-0.11</td><td>-0.7</td><td>1.00</td><td>0.72</td><td>0.50</td><td>0.60</td></tr><tr><td>Thorax (T)</td><td>-0.06</td><td>11.6  ^{} </td><td></td><td>1.00</td><td>0.59</td><td>0.71</td></tr><tr><td>Scutellum (S)</td><td>-0.28  ^{} </td><td>-2.8</td><td></td><td></td><td>1.00</td><td>0.62</td></tr><tr><td>Forewing (F)</td><td>-0.43  ^{} </td><td>-16.6  ^{} </td><td></td><td></td><td></td><td>1.00</td></tr></table>\n\nThe estimates of the partial regression coefficients nicely illustrate two points discussed earlier. First, despite the strong directional selection operating directly on thorax size, the selection differential for thorax size is negligible. This lack of apparent selection results because the positive correlation between thorax width and wing length is coupled with negative forces of selection on the latter character. Second, there is a significant negative selection differential on scutellum length even though there is no significant direct selection on the character. The negative selection differential is largely an indirect consequence of the strong selection for smaller wing length.",
+      "formula_refs": [
+        "Genetics_chapter8_formula010"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 198,
+          "y": 779.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 197
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:2",
+      "example_ref": "Genetics_chapter8:2",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 2",
+      "title": "Example 2. Compute the product L = MN where",
+      "source_file": "Genetics_chapter8_009.json",
+      "start_block_index": 0,
+      "end_source_file": "Genetics_chapter8_009.json",
+      "end_block_index": 9,
+      "block_ids": [
+        "p201:b6",
+        "p201:b7",
+        "p201:b8",
+        "p201:b9",
+        "p201:b10",
+        "p201:b11",
+        "p201:b12",
+        "p201:b13",
+        "p201:b14",
+        "p201:b15"
+      ],
+      "content_markdown": "Example 2. Compute the product L = MN where\n\n[[FORMULA:Genetics_chapter8_formula025]]\n\nWriting $ \\mathbf{M} = \\begin{pmatrix} \\mathbf{m}_{1} \\\\ \\mathbf{m}_{2} \\\\ \\mathbf{m}_{3} \\end{pmatrix} $ and $ \\mathbf{N} = (\\mathbf{n}_{1} \\quad \\mathbf{n}_{2} \\quad \\mathbf{n}_{3}) $, we have\n\n[[FORMULA:Genetics_chapter8_formula026]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula027]]\n\nThe resulting matrix $ \\mathbf{L} $ is $ 3 \\times 3 $. Applying Equation 8.6b, the element in the first row and first column of $ \\mathbf{L} $ is the dot product of the first row vector of $ \\mathbf{M} $ with the first column vector of $ \\mathbf{N} $,\n\n[[FORMULA:Genetics_chapter8_formula028]]\n\nComputing the other elements gives\n\n[[FORMULA:Genetics_chapter8_formula029]]",
+      "content_plain": "Example 2. Compute the product L = MN where\n\n[[FORMULA:Genetics_chapter8_formula025]]\n\nWriting  \\mathbf{M} = \\begin{pmatrix} \\mathbf{m}_{1} \\\\ \\mathbf{m}_{2} \\\\ \\mathbf{m}_{3} \\end{pmatrix}  and  \\mathbf{N} = (\\mathbf{n}_{1} \\quad \\mathbf{n}_{2} \\quad \\mathbf{n}_{3}) , we have\n\n[[FORMULA:Genetics_chapter8_formula026]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula027]]\n\nThe resulting matrix  \\mathbf{L}  is  3 \\times 3 . Applying Equation 8.6b, the element in the first row and first column of  \\mathbf{L}  is the dot product of the first row vector of  \\mathbf{M}  with the first column vector of  \\mathbf{N} ,\n\n[[FORMULA:Genetics_chapter8_formula028]]\n\nComputing the other elements gives\n\n[[FORMULA:Genetics_chapter8_formula029]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula025",
+        "Genetics_chapter8_formula026",
+        "Genetics_chapter8_formula027",
+        "Genetics_chapter8_formula028",
+        "Genetics_chapter8_formula029"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 201,
+          "y": 1521.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 201
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:3",
+      "example_ref": "Genetics_chapter8:3",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 3",
+      "title": "Example 3. Consider the multiple regression of $y$ on two predictor variables, $z_1$ and $z_2$, so that $y = \\alpha + \\beta_1 z_1 + \\beta_2 z_2 + e$. In the notation of Equation 8.",
+      "source_file": "Genetics_chapter8_011.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_chapter8_011.json",
+      "end_block_index": 27,
+      "block_ids": [
+        "p204:b17",
+        "p204:b18",
+        "p205:b2",
+        "p205:b3",
+        "p205:b4",
+        "p205:b5",
+        "p205:b6",
+        "p205:b7",
+        "p205:b8",
+        "p205:b9",
+        "p205:b10",
+        "p205:b11"
+      ],
+      "content_markdown": "Example 3. Consider the multiple regression of $y$ on two predictor variables, $z_1$ and $z_2$, so that $y = \\alpha + \\beta_1 z_1 + \\beta_2 z_2 + e$. In the notation of Equation 8.5, we have\n\n[[FORMULA:Genetics_chapter8_formula046]]\n\nRecalling that $ \\sigma(z_{1}, z_{2}) = \\rho_{12} \\sigma(z_{1}) \\sigma(z_{2}) $, Equation 8.11 gives\n\n[[FORMULA:Genetics_chapter8_formula047]]\n\nThe inverse exists provided both characters have nonzero variance and are not completely correlated ( $ |\\rho_{12}| \\neq 1 $). Recalling Equation 8.10b, the partial regression coefficients are given by $ \\boldsymbol{\\beta} = \\mathbf{V}^{-1} \\mathbf{c} $, or\n\n[[FORMULA:Genetics_chapter8_formula048]]\n\nAgain using $ \\sigma(z_{1}, z_{2}) = \\rho_{12} \\sigma(z_{1}) \\sigma(z_{2}) $, this equation reduces to\n\n[[FORMULA:Genetics_chapter8_formula049]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula050]]\n\nNote that only when the predictor variables are uncorrelated ( $ \\rho_{12} = 0 $), do the partial regression coefficients $ \\beta_{1} $ and $ \\beta_{2} $ reduce to the univariate regression slopes,\n\n[[FORMULA:Genetics_chapter8_formula051]]",
+      "content_plain": "Example 3. Consider the multiple regression of y on two predictor variables, z_1 and z_2, so that y = \\alpha + \\beta_1 z_1 + \\beta_2 z_2 + e. In the notation of Equation 8.5, we have\n\n[[FORMULA:Genetics_chapter8_formula046]]\n\nRecalling that  \\sigma(z_{1}, z_{2}) = \\rho_{12} \\sigma(z_{1}) \\sigma(z_{2}) , Equation 8.11 gives\n\n[[FORMULA:Genetics_chapter8_formula047]]\n\nThe inverse exists provided both characters have nonzero variance and are not completely correlated (  |\\rho_{12}| \\neq 1 ). Recalling Equation 8.10b, the partial regression coefficients are given by  \\boldsymbol{\\beta} = \\mathbf{V}^{-1} \\mathbf{c} , or\n\n[[FORMULA:Genetics_chapter8_formula048]]\n\nAgain using  \\sigma(z_{1}, z_{2}) = \\rho_{12} \\sigma(z_{1}) \\sigma(z_{2}) , this equation reduces to\n\n[[FORMULA:Genetics_chapter8_formula049]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula050]]\n\nNote that only when the predictor variables are uncorrelated (  \\rho_{12} = 0 ), do the partial regression coefficients  \\beta_{1}  and  \\beta_{2}  reduce to the univariate regression slopes,\n\n[[FORMULA:Genetics_chapter8_formula051]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula046",
+        "Genetics_chapter8_formula047",
+        "Genetics_chapter8_formula048",
+        "Genetics_chapter8_formula049",
+        "Genetics_chapter8_formula050",
+        "Genetics_chapter8_formula051"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 205,
+          "y": 1078.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 204
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:4",
+      "example_ref": "Genetics_chapter8:4",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 4",
+      "title": "Example 4. Compute the determinant of",
+      "source_file": "Genetics_chapter8_013.json",
+      "start_block_index": 0,
+      "end_source_file": "Genetics_chapter8_013.json",
+      "end_block_index": 6,
+      "block_ids": [
+        "p206:b5",
+        "p206:b6",
+        "p206:b7",
+        "p206:b8",
+        "p206:b9",
+        "p206:b10",
+        "p206:b11"
+      ],
+      "content_markdown": "Example 4. Compute the determinant of\n\n[[FORMULA:Genetics_chapter8_formula055]]\n\nLetting $i = 1$, i.e., using the elements in the first row of A,\n\n[[FORMULA:Genetics_chapter8_formula056]]\n\nUsing Equation 8.12a to obtain the determinants of the $ 2 \\times 2 $ matrices, this simplifies to\n\n[[FORMULA:Genetics_chapter8_formula057]]\n\nThe same answer is obtained regardless of which row is used, and expanding around a column, instead of a row, produces the same result. Thus, in order to reduce the number of computations required to obtain a determinant, it is useful to expand using the row or column that contains the most zeros.",
+      "content_plain": "Example 4. Compute the determinant of\n\n[[FORMULA:Genetics_chapter8_formula055]]\n\nLetting i = 1, i.e., using the elements in the first row of A,\n\n[[FORMULA:Genetics_chapter8_formula056]]\n\nUsing Equation 8.12a to obtain the determinants of the  2 \\times 2  matrices, this simplifies to\n\n[[FORMULA:Genetics_chapter8_formula057]]\n\nThe same answer is obtained regardless of which row is used, and expanding around a column, instead of a row, produces the same result. Thus, in order to reduce the number of computations required to obtain a determinant, it is useful to expand using the row or column that contains the most zeros.",
+      "formula_refs": [
+        "Genetics_chapter8_formula055",
+        "Genetics_chapter8_formula056",
+        "Genetics_chapter8_formula057"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 206,
+          "y": 1320.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 206
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:5",
+      "example_ref": "Genetics_chapter8:5",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 5",
+      "title": "Example 5. Compute the inverse of",
+      "source_file": "Genetics_chapter8_015.json",
+      "start_block_index": 0,
+      "end_source_file": "Genetics_chapter8_015.json",
+      "end_block_index": 15,
+      "block_ids": [
+        "p207:b3",
+        "p207:b4",
+        "p207:b5",
+        "p207:b6",
+        "p207:b7",
+        "p207:b8",
+        "p207:b9",
+        "p207:b10",
+        "p207:b11",
+        "p207:b12",
+        "p207:b13",
+        "p207:b14",
+        "p207:b15",
+        "p207:b16",
+        "p208:b2",
+        "p208:b3"
+      ],
+      "content_markdown": "Example 5. Compute the inverse of\n\n[[FORMULA:Genetics_chapter8_formula059]]\n\nFirst, find the determinants of the minors,\n\n[[FORMULA:Genetics_chapter8_formula060]]\n\n[[FORMULA:Genetics_chapter8_formula061]]\n\n[[FORMULA:Genetics_chapter8_formula062]]\n\n[[FORMULA:Genetics_chapter8_formula063]]\n\n[[FORMULA:Genetics_chapter8_formula064]]\n\nUsing Equation 8.12b and expanding using the first row of A gives\n\n[[FORMULA:Genetics_chapter8_formula065]]\n\nReturning to the matrix in brackets in Equation 8.13, we obtain\n\n[[FORMULA:Genetics_chapter8_formula066]]\n\nand then taking the transpose,\n\n[[FORMULA:Genetics_chapter8_formula067]]\n\nTo verify that this is indeed the inverse of A, multiply $ A^{-1} $ by A,\n\n[[FORMULA:Genetics_chapter8_formula068]]",
+      "content_plain": "Example 5. Compute the inverse of\n\n[[FORMULA:Genetics_chapter8_formula059]]\n\nFirst, find the determinants of the minors,\n\n[[FORMULA:Genetics_chapter8_formula060]]\n\n[[FORMULA:Genetics_chapter8_formula061]]\n\n[[FORMULA:Genetics_chapter8_formula062]]\n\n[[FORMULA:Genetics_chapter8_formula063]]\n\n[[FORMULA:Genetics_chapter8_formula064]]\n\nUsing Equation 8.12b and expanding using the first row of A gives\n\n[[FORMULA:Genetics_chapter8_formula065]]\n\nReturning to the matrix in brackets in Equation 8.13, we obtain\n\n[[FORMULA:Genetics_chapter8_formula066]]\n\nand then taking the transpose,\n\n[[FORMULA:Genetics_chapter8_formula067]]\n\nTo verify that this is indeed the inverse of A, multiply  A^{-1}  by A,\n\n[[FORMULA:Genetics_chapter8_formula068]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula059",
+        "Genetics_chapter8_formula060",
+        "Genetics_chapter8_formula061",
+        "Genetics_chapter8_formula062",
+        "Genetics_chapter8_formula063",
+        "Genetics_chapter8_formula064",
+        "Genetics_chapter8_formula065",
+        "Genetics_chapter8_formula066",
+        "Genetics_chapter8_formula067",
+        "Genetics_chapter8_formula068"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 208,
+          "y": 375.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 207
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:5]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:6",
+      "example_ref": "Genetics_chapter8:6",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 6",
+      "title": "Example 6. Consider the regression of the phenotypic value of an offspring $ (z_{o}) $ on that of its parents $ (z_{s} $ and $ z_{d} $ for sire and dam, respectively). Assume that ",
+      "source_file": "Genetics_chapter8_019.json",
+      "start_block_index": 19,
+      "end_source_file": "Genetics_chapter8_019.json",
+      "end_block_index": 28,
+      "block_ids": [
+        "p213:b2",
+        "p213:b3",
+        "p213:b4",
+        "p213:b5",
+        "p213:b6",
+        "p213:b7",
+        "p213:b8",
+        "p213:b9",
+        "p213:b11",
+        "p213:b12"
+      ],
+      "content_markdown": "Example 6. Consider the regression of the phenotypic value of an offspring $ (z_{o}) $ on that of its parents $ (z_{s} $ and $ z_{d} $ for sire and dam, respectively). Assume that the joint distribution of $ z_{o} $, $ z_{s} $, and $ z_{d} $ is multivariate normal. For the simplest case of noninbred and unrelated parents, no epistasis or genotype-environment correlation, the covariance matrix can be obtained from the theory of correlation between relatives (Chapter 7), giving the joint distribution as\n\n[[FORMULA:Genetics_chapter8_formula098]]\n\nLet\n\n[[FORMULA:Genetics_chapter8_formula099]]\n\ngiving\n\n[[FORMULA:Genetics_chapter8_formula100]]\n\nFrom Equation 8.29a, the regression of offspring value on parental values is linear and homoscedastic with\n\n[[FORMULA:Genetics_chapter8_formula101]]\n\nwhere, from Equations 8.28 and 8.29b, the residual error is normally distributed with mean zero and variance\n\n[[FORMULA:Genetics_chapter8_formula102]]",
+      "content_plain": "Example 6. Consider the regression of the phenotypic value of an offspring  (z_{o})  on that of its parents  (z_{s}  and  z_{d}  for sire and dam, respectively). Assume that the joint distribution of  z_{o} ,  z_{s} , and  z_{d}  is multivariate normal. For the simplest case of noninbred and unrelated parents, no epistasis or genotype-environment correlation, the covariance matrix can be obtained from the theory of correlation between relatives (Chapter 7), giving the joint distribution as\n\n[[FORMULA:Genetics_chapter8_formula098]]\n\nLet\n\n[[FORMULA:Genetics_chapter8_formula099]]\n\ngiving\n\n[[FORMULA:Genetics_chapter8_formula100]]\n\nFrom Equation 8.29a, the regression of offspring value on parental values is linear and homoscedastic with\n\n[[FORMULA:Genetics_chapter8_formula101]]\n\nwhere, from Equations 8.28 and 8.29b, the residual error is normally distributed with mean zero and variance\n\n[[FORMULA:Genetics_chapter8_formula102]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula098",
+        "Genetics_chapter8_formula099",
+        "Genetics_chapter8_formula100",
+        "Genetics_chapter8_formula101",
+        "Genetics_chapter8_formula102"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 213,
+          "y": 1482.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 213
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:6]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:7",
+      "example_ref": "Genetics_chapter8:7",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 7",
+      "title": "Example 7. The previous example dealt with the prediction of the phenotypic value of an offspring given parental phenotypic values. The same approach can be used to predict an offs",
+      "source_file": "Genetics_chapter8_019.json",
+      "start_block_index": 29,
+      "end_source_file": "Genetics_chapter8_019.json",
+      "end_block_index": 34,
+      "block_ids": [
+        "p214:b2",
+        "p214:b3",
+        "p214:b4",
+        "p214:b5",
+        "p214:b7",
+        "p214:b8"
+      ],
+      "content_markdown": "Example 7. The previous example dealt with the prediction of the phenotypic value of an offspring given parental phenotypic values. The same approach can be used to predict an offspring’s additive genetic value $ A_{o} $ given knowledge of the parental values $ (A_{s}, A_{d}) $. Again assuming that the joint distribution is multivariate normal and that the parents are unrelated and noninbred, the joint distribution can be written as\n\n[[FORMULA:Genetics_chapter8_formula103]]\n\nProceeding in the same fashion as in Example 6, the conditional distribution of offspring additive genetic values, given the parental values, is normal, so that the regression of offspring additive genetic value on parental value is linear and homoscedastic with\n\n[[FORMULA:Genetics_chapter8_formula104]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula105]]",
+      "content_plain": "Example 7. The previous example dealt with the prediction of the phenotypic value of an offspring given parental phenotypic values. The same approach can be used to predict an offspring’s additive genetic value  A_{o}  given knowledge of the parental values  (A_{s}, A_{d}) . Again assuming that the joint distribution is multivariate normal and that the parents are unrelated and noninbred, the joint distribution can be written as\n\n[[FORMULA:Genetics_chapter8_formula103]]\n\nProceeding in the same fashion as in Example 6, the conditional distribution of offspring additive genetic values, given the parental values, is normal, so that the regression of offspring additive genetic value on parental value is linear and homoscedastic with\n\n[[FORMULA:Genetics_chapter8_formula104]]\n\nand\n\n[[FORMULA:Genetics_chapter8_formula105]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula103",
+        "Genetics_chapter8_formula104",
+        "Genetics_chapter8_formula105"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 214,
+          "y": 890.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 214
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:7]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:8",
+      "example_ref": "Genetics_chapter8:8",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 8",
+      "title": "Example 8. Suppose that three different sires used in the above half-sib design have two, one, and three offspring, respectively. This can be expressed in GLM form, $ \\mathbf{y} = ",
+      "source_file": "Genetics_chapter8_020.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_chapter8_020.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p215:b13",
+        "p215:b14",
+        "p216:b2",
+        "p216:b3",
+        "p216:b4",
+        "p216:b5"
+      ],
+      "content_markdown": "Example 8. Suppose that three different sires used in the above half-sib design have two, one, and three offspring, respectively. This can be expressed in GLM form, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{e} $ with\n\n[[FORMULA:Genetics_chapter8_formula111]]\n\nLikewise, the multiple regression\n\n[[FORMULA:Genetics_chapter8_formula112]]\n\ncan be written in GLM form with\n\n[[FORMULA:Genetics_chapter8_formula113]]",
+      "content_plain": "Example 8. Suppose that three different sires used in the above half-sib design have two, one, and three offspring, respectively. This can be expressed in GLM form,  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{e}  with\n\n[[FORMULA:Genetics_chapter8_formula111]]\n\nLikewise, the multiple regression\n\n[[FORMULA:Genetics_chapter8_formula112]]\n\ncan be written in GLM form with\n\n[[FORMULA:Genetics_chapter8_formula113]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula111",
+        "Genetics_chapter8_formula112",
+        "Genetics_chapter8_formula113"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 216,
+          "y": 623.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 215
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:8]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:9",
+      "example_ref": "Genetics_chapter8:9",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 9",
+      "title": "Example 9. Consider a univariate regression where the predictor and response variable both have expected mean zero, so that the regression passes through the origin. The appropriat",
+      "source_file": "Genetics_chapter8_021.json",
+      "start_block_index": 11,
+      "end_source_file": "Genetics_chapter8_021.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p217:b4",
+        "p217:b5",
+        "p217:b6",
+        "p217:b7",
+        "p217:b8",
+        "p217:b9",
+        "p217:b10"
+      ],
+      "content_markdown": "Example 9. Consider a univariate regression where the predictor and response variable both have expected mean zero, so that the regression passes through the origin. The appropriate model becomes\n\n[[FORMULA:Genetics_chapter8_formula118]]\n\nWith observations on $n$ individuals, this relationship can be written in GLM form with $\\boldsymbol{\\beta} = \\boldsymbol{\\beta}$ and design matrix $\\mathbf{X} = (x_{1}, x_{2}, \\cdots x_{n})^{T}$, implying\n\n[[FORMULA:Genetics_chapter8_formula119]]\n\nApplying Equations 8.33a,b gives the OLS estimate of $ \\beta $ and its sample variance (assuming the covariance matrix of e is $ \\mathbf{I} \\cdot \\sigma_e^2 $) as\n\n[[FORMULA:Genetics_chapter8_formula120]]\n\nThis estimate of $ \\beta $ differs from the standard univariate regression slope (Equation 3.14b) where the intercept value is not assumed to be equal to zero.",
+      "content_plain": "Example 9. Consider a univariate regression where the predictor and response variable both have expected mean zero, so that the regression passes through the origin. The appropriate model becomes\n\n[[FORMULA:Genetics_chapter8_formula118]]\n\nWith observations on n individuals, this relationship can be written in GLM form with \\boldsymbol{\\beta} = \\boldsymbol{\\beta} and design matrix \\mathbf{X} = (x_{1}, x_{2}, \\cdots x_{n})^{T}, implying\n\n[[FORMULA:Genetics_chapter8_formula119]]\n\nApplying Equations 8.33a,b gives the OLS estimate of  \\beta  and its sample variance (assuming the covariance matrix of e is  \\mathbf{I} \\cdot \\sigma_e^2 ) as\n\n[[FORMULA:Genetics_chapter8_formula120]]\n\nThis estimate of  \\beta  differs from the standard univariate regression slope (Equation 3.14b) where the intercept value is not assumed to be equal to zero.",
+      "formula_refs": [
+        "Genetics_chapter8_formula118",
+        "Genetics_chapter8_formula119",
+        "Genetics_chapter8_formula120"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 217,
+          "y": 1165.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 217
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:9]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:10",
+      "example_ref": "Genetics_chapter8:10",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 10",
+      "title": "Example 10. Recall from Equation 8.10b that the vector of partial regression coefficients for a multivariate regression is defined to be $ \\mathbf{b} = \\mathbf{V}^{-1} \\mathbf{c} $",
+      "source_file": "Genetics_chapter8_021.json",
+      "start_block_index": 18,
+      "end_source_file": "Genetics_chapter8_021.json",
+      "end_block_index": 30,
+      "block_ids": [
+        "p217:b11",
+        "p217:b12",
+        "p218:b2",
+        "p218:b3",
+        "p218:b4",
+        "p218:b5",
+        "p218:b6",
+        "p218:b7",
+        "p218:b8",
+        "p218:b9",
+        "p218:b10",
+        "p218:b11",
+        "p218:b12"
+      ],
+      "content_markdown": "Example 10. Recall from Equation 8.10b that the vector of partial regression coefficients for a multivariate regression is defined to be $ \\mathbf{b} = \\mathbf{V}^{-1} \\mathbf{c} $ (where $ \\mathbf{V} $ is the estimated covariance matrix, and $ \\mathbf{c} $ is the vector of estimated covariances between $ \\mathbf{y} $ and $ \\mathbf{z} $). Here we show that this expression is equivalent to the OLS estimator $ \\mathbf{b} = (\\mathbf{X}^T \\mathbf{X})^{-1} \\mathbf{X}^T \\mathbf{y} $. Using the notation from Example 8, for the ith individual we observe $ y_i $ and the values of $ p $ predictor variables, $ z_{i1}, \\cdots, z_{ip} $. Since the regression satisfies $ \\bar{y} = \\alpha + \\beta_1 \\bar{z}_1 + \\cdots + \\beta_p \\bar{z}_p $, subtracting the mean from each observation removes the intercept, with\n\n[[FORMULA:Genetics_chapter8_formula121]]\n\nFor $n$ observations, the resulting linear model $\\mathbf{y}^{*}=\\mathbf{X}\\boldsymbol{\\beta}+\\mathbf{e}$ has\n\n[[FORMULA:Genetics_chapter8_formula122]]\n\nwhere $ z_{ij} $ is the value of character j in the ith individual. Partitioning the design matrix $ \\mathbf{X} $ into p column vectors corresponding to the n observations on each of the p predictor variables gives\n\n[[FORMULA:Genetics_chapter8_formula123]]\n\ngiving the jth element of the vector $ \\mathbf{X}^t \\mathbf{y}^* $ as\n\n[[FORMULA:Genetics_chapter8_formula124]]\n\nand implying $ \\mathbf{X}^T \\mathbf{y}^* = (n - 1) \\mathbf{c} $. Likewise, the $ j $th element of $ \\mathbf{X}^T \\mathbf{X} $ is\n\n[[FORMULA:Genetics_chapter8_formula125]]\n\nimplying $ \\mathbf{X}^T\\mathbf{X} = (n - 1)\\mathbf{V} $. Putting these results together gives\n\n[[FORMULA:Genetics_chapter8_formula126]]\n\nshowing that Equation 8.10b does indeed give the OLS estimates of the partial regression coefficients.",
+      "content_plain": "Example 10. Recall from Equation 8.10b that the vector of partial regression coefficients for a multivariate regression is defined to be  \\mathbf{b} = \\mathbf{V}^{-1} \\mathbf{c}  (where  \\mathbf{V}  is the estimated covariance matrix, and  \\mathbf{c}  is the vector of estimated covariances between  \\mathbf{y}  and  \\mathbf{z} ). Here we show that this expression is equivalent to the OLS estimator  \\mathbf{b} = (\\mathbf{X}^T \\mathbf{X})^{-1} \\mathbf{X}^T \\mathbf{y} . Using the notation from Example 8, for the ith individual we observe  y_i  and the values of  p  predictor variables,  z_{i1}, \\cdots, z_{ip} . Since the regression satisfies  \\bar{y} = \\alpha + \\beta_1 \\bar{z}_1 + \\cdots + \\beta_p \\bar{z}_p , subtracting the mean from each observation removes the intercept, with\n\n[[FORMULA:Genetics_chapter8_formula121]]\n\nFor n observations, the resulting linear model \\mathbf{y}^{}=\\mathbf{X}\\boldsymbol{\\beta}+\\mathbf{e} has\n\n[[FORMULA:Genetics_chapter8_formula122]]\n\nwhere  z_{ij}  is the value of character j in the ith individual. Partitioning the design matrix  \\mathbf{X}  into p column vectors corresponding to the n observations on each of the p predictor variables gives\n\n[[FORMULA:Genetics_chapter8_formula123]]\n\ngiving the jth element of the vector  \\mathbf{X}^t \\mathbf{y}^  as\n\n[[FORMULA:Genetics_chapter8_formula124]]\n\nand implying  \\mathbf{X}^T \\mathbf{y}^ = (n - 1) \\mathbf{c} . Likewise, the  j th element of  \\mathbf{X}^T \\mathbf{X}  is\n\n[[FORMULA:Genetics_chapter8_formula125]]\n\nimplying  \\mathbf{X}^T\\mathbf{X} = (n - 1)\\mathbf{V} . Putting these results together gives\n\n[[FORMULA:Genetics_chapter8_formula126]]\n\nshowing that Equation 8.10b does indeed give the OLS estimates of the partial regression coefficients.",
+      "formula_refs": [
+        "Genetics_chapter8_formula121",
+        "Genetics_chapter8_formula122",
+        "Genetics_chapter8_formula123",
+        "Genetics_chapter8_formula124",
+        "Genetics_chapter8_formula125",
+        "Genetics_chapter8_formula126"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 218,
+          "y": 1220.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 217
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:10]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter8:11",
+      "example_ref": "Genetics_chapter8:11",
+      "chapter": "Genetics_chapter8",
+      "label": "Example 11",
+      "title": "Example 11. A common situation requiring weighted least-squares analysis occurs when residuals are independent but heteroscedastic with $ \\sigma^2(e_i) = \\sigma_e^2/w_i $, where $ ",
+      "source_file": "Genetics_chapter8_022.json",
+      "start_block_index": 8,
+      "end_source_file": "Genetics_chapter8_022.json",
+      "end_block_index": 25,
+      "block_ids": [
+        "p219:b11",
+        "p219:b12",
+        "p219:b13",
+        "p219:b14",
+        "p219:b15",
+        "p219:b16",
+        "p220:b2",
+        "p220:b3",
+        "p220:b4",
+        "p220:b5",
+        "p220:b6",
+        "p220:b7",
+        "p220:b8",
+        "p220:b10",
+        "p220:b12",
+        "p220:b13",
+        "p220:b15",
+        "p220:b17"
+      ],
+      "content_markdown": "Example 11. A common situation requiring weighted least-squares analysis occurs when residuals are independent but heteroscedastic with $ \\sigma^2(e_i) = \\sigma_e^2/w_i $, where $ w_i $ are known positive constants. For example, if each observation $ y_i $ is the mean of $ n_i $ independent observations (each with uncorrelated residuals with variance $ \\sigma_e^2 $), then $ \\sigma^2(e_i) = \\sigma_e^2/n_i $, and hence $ w_i = n_i $. Here\n\n[[FORMULA:Genetics_chapter8_formula130]]\n\nwhere Diag denotes a diagonal matrix, giving\n\n[[FORMULA:Genetics_chapter8_formula131]]\n\nWith this residual variance structure, consider the weighted least-squares estimate for the simple univariate regression model $ y = \\alpha + \\beta x + e $. In GLM form,\n\n[[FORMULA:Genetics_chapter8_formula132]]\n\nDefine the following weighted means and cross products,\n\n[[FORMULA:Genetics_chapter8_formula133]]\n\n[[FORMULA:Genetics_chapter8_formula134]]\n\nWith these definitions, matrix multiplication and a little simplification give\n\n[[FORMULA:Genetics_chapter8_formula135]]\n\nApplying Equation 8.34, the GLS estimates of $ \\alpha $ and $ \\beta $ are\n\n[[FORMULA:Genetics_chapter8_formula136]]\n\n[[FORMULA:Genetics_chapter8_formula137]]\n\nIf all weights are equal ( $ w_{i} = c $), these expressions reduce to the standard (OLS) least-squares estimators given by Equation 3.14. Applying Equation 8.35, the sampling variances and covariance for these estimates are\n\n[[FORMULA:Genetics_chapter8_formula138]]\n\n[[FORMULA:Genetics_chapter8_formula139]]\n\n[[FORMULA:Genetics_chapter8_formula140]]",
+      "content_plain": "Example 11. A common situation requiring weighted least-squares analysis occurs when residuals are independent but heteroscedastic with  \\sigma^2(e_i) = \\sigma_e^2/w_i , where  w_i  are known positive constants. For example, if each observation  y_i  is the mean of  n_i  independent observations (each with uncorrelated residuals with variance  \\sigma_e^2 ), then  \\sigma^2(e_i) = \\sigma_e^2/n_i , and hence  w_i = n_i . Here\n\n[[FORMULA:Genetics_chapter8_formula130]]\n\nwhere Diag denotes a diagonal matrix, giving\n\n[[FORMULA:Genetics_chapter8_formula131]]\n\nWith this residual variance structure, consider the weighted least-squares estimate for the simple univariate regression model  y = \\alpha + \\beta x + e . In GLM form,\n\n[[FORMULA:Genetics_chapter8_formula132]]\n\nDefine the following weighted means and cross products,\n\n[[FORMULA:Genetics_chapter8_formula133]]\n\n[[FORMULA:Genetics_chapter8_formula134]]\n\nWith these definitions, matrix multiplication and a little simplification give\n\n[[FORMULA:Genetics_chapter8_formula135]]\n\nApplying Equation 8.34, the GLS estimates of  \\alpha  and  \\beta  are\n\n[[FORMULA:Genetics_chapter8_formula136]]\n\n[[FORMULA:Genetics_chapter8_formula137]]\n\nIf all weights are equal (  w_{i} = c ), these expressions reduce to the standard (OLS) least-squares estimators given by Equation 3.14. Applying Equation 8.35, the sampling variances and covariance for these estimates are\n\n[[FORMULA:Genetics_chapter8_formula138]]\n\n[[FORMULA:Genetics_chapter8_formula139]]\n\n[[FORMULA:Genetics_chapter8_formula140]]",
+      "formula_refs": [
+        "Genetics_chapter8_formula130",
+        "Genetics_chapter8_formula131",
+        "Genetics_chapter8_formula132",
+        "Genetics_chapter8_formula133",
+        "Genetics_chapter8_formula134",
+        "Genetics_chapter8_formula135",
+        "Genetics_chapter8_formula136",
+        "Genetics_chapter8_formula137",
+        "Genetics_chapter8_formula138",
+        "Genetics_chapter8_formula139",
+        "Genetics_chapter8_formula140"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 220,
+          "y": 1323.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 219
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter8:11]]",
+      "book": "Genetics"
+    }
+  ]
+}

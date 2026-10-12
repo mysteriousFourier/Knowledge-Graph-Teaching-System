@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter10_012",
+  "metadata": {
+    "chapter": "Genetics_chapter10",
+    "section": "THE NUMBER OF LETHAL EQUIVALENTS",
+    "subsections": [
+      "Results from Vertebrates"
+    ],
+    "section_level_1": "THE NUMBER OF LETHAL EQUIVALENTS",
+    "section_level_2": "Results from Vertebrates",
+    "heading_path": [
+      "THE NUMBER OF LETHAL EQUIVALENTS",
+      "Results from Vertebrates"
+    ],
+    "display_heading": "THE NUMBER OF LETHAL EQUIVALENTS / Results from Vertebrates",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 292,
+      "printed_page": 272,
+      "source_block_ids": [
+        "p292:b10"
+      ],
+      "bbox": [
+        134.0,
+        642.0,
+        446.0,
+        679.0
+      ],
+      "raw_text": "Results from Vertebrates"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The regression method of Morton et al. (1956) has been extensively applied to humans, with several independent studies indicating that the average number of lethal equivalents per gamete is on the order of one to two (Table 10.4). Results from other vertebrate species are, for the most part, very similar, suggesting on the order of 0.5 to 3 lethal equivalents per gamete (Table 10.4). This translates into one to six lethal equivalents per zygote, enough to kill the average individual a few times over if fully expressed in the homozygous state.",
+      "source_page": 292,
+      "printed_page": 272,
+      "source_block_ids": [
+        "p292:b11"
+      ],
+      "bbox": [
+        134.0,
+        691.0,
+        1100.0,
+        937.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Of all of the existing data, those for the European bison and Holstein cattle, which exhibit no significant lethal load, are the most anomalous. There is no obvious explanation for the Holstein data; they are quite inconsistent with those from other breeds. However, it is known that earlier in this century the European bison was reduced to only a dozen individuals. Thus, it is possible that the heterozygosity in this species was largely eliminated by extensive inbreeding during the population bottleneck. We also note that a study on congenital birth defects, birth weight, and gestational age for people of the Indian state of Tamil Nada revealed no evidence of inbreeding depression (Rao and Inbaraj 1980). These results, which are quite unusual for humans, may also be related to the decline in the lethal load caused by previous inbreeding. Approximately 40% of the marriages in this population were between second cousins or closer relatives.",
+      "source_page": 292,
+      "printed_page": 272,
+      "source_block_ids": [
+        "p292:b12"
+      ],
+      "bbox": [
+        141.0,
+        921.0,
+        1107.0,
+        1322.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A critical assumption underlying lethal-equivalent analysis is that the effects of different loci on survivorship are independent. Directional epistatic interactions between pairs of loci will give rise to nonlinearities in plots of log survival vs. inbreeding coefficient, but as noted above, these can be detected only if survivorship estimates are available for several levels of inbreeding. Other than the data in Figure 10.9, which yield no evidence of nonlinearity, few data sets are extensive enough to evaluate this matter.",
+      "source_page": 292,
+      "printed_page": 272,
+      "source_block_ids": [
+        "p292:b13"
+      ],
+      "bbox": [
+        150.0,
+        1304.0,
+        1113.0,
+        1548.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:10.4]]",
+      "source_page": 293,
+      "printed_page": 273,
+      "source_block_ids": [
+        "p293:b3"
+      ],
+      "bbox": [
+        50.0,
+        203.0,
+        1033.0,
+        1081.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "id": "Genetics_chapter15_004",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "FOUNDATIONS OF LINE-CROSS MAPPING",
+    "subsections": [
+      "Conditional Probabilities of QTL Genotypes"
+    ],
+    "section_level_1": "FOUNDATIONS OF LINE-CROSS MAPPING",
+    "section_level_2": "Conditional Probabilities of QTL Genotypes",
+    "heading_path": [
+      "FOUNDATIONS OF LINE-CROSS MAPPING",
+      "Conditional Probabilities of QTL Genotypes"
+    ],
+    "display_heading": "FOUNDATIONS OF LINE-CROSS MAPPING / Conditional Probabilities of QTL Genotypes",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 447,
+      "printed_page": 427,
+      "source_block_ids": [
+        "p447:b4"
+      ],
+      "bbox": [
+        46.0,
+        1010.0,
+        603.0,
+        1064.0
+      ],
+      "raw_text": "Conditional Probabilities of QTL Genotypes"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The basic element upon which the formal theory of QTL mapping is built is the conditional probability that the QTL genotype is $ Q_k $, given the observed marker genotype is $ M_j $. From the definition of a conditional probability, this is",
+      "source_page": 447,
+      "printed_page": 427,
+      "source_block_ids": [
+        "p447:b5"
+      ],
+      "bbox": [
+        42.0,
+        1051.0,
+        1004.0,
+        1181.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula001]]",
+      "source_page": 447,
+      "printed_page": 427,
+      "source_block_ids": [
+        "p447:b6"
+      ],
+      "bbox": [
+        363.0,
+        1167.0,
+        671.0,
+        1248.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The joint and marginal probabilities, $ \\Pr(Q_k M_j) $ and $ \\Pr(M_j) $, are functions of the experimental design and the linkage map (the position of the putative QTLs with respect to the marker loci). Computing these probabilities is a relatively simple matter of bookkeeping (see Example 1), but can get rather tedious as the number of markers and/or QTLs under consideration increases.",
+      "source_page": 447,
+      "printed_page": 427,
+      "source_block_ids": [
+        "p447:b8"
+      ],
+      "bbox": [
+        33.0,
+        1231.0,
+        999.0,
+        1424.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "When computing joint probabilities involving more than two loci, one must also account for recombinational interference between loci (Chapter 14). Consider a single QTL flanked by two markers, $ M_{1} $ and $ M_{2} $. The gamete frequencies depend on three parameters: the recombination frequency $ c_{12} $ between markers, the recombination frequency $c_{1}$ between marker $M_{1}$ and the QTL, and the recombination frequency $c_{2}$ between the QTL and marker $M_{2}$. Under the assumption of no interference, $c_{12} = c_{1} + c_{2} - 2c_{1}c_{2}$, while $c_{12} = c_{1} + c_{2}$ under complete interference (Chapter 14). When $c_{12}$ is small, gamete frequencies are essentially identical under either interference assumption. Typically, $c_{12}$ is assumed known, leaving two unknown recombination parameters ($c_{1}$ and $c_{2}$) under general assumptions about interference. In either case, there is only one parameter to estimate, as assuming complete interference $c_{2} = c_{12} - c_{1}$, and assuming no interference $c_{2} = (c_{12} - c_{1}) / (1 - 2c_{1})$. Hence, for flanking-marker analysis, we restrict attention to the single recombination parameter $c_{1}$, the distance from marker locus $M_{1}$ to the QTL. When considering analysis of single-marker loci, for notational ease we drop the subscript, using $c$ in place of $c_{1}$.",
+      "source_page": 447,
+      "printed_page": 427,
+      "source_block_ids": [
+        "p447:b9",
+        "p448:b2"
+      ],
+      "bbox": [
+        27.0,
+        1391.0,
+        992.0,
+        1552.0
+      ],
+      "source_page_end": 448
+    },
+    {
+      "type": "discussion",
+      "content": "Conditional probabilities involving more than three linked loci are generally dealt with by first assuming an appropriate mapping function on which distances are additive (Chapter 14), and then translating these distances into recombination frequencies. When a large number of markers is considered, missing marker information can become a problem. Many individuals can be left with incomplete multilocus marker genotypes, excluding them from further analysis. Martínez and Curnow (1992) show how information from linked markers can be used to estimate the genotype at missing or incomplete (i.e., dominant) markers.",
+      "source_page": 448,
+      "printed_page": 428,
+      "source_block_ids": [
+        "p448:b3"
+      ],
+      "bbox": [
+        137.0,
+        496.0,
+        1101.0,
+        786.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter15:1]]",
+      "source_page": 448,
+      "source_block_ids": [
+        "p448:b4",
+        "p448:b5",
+        "p448:b6",
+        "p448:b7",
+        "p448:b8",
+        "p448:b9",
+        "p448:b10",
+        "p449:b2",
+        "p449:b3",
+        "p449:b4",
+        "p449:b5",
+        "p449:b6",
+        "p449:b7",
+        "p449:b9"
+      ],
+      "bbox": [
+        195.0,
+        851.0,
+        1060.0,
+        966.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We now move on to the conditional probabilities for other single-marker line cross designs, starting with backcrosses. For a $ B_{1} $ population, where the $ F_{1} $ is backcrossed to $ P_{1} $ (with genotype MMQQ), one parental gamete is always MQ. Hence, for a single-marker analysis, there are only two marker genotypes, MM and Mm. Using the frequencies for the four possible gametes (Example 1) of the $ F_{1} $ parent gives the following conditional probabilities",
+      "source_page": 449,
+      "printed_page": 429,
+      "source_block_ids": [
+        "p449:b10"
+      ],
+      "bbox": [
+        53.0,
+        1090.0,
+        1013.0,
+        1284.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula009]]",
+      "source_page": 449,
+      "printed_page": 429,
+      "source_block_ids": [
+        "p449:b11"
+      ],
+      "bbox": [
+        234.0,
+        1300.0,
+        833.0,
+        1379.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Likewise, when backcrossing to the P₂ (mmqq), the two possible single-locus marker genotypes are Mm and mm, and the conditional probabilities become",
+      "source_page": 449,
+      "printed_page": 429,
+      "source_block_ids": [
+        "p449:b13"
+      ],
+      "bbox": [
+        51.0,
+        1394.0,
+        1011.0,
+        1466.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula010]]",
+      "source_page": 449,
+      "printed_page": 429,
+      "source_block_ids": [
+        "p449:b14"
+      ],
+      "bbox": [
+        241.0,
+        1480.0,
+        819.0,
+        1557.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "For designs involving more than one generation of recombination, the single-generation recombination frequency c is simply replaced by a corrected frequency $ \\tilde{c} $ that is a function of the particular design. We consider three such designs: advanced intercross lines (AILs), recombinant inbred lines (RILs), and double-haploid lines (DHLs).",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b2"
+      ],
+      "bbox": [
+        137.0,
+        135.0,
+        1097.0,
+        295.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Advanced intercross lines (Darvasi and Soller 1995) are obtained by crossing two inbred lines, but instead of stopping at the $ F_{2} $, random mating proceeds for t generations, generating an $ F_{t} $. In this case, unlike the strategy used to create RILs (Chapter 14), inbreeding is avoided by keeping the breeding population size large. As the result of the multiple rounds of recombination, markers in an $ F_{t} $ individual show an expansion of the genetic map relative to an $ F_{2} $, with the expected frequency of a recombinant gamete in the $ F_{t} $ for a pair of loci at recombination fraction c being",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b3"
+      ],
+      "bbox": [
+        138.0,
+        296.0,
+        1099.0,
+        551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula011]]",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b4"
+      ],
+      "bbox": [
+        422.0,
+        563.0,
+        816.0,
+        629.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the approximation holds for $ ct << 1 $ (Darvasi and Soller 1995, Liu et al. 1996). For example, if the marker-QTL recombination frequency is $ c = 0.01 $, only 1% of the $ F_2 $ gametes are recombinant ( $ M_q $, $ m_Q $), but this increases to 2.5% in an $ F_5 $ and 9.1% in an $ F_{20} $. The conditional genotype probabilities for an $ F_t $ AIL are given by the $ F_2 $-design expressions in Example 1, with $ \\tilde{c} $ substituted for $ c $.",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b6"
+      ],
+      "bbox": [
+        141.0,
+        637.0,
+        1099.0,
+        800.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Recombinant inbred lines (RILs) also involve several generations of recombination, but here genotypes are fixed by inbreeding. Starting with a $ MQ/mq \\, F_1 $ parent, there are only four possible genotypes in the resulting RILs — MMQQ, MMqq, mmQQ, and mmqq. The frequency of recombinant gametes ( $ Mq $, $ mQ $) in RILs approaches a limiting value of $ \\tilde{c} = 2c/(1 + 2c) $ for selfed lines and $ \\tilde{c} = 4c/(1 + 6c) $ for lines formed by brother-sister mating (Haldane and Waddington 1931). Thus, the expected frequencies of genotypes in RILs are",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b7"
+      ],
+      "bbox": [
+        141.0,
+        798.0,
+        1101.0,
+        1026.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula012]]",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b8"
+      ],
+      "bbox": [
+        422.0,
+        1031.0,
+        923.0,
+        1141.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "While doubled-haploid lines (DHLs) also have only these four genotypes, they are formed by a single generation of meiosis, so that $ \\widetilde{c} = c $. Hence, among either RILs or DHLs, the conditional QTL probabilities are",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b9"
+      ],
+      "bbox": [
+        145.0,
+        1149.0,
+        1102.0,
+        1250.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula013]]",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b10"
+      ],
+      "bbox": [
+        337.0,
+        1291.0,
+        915.0,
+        1369.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b12"
+      ],
+      "bbox": [
+        147.0,
+        1385.0,
+        232.0,
+        1414.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula014]]",
+      "source_page": 450,
+      "printed_page": 430,
+      "source_block_ids": [
+        "p450:b13"
+      ],
+      "bbox": [
+        216.0,
+        1421.0,
+        950.0,
+        1538.0
+      ]
+    }
+  ]
+}

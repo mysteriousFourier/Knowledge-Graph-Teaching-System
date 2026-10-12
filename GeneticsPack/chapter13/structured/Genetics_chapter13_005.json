@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter13_005",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "ELEMENTARY TESTS",
+    "subsections": [
+      "Major-gene Indices (MGI)"
+    ],
+    "section_level_1": "ELEMENTARY TESTS",
+    "section_level_2": "Major-gene Indices (MGI)",
+    "heading_path": [
+      "ELEMENTARY TESTS",
+      "Major-gene Indices (MGI)"
+    ],
+    "display_heading": "ELEMENTARY TESTS / Major-gene Indices (MGI)",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 371,
+      "printed_page": 351,
+      "source_block_ids": [
+        "p371:b5"
+      ],
+      "bbox": [
+        65.0,
+        826.0,
+        395.0,
+        859.0
+      ],
+      "raw_text": "Major-gene Indices (MGI)"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Karlin et al. (1979) show that, under polygenic inheritance with additive loci, offspring more closely resemble the average of their parents (the midparent) than either individual parent, whereas the converse is true when a major gene is segregating. Exploiting this relationship, they proposed a class of indices for indicating the presence of major genes,",
+      "source_page": 371,
+      "printed_page": 351,
+      "source_block_ids": [
+        "p371:b6"
+      ],
+      "bbox": [
+        62.0,
+        869.0,
+        1024.0,
+        1032.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula002]]",
+      "source_page": 371,
+      "printed_page": 351,
+      "source_block_ids": [
+        "p371:b7"
+      ],
+      "bbox": [
+        312.0,
+        1052.0,
+        766.0,
+        1127.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $z_{o}$ is the phenotypic value of an offspring whose parents have values $z_{f}$ and $z_{m}$, and $a$ is a free parameter set by the investigator. Values of $a > 1$ accentuate large deviations between offspring and parents, while values of $a < 1$ accentuate small deviations. If the character is entirely determined by segregation of a major allele with no environmental variation, $\\mathrm{MGI}(a) > 1$ for all $a \\geq 0$ (independent of the amount of dominance), while if the character is entirely determined by an infinite number of genes of equal effect with a normal distribution of environmental effects, $\\mathrm{MGI}(a) < 1$ for all $a \\geq 0$. Karlin et al. recommend evaluation of the index at $a = 0.5$, 1, and 2, but this choice of $a$ values is rather ad hoc. Improvements and embellishments on this test have been suggested by Famula (1986), Carmelli et al. (1979), and Karlin and Williams (1981), but Le Roy and Elsen (1992) found that both the Bartlett and Fain tests are more powerful than MGI-based tests.",
+      "source_page": 371,
+      "printed_page": 351,
+      "source_block_ids": [
+        "p371:b9"
+      ],
+      "bbox": [
+        61.0,
+        1147.0,
+        1019.0,
+        1531.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:13.2]]",
+      "source_page": 372,
+      "printed_page": 352,
+      "source_block_ids": [
+        "p372:b3"
+      ],
+      "bbox": [
+        181.0,
+        677.0,
+        1047.0,
+        855.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter19",
+  "counts": {
+    "structured": 5,
+    "formulas": 19,
+    "tables": 5,
+    "figures": 2,
+    "examples": 3,
+    "image_files": 3
+  },
+  "textbook": "textbook.md",
+  "figures": [
+    "figures/Genetics_19.1.png",
+    "figures/Genetics_19.2.png",
+    "figures/Genetics_p604_b3.png"
+  ]
+}

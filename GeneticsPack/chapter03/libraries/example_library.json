@@ -1,0 +1,97 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter3",
+  "count": 2,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter3:1",
+      "example_ref": "Genetics_chapter3:1",
+      "chapter": "Genetics_chapter3",
+      "label": "Example 1",
+      "title": "Example 1. Suppose $ \\text{Cov}(x, y) = 10 $, $ \\text{Var}(x) = 10 $, $ \\text{Var}(y) = 15 $, and $ \\overline{x} = \\overline{y} = 0 $. Compute the least-squares regressions of y on",
+      "source_file": "Genetics_chapter3_008.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_chapter3_008.json",
+      "end_block_index": 15,
+      "block_ids": [
+        "p59:b7",
+        "p59:b8",
+        "p59:b9",
+        "p59:b10"
+      ],
+      "content_markdown": "Example 1. Suppose $ \\text{Cov}(x, y) = 10 $, $ \\text{Var}(x) = 10 $, $ \\text{Var}(y) = 15 $, and $ \\overline{x} = \\overline{y} = 0 $. Compute the least-squares regressions of y on x, and of x on y.\n\nFrom Equation 3.14a, a = 0 for both regressions. However,\n\n[[FORMULA:Genetics_chapter3_formula031]]\n\nwhile $b(x,y) = \\mathrm{Cov}(x,y)/\\mathrm{Var}(y) = 2/3$. Hence, $\\widehat{y} = x$ is the least-squares regression of $y$ on $x$, while $\\widehat{x} = (2/3)y$ is the regression of $x$ on $y$.",
+      "content_plain": "Example 1. Suppose  \\text{Cov}(x, y) = 10 ,  \\text{Var}(x) = 10 ,  \\text{Var}(y) = 15 , and  \\overline{x} = \\overline{y} = 0 . Compute the least-squares regressions of y on x, and of x on y.\n\nFrom Equation 3.14a, a = 0 for both regressions. However,\n\n[[FORMULA:Genetics_chapter3_formula031]]\n\nwhile b(x,y) = \\mathrm{Cov}(x,y)/\\mathrm{Var}(y) = 2/3. Hence, \\widehat{y} = x is the least-squares regression of y on x, while \\widehat{x} = (2/3)y is the regression of x on y.",
+      "formula_refs": [
+        "Genetics_chapter3_formula031"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 59,
+          "y": 1213.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 59
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter3:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter3:2",
+      "example_ref": "Genetics_chapter3:2",
+      "chapter": "Genetics_chapter3",
+      "label": "Example 2",
+      "title": "Example 2. Returning to Table 2.1, the preceding formulae can be used to characterize the relationship between maternal weight and offspring number in rats. Here we take offspring ",
+      "source_file": "Genetics_chapter3_009.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_chapter3_009.json",
+      "end_block_index": 20,
+      "block_ids": [
+        "p61:b2",
+        "p61:b3",
+        "p61:b4",
+        "p61:b5",
+        "p61:b6",
+        "p61:b7",
+        "p61:b8",
+        "p61:b9",
+        "p61:b10"
+      ],
+      "content_markdown": "Example 2. Returning to Table 2.1, the preceding formulae can be used to characterize the relationship between maternal weight and offspring number in rats. Here we take offspring number as the response variable y and maternal weight as the predictor variable x. The mean and variance for maternal weight were found to be $ \\overline{x} = 118.90 $ and $ \\operatorname{Var}(x) = 623.06 $ (Table 2.1). For offspring number, $ \\overline{y} = 5.49 $ and $ \\operatorname{Var}(y) = 2.94 $. In order to obtain an estimate of the covariance, we first require an estimate of $ E(x, y) $. Taking the xy cross-product of all classes in Table 2.1 (using the midpoint of the interval for the value of x) and weighting them by their frequencies,\n\n[[FORMULA:Genetics_chapter3_formula037]]\n\nThe covariance estimate is then obtained using Equation 3.9,\n\n[[FORMULA:Genetics_chapter3_formula038]]\n\nFrom Equation 3.14b, the slope of the regression is found to be\n\n[[FORMULA:Genetics_chapter3_formula039]]\n\nThus, the expected increase in number of offspring per gram increase in maternal weight is about 0.01. How predictable is this change? From Equation 3.15a, the correlation coefficient is estimated to be\n\n[[FORMULA:Genetics_chapter3_formula040]]\n\nSquaring this value, $ r^{2} = 0.03 $. Therefore, only about 3 percent of the variance in offspring number can be accounted for with a model that assumes a linear relationship with maternal weight.",
+      "content_plain": "Example 2. Returning to Table 2.1, the preceding formulae can be used to characterize the relationship between maternal weight and offspring number in rats. Here we take offspring number as the response variable y and maternal weight as the predictor variable x. The mean and variance for maternal weight were found to be  \\overline{x} = 118.90  and  \\operatorname{Var}(x) = 623.06  (Table 2.1). For offspring number,  \\overline{y} = 5.49  and  \\operatorname{Var}(y) = 2.94 . In order to obtain an estimate of the covariance, we first require an estimate of  E(x, y) . Taking the xy cross-product of all classes in Table 2.1 (using the midpoint of the interval for the value of x) and weighting them by their frequencies,\n\n[[FORMULA:Genetics_chapter3_formula037]]\n\nThe covariance estimate is then obtained using Equation 3.9,\n\n[[FORMULA:Genetics_chapter3_formula038]]\n\nFrom Equation 3.14b, the slope of the regression is found to be\n\n[[FORMULA:Genetics_chapter3_formula039]]\n\nThus, the expected increase in number of offspring per gram increase in maternal weight is about 0.01. How predictable is this change? From Equation 3.15a, the correlation coefficient is estimated to be\n\n[[FORMULA:Genetics_chapter3_formula040]]\n\nSquaring this value,  r^{2} = 0.03 . Therefore, only about 3 percent of the variance in offspring number can be accounted for with a model that assumes a linear relationship with maternal weight.",
+      "formula_refs": [
+        "Genetics_chapter3_formula037",
+        "Genetics_chapter3_formula038",
+        "Genetics_chapter3_formula039",
+        "Genetics_chapter3_formula040"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 61,
+          "y": 1240.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 61
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter3:2]]",
+      "book": "Genetics"
+    }
+  ]
+}

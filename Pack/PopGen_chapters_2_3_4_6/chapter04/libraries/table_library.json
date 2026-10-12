@@ -1,0 +1,725 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter4",
+  "count": 7,
+  "tables": [
+    {
+      "id": "4.1",
+      "label_format": "Table 4.1",
+      "title": "TABLE 4.1 A Sample of Four Allelic DNA Sequences",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Allele</td><td colspan=\"5\">Nucleotide site in the DNA sequence</td></tr></table>",
+      "rows": [
+        [
+          "Allele",
+          "Nucleotide site in the DNA sequence"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 23,
+        "bbox": [
+          99,
+          1042,
+          896,
+          1234
+        ],
+        "caption_bbox": [
+          99,
+          1003,
+          686,
+          1035
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_011",
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 12,
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "source_pages": [
+          187
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p023:b6"
+        ],
+        "source_bboxes": [
+          [
+            110.0,
+            1116.0,
+            757.0,
+            1143.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:4.1",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.5 INFINITE-SITES MODEL"
+      ],
+      "subsection": "4.5 INFINITE-SITES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.5 INFINITE-SITES MODEL"
+        ],
+        "subsection": "4.5 INFINITE-SITES MODEL",
+        "source_pages": [
+          187
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p023:b6"
+        ],
+        "source_bboxes": [
+          [
+            110.0,
+            1116.0,
+            757.0,
+            1143.0
+          ]
+        ],
+        "audit_evidence_sha256": "dd1ad8c10525b34d997c10f85ff2a12c69dd065be9b1341f6a2ac23a85c6167c"
+      }
+    },
+    {
+      "id": "4.2",
+      "label_format": "Table 4.2",
+      "title": "TABLE 4.2 Expected Proportion of Singletons in Samples",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Sample size  $ n $</td><td>$ E $ (proportion singletons)</td><td>Sample size  $ n $</td><td>$ E $ (proportion singletons)</td></tr><tr><td>2</td><td>1.000</td><td>12</td><td>0.331</td></tr><tr><td>3</td><td>0.667</td><td>13</td><td>0.322</td></tr><tr><td>4</td><td>0.545</td><td>14</td><td>0.314</td></tr><tr><td>5</td><td>0.480</td><td>15</td><td>0.308</td></tr><tr><td>6</td><td>0.438</td><td>16</td><td>0.301</td></tr><tr><td>7</td><td>0.408</td><td>17</td><td>0.296</td></tr><tr><td>8</td><td>0.386</td><td>18</td><td>0.291</td></tr><tr><td>9</td><td>0.368</td><td>19</td><td>0.286</td></tr><tr><td>10</td><td>0.353</td><td>20</td><td>0.282</td></tr><tr><td>11</td><td>0.341</td><td>21</td><td>0.278</td></tr></table>",
+      "rows": [
+        [
+          "Sample size $ n $",
+          "$ E $ (proportion singletons)",
+          "Sample size $ n $",
+          "$ E $ (proportion singletons)"
+        ],
+        [
+          "2",
+          "1.000",
+          "12",
+          "0.331"
+        ],
+        [
+          "3",
+          "0.667",
+          "13",
+          "0.322"
+        ],
+        [
+          "4",
+          "0.545",
+          "14",
+          "0.314"
+        ],
+        [
+          "5",
+          "0.480",
+          "15",
+          "0.308"
+        ],
+        [
+          "6",
+          "0.438",
+          "16",
+          "0.301"
+        ],
+        [
+          "7",
+          "0.408",
+          "17",
+          "0.296"
+        ],
+        [
+          "8",
+          "0.386",
+          "18",
+          "0.291"
+        ],
+        [
+          "9",
+          "0.368",
+          "19",
+          "0.286"
+        ],
+        [
+          "10",
+          "0.353",
+          "20",
+          "0.282"
+        ],
+        [
+          "11",
+          "0.341",
+          "21",
+          "0.278"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 31,
+        "bbox": [
+          102,
+          927,
+          897,
+          1235
+        ],
+        "caption_bbox": [
+          103,
+          891,
+          738,
+          924
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_014",
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "physical_owner_rebound_by": "structured_fusion_embedded_table_reference_owner",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 13,
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b8"
+        ],
+        "source_bboxes": [
+          [
+            115.0,
+            992.0,
+            815.0,
+            1020.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:4.2",
+      "heading_path": [
+        "4.5 INFINITE-SITES MODEL",
+        "The Fu and Li Test of Fit to Neutral Coalescence"
+      ],
+      "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+      "audit_provenance": {
+        "heading_path": [
+          "4.5 INFINITE-SITES MODEL",
+          "The Fu and Li Test of Fit to Neutral Coalescence"
+        ],
+        "subsection": "The Fu and Li Test of Fit to Neutral Coalescence",
+        "source_pages": [
+          195
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p031:b8"
+        ],
+        "source_bboxes": [
+          [
+            115.0,
+            992.0,
+            815.0,
+            1020.0
+          ]
+        ],
+        "audit_evidence_sha256": "16ff2bc43b463e7ffe3c5282815b3a0480097503a61152d92313d0dc55d18dc4"
+      }
+    },
+    {
+      "id": "inline_1",
+      "label_format": "Inline Table 1",
+      "title": "Inline Table 1",
+      "table_type": "inline",
+      "html": "<table><tr><td>(A)</td><td>(B)</td></tr><tr><td>Alleles present in current generation</td><td>Alleles present in current generation</td></tr><tr><td>☐</td><td>☐</td></tr><tr><td>☐</td><td>☐</td></tr><tr><td>☐</td><td></td></tr></table>",
+      "rows": [
+        [
+          "(A)",
+          "(B)"
+        ],
+        [
+          "Alleles present in current generation",
+          "Alleles present in current generation"
+        ],
+        [
+          "☐",
+          "☐"
+        ],
+        [
+          "☐",
+          "☐"
+        ],
+        [
+          "☐",
+          ""
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 10,
+        "bbox": [
+          294,
+          561,
+          895,
+          1058
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_006",
+        "subsection": "Probability of Fixation of a New Neutral Mutation",
+        "heading_path": [
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+          "Probability of Fixation of a New Neutral Mutation"
+        ],
+        "source_pages": [
+          174
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p010:b4"
+        ],
+        "source_bboxes": [
+          [
+            294,
+            561,
+            895,
+            1058
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:inline_1",
+      "heading_path": [
+        "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+        "Probability of Fixation of a New Neutral Mutation"
+      ],
+      "subsection": "Probability of Fixation of a New Neutral Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "4.2 MUTATION AND RANDOM GENETIC DRIFT",
+          "Probability of Fixation of a New Neutral Mutation"
+        ],
+        "subsection": "Probability of Fixation of a New Neutral Mutation",
+        "source_pages": [
+          174
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p010:b4"
+        ],
+        "source_bboxes": [
+          [
+            294,
+            561,
+            895,
+            1058
+          ]
+        ],
+        "audit_evidence_sha256": "4e43d47e7c703bfdaa6ce2184d59e72c869cc485351dd5f22a6d18b44bb14024"
+      }
+    },
+    {
+      "id": "inline_2",
+      "label_format": "Inline Table 2",
+      "title": "Inline Table 2",
+      "table_type": "inline",
+      "html": "<table><tr><td></td><td>Adk-1</td><td>Lap-5</td><td>Xdh</td></tr><tr><td>Allele 1</td><td>0.574</td><td>0.801</td><td>0.446</td></tr><tr><td>Allele 2</td><td>0.309</td><td>0.177</td><td>0.406</td></tr><tr><td>Allele 3</td><td>0.114</td><td>0.014</td><td>0.092</td></tr><tr><td>Allele 4</td><td>0.003</td><td>0.004</td><td>0.034</td></tr><tr><td>Allele 5</td><td>—</td><td>0.004</td><td>0.014</td></tr><tr><td>Allele 6</td><td>—</td><td>—</td><td>0.004</td></tr><tr><td>Allele 7</td><td>—</td><td>—</td><td>0.002</td></tr><tr><td>Allele 8</td><td>—</td><td>—</td><td>0.002</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Adk-1",
+          "Lap-5",
+          "Xdh"
+        ],
+        [
+          "Allele 1",
+          "0.574",
+          "0.801",
+          "0.446"
+        ],
+        [
+          "Allele 2",
+          "0.309",
+          "0.177",
+          "0.406"
+        ],
+        [
+          "Allele 3",
+          "0.114",
+          "0.014",
+          "0.092"
+        ],
+        [
+          "Allele 4",
+          "0.003",
+          "0.004",
+          "0.034"
+        ],
+        [
+          "Allele 5",
+          "—",
+          "0.004",
+          "0.014"
+        ],
+        [
+          "Allele 6",
+          "—",
+          "—",
+          "0.004"
+        ],
+        [
+          "Allele 7",
+          "—",
+          "—",
+          "0.002"
+        ],
+        [
+          "Allele 8",
+          "—",
+          "—",
+          "0.002"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 16,
+        "bbox": [
+          536,
+          257,
+          897,
+          482
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_008",
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "source_pages": [
+          180
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p016:b4"
+        ],
+        "source_bboxes": [
+          [
+            595.0,
+            284.0,
+            993.0,
+            531.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:inline_2",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "4.4 THE INFINITE-ALLELES MODEL"
+      ],
+      "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "4.4 THE INFINITE-ALLELES MODEL"
+        ],
+        "subsection": "4.4 THE INFINITE-ALLELES MODEL",
+        "source_pages": [
+          180
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p016:b4"
+        ],
+        "source_bboxes": [
+          [
+            595.0,
+            284.0,
+            993.0,
+            531.0
+          ]
+        ],
+        "audit_evidence_sha256": "361f0d14335936dde0e5eb67a27ec9b44ab61c0467c029b696d9221bc023c6f5"
+      }
+    },
+    {
+      "id": "inline_3",
+      "label_format": "Inline Table 3",
+      "title": "Inline Table 3",
+      "table_type": "inline",
+      "html": "<table><tr><td></td><td>1</td><td>1</td><td>&lt;nl&gt;</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "1",
+          "1",
+          ""
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 38,
+        "bbox": [
+          290,
+          212,
+          828,
+          391
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "heading_path": [
+          "4.6 MUTATION AND RECOMBINATION",
+          "Piecewise Recombination in Bacteria"
+        ],
+        "subsection": "Piecewise Recombination in Bacteria",
+        "source_pages": [
+          202
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p038:b1",
+          "PopGen_chapter4:p038:b2"
+        ],
+        "source_bboxes": [
+          [
+            290,
+            212,
+            828,
+            391
+          ]
+        ],
+        "unit_id": "PopGen_chapter4_018"
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:inline_3",
+      "heading_path": [
+        "4.6 MUTATION AND RECOMBINATION",
+        "Piecewise Recombination in Bacteria"
+      ],
+      "subsection": "Piecewise Recombination in Bacteria",
+      "audit_provenance": {
+        "heading_path": [
+          "4.6 MUTATION AND RECOMBINATION",
+          "Piecewise Recombination in Bacteria"
+        ],
+        "subsection": "Piecewise Recombination in Bacteria",
+        "source_pages": [
+          202
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p038:b1",
+          "PopGen_chapter4:p038:b2"
+        ],
+        "source_bboxes": [
+          [
+            290,
+            212,
+            828,
+            391
+          ]
+        ],
+        "audit_evidence_sha256": "3345ebf46315ced09cd4caf2996c4065d4395bd63c551016877488e15b9fe5e6"
+      }
+    },
+    {
+      "id": "inline_4",
+      "label_format": "Inline Table 4",
+      "title": "Inline Table 4",
+      "table_type": "inline",
+      "html": "<table><tr><td></td><td>Induction rate/rad</td><td>Spontaneous rate</td></tr><tr><td>Dominant lethals</td><td>$ 5 \\times 10^{-4}/\\text{gamete} $</td><td>$ 2 \\text{ to } 10 \\times 10^{-2}/\\text{gamete} $</td></tr><tr><td>Recessive visibles</td><td>$ 7 \\times 10^{-8}/\\text{locus} $</td><td>$ 8 \\times 10^{-6}/\\text{locus} $</td></tr><tr><td>Reciprocal translocations</td><td>$ 1 \\text{ to } 2 \\times 10^{-5}/\\text{cell} $</td><td>$ 2 \\text{ to } 5 \\times 10^{-4}/\\text{cell} $</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Induction rate/rad",
+          "Spontaneous rate"
+        ],
+        [
+          "Dominant lethals",
+          "$ 5 \\times 10^{-4}/\\text{gamete} $",
+          "$ 2 \\text{ to } 10 \\times 10^{-2}/\\text{gamete} $"
+        ],
+        [
+          "Recessive visibles",
+          "$ 7 \\times 10^{-8}/\\text{locus} $",
+          "$ 8 \\times 10^{-6}/\\text{locus} $"
+        ],
+        [
+          "Reciprocal translocations",
+          "$ 1 \\text{ to } 2 \\times 10^{-5}/\\text{cell} $",
+          "$ 2 \\text{ to } 5 \\times 10^{-4}/\\text{cell} $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 44,
+        "bbox": [
+          279,
+          203,
+          863,
+          313
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_023",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          208
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p044:b1"
+        ],
+        "source_bboxes": [
+          [
+            309.0,
+            224.0,
+            956.0,
+            345.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:inline_4",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          208
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p044:b1"
+        ],
+        "source_bboxes": [
+          [
+            309.0,
+            224.0,
+            956.0,
+            345.0
+          ]
+        ],
+        "audit_evidence_sha256": "6fc53a7d069f54a3e09518ace0f9fc67b7b2807d021c4d8d29f0887fb0980bbe"
+      }
+    },
+    {
+      "id": "inline_5",
+      "label_format": "Inline Table 5",
+      "title": "Inline Table 5",
+      "table_type": "inline",
+      "html": "<table><tr><td>t</td><td>q</td><td>t</td><td>q</td></tr><tr><td>0</td><td>$ 1 \\times 10^{-6} $</td><td>16</td><td>$ 7.04 \\times 10^{-6} $</td></tr><tr><td>4</td><td>$ 3 \\times 10^{-6} $</td><td>20</td><td>$ 7.08 \\times 10^{-6} $</td></tr><tr><td>8</td><td>$ 5 \\times 10^{-6} $</td><td>24</td><td>$ 7.12 \\times 10^{-6} $</td></tr><tr><td>12</td><td>$ 7 \\times 10^{-6} $</td><td></td><td></td></tr></table>",
+      "rows": [
+        [
+          "t",
+          "q",
+          "t",
+          "q"
+        ],
+        [
+          "0",
+          "$ 1 \\times 10^{-6} $",
+          "16",
+          "$ 7.04 \\times 10^{-6} $"
+        ],
+        [
+          "4",
+          "$ 3 \\times 10^{-6} $",
+          "20",
+          "$ 7.08 \\times 10^{-6} $"
+        ],
+        [
+          "8",
+          "$ 5 \\times 10^{-6} $",
+          "24",
+          "$ 7.12 \\times 10^{-6} $"
+        ],
+        [
+          "12",
+          "$ 7 \\times 10^{-6} $",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter4",
+        "page": 44,
+        "bbox": [
+          415.0,
+          760.0,
+          850.0,
+          901.0
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter4_023",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          208
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p044:b7"
+        ],
+        "source_bboxes": [
+          [
+            415.0,
+            760.0,
+            850.0,
+            901.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter4:inline_5",
+      "heading_path": [
+        "MUTATION AND THE NEUTRAL THEORY: Introduction",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "MUTATION AND THE NEUTRAL THEORY: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          208
+        ],
+        "source_block_ids": [
+          "PopGen_chapter4:p044:b7"
+        ],
+        "source_bboxes": [
+          [
+            415.0,
+            760.0,
+            850.0,
+            901.0
+          ]
+        ],
+        "audit_evidence_sha256": "d1dfc364573be8f525e5e58fb339ede6e1c7a3169b5f8ffb14246cf245655153"
+      }
+    }
+  ]
+}

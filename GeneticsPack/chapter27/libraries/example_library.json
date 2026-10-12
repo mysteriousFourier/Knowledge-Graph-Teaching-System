@@ -1,0 +1,248 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter27",
+  "count": 5,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter27:1",
+      "example_ref": "Genetics_chapter27:1",
+      "chapter": "Genetics_chapter27",
+      "label": "Example 1",
+      "title": "Example 1. Consider the simple animal model, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} $, where there is only one observation per individual ( $ \\mathbf",
+      "source_file": "Genetics_chapter27_004.json",
+      "start_block_index": 52,
+      "end_source_file": "Genetics_chapter27_004.json",
+      "end_block_index": 65,
+      "block_ids": [
+        "p800:b3",
+        "p800:b4",
+        "p800:b5",
+        "p800:b6",
+        "p800:b7",
+        "p800:b8",
+        "p800:b9",
+        "p800:b10",
+        "p800:b11",
+        "p800:b12",
+        "p800:b13",
+        "p800:b14",
+        "p800:b15",
+        "p800:b16"
+      ],
+      "content_markdown": "Example 1. Consider the simple animal model, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} $, where there is only one observation per individual ( $ \\mathbf{Z} = \\mathbf{I} $), and we assume $ \\mathbf{a} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_A^2 \\mathbf{A}) $ and $ \\mathbf{e} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_E^2 \\mathbf{I}) $. In this case, the ML equations become\n\n[[FORMULA:Genetics_chapter27_formula043]]\n\n[[FORMULA:Genetics_chapter27_formula044]]\n\n[[FORMULA:Genetics_chapter27_formula045]]\n\nwhere\n\n[[FORMULA:Genetics_chapter27_formula046]]\n\nand $ \\hat{P} $ is obtained by substituting $ \\hat{V} $ into Equation 27.17b.\n\nIf we further allow for dominance, the model becomes modified to $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} $. Assuming $ \\mathbf{a} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_A^2 \\mathbf{A}) $, $ \\mathbf{d} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_D^2 \\mathbf{D}) $, and $ \\mathbf{e} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_E^2 \\mathbf{I}) $, the ML equations now become\n\n[[FORMULA:Genetics_chapter27_formula047]]\n\n[[FORMULA:Genetics_chapter27_formula048]]\n\n[[FORMULA:Genetics_chapter27_formula049]]\n\n[[FORMULA:Genetics_chapter27_formula050]]\n\nwhere $ \\hat{P} $ is a function of\n\n[[FORMULA:Genetics_chapter27_formula051]]",
+      "content_plain": "Example 1. Consider the simple animal model,  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} , where there is only one observation per individual (  \\mathbf{Z} = \\mathbf{I} ), and we assume  \\mathbf{a} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_A^2 \\mathbf{A})  and  \\mathbf{e} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_E^2 \\mathbf{I}) . In this case, the ML equations become\n\n[[FORMULA:Genetics_chapter27_formula043]]\n\n[[FORMULA:Genetics_chapter27_formula044]]\n\n[[FORMULA:Genetics_chapter27_formula045]]\n\nwhere\n\n[[FORMULA:Genetics_chapter27_formula046]]\n\nand  \\hat{P}  is obtained by substituting  \\hat{V}  into Equation 27.17b.\n\nIf we further allow for dominance, the model becomes modified to  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} . Assuming  \\mathbf{a} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_A^2 \\mathbf{A}) ,  \\mathbf{d} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_D^2 \\mathbf{D}) , and  \\mathbf{e} \\sim \\mathrm{MVN}(\\mathbf{0}, \\sigma_E^2 \\mathbf{I}) , the ML equations now become\n\n[[FORMULA:Genetics_chapter27_formula047]]\n\n[[FORMULA:Genetics_chapter27_formula048]]\n\n[[FORMULA:Genetics_chapter27_formula049]]\n\n[[FORMULA:Genetics_chapter27_formula050]]\n\nwhere  \\hat{P}  is a function of\n\n[[FORMULA:Genetics_chapter27_formula051]]",
+      "formula_refs": [
+        "Genetics_chapter27_formula043",
+        "Genetics_chapter27_formula044",
+        "Genetics_chapter27_formula045",
+        "Genetics_chapter27_formula046",
+        "Genetics_chapter27_formula047",
+        "Genetics_chapter27_formula048",
+        "Genetics_chapter27_formula049",
+        "Genetics_chapter27_formula050",
+        "Genetics_chapter27_formula051"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 800,
+          "y": 1189.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 800
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter27:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter27:2",
+      "example_ref": "Genetics_chapter27:2",
+      "chapter": "Genetics_chapter27",
+      "label": "Example 2",
+      "title": "Example 2. For the simple model with dominance (Example 1), the Fisher information submatrix S dealing with the ML variance estimates $ \\left(\\sigma_{A}^{2}, \\sigma_{D}^{2}, \\sigma",
+      "source_file": "Genetics_chapter27_005.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_chapter27_005.json",
+      "end_block_index": 14,
+      "block_ids": [
+        "p801:b16",
+        "p801:b17",
+        "p801:b18"
+      ],
+      "content_markdown": "Example 2. For the simple model with dominance (Example 1), the Fisher information submatrix S dealing with the ML variance estimates $ \\left(\\sigma_{A}^{2}, \\sigma_{D}^{2}, \\sigma_{E}^{2}\\right) $ is\n\n[[FORMULA:Genetics_chapter27_formula057]]\n\nwhere V is as given in Example 1.",
+      "content_plain": "Example 2. For the simple model with dominance (Example 1), the Fisher information submatrix S dealing with the ML variance estimates  \\left(\\sigma_{A}^{2}, \\sigma_{D}^{2}, \\sigma_{E}^{2}\\right)  is\n\n[[FORMULA:Genetics_chapter27_formula057]]\n\nwhere V is as given in Example 1.",
+      "formula_refs": [
+        "Genetics_chapter27_formula057"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 801,
+          "y": 1331.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 801
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter27:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter27:3",
+      "example_ref": "Genetics_chapter27:3",
+      "chapter": "Genetics_chapter27",
+      "label": "Example 3",
+      "title": "Example 3. The REML variance-component estimates for the single-records dominance model of Example 2, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathb",
+      "source_file": "Genetics_chapter27_006.json",
+      "start_block_index": 23,
+      "end_source_file": "Genetics_chapter27_006.json",
+      "end_block_index": 27,
+      "block_ids": [
+        "p803:b12",
+        "p803:b13",
+        "p803:b14",
+        "p803:b15",
+        "p803:b16"
+      ],
+      "content_markdown": "Example 3. The REML variance-component estimates for the single-records dominance model of Example 2, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} $, satisfy\n\n[[FORMULA:Genetics_chapter27_formula069]]\n\nwhere $ \\widehat{\\mathbf{P}} $ is defined as in Equation 27.17b with $ \\mathbf{V} = \\widehat{\\sigma}_A^2 \\mathbf{A} + \\widehat{\\sigma}_D^2 \\mathbf{D} + \\widehat{\\sigma}_E^2 \\mathbf{I} $. For purposes of estimating sampling variances and covariances of these estimates, the information matrix is given by\n\n[[FORMULA:Genetics_chapter27_formula070]]\n\nWhen the estimate of P is inserted into this matrix, the standard errors of the variance-component estimates are obtained as the square roots of the diagonal elements of $ S^{-1} $, and the covariance between $ \\widehat{\\sigma}_{i}^{2} $ and $ \\widehat{\\sigma}_{j}^{2} $ is given by $ S_{ij}^{-1} $.",
+      "content_plain": "Example 3. The REML variance-component estimates for the single-records dominance model of Example 2,  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} , satisfy\n\n[[FORMULA:Genetics_chapter27_formula069]]\n\nwhere  \\widehat{\\mathbf{P}}  is defined as in Equation 27.17b with  \\mathbf{V} = \\widehat{\\sigma}_A^2 \\mathbf{A} + \\widehat{\\sigma}_D^2 \\mathbf{D} + \\widehat{\\sigma}_E^2 \\mathbf{I} . For purposes of estimating sampling variances and covariances of these estimates, the information matrix is given by\n\n[[FORMULA:Genetics_chapter27_formula070]]\n\nWhen the estimate of P is inserted into this matrix, the standard errors of the variance-component estimates are obtained as the square roots of the diagonal elements of  S^{-1} , and the covariance between  \\widehat{\\sigma}_{i}^{2}  and  \\widehat{\\sigma}_{j}^{2}  is given by  S_{ij}^{-1} .",
+      "formula_refs": [
+        "Genetics_chapter27_formula069",
+        "Genetics_chapter27_formula070"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 803,
+          "y": 1476.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 803
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter27:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter27:4",
+      "example_ref": "Genetics_chapter27:4",
+      "chapter": "Genetics_chapter27",
+      "label": "Example 4",
+      "title": "Example 4. Again consider the simple animal model with a single observation per individual, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} $. For REML estima",
+      "source_file": "Genetics_chapter27_010.json",
+      "start_block_index": 18,
+      "end_source_file": "Genetics_chapter27_010.json",
+      "end_block_index": 28,
+      "block_ids": [
+        "p808:b3",
+        "p808:b4",
+        "p808:b5",
+        "p808:b6",
+        "p808:b7",
+        "p808:b8",
+        "p808:b9",
+        "p808:b10",
+        "p808:b11",
+        "p808:b12",
+        "p808:b13"
+      ],
+      "content_markdown": "Example 4. Again consider the simple animal model with a single observation per individual, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} $. For REML estimates, letting\n\n[[FORMULA:Genetics_chapter27_formula079]]\n\nNote that P is a function of the current variance-component estimates, with\n\n[[FORMULA:Genetics_chapter27_formula080]]\n\nwhere\n\n[[FORMULA:Genetics_chapter27_formula081]]\n\nwith A being the relationship matrix for the individuals being measured. Likewise, from Equation 27.34 the Hessian matrix H is given by\n\n[[FORMULA:Genetics_chapter27_formula082]]\n\nand the Fisher information matrix by\n\n[[FORMULA:Genetics_chapter27_formula083]]\n\nNote that P is really indexed by k since it depends on the current estimates of the unknown variance components, $ \\widehat{\\sigma}_{A}^{2} $ and $ \\widehat{\\sigma}_{E}^{2} $.",
+      "content_plain": "Example 4. Again consider the simple animal model with a single observation per individual,  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{e} . For REML estimates, letting\n\n[[FORMULA:Genetics_chapter27_formula079]]\n\nNote that P is a function of the current variance-component estimates, with\n\n[[FORMULA:Genetics_chapter27_formula080]]\n\nwhere\n\n[[FORMULA:Genetics_chapter27_formula081]]\n\nwith A being the relationship matrix for the individuals being measured. Likewise, from Equation 27.34 the Hessian matrix H is given by\n\n[[FORMULA:Genetics_chapter27_formula082]]\n\nand the Fisher information matrix by\n\n[[FORMULA:Genetics_chapter27_formula083]]\n\nNote that P is really indexed by k since it depends on the current estimates of the unknown variance components,  \\widehat{\\sigma}_{A}^{2}  and  \\widehat{\\sigma}_{E}^{2} .",
+      "formula_refs": [
+        "Genetics_chapter27_formula079",
+        "Genetics_chapter27_formula080",
+        "Genetics_chapter27_formula081",
+        "Genetics_chapter27_formula082",
+        "Genetics_chapter27_formula083"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 808,
+          "y": 1490.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 808
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter27:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter27:5",
+      "example_ref": "Genetics_chapter27:5",
+      "chapter": "Genetics_chapter27",
+      "label": "Example 5",
+      "title": "Example 5. Consider again the animal model with dominance and a single record per individual, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} $. ",
+      "source_file": "Genetics_chapter27_011.json",
+      "start_block_index": 19,
+      "end_source_file": "Genetics_chapter27_011.json",
+      "end_block_index": 24,
+      "block_ids": [
+        "p810:b7",
+        "p811:b2",
+        "p811:b3",
+        "p811:b4",
+        "p811:b5",
+        "p811:b6",
+        "p811:b7"
+      ],
+      "content_markdown": "Example 5. Consider again the animal model with dominance and a single record per individual, $ \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} $. The EM equations for the REML estimates of $ \\sigma_{A}^{2}, \\sigma_{D}^{2} $, and $ \\sigma_{E}^{2} $ are\n\n[[FORMULA:Genetics_chapter27_formula092]]\n\n[[FORMULA:Genetics_chapter27_formula093]]\n\n[[FORMULA:Genetics_chapter27_formula094]]\n\nwhere $ \\mathbf{P}^{(k)} $ is defined by Equation 27.17b using $ \\mathbf{V}^{(k)} $ for V where\n\n[[FORMULA:Genetics_chapter27_formula095]]",
+      "content_plain": "Example 5. Consider again the animal model with dominance and a single record per individual,  \\mathbf{y} = \\mathbf{X}\\boldsymbol{\\beta} + \\mathbf{a} + \\mathbf{d} + \\mathbf{e} . The EM equations for the REML estimates of  \\sigma_{A}^{2}, \\sigma_{D}^{2} , and  \\sigma_{E}^{2}  are\n\n[[FORMULA:Genetics_chapter27_formula092]]\n\n[[FORMULA:Genetics_chapter27_formula093]]\n\n[[FORMULA:Genetics_chapter27_formula094]]\n\nwhere  \\mathbf{P}^{(k)}  is defined by Equation 27.17b using  \\mathbf{V}^{(k)}  for V where\n\n[[FORMULA:Genetics_chapter27_formula095]]",
+      "formula_refs": [
+        "Genetics_chapter27_formula092",
+        "Genetics_chapter27_formula093",
+        "Genetics_chapter27_formula094",
+        "Genetics_chapter27_formula095"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 811,
+          "y": 666.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 810
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter27:5]]",
+      "book": "Genetics"
+    }
+  ]
+}

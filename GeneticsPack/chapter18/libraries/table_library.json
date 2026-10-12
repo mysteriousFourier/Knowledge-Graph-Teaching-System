@@ -1,0 +1,526 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter18",
+  "count": 3,
+  "tables": [
+    {
+      "id": "18.1",
+      "label_format": "Table 18.1",
+      "title": "Table 18.1 Summary of a one-way ANOVA involving N independent families, the ith of which contains $ n_{i} $ individuals.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>df</td><td>SS</td><td>MS</td><td>E(MS)</td></tr><tr><td>Among-families</td><td>N - 1</td><td>SS_{s} = \\sum_{i=1}^{N} n_{i}(\\overline{z}_{i} - \\overline{z})^{2}</td><td>SS_{s}/(N - 1)</td><td>\\sigma_{e}^{2} + n_{0}\\sigma_{s}^{2}</td></tr><tr><td>Within-families</td><td>T - N</td><td>SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z}_{i})^{2}</td><td>SS_{e}/(T - N)</td><td>\\sigma_{e}^{2}</td></tr><tr><td>Total</td><td>T - 1</td><td>SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z})^{2}</td><td>SS_{T}/(T - 1)</td><td>\\sigma_{z}^{2}</td></tr><tr><td colspan=\"5\">Note: The total sample size is $ T = \\sum_{i=1}^{N} n_{i} $, and $ n_{0} = [T - (\\sum n_{i}^{2}/T)]/(N - 1) $, which reduces to $ n $ with equal family sizes. Degrees of freedom are denoted by df, observed sums of squares by SS, and expected mean squares by E(MS).</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "df",
+          "SS",
+          "MS",
+          "E(MS)"
+        ],
+        [
+          "Among-families",
+          "N - 1",
+          "SS_{s} = \\sum_{i=1}^{N} n_{i}(\\overline{z}_{i} - \\overline{z})^{2}",
+          "SS_{s}/(N - 1)",
+          "sigma_{s}^{2}"
+        ],
+        [
+          "Within-families",
+          "T - N",
+          "SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z}_{i})^{2}",
+          "SS_{e}/(T - N)",
+          "sigma_{e}^{2}"
+        ],
+        [
+          "Total",
+          "T - 1",
+          "SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z})^{2}",
+          "SS_{T}/(T - 1)",
+          "sigma_{z}^{2}"
+        ],
+        [
+          "Note: The total sample size is $ T = \\sum_{i=1}^{N} n_{i} $, and $ n_{0} = [T - (\\sum n_{i}^{2}/T)]/(N - 1) $, which reduces to $ n $ with equal family sizes. Degrees of freedom are denoted by df, observed sums of squares by SS, and expected mean squares by E(MS)."
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 573,
+          "title": "Table 18.1 Summary of a one-way ANOVA involving N independent families, the ith of which contains $ n_{i} $ individuals.",
+          "html": "<table><tr><td>Factor</td><td>df</td><td>SS</td><td>MS</td><td>E(MS)</td></tr><tr><td>Among-families</td><td>N - 1</td><td>SS_{s} = \\sum_{i=1}^{N} n_{i}(\\overline{z}_{i} - \\overline{z})^{2}</td><td>SS_{s}/(N - 1)</td><td>\\sigma_{e}^{2} + n_{0}\\sigma_{s}^{2}</td></tr><tr><td>Within-families</td><td>T - N</td><td>SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z}_{i})^{2}</td><td>SS_{e}/(T - N)</td><td>\\sigma_{e}^{2}</td></tr><tr><td>Total</td><td>T - 1</td><td>SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z})^{2}</td><td>SS_{T}/(T - 1)</td><td>\\sigma_{z}^{2}</td></tr><tr><td colspan=\"5\">Note: The total sample size is $ T = \\sum_{i=1}^{N} n_{i} $, and $ n_{0} = [T - (\\sum n_{i}^{2}/T)]/(N - 1) $, which reduces to $ n $ with equal family sizes. Degrees of freedom are denoted by df, observed sums of squares by SS, and expected mean squares by E(MS).</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "df",
+              "SS",
+              "MS",
+              "E(MS)"
+            ],
+            [
+              "Among-families",
+              "N - 1",
+              "SS_{s} = \\sum_{i=1}^{N} n_{i}(\\overline{z}_{i} - \\overline{z})^{2}",
+              "SS_{s}/(N - 1)",
+              "sigma_{s}^{2}"
+            ],
+            [
+              "Within-families",
+              "T - N",
+              "SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z}_{i})^{2}",
+              "SS_{e}/(T - N)",
+              "sigma_{e}^{2}"
+            ],
+            [
+              "Total",
+              "T - 1",
+              "SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{n_{i}}(z_{ij} - \\overline{z})^{2}",
+              "SS_{T}/(T - 1)",
+              "sigma_{z}^{2}"
+            ],
+            [
+              "Note: The total sample size is $ T = \\sum_{i=1}^{N} n_{i} $, and $ n_{0} = [T - (\\sum n_{i}^{2}/T)]/(N - 1) $, which reduces to $ n $ with equal family sizes. Degrees of freedom are denoted by df, observed sums of squares by SS, and expected mean squares by E(MS)."
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            73.0,
+            196.0,
+            1041.0,
+            686.0
+          ],
+          "caption_bbox": [
+            78.0,
+            123.0,
+            1041.0,
+            204.0
+          ],
+          "source_block_ids": [
+            "p573:b3"
+          ],
+          "caption_source_block_ids": [
+            "p573:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter18",
+        "unit_id": "Genetics_chapter18_003",
+        "page": 573,
+        "pages": [
+          573
+        ],
+        "bbox": [
+          73.0,
+          196.0,
+          1041.0,
+          686.0
+        ],
+        "caption_bbox": [
+          78.0,
+          123.0,
+          1041.0,
+          204.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "18.2",
+      "label_format": "Table 18.2",
+      "title": "Table 18.2 Probabilities (to the nearest 0.01) of obtaining negative heritability estimates from a balanced half-sib analysis with N families, each containing n offspring.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">N</td><td colspan=\"2\">h^{2}=0.19</td><td colspan=\"2\">h^{2}=0.36</td><td colspan=\"2\">h^{2}=0.80</td></tr><tr><td>n=5</td><td>n=25</td><td>n=5</td><td>n=25</td><td>n=5</td><td>n=25</td></tr><tr><td>5</td><td>0.46</td><td>0.22</td><td>0.38</td><td>0.11</td><td>0.22</td><td>0.03</td></tr><tr><td>10</td><td>0.38</td><td>0.09</td><td>0.27</td><td>0.02</td><td>0.10</td><td>0.00</td></tr><tr><td>25</td><td>0.27</td><td>0.00</td><td>0.11</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>50</td><td>0.18</td><td>0.00</td><td>0.05</td><td>0.00</td><td>0.00</td><td>0.00</td></tr></table>",
+      "rows": [
+        [
+          "N",
+          "h^{2}=0.19",
+          "h^{2}=0.36",
+          "h^{2}=0.80"
+        ],
+        [
+          "n=5",
+          "n=25",
+          "n=5",
+          "n=25",
+          "n=5",
+          "n=25"
+        ],
+        [
+          "5",
+          "0.46",
+          "0.22",
+          "0.38",
+          "0.11",
+          "0.22",
+          "0.03"
+        ],
+        [
+          "10",
+          "0.38",
+          "0.09",
+          "0.27",
+          "0.02",
+          "0.10",
+          "0.00"
+        ],
+        [
+          "25",
+          "0.27",
+          "0.00",
+          "0.11",
+          "0.00",
+          "0.00",
+          "0.00"
+        ],
+        [
+          "50",
+          "0.18",
+          "0.00",
+          "0.05",
+          "0.00",
+          "0.00",
+          "0.00"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Searle et al. 1992.",
+          "source_page": 578,
+          "bbox": [
+            131.0,
+            450.0,
+            399.0,
+            485.0
+          ],
+          "source_block_ids": [
+            "p578:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 578,
+          "title": "Table 18.2 Probabilities (to the nearest 0.01) of obtaining negative heritability estimates from a balanced half-sib analysis with N families, each containing n offspring.",
+          "html": "<table><tr><td rowspan=\"2\">N</td><td colspan=\"2\">h^{2}=0.19</td><td colspan=\"2\">h^{2}=0.36</td><td colspan=\"2\">h^{2}=0.80</td></tr><tr><td>n=5</td><td>n=25</td><td>n=5</td><td>n=25</td><td>n=5</td><td>n=25</td></tr><tr><td>5</td><td>0.46</td><td>0.22</td><td>0.38</td><td>0.11</td><td>0.22</td><td>0.03</td></tr><tr><td>10</td><td>0.38</td><td>0.09</td><td>0.27</td><td>0.02</td><td>0.10</td><td>0.00</td></tr><tr><td>25</td><td>0.27</td><td>0.00</td><td>0.11</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>50</td><td>0.18</td><td>0.00</td><td>0.05</td><td>0.00</td><td>0.00</td><td>0.00</td></tr></table>",
+          "rows": [
+            [
+              "N",
+              "h^{2}=0.19",
+              "h^{2}=0.36",
+              "h^{2}=0.80"
+            ],
+            [
+              "n=5",
+              "n=25",
+              "n=5",
+              "n=25",
+              "n=5",
+              "n=25"
+            ],
+            [
+              "5",
+              "0.46",
+              "0.22",
+              "0.38",
+              "0.11",
+              "0.22",
+              "0.03"
+            ],
+            [
+              "10",
+              "0.38",
+              "0.09",
+              "0.27",
+              "0.02",
+              "0.10",
+              "0.00"
+            ],
+            [
+              "25",
+              "0.27",
+              "0.00",
+              "0.11",
+              "0.00",
+              "0.00",
+              "0.00"
+            ],
+            [
+              "50",
+              "0.18",
+              "0.00",
+              "0.05",
+              "0.00",
+              "0.00",
+              "0.00"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Searle et al. 1992.",
+              "source_page": 578,
+              "bbox": [
+                131.0,
+                450.0,
+                399.0,
+                485.0
+              ],
+              "source_block_ids": [
+                "p578:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            126.0,
+            209.0,
+            1088.0,
+            446.0
+          ],
+          "caption_bbox": [
+            120.0,
+            123.0,
+            1082.0,
+            201.0
+          ],
+          "source_block_ids": [
+            "p578:b3"
+          ],
+          "caption_source_block_ids": [
+            "p578:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter18",
+        "unit_id": "Genetics_chapter18_007",
+        "page": 578,
+        "pages": [
+          578
+        ],
+        "bbox": [
+          126.0,
+          209.0,
+          1088.0,
+          446.0
+        ],
+        "caption_bbox": [
+          120.0,
+          123.0,
+          1082.0,
+          201.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "18.3",
+      "label_format": "Table 18.3",
+      "title": "Table 18.3 Summary of a nested analysis of variance involving $N$ sires, $M_{i}$ dams within the ith sire, and $n_{ij}$ offspring within the ith full-sib family.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>MS</td><td>E(MS)</td></tr><tr><td>Sires</td><td>N-1</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_i-\\overline{z})^2 $</td><td>SS_s/df_s</td><td>$ \\sigma_e^2 + k_2\\sigma_d^2 + k_3\\sigma_s^2 $</td></tr><tr><td>Dams (sires)</td><td>N(\\overline{M}-1)</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_{ij}-\\overline{z}_i)^2 $</td><td>SS_d/df_d</td><td>$ \\sigma_e^2 + k_1\\sigma_d^2 $</td></tr><tr><td>Sibs (dams)</td><td>T-N $ \\overline{M} $</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z}_{ij})^2 $</td><td>SS_e/df_e</td><td>$ \\sigma_e^2 $</td></tr><tr><td>Total</td><td>T-1</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z})^2 $</td><td></td><td></td></tr><tr><td></td><td colspan=\"4\">$ k_1=\\frac{1}{N(\\overline{M}-1)}\\left(T-\\sum_{i=1}^{N}\\frac{\\sum_{j=1}^{M_i}n_{ij}^2}{n_i}\\right) $</td></tr><tr><td></td><td colspan=\"4\">$$ k_{2}=\\frac{1}{N-1}\\left(\\sum_{i=1}^{N}\\frac{\\sum_{j}^{M_{i}}n_{ij}^{2}}{n_{i}}-\\frac{\\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}^{2}}{T}\\right) $$</td></tr><tr><td></td><td colspan=\"4\">$$ k_{3}=\\frac{1}{N-1}\\left(T-\\frac{\\sum_{i}^{N}n_{i}^{2}}{N}\\right) $$</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "df",
+          "Sums of Squares",
+          "MS",
+          "E(MS)"
+        ],
+        [
+          "Sires",
+          "N-1",
+          "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_i-\\overline{z})^2 $",
+          "SS_s/df_s",
+          "$ \\sigma_e^2 + k_2\\sigma_d^2 + k_3\\sigma_s^2 $"
+        ],
+        [
+          "Dams (sires)",
+          "N(\\overline{M}-1)",
+          "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_{ij}-\\overline{z}_i)^2 $",
+          "SS_d/df_d",
+          "$ \\sigma_e^2 + k_1\\sigma_d^2 $"
+        ],
+        [
+          "Sibs (dams)",
+          "T-N $ \\overline{M} $",
+          "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z}_{ij})^2 $",
+          "SS_e/df_e",
+          "$ \\sigma_e^2 $"
+        ],
+        [
+          "Total",
+          "T-1",
+          "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z})^2 $",
+          "",
+          ""
+        ],
+        [
+          "",
+          "$ k_1=\\frac{1}{N(\\overline{M}-1)}\\left(T-\\sum_{i=1}^{N}\\frac{\\sum_{j=1}^{M_i}n_{ij}^2}{n_i}\\right) $"
+        ],
+        [
+          "",
+          "$$ k_{2}=\\frac{1}{N-1}\\left(\\sum_{i=1}^{N}\\frac{\\sum_{j}^{M_{i}}n_{ij}^{2}}{n_{i}}-\\frac{\\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}^{2}}{T}\\right) $$"
+        ],
+        [
+          "",
+          "$$ k_{3}=\\frac{1}{N-1}\\left(T-\\frac{\\sum_{i}^{N}n_{i}^{2}}{N}\\right) $$"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: T is the total number of individuals in the experiment, $ \\overline{M} $ is the mean number of dams/sire, and $ n_{i} $ is the total number of offspring of the ith sire. MS denotes an observed mean square, $ E(\\text{MS}) $ denotes its expected value, and df denotes degrees of freedom.",
+          "source_page": 588,
+          "bbox": [
+            148.0,
+            1054.0,
+            1107.0,
+            1167.0
+          ],
+          "source_block_ids": [
+            "p588:b6"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 588,
+          "title": "Table 18.3 Summary of a nested analysis of variance involving $N$ sires, $M_{i}$ dams within the ith sire, and $n_{ij}$ offspring within the ith full-sib family.",
+          "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Squares</td><td>MS</td><td>E(MS)</td></tr><tr><td>Sires</td><td>N-1</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_i-\\overline{z})^2 $</td><td>SS_s/df_s</td><td>$ \\sigma_e^2 + k_2\\sigma_d^2 + k_3\\sigma_s^2 $</td></tr><tr><td>Dams (sires)</td><td>N(\\overline{M}-1)</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_{ij}-\\overline{z}_i)^2 $</td><td>SS_d/df_d</td><td>$ \\sigma_e^2 + k_1\\sigma_d^2 $</td></tr><tr><td>Sibs (dams)</td><td>T-N $ \\overline{M} $</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z}_{ij})^2 $</td><td>SS_e/df_e</td><td>$ \\sigma_e^2 $</td></tr><tr><td>Total</td><td>T-1</td><td>$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z})^2 $</td><td></td><td></td></tr><tr><td></td><td colspan=\"4\">$ k_1=\\frac{1}{N(\\overline{M}-1)}\\left(T-\\sum_{i=1}^{N}\\frac{\\sum_{j=1}^{M_i}n_{ij}^2}{n_i}\\right) $</td></tr><tr><td></td><td colspan=\"4\">$$ k_{2}=\\frac{1}{N-1}\\left(\\sum_{i=1}^{N}\\frac{\\sum_{j}^{M_{i}}n_{ij}^{2}}{n_{i}}-\\frac{\\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}^{2}}{T}\\right) $$</td></tr><tr><td></td><td colspan=\"4\">$$ k_{3}=\\frac{1}{N-1}\\left(T-\\frac{\\sum_{i}^{N}n_{i}^{2}}{N}\\right) $$</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "df",
+              "Sums of Squares",
+              "MS",
+              "E(MS)"
+            ],
+            [
+              "Sires",
+              "N-1",
+              "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_i-\\overline{z})^2 $",
+              "SS_s/df_s",
+              "$ \\sigma_e^2 + k_2\\sigma_d^2 + k_3\\sigma_s^2 $"
+            ],
+            [
+              "Dams (sires)",
+              "N(\\overline{M}-1)",
+              "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}n_{ij}(\\overline{z}_{ij}-\\overline{z}_i)^2 $",
+              "SS_d/df_d",
+              "$ \\sigma_e^2 + k_1\\sigma_d^2 $"
+            ],
+            [
+              "Sibs (dams)",
+              "T-N $ \\overline{M} $",
+              "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z}_{ij})^2 $",
+              "SS_e/df_e",
+              "$ \\sigma_e^2 $"
+            ],
+            [
+              "Total",
+              "T-1",
+              "$ \\sum_{i=1}^{N}\\sum_{j=1}^{M_i}\\sum_{k=1}^{n_{ij}}(z_{ijk}-\\overline{z})^2 $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "$ k_1=\\frac{1}{N(\\overline{M}-1)}\\left(T-\\sum_{i=1}^{N}\\frac{\\sum_{j=1}^{M_i}n_{ij}^2}{n_i}\\right) $"
+            ],
+            [
+              "",
+              "$$ k_{2}=\\frac{1}{N-1}\\left(\\sum_{i=1}^{N}\\frac{\\sum_{j}^{M_{i}}n_{ij}^{2}}{n_{i}}-\\frac{\\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}^{2}}{T}\\right) $$"
+            ],
+            [
+              "",
+              "$$ k_{3}=\\frac{1}{N-1}\\left(T-\\frac{\\sum_{i}^{N}n_{i}^{2}}{N}\\right) $$"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: T is the total number of individuals in the experiment, $ \\overline{M} $ is the mean number of dams/sire, and $ n_{i} $ is the total number of offspring of the ith sire. MS denotes an observed mean square, $ E(\\text{MS}) $ denotes its expected value, and df denotes degrees of freedom.",
+              "source_page": 588,
+              "bbox": [
+                148.0,
+                1054.0,
+                1107.0,
+                1167.0
+              ],
+              "source_block_ids": [
+                "p588:b6"
+              ]
+            }
+          ],
+          "bbox": [
+            129.0,
+            199.0,
+            1103.0,
+            1019.0
+          ],
+          "caption_bbox": [
+            125.0,
+            141.0,
+            1084.0,
+            223.0
+          ],
+          "source_block_ids": [
+            "p588:b3",
+            "p588:b4",
+            "p588:b5"
+          ],
+          "caption_source_block_ids": [
+            "p588:b2"
+          ],
+          "manual_correction": {
+            "kind": "paddle_split_table_bottom",
+            "reason": "Paddle clipped the k2 row and split k2/k3/Note from Table 18.3",
+            "source_page": 588,
+            "source_block_ids": [
+              "p588:b3",
+              "p588:b4",
+              "p588:b5",
+              "p588:b6"
+            ],
+            "bbox": [
+              129.0,
+              199.0,
+              1107.0,
+              1167.0
+            ],
+            "verification": "human_visual_check_against_source_pdf"
+          }
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter18",
+        "unit_id": "Genetics_chapter18_012",
+        "page": 588,
+        "pages": [
+          588
+        ],
+        "bbox": [
+          129.0,
+          199.0,
+          1103.0,
+          1019.0
+        ],
+        "caption_bbox": [
+          125.0,
+          141.0,
+          1084.0,
+          223.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

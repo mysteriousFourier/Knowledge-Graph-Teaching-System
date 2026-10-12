@@ -1,0 +1,223 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter3",
+  "count": 2,
+  "tables": [
+    {
+      "id": "3.1",
+      "label_format": "Table 3.1",
+      "title": "TABLE 3.1 Random Genetic Drift Looking One Generation Forward in Time",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Possibilities for frequency after  $ t $ generations</td><td>Probability of specified frequency after  $ t $ generations</td><td>Possibilities to change to  $ x $ in next interval  $ \\Delta t $</td><td>Probability of specified change in next interval  $ \\Delta t $</td></tr><tr><td rowspan=\"2\">$ x - \\Delta x $</td><td>$ \\phi(p, x - \\Delta x; t) $</td><td>$ x - \\Delta x \\rightarrow x $ by systematic force</td><td>$ M(p) $</td></tr><tr><td>$ \\phi(p, x - \\Delta x; t) $</td><td>$ x - \\Delta x \\rightarrow x $ by random drift</td><td>$ V(p)/2 $</td></tr><tr><td>$ x + \\Delta x $</td><td>$ \\phi(p, x + \\Delta x; t) $</td><td>$ x + \\Delta x \\rightarrow x $ by random drift</td><td>$ V(p)/2 $</td></tr><tr><td>$ x $</td><td>$ \\phi(p, x; t) $</td><td>$ x $ remains at  $ x $</td><td>$ 1 - M(p) - V(p) $</td></tr></table>",
+      "rows": [
+        [
+          "Possibilities for frequency after $ t $ generations",
+          "Probability of specified frequency after $ t $ generations",
+          "Possibilities to change to $ x $ in next interval $ \\Delta t $",
+          "Probability of specified change in next interval $ \\Delta t $"
+        ],
+        [
+          "$ x - \\Delta x $",
+          "$ \\phi(p, x - \\Delta x; t) $",
+          "$ x - \\Delta x \\rightarrow x $ by systematic force",
+          "$ M(p) $"
+        ],
+        [
+          "$ \\phi(p, x - \\Delta x; t) $",
+          "$ x - \\Delta x \\rightarrow x $ by random drift",
+          "$ V(p)/2 $"
+        ],
+        [
+          "$ x + \\Delta x $",
+          "$ \\phi(p, x + \\Delta x; t) $",
+          "$ x + \\Delta x \\rightarrow x $ by random drift",
+          "$ V(p)/2 $"
+        ],
+        [
+          "$ x $",
+          "$ \\phi(p, x; t) $",
+          "$ x $ remains at $ x $",
+          "$ 1 - M(p) - V(p) $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter3",
+        "page": 13,
+        "bbox": [
+          105,
+          203,
+          907,
+          478
+        ],
+        "caption_bbox": [
+          110,
+          190,
+          911,
+          224
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter3_005",
+        "subsection": "An Approach Looking Forward",
+        "physical_owner_rebound_by": "structured_fusion_embedded_table_reference_owner",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 10,
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "source_pages": [
+          121
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p013:b1"
+        ],
+        "source_bboxes": [
+          [
+            125.0,
+            213.0,
+            1007.0,
+            242.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.1",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Forward"
+      ],
+      "subsection": "An Approach Looking Forward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "subsection": "An Approach Looking Forward",
+        "source_pages": [
+          121
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p013:b1"
+        ],
+        "source_bboxes": [
+          [
+            125.0,
+            213.0,
+            1007.0,
+            242.0
+          ]
+        ],
+        "audit_evidence_sha256": "baa8bb806bccd5f358fd1372e25f7e37fc200abef358f48f60a8902f7e51952b"
+      }
+    },
+    {
+      "id": "3.2",
+      "label_format": "Table 3.2",
+      "title": "TABLE 3.2 Random Genetic Drift Looking Backward at the First Generation",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Possibilities for change in first generation</td><td>Probability of specified change in first-generation</td><td>Probability of changing to  $ x $ in remaining  $ t-\\Delta t $ generations</td></tr><tr><td>$ p \\rightarrow p + \\Delta p $ by systematic force</td><td>$ M(p) $</td><td>$ \\phi(p + \\Delta p, x; t - \\Delta t) $</td></tr><tr><td>$ p \\rightarrow p + \\Delta p $ by random drift</td><td>$ V(p)/2 $</td><td>$ \\phi(p + \\Delta p, x; t - \\Delta t) $</td></tr><tr><td>$ p \\rightarrow p - \\Delta p $ by random drift</td><td>$ V(p)/2 $</td><td>$ \\phi(p - \\Delta p, x; t - \\Delta t) $</td></tr><tr><td>$ p \\rightarrow $ remains at  $ p $</td><td>$ 1 - M(p) - V(p) $</td><td>$ \\phi(p, x; t - \\Delta t) $</td></tr></table>",
+      "rows": [
+        [
+          "Possibilities for change in first generation",
+          "Probability of specified change in first-generation",
+          "Probability of changing to $ x $ in remaining $ t-\\Delta t $ generations"
+        ],
+        [
+          "$ p \\rightarrow p + \\Delta p $ by systematic force",
+          "$ M(p) $",
+          "$ \\phi(p + \\Delta p, x; t - \\Delta t) $"
+        ],
+        [
+          "$ p \\rightarrow p + \\Delta p $ by random drift",
+          "$ V(p)/2 $",
+          "$ \\phi(p + \\Delta p, x; t - \\Delta t) $"
+        ],
+        [
+          "$ p \\rightarrow p - \\Delta p $ by random drift",
+          "$ V(p)/2 $",
+          "$ \\phi(p - \\Delta p, x; t - \\Delta t) $"
+        ],
+        [
+          "$ p \\rightarrow $ remains at $ p $",
+          "$ 1 - M(p) - V(p) $",
+          "$ \\phi(p, x; t - \\Delta t) $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter3",
+        "page": 17,
+        "bbox": [
+          105,
+          251,
+          901,
+          441
+        ],
+        "caption_bbox": [
+          112,
+          191,
+          819,
+          245
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter3_006",
+        "subsection": "An Approach Looking Backward",
+        "physical_owner_rebound_by": "structured_fusion_embedded_table_reference_owner",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 9,
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b1"
+        ],
+        "source_bboxes": [
+          [
+            124.0,
+            213.0,
+            904.0,
+            264.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.2",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Backward"
+      ],
+      "subsection": "An Approach Looking Backward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "subsection": "An Approach Looking Backward",
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b1"
+        ],
+        "source_bboxes": [
+          [
+            124.0,
+            213.0,
+            904.0,
+            264.0
+          ]
+        ],
+        "audit_evidence_sha256": "97105d6c1e3c5c9dd99ac7a200e07d80a616fb965d684f70335e8b6115d37160"
+      }
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "id": "Genetics_chapter19_005",
+  "metadata": {
+    "chapter": "Genetics_chapter19",
+    "section": "CLONAL ANALYSIS",
+    "subsections": [],
+    "section_level_1": "CLONAL ANALYSIS",
+    "section_level_2": null,
+    "heading_path": [
+      "CLONAL ANALYSIS"
+    ],
+    "display_heading": "CLONAL ANALYSIS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b4"
+      ],
+      "bbox": [
+        142.0,
+        957.0,
+        413.0,
+        993.0
+      ],
+      "raw_text": "CLONAL ANALYSIS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Many species of microorganisms, plants, and animals have an obligately asexual mode of reproduction. For such organisms, the narrow-sense heritability is an unmeasurable and meaningless concept. The relevant measure of genetic variability is the broad-sense heritability $ H^{2} = \\sigma_{G}^{2}/\\sigma_{T}^{2} $, the ratio of the among-clone component of variance to the total variance.",
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b5"
+      ],
+      "bbox": [
+        143.0,
+        1007.0,
+        1102.0,
+        1187.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The simplest approach to estimating $ H^{2} $ in an asexual population is to perform a one-way ANOVA. By randomly choosing a group of mothers and assaying n progeny from each of them, a within- and among-clone mean square is obtained (see Table 18.1). Under the assumption of no shared maternal environmental effects, the former is an estimate of the environmental variance due to special effects, $ \\sigma_{E_{s}}^{2} $, while the expected value of the latter is $ \\sigma_{E_{s}}^{2} + n\\sigma_{G}^{2} $ under a balanced design. It follows that $ (MS_{b} - MS_{e})/n $ is an estimate of the total genetic variance, $ \\sigma_{G}^{2} $. Breeders have used this approach to estimate broad-sense heritabilities in plants that can be clonally propagated (Burton and DeVane 1953, Keller and Likens 1955).",
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b6"
+      ],
+      "bbox": [
+        145.0,
+        1169.0,
+        1112.0,
+        1476.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Some species complexes contain both asexual and sexual individuals, or",
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b7"
+      ],
+      "bbox": [
+        205.0,
+        1454.0,
+        1113.0,
+        1506.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:19.2]]",
+      "source_page": 606,
+      "printed_page": 586,
+      "source_block_ids": [
+        "p606:b3"
+      ],
+      "bbox": [
+        120.0,
+        561.0,
+        987.0,
+        676.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "allow for the possibility of artificial clonal propagation. This suggests a simple technique for estimating the broad-sense heritability for the sexual component of the population. The phenotypic variance within clones, $ \\sigma_{e}^{2} $, can only be due to environmental causes. Thus, letting $ \\sigma_{z}^{2} $ be the phenotypic variance of the sexual population, $ (\\sigma_{z}^{2}-\\sigma_{e}^{2})/\\sigma_{z}^{2} $ provides an estimate of $ H^{2} $ for the sexual component of the population. A potential weakness of this approach is the assumption that the environmental variance of both types of individuals is the same. The genotypes of asexual and sexual individuals may respond differently to the environment, and this may be the reason why Browne et al. (1984) obtained some highly negative estimates of $ H^{2} $ when they applied this technique to the brine shrimp Artemia.",
+      "source_page": 606,
+      "printed_page": 586,
+      "source_block_ids": [
+        "p606:b4"
+      ],
+      "bbox": [
+        62.0,
+        709.0,
+        1028.0,
+        1062.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A more general limitation of the above approaches to estimating the broad-sense heritability is that maternal effects are not factored out. As noted above, even in the absence of any genetic variation, significant differences may arise between families as a result of maternal-line influences. This problem can be resolved through the use of a nested analysis of variance (Lynch 1985). Prior to analysis, N clonal lines are each split into M sublines, each of which is maintained for one or more generations (Figure 19.2). In the final analysis, each subline is replicated n times. The data are then subjected to an ordinary nested analysis of variance, again as described in Chapter 18. $ \\sigma_{e}^{2} $ is the environmental variance within an immediate family, while $ \\sigma_{b}^{2} $ (the variance among sublines within clones) is the residual environmental variance. If the sublines are separated for a single generation, $ \\sigma_{b}^{2} $ is equivalent to the maternal-effects variance. For sublines separated for two generations, $ \\sigma_{b}^{2} $ is the sum of the variance resulting from maternal and grandmaternal effects, and for a separation of three generations it includes the great-grandmaternal-effects variance as well. The among-clone component of variance, $ \\sigma_{a}^{2} $, provides an estimate of the total genetic variance (plus any residual variance associated with ancestral effects).",
+      "source_page": 606,
+      "printed_page": 586,
+      "source_block_ids": [
+        "p606:b5",
+        "p607:b2"
+      ],
+      "bbox": [
+        44.0,
+        1035.0,
+        1016.0,
+        1540.0
+      ],
+      "source_page_end": 607
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter19:3]]",
+      "source_page": 607,
+      "source_block_ids": [
+        "p607:b3",
+        "p607:b4"
+      ],
+      "bbox": [
+        162.0,
+        271.0,
+        1034.0,
+        507.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Estimates of the three variance components are obtained by setting the observed mean squares equal to their expectations and solving. Their significance, as determined by an F test of the ratio of adjacent mean squares, is denoted by * and **, respectively, for the 0.05 and 0.01 levels. Note that the variance among sublines is highly significant in the first two instars, suggesting the presence of substantial maternal effects. Such effects appear to be dissipated by the following instar.",
+      "source_page": 607,
+      "printed_page": 587,
+      "source_block_ids": [
+        "p607:b5"
+      ],
+      "bbox": [
+        189.0,
+        1100.0,
+        1058.0,
+        1307.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The broad-sense heritability is estimated by",
+      "source_page": 607,
+      "printed_page": 587,
+      "source_block_ids": [
+        "p607:b6"
+      ],
+      "bbox": [
+        199.0,
+        1311.0,
+        673.0,
+        1358.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula018]]",
+      "source_page": 607,
+      "printed_page": 587,
+      "source_block_ids": [
+        "p607:b7"
+      ],
+      "bbox": [
+        448.0,
+        1352.0,
+        812.0,
+        1430.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "which gives values of 0.33, 0.21, and 0.26 for the three instars. All of these estimates are significant as revealed by F tests for the significance of the among-clone variance estimates, $ \\mathrm{Var}(a) $.",
+      "source_page": 607,
+      "printed_page": 587,
+      "source_block_ids": [
+        "p607:b8"
+      ],
+      "bbox": [
+        203.0,
+        1424.0,
+        1066.0,
+        1541.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Had the parental lines not been taken through the subline generation, the maternal-effects variance, $ \\operatorname{Var}(b) $, would have been confounded with the genetic variance, $ \\operatorname{Var}(a) $. The broad-sense heritability from a one-way analysis of variance would then have been equivalent to",
+      "source_page": 608,
+      "printed_page": 588,
+      "source_block_ids": [
+        "p608:b2"
+      ],
+      "bbox": [
+        130.0,
+        116.0,
+        995.0,
+        262.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula019]]",
+      "source_page": 608,
+      "printed_page": 588,
+      "source_block_ids": [
+        "p608:b3"
+      ],
+      "bbox": [
+        373.0,
+        274.0,
+        737.0,
+        356.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "which yields estimates of 0.69, 0.54, and 0.23. Thus, failure to account for maternal effects in this study would have resulted in heritability estimates inflated by a factor of two for the first two instars.",
+      "source_page": 608,
+      "printed_page": 588,
+      "source_block_ids": [
+        "p608:b4"
+      ],
+      "bbox": [
+        120.0,
+        360.0,
+        984.0,
+        479.0
+      ]
+    }
+  ]
+}

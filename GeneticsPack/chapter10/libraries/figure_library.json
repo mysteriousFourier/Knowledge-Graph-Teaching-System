@@ -1,0 +1,319 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter10",
+  "count": 9,
+  "figures": [
+    {
+      "id": "10.1",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.1",
+      "placeholder": "[[FIGURE:10.1]]",
+      "see_placeholder": "[[SEE_FIGURE:10.1]]",
+      "asset_path": "figures/Genetics_10.1.png",
+      "caption": "Figure 10.1 Historical change in the reliance on hybrid corn by United States farmers and the increase in mean annual harvest. Because usage of fertilizers, pesticides, and herbicides has shifted over this period, the substantial gain in yield is not solely attributable to heterosis. (From Sprague 1983.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 268,
+      "raw_bbox": [
+        318.0,
+        126.0,
+        909.0,
+        572.0
+      ],
+      "source_block_ids": [
+        "p268:b2"
+      ],
+      "caption_block": {
+        "source_page": 268,
+        "printed_page": 248,
+        "source_block_ids": [
+          "p268:b3"
+        ],
+        "bbox": [
+          185.0,
+          604.0,
+          1048.0,
+          728.0
+        ]
+      }
+    },
+    {
+      "id": "10.2",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.2",
+      "placeholder": "[[FIGURE:10.2]]",
+      "see_placeholder": "[[SEE_FIGURE:10.2]]",
+      "asset_path": "figures/Genetics_10.2.png",
+      "caption": "Figure 10.2 Change in mean phenotypes as a function of inbreeding. References: Drosophila (Latter and Robertson 1962); humans (Barrai et al. 1964); Tribolium (Rich et al. 1984); Speke's gazelle (Templeton and Read 1983).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 271,
+      "raw_bbox": [
+        88.0,
+        126.0,
+        1010.0,
+        845.0
+      ],
+      "source_block_ids": [
+        "p271:b2",
+        "p271:b3",
+        "p271:b4",
+        "p271:b5"
+      ],
+      "caption_block": {
+        "source_page": 271,
+        "printed_page": 251,
+        "source_block_ids": [
+          "p271:b7"
+        ],
+        "bbox": [
+          110.0,
+          880.0,
+          975.0,
+          974.0
+        ]
+      }
+    },
+    {
+      "id": "10.3",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.3",
+      "placeholder": "[[FIGURE:10.3]]",
+      "see_placeholder": "[[SEE_FIGURE:10.3]]",
+      "asset_path": "figures/Genetics_10.3.png",
+      "caption": "Figure 10.3 Frequency distributions for four characters in recombinant inbred lines of rice, compared to the mean of the $ F_{1} $ progeny obtained from a cross between two homozygous lines. In all four cases, the $ F_{1} $ performance exceeds that of both parental lines, and some individual inbred lines exceed the performance of the parents. The recombinant inbred lines were obtained by randomly sampling 194 individuals from the $ F_{2} $ population, and taking each of them through six rounds of selfing and single-seed descent. (From Xiao et al. 1995.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 272,
+      "raw_bbox": [
+        158.0,
+        129.0,
+        1074.0,
+        797.0
+      ],
+      "source_block_ids": [
+        "p272:b2",
+        "p272:b3",
+        "p272:b4",
+        "p272:b5"
+      ],
+      "caption_block": {
+        "source_page": 272,
+        "printed_page": 252,
+        "source_block_ids": [
+          "p272:b6"
+        ],
+        "bbox": [
+          185.0,
+          818.0,
+          1053.0,
+          1030.0
+        ]
+      }
+    },
+    {
+      "id": "10.4",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.4",
+      "placeholder": "[[FIGURE:10.4]]",
+      "see_placeholder": "[[SEE_FIGURE:10.4]]",
+      "asset_path": "figures/Genetics_10.4.png",
+      "caption": "Figure 10.4 Observed phenotypic means in inbred (●) and control (○) lines of Drosophila melanogaster, and corrected values for the inbred lines (*) obtained by use of Equation 10.12. The partial regression is represented by the solid line. (From Kidwell and Kidwell 1966.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 279,
+      "raw_bbox": [
+        254.0,
+        129.0,
+        847.0,
+        515.0
+      ],
+      "source_block_ids": [
+        "p279:b2"
+      ],
+      "caption_block": {
+        "source_page": 279,
+        "printed_page": 259,
+        "source_block_ids": [
+          "p279:b3"
+        ],
+        "bbox": [
+          113.0,
+          538.0,
+          977.0,
+          662.0
+        ]
+      }
+    },
+    {
+      "id": "10.5",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.5",
+      "placeholder": "[[FIGURE:10.5]]",
+      "see_placeholder": "[[SEE_FIGURE:10.5]]",
+      "asset_path": "figures/Genetics_10.5.png",
+      "caption": "Figure 10.5 The minimum sampling variance of the regression coefficient of consecutive line means on their respective inbreeding coefficients, under the assumption of purely additive gene action and ignoring environmental effects. $ f(k) $ is the inbreeding coefficient in the final generation. To obtain the actual sampling variance of I, the points on the ordinate must be multiplied by $ \\sigma_{A}^{2}/L $, the ratio of the additive genetic variance in the base population to the number of inbred lines. (From Lynch 1988a.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 281,
+      "raw_bbox": [
+        253.0,
+        129.0,
+        841.0,
+        711.0
+      ],
+      "source_block_ids": [
+        "p281:b2"
+      ],
+      "caption_block": {
+        "source_page": 281,
+        "printed_page": 261,
+        "source_block_ids": [
+          "p281:b3"
+        ],
+        "bbox": [
+          104.0,
+          733.0,
+          970.0,
+          950.0
+        ]
+      }
+    },
+    {
+      "id": "10.6",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.6",
+      "placeholder": "[[FIGURE:10.6]]",
+      "see_placeholder": "[[SEE_FIGURE:10.6]]",
+      "asset_path": "figures/Genetics_10.6.png",
+      "caption": "Figure 10.6 The response of mean grain yield and plant height to inbreeding in maize. Data are from: (●, ○) Cornelius and Dudley (1974); (closed triangles) Hallauer and Sears (1973); (open triangles) Sing et al. (1967); (··) Good and Hallauer (1977) — only the regression line is available. The two studies of Cornelius and Dudley are for the same lines grown in different years. The variation in intercepts is presumably due to differences among base populations as well as among environments in which the experiments were performed.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 286,
+      "raw_bbox": [
+        255.0,
+        131.0,
+        983.0,
+        534.0
+      ],
+      "source_block_ids": [
+        "p286:b2"
+      ],
+      "caption_block": {
+        "source_page": 286,
+        "printed_page": 266,
+        "source_block_ids": [
+          "p286:b3"
+        ],
+        "bbox": [
+          175.0,
+          559.0,
+          1049.0,
+          775.0
+        ]
+      }
+    },
+    {
+      "id": "10.7",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.7",
+      "placeholder": "[[FIGURE:10.7]]",
+      "see_placeholder": "[[SEE_FIGURE:10.7]]",
+      "asset_path": "figures/Genetics_10.7.png",
+      "caption": "Figure 10.7 The decline in offspring size in laboratory mice as a function of individual and maternal inbreeding. The results of two experiments have been combined after adjusting for mean differences in the control lines. (From White 1972.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 289,
+      "raw_bbox": [
+        238.0,
+        153.0,
+        831.0,
+        730.0
+      ],
+      "source_block_ids": [
+        "p289:b2"
+      ],
+      "caption_block": {
+        "source_page": 289,
+        "printed_page": 269,
+        "source_block_ids": [
+          "p289:b3"
+        ],
+        "bbox": [
+          97.0,
+          749.0,
+          964.0,
+          878.0
+        ]
+      }
+    },
+    {
+      "id": "10.9",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.9",
+      "placeholder": "[[FIGURE:10.9]]",
+      "see_placeholder": "[[SEE_FIGURE:10.9]]",
+      "asset_path": "figures/Genetics_10.9.png",
+      "caption": "Figure 10.9 Survivorship of white-leghorn chickens (left) and Poland-China pigs (right) as a function of level of inbreeding. (From Pisani and Kerr 1961.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 294,
+      "raw_bbox": [
+        256.0,
+        127.0,
+        983.0,
+        524.0
+      ],
+      "source_block_ids": [
+        "p294:b2"
+      ],
+      "caption_block": {
+        "source_page": 294,
+        "printed_page": 274,
+        "source_block_ids": [
+          "p294:b3"
+        ],
+        "bbox": [
+          189.0,
+          538.0,
+          1053.0,
+          621.0
+        ]
+      }
+    },
+    {
+      "id": "10.10",
+      "chapter": "Genetics_chapter10",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter10:10.10",
+      "placeholder": "[[FIGURE:10.10]]",
+      "see_placeholder": "[[SEE_FIGURE:10.10]]",
+      "asset_path": "figures/Genetics_10.10.png",
+      "caption": "Figure 10.10 Frequency distribution of the mean number of lethal equivalents per zygote for 35 trees in a population of Douglas fir. (From Sorensen 1969.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 297,
+      "raw_bbox": [
+        101.0,
+        142.0,
+        1015.0,
+        515.0
+      ],
+      "source_block_ids": [
+        "p297:b2"
+      ],
+      "caption_block": {
+        "source_page": 297,
+        "printed_page": 277,
+        "source_block_ids": [
+          "p297:b3"
+        ],
+        "bbox": [
+          113.0,
+          525.0,
+          978.0,
+          608.0
+        ]
+      }
+    }
+  ]
+}

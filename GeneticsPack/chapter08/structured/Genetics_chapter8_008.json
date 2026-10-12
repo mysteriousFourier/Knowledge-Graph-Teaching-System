@@ -1,0 +1,280 @@
+{
+  "id": "Genetics_chapter8_008",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Multiplication"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Multiplication",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Multiplication"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Multiplication",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b2"
+      ],
+      "bbox": [
+        136.0,
+        136.0,
+        324.0,
+        167.0
+      ],
+      "raw_text": "Multiplication"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Multiplying a matrix by a scalar is also straightforward. If $ M = aN $, where $ a $ is a scalar, then $ M_{ij} = aN_{ij} $. Each element of $ N $ is simply multiplied by the scalar. For example,",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b3"
+      ],
+      "bbox": [
+        135.0,
+        176.0,
+        1094.0,
+        273.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula018]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b4"
+      ],
+      "bbox": [
+        440.0,
+        270.0,
+        787.0,
+        340.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Matrix multiplication is a little more involved. We start by considering the dot product of two vectors, as this forms the basic operation of matrix multiplication. Letting a and b be two n-dimensional vectors (the first a column vector, the second a row vector), their dot product a · b is a scalar given by",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b5"
+      ],
+      "bbox": [
+        134.0,
+        354.0,
+        1094.0,
+        484.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula019]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b6"
+      ],
+      "bbox": [
+        522.0,
+        511.0,
+        708.0,
+        594.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "For example, for the two vectors",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b7"
+      ],
+      "bbox": [
+        138.0,
+        622.0,
+        531.0,
+        654.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula020]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b8"
+      ],
+      "bbox": [
+        390.0,
+        684.0,
+        841.0,
+        805.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "the dot product is $ \\mathbf{a} \\cdot \\mathbf{b} = (1 \\times 4) + (2 \\times 5) + (3 \\times 7) + (4 \\times 9) = 71 $. Note that the dot product is not defined if the vectors have different lengths.",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b9"
+      ],
+      "bbox": [
+        138.0,
+        835.0,
+        1095.0,
+        900.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Now consider the matrix $ L = MN $ produced by multiplying the $ r \\times c $ matrix M by the $ c \\times b $ matrix N. Partitioning M as a column vector of r row vectors,",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b10"
+      ],
+      "bbox": [
+        139.0,
+        900.0,
+        1097.0,
+        966.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula021]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b11"
+      ],
+      "bbox": [
+        267.0,
+        998.0,
+        970.0,
+        1132.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and N as a row vector of b column vectors,",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b12"
+      ],
+      "bbox": [
+        141.0,
+        1163.0,
+        656.0,
+        1194.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula022]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b13"
+      ],
+      "bbox": [
+        293.0,
+        1216.0,
+        941.0,
+        1365.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "the ijth element of L is given by the dot product",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b14"
+      ],
+      "bbox": [
+        142.0,
+        1394.0,
+        720.0,
+        1429.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula023]]",
+      "source_page": 200,
+      "printed_page": 180,
+      "source_block_ids": [
+        "p200:b15"
+      ],
+      "bbox": [
+        454.0,
+        1454.0,
+        787.0,
+        1536.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Hence the resulting matrix L is of dimension $ r \\times b $ with",
+      "source_page": 201,
+      "printed_page": 181,
+      "source_block_ids": [
+        "p201:b2"
+      ],
+      "bbox": [
+        66.0,
+        135.0,
+        731.0,
+        167.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula024]]",
+      "source_page": 201,
+      "printed_page": 181,
+      "source_block_ids": [
+        "p201:b3"
+      ],
+      "bbox": [
+        293.0,
+        196.0,
+        789.0,
+        336.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that using this definition, the matrix product given by Equation 8.4 recovers the set of equations given by Equation 8.3.",
+      "source_page": 201,
+      "printed_page": 181,
+      "source_block_ids": [
+        "p201:b5"
+      ],
+      "bbox": [
+        65.0,
+        357.0,
+        1022.0,
+        422.0
+      ]
+    }
+  ]
+}

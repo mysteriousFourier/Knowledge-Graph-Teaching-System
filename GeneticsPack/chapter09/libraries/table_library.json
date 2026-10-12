@@ -1,0 +1,2870 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter9",
+  "count": 9,
+  "tables": [
+    {
+      "id": "9.1",
+      "label_format": "Table 9.1",
+      "title": "Table 9.1 Expected mean phenotypes for various line-cross derivatives in terms of composite additive, dominance, and two-locus epistatic effects, taking the $ F_{2} $ as a point of reference.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Line</td><td>\\theta S</td><td>\\theta H</td><td>Expected Mean Phenotype</td></tr><tr><td>P1</td><td>1</td><td>-1</td><td>\\mu 0 + \\alpha 1c - \\delta 1c + \\alpha 2c - \\alpha 1c \\delta 1c + \\delta 2c + ...</td></tr><tr><td>P2</td><td>-1</td><td>-1</td><td>\\mu 0 - \\alpha 1c - \\delta 1c + \\alpha 2c + \\alpha 1c \\delta 1c + \\delta 2c + ...</td></tr><tr><td>F1</td><td>0</td><td>1</td><td>\\mu 0 + \\delta 1c + \\delta 2c + ...</td></tr><tr><td>F2</td><td>0</td><td>0</td><td>\\mu 0</td></tr><tr><td>B1 = (P1 × F1)</td><td>1/2</td><td>0</td><td>\\mu 0 + 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>B2 = (P2 × F1)</td><td>-1/2</td><td>0</td><td>\\mu 0 - 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × P1</td><td>1/2</td><td>0</td><td>\\mu 0 + 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × P2</td><td>-1/2</td><td>0</td><td>\\mu 0 - 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × F1</td><td>0</td><td>0</td><td>\\mu 0</td></tr><tr><td>B1 × F1</td><td>1/4</td><td>0</td><td>\\mu 0 + 1/4 \\alpha 1c + 1/6 \\alpha 2c + ...</td></tr><tr><td>B2 × F1</td><td>-1/4</td><td>0</td><td>\\mu 0 - 1/4 \\alpha 1c + 1/6 \\alpha 2c + ...</td></tr><tr><td colspan=\"4\">Second backcrosses</td></tr><tr><td>B1 × P1</td><td>3/4</td><td>-1/2</td><td>\\mu 0 + 3/4 \\alpha 1c - 1/2 \\delta 1c + 9/16 \\alpha 2c - 3/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B1 × P2</td><td>-1/4</td><td>1/2</td><td>\\mu 0 - 1/4 \\alpha 1c + 1/2 \\delta 1c + 1/6 \\alpha 2c - 1/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B2 × P1</td><td>1/4</td><td>1/2</td><td>\\mu 0 + 1/4 \\alpha 1c + 1/2 \\delta 1c + 1/6 \\alpha 2c + 1/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B2 × P2</td><td>-1/4</td><td>-1/2</td><td>\\mu 0 - 3/4 \\alpha 1c - 1/2 \\delta 1c + 9/16 \\alpha 2c + 3/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Selfed backcrosses</td></tr><tr><td>B1s</td><td>1/2</td><td>-1/4</td><td>\\mu 0 + 1/2 \\alpha 1c - 1/4 \\delta 1c + 1/4 \\alpha 2c - 1/8 \\alpha 1c \\delta 1c + 1/6 \\delta 2c + ...</td></tr><tr><td>B2s</td><td>-1/2</td><td>-1/4</td><td>\\mu 0 - 1/2 \\alpha 1c - 1/4 \\delta 1c + 1/4 \\alpha 2c + 1/8 \\alpha 1c \\delta 1c + 1/6 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Continued selfing from the F2</td></tr><tr><td>F3</td><td>0</td><td>-1/2</td><td>\\mu 0 - 1/2 \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>F4</td><td>0</td><td>-3/4</td><td>\\mu 0 - 3/4 \\delta 1c + 9/16 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Note: These expressions assume freely recombining loci. For situations involving self</td></tr></table>",
+      "rows": [
+        [
+          "Line",
+          "theta S",
+          "theta H",
+          "Expected Mean Phenotype"
+        ],
+        [
+          "P1",
+          "1",
+          "-1",
+          "delta 2c + ..."
+        ],
+        [
+          "P2",
+          "-1",
+          "-1",
+          "delta 2c + ..."
+        ],
+        [
+          "F1",
+          "0",
+          "1",
+          "delta 2c + ..."
+        ],
+        [
+          "F2",
+          "0",
+          "0",
+          "mu 0"
+        ],
+        [
+          "B1 = (P1 × F1)",
+          "1/2",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "B2 = (P2 × F1)",
+          "-1/2",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "F2 × P1",
+          "1/2",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "F2 × P2",
+          "-1/2",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "F2 × F1",
+          "0",
+          "0",
+          "mu 0"
+        ],
+        [
+          "B1 × F1",
+          "1/4",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "B2 × F1",
+          "-1/4",
+          "0",
+          "alpha 2c + ..."
+        ],
+        [
+          "Second backcrosses"
+        ],
+        [
+          "B1 × P1",
+          "3/4",
+          "-1/2",
+          "delta 2c + ..."
+        ],
+        [
+          "B1 × P2",
+          "-1/4",
+          "1/2",
+          "delta 2c + ..."
+        ],
+        [
+          "B2 × P1",
+          "1/4",
+          "1/2",
+          "delta 2c + ..."
+        ],
+        [
+          "B2 × P2",
+          "-1/4",
+          "-1/2",
+          "delta 2c + ..."
+        ],
+        [
+          "Selfed backcrosses"
+        ],
+        [
+          "B1s",
+          "1/2",
+          "-1/4",
+          "delta 2c + ..."
+        ],
+        [
+          "B2s",
+          "-1/2",
+          "-1/4",
+          "delta 2c + ..."
+        ],
+        [
+          "Continued selfing from the F2"
+        ],
+        [
+          "F3",
+          "0",
+          "-1/2",
+          "delta 2c + ..."
+        ],
+        [
+          "F4",
+          "0",
+          "-3/4",
+          "delta 2c + ..."
+        ],
+        [
+          "Note: These expressions assume freely recombining loci. For situations involving self"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: These expressions assume freely recombining loci. For situations involving self-fertilization, it is further assumed that the parental lines are completely homozygous.",
+          "source_page": 225,
+          "bbox": [
+            38.0,
+            1385.0,
+            994.0,
+            1470.0
+          ],
+          "source_block_ids": [
+            "p225:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 225,
+          "title": "Table 9.1 Expected mean phenotypes for various line-cross derivatives in terms of composite additive, dominance, and two-locus epistatic effects, taking the $ F_{2} $ as a point of reference.",
+          "html": "<table><tr><td>Line</td><td>\\theta S</td><td>\\theta H</td><td>Expected Mean Phenotype</td></tr><tr><td>P1</td><td>1</td><td>-1</td><td>\\mu 0 + \\alpha 1c - \\delta 1c + \\alpha 2c - \\alpha 1c \\delta 1c + \\delta 2c + ...</td></tr><tr><td>P2</td><td>-1</td><td>-1</td><td>\\mu 0 - \\alpha 1c - \\delta 1c + \\alpha 2c + \\alpha 1c \\delta 1c + \\delta 2c + ...</td></tr><tr><td>F1</td><td>0</td><td>1</td><td>\\mu 0 + \\delta 1c + \\delta 2c + ...</td></tr><tr><td>F2</td><td>0</td><td>0</td><td>\\mu 0</td></tr><tr><td>B1 = (P1 × F1)</td><td>1/2</td><td>0</td><td>\\mu 0 + 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>B2 = (P2 × F1)</td><td>-1/2</td><td>0</td><td>\\mu 0 - 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × P1</td><td>1/2</td><td>0</td><td>\\mu 0 + 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × P2</td><td>-1/2</td><td>0</td><td>\\mu 0 - 1/2 \\alpha 1c + 1/4 \\alpha 2c + ...</td></tr><tr><td>F2 × F1</td><td>0</td><td>0</td><td>\\mu 0</td></tr><tr><td>B1 × F1</td><td>1/4</td><td>0</td><td>\\mu 0 + 1/4 \\alpha 1c + 1/6 \\alpha 2c + ...</td></tr><tr><td>B2 × F1</td><td>-1/4</td><td>0</td><td>\\mu 0 - 1/4 \\alpha 1c + 1/6 \\alpha 2c + ...</td></tr><tr><td colspan=\"4\">Second backcrosses</td></tr><tr><td>B1 × P1</td><td>3/4</td><td>-1/2</td><td>\\mu 0 + 3/4 \\alpha 1c - 1/2 \\delta 1c + 9/16 \\alpha 2c - 3/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B1 × P2</td><td>-1/4</td><td>1/2</td><td>\\mu 0 - 1/4 \\alpha 1c + 1/2 \\delta 1c + 1/6 \\alpha 2c - 1/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B2 × P1</td><td>1/4</td><td>1/2</td><td>\\mu 0 + 1/4 \\alpha 1c + 1/2 \\delta 1c + 1/6 \\alpha 2c + 1/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>B2 × P2</td><td>-1/4</td><td>-1/2</td><td>\\mu 0 - 3/4 \\alpha 1c - 1/2 \\delta 1c + 9/16 \\alpha 2c + 3/8 \\alpha 1c \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Selfed backcrosses</td></tr><tr><td>B1s</td><td>1/2</td><td>-1/4</td><td>\\mu 0 + 1/2 \\alpha 1c - 1/4 \\delta 1c + 1/4 \\alpha 2c - 1/8 \\alpha 1c \\delta 1c + 1/6 \\delta 2c + ...</td></tr><tr><td>B2s</td><td>-1/2</td><td>-1/4</td><td>\\mu 0 - 1/2 \\alpha 1c - 1/4 \\delta 1c + 1/4 \\alpha 2c + 1/8 \\alpha 1c \\delta 1c + 1/6 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Continued selfing from the F2</td></tr><tr><td>F3</td><td>0</td><td>-1/2</td><td>\\mu 0 - 1/2 \\delta 1c + 1/4 \\delta 2c + ...</td></tr><tr><td>F4</td><td>0</td><td>-3/4</td><td>\\mu 0 - 3/4 \\delta 1c + 9/16 \\delta 2c + ...</td></tr><tr><td colspan=\"4\">Note: These expressions assume freely recombining loci. For situations involving self</td></tr></table>",
+          "rows": [
+            [
+              "Line",
+              "theta S",
+              "theta H",
+              "Expected Mean Phenotype"
+            ],
+            [
+              "P1",
+              "1",
+              "-1",
+              "delta 2c + ..."
+            ],
+            [
+              "P2",
+              "-1",
+              "-1",
+              "delta 2c + ..."
+            ],
+            [
+              "F1",
+              "0",
+              "1",
+              "delta 2c + ..."
+            ],
+            [
+              "F2",
+              "0",
+              "0",
+              "mu 0"
+            ],
+            [
+              "B1 = (P1 × F1)",
+              "1/2",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "B2 = (P2 × F1)",
+              "-1/2",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "F2 × P1",
+              "1/2",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "F2 × P2",
+              "-1/2",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "F2 × F1",
+              "0",
+              "0",
+              "mu 0"
+            ],
+            [
+              "B1 × F1",
+              "1/4",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "B2 × F1",
+              "-1/4",
+              "0",
+              "alpha 2c + ..."
+            ],
+            [
+              "Second backcrosses"
+            ],
+            [
+              "B1 × P1",
+              "3/4",
+              "-1/2",
+              "delta 2c + ..."
+            ],
+            [
+              "B1 × P2",
+              "-1/4",
+              "1/2",
+              "delta 2c + ..."
+            ],
+            [
+              "B2 × P1",
+              "1/4",
+              "1/2",
+              "delta 2c + ..."
+            ],
+            [
+              "B2 × P2",
+              "-1/4",
+              "-1/2",
+              "delta 2c + ..."
+            ],
+            [
+              "Selfed backcrosses"
+            ],
+            [
+              "B1s",
+              "1/2",
+              "-1/4",
+              "delta 2c + ..."
+            ],
+            [
+              "B2s",
+              "-1/2",
+              "-1/4",
+              "delta 2c + ..."
+            ],
+            [
+              "Continued selfing from the F2"
+            ],
+            [
+              "F3",
+              "0",
+              "-1/2",
+              "delta 2c + ..."
+            ],
+            [
+              "F4",
+              "0",
+              "-3/4",
+              "delta 2c + ..."
+            ],
+            [
+              "Note: These expressions assume freely recombining loci. For situations involving self"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: These expressions assume freely recombining loci. For situations involving self-fertilization, it is further assumed that the parental lines are completely homozygous.",
+              "source_page": 225,
+              "bbox": [
+                38.0,
+                1385.0,
+                994.0,
+                1470.0
+              ],
+              "source_block_ids": [
+                "p225:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            38.0,
+            166.0,
+            1021.0,
+            1420.0
+          ],
+          "caption_bbox": [
+            64.0,
+            123.0,
+            1024.0,
+            238.0
+          ],
+          "source_block_ids": [
+            "p225:b3"
+          ],
+          "caption_source_block_ids": [
+            "p225:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_002",
+        "page": 225,
+        "pages": [
+          225
+        ],
+        "bbox": [
+          38.0,
+          166.0,
+          1021.0,
+          1420.0
+        ],
+        "caption_bbox": [
+          64.0,
+          123.0,
+          1024.0,
+          238.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.2",
+      "label_format": "Table 9.2",
+      "title": "Table 9.2 Genetic map structure and the average recombination frequency ( $ \\bar{c} $) between random pairs of loci throughout the genome.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>N</td><td>L</td><td>Lengths of Individual Chromosomes, $ L_{i} $</td><td>$ \\bar{c} $</td></tr><tr><td>Drosophila melanogaster</td><td>3</td><td>2.77</td><td>0.66, 1.03, 1.08</td><td>0.365</td></tr><tr><td>Drosophila pseudoobscura</td><td>4</td><td>4.46</td><td>0.68, 0.69, 1.01, 2.08</td><td>0.386</td></tr><tr><td>Aedes aegypti</td><td>3</td><td>2.28</td><td>0.62, 0.80, 0.86</td><td>0.380</td></tr><tr><td>Caenorhabditis elegans</td><td>5</td><td>1.61</td><td>0.27, 0.31, 0.33, 0.34, 0.36</td><td>0.418</td></tr><tr><td>Arabidopsis thaliana</td><td>5</td><td>5.24</td><td>0.63, 0.83, 0.98, 1.36, 1.44</td><td>0.443</td></tr><tr><td>Hordeum vulgare (barley)</td><td>7</td><td>9.49</td><td>0.70, 1.12, 1.15, 1.26, 1.27, 1.59, 2.40</td><td>0.465</td></tr><tr><td>Neurospora crassa</td><td>7</td><td>10.02</td><td>1.07, 1.13, 1.18, 1.33, 1.49, 1.52, 2.30</td><td>0.466</td></tr><tr><td>Zea mays (maize)</td><td>10</td><td>12.10</td><td>0.42, 0.78, 0.95, 1.07, 1.12, 1.37, 1.41, 1.55, 1.55, 1.67, 1.76</td><td>0.474</td></tr><tr><td>Phaseolus vulgaris (bean)</td><td>11</td><td>8.92</td><td>1.05, 1.04, 0.95, 0.92, 0.86, 0.78, 0.74, 0.71, 0.71, 0.60, 0.56</td><td>0.471</td></tr><tr><td>Pinus pinaster (maritime pine)</td><td>12</td><td>18.56</td><td>1.90, 1.75, 1.69, 1.66, 1.63, 1.61, 1.57, 1.54, 1.54, 1.41, 1.36, 0.90</td><td>0.481</td></tr><tr><td>Lycopersicon esculentum (tomato)</td><td>12</td><td>14.91</td><td>0.90, 0.92, 0.98, 1.01, 1.04, 1.04, 1.23, 1.34, 1.42, 1.63, 2.11</td><td>0.479</td></tr><tr><td>Mus musculus (mouse)</td><td>20</td><td>14.25</td><td>0.36, 0.36, 0.49, 0.56, 0.57, 0.57, 0.68, 0.70, 0.71, 0.73, 0.74, 0.78, 0.78, 0.80, 0.81, 0.84, 0.87, 0.89, 1.00, 1.01</td><td>0.483</td></tr><tr><td>Homo sapiens</td><td>23</td><td>40.00</td><td>0.69, 0.76, 1.12, 1.12, 1.22, 1.24, 1.25, 1.26, 1.38, 1.39, 1.40, 1.47, 1.62, 1.67, 1.67, 1.74, 1.75, 1.75, 1.77, 1.92, 2.21, 2.49</td><td>0.490</td></tr><tr><td>Danio rerio (zebrafish)</td><td>25</td><td>28.06</td><td>0.59, 0.80, 0.84, 0.85, 0.86, 0.87, 0.95, 1.00, 1.02, 1.05, 1.05, 1.09, 1.13, 1.13, 1.14, 1.16, 1.22, 1.22, 1.33, 1.34, 1.39, 1.39, 1.45, 1.53, 1.66</td><td>0.489</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "N",
+          "L",
+          "Lengths of Individual Chromosomes, $ L_{i} $",
+          "$ \\bar{c} $"
+        ],
+        [
+          "Drosophila melanogaster",
+          "3",
+          "2.77",
+          "0.66, 1.03, 1.08",
+          "0.365"
+        ],
+        [
+          "Drosophila pseudoobscura",
+          "4",
+          "4.46",
+          "0.68, 0.69, 1.01, 2.08",
+          "0.386"
+        ],
+        [
+          "Aedes aegypti",
+          "3",
+          "2.28",
+          "0.62, 0.80, 0.86",
+          "0.380"
+        ],
+        [
+          "Caenorhabditis elegans",
+          "5",
+          "1.61",
+          "0.27, 0.31, 0.33, 0.34, 0.36",
+          "0.418"
+        ],
+        [
+          "Arabidopsis thaliana",
+          "5",
+          "5.24",
+          "0.63, 0.83, 0.98, 1.36, 1.44",
+          "0.443"
+        ],
+        [
+          "Hordeum vulgare (barley)",
+          "7",
+          "9.49",
+          "0.70, 1.12, 1.15, 1.26, 1.27, 1.59, 2.40",
+          "0.465"
+        ],
+        [
+          "Neurospora crassa",
+          "7",
+          "10.02",
+          "1.07, 1.13, 1.18, 1.33, 1.49, 1.52, 2.30",
+          "0.466"
+        ],
+        [
+          "Zea mays (maize)",
+          "10",
+          "12.10",
+          "0.42, 0.78, 0.95, 1.07, 1.12, 1.37, 1.41, 1.55, 1.55, 1.67, 1.76",
+          "0.474"
+        ],
+        [
+          "Phaseolus vulgaris (bean)",
+          "11",
+          "8.92",
+          "1.05, 1.04, 0.95, 0.92, 0.86, 0.78, 0.74, 0.71, 0.71, 0.60, 0.56",
+          "0.471"
+        ],
+        [
+          "Pinus pinaster (maritime pine)",
+          "12",
+          "18.56",
+          "1.90, 1.75, 1.69, 1.66, 1.63, 1.61, 1.57, 1.54, 1.54, 1.41, 1.36, 0.90",
+          "0.481"
+        ],
+        [
+          "Lycopersicon esculentum (tomato)",
+          "12",
+          "14.91",
+          "0.90, 0.92, 0.98, 1.01, 1.04, 1.04, 1.23, 1.34, 1.42, 1.63, 2.11",
+          "0.479"
+        ],
+        [
+          "Mus musculus (mouse)",
+          "20",
+          "14.25",
+          "0.36, 0.36, 0.49, 0.56, 0.57, 0.57, 0.68, 0.70, 0.71, 0.73, 0.74, 0.78, 0.78, 0.80, 0.81, 0.84, 0.87, 0.89, 1.00, 1.01",
+          "0.483"
+        ],
+        [
+          "Homo sapiens",
+          "23",
+          "40.00",
+          "0.69, 0.76, 1.12, 1.12, 1.22, 1.24, 1.25, 1.26, 1.38, 1.39, 1.40, 1.47, 1.62, 1.67, 1.67, 1.74, 1.75, 1.75, 1.77, 1.92, 2.21, 2.49",
+          "0.490"
+        ],
+        [
+          "Danio rerio (zebrafish)",
+          "25",
+          "28.06",
+          "0.59, 0.80, 0.84, 0.85, 0.86, 0.87, 0.95, 1.00, 1.02, 1.05, 1.05, 1.09, 1.13, 1.13, 1.14, 1.16, 1.22, 1.22, 1.33, 1.34, 1.39, 1.39, 1.45, 1.53, 1.66",
+          "0.489"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: All data are from O'Brien (1990), except that for Phaseolus (Vallejos et al. 1992), Pinus (Plomion et al. 1995), and Danio (supplied by J. Postlethwait).",
+          "source_page": 227,
+          "bbox": [
+            44.0,
+            1197.0,
+            1001.0,
+            1271.0
+          ],
+          "source_block_ids": [
+            "p227:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: N is the haploid number of chromosomes per genome, and L is the total map length (in Morgans) in females. For Drosophila, we ignore a tiny dot chromosome for which little mapping data are available. In the mosquito Aedes and in humans, respectively, recombination in males is approximately 50% and 65% as frequent as that in females; and there is no recombination within chromosomes in male Drosophila. For these three taxa, the reported values of $ \\bar{c} $ are averages for the two sexes. All results are approximations, as genomic maps are continuously being refined with the addition of molecular markers (Chapter 14).",
+          "source_page": 227,
+          "bbox": [
+            38.0,
+            1259.0,
+            1001.0,
+            1479.0
+          ],
+          "source_block_ids": [
+            "p227:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 227,
+          "title": "Table 9.2 Genetic map structure and the average recombination frequency ( $ \\bar{c} $) between random pairs of loci throughout the genome.",
+          "html": "<table><tr><td>Species</td><td>N</td><td>L</td><td>Lengths of Individual Chromosomes, $ L_{i} $</td><td>$ \\bar{c} $</td></tr><tr><td>Drosophila melanogaster</td><td>3</td><td>2.77</td><td>0.66, 1.03, 1.08</td><td>0.365</td></tr><tr><td>Drosophila pseudoobscura</td><td>4</td><td>4.46</td><td>0.68, 0.69, 1.01, 2.08</td><td>0.386</td></tr><tr><td>Aedes aegypti</td><td>3</td><td>2.28</td><td>0.62, 0.80, 0.86</td><td>0.380</td></tr><tr><td>Caenorhabditis elegans</td><td>5</td><td>1.61</td><td>0.27, 0.31, 0.33, 0.34, 0.36</td><td>0.418</td></tr><tr><td>Arabidopsis thaliana</td><td>5</td><td>5.24</td><td>0.63, 0.83, 0.98, 1.36, 1.44</td><td>0.443</td></tr><tr><td>Hordeum vulgare (barley)</td><td>7</td><td>9.49</td><td>0.70, 1.12, 1.15, 1.26, 1.27, 1.59, 2.40</td><td>0.465</td></tr><tr><td>Neurospora crassa</td><td>7</td><td>10.02</td><td>1.07, 1.13, 1.18, 1.33, 1.49, 1.52, 2.30</td><td>0.466</td></tr><tr><td>Zea mays (maize)</td><td>10</td><td>12.10</td><td>0.42, 0.78, 0.95, 1.07, 1.12, 1.37, 1.41, 1.55, 1.55, 1.67, 1.76</td><td>0.474</td></tr><tr><td>Phaseolus vulgaris (bean)</td><td>11</td><td>8.92</td><td>1.05, 1.04, 0.95, 0.92, 0.86, 0.78, 0.74, 0.71, 0.71, 0.60, 0.56</td><td>0.471</td></tr><tr><td>Pinus pinaster (maritime pine)</td><td>12</td><td>18.56</td><td>1.90, 1.75, 1.69, 1.66, 1.63, 1.61, 1.57, 1.54, 1.54, 1.41, 1.36, 0.90</td><td>0.481</td></tr><tr><td>Lycopersicon esculentum (tomato)</td><td>12</td><td>14.91</td><td>0.90, 0.92, 0.98, 1.01, 1.04, 1.04, 1.23, 1.34, 1.42, 1.63, 2.11</td><td>0.479</td></tr><tr><td>Mus musculus (mouse)</td><td>20</td><td>14.25</td><td>0.36, 0.36, 0.49, 0.56, 0.57, 0.57, 0.68, 0.70, 0.71, 0.73, 0.74, 0.78, 0.78, 0.80, 0.81, 0.84, 0.87, 0.89, 1.00, 1.01</td><td>0.483</td></tr><tr><td>Homo sapiens</td><td>23</td><td>40.00</td><td>0.69, 0.76, 1.12, 1.12, 1.22, 1.24, 1.25, 1.26, 1.38, 1.39, 1.40, 1.47, 1.62, 1.67, 1.67, 1.74, 1.75, 1.75, 1.77, 1.92, 2.21, 2.49</td><td>0.490</td></tr><tr><td>Danio rerio (zebrafish)</td><td>25</td><td>28.06</td><td>0.59, 0.80, 0.84, 0.85, 0.86, 0.87, 0.95, 1.00, 1.02, 1.05, 1.05, 1.09, 1.13, 1.13, 1.14, 1.16, 1.22, 1.22, 1.33, 1.34, 1.39, 1.39, 1.45, 1.53, 1.66</td><td>0.489</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "N",
+              "L",
+              "Lengths of Individual Chromosomes, $ L_{i} $",
+              "$ \\bar{c} $"
+            ],
+            [
+              "Drosophila melanogaster",
+              "3",
+              "2.77",
+              "0.66, 1.03, 1.08",
+              "0.365"
+            ],
+            [
+              "Drosophila pseudoobscura",
+              "4",
+              "4.46",
+              "0.68, 0.69, 1.01, 2.08",
+              "0.386"
+            ],
+            [
+              "Aedes aegypti",
+              "3",
+              "2.28",
+              "0.62, 0.80, 0.86",
+              "0.380"
+            ],
+            [
+              "Caenorhabditis elegans",
+              "5",
+              "1.61",
+              "0.27, 0.31, 0.33, 0.34, 0.36",
+              "0.418"
+            ],
+            [
+              "Arabidopsis thaliana",
+              "5",
+              "5.24",
+              "0.63, 0.83, 0.98, 1.36, 1.44",
+              "0.443"
+            ],
+            [
+              "Hordeum vulgare (barley)",
+              "7",
+              "9.49",
+              "0.70, 1.12, 1.15, 1.26, 1.27, 1.59, 2.40",
+              "0.465"
+            ],
+            [
+              "Neurospora crassa",
+              "7",
+              "10.02",
+              "1.07, 1.13, 1.18, 1.33, 1.49, 1.52, 2.30",
+              "0.466"
+            ],
+            [
+              "Zea mays (maize)",
+              "10",
+              "12.10",
+              "0.42, 0.78, 0.95, 1.07, 1.12, 1.37, 1.41, 1.55, 1.55, 1.67, 1.76",
+              "0.474"
+            ],
+            [
+              "Phaseolus vulgaris (bean)",
+              "11",
+              "8.92",
+              "1.05, 1.04, 0.95, 0.92, 0.86, 0.78, 0.74, 0.71, 0.71, 0.60, 0.56",
+              "0.471"
+            ],
+            [
+              "Pinus pinaster (maritime pine)",
+              "12",
+              "18.56",
+              "1.90, 1.75, 1.69, 1.66, 1.63, 1.61, 1.57, 1.54, 1.54, 1.41, 1.36, 0.90",
+              "0.481"
+            ],
+            [
+              "Lycopersicon esculentum (tomato)",
+              "12",
+              "14.91",
+              "0.90, 0.92, 0.98, 1.01, 1.04, 1.04, 1.23, 1.34, 1.42, 1.63, 2.11",
+              "0.479"
+            ],
+            [
+              "Mus musculus (mouse)",
+              "20",
+              "14.25",
+              "0.36, 0.36, 0.49, 0.56, 0.57, 0.57, 0.68, 0.70, 0.71, 0.73, 0.74, 0.78, 0.78, 0.80, 0.81, 0.84, 0.87, 0.89, 1.00, 1.01",
+              "0.483"
+            ],
+            [
+              "Homo sapiens",
+              "23",
+              "40.00",
+              "0.69, 0.76, 1.12, 1.12, 1.22, 1.24, 1.25, 1.26, 1.38, 1.39, 1.40, 1.47, 1.62, 1.67, 1.67, 1.74, 1.75, 1.75, 1.77, 1.92, 2.21, 2.49",
+              "0.490"
+            ],
+            [
+              "Danio rerio (zebrafish)",
+              "25",
+              "28.06",
+              "0.59, 0.80, 0.84, 0.85, 0.86, 0.87, 0.95, 1.00, 1.02, 1.05, 1.05, 1.09, 1.13, 1.13, 1.14, 1.16, 1.22, 1.22, 1.33, 1.34, 1.39, 1.39, 1.45, 1.53, 1.66",
+              "0.489"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: All data are from O'Brien (1990), except that for Phaseolus (Vallejos et al. 1992), Pinus (Plomion et al. 1995), and Danio (supplied by J. Postlethwait).",
+              "source_page": 227,
+              "bbox": [
+                44.0,
+                1197.0,
+                1001.0,
+                1271.0
+              ],
+              "source_block_ids": [
+                "p227:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: N is the haploid number of chromosomes per genome, and L is the total map length (in Morgans) in females. For Drosophila, we ignore a tiny dot chromosome for which little mapping data are available. In the mosquito Aedes and in humans, respectively, recombination in males is approximately 50% and 65% as frequent as that in females; and there is no recombination within chromosomes in male Drosophila. For these three taxa, the reported values of $ \\bar{c} $ are averages for the two sexes. All results are approximations, as genomic maps are continuously being refined with the addition of molecular markers (Chapter 14).",
+              "source_page": 227,
+              "bbox": [
+                38.0,
+                1259.0,
+                1001.0,
+                1479.0
+              ],
+              "source_block_ids": [
+                "p227:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            51.0,
+            204.0,
+            1024.0,
+            1192.0
+          ],
+          "caption_bbox": [
+            70.0,
+            125.0,
+            1029.0,
+            209.0
+          ],
+          "source_block_ids": [
+            "p227:b3"
+          ],
+          "caption_source_block_ids": [
+            "p227:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_002",
+        "page": 227,
+        "pages": [
+          227
+        ],
+        "bbox": [
+          51.0,
+          204.0,
+          1024.0,
+          1192.0
+        ],
+        "caption_bbox": [
+          70.0,
+          125.0,
+          1029.0,
+          209.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.3",
+      "label_format": "Table 9.3",
+      "title": "Table 9.3 Coefficients for observed line means in expressions for estimated composite effects using the six-parameter model.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Parameter</td><td>P_{1}</td><td>P_{2}</td><td>F_{1}</td><td>F_{2}</td><td>B_{1}</td><td>B_{2}</td></tr><tr><td>$ \\mu_{0} $</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\alpha_{1}^{c} $</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>-1</td></tr><tr><td>$ \\delta_{1}^{c} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{4} $</td><td>$ -\\frac{1}{2} $</td><td>2</td><td>-1</td><td>-1</td></tr><tr><td>$ \\alpha_{2}^{c} $</td><td>0</td><td>0</td><td>0</td><td>-4</td><td>2</td><td>2</td></tr><tr><td>$ \\alpha_{1}^{c}\\delta_{1}^{c} $</td><td>$ \\frac{1}{2} $</td><td>$ -\\frac{1}{2} $</td><td>0</td><td>0</td><td>-1</td><td>1</td></tr><tr><td>$ \\delta_{2}^{c} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{2} $</td><td>1</td><td>-1</td><td>-1</td></tr></table>",
+      "rows": [
+        [
+          "Parameter",
+          "P_{1}",
+          "P_{2}",
+          "F_{1}",
+          "F_{2}",
+          "B_{1}",
+          "B_{2}"
+        ],
+        [
+          "$ \\mu_{0} $",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "$ \\alpha_{1}^{c} $",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "$ \\delta_{1}^{c} $",
+          "$ \\frac{1}{4} $",
+          "$ \\frac{1}{4} $",
+          "$ -\\frac{1}{2} $",
+          "2",
+          "-1",
+          "-1"
+        ],
+        [
+          "$ \\alpha_{2}^{c} $",
+          "0",
+          "0",
+          "0",
+          "-4",
+          "2",
+          "2"
+        ],
+        [
+          "$ \\alpha_{1}^{c}\\delta_{1}^{c} $",
+          "$ \\frac{1}{2} $",
+          "$ -\\frac{1}{2} $",
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "$ \\delta_{2}^{c} $",
+          "$ \\frac{1}{4} $",
+          "$ \\frac{1}{4} $",
+          "$ \\frac{1}{2} $",
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 230,
+          "title": "Table 9.3 Coefficients for observed line means in expressions for estimated composite effects using the six-parameter model.",
+          "html": "<table><tr><td>Parameter</td><td>P_{1}</td><td>P_{2}</td><td>F_{1}</td><td>F_{2}</td><td>B_{1}</td><td>B_{2}</td></tr><tr><td>$ \\mu_{0} $</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\alpha_{1}^{c} $</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>-1</td></tr><tr><td>$ \\delta_{1}^{c} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{4} $</td><td>$ -\\frac{1}{2} $</td><td>2</td><td>-1</td><td>-1</td></tr><tr><td>$ \\alpha_{2}^{c} $</td><td>0</td><td>0</td><td>0</td><td>-4</td><td>2</td><td>2</td></tr><tr><td>$ \\alpha_{1}^{c}\\delta_{1}^{c} $</td><td>$ \\frac{1}{2} $</td><td>$ -\\frac{1}{2} $</td><td>0</td><td>0</td><td>-1</td><td>1</td></tr><tr><td>$ \\delta_{2}^{c} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{2} $</td><td>1</td><td>-1</td><td>-1</td></tr></table>",
+          "rows": [
+            [
+              "Parameter",
+              "P_{1}",
+              "P_{2}",
+              "F_{1}",
+              "F_{2}",
+              "B_{1}",
+              "B_{2}"
+            ],
+            [
+              "$ \\mu_{0} $",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "$ \\alpha_{1}^{c} $",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            [
+              "$ \\delta_{1}^{c} $",
+              "$ \\frac{1}{4} $",
+              "$ \\frac{1}{4} $",
+              "$ -\\frac{1}{2} $",
+              "2",
+              "-1",
+              "-1"
+            ],
+            [
+              "$ \\alpha_{2}^{c} $",
+              "0",
+              "0",
+              "0",
+              "-4",
+              "2",
+              "2"
+            ],
+            [
+              "$ \\alpha_{1}^{c}\\delta_{1}^{c} $",
+              "$ \\frac{1}{2} $",
+              "$ -\\frac{1}{2} $",
+              "0",
+              "0",
+              "-1",
+              "1"
+            ],
+            [
+              "$ \\delta_{2}^{c} $",
+              "$ \\frac{1}{4} $",
+              "$ \\frac{1}{4} $",
+              "$ \\frac{1}{2} $",
+              "1",
+              "-1",
+              "-1"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            140.0,
+            201.0,
+            1093.0,
+            492.0
+          ],
+          "caption_bbox": [
+            131.0,
+            120.0,
+            1090.0,
+            202.0
+          ],
+          "source_block_ids": [
+            "p230:b3"
+          ],
+          "caption_source_block_ids": [
+            "p230:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_003",
+        "page": 230,
+        "pages": [
+          230
+        ],
+        "bbox": [
+          140.0,
+          201.0,
+          1093.0,
+          492.0
+        ],
+        "caption_bbox": [
+          131.0,
+          120.0,
+          1090.0,
+          202.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.4",
+      "label_format": "Table 9.4",
+      "title": "Table 9.4 Composite effects estimated from phenotypic means of two line crosses involving inbred parental stocks of tobacco, $ V_1 \\times V_5 $ (upper lines of data for each trait) and $ V_2 \\times V_{12} $ (lower lines).",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Character</td><td>$ \\widehat{\\mu}_{0} $</td><td>$ \\widehat{\\alpha}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\alpha}_{2}^{c} $</td><td>$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{2}^{c} $</td></tr><tr><td rowspan=\"2\">Height - 2 wk</td><td>5.50</td><td>1.19</td><td>1.10</td><td>1.27</td><td></td><td></td></tr><tr><td>4.34</td><td>1.97</td><td>0.48</td><td>0.55</td><td></td><td></td></tr><tr><td rowspan=\"2\">- 4 wk</td><td>15.74</td><td>3.53</td><td>3.32</td><td>3.97</td><td></td><td></td></tr><tr><td>15.22</td><td>9.96</td><td>2.58</td><td>3.48</td><td></td><td></td></tr><tr><td rowspan=\"2\">- 6 wk</td><td>49.84</td><td>5.02</td><td>-2.48</td><td>9.95</td><td></td><td></td></tr><tr><td>49.14</td><td>30.22</td><td>11.14</td><td>9.21</td><td>4.12</td><td></td></tr><tr><td rowspan=\"2\">- flowering</td><td>73.75</td><td>7.99</td><td></td><td>-5.02</td><td></td><td></td></tr><tr><td>83.40</td><td>5.84</td><td>3.12</td><td>-6.21</td><td></td><td></td></tr><tr><td rowspan=\"2\">- final</td><td>126.80</td><td>12.57</td><td>3.72</td><td>-7.58</td><td></td><td></td></tr><tr><td>143.44</td><td>8.79</td><td>21.91</td><td></td><td></td><td>-3.33</td></tr><tr><td>Leaf length</td><td>19.10</td><td>0.35</td><td></td><td>-1.89</td><td></td><td></td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "$ \\widehat{\\mu}_{0} $",
+          "$ \\widehat{\\alpha}_{1}^{c} $",
+          "$ \\widehat{\\delta}_{1}^{c} $",
+          "$ \\widehat{\\alpha}_{2}^{c} $",
+          "$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $",
+          "$ \\widehat{\\delta}_{2}^{c} $"
+        ],
+        [
+          "Height - 2 wk",
+          "5.50",
+          "1.19",
+          "1.10",
+          "1.27",
+          "",
+          ""
+        ],
+        [
+          "4.34",
+          "1.97",
+          "0.48",
+          "0.55",
+          "",
+          ""
+        ],
+        [
+          "- 4 wk",
+          "15.74",
+          "3.53",
+          "3.32",
+          "3.97",
+          "",
+          ""
+        ],
+        [
+          "15.22",
+          "9.96",
+          "2.58",
+          "3.48",
+          "",
+          ""
+        ],
+        [
+          "- 6 wk",
+          "49.84",
+          "5.02",
+          "-2.48",
+          "9.95",
+          "",
+          ""
+        ],
+        [
+          "49.14",
+          "30.22",
+          "11.14",
+          "9.21",
+          "4.12",
+          ""
+        ],
+        [
+          "- flowering",
+          "73.75",
+          "7.99",
+          "",
+          "-5.02",
+          "",
+          ""
+        ],
+        [
+          "83.40",
+          "5.84",
+          "3.12",
+          "-6.21",
+          "",
+          ""
+        ],
+        [
+          "- final",
+          "126.80",
+          "12.57",
+          "3.72",
+          "-7.58",
+          "",
+          ""
+        ],
+        [
+          "143.44",
+          "8.79",
+          "21.91",
+          "",
+          "",
+          "-3.33"
+        ],
+        [
+          "Leaf length",
+          "19.10",
+          "0.35",
+          "",
+          "-1.89",
+          "",
+          ""
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Pooni et al. 1985.",
+          "source_page": 237,
+          "bbox": [
+            46.0,
+            692.0,
+            314.0,
+            725.0
+          ],
+          "source_block_ids": [
+            "p237:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Only significant effects are given, and the resulting models provide an adequate fit to the data in all cases. Leaf length was not analyzed in the $ V_{2} \\times V_{12} $ experiment.",
+          "source_page": 237,
+          "bbox": [
+            43.0,
+            724.0,
+            1004.0,
+            804.0
+          ],
+          "source_block_ids": [
+            "p237:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 237,
+          "title": "Table 9.4 Composite effects estimated from phenotypic means of two line crosses involving inbred parental stocks of tobacco, $ V_1 \\times V_5 $ (upper lines of data for each trait) and $ V_2 \\times V_{12} $ (lower lines).",
+          "html": "<table><tr><td>Character</td><td>$ \\widehat{\\mu}_{0} $</td><td>$ \\widehat{\\alpha}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\alpha}_{2}^{c} $</td><td>$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{2}^{c} $</td></tr><tr><td rowspan=\"2\">Height - 2 wk</td><td>5.50</td><td>1.19</td><td>1.10</td><td>1.27</td><td></td><td></td></tr><tr><td>4.34</td><td>1.97</td><td>0.48</td><td>0.55</td><td></td><td></td></tr><tr><td rowspan=\"2\">- 4 wk</td><td>15.74</td><td>3.53</td><td>3.32</td><td>3.97</td><td></td><td></td></tr><tr><td>15.22</td><td>9.96</td><td>2.58</td><td>3.48</td><td></td><td></td></tr><tr><td rowspan=\"2\">- 6 wk</td><td>49.84</td><td>5.02</td><td>-2.48</td><td>9.95</td><td></td><td></td></tr><tr><td>49.14</td><td>30.22</td><td>11.14</td><td>9.21</td><td>4.12</td><td></td></tr><tr><td rowspan=\"2\">- flowering</td><td>73.75</td><td>7.99</td><td></td><td>-5.02</td><td></td><td></td></tr><tr><td>83.40</td><td>5.84</td><td>3.12</td><td>-6.21</td><td></td><td></td></tr><tr><td rowspan=\"2\">- final</td><td>126.80</td><td>12.57</td><td>3.72</td><td>-7.58</td><td></td><td></td></tr><tr><td>143.44</td><td>8.79</td><td>21.91</td><td></td><td></td><td>-3.33</td></tr><tr><td>Leaf length</td><td>19.10</td><td>0.35</td><td></td><td>-1.89</td><td></td><td></td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "$ \\widehat{\\mu}_{0} $",
+              "$ \\widehat{\\alpha}_{1}^{c} $",
+              "$ \\widehat{\\delta}_{1}^{c} $",
+              "$ \\widehat{\\alpha}_{2}^{c} $",
+              "$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $",
+              "$ \\widehat{\\delta}_{2}^{c} $"
+            ],
+            [
+              "Height - 2 wk",
+              "5.50",
+              "1.19",
+              "1.10",
+              "1.27",
+              "",
+              ""
+            ],
+            [
+              "4.34",
+              "1.97",
+              "0.48",
+              "0.55",
+              "",
+              ""
+            ],
+            [
+              "- 4 wk",
+              "15.74",
+              "3.53",
+              "3.32",
+              "3.97",
+              "",
+              ""
+            ],
+            [
+              "15.22",
+              "9.96",
+              "2.58",
+              "3.48",
+              "",
+              ""
+            ],
+            [
+              "- 6 wk",
+              "49.84",
+              "5.02",
+              "-2.48",
+              "9.95",
+              "",
+              ""
+            ],
+            [
+              "49.14",
+              "30.22",
+              "11.14",
+              "9.21",
+              "4.12",
+              ""
+            ],
+            [
+              "- flowering",
+              "73.75",
+              "7.99",
+              "",
+              "-5.02",
+              "",
+              ""
+            ],
+            [
+              "83.40",
+              "5.84",
+              "3.12",
+              "-6.21",
+              "",
+              ""
+            ],
+            [
+              "- final",
+              "126.80",
+              "12.57",
+              "3.72",
+              "-7.58",
+              "",
+              ""
+            ],
+            [
+              "143.44",
+              "8.79",
+              "21.91",
+              "",
+              "",
+              "-3.33"
+            ],
+            [
+              "Leaf length",
+              "19.10",
+              "0.35",
+              "",
+              "-1.89",
+              "",
+              ""
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Pooni et al. 1985.",
+              "source_page": 237,
+              "bbox": [
+                46.0,
+                692.0,
+                314.0,
+                725.0
+              ],
+              "source_block_ids": [
+                "p237:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Only significant effects are given, and the resulting models provide an adequate fit to the data in all cases. Leaf length was not analyzed in the $ V_{2} \\times V_{12} $ experiment.",
+              "source_page": 237,
+              "bbox": [
+                43.0,
+                724.0,
+                1004.0,
+                804.0
+              ],
+              "source_block_ids": [
+                "p237:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            50.0,
+            236.0,
+            1011.0,
+            703.0
+          ],
+          "caption_bbox": [
+            58.0,
+            124.0,
+            1019.0,
+            234.0
+          ],
+          "source_block_ids": [
+            "p237:b3"
+          ],
+          "caption_source_block_ids": [
+            "p237:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_005",
+        "page": 237,
+        "pages": [
+          237
+        ],
+        "bbox": [
+          50.0,
+          236.0,
+          1011.0,
+          703.0
+        ],
+        "caption_bbox": [
+          58.0,
+          124.0,
+          1019.0,
+          234.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.5",
+      "label_format": "Table 9.5",
+      "title": "Table 9.5 A survey of the composite effects estimated in line-cross analyses.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Character</td><td>$ \\widehat{\\mu}_{0} $</td><td>$ \\widehat{\\alpha}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\alpha}_{2}^{c} $</td><td>$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{2}^{c} $</td><td>Reference</td></tr><tr><td>Corn</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>time to silking</td><td>65.19</td><td>0.20</td><td>-6.16</td><td>-4.40</td><td>7.33</td><td>5.92</td><td>Mohamed 1959</td></tr><tr><td>time to shed pollen</td><td>62.88</td><td>-1.57</td><td>-4.36</td><td>-1.94</td><td>4.74</td><td>3.69</td><td></td></tr><tr><td>Lima beans</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>seed size</td><td>0.57</td><td>-0.25</td><td>-0.16</td><td>0.04</td><td>0.30</td><td>0.19</td><td>Ryder 1958</td></tr><tr><td>Tomatos</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{fruit weight}) $</td><td>0.69</td><td>-0.87</td><td>0.02</td><td>0.12</td><td>-0.03</td><td></td><td>Powers 1951</td></tr><tr><td>Pitcher-plant mosquito</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{critical photoperiod}) $</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>-1.84</td><td>-4.45</td><td>0.40</td><td></td><td>1.79</td><td>4.18</td><td>Hard et al. 1992</td></tr><tr><td>Drosophila melanogaster</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\ln(\\text{longevity}) $</td><td>1.79</td><td>-0.06</td><td>0.01</td><td>0.03</td><td></td><td></td><td>Luckinbill et al. 1988</td></tr><tr><td>Drosophila tripunctata</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ovipos. site pref.</td><td>0.31</td><td>-0.12</td><td>0.05</td><td>0.18</td><td></td><td></td><td>Jaenike 1987</td></tr><tr><td>D. heteroneura $ \\times $ D. sylvestris</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\ln(\\text{head length}) $</td><td>3.00</td><td>0.09</td><td></td><td></td><td></td><td></td><td>Templeton 1977</td></tr><tr><td>$ \\ln(\\text{head width}) $</td><td>3.96</td><td>-0.01</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Astyanax (cave fish)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>eye diameter</td><td>4.72</td><td>-2.43</td><td>1.62</td><td>1.10</td><td>-1.57</td><td>-1.24</td><td>Wilkens 1971</td></tr><tr><td>Mice</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{body weight}) $</td><td>1.39</td><td>0.18</td><td>-0.01</td><td>-0.07</td><td>-0.01</td><td>0.01</td><td>Chai 1956</td></tr><tr><td>Chickens</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>weight</td><td>3.49</td><td>-0.12</td><td>-0.06</td><td>-0.08</td><td>0.08</td><td>0.05</td><td>Waters 1931</td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "$ \\widehat{\\mu}_{0} $",
+          "$ \\widehat{\\alpha}_{1}^{c} $",
+          "$ \\widehat{\\delta}_{1}^{c} $",
+          "$ \\widehat{\\alpha}_{2}^{c} $",
+          "$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $",
+          "$ \\widehat{\\delta}_{2}^{c} $",
+          "Reference"
+        ],
+        [
+          "Corn",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "time to silking",
+          "65.19",
+          "0.20",
+          "-6.16",
+          "-4.40",
+          "7.33",
+          "5.92",
+          "Mohamed 1959"
+        ],
+        [
+          "time to shed pollen",
+          "62.88",
+          "-1.57",
+          "-4.36",
+          "-1.94",
+          "4.74",
+          "3.69",
+          ""
+        ],
+        [
+          "Lima beans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "seed size",
+          "0.57",
+          "-0.25",
+          "-0.16",
+          "0.04",
+          "0.30",
+          "0.19",
+          "Ryder 1958"
+        ],
+        [
+          "Tomatos",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ \\log_{10}(\\text{fruit weight}) $",
+          "0.69",
+          "-0.87",
+          "0.02",
+          "0.12",
+          "-0.03",
+          "",
+          "Powers 1951"
+        ],
+        [
+          "Pitcher-plant mosquito",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ \\log_{10}(\\text{critical photoperiod}) $",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "-1.84",
+          "-4.45",
+          "0.40",
+          "",
+          "1.79",
+          "4.18",
+          "Hard et al. 1992"
+        ],
+        [
+          "Drosophila melanogaster",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{longevity}) $",
+          "1.79",
+          "-0.06",
+          "0.01",
+          "0.03",
+          "",
+          "",
+          "Luckinbill et al. 1988"
+        ],
+        [
+          "Drosophila tripunctata",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ovipos. site pref.",
+          "0.31",
+          "-0.12",
+          "0.05",
+          "0.18",
+          "",
+          "",
+          "Jaenike 1987"
+        ],
+        [
+          "D. heteroneura $ \\times $ D. sylvestris",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{head length}) $",
+          "3.00",
+          "0.09",
+          "",
+          "",
+          "",
+          "",
+          "Templeton 1977"
+        ],
+        [
+          "$ \\ln(\\text{head width}) $",
+          "3.96",
+          "-0.01",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Astyanax (cave fish)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "eye diameter",
+          "4.72",
+          "-2.43",
+          "1.62",
+          "1.10",
+          "-1.57",
+          "-1.24",
+          "Wilkens 1971"
+        ],
+        [
+          "Mice",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ \\log_{10}(\\text{body weight}) $",
+          "1.39",
+          "0.18",
+          "-0.01",
+          "-0.07",
+          "-0.01",
+          "0.01",
+          "Chai 1956"
+        ],
+        [
+          "Chickens",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "weight",
+          "3.49",
+          "-0.12",
+          "-0.06",
+          "-0.08",
+          "0.08",
+          "0.05",
+          "Waters 1931"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: The results reported for each analysis describe the most parsimonious genetic model, and all recorded effects are statistically significant. The motivation for the use of logarithmic transformations in some cases is discussed in Chapter 11.",
+          "source_page": 238,
+          "bbox": [
+            160.0,
+            1099.0,
+            1119.0,
+            1205.0
+          ],
+          "source_block_ids": [
+            "p238:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 238,
+          "title": "Table 9.5 A survey of the composite effects estimated in line-cross analyses.",
+          "html": "<table><tr><td>Character</td><td>$ \\widehat{\\mu}_{0} $</td><td>$ \\widehat{\\alpha}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\alpha}_{2}^{c} $</td><td>$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $</td><td>$ \\widehat{\\delta}_{2}^{c} $</td><td>Reference</td></tr><tr><td>Corn</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>time to silking</td><td>65.19</td><td>0.20</td><td>-6.16</td><td>-4.40</td><td>7.33</td><td>5.92</td><td>Mohamed 1959</td></tr><tr><td>time to shed pollen</td><td>62.88</td><td>-1.57</td><td>-4.36</td><td>-1.94</td><td>4.74</td><td>3.69</td><td></td></tr><tr><td>Lima beans</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>seed size</td><td>0.57</td><td>-0.25</td><td>-0.16</td><td>0.04</td><td>0.30</td><td>0.19</td><td>Ryder 1958</td></tr><tr><td>Tomatos</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{fruit weight}) $</td><td>0.69</td><td>-0.87</td><td>0.02</td><td>0.12</td><td>-0.03</td><td></td><td>Powers 1951</td></tr><tr><td>Pitcher-plant mosquito</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{critical photoperiod}) $</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>-1.84</td><td>-4.45</td><td>0.40</td><td></td><td>1.79</td><td>4.18</td><td>Hard et al. 1992</td></tr><tr><td>Drosophila melanogaster</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\ln(\\text{longevity}) $</td><td>1.79</td><td>-0.06</td><td>0.01</td><td>0.03</td><td></td><td></td><td>Luckinbill et al. 1988</td></tr><tr><td>Drosophila tripunctata</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ovipos. site pref.</td><td>0.31</td><td>-0.12</td><td>0.05</td><td>0.18</td><td></td><td></td><td>Jaenike 1987</td></tr><tr><td>D. heteroneura $ \\times $ D. sylvestris</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\ln(\\text{head length}) $</td><td>3.00</td><td>0.09</td><td></td><td></td><td></td><td></td><td>Templeton 1977</td></tr><tr><td>$ \\ln(\\text{head width}) $</td><td>3.96</td><td>-0.01</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Astyanax (cave fish)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>eye diameter</td><td>4.72</td><td>-2.43</td><td>1.62</td><td>1.10</td><td>-1.57</td><td>-1.24</td><td>Wilkens 1971</td></tr><tr><td>Mice</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>$ \\log_{10}(\\text{body weight}) $</td><td>1.39</td><td>0.18</td><td>-0.01</td><td>-0.07</td><td>-0.01</td><td>0.01</td><td>Chai 1956</td></tr><tr><td>Chickens</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>weight</td><td>3.49</td><td>-0.12</td><td>-0.06</td><td>-0.08</td><td>0.08</td><td>0.05</td><td>Waters 1931</td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "$ \\widehat{\\mu}_{0} $",
+              "$ \\widehat{\\alpha}_{1}^{c} $",
+              "$ \\widehat{\\delta}_{1}^{c} $",
+              "$ \\widehat{\\alpha}_{2}^{c} $",
+              "$ \\widehat{\\alpha}_{1}^{c}\\widehat{\\delta}_{1}^{c} $",
+              "$ \\widehat{\\delta}_{2}^{c} $",
+              "Reference"
+            ],
+            [
+              "Corn",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "time to silking",
+              "65.19",
+              "0.20",
+              "-6.16",
+              "-4.40",
+              "7.33",
+              "5.92",
+              "Mohamed 1959"
+            ],
+            [
+              "time to shed pollen",
+              "62.88",
+              "-1.57",
+              "-4.36",
+              "-1.94",
+              "4.74",
+              "3.69",
+              ""
+            ],
+            [
+              "Lima beans",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "seed size",
+              "0.57",
+              "-0.25",
+              "-0.16",
+              "0.04",
+              "0.30",
+              "0.19",
+              "Ryder 1958"
+            ],
+            [
+              "Tomatos",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$ \\log_{10}(\\text{fruit weight}) $",
+              "0.69",
+              "-0.87",
+              "0.02",
+              "0.12",
+              "-0.03",
+              "",
+              "Powers 1951"
+            ],
+            [
+              "Pitcher-plant mosquito",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$ \\log_{10}(\\text{critical photoperiod}) $",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "-1.84",
+              "-4.45",
+              "0.40",
+              "",
+              "1.79",
+              "4.18",
+              "Hard et al. 1992"
+            ],
+            [
+              "Drosophila melanogaster",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{longevity}) $",
+              "1.79",
+              "-0.06",
+              "0.01",
+              "0.03",
+              "",
+              "",
+              "Luckinbill et al. 1988"
+            ],
+            [
+              "Drosophila tripunctata",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "ovipos. site pref.",
+              "0.31",
+              "-0.12",
+              "0.05",
+              "0.18",
+              "",
+              "",
+              "Jaenike 1987"
+            ],
+            [
+              "D. heteroneura $ \\times $ D. sylvestris",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{head length}) $",
+              "3.00",
+              "0.09",
+              "",
+              "",
+              "",
+              "",
+              "Templeton 1977"
+            ],
+            [
+              "$ \\ln(\\text{head width}) $",
+              "3.96",
+              "-0.01",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Astyanax (cave fish)",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "eye diameter",
+              "4.72",
+              "-2.43",
+              "1.62",
+              "1.10",
+              "-1.57",
+              "-1.24",
+              "Wilkens 1971"
+            ],
+            [
+              "Mice",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "$ \\log_{10}(\\text{body weight}) $",
+              "1.39",
+              "0.18",
+              "-0.01",
+              "-0.07",
+              "-0.01",
+              "0.01",
+              "Chai 1956"
+            ],
+            [
+              "Chickens",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "weight",
+              "3.49",
+              "-0.12",
+              "-0.06",
+              "-0.08",
+              "0.08",
+              "0.05",
+              "Waters 1931"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: The results reported for each analysis describe the most parsimonious genetic model, and all recorded effects are statistically significant. The motivation for the use of logarithmic transformations in some cases is discussed in Chapter 11.",
+              "source_page": 238,
+              "bbox": [
+                160.0,
+                1099.0,
+                1119.0,
+                1205.0
+              ],
+              "source_block_ids": [
+                "p238:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            140.0,
+            170.0,
+            1131.0,
+            1100.0
+          ],
+          "caption_bbox": [
+            137.0,
+            124.0,
+            970.0,
+            171.0
+          ],
+          "source_block_ids": [
+            "p238:b3"
+          ],
+          "caption_source_block_ids": [
+            "p238:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_006",
+        "page": 238,
+        "pages": [
+          238
+        ],
+        "bbox": [
+          140.0,
+          170.0,
+          1131.0,
+          1100.0
+        ],
+        "caption_bbox": [
+          137.0,
+          124.0,
+          970.0,
+          171.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.6",
+      "label_format": "Table 9.6",
+      "title": "Table 9.6 A sample of estimates (± their standard errors) of the effective number of segregating factors differentiating parental lines, obtained by use of Equation 9.24.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Character</td><td>$ \\widehat{n}_{e} $</td><td>Additive Model</td><td>Reference</td></tr><tr><td rowspan=\"8\">Corn</td><td>$ \\log(\\% \\text{ oil } + 1.87) $</td><td>$ 18 \\pm 2 $</td><td>+</td><td>Sprague and Brimhall 1949</td></tr><tr><td>time to silking</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Mohamed 1959</td></tr><tr><td>time to shed pollen</td><td>$ 1 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{height}) $</td><td>$ 4 \\pm 1 $</td><td>−</td><td>Emerson and East 1913</td></tr><tr><td>$ \\ln(\\text{nodes}) $</td><td>$ 5 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>$ \\ln(\\text{internode length}) $</td><td>$ 1 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{ear length}) $</td><td>$ 13 \\pm 3 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{seed weight}) $</td><td>$ 13 \\pm 3 $</td><td>−</td><td></td></tr><tr><td>Lima beans</td><td>seed size</td><td>$ 17 \\pm 2 $</td><td>−</td><td>Ryder 1958</td></tr><tr><td rowspan=\"2\">Red pepper</td><td>fruit shape</td><td>$ 3 \\pm 1 $</td><td>−</td><td>Khambononda 1950</td></tr><tr><td>fruit weight</td><td>$ 13 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>Rice</td><td>plant height</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Mohamed and Hanna 1964</td></tr><tr><td>Goldenrod (Solidago)</td><td>date of anthesis</td><td>$ 6 \\pm 2 $</td><td>−</td><td>Goodwin 1944</td></tr><tr><td>Nicotiana Langsdorffii × N. Sanderae</td><td>corolla length</td><td>$ 13 \\pm 1 $</td><td>−</td><td>Smith 1937</td></tr><tr><td rowspan=\"3\">Mimulus nasutus × M. guttatus</td><td>$ \\ln(\\text{flowering time}) $</td><td>$ 1 \\pm 1 $</td><td>+</td><td>Fenster and Ritland 1994</td></tr><tr><td>corolla width</td><td>$ 2 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>stamen level</td><td>$ 3 \\pm 1 $</td><td>+</td><td></td></tr><tr><td rowspan=\"4\">Mimulus guttatus × M. cupriphilus</td><td>flower width</td><td>$ 5 \\pm 2 $</td><td>+</td><td>Macnair and Cumbes 1989</td></tr><tr><td>flower height</td><td>$ 4 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>pistil length</td><td>$ 18 \\pm 18 $</td><td>+</td><td></td></tr><tr><td>corolla length</td><td>$ 6 \\pm 3 $</td><td>+</td><td></td></tr><tr><td>Tomato</td><td>$ \\log_{10}(\\text{fruit weight}) $</td><td>$ 12 \\pm 1 $</td><td>−</td><td>Powers 1942</td></tr><tr><td rowspan=\"5\">Pearl millet (Pennisetum)</td><td rowspan=\"2\">height</td><td>$ 4 \\pm 1 $</td><td>−</td><td>Burton 1951</td></tr><tr><td>$ 4 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>internode length</td><td>$ 2 \\pm 1 $</td><td>−</td><td></td></tr><tr><td rowspan=\"2\">leaves/stem</td><td>$ 5 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ 7 \\pm 1 $</td><td></td><td></td></tr><tr><td>Drosophila melanogaster</td><td>$ \\ln(\\text{longevity}) $</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Luckinbill et al. 1988</td></tr><tr><td>Drosophila tripunctata</td><td>ovipos. site pref.</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Jaenike 1987</td></tr><tr><td rowspan=\"2\">Drosophila heteroneura × D. silvestris</td><td>head length</td><td>$ 7 \\pm 4 $</td><td>+</td><td>Templeton 1977</td></tr><tr><td>head width</td><td>$ 1 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>Cave fish (Astyanax)</td><td>eye diameter</td><td>$ 6 \\pm 1 $</td><td>−</td><td>Wilkens 1971</td></tr><tr><td>Chickens</td><td>weight</td><td>$ 5 \\pm 1 $</td><td>−</td><td>Waters 1931</td></tr><tr><td>Mice</td><td>$ \\log_{10}(\\text{weight}) $</td><td>$ 12 \\pm 1 $</td><td>−</td><td>Chai 1956</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Character",
+          "$ \\widehat{n}_{e} $",
+          "Additive Model",
+          "Reference"
+        ],
+        [
+          "Corn",
+          "$ \\log(\\% \\text{ oil } + 1.87) $",
+          "$ 18 \\pm 2 $",
+          "+",
+          "Sprague and Brimhall 1949"
+        ],
+        [
+          "time to silking",
+          "$ 1 \\pm 1 $",
+          "−",
+          "Mohamed 1959"
+        ],
+        [
+          "time to shed pollen",
+          "$ 1 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{height}) $",
+          "$ 4 \\pm 1 $",
+          "−",
+          "Emerson and East 1913"
+        ],
+        [
+          "$ \\ln(\\text{nodes}) $",
+          "$ 5 \\pm 1 $",
+          "+",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{internode length}) $",
+          "$ 1 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{ear length}) $",
+          "$ 13 \\pm 3 $",
+          "−",
+          ""
+        ],
+        [
+          "$ \\ln(\\text{seed weight}) $",
+          "$ 13 \\pm 3 $",
+          "−",
+          ""
+        ],
+        [
+          "Lima beans",
+          "seed size",
+          "$ 17 \\pm 2 $",
+          "−",
+          "Ryder 1958"
+        ],
+        [
+          "Red pepper",
+          "fruit shape",
+          "$ 3 \\pm 1 $",
+          "−",
+          "Khambononda 1950"
+        ],
+        [
+          "fruit weight",
+          "$ 13 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "Rice",
+          "plant height",
+          "$ 1 \\pm 1 $",
+          "−",
+          "Mohamed and Hanna 1964"
+        ],
+        [
+          "Goldenrod (Solidago)",
+          "date of anthesis",
+          "$ 6 \\pm 2 $",
+          "−",
+          "Goodwin 1944"
+        ],
+        [
+          "Nicotiana Langsdorffii × N. Sanderae",
+          "corolla length",
+          "$ 13 \\pm 1 $",
+          "−",
+          "Smith 1937"
+        ],
+        [
+          "Mimulus nasutus × M. guttatus",
+          "$ \\ln(\\text{flowering time}) $",
+          "$ 1 \\pm 1 $",
+          "+",
+          "Fenster and Ritland 1994"
+        ],
+        [
+          "corolla width",
+          "$ 2 \\pm 1 $",
+          "+",
+          ""
+        ],
+        [
+          "stamen level",
+          "$ 3 \\pm 1 $",
+          "+",
+          ""
+        ],
+        [
+          "Mimulus guttatus × M. cupriphilus",
+          "flower width",
+          "$ 5 \\pm 2 $",
+          "+",
+          "Macnair and Cumbes 1989"
+        ],
+        [
+          "flower height",
+          "$ 4 \\pm 1 $",
+          "+",
+          ""
+        ],
+        [
+          "pistil length",
+          "$ 18 \\pm 18 $",
+          "+",
+          ""
+        ],
+        [
+          "corolla length",
+          "$ 6 \\pm 3 $",
+          "+",
+          ""
+        ],
+        [
+          "Tomato",
+          "$ \\log_{10}(\\text{fruit weight}) $",
+          "$ 12 \\pm 1 $",
+          "−",
+          "Powers 1942"
+        ],
+        [
+          "Pearl millet (Pennisetum)",
+          "height",
+          "$ 4 \\pm 1 $",
+          "−",
+          "Burton 1951"
+        ],
+        [
+          "$ 4 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "internode length",
+          "$ 2 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "leaves/stem",
+          "$ 5 \\pm 1 $",
+          "−",
+          ""
+        ],
+        [
+          "$ 7 \\pm 1 $",
+          "",
+          ""
+        ],
+        [
+          "Drosophila melanogaster",
+          "$ \\ln(\\text{longevity}) $",
+          "$ 1 \\pm 1 $",
+          "−",
+          "Luckinbill et al. 1988"
+        ],
+        [
+          "Drosophila tripunctata",
+          "ovipos. site pref.",
+          "$ 1 \\pm 1 $",
+          "−",
+          "Jaenike 1987"
+        ],
+        [
+          "Drosophila heteroneura × D. silvestris",
+          "head length",
+          "$ 7 \\pm 4 $",
+          "+",
+          "Templeton 1977"
+        ],
+        [
+          "head width",
+          "$ 1 \\pm 1 $",
+          "+",
+          ""
+        ],
+        [
+          "Cave fish (Astyanax)",
+          "eye diameter",
+          "$ 6 \\pm 1 $",
+          "−",
+          "Wilkens 1971"
+        ],
+        [
+          "Chickens",
+          "weight",
+          "$ 5 \\pm 1 $",
+          "−",
+          "Waters 1931"
+        ],
+        [
+          "Mice",
+          "$ \\log_{10}(\\text{weight}) $",
+          "$ 12 \\pm 1 $",
+          "−",
+          "Chai 1956"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Whenever possible, the segregational variance was obtained by least-squares analysis. + and – denote agreement and incompatibility with an additive model.",
+          "source_page": 255,
+          "bbox": [
+            38.0,
+            1398.0,
+            995.0,
+            1481.0
+          ],
+          "source_block_ids": [
+            "p255:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 255,
+          "title": "Table 9.6 A sample of estimates (± their standard errors) of the effective number of segregating factors differentiating parental lines, obtained by use of Equation 9.24.",
+          "html": "<table><tr><td>Species</td><td>Character</td><td>$ \\widehat{n}_{e} $</td><td>Additive Model</td><td>Reference</td></tr><tr><td rowspan=\"8\">Corn</td><td>$ \\log(\\% \\text{ oil } + 1.87) $</td><td>$ 18 \\pm 2 $</td><td>+</td><td>Sprague and Brimhall 1949</td></tr><tr><td>time to silking</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Mohamed 1959</td></tr><tr><td>time to shed pollen</td><td>$ 1 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{height}) $</td><td>$ 4 \\pm 1 $</td><td>−</td><td>Emerson and East 1913</td></tr><tr><td>$ \\ln(\\text{nodes}) $</td><td>$ 5 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>$ \\ln(\\text{internode length}) $</td><td>$ 1 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{ear length}) $</td><td>$ 13 \\pm 3 $</td><td>−</td><td></td></tr><tr><td>$ \\ln(\\text{seed weight}) $</td><td>$ 13 \\pm 3 $</td><td>−</td><td></td></tr><tr><td>Lima beans</td><td>seed size</td><td>$ 17 \\pm 2 $</td><td>−</td><td>Ryder 1958</td></tr><tr><td rowspan=\"2\">Red pepper</td><td>fruit shape</td><td>$ 3 \\pm 1 $</td><td>−</td><td>Khambononda 1950</td></tr><tr><td>fruit weight</td><td>$ 13 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>Rice</td><td>plant height</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Mohamed and Hanna 1964</td></tr><tr><td>Goldenrod (Solidago)</td><td>date of anthesis</td><td>$ 6 \\pm 2 $</td><td>−</td><td>Goodwin 1944</td></tr><tr><td>Nicotiana Langsdorffii × N. Sanderae</td><td>corolla length</td><td>$ 13 \\pm 1 $</td><td>−</td><td>Smith 1937</td></tr><tr><td rowspan=\"3\">Mimulus nasutus × M. guttatus</td><td>$ \\ln(\\text{flowering time}) $</td><td>$ 1 \\pm 1 $</td><td>+</td><td>Fenster and Ritland 1994</td></tr><tr><td>corolla width</td><td>$ 2 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>stamen level</td><td>$ 3 \\pm 1 $</td><td>+</td><td></td></tr><tr><td rowspan=\"4\">Mimulus guttatus × M. cupriphilus</td><td>flower width</td><td>$ 5 \\pm 2 $</td><td>+</td><td>Macnair and Cumbes 1989</td></tr><tr><td>flower height</td><td>$ 4 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>pistil length</td><td>$ 18 \\pm 18 $</td><td>+</td><td></td></tr><tr><td>corolla length</td><td>$ 6 \\pm 3 $</td><td>+</td><td></td></tr><tr><td>Tomato</td><td>$ \\log_{10}(\\text{fruit weight}) $</td><td>$ 12 \\pm 1 $</td><td>−</td><td>Powers 1942</td></tr><tr><td rowspan=\"5\">Pearl millet (Pennisetum)</td><td rowspan=\"2\">height</td><td>$ 4 \\pm 1 $</td><td>−</td><td>Burton 1951</td></tr><tr><td>$ 4 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>internode length</td><td>$ 2 \\pm 1 $</td><td>−</td><td></td></tr><tr><td rowspan=\"2\">leaves/stem</td><td>$ 5 \\pm 1 $</td><td>−</td><td></td></tr><tr><td>$ 7 \\pm 1 $</td><td></td><td></td></tr><tr><td>Drosophila melanogaster</td><td>$ \\ln(\\text{longevity}) $</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Luckinbill et al. 1988</td></tr><tr><td>Drosophila tripunctata</td><td>ovipos. site pref.</td><td>$ 1 \\pm 1 $</td><td>−</td><td>Jaenike 1987</td></tr><tr><td rowspan=\"2\">Drosophila heteroneura × D. silvestris</td><td>head length</td><td>$ 7 \\pm 4 $</td><td>+</td><td>Templeton 1977</td></tr><tr><td>head width</td><td>$ 1 \\pm 1 $</td><td>+</td><td></td></tr><tr><td>Cave fish (Astyanax)</td><td>eye diameter</td><td>$ 6 \\pm 1 $</td><td>−</td><td>Wilkens 1971</td></tr><tr><td>Chickens</td><td>weight</td><td>$ 5 \\pm 1 $</td><td>−</td><td>Waters 1931</td></tr><tr><td>Mice</td><td>$ \\log_{10}(\\text{weight}) $</td><td>$ 12 \\pm 1 $</td><td>−</td><td>Chai 1956</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Character",
+              "$ \\widehat{n}_{e} $",
+              "Additive Model",
+              "Reference"
+            ],
+            [
+              "Corn",
+              "$ \\log(\\% \\text{ oil } + 1.87) $",
+              "$ 18 \\pm 2 $",
+              "+",
+              "Sprague and Brimhall 1949"
+            ],
+            [
+              "time to silking",
+              "$ 1 \\pm 1 $",
+              "−",
+              "Mohamed 1959"
+            ],
+            [
+              "time to shed pollen",
+              "$ 1 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{height}) $",
+              "$ 4 \\pm 1 $",
+              "−",
+              "Emerson and East 1913"
+            ],
+            [
+              "$ \\ln(\\text{nodes}) $",
+              "$ 5 \\pm 1 $",
+              "+",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{internode length}) $",
+              "$ 1 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{ear length}) $",
+              "$ 13 \\pm 3 $",
+              "−",
+              ""
+            ],
+            [
+              "$ \\ln(\\text{seed weight}) $",
+              "$ 13 \\pm 3 $",
+              "−",
+              ""
+            ],
+            [
+              "Lima beans",
+              "seed size",
+              "$ 17 \\pm 2 $",
+              "−",
+              "Ryder 1958"
+            ],
+            [
+              "Red pepper",
+              "fruit shape",
+              "$ 3 \\pm 1 $",
+              "−",
+              "Khambononda 1950"
+            ],
+            [
+              "fruit weight",
+              "$ 13 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "Rice",
+              "plant height",
+              "$ 1 \\pm 1 $",
+              "−",
+              "Mohamed and Hanna 1964"
+            ],
+            [
+              "Goldenrod (Solidago)",
+              "date of anthesis",
+              "$ 6 \\pm 2 $",
+              "−",
+              "Goodwin 1944"
+            ],
+            [
+              "Nicotiana Langsdorffii × N. Sanderae",
+              "corolla length",
+              "$ 13 \\pm 1 $",
+              "−",
+              "Smith 1937"
+            ],
+            [
+              "Mimulus nasutus × M. guttatus",
+              "$ \\ln(\\text{flowering time}) $",
+              "$ 1 \\pm 1 $",
+              "+",
+              "Fenster and Ritland 1994"
+            ],
+            [
+              "corolla width",
+              "$ 2 \\pm 1 $",
+              "+",
+              ""
+            ],
+            [
+              "stamen level",
+              "$ 3 \\pm 1 $",
+              "+",
+              ""
+            ],
+            [
+              "Mimulus guttatus × M. cupriphilus",
+              "flower width",
+              "$ 5 \\pm 2 $",
+              "+",
+              "Macnair and Cumbes 1989"
+            ],
+            [
+              "flower height",
+              "$ 4 \\pm 1 $",
+              "+",
+              ""
+            ],
+            [
+              "pistil length",
+              "$ 18 \\pm 18 $",
+              "+",
+              ""
+            ],
+            [
+              "corolla length",
+              "$ 6 \\pm 3 $",
+              "+",
+              ""
+            ],
+            [
+              "Tomato",
+              "$ \\log_{10}(\\text{fruit weight}) $",
+              "$ 12 \\pm 1 $",
+              "−",
+              "Powers 1942"
+            ],
+            [
+              "Pearl millet (Pennisetum)",
+              "height",
+              "$ 4 \\pm 1 $",
+              "−",
+              "Burton 1951"
+            ],
+            [
+              "$ 4 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "internode length",
+              "$ 2 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "leaves/stem",
+              "$ 5 \\pm 1 $",
+              "−",
+              ""
+            ],
+            [
+              "$ 7 \\pm 1 $",
+              "",
+              ""
+            ],
+            [
+              "Drosophila melanogaster",
+              "$ \\ln(\\text{longevity}) $",
+              "$ 1 \\pm 1 $",
+              "−",
+              "Luckinbill et al. 1988"
+            ],
+            [
+              "Drosophila tripunctata",
+              "ovipos. site pref.",
+              "$ 1 \\pm 1 $",
+              "−",
+              "Jaenike 1987"
+            ],
+            [
+              "Drosophila heteroneura × D. silvestris",
+              "head length",
+              "$ 7 \\pm 4 $",
+              "+",
+              "Templeton 1977"
+            ],
+            [
+              "head width",
+              "$ 1 \\pm 1 $",
+              "+",
+              ""
+            ],
+            [
+              "Cave fish (Astyanax)",
+              "eye diameter",
+              "$ 6 \\pm 1 $",
+              "−",
+              "Wilkens 1971"
+            ],
+            [
+              "Chickens",
+              "weight",
+              "$ 5 \\pm 1 $",
+              "−",
+              "Waters 1931"
+            ],
+            [
+              "Mice",
+              "$ \\log_{10}(\\text{weight}) $",
+              "$ 12 \\pm 1 $",
+              "−",
+              "Chai 1956"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Whenever possible, the segregational variance was obtained by least-squares analysis. + and – denote agreement and incompatibility with an additive model.",
+              "source_page": 255,
+              "bbox": [
+                38.0,
+                1398.0,
+                995.0,
+                1481.0
+              ],
+              "source_block_ids": [
+                "p255:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            40.0,
+            204.0,
+            1018.0,
+            1443.0
+          ],
+          "caption_bbox": [
+            60.0,
+            127.0,
+            1022.0,
+            205.0
+          ],
+          "source_block_ids": [
+            "p255:b3"
+          ],
+          "caption_source_block_ids": [
+            "p255:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_011",
+        "page": 255,
+        "pages": [
+          255
+        ],
+        "bbox": [
+          40.0,
+          204.0,
+          1018.0,
+          1443.0
+        ],
+        "caption_bbox": [
+          60.0,
+          127.0,
+          1022.0,
+          205.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.7",
+      "label_format": "Table 9.7",
+      "title": "Table 9.7 Expected means and variances for line crosses derived from two haploid parental lines, under the assumption of zero linkage and additive gene action.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Line</td><td>Mean</td><td>Variance</td></tr><tr><td>P_{1}</td><td>$ \\mu_{0} - \\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} $</td></tr><tr><td>P_{2}</td><td>$ \\mu_{0} + \\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} $</td></tr><tr><td>F_{1}</td><td>$ \\mu_{0} $</td><td>$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $</td></tr><tr><td>F_{2}</td><td>$ \\mu_{0} $</td><td>$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $</td></tr><tr><td>B_{1}</td><td>$ \\mu_{0} - 0.5\\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $</td></tr><tr><td>B_{2}</td><td>$ \\mu_{0} + 0.5\\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Line",
+          "Mean",
+          "Variance"
+        ],
+        [
+          "P_{1}",
+          "$ \\mu_{0} - \\alpha_{1}^{c} $",
+          "$ \\sigma_{E}^{2} $"
+        ],
+        [
+          "P_{2}",
+          "$ \\mu_{0} + \\alpha_{1}^{c} $",
+          "$ \\sigma_{E}^{2} $"
+        ],
+        [
+          "F_{1}",
+          "$ \\mu_{0} $",
+          "$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $"
+        ],
+        [
+          "F_{2}",
+          "$ \\mu_{0} $",
+          "$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $"
+        ],
+        [
+          "B_{1}",
+          "$ \\mu_{0} - 0.5\\alpha_{1}^{c} $",
+          "$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $"
+        ],
+        [
+          "B_{2}",
+          "$ \\mu_{0} + 0.5\\alpha_{1}^{c} $",
+          "$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Composite additive effects are defined as haploid effects, so that parental line divergence is still $ 2\\alpha_{1}^{c} $ as in the diploid model.",
+          "source_page": 258,
+          "bbox": [
+            145.0,
+            513.0,
+            1102.0,
+            594.0
+          ],
+          "source_block_ids": [
+            "p258:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 258,
+          "title": "Table 9.7 Expected means and variances for line crosses derived from two haploid parental lines, under the assumption of zero linkage and additive gene action.",
+          "html": "<table><tr><td>Line</td><td>Mean</td><td>Variance</td></tr><tr><td>P_{1}</td><td>$ \\mu_{0} - \\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} $</td></tr><tr><td>P_{2}</td><td>$ \\mu_{0} + \\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} $</td></tr><tr><td>F_{1}</td><td>$ \\mu_{0} $</td><td>$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $</td></tr><tr><td>F_{2}</td><td>$ \\mu_{0} $</td><td>$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $</td></tr><tr><td>B_{1}</td><td>$ \\mu_{0} - 0.5\\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $</td></tr><tr><td>B_{2}</td><td>$ \\mu_{0} + 0.5\\alpha_{1}^{c} $</td><td>$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $</td></tr></table>",
+          "rows": [
+            [
+              "Line",
+              "Mean",
+              "Variance"
+            ],
+            [
+              "P_{1}",
+              "$ \\mu_{0} - \\alpha_{1}^{c} $",
+              "$ \\sigma_{E}^{2} $"
+            ],
+            [
+              "P_{2}",
+              "$ \\mu_{0} + \\alpha_{1}^{c} $",
+              "$ \\sigma_{E}^{2} $"
+            ],
+            [
+              "F_{1}",
+              "$ \\mu_{0} $",
+              "$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $"
+            ],
+            [
+              "F_{2}",
+              "$ \\mu_{0} $",
+              "$ \\sigma_{E}^{2} + \\sigma_{S}^{2} $"
+            ],
+            [
+              "B_{1}",
+              "$ \\mu_{0} - 0.5\\alpha_{1}^{c} $",
+              "$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $"
+            ],
+            [
+              "B_{2}",
+              "$ \\mu_{0} + 0.5\\alpha_{1}^{c} $",
+              "$ \\sigma_{E}^{2} + \\frac{3}{4}\\sigma_{S}^{2} $"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Composite additive effects are defined as haploid effects, so that parental line divergence is still $ 2\\alpha_{1}^{c} $ as in the diploid model.",
+              "source_page": 258,
+              "bbox": [
+                145.0,
+                513.0,
+                1102.0,
+                594.0
+              ],
+              "source_block_ids": [
+                "p258:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            139.0,
+            202.0,
+            1096.0,
+            518.0
+          ],
+          "caption_bbox": [
+            136.0,
+            124.0,
+            1096.0,
+            201.0
+          ],
+          "source_block_ids": [
+            "p258:b3"
+          ],
+          "caption_source_block_ids": [
+            "p258:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_012",
+        "page": 258,
+        "pages": [
+          258
+        ],
+        "bbox": [
+          139.0,
+          202.0,
+          1096.0,
+          518.0
+        ],
+        "caption_bbox": [
+          136.0,
+          124.0,
+          1096.0,
+          201.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.8",
+      "label_format": "Table 9.8",
+      "title": "Table 9.8 The proportion of deviant derived lines that are expected to contain a single gene from the donor parent (last column).",
+      "table_type": "numbered",
+      "html": "<table><tr><td>n</td><td>k</td><td>p_{k}</td><td>p(1)</td><td>p(r ≥ 1)</td><td>p(1)/p(r ≥ 1)</td></tr><tr><td rowspan=\"3\">4</td><td>2</td><td>$ \\frac{1}{8} $</td><td>0.335</td><td>0.414</td><td>0.809</td></tr><tr><td>3</td><td>$ \\frac{1}{16} $</td><td>0.206</td><td>0.227</td><td>0.905</td></tr><tr><td>4</td><td>$ \\frac{1}{32} $</td><td>0.114</td><td>0.119</td><td>0.953</td></tr><tr><td rowspan=\"3\">10</td><td>2</td><td>$ \\frac{1}{8} $</td><td>0.376</td><td>0.624</td><td>0.510</td></tr><tr><td>3</td><td>$ \\frac{1}{16} $</td><td>0.350</td><td>0.650</td><td>0.735</td></tr><tr><td>4</td><td>$ \\frac{1}{32} $</td><td>0.235</td><td>0.765</td><td>0.863</td></tr></table>",
+      "rows": [
+        [
+          "n",
+          "k",
+          "p_{k}",
+          "p(1)",
+          "p(r ≥ 1)",
+          "p(1)/p(r ≥ 1)"
+        ],
+        [
+          "4",
+          "2",
+          "$ \\frac{1}{8} $",
+          "0.335",
+          "0.414",
+          "0.809"
+        ],
+        [
+          "3",
+          "$ \\frac{1}{16} $",
+          "0.206",
+          "0.227",
+          "0.905"
+        ],
+        [
+          "4",
+          "$ \\frac{1}{32} $",
+          "0.114",
+          "0.119",
+          "0.953"
+        ],
+        [
+          "10",
+          "2",
+          "$ \\frac{1}{8} $",
+          "0.376",
+          "0.624",
+          "0.510"
+        ],
+        [
+          "3",
+          "$ \\frac{1}{16} $",
+          "0.350",
+          "0.650",
+          "0.735"
+        ],
+        [
+          "4",
+          "$ \\frac{1}{32} $",
+          "0.235",
+          "0.765",
+          "0.863"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Wehrhahn and Allard 1965.",
+          "source_page": 261,
+          "bbox": [
+            65.0,
+            538.0,
+            445.0,
+            574.0
+          ],
+          "source_block_ids": [
+            "p261:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 261,
+          "title": "Table 9.8 The proportion of deviant derived lines that are expected to contain a single gene from the donor parent (last column).",
+          "html": "<table><tr><td>n</td><td>k</td><td>p_{k}</td><td>p(1)</td><td>p(r ≥ 1)</td><td>p(1)/p(r ≥ 1)</td></tr><tr><td rowspan=\"3\">4</td><td>2</td><td>$ \\frac{1}{8} $</td><td>0.335</td><td>0.414</td><td>0.809</td></tr><tr><td>3</td><td>$ \\frac{1}{16} $</td><td>0.206</td><td>0.227</td><td>0.905</td></tr><tr><td>4</td><td>$ \\frac{1}{32} $</td><td>0.114</td><td>0.119</td><td>0.953</td></tr><tr><td rowspan=\"3\">10</td><td>2</td><td>$ \\frac{1}{8} $</td><td>0.376</td><td>0.624</td><td>0.510</td></tr><tr><td>3</td><td>$ \\frac{1}{16} $</td><td>0.350</td><td>0.650</td><td>0.735</td></tr><tr><td>4</td><td>$ \\frac{1}{32} $</td><td>0.235</td><td>0.765</td><td>0.863</td></tr></table>",
+          "rows": [
+            [
+              "n",
+              "k",
+              "p_{k}",
+              "p(1)",
+              "p(r ≥ 1)",
+              "p(1)/p(r ≥ 1)"
+            ],
+            [
+              "4",
+              "2",
+              "$ \\frac{1}{8} $",
+              "0.335",
+              "0.414",
+              "0.809"
+            ],
+            [
+              "3",
+              "$ \\frac{1}{16} $",
+              "0.206",
+              "0.227",
+              "0.905"
+            ],
+            [
+              "4",
+              "$ \\frac{1}{32} $",
+              "0.114",
+              "0.119",
+              "0.953"
+            ],
+            [
+              "10",
+              "2",
+              "$ \\frac{1}{8} $",
+              "0.376",
+              "0.624",
+              "0.510"
+            ],
+            [
+              "3",
+              "$ \\frac{1}{16} $",
+              "0.350",
+              "0.650",
+              "0.735"
+            ],
+            [
+              "4",
+              "$ \\frac{1}{32} $",
+              "0.235",
+              "0.765",
+              "0.863"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Wehrhahn and Allard 1965.",
+              "source_page": 261,
+              "bbox": [
+                65.0,
+                538.0,
+                445.0,
+                574.0
+              ],
+              "source_block_ids": [
+                "p261:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            68.0,
+            216.0,
+            1024.0,
+            557.0
+          ],
+          "caption_bbox": [
+            70.0,
+            137.0,
+            1030.0,
+            212.0
+          ],
+          "source_block_ids": [
+            "p261:b3"
+          ],
+          "caption_source_block_ids": [
+            "p261:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_014",
+        "page": 261,
+        "pages": [
+          261
+        ],
+        "bbox": [
+          68.0,
+          216.0,
+          1024.0,
+          557.0
+        ],
+        "caption_bbox": [
+          70.0,
+          137.0,
+          1030.0,
+          212.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "9.9",
+      "label_format": "Table 9.9",
+      "title": "Table 9.9 Minimum number of effective factors responsible for the differentiation of two lines of tobacco (Nicotiana rustica) as determined by genotype assay in progressive generations ( $ F_{k} $).",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Grandparent Generation:</td><td>$ F_{2} $</td><td>$ F_{3} $</td><td>$ F_{4} $</td><td>$ F_{5} $</td><td>$ F_{6} $</td></tr><tr><td>Flowering time $ \\widehat{P} $</td><td>0.200</td><td>0.450</td><td>0.314</td><td>0.233</td><td>0.306</td></tr><tr><td>$ \\widehat{n}_{JT} $</td><td>1</td><td>4</td><td>5</td><td>7</td><td>19</td></tr><tr><td>Final height $ \\widehat{P} $</td><td>0.400</td><td>0.300</td><td>0.257</td><td>0.200</td><td>0.306</td></tr><tr><td>$ \\widehat{n}_{JT} $</td><td>2</td><td>3</td><td>4</td><td>6</td><td>19</td></tr></table>",
+      "rows": [
+        [
+          "Grandparent Generation:",
+          "$ F_{2} $",
+          "$ F_{3} $",
+          "$ F_{4} $",
+          "$ F_{5} $",
+          "$ F_{6} $"
+        ],
+        [
+          "Flowering time $ \\widehat{P} $",
+          "0.200",
+          "0.450",
+          "0.314",
+          "0.233",
+          "0.306"
+        ],
+        [
+          "$ \\widehat{n}_{JT} $",
+          "1",
+          "4",
+          "5",
+          "7",
+          "19"
+        ],
+        [
+          "Final height $ \\widehat{P} $",
+          "0.400",
+          "0.300",
+          "0.257",
+          "0.200",
+          "0.306"
+        ],
+        [
+          "$ \\widehat{n}_{JT} $",
+          "2",
+          "3",
+          "4",
+          "6",
+          "19"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Towey and Jinks 1977.",
+          "source_page": 265,
+          "bbox": [
+            62.0,
+            542.0,
+            387.0,
+            576.0
+          ],
+          "source_block_ids": [
+            "p265:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: $ n_{JT} $ is computed with Equation 9.33 and rounded up to the nearest unit.",
+          "source_page": 265,
+          "bbox": [
+            62.0,
+            574.0,
+            907.0,
+            618.0
+          ],
+          "source_block_ids": [
+            "p265:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 265,
+          "title": "Table 9.9 Minimum number of effective factors responsible for the differentiation of two lines of tobacco (Nicotiana rustica) as determined by genotype assay in progressive generations ( $ F_{k} $).",
+          "html": "<table><tr><td>Grandparent Generation:</td><td>$ F_{2} $</td><td>$ F_{3} $</td><td>$ F_{4} $</td><td>$ F_{5} $</td><td>$ F_{6} $</td></tr><tr><td>Flowering time $ \\widehat{P} $</td><td>0.200</td><td>0.450</td><td>0.314</td><td>0.233</td><td>0.306</td></tr><tr><td>$ \\widehat{n}_{JT} $</td><td>1</td><td>4</td><td>5</td><td>7</td><td>19</td></tr><tr><td>Final height $ \\widehat{P} $</td><td>0.400</td><td>0.300</td><td>0.257</td><td>0.200</td><td>0.306</td></tr><tr><td>$ \\widehat{n}_{JT} $</td><td>2</td><td>3</td><td>4</td><td>6</td><td>19</td></tr></table>",
+          "rows": [
+            [
+              "Grandparent Generation:",
+              "$ F_{2} $",
+              "$ F_{3} $",
+              "$ F_{4} $",
+              "$ F_{5} $",
+              "$ F_{6} $"
+            ],
+            [
+              "Flowering time $ \\widehat{P} $",
+              "0.200",
+              "0.450",
+              "0.314",
+              "0.233",
+              "0.306"
+            ],
+            [
+              "$ \\widehat{n}_{JT} $",
+              "1",
+              "4",
+              "5",
+              "7",
+              "19"
+            ],
+            [
+              "Final height $ \\widehat{P} $",
+              "0.400",
+              "0.300",
+              "0.257",
+              "0.200",
+              "0.306"
+            ],
+            [
+              "$ \\widehat{n}_{JT} $",
+              "2",
+              "3",
+              "4",
+              "6",
+              "19"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Towey and Jinks 1977.",
+              "source_page": 265,
+              "bbox": [
+                62.0,
+                542.0,
+                387.0,
+                576.0
+              ],
+              "source_block_ids": [
+                "p265:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: $ n_{JT} $ is computed with Equation 9.33 and rounded up to the nearest unit.",
+              "source_page": 265,
+              "bbox": [
+                62.0,
+                574.0,
+                907.0,
+                618.0
+              ],
+              "source_block_ids": [
+                "p265:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            63.0,
+            239.0,
+            1022.0,
+            546.0
+          ],
+          "caption_bbox": [
+            66.0,
+            128.0,
+            1029.0,
+            233.0
+          ],
+          "source_block_ids": [
+            "p265:b3"
+          ],
+          "caption_source_block_ids": [
+            "p265:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter9",
+        "unit_id": "Genetics_chapter9_015",
+        "page": 265,
+        "pages": [
+          265
+        ],
+        "bbox": [
+          63.0,
+          239.0,
+          1022.0,
+          546.0
+        ],
+        "caption_bbox": [
+          66.0,
+          128.0,
+          1029.0,
+          233.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

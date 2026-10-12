@@ -1,0 +1,238 @@
+{
+  "id": "Genetics_chapter14_010",
+  "metadata": {
+    "chapter": "Genetics_chapter14",
+    "section": "GENETIC MAPS",
+    "subsections": [
+      "How Many Markers Are Needed?"
+    ],
+    "section_level_1": "GENETIC MAPS",
+    "section_level_2": "How Many Markers Are Needed?",
+    "heading_path": [
+      "GENETIC MAPS",
+      "How Many Markers Are Needed?"
+    ],
+    "display_heading": "GENETIC MAPS / How Many Markers Are Needed?",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b2"
+      ],
+      "bbox": [
+        77.0,
+        134.0,
+        500.0,
+        166.0
+      ],
+      "raw_text": "How Many Markers Are Needed?"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "For most organisms, genetic maps are not yet available, and one must start with randomly obtained markers. As a rough approximation for the number of random polymorphic markers necessary for a desired saturation of the linkage map, assume a circular linkage map of total length L map units. In order to have a fraction p of all loci within m map units of some marker, the required number of randomly distributed markers is",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b3"
+      ],
+      "bbox": [
+        74.0,
+        177.0,
+        1036.0,
+        370.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter14_formula006]]",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b4"
+      ],
+      "bbox": [
+        438.0,
+        376.0,
+        664.0,
+        446.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "(Lange and Boehnke 1982, Beckmann and Soller 1983). This rearranges to give the proportion of the genome within m map units of a marker as approximately",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b6"
+      ],
+      "bbox": [
+        73.0,
+        448.0,
+        1031.0,
+        519.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter14_formula007]]",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b7"
+      ],
+      "bbox": [
+        410.0,
+        522.0,
+        686.0,
+        591.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "(Jacob et al. 1991). Assuming a circular genome map ignores the effect of chromosome ends, causing Equation 14.6a to underestimate n and Equation 14.6b to overestimate p. A more general expression, which accounts for linear chromosomes, is given by Bishop et al (1983). Assuming a haploid chromosome number C,",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b9"
+      ],
+      "bbox": [
+        71.0,
+        594.0,
+        1031.0,
+        757.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter14_formula008]]",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b10"
+      ],
+      "bbox": [
+        133.0,
+        758.0,
+        895.0,
+        851.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where x = m/L.",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b12"
+      ],
+      "bbox": [
+        70.0,
+        847.0,
+        270.0,
+        879.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An alternative consideration is the average distance between a locus and the nearest random marker. Martin et al. (1991) show that the expected distance of a gene from the closest of n random markers is",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b13"
+      ],
+      "bbox": [
+        67.0,
+        881.0,
+        1028.0,
+        981.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter14_formula009]]",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b14"
+      ],
+      "bbox": [
+        435.0,
+        983.0,
+        657.0,
+        1053.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "with the upper 95% confidence interval for this distance given by",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b16"
+      ],
+      "bbox": [
+        67.0,
+        1053.0,
+        849.0,
+        1095.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter14_formula010]]",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b17"
+      ],
+      "bbox": [
+        445.0,
+        1096.0,
+        644.0,
+        1159.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "It is important to note that the above expressions refer to randomly chosen markers. It is much more efficient to use sets of equally spaced markers. If the entire genome is covered by marker loci equally spaced at m map units apart, no locus is more than m/2 from any marker, and the average distance of a locus from a marker (assuming a uniform distribution of loci along the chromosome) is m/4.",
+      "source_page": 411,
+      "printed_page": 391,
+      "source_block_ids": [
+        "p411:b19"
+      ],
+      "bbox": [
+        65.0,
+        1159.0,
+        1024.0,
+        1329.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter14:3]]",
+      "source_page": 411,
+      "source_block_ids": [
+        "p411:b20",
+        "p412:b2",
+        "p412:b3",
+        "p412:b4",
+        "p412:b5"
+      ],
+      "bbox": [
+        106.0,
+        1414.0,
+        974.0,
+        1537.0
+      ]
+    }
+  ]
+}

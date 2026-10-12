@@ -1,0 +1,79 @@
+{
+  "id": "PopGen_chapter6_002",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "subsections": [
+      "6.1 INBREEDING"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "section_level_2": "6.1 INBREEDING",
+    "heading_path": [
+      "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+      "6.1 INBREEDING"
+    ],
+    "display_heading": "6.1 INBREEDING",
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "definition",
+      "content": "When a mating take place between individuals that are related, the mating constitutes inbreeding, and the progeny that result are said to be inbred. In human beings, the closest degree of inbreeding usually encountered in most societies is first-cousin mating. But many plants regularly undergo self-fertilization, and some insects regularly practice brother-sister mating. By definition, relatives share one or more common ancestors in their pedigree, and it is reasonable to suppose that these common ancestors will contribute disproportionately to the genotype of the offspring of a mating between relatives. But how can this effect be measured? The pioneering insight is due to Wright <sup>[781]</sup>, who formulated a measure of inbreeding called the inbreeding coefficient in terms of the correlation between uniting gametes. A later interpretation of the inbreeding coefficient in terms of probability is more transparent <sup>[133,440]</sup>, and this is the approach we will adopt.",
+      "source_page": 271,
+      "source_pages": [
+        271,
+        272
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p001:b4",
+        "PopGen_chapter6:p002:b1"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          1210.0,
+          863.0,
+          1368.0
+        ],
+        [
+          277.0,
+          201.0,
+          1028.0,
+          388.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "8e191e2fee2b82cb7d9326b1e98996199f17ef82a095220ef49d8e1b87c5b8fa",
+      "inline_styles": [
+        {
+          "start": 747,
+          "end": 769,
+          "style": "italic",
+          "text": "inbreeding coefficient",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              201,
+              1028,
+              388
+            ]
+          ],
+          "source_content_sha256": "8f50dc94f88393953484a68e63dfbf01c9d2faae9fa5c631f7bfff6a544543f2",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b1": "8f50dc94f88393953484a68e63dfbf01c9d2faae9fa5c631f7bfff6a544543f2"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    }
+  ]
+}

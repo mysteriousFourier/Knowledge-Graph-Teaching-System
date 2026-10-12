@@ -1,0 +1,285 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter22",
+  "count": 2,
+  "tables": [
+    {
+      "id": "22.1",
+      "label_format": "Table 22.1",
+      "title": "Table 22.1 Alternative interpretations of the expected mean squares for two-way analysis of variance of genotype × environment interaction under a random-effects vs. a mixed (genotypes random, environments fixed) model.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Factor</td><td rowspan=\"2\">Degrees of Freedom</td><td colspan=\"2\">Expected Mean Squares</td></tr><tr><td>Random Effects</td><td>Mixed Model</td></tr><tr><td>Environment</td><td>$ N_{E} - 1 $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{G}\\sigma_{E}^{2} $</td><td>$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $</td></tr><tr><td>Genetic</td><td>$ N_{G} - 1 $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{E}\\sigma_{G}^{2} $</td><td>$ \\sigma_{e}^{2} + nN_{E}\\sigma_{G}^{2} $</td></tr><tr><td>G × E</td><td>$ (N_{E} - 1)(N_{G} - 1) $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td><td>$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $</td></tr><tr><td>Error</td><td>$ N_{E}N_{G}(n - 1) $</td><td>$ \\sigma_{e}^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "Degrees of Freedom",
+          "Expected Mean Squares"
+        ],
+        [
+          "Random Effects",
+          "Mixed Model"
+        ],
+        [
+          "Environment",
+          "$ N_{E} - 1 $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{G}\\sigma_{E}^{2} $",
+          "$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $"
+        ],
+        [
+          "Genetic",
+          "$ N_{G} - 1 $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{E}\\sigma_{G}^{2} $",
+          "$ \\sigma_{e}^{2} + nN_{E}\\sigma_{G}^{2} $"
+        ],
+        [
+          "G × E",
+          "$ (N_{E} - 1)(N_{G} - 1) $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $",
+          "$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $"
+        ],
+        [
+          "Error",
+          "$ N_{E}N_{G}(n - 1) $",
+          "$ \\sigma_{e}^{2} $",
+          "$ \\sigma_{e}^{2} $"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 679,
+          "title": "Table 22.1 Alternative interpretations of the expected mean squares for two-way analysis of variance of genotype × environment interaction under a random-effects vs. a mixed (genotypes random, environments fixed) model.",
+          "html": "<table><tr><td rowspan=\"2\">Factor</td><td rowspan=\"2\">Degrees of Freedom</td><td colspan=\"2\">Expected Mean Squares</td></tr><tr><td>Random Effects</td><td>Mixed Model</td></tr><tr><td>Environment</td><td>$ N_{E} - 1 $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{G}\\sigma_{E}^{2} $</td><td>$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $</td></tr><tr><td>Genetic</td><td>$ N_{G} - 1 $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{E}\\sigma_{G}^{2} $</td><td>$ \\sigma_{e}^{2} + nN_{E}\\sigma_{G}^{2} $</td></tr><tr><td>G × E</td><td>$ (N_{E} - 1)(N_{G} - 1) $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td><td>$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $</td></tr><tr><td>Error</td><td>$ N_{E}N_{G}(n - 1) $</td><td>$ \\sigma_{e}^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "Degrees of Freedom",
+              "Expected Mean Squares"
+            ],
+            [
+              "Random Effects",
+              "Mixed Model"
+            ],
+            [
+              "Environment",
+              "$ N_{E} - 1 $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{G}\\sigma_{E}^{2} $",
+              "$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $"
+            ],
+            [
+              "Genetic",
+              "$ N_{G} - 1 $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} + nN_{E}\\sigma_{G}^{2} $",
+              "$ \\sigma_{e}^{2} + nN_{E}\\sigma_{G}^{2} $"
+            ],
+            [
+              "G × E",
+              "$ (N_{E} - 1)(N_{G} - 1) $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $",
+              "$ \\sigma_{e}^{2} + \\frac{nN_{E}}{(N_{E} - 1)}\\sigma_{I}^{2} $"
+            ],
+            [
+              "Error",
+              "$ N_{E}N_{G}(n - 1) $",
+              "$ \\sigma_{e}^{2} $",
+              "$ \\sigma_{e}^{2} $"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            55.0,
+            251.0,
+            1014.0,
+            823.0
+          ],
+          "caption_bbox": [
+            60.0,
+            150.0,
+            1019.0,
+            245.0
+          ],
+          "source_block_ids": [
+            "p679:b3"
+          ],
+          "caption_source_block_ids": [
+            "p679:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter22",
+        "unit_id": "Genetics_chapter22_004",
+        "page": 679,
+        "pages": [
+          679
+        ],
+        "bbox": [
+          55.0,
+          251.0,
+          1014.0,
+          823.0
+        ],
+        "caption_bbox": [
+          60.0,
+          150.0,
+          1019.0,
+          245.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "22.2",
+      "label_format": "Table 22.2",
+      "title": "Table 22.2 Partitioning of the interaction sum of squares by joint-regression analysis, under the random-effects model with a completely balanced design.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>Degrees of Freedom</td><td>Sums of Squares</td><td>Expected MS</td></tr><tr><td>Environment (E)</td><td>$ N_{E} - 1 $</td><td>$ nN_{G}\\sum_{i}(\\overline{z}_{i} - \\overline{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Genotype (G)</td><td>$ N_{G} - 1 $</td><td>$ nN_{E}\\sum_{j}(\\overline{z}_{j} - \\overline{z})^{2} $</td><td>$ +nN_{G}\\sigma_{E}^{2} $</td></tr><tr><td>Interaction (I)</td><td>$ (N_{E} - 1)(N_{G} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Regression (B)</td><td>$ N_{G} - 1 $</td><td>$ SS_{E} \\cdot \\sum_{i}B_{j}^{2}/N_{G} $</td><td>$ n(\\sigma_{I}^{2} - \\sigma_{\\epsilon}^{2}) $</td></tr><tr><td>Residual ( \\epsilon )</td><td>$ (N_{E} - 2)(N_{G} - 1) $</td><td>$ n\\sum_{i,j}\\epsilon_{ij}^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{\\epsilon}^{2} $</td></tr><tr><td>Error (e)</td><td>$ N_{E}N_{G}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td colspan=\"4\">Note: $ SS_{E} $ and $ E(MS_{I}) $ are, respectively, the error sum of squares and the expected inter-action mean square.</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "Degrees of Freedom",
+          "Sums of Squares",
+          "Expected MS"
+        ],
+        [
+          "Environment (E)",
+          "$ N_{E} - 1 $",
+          "$ nN_{G}\\sum_{i}(\\overline{z}_{i} - \\overline{z})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+        ],
+        [
+          "Genotype (G)",
+          "$ N_{G} - 1 $",
+          "$ nN_{E}\\sum_{j}(\\overline{z}_{j} - \\overline{z})^{2} $",
+          "$ +nN_{G}\\sigma_{E}^{2} $"
+        ],
+        [
+          "Interaction (I)",
+          "$ (N_{E} - 1)(N_{G} - 1) $",
+          "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z})^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+        ],
+        [
+          "Regression (B)",
+          "$ N_{G} - 1 $",
+          "$ SS_{E} \\cdot \\sum_{i}B_{j}^{2}/N_{G} $",
+          "$ n(\\sigma_{I}^{2} - \\sigma_{\\epsilon}^{2}) $"
+        ],
+        [
+          "Residual ( \\epsilon )",
+          "$ (N_{E} - 2)(N_{G} - 1) $",
+          "$ n\\sum_{i,j}\\epsilon_{ij}^{2} $",
+          "$ \\sigma_{e}^{2} + n\\sigma_{\\epsilon}^{2} $"
+        ],
+        [
+          "Error (e)",
+          "$ N_{E}N_{G}(n - 1) $",
+          "$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $",
+          "$ \\sigma_{e}^{2} $"
+        ],
+        [
+          "Note: $ SS_{E} $ and $ E(MS_{I}) $ are, respectively, the error sum of squares and the expected inter-action mean square."
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 689,
+          "title": "Table 22.2 Partitioning of the interaction sum of squares by joint-regression analysis, under the random-effects model with a completely balanced design.",
+          "html": "<table><tr><td>Factor</td><td>Degrees of Freedom</td><td>Sums of Squares</td><td>Expected MS</td></tr><tr><td>Environment (E)</td><td>$ N_{E} - 1 $</td><td>$ nN_{G}\\sum_{i}(\\overline{z}_{i} - \\overline{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Genotype (G)</td><td>$ N_{G} - 1 $</td><td>$ nN_{E}\\sum_{j}(\\overline{z}_{j} - \\overline{z})^{2} $</td><td>$ +nN_{G}\\sigma_{E}^{2} $</td></tr><tr><td>Interaction (I)</td><td>$ (N_{E} - 1)(N_{G} - 1) $</td><td>$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z})^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $</td></tr><tr><td>Regression (B)</td><td>$ N_{G} - 1 $</td><td>$ SS_{E} \\cdot \\sum_{i}B_{j}^{2}/N_{G} $</td><td>$ n(\\sigma_{I}^{2} - \\sigma_{\\epsilon}^{2}) $</td></tr><tr><td>Residual ( \\epsilon )</td><td>$ (N_{E} - 2)(N_{G} - 1) $</td><td>$ n\\sum_{i,j}\\epsilon_{ij}^{2} $</td><td>$ \\sigma_{e}^{2} + n\\sigma_{\\epsilon}^{2} $</td></tr><tr><td>Error (e)</td><td>$ N_{E}N_{G}(n - 1) $</td><td>$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td colspan=\"4\">Note: $ SS_{E} $ and $ E(MS_{I}) $ are, respectively, the error sum of squares and the expected inter-action mean square.</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "Degrees of Freedom",
+              "Sums of Squares",
+              "Expected MS"
+            ],
+            [
+              "Environment (E)",
+              "$ N_{E} - 1 $",
+              "$ nN_{G}\\sum_{i}(\\overline{z}_{i} - \\overline{z})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+            ],
+            [
+              "Genotype (G)",
+              "$ N_{G} - 1 $",
+              "$ nN_{E}\\sum_{j}(\\overline{z}_{j} - \\overline{z})^{2} $",
+              "$ +nN_{G}\\sigma_{E}^{2} $"
+            ],
+            [
+              "Interaction (I)",
+              "$ (N_{E} - 1)(N_{G} - 1) $",
+              "$ n\\sum_{i,j}(\\overline{z}_{ij} - \\overline{z}_{i} - \\overline{z}_{j} + \\overline{z})^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{I}^{2} $"
+            ],
+            [
+              "Regression (B)",
+              "$ N_{G} - 1 $",
+              "$ SS_{E} \\cdot \\sum_{i}B_{j}^{2}/N_{G} $",
+              "$ n(\\sigma_{I}^{2} - \\sigma_{\\epsilon}^{2}) $"
+            ],
+            [
+              "Residual ( \\epsilon )",
+              "$ (N_{E} - 2)(N_{G} - 1) $",
+              "$ n\\sum_{i,j}\\epsilon_{ij}^{2} $",
+              "$ \\sigma_{e}^{2} + n\\sigma_{\\epsilon}^{2} $"
+            ],
+            [
+              "Error (e)",
+              "$ N_{E}N_{G}(n - 1) $",
+              "$ \\sum_{i,j,k}(z_{ijk} - \\overline{z}_{ij})^{2} $",
+              "$ \\sigma_{e}^{2} $"
+            ],
+            [
+              "Note: $ SS_{E} $ and $ E(MS_{I}) $ are, respectively, the error sum of squares and the expected inter-action mean square."
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            63.0,
+            227.0,
+            1020.0,
+            911.0
+          ],
+          "caption_bbox": [
+            66.0,
+            155.0,
+            1024.0,
+            217.0
+          ],
+          "source_block_ids": [
+            "p689:b3"
+          ],
+          "caption_source_block_ids": [
+            "p689:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter22",
+        "unit_id": "Genetics_chapter22_007",
+        "page": 689,
+        "pages": [
+          689
+        ],
+        "bbox": [
+          63.0,
+          227.0,
+          1020.0,
+          911.0
+        ],
+        "caption_bbox": [
+          66.0,
+          155.0,
+          1024.0,
+          217.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1646 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter3",
+  "count": 18,
+  "figures": [
+    {
+      "id": "3.1",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.1]]",
+      "see_placeholder": "[[SEE_FIGURE:3.1]]",
+      "asset_path": "figures/PopGen_3.1.png",
+      "caption": "FIGURE 3.1 The gene frequencies and sampling that occur in the Wright-Fisher model. Initially there are N diploid adults with a gene whose frequency is  $ p_{0} $. The adults produce an infinite number of gametes having the same allele frequency. From this pool, 2N gametes are drawn at random to constitute the N diploid individuals for the next generation.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 2,
+      "raw_bbox": [
+        353.0,
+        970.0,
+        826.0,
+        1136.0
+      ],
+      "pdf_bbox": [
+        176.5,
+        484.73,
+        413.0,
+        567.69
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 2,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            367.0,
+            984.0,
+            812.0,
+            1122.0
+          ],
+          "block_id": 5,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 2,
+        "label": "figure_title",
+        "content": "FIGURE 3.1 The gene frequencies and sampling that occur in the Wright-Fisher model. Initially there are N diploid adults with a gene whose frequency is  $ p_{0} $. The adults produce an infinite number of gametes having the same allele frequency. From this pool, 2N gametes are drawn at random to constitute the N diploid individuals for the next generation.",
+        "bbox": [
+          234.0,
+          1134.0,
+          910.0,
+          1244.0
+        ],
+        "block_id": 6,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.1",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "source_pages": [
+          110
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p002:b5",
+          "PopGen_chapter3:p002:b6",
+          "PopGen_chapter3:p002:b4"
+        ],
+        "source_bboxes": [
+          [
+            353.0,
+            970.0,
+            826.0,
+            1136.0
+          ]
+        ],
+        "audit_evidence_sha256": "d9e404f98ae11b248bded1459144a8416f470088e1e0c94f8b5c060627b249be"
+      }
+    },
+    {
+      "id": "3.2",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.2]]",
+      "see_placeholder": "[[SEE_FIGURE:3.2]]",
+      "asset_path": "figures/PopGen_3.2.png",
+      "caption": "FIGURE 3.2 Computer simulations of the Wright-Fisher model of random genetic drift. Each line represents a population of size (A) 2N = 18 or (B) 2N = 100, simulated for 20 generations. In each generation, alleles are sampled from an infinite pool of gametes. An allele frequency of p = 0.5 in A implies that there are nine copies of the A allele, and nine copies of the a allele. In B, an allele frequency of 0.5 implies 50 copies of each allele. Note that the larger population size in B results in smaller fluctuations in allele frequency and a slower rate of fixation.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 4,
+      "raw_bbox": [
+        240.0,
+        165.0,
+        927.0,
+        1113.0
+      ],
+      "pdf_bbox": [
+        120.0,
+        82.45,
+        463.5,
+        556.2
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 4,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            257.0,
+            179.0,
+            908.0,
+            629.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        },
+        {
+          "page": 4,
+          "label": "figure_title",
+          "content": "(A)",
+          "bbox": [
+            230.0,
+            182.0,
+            257.0,
+            203.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        },
+        {
+          "page": 4,
+          "label": "figure_title",
+          "content": "(B)",
+          "bbox": [
+            235.0,
+            657.0,
+            258.0,
+            678.0
+          ],
+          "block_id": 4,
+          "block_order": null
+        },
+        {
+          "page": 4,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            254.0,
+            657.0,
+            913.0,
+            1099.0
+          ],
+          "block_id": 5,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 4,
+        "label": "figure_title",
+        "content": "FIGURE 3.2 Computer simulations of the Wright-Fisher model of random genetic drift. Each line represents a population of size (A) 2N = 18 or (B) 2N = 100, simulated for 20 generations. In each generation, alleles are sampled from an infinite pool of gametes. An allele frequency of p = 0.5 in A implies that there are nine copies of the A allele, and nine copies of the a allele. In B, an allele frequency of 0.5 implies 50 copies of each allele. Note that the larger population size in B results in smaller fluctuations in allele frequency and a slower rate of fixation.",
+        "bbox": [
+          233.0,
+          1115.0,
+          908.0,
+          1264.0
+        ],
+        "block_id": 6,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.2",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "source_pages": [
+          112
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p004:b3",
+          "PopGen_chapter3:p004:b2",
+          "PopGen_chapter3:p004:b1"
+        ],
+        "source_bboxes": [
+          [
+            240.0,
+            165.0,
+            927.0,
+            1113.0
+          ]
+        ],
+        "audit_evidence_sha256": "169feec133341b54427c98490299125e2d6bad98392e55d10c41196282bcdfa6"
+      }
+    },
+    {
+      "id": "3.3",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.3]]",
+      "see_placeholder": "[[SEE_FIGURE:3.3]]",
+      "asset_path": "figures/PopGen_3.3.png",
+      "caption": "FIGURE 3.3 The implications of random genetic drift can be appreciated by imagining a large collection of subpopulations undergoing the process of repeated sampling. As the top part of the figure indicates, the allele frequency in each subpopulation changes erratically, and the allele frequencies in different subpopulations tend to drift apart. At time intervals, a snapshot of the subpopulations would produce a distribution of allele frequencies, the variance of which increases over time.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 5,
+      "raw_bbox": [
+        147.0,
+        158.0,
+        754.0,
+        627.0
+      ],
+      "pdf_bbox": [
+        73.5,
+        78.96,
+        377.0,
+        313.33
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 5,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            161.0,
+            172.0,
+            740.0,
+            613.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 5,
+        "label": "figure_title",
+        "content": "FIGURE 3.3 The implications of random genetic drift can be appreciated by imagining a large collection of subpopulations undergoing the process of repeated sampling. As the top part of the figure indicates, the allele frequency in each subpopulation changes erratically, and the allele frequencies in different subpopulations tend to drift apart. At time intervals, a snapshot of the subpopulations would produce a distribution of allele frequencies, the variance of which increases over time.",
+        "bbox": [
+          103.0,
+          629.0,
+          779.0,
+          782.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.3",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "source_pages": [
+          113
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p005:b2",
+          "PopGen_chapter3:p005:b1"
+        ],
+        "source_bboxes": [
+          [
+            147.0,
+            158.0,
+            754.0,
+            627.0
+          ]
+        ],
+        "audit_evidence_sha256": "c18b78598ad44649e56c0e1cf37051a283e68bfad02c3aa9fb54e6e02175a2bb"
+      }
+    },
+    {
+      "id": "3.4",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.4]]",
+      "see_placeholder": "[[SEE_FIGURE:3.4]]",
+      "asset_path": "figures/PopGen_3.4.png",
+      "caption": "FIGURE 3.4 Random genetic drift in 107 actual populations of Drosophila melanogaster. Each of the initial 107 populations consisted of 16 bw75/bw heterozygotes (N = 16; bw = brown eyes). From among the progeny in each generation, eight males and eight females were chosen at random to be the parents of the next generation. The horizontal axis of each curve gives the number of bw75 alleles in the population, and the vertical axis gives the corresponding number of populations. (Data from Buri 1956.)",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 7,
+      "raw_bbox": [
+        107.0,
+        108.0,
+        717.0,
+        694.0
+      ],
+      "pdf_bbox": [
+        53.5,
+        53.97,
+        358.5,
+        346.81
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 7,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            121.0,
+            122.0,
+            703.0,
+            680.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 7,
+        "label": "figure_title",
+        "content": "FIGURE 3.4 Random genetic drift in 107 actual populations of Drosophila melanogaster. Each of the initial 107 populations consisted of 16 bw75/bw heterozygotes (N = 16; bw = brown eyes). From among the progeny in each generation, eight males and eight females were chosen at random to be the parents of the next generation. The horizontal axis of each curve gives the number of bw75 alleles in the population, and the vertical axis gives the corresponding number of populations. (Data from Buri 1956.)",
+        "bbox": [
+          107.0,
+          692.0,
+          781.0,
+          846.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.4",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "source_pages": [
+          115
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p007:b2",
+          "PopGen_chapter3:p007:b1"
+        ],
+        "source_bboxes": [
+          [
+            107.0,
+            108.0,
+            717.0,
+            694.0
+          ]
+        ],
+        "audit_evidence_sha256": "33511f7e9bc87da8599660aa24201f76507bc1fd2e227128e294fdd4f544f2dd"
+      }
+    },
+    {
+      "id": "3.5",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.5]]",
+      "see_placeholder": "[[SEE_FIGURE:3.5]]",
+      "asset_path": "figures/PopGen_3.5.png",
+      "caption": "FIGURE 3.5 Prediction of the Wright-Fisher model for the distribution of allele frequencies $\\phi(p, x; t)$ in subpopulations of size $N=16$, where $x$ represents the allele frequency in generation $t$. Time runs for $19$ generations, and all subpopulations start with an initial allele frequency of $p=0.5$. The values of $\\phi(p, x; t)$ were generated by successive multiplication of the Markov transition probability matrix, whose entries are given by the binomial distribution in Equation 3.2. The model with $2N=32$ predicts that fewer populations have fixed by generation $19$ than actually did go to fixation in the experiment in Figure 3.4. This is because the variance in offspring number is about $70\\%$ greater than that assumed in the Wright-Fisher model.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 9,
+      "raw_bbox": [
+        126.0,
+        161.0,
+        736.0,
+        741.0
+      ],
+      "pdf_bbox": [
+        63.0,
+        80.46,
+        368.0,
+        370.3
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 9,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            140.0,
+            175.0,
+            722.0,
+            727.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 9,
+        "label": "figure_title",
+        "content": "FIGURE 3.5 Prediction of the Wright-Fisher model for the distribution of allele frequencies $\\phi(p, x; t)$ in subpopulations of size $N=16$, where $x$ represents the allele frequency in generation $t$. Time runs for $19$ generations, and all subpopulations start with an initial allele frequency of $p=0.5$. The values of $\\phi(p, x; t)$ were generated by successive multiplication of the Markov transition probability matrix, whose entries are given by the binomial distribution in Equation 3.2. The model with $2N=32$ predicts that fewer populations have fixed by generation $19$ than actually did go to fixation in the experiment in Figure 3.4. This is because the variance in offspring number is about $70\\%$ greater than that assumed in the Wright-Fisher model.",
+        "bbox": [
+          94.0,
+          745.0,
+          772.0,
+          962.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.5",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+        ],
+        "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+        "source_pages": [
+          117
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p009:b2",
+          "PopGen_chapter3:p009:b1"
+        ],
+        "source_bboxes": [
+          [
+            126.0,
+            161.0,
+            736.0,
+            741.0
+          ]
+        ],
+        "audit_evidence_sha256": "189f9803aeb673628daf7c1e414a0741040066dcb63f102dc5399e634a45b366"
+      }
+    },
+    {
+      "id": "3.6",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.6]]",
+      "see_placeholder": "[[SEE_FIGURE:3.6]]",
+      "asset_path": "figures/PopGen_3.6.png",
+      "caption": "FIGURE 3.6 Theoretical results of random genetic drift. (A) Initial allele frequency = 0.5. (B) Initial allele frequency = 0.1. The curves have been scaled so that the area under each curve is equal to the proportion of populations in which fixation or loss has not yet occurred. The curves are therefore the distributions of allele frequencies among segregating populations. (From Kimura 1955.)",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 14,
+      "raw_bbox": [
+        246.0,
+        170.0,
+        934.0,
+        645.0
+      ],
+      "pdf_bbox": [
+        123.0,
+        84.95,
+        467.0,
+        322.32
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 14,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            607.0,
+            184.0,
+            920.0,
+            628.0
+          ],
+          "block_id": 5,
+          "block_order": null
+        },
+        {
+          "page": 14,
+          "label": "figure_title",
+          "content": "(B)",
+          "bbox": [
+            581.0,
+            186.0,
+            602.0,
+            206.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        },
+        {
+          "page": 14,
+          "label": "figure_title",
+          "content": "(A)",
+          "bbox": [
+            228.0,
+            189.0,
+            253.0,
+            209.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        },
+        {
+          "page": 14,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            260.0,
+            318.0,
+            559.0,
+            631.0
+          ],
+          "block_id": 4,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 14,
+        "label": "figure_title",
+        "content": "FIGURE 3.6 Theoretical results of random genetic drift. (A) Initial allele frequency = 0.5. (B) Initial allele frequency = 0.1. The curves have been scaled so that the area under each curve is equal to the proportion of populations in which fixation or loss has not yet occurred. The curves are therefore the distributions of allele frequencies among segregating populations. (From Kimura 1955.)",
+        "bbox": [
+          232.0,
+          652.0,
+          908.0,
+          787.0
+        ],
+        "block_id": 6,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.6",
+      "section": "3.3 THE DIFFUSION APPROXIMATION",
+      "subsection": "An Approach Looking Forward",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Forward"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "subsection": "An Approach Looking Forward",
+        "source_pages": [
+          122
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p014:b5",
+          "PopGen_chapter3:p014:b3",
+          "PopGen_chapter3:p014:b2",
+          "PopGen_chapter3:p014:b4",
+          "PopGen_chapter3:p014:b1"
+        ],
+        "source_bboxes": [
+          [
+            246.0,
+            170.0,
+            934.0,
+            645.0
+          ]
+        ],
+        "audit_evidence_sha256": "63153c6ac78c755c26d396bfb1430ab2039c4580d6c527fbcd93b39654731824"
+      }
+    },
+    {
+      "id": "3.7",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.7]]",
+      "see_placeholder": "[[SEE_FIGURE:3.7]]",
+      "asset_path": "figures/PopGen_3.7.png",
+      "caption": "FIGURE 3.7 Kimura's (1955) solution to the diffusion equation for the particular case of N = 16. This is the three-dimensional view of Figure 3.6, and represents the diffusion approximation to the exact solution obtained from the Wright-Fisher model in Figure 3.5.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 15,
+      "raw_bbox": [
+        129.0,
+        156.0,
+        740.0,
+        716.0
+      ],
+      "pdf_bbox": [
+        64.5,
+        77.96,
+        370.0,
+        357.8
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 15,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            143.0,
+            170.0,
+            726.0,
+            702.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 15,
+        "label": "figure_title",
+        "content": "FIGURE 3.7 Kimura's (1955) solution to the diffusion equation for the particular case of N = 16. This is the three-dimensional view of Figure 3.6, and represents the diffusion approximation to the exact solution obtained from the Wright-Fisher model in Figure 3.5.",
+        "bbox": [
+          94.0,
+          717.0,
+          772.0,
+          809.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.7",
+      "section": "3.3 THE DIFFUSION APPROXIMATION",
+      "subsection": "An Approach Looking Forward",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Forward"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "subsection": "An Approach Looking Forward",
+        "source_pages": [
+          123
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p015:b2",
+          "PopGen_chapter3:p015:b1"
+        ],
+        "source_bboxes": [
+          [
+            129.0,
+            156.0,
+            740.0,
+            716.0
+          ]
+        ],
+        "audit_evidence_sha256": "b1560fe267053feb3fc825ae0350f443cd815b5be5e6116d7ee2d5781b0353d4"
+      }
+    },
+    {
+      "id": "3.8",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.8]]",
+      "see_placeholder": "[[SEE_FIGURE:3.8]]",
+      "asset_path": "figures/PopGen_3.8.png",
+      "caption": "FIGURE 3.8 Average persistence of a neutral allele in an ideal diploid population of size N, plotted against initial allele frequency.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 19,
+      "raw_bbox": [
+        116.0,
+        148.0,
+        728.0,
+        594.0
+      ],
+      "pdf_bbox": [
+        58.0,
+        73.96,
+        364.0,
+        296.84
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 19,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            130.0,
+            162.0,
+            714.0,
+            580.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 19,
+        "label": "figure_title",
+        "content": "FIGURE 3.8 Average persistence of a neutral allele in an ideal diploid population of size N, plotted against initial allele frequency.",
+        "bbox": [
+          93.0,
+          596.0,
+          762.0,
+          645.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.8",
+      "section": "3.3 THE DIFFUSION APPROXIMATION",
+      "subsection": "Absorption Time and Time to Fixation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "Absorption Time and Time to Fixation"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "subsection": "Absorption Time and Time to Fixation",
+        "source_pages": [
+          127
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p019:b2",
+          "PopGen_chapter3:p019:b1"
+        ],
+        "source_bboxes": [
+          [
+            116.0,
+            148.0,
+            728.0,
+            594.0
+          ]
+        ],
+        "audit_evidence_sha256": "64d4686527c11250cd9e4c88ed5c0dadce7a2bc59ca415e181084bc3269bae8c"
+      }
+    },
+    {
+      "id": "3.9",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.9]]",
+      "see_placeholder": "[[SEE_FIGURE:3.9]]",
+      "asset_path": "figures/PopGen_3.9.png",
+      "caption": "FIGURE 3.9 Schematic showing a set of four subpopulations undergoing the process of random genetic drift. Initially the allele frequency is 0.5 in all four subpopulations, and the average heterozygosity is also 0.5. As the subpopulations drift in allele frequency, the average allele frequency is expected to remain the same (indicated by  $ \\bar{p} $ remaining at the value 0.5), but the average heterozygosity decreases. For the intermediate generation when t = 1.39N generations, the allele and genotype frequencies in each subpopulation are given, as well as the average allele frequency and heterozygosity across subpopulations. By this time the average heterozygosity is reduced to 50% of the value expected without population subdivision. Ultimately, all subpopulations go to fixation, half fix one allele and half fix the other, so the average allele frequency is still 0.5, whereas the heterozygosity is zero.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 20,
+      "raw_bbox": [
+        289.0,
+        320.0,
+        857.0,
+        989.0
+      ],
+      "pdf_bbox": [
+        144.5,
+        159.91,
+        428.5,
+        494.23
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 20,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            303.0,
+            334.0,
+            843.0,
+            975.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 20,
+        "label": "figure_title",
+        "content": "FIGURE 3.9 Schematic showing a set of four subpopulations undergoing the process of random genetic drift. Initially the allele frequency is 0.5 in all four subpopulations, and the average heterozygosity is also 0.5. As the subpopulations drift in allele frequency, the average allele frequency is expected to remain the same (indicated by  $ \\bar{p} $ remaining at the value 0.5), but the average heterozygosity decreases. For the intermediate generation when t = 1.39N generations, the allele and genotype frequencies in each subpopulation are given, as well as the average allele frequency and heterozygosity across subpopulations. By this time the average heterozygosity is reduced to 50% of the value expected without population subdivision. Ultimately, all subpopulations go to fixation, half fix one allele and half fix the other, so the average allele frequency is still 0.5, whereas the heterozygosity is zero.",
+        "bbox": [
+          238.0,
+          980.0,
+          918.0,
+          1240.0
+        ],
+        "block_id": 4,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.9",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          128
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p020:b3",
+          "PopGen_chapter3:p020:b4",
+          "PopGen_chapter3:p020:b2"
+        ],
+        "source_bboxes": [
+          [
+            289.0,
+            320.0,
+            857.0,
+            989.0
+          ]
+        ],
+        "audit_evidence_sha256": "dfe2a192bc51621c53332c56dfe234e704d740a001316505f7e5331eab4a4285"
+      }
+    },
+    {
+      "id": "3.10",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.10]]",
+      "see_placeholder": "[[SEE_FIGURE:3.10]]",
+      "asset_path": "figures/PopGen_3.10.png",
+      "caption": "FIGURE 3.10 Diagram illustrating the reasoning behind the recursion for $F$ in a finite population. When the gametes are drawn to make up the population at generation $t$, there is a chance $1/(2N)$ that any pair of alleles will have been identical in generation $t-1$. If this happens, the probability of identity is 1. For the allele pairs drawn in generation $t$ from two distinct alleles at generation $t-1$ [the probability of this happening is $1-1/(2N)],$ the probability of identity is $F_{t-1}$,$Adding$ the probabilities of these two events, we get $F_t=1/(2N)+[1-1/(2N)]F_{t-1}$.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 23,
+      "raw_bbox": [
+        204.0,
+        169.0,
+        672.0,
+        336.0
+      ],
+      "pdf_bbox": [
+        102.0,
+        84.45,
+        336.0,
+        167.91
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 23,
+          "label": "display_formula",
+          "content": "$$ \\begin{array}{ccc}t-1&\\bigcirc&\\bigcirc\\\\t&\\underbrace{\\bigcirc\\quad\\bigcirc}_{\\frac{1}{2N}}&\\underbrace{\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc}_{\\quad1-\\frac{1}{2N}}\\ $ F=1)&(\\quad)&(F=F_{t-1})\\end{array} $$",
+          "bbox": [
+            218.0,
+            183.0,
+            658.0,
+            322.0
+          ],
+          "block_id": 2,
+          "block_order": 1
+        }
+      ],
+      "caption_block": {
+        "page": 23,
+        "label": "figure_title",
+        "content": "FIGURE 3.10 Diagram illustrating the reasoning behind the recursion for $F$ in a finite population. When the gametes are drawn to make up the population at generation $t$, there is a chance $1/(2N)$ that any pair of alleles will have been identical in generation $t-1$. If this happens, the probability of identity is 1. For the allele pairs drawn in generation $t$ from two distinct alleles at generation $t-1$ [the probability of this happening is $1-1/(2N)],$ the probability of identity is $F_{t-1}$,$Adding$ the probabilities of these two events, we get $F_t=1/(2N)+[1-1/(2N)]F_{t-1}$.",
+        "bbox": [
+          99.0,
+          337.0,
+          782.0,
+          510.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.10",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b2"
+        ],
+        "source_bboxes": [
+          [
+            204.0,
+            169.0,
+            672.0,
+            336.0
+          ]
+        ],
+        "audit_evidence_sha256": "02d6dfbea2b4314b5d0f09241e01312f02196ce0da52ac1852d1400b13973bd7"
+      }
+    },
+    {
+      "id": "3.11",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.11]]",
+      "see_placeholder": "[[SEE_FIGURE:3.11]]",
+      "asset_path": "figures/PopGen_3.11.png",
+      "caption": "FIGURE 3.11 Increase of  $ F_{t} $ in ideal populations as a function of time and effective population size N.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 24,
+      "raw_bbox": [
+        273.0,
+        166.0,
+        887.0,
+        683.0
+      ],
+      "pdf_bbox": [
+        136.5,
+        82.95,
+        443.5,
+        341.31
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 24,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            287.0,
+            180.0,
+            873.0,
+            669.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 24,
+        "label": "figure_title",
+        "content": "FIGURE 3.11 Increase of  $ F_{t} $ in ideal populations as a function of time and effective population size N.",
+        "bbox": [
+          238.0,
+          686.0,
+          880.0,
+          733.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.11",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          132
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p024:b2",
+          "PopGen_chapter3:p024:b1"
+        ],
+        "source_bboxes": [
+          [
+            273.0,
+            166.0,
+            887.0,
+            683.0
+          ]
+        ],
+        "audit_evidence_sha256": "1416963c622c357bc0b2bce4cbfacfc66bbbe01fe2684355993da3e3cffee89f"
+      }
+    },
+    {
+      "id": "3.12",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.12]]",
+      "see_placeholder": "[[SEE_FIGURE:3.12]]",
+      "asset_path": "figures/PopGen_3.12.png",
+      "caption": "FIGURE 3.12 Theoretical curves for average heterozygosity among subpopulations (A) with N = 9 or N = 16, along with actual values (plotted as points) from the experiment in Figure 3.4. Part (B) shows the theoretically expected average allele frequency among the 107 subpopulations and the observed average. (Data from Buri 1956.)",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 25,
+      "raw_bbox": [
+        127.0,
+        169.0,
+        710.0,
+        543.0
+      ],
+      "pdf_bbox": [
+        63.5,
+        84.45,
+        355.0,
+        271.35
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 25,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            141.0,
+            183.0,
+            696.0,
+            529.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        },
+        {
+          "page": 25,
+          "label": "figure_title",
+          "content": "(A)",
+          "bbox": [
+            112.0,
+            184.0,
+            139.0,
+            205.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        },
+        {
+          "page": 25,
+          "label": "figure_title",
+          "content": "(B)",
+          "bbox": [
+            229.0,
+            563.0,
+            253.0,
+            585.0
+          ],
+          "block_id": 4,
+          "block_order": null
+        },
+        {
+          "page": 25,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            252.0,
+            562.0,
+            597.0,
+            849.0
+          ],
+          "block_id": 5,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 25,
+        "label": "figure_title",
+        "content": "FIGURE 3.12 Theoretical curves for average heterozygosity among subpopulations (A) with N = 9 or N = 16, along with actual values (plotted as points) from the experiment in Figure 3.4. Part (B) shows the theoretically expected average allele frequency among the 107 subpopulations and the observed average. (Data from Buri 1956.)",
+        "bbox": [
+          635.0,
+          594.0,
+          902.0,
+          852.0
+        ],
+        "block_id": 6,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.12",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          133
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p025:b3",
+          "PopGen_chapter3:p025:b2",
+          "PopGen_chapter3:p025:b4",
+          "PopGen_chapter3:p025:b5",
+          "PopGen_chapter3:p025:b1"
+        ],
+        "source_bboxes": [
+          [
+            127.0,
+            169.0,
+            710.0,
+            543.0
+          ]
+        ],
+        "audit_evidence_sha256": "5df9001936f3a3e6cbf7a42a85dd47372e153e974ad52f291d25adc89684e7ee"
+      }
+    },
+    {
+      "id": "3.13",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.13]]",
+      "see_placeholder": "[[SEE_FIGURE:3.13]]",
+      "asset_path": "figures/PopGen_3.13.png",
+      "caption": "FIGURE 3.13 Effective size falls off rapidly in populations with a skewed sex ratio.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 30,
+      "raw_bbox": [
+        263.0,
+        160.0,
+        886.0,
+        591.0
+      ],
+      "pdf_bbox": [
+        131.5,
+        79.96,
+        443.0,
+        295.34
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 30,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            277.0,
+            174.0,
+            872.0,
+            577.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 30,
+        "label": "figure_title",
+        "content": "FIGURE 3.13 Effective size falls off rapidly in populations with a skewed sex ratio.",
+        "bbox": [
+          236.0,
+          602.0,
+          887.0,
+          649.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.13",
+      "section": "3.5 EFFECTIVE POPULATION SIZE",
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          138
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p030:b2",
+          "PopGen_chapter3:p030:b1"
+        ],
+        "source_bboxes": [
+          [
+            263.0,
+            160.0,
+            886.0,
+            591.0
+          ]
+        ],
+        "audit_evidence_sha256": "4e9c3dc1e7cd0f63f191fb5e9e2c31dfd6710f07c438b275fa3078f5981b9dfd"
+      }
+    },
+    {
+      "id": "3.14",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.14]]",
+      "see_placeholder": "[[SEE_FIGURE:3.14]]",
+      "asset_path": "figures/PopGen_3.14.png",
+      "caption": "FIGURE 3.14 Diagram showing paths of ancestry of a set of alleles sampled in the present generation. The population is represented as having a constant size. The alleles in the original population are represented at the top. As generations progress forward in time (downward in the diagram), many alleles leave no descendants and therefore go extinct. Eventually one allele goes to fixation. Considering this process in reverse (bottom to top in the diagram), the sample observed in the present generation undergoes a series of coalescent events in which the k alleles present in the present generation had only k - 1 ancestral alleles. The coalescences continue backward in time until there is only one ancestral allele. The filled circles represent alleles present in previous generations that have left no descendant alleles in the present generation.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 35,
+      "raw_bbox": [
+        176.0,
+        166.0,
+        649.0,
+        559.0
+      ],
+      "pdf_bbox": [
+        88.0,
+        82.95,
+        324.5,
+        279.35
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 35,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            190.0,
+            180.0,
+            635.0,
+            545.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 35,
+        "label": "figure_title",
+        "content": "FIGURE 3.14 Diagram showing paths of ancestry of a set of alleles sampled in the present generation. The population is represented as having a constant size. The alleles in the original population are represented at the top. As generations progress forward in time (downward in the diagram), many alleles leave no descendants and therefore go extinct. Eventually one allele goes to fixation. Considering this process in reverse (bottom to top in the diagram), the sample observed in the present generation undergoes a series of coalescent events in which the k alleles present in the present generation had only k - 1 ancestral alleles. The coalescences continue backward in time until there is only one ancestral allele. The filled circles represent alleles present in previous generations that have left no descendant alleles in the present generation.",
+        "bbox": [
+          110.0,
+          563.0,
+          787.0,
+          799.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.14",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          143
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p035:b2",
+          "PopGen_chapter3:p035:b1"
+        ],
+        "source_bboxes": [
+          [
+            176.0,
+            166.0,
+            649.0,
+            559.0
+          ]
+        ],
+        "audit_evidence_sha256": "3c39a6f7cd0e5b50bb1ecb97c56108f5393fbb7af43325782c377ae3c982b1fc"
+      }
+    },
+    {
+      "id": "3.15",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.15]]",
+      "see_placeholder": "[[SEE_FIGURE:3.15]]",
+      "asset_path": "figures/PopGen_3.15.png",
+      "caption": "FIGURE 3.15 Two completely equivalent ways of illustrating the coalescences in a gene tree. On the left, the coalescent events are represented as horizontal lines, on the left they are represented as nodes. In any each generation, if there are k alleles present, the expected time back to the next coalescence is given by  $ 4N/[k(1-k)] $. For example, starting with five alleles, the expected time back to the first coalescence is  $ 4N/[5(4)] = 2N/10 $. Note that the successive times get longer. When there are only two alleles, the time back to the final coalescence is 2N generations.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 38,
+      "raw_bbox": [
+        452.0,
+        168.0,
+        923.0,
+        696.0
+      ],
+      "pdf_bbox": [
+        226.0,
+        83.95,
+        461.5,
+        347.81
+      ],
+      "bbox_source": "nearest vertically overlapping figure body block",
+      "body_blocks": [
+        {
+          "page": 38,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            466.0,
+            182.0,
+            909.0,
+            682.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 38,
+        "label": "text",
+        "content": "FIGURE 3.15 Two completely equivalent ways of illustrating the coalescences in a gene tree. On the left, the coalescent events are represented as horizontal lines, on the left they are represented as nodes. In any each generation, if there are k alleles present, the expected time back to the next coalescence is given by  $ 4N/[k(1-k)] $. For example, starting with five alleles, the expected time back to the first coalescence is  $ 4N/[5(4)] = 2N/10 $. Note that the successive times get longer. When there are only two alleles, the time back to the final coalescence is 2N generations.",
+        "bbox": [
+          103.0,
+          184.0,
+          389.0,
+          594.0
+        ],
+        "block_id": 2,
+        "block_order": 1
+      },
+      "confidence": 0.92,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.15",
+      "section": "RANDOM GENETIC DRIFT: Introduction",
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          146
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p038:b3",
+          "PopGen_chapter3:p038:b2",
+          "PopGen_chapter3:p038:b1"
+        ],
+        "source_bboxes": [
+          [
+            452.0,
+            168.0,
+            923.0,
+            696.0
+          ]
+        ],
+        "audit_evidence_sha256": "0ef72ad8f0de8125168e66ef530d9cebbec3f8699a2972ecb7d8f9f1b227b077"
+      }
+    },
+    {
+      "id": "3.16",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.16]]",
+      "see_placeholder": "[[SEE_FIGURE:3.16]]",
+      "asset_path": "figures/PopGen_3.16.png",
+      "caption": "FIGURE 3.16 Random coalescent trees tend to have long branches near the root. In this graph,  $ P(\\leq 3) $ represents the proportion of random coalescent trees that have three or fewer coalescent events between the root and the midpoint of the tree, as a function of the sample size. Even for rather large samples, more than 95% of the random trees have  $ P(\\leq 3) $. This pattern contrasts with coalescent trees in populations that are growing, in which the number of coalescent events near the root tends to be greater. (Based on simulation results of Pybus et al. 1999.)",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 41,
+      "raw_bbox": [
+        207.0,
+        696.0,
+        673.0,
+        1071.0
+      ],
+      "pdf_bbox": [
+        103.5,
+        347.81,
+        336.5,
+        535.21
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 41,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            221.0,
+            710.0,
+            659.0,
+            1057.0
+          ],
+          "block_id": 4,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 41,
+        "label": "figure_title",
+        "content": "FIGURE 3.16 Random coalescent trees tend to have long branches near the root. In this graph,  $ P(\\leq 3) $ represents the proportion of random coalescent trees that have three or fewer coalescent events between the root and the midpoint of the tree, as a function of the sample size. Even for rather large samples, more than 95% of the random trees have  $ P(\\leq 3) $. This pattern contrasts with coalescent trees in populations that are growing, in which the number of coalescent events near the root tends to be greater. (Based on simulation results of Pybus et al. 1999.)",
+        "bbox": [
+          93.0,
+          1074.0,
+          774.0,
+          1246.0
+        ],
+        "block_id": 5,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.16",
+      "section": "3.6 GENE TREES AND COALESCENCE",
+      "subsection": "Coalescence with Population Growth",
+      "heading_path": [
+        "3.6 GENE TREES AND COALESCENCE",
+        "Coalescence with Population Growth"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.6 GENE TREES AND COALESCENCE",
+          "Coalescence with Population Growth"
+        ],
+        "subsection": "Coalescence with Population Growth",
+        "source_pages": [
+          149
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p041:b4",
+          "PopGen_chapter3:p041:b5",
+          "PopGen_chapter3:p041:b3"
+        ],
+        "source_bboxes": [
+          [
+            207.0,
+            696.0,
+            673.0,
+            1071.0
+          ]
+        ],
+        "audit_evidence_sha256": "acf9bb1ca07418a27b448f0929d232caee5e2bb22eb2cd3baa3bb1636066c519"
+      }
+    },
+    {
+      "id": "3.17",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.17]]",
+      "see_placeholder": "[[SEE_FIGURE:3.17]]",
+      "asset_path": "figures/PopGen_3.17.png",
+      "caption": "FIGURE 3.17 Coalescence and recombination of single nucleotide polymorphisms (A, a) and (B, b) in samples of size 4. (A) Coalescent tree with regard to A and a, where the asterisk marks the branch with a mutation of a to A. The horizontal tick marks represent an inferred recombination event. (B) Coalescent tree with regard to B and b, where the double asterisk marks the branch with a mutation of B to b. The horizontal tick marks again represent an inferred recombination event. Tree (A) is incompatible with tree (B), but a consistent tree (C) results from an ancestral recombination graph in which a coalescence can depict a recombination event. In this case, the arrow points to the coalescence where the recombination took place, and the recombinant chromosomes recreate their ancestral parental types.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 47,
+      "raw_bbox": [
+        100.0,
+        163.0,
+        930.0,
+        436.0
+      ],
+      "pdf_bbox": [
+        50.0,
+        81.46,
+        465.0,
+        217.88
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 47,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            114.0,
+            177.0,
+            916.0,
+            422.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 47,
+        "label": "figure_title",
+        "content": "FIGURE 3.17 Coalescence and recombination of single nucleotide polymorphisms (A, a) and (B, b) in samples of size 4. (A) Coalescent tree with regard to A and a, where the asterisk marks the branch with a mutation of a to A. The horizontal tick marks represent an inferred recombination event. (B) Coalescent tree with regard to B and b, where the double asterisk marks the branch with a mutation of B to b. The horizontal tick marks again represent an inferred recombination event. Tree (A) is incompatible with tree (B), but a consistent tree (C) results from an ancestral recombination graph in which a coalescence can depict a recombination event. In this case, the arrow points to the coalescence where the recombination took place, and the recombinant chromosomes recreate their ancestral parental types.",
+        "bbox": [
+          109.0,
+          434.0,
+          793.0,
+          672.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.17",
+      "section": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "subsection": "Coalescent Models with Recombination",
+      "heading_path": [
+        "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "Coalescent Models with Recombination"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+          "Coalescent Models with Recombination"
+        ],
+        "subsection": "Coalescent Models with Recombination",
+        "source_pages": [
+          155
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p047:b2",
+          "PopGen_chapter3:p047:b1"
+        ],
+        "source_bboxes": [
+          [
+            100.0,
+            163.0,
+            930.0,
+            436.0
+          ]
+        ],
+        "audit_evidence_sha256": "2009c580ab76a33be9229aeb7a87cd0ce710e35dce731794ed0775408f0e045a"
+      }
+    },
+    {
+      "id": "3.18",
+      "chapter": "PopGen_chapter3",
+      "placeholder": "[[FIGURE:3.18]]",
+      "see_placeholder": "[[SEE_FIGURE:3.18]]",
+      "asset_path": "figures/PopGen_3.18.png",
+      "caption": "FIGURE 3.18 Linkage disequilibrium ( $ r^{2} $) expected at steady state in the infinite-sites model as a function of the effective population size and the frequency of recombination. The scale in nucleotides across the top is approximate for the average across the human genome, but local recombination rates in the human genome are highly variable.",
+      "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+      "page": 50,
+      "raw_bbox": [
+        272.0,
+        172.0,
+        838.0,
+        625.0
+      ],
+      "pdf_bbox": [
+        136.0,
+        85.95,
+        419.0,
+        312.33
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 50,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            286.0,
+            186.0,
+            824.0,
+            611.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 50,
+        "label": "figure_title",
+        "content": "FIGURE 3.18 Linkage disequilibrium ( $ r^{2} $) expected at steady state in the infinite-sites model as a function of the effective population size and the frequency of recombination. The scale in nucleotides across the top is approximate for the average across the human genome, but local recombination rates in the human genome are highly variable.",
+        "bbox": [
+          226.0,
+          635.0,
+          903.0,
+          748.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter3:3.18",
+      "section": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "subsection": "Linkage Disequilibrium Mapping",
+      "heading_path": [
+        "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "Linkage Disequilibrium Mapping"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+          "Linkage Disequilibrium Mapping"
+        ],
+        "subsection": "Linkage Disequilibrium Mapping",
+        "source_pages": [
+          158
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p050:b2",
+          "PopGen_chapter3:p050:b1"
+        ],
+        "source_bboxes": [
+          [
+            272.0,
+            172.0,
+            838.0,
+            625.0
+          ]
+        ],
+        "audit_evidence_sha256": "6e56e2eab3bba5e39ee1652b603f607ae99879ec9ada09de8d361e1d2b151460"
+      }
+    }
+  ]
+}

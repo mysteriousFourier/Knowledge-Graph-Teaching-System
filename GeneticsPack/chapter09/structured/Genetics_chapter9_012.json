@@ -1,0 +1,147 @@
+{
+  "id": "Genetics_chapter9_012",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+    "subsections": [
+      "Extension to Haploids"
+    ],
+    "section_level_1": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+    "section_level_2": "Extension to Haploids",
+    "heading_path": [
+      "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+      "Extension to Haploids"
+    ],
+    "display_heading": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER / Extension to Haploids",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 257,
+      "printed_page": 237,
+      "source_block_ids": [
+        "p257:b13"
+      ],
+      "bbox": [
+        37.0,
+        1385.0,
+        320.0,
+        1422.0
+      ],
+      "raw_text": "Extension to Haploids"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The Castle-Wright model can be extended to the estimation of gene number in haploid organisms without great difficulty (Chovnick and Fox 1953). Since most",
+      "source_page": 257,
+      "printed_page": 237,
+      "source_block_ids": [
+        "p257:b14"
+      ],
+      "bbox": [
+        36.0,
+        1425.0,
+        999.0,
+        1510.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.7]]",
+      "source_page": 258,
+      "printed_page": 238,
+      "source_block_ids": [
+        "p258:b3"
+      ],
+      "bbox": [
+        139.0,
+        202.0,
+        1096.0,
+        518.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "haploids can be maintained clonally, we assume that the environment is the sole source of variation within the parental lines. The expected means and variances of the derived generations are laid out in Table 9.7. Note that the $ F_{1} $ generation exhibits the same segregational variance as the $ F_{2} $ due to the complete segregation of parental genes following fertilization and the production of haploid progeny. This segregational variance is",
+      "source_page": 258,
+      "printed_page": 238,
+      "source_block_ids": [
+        "p258:b5"
+      ],
+      "bbox": [
+        145.0,
+        655.0,
+        1109.0,
+        864.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula083]]",
+      "source_page": 258,
+      "printed_page": 238,
+      "source_block_ids": [
+        "p258:b6"
+      ],
+      "bbox": [
+        291.0,
+        900.0,
+        971.0,
+        984.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "which is twice the expectation in the case of diploidy. Thus, the estimation equation for $ n_{e} $ with haploid organisms is the same as in the case of diploidy except that $ 4\\mathrm{Var}(S) $, rather than $ 8\\mathrm{Var}(S) $, appears in the denominator of Equations 9.23 and 9.24. The equation for the sampling variance for $ \\widehat{n}_{e} $ needs to be multiplied by four, but the estimators for gene number, Equations 9.27 and 9.29, still apply provided the segregational variance is estimated in the $ F_{1} $ generation.",
+      "source_page": 258,
+      "printed_page": 238,
+      "source_block_ids": [
+        "p258:b7"
+      ],
+      "bbox": [
+        151.0,
+        1015.0,
+        1118.0,
+        1219.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A very similar strategy can be employed with doubled-haploid lines. Such lines, which can be produced by a variety of cytological techniques (Kermicle 1969, Nitzsche and Wenzel 1977, Choo 1981), are homozygous at all loci. If two such parental lines are crossed to produce an $ F_{1} $ generation, and a random sample of $ F_{1} $ gametes is used to produce a new series of doubled haploids, the effective number of factors differentiating any two lines can be obtained by computing the segregational variance as half the difference between the $ F_{1} $ doubled-haploid variance and the average variance in the $ P_{1} $ and $ P_{2} $, and employing Equation 9.24 (Choo and Reinbergs 1982). (The segregational variance is inflated twofold by the enforcement of homozygosity at each locus in doubled haploids.) The most reasonable estimate of $ n_{e} $ obtained with this approach utilizes parental lines with the highest and lowest mean phenotypes in a random sample from the population. However, with even a moderate number of segregating loci, the probability of obtaining the two most extreme lines possible is low unless the number of lines assayed is very large. Choo and Reinbergs (1982) used this technique to show that at least eight segregating factors contribute to the variation in grain yield, heading date, and plant height in barley. For additional biometrical approaches to gene number estimation in doubled haploids, see Snape et al. (1984).",
+      "source_page": 258,
+      "printed_page": 238,
+      "source_block_ids": [
+        "p258:b8",
+        "p259:b2"
+      ],
+      "bbox": [
+        156.0,
+        1206.0,
+        1124.0,
+        1509.0
+      ],
+      "source_page_end": 259
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter9:7]]",
+      "source_page": 259,
+      "source_block_ids": [
+        "p259:b3",
+        "p259:b4"
+      ],
+      "bbox": [
+        89.0,
+        513.0,
+        967.0,
+        1108.0
+      ]
+    }
+  ]
+}

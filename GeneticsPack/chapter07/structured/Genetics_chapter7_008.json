@@ -1,0 +1,237 @@
+{
+  "id": "Genetics_chapter7_008",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+    "subsections": [
+      "Linkage"
+    ],
+    "section_level_1": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+    "section_level_2": "Linkage",
+    "heading_path": [
+      "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+      "Linkage"
+    ],
+    "display_heading": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM / Linkage",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b5"
+      ],
+      "bbox": [
+        148.0,
+        759.0,
+        257.0,
+        791.0
+      ],
+      "raw_text": "Linkage"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Under the assumption of gametic phase equilibrium, linkage influences only the epistatic components of genetic covariance, which depend upon the multilocus gene combinations inherited through gametes. Recall that in Equation 7.12, each component of epistatic variance is weighted by a coefficient of the form $ (2\\Theta_{xy})^{n}\\Delta_{xy}^{m} $. The term $ \\Theta_{xy}^{n} $ is the probability that randomly drawn pairs of genes (one from x and one from y) will be simultaneously identical by descent at n loci, the $ 2^{n} $ coming in because of diploidy. Similarly, $ \\Delta_{xy}^{m} $ is the probability that the genotypes of x and y are simultaneously identical by descent at m loci. These definitions of the joint probability of events at multiple loci as the products of probabilities at individual loci assume that identity by descent is distributed independently among loci. However, for linked loci, identity by descent is expected to be positively correlated since the genes at such loci tend to be inherited together. Thus, for linked loci, we can anticipate that the multilocus coefficients $ (2\\Theta_{xy})^{n}\\Delta_{xy}^{m} $ must be too low, to a degree depending on the recombination frequency.",
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b6"
+      ],
+      "bbox": [
+        148.0,
+        799.0,
+        1108.0,
+        1248.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A general solution to this problem requires the use of digenic descent coefficients, which define the probability that two nonalleles (genes from different loci) are copies of genes that were originally contained in the same gamete. Such a condition is known as equivalence by descent. The formal theory of digenic descent, developed in great detail by Cockerham and Weir (1968, 1973, 1977a) and Weir and Cockerham (1968, 1969, 1973, 1974, 1977), is algebraically and notationally complex. We will rely upon an approach that is less general but more transparent (Schnell 1961, 1963, Van Aarde 1975). There is no easy entry into this field, but for the adventuresome we suggest the reviews of Weir and Cockerham (1977, 1989) as a starting point.",
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b7",
+        "p163:b2"
+      ],
+      "bbox": [
+        149.0,
+        1249.0,
+        1111.0,
+        1537.0
+      ],
+      "source_page_end": 163
+    },
+    {
+      "type": "discussion",
+      "content": "For our purposes, it will suffice to examine an arbitrary pair of loci, $A$ and $B$. Consider an individual whose two-locus genotype resulted from the fusion of $A_m B_m$ and $A_f B_f$ gametes ($m$ for mother, $f$ for father). If the recombination fraction for the two loci is $c$, then this individual will produce gametes in frequencies: $p(A_m B_m) = p(A_f B_f) = (1 - c)/2$ and $p(A_m B_f) = p(A_f B_m) = c/2$. Two gametes randomly drawn from this individual can have four possible identity-by-descent relationships. Identity exists at both loci with probability $p(A, B) = p^2(A_m B_m) + p^2(A_f B_f) + p^2(A_m B_f) + p^2(A_f B_m)$, at neither locus with probability $p(0, 0) = 2p(A_m B_m)p(A_f B_f) + 2p(A_m B_f)p(A_f B_m)$, at only the $A$ locus with probability $p(A, 0) = 2p(A_m B_m)p(A_f B_f) + 2p(A_f B_m)p(A_f B_f)$, and at only the $B$ locus with probability $p(0, B) = 2p(A_f B_f)p(A_m B_f) + 2p(A_f B_m)p(A_m B_m)$. Letting $\\lambda = (1 - 2c)^2$, these gametic-identity probabilities simplify to",
+      "source_page": 163,
+      "printed_page": 143,
+      "source_block_ids": [
+        "p163:b3"
+      ],
+      "bbox": [
+        58.0,
+        166.0,
+        1017.0,
+        555.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula017]]",
+      "source_page": 163,
+      "printed_page": 143,
+      "source_block_ids": [
+        "p163:b4"
+      ],
+      "bbox": [
+        373.0,
+        577.0,
+        686.0,
+        642.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula018]]",
+      "source_page": 163,
+      "printed_page": 143,
+      "source_block_ids": [
+        "p163:b6"
+      ],
+      "bbox": [
+        379.0,
+        651.0,
+        693.0,
+        716.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "all of which reduce to 1/4 with free recombination (c = 0.5).",
+      "source_page": 163,
+      "printed_page": 143,
+      "source_block_ids": [
+        "p163:b8"
+      ],
+      "bbox": [
+        54.0,
+        734.0,
+        768.0,
+        770.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As a specific application of gametic identity probabilities, we will consider the case of full sibs, first evaluating the covariance caused by additive × additive epistasis. As noted previously, for each pair of loci, the genotypic value of each sib contains four ( $ \\alpha\\alpha $) terms, so there are 16 combinations of these terms between individuals. For each of the 16 combinations, the quantity of interest is the joint probability that randomly drawn A genes (one from each sib) are identical by descent and that randomly drawn B genes (one from each sib) are identical by descent. We first draw a random A gene from the two sibs. As noted earlier, these are identical by descent with probability 1/4. Given that identity by descent was obtained at the A locus, we now draw the B genes (again, one from each sib). These genes may be identical by descent through two routes — they may both derive from the parent from which the A genes were drawn (with probability 1/4) or both from the opposite parent (with probability 1/4). If they come from the same parent as the A gene, the B genes will be identical by descent with conditional probability $ p(A, B)/[p(A, B) + p(A, 0)] = (1 + \\lambda)/2 $. If they come from the opposite parent, they are identical by descent with probability 1/2. Summing up, the probability of digenic identity by descent for two full sibs is $ 1/4 \\cdot 1/4 \\cdot [(1 + \\lambda)/2 + 1/2] = (2 + \\lambda)/32 $. Given such identity, the contribution to the genetic covariance is $ E[(\\alpha\\alpha)^2] $, which is equivalent to one-fourth of the additive × additive genetic variance. Thus, after taking account of all 16 pairs of additive × additive effects, the covariance between full sibs resulting from additive × additive epistasis is $ 16 \\cdot [(2 + \\lambda)/32] \\cdot [\\sigma_{AA}^2/4] = (2 + \\lambda)\\sigma_{AA}^2/8 $. With free recombination ( $ \\lambda = 0 $), this reduces to $ \\sigma_{AA}^2/4 $, our previous result (Table 7.2). Linkage ( $ \\lambda > 0 $) causes the additive × additive genetic variance to be inflated.",
+      "source_page": 163,
+      "printed_page": 143,
+      "source_block_ids": [
+        "p163:b9"
+      ],
+      "bbox": [
+        46.0,
+        769.0,
+        1012.0,
+        1540.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:7.3]]",
+      "source_page": 164,
+      "printed_page": 144,
+      "source_block_ids": [
+        "p164:b3"
+      ],
+      "bbox": [
+        146.0,
+        245.0,
+        1105.0,
+        779.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We next consider the additive × dominance covariance between full sibs. Again, from Equation 7.10, for any pair of loci, there are 16 combinations of (αδ) terms in the two sibs. If the two individuals possess an additive × dominance effect that is identical by descent, the contribution to the genetic covariance will be σ²_AD/4. To evaluate the probability of such an event, we need to determine the joint probability of drawing single genes that are identical by descent at one locus and genotypes that are identical by descent at the second locus. Such identity is only possible in the eight comparisons for which the additive effects involve the same locus in x and y. As usual with full sibs, the probability of drawing two genes (one from each sib) that are identical by descent is 1/4. Also as noted above, given that the genes drawn at one locus are identical by descent, the genes for the second locus that descended from gametes from the same parent are identical by descent with probability (1 + λ)/2. The other pair of genes at the second locus are identical by descent with probability 1/2. Summing up, the additive × dominance covariance becomes 8 · (1/4) · [(1 + λ)/2] · (1/2) · (σ²_AD/4) = (1 + λ)σ²_AD/8, which reduces to σ²_AD/8 with free recombination.",
+      "source_page": 164,
+      "printed_page": 144,
+      "source_block_ids": [
+        "p164:b5"
+      ],
+      "bbox": [
+        149.0,
+        936.0,
+        1111.0,
+        1449.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Finally, we note that covariance between the single ( $ \\delta\\delta $) term for a pair of loci requires that both sibs inherit maternal gametes that are identical by descent at",
+      "source_page": 164,
+      "printed_page": 144,
+      "source_block_ids": [
+        "p164:b6"
+      ],
+      "bbox": [
+        155.0,
+        1446.0,
+        1114.0,
+        1516.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:7.6]]",
+      "source_page": 165,
+      "printed_page": 145,
+      "source_block_ids": [
+        "p165:b3"
+      ],
+      "bbox": [
+        103.0,
+        778.0,
+        966.0,
+        839.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "both loci, and similarly for the paternal gametes. Each of these events occurs with probability $ p(A, B) $. Therefore, the dominance $ \\times $ dominance covariance between full sibs is $ p^2(A, B)\\sigma_{DD}^2 = (1 + \\lambda)^2\\sigma_{DD}^2/16 $.",
+      "source_page": 165,
+      "printed_page": 145,
+      "source_block_ids": [
+        "p165:b4"
+      ],
+      "bbox": [
+        54.0,
+        926.0,
+        1013.0,
+        1022.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The coefficients for full sibs and for other common relationships are summarized in Table 7.3. The main conclusion to be drawn from these results is that except for parent-offspring and monozygotic twin relationships, linkage inflates the covariance between relatives, unless there are no epistatic sources of genetic variance. Linkage has no influence on the parent-offspring covariance because the two individuals always have exactly one gene identical by descent at each locus, and therefore share exactly one of the four additive × additive effects. For grandparent-grandchild and half-sib relations, relative to the situation with free recombination, the additive × additive covariance can be inflated as much as twofold with completely linked loci (λ = 1), whereas with full sibs the inflation can be no greater than 50% (Figure 7.6). It is of interest to note that whereas the expressions for the covariance of half sibs and for grandparent-grandchild are identical under free recombination, the latter is inflated to a greater degree by linkage unless linkage is complete (λ = 1). Thus, at least in principle, a comparison of these two types of covariance may shed some light on the presence of linkage for quantitative-trait loci.",
+      "source_page": 165,
+      "printed_page": 145,
+      "source_block_ids": [
+        "p165:b5"
+      ],
+      "bbox": [
+        50.0,
+        1024.0,
+        1012.0,
+        1502.0
+      ]
+    }
+  ]
+}

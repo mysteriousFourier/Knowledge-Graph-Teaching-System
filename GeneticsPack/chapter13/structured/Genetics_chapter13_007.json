@@ -1,0 +1,69 @@
+{
+  "id": "Genetics_chapter13_007",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "MIXTURE MODELS",
+    "subsections": [],
+    "section_level_1": "MIXTURE MODELS",
+    "section_level_2": null,
+    "heading_path": [
+      "MIXTURE MODELS"
+    ],
+    "display_heading": "MIXTURE MODELS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 373,
+      "printed_page": 353,
+      "source_block_ids": [
+        "p373:b8"
+      ],
+      "bbox": [
+        69.0,
+        1025.0,
+        334.0,
+        1056.0
+      ],
+      "raw_text": "MIXTURE MODELS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Given that rejection of normality, by itself, is not sufficient to imply a major gene, a more powerful approach is to test whether the phenotypic distribution is consistent with a mixing (or commingling) of two or more normals, as would be expected if the distribution of phenotypic values about each major genotype were normal (Tan and Chang 1972, Elston et al. 1974, Boerwinkle et al. 1986, Hoeschele 1988). While this is an improvement over previous methods, such a test is still fraught with a number of potential problems. Even if the phenotypic distribution is consistent with a mixture of normals, there are a variety of explanations other than major genes — for example, the population may be distributed over two or more significantly different environments. Thus, a slightly more powerful approach is to further specify the weights of the underlying normals.",
+      "source_page": 373,
+      "printed_page": 353,
+      "source_block_ids": [
+        "p373:b9"
+      ],
+      "bbox": [
+        67.0,
+        1090.0,
+        1028.0,
+        1441.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If the distribution is consistent with three underlying normals with Hardy-Weinberg weights $ p^{2} $, $ 2p(1 - p) $, and $ (1 - p)^{2} $, where the allele frequency p is estimated from the data by maximum likelihood (see Example 2), then we may have more confidence in a major-locus interpretation. On the other hand, a lack of fit to this model does not necessarily exclude a major gene (e.g., the major gene may not be in Hardy-Weinberg equilibrium or the underlying phenotypic distributions for each major locus genotype may be nonnormal). In the absence of information from linked markers, the most powerful mixture-model tests for major genes use information from relatives to specify the weights of the underlying distributions. Before developing this complex segregation analysis approach, we first review some general features of mixture models.",
+      "source_page": 373,
+      "printed_page": 353,
+      "source_block_ids": [
+        "p373:b10",
+        "p374:b2"
+      ],
+      "bbox": [
+        67.0,
+        1441.0,
+        1025.0,
+        1536.0
+      ],
+      "source_page_end": 374
+    }
+  ]
+}

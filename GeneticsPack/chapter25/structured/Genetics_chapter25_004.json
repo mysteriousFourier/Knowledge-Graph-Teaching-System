@@ -1,0 +1,191 @@
+{
+  "id": "Genetics_chapter25_004",
+  "metadata": {
+    "chapter": "Genetics_chapter25",
+    "section": "MULTIPLE THRESHOLDS",
+    "subsections": [],
+    "section_level_1": "MULTIPLE THRESHOLDS",
+    "section_level_2": null,
+    "heading_path": [
+      "MULTIPLE THRESHOLDS"
+    ],
+    "display_heading": "MULTIPLE THRESHOLDS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 748,
+      "printed_page": 728,
+      "source_block_ids": [
+        "p748:b3"
+      ],
+      "bbox": [
+        146.0,
+        439.0,
+        493.0,
+        469.0
+      ],
+      "raw_text": "MULTIPLE THRESHOLDS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In principle, the model developed above can be extended to any number of thresholds. Indeed, in his original analyses of digit number in guinea pigs, Wright (1934c,d) actually considered three classes of individuals: those with the usual three toes, those with an incomplete fourth toe, and those with four complete digits. The computations become rather lengthy for more than three character states, but a two-threshold model, which we will focus upon here, is fairly straightforward.",
+      "source_page": 748,
+      "printed_page": 728,
+      "source_block_ids": [
+        "p748:b4"
+      ],
+      "bbox": [
+        144.0,
+        504.0,
+        1103.0,
+        727.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "There are two very useful attributes of multiple threshold models. First, they provide a means for evaluating the relative means and variances of liability in different populations. Second, by providing several estimates of the regression between relatives, they provide an internal check on the consistency of the model.",
+      "source_page": 748,
+      "printed_page": 728,
+      "source_block_ids": [
+        "p748:b5"
+      ],
+      "bbox": [
+        144.0,
+        729.0,
+        1104.0,
+        856.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "With a three-character state model, there are two thresholds (Figure 25.5). We will refer to these as $ T_1 $ and $ T_2 $, the wide and narrow thresholds, respectively. With this notation, individuals are classified as normal (character state 1, with liability less than $ T_1 $), $ \\text{wide} $ (character states 2 and 3, with liability exceeding $ T_1 $), or $ \\text{narrow} $ (character state 3, with liability exceeding $ T_2 $). From above, we know that $ x_{p2} $, the distance of $ T_2 $ from the mean in standard deviations, can be extracted from tables if the incidence of character state 3 is known. Similarly, $ x_{p1} $ is obtainable from the total incidence of character states 2 and 3. The absolute distance between the two thresholds, $ (x_{p2} - x_{p1})\\sigma $, may then be defined as one threshold unit, implying that the standard deviation in threshold units is $ \\sigma = 1/(x_{p2} - x_{p1}) $. The mean, measured as the deviation from the wide threshold, is then $ \\overline{z}_p = -x_{p1}\\sigma $. Thus, if different populations can be assumed to have their thresholds located at the same position on the phenotypic scale for liability, this simple approach allows a comparison of the means and standard deviations of their underlying phenotypic distributions (in threshold units).",
+      "source_page": 748,
+      "printed_page": 728,
+      "source_block_ids": [
+        "p748:b6"
+      ],
+      "bbox": [
+        144.0,
+        856.0,
+        1105.0,
+        1334.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The two-threshold model provides four routes to estimating the heritability of liability (Reich et al. 1972). First, by ignoring one of the thresholds, the standard single-threshold model can be applied to the data. In this case, individuals having character states 2 and 3 can be treated as the same (normal vs. wide), or individuals with character states 1 and 2 can be aggregated (narrow vs. not narrow). Either way, the population is divided into two classes of individuals.",
+      "source_page": 748,
+      "printed_page": 728,
+      "source_block_ids": [
+        "p748:b7"
+      ],
+      "bbox": [
+        145.0,
+        1335.0,
+        1107.0,
+        1529.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:25.5]]",
+      "source_page": 749,
+      "printed_page": 729,
+      "source_block_ids": [
+        "p749:b3"
+      ],
+      "bbox": [
+        109.0,
+        1105.0,
+        976.0,
+        1312.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Two estimates of heritability can also be obtained from information on “cross prevalence.” Consider, for example, the propositi to be parents with character state 3. From their incidence, we obtain an estimate of $ x_{p2} $. The affected offspring of these parents can be scored as all individuals exhibiting character states 2 or 3. The normal deviate for these individuals, $ x'_{o1} $ (Figure 25.5), refers to the widely affected offspring of narrowly affected parents. Similarly, $ x'_{o2} $ is obtained from the narrowly affected offspring of widely affected (character state 2 or 3) parents (as the distance of the mean of these offspring from the upper threshold). From this information, two additional estimators of the parent-offspring regression are:",
+      "source_page": 749,
+      "printed_page": 729,
+      "source_block_ids": [
+        "p749:b4",
+        "p750:b2"
+      ],
+      "bbox": [
+        60.0,
+        1375.0,
+        1022.0,
+        1536.0
+      ],
+      "source_page_end": 750
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula006]]",
+      "source_page": 750,
+      "printed_page": 730,
+      "source_block_ids": [
+        "p750:b3"
+      ],
+      "bbox": [
+        339.0,
+        283.0,
+        897.0,
+        371.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula007]]",
+      "source_page": 750,
+      "printed_page": 730,
+      "source_block_ids": [
+        "p750:b5"
+      ],
+      "bbox": [
+        340.0,
+        388.0,
+        896.0,
+        473.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ a_{1}=p(x_{p1})/\\Phi_{p1} $ and $ a_{2}=p(x_{p2})/\\Phi_{p2} $. If the assumptions of the threshold model have been met, then all four estimates of $ b_{op} $ should be similar.",
+      "source_page": 750,
+      "printed_page": 730,
+      "source_block_ids": [
+        "p750:b7"
+      ],
+      "bbox": [
+        138.0,
+        480.0,
+        1099.0,
+        547.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter25:2]]",
+      "source_page": 750,
+      "source_block_ids": [
+        "p750:b8",
+        "p750:b9",
+        "p750:b10",
+        "p751:b2"
+      ],
+      "bbox": [
+        187.0,
+        643.0,
+        1053.0,
+        1082.0
+      ]
+    }
+  ]
+}

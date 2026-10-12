@@ -1,0 +1,220 @@
+{
+  "id": "PopGen_chapter6_024",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.5 MIGRATION",
+    "subsections": [
+      "Estimates of Migration Rates"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "6.5"
+    ],
+    "section_level_1": "6.5 MIGRATION",
+    "section_level_2": "Estimates of Migration Rates",
+    "heading_path": [
+      "6.5 MIGRATION",
+      "Estimates of Migration Rates"
+    ],
+    "display_heading": "Estimates of Migration Rates",
+    "table_reference_keys": [
+      "chapter6:6.5"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p047:b3"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "One method of estimating genetic migration in natural populations relies on the finding that, in theoretical models, the logarithm of $ N_m $ decreases approximately as a linear function of the average frequency of private alleles in samples from the subpopulations <sup>[674]</sup>. Data on the average frequency of private alleles has been compiled and analyzed by Slatkin <sup>[674]</sup>, and the resulting estimates of $ N_m $ and equilibrium values of $ F_{ST} $ are summarized in [[see_table:6.5]]. There is obviously considerable variation in $ N_m $ among organisms. However, many of the values of $ N_m $ are smaller than about 2, which means that there is still considerable opportunity for genetic divergence among subpopulations.",
+      "source_page": 316,
+      "source_pages": [
+        316,
+        317
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p046:b3",
+        "PopGen_chapter6:p047:b4"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          796.0,
+          740.0,
+          824.0
+        ],
+        [
+          106.0,
+          739.0,
+          857.0,
+          1003.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "27f9a15866fe30c554262e194cf0031b16f82d9eeeb2878bd5f56a9bd4424722",
+      "inline_styles": [
+        {
+          "start": 215,
+          "end": 230,
+          "style": "italic",
+          "text": "private alleles",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              739,
+              857,
+              1003
+            ]
+          ],
+          "source_content_sha256": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a",
+          "subject_index": {
+            "entry": "private alleles",
+            "printed_pages": [
+              302,
+              303
+            ],
+            "master_pages": [
+              316,
+              317
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          },
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b4": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a"
+          }
+        },
+        {
+          "start": 315,
+          "end": 330,
+          "style": "italic",
+          "text": "private alleles",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              739,
+              857,
+              1003
+            ]
+          ],
+          "source_content_sha256": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a",
+          "subject_index": {
+            "entry": "private alleles",
+            "printed_pages": [
+              302,
+              303
+            ],
+            "master_pages": [
+              316,
+              317
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          },
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b4": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "A second kind of approach to estimating Nm in natural populations is illustrated in Figure 6.22, which gives the distribution of estimated values of $ F_{ST} $ among 61 genes in natural populations of Drosophila melanogaster <sup>[667]</sup>. The average of the estimated values is $ F_{ST} = 0.16 $, which, assuming equilibrium, is an estimate of $ 1 + 4Nm $ (Equation 6.23). The estimate is therefore $ Nm = [(1/0.16) - 1]/4 = 1.3 $. This estimate is within the range for other Drosophila species in [[see_table:6.5]]. However, there are many genes in Figure 6.22 that have $ F_{ST} $ values greater than 0.30. An analogous method of estimating Nm from the $ F_{ST} $ values of polymorphic nucleotides within a gene is discussed in Hudson et al. (1992).",
+      "source_page": 316,
+      "source_pages": [
+        316,
+        317
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p046:b3",
+        "PopGen_chapter6:p047:b5"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          796.0,
+          740.0,
+          824.0
+        ],
+        [
+          102.0,
+          1006.0,
+          854.0,
+          1271.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "3941bd25c56d66622b9b181a56e8a7b74521e54e8a8ce796a3725130b9f4bd95",
+      "inline_styles": [
+        {
+          "start": 201,
+          "end": 224,
+          "style": "italic",
+          "text": "Drosophila melanogaster",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              1006,
+              854,
+              1271
+            ]
+          ],
+          "source_content_sha256": "c4229e0889b15f91eb41aff3f727da37fc00cc586ef95eac703ea1f526f271ce",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b5": "c4229e0889b15f91eb41aff3f727da37fc00cc586ef95eac703ea1f526f271ce"
+          }
+        },
+        {
+          "start": 489,
+          "end": 507,
+          "style": "italic",
+          "text": "Drosophila species",
+          "source_page": 316,
+          "source_block_ids": [
+            "PopGen_chapter6:p046:b3",
+            "PopGen_chapter6:p047:b5"
+          ],
+          "source_bboxes": [
+            [
+              277.0,
+              796.0,
+              740.0,
+              824.0
+            ],
+            [
+              102.0,
+              1006.0,
+              854.0,
+              1271.0
+            ]
+          ],
+          "source_content_sha256": "3941bd25c56d66622b9b181a56e8a7b74521e54e8a8ce796a3725130b9f4bd95",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p046:b3": "3941bd25c56d66622b9b181a56e8a7b74521e54e8a8ce796a3725130b9f4bd95",
+            "PopGen_chapter6:p047:b5": "3941bd25c56d66622b9b181a56e8a7b74521e54e8a8ce796a3725130b9f4bd95"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    }
+  ]
+}

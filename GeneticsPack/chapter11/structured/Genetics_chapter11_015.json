@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter11_015",
+  "metadata": {
+    "chapter": "Genetics_chapter11",
+    "section": "DEVELOPMENTAL MAPS, CANALIZATION, AND GENETIC ASSIMILATION",
+    "subsections": [
+      "Genetic Assimilation"
+    ],
+    "section_level_1": "DEVELOPMENTAL MAPS, CANALIZATION, AND GENETIC ASSIMILATION",
+    "section_level_2": "Genetic Assimilation",
+    "heading_path": [
+      "DEVELOPMENTAL MAPS, CANALIZATION, AND GENETIC ASSIMILATION",
+      "Genetic Assimilation"
+    ],
+    "display_heading": "DEVELOPMENTAL MAPS, CANALIZATION, AND GENETIC ASSIMILATION / Genetic Assimilation",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 330,
+      "printed_page": 310,
+      "source_block_ids": [
+        "p330:b4"
+      ],
+      "bbox": [
+        143.0,
+        1215.0,
+        415.0,
+        1248.0
+      ],
+      "raw_text": "Genetic Assimilation"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Another potential consequence of moving a population outside of a zone of canalization is genetic assimilation, wherein a character state that originally appears to be environmentally determined apparently becomes genetically determined following several generations of selection. This term was coined by Waddington (1953) to account for the behavior of crossveinless, a defect in the wing venation pattern of Drosophila melanogaster. In the lines studied by Waddington (1952, 1953), no crossveinless flies were found in base populations raised under normal temperatures. However, when temperature-shocked as pupae, some fraction of",
+      "source_page": 330,
+      "printed_page": 310,
+      "source_block_ids": [
+        "p330:b5"
+      ],
+      "bbox": [
+        144.0,
+        1248.0,
+        1108.0,
+        1517.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:11.11]]",
+      "source_page": 331,
+      "printed_page": 311,
+      "source_block_ids": [
+        "p331:b3"
+      ],
+      "bbox": [
+        111.0,
+        373.0,
+        977.0,
+        587.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "flies displayed the crossveinless (cvl) phenotype. These environmentally induced cvl flies were used to form the subsequent generation. Not only did the frequency of cvl flies induced by temperature shock increase, but cvl flies appeared in the untreated populations, reaching frequencies in excess of 95% after 18 generations of selection. Waddington had genetically “assimilated” the crossveinless character state from an apparently environmentally determined character in the base population.",
+      "source_page": 331,
+      "printed_page": 311,
+      "source_block_ids": [
+        "p331:b4"
+      ],
+      "bbox": [
+        60.0,
+        644.0,
+        1023.0,
+        871.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Waddington (1949, 1953, 1957) suggested that changes in canalization could account for genetic assimilation, but was rather vague in terms of an explicit model. As Figure 11.11 shows, assimilation can follow as a simple consequence of moving a population outside of a zone of canalization. One environment exposes more of the underlying genetic variation in liability than another, making selection in that environment more effective.",
+      "source_page": 331,
+      "printed_page": 311,
+      "source_block_ids": [
+        "p331:b5"
+      ],
+      "bbox": [
+        56.0,
+        869.0,
+        1020.0,
+        1064.0
+      ]
+    }
+  ]
+}

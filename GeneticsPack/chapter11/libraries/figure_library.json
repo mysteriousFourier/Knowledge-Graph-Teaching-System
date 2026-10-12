@@ -1,0 +1,388 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter11",
+  "count": 11,
+  "figures": [
+    {
+      "id": "11.1",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.1",
+      "placeholder": "[[FIGURE:11.1]]",
+      "see_placeholder": "[[SEE_FIGURE:11.1]]",
+      "asset_path": "figures/Genetics_11.1.png",
+      "caption": "Figure 11.1 Conversion of a log-normal distribution on the original scale to a normal distribution on the log-transformed scale.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 308,
+      "raw_bbox": [
+        253.0,
+        122.0,
+        977.0,
+        390.0
+      ],
+      "source_block_ids": [
+        "p308:b2"
+      ],
+      "caption_block": {
+        "source_page": 308,
+        "printed_page": 288,
+        "source_block_ids": [
+          "p308:b3"
+        ],
+        "bbox": [
+          183.0,
+          397.0,
+          1047.0,
+          477.0
+        ]
+      }
+    },
+    {
+      "id": "11.2",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.2",
+      "placeholder": "[[FIGURE:11.2]]",
+      "see_placeholder": "[[SEE_FIGURE:11.2]]",
+      "asset_path": "figures/Genetics_11.2.png",
+      "caption": "Figure 11.2 The normal probability scale, applied to a normally distributed random variable, $z$, with mean $\\mu$ and variance $\\sigma^{2}$. Left: A plot of cumulative frequency, $q$, as a function of $z$ gives a sigmoidal curve. Right: Rescaling cumulative frequency using the transformation $\\text{prb}(q)$ (Equation 11.6) gives a straight line. The scale given by $\\text{prb}(q)$ is called a normal probability scale. As this figure shows, a character measure with associated $q = 0.50$ (which for a normal distribution corresponds to the mean) returns a normal probability scale value of zero. A character with $q = 0.84$ (which for a normal distribution corresponds to one standard deviation above the mean) returns a value of $+1$, and a character with $q = 0.16$ (which for a normal distribution corresponds to one standard deviation below the mean) returns a value of $-1$.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 311,
+      "raw_bbox": [
+        192.0,
+        119.0,
+        905.0,
+        476.0
+      ],
+      "source_block_ids": [
+        "p311:b2",
+        "p311:b3"
+      ],
+      "caption_block": {
+        "source_page": 311,
+        "printed_page": 291,
+        "source_block_ids": [
+          "p311:b4"
+        ],
+        "bbox": [
+          107.0,
+          498.0,
+          975.0,
+          837.0
+        ]
+      }
+    },
+    {
+      "id": "11.3",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.3",
+      "placeholder": "[[FIGURE:11.3]]",
+      "see_placeholder": "[[SEE_FIGURE:11.3]]",
+      "asset_path": "figures/Genetics_11.3.png",
+      "caption": "Figure 11.3 Diagnosis of three types of departure from normality using normal probability plots. On the left are probability density functions. On the right are cumulative frequencies plotted on the normal probability scale, $ prb(q) $. Top: Bimodal distributions show flat regions when plotted on a normal probability scale. Middle: Leptokurtic distributions (overly peaked relative to a normal scale) give a sigmoidal curve on a normal probability scale. Bottom: Skewed distributions depart from linearity on a normal probability scale by curving downward if the distribution is skewed to the right (as in the figure), or by curving upward if the distribution is skewed to the left.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 312,
+      "raw_bbox": [
+        244.0,
+        117.0,
+        980.0,
+        852.0
+      ],
+      "source_block_ids": [
+        "p312:b2",
+        "p312:b3",
+        "p312:b4",
+        "p312:b5",
+        "p312:b6",
+        "p312:b7"
+      ],
+      "caption_block": {
+        "source_page": 312,
+        "printed_page": 292,
+        "source_block_ids": [
+          "p312:b8"
+        ],
+        "bbox": [
+          190.0,
+          901.0,
+          1059.0,
+          1180.0
+        ]
+      }
+    },
+    {
+      "id": "11.4",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.4",
+      "placeholder": "[[FIGURE:11.4]]",
+      "see_placeholder": "[[SEE_FIGURE:11.4]]",
+      "asset_path": "figures/Genetics_11.4.png",
+      "caption": "Figure 11.4 Relationship of the standard deviation and the mean for four sets of morphological characters in vertebrates. Sceloporus (rough-scaled lizard): meristic traits, several species (Kluge and Kerfoot 1973); Uta (side-blotched lizard): scale counts and ratios of morphometric characters (Kluge and Kerfoot 1973); Mus (mouse): skeletal and weight characters (several sources given in Soulé 1982); Passer (house sparrow): skeletal and feather characters (described in Kluge and Kerfoot 1973).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 314,
+      "raw_bbox": [
+        146.0,
+        124.0,
+        1067.0,
+        718.0
+      ],
+      "source_block_ids": [
+        "p314:b2"
+      ],
+      "caption_block": {
+        "source_page": 314,
+        "printed_page": 294,
+        "source_block_ids": [
+          "p314:b3"
+        ],
+        "bbox": [
+          177.0,
+          741.0,
+          1045.0,
+          960.0
+        ]
+      }
+    },
+    {
+      "id": "11.5",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.5",
+      "placeholder": "[[FIGURE:11.5]]",
+      "see_placeholder": "[[SEE_FIGURE:11.5]]",
+      "asset_path": "figures/Genetics_11.5.png",
+      "caption": "Figure 11.5 Coefficients of variation versus mean phenotypes for lengths and cell counts of tail spines (solid points) and antennas (open points) for samples of the cladoceran Bosmina longirostris. As mentioned in the text, a straight line with a slope of minus one is the expected relationship if the standard deviation is independent of the mean. Only the antenna cell counts deviate greatly from this expectation. (From Kerfoot 1988.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 317,
+      "raw_bbox": [
+        187.0,
+        128.0,
+        917.0,
+        584.0
+      ],
+      "source_block_ids": [
+        "p317:b2"
+      ],
+      "caption_block": {
+        "source_page": 317,
+        "printed_page": 297,
+        "source_block_ids": [
+          "p317:b3"
+        ],
+        "bbox": [
+          109.0,
+          621.0,
+          977.0,
+          806.0
+        ]
+      }
+    },
+    {
+      "id": "11.6",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.6",
+      "placeholder": "[[FIGURE:11.6]]",
+      "see_placeholder": "[[SEE_FIGURE:11.6]]",
+      "asset_path": "figures/Genetics_11.6.png",
+      "caption": "Figure 11.6 Castes of the ant Pheidole instabilis display positive allometry for head size. The proportionately larger heads of soldiers can be accounted for simply by changes in size, with head size growing at a faster rate than the rest of the body. (Based on Huxley 1932.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 321,
+      "raw_bbox": [
+        186.0,
+        131.0,
+        908.0,
+        793.0
+      ],
+      "source_block_ids": [
+        "p321:b2"
+      ],
+      "caption_block": {
+        "source_page": 321,
+        "printed_page": 301,
+        "source_block_ids": [
+          "p321:b3"
+        ],
+        "bbox": [
+          106.0,
+          808.0,
+          971.0,
+          942.0
+        ]
+      }
+    },
+    {
+      "id": "11.7",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.7",
+      "placeholder": "[[FIGURE:11.7]]",
+      "see_placeholder": "[[SEE_FIGURE:11.7]]",
+      "asset_path": "figures/Genetics_11.7.png",
+      "caption": "Figure 11.7 A nonlinear developmental map. This map shows a zone of strong canalization for $ a \\leq y \\leq b $, as liability values in this range give essentially the same phenotype.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 325,
+      "raw_bbox": [
+        251.0,
+        122.0,
+        846.0,
+        557.0
+      ],
+      "source_block_ids": [
+        "p325:b2"
+      ],
+      "caption_block": {
+        "source_page": 325,
+        "printed_page": 305,
+        "source_block_ids": [
+          "p325:b3"
+        ],
+        "bbox": [
+          108.0,
+          583.0,
+          974.0,
+          680.0
+        ]
+      }
+    },
+    {
+      "id": "11.8",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.8",
+      "placeholder": "[[FIGURE:11.8]]",
+      "see_placeholder": "[[SEE_FIGURE:11.8]]",
+      "asset_path": "figures/Genetics_11.8.png",
+      "caption": "Figure 11.8 Reconstruction of the development map for tentaculocyst number in the jellyfish Ephyra using probit analysis under the assumption that liability is normally distributed on some appropriate underlying scale. Strong canalization is seen, with a larger range of liability mapping to the nine-tentaculocyst character state relative to the range mapping to other character states. (Original data of Browne, from Wright 1968.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 325,
+      "raw_bbox": [
+        243.0,
+        769.0,
+        834.0,
+        1308.0
+      ],
+      "source_block_ids": [
+        "p325:b4"
+      ],
+      "caption_block": {
+        "source_page": 325,
+        "printed_page": 305,
+        "source_block_ids": [
+          "p325:b5"
+        ],
+        "bbox": [
+          96.0,
+          1335.0,
+          963.0,
+          1517.0
+        ]
+      }
+    },
+    {
+      "id": "11.9",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.9",
+      "placeholder": "[[FIGURE:11.9]]",
+      "see_placeholder": "[[SEE_FIGURE:11.9]]",
+      "asset_path": "figures/Genetics_11.9.png",
+      "caption": "Figure 11.9 Reconstructing a developmental map for Drosophila scutellar bristle number. The bulk of the population (99.69%) had four bristles, while 0.01% had three, and 0.3% had five. Assuming a normal distribution of liability on an appropriate underlying scale, the developmental map translating liability into character value (here bristle number) can be estimated via probit analysis. Individuals with a liability value less than 3.7 standard deviations below the mean have three bristles, while individuals whose liability exceeds 2.7 standard deviations above the mean have five bristles. Details are given in Example 5.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 326,
+      "raw_bbox": [
+        255.0,
+        127.0,
+        981.0,
+        607.0
+      ],
+      "source_block_ids": [
+        "p326:b2"
+      ],
+      "caption_block": {
+        "source_page": 326,
+        "printed_page": 306,
+        "source_block_ids": [
+          "p326:b3"
+        ],
+        "bbox": [
+          185.0,
+          635.0,
+          1055.0,
+          881.0
+        ]
+      }
+    },
+    {
+      "id": "11.10",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.10",
+      "placeholder": "[[FIGURE:11.10]]",
+      "see_placeholder": "[[SEE_FIGURE:11.10]]",
+      "asset_path": "figures/Genetics_11.10.png",
+      "caption": "Figure 11.10 When the developmental map is nonlinear, a simple change in the mean of the liability distribution (left) can result in complex changes in the character distribution (right). Here, populations A and B have different means, but otherwise identical liability distributions. Besides changing the character value, this simple increase in mean liability also results in an increase in character variance as liability is selected outside the zone of canalization.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 328,
+      "raw_bbox": [
+        251.0,
+        125.0,
+        974.0,
+        346.0
+      ],
+      "source_block_ids": [
+        "p328:b2",
+        "p328:b3"
+      ],
+      "caption_block": {
+        "source_page": 328,
+        "printed_page": 308,
+        "source_block_ids": [
+          "p328:b4"
+        ],
+        "bbox": [
+          180.0,
+          371.0,
+          1047.0,
+          554.0
+        ]
+      }
+    },
+    {
+      "id": "11.11",
+      "chapter": "Genetics_chapter11",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter11:11.11",
+      "placeholder": "[[FIGURE:11.11]]",
+      "see_placeholder": "[[SEE_FIGURE:11.11]]",
+      "asset_path": "figures/Genetics_11.11.png",
+      "caption": "Figure 11.11 A model for the genetic assimilation of the crossveinless character state. Suppose flies display the crossveinless phenotype when the value on some underlying liability scale exceeds some threshold value $ T_{A} $. Left: The effect of the temperature shock is to reduce the threshold to $ T_{B} < T_{A} $, exposing variation in liabilities that are otherwise masked. Right: Selection under temperature shock is effective in increasing liability values, eventually shifting the distribution far enough to the right such that crossveinless flies are seen at normal temperatures.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 331,
+      "raw_bbox": [
+        194.0,
+        124.0,
+        906.0,
+        349.0
+      ],
+      "source_block_ids": [
+        "p331:b2"
+      ],
+      "caption_block": {
+        "source_page": 331,
+        "printed_page": 311,
+        "source_block_ids": [
+          "p331:b3"
+        ],
+        "bbox": [
+          111.0,
+          373.0,
+          977.0,
+          587.0
+        ]
+      }
+    }
+  ]
+}

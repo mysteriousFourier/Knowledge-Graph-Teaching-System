@@ -1,0 +1,75 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter13",
+  "count": 2,
+  "figures": [
+    {
+      "id": "13.1",
+      "chapter": "Genetics_chapter13",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter13:13.1",
+      "placeholder": "[[FIGURE:13.1]]",
+      "see_placeholder": "[[SEE_FIGURE:13.1]]",
+      "asset_path": "figures/Genetics_13.1.png",
+      "caption": "Figure 13.1 Phenotypic distributions resulting from a single diallelic major locus, where each genotype has normally distributed phenotypes with the same variance $ \\sigma^{2} $. Here the mean genotypic values are $ \\mu_{qq} = -\\sigma $, $ \\mu_{Qq} = 0.75\\sigma $, $ \\mu_{QQ} = \\sigma $, and genotypes are in Hardy-Weinberg proportions, with the frequency of allele q being p = 0.65 (Top) and p = 0.9 (Bottom). The left side of each figure shows the three underlying distributions (thin lines) and the resulting mixture distribution (thick line). The right side shows how well the resulting mixture distribution fits a normal having the same mean and variance.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 369,
+      "raw_bbox": [
+        237.0,
+        122.0,
+        844.0,
+        538.0
+      ],
+      "source_block_ids": [
+        "p369:b2"
+      ],
+      "caption_block": {
+        "source_page": 369,
+        "printed_page": 349,
+        "source_block_ids": [
+          "p369:b3"
+        ],
+        "bbox": [
+          106.0,
+          554.0,
+          971.0,
+          802.0
+        ]
+      }
+    },
+    {
+      "id": "13.2",
+      "chapter": "Genetics_chapter13",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter13:13.2",
+      "placeholder": "[[FIGURE:13.2]]",
+      "see_placeholder": "[[SEE_FIGURE:13.2]]",
+      "asset_path": "figures/Genetics_13.2.png",
+      "caption": "Figure 13.2 An example of Fain’s test, plotting family variance as a function of family mean for germination date in Impatiens capensis. There is a highly significant quadratic term ( $ r^{2} = 0.32 $ vs. $ r^{2} = 0.18 $ for a simple linear regression), suggestive of a segregating major gene for germination date in this population. (Data from Mitchell-Olds and Bergelson 1990, kindly provided by Tom Mitchell-Olds.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 372,
+      "raw_bbox": [
+        254.0,
+        131.0,
+        976.0,
+        643.0
+      ],
+      "source_block_ids": [
+        "p372:b2"
+      ],
+      "caption_block": {
+        "source_page": 372,
+        "printed_page": 352,
+        "source_block_ids": [
+          "p372:b3"
+        ],
+        "bbox": [
+          181.0,
+          677.0,
+          1047.0,
+          855.0
+        ]
+      }
+    }
+  ]
+}

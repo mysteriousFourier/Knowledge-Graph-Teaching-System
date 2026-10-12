@@ -1,0 +1,29 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter7",
+  "counts": {
+    "structured": 14,
+    "formulas": 49,
+    "tables": 7,
+    "figures": 10,
+    "examples": 6,
+    "image_files": 14
+  },
+  "textbook": "textbook.md",
+  "figures": [
+    "figures/Genetics_7.1.png",
+    "figures/Genetics_7.10.png",
+    "figures/Genetics_7.2.png",
+    "figures/Genetics_7.3.png",
+    "figures/Genetics_7.4.png",
+    "figures/Genetics_7.5.png",
+    "figures/Genetics_7.6.png",
+    "figures/Genetics_7.7.png",
+    "figures/Genetics_7.8.png",
+    "figures/Genetics_7.9.png",
+    "figures/Genetics_p155_b3.png",
+    "figures/Genetics_p172_b4.png",
+    "figures/Genetics_p175_b2.png",
+    "figures/Genetics_p175_b3.png"
+  ]
+}

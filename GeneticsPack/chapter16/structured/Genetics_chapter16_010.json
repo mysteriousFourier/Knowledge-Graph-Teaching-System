@@ -1,0 +1,244 @@
+{
+  "id": "Genetics_chapter16_010",
+  "metadata": {
+    "chapter": "Genetics_chapter16",
+    "section": "SIB ANALYSIS: MAXIMUM LIKELIHOOD",
+    "subsections": [
+      "Constructing Likelihood Functions"
+    ],
+    "section_level_1": "SIB ANALYSIS: MAXIMUM LIKELIHOOD",
+    "section_level_2": "Constructing Likelihood Functions",
+    "heading_path": [
+      "SIB ANALYSIS: MAXIMUM LIKELIHOOD",
+      "Constructing Likelihood Functions"
+    ],
+    "display_heading": "SIB ANALYSIS: MAXIMUM LIKELIHOOD / Constructing Likelihood Functions",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 521,
+      "printed_page": 501,
+      "source_block_ids": [
+        "p521:b4"
+      ],
+      "bbox": [
+        73.0,
+        1055.0,
+        512.0,
+        1092.0
+      ],
+      "raw_text": "Constructing Likelihood Functions"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Likelihood functions for detecting QTLs using marker information in sets of sibs follow by suitable modifications of those developed for complex segregation analysis (Chapter 13). Recall that to construct the latter, the likelihood for an individual with trait value $ z_{o} $ is computed by first obtaining the likelihood conditional on the QTL genotypes of its parents ( $ Q_{s} $ for the sire and $ Q_{d} $ for the dam),",
+      "source_page": 521,
+      "printed_page": 501,
+      "source_block_ids": [
+        "p521:b5"
+      ],
+      "bbox": [
+        70.0,
+        1096.0,
+        1030.0,
+        1272.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula035]]",
+      "source_page": 521,
+      "printed_page": 501,
+      "source_block_ids": [
+        "p521:b6"
+      ],
+      "bbox": [
+        258.0,
+        1275.0,
+        836.0,
+        1346.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where we make the standard assumption that, conditional on QTL genotype, phenotypes are normally distributed with common variance $ \\sigma^{2} $. This conditioning is removed by averaging over all possible parental values,",
+      "source_page": 521,
+      "printed_page": 501,
+      "source_block_ids": [
+        "p521:b7"
+      ],
+      "bbox": [
+        66.0,
+        1354.0,
+        1025.0,
+        1464.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula036]]",
+      "source_page": 521,
+      "printed_page": 501,
+      "source_block_ids": [
+        "p521:b8"
+      ],
+      "bbox": [
+        294.0,
+        1467.0,
+        792.0,
+        1538.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "When marker data are present, the likelihood for an individual with marker genotype M is obtained by averaging over the probability of each QTL genotype given the marker genotypes,",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b2"
+      ],
+      "bbox": [
+        114.0,
+        147.0,
+        1073.0,
+        250.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula037]]",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b3"
+      ],
+      "bbox": [
+        324.0,
+        254.0,
+        862.0,
+        370.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the transmission probabilities $ p(Q_o \\mid M_o, M_s, M_d, Q_s, Q_d) $ are functions of the marker genotypes of the offspring $ (M_o) $ and its parents $ (M_s, M_d) $. Averaging over all possible parental genotypes gives",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b5"
+      ],
+      "bbox": [
+        118.0,
+        373.0,
+        1076.0,
+        478.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula038]]",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b6"
+      ],
+      "bbox": [
+        225.0,
+        481.0,
+        872.0,
+        598.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In a similar fashion, the likelihood function for any pedigree can (in principle) be computed by suitably conditioning on the genotypes of parents and other relatives.",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b8"
+      ],
+      "bbox": [
+        120.0,
+        599.0,
+        1077.0,
+        700.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Likelihood functions for half- and full-sib families have been developed for single markers (Risch 1984, Demenais et al. 1988, Weller 1990, Haley 1991, Amos 1994, Le Roy and Elsen 1995, Mackinnon and Weller 1995, Elsen et al. 1997), interval mapping (Knott and Haley 1992b), and multipoint mapping (Georges et al. 1995, Uimari et al. 1996, Knott et al. 1996). A framework for developing likelihood functions that allows for multiple QTLs is given by Stricker et al. (1995b). Hoeschele and VanRaden (1993a,b) and Uimari et al. (1996) discuss Bayesian modifications of the likelihood functions to allow for the incorporation of prior information, such as the number of chromosomes (e.g., Smith 1953, 1959).",
+      "source_page": 522,
+      "printed_page": 502,
+      "source_block_ids": [
+        "p522:b9"
+      ],
+      "bbox": [
+        120.0,
+        696.0,
+        1083.0,
+        994.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter16:3]]",
+      "source_page": 522,
+      "source_block_ids": [
+        "p522:b10",
+        "p522:b11",
+        "p522:b12",
+        "p523:b2",
+        "p523:b3",
+        "p523:b5",
+        "p523:b6",
+        "p523:b7",
+        "p523:b9",
+        "p523:b10",
+        "p523:b11"
+      ],
+      "bbox": [
+        174.0,
+        1080.0,
+        1040.0,
+        1323.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The properties of ML estimates using relatives from outbred populations have not been as extensively examined as have those for line-cross populations. Mackinnon and Weller (1995) examined the accuracy of single-marker ML estimation under the half-sib design, finding that while ML estimates of QTL effects tend to be reasonably accurate, the same is not the case for estimates of QTL position, which have very flat likelihood surfaces. They also observed that estimates of QTL parameters tend to be correlated, so that a poor estimate in one parameter (e.g., map position) can have a detrimental effect on other estimates (e.g., QTL effects). Interval mapping is expected to have a more peaked likelihood surface for QTL position (and a resulting smaller variance), so these concerns may be less important for analysis using multiple markers.",
+      "source_page": 524,
+      "printed_page": 504,
+      "source_block_ids": [
+        "p524:b2"
+      ],
+      "bbox": [
+        108.0,
+        136.0,
+        1067.0,
+        488.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "While marker-based likelihood methods have greater power than segregation analysis (Chapter 13) for detecting QTLs (Goldin et al. 1984, Demenais et al. 1988, Knott and Haley 1992b, Le Roy and Elsen 1995), their power is still poor compared to inbred-line-cross designs. Knott and Haley (1992b) show that the use of flanking markers increases power, as does incorporation of a within-family effect into the likelihood function. Choosing highly polymorphic marker loci further increases power by increasing the frequency of informative sibships. Even with these modifications, however, power remains marginal — with markers at 20 map unit intervals, a QTL whose segregation accounts for 1/3 of the total variance is barely detectable when 250 full-sib families of four individuals each are used. Further, as with segregation analysis, there is a tradeoff between increasing the number of families versus increasing family size. For a fixed total number of progeny, one must sample a sufficient number of families (to ensure that at least one of them is informative) and a sufficient number of individuals within each family (to have power within an informative family).",
+      "source_page": 524,
+      "printed_page": 504,
+      "source_block_ids": [
+        "p524:b3"
+      ],
+      "bbox": [
+        109.0,
+        488.0,
+        1071.0,
+        972.0
+      ]
+    }
+  ]
+}

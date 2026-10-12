@@ -1,0 +1,69 @@
+{
+  "id": "Genetics_chapter21_009",
+  "metadata": {
+    "chapter": "Genetics_chapter21",
+    "section": "STATISTICAL ISSUES",
+    "subsections": [],
+    "section_level_1": "STATISTICAL ISSUES",
+    "section_level_2": null,
+    "heading_path": [
+      "STATISTICAL ISSUES"
+    ],
+    "display_heading": "STATISTICAL ISSUES",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 651,
+      "printed_page": 631,
+      "source_block_ids": [
+        "p651:b7"
+      ],
+      "bbox": [
+        52.0,
+        1379.0,
+        344.0,
+        1411.0
+      ],
+      "raw_text": "STATISTICAL ISSUES"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As with any parameter estimates, it is useful to have measures of the sampling variances and/or confidence intervals of the phenotypic, genetic, and environmental correlations to aid in their interpretation. For the genetic and environmental correlations, the problems here are considerable. The estimators for $ \\rho_{A} $ and $ \\rho_{E} $ generally utilize a combination of results from different applications of ANOVA and/or regression analysis, all employing data on the same individuals. The sampling properties of functions of statistics derived from nonindependent analyses are poorly understood.",
+      "source_page": 651,
+      "printed_page": 631,
+      "source_block_ids": [
+        "p651:b8",
+        "p652:b4"
+      ],
+      "bbox": [
+        49.0,
+        1444.0,
+        1011.0,
+        1516.0
+      ],
+      "source_page_end": 652
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:21.1]]",
+      "source_page": 652,
+      "printed_page": 632,
+      "source_block_ids": [
+        "p652:b3"
+      ],
+      "bbox": [
+        190.0,
+        1191.0,
+        1057.0,
+        1312.0
+      ]
+    }
+  ]
+}

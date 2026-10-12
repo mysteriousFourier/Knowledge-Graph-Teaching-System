@@ -1,0 +1,191 @@
+{
+  "id": "PopGen_chapter4_012",
+  "metadata": {
+    "chapter": "PopGen_chapter4",
+    "section": "4.5 INFINITE-SITES MODEL",
+    "subsections": [
+      "Nucleotide Polymorphism and Nucleotide Diversity"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "4.5 INFINITE-SITES MODEL",
+    "section_level_2": "Nucleotide Polymorphism and Nucleotide Diversity",
+    "heading_path": [
+      "4.5 INFINITE-SITES MODEL",
+      "Nucleotide Polymorphism and Nucleotide Diversity"
+    ],
+    "display_heading": "Nucleotide Polymorphism and Nucleotide Diversity",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter4:p025:b13"
+      ]
+    },
+    "chapter_title": "Mutation and the Neutral Theory"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "One limitation of S and $ \\Pi $ as measures of nucleotide variation in a population is that each quantity depends on the length of the sequences that are compared; these differ from gene to gene and from one study to another. The dependence on sequence length can be eliminated by expressing both the number of segregating sites S and the average number of pairwise mismatches II as a proportion of the total number of sites. To be specific, suppose that a sample consists of n aligned sequences each of length L. Then the proportion of segregating sites among all sites compared equals S/L. There is no established symbol for this quantity, but it is sometimes called the nucleotide polymorphism. For the sake of consistency, we shall denote the nucleotide polymorphism by the symbol $ S^{*} $, so that $ S^{*} = S/L $. Since L is a constant, it follows that the mean and variance of $ S^{*} $ are given by $$ E(S^{*})=E(S)\\;/\\; L\\quad V(S^{*})=V(S)\\;/\\; L^{2} $$",
+      "source_page": 189,
+      "source_pages": [
+        189,
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p025:b14",
+        "PopGen_chapter4:p026:b1",
+        "PopGen_chapter4:p026:b2"
+      ],
+      "source_bboxes": [
+        [
+          95.0,
+          1300.0,
+          851.0,
+          1380.0
+        ],
+        [
+          269.0,
+          205.0,
+          1020.0,
+          444.0
+        ],
+        [
+          483.0,
+          456.0,
+          810.0,
+          481.0
+        ]
+      ],
+      "provenance_score": 0.991713,
+      "content_sha256": "1e0d8fea183c2626e1b0a4920678cdbd2175a6b7a2fea3fa058cc1c6b39396dd",
+      "inline_styles": [
+        {
+          "start": 673,
+          "end": 696,
+          "style": "bold",
+          "text": "nucleotide polymorphism",
+          "source_page": 190,
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              205,
+              1020,
+              444
+            ]
+          ],
+          "source_content_sha256": "56a512e5ecb368a9208f7b9de3838be9df0d6497ef0f8f94eb37480dc4cae281",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p026:b1": "56a512e5ecb368a9208f7b9de3838be9df0d6497ef0f8f94eb37480dc4cae281"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Expressions for $ E(S) $ and $ V(S) $ in the case of no recombination are found in Equations 4.16 and 4.17. Although $ S^{*} $ does not depend on the sequence length, it does depend on the sample size, as is evident from Equation 4.16. On the other hand, the dependence on sample size is fairly weak unless the samples are very small (see Table 1.2).",
+      "source_page": 190,
+      "source_pages": [
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b3"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          500.0,
+          1022.0,
+          632.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "769dfcafe17f39a876910f4087a1007e62437b52a3b1066938ef13651f26705e",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Similarly, the average proportion of pairwise mismatches in sequences of length L is given by $ \\Pi/L $. This quantity does have an established symbol, namely $ \\pi = \\Pi/L $, and it is called the nucleotide diversity <sup>[506]</sup>. Because L is a constant, the mean and variance of $ \\pi $ are given by $$ E(\\pi)=E(\\Pi)/L\\quad V(\\pi)=V(\\Pi)/L^{2} $$",
+      "source_page": 190,
+      "source_pages": [
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b4",
+        "PopGen_chapter4:p026:b5"
+      ],
+      "source_bboxes": [
+        [
+          270.0,
+          635.0,
+          1022.0,
+          739.0
+        ],
+        [
+          477.0,
+          751.0,
+          816.0,
+          777.0
+        ]
+      ],
+      "provenance_score": 0.959677,
+      "content_sha256": "3afa206053d8ede461c12c4e50ad4637d10bca78c95533bfe03f9de0b2098afb",
+      "inline_styles": [
+        {
+          "start": 197,
+          "end": 217,
+          "style": "bold",
+          "text": "nucleotide diversity",
+          "source_page": 190,
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b4"
+          ],
+          "source_bboxes": [
+            [
+              270,
+              635,
+              1022,
+              739
+            ]
+          ],
+          "source_content_sha256": "19e2cd9ebe3ec863c73afa124962f197e6177d0f36c8122c1b6d3e6840a4a1ab",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p026:b4": "19e2cd9ebe3ec863c73afa124962f197e6177d0f36c8122c1b6d3e6840a4a1ab"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Expressions for $ E(\\Pi) $ and $ V(\\Pi) $ in the case of no recombination are given in Equations 4.18 and 4.19.",
+      "source_page": 190,
+      "source_pages": [
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b6"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          795.0,
+          1023.0,
+          849.0
+        ]
+      ],
+      "provenance_score": 0.974026,
+      "content_sha256": "79ff16cc2aeb727a4f39bf76f1719f4d91a285b705e34d5c277b7df1711ce678",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

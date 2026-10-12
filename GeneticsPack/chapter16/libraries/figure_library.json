@@ -1,0 +1,212 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter16",
+  "count": 6,
+  "figures": [
+    {
+      "id": "16.1",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.1",
+      "placeholder": "[[FIGURE:16.1]]",
+      "see_placeholder": "[[SEE_FIGURE:16.1]]",
+      "asset_path": "figures/Genetics_16.1.png",
+      "caption": "Figure 16.1 The relationship between three measures of marker information: heterozygosity, PIC, and PFIM. Plotted are the maximum values for each measure as a function of the number of marker alleles under the assumption of an even allele-frequency distribution $ (p_i = 1/n) $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 508,
+      "raw_bbox": [
+        241.0,
+        135.0,
+        965.0,
+        663.0
+      ],
+      "source_block_ids": [
+        "p508:b2"
+      ],
+      "caption_block": {
+        "source_page": 508,
+        "printed_page": 488,
+        "source_block_ids": [
+          "p508:b3"
+        ],
+        "bbox": [
+          168.0,
+          693.0,
+          1034.0,
+          816.0
+        ]
+      }
+    },
+    {
+      "id": "16.2",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.2",
+      "placeholder": "[[FIGURE:16.2]]",
+      "see_placeholder": "[[SEE_FIGURE:16.2]]",
+      "asset_path": "figures/Genetics_16.2.png",
+      "caption": "Figure 16.2 The granddaughter design of Weller et al. (1990). Here, each sire produces a number of half-sib sons that are scored for the marker genotypes. The character value for each son is determined by progeny testing, with the trait value being scored in a large number of daughters (again half-sibs) from each son. More general designs allowing for both full- and half-sib families are examined by van der Beck et al. (1995).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 515,
+      "raw_bbox": [
+        215.0,
+        133.0,
+        937.0,
+        569.0
+      ],
+      "source_block_ids": [
+        "p515:b2"
+      ],
+      "caption_block": {
+        "source_page": 515,
+        "printed_page": 495,
+        "source_block_ids": [
+          "p515:b3"
+        ],
+        "bbox": [
+          142.0,
+          600.0,
+          1006.0,
+          777.0
+        ]
+      }
+    },
+    {
+      "id": "16.3",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.3",
+      "placeholder": "[[FIGURE:16.3]]",
+      "see_placeholder": "[[SEE_FIGURE:16.3]]",
+      "asset_path": "figures/Genetics_16.3.png",
+      "caption": "Figure 16.3 Top: When adjacent marker loci differ in the amount of heterozygosity, interval mapping in an outbred population gives a likelihood map with discontinuities at some of the marker loci (here, at the second marker). Bottom: Likelihood maps that simultaneously use all markers on a chromosome (instead of two at a time, as with interval mapping) have no such discontinuities. This likelihood map considers bovine chromosome U5(10) and examines four milk production traits in the granddaughters of a single sire. Only fat yield (denoted by - - - ) showed a significant LOD score (exceeding the critical value of three), indicating a putative QTL on this chromosome. (After Georges et al. 1995.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 520,
+      "raw_bbox": [
+        295.0,
+        127.0,
+        885.0,
+        899.0
+      ],
+      "source_block_ids": [
+        "p520:b3",
+        "p520:b4"
+      ],
+      "caption_block": {
+        "source_page": 520,
+        "printed_page": 500,
+        "source_block_ids": [
+          "p520:b5"
+        ],
+        "bbox": [
+          152.0,
+          928.0,
+          1017.0,
+          1195.0
+        ]
+      }
+    },
+    {
+      "id": "16.4",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.4",
+      "placeholder": "[[FIGURE:16.4]]",
+      "see_placeholder": "[[SEE_FIGURE:16.4]]",
+      "asset_path": "figures/Genetics_16.4.png",
+      "caption": "Figure 16.4 Sample size required to detect a QTL using the $ T_m $ test (Equation 16.50b). Each curve represents a different value for the recombination fraction c between the QTL and linked marker, and plots the number $ n_2 $ of doubly affected sib-pairs required to detect (with 75% power at the 5% significance level) a linked QTL with no dominance variance as a function of $ \\lambda_S $ for that QTL. If dominance is present, the required $ n_2 $ are below the plotted values, so these curves serve as upper bounds on the desirable sample size regardless of the amount of dominance. See Appendix 5 for these power calculations.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 542,
+      "raw_bbox": [
+        311.0,
+        133.0,
+        899.0,
+        595.0
+      ],
+      "source_block_ids": [
+        "p542:b2"
+      ],
+      "caption_block": {
+        "source_page": 542,
+        "printed_page": 522,
+        "source_block_ids": [
+          "p542:b3"
+        ],
+        "bbox": [
+          172.0,
+          627.0,
+          1035.0,
+          865.0
+        ]
+      }
+    },
+    {
+      "id": "16.5",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.5",
+      "placeholder": "[[FIGURE:16.5]]",
+      "see_placeholder": "[[SEE_FIGURE:16.5]]",
+      "asset_path": "figures/Genetics_16.5.png",
+      "caption": "Figure 16.5 LOD scores for exclusion mapping, under the assumption of a DS gene with effect $ \\lambda_S $ (and no dominance, so $ \\lambda_O = \\lambda_S $) for a scan of human chromosome 6 for genes influencing diabetes susceptibility (Davies et al. 1994). A LOD score below -2 provides sufficient evidence that a DS gene of specified effect (or greater) is absent from this region. For example, a DS gene with $ \\lambda_S \\geq 5 $ can be excluded from chromosome positions 70 – 120 cM and 130 – 140 cM. (From Kruglyak and Lander 1995b.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 545,
+      "raw_bbox": [
+        300.0,
+        136.0,
+        825.0,
+        626.0
+      ],
+      "source_block_ids": [
+        "p545:b2"
+      ],
+      "caption_block": {
+        "source_page": 545,
+        "printed_page": 525,
+        "source_block_ids": [
+          "p545:b3"
+        ],
+        "bbox": [
+          130.0,
+          644.0,
+          994.0,
+          853.0
+        ]
+      }
+    },
+    {
+      "id": "16.6",
+      "chapter": "Genetics_chapter16",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter16:16.6",
+      "placeholder": "[[FIGURE:16.6]]",
+      "see_placeholder": "[[SEE_FIGURE:16.6]]",
+      "asset_path": "figures/Genetics_16.6.png",
+      "caption": "Figure 16.6 Information content mapping of a chromosome 6 diabetes scan (Davies et al. 1994) shows those regions where increasing marker density will provide more linkage information (e.g., 70 – 90 cM and 140 – 160 cM). Information content is highest at the markers, falling off in the intervals between markers. (From Kruglyak and Lander 1995b.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 545,
+      "raw_bbox": [
+        277.0,
+        881.0,
+        811.0,
+        1369.0
+      ],
+      "source_block_ids": [
+        "p545:b4"
+      ],
+      "caption_block": {
+        "source_page": 545,
+        "printed_page": 525,
+        "source_block_ids": [
+          "p545:b5"
+        ],
+        "bbox": [
+          128.0,
+          1387.0,
+          990.0,
+          1533.0
+        ]
+      }
+    }
+  ]
+}

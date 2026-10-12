@@ -1,0 +1,367 @@
+{
+  "id": "Genetics_chapter8_019",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "THE MULTIVARIATE NORMAL DISTRIBUTION",
+    "subsections": [
+      "Properties of the MVN"
+    ],
+    "section_level_1": "THE MULTIVARIATE NORMAL DISTRIBUTION",
+    "section_level_2": "Properties of the MVN",
+    "heading_path": [
+      "THE MULTIVARIATE NORMAL DISTRIBUTION",
+      "Properties of the MVN"
+    ],
+    "display_heading": "THE MULTIVARIATE NORMAL DISTRIBUTION / Properties of the MVN",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b15"
+      ],
+      "bbox": [
+        41.0,
+        1127.0,
+        331.0,
+        1163.0
+      ],
+      "raw_text": "Properties of the MVN"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As in the case of its univariate counterpart, the MVN is expected to arise naturally when the quantities of interest result from a large number of underlying variables. Since this condition seems (at least at first glance) to describe many biological systems, the MVN is a natural starting point in biometrical analysis. Further details on the wide variety of applications of the MVN to multivariate statistics can be found in the introductory texts by Morrison (1976) and Johnson and Wichern (1988) and in the more advanced treatment by Anderson (1984). The MVN has a number of useful properties, which we summarize below.",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b16"
+      ],
+      "bbox": [
+        33.0,
+        1167.0,
+        999.0,
+        1446.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "1. If $\\mathbf{x} \\sim \\text{MVN}$, then the distribution of any subset of the variables in $\\mathbf{x}$ is also MVN. For example, each $x_{i}$ is normally distributed and each pair $(x_{i}, x_{j})$ is bivariate normally distributed.",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b17"
+      ],
+      "bbox": [
+        46.0,
+        1435.0,
+        957.0,
+        1551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "2. If $\\mathbf{x} \\sim \\text{MVN}$, then any linear combination of the elements of $\\mathbf{x}$ is also $\\text{MVN}$. Specifically, if $\\mathbf{x} \\sim \\text{MVN}_n(\\boldsymbol{\\mu}, \\mathbf{V})$, a is a vector of constants, and $\\mathbf{A}$ is a matrix of constants, then",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b2"
+      ],
+      "bbox": [
+        144.0,
+        122.0,
+        1059.0,
+        237.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula089]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b3"
+      ],
+      "bbox": [
+        401.0,
+        245.0,
+        906.0,
+        291.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula090]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b5"
+      ],
+      "bbox": [
+        292.0,
+        295.0,
+        882.0,
+        377.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula091]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b7"
+      ],
+      "bbox": [
+        429.0,
+        375.0,
+        966.0,
+        435.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "3. Conditional distributions associated with the MVN are also multivariate normal. Consider the partitioning of x into two components, an $ (m \\times 1) $ column vector $ x_1 $ and an $ [(n-m) \\times 1] $ column vector $ x_2 $ of the remaining variables, e.g.,",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b9"
+      ],
+      "bbox": [
+        155.0,
+        461.0,
+        1066.0,
+        610.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula092]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b10"
+      ],
+      "bbox": [
+        567.0,
+        594.0,
+        706.0,
+        667.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The mean vector and covariance matrix can be partitioned similarly as",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b11"
+      ],
+      "bbox": [
+        209.0,
+        671.0,
+        1052.0,
+        719.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula093]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b12"
+      ],
+      "bbox": [
+        288.0,
+        729.0,
+        922.0,
+        842.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the $ m \\times m $ and $ (n - m) \\times (n - m) $ matrices $ \\mathbf{V}_{\\mathbf{x}_1 \\mathbf{x}_1} $ and $ \\mathbf{V}_{\\mathbf{x}_2 \\mathbf{x}_2} $ are, respectively, the covariance matrices for $ \\mathbf{x}_1 $ and $ \\mathbf{x}_2 $, while the $ m \\times (n - m) $ matrix $ \\mathbf{V}_{\\mathbf{x}_1 \\mathbf{x}_2} $ is the matrix of covariances between the elements of $ \\mathbf{x}_1 $ and $ \\mathbf{x}_2 $. If we condition on $ \\mathbf{x}_2 $, the resulting conditional random variable $ \\mathbf{x}_1 | \\mathbf{x}_2 $ is MVN with $ (m \\times 1) $ mean vector",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b14"
+      ],
+      "bbox": [
+        213.0,
+        854.0,
+        1076.0,
+        1031.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula094]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b15"
+      ],
+      "bbox": [
+        412.0,
+        1039.0,
+        881.0,
+        1090.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and $ (m \\times m) $ covariance matrix",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b17"
+      ],
+      "bbox": [
+        218.0,
+        1106.0,
+        598.0,
+        1144.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula095]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b18"
+      ],
+      "bbox": [
+        408.0,
+        1154.0,
+        891.0,
+        1203.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A proof can be found in most multivariate statistics texts, e.g., Morrison (1976).",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b20"
+      ],
+      "bbox": [
+        221.0,
+        1213.0,
+        1083.0,
+        1292.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "4. If $\\mathbf{x} \\sim \\text{MVN}$, the regression of any subset of $\\mathbf{x}$ on another subset is linear and homoscedastic. Rewriting Equation 8.27 in terms of a regression of the predicted value of the vector $\\mathbf{x}_{1}$ given an observed value of the vector $\\mathbf{x}_{2}$, we have",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b21"
+      ],
+      "bbox": [
+        173.0,
+        1288.0,
+        1084.0,
+        1436.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula096]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b22"
+      ],
+      "bbox": [
+        424.0,
+        1419.0,
+        891.0,
+        1465.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b24"
+      ],
+      "bbox": [
+        227.0,
+        1481.0,
+        313.0,
+        1510.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula097]]",
+      "source_page": 212,
+      "printed_page": 192,
+      "source_block_ids": [
+        "p212:b25"
+      ],
+      "bbox": [
+        513.0,
+        1499.0,
+        801.0,
+        1539.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:6]]",
+      "source_page": 213,
+      "source_block_ids": [
+        "p213:b2",
+        "p213:b3",
+        "p213:b4",
+        "p213:b5",
+        "p213:b6",
+        "p213:b7",
+        "p213:b8",
+        "p213:b9",
+        "p213:b11",
+        "p213:b12"
+      ],
+      "bbox": [
+        109.0,
+        195.0,
+        976.0,
+        395.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:7]]",
+      "source_page": 214,
+      "source_block_ids": [
+        "p214:b2",
+        "p214:b3",
+        "p214:b4",
+        "p214:b5",
+        "p214:b7",
+        "p214:b8"
+      ],
+      "bbox": [
+        178.0,
+        198.0,
+        1045.0,
+        395.0
+      ]
+    }
+  ]
+}

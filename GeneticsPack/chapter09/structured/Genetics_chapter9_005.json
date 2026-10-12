@@ -1,0 +1,130 @@
+{
+  "id": "Genetics_chapter9_005",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "ESTIMATION OF COMPOSITE EFFECTS",
+    "subsections": [
+      "Line Crosses in Nicotiana rustica"
+    ],
+    "section_level_1": "ESTIMATION OF COMPOSITE EFFECTS",
+    "section_level_2": "Line Crosses in Nicotiana rustica",
+    "heading_path": [
+      "ESTIMATION OF COMPOSITE EFFECTS",
+      "Line Crosses in Nicotiana rustica"
+    ],
+    "display_heading": "ESTIMATION OF COMPOSITE EFFECTS / Line Crosses in Nicotiana rustica",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 235,
+      "printed_page": 215,
+      "source_block_ids": [
+        "p235:b11"
+      ],
+      "bbox": [
+        41.0,
+        1391.0,
+        457.0,
+        1429.0
+      ],
+      "raw_text": "Line Crosses in Nicotiana rustica"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Few attempts have been made to estimate more than two-locus epistatic effects using line-cross analysis. However, Mather, Jinks, and their associates have done",
+      "source_page": 235,
+      "printed_page": 215,
+      "source_block_ids": [
+        "p235:b12"
+      ],
+      "bbox": [
+        41.0,
+        1434.0,
+        1000.0,
+        1509.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:9.1]]",
+      "source_page": 236,
+      "printed_page": 216,
+      "source_block_ids": [
+        "p236:b3"
+      ],
+      "bbox": [
+        197.0,
+        610.0,
+        1058.0,
+        734.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "an enormous amount of work with highly inbred lines of tobacco to evaluate the relative importance of various types of higher-order gene action (Mather and Jinks 1982). An experiment by Jinks and Perkins (1969) is particularly noteworthy. In addition to the six fundamental line crosses, they created four second-generation backcrosses (B₁ × P₁, B₁ × P₂, B₂ × P₁, B₂ × P₂), the crosses B₁ × F₁ and B₂ × F₁, and the selfed backcrosses (B₁s and B₂s), and they assayed all of them simultaneously. With such a large number of lines, there are enough degrees of freedom to test for the significance of three-locus epistatic effects.",
+      "source_page": 236,
+      "printed_page": 216,
+      "source_block_ids": [
+        "p236:b4"
+      ],
+      "bbox": [
+        150.0,
+        792.0,
+        1110.0,
+        1052.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In the case of final plant height, a model with fitted parameters (and associated standard errors) $ \\widehat{\\mu}_0 = 57.64 \\pm 0.23 $, $ \\widehat{\\alpha}_1^c = 5.32 \\pm 0.20 $, $ \\widehat{\\delta}_1^c = 3.55 \\pm 0.38 $, $ \\widehat{\\alpha}_2^c = 4.85 \\pm 1.28 $, and $ \\widehat{\\alpha}_2^c \\widehat{\\delta}_1^c = 3.73 \\pm 1.03 $ provides an excellent fit to the data (Figure 9.1). Thus, for this trait, there are significant additive × additive and additive × additive × dominance interactions involving genes from different lines, but no significant additive × dominance, dominance × dominance, or higher-order interactions. The most parsimonious three-locus fit for the data on flowering time is obtained with $ \\widehat{\\mu}_0 = 15.91 \\pm 0.09 $, $ \\widehat{\\alpha}_1^c = 1.36 \\pm 0.15 $, $ \\widehat{\\delta}_1^c = -2.39 \\pm 0.22 $, and $ \\widehat{\\alpha}_2^c \\widehat{\\delta}_1^c = 1.81 \\pm 0.37 $. There are significant differences between observed and predicted line means in this case (Figure 9.1), however, suggesting the existence of even higher-order epistatic interactions. Analyses with other parental lines (Smith 1937, Hill 1966) led to similar results — final height was usually described adequately by a model incorporating dominance and at least one form of two-locus",
+      "source_page": 236,
+      "printed_page": 216,
+      "source_block_ids": [
+        "p236:b5"
+      ],
+      "bbox": [
+        154.0,
+        1049.0,
+        1116.0,
+        1488.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.4]]",
+      "source_page": 237,
+      "printed_page": 217,
+      "source_block_ids": [
+        "p237:b3"
+      ],
+      "bbox": [
+        50.0,
+        236.0,
+        1011.0,
+        703.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "epistasis, while flowering time was influenced by epistatic interactions between pairs, triplets, and higher numbers of loci. The results from two additional line-cross experiments, involving only the six fundamental generations, indicate that epistasis contributes to line differences in other characters in Nicotiana (Table 9.4). In these additional cases, however, effects involving more than pairs of loci need not be invoked to explain the data, since in no case are the observed means significantly different from the final model predictions.",
+      "source_page": 237,
+      "printed_page": 217,
+      "source_block_ids": [
+        "p237:b6"
+      ],
+      "bbox": [
+        37.0,
+        887.0,
+        1003.0,
+        1127.0
+      ]
+    }
+  ]
+}

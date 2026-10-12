@@ -1,0 +1,307 @@
+{
+  "id": "Genetics_chapter5_005",
+  "metadata": {
+    "chapter": "Genetics_chapter5",
+    "section": "LINKAGE",
+    "subsections": [],
+    "section_level_1": "LINKAGE",
+    "section_level_2": null,
+    "heading_path": [
+      "LINKAGE"
+    ],
+    "display_heading": "LINKAGE",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b3"
+      ],
+      "bbox": [
+        139.0,
+        295.0,
+        277.0,
+        327.0
+      ],
+      "raw_text": "LINKAGE"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Up to now we have been treating the transmission of genes at different loci as independent events. Such independence is generally true for genes that are on different chromosomes, but when loci are physically linked on the same chromosome, a statistical dependence can exist between the genes incorporated into gametes. Genes that lie on the same chromosome tend to be inherited as a group, a tendency that declines with increasing distance between the loci. Crossing-over is responsible for this decline.",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b4"
+      ],
+      "bbox": [
+        139.0,
+        345.0,
+        1100.0,
+        585.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "During the meiotic production of gametes, each chromosome replicates to form two “sister” chromatids. Homologous nonsister chromatids then become intimately associated with each other, forming one or more physical connections known as chiasmata (Figure 5.4). Each chiasma represents a point of prior transfer of genetic information. Usually, the chromosomal material distal to a chiasma is exchanged completely, while that proximal to the centromere remains intact. Such an exchange is referred to as a cross-over.",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b5"
+      ],
+      "bbox": [
+        144.0,
+        571.0,
+        1105.0,
+        807.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Gamete frequencies are the fundamental census units in all considerations of linkage relationships. Consider two diallelic loci, A and B, and let the frequencies of the four gamete types be $ P_{A_1B_1} $, $ P_{A_1B_2} $, $ P_{A_2B_1} $, and $ P_{A_2B_2} $, and the frequencies of alleles be $ p_{A_1} $, $ p_{A_2} $, $ p_{B_1} $, and $ p_{B_2} $. If the allelic state at locus A is completely independent of that at locus B, then we expect $ P_{A_1B_1} = p_{A_1}p_{B_1} $, $ P_{A_1B_2} = p_{A_1}p_{B_2} $, and so on. However, many factors, including natural selection, founder effects, migration, and assortative mating, can cause gamete frequencies to depart from expectations based on allele frequencies. A natural measure of this deviation is the coefficient",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b6"
+      ],
+      "bbox": [
+        149.0,
+        796.0,
+        1108.0,
+        1097.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter5_formula041]]",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b7"
+      ],
+      "bbox": [
+        482.0,
+        1094.0,
+        780.0,
+        1129.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The index $D_{A_i B_j}$ is equivalent to the covariance of the frequencies of “nonalleles” $A_i$ and $B_j$ in the same gamete. To see this relationship, let $x = 1$ if $A_i$ is present and $x = 0$ otherwise, and let $y = 1$ if $B_j$ is present and $y = 0$ otherwise. Then, $xy = 1$ if both $A_i$ and $B_j$ are present, and $xy = 0$ otherwise, so $\\sigma_{A_i, B_j} = E(xy) - E(x)E(y) = P_{A_i B_j} - p_{A_i}p_{B_j}$.",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b9"
+      ],
+      "bbox": [
+        155.0,
+        1141.0,
+        1113.0,
+        1314.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that $ D_{A_i B_j} $ may be positive or negative depending on whether $ A_i $ and $ B_j $ are in coupling ( $ A_i B_j $ gametes are overrepresented) or repulsion ( $ A_i B_j $ gametes are underrepresented) disequilibrium. $ D $ is often referred to as the coefficient of linkage disequilibrium, but since disequilibrium can occur between unlinked genes, many authors prefer to call it the coefficient of gametic phase disequilibrium. Higher-order terms for three or more loci are defined in Bennett (1954), Geiringer (1944), and Slatkin (1972).",
+      "source_page": 110,
+      "printed_page": 90,
+      "source_block_ids": [
+        "p110:b10"
+      ],
+      "bbox": [
+        155.0,
+        1298.0,
+        1119.0,
+        1539.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:5.4]]",
+      "source_page": 111,
+      "printed_page": 91,
+      "source_block_ids": [
+        "p111:b3"
+      ],
+      "bbox": [
+        95.0,
+        920.0,
+        959.0,
+        1091.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "There are many ways in which disequilibrium between loci can originate and many ways by which it can be maintained (Felsenstein 1965, 1974; Hill and Robertson 1966, 1968; Nei 1967; Franklin and Lewontin 1970; Barker 1979; Charlesworth and Charlesworth 1979; Feldman et al. 1980). For now, we simply note that, even in the absence of forces that tend to maintain gametic phase disequilibrium (selection, migration, mutation, and drift), once such disequilibrium is present, it may persist for many generations.",
+      "source_page": 111,
+      "printed_page": 91,
+      "source_block_ids": [
+        "p111:b4"
+      ],
+      "bbox": [
+        37.0,
+        1108.0,
+        1001.0,
+        1358.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The expected dynamics of gametic phase disequilibrium depend on the recombination fraction between loci, c. This quantity takes on a minimum value of zero when two loci are so tightly linked that they effectively segregate as a single supergene. Free recombination between loci is denoted by c = 0.5. The upper limit is 0.5 rather than 1.0 because crossing-over normally involves one",
+      "source_page": 111,
+      "printed_page": 91,
+      "source_block_ids": [
+        "p111:b5"
+      ],
+      "bbox": [
+        32.0,
+        1332.0,
+        995.0,
+        1519.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:5.5]]",
+      "source_page": 112,
+      "printed_page": 92,
+      "source_block_ids": [
+        "p112:b3"
+      ],
+      "bbox": [
+        201.0,
+        848.0,
+        1062.0,
+        929.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "rather than two pairs of nonsister chromatids. In principle, if cross-overs occurred between loci A and B on both pairs of chromatids, the recombination fraction could exceed 0.5, but this has been observed only rarely (Fisher and Mather 1936).",
+      "source_page": 112,
+      "printed_page": 92,
+      "source_block_ids": [
+        "p112:b4"
+      ],
+      "bbox": [
+        156.0,
+        970.0,
+        1115.0,
+        1089.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Consider the ideal case in which mating occurs randomly in a population that is effectively infinite in size and all systematic forces causing alleles at different loci to become statistically associated are absent. There are two ways to obtain gametes of a particular type: chromosomes of that type may be transmitted intact between generations, or different chromosomes may recombine to form new gene combinations of the appropriate type. If the frequency of gamete type $ A_i B_j $ in generation $ t $ is $ P_{A_i B_j}(t) $, then $ (1 - c)P_{A_i B_j}(t) $ is the frequency that is passed on without recombination to the next generation. Among the proportion $ c $ of new gametes that are recombinants, $ p_{A_i}p_{B_j} $ must contain both $ A_i $ and $ B_j $ genes, since under random mating, the maternally derived $ A $ gene is distributed independently of the paternally derived $ B $ gene. Summing terms,",
+      "source_page": 112,
+      "printed_page": 92,
+      "source_block_ids": [
+        "p112:b5"
+      ],
+      "bbox": [
+        158.0,
+        1069.0,
+        1124.0,
+        1447.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter5_formula042]]",
+      "source_page": 112,
+      "printed_page": 92,
+      "source_block_ids": [
+        "p112:b6"
+      ],
+      "bbox": [
+        401.0,
+        1492.0,
+        899.0,
+        1536.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and after subtracting $ p_{A_i}p_{B_j} $ from both sides,",
+      "source_page": 113,
+      "printed_page": 93,
+      "source_block_ids": [
+        "p113:b2"
+      ],
+      "bbox": [
+        67.0,
+        134.0,
+        611.0,
+        175.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter5_formula043]]",
+      "source_page": 113,
+      "printed_page": 93,
+      "source_block_ids": [
+        "p113:b3"
+      ],
+      "bbox": [
+        359.0,
+        180.0,
+        736.0,
+        221.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "This equation generalizes to",
+      "source_page": 113,
+      "printed_page": 93,
+      "source_block_ids": [
+        "p113:b5"
+      ],
+      "bbox": [
+        68.0,
+        215.0,
+        412.0,
+        254.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter5_formula044]]",
+      "source_page": 113,
+      "printed_page": 93,
+      "source_block_ids": [
+        "p113:b6"
+      ],
+      "bbox": [
+        373.0,
+        261.0,
+        719.0,
+        304.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The main point of this illustration is that the disequilibrium between loci decays gradually. Even in the case of unlinked genes (c = 0.5), only 50% of the disequilibrium is removed each generation. With less frequent recombination, the time to attain gametic phase equilibrium (D = 0) can be quite long (Figure 5.5).",
+      "source_page": 113,
+      "printed_page": 93,
+      "source_block_ids": [
+        "p113:b8"
+      ],
+      "bbox": [
+        63.0,
+        299.0,
+        1025.0,
+        445.0
+      ]
+    }
+  ]
+}

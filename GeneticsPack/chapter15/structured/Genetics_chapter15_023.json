@@ -1,0 +1,70 @@
+{
+  "id": "Genetics_chapter15_023",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "SELECTED APPLICATIONS",
+    "subsections": [
+      "QTLs Involved in Reproductive Isolation in Mimulus"
+    ],
+    "section_level_1": "SELECTED APPLICATIONS",
+    "section_level_2": "QTLs Involved in Reproductive Isolation in Mimulus",
+    "heading_path": [
+      "SELECTED APPLICATIONS",
+      "QTLs Involved in Reproductive Isolation in Mimulus"
+    ],
+    "display_heading": "SELECTED APPLICATIONS / QTLs Involved in Reproductive Isolation in Mimulus",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 492,
+      "printed_page": 472,
+      "source_block_ids": [
+        "p492:b4"
+      ],
+      "bbox": [
+        118.0,
+        544.0,
+        780.0,
+        585.0
+      ],
+      "raw_text": "QTLs Involved in Reproductive Isolation in Mimulus"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Bradshaw et al. (1995) examined the genetic basis of floral differences between sibling species of monkey flower, Mimulus lewisii and M. cardinalis. Although the ranges of these species overlap and laboratory $ F_{1} $ hybrids are completely interfertile, hybrid plants are not found in nature. Presumably, this is due to nonoverlap of pollinators. Mimulus lewisii shows characters typical of bumblebee-pollinated plants: pink flowers with yellow nectar guides, a wide corolla, small volume of highly concentrated nectar, and short anthers and stigma. Mimulus cardinalis, on the other hand, shows a typical suite of hummingbird-pollinated characters: red petals lacking nectar guides, a narrow tubular corolla, high nectar volumes, and long anthers and stigma.",
+      "source_page": 492,
+      "printed_page": 472,
+      "source_block_ids": [
+        "p492:b5"
+      ],
+      "bbox": [
+        119.0,
+        585.0,
+        1082.0,
+        915.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Using 93 F₂ plants and 159 markers, a number of QTLs for these characters were detected by ML interval mapping. As shown in Table 15.3, four of the characters appear to each have a QTL accounting for over 50% of the total F₂ variance, while all other characters had a QTL accounting for at least 25% of the total variance. Hence, it appears that the bulk of the differences in pollination characters (and hence reproductive isolation) can be accounted for by one or two loci for each character. However, with these small sample sizes, some caution is in order, given our previous comments about overestimation of QTL effects when power is low.",
+      "source_page": 492,
+      "printed_page": 472,
+      "source_block_ids": [
+        "p492:b6"
+      ],
+      "bbox": [
+        122.0,
+        907.0,
+        1087.0,
+        1206.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "id": "PopGen_chapter4_018",
+  "metadata": {
+    "chapter": "PopGen_chapter4",
+    "section": "4.6 MUTATION AND RECOMBINATION",
+    "subsections": [
+      "Piecewise Recombination in Bacteria"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "4.6 MUTATION AND RECOMBINATION",
+    "section_level_2": "Piecewise Recombination in Bacteria",
+    "heading_path": [
+      "4.6 MUTATION AND RECOMBINATION",
+      "Piecewise Recombination in Bacteria"
+    ],
+    "display_heading": "Piecewise Recombination in Bacteria",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter4:p037:b4"
+      ]
+    },
+    "chapter_title": "Mutation and the Neutral Theory"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Many prokaryotic organisms make use of mechanisms of recombination in which a piece of DNA that is small, relative to the size of the entire genome, is transferred from a donor cell into a recipient cell <sup>[589]</sup>. These mechanisms include transformation, in which free DNA is taken up by the recipient from the surrounding medium; transduction, in which a DNA fragment is carried from the donor to the recipient by means of a virus particle; and conjugation, in which a replica of the chromosome from a donor cell is transferred into a recipient cell by a gradual process requiring cell-to-cell contact, but the chromosome usually breaks before the transfer is complete. Because relatively short patches of the genome participate in recombination, these processes differ in their evolutionary implications from meiotic recombination in eukaryotes. Through mechanisms involving transmissible plas mids (extrachromosomal DNA elements) and transposable elements, bacteria can also acquire genes from other species. Although these processes of lateral gene transfer are extremely important in the origin and spread of bacteria resistant to multiple antibiotics, they are individually rare events. Normally, genetic exchange between bacteria takes place between individuals of the same species <sup>[528]</sup>.",
+      "source_page": 201,
+      "source_pages": [
+        201,
+        202
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p037:b5",
+        "PopGen_chapter4:p038:b4"
+      ],
+      "source_bboxes": [
+        [
+          115.0,
+          1058.0,
+          871.0,
+          1380.0
+        ],
+        [
+          267.0,
+          663.0,
+          1018.0,
+          821.0
+        ]
+      ],
+      "provenance_score": 0.882998,
+      "content_sha256": "1ae0de2e3ebd5869c9518c971e03001fde213ad8f498a710aca78280d22c93c2",
+      "inline_styles": [
+        {
+          "start": 246,
+          "end": 260,
+          "style": "italic",
+          "text": "transformation",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          }
+        },
+        {
+          "start": 338,
+          "end": 350,
+          "style": "italic",
+          "text": "transduction",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          }
+        },
+        {
+          "start": 453,
+          "end": 464,
+          "style": "italic",
+          "text": "conjugation",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The main effect of short-patch recombination is that long-range linkage disequilibrium tends to be maintained. For example, in enteric bacteria, such as Escherichia coli, which are part of the normal intestinal flora, linkage disequilibrium between allozyme loci is very strong <sup>[771]</sup>. At the level of DNA sequence, however, many genes have an obviously mosaic structure in which different segments have different phylogenetic histories <sup>[163]</sup>. An example from the phoA gene, coding for alkaline phosphatase in E. coli, is illustrated in Figure 4.17. Among the polymorphic nucleotide sites indicated, the unique nucleotide at each site is inscribed in a box. At the extreme ends of the gene, the alleles from strains RM217T and RM45E are the most closely related; in the middle of the gene, from nucleotide sites 1425 to 1560, there is a run of polymorphic nucleotides in which the similarity between RM217T and RM45E is lost, as if this part of the gene had been introduced by recombination with a more distantly related allele. Although short runs of similar or dissimilar nucleotides can also be the result of chance, chance effects can be ruled out by appropriate statistical tests for recombination <sup>[629,684]</sup>.",
+      "source_page": 202,
+      "source_pages": [
+        202
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p038:b5"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          825.0,
+          1019.0,
+          1275.0
+        ]
+      ],
+      "provenance_score": 0.999025,
+      "content_sha256": "0bf984b805149fc8c0b0add285b5b0ffac74e66554d47dfea690fa60b884c061",
+      "inline_styles": [
+        {
+          "start": 153,
+          "end": 169,
+          "style": "italic",
+          "text": "Escherichia coli",
+          "source_page": 202,
+          "source_block_ids": [
+            "PopGen_chapter4:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              825,
+              1019,
+              1275
+            ]
+          ],
+          "source_content_sha256": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p038:b5": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812"
+          }
+        },
+        {
+          "start": 494,
+          "end": 498,
+          "style": "italic",
+          "text": "phoA",
+          "source_page": 202,
+          "source_block_ids": [
+            "PopGen_chapter4:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              825,
+              1019,
+              1275
+            ]
+          ],
+          "source_content_sha256": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p038:b5": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812"
+          }
+        },
+        {
+          "start": 540,
+          "end": 547,
+          "style": "italic",
+          "text": "E. coli",
+          "source_page": 202,
+          "source_block_ids": [
+            "PopGen_chapter4:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              825,
+              1019,
+              1275
+            ]
+          ],
+          "source_content_sha256": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p038:b5": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The finding that many genes have a mosaic ancestry through recombination seems at first to contradict the finding of significant linkage disequilibrium between more widely separated genes. The paradox is resolved by the fact that each recombination event is local; it replaces a relatively short stretch of the recipient chromosome, and the linkage phase between more distant alleles is maintained. The E. coli chromosome, therefore, consists of clonal segments from a common ancestor, which is called the clonal frame <sup>[469,470]</sup>, interrupted by short segments derived from recombination with diverse other clones. Even though the clonal frames are interrupted by relatively short recombinant segments, their integrity would ultimately be lost unless there were occasional selective events favoring particular genotypes. A clonal frame implies that most genes in the genome will share a common gene tree, their coalescence. The existence of a clonal frame depends on the level of recombination, because high levels of recombination result in different genes having different coalescent histories. Although gene trees in species such as E. coli and Hemophilus influenzae show good congruence, the gene trees for a sample of genes from Serratia marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphylococcus aureus show no better congruence with each other than with trees of random topology <sup>[192]</sup>.",
+      "source_page": 202,
+      "source_pages": [
+        202,
+        203
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p038:b6",
+        "PopGen_chapter4:p039:b1"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          1279.0,
+          1020.0,
+          1382.0
+        ],
+        [
+          120.0,
+          206.0,
+          872.0,
+          631.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "42a1f2f00186193b18a2f5ca12c95281f10d160fa81f3ede4b6a3e9d486ebb02",
+      "inline_styles": [
+        {
+          "start": 403,
+          "end": 410,
+          "style": "italic",
+          "text": "E. coli",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1158,
+          "end": 1165,
+          "style": "italic",
+          "text": "E. coli",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1170,
+          "end": 1191,
+          "style": "italic",
+          "text": "Hemophilus influenzae",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1256,
+          "end": 1275,
+          "style": "italic",
+          "text": "Serratia marcescens",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1277,
+          "end": 1299,
+          "style": "italic",
+          "text": "Neisseria meningitidis",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1301,
+          "end": 1325,
+          "style": "italic",
+          "text": "Streptococcus pneumoniae",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1327,
+          "end": 1349,
+          "style": "italic",
+          "text": "Streptococcus pyogenes",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        },
+        {
+          "start": 1355,
+          "end": 1376,
+          "style": "italic",
+          "text": "Staphylococcus aureus",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    }
+  ]
+}

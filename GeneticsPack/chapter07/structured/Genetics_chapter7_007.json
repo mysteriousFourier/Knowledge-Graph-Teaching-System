@@ -1,0 +1,67 @@
+{
+  "id": "Genetics_chapter7_007",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+    "subsections": [],
+    "section_level_1": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+    "section_level_2": null,
+    "heading_path": [
+      "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM"
+    ],
+    "display_heading": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b2"
+      ],
+      "bbox": [
+        143.0,
+        152.0,
+        1071.0,
+        183.0
+      ],
+      "raw_text": "THE EFFECTS OF LINKAGE AND GAMETIC PHASE DISEQUILIBRIUM"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In deriving the Kempthorne-Cockerham equation (7.12), we assumed that the constituent loci are freely recombining and in gametic phase equilibrium. We now consider the extent to which the interpretation of observed covariances between relatives needs to be modified in the face of violations of these assumptions. In most practical situations, we have little if any information on either linkage or gametic phase disequilibrium, so the following theoretical results provide our only guidance as to the potential seriousness of the matter.",
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b3"
+      ],
+      "bbox": [
+        144.0,
+        217.0,
+        1104.0,
+        441.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The most complete analyses of this problem were developed by Gallais (1974) and Weir and Cockerham (1977), who allowed for inbreeding as well as linkage and gametic phase disequilibrium. Neither study went beyond two-locus relationships, as even then the algebraic and notational complexities are enormous. We will take a simpler approach than these authors, first considering the consequences of linkage under the assumption of gametic phase equilibrium and then evaluating some of the consequences of disequilibrium. In both cases, we will assume that mating is random and that all of the remaining assumptions of the Kempthorne-Cockerham model are fulfilled.",
+      "source_page": 162,
+      "printed_page": 142,
+      "source_block_ids": [
+        "p162:b4"
+      ],
+      "bbox": [
+        144.0,
+        441.0,
+        1105.0,
+        732.0
+      ]
+    }
+  ]
+}

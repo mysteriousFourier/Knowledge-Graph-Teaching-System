@@ -1,0 +1,267 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter16",
+  "count": 6,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter16:1",
+      "example_ref": "Genetics_chapter16:1",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 1",
+      "title": "Example 1. Consider a marker locus segregating five alleles in a population. Here,",
+      "source_file": "Genetics_chapter16_002.json",
+      "start_block_index": 18,
+      "end_source_file": "Genetics_chapter16_002.json",
+      "end_block_index": 21,
+      "block_ids": [
+        "p509:b3",
+        "p509:b4",
+        "p509:b5",
+        "p509:b6"
+      ],
+      "content_markdown": "Example 1. Consider a marker locus segregating five alleles in a population. Here,\n\n[[FORMULA:Genetics_chapter16_formula006]]\n\nHence, in order to have 100 families that are marker-informative for at least one parent, 100/0.768 = 130 randomly drawn families must be examined. If one requires these families to be informative for both parents, then 100/0.576 = 174 families must be examined. These are the best-case scenarios for this marker, occurring if all five alleles have equal frequency.\n\nNow suppose that the marker is linked to a QTL with three alleles whose frequencies are 0.5, 0.3, and 0.2. The probability that an individual is a QTL heterozygote is $ 1 - (0.5^2 + 0.3^2 + 0.2^2) \\simeq 0.62 $. Thus, to have 100 families with one or both parents fully informative requires sampling (at least) $ 130/0.62 \\simeq 210 $ and $ 174/0.62^2 \\simeq 453 $ random families, respectively.",
+      "content_plain": "Example 1. Consider a marker locus segregating five alleles in a population. Here,\n\n[[FORMULA:Genetics_chapter16_formula006]]\n\nHence, in order to have 100 families that are marker-informative for at least one parent, 100/0.768 = 130 randomly drawn families must be examined. If one requires these families to be informative for both parents, then 100/0.576 = 174 families must be examined. These are the best-case scenarios for this marker, occurring if all five alleles have equal frequency.\n\nNow suppose that the marker is linked to a QTL with three alleles whose frequencies are 0.5, 0.3, and 0.2. The probability that an individual is a QTL heterozygote is  1 - (0.5^2 + 0.3^2 + 0.2^2) \\simeq 0.62 . Thus, to have 100 families with one or both parents fully informative requires sampling (at least)  130/0.62 \\simeq 210  and  174/0.62^2 \\simeq 453  random families, respectively.",
+      "formula_refs": [
+        "Genetics_chapter16_formula006"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 509,
+          "y": 856.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 509
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter16:2",
+      "example_ref": "Genetics_chapter16:2",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 2",
+      "title": "Example 2. Three studies have attempted to map QTLs influencing milk production characters in dairy cows with nested ANOVA, using electrophoretically scored markers to examine half",
+      "source_file": "Genetics_chapter16_005.json",
+      "start_block_index": 13,
+      "end_source_file": "Genetics_chapter16_005.json",
+      "end_block_index": 14,
+      "block_ids": [
+        "p513:b3",
+        "p513:b4"
+      ],
+      "content_markdown": "Example 2. Three studies have attempted to map QTLs influencing milk production characters in dairy cows with nested ANOVA, using electrophoretically scored markers to examine half-sibships. The pioneering study of Neimann-Sørensen and Robertson (1961) used six markers and six production characters in Red Danish cattle, with 123 sires and 12 to 13 daughters per sire. None of the 36 possible marker-trait associations were significant at the 1% level, while three were significant at the 5% level. Four production characters in Holsteins (14 markers) and Guernseys (15 markers) were examined by Gonyon et al. (1987) and Haenlein et al. (1987), respectively. In Holsteins, the average number of sires was 181, with an average of 5.3 daughters per sire. Of 56 possible marker-character combinations, six were significant at the 1% level, and another three were significant at the 5% level. The sample sizes were smaller in Guernseys, with an average of 88 sires and 5.4 daughters per sire. None of the resulting 64 marker-character combinations were significant at the 1% level, while three were significant at the 5% level.\n\nTaking into account the problem of multiple comparisons, the Red Danish data do not show convincing evidence of marker effects, as the probability of finding 3 (or more) of 36 tests significant at the 5% level is 0.10. The same is true for the Guernsey data, as the probability of 3 (or more) out of 64 tests being significant at the 5% level is 0.40. On the other hand, at least some of the Holstein associations are likely to be significant, even after accounting for multiple comparisons.",
+      "content_plain": "Example 2. Three studies have attempted to map QTLs influencing milk production characters in dairy cows with nested ANOVA, using electrophoretically scored markers to examine half-sibships. The pioneering study of Neimann-Sørensen and Robertson (1961) used six markers and six production characters in Red Danish cattle, with 123 sires and 12 to 13 daughters per sire. None of the 36 possible marker-trait associations were significant at the 1% level, while three were significant at the 5% level. Four production characters in Holsteins (14 markers) and Guernseys (15 markers) were examined by Gonyon et al. (1987) and Haenlein et al. (1987), respectively. In Holsteins, the average number of sires was 181, with an average of 5.3 daughters per sire. Of 56 possible marker-character combinations, six were significant at the 1% level, and another three were significant at the 5% level. The sample sizes were smaller in Guernseys, with an average of 88 sires and 5.4 daughters per sire. None of the resulting 64 marker-character combinations were significant at the 1% level, while three were significant at the 5% level.\n\nTaking into account the problem of multiple comparisons, the Red Danish data do not show convincing evidence of marker effects, as the probability of finding 3 (or more) of 36 tests significant at the 5% level is 0.10. The same is true for the Guernsey data, as the probability of 3 (or more) out of 64 tests being significant at the 5% level is 0.40. On the other hand, at least some of the Holstein associations are likely to be significant, even after accounting for multiple comparisons.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 513,
+          "y": 1106.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 513
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter16:3",
+      "example_ref": "Genetics_chapter16:3",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 3",
+      "title": "Example 3. Consider Knott and Haley’s (1992b) development of a likelihood function for interval mapping in a full-sib family with a segregating diallelic QTL (with alleles Q and q,",
+      "source_file": "Genetics_chapter16_010.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_chapter16_010.json",
+      "end_block_index": 20,
+      "block_ids": [
+        "p522:b10",
+        "p522:b11",
+        "p522:b12",
+        "p523:b2",
+        "p523:b3",
+        "p523:b5",
+        "p523:b6",
+        "p523:b7",
+        "p523:b9",
+        "p523:b10",
+        "p523:b11"
+      ],
+      "content_markdown": "Example 3. Consider Knott and Haley’s (1992b) development of a likelihood function for interval mapping in a full-sib family with a segregating diallelic QTL (with alleles Q and q, and Q allele frequency equal to p) flanked by two marker loci, A and B. The transmission probabilities required by Equation 16.27a follow from arguments identical to those used in Chapter 15 and depend on QTL-marker distances and assumptions about interference. For example, if both parents have genotype AQB/aqb, where $ c_{1} $ is the A–Q distance and $ c_{2} $ the Q–B distance, then (assuming no interference) from Example 1 in Chapter 15,\n\n[[FORMULA:Genetics_chapter16_formula039]]\n\nThe recombination frequency $ c $ between these markers is assumed known, in which case $ c_2 $ follows as a function of $ c_1 $ and $ c $ (Chapter 15). For a given pair of parental genotypes, many of these parent-offspring conditional probabilities are zero, as usually only a subset of all possible offspring genotypes can occur for a given pair of parental genotypes.\n\nThe likelihood for all n offspring in a family, conditional on parental genotypes, is\n\n[[FORMULA:Genetics_chapter16_formula040]]\n\nwhere $ M_{o} $ denotes the vector of the n offspring marker genotypes. As before, the conditioning on the sire and dam QTL genotype (including phase) is removed by averaging over all possible genotypes, giving the unconditional likelihood for the observed markers as\n\n[[FORMULA:Genetics_chapter16_formula041]]\n\n[[FORMULA:Genetics_chapter16_formula042]]\n\nwhere the sum for each parent is over all QTL genotypes and all QTL-marker phases. In $ \\Pr(Q_x \\mid M_x) $, $ Q_x $ denotes both the possible QTL genotype and phase with respect to the observed marker $ M_x $. For an individual of known marker genotype, say $ A_i A_j B_k B_\\ell $, there are two possible marker phases $ (A_i B_k / A_j B_\\ell \\text{ and } A_j B_k / A_i B_\\ell) $, each of which has four possible QTL genotypes $ (Q/Q, Q/q, q/Q, q/q) $, for a total of eight possible marker-QTL phases for each parent. Assuming Hardy-Weinberg proportions hold and that the base population is in linkage equilibrium (so that both marker-QTL phases are equally frequent), the eight possible marker-QTL genotypes for an $ A_i B_k / A_j B_\\ell $ individual have expected frequencies as follows:\n\n<table><tr><td>Marker-QTL Genotype</td><td>Pr(Q_{x} | A_{i}A_{j}B_{k}B_{\\ell})</td></tr><tr><td>A_{i}Q B_{k} / A_{j}Q B_{\\ell},</td><td>A_{j}Q B_{k} / A_{i}Q B_{\\ell} \\quad p^{2}/2</td></tr><tr><td>A_{i}Q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}Q B_{k} / A_{i}q B_{\\ell} \\quad p(1-p)/2</td></tr><tr><td>A_{i}q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}q B_{k} / A_{i}q B_{\\ell} \\quad p(1-p)/2</td></tr><tr><td>A_{i}q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}q B_{k} / A_{i}q B_{\\ell} \\quad (1-p)^{2}/2</td></tr></table>\n\nThe likelihood can be suitably modified to account for common-family effects (Knott and Haley 1992b) and background (unlinked) polygenes by using arguments identical to those leading to Equations 13.17 and 13.22. The full likelihood over N unrelated families is just the product of the individual family likelihoods. Equation 16.28b has six parameters to estimate (three QTL means, $ \\sigma^{2} $, $ c_{1} $, and p), giving a likelihood-ratio test with four degrees of freedom when compared to the null likelihood of no segregating QTL (Equation 13.8).",
+      "content_plain": "Example 3. Consider Knott and Haley’s (1992b) development of a likelihood function for interval mapping in a full-sib family with a segregating diallelic QTL (with alleles Q and q, and Q allele frequency equal to p) flanked by two marker loci, A and B. The transmission probabilities required by Equation 16.27a follow from arguments identical to those used in Chapter 15 and depend on QTL-marker distances and assumptions about interference. For example, if both parents have genotype AQB/aqb, where  c_{1}  is the A–Q distance and  c_{2}  the Q–B distance, then (assuming no interference) from Example 1 in Chapter 15,\n\n[[FORMULA:Genetics_chapter16_formula039]]\n\nThe recombination frequency  c  between these markers is assumed known, in which case  c_2  follows as a function of  c_1  and  c  (Chapter 15). For a given pair of parental genotypes, many of these parent-offspring conditional probabilities are zero, as usually only a subset of all possible offspring genotypes can occur for a given pair of parental genotypes.\n\nThe likelihood for all n offspring in a family, conditional on parental genotypes, is\n\n[[FORMULA:Genetics_chapter16_formula040]]\n\nwhere  M_{o}  denotes the vector of the n offspring marker genotypes. As before, the conditioning on the sire and dam QTL genotype (including phase) is removed by averaging over all possible genotypes, giving the unconditional likelihood for the observed markers as\n\n[[FORMULA:Genetics_chapter16_formula041]]\n\n[[FORMULA:Genetics_chapter16_formula042]]\n\nwhere the sum for each parent is over all QTL genotypes and all QTL-marker phases. In  \\Pr(Q_x \\mid M_x) ,  Q_x  denotes both the possible QTL genotype and phase with respect to the observed marker  M_x . For an individual of known marker genotype, say  A_i A_j B_k B_\\ell , there are two possible marker phases  (A_i B_k / A_j B_\\ell \\text{ and } A_j B_k / A_i B_\\ell) , each of which has four possible QTL genotypes  (Q/Q, Q/q, q/Q, q/q) , for a total of eight possible marker-QTL phases for each parent. Assuming Hardy-Weinberg proportions hold and that the base population is in linkage equilibrium (so that both marker-QTL phases are equally frequent), the eight possible marker-QTL genotypes for an  A_i B_k / A_j B_\\ell  individual have expected frequencies as follows:\n\n<table><tr><td>Marker-QTL Genotype</td><td>Pr(Q_{x} | A_{i}A_{j}B_{k}B_{\\ell})</td></tr><tr><td>A_{i}Q B_{k} / A_{j}Q B_{\\ell},</td><td>A_{j}Q B_{k} / A_{i}Q B_{\\ell} \\quad p^{2}/2</td></tr><tr><td>A_{i}Q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}Q B_{k} / A_{i}q B_{\\ell} \\quad p(1-p)/2</td></tr><tr><td>A_{i}q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}q B_{k} / A_{i}q B_{\\ell} \\quad p(1-p)/2</td></tr><tr><td>A_{i}q B_{k} / A_{j}q B_{\\ell},</td><td>A_{j}q B_{k} / A_{i}q B_{\\ell} \\quad (1-p)^{2}/2</td></tr></table>\n\nThe likelihood can be suitably modified to account for common-family effects (Knott and Haley 1992b) and background (unlinked) polygenes by using arguments identical to those leading to Equations 13.17 and 13.22. The full likelihood over N unrelated families is just the product of the individual family likelihoods. Equation 16.28b has six parameters to estimate (three QTL means,  \\sigma^{2} ,  c_{1} , and p), giving a likelihood-ratio test with four degrees of freedom when compared to the null likelihood of no segregating QTL (Equation 13.8).",
+      "formula_refs": [
+        "Genetics_chapter16_formula039",
+        "Genetics_chapter16_formula040",
+        "Genetics_chapter16_formula041",
+        "Genetics_chapter16_formula042"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 523,
+          "y": 1476.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 522
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter16:4",
+      "example_ref": "Genetics_chapter16:4",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 4",
+      "title": "Example 4. Suppose a marker has four alleles with frequencies $ p_1 = 0.5 $, $ p_2 = 0.25 $, $ p_3 = 0.15 $, and $ p_4 = 0.1 $. The marker genotypes for three independent pairs of ",
+      "source_file": "Genetics_chapter16_015.json",
+      "start_block_index": 4,
+      "end_source_file": "Genetics_chapter16_015.json",
+      "end_block_index": 8,
+      "block_ids": [
+        "p531:b3",
+        "p531:b4",
+        "p531:b5",
+        "p531:b6",
+        "p531:b7"
+      ],
+      "content_markdown": "Example 4. Suppose a marker has four alleles with frequencies $ p_1 = 0.5 $, $ p_2 = 0.25 $, $ p_3 = 0.15 $, and $ p_4 = 0.1 $. The marker genotypes for three independent pairs of full sibs were found to be: Pair $ 1 = (M_1M_1, M_1M_1) $; Pair $ 2 = (M_3M_4, M_3M_4) $; Pair $ 3 = (M_4M_4, M_4M_4) $. Recall from Chapter 7 that for full sibs, $ f_0 = f_2 = 1/4 $, $ f_1 = 1/2 $. Applying Equation 16.42 and using Table 16.3, the estimated proportions of ibd marker alleles for these three pairs are\n\n[[FORMULA:Genetics_chapter16_formula060]]\n\n[[FORMULA:Genetics_chapter16_formula061]]\n\n[[FORMULA:Genetics_chapter16_formula062]]\n\nThese values are substituted in place of $ \\pi_{jm} $ when computing the H-E regression. By comparing the first and third pairs, it can be seen that rarer alleles are more informative as to ibd status.",
+      "content_plain": "Example 4. Suppose a marker has four alleles with frequencies  p_1 = 0.5 ,  p_2 = 0.25 ,  p_3 = 0.15 , and  p_4 = 0.1 . The marker genotypes for three independent pairs of full sibs were found to be: Pair  1 = (M_1M_1, M_1M_1) ; Pair  2 = (M_3M_4, M_3M_4) ; Pair  3 = (M_4M_4, M_4M_4) . Recall from Chapter 7 that for full sibs,  f_0 = f_2 = 1/4 ,  f_1 = 1/2 . Applying Equation 16.42 and using Table 16.3, the estimated proportions of ibd marker alleles for these three pairs are\n\n[[FORMULA:Genetics_chapter16_formula060]]\n\n[[FORMULA:Genetics_chapter16_formula061]]\n\n[[FORMULA:Genetics_chapter16_formula062]]\n\nThese values are substituted in place of  \\pi_{jm}  when computing the H-E regression. By comparing the first and third pairs, it can be seen that rarer alleles are more informative as to ibd status.",
+      "formula_refs": [
+        "Genetics_chapter16_formula060",
+        "Genetics_chapter16_formula061",
+        "Genetics_chapter16_formula062"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 531,
+          "y": 1225.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 531
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter16:5",
+      "example_ref": "Genetics_chapter16:5",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 5",
+      "title": "Example 5. Cardon et al. (1994) used this interval mapping test to examine whether QTLs influencing reading disability are linked to markers on human chromosome 6. Previous work ha",
+      "source_file": "Genetics_chapter16_017.json",
+      "start_block_index": 11,
+      "end_source_file": "Genetics_chapter16_017.json",
+      "end_block_index": 13,
+      "block_ids": [
+        "p533:b12",
+        "p533:b13",
+        "p534:b2",
+        "p534:b3"
+      ],
+      "content_markdown": "Example 5. Cardon et al. (1994) used this interval mapping test to examine whether QTLs influencing reading disability are linked to markers on human chromosome 6. Previous work had suggested linkage to this chromosome. For more refined mapping, these authors used a set of five highly informative markers. In the following figure, support for QTL position is given by plotting the regression t statistic as a function of putative QTL position on chromosome 6.\n\nThe number of alleles for each marker locus ranged from 9–13 with associated heterozygosities of 0.6–0.9. Two independent sets of relatives were examined, a collection of 358 siblings from 19 families, and an independent collection of 50 dizygotic twins. Selective genotyping was used, with both sets of relatives chosen by the presence of one sib in each pair who scored very poorly on standardized reading tests (following suitable correction for other environmental factors). Interval mapping on both relative sets shows strong (and independent) support for a QTL near the markers D6S105 and TNFB. Support for a second QTL at 70 cM is suggested from the twin data, but this is not confirmed by the siblings data set. (Figure after Cardon et al. 1994.)\n\n![Source illustration p534 b3](figures/examples/Genetics_p534_b3.png)",
+      "content_plain": "Example 5. Cardon et al. (1994) used this interval mapping test to examine whether QTLs influencing reading disability are linked to markers on human chromosome 6. Previous work had suggested linkage to this chromosome. For more refined mapping, these authors used a set of five highly informative markers. In the following figure, support for QTL position is given by plotting the regression t statistic as a function of putative QTL position on chromosome 6.\n\nThe number of alleles for each marker locus ranged from 9–13 with associated heterozygosities of 0.6–0.9. Two independent sets of relatives were examined, a collection of 358 siblings from 19 families, and an independent collection of 50 dizygotic twins. Selective genotyping was used, with both sets of relatives chosen by the presence of one sib in each pair who scored very poorly on standardized reading tests (following suitable correction for other environmental factors). Interval mapping on both relative sets shows strong (and independent) support for a QTL near the markers D6S105 and TNFB. Support for a second QTL at 70 cM is suggested from the twin data, but this is not confirmed by the siblings data set. (Figure after Cardon et al. 1994.)\n\n![Source illustration p534 b3](figures/examples/Genetics_p534_b3.png)",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p534_b3.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 534,
+          "y": 1039.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 533
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:5]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter16:6",
+      "example_ref": "Genetics_chapter16:6",
+      "chapter": "Genetics_chapter16",
+      "label": "Example 6",
+      "title": "Example 6. An alternative formulation for the MLS test is to consider each informative parent separately, simply scoring whether or not a doubly affected sib pair shares a marker a",
+      "source_file": "Genetics_chapter16_020.json",
+      "start_block_index": 11,
+      "end_source_file": "Genetics_chapter16_020.json",
+      "end_block_index": 16,
+      "block_ids": [
+        "p540:b11",
+        "p540:b12",
+        "p540:b13",
+        "p541:b2",
+        "p541:b3",
+        "p541:b4",
+        "p541:b5"
+      ],
+      "content_markdown": "Example 6. An alternative formulation for the MLS test is to consider each informative parent separately, simply scoring whether or not a doubly affected sib pair shares a marker allele from this parent. This approach generates 0 (match, both affected sibs share the allele) or 1 (no match) ibd data. Under the null hypothesis of no linkage, each state (0 or 1) has probability 1/2, and the MLS test statistic becomes\n\n[[FORMULA:Genetics_chapter16_formula086]]\n\nwhere $ n_{1} $ and $ p_{1} $ are, respectively, the number and frequency of sibs sharing the parental allele. This method has the advantage that sibs informative for only one parental marker can still be used. Using this approach, Davies et al. (1994) did a genome-wide search for markers linked to DS genes influencing human type 1 diabetes. Among doubly affected sibs, one marker on chromosome 6, D6S273, had 92 pairs sharing parental alleles and 31 pairs not sharing parental alleles. A second marker on the opposite end of this chromosome, D6S415, had 74 pairs sharing parental alleles and 60 not sharing alleles. The MLS scores for these two markers are\n\n[[FORMULA:Genetics_chapter16_formula087]]\n\n[[FORMULA:Genetics_chapter16_formula088]]\n\nThus, the first marker shows significant evidence of linkage, while the second does not. Translating these LOD scores into LR values (the latter being distributed as a $ \\chi^{2} $ with one degree of freedom) gives LR = 4.61 $ \\cdot $ 6.87 = 31.6 (P < 0.001) for D6S273 and LR = 4.61 $ \\cdot $ 0.32 = 1.47 (P = 0.2) for D6S415.",
+      "content_plain": "Example 6. An alternative formulation for the MLS test is to consider each informative parent separately, simply scoring whether or not a doubly affected sib pair shares a marker allele from this parent. This approach generates 0 (match, both affected sibs share the allele) or 1 (no match) ibd data. Under the null hypothesis of no linkage, each state (0 or 1) has probability 1/2, and the MLS test statistic becomes\n\n[[FORMULA:Genetics_chapter16_formula086]]\n\nwhere  n_{1}  and  p_{1}  are, respectively, the number and frequency of sibs sharing the parental allele. This method has the advantage that sibs informative for only one parental marker can still be used. Using this approach, Davies et al. (1994) did a genome-wide search for markers linked to DS genes influencing human type 1 diabetes. Among doubly affected sibs, one marker on chromosome 6, D6S273, had 92 pairs sharing parental alleles and 31 pairs not sharing parental alleles. A second marker on the opposite end of this chromosome, D6S415, had 74 pairs sharing parental alleles and 60 not sharing alleles. The MLS scores for these two markers are\n\n[[FORMULA:Genetics_chapter16_formula087]]\n\n[[FORMULA:Genetics_chapter16_formula088]]\n\nThus, the first marker shows significant evidence of linkage, while the second does not. Translating these LOD scores into LR values (the latter being distributed as a  \\chi^{2}  with one degree of freedom) gives LR = 4.61  \\cdot  6.87 = 31.6 (P < 0.001) for D6S273 and LR = 4.61  \\cdot  0.32 = 1.47 (P = 0.2) for D6S415.",
+      "formula_refs": [
+        "Genetics_chapter16_formula086",
+        "Genetics_chapter16_formula087",
+        "Genetics_chapter16_formula088"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 541,
+          "y": 689.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 540
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter16:6]]",
+      "book": "Genetics"
+    }
+  ]
+}

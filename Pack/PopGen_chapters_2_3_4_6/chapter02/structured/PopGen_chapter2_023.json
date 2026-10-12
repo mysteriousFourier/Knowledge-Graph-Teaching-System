@@ -1,0 +1,155 @@
+{
+  "id": "PopGen_chapter2_023",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+    "subsections": [
+      "PROBLEMS"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "inline_5"
+    ],
+    "section_level_1": "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+    "section_level_2": "PROBLEMS",
+    "heading_path": [
+      "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+      "PROBLEMS"
+    ],
+    "display_heading": "PROBLEMS",
+    "table_reference_keys": [
+      "popgen_chapter2:inline_5"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b1"
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "content": "1. In certain groups of mosquitoes, including species of Aedes and Culex, sex is determined by the alleles M and m of a single autosomal gene. Genotype Mm is male and genotype mm is female. Since matings are always $ Mm \\times mm $, the sex ratio is maintained at 1:1. How is it possible for there to be random mating for a gene in the same chromosome as the sex-determining gene, when mating for the sex-determining gene itself is completely nonrandom?",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b2"
+      ],
+      "source_bboxes": [
+        [
+          128.0,
+          239.0,
+          868.0,
+          422.0
+        ]
+      ],
+      "provenance_score": 0.985994,
+      "content_sha256": "e60e318ba04dd90a1e23021d569026967444e88dc44be27e7bb7bdd1c441434d",
+      "problem_id": "2.E1",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 57,
+          "end": 62,
+          "style": "italic",
+          "text": "Aedes",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b2"
+          ],
+          "source_bboxes": [
+            [
+              128,
+              239,
+              868,
+              422
+            ]
+          ],
+          "source_content_sha256": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b2": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724"
+          }
+        },
+        {
+          "start": 67,
+          "end": 72,
+          "style": "italic",
+          "text": "Culex",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b2"
+          ],
+          "source_bboxes": [
+            [
+              128,
+              239,
+              868,
+              422
+            ]
+          ],
+          "source_content_sha256": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b2": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "2. The table below shows the number of individuals affected, per million individuals, for each of several autosomal recessive traits. Assuming random mating proportions in the population, what is the expected frequency of individuals who are heterozygous for each of the recessive alleles?",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b3"
+      ],
+      "source_bboxes": [
+        [
+          125.0,
+          434.0,
+          866.0,
+          538.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5cd909dd1acef662a0eef308f99cbdfeca98109a1f72c5cffbff5d14d56262d1",
+      "problem_id": "2.E2",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_5]]",
+      "source_page": 103,
+      "source_pages": [
+        103
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p045:b4"
+      ],
+      "source_bboxes": [
+        [
+          164.0,
+          552.0,
+          787.0,
+          573.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "problem_id": "2.E2",
+      "source_locator_mode": "exact",
+      "content_sha256": "6d8a13f73e90ea1eed8bd3b0ad317055a2fbb236baa6017fd67b93c7575fdefa",
+      "inline_styles": []
+    }
+  ]
+}

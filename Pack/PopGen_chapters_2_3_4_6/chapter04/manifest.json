@@ -1,0 +1,36 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter4",
+  "counts": {
+    "structured": 24,
+    "formulas": 28,
+    "tables": 7,
+    "figures": 19,
+    "examples": 0,
+    "terms": 31,
+    "problems": 26,
+    "image_files": 19
+  },
+  "textbook": "textbook.md",
+  "figures": [
+    "figures/PopGen_4.1.png",
+    "figures/PopGen_4.10.png",
+    "figures/PopGen_4.11.png",
+    "figures/PopGen_4.12.png",
+    "figures/PopGen_4.13.png",
+    "figures/PopGen_4.14.png",
+    "figures/PopGen_4.15.png",
+    "figures/PopGen_4.16.png",
+    "figures/PopGen_4.17.png",
+    "figures/PopGen_4.18.png",
+    "figures/PopGen_4.2.png",
+    "figures/PopGen_4.3.png",
+    "figures/PopGen_4.4.png",
+    "figures/PopGen_4.5.png",
+    "figures/PopGen_4.6.png",
+    "figures/PopGen_4.7.png",
+    "figures/PopGen_4.8.png",
+    "figures/PopGen_4.9.png",
+    "figures/PopGen_problem_4.20.png"
+  ]
+}

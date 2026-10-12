@@ -1,0 +1,55 @@
+{
+  "id": "Genetics_chapter27_014",
+  "metadata": {
+    "chapter": "Genetics_chapter27",
+    "section": "A MOLECULAR-MARKER-BASED METHOD FOR INFERRING VARIANCE COMPONENTS",
+    "subsections": [
+      "Appendices"
+    ],
+    "section_level_1": "A MOLECULAR-MARKER-BASED METHOD FOR INFERRING VARIANCE COMPONENTS",
+    "section_level_2": "Appendices",
+    "heading_path": [
+      "A MOLECULAR-MARKER-BASED METHOD FOR INFERRING VARIANCE COMPONENTS",
+      "Appendices"
+    ],
+    "display_heading": "A MOLECULAR-MARKER-BASED METHOD FOR INFERRING VARIANCE COMPONENTS / Appendices",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 817,
+      "printed_page": 797,
+      "source_block_ids": [
+        "p817:b0"
+      ],
+      "bbox": [
+        347.0,
+        251.0,
+        722.0,
+        334.0
+      ],
+      "raw_text": "Appendices"
+    }
+  },
+  "blocks": [
+    {
+      "type": "source_image",
+      "content": "![Source illustration p817 b1](figures/examples/Genetics_p817_b1.png)",
+      "source_page": 817,
+      "printed_page": 797,
+      "source_block_ids": [
+        "p817:b1"
+      ],
+      "bbox": [
+        273.0,
+        510.0,
+        770.0,
+        863.0
+      ]
+    }
+  ]
+}

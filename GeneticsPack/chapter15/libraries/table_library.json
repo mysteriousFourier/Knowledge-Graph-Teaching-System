@@ -1,0 +1,1128 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter15",
+  "count": 5,
+  "tables": [
+    {
+      "id": "15.1",
+      "label_format": "Table 15.1",
+      "title": "Table 15.1 The expected correlation between marker genotype (coded as $x = 1$ for $MM$, $x = -1$ for $mm$) and phenotypic value $z$ can be used to estimate $c$.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Genotype</td><td>Freq.</td><td>x</td><td>z</td></tr><tr><td>MMQQ</td><td>$ (1-\\tilde{c})/2 $</td><td>1</td><td>zQQ</td></tr><tr><td>MMqq</td><td>$ \\tilde{c}/2 $</td><td>1</td><td>zqq</td></tr><tr><td>mmQQ</td><td>$ \\tilde{c}/2 $</td><td>-1</td><td>zQQ</td></tr><tr><td>mmqq</td><td>$ (1-\\tilde{c})/2 $</td><td>-1</td><td>zqq</td></tr></table>",
+      "rows": [
+        [
+          "Genotype",
+          "Freq.",
+          "x",
+          "z"
+        ],
+        [
+          "MMQQ",
+          "$ (1-\\tilde{c})/2 $",
+          "1",
+          "zQQ"
+        ],
+        [
+          "MMqq",
+          "$ \\tilde{c}/2 $",
+          "1",
+          "zqq"
+        ],
+        [
+          "mmQQ",
+          "$ \\tilde{c}/2 $",
+          "-1",
+          "zQQ"
+        ],
+        [
+          "mmqq",
+          "$ (1-\\tilde{c})/2 $",
+          "-1",
+          "zqq"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 454,
+          "title": "Table 15.1 The expected correlation between marker genotype (coded as $x = 1$ for $MM$, $x = -1$ for $mm$) and phenotypic value $z$ can be used to estimate $c$.",
+          "html": "<table><tr><td>Genotype</td><td>Freq.</td><td>x</td><td>z</td></tr><tr><td>MMQQ</td><td>$ (1-\\tilde{c})/2 $</td><td>1</td><td>zQQ</td></tr><tr><td>MMqq</td><td>$ \\tilde{c}/2 $</td><td>1</td><td>zqq</td></tr><tr><td>mmQQ</td><td>$ \\tilde{c}/2 $</td><td>-1</td><td>zQQ</td></tr><tr><td>mmqq</td><td>$ (1-\\tilde{c})/2 $</td><td>-1</td><td>zqq</td></tr></table>",
+          "rows": [
+            [
+              "Genotype",
+              "Freq.",
+              "x",
+              "z"
+            ],
+            [
+              "MMQQ",
+              "$ (1-\\tilde{c})/2 $",
+              "1",
+              "zQQ"
+            ],
+            [
+              "MMqq",
+              "$ \\tilde{c}/2 $",
+              "1",
+              "zqq"
+            ],
+            [
+              "mmQQ",
+              "$ \\tilde{c}/2 $",
+              "-1",
+              "zQQ"
+            ],
+            [
+              "mmqq",
+              "$ (1-\\tilde{c})/2 $",
+              "-1",
+              "zqq"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            130.0,
+            203.0,
+            1082.0,
+            398.0
+          ],
+          "caption_bbox": [
+            125.0,
+            129.0,
+            1081.0,
+            197.0
+          ],
+          "source_block_ids": [
+            "p454:b3"
+          ],
+          "caption_source_block_ids": [
+            "p454:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter15",
+        "unit_id": "Genetics_chapter15_006",
+        "page": 454,
+        "pages": [
+          454
+        ],
+        "bbox": [
+          130.0,
+          203.0,
+          1082.0,
+          398.0
+        ],
+        "caption_bbox": [
+          125.0,
+          129.0,
+          1081.0,
+          197.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "15.3",
+      "label_format": "Table 15.3",
+      "title": "Table 15.3 Number of detected QTLs influencing pollination characters involved in reproductive isolation between Mimulus cardinalis and Mimulus lewisii and their estimated individual effects (measured by % of variance explained).",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>Number of QTLs</td><td>% Phenotypic Variance $ (r^{2} \\times 100) $</td></tr><tr><td>Pollinator attraction characters</td><td></td><td></td></tr><tr><td>Petal anthocyanins</td><td>2</td><td>33.5, 21.5</td></tr><tr><td>Petal carotenoids</td><td>1</td><td>88.3</td></tr><tr><td>Corolla width</td><td>3</td><td>68.7, 33.0, 25.7</td></tr><tr><td>Petal width</td><td>3</td><td>42.4, 41.2, 25.2</td></tr><tr><td>Pollinator reward</td><td></td><td></td></tr><tr><td>Nectar volume</td><td>2</td><td>53.1, 48.9</td></tr><tr><td>Nectar concentration</td><td>2</td><td>28.5, 23.9</td></tr><tr><td>Pollination efficiency</td><td></td><td></td></tr><tr><td>Stamen length</td><td>4</td><td>27.7, 27.5, 21.3, 18.7</td></tr><tr><td>Pistil length</td><td>2</td><td>51.9, 43.9</td></tr><tr><td colspan=\"3\">Source: Bradshaw et al. 1995.</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Number of QTLs",
+          "% Phenotypic Variance $ (r^{2} \\times 100) $"
+        ],
+        [
+          "Pollinator attraction characters",
+          "",
+          ""
+        ],
+        [
+          "Petal anthocyanins",
+          "2",
+          "33.5, 21.5"
+        ],
+        [
+          "Petal carotenoids",
+          "1",
+          "88.3"
+        ],
+        [
+          "Corolla width",
+          "3",
+          "68.7, 33.0, 25.7"
+        ],
+        [
+          "Petal width",
+          "3",
+          "42.4, 41.2, 25.2"
+        ],
+        [
+          "Pollinator reward",
+          "",
+          ""
+        ],
+        [
+          "Nectar volume",
+          "2",
+          "53.1, 48.9"
+        ],
+        [
+          "Nectar concentration",
+          "2",
+          "28.5, 23.9"
+        ],
+        [
+          "Pollination efficiency",
+          "",
+          ""
+        ],
+        [
+          "Stamen length",
+          "4",
+          "27.7, 27.5, 21.3, 18.7"
+        ],
+        [
+          "Pistil length",
+          "2",
+          "51.9, 43.9"
+        ],
+        [
+          "Source: Bradshaw et al. 1995."
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Due to sampling error, the sum of individual $ r^{2} $ values exceeds 100% in a few cases.",
+          "source_page": 493,
+          "bbox": [
+            72.0,
+            737.0,
+            1029.0,
+            784.0
+          ],
+          "source_block_ids": [
+            "p493:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 493,
+          "title": "Table 15.3 Number of detected QTLs influencing pollination characters involved in reproductive isolation between Mimulus cardinalis and Mimulus lewisii and their estimated individual effects (measured by % of variance explained).",
+          "html": "<table><tr><td></td><td>Number of QTLs</td><td>% Phenotypic Variance $ (r^{2} \\times 100) $</td></tr><tr><td>Pollinator attraction characters</td><td></td><td></td></tr><tr><td>Petal anthocyanins</td><td>2</td><td>33.5, 21.5</td></tr><tr><td>Petal carotenoids</td><td>1</td><td>88.3</td></tr><tr><td>Corolla width</td><td>3</td><td>68.7, 33.0, 25.7</td></tr><tr><td>Petal width</td><td>3</td><td>42.4, 41.2, 25.2</td></tr><tr><td>Pollinator reward</td><td></td><td></td></tr><tr><td>Nectar volume</td><td>2</td><td>53.1, 48.9</td></tr><tr><td>Nectar concentration</td><td>2</td><td>28.5, 23.9</td></tr><tr><td>Pollination efficiency</td><td></td><td></td></tr><tr><td>Stamen length</td><td>4</td><td>27.7, 27.5, 21.3, 18.7</td></tr><tr><td>Pistil length</td><td>2</td><td>51.9, 43.9</td></tr><tr><td colspan=\"3\">Source: Bradshaw et al. 1995.</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Number of QTLs",
+              "% Phenotypic Variance $ (r^{2} \\times 100) $"
+            ],
+            [
+              "Pollinator attraction characters",
+              "",
+              ""
+            ],
+            [
+              "Petal anthocyanins",
+              "2",
+              "33.5, 21.5"
+            ],
+            [
+              "Petal carotenoids",
+              "1",
+              "88.3"
+            ],
+            [
+              "Corolla width",
+              "3",
+              "68.7, 33.0, 25.7"
+            ],
+            [
+              "Petal width",
+              "3",
+              "42.4, 41.2, 25.2"
+            ],
+            [
+              "Pollinator reward",
+              "",
+              ""
+            ],
+            [
+              "Nectar volume",
+              "2",
+              "53.1, 48.9"
+            ],
+            [
+              "Nectar concentration",
+              "2",
+              "28.5, 23.9"
+            ],
+            [
+              "Pollination efficiency",
+              "",
+              ""
+            ],
+            [
+              "Stamen length",
+              "4",
+              "27.7, 27.5, 21.3, 18.7"
+            ],
+            [
+              "Pistil length",
+              "2",
+              "51.9, 43.9"
+            ],
+            [
+              "Source: Bradshaw et al. 1995."
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Due to sampling error, the sum of individual $ r^{2} $ values exceeds 100% in a few cases.",
+              "source_page": 493,
+              "bbox": [
+                72.0,
+                737.0,
+                1029.0,
+                784.0
+              ],
+              "source_block_ids": [
+                "p493:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            80.0,
+            243.0,
+            1031.0,
+            737.0
+          ],
+          "caption_bbox": [
+            78.0,
+            133.0,
+            1041.0,
+            231.0
+          ],
+          "source_block_ids": [
+            "p493:b3"
+          ],
+          "caption_source_block_ids": [
+            "p493:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter15",
+        "unit_id": "Genetics_chapter15_024",
+        "page": 493,
+        "pages": [
+          493
+        ],
+        "bbox": [
+          80.0,
+          243.0,
+          1031.0,
+          737.0
+        ],
+        "caption_bbox": [
+          78.0,
+          133.0,
+          1041.0,
+          231.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "15.4",
+      "label_format": "Table 15.4",
+      "title": "Table 15.4 Character differences between maize and teosinte (primitive maize race Reventado × Zea mays parviglumis).",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td colspan=\"2\">Means</td><td colspan=\"3\">QTLs</td></tr><tr><td></td><td>Maize</td><td>Teos.</td><td>N</td><td>Max</td><td>Min</td></tr><tr><td>Plant Architectural Characters</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Lateral branch internode length (LBIL)</td><td>0.7</td><td>21.9</td><td>5</td><td>0.45</td><td>0.05</td></tr><tr><td>Number of branches (LIBN)</td><td>0.0</td><td>5.8</td><td>4</td><td>0.24</td><td>0.04</td></tr><tr><td>% male primary lateral inflorescences (STAM)</td><td>0.0</td><td>97</td><td>5</td><td>0.23</td><td>0.05</td></tr><tr><td>No. secondary ears/lateral branch (PROL)</td><td>1.0</td><td>8.4</td><td>7</td><td>0.25</td><td>0.04</td></tr><tr><td>Ear Characters</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Cupules along a single rank (CUPR)</td><td>37.4</td><td>5.3</td><td>6</td><td>0.25</td><td>0.04</td></tr><tr><td>Disarticulation: 1 = none, 10 = full (DISA)</td><td>1.0</td><td>10.0</td><td>6</td><td>0.42</td><td>0.04</td></tr><tr><td>Glume score: 1 = soft, 10 = hard (GLUM)</td><td>1.0</td><td>10.0</td><td>2</td><td>0.41</td><td>0.08</td></tr><tr><td>% cupules with only one spikelet (PEDS)</td><td>0.0</td><td>100</td><td>5</td><td>0.25</td><td>0.08</td></tr><tr><td>Number of rows of cupules (RANK)</td><td>5.6</td><td>2.0</td><td>6</td><td>0.36</td><td>0.05</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Means",
+          "QTLs"
+        ],
+        [
+          "",
+          "Maize",
+          "Teos.",
+          "N",
+          "Max",
+          "Min"
+        ],
+        [
+          "Plant Architectural Characters",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Lateral branch internode length (LBIL)",
+          "0.7",
+          "21.9",
+          "5",
+          "0.45",
+          "0.05"
+        ],
+        [
+          "Number of branches (LIBN)",
+          "0.0",
+          "5.8",
+          "4",
+          "0.24",
+          "0.04"
+        ],
+        [
+          "% male primary lateral inflorescences (STAM)",
+          "0.0",
+          "97",
+          "5",
+          "0.23",
+          "0.05"
+        ],
+        [
+          "No. secondary ears/lateral branch (PROL)",
+          "1.0",
+          "8.4",
+          "7",
+          "0.25",
+          "0.04"
+        ],
+        [
+          "Ear Characters",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cupules along a single rank (CUPR)",
+          "37.4",
+          "5.3",
+          "6",
+          "0.25",
+          "0.04"
+        ],
+        [
+          "Disarticulation: 1 = none, 10 = full (DISA)",
+          "1.0",
+          "10.0",
+          "6",
+          "0.42",
+          "0.04"
+        ],
+        [
+          "Glume score: 1 = soft, 10 = hard (GLUM)",
+          "1.0",
+          "10.0",
+          "2",
+          "0.41",
+          "0.08"
+        ],
+        [
+          "% cupules with only one spikelet (PEDS)",
+          "0.0",
+          "100",
+          "5",
+          "0.25",
+          "0.08"
+        ],
+        [
+          "Number of rows of cupules (RANK)",
+          "5.6",
+          "2.0",
+          "6",
+          "0.36",
+          "0.05"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: From Doebley and Stec 1993.",
+          "source_page": 496,
+          "bbox": [
+            119.0,
+            666.0,
+            514.0,
+            696.0
+          ],
+          "source_block_ids": [
+            "p496:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Listed are mean character values (Means), the number of detected QTLs (N), the $ r^{2} $ value for the largest (Max) and smallest (Min) detected QTLs, and the total $ r^{2} $ for a model containing all detected QTLs. Locations for the QTLs detected in this cross are plotted as the upper bars in Figure 15.11.",
+          "source_page": 496,
+          "bbox": [
+            119.0,
+            688.0,
+            1076.0,
+            820.0
+          ],
+          "source_block_ids": [
+            "p496:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 496,
+          "title": "Table 15.4 Character differences between maize and teosinte (primitive maize race Reventado × Zea mays parviglumis).",
+          "html": "<table><tr><td></td><td colspan=\"2\">Means</td><td colspan=\"3\">QTLs</td></tr><tr><td></td><td>Maize</td><td>Teos.</td><td>N</td><td>Max</td><td>Min</td></tr><tr><td>Plant Architectural Characters</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Lateral branch internode length (LBIL)</td><td>0.7</td><td>21.9</td><td>5</td><td>0.45</td><td>0.05</td></tr><tr><td>Number of branches (LIBN)</td><td>0.0</td><td>5.8</td><td>4</td><td>0.24</td><td>0.04</td></tr><tr><td>% male primary lateral inflorescences (STAM)</td><td>0.0</td><td>97</td><td>5</td><td>0.23</td><td>0.05</td></tr><tr><td>No. secondary ears/lateral branch (PROL)</td><td>1.0</td><td>8.4</td><td>7</td><td>0.25</td><td>0.04</td></tr><tr><td>Ear Characters</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Cupules along a single rank (CUPR)</td><td>37.4</td><td>5.3</td><td>6</td><td>0.25</td><td>0.04</td></tr><tr><td>Disarticulation: 1 = none, 10 = full (DISA)</td><td>1.0</td><td>10.0</td><td>6</td><td>0.42</td><td>0.04</td></tr><tr><td>Glume score: 1 = soft, 10 = hard (GLUM)</td><td>1.0</td><td>10.0</td><td>2</td><td>0.41</td><td>0.08</td></tr><tr><td>% cupules with only one spikelet (PEDS)</td><td>0.0</td><td>100</td><td>5</td><td>0.25</td><td>0.08</td></tr><tr><td>Number of rows of cupules (RANK)</td><td>5.6</td><td>2.0</td><td>6</td><td>0.36</td><td>0.05</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Means",
+              "QTLs"
+            ],
+            [
+              "",
+              "Maize",
+              "Teos.",
+              "N",
+              "Max",
+              "Min"
+            ],
+            [
+              "Plant Architectural Characters",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Lateral branch internode length (LBIL)",
+              "0.7",
+              "21.9",
+              "5",
+              "0.45",
+              "0.05"
+            ],
+            [
+              "Number of branches (LIBN)",
+              "0.0",
+              "5.8",
+              "4",
+              "0.24",
+              "0.04"
+            ],
+            [
+              "% male primary lateral inflorescences (STAM)",
+              "0.0",
+              "97",
+              "5",
+              "0.23",
+              "0.05"
+            ],
+            [
+              "No. secondary ears/lateral branch (PROL)",
+              "1.0",
+              "8.4",
+              "7",
+              "0.25",
+              "0.04"
+            ],
+            [
+              "Ear Characters",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Cupules along a single rank (CUPR)",
+              "37.4",
+              "5.3",
+              "6",
+              "0.25",
+              "0.04"
+            ],
+            [
+              "Disarticulation: 1 = none, 10 = full (DISA)",
+              "1.0",
+              "10.0",
+              "6",
+              "0.42",
+              "0.04"
+            ],
+            [
+              "Glume score: 1 = soft, 10 = hard (GLUM)",
+              "1.0",
+              "10.0",
+              "2",
+              "0.41",
+              "0.08"
+            ],
+            [
+              "% cupules with only one spikelet (PEDS)",
+              "0.0",
+              "100",
+              "5",
+              "0.25",
+              "0.08"
+            ],
+            [
+              "Number of rows of cupules (RANK)",
+              "5.6",
+              "2.0",
+              "6",
+              "0.36",
+              "0.05"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: From Doebley and Stec 1993.",
+              "source_page": 496,
+              "bbox": [
+                119.0,
+                666.0,
+                514.0,
+                696.0
+              ],
+              "source_block_ids": [
+                "p496:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Listed are mean character values (Means), the number of detected QTLs (N), the $ r^{2} $ value for the largest (Max) and smallest (Min) detected QTLs, and the total $ r^{2} $ for a model containing all detected QTLs. Locations for the QTLs detected in this cross are plotted as the upper bars in Figure 15.11.",
+              "source_page": 496,
+              "bbox": [
+                119.0,
+                688.0,
+                1076.0,
+                820.0
+              ],
+              "source_block_ids": [
+                "p496:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            114.0,
+            208.0,
+            1068.0,
+            654.0
+          ],
+          "caption_bbox": [
+            112.0,
+            134.0,
+            1070.0,
+            200.0
+          ],
+          "source_block_ids": [
+            "p496:b3"
+          ],
+          "caption_source_block_ids": [
+            "p496:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter15",
+        "unit_id": "Genetics_chapter15_026",
+        "page": 496,
+        "pages": [
+          496
+        ],
+        "bbox": [
+          114.0,
+          208.0,
+          1068.0,
+          654.0
+        ],
+        "caption_bbox": [
+          112.0,
+          134.0,
+          1070.0,
+          200.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "15.5",
+      "label_format": "Table 15.5",
+      "title": "Table 15.5 QTLs influencing age-specific weight and age-specific growth rates in mice, measured at weekly intervals.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\"></td><td colspan=\"9\">Age-specific weight (weeks)</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>No. of QTLs</td><td>7</td><td>10</td><td>16</td><td>13</td><td>15</td><td>15</td><td>14</td><td>14</td><td>16</td></tr><tr><td>Total $ r^{2} $</td><td>0.29</td><td>0.30</td><td>0.56</td><td>0.52</td><td>0.59</td><td>0.63</td><td>0.64</td><td>0.56</td><td>0.67</td></tr><tr><td rowspan=\"2\"></td><td colspan=\"9\">Age-specific growth</td></tr><tr><td colspan=\"2\">Early</td><td colspan=\"2\">Middle</td><td colspan=\"2\">6-week</td><td colspan=\"2\">Late</td><td></td></tr><tr><td>No. of QTLs</td><td colspan=\"2\">11</td><td colspan=\"2\">12</td><td colspan=\"2\">14</td><td colspan=\"2\">12</td><td></td></tr><tr><td>Total $ r^{2} $</td><td colspan=\"2\">0.39</td><td colspan=\"2\">0.51</td><td colspan=\"2\">0.54</td><td colspan=\"2\">0.38</td><td></td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Age-specific weight (weeks)"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          "No. of QTLs",
+          "7",
+          "10",
+          "16",
+          "13",
+          "15",
+          "15",
+          "14",
+          "14",
+          "16"
+        ],
+        [
+          "Total $ r^{2} $",
+          "0.29",
+          "0.30",
+          "0.56",
+          "0.52",
+          "0.59",
+          "0.63",
+          "0.64",
+          "0.56",
+          "0.67"
+        ],
+        [
+          "",
+          "Age-specific growth"
+        ],
+        [
+          "Early",
+          "Middle",
+          "6-week",
+          "Late",
+          ""
+        ],
+        [
+          "No. of QTLs",
+          "11",
+          "12",
+          "14",
+          "12",
+          ""
+        ],
+        [
+          "Total $ r^{2} $",
+          "0.39",
+          "0.51",
+          "0.54",
+          "0.38",
+          ""
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: From Cheverud et al. 1996.",
+          "source_page": 498,
+          "bbox": [
+            117.0,
+            623.0,
+            491.0,
+            653.0
+          ],
+          "source_block_ids": [
+            "p498:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Early, Middle, and Late correspond to growth from 1 to 3 weeks, growth from 3 to 6 weeks, and growth from 6 to 10 weeks, respectively, while 6-week refers to growth from 1 to 6 weeks.",
+          "source_page": 498,
+          "bbox": [
+            115.0,
+            650.0,
+            1072.0,
+            744.0
+          ],
+          "source_block_ids": [
+            "p498:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 498,
+          "title": "Table 15.5 QTLs influencing age-specific weight and age-specific growth rates in mice, measured at weekly intervals.",
+          "html": "<table><tr><td rowspan=\"2\"></td><td colspan=\"9\">Age-specific weight (weeks)</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>No. of QTLs</td><td>7</td><td>10</td><td>16</td><td>13</td><td>15</td><td>15</td><td>14</td><td>14</td><td>16</td></tr><tr><td>Total $ r^{2} $</td><td>0.29</td><td>0.30</td><td>0.56</td><td>0.52</td><td>0.59</td><td>0.63</td><td>0.64</td><td>0.56</td><td>0.67</td></tr><tr><td rowspan=\"2\"></td><td colspan=\"9\">Age-specific growth</td></tr><tr><td colspan=\"2\">Early</td><td colspan=\"2\">Middle</td><td colspan=\"2\">6-week</td><td colspan=\"2\">Late</td><td></td></tr><tr><td>No. of QTLs</td><td colspan=\"2\">11</td><td colspan=\"2\">12</td><td colspan=\"2\">14</td><td colspan=\"2\">12</td><td></td></tr><tr><td>Total $ r^{2} $</td><td colspan=\"2\">0.39</td><td colspan=\"2\">0.51</td><td colspan=\"2\">0.54</td><td colspan=\"2\">0.38</td><td></td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Age-specific weight (weeks)"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+            ],
+            [
+              "No. of QTLs",
+              "7",
+              "10",
+              "16",
+              "13",
+              "15",
+              "15",
+              "14",
+              "14",
+              "16"
+            ],
+            [
+              "Total $ r^{2} $",
+              "0.29",
+              "0.30",
+              "0.56",
+              "0.52",
+              "0.59",
+              "0.63",
+              "0.64",
+              "0.56",
+              "0.67"
+            ],
+            [
+              "",
+              "Age-specific growth"
+            ],
+            [
+              "Early",
+              "Middle",
+              "6-week",
+              "Late",
+              ""
+            ],
+            [
+              "No. of QTLs",
+              "11",
+              "12",
+              "14",
+              "12",
+              ""
+            ],
+            [
+              "Total $ r^{2} $",
+              "0.39",
+              "0.51",
+              "0.54",
+              "0.38",
+              ""
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: From Cheverud et al. 1996.",
+              "source_page": 498,
+              "bbox": [
+                117.0,
+                623.0,
+                491.0,
+                653.0
+              ],
+              "source_block_ids": [
+                "p498:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Early, Middle, and Late correspond to growth from 1 to 3 weeks, growth from 3 to 6 weeks, and growth from 6 to 10 weeks, respectively, while 6-week refers to growth from 1 to 6 weeks.",
+              "source_page": 498,
+              "bbox": [
+                115.0,
+                650.0,
+                1072.0,
+                744.0
+              ],
+              "source_block_ids": [
+                "p498:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            117.0,
+            228.0,
+            1064.0,
+            612.0
+          ],
+          "caption_bbox": [
+            109.0,
+            134.0,
+            1069.0,
+            199.0
+          ],
+          "source_block_ids": [
+            "p498:b3"
+          ],
+          "caption_source_block_ids": [
+            "p498:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter15",
+        "unit_id": "Genetics_chapter15_026",
+        "page": 498,
+        "pages": [
+          498
+        ],
+        "bbox": [
+          117.0,
+          228.0,
+          1064.0,
+          612.0
+        ],
+        "caption_bbox": [
+          109.0,
+          134.0,
+          1069.0,
+          199.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "15.6",
+      "label_format": "Table 15.6",
+      "title": "Table 15.6 Selected studies examining G × E interaction in detected QTLs.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Organism/trait</td><td>Reference</td></tr><tr><td>Tomatos</td><td></td></tr><tr><td>3 fruit characters in California (2 locations) and Israel.</td><td>Paterson et al. 1991</td></tr><tr><td>4/29 QTLs detected in all three environments, 10/29 in two, 15/29 in one.</td><td></td></tr></table>",
+      "rows": [
+        [
+          "Organism/trait",
+          "Reference"
+        ],
+        [
+          "Tomatos",
+          ""
+        ],
+        [
+          "3 fruit characters in California (2 locations) and Israel.",
+          "Paterson et al. 1991"
+        ],
+        [
+          "4/29 QTLs detected in all three environments, 10/29 in two, 15/29 in one.",
+          ""
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 501,
+          "title": "Table 15.6 Selected studies examining G × E interaction in detected QTLs.",
+          "html": "<table><tr><td>Organism/trait</td><td>Reference</td></tr><tr><td>Tomatos</td><td></td></tr><tr><td>3 fruit characters in California (2 locations) and Israel.</td><td>Paterson et al. 1991</td></tr><tr><td>4/29 QTLs detected in all three environments, 10/29 in two, 15/29 in one.</td><td></td></tr></table>",
+          "rows": [
+            [
+              "Organism/trait",
+              "Reference"
+            ],
+            [
+              "Tomatos",
+              ""
+            ],
+            [
+              "3 fruit characters in California (2 locations) and Israel.",
+              "Paterson et al. 1991"
+            ],
+            [
+              "4/29 QTLs detected in all three environments, 10/29 in two, 15/29 in one.",
+              ""
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            72.0,
+            1261.0,
+            1029.0,
+            1473.0
+          ],
+          "caption_bbox": [
+            75.0,
+            1218.0,
+            897.0,
+            1261.0
+          ],
+          "source_block_ids": [
+            "p501:b6"
+          ],
+          "caption_source_block_ids": [
+            "p501:b5"
+          ]
+        },
+        {
+          "page": 502,
+          "title": "Table 15.6 (Continued).",
+          "html": "<table><tr><td>Organism/trait</td><td>Reference</td></tr><tr><td>Maize</td><td></td></tr><tr><td>Flowering time, height in 3 North Carolina locations. Marker-trait associations displaying largest effects are generally constant over environments; markers with less significant associations are not as constant over environments.</td><td>Koester et al. 1993</td></tr><tr><td>11 yield-related characters in 4 North Carolina locations. Of 70 detected QTLs, 21% detected in all four locations, 34% in 2 or 3 locations, 44% in only one location.</td><td>Ragot et al. 1995</td></tr><tr><td>Yield in two locations in Northern Italy. Most detected QTLs consistent across environments.</td><td>Ajstone-Marsan et al. 1995</td></tr><tr><td>ANOVA analysis of 7 traits in 4–6 locations (4 in North Carolina, 1 in Iowa, 1 in Illinois). Little evidence of $ G \\times E $ in 4 traits, (yield, ear height, plant height, leaf area). Strong $ G \\times E $ in 3 others (days to tassel, grain moisture, ear number).</td><td>Stuber et al. 1992 Cockerham and Zeng 1996</td></tr><tr><td>ANOVA analysis of 7 characters over 2 different years. 6/28 significant marker-trait associations for starch concentration showed $ G \\times E $, 6/16 for protein concentration, 12/16 for anthesis date, 7/14 for ear weight, 11/18 for height, 3/27 for kernel weight, and 9/31 for oil concentration.</td><td>Berke and Rocheford 1995</td></tr><tr><td>Corn borer resistance, height in 2 Iowa locations. All 10 detected QTLs (7 resistance, 3 height) gave very similar LOD maps across environments, although only 4/7 height QTLs were significant in both.</td><td>Schön et al. 1993</td></tr><tr><td>Gray Leaf Spot resistance in three environments. 22/33 significant marker-trait associations found in a single environment, 9/33 in two, 2/33 in all three. Averaged over all environments, only 20 of these marker-trait associations were significant.</td><td>Bubeck et al. 1993</td></tr><tr><td>Rapeseed (Brassica napus)</td><td></td></tr><tr><td>Flowering time in 3 different vernalization treatments. LOD scores very similar over all three treatments.</td><td>Ferreira et al. 1995</td></tr></table>",
+          "rows": [
+            [
+              "Organism/trait",
+              "Reference"
+            ],
+            [
+              "Maize",
+              ""
+            ],
+            [
+              "Flowering time, height in 3 North Carolina locations. Marker-trait associations displaying largest effects are generally constant over environments; markers with less significant associations are not as constant over environments.",
+              "Koester et al. 1993"
+            ],
+            [
+              "11 yield-related characters in 4 North Carolina locations. Of 70 detected QTLs, 21% detected in all four locations, 34% in 2 or 3 locations, 44% in only one location.",
+              "Ragot et al. 1995"
+            ],
+            [
+              "Yield in two locations in Northern Italy. Most detected QTLs consistent across environments.",
+              "Ajstone-Marsan et al. 1995"
+            ],
+            [
+              "ANOVA analysis of 7 traits in 4–6 locations (4 in North Carolina, 1 in Iowa, 1 in Illinois). Little evidence of $ G \\times E $ in 4 traits, (yield, ear height, plant height, leaf area). Strong $ G \\times E $ in 3 others (days to tassel, grain moisture, ear number).",
+              "Stuber et al. 1992 Cockerham and Zeng 1996"
+            ],
+            [
+              "ANOVA analysis of 7 characters over 2 different years. 6/28 significant marker-trait associations for starch concentration showed $ G \\times E $, 6/16 for protein concentration, 12/16 for anthesis date, 7/14 for ear weight, 11/18 for height, 3/27 for kernel weight, and 9/31 for oil concentration.",
+              "Berke and Rocheford 1995"
+            ],
+            [
+              "Corn borer resistance, height in 2 Iowa locations. All 10 detected QTLs (7 resistance, 3 height) gave very similar LOD maps across environments, although only 4/7 height QTLs were significant in both.",
+              "Schön et al. 1993"
+            ],
+            [
+              "Gray Leaf Spot resistance in three environments. 22/33 significant marker-trait associations found in a single environment, 9/33 in two, 2/33 in all three. Averaged over all environments, only 20 of these marker-trait associations were significant.",
+              "Bubeck et al. 1993"
+            ],
+            [
+              "Rapeseed (Brassica napus)",
+              ""
+            ],
+            [
+              "Flowering time in 3 different vernalization treatments. LOD scores very similar over all three treatments.",
+              "Ferreira et al. 1995"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            110.0,
+            173.0,
+            1117.0,
+            1430.0
+          ],
+          "caption_bbox": [
+            111.0,
+            136.0,
+            387.0,
+            169.0
+          ],
+          "source_block_ids": [
+            "p502:b3"
+          ],
+          "caption_source_block_ids": [
+            "p502:b2"
+          ]
+        },
+        {
+          "page": 503,
+          "title": "Table 15.6 (Continued).",
+          "html": "<table><tr><td>Organism/trait</td><td>Reference</td></tr><tr><td>Peas</td><td></td></tr><tr><td>Node number in field and greenhouse locations. 3 QTLs detected only in greenhouse, 3 only in field, 1 in both.</td><td>Dirlewanger et al. 1994</td></tr><tr><td>Arabidopsis thaliana</td><td></td></tr><tr><td>Flowering time in 6 vernalization/photoperiod treatments. Four of 12 QTLs detected by composite interval mapping showed QTL $ \\times $ E interactions.</td><td>Jansen et al. 1995</td></tr></table>",
+          "rows": [
+            [
+              "Organism/trait",
+              "Reference"
+            ],
+            [
+              "Peas",
+              ""
+            ],
+            [
+              "Node number in field and greenhouse locations. 3 QTLs detected only in greenhouse, 3 only in field, 1 in both.",
+              "Dirlewanger et al. 1994"
+            ],
+            [
+              "Arabidopsis thaliana",
+              ""
+            ],
+            [
+              "Flowering time in 6 vernalization/photoperiod treatments. Four of 12 QTLs detected by composite interval mapping showed QTL $ \\times $ E interactions.",
+              "Jansen et al. 1995"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            73.0,
+            174.0,
+            1034.0,
+            526.0
+          ],
+          "caption_bbox": [
+            82.0,
+            130.0,
+            356.0,
+            165.0
+          ],
+          "source_block_ids": [
+            "p503:b3"
+          ],
+          "caption_source_block_ids": [
+            "p503:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter15",
+        "unit_id": "Genetics_chapter15_028",
+        "page": 501,
+        "pages": [
+          501,
+          502,
+          503
+        ],
+        "bbox": [
+          72.0,
+          1261.0,
+          1029.0,
+          1473.0
+        ],
+        "caption_bbox": [
+          75.0,
+          1218.0,
+          897.0,
+          1261.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "Genetics_chapter13_018",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "ANALYSIS OF DISCRETE CHARACTERS",
+    "subsections": [],
+    "section_level_1": "ANALYSIS OF DISCRETE CHARACTERS",
+    "section_level_2": null,
+    "heading_path": [
+      "ANALYSIS OF DISCRETE CHARACTERS"
+    ],
+    "display_heading": "ANALYSIS OF DISCRETE CHARACTERS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 389,
+      "printed_page": 369,
+      "source_block_ids": [
+        "p389:b9"
+      ],
+      "bbox": [
+        70.0,
+        1373.0,
+        605.0,
+        1412.0
+      ],
+      "raw_text": "ANALYSIS OF DISCRETE CHARACTERS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The likelihood functions developed above can be easily modified to accommodate complex segregation analysis of dichotomous (binary) characters, such as the presence/absence of a disease (e.g., Elston and Rao 1978). Define the penetrance",
+      "source_page": 389,
+      "printed_page": 369,
+      "source_block_ids": [
+        "p389:b10"
+      ],
+      "bbox": [
+        65.0,
+        1434.0,
+        1026.0,
+        1551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "$\\psi_{g}$ of a genotype $g$ as the probability that a random individual of that genotype displays the trait. Coding the character as",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b2"
+      ],
+      "bbox": [
+        110.0,
+        129.0,
+        1070.0,
+        207.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula044]]",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b3"
+      ],
+      "bbox": [
+        377.0,
+        222.0,
+        801.0,
+        303.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "gives the likelihood function for an individual with genotype g as",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b5"
+      ],
+      "bbox": [
+        115.0,
+        324.0,
+        904.0,
+        367.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula045]]",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b6"
+      ],
+      "bbox": [
+        239.0,
+        381.0,
+        847.0,
+        465.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "More generally, if the character has $n$ discrete states, and $\\psi_{k,g}$ is the probability that an individual of genotype $g$ has character state $k$, the likelihood function becomes",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b8"
+      ],
+      "bbox": [
+        118.0,
+        481.0,
+        1077.0,
+        591.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula046]]",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b9"
+      ],
+      "bbox": [
+        163.0,
+        602.0,
+        947.0,
+        696.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thus, our treatment below of dichotomous characters easily extends to polychotomous traits.",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b11"
+      ],
+      "bbox": [
+        121.0,
+        711.0,
+        1078.0,
+        789.0
+      ]
+    }
+  ]
+}

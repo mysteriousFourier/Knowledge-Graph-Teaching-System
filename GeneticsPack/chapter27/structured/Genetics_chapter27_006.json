@@ -1,0 +1,402 @@
+{
+  "id": "Genetics_chapter27_006",
+  "metadata": {
+    "chapter": "Genetics_chapter27",
+    "section": "RESTRICTED MAXIMUM LIKELIHOOD",
+    "subsections": [],
+    "section_level_1": "RESTRICTED MAXIMUM LIKELIHOOD",
+    "section_level_2": null,
+    "heading_path": [
+      "RESTRICTED MAXIMUM LIKELIHOOD"
+    ],
+    "display_heading": "RESTRICTED MAXIMUM LIKELIHOOD",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 801,
+      "printed_page": 781,
+      "source_block_ids": [
+        "p801:b19"
+      ],
+      "bbox": [
+        16.0,
+        1389.0,
+        545.0,
+        1441.0
+      ],
+      "raw_text": "RESTRICTED MAXIMUM LIKELIHOOD"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "REML is based on a linear transformation of the observation vector y that removes the fixed effects from the model. The simplest way to see how this is done is to imagine a transformation matrix K associated with the design matrix X for the model under consideration such that",
+      "source_page": 801,
+      "printed_page": 781,
+      "source_block_ids": [
+        "p801:b20",
+        "p802:b2"
+      ],
+      "bbox": [
+        12.0,
+        1452.0,
+        972.0,
+        1554.0
+      ],
+      "source_page_end": 802
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula058]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b3"
+      ],
+      "bbox": [
+        570.0,
+        218.0,
+        682.0,
+        253.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Applying this transformation matrix to the mixed model yields",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b5"
+      ],
+      "bbox": [
+        151.0,
+        274.0,
+        908.0,
+        336.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula059]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b6"
+      ],
+      "bbox": [
+        452.0,
+        340.0,
+        806.0,
+        421.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The linear contrasts $ y^* $ are equivalent to residual deviations from the estimated fixed effects, akin to using $ y_i^* = y_i - \\overline{y} $ in the introductory example used at the start of this chapter. REML estimates of variance components are equivalent to ML estimates of the transformed variables. Thus, we can use the ML solutions outlined above by making the following substitutions:",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b8"
+      ],
+      "bbox": [
+        155.0,
+        434.0,
+        1119.0,
+        626.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula060]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b9"
+      ],
+      "bbox": [
+        186.0,
+        623.0,
+        1014.0,
+        687.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "While REML appears to require the additional task of finding a matrix K that satisfies Equation 27.25, the REML equations can actually be expressed directly in terms of V, y, and P. This result follows from the very useful identity, proven in Searle et al. (1992), that K satisfies",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b11"
+      ],
+      "bbox": [
+        164.0,
+        689.0,
+        1125.0,
+        848.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula061]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b12"
+      ],
+      "bbox": [
+        510.0,
+        851.0,
+        784.0,
+        896.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Noting that",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b14"
+      ],
+      "bbox": [
+        172.0,
+        933.0,
+        321.0,
+        970.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula062]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b15"
+      ],
+      "bbox": [
+        287.0,
+        978.0,
+        923.0,
+        1037.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and substituting the expressions given as 27.26b into Equation 27.17a, after some rearrangement, the ML equations yield the REML estimators,",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b17"
+      ],
+      "bbox": [
+        174.0,
+        1040.0,
+        1134.0,
+        1133.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula063]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b18"
+      ],
+      "bbox": [
+        471.0,
+        1138.0,
+        918.0,
+        1190.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula064]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b20"
+      ],
+      "bbox": [
+        397.0,
+        1182.0,
+        920.0,
+        1237.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that REML does not return estimates of $ \\beta $, since the fixed effects are removed by setting $ \\beta^* = 0 $.",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b22"
+      ],
+      "bbox": [
+        181.0,
+        1243.0,
+        1141.0,
+        1337.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Since the transformation $ \\mathbf{y}^{*}=\\mathbf{K}\\mathbf{y} $ satisfying Equation 27.25 solely depends on the design matrix, this general approach still holds with $ m $ uncorrelated random vectors. In this case, Equation 27.8a expands to",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b23"
+      ],
+      "bbox": [
+        184.0,
+        1305.0,
+        1144.0,
+        1435.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula065]]",
+      "source_page": 802,
+      "printed_page": 782,
+      "source_block_ids": [
+        "p802:b24"
+      ],
+      "bbox": [
+        524.0,
+        1443.0,
+        810.0,
+        1533.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and the REML equations for the $ m+1 $ variance components become",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b2"
+      ],
+      "bbox": [
+        61.0,
+        124.0,
+        888.0,
+        184.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula066]]",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b3"
+      ],
+      "bbox": [
+        303.0,
+        195.0,
+        747.0,
+        253.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula067]]",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b5"
+      ],
+      "bbox": [
+        193.0,
+        272.0,
+        882.0,
+        335.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\hat{\\mathbf{P}} $ is now a function of $ \\hat{\\mathbf{V}} = \\sum \\hat{\\sigma}_{i}^{2} \\mathbf{Z}_{i} \\mathbf{B}_{i} \\mathbf{Z}_{i}^{T} + \\hat{\\sigma}_{E}^{2} \\mathbf{I} $.",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b7"
+      ],
+      "bbox": [
+        54.0,
+        338.0,
+        733.0,
+        399.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "With REML, the information matrix contains only items corresponding to variance-component estimates, so $ \\mathbf{F} = \\mathbf{S} $, where",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b8"
+      ],
+      "bbox": [
+        55.0,
+        376.0,
+        1011.0,
+        470.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter27_formula068]]",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b9"
+      ],
+      "bbox": [
+        397.0,
+        481.0,
+        662.0,
+        553.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "with $ V_{i} $ given by Equation 27.15. Estimates of the sampling variances and covariances of the variance-component estimates are obtained from the inverse of the matrix S, as described above.",
+      "source_page": 803,
+      "printed_page": 783,
+      "source_block_ids": [
+        "p803:b11"
+      ],
+      "bbox": [
+        46.0,
+        560.0,
+        1007.0,
+        688.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter27:3]]",
+      "source_page": 803,
+      "source_block_ids": [
+        "p803:b12",
+        "p803:b13",
+        "p803:b14",
+        "p803:b15",
+        "p803:b16"
+      ],
+      "bbox": [
+        89.0,
+        752.0,
+        953.0,
+        841.0
+      ]
+    }
+  ]
+}

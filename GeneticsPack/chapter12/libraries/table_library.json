@@ -1,0 +1,352 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter12",
+  "count": 1,
+  "tables": [
+    {
+      "id": "12.1",
+      "label_format": "Table 12.1",
+      "title": "Table 12.1 Estimates of the mutational heritability for a variety of organisms and characters.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Character</td><td>$ h_{m}^{2} $</td><td>Reference</td></tr><tr><td rowspan=\"11\">Drosophila melanogaster</td><td>Abdominal bristle number</td><td>0.0035</td><td>See text</td></tr><tr><td>Sternopleural bristle number</td><td>0.0043</td><td>See text</td></tr><tr><td rowspan=\"2\">Enzyme activities</td><td rowspan=\"2\">0.0022</td><td>Clark et al. 1995b</td></tr><tr><td>Harada 1995</td></tr><tr><td>Ethanol resistance</td><td>0.0009</td><td>Weber and Diggins 1990</td></tr><tr><td>Body weight</td><td>0.0047</td><td>Clark et al. 1995b</td></tr><tr><td>Wing dimensions</td><td>0.0020</td><td>Santiago et al. 1992</td></tr><tr><td rowspan=\"4\">Viability</td><td rowspan=\"4\">0.0003</td><td>Mukai 1964</td></tr><tr><td>Mukai et al. 1972</td></tr><tr><td>Cardellino and Mukai 1975</td></tr><tr><td>Ohnishi 1977</td></tr><tr><td>Tribolium castaneum</td><td>Pupal weight</td><td>0.0091</td><td>Goodwill and Enfield 1971</td></tr><tr><td>Daphnia pulex</td><td>Life-history traits</td><td>0.0017</td><td>Lynch 1985</td></tr><tr><td rowspan=\"6\">Mouse</td><td>Lengths of limb bones</td><td>0.0234</td><td>Bailey 1959</td></tr><tr><td>Mandible measures</td><td>0.0231</td><td>Festing 1973</td></tr><tr><td rowspan=\"3\">Skull measures</td><td rowspan=\"3\">0.0052</td><td>Carpenter et al. 1957</td></tr><tr><td>Deol et al. 1957</td></tr><tr><td>Hoi-Sen 1972</td></tr><tr><td>6-week weight</td><td>0.0034</td><td>Caballero et al. 1995</td></tr><tr><td>Arabidopsis thaliana</td><td>Life-history traits</td><td>0.0039</td><td>Schultz et al. (in prep.)</td></tr><tr><td rowspan=\"2\">Maize</td><td>Plant size</td><td>0.0112</td><td>Russell et al. 1963</td></tr><tr><td>Reproductive traits</td><td>0.0073</td><td>Russell et al. 1963</td></tr><tr><td rowspan=\"2\">Rice</td><td>Plant size</td><td>0.0030</td><td>Oka et al. 1958</td></tr><tr><td>Reproductive traits</td><td>0.0028</td><td>Sakai and Suzuki 1964</td></tr><tr><td>Barley</td><td>Life-history traits</td><td>0.0002</td><td>Cox et al. 1987</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Character",
+          "$ h_{m}^{2} $",
+          "Reference"
+        ],
+        [
+          "Drosophila melanogaster",
+          "Abdominal bristle number",
+          "0.0035",
+          "See text"
+        ],
+        [
+          "Sternopleural bristle number",
+          "0.0043",
+          "See text"
+        ],
+        [
+          "Enzyme activities",
+          "0.0022",
+          "Clark et al. 1995b"
+        ],
+        [
+          "Harada 1995"
+        ],
+        [
+          "Ethanol resistance",
+          "0.0009",
+          "Weber and Diggins 1990"
+        ],
+        [
+          "Body weight",
+          "0.0047",
+          "Clark et al. 1995b"
+        ],
+        [
+          "Wing dimensions",
+          "0.0020",
+          "Santiago et al. 1992"
+        ],
+        [
+          "Viability",
+          "0.0003",
+          "Mukai 1964"
+        ],
+        [
+          "Mukai et al. 1972"
+        ],
+        [
+          "Cardellino and Mukai 1975"
+        ],
+        [
+          "Ohnishi 1977"
+        ],
+        [
+          "Tribolium castaneum",
+          "Pupal weight",
+          "0.0091",
+          "Goodwill and Enfield 1971"
+        ],
+        [
+          "Daphnia pulex",
+          "Life-history traits",
+          "0.0017",
+          "Lynch 1985"
+        ],
+        [
+          "Mouse",
+          "Lengths of limb bones",
+          "0.0234",
+          "Bailey 1959"
+        ],
+        [
+          "Mandible measures",
+          "0.0231",
+          "Festing 1973"
+        ],
+        [
+          "Skull measures",
+          "0.0052",
+          "Carpenter et al. 1957"
+        ],
+        [
+          "Deol et al. 1957"
+        ],
+        [
+          "Hoi-Sen 1972"
+        ],
+        [
+          "6-week weight",
+          "0.0034",
+          "Caballero et al. 1995"
+        ],
+        [
+          "Arabidopsis thaliana",
+          "Life-history traits",
+          "0.0039",
+          "Schultz et al. (in prep.)"
+        ],
+        [
+          "Maize",
+          "Plant size",
+          "0.0112",
+          "Russell et al. 1963"
+        ],
+        [
+          "Reproductive traits",
+          "0.0073",
+          "Russell et al. 1963"
+        ],
+        [
+          "Rice",
+          "Plant size",
+          "0.0030",
+          "Oka et al. 1958"
+        ],
+        [
+          "Reproductive traits",
+          "0.0028",
+          "Sakai and Suzuki 1964"
+        ],
+        [
+          "Barley",
+          "Life-history traits",
+          "0.0002",
+          "Cox et al. 1987"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Where possible the results represent averages over multiple studies, ranging from analyses of drift among initially homozygous lines to artificial selection experiments. Detailed analyses of experiments performed prior to 1985 can be found in Lynch (1988b), and a more recent survey is contained in Houle et al. (1996).",
+          "source_page": 352,
+          "bbox": [
+            138.0,
+            1093.0,
+            1100.0,
+            1224.0
+          ],
+          "source_block_ids": [
+            "p352:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 352,
+          "title": "Table 12.1 Estimates of the mutational heritability for a variety of organisms and characters.",
+          "html": "<table><tr><td>Species</td><td>Character</td><td>$ h_{m}^{2} $</td><td>Reference</td></tr><tr><td rowspan=\"11\">Drosophila melanogaster</td><td>Abdominal bristle number</td><td>0.0035</td><td>See text</td></tr><tr><td>Sternopleural bristle number</td><td>0.0043</td><td>See text</td></tr><tr><td rowspan=\"2\">Enzyme activities</td><td rowspan=\"2\">0.0022</td><td>Clark et al. 1995b</td></tr><tr><td>Harada 1995</td></tr><tr><td>Ethanol resistance</td><td>0.0009</td><td>Weber and Diggins 1990</td></tr><tr><td>Body weight</td><td>0.0047</td><td>Clark et al. 1995b</td></tr><tr><td>Wing dimensions</td><td>0.0020</td><td>Santiago et al. 1992</td></tr><tr><td rowspan=\"4\">Viability</td><td rowspan=\"4\">0.0003</td><td>Mukai 1964</td></tr><tr><td>Mukai et al. 1972</td></tr><tr><td>Cardellino and Mukai 1975</td></tr><tr><td>Ohnishi 1977</td></tr><tr><td>Tribolium castaneum</td><td>Pupal weight</td><td>0.0091</td><td>Goodwill and Enfield 1971</td></tr><tr><td>Daphnia pulex</td><td>Life-history traits</td><td>0.0017</td><td>Lynch 1985</td></tr><tr><td rowspan=\"6\">Mouse</td><td>Lengths of limb bones</td><td>0.0234</td><td>Bailey 1959</td></tr><tr><td>Mandible measures</td><td>0.0231</td><td>Festing 1973</td></tr><tr><td rowspan=\"3\">Skull measures</td><td rowspan=\"3\">0.0052</td><td>Carpenter et al. 1957</td></tr><tr><td>Deol et al. 1957</td></tr><tr><td>Hoi-Sen 1972</td></tr><tr><td>6-week weight</td><td>0.0034</td><td>Caballero et al. 1995</td></tr><tr><td>Arabidopsis thaliana</td><td>Life-history traits</td><td>0.0039</td><td>Schultz et al. (in prep.)</td></tr><tr><td rowspan=\"2\">Maize</td><td>Plant size</td><td>0.0112</td><td>Russell et al. 1963</td></tr><tr><td>Reproductive traits</td><td>0.0073</td><td>Russell et al. 1963</td></tr><tr><td rowspan=\"2\">Rice</td><td>Plant size</td><td>0.0030</td><td>Oka et al. 1958</td></tr><tr><td>Reproductive traits</td><td>0.0028</td><td>Sakai and Suzuki 1964</td></tr><tr><td>Barley</td><td>Life-history traits</td><td>0.0002</td><td>Cox et al. 1987</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Character",
+              "$ h_{m}^{2} $",
+              "Reference"
+            ],
+            [
+              "Drosophila melanogaster",
+              "Abdominal bristle number",
+              "0.0035",
+              "See text"
+            ],
+            [
+              "Sternopleural bristle number",
+              "0.0043",
+              "See text"
+            ],
+            [
+              "Enzyme activities",
+              "0.0022",
+              "Clark et al. 1995b"
+            ],
+            [
+              "Harada 1995"
+            ],
+            [
+              "Ethanol resistance",
+              "0.0009",
+              "Weber and Diggins 1990"
+            ],
+            [
+              "Body weight",
+              "0.0047",
+              "Clark et al. 1995b"
+            ],
+            [
+              "Wing dimensions",
+              "0.0020",
+              "Santiago et al. 1992"
+            ],
+            [
+              "Viability",
+              "0.0003",
+              "Mukai 1964"
+            ],
+            [
+              "Mukai et al. 1972"
+            ],
+            [
+              "Cardellino and Mukai 1975"
+            ],
+            [
+              "Ohnishi 1977"
+            ],
+            [
+              "Tribolium castaneum",
+              "Pupal weight",
+              "0.0091",
+              "Goodwill and Enfield 1971"
+            ],
+            [
+              "Daphnia pulex",
+              "Life-history traits",
+              "0.0017",
+              "Lynch 1985"
+            ],
+            [
+              "Mouse",
+              "Lengths of limb bones",
+              "0.0234",
+              "Bailey 1959"
+            ],
+            [
+              "Mandible measures",
+              "0.0231",
+              "Festing 1973"
+            ],
+            [
+              "Skull measures",
+              "0.0052",
+              "Carpenter et al. 1957"
+            ],
+            [
+              "Deol et al. 1957"
+            ],
+            [
+              "Hoi-Sen 1972"
+            ],
+            [
+              "6-week weight",
+              "0.0034",
+              "Caballero et al. 1995"
+            ],
+            [
+              "Arabidopsis thaliana",
+              "Life-history traits",
+              "0.0039",
+              "Schultz et al. (in prep.)"
+            ],
+            [
+              "Maize",
+              "Plant size",
+              "0.0112",
+              "Russell et al. 1963"
+            ],
+            [
+              "Reproductive traits",
+              "0.0073",
+              "Russell et al. 1963"
+            ],
+            [
+              "Rice",
+              "Plant size",
+              "0.0030",
+              "Oka et al. 1958"
+            ],
+            [
+              "Reproductive traits",
+              "0.0028",
+              "Sakai and Suzuki 1964"
+            ],
+            [
+              "Barley",
+              "Life-history traits",
+              "0.0002",
+              "Cox et al. 1987"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Where possible the results represent averages over multiple studies, ranging from analyses of drift among initially homozygous lines to artificial selection experiments. Detailed analyses of experiments performed prior to 1985 can be found in Lynch (1988b), and a more recent survey is contained in Houle et al. (1996).",
+              "source_page": 352,
+              "bbox": [
+                138.0,
+                1093.0,
+                1100.0,
+                1224.0
+              ],
+              "source_block_ids": [
+                "p352:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            127.0,
+            205.0,
+            1128.0,
+            1091.0
+          ],
+          "caption_bbox": [
+            124.0,
+            129.0,
+            1084.0,
+            199.0
+          ],
+          "source_block_ids": [
+            "p352:b3"
+          ],
+          "caption_source_block_ids": [
+            "p352:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter12",
+        "unit_id": "Genetics_chapter12_008",
+        "page": 352,
+        "pages": [
+          352
+        ],
+        "bbox": [
+          127.0,
+          205.0,
+          1128.0,
+          1091.0
+        ],
+        "caption_bbox": [
+          124.0,
+          129.0,
+          1084.0,
+          199.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

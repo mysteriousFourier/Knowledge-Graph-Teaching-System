@@ -1,0 +1,3390 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter2",
+  "count": 61,
+  "terms": [
+    {
+      "id": "PopGen_term_0119",
+      "text": "A. thaliana",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 565,
+          "end": 576,
+          "context": "sed as a model organism in plant biology, serves as an example. In natural populations of A. thaliana, about 99% of the plants result from self-fertilization in the previous generation and on",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 977,
+          "end": 988,
+          "context": "ant linkage disequilibrium as measured by $ r^{2} $ (Equation 2.14). Across the genome of A. thaliana, the length of the average haplotype block is on the order of 100 kb, and SNPs at a dista",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0101",
+      "text": "Adh-1",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 13,
+          "start": 170,
+          "end": 175,
+          "context": "ound in a Texas population of Phlox cuspidata (Levin 1978). The alleles may be designated Adh-1, Adh-2, Adh-3, and Adh-4. Their frequencies were estimated as 0.11, 0.84, 0.01, and 0.04,",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 7,
+          "end": 12,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056;",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 13,
+          "end": 18,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 36,
+          "end": 41,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) ",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 103,
+          "end": 108,
+          "context": "Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01²",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 209,
+          "end": 214,
+          "context": "0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0102",
+      "text": "Adh-2",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 13,
+          "start": 177,
+          "end": 182,
+          "context": " a Texas population of Phlox cuspidata (Levin 1978). The alleles may be designated Adh-1, Adh-2, Adh-3, and Adh-4. Their frequencies were estimated as 0.11, 0.84, 0.01, and 0.04, respec",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 42,
+          "end": 47,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.00",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 73,
+          "end": 78,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01)",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 79,
+          "end": 84,
+          "context": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 141,
+          "end": 146,
+          "context": "0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04)",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 247,
+          "end": 252,
+          "context": "0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04²",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0103",
+      "text": "Adh-3",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 13,
+          "start": 184,
+          "end": 189,
+          "context": "s population of Phlox cuspidata (Levin 1978). The alleles may be designated Adh-1, Adh-2, Adh-3, and Adh-4. Their frequencies were estimated as 0.11, 0.84, 0.01, and 0.04, respectively.",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 109,
+          "end": 114,
+          "context": " 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 147,
+          "end": 152,
+          "context": "0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 179,
+          "end": 184,
+          "context": "84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04)",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 185,
+          "end": 190,
+          "context": "0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 285,
+          "end": 290,
+          "context": "01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0016. It should be pointed out th",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0104",
+      "text": "Adh-4",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 13,
+          "start": 195,
+          "end": 200,
+          "context": "n of Phlox cuspidata (Levin 1978). The alleles may be designated Adh-1, Adh-2, Adh-3, and Adh-4. Their frequencies were estimated as 0.11, 0.84, 0.01, and 0.04, respectively. What are t",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 215,
+          "end": 220,
+          "context": "0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 253,
+          "end": 258,
+          "context": "0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 291,
+          "end": 296,
+          "context": "0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0016. It should be pointed out that the",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 323,
+          "end": 328,
+          "context": "04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0016. It should be pointed out that the observed genotype frequencies w",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 14,
+          "start": 329,
+          "end": 334,
+          "context": "0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0016. It should be pointed out that the observed genotype frequencies were no",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0122",
+      "text": "Aedes",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_023",
+          "block_index": 0,
+          "start": 57,
+          "end": 62,
+          "context": "1. In certain groups of mosquitoes, including species of Aedes and Culex, sex is determined by the alleles M and m of a single autosomal gene. Genotype ",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b2"
+          ],
+          "source_bboxes": [
+            [
+              128,
+              239,
+              868,
+              422
+            ]
+          ],
+          "source_content_sha256": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724",
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b2": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0118",
+      "text": "Arabidopsis thaliana",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 414,
+          "end": 434,
+          "context": "s up some block of SNPs that had been strongly correlated. The diminutive flowering plant Arabidopsis thaliana, a member of the mustard family widely used as a model organism in plant biology, serves ",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_014",
+          "block_index": 1,
+          "start": 687,
+          "end": 707,
+          "context": "cific reproductive proteins (Swanson et al. 2001). Similarly, a study of 304 ESTs between Arabidopsis thaliana and A. lyrata identified 14candidates for genes under positive selection (Barrier et al. ",
+          "source_page": 500,
+          "source_block_ids": [
+            "PopGen_chapter9:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              191.0,
+              365.0,
+              709.0,
+              565.0
+            ]
+          ],
+          "source_content_sha256": "f497f32dcbfeeef902c21c9345ba224beef4fb37548c51addc1c6711ceeca2eb",
+          "source_content_hashes": {
+            "PopGen_chapter9:p018:b3": "f497f32dcbfeeef902c21c9345ba224beef4fb37548c51addc1c6711ceeca2eb"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0093",
+      "text": "Biston betularia",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 5,
+          "start": 906,
+          "end": 922,
+          "context": "ndustrial melanics (Bishop and Cook 1975). The best known of these are the peppered moth (Biston betularia) and the scalloped hazel moth (Gonodontis bidentata). The inference that selection has dr",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 7,
+          "start": 295,
+          "end": 311,
+          "context": "uted area near Birmingham, England, Kettlewell (1956) observed a frequency of 87% melanic Biston betularia. Estimate the frequency of the dominant allele leading to melanism in this population and",
+          "source_page": 79,
+          "source_block_ids": [
+            "PopGen_chapter2:p021:b6"
+          ],
+          "source_bboxes": [
+            [
+              573,
+              1055,
+              998,
+              1176
+            ]
+          ],
+          "source_content_sha256": "cb5711394c724140634c62b0dc9f72051e44be7034a60c3aecc3316476ee3e40",
+          "source_content_hashes": {
+            "PopGen_chapter2:p021:b6": "cb5711394c724140634c62b0dc9f72051e44be7034a60c3aecc3316476ee3e40"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_023",
+          "block_index": 6,
+          "start": 201,
+          "end": 217,
+          "context": "opulations. The effects are seen dramatically in Figure 6.21. Part A pertains to the moth Biston betularia, part B to the moth Gonodontis bidentata. Both species have evolved melanic (blackened) f",
+          "source_page": 316,
+          "source_block_ids": [
+            "PopGen_chapter6:p046:b1"
+          ],
+          "source_bboxes": [
+            [
+              271,
+              212,
+              1021,
+              506
+            ]
+          ],
+          "source_content_sha256": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b",
+          "source_content_hashes": {
+            "PopGen_chapter6:p046:b1": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0080",
+      "text": "blending",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_006",
+          "block_index": 3,
+          "start": 182,
+          "end": 190,
+          "context": "ons for evolutionary theory. In Darwin's time, the prevailing view of heredity was one of blending, in which all of the offspring of a mating were assumed to have a hereditary composition ",
+          "source_page": 67,
+          "source_block_ids": [
+            "PopGen_chapter2:p009:b3"
+          ],
+          "source_bboxes": [
+            [
+              115.0,
+              1238.0,
+              867.0,
+              1371.0
+            ]
+          ],
+          "source_content_sha256": "2dab9529ccb53632229ff49fde37b08a6d3dbbe12f32ec1ce59bcf6a8de30afe",
+          "source_content_hashes": {
+            "PopGen_chapter2:p009:b3": "2dab9529ccb53632229ff49fde37b08a6d3dbbe12f32ec1ce59bcf6a8de30afe"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0082",
+      "text": "chi-square test",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_007",
+          "block_index": 5,
+          "start": 474,
+          "end": 489,
+          "context": "ively the closeness of fit. A test commonly employed in population genetics is called the chi-square test, which is based on the value of a number, called $ \\chi^{2} $, calculated from the data a",
+          "source_page": 69,
+          "source_block_ids": [
+            "PopGen_chapter2:p011:b4"
+          ],
+          "source_bboxes": [
+            [
+              115.0,
+              678.0,
+              867.0,
+              889.0
+            ]
+          ],
+          "source_content_sha256": "5cfcdb1bfe6f71f48315391d8c6ad1a63d639801ad5a8ef6cf107cfdff51275e",
+          "source_content_hashes": {
+            "PopGen_chapter2:p011:b4": "5cfcdb1bfe6f71f48315391d8c6ad1a63d639801ad5a8ef6cf107cfdff51275e"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0123",
+      "text": "Culex",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_023",
+          "block_index": 0,
+          "start": 67,
+          "end": 72,
+          "context": "1. In certain groups of mosquitoes, including species of Aedes and Culex, sex is determined by the alleles M and m of a single autosomal gene. Genotype Mm is male",
+          "source_page": 103,
+          "source_block_ids": [
+            "PopGen_chapter2:p045:b2"
+          ],
+          "source_bboxes": [
+            [
+              128,
+              239,
+              868,
+              422
+            ]
+          ],
+          "source_content_sha256": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724",
+          "source_content_hashes": {
+            "PopGen_chapter2:p045:b2": "ca8a1f1d0104aa843b97ecc19fdd6014f63185bb307d85377b1903a317580724"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0113",
+      "text": "D. pseudoobscura",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 0,
+          "start": 264,
+          "end": 280,
+          "context": "rsions that are polymorphic in populations of certain species of Drosophila, most notably D. pseudoobscura and D. subobscura and their relatives. A chromosome with an inversion, as the name implie",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b3"
+          ],
+          "source_bboxes": [
+            [
+              275,
+              737,
+              1032,
+              1085
+            ]
+          ],
+          "source_content_sha256": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b3": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 1,
+          "start": 480,
+          "end": 496,
+          "context": "r and Anderson (2005) studied the result of gene conversion among inverted chromosomes in D. pseudoobscura. They found that the rate of gene conversion is approximately $ 3.4 \\times 10^{-6} $ conv",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1085,
+              1035,
+              1406
+            ]
+          ],
+          "source_content_sha256": "a10605bdcfe9cdfbb3fa32d74bb26cb45dafde74df875e341c28c1620b07687a",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b4": "a10605bdcfe9cdfbb3fa32d74bb26cb45dafde74df875e341c28c1620b07687a"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 1,
+          "start": 825,
+          "end": 841,
+          "context": "erted tract is about 200 base pairs. Nevertheless, polymorphisms within the inversions in D. pseudoobscura still show linkage disequilibrium, but the magnitude is somewhat less in the central regi",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b1"
+          ],
+          "source_bboxes": [
+            [
+              117,
+              205,
+              872,
+              281
+            ]
+          ],
+          "source_content_sha256": "8bdc189f4d3788a3827449fc90ae802d8872ea33c87f21440910d9fbff5ae18d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b1": "8bdc189f4d3788a3827449fc90ae802d8872ea33c87f21440910d9fbff5ae18d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_017",
+          "block_index": 2,
+          "start": 728,
+          "end": 744,
+          "context": "was approximately 10 percent (Kulathinal et al. 2004). This proportion was found for both D. pseudoobscura and A. gambiae, which again suggests that the compensatory changes occur nearly simultane",
+          "source_page": 504,
+          "source_block_ids": [
+            "PopGen_chapter9:p022:b3"
+          ],
+          "source_bboxes": [
+            [
+              189.0,
+              461.0,
+              707.0,
+              680.0
+            ]
+          ],
+          "source_content_sha256": "3457028260b7d31203a42c9c96a71d4c26cc824870179e7da2fca93f0facb054",
+          "source_content_hashes": {
+            "PopGen_chapter9:p022:b3": "3457028260b7d31203a42c9c96a71d4c26cc824870179e7da2fca93f0facb054"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0114",
+      "text": "D. subobscura",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 0,
+          "start": 285,
+          "end": 298,
+          "context": "orphic in populations of certain species of Drosophila, most notably D. pseudoobscura and D. subobscura and their relatives. A chromosome with an inversion, as the name implies, has a certain s",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b3"
+          ],
+          "source_bboxes": [
+            [
+              275,
+              737,
+              1032,
+              1085
+            ]
+          ],
+          "source_content_sha256": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b3": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0083",
+      "text": "degrees of freedom",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_007",
+          "block_index": 7,
+          "start": 69,
+          "end": 87,
+          "context": "Associated with any $ \\chi^{2} $ value is a second number called the degrees of freedom for that $ \\chi^{2} $. In general, the number of degrees of freedom (df) associated with ",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b1"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              198.0,
+              1027.0,
+              279.0
+            ]
+          ],
+          "source_content_sha256": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f",
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b1": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_007",
+          "block_index": 7,
+          "start": 137,
+          "end": 155,
+          "context": "ond number called the degrees of freedom for that $ \\chi^{2} $. In general, the number of degrees of freedom (df) associated with a $ \\chi^{2} $ value equals $$ \\begin{aligned}df&=Number of classes ",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b1"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              198.0,
+              1027.0,
+              279.0
+            ]
+          ],
+          "source_content_sha256": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f",
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b1": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0069",
+      "text": "demes",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 295,
+          "end": 300,
+          "context": "ges in allele frequency. Such local interbreeding units—often called local populations or demes—are the fundamental units of population genetics. Local populations are the actual, evolv",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": {
+            "entry": "demes",
+            "printed_pages": [
+              46,
+              127
+            ],
+            "master_pages": [
+              60,
+              141
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        },
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_013",
+          "block_index": 0,
+          "start": 92,
+          "end": 97,
+          "context": "nally we will consider a model in which a population is subdivided into D subpopulations (demes), each consisting of N diploid individuals, with migration among demes measured by a quan",
+          "source_page": 141,
+          "source_block_ids": [
+            "PopGen_chapter3:p033:b6"
+          ],
+          "source_bboxes": [
+            [
+              104,
+              764,
+              863,
+              1058
+            ]
+          ],
+          "source_content_sha256": "019d19a35e5c6769911445d75778adcfa7b13974112e74786e67a57bbe3f1b20",
+          "source_content_hashes": {
+            "PopGen_chapter3:p033:b6": "019d19a35e5c6769911445d75778adcfa7b13974112e74786e67a57bbe3f1b20"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0111",
+      "text": "Drosophila melanogaster",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 23,
+          "start": 36,
+          "end": 59,
+          "context": "PROBLEM 2.11 Natural populations of Drosophila melanogaster are polymorphic for coding SNPs that result in amino acid replacements in the enzymes est",
+          "source_page": 95,
+          "source_block_ids": [
+            "PopGen_chapter2:p037:b4"
+          ],
+          "source_bboxes": [
+            [
+              98,
+              654,
+              529,
+              1020
+            ]
+          ],
+          "source_content_sha256": "13cb54f1f7b11dc98aca26d37e78213f567728dc47f0962af0eb1e453e427ee6",
+          "source_content_hashes": {
+            "PopGen_chapter2:p037:b4": "13cb54f1f7b11dc98aca26d37e78213f567728dc47f0962af0eb1e453e427ee6"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 27,
+          "start": 196,
+          "end": 219,
+          "context": "een an A versus C single nucleotide polymorphism in the gene for alcohol dehydrogenase in Drosophila melanogaster and the presence or absence (+ or −) of an EcoRI restriction site located 3500 nucleotide",
+          "source_page": 96,
+          "source_block_ids": [
+            "PopGen_chapter2:p038:b1"
+          ],
+          "source_bboxes": [
+            [
+              150,
+              207,
+              1038,
+              949
+            ]
+          ],
+          "source_content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_content_hashes": {
+            "PopGen_chapter2:p038:b1": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 8,
+          "start": 196,
+          "end": 219,
+          "context": "raph shows the history of 19 generations of random genetic drift in 107 subpopulations of Drosophila melanogaster. Each subpopulation was initiated with 16 heterozygous $ bw^{75}/bw $ flies ($ bw = $ bro",
+          "source_page": 114,
+          "source_block_ids": [
+            "PopGen_chapter3:p006:b3"
+          ],
+          "source_bboxes": [
+            [
+              258,
+              925,
+              1011,
+              1378
+            ]
+          ],
+          "source_content_sha256": "051e8d1bdf59a4b9ad19a4626e75659c298f9beb3ce00cf8039d23cbfedbcbda",
+          "source_content_hashes": {
+            "PopGen_chapter3:p006:b3": "051e8d1bdf59a4b9ad19a4626e75659c298f9beb3ce00cf8039d23cbfedbcbda"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_018",
+          "block_index": 0,
+          "start": 251,
+          "end": 274,
+          "context": "ach of length 1.4 kb, encoding the enzyme superoxide dismutase in a Spanish population of Drosophila melanogaster. Among the 10 alleles, five were identical in sequence, whereas the others were all diffe",
+          "source_page": 151,
+          "source_block_ids": [
+            "PopGen_chapter3:p043:b8"
+          ],
+          "source_bboxes": [
+            [
+              110,
+              1058,
+              868,
+              1324
+            ]
+          ],
+          "source_content_sha256": "2f7912edfbb59a4567fe6ac94577f0c6b3d145565a86829810c2606606986089",
+          "source_content_hashes": {
+            "PopGen_chapter3:p043:b8": "2f7912edfbb59a4567fe6ac94577f0c6b3d145565a86829810c2606606986089"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 9,
+          "start": 35,
+          "end": 58,
+          "context": "PROBLEM 6.5 Some subpopulations of Drosophila melanogaster show an altitudinal gradient in the allozymes of alcohol dehydrogenase in which the frequ",
+          "source_page": 298,
+          "source_block_ids": [
+            "PopGen_chapter6:p028:b1"
+          ],
+          "source_bboxes": [
+            [
+              137,
+              231,
+              567,
+              473
+            ]
+          ],
+          "source_content_sha256": "58d0a9c7ca78d71179c4a42f9a88e64635114725223bebcca68df32bfea67d0b",
+          "source_content_hashes": {
+            "PopGen_chapter6:p028:b1": "58d0a9c7ca78d71179c4a42f9a88e64635114725223bebcca68df32bfea67d0b"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_024",
+          "block_index": 1,
+          "start": 201,
+          "end": 224,
+          "context": "e distribution of estimated values of $ F_{ST} $ among 61 genes in natural populations of Drosophila melanogaster (Singh and Rhomberg 1987). The average of the estimated values is $ F_{ST} = 0.16 $, whic",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              1006,
+              854,
+              1271
+            ]
+          ],
+          "source_content_sha256": "c4229e0889b15f91eb41aff3f727da37fc00cc586ef95eac703ea1f526f271ce",
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b5": "c4229e0889b15f91eb41aff3f727da37fc00cc586ef95eac703ea1f526f271ce"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_022",
+          "block_index": 1,
+          "start": 139,
+          "end": 162,
+          "context": "ion within a population generated a set of 11 alcohol dehydrogenase allele sequences from Drosophila melanogaster (Kreitman 1983). Of the 2659 nucleotides sequenced,52 were variable across the 11 alleles",
+          "source_page": 361,
+          "source_block_ids": [
+            "PopGen_chapter7:p031:b6"
+          ],
+          "source_bboxes": [
+            [
+              72.0,
+              825.0,
+              590.0,
+              953.0
+            ]
+          ],
+          "source_content_sha256": "fea833ebafae9feef15ed0a2c8bdf8900e7f054a3311e4b732564aaef75627cc",
+          "source_content_hashes": {
+            "PopGen_chapter7:p031:b6": "fea833ebafae9feef15ed0a2c8bdf8900e7f054a3311e4b732564aaef75627cc"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_023",
+          "block_index": 2,
+          "start": 963,
+          "end": 986,
+          "context": "mosome due to hemizygosity of the X chromosomes in males. Similarly, in the comparison of Drosophila melanogaster, D. yakuba, and D. simulans, data suggest that the effective size of melanogaster is lowe",
+          "source_page": 364,
+          "source_block_ids": [
+            "PopGen_chapter7:p034:b3"
+          ],
+          "source_bboxes": [
+            [
+              183.0,
+              700.0,
+              701.0,
+              956.0
+            ]
+          ],
+          "source_content_sha256": "be5babb71518e4ec26ce255d3cee4f7c1e010809a3c3a6fc5d74837b744316df",
+          "source_content_hashes": {
+            "PopGen_chapter7:p034:b3": "be5babb71518e4ec26ce255d3cee4f7c1e010809a3c3a6fc5d74837b744316df"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_024",
+          "block_index": 2,
+          "start": 44,
+          "end": 67,
+          "context": "PROBLEM 7.6 In a set of 12 Adh sequences in Drosophila melanogaster, McDonald and Kreitman (1991) observed 42 silent (synonymous) polymorphisms and two repla",
+          "source_page": 367,
+          "source_block_ids": [
+            "PopGen_chapter7:p037:b2"
+          ],
+          "source_bboxes": [
+            [
+              84.0,
+              451.0,
+              378.0,
+              584.0
+            ]
+          ],
+          "source_content_sha256": "980ee8a942bb845717254d26d4c8cf46405b95e93ed6a85833cfc1e8679f585e",
+          "source_content_hashes": {
+            "PopGen_chapter7:p037:b2": "980ee8a942bb845717254d26d4c8cf46405b95e93ed6a85833cfc1e8679f585e"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_029",
+          "block_index": 2,
+          "start": 78,
+          "end": 101,
+          "context": "PROBLEM 7.7 A study of variation in the gene encoding superoxide dismutase in Drosophila melanogaster (Hudson et al. 1994) revealed 63 polymorphic sites in three slow alleles and 22 fast alle",
+          "source_page": 375,
+          "source_block_ids": [
+            "PopGen_chapter7:p045:b1"
+          ],
+          "source_bboxes": [
+            [
+              79.0,
+              150.0,
+              374.0,
+              283.0
+            ]
+          ],
+          "source_content_sha256": "a3f8db66efd9c1cc3bfc40d8e0efd93f89fdc8bf2ccb39433824227082107bdf",
+          "source_content_hashes": {
+            "PopGen_chapter7:p045:b1": "a3f8db66efd9c1cc3bfc40d8e0efd93f89fdc8bf2ccb39433824227082107bdf"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_047",
+          "block_index": 4,
+          "start": 119,
+          "end": 142,
+          "context": "Podisma pedestris has a genome size more than 100 times larger than that of the fruit fly Drosophila melanogaster (1815 Mb vs 176 Mb). Part of the reason for the difference may be that the rate of sponta",
+          "source_page": 395,
+          "source_block_ids": [
+            "PopGen_chapter7:p065:b8"
+          ],
+          "source_bboxes": [
+            [
+              84.0,
+              630.0,
+              599.0,
+              830.0
+            ]
+          ],
+          "source_content_sha256": "ff0b49d5ccf31e51876503138a1b7429ee27eeb84a566ac53240ebbda36f8817",
+          "source_content_hashes": {
+            "PopGen_chapter7:p065:b8": "ff0b49d5ccf31e51876503138a1b7429ee27eeb84a566ac53240ebbda36f8817"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter8",
+          "unit_id": "PopGen_chapter8_038",
+          "block_index": 0,
+          "start": 45,
+          "end": 68,
+          "context": "3. In a study of abdominal bristle number in Drosophila melanogaster, the mean bristle number in each of a set of parents was compared to that of the mean bri",
+          "source_page": 477,
+          "source_block_ids": [
+            "PopGen_chapter8:p079:b6"
+          ],
+          "source_bboxes": [
+            [
+              81.0,
+              632.0,
+              591.0,
+              760.0
+            ]
+          ],
+          "source_content_sha256": "09d8c8c241c704436d93c6c014f1eef947570637e8f14664a1cd12653d70426f",
+          "source_content_hashes": {
+            "PopGen_chapter8:p079:b6": "09d8c8c241c704436d93c6c014f1eef947570637e8f14664a1cd12653d70426f"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter8",
+          "unit_id": "PopGen_chapter8_038",
+          "block_index": 8,
+          "start": 22,
+          "end": 45,
+          "context": "9. If a population of Drosophila melanogaster has a mean number of abdominal bristles of 20 with a narrow-sense heritability of 30%, wh",
+          "source_page": 478,
+          "source_block_ids": [
+            "PopGen_chapter8:p080:b13"
+          ],
+          "source_bboxes": [
+            [
+              201.0,
+              702.0,
+              711.0,
+              794.0
+            ]
+          ],
+          "source_content_sha256": "df4c8075b192fe2e7f81e252f81e7f0eeb815e713624ef88bfc06e4a669f731e",
+          "source_content_hashes": {
+            "PopGen_chapter8:p080:b13": "df4c8075b192fe2e7f81e252f81e7f0eeb815e713624ef88bfc06e4a669f731e"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_007",
+          "block_index": 1,
+          "start": 33,
+          "end": 56,
+          "context": "The chromosomes of the fruit fly Drosophila melanogaster are illustrated in Figure 9.4. The black bars indicate regions in which the level óf nucl",
+          "source_page": 489,
+          "source_block_ids": [
+            "PopGen_chapter9:p007:b4"
+          ],
+          "source_bboxes": [
+            [
+              80.0,
+              414.0,
+              598.0,
+              522.0
+            ]
+          ],
+          "source_content_sha256": "d05c838a55dc5bb83ef6bea8feb809e483028c07cc96b39e9d6147a716c57e1f",
+          "source_content_hashes": {
+            "PopGen_chapter9:p007:b4": "d05c838a55dc5bb83ef6bea8feb809e483028c07cc96b39e9d6147a716c57e1f"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_028",
+          "block_index": 0,
+          "start": 1016,
+          "end": 1039,
+          "context": "vely great. Transposable elements are widespread in both animals and plants. For example, Drosophila melanogaster contains 5-150 copies of each of about 100 different families of transposable elements (P",
+          "source_page": 519,
+          "source_block_ids": [
+            "PopGen_chapter9:p037:b3"
+          ],
+          "source_bboxes": [
+            [
+              77.0,
+              396.0,
+              595.0,
+              761.0
+            ]
+          ],
+          "source_content_sha256": "59463bb54e5edad6ddef4f5b1e81c1085e7ff446967efe3e7e5e5b3a93303834",
+          "source_content_hashes": {
+            "PopGen_chapter9:p037:b3": "59463bb54e5edad6ddef4f5b1e81c1085e7ff446967efe3e7e5e5b3a93303834"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0095",
+      "text": "Drosophila persimilis",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 84,
+          "end": 105,
+          "context": "The expressions in Equation 2.7 may be applied to data on allozyme polymorphisms in Drosophila persimilis in California. One sample of 108 adult flies from the Fish Creek population included four",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0086",
+      "text": "EXACT TEST FOR HWE",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_008",
+          "block_index": 3,
+          "start": 0,
+          "end": 18,
+          "context": "EXACT TEST FOR HWE If the sample size is small enough, then it is possible to calculate the exact probabilit",
+          "source_page": 72,
+          "source_block_ids": [
+            "PopGen_chapter2:p014:b6"
+          ],
+          "source_bboxes": [
+            [
+              277.0,
+              1306.0,
+              1033.0,
+              1385.0
+            ]
+          ],
+          "source_content_sha256": "0f8740fa541f2914b6cd16c9555535acd982a1c74a0911afea3b995eb1336140",
+          "source_content_hashes": {
+            "PopGen_chapter2:p014:b6": "0f8740fa541f2914b6cd16c9555535acd982a1c74a0911afea3b995eb1336140"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0109",
+      "text": "frequency of recombination",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 1,
+          "start": 961,
+          "end": 987,
+          "context": "l frequency of nonrecombinant gametes (type 1 + type 2) except in special cases. The term frequency of recombination, usually symbolized r, refers to the proportion of recombinant gametes produced by a doub",
+          "source_page": 89,
+          "source_block_ids": [
+            "PopGen_chapter2:p031:b6"
+          ],
+          "source_bboxes": [
+            [
+              97,
+              841,
+              851,
+              1156
+            ]
+          ],
+          "source_content_sha256": "1eac63a08e7cce61fc3209ac9e68119abb5dab3ebf2cc16e7636588b6d4ebb13",
+          "source_content_hashes": {
+            "PopGen_chapter2:p031:b6": "1eac63a08e7cce61fc3209ac9e68119abb5dab3ebf2cc16e7636588b6d4ebb13"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0117",
+      "text": "gene conversion",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 1,
+          "start": 83,
+          "end": 98,
+          "context": "The disequilibrium caused by inversions can slowly be eroded by a process known as gene conversion, in which a double-stranded break in a DNA molecule, having been enlarged into a gap by n",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1085,
+              1035,
+              1406
+            ]
+          ],
+          "source_content_sha256": "a10605bdcfe9cdfbb3fa32d74bb26cb45dafde74df875e341c28c1620b07687a",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b4": "a10605bdcfe9cdfbb3fa32d74bb26cb45dafde74df875e341c28c1620b07687a"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0116",
+      "text": "genetic coadaptation",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 0,
+          "start": 941,
+          "end": 961,
+          "context": "ting alleles within each inversion. The beneficially interacting alleles are said to show genetic coadaptation.",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b3"
+          ],
+          "source_bboxes": [
+            [
+              275,
+              737,
+              1032,
+              1085
+            ]
+          ],
+          "source_content_sha256": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b3": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0073",
+      "text": "genotype frequency",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_002",
+          "block_index": 0,
+          "start": 391,
+          "end": 409,
+          "context": "ew generation of genotypes. The proportion of a specified genotype in a population is the genotype frequency. The formation of a genotype in newly fertilized eggs is determined by the opportunity fo",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              307.0,
+              522.0,
+              1062.0,
+              1163.0
+            ]
+          ],
+          "source_content_sha256": "b8b689017482c04b0d9ae8559f1b027edbf4d2d3b6156357e26bd569e0ccccd7",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b3": "b8b689017482c04b0d9ae8559f1b027edbf4d2d3b6156357e26bd569e0ccccd7"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0067",
+      "text": "geographical structure",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 0,
+          "start": 647,
+          "end": 669,
+          "context": "d varies from species to species because of the almost universal presence of some sort of geographical structure in species—some typically nonrandom pattern in the spatial distribution of organisms. Mem",
+          "source_page": 59,
+          "source_block_ids": [
+            "PopGen_chapter2:p001:b2"
+          ],
+          "source_bboxes": [
+            [
+              105.0,
+              788.0,
+              860.0,
+              1404.0
+            ]
+          ],
+          "source_content_sha256": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e",
+          "source_content_hashes": {
+            "PopGen_chapter2:p001:b2": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0094",
+      "text": "Gonodontis bidentata",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 5,
+          "start": 954,
+          "end": 974,
+          "context": "est known of these are the peppered moth (Biston betularia) and the scalloped hazel moth (Gonodontis bidentata). The inference that selection has driven the evolution of industrial melanism is strongl",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_023",
+          "block_index": 6,
+          "start": 238,
+          "end": 258,
+          "context": "atically in Figure 6.21. Part A pertains to the moth Biston betularia, part B to the moth Gonodontis bidentata. Both species have evolved melanic (blackened) forms in response to heavy air pollution (",
+          "source_page": 316,
+          "source_block_ids": [
+            "PopGen_chapter6:p046:b1"
+          ],
+          "source_bboxes": [
+            [
+              271,
+              212,
+              1021,
+              506
+            ]
+          ],
+          "source_content_sha256": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b",
+          "source_content_hashes": {
+            "PopGen_chapter6:p046:b1": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0121",
+      "text": "haplotype block",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 809,
+          "end": 824,
+          "context": " is very intense, the amount of outcrossing is sufficient to reduce the average size of a haplotype block, a term referring to a group of linked SNPs that show significant linkage disequilibrium ",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0078",
+      "text": "Hardy-Weinberg equilibrium",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_004",
+          "block_index": 12,
+          "start": 488,
+          "end": 514,
+          "context": " The frequencies displayed in Equation 2.1 constitute the Hardy-Weinberg principle or the Hardy-Weinberg equilibrium (HWE).",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81",
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b3": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0077",
+      "text": "Hardy-Weinberg model",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_004",
+          "block_index": 11,
+          "start": 46,
+          "end": 66,
+          "context": "Collectively, these assumptions summarize the Hardy-Weinberg model, named after the English mathematician G. H. Hardy (1877–1947) and the German physiologis",
+          "source_page": 62,
+          "source_block_ids": [
+            "PopGen_chapter2:p004:b15"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              1241.0,
+              1057.0,
+              1378.0
+            ]
+          ],
+          "source_content_sha256": "aa0112d1cc79a45e00c45ba3932cfd0ad39a66902a5caf201d827a902529489b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p004:b15": "aa0112d1cc79a45e00c45ba3932cfd0ad39a66902a5caf201d827a902529489b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0079",
+      "text": "HWE",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_004",
+          "block_index": 12,
+          "start": 516,
+          "end": 519,
+          "context": "n Equation 2.1 constitute the Hardy-Weinberg principle or the Hardy-Weinberg equilibrium (HWE).",
+          "source_page": 63,
+          "source_block_ids": [
+            "PopGen_chapter2:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              303.0,
+              870.0,
+              434.0
+            ]
+          ],
+          "source_content_sha256": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81",
+          "source_content_hashes": {
+            "PopGen_chapter2:p005:b3": "dc17bb50d90ab71a72128c438e7e4e2633196939c812fdd1a296634d9473dc81"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0120",
+      "text": "inbreeding",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 709,
+          "end": 719,
+          "context": "fertilization in the previous generation and only about 1% from outcrossing. Although the inbreeding is very intense, the amount of outcrossing is sufficient to reduce the average size of a ",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 3,
+          "start": 1391,
+          "end": 1401,
+          "context": " of 100 kb are very large compared to those in organisms that do not undergo such extreme inbreeding. For example, the average size of haplotype blocks in the maize or Drosophila genome (bot",
+          "source_page": 101,
+          "source_block_ids": [
+            "PopGen_chapter2:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              105,
+              632,
+              863,
+              1408
+            ]
+          ],
+          "source_content_sha256": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da",
+          "source_content_hashes": {
+            "PopGen_chapter2:p043:b3": "1dc5f46f0bc2b1bcd1656bcab6723f0b3a4b90c7156b0d8a3da8846f2e5ef1da"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0091",
+      "text": "Industrial melanism",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 5,
+          "start": 175,
+          "end": 194,
+          "context": ", one of the most famous and best-studied cases of evolution in action (Kettlewell 1973). Industrial melanism refers to the evolution of black (melanic) color patterns in several species of moths tha",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0115",
+      "text": "inversion",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_020",
+          "block_index": 0,
+          "start": 341,
+          "end": 350,
+          "context": "most notably D. pseudoobscura and D. subobscura and their relatives. A chromosome with an inversion, as the name implies, has a certain segment of its genes in reverse of the normal order. ",
+          "source_page": 100,
+          "source_block_ids": [
+            "PopGen_chapter2:p042:b3"
+          ],
+          "source_bboxes": [
+            [
+              275,
+              737,
+              1032,
+              1085
+            ]
+          ],
+          "source_content_sha256": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751",
+          "source_content_hashes": {
+            "PopGen_chapter2:p042:b3": "ca107567c5a43e7d90c5148dea0c41c6a3927063e9b6f32f4029bad2b74e9751"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0124",
+      "text": "Lepus californicus",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_024",
+          "block_index": 9,
+          "start": 144,
+          "end": 162,
+          "context": "terns observed for an esterase enzyme in 1000 individuals of the black-tailed jackrabbit, Lepus californicus, in which four alleles $ A_{1}-A_{4} $ encode polypeptide chains that differ in their ele",
+          "source_page": 104,
+          "source_block_ids": [
+            "PopGen_chapter2:p046:b8"
+          ],
+          "source_bboxes": [
+            [
+              260,
+              857,
+              1011,
+              1097
+            ]
+          ],
+          "source_content_sha256": "05a70c2ec8f737571d812f975764ce851d101e51abd808ab2a20258cfef93013",
+          "source_content_hashes": {
+            "PopGen_chapter2:p046:b8": "05a70c2ec8f737571d812f975764ce851d101e51abd808ab2a20258cfef93013"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0106",
+      "text": "linkage disequilibrium",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_014",
+          "block_index": 1,
+          "start": 1140,
+          "end": 1162,
+          "context": " in a state of linkage equilibrium, and genes not in random association are said to be in linkage disequilibrium. With linkage equilibrium, therefore, the gametic frequencies are: $$ \\begin{array}{ll} A",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0110",
+      "text": "linkage disequilibrium parameter",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 15,
+          "start": 37,
+          "end": 69,
+          "context": "The quantity $D$ is often called the linkage disequilibrium parameter. The implications about the magnitude of $D$ in parentheses in the equations above follow",
+          "source_page": 92,
+          "source_block_ids": [
+            "PopGen_chapter2:p034:b5"
+          ],
+          "source_bboxes": [
+            [
+              271,
+              974,
+              1027,
+              1107
+            ]
+          ],
+          "source_content_sha256": "b2ce9d0c4e55f94565b744a3e8c154faa61634e3ac7dc7577bfc3ddb764a963b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p034:b5": "b2ce9d0c4e55f94565b744a3e8c154faa61634e3ac7dc7577bfc3ddb764a963b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0105",
+      "text": "linkage equilibrium",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_014",
+          "block_index": 1,
+          "start": 1065,
+          "end": 1084,
+          "context": "ncies of those alleles. Genes that are in random association are said to be in a state of linkage equilibrium, and genes not in random association are said to be in linkage disequilibrium. With linka",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_014",
+          "block_index": 1,
+          "start": 1169,
+          "end": 1188,
+          "context": "brium, and genes not in random association are said to be in linkage disequilibrium. With linkage equilibrium, therefore, the gametic frequencies are: $$ \\begin{array}{ll} AB: & p_{A}\\times p_{B}\\\\Ab",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0070",
+      "text": "local population",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 513,
+          "end": 529,
+          "context": "herwise specified (or clear from context), the term population as used in this book means local population. Local populations are sometimes also referred to as Mendelian populations or subpopulati",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0068",
+      "text": "local populations",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 274,
+          "end": 291,
+          "context": "rough systematic changes in allele frequency. Such local interbreeding units—often called local populations or demes—are the fundamental units of population genetics. Local populations are the actu",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": {
+            "entry": "local populations",
+            "printed_pages": [
+              46
+            ],
+            "master_pages": [
+              60
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0071",
+      "text": "Mendelian populations",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 583,
+          "end": 604,
+          "context": " in this book means local population. Local populations are sometimes also referred to as Mendelian populations or subpopulations.",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0081",
+      "text": "modern synthesis",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_006",
+          "block_index": 4,
+          "start": 132,
+          "end": 148,
+          "context": "inheritance was finally incorporated into evolutionary theory in what was then called the modern synthesis. In the modern synthesis, Darwin's idea of a high mutation rate generating genetic variat",
+          "source_page": 68,
+          "source_block_ids": [
+            "PopGen_chapter2:p010:b2"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              303.0,
+              1024.0,
+              485.0
+            ]
+          ],
+          "source_content_sha256": "b2f580108020c05ac779e72c4ce71d2459660b4f7e1765b1cc3c3f1e622dd904",
+          "source_content_hashes": {
+            "PopGen_chapter2:p010:b2": "b2f580108020c05ac779e72c4ce71d2459660b4f7e1765b1cc3c3f1e622dd904"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0092",
+      "text": "morphs",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 5,
+          "start": 437,
+          "end": 443,
+          "context": "soot during the industrial revolution. (The various color forms of the moths are known as morphs.) The evolution of melanism has been observed in Great Britain, West Germany, Eastern Eur",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 6,
+          "start": 86,
+          "end": 92,
+          "context": "The agent of selection was once universally thought to be bird predation, because the morphs are dramatically different in conspicuousness on different background (Figure 2.4). The l",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b3"
+          ],
+          "source_bboxes": [
+            [
+              273,
+              1142,
+              1028,
+              1380
+            ]
+          ],
+          "source_content_sha256": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b3": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 6,
+          "start": 584,
+          "end": 590,
+          "context": "sic experiments showing differential bird predation by deliberately placing the different morphs at high density on light and dark tree trunks in the daylight hours (Majerus 1998, Coyne ",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b3"
+          ],
+          "source_bboxes": [
+            [
+              273,
+              1142,
+              1028,
+              1380
+            ]
+          ],
+          "source_content_sha256": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d",
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b3": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0075",
+      "text": "nonoverlapping generation model",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_003",
+          "block_index": 0,
+          "start": 76,
+          "end": 107,
+          "context": "One of the most important mathematical models in population genetics is the nonoverlapping generation model, in which the cycle of birth, maturation, and death includes the death of all organisms p",
+          "source_page": 61,
+          "source_block_ids": [
+            "PopGen_chapter2:p003:b3"
+          ],
+          "source_bboxes": [
+            [
+              111.0,
+              461.0,
+              867.0,
+              809.0
+            ]
+          ],
+          "source_content_sha256": "930f76d32eaab936a05f80fcfee44034e83572dc2ab37f80101f3563ff0b4f27",
+          "source_content_hashes": {
+            "PopGen_chapter2:p003:b3": "930f76d32eaab936a05f80fcfee44034e83572dc2ab37f80101f3563ff0b4f27"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0107",
+      "text": "nonrecombinant gametes",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 1,
+          "start": 157,
+          "end": 179,
+          "context": "are of four types: (1) AB, (2) Ab, (3) aB, and (4) ab. Gametic types 1 and 2 are known as nonrecombinant gametes because the alleles are associated in the same manner as in the previous generation (spec",
+          "source_page": 89,
+          "source_block_ids": [
+            "PopGen_chapter2:p031:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              654,
+              854,
+              836
+            ]
+          ],
+          "source_content_sha256": "c14e3bbd04e77f49c8fbf0ca8a876ca1ecce6c2ca747bdd204fa07572cf2beb9",
+          "source_content_hashes": {
+            "PopGen_chapter2:p031:b5": "c14e3bbd04e77f49c8fbf0ca8a876ca1ecce6c2ca747bdd204fa07572cf2beb9"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0084",
+      "text": "p53",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_007",
+          "block_index": 8,
+          "start": 7,
+          "end": 10,
+          "context": "In the p53 example, there are three classes of data and one parameter (p) estimated from the data, a",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b3"
+          ],
+          "source_bboxes": [
+            [
+              274.0,
+              413.0,
+              1030.0,
+              546.0
+            ]
+          ],
+          "source_content_sha256": "9e937fa97f5bfc59728e2aef103e90af7121f42ece1c0043ee6478cbda72f315",
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b3": "9e937fa97f5bfc59728e2aef103e90af7121f42ece1c0043ee6478cbda72f315"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_007",
+          "block_index": 10,
+          "start": 1198,
+          "end": 1201,
+          "context": "sidered sufficiently close that the model is not rejected. Because the probability in the p53 example is 0.14, which is greater than 0.05, we have no reason to reject the hypothesis t",
+          "source_page": 71,
+          "source_block_ids": [
+            "PopGen_chapter2:p013:b1"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              207.0,
+              874.0,
+              287.0
+            ]
+          ],
+          "source_content_sha256": "dd5a49b8934e82e51fb906ceb8afe9a0d6bcc4f6994464d0e1098eadecb5a4c5",
+          "source_content_hashes": {
+            "PopGen_chapter2:p013:b1": "dd5a49b8934e82e51fb906ceb8afe9a0d6bcc4f6994464d0e1098eadecb5a4c5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0087",
+      "text": "PERMUTATION TEST FOR HWE",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_008",
+          "block_index": 8,
+          "start": 0,
+          "end": 24,
+          "context": "PERMUTATION TEST FOR HWE In some cases it is convenient to test for HWE by comparing the sample with random permut",
+          "source_page": 74,
+          "source_block_ids": [
+            "PopGen_chapter2:p016:b4"
+          ],
+          "source_bboxes": [
+            [
+              289.0,
+              905.0,
+              1043.0,
+              1300.0
+            ]
+          ],
+          "source_content_sha256": "f96489040a44b5a5f65f695217520fd83692bd3e8fa6271069330d2d294aa8a7",
+          "source_content_hashes": {
+            "PopGen_chapter2:p016:b4": "f96489040a44b5a5f65f695217520fd83692bd3e8fa6271069330d2d294aa8a7"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0066",
+      "text": "population",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 0,
+          "start": 249,
+          "end": 259,
+          "context": " clarification of the concept is necessary at this time. In population genetics, the word population does not usually refer to an entire species; it refers instead to a group of organisms of",
+          "source_page": 59,
+          "source_block_ids": [
+            "PopGen_chapter2:p001:b2"
+          ],
+          "source_bboxes": [
+            [
+              105.0,
+              788.0,
+              860.0,
+              1404.0
+            ]
+          ],
+          "source_content_sha256": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e",
+          "source_content_hashes": {
+            "PopGen_chapter2:p001:b2": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0065",
+      "text": "population",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 0,
+          "start": 9,
+          "end": 19,
+          "context": "The word population has so far been used in an informal, intuitive sense to refer to a group of organisms bel",
+          "source_page": 59,
+          "source_block_ids": [
+            "PopGen_chapter2:p001:b2"
+          ],
+          "source_bboxes": [
+            [
+              105.0,
+              788.0,
+              860.0,
+              1404.0
+            ]
+          ],
+          "source_content_sha256": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e",
+          "source_content_hashes": {
+            "PopGen_chapter2:p001:b2": "f2a9a44ddbe536e176b731f273056ea66675165ca4e46f80445a9d2930fc732e"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 475,
+          "end": 485,
+          "context": "evolving units of a species. Unless otherwise specified (or clear from context), the term population as used in this book means local population. Local populations are sometimes also referre",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0112",
+      "text": "population substructure",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_019",
+          "block_index": 1,
+          "start": 189,
+          "end": 212,
+          "context": "allele frequencies. Organisms that are subdivided into local populations are said to have population substructure. An example of linkage disequilibrium arising from subpopulation admixture is illustrated",
+          "source_page": 99,
+          "source_block_ids": [
+            "PopGen_chapter2:p041:b4"
+          ],
+          "source_bboxes": [
+            [
+              103,
+              812,
+              855,
+              944
+            ]
+          ],
+          "source_content_sha256": "2bf6afd84ded31868bcc0db397c1f36db6ef4d0b77c625fa47ed71b981708382",
+          "source_content_hashes": {
+            "PopGen_chapter2:p041:b4": "2bf6afd84ded31868bcc0db397c1f36db6ef4d0b77c625fa47ed71b981708382"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0088",
+      "text": "PROBLEMS OF MULTIPLE TESTS",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_008",
+          "block_index": 11,
+          "start": 0,
+          "end": 26,
+          "context": "PROBLEMS OF MULTIPLE TESTS One final issue to be addressed is that of multiple tests. The high-throughput genotyping",
+          "source_page": 75,
+          "source_block_ids": [
+            "PopGen_chapter2:p017:b3"
+          ],
+          "source_bboxes": [
+            [
+              108.0,
+              714.0,
+              863.0,
+              1084.0
+            ]
+          ],
+          "source_content_sha256": "b0527c351f48729d47a1de21e63d9b1d749d71e2dd252fe31459ed10f9e04250",
+          "source_content_hashes": {
+            "PopGen_chapter2:p017:b3": "b0527c351f48729d47a1de21e63d9b1d749d71e2dd252fe31459ed10f9e04250"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0076",
+      "text": "random genetic drift",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_004",
+          "block_index": 0,
+          "start": 846,
+          "end": 866,
+          "context": "ror. Variation in allele frequency owing to sampling error in small populations is called random genetic drift and is the subject of Chapter 3. Although random genetic drift is present unless the popu",
+          "source_page": 62,
+          "source_block_ids": [
+            "PopGen_chapter2:p004:b3"
+          ],
+          "source_bboxes": [
+            [
+              296.0,
+              386.0,
+              1050.0,
+              894.0
+            ]
+          ],
+          "source_content_sha256": "c3543807b6dab37929ced9fdc758d891a318dd05b5fc6df30aed35ef7b826535",
+          "source_content_hashes": {
+            "PopGen_chapter2:p004:b3": "c3543807b6dab37929ced9fdc758d891a318dd05b5fc6df30aed35ef7b826535"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_005",
+          "block_index": 0,
+          "start": 375,
+          "end": 395,
+          "context": "tion. The random sampling results in chance changes in allele frequency, a process called random genetic drift discussed in some detail in Chapter 3. To understand the effects of random genetic drift ",
+          "source_page": 172,
+          "source_block_ids": [
+            "PopGen_chapter4:p008:b4"
+          ],
+          "source_bboxes": [
+            [
+              260,
+              519,
+              1015,
+              972
+            ]
+          ],
+          "source_content_sha256": "3940de7ebaefba6c0165936f3d833c6242ff420a8fda407c3619ddb658b6e4d3",
+          "source_content_hashes": {
+            "PopGen_chapter4:p008:b4": "3940de7ebaefba6c0165936f3d833c6242ff420a8fda407c3619ddb658b6e4d3"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0074",
+      "text": "random mating",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_002",
+          "block_index": 0,
+          "start": 1180,
+          "end": 1193,
+          "context": "e population are specified. One of the important models in population genetics is that of random mating, in which mating pairs have the same frequencies as if they were formed by random collisi",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              307.0,
+              522.0,
+              1062.0,
+              1163.0
+            ]
+          ],
+          "source_content_sha256": "b8b689017482c04b0d9ae8559f1b027edbf4d2d3b6156357e26bd569e0ccccd7",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b3": "b8b689017482c04b0d9ae8559f1b027edbf4d2d3b6156357e26bd569e0ccccd7"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0108",
+      "text": "recombinant gametes",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_015",
+          "block_index": 1,
+          "start": 338,
+          "end": 357,
+          "context": "ious generation (specifically, A with B and a with b). Gametic types 3 and 4 are known as recombinant gametes because the alleles are associated differently than in the previous generation (specifica",
+          "source_page": 89,
+          "source_block_ids": [
+            "PopGen_chapter2:p031:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              654,
+              854,
+              836
+            ]
+          ],
+          "source_content_sha256": "c14e3bbd04e77f49c8fbf0ca8a876ca1ecce6c2ca747bdd204fa07572cf2beb9",
+          "source_content_hashes": {
+            "PopGen_chapter2:p031:b5": "c14e3bbd04e77f49c8fbf0ca8a876ca1ecce6c2ca747bdd204fa07572cf2beb9"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0090",
+      "text": "RhCE",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 0,
+          "start": 454,
+          "end": 458,
+          "context": " Rhesus (Rh) blood groups, which are products of two closely linked genes denoted RhD and RhCE that originated as a gene duplication during primate evolution (Matassi et al. 1999). The",
+          "source_page": 77,
+          "source_block_ids": [
+            "PopGen_chapter2:p019:b1"
+          ],
+          "source_bboxes": [
+            [
+              117.0,
+              208.0,
+              869.0,
+              445.0
+            ]
+          ],
+          "source_content_sha256": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p019:b1": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0089",
+      "text": "RhD",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_009",
+          "block_index": 0,
+          "start": 446,
+          "end": 449,
+          "context": "d in the Rhesus (Rh) blood groups, which are products of two closely linked genes denoted RhD and RhCE that originated as a gene duplication during primate evolution (Matassi et al. 1",
+          "source_page": 77,
+          "source_block_ids": [
+            "PopGen_chapter2:p019:b1"
+          ],
+          "source_bboxes": [
+            [
+              117.0,
+              208.0,
+              869.0,
+              445.0
+            ]
+          ],
+          "source_content_sha256": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p019:b1": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0085",
+      "text": "SAMPLE SIZE TOO SMALL",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_008",
+          "block_index": 1,
+          "start": 0,
+          "end": 21,
+          "context": "SAMPLE SIZE TOO SMALL Problem 2.3 illustrates one of the issues that can arise in testing for HWE. The allele f",
+          "source_page": 72,
+          "source_block_ids": [
+            "PopGen_chapter2:p014:b3"
+          ],
+          "source_bboxes": [
+            [
+              275.0,
+              531.0,
+              1030.0,
+              877.0
+            ]
+          ],
+          "source_content_sha256": "56d914bdb91ffa8d1bd7b8f01cab941c4513968bcfaec20055b303ffa292f4d3",
+          "source_content_hashes": {
+            "PopGen_chapter2:p014:b3": "56d914bdb91ffa8d1bd7b8f01cab941c4513968bcfaec20055b303ffa292f4d3"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0125",
+      "text": "Snyder's ratios",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_024",
+          "block_index": 10,
+          "start": 583,
+          "end": 598,
+          "context": "e that the latter is equal to the square root of the former. These proportions are called Snyder's ratios and were once used to test human traits for simple recessive inheritance.",
+          "source_page": 105,
+          "source_block_ids": [
+            "PopGen_chapter2:p047:b1"
+          ],
+          "source_bboxes": [
+            [
+              111,
+              199,
+              860,
+              435
+            ]
+          ],
+          "source_content_sha256": "2f8cfaf37fbb8e07869ad8c6e66011483ec661809f5abf0dc7b51b8c90d0e2a8",
+          "source_content_hashes": {
+            "PopGen_chapter2:p047:b1": "2f8cfaf37fbb8e07869ad8c6e66011483ec661809f5abf0dc7b51b8c90d0e2a8"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0072",
+      "text": "subpopulations",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_001",
+          "block_index": 1,
+          "start": 608,
+          "end": 622,
+          "context": " population. Local populations are sometimes also referred to as Mendelian populations or subpopulations.",
+          "source_page": 60,
+          "source_block_ids": [
+            "PopGen_chapter2:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              304.0,
+              199.0,
+              1057.0,
+              441.0
+            ]
+          ],
+          "source_content_sha256": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc",
+          "source_content_hashes": {
+            "PopGen_chapter2:p002:b1": "7ad1cc1c1bfe164fc66590852a1d601deba2ebbf5a2f4503c1cee076bfcea6cc"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0096",
+      "text": "Xdh",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 216,
+          "end": 219,
+          "context": "ample of 108 adult flies from the Fish Creek population included four alleles of the gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0097",
+      "text": "Xdh-1",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 285,
+          "end": 290,
+          "context": " alleles of the gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 540,
+          "end": 545,
+          "context": "09 $ (Prakash 1977). With four alleles, there are four possible homozygotes (for example, Xdh-1/Xdh-1) and six possible heterozygotes (for example, Xdh-1/Xdh-2). In a random-mating popu",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 546,
+          "end": 551,
+          "context": "Prakash 1977). With four alleles, there are four possible homozygotes (for example, Xdh-1/Xdh-1) and six possible heterozygotes (for example, Xdh-1/Xdh-2). In a random-mating population",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0098",
+      "text": "Xdh-2",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 292,
+          "end": 297,
+          "context": "s of the gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.08 $, $",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 604,
+          "end": 609,
+          "context": "homozygotes (for example, Xdh-1/Xdh-1) and six possible heterozygotes (for example, Xdh-1/Xdh-2). In a random-mating population, the frequency of any homozygous genotype is expected to ",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0099",
+      "text": "Xdh-3",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 299,
+          "end": 304,
+          "context": "e gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.08 $, $ \\hat{p",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0100",
+      "text": "Xdh-4",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter2",
+          "unit_id": "PopGen_chapter2_012",
+          "block_index": 12,
+          "start": 310,
+          "end": 315,
+          "context": " which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.08 $, $ \\hat{p}_2 = 0.21 ",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          },
+          "subject_index": null
+        }
+      ]
+    }
+  ]
+}

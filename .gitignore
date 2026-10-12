@@ -130,6 +130,11 @@ backend/models/genie-tts/
 *.db
 !data/seed/
 !data/seed/knowledge_graph.db
+!data/seed/graph_registry.json
+!data/seed/graphs/
+!data/seed/graphs/**/
+!data/seed/graphs/**/*.db
+data/seed/inputs/
 !data/seed/vector_index/
 !data/seed/vector_index/**
 *.db-shm

@@ -1,0 +1,1312 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter6",
+  "count": 9,
+  "tables": [
+    {
+      "id": "6.1",
+      "label_format": "Table 6.1",
+      "title": "TABLE 6.1 Genotype Frequencies with Inbreeding",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Genotype</td><td colspan=\"3\">Frequency in Population</td></tr><tr><td>With inbreeding coefficient $ F $</td><td>With $ F = 0 $ (random mating)</td><td>With $ F = 1 $ (complete inbreeding)</td></tr><tr><td>AA</td><td>$ p^{2}(1 - F) + pF $</td><td>$ p^{2} $</td><td>p</td></tr><tr><td>Aa</td><td>$ 2pq(1 - F) $</td><td>$ 2pq $</td><td>0</td></tr><tr><td>aa</td><td>$ q^{2}(1 - F) + qF $</td><td>$ q^{2} $</td><td>q</td></tr></table>",
+      "rows": [
+        [
+          "Genotype",
+          "Frequency in Population"
+        ],
+        [
+          "With inbreeding coefficient $ F $",
+          "With $ F = 0 $ (random mating)",
+          "With $ F = 1 $ (complete inbreeding)"
+        ],
+        [
+          "AA",
+          "$ p^{2}(1 - F) + pF $",
+          "$ p^{2} $",
+          "p"
+        ],
+        [
+          "Aa",
+          "$ 2pq(1 - F) $",
+          "$ 2pq $",
+          "0"
+        ],
+        [
+          "aa",
+          "$ q^{2}(1 - F) + qF $",
+          "$ q^{2} $",
+          "q"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 7,
+        "bbox": [
+          104,
+          209,
+          778,
+          464
+        ],
+        "caption_bbox": [
+          104,
+          188,
+          656,
+          217
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_004",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 14,
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b1"
+        ],
+        "source_bboxes": [
+          [
+            117.0,
+            210.0,
+            725.0,
+            237.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:6.1",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b1"
+        ],
+        "source_bboxes": [
+          [
+            117.0,
+            210.0,
+            725.0,
+            237.0
+          ]
+        ],
+        "audit_evidence_sha256": "5164f8fa2e4eccd5ba54753220455351a368a02c167b247ddfd65b3161f32d5e"
+      }
+    },
+    {
+      "id": "6.2",
+      "label_format": "Table 6.2",
+      "title": "TABLE 6.2 Correlation between Uniting Gametes",
+      "table_type": "numbered",
+      "html": "<table><tr><td>TABLE 6.2 Correlation between Uniting Gametes</td></tr><tr><td>Uniting gametes</td><td>Relative frequency</td><td>Expected values</td></tr><tr><td>A (x = 1) A (y = 1)</td><td>$ p^{2} + pqF $</td><td>$ E(x) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>A (x = 1) a (y = 0)</td><td>$ pq - pqF $</td><td>$ E(x^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>a (x = 0) A (y = 1)</td><td>$ pq - pqF $</td><td>$ E(y) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>a (x = 0) a (y = 0)</td><td>$ q^{2} + pqF $</td><td>$ E(y^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td></td><td></td><td>$ E(xy) = p^{2} + pqF $</td></tr><tr><td></td><td></td><td>Cov(xy) = $ E(xy) - E(x)E(y) = p^{2} + pqF - p \\times p = pqF $</td></tr><tr><td></td><td></td><td>$ V(x) = E(x^{2}) - [E(x)]^{2} = p - p^{2} = p(1 - p) = pq $</td></tr><tr><td></td><td></td><td>$ V(y) = E(y^{2}) - [E(y)]^{2} = p - p^{2} = p(1 - p) = pq $</td></tr></table>",
+      "rows": [
+        [
+          "TABLE 6.2 Correlation between Uniting Gametes"
+        ],
+        [
+          "Uniting gametes",
+          "Relative frequency",
+          "Expected values"
+        ],
+        [
+          "A (x = 1) A (y = 1)",
+          "$ p^{2} + pqF $",
+          "$ E(x) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "A (x = 1) a (y = 0)",
+          "$ pq - pqF $",
+          "$ E(x^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "a (x = 0) A (y = 1)",
+          "$ pq - pqF $",
+          "$ E(y) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "a (x = 0) a (y = 0)",
+          "$ q^{2} + pqF $",
+          "$ E(y^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "",
+          "",
+          "$ E(xy) = p^{2} + pqF $"
+        ],
+        [
+          "",
+          "",
+          "Cov(xy) = $ E(xy) - E(x)E(y) = p^{2} + pqF - p \\times p = pqF $"
+        ],
+        [
+          "",
+          "",
+          "$ V(x) = E(x^{2}) - [E(x)]^{2} = p - p^{2} = p(1 - p) = pq $"
+        ],
+        [
+          "",
+          "",
+          "$ V(y) = E(y^{2}) - [E(y)]^{2} = p - p^{2} = p(1 - p) = pq $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "extraction_channel": "recovered_exact_raw_table_marker_pending_visual_review",
+        "has_physical_placeholder": true,
+        "unit_id": "PopGen_chapter6_004",
+        "subsection": "Correlation Between Uniting Gametes",
+        "page": 8,
+        "bbox": [
+          124.0,
+          189.0,
+          923.0,
+          483.0
+        ],
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Correlation Between Uniting Gametes"
+        ],
+        "source_pages": [
+          277,
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b1",
+          "PopGen_chapter6:p007:b6"
+        ],
+        "source_bboxes": [
+          [
+            143.0,
+            216.0,
+            748.0,
+            242.0
+          ],
+          [
+            106.0,
+            997.0,
+            860.0,
+            1372.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:6.2",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Correlation Between Uniting Gametes"
+      ],
+      "subsection": "Correlation Between Uniting Gametes",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Correlation Between Uniting Gametes"
+        ],
+        "subsection": "Correlation Between Uniting Gametes",
+        "source_pages": [
+          277,
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b1",
+          "PopGen_chapter6:p007:b6"
+        ],
+        "source_bboxes": [
+          [
+            143.0,
+            216.0,
+            748.0,
+            242.0
+          ],
+          [
+            106.0,
+            997.0,
+            860.0,
+            1372.0
+          ]
+        ],
+        "audit_evidence_sha256": "4db49cbf5ed6f40cee0f7c9d4ebbb0fd3d06b40090fbb8a96ffd2be04b4e8b94",
+        "heading_path_review": {
+          "status": "master_pdf_confirmed",
+          "master_page": 277,
+          "source_block_id": "PopGen_chapter6:p007:b6"
+        }
+      },
+      "heading_path_review": {
+        "status": "master_pdf_confirmed",
+        "master_page": 277,
+        "source_block_id": "PopGen_chapter6:p007:b6"
+      }
+    },
+    {
+      "id": "6.3",
+      "label_format": "Table 6.3",
+      "title": "TABLE 6.3 Hierarchical Structure of Linanthus parryae",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Region</td><td colspan=\"2\">Subpopulations</td><td colspan=\"2\">Regions</td><td colspan=\"2\">Total</td></tr><tr><td>Allele frequency</td><td>Heterozygosity</td><td>Average allele frequency</td><td>Heterozygosity</td><td>Average allele frequency</td><td>Heterozygosity</td></tr><tr><td rowspan=\"6\">W</td><td>0.573</td><td>0.4893</td><td></td><td></td><td></td><td></td></tr><tr><td>0.717</td><td>0.4058</td><td></td><td></td><td></td><td></td></tr><tr><td>0.504</td><td>0.5000</td><td></td><td></td><td></td><td></td></tr><tr><td>0.657</td><td>0.4507</td><td></td><td></td><td></td><td></td></tr><tr><td>0.302</td><td>0.4216</td><td></td><td></td><td></td><td></td></tr><tr><td>0.339</td><td>0.4482</td><td>0.5153</td><td>0.4995</td><td></td><td></td></tr><tr><td rowspan=\"12\">C</td><td>9  $ \\times $ 0.000</td><td>0.0000</td><td></td><td></td><td></td><td></td></tr><tr><td>0.032</td><td>0.0620</td><td></td><td></td><td></td><td></td></tr><tr><td>0.007</td><td>0.0139</td><td></td><td></td><td></td><td></td></tr><tr><td>0.008</td><td>0.0159</td><td></td><td></td><td></td><td></td></tr><tr><td>0.005</td><td>0.0100</td><td></td><td></td><td></td><td></td></tr><tr><td>0.009</td><td>0.0178</td><td></td><td></td><td></td><td></td></tr><tr><td>0.005</td><td>0.0100</td><td></td><td></td><td></td><td></td></tr><tr><td>0.010</td><td>0.0198</td><td></td><td></td><td></td><td></td></tr><tr><td>0.068</td><td>0.1268</td><td></td><td></td><td></td><td></td></tr><tr><td>0.002</td><td>0.0040</td><td></td><td></td><td></td><td></td></tr><tr><td>0.004</td><td>0.0080</td><td></td><td></td><td></td><td></td></tr><tr><td>0.126</td><td>0.2202</td><td>0.0138</td><td>0.0272</td><td></td><td></td></tr><tr><td rowspan=\"4\">E</td><td>0.106</td><td>0.1895</td><td></td><td></td><td></td><td></td></tr><tr><td>0.224</td><td>0.3476</td><td></td><td></td><td></td><td></td></tr><tr><td>0.411</td><td>0.4842</td><td></td><td></td><td></td><td></td></tr><tr><td>0.014</td><td>0.0276</td><td>0.1888</td><td>0.3062</td><td>0.1374</td><td>0.2371</td></tr><tr><td colspan=\"2\">Average heterozygosity</td><td colspan=\"2\">H $ _{S} $ = 0.1424</td><td colspan=\"2\">H $ _{R} $ = 0.1589</td><td>H $ _{T} $ = 0.2371</td></tr></table>",
+      "rows": [
+        [
+          "Region",
+          "Subpopulations",
+          "Regions",
+          "Total"
+        ],
+        [
+          "Allele frequency",
+          "Heterozygosity",
+          "Average allele frequency",
+          "Heterozygosity",
+          "Average allele frequency",
+          "Heterozygosity"
+        ],
+        [
+          "W",
+          "0.573",
+          "0.4893",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.717",
+          "0.4058",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.504",
+          "0.5000",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.657",
+          "0.4507",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.302",
+          "0.4216",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.339",
+          "0.4482",
+          "0.5153",
+          "0.4995",
+          "",
+          ""
+        ],
+        [
+          "C",
+          "9 $ \\times $ 0.000",
+          "0.0000",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.032",
+          "0.0620",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.007",
+          "0.0139",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.008",
+          "0.0159",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.005",
+          "0.0100",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.009",
+          "0.0178",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.005",
+          "0.0100",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.010",
+          "0.0198",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.068",
+          "0.1268",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.002",
+          "0.0040",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.004",
+          "0.0080",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.126",
+          "0.2202",
+          "0.0138",
+          "0.0272",
+          "",
+          ""
+        ],
+        [
+          "E",
+          "0.106",
+          "0.1895",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.224",
+          "0.3476",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.411",
+          "0.4842",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0.014",
+          "0.0276",
+          "0.1888",
+          "0.3062",
+          "0.1374",
+          "0.2371"
+        ],
+        [
+          "Average heterozygosity",
+          "H $ _{S} $ = 0.1424",
+          "H $ _{R} $ = 0.1589",
+          "H $ _{T} $ = 0.2371"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 24,
+        "bbox": [
+          123,
+          231,
+          921,
+          953
+        ],
+        "caption_bbox": [
+          119,
+          202,
+          734,
+          230
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_010",
+        "subsection": "Average Heterozygosity",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 9,
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Average Heterozygosity"
+        ],
+        "source_pages": [
+          294
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p024:b1"
+        ],
+        "source_bboxes": [
+          [
+            134.0,
+            226.0,
+            810.0,
+            250.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:6.3",
+      "notes": [
+        "Source: Data from Wright 1943a."
+      ],
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION",
+        "Average Heterozygosity"
+      ],
+      "subsection": "Average Heterozygosity",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Average Heterozygosity"
+        ],
+        "subsection": "Average Heterozygosity",
+        "source_pages": [
+          294
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p024:b1"
+        ],
+        "source_bboxes": [
+          [
+            134.0,
+            226.0,
+            810.0,
+            250.0
+          ]
+        ],
+        "audit_evidence_sha256": "dc091bee15b780ab66db91b604a03b70217ac2b5dfa37874bfe73ce7e4fa7bd9"
+      }
+    },
+    {
+      "id": "6.4",
+      "label_format": "Table 6.4",
+      "title": "TABLE 6.4 Total heterozygosity  $ (H_{T}) $, average heterozygosity among subpopulations  $ (H_{S}) $, and fixation index  $ (F_{ST}) $ for various organisms",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Organism</td><td>Number of populations</td><td>Number of loci</td><td>H_{T}</td><td>H_{S}</td><td>F_{ST}</td></tr><tr><td>Human (Africa, Europe, East Asia)</td><td>3</td><td>35</td><td>0.130</td><td>0.121</td><td>0.069</td></tr><tr><td>Human, Yanomama Indian villages</td><td>37</td><td>15</td><td>0.039</td><td>0.036</td><td>0.077</td></tr><tr><td>House mouse (Mus musculus)</td><td>4</td><td>40</td><td>0.097</td><td>0.086</td><td>0.113</td></tr><tr><td>Jumping rodent (Dipodomys ordii)</td><td>9</td><td>18</td><td>0.037</td><td>0.012</td><td>0.676</td></tr><tr><td>Drosophila equinoxialis</td><td>5</td><td>27</td><td>0.201</td><td>0.179</td><td>0.109</td></tr><tr><td>Horseshoe crab (Limulus)</td><td>4</td><td>25</td><td>0.066</td><td>0.061</td><td>0.076</td></tr><tr><td>Lycopod plant (Lycopodium lucidulum)</td><td>4</td><td>13</td><td>0.071</td><td>0.051</td><td>0.282</td></tr></table>",
+      "rows": [
+        [
+          "Organism",
+          "Number of populations",
+          "Number of loci",
+          "H_{T}",
+          "H_{S}",
+          "F_{ST}"
+        ],
+        [
+          "Human (Africa, Europe, East Asia)",
+          "3",
+          "35",
+          "0.130",
+          "0.121",
+          "0.069"
+        ],
+        [
+          "Human, Yanomama Indian villages",
+          "37",
+          "15",
+          "0.039",
+          "0.036",
+          "0.077"
+        ],
+        [
+          "House mouse (Mus musculus)",
+          "4",
+          "40",
+          "0.097",
+          "0.086",
+          "0.113"
+        ],
+        [
+          "Jumping rodent (Dipodomys ordii)",
+          "9",
+          "18",
+          "0.037",
+          "0.012",
+          "0.676"
+        ],
+        [
+          "Drosophila equinoxialis",
+          "5",
+          "27",
+          "0.201",
+          "0.179",
+          "0.109"
+        ],
+        [
+          "Horseshoe crab (Limulus)",
+          "4",
+          "25",
+          "0.066",
+          "0.061",
+          "0.076"
+        ],
+        [
+          "Lycopod plant (Lycopodium lucidulum)",
+          "4",
+          "13",
+          "0.071",
+          "0.051",
+          "0.282"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 31,
+        "bbox": [
+          102,
+          279,
+          783,
+          663
+        ],
+        "caption_bbox": [
+          105,
+          187,
+          776,
+          265
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_014",
+        "subsection": "Inference of Population Structure from Multilocus Genotype Data",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 6,
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Inference of Population Structure from Multilocus Genotype Data"
+        ],
+        "source_pages": [
+          301
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p031:b1"
+        ],
+        "source_bboxes": [
+          [
+            118.0,
+            209.0,
+            847.0,
+            293.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:6.4",
+      "notes": [
+        "Source: Protein electrophoretic data from Nei 1975."
+      ],
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION",
+        "Inference of Population Structure from Multilocus Genotype Data"
+      ],
+      "subsection": "Inference of Population Structure from Multilocus Genotype Data",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Inference of Population Structure from Multilocus Genotype Data"
+        ],
+        "subsection": "Inference of Population Structure from Multilocus Genotype Data",
+        "source_pages": [
+          301
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p031:b1"
+        ],
+        "source_bboxes": [
+          [
+            118.0,
+            209.0,
+            847.0,
+            293.0
+          ]
+        ],
+        "audit_evidence_sha256": "5def7c28181d5cd8cfc0d2ac652fc0190e40d908563d994f00782b708a0f0e9a"
+      }
+    },
+    {
+      "id": "6.5",
+      "label_format": "Table 6.5",
+      "title": "TABLE 6.5 Estimates of Nm and  $ F_{ST} $",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Type of organism</td><td>Estimated Nm</td><td>Estimated  $ F_{ST} $</td></tr><tr><td>Stephanomeria exigua</td><td>Annual plant</td><td>1.4</td><td>0.152</td></tr><tr><td>Mytilus edulis</td><td>Mullusc</td><td>42.0</td><td>0.006</td></tr><tr><td>Drosophila willistoni</td><td>Insect</td><td>9.9</td><td>0.025</td></tr><tr><td>Drosophila pseudoobscura</td><td>Insect</td><td>1.0</td><td>0.200</td></tr><tr><td>Chanos chanos</td><td>Fish</td><td>4.2</td><td>0.056</td></tr><tr><td>Hyla regilla</td><td>Frog</td><td>1.4</td><td>0.152</td></tr><tr><td>Plethodon ouachitae</td><td>Salamander</td><td>2.1</td><td>0.106</td></tr><tr><td>Plethodon cinereus</td><td>Salamander</td><td>0.22</td><td>0.532</td></tr><tr><td>Plethodon dorsalis</td><td>Salamander</td><td>0.10</td><td>0.714</td></tr><tr><td>Batrachoseps pacifica ssp. 1</td><td>Salamander</td><td>0.64</td><td>0.281</td></tr><tr><td>Batrachoseps pacifica ssp. 2</td><td>Salamander</td><td>0.20</td><td>0.556</td></tr><tr><td>Batrachoseps campi</td><td>Salamander</td><td>0.16</td><td>0.610</td></tr><tr><td>Lacerta melisellensis</td><td>Lizard</td><td>1.9</td><td>0.116</td></tr><tr><td>Peromyscus californicus</td><td>Mouse</td><td>2.2</td><td>0.102</td></tr><tr><td>Peromyscus polionotus</td><td>Mouse</td><td>0.31</td><td>0.446</td></tr><tr><td>Thomomys bottae</td><td>Gopher</td><td>0.86</td><td>0.225</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Type of organism",
+          "Estimated Nm",
+          "Estimated $ F_{ST} $"
+        ],
+        [
+          "Stephanomeria exigua",
+          "Annual plant",
+          "1.4",
+          "0.152"
+        ],
+        [
+          "Mytilus edulis",
+          "Mullusc",
+          "42.0",
+          "0.006"
+        ],
+        [
+          "Drosophila willistoni",
+          "Insect",
+          "9.9",
+          "0.025"
+        ],
+        [
+          "Drosophila pseudoobscura",
+          "Insect",
+          "1.0",
+          "0.200"
+        ],
+        [
+          "Chanos chanos",
+          "Fish",
+          "4.2",
+          "0.056"
+        ],
+        [
+          "Hyla regilla",
+          "Frog",
+          "1.4",
+          "0.152"
+        ],
+        [
+          "Plethodon ouachitae",
+          "Salamander",
+          "2.1",
+          "0.106"
+        ],
+        [
+          "Plethodon cinereus",
+          "Salamander",
+          "0.22",
+          "0.532"
+        ],
+        [
+          "Plethodon dorsalis",
+          "Salamander",
+          "0.10",
+          "0.714"
+        ],
+        [
+          "Batrachoseps pacifica ssp. 1",
+          "Salamander",
+          "0.64",
+          "0.281"
+        ],
+        [
+          "Batrachoseps pacifica ssp. 2",
+          "Salamander",
+          "0.20",
+          "0.556"
+        ],
+        [
+          "Batrachoseps campi",
+          "Salamander",
+          "0.16",
+          "0.610"
+        ],
+        [
+          "Lacerta melisellensis",
+          "Lizard",
+          "1.9",
+          "0.116"
+        ],
+        [
+          "Peromyscus californicus",
+          "Mouse",
+          "2.2",
+          "0.102"
+        ],
+        [
+          "Peromyscus polionotus",
+          "Mouse",
+          "0.31",
+          "0.446"
+        ],
+        [
+          "Thomomys bottae",
+          "Gopher",
+          "0.86",
+          "0.225"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 46,
+        "bbox": [
+          248,
+          745,
+          925,
+          1225
+        ],
+        "caption_bbox": [
+          248,
+          715,
+          671,
+          745
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_023",
+        "subsection": "How Migration Limits Genetic Divergence",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 9,
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "source_pages": [
+          316
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p046:b3"
+        ],
+        "source_bboxes": [
+          [
+            277.0,
+            796.0,
+            740.0,
+            824.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:6.5",
+      "notes": [
+        "Source: Data from Slatkin 1985."
+      ],
+      "heading_path": [
+        "6.5 MIGRATION",
+        "How Migration Limits Genetic Divergence"
+      ],
+      "subsection": "How Migration Limits Genetic Divergence",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "subsection": "How Migration Limits Genetic Divergence",
+        "source_pages": [
+          316
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p046:b3"
+        ],
+        "source_bboxes": [
+          [
+            277.0,
+            796.0,
+            740.0,
+            824.0
+          ]
+        ],
+        "audit_evidence_sha256": "bd29dfa5c64da76f9d6f63eae638570eca9155eba489dd7cdbabd06733aa4492"
+      }
+    },
+    {
+      "id": "inline_1",
+      "label_format": "Inline Table 1",
+      "title": "Inline Table 1",
+      "table_type": "inline",
+      "html": "<table><tr><td colspan=\"3\">TABLE 6.2 Correlation between Uniting Gametes</td></tr><tr><td>Uniting gametes</td><td>Relative frequency</td><td>Expected values</td></tr><tr><td>A (x = 1)</td><td>$ p^{2} + pqF $</td><td>$ E(x) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>A (x = 1)</td><td>$ pq - pqF $</td><td>$ E(x^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>a (x = 0)</td><td>$ pq - pqF $</td><td>$ E(y) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td>a (x = 0)</td><td>$ q^{2} + pqF $</td><td>$ E(y^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $</td></tr><tr><td></td><td></td><td>$ E(xy) = p^{2} + pqF $</td></tr><tr><td></td><td></td><td>Cov(xy) =  $ E(xy) - E(x)E(y) = p^{2} + pqF - p \\times p = pqF $</td></tr><tr><td></td><td></td><td>$ V(x) = E(x^{2}) - [E(x)]^{2} = p - p^{2} = p(1 - p) = pq $</td></tr><tr><td></td><td></td><td>$ V(y) = E(y^{2}) - [E(y)]^{2} = p - p^{2} = p(1 - p) = pq $</td></tr></table>",
+      "rows": [
+        [
+          "TABLE 6.2 Correlation between Uniting Gametes"
+        ],
+        [
+          "Uniting gametes",
+          "Relative frequency",
+          "Expected values"
+        ],
+        [
+          "A (x = 1)",
+          "$ p^{2} + pqF $",
+          "$ E(x) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "A (x = 1)",
+          "$ pq - pqF $",
+          "$ E(x^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "a (x = 0)",
+          "$ pq - pqF $",
+          "$ E(y) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "a (x = 0)",
+          "$ q^{2} + pqF $",
+          "$ E(y^{2}) = p^{2} + pqF + pq - pqF = p^{2} + pq = p(p + q) = p $"
+        ],
+        [
+          "",
+          "",
+          "$ E(xy) = p^{2} + pqF $"
+        ],
+        [
+          "",
+          "",
+          "Cov(xy) = $ E(xy) - E(x)E(y) = p^{2} + pqF - p \\times p = pqF $"
+        ],
+        [
+          "",
+          "",
+          "$ V(x) = E(x^{2}) - [E(x)]^{2} = p - p^{2} = p(1 - p) = pq $"
+        ],
+        [
+          "",
+          "",
+          "$ V(y) = E(y^{2}) - [E(y)]^{2} = p - p^{2} = p(1 - p) = pq $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 8,
+        "bbox": [
+          124,
+          189,
+          923,
+          483
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_004",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b1",
+          "PopGen_chapter6:p008:b2"
+        ],
+        "source_bboxes": [
+          [
+            143.0,
+            216.0,
+            748.0,
+            242.0
+          ],
+          [
+            142.0,
+            250.0,
+            1028.0,
+            534.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:inline_1",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b1",
+          "PopGen_chapter6:p008:b2"
+        ],
+        "source_bboxes": [
+          [
+            143.0,
+            216.0,
+            748.0,
+            242.0
+          ],
+          [
+            142.0,
+            250.0,
+            1028.0,
+            534.0
+          ]
+        ],
+        "audit_evidence_sha256": "cc759acada3ecf2fa410730ba723ad9af0a8d76813a92694fdf970d0149a2799"
+      }
+    },
+    {
+      "id": "inline_2",
+      "label_format": "Inline Table 2",
+      "title": "Inline Table 2",
+      "table_type": "inline",
+      "html": "<table><tr><td></td><td>Allele</td><td>Allele</td><td>Allele</td></tr><tr><td>Elevation</td><td>frequency</td><td>Elevation</td><td>frequency</td></tr><tr><td>Mountain</td><td>0.321</td><td>Foothill</td><td>0.131</td></tr><tr><td>Mountain</td><td>0.226</td><td>Foothill</td><td>0.109</td></tr><tr><td></td><td></td><td></td><td>Plain</td></tr><tr><td></td><td></td><td></td><td>Plain</td></tr><tr><td></td><td></td><td></td><td>0.035</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Allele",
+          "Allele",
+          "Allele"
+        ],
+        [
+          "Elevation",
+          "frequency",
+          "Elevation",
+          "frequency"
+        ],
+        [
+          "Mountain",
+          "0.321",
+          "Foothill",
+          "0.131"
+        ],
+        [
+          "Mountain",
+          "0.226",
+          "Foothill",
+          "0.109"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Plain"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Plain"
+        ],
+        [
+          "",
+          "",
+          "",
+          "0.035"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 28,
+        "bbox": [
+          151,
+          440,
+          896,
+          572
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_012",
+        "subsection": "6.2 POPULATION SUBDIVISION",
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION"
+        ],
+        "source_pages": [
+          298
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p028:b3"
+        ],
+        "source_bboxes": [
+          [
+            163.0,
+            488.0,
+            1000.0,
+            640.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:inline_2",
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION"
+      ],
+      "subsection": "6.2 POPULATION SUBDIVISION",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION"
+        ],
+        "subsection": "6.2 POPULATION SUBDIVISION",
+        "source_pages": [
+          298
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p028:b3"
+        ],
+        "source_bboxes": [
+          [
+            163.0,
+            488.0,
+            1000.0,
+            640.0
+          ]
+        ],
+        "audit_evidence_sha256": "9ce90b0b1257eccbb30441debd8edf2822f3a09979144d7b3fea13250086286f",
+        "heading_path_review": {
+          "status": "master_pdf_confirmed",
+          "master_page": 298,
+          "source_block_id": "PopGen_chapter6:p028:b3"
+        }
+      },
+      "heading_path_review": {
+        "status": "master_pdf_confirmed",
+        "master_page": 298,
+        "source_block_id": "PopGen_chapter6:p028:b3"
+      }
+    },
+    {
+      "id": "inline_3",
+      "label_format": "Inline Table 3",
+      "title": "Inline Table 3",
+      "table_type": "inline",
+      "html": "<table><tr><td>Population</td><td>Population 1</td><td>Population 2</td><td>Population 3</td></tr><tr><td>Allele 1</td><td>0.1</td><td>0.2</td><td>0.3</td></tr><tr><td>Allele 2</td><td>0.3</td><td>0.3</td><td>0.3</td></tr><tr><td>Allele 3</td><td>0.6</td><td>0.5</td><td>0.4</td></tr></table>",
+      "rows": [
+        [
+          "Population",
+          "Population 1",
+          "Population 2",
+          "Population 3"
+        ],
+        [
+          "Allele 1",
+          "0.1",
+          "0.2",
+          "0.3"
+        ],
+        [
+          "Allele 2",
+          "0.3",
+          "0.3",
+          "0.3"
+        ],
+        [
+          "Allele 3",
+          "0.6",
+          "0.5",
+          "0.4"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 58,
+        "bbox": [
+          329,
+          263,
+          842,
+          378
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_029",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          328
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p058:b2"
+        ],
+        "source_bboxes": [
+          [
+            366.0,
+            293.0,
+            937.0,
+            417.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:inline_3",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          328
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p058:b2"
+        ],
+        "source_bboxes": [
+          [
+            366.0,
+            293.0,
+            937.0,
+            417.0
+          ]
+        ],
+        "audit_evidence_sha256": "f7d8e6b94bd6782b55ea6808e80642328398cfe6b8eeffb2daba4b48f088fb73"
+      }
+    },
+    {
+      "id": "inline_4",
+      "label_format": "Inline Table 4",
+      "title": "Inline Table 4",
+      "table_type": "inline",
+      "html": "<table><tr><td></td><td>Population 1</td><td>Population 2</td></tr><tr><td>Genotype AA</td><td>0.056</td><td>0.072</td></tr><tr><td>Aa</td><td>0.288</td><td>0.256</td></tr><tr><td>aa</td><td>0.656</td><td>0.672</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Population 1",
+          "Population 2"
+        ],
+        [
+          "Genotype AA",
+          "0.056",
+          "0.072"
+        ],
+        [
+          "Aa",
+          "0.288",
+          "0.256"
+        ],
+        [
+          "aa",
+          "0.656",
+          "0.672"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter6",
+        "page": 58,
+        "bbox": [
+          394,
+          444,
+          788,
+          555
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter6_029",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          328
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p058:b4"
+        ],
+        "source_bboxes": [
+          [
+            600.0,
+            492.0,
+            872.0,
+            514.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter6:inline_4",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          328
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p058:b4"
+        ],
+        "source_bboxes": [
+          [
+            600.0,
+            492.0,
+            872.0,
+            514.0
+          ]
+        ],
+        "audit_evidence_sha256": "06b8cec24f1d107a131081194dae2fe711e7058cc53a4369d060d8fc48e43bbe"
+      }
+    }
+  ]
+}

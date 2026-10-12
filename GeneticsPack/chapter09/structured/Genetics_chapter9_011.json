@@ -1,0 +1,155 @@
+{
+  "id": "Genetics_chapter9_011",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+    "subsections": [
+      "Effect of the Leading Factor"
+    ],
+    "section_level_1": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+    "section_level_2": "Effect of the Leading Factor",
+    "heading_path": [
+      "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER",
+      "Effect of the Leading Factor"
+    ],
+    "display_heading": "BIOMETRICAL APPROACHES TO THE ESTIMATION OF GENE NUMBER / Effect of the Leading Factor",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 254,
+      "printed_page": 234,
+      "source_block_ids": [
+        "p254:b7"
+      ],
+      "bbox": [
+        160.0,
+        1201.0,
+        508.0,
+        1235.0
+      ],
+      "raw_text": "Effect of the Leading Factor"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "If the assumptions of additive gene action and unlinked loci hold, then $ n_e $ provides some information on the effect of the leading factor (the locus accounting for the largest amount of the difference between parental means). Let $ \\phi_{max} = 2\\alpha_{max}^c / [\\mu(\\mathrm{P}_1) - \\mu(\\mathrm{P}_2)] $ be the proportion of the difference between parental means attributable to the largest factor, and denote its effect $ \\alpha_{max}^c $. Equation 9.26a yields the inequality $ \\sigma_S^2 \\geq (\\alpha_{max}^c)/2 $, which upon substitution into Equation 9.23 gives",
+      "source_page": 254,
+      "printed_page": 234,
+      "source_block_ids": [
+        "p254:b8"
+      ],
+      "bbox": [
+        160.0,
+        1235.0,
+        1121.0,
+        1446.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula078]]",
+      "source_page": 254,
+      "printed_page": 234,
+      "source_block_ids": [
+        "p254:b9"
+      ],
+      "bbox": [
+        527.0,
+        1465.0,
+        760.0,
+        1539.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.6]]",
+      "source_page": 255,
+      "printed_page": 235,
+      "source_block_ids": [
+        "p255:b3"
+      ],
+      "bbox": [
+        40.0,
+        204.0,
+        1018.0,
+        1443.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "as an estimate of the upper bound on the effect of the leading segregating factor. Since each segregating factor contains one or more loci, $ \\phi_{max} $ is also an upper bound on the effect of the leading locus. Lander and Botstein (1989) proposed a simple idea that yields a lower bound estimate for the effect of the leading factor. Under the assumption that one strain contains all \"positive\" genes and the other all \"negative\" genes (which might be approximated if the two strains were obtained by intense selection in opposite directions from a common stock), there must be at least one segregating factor with an effect at least as great as $ [\\mu(\\mathrm{P}_{2}) - \\mu(\\mathrm{P}_{1})]/n_{e} $. Expressed in terms of the proportion of the total difference, this effect is simply $ \\phi_{min} = 1/n_{e} $. Alternatively, from the standpoint of individual loci, an estimate of the minimum effect of the leading locus is $ 1/n $. Finally, since (from Equation 9.27) there are at least $ 2\\bar{c}n_{e} $ loci, the maximum value of the average allelic effect is $ \\bar{\\phi}_{max} = 1/(2\\bar{c}n_{e}) $.",
+      "source_page": 256,
+      "printed_page": 236,
+      "source_block_ids": [
+        "p256:b2"
+      ],
+      "bbox": [
+        139.0,
+        127.0,
+        1104.0,
+        551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Estimates of the statistical bounds on the effects of leading factors are of practical importance, since they can provide insight into the likely utility of molecular marker-based searches for loci with major effects (Chapters 14–16). Unfortunately, none of the above-mentioned statistics is particularly informative in this regard. Even when they are reliable, large estimates of the upper bound of the leading factor do not necessarily imply that any locus actually has a large effect, and although a large $ \\phi_{min} $ implies that at least one locus has a major effect, a small $ \\phi_{min} $ does not rule out the possibility of several loci with major effects.",
+      "source_page": 256,
+      "printed_page": 236,
+      "source_block_ids": [
+        "p256:b3"
+      ],
+      "bbox": [
+        148.0,
+        542.0,
+        1109.0,
+        805.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Zeng (1992) suggested an alternative approach to predicting the effects of leading factors. Given an estimate of $ C_{\\alpha} $, one first derives the estimate of the number of loci, $ \\widehat{n} $. This provides an estimate of the mean allelic effect as $ \\widehat{\\alpha} = [\\bar{z}(P_1) - \\bar{z}(P_2)] / \\widehat{n} $. Together, $ \\widehat{\\alpha} $ and $ C_{\\alpha} $ then provide the first two moments of the distribution of allelic effects. If the form of the distribution is specified and uniquely defined by the mean and variance, one can then draw $ \\widehat{n} $ random effects from the distribution, order them, and evaluate the relative contributions of the various factors to the parental line divergence. As we have noted above, different values of $ C_{\\alpha} $ can lead to very different estimates of $ n $. However, Zeng (1992) found that the number of significant loci (for example, the number that account for 90% of the total divergence) is extremely insensitive to changes in $ C_{\\alpha} $, changing by only five or so over a range in which $ n $ changes by hundreds. Thus, for large surveys in which highly reliable estimates of phenotypic means and variances can be acquired, Zeng's approach has promise as a means of estimating the number of major factors.",
+      "source_page": 256,
+      "printed_page": 236,
+      "source_block_ids": [
+        "p256:b4"
+      ],
+      "bbox": [
+        151.0,
+        796.0,
+        1117.0,
+        1288.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter9:6]]",
+      "source_page": 256,
+      "source_block_ids": [
+        "p256:b5",
+        "p257:b2",
+        "p257:b3",
+        "p257:b4",
+        "p257:b5",
+        "p257:b6",
+        "p257:b7",
+        "p257:b8",
+        "p257:b9",
+        "p257:b10",
+        "p257:b11",
+        "p257:b12"
+      ],
+      "bbox": [
+        209.0,
+        1371.0,
+        1076.0,
+        1502.0
+      ]
+    }
+  ]
+}

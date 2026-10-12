@@ -1,0 +1,117 @@
+{
+  "id": "Genetics_chapter13_019",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "ANALYSIS OF DISCRETE CHARACTERS",
+    "subsections": [
+      "Single-locus Penetrance Model"
+    ],
+    "section_level_1": "ANALYSIS OF DISCRETE CHARACTERS",
+    "section_level_2": "Single-locus Penetrance Model",
+    "heading_path": [
+      "ANALYSIS OF DISCRETE CHARACTERS",
+      "Single-locus Penetrance Model"
+    ],
+    "display_heading": "ANALYSIS OF DISCRETE CHARACTERS / Single-locus Penetrance Model",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b12"
+      ],
+      "bbox": [
+        124.0,
+        811.0,
+        513.0,
+        850.0
+      ],
+      "raw_text": "Single-locus Penetrance Model"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Assume that a single diallelic locus underlies a dichotomous trait, and denote the penetrances of genotypes QQ, Qq, and qq by $ \\psi_{1} $, $ \\psi_{2} $, and $ \\psi_{3} $, respectively. If allele Q has frequency p, under Hardy-Weinberg expectations the population prevalence, K, of the trait becomes",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b13"
+      ],
+      "bbox": [
+        124.0,
+        845.0,
+        1084.0,
+        989.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula047]]",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b14"
+      ],
+      "bbox": [
+        351.0,
+        1006.0,
+        860.0,
+        1048.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As above, likelihood functions are constructed by standard conditioning arguments, using Equation 13.25b. For example, consider a collection of $n$ full sibs from the $i$th family, with trait values $y_{i1},\\cdots,y_{in}$ (taking values of zero or one). The likelihood for the $j$th sib from this family, conditioned on it having parental genotypes $g_{f}$ and $g_{m}$, is",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b16"
+      ],
+      "bbox": [
+        126.0,
+        1070.0,
+        1088.0,
+        1247.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula048]]",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b17"
+      ],
+      "bbox": [
+        224.0,
+        1266.0,
+        914.0,
+        1360.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Using Equations 13.11a,b to average over all possible parental genotypes yields the unconditional likelihood for this family. The resulting likelihood has four unknown parameters: allele frequency p, and the gene effects as measured by the three penetrances $ \\psi_{i} $. Curtis and Stam (1995) note that this likelihood parameter space can be reduced when an estimate of the population prevalence K is available, as this imposes the restriction given by Equation 13.27 on the four parameters.",
+      "source_page": 390,
+      "printed_page": 370,
+      "source_block_ids": [
+        "p390:b19",
+        "p391:b2"
+      ],
+      "bbox": [
+        133.0,
+        1375.0,
+        1096.0,
+        1550.0
+      ],
+      "source_page_end": 391
+    }
+  ]
+}

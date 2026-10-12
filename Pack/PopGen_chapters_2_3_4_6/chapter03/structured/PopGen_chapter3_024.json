@@ -1,0 +1,79 @@
+{
+  "id": "PopGen_chapter3_024",
+  "metadata": {
+    "chapter": "PopGen_chapter3",
+    "section": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+    "subsections": [
+      "PROBLEMS"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+    "section_level_2": "PROBLEMS",
+    "heading_path": [
+      "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "PROBLEMS"
+    ],
+    "display_heading": "PROBLEMS",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter3:p052:b6"
+      ]
+    },
+    "chapter_title": "Random Genetic Drift"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "content": "1. Describe the Wright-Fisher model of random genetic drift. The elements $ T_{ij} $ of the transition matrix are probabilities. How should $ T_{ij} $ be interpreted?",
+      "source_page": 160,
+      "source_pages": [
+        160
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p052:b7"
+      ],
+      "source_bboxes": [
+        [
+          274.0,
+          1039.0,
+          1020.0,
+          1116.0
+        ]
+      ],
+      "provenance_score": 0.984,
+      "content_sha256": "11d2f6e2b175f2030957ba035d82dddbd3c2b3efa4ddb9ca108ca47763f86ad7",
+      "problem_id": "3.E1",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "2. Explain how the basic concept behind the Kolmogorov forward equation differs from that underlying the Kolmogorov backward equation.",
+      "source_page": 160,
+      "source_pages": [
+        160
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p052:b8"
+      ],
+      "source_bboxes": [
+        [
+          278.0,
+          1128.0,
+          1020.0,
+          1179.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5faa073c8c68cdf248aba79e1a5ae2280b431161fca9721d59e5f487b800df50",
+      "problem_id": "3.E2",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

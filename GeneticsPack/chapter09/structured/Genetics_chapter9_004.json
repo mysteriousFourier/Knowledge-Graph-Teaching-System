@@ -1,0 +1,499 @@
+{
+  "id": "Genetics_chapter9_004",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "ESTIMATION OF COMPOSITE EFFECTS",
+    "subsections": [
+      "Hypothesis Testing"
+    ],
+    "section_level_1": "ESTIMATION OF COMPOSITE EFFECTS",
+    "section_level_2": "Hypothesis Testing",
+    "heading_path": [
+      "ESTIMATION OF COMPOSITE EFFECTS",
+      "Hypothesis Testing"
+    ],
+    "display_heading": "ESTIMATION OF COMPOSITE EFFECTS / Hypothesis Testing",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b6"
+      ],
+      "bbox": [
+        59.0,
+        599.0,
+        306.0,
+        636.0
+      ],
+      "raw_text": "Hypothesis Testing"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "When the number of observations equals the number of parameters to be estimated, the solution of simultaneous equations cannot be used to evaluate the adequacy of the genetic model, as the parameter estimates are constrained to yield the observed line means exactly. This problem is eliminated when the number of observed line means exceeds the number of parameters to be estimated. For example, if data are available for the $ P_{1} $, $ P_{2} $, $ F_{1} $, and $ F_{2} $ lines, the statistic",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b7"
+      ],
+      "bbox": [
+        54.0,
+        641.0,
+        1017.0,
+        852.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula025]]",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b8"
+      ],
+      "bbox": [
+        296.0,
+        866.0,
+        761.0,
+        945.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "provides a simple test for epistasis. In the absence of epistasis, the expected value of $ \\Delta $ is zero because at every locus, by the Hardy-Weinberg law, the $ F_{2} $ is 25% $ P_{1}P_{1} $, 50% $ P_{1}P_{2} $, and 25% $ P_{2}P_{2} $. The sampling variance of this test statistic is",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b10"
+      ],
+      "bbox": [
+        48.0,
+        958.0,
+        1007.0,
+        1074.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula026]]",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b11"
+      ],
+      "bbox": [
+        135.0,
+        1084.0,
+        846.0,
+        1163.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Under the reasonable assumption that the sampling distribution of $ \\Delta $ is approximately normal, the ratio $ |\\Delta|/\\sqrt{\\mathrm{Var}(\\Delta)} $ provides a simple $ t $ test for epistasis. For large samples, if this ratio is greater than 1.96, then the null hypothesis of no epistasis can be rejected with 95% confidence.",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b13"
+      ],
+      "bbox": [
+        44.0,
+        1172.0,
+        1005.0,
+        1320.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A more general approach to hypothesis testing uses least-squares regression to estimate the model parameters and then compares the observed means with the model predictions. With this approach, one can start with a very simple model, evaluate its significance, and gradually add higher-order composite effects to the model, until no further significant improvement in the model fit occurs. This procedure, first suggested by Cavalli (1952) and Hayman (1960a), is known as the joint-scaling test.",
+      "source_page": 231,
+      "printed_page": 211,
+      "source_block_ids": [
+        "p231:b14"
+      ],
+      "bbox": [
+        38.0,
+        1305.0,
+        1003.0,
+        1543.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Consider the simple additive model,",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b2"
+      ],
+      "bbox": [
+        185.0,
+        130.0,
+        627.0,
+        169.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula027]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b3"
+      ],
+      "bbox": [
+        490.0,
+        179.0,
+        736.0,
+        215.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the ith line mean $ (\\bar{z}_i) $ has coefficient $ \\theta_{Si} $, and $ e_i $ denotes the deviation of the observed mean from the prediction of the model. In matrix form, letting $ \\bar{z} $ be the vector of observed line means, a be the $ (2 \\times 1) $ vector of effects $ \\mu_0 $ and $ \\alpha_1^c $, and M be the matrix of coefficients, the linear model becomes",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b4"
+      ],
+      "bbox": [
+        134.0,
+        222.0,
+        1095.0,
+        368.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula028]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b5"
+      ],
+      "bbox": [
+        542.0,
+        378.0,
+        695.0,
+        408.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where e is the column vector of residual errors, i.e., the vector of deviations between observed and predicted line means. Note that all of the elements in the first column of M are equal to one, as they are all multipliers for $ \\mu_{0} $, whereas the second column contains the coefficients $ \\theta_{Si} $ for the various lines.",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b7"
+      ],
+      "bbox": [
+        139.0,
+        422.0,
+        1099.0,
+        563.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Since the line means may vary with respect to accuracy (reflecting, for example, different sample sizes), they should not be weighted equally in the computation of a. From Equation 8.34, the weighted least-squares solution is",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b8"
+      ],
+      "bbox": [
+        142.0,
+        550.0,
+        1100.0,
+        662.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula029]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b9"
+      ],
+      "bbox": [
+        445.0,
+        664.0,
+        800.0,
+        705.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the covariance matrix V for the residuals is diagonal with diagonal elements equal to the squared standard errors of the means. The treatment of V as a diagonal matrix assumes that the measured individuals from the different lines are unrelated, i.e., that there is no sampling covariance between the observed means.",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b11"
+      ],
+      "bbox": [
+        144.0,
+        717.0,
+        1105.0,
+        886.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "From Equation 8.35, the sampling variances and covariances of the two parameter estimates, $ \\widehat{\\mu}_{0} $ and $ \\widehat{\\alpha}_{1}^{c} $, are given by the elements of the $ (2 \\times 2) $ covariance matrix",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b12"
+      ],
+      "bbox": [
+        148.0,
+        877.0,
+        1107.0,
+        983.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula030]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b13"
+      ],
+      "bbox": [
+        449.0,
+        971.0,
+        806.0,
+        1013.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The two diagonal elements are $ \\operatorname{Var}(\\widehat{\\mu}_0) $ and $ \\operatorname{Var}(\\widehat{\\alpha}^c) $, whereas both off-diagonal elements are equal to $ \\operatorname{Cov}(\\widehat{\\mu}_0, \\widehat{\\alpha}^c) $. Sampling covariance arises between estimates of the parameters because they are jointly estimated from a common data set. Letting $ \\widehat{z}_i = \\widehat{\\mu}_0 + \\theta_{Si} \\widehat{\\alpha}^c $ be the fitted (predicted) mean phenotype for the ith line, the sampling variance of $ \\widehat{z}_i $ is simply the variance of a sum,",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b15"
+      ],
+      "bbox": [
+        150.0,
+        1017.0,
+        1110.0,
+        1192.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula031]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b16"
+      ],
+      "bbox": [
+        334.0,
+        1194.0,
+        931.0,
+        1238.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Using Equations 8.21b and 9.8b, the covariance matrix for the predicted means is",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b18"
+      ],
+      "bbox": [
+        156.0,
+        1245.0,
+        1113.0,
+        1293.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula032]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b19"
+      ],
+      "bbox": [
+        298.0,
+        1292.0,
+        970.0,
+        1340.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Although the least-squares solution is completely general, significance testing requires the assumption of normality. If that assumption is met, the weighted error sum of squares",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b21"
+      ],
+      "bbox": [
+        157.0,
+        1346.0,
+        1114.0,
+        1457.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula033]]",
+      "source_page": 232,
+      "printed_page": 212,
+      "source_block_ids": [
+        "p232:b22"
+      ],
+      "bbox": [
+        520.0,
+        1448.0,
+        752.0,
+        1534.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $k$ is the number of observed lines, provides a test statistic for the adequacy of the model (Appendix 3). Under the null hypothesis of purely additive gene action, this test statistic will be $\\chi^{2}$ distributed with degrees of freedom equal to the number of lines minus the number of estimated parameters, giving $(k-2)$ df.",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b2"
+      ],
+      "bbox": [
+        67.0,
+        115.0,
+        1027.0,
+        277.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If the test statistic is large enough to reject the additive model, the logical next step is to evaluate the additive-dominance model. In this case, the vector a contains a third element, $ \\delta_{1}^{c} $, and the matrix M contains a third row consisting of the elements $ \\theta_{Hi} $. The solution again follows from Equation 9.8a, and the new fit is evaluated by use of Equation 9.10, where the $ \\chi^{2} $ statistic is now distributed with k - 3 degrees of freedom, as three parameters are fitted.",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b3"
+      ],
+      "bbox": [
+        60.0,
+        245.0,
+        1023.0,
+        469.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Letting $ \\chi_{A}^{2} $ and $ \\chi_{AD}^{2} $ denote the test statistics associated with the additive and additive-dominance models, then the difference",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b4"
+      ],
+      "bbox": [
+        57.0,
+        437.0,
+        1015.0,
+        532.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula034]]",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b5"
+      ],
+      "bbox": [
+        443.0,
+        525.0,
+        627.0,
+        569.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "is equivalent to a likelihood-ratio test statistic (see Example 5 from Appendix 4). Such statistics are asymptotically $ \\chi^{2} $ distributed (with large sample sizes), with degrees of freedom equal to the difference in the number of parameters included in the two models (in this case, one). While the inclusion of dominance in the model will definitely improve the fit, Equation 9.11 provides a test for whether the improvement is significant.",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b7"
+      ],
+      "bbox": [
+        50.0,
+        564.0,
+        1012.0,
+        783.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If the additive-dominance model is rejected on the basis of an overly large value for $ \\chi_{AD}^{2} $, the next step is to proceed with the analysis of models containing epistatic effects, assuming that enough line means are available for such analysis. At this point, $ \\delta_{1}^{c} $ may or may not be dropped from the model depending on its degree of significance in the previous analysis. The significance of the improvement of fit with models containing epistasis can again be evaluated by use of the appropriate likelihood-ratio test, i.e., by the difference in $ \\chi^{2} $ test statistics between the modified model and the previous restricted model.",
+      "source_page": 233,
+      "printed_page": 213,
+      "source_block_ids": [
+        "p233:b8"
+      ],
+      "bbox": [
+        43.0,
+        756.0,
+        1006.0,
+        1042.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter9:2]]",
+      "source_page": 233,
+      "source_block_ids": [
+        "p233:b9",
+        "p233:b10",
+        "p233:b11",
+        "p234:b2",
+        "p234:b3",
+        "p234:b4",
+        "p234:b5",
+        "p234:b6",
+        "p234:b7",
+        "p234:b8",
+        "p234:b9",
+        "p234:b10",
+        "p234:b11",
+        "p234:b12",
+        "p234:b13",
+        "p234:b14",
+        "p234:b15",
+        "p235:b2",
+        "p235:b3",
+        "p235:b4",
+        "p235:b5",
+        "p235:b6",
+        "p235:b7",
+        "p235:b8",
+        "p235:b9",
+        "p235:b10"
+      ],
+      "bbox": [
+        83.0,
+        1108.0,
+        948.0,
+        1282.0
+      ]
+    }
+  ]
+}

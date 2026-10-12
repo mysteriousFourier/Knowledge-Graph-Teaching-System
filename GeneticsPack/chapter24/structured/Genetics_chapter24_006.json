@@ -1,0 +1,175 @@
+{
+  "id": "Genetics_chapter24_006",
+  "metadata": {
+    "chapter": "Genetics_chapter24",
+    "section": "VARIATION FOR SEXUAL DIMORPHISM",
+    "subsections": [],
+    "section_level_1": "VARIATION FOR SEXUAL DIMORPHISM",
+    "section_level_2": null,
+    "heading_path": [
+      "VARIATION FOR SEXUAL DIMORPHISM"
+    ],
+    "display_heading": "VARIATION FOR SEXUAL DIMORPHISM",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 736,
+      "printed_page": 716,
+      "source_block_ids": [
+        "p736:b6"
+      ],
+      "bbox": [
+        142.0,
+        993.0,
+        690.0,
+        1024.0
+      ],
+      "raw_text": "VARIATION FOR SEXUAL DIMORPHISM"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In the previous sections, we recognized the fact that many characters are sexually dimorphic. However, we did not consider whether the dimorphism itself is evolutionarily labile, as opposed to being a fixed difference that inevitably results from physiological and/or hormonal differences between males and females. Sexual dimorphisms are of interest to evolutionary ecologists for two reasons. First, dimorphisms in foraging strategies and/or morphologies are potentially selectively advantageous because they reduce competition between the sexes for food; a highly dimorphic pair of parents may provide an exceptionally broad base of food for their offspring, thereby enhancing their fitness. Second, sexual dimorphisms frequently have been attributed to sexual selection. When individuals exercise mate choice, they exert a selective pressure on the characters in the opposite sex that are the criteria for choice.",
+      "source_page": 736,
+      "printed_page": 716,
+      "source_block_ids": [
+        "p736:b7"
+      ],
+      "bbox": [
+        142.0,
+        1057.0,
+        1104.0,
+        1441.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Robertson (1959b) first pointed out that the existence of genetic variation for sexual dimorphism requires that the correlation between the effects of genes in males and females must be less than one. Strictly speaking, this criterion holds only when the genetic variance is equal in the two sexes (analogous to the situation with genotype × environment interaction, Chapter 22). For an allele i at an autosomal locus, $ (\\alpha_{Mi} - \\alpha_{Fi}) $ provides a measure of the dimorphic effect. The variance of this quantity is $ \\sigma^{2}(\\alpha_{M}) - 2\\sigma(\\alpha_{M}, \\alpha_{F}) + \\sigma^{2}(\\alpha_{F}) = \\sigma^{2}(\\alpha_{M}) + \\sigma^{2}(\\alpha_{F}) - 2\\rho_{FM}[\\sigma(\\alpha_{F})\\sigma(\\alpha_{M})] $, where $ \\rho_{FM} $ is the correlation between $ \\alpha_{Mi} $ and $ \\alpha_{Fi} $. If the two sexes have the same variance, $ \\sigma^{2}(\\alpha_{Mi} - \\alpha_{Fi}) = 2\\sigma^{2}(\\alpha)[1 - \\rho_{FM}] $, which is zero only when $ \\rho_{FM} = 1 $. By summing over all loci, we may define the total additive genetic variance for sexual dimorphism associated with autosomal loci to be",
+      "source_page": 736,
+      "printed_page": 716,
+      "source_block_ids": [
+        "p736:b8",
+        "p737:b2"
+      ],
+      "bbox": [
+        144.0,
+        1440.0,
+        1105.0,
+        1538.0
+      ],
+      "source_page_end": 737
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula019]]",
+      "source_page": 737,
+      "printed_page": 717,
+      "source_block_ids": [
+        "p737:b3"
+      ],
+      "bbox": [
+        264.0,
+        440.0,
+        815.0,
+        480.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "all three of the components on the right having been defined in the previous section. Thus, the additive genetic variance for sexual dimorphism can be calculated from estimates of the covariance between relatives that yield estimates of the components $ \\sigma^{2}(A_{M}), \\sigma^{2}(A_{F}), $ and $ \\sigma(A_{F}, A_{M}) $.",
+      "source_page": 737,
+      "printed_page": 717,
+      "source_block_ids": [
+        "p737:b5"
+      ],
+      "bbox": [
+        60.0,
+        517.0,
+        1022.0,
+        649.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter24:2]]",
+      "source_page": 737,
+      "source_block_ids": [
+        "p737:b6",
+        "p737:b7"
+      ],
+      "bbox": [
+        104.0,
+        756.0,
+        973.0,
+        1140.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Numbers in parentheses are standard errors of the estimates, ages are in weeks, and V and C denote Var and Cov, respectively.",
+      "source_page": 737,
+      "printed_page": 717,
+      "source_block_ids": [
+        "p737:b8"
+      ],
+      "bbox": [
+        104.0,
+        1413.0,
+        967.0,
+        1474.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In addition to the results in the previous example, there have been a number of reports of genetic correlations across the sexes that are not significantly different from one: pupal weight in Tribolium (Enfield et al. 1966), weight and fleece characteristics in domesticated sheep (Vesely and Robison 1971), height in humans (Rogers and Mukherjee 1992), bill color in zebra finches (Price and Burley 1993), and morphological characters in Drosophila (Example 1). In all of these cases, although a sexual dimorphism has clearly evolved for the character under study, the further evolution of dimorphism is tightly constrained — selection on either of the sexes would cause an almost perfectly correlated response in the opposite sex.",
+      "source_page": 738,
+      "printed_page": 718,
+      "source_block_ids": [
+        "p738:b2"
+      ],
+      "bbox": [
+        139.0,
+        138.0,
+        1102.0,
+        456.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Some exceptions to this pattern of $ r_{FM}(A) = 1 $ have emerged. For example, Møller (1993) obtained an additive genetic correlation of tail length in male and female barn swallows (Hirundo rustica) of $ 0.55 \\pm 0.16 $. Meagher (1992) used correlations of family means to estimate genetic correlations across the sexes for a diversity of characters in the dioecious plant Silene latifolia. This approach causes a downward bias in the absolute value of estimates (Chapter 21), so it is difficult to evaluate the significance of some of his results. On the other hand, Meagher found significantly negative correlations across the sexes for some pairs of reproductive traits. Since the true correlations were probably even more negative, this suggests negative pleiotropic effects of some genes on fitness as expressed in males vs. females. The following example provides a clear-cut case of heritability for sexual dimorphism.",
+      "source_page": 738,
+      "printed_page": 718,
+      "source_block_ids": [
+        "p738:b3"
+      ],
+      "bbox": [
+        139.0,
+        459.0,
+        1102.0,
+        841.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter24:3]]",
+      "source_page": 738,
+      "source_block_ids": [
+        "p738:b4",
+        "p738:b5",
+        "p738:b6"
+      ],
+      "bbox": [
+        188.0,
+        937.0,
+        1054.0,
+        1287.0
+      ]
+    }
+  ]
+}

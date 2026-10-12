@@ -1,0 +1,146 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter17",
+  "count": 4,
+  "figures": [
+    {
+      "id": "17.1",
+      "chapter": "Genetics_chapter17",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter17:17.1",
+      "placeholder": "[[FIGURE:17.1]]",
+      "see_placeholder": "[[SEE_FIGURE:17.1]]",
+      "asset_path": "figures/Genetics_17.1.png",
+      "caption": "Figure 17.1 The least-squares weights for families with $ n_{i} $ offspring in populations with values of t and B equal respectively to: (A) 0.5, 0.25; (B) 0.5, 0.05; (C) 0.2, 0.18; (D) 0.2, 0.1; and (E) 0.2, 0.01. The solid line is the uncorrected weighting, i.e., simple family size, $ n_{i} $. Dashed lines are solutions to Equation 17.5a.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 555,
+      "raw_bbox": [
+        217.0,
+        134.0,
+        936.0,
+        608.0
+      ],
+      "source_block_ids": [
+        "p555:b2"
+      ],
+      "caption_block": {
+        "source_page": 555,
+        "printed_page": 535,
+        "source_block_ids": [
+          "p555:b3"
+        ],
+        "bbox": [
+          143.0,
+          644.0,
+          1006.0,
+          766.0
+        ]
+      }
+    },
+    {
+      "id": "17.2",
+      "chapter": "Genetics_chapter17",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter17:17.2",
+      "placeholder": "[[FIGURE:17.2]]",
+      "see_placeholder": "[[SEE_FIGURE:17.2]]",
+      "asset_path": "figures/Genetics_17.2.png",
+      "caption": "Figure 17.2 Family sizes that minimize the sampling variance of $ h^{2} $ for the case in which the cost of securing a family is three times that of obtaining measures from individual progeny. (A) Single parents, full-sib families; (B) single parents, half-sib families; (C) midparents, full-sib families.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 559,
+      "raw_bbox": [
+        279.0,
+        142.0,
+        876.0,
+        716.0
+      ],
+      "source_block_ids": [
+        "p559:b2"
+      ],
+      "caption_block": {
+        "source_page": 559,
+        "printed_page": 539,
+        "source_block_ids": [
+          "p559:b3"
+        ],
+        "bbox": [
+          142.0,
+          751.0,
+          1006.0,
+          872.0
+        ]
+      }
+    },
+    {
+      "id": "17.3",
+      "chapter": "Genetics_chapter17",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter17:17.3",
+      "placeholder": "[[FIGURE:17.3]]",
+      "see_placeholder": "[[SEE_FIGURE:17.3]]",
+      "asset_path": "figures/Genetics_17.3.png",
+      "caption": "Figure 17.3 Expected standard errors of heritability estimates obtained from regressions of single offspring on single parents. The functions are defined by Equation 17.11a.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 560,
+      "raw_bbox": [
+        295.0,
+        136.0,
+        881.0,
+        697.0
+      ],
+      "source_block_ids": [
+        "p560:b2"
+      ],
+      "caption_block": {
+        "source_page": 560,
+        "printed_page": 540,
+        "source_block_ids": [
+          "p560:b3"
+        ],
+        "bbox": [
+          156.0,
+          729.0,
+          1017.0,
+          819.0
+        ]
+      }
+    },
+    {
+      "id": "17.4",
+      "chapter": "Genetics_chapter17",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter17:17.4",
+      "placeholder": "[[FIGURE:17.4]]",
+      "see_placeholder": "[[SEE_FIGURE:17.4]]",
+      "asset_path": "figures/Genetics_17.4.png",
+      "caption": "Figure 17.4 Examples of midparent-offspring regressions. Top panels: Land snail Partula taeniata (Murray and Clarke 1968). Bottom panels: Song sparrow Melospiza melodia (Smith and Zach 1979).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 565,
+      "raw_bbox": [
+        86.0,
+        139.0,
+        1047.0,
+        1078.0
+      ],
+      "source_block_ids": [
+        "p565:b2",
+        "p565:b3",
+        "p565:b4",
+        "p565:b5"
+      ],
+      "caption_block": {
+        "source_page": 565,
+        "printed_page": 545,
+        "source_block_ids": [
+          "p565:b6"
+        ],
+        "bbox": [
+          133.0,
+          1110.0,
+          998.0,
+          1201.0
+        ]
+      }
+    }
+  ]
+}

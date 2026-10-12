@@ -1,0 +1,227 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter6",
+  "count": 10,
+  "formulas": [
+    {
+      "id": "Genetics_chapter6_formula001",
+      "label_format": "(6.1)",
+      "latex": "z_{i j k}=G_{i}+I_{i j}+E_{j}+e_{i j k}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.1",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_002",
+        "page": 124,
+        "bbox": [
+          468.0,
+          611.0,
+          790.0,
+          651.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula002",
+      "label_format": null,
+      "latex": "I_{ij}=\\bar{z}_{ij}-G_{i}-E_{j}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": null,
+      "number_status": "verified_unnumbered_paddleocr_layout",
+      "render_mode": "display_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_002",
+        "page": 125,
+        "bbox": [
+          407.0,
+          844.0,
+          642.0,
+          888.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula003",
+      "label_format": null,
+      "latex": "end{array}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": null,
+      "number_status": "verified_unnumbered_paddleocr_layout",
+      "render_mode": "display_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_002",
+        "page": 125,
+        "bbox": [
+          206.0,
+          1058.0,
+          828.0,
+          1181.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula004",
+      "label_format": "(6.2)",
+      "latex": "sigma_{e}^{2}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.2",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_002",
+        "page": 126,
+        "bbox": [
+          419.0,
+          247.0,
+          824.0,
+          295.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula005",
+      "label_format": "(6.3)",
+      "latex": "sigma_{e a}^{2}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.3",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_004",
+        "page": 128,
+        "bbox": [
+          543.0,
+          1223.0,
+          730.0,
+          1261.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula006",
+      "label_format": "(6.4)",
+      "latex": "mathbf{V a r}(e_{m})",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.4",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_004",
+        "page": 129,
+        "bbox": [
+          318.0,
+          434.0,
+          737.0,
+          522.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula007",
+      "label_format": "(6.5)",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.5",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_005",
+        "page": 134,
+        "bbox": [
+          344.0,
+          624.0,
+          910.0,
+          769.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula008",
+      "label_format": "(6.6)",
+      "latex": "mathbf{V a r}(e_{w})",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.6",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_006",
+        "page": 137,
+        "bbox": [
+          345.0,
+          698.0,
+          718.0,
+          734.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula009",
+      "label_format": "(6.7)",
+      "latex": "r=\\frac{\\mathbf{Var}(z)-\\mathbf{Var}(e_{w})}{\\mathbf{Var}(z)-\\mathbf{Var}(e_{m})}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.7",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_006",
+        "page": 137,
+        "bbox": [
+          390.0,
+          1477.0,
+          658.0,
+          1547.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    },
+    {
+      "id": "Genetics_chapter6_formula010",
+      "label_format": "(6.8)",
+      "latex": "r_{F}=\\frac{Cov(z_{1},z_{2})}{SD(z_{1})SD(z_{2})}",
+      "formula_type": "block",
+      "book": "Genetics",
+      "equation_number": "6.8",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_006",
+        "page": 138,
+        "bbox": [
+          502.0,
+          518.0,
+          748.0,
+          589.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf"
+      }
+    }
+  ]
+}

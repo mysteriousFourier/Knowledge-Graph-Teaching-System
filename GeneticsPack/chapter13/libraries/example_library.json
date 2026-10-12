@@ -1,0 +1,170 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter13",
+  "count": 4,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter13:1",
+      "example_ref": "Genetics_chapter13:1",
+      "chapter": "Genetics_chapter13",
+      "label": "Example 1",
+      "title": "Example 1. Bucher et al. (1982) examined a large sample of families that were classified into groups based on cholesterol levels. One particular group (the High group) showed signi",
+      "source_file": "Genetics_chapter13_004.json",
+      "start_block_index": 4,
+      "end_source_file": "Genetics_chapter13_004.json",
+      "end_block_index": 4,
+      "block_ids": [
+        "p370:b7",
+        "p371:b2"
+      ],
+      "content_markdown": "Example 1. Bucher et al. (1982) examined a large sample of families that were classified into groups based on cholesterol levels. One particular group (the High group) showed significant heterogeneity of within-sibship variance for cholesterol level (P < 0.001 using Bartlett's test of homogeneity of variances), while the other groups did not. Likewise, the regression of the within-sibship variance on the sibship means had a significant quadratic term for the High group, while the quadratic term was not significant in the other groups. These data suggest that a major gene was segregating in at least some of the families forming the High group (i.e., at least one parent was a heterozygote) but was not in the families forming the other groups. Thus, there are additional sources of variance beyond the major gene (such as environmental factors and/or additional polygenes) that contribute to the difference between groups.",
+      "content_plain": "Example 1. Bucher et al. (1982) examined a large sample of families that were classified into groups based on cholesterol levels. One particular group (the High group) showed significant heterogeneity of within-sibship variance for cholesterol level (P < 0.001 using Bartlett's test of homogeneity of variances), while the other groups did not. Likewise, the regression of the within-sibship variance on the sibship means had a significant quadratic term for the High group, while the quadratic term was not significant in the other groups. These data suggest that a major gene was segregating in at least some of the families forming the High group (i.e., at least one parent was a heterozygote) but was not in the families forming the other groups. Thus, there are additional sources of variance beyond the major gene (such as environmental factors and/or additional polygenes) that contribute to the difference between groups.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 371,
+          "y": 243.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 370
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter13:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter13:2",
+      "example_ref": "Genetics_chapter13:2",
+      "chapter": "Genetics_chapter13",
+      "label": "Example 2",
+      "title": "Example 2. Consider the likelihood-ratio test statistic for whether a diallelic major gene (in Hardy-Weinberg frequencies, with the phenotypes for each major-locus genotype normall",
+      "source_file": "Genetics_chapter13_010.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_chapter13_010.json",
+      "end_block_index": 15,
+      "block_ids": [
+        "p376:b13",
+        "p376:b14",
+        "p377:b2",
+        "p377:b3",
+        "p377:b4",
+        "p377:b5",
+        "p377:b6"
+      ],
+      "content_markdown": "Example 2. Consider the likelihood-ratio test statistic for whether a diallelic major gene (in Hardy-Weinberg frequencies, with the phenotypes for each major-locus genotype normally distributed with constant variance) provides a better fit of the data than a single normal distribution. Assume that the data consist of n (unrelated) individuals, randomly chosen from the population. From Equations 13.7 and 13.8, the likelihood-ratio test statistic is given by\n\n[[FORMULA:Genetics_chapter13_formula014]]\n\nwhere\n\n[[FORMULA:Genetics_chapter13_formula015]]\n\nthe maximum being taken over all admissible values of $p$ ($0 \\leq p \\leq 1$), $\\mu_{QQ}$, $\\mu_{Qq}$, $\\mu_{qq}(-\\infty < \\mu < \\infty)$, and $\\sigma^{2}(\\sigma^{2} \\geq 0)$ and\n\n[[FORMULA:Genetics_chapter13_formula016]]\n\nSince the full model has five unknown parameters while the reduced model has two $(\\mu, \\sigma^{2})$, the test statistic $\\Lambda$ is approximately distributed as $\\chi_{3}^{2}$. Hence $\\Lambda$ values exceeding 7.82 and 11.4 indicate that a mixture of three normals provides a better fit at the 5% and 1% levels of significance, respectively, than a single normal.",
+      "content_plain": "Example 2. Consider the likelihood-ratio test statistic for whether a diallelic major gene (in Hardy-Weinberg frequencies, with the phenotypes for each major-locus genotype normally distributed with constant variance) provides a better fit of the data than a single normal distribution. Assume that the data consist of n (unrelated) individuals, randomly chosen from the population. From Equations 13.7 and 13.8, the likelihood-ratio test statistic is given by\n\n[[FORMULA:Genetics_chapter13_formula014]]\n\nwhere\n\n[[FORMULA:Genetics_chapter13_formula015]]\n\nthe maximum being taken over all admissible values of p (0 \\leq p \\leq 1), \\mu_{QQ}, \\mu_{Qq}, \\mu_{qq}(-\\infty < \\mu < \\infty), and \\sigma^{2}(\\sigma^{2} \\geq 0) and\n\n[[FORMULA:Genetics_chapter13_formula016]]\n\nSince the full model has five unknown parameters while the reduced model has two (\\mu, \\sigma^{2}), the test statistic \\Lambda is approximately distributed as \\chi_{3}^{2}. Hence \\Lambda values exceeding 7.82 and 11.4 indicate that a mixture of three normals provides a better fit at the 5% and 1% levels of significance, respectively, than a single normal.",
+      "formula_refs": [
+        "Genetics_chapter13_formula014",
+        "Genetics_chapter13_formula015",
+        "Genetics_chapter13_formula016"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 377,
+          "y": 599.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 376
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter13:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter13:3",
+      "example_ref": "Genetics_chapter13:3",
+      "chapter": "Genetics_chapter13",
+      "label": "Example 3",
+      "title": "Example 3. Morton and MacLean (1974) consider a model with both a segregating diallelic major gene (alleles Q and q) and a completely additive polygenic background. Conditioned on ",
+      "source_file": "Genetics_chapter13_011.json",
+      "start_block_index": 5,
+      "end_source_file": "Genetics_chapter13_011.json",
+      "end_block_index": 8,
+      "block_ids": [
+        "p379:b4",
+        "p379:b5",
+        "p380:b2",
+        "p380:b3"
+      ],
+      "content_markdown": "Example 3. Morton and MacLean (1974) consider a model with both a segregating diallelic major gene (alleles Q and q) and a completely additive polygenic background. Conditioned on the genotype at the major locus, the distributions of phenotypic values are assumed to be normally distributed with means $ \\mu_{QQ} $, $ \\mu_{Qq} $, or $ \\mu_{qq} $, and common variance $ \\sigma^2 = \\sigma_E^2 + \\sigma_A^2 $ (the environmental variance plus the additive genetic variance contributed by the background polygenes). Assuming the major-locus genotypes are in Hardy-Weinberg proportions, this model is described by six parameters: $ p = $ frequency of Q, the means of each major-locus genotype ( $ \\mu_{QQ} $, $ \\mu_{Qq} $, $ \\mu_{qq} $), the environmental variance $ \\sigma_E^2 $, and the genetic variance from the polygenic contribution $ \\sigma_A^2 $. The resulting likelihood function (see Equations 13.11b and 13.22 below) is complex as it incorporates transmission of both the major alleles and polygenic background from parent to offspring, conditioning over all possible parental genotypes. The amount of support for various genetic hypotheses can be tested using likelihood ratios of appropriate subsets of the full model, as given in the following table:\n\n<table><tr><td>Model</td><td>Free Parameters</td><td>Restricted Parameters</td></tr><tr><td>1. No genetic effects</td><td>$ \\mu, \\sigma_{E}^{2} $</td><td>$ \\mu_{QQ} = \\mu_{Qq} = \\mu_{qq} = \\mu $ $ p = 0, \\sigma_{A}^{2} = 0 $</td></tr><tr><td>2. Major gene, no background polygenes</td><td>$ \\mu_{QQ}, \\mu_{Qq}, \\mu_{qq}, p, \\sigma_{E}^{2} $</td><td>$ \\sigma_{A}^{2} = 0 $</td></tr></table>\n\n<table><tr><td>Model (Continued)</td><td>Free Parameters</td><td>Restricted Parameters</td></tr><tr><td>3. Background polygenes, no major gene</td><td>$ \\mu, \\sigma_{E}^{2}, \\sigma_{A}^{2} $</td><td>$ \\mu_{QQ} = \\mu_{Qq} = \\mu_{qq} = \\mu_{p} = 0 $</td></tr><tr><td>4. Full model: Major gene, background polygenes</td><td>$ \\mu_{QQ}, \\mu_{Qq}, \\mu_{qq}, p, \\sigma_{E}^{2}, \\sigma_{A}^{2} $</td><td>None</td></tr></table>\n\nFor example, a test of support for a major gene is given by the likelihood ratio using model 1 (a single normal distribution) as the restricted model and model 2 as the full model. The resulting test statistic has 5 - 2 = 3 degrees of freedom, with twice the log of the maximum of the restricted likelihood function given by Equation 13.8. If the major-gene model provides a significant improvement, model 4 (major gene plus polygenic background) can next be tested against the major-gene-only model (2), with the test statistic having 6 - 5 = 1 degree of freedom. More complicated models are analyzed in a similar fashion.",
+      "content_plain": "Example 3. Morton and MacLean (1974) consider a model with both a segregating diallelic major gene (alleles Q and q) and a completely additive polygenic background. Conditioned on the genotype at the major locus, the distributions of phenotypic values are assumed to be normally distributed with means  \\mu_{QQ} ,  \\mu_{Qq} , or  \\mu_{qq} , and common variance  \\sigma^2 = \\sigma_E^2 + \\sigma_A^2  (the environmental variance plus the additive genetic variance contributed by the background polygenes). Assuming the major-locus genotypes are in Hardy-Weinberg proportions, this model is described by six parameters:  p =  frequency of Q, the means of each major-locus genotype (  \\mu_{QQ} ,  \\mu_{Qq} ,  \\mu_{qq} ), the environmental variance  \\sigma_E^2 , and the genetic variance from the polygenic contribution  \\sigma_A^2 . The resulting likelihood function (see Equations 13.11b and 13.22 below) is complex as it incorporates transmission of both the major alleles and polygenic background from parent to offspring, conditioning over all possible parental genotypes. The amount of support for various genetic hypotheses can be tested using likelihood ratios of appropriate subsets of the full model, as given in the following table:\n\n<table><tr><td>Model</td><td>Free Parameters</td><td>Restricted Parameters</td></tr><tr><td>1. No genetic effects</td><td> \\mu, \\sigma_{E}^{2} </td><td> \\mu_{QQ} = \\mu_{Qq} = \\mu_{qq} = \\mu   p = 0, \\sigma_{A}^{2} = 0 </td></tr><tr><td>2. Major gene, no background polygenes</td><td> \\mu_{QQ}, \\mu_{Qq}, \\mu_{qq}, p, \\sigma_{E}^{2} </td><td> \\sigma_{A}^{2} = 0 </td></tr></table>\n\n<table><tr><td>Model (Continued)</td><td>Free Parameters</td><td>Restricted Parameters</td></tr><tr><td>3. Background polygenes, no major gene</td><td> \\mu, \\sigma_{E}^{2}, \\sigma_{A}^{2} </td><td> \\mu_{QQ} = \\mu_{Qq} = \\mu_{qq} = \\mu_{p} = 0 </td></tr><tr><td>4. Full model: Major gene, background polygenes</td><td> \\mu_{QQ}, \\mu_{Qq}, \\mu_{qq}, p, \\sigma_{E}^{2}, \\sigma_{A}^{2} </td><td>None</td></tr></table>\n\nFor example, a test of support for a major gene is given by the likelihood ratio using model 1 (a single normal distribution) as the restricted model and model 2 as the full model. The resulting test statistic has 5 - 2 = 3 degrees of freedom, with twice the log of the maximum of the restricted likelihood function given by Equation 13.8. If the major-gene model provides a significant improvement, model 4 (major gene plus polygenic background) can next be tested against the major-gene-only model (2), with the test statistic having 6 - 5 = 1 degree of freedom. More complicated models are analyzed in a similar fashion.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 380,
+          "y": 649.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 379
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter13:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter13:4",
+      "example_ref": "Genetics_chapter13:4",
+      "chapter": "Genetics_chapter13",
+      "label": "Example 4",
+      "title": "Example 4. As a demonstration of the utility of the Elston et al. (1975) criteria for accepting a major-gene hypothesis, we consider McGuffin and Huckle (1990) test for a genetic b",
+      "source_file": "Genetics_chapter13_012.json",
+      "start_block_index": 30,
+      "end_source_file": "Genetics_chapter13_012.json",
+      "end_block_index": 33,
+      "block_ids": [
+        "p383:b4",
+        "p383:b5",
+        "p383:b6",
+        "p384:b2"
+      ],
+      "content_markdown": "Example 4. As a demonstration of the utility of the Elston et al. (1975) criteria for accepting a major-gene hypothesis, we consider McGuffin and Huckle (1990) test for a genetic basis for attending medical school. The trait here is scored as a binary variable,\n\n[[FORMULA:Genetics_chapter13_formula031]]\n\nAs is discussed below (Equation 13.28), complex segregation analysis can be easily modified to accommodate such binary characters. Of 249 students at the Wales College of Medicine, 13.4% had mothers/fathers who also attended medical school, a 61-fold increase in “risk” relative to the general population (0.2%). Taking $ \\mu $ as the population mean, the expected means at an underlying major locus can be modeled by using measures of additivity (a) and dominance (k), and the allele frequency p. General single-locus (a, k, p all estimated) and recessive (k = 0, a and p estimated) models were fitted and compared with a null model (a = k = p = 0). These single-locus models, which assumed Mendelian transmission probabilities ( $ \\tau_1 = 1 $, $ \\tau_2 = 1/2 $, $ \\tau_3 = 0 $), were then compared against two alternate transmission models — a generalized model where the three parameters ( $ \\tau_1 $, $ \\tau_2 $, $ \\tau_3 $) were estimated from the data, and an equal transmission model ( $ \\tau_1 = \\tau_2 = \\tau_3 = \\tau $). The latter simply fits a mixture model to the data without allowing for Mendelian transmission. The resulting log likelihoods for these models were as follows:\n\n<table><tr><td rowspan=\"2\">Model</td><td colspan=\"2\">Parameters (in addition to $ \\mu $)</td><td rowspan=\"2\">Constant + -2 $ \\ln $ (likelihood)</td></tr><tr><td>Free</td><td>Fixed</td></tr><tr><td>Null</td><td>None</td><td>$ a = k = p = 0 $</td><td>283.60</td></tr><tr><td>Equal transmission</td><td>$ a, p,\\tau_{1} = \\tau_{2} = \\tau_{3} $</td><td>$ k = 0 $</td><td>283.60</td></tr><tr><td>General single-locus</td><td>$ a, k, p $</td><td>$ \\tau_{1} = 1, \\tau_{2} = 1/2,\\tau_{3} = 0 $</td><td>120.14</td></tr><tr><td>Recessive</td><td>$ a, p $</td><td>$ k = 0, \\tau_{1} = 1,\\tau_{2} = 1/2, \\tau_{3} = 0 $</td><td>120.14</td></tr><tr><td>General transmission</td><td>$ a, p, \\tau_{1}, \\tau_{2}, \\tau_{3} $</td><td>$ k = 0 $</td><td>111.22</td></tr></table>",
+      "content_plain": "Example 4. As a demonstration of the utility of the Elston et al. (1975) criteria for accepting a major-gene hypothesis, we consider McGuffin and Huckle (1990) test for a genetic basis for attending medical school. The trait here is scored as a binary variable,\n\n[[FORMULA:Genetics_chapter13_formula031]]\n\nAs is discussed below (Equation 13.28), complex segregation analysis can be easily modified to accommodate such binary characters. Of 249 students at the Wales College of Medicine, 13.4% had mothers/fathers who also attended medical school, a 61-fold increase in “risk” relative to the general population (0.2%). Taking  \\mu  as the population mean, the expected means at an underlying major locus can be modeled by using measures of additivity (a) and dominance (k), and the allele frequency p. General single-locus (a, k, p all estimated) and recessive (k = 0, a and p estimated) models were fitted and compared with a null model (a = k = p = 0). These single-locus models, which assumed Mendelian transmission probabilities (  \\tau_1 = 1 ,  \\tau_2 = 1/2 ,  \\tau_3 = 0 ), were then compared against two alternate transmission models — a generalized model where the three parameters (  \\tau_1 ,  \\tau_2 ,  \\tau_3 ) were estimated from the data, and an equal transmission model (  \\tau_1 = \\tau_2 = \\tau_3 = \\tau ). The latter simply fits a mixture model to the data without allowing for Mendelian transmission. The resulting log likelihoods for these models were as follows:\n\n<table><tr><td rowspan=\"2\">Model</td><td colspan=\"2\">Parameters (in addition to  \\mu )</td><td rowspan=\"2\">Constant + -2  \\ln  (likelihood)</td></tr><tr><td>Free</td><td>Fixed</td></tr><tr><td>Null</td><td>None</td><td> a = k = p = 0 </td><td>283.60</td></tr><tr><td>Equal transmission</td><td> a, p,\\tau_{1} = \\tau_{2} = \\tau_{3} </td><td> k = 0 </td><td>283.60</td></tr><tr><td>General single-locus</td><td> a, k, p </td><td> \\tau_{1} = 1, \\tau_{2} = 1/2,\\tau_{3} = 0 </td><td>120.14</td></tr><tr><td>Recessive</td><td> a, p </td><td> k = 0, \\tau_{1} = 1,\\tau_{2} = 1/2, \\tau_{3} = 0 </td><td>120.14</td></tr><tr><td>General transmission</td><td> a, p, \\tau_{1}, \\tau_{2}, \\tau_{3} </td><td> k = 0 </td><td>111.22</td></tr></table>",
+      "formula_refs": [
+        "Genetics_chapter13_formula031"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 384,
+          "y": 156.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 383
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter13:4]]",
+      "book": "Genetics"
+    }
+  ]
+}

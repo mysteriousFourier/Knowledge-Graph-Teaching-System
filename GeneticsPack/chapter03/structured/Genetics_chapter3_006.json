@@ -1,0 +1,127 @@
+{
+  "id": "Genetics_chapter3_006",
+  "metadata": {
+    "chapter": "Genetics_chapter3",
+    "section": "REGRESSION",
+    "subsections": [],
+    "section_level_1": "REGRESSION",
+    "section_level_2": null,
+    "heading_path": [
+      "REGRESSION"
+    ],
+    "display_heading": "REGRESSION",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b2"
+      ],
+      "bbox": [
+        60.0,
+        129.0,
+        252.0,
+        163.0
+      ],
+      "raw_text": "REGRESSION"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Depending on the causal connections between two variables, x and y, their true relationship may be linear or nonlinear. However, regardless of the true pattern of association, a linear model can always serve as a first approximation. In this case, the analysis is particularly simple,",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b3"
+      ],
+      "bbox": [
+        56.0,
+        192.0,
+        1017.0,
+        342.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula021]]",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b4"
+      ],
+      "bbox": [
+        439.0,
+        341.0,
+        632.0,
+        374.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\alpha $ is the y-intercept, $ \\beta $ is the slope of the line (also known as the regression coefficient), and e is the residual error. Letting",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b6"
+      ],
+      "bbox": [
+        52.0,
+        369.0,
+        1011.0,
+        454.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter3_formula022]]",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b7"
+      ],
+      "bbox": [
+        459.0,
+        451.0,
+        604.0,
+        485.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "be the value of y predicted by the model, then the residual error is the deviation between the observed and predicted y value, i.e., $ e = y - \\hat{y} $. When information on x is used to predict y, x is referred to as the predictor or independent variable and y as the response or dependent variable.",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b9"
+      ],
+      "bbox": [
+        49.0,
+        481.0,
+        1010.0,
+        630.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The objective of linear regression analysis is to estimate the model parameters, $ \\alpha $ and $ \\beta $, that give the “best fit” for the joint distribution of x and y. The true parameters $ \\alpha $ and $ \\beta $ are only obtainable if the entire population is sampled. With an incomplete sample, $ \\alpha $ and $ \\beta $ are approximated by sample estimators, denoted as a and b. Good approximations of $ \\alpha $ and $ \\beta $ are sometimes obtainable by visual inspection of the data, particularly in the physical sciences, where deviations from a simple relationship are due to errors of measurement rather than biological variability. However, in biology many factors are often beyond the investigator’s control. The data in Figure 3.2 provide a good example. While there appears to be a weak positive relationship between maternal weight and offspring number in rats, it is difficult to say anything more precise. An objective definition of “best fit” is required.",
+      "source_page": 55,
+      "printed_page": 35,
+      "source_block_ids": [
+        "p55:b10"
+      ],
+      "bbox": [
+        39.0,
+        612.0,
+        1005.0,
+        1015.0
+      ]
+    }
+  ]
+}

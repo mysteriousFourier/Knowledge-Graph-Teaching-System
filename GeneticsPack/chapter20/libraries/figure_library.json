@@ -1,0 +1,211 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter20",
+  "count": 6,
+  "figures": [
+    {
+      "id": "20.1",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.1",
+      "placeholder": "[[FIGURE:20.1]]",
+      "see_placeholder": "[[SEE_FIGURE:20.1]]",
+      "asset_path": "figures/Genetics_20.1.png",
+      "caption": "Figure 20.1 Mating scheme for North Carolina Design II. Each cell contains n observations.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 611,
+      "raw_bbox": [
+        258.0,
+        121.0,
+        855.0,
+        650.0
+      ],
+      "source_block_ids": [
+        "p611:b2"
+      ],
+      "caption_block": {
+        "source_page": 611,
+        "printed_page": 591,
+        "source_block_ids": [
+          "p611:b3"
+        ],
+        "bbox": [
+          111.0,
+          659.0,
+          976.0,
+          743.0
+        ]
+      }
+    },
+    {
+      "id": "20.2",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.2",
+      "placeholder": "[[FIGURE:20.2]]",
+      "see_placeholder": "[[SEE_FIGURE:20.2]]",
+      "asset_path": "figures/Genetics_20.2.png",
+      "caption": "Figure 20.2 Mating scheme for an incomplete diallel with no reciprocal crosses and no crosses within the parental lines (left); for an incomplete diallel with reciprocals but no selfed (i.e., within parental line) crosses (center); and for a full diallel (right). Unshaded cells denote crosses that are not made.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 623,
+      "raw_bbox": [
+        72.0,
+        120.0,
+        1036.0,
+        457.0
+      ],
+      "source_block_ids": [
+        "p623:b2"
+      ],
+      "caption_block": {
+        "source_page": 623,
+        "printed_page": 603,
+        "source_block_ids": [
+          "p623:b3"
+        ],
+        "bbox": [
+          114.0,
+          464.0,
+          981.0,
+          605.0
+        ]
+      }
+    },
+    {
+      "id": "20.3",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.3",
+      "placeholder": "[[FIGURE:20.3]]",
+      "see_placeholder": "[[SEE_FIGURE:20.3]]",
+      "asset_path": "figures/Genetics_20.3.png",
+      "caption": "Figure 20.3 Two possible structures for partial dialells. The reciprocal crosses are sometimes excluded.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 631,
+      "raw_bbox": [
+        260.0,
+        126.0,
+        851.0,
+        414.0
+      ],
+      "source_block_ids": [
+        "p631:b2"
+      ],
+      "caption_block": {
+        "source_page": 631,
+        "printed_page": 611,
+        "source_block_ids": [
+          "p631:b3"
+        ],
+        "bbox": [
+          117.0,
+          429.0,
+          979.0,
+          506.0
+        ]
+      }
+    },
+    {
+      "id": "20.4",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.4",
+      "placeholder": "[[FIGURE:20.4]]",
+      "see_placeholder": "[[SEE_FIGURE:20.4]]",
+      "asset_path": "figures/Genetics_20.4.png",
+      "caption": "Figure 20.4 Expected relationship between $\\sigma_{P_{2},r}(i)$, the covariance of family means in array $i$ with the means of their nonrecurrent parents, and $\\sigma_{r}^{2}(i)$, the variance of family means in array $i$. The parental lines are assumed to be completely inbred. Prior to actual regression, the environmental contribution to these two parameter estimates needs to be removed. The data points for each parental line are then expected to fall along a straight line with slope equal to one. The intercept depends upon the squared degree of dominance, with a positive intercept denoting partial dominance ($\\overline{k^{2}} < 1$), a zero intercept complete dominance ($\\overline{k^{2}} = 1$), and a negative intercept overdominance ($\\overline{k^{2}} > 1$).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 635,
+      "raw_bbox": [
+        193.0,
+        129.0,
+        927.0,
+        708.0
+      ],
+      "source_block_ids": [
+        "p635:b2"
+      ],
+      "caption_block": {
+        "source_page": 635,
+        "printed_page": 615,
+        "source_block_ids": [
+          "p635:b3"
+        ],
+        "bbox": [
+          113.0,
+          727.0,
+          982.0,
+          1024.0
+        ]
+      }
+    },
+    {
+      "id": "20.5",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.5",
+      "placeholder": "[[FIGURE:20.5]]",
+      "see_placeholder": "[[SEE_FIGURE:20.5]]",
+      "asset_path": "figures/Genetics_20.5.png",
+      "caption": "Figure 20.5 Estimates of the index of number of recessive genes ( $ \\widetilde{R} $) versus the mean phenotype of inbred lines ( $ \\overline{z}_{ii} $) for flowering time (days after July 1) in nine lines of tobacco Nicotiana rustica subjected to a complete diallel. (From Mather and Jinks 1982.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 637,
+      "raw_bbox": [
+        261.0,
+        154.0,
+        854.0,
+        915.0
+      ],
+      "source_block_ids": [
+        "p637:b2"
+      ],
+      "caption_block": {
+        "source_page": 637,
+        "printed_page": 617,
+        "source_block_ids": [
+          "p637:b3"
+        ],
+        "bbox": [
+          108.0,
+          939.0,
+          976.0,
+          1081.0
+        ]
+      }
+    },
+    {
+      "id": "20.6",
+      "chapter": "Genetics_chapter20",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter20:20.6",
+      "placeholder": "[[FIGURE:20.6]]",
+      "see_placeholder": "[[SEE_FIGURE:20.6]]",
+      "asset_path": "figures/Genetics_20.6.png",
+      "caption": "Figure 20.6 Crossing schemes for North Carolina Design III and the triple test cross.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 638,
+      "raw_bbox": [
+        302.0,
+        144.0,
+        901.0,
+        540.0
+      ],
+      "source_block_ids": [
+        "p638:b2"
+      ],
+      "caption_block": {
+        "source_page": 638,
+        "printed_page": 618,
+        "source_block_ids": [
+          "p638:b3"
+        ],
+        "bbox": [
+          173.0,
+          550.0,
+          1037.0,
+          629.0
+        ]
+      }
+    }
+  ]
+}

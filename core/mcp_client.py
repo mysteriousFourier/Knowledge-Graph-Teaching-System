@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Optional
 from KGTS.core.bridge import call_backend_tool
 
 TOOL_NAMES = [
+    "list_graphs",
     "read_graph",
     "list_nodes",
     "list_relationships",

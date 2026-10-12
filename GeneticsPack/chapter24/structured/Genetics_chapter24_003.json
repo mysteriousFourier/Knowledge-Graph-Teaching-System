@@ -1,0 +1,187 @@
+{
+  "id": "Genetics_chapter24_003",
+  "metadata": {
+    "chapter": "Genetics_chapter24",
+    "section": "SEX-MODIFIED EXPRESSION OF AN AUTOSOMAL LOCUS",
+    "subsections": [],
+    "section_level_1": "SEX-MODIFIED EXPRESSION OF AN AUTOSOMAL LOCUS",
+    "section_level_2": null,
+    "heading_path": [
+      "SEX-MODIFIED EXPRESSION OF AN AUTOSOMAL LOCUS"
+    ],
+    "display_heading": "SEX-MODIFIED EXPRESSION OF AN AUTOSOMAL LOCUS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b3"
+      ],
+      "bbox": [
+        138.0,
+        357.0,
+        922.0,
+        389.0
+      ],
+      "raw_text": "SEX-MODIFIED EXPRESSION OF AN AUTOSOMAL LOCUS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Just as the expressed effect of a sex-linked gene may vary between the sexes, so may the expression of any autosomal gene. For a single autosomal locus, we denote the genotypic values of females and males respectively as",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b4"
+      ],
+      "bbox": [
+        138.0,
+        422.0,
+        1099.0,
+        520.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula005]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b5"
+      ],
+      "bbox": [
+        425.0,
+        551.0,
+        793.0,
+        585.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula006]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b7"
+      ],
+      "bbox": [
+        419.0,
+        607.0,
+        817.0,
+        641.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The autosomal additive genetic variances of the two sexes are defined in the usual manner to be",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b9"
+      ],
+      "bbox": [
+        140.0,
+        669.0,
+        1097.0,
+        735.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula007]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b10"
+      ],
+      "bbox": [
+        286.0,
+        760.0,
+        934.0,
+        805.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula008]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b12"
+      ],
+      "bbox": [
+        281.0,
+        829.0,
+        958.0,
+        872.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and the dominance components are",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b14"
+      ],
+      "bbox": [
+        142.0,
+        906.0,
+        575.0,
+        938.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula009]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b15"
+      ],
+      "bbox": [
+        430.0,
+        968.0,
+        803.0,
+        1015.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter24_formula010]]",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b17"
+      ],
+      "bbox": [
+        425.0,
+        1037.0,
+        815.0,
+        1081.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ p_{ij} $ is the frequency of the ijth genotype.",
+      "source_page": 730,
+      "printed_page": 710,
+      "source_block_ids": [
+        "p730:b19"
+      ],
+      "bbox": [
+        142.0,
+        1114.0,
+        702.0,
+        1148.0
+      ]
+    }
+  ]
+}

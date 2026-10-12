@@ -1,0 +1,323 @@
+{
+  "id": "PopGen_chapter4_013",
+  "metadata": {
+    "chapter": "PopGen_chapter4",
+    "section": "4.5 INFINITE-SITES MODEL",
+    "subsections": [
+      "Tajima's D Statistic"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "4.1"
+    ],
+    "section_level_1": "4.5 INFINITE-SITES MODEL",
+    "section_level_2": "Tajima's D Statistic",
+    "heading_path": [
+      "4.5 INFINITE-SITES MODEL",
+      "Tajima's D Statistic"
+    ],
+    "display_heading": "Tajima's D Statistic",
+    "table_reference_keys": [
+      "chapter4:4.1"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b7"
+      ],
+      "source_blocks": [
+        {
+          "source_block_id": "PopGen_chapter4:p026:b7",
+          "source_page": 190,
+          "bbox": [
+            275.0,
+            870.0,
+            511.0,
+            893.0
+          ],
+          "source_content_sha256": "28383e116e79e36dc93730e6e81b2635c901ce7d0cfd05c32ce2d56506c8e7bb"
+        }
+      ]
+    },
+    "chapter_title": "Mutation and the Neutral Theory"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Equation 4.16 provides a method for estimating the parameter $ \\theta = 4N\\mu $ based on the number of segregating sites in a sample S. If we define $$ \\alpha=\\sum_{i=1}^{n-1}\\frac{1}{i}=1+\\frac{1}{2}+\\frac{1}{3}+\\cdots+\\frac{1}{n-1} $$ then Equation 4.16 yields the estimate $$ \\hat{\\theta}=S/a $$",
+      "source_page": 190,
+      "source_pages": [
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b8",
+        "PopGen_chapter4:p026:b9",
+        "PopGen_chapter4:p026:b10"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          902.0,
+          1022.0,
+          955.0
+        ],
+        [
+          501.0,
+          964.0,
+          795.0,
+          1025.0
+        ],
+        [
+          273.0,
+          1037.0,
+          649.0,
+          1062.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "7a2408447247d0717035407e41c8e19d64b20bb884d80ef56783c1bba1f32616",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Likewise, Equation 4.18 provides a method for estimating $ \\theta $ based on the average number of pairwise mismatches $ \\Pi $, and in this case the estimate is very direct: $$ \\hat{\\theta}=\\Pi $$",
+      "source_page": 190,
+      "source_pages": [
+        190
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b12"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          1116.0,
+          1024.0,
+          1194.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "92ded4d361cfe5f4e9cbc89890b7c968b73ed7cb4da5a48a4f9b5aa6a64e38e4",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Tajima <sup>[704]</sup> proposed that the difference between the estimates of $ \\theta $ in Equations 4.23 and 4.24 could be used as a test of goodness of fit to the infinite-alleles model, and this test has come into widespread use. The rationale is that the number of segregating sites and the average number of pairwise mismatches differ primarily because the former is indifferent to the relative frequencies of the polymorphic nucleotides at a site. The two values lead to consistent estimates for $ \\theta $ anyway, unless some evolutionary process causes a discrepancy from the assumptions of the infinite-alleles model. Tajima's test is based on the difference $ \\Pi - S/a $. If the infinite-alleles model holds (or any discrepancies are too small to invalidate Equations 4.23 and 4.24), then the difference $ \\Pi - S/a $ will equal 0. The major discrepancies occur in two situations: - The frequencies of polymorphic nucleotides are too nearly equal. This pattern increases the average number of pairwise differences over its neutral expectation; hence II – S/a is positive. The finding typically suggests either some type of balancing selection, in which heterozygous genotypes are favored, or some type of diversifying selection, in which genotypes carrying the less common alleles are favored. This situation may also happen if the sampled population was formed from a recent admixture of two different populations.",
+      "source_page": 190,
+      "source_pages": [
+        190,
+        191
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p026:b14",
+        "PopGen_chapter4:p027:b1",
+        "PopGen_chapter4:p027:b2"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          1249.0,
+          1025.0,
+          1382.0
+        ],
+        [
+          110.0,
+          198.0,
+          865.0,
+          380.0
+        ],
+        [
+          114.0,
+          397.0,
+          859.0,
+          607.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "de58a1c6fc649246aeacc6f536c0a30d38c6975ef4c5a1c2ec2fc0988b06261f",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "- The frequencies of the polymorphic variants are too unequal, with an excess of the most common type and too many of the less common types. This pattern results in a decrease in the proportion of pairwise differences, so $ \\Pi - S/a $ is negative. One possible reason for an excess of rare alleles is selection against genotypes carrying deleterious mutant alleles. However, departures from the infinite-sites model do not necessarily imply that natural selection is operating. For example, a population that is growing will also feature an excess rare alleles and a negative value of $ \\Pi - S/a $.",
+      "source_page": 191,
+      "source_pages": [
+        191
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p027:b3"
+      ],
+      "source_bboxes": [
+        [
+          111.0,
+          612.0,
+          854.0,
+          846.0
+        ]
+      ],
+      "provenance_score": 0.993724,
+      "content_sha256": "40438edad0dfc72725cf480098956c7351a6b7d1240bfbc3d3b27ade67de0d5b",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 4.4 To make use of these ideas concrete, consider the example in [[see_table:4.1]]. From these data, use Equations 4.23 and 4.24 to obtain estimates of $ \\theta $ based on the number of segregating sites and on the average number of pairwise mismatches. Then calculate $ II - S/a $ and interpret the results in terms of how the data depart from the expectations of the infinite-alleles model.",
+      "source_page": 191,
+      "source_pages": [
+        191
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p027:b4",
+        "PopGen_chapter4:p027:b6"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          919.0,
+          538.0,
+          1041.0
+        ],
+        [
+          565.0,
+          920.0,
+          993.0,
+          1014.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "df70af8cbbb8614cf040b57d2c0220b795c396a38478d3af85095e3452ff8faa",
+      "problem_id": "4.4",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER For the data in [[see_table:4.1]] we have already calculated that $ S = 8 $ and $ \\Pi = 4 $. In this case, $ n = 4 $ so that $ a = 1 + \\frac{1}{2} + \\frac{1}{3} = 1.833 $. The estimate of $ \\theta $ from Equation 4.23 is therefore $ \\frac{16}{1.833} = 4.36 $, and that from Equation 4.24 is 4.00. Hence, in this example, $ \\Pi - S/a = 4.00 - 4.36 = -0.36 $. Because of the small sample size, there is little justification to carry out a formal statistical test of whether this value is significantly different from 0, but the small discrepancy from 0 suggests no significant excess of rare alleles. In practice, random coalescence in the infinite-sites model with neutral mutations can be generated using, for example, a program called ms <sup>[283]</sup>. For each simulated sample, one calculates a realization of $ \\Pi - S/a $, and many such samples produce the null distribution of the test statistic assuming neutrality. If the observed value falls in the upper or lower 5% of the null distribution, then the $ P $-value for the test is regarded as significant ($ P < 0.05 $).",
+      "source_page": 191,
+      "source_pages": [
+        191
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p027:b5",
+        "PopGen_chapter4:p027:b7"
+      ],
+      "source_bboxes": [
+        [
+          103.0,
+          1073.0,
+          535.0,
+          1343.0
+        ],
+        [
+          561.0,
+          1074.0,
+          992.0,
+          1343.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "511f38b5b46fbf03a1badb5d0b9288d6b0ff4a96effdfff8d995283d51638fa1",
+      "problem_id": "4.4",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Data from natural populations often have an excess of segregating sites in which the minority nucleotide is present only once in the sample, constituting what is called a singleton. Although excess singletons can result from recent rapid population growth, more often it suggests that the singletons represent slightly deleterious alleles held at low frequency by selection. When this is observed for nonsynonymous nucleotide polymorphisms in protein-coding regions, it is usually interpreted to imply that many amino acid polymorphisms are slightly deleterious and held at low frequency in the population by a balance between selection tending to drive them out and recurrent mutation producing new deleterious alleles.",
+      "source_page": 192,
+      "source_pages": [
+        192
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p028:b1"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          203.0,
+          1020.0,
+          469.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "471450c1ffb495aae6cd05f5e36e5b00985fd277413e1dbb710ca2e495cbd724",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Tajima’s <sup>[704]</sup> test is actually based on a normalized version of II – S/a, where the magnitude of the difference is expressed as a multiple of the standard deviation of the difference. The resulting statistic is known as Tajima’s D: $$ D=\\frac{\\prod-S/a}{\\sqrt{V(\\prod-S/a)}} $$",
+      "source_page": 192,
+      "source_pages": [
+        192
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p028:b2"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          472.0,
+          1021.0,
+          575.0
+        ]
+      ],
+      "provenance_score": 0.956522,
+      "content_sha256": "38a036abe17a5845cc670ff3108c6c35d12162cc6b259bb28bed70c9d56ecd54",
+      "inline_styles": [
+        {
+          "start": 222,
+          "end": 232,
+          "style": "italic",
+          "text": "Tajima’s D",
+          "source_page": 192,
+          "source_block_ids": [
+            "PopGen_chapter4:p028:b2"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              472,
+              1021,
+              575
+            ]
+          ],
+          "source_content_sha256": "c673d186bc8afa7d7109ef0eb4e32a9a1ee7d74487c203ff1b80ec298aa605a5",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter4:p028:b2": "c673d186bc8afa7d7109ef0eb4e32a9a1ee7d74487c203ff1b80ec298aa605a5"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "An explicit formula for the denominator in Equation 4.25 can be found in Tajima's paper. The original intent was that the statistical significance of any observed value of Tajima's D could be based on the mean and variance of the distribution of $ \\Pi - S/a $. But the distribution of $ \\Pi - S/a $ is very complex, and at the present time most tests of significance are based on comparing an observed value of Tajima's D against simulated values obtained from coalescent simulations as described in the answer to Problem 4.4.",
+      "source_page": 192,
+      "source_pages": [
+        192
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p028:b4"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          659.0,
+          1022.0,
+          844.0
+        ]
+      ],
+      "provenance_score": 0.995181,
+      "content_sha256": "b4367dd8d00e78dd33aab64a3f899ba78e1e4a84e374ef6a69c0b038fc2b3680",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

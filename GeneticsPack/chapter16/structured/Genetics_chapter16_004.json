@@ -1,0 +1,310 @@
+{
+  "id": "Genetics_chapter16_004",
+  "metadata": {
+    "chapter": "Genetics_chapter16",
+    "section": "SIB ANALYSIS: LINEAR MODELS",
+    "subsections": [
+      "A Single Half-sib Family"
+    ],
+    "section_level_1": "SIB ANALYSIS: LINEAR MODELS",
+    "section_level_2": "A Single Half-sib Family",
+    "heading_path": [
+      "SIB ANALYSIS: LINEAR MODELS",
+      "A Single Half-sib Family"
+    ],
+    "display_heading": "SIB ANALYSIS: LINEAR MODELS / A Single Half-sib Family",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b3"
+      ],
+      "bbox": [
+        109.0,
+        357.0,
+        427.0,
+        390.0
+      ],
+      "raw_text": "A Single Half-sib Family"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Suppose a single sire is crossed to n unrelated dams and a single offspring from each mating is measured. Ideally, this sire should be informative at a number of marker loci covering a significant fraction of the genome (as can be accomplished by using a large number of highly informative markers). While we have much less control over the choice of QTL-informative sires, if a major gene is involved, a pilot segregation analysis with a number of candidate sires can be used to estimate the probability that a particular sire is a QTL heterozygote (e.g., Equation 13.24), and those sires with the highest such probabilities can be used. One might also select those sires showing the greatest offspring variance (the idea being that this variance increases with the number of heterozygous QTLs), but within-family variance can be a poor indicator of sire QTL heterozygosity.",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b4"
+      ],
+      "bbox": [
+        109.0,
+        398.0,
+        1070.0,
+        754.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Let $ M_{1} $ and $ M_{2} $ denote the alternative sire alleles at a heterozygous marker locus, and let $ z_{ij} $ denote the phenotype of the jth individual with sire marker allele i. The simplest linear model for examining whether this marker is linked to a QTL (heterozygous in the sire) is",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b5"
+      ],
+      "bbox": [
+        111.0,
+        752.0,
+        1072.0,
+        885.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula007]]",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b6"
+      ],
+      "bbox": [
+        481.0,
+        896.0,
+        703.0,
+        926.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the marker effect $ m_{i} $ is the expected deviation from the mean trait value $ \\mu $, given that an offspring has sire allele $ M_{i} $. Since there are only two marker classes, a t test can be used to determine if offspring with $ M_{1} $ vs. $ M_{2} $ sire alleles have significantly different means,",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b8"
+      ],
+      "bbox": [
+        114.0,
+        933.0,
+        1073.0,
+        1067.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula008]]",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b9"
+      ],
+      "bbox": [
+        380.0,
+        1068.0,
+        804.0,
+        1143.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Here, MC denotes the marker contrast between alternative sire alleles, and SE is the standard error of the marker contrast. A significant t value implies that the marker is linked to a QTL that is heterozygous in the sire. Typically, only those offspring whose sire alleles can be determined are included in this analysis. If the marker locus is not very polymorphic, many offspring will be uninformative. Dentine and Cowan (1990) present a GLS regression method that allows uninformative individuals to be included in the analysis.",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b11"
+      ],
+      "bbox": [
+        115.0,
+        1149.0,
+        1076.0,
+        1375.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Finally, consider the expected value of the marker contrast, given the sire genotype. Suppose the sire is $ M_{1}Q_{i}/M_{2}Q_{j} $ and that c is the recombination frequency between the marker and the QTL. The conditional probabilities for alternate QTL alleles in gametes carrying a known sire marker allele are",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b12"
+      ],
+      "bbox": [
+        117.0,
+        1373.0,
+        1077.0,
+        1505.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula009]]",
+      "source_page": 510,
+      "printed_page": 490,
+      "source_block_ids": [
+        "p510:b13"
+      ],
+      "bbox": [
+        132.0,
+        1507.0,
+        1076.0,
+        1547.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Suppose there are $n_Q$ QTL alleles $(Q_1, \\cdots, Q_{n_Q})$ with frequencies $q_1, \\cdots, q_{n_Q}$. Following Chapter 4, decompose the mean value of $Q_i Q_j$ as $\\mu_{Q_i Q_j} = \\mu + \\alpha_i + \\alpha_j + \\delta_{ij}$, where the deviation from the population mean is determined by the average effects of both alleles $(\\alpha_i + \\alpha_j)$ plus the dominance deviation $(\\delta_{ij})$. Assuming random mating; the dam contributes an allele at random, giving the expected value in offspring with sire marker $M_1$ as",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b2"
+      ],
+      "bbox": [
+        83.0,
+        161.0,
+        1046.0,
+        356.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula010]]",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b3"
+      ],
+      "bbox": [
+        156.0,
+        381.0,
+        972.0,
+        513.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "which follows since $ \\sum \\alpha_k q_k = \\sum \\delta_{jk} q_k = 0 $ (Chapter 4). The expected value for the marker contrast from this sire becomes",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b5"
+      ],
+      "bbox": [
+        83.0,
+        536.0,
+        1042.0,
+        603.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula011]]",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b6"
+      ],
+      "bbox": [
+        223.0,
+        631.0,
+        903.0,
+        672.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thus, assuming a single QTL linked to the marker, the expected marker contrast for a given sire is the difference of the average effects of his alleles at this QTL, scaled by the QTL-marker recombination frequency.",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b8"
+      ],
+      "bbox": [
+        80.0,
+        696.0,
+        1041.0,
+        795.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "While a marker contrast may be significantly different from zero within a sibship, the expected value of this contrast across a random collection of sibships is zero for a population in linkage equilibrium, as $ E(\\alpha_x) = 0 $. Thus, one cannot simply combine contrasts across families, as these are expected to cancel. On the other hand, squared marker contrasts have expected values that are a function of the additive variance of the linked QTL. To see this relationship, assume that each sire marker allele has sample size $ n/2 $ and that the within-marker (residual) variance is the same for both marker alleles. Under these assumptions, $ \\sigma^2(\\overline{z}_{M_1}) = \\sigma^2(\\overline{z}_{M_2}) = \\sigma_e^2/(n/2) $, implying that the variance of the observed marker contrast about its expected value within each family is",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b9"
+      ],
+      "bbox": [
+        77.0,
+        794.0,
+        1040.0,
+        1118.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula012]]",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b10"
+      ],
+      "bbox": [
+        219.0,
+        1142.0,
+        800.0,
+        1214.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Combining this result with Equation 16.9 gives the expected value of a squared marker contrast as",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b12"
+      ],
+      "bbox": [
+        77.0,
+        1234.0,
+        1036.0,
+        1301.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula013]]",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b13"
+      ],
+      "bbox": [
+        108.0,
+        1323.0,
+        1008.0,
+        1503.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the last step follows from $ E[\\left(\\alpha_{i}-\\alpha_{j}\\right)^{2}]=2E(\\alpha_{i}^{2})=\\sigma_{A}^{2} $ (Equation 4.23b).",
+      "source_page": 511,
+      "printed_page": 491,
+      "source_block_ids": [
+        "p511:b14"
+      ],
+      "bbox": [
+        73.0,
+        1529.0,
+        1031.0,
+        1573.0
+      ]
+    }
+  ]
+}

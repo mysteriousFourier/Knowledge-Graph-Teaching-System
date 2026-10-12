@@ -1,0 +1,54 @@
+{
+  "id": "Genetics_chapter14_008",
+  "metadata": {
+    "chapter": "Genetics_chapter14",
+    "section": "GENETIC MAPS",
+    "subsections": [],
+    "section_level_1": "GENETIC MAPS",
+    "section_level_2": null,
+    "heading_path": [
+      "GENETIC MAPS"
+    ],
+    "display_heading": "GENETIC MAPS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 407,
+      "printed_page": 387,
+      "source_block_ids": [
+        "p407:b9"
+      ],
+      "bbox": [
+        38.0,
+        1397.0,
+        260.0,
+        1435.0
+      ],
+      "raw_text": "GENETIC MAPS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Genetic maps show the ordering of loci along a chromosome and the relative distances between them. As detailed throughout the remainder of this chapter, such maps are essential to the localization of QTLs. The lack of genetic markers historically prevented the construction of detailed maps in all but a few well studied species with short generation times. However, as predicted by Botstein et al. (1980), molecular markers have sparked an explosion of genetic maps in humans and economically important plants and animals. The theory for constructing genetic maps is now highly refined, and we only introduce a few important issues here. For more detailed reviews, the reader should consult Bailey (1961), Lalouel (1992), and the excellent text by Ott (1991).",
+      "source_page": 407,
+      "printed_page": 387,
+      "source_block_ids": [
+        "p407:b10",
+        "p408:b2"
+      ],
+      "bbox": [
+        33.0,
+        1461.0,
+        995.0,
+        1557.0
+      ],
+      "source_page_end": 408
+    }
+  ]
+}

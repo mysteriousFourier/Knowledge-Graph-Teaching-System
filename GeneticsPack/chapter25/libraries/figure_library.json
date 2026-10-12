@@ -1,0 +1,211 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter25",
+  "count": 6,
+  "figures": [
+    {
+      "id": "25.1",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.1",
+      "placeholder": "[[FIGURE:25.1]]",
+      "see_placeholder": "[[SEE_FIGURE:25.1]]",
+      "asset_path": "figures/Genetics_25.1.png",
+      "caption": "Figure 25.1 Wright’s (1934c,d) explanation for how the incidence of a dichotomous character can vary in crosses between parents of two types. Individuals from both types of parental strains are assumed to be normally distributed with respect to some underlying determinant of the dichotomous trait. However, the three-toed line in the lower panel is assumed to have a mean phenotype on the underlying scale that is closer to the threshold than that in the upper panel. The mean phenotype of the $ F_{1} $ progeny is assumed to be intermediate between that of the parents, and progeny whose underlying measure exceeds the threshold exhibit the four-toed condition (shaded areas).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 740,
+      "raw_bbox": [
+        263.0,
+        135.0,
+        978.0,
+        727.0
+      ],
+      "source_block_ids": [
+        "p740:b2"
+      ],
+      "caption_block": {
+        "source_page": 740,
+        "printed_page": 720,
+        "source_block_ids": [
+          "p740:b3"
+        ],
+        "bbox": [
+          187.0,
+          759.0,
+          1053.0,
+          1025.0
+        ]
+      }
+    },
+    {
+      "id": "25.2",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.2",
+      "placeholder": "[[FIGURE:25.2]]",
+      "see_placeholder": "[[SEE_FIGURE:25.2]]",
+      "asset_path": "figures/Genetics_25.2.png",
+      "caption": "Figure 25.2 The relationship between phenotypic and genotypic risk functions and the environmental component of variance for the trait on the underlying scale. The stepwise phenotypic risk function is given in the upper panel. The next lower panel shows conditional phenotypic distributions for two genotypes; individuals in the portions of the distributions to the right of the threshold exhibit the trait, and their incidence represents the risk for their respective genotype. The bottom two panels plot genotypic risk as a function of genotypic value, where the latter is simply the mean of the genotype-specific conditional distribution. As the conditional genotype distributions become narrower (i.e., environmental variances become smaller), the genotypic risk function converges on the phenotypic risk function, whereas high environmental variance induces a flat genotypic risk function.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 741,
+      "raw_bbox": [
+        239.0,
+        156.0,
+        834.0,
+        1064.0
+      ],
+      "source_block_ids": [
+        "p741:b2"
+      ],
+      "caption_block": {
+        "source_page": 741,
+        "printed_page": 721,
+        "source_block_ids": [
+          "p741:b3"
+        ],
+        "bbox": [
+          102.0,
+          1109.0,
+          965.0,
+          1461.0
+        ]
+      }
+    },
+    {
+      "id": "25.3",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.3",
+      "placeholder": "[[FIGURE:25.3]]",
+      "see_placeholder": "[[SEE_FIGURE:25.3]]",
+      "asset_path": "figures/Genetics_25.3.png",
+      "caption": "Figure 25.3 Upper panel: The phenotype distribution of a parental population on the underlying scale, assumed to be normal. The dashed line denotes the parental mean phenotype, $ \\mu_p $, whereas the solid line denotes the threshold above which the character is expressed. A fraction $ \\Phi_p $ of the population exhibits the trait, and the mean phenotype of such individuals is $ \\mu_w $. Lower panel: The phenotype distribution for a class of relatives of affected parents, e.g., progeny. Due to the nonzero heritability of the trait, this conditional distribution is shifted to the right ( $ \\mu_o > \\mu_p $) and shows a higher incidence $ \\Phi_o $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 743,
+      "raw_bbox": [
+        245.0,
+        156.0,
+        833.0,
+        878.0
+      ],
+      "source_block_ids": [
+        "p743:b2"
+      ],
+      "caption_block": {
+        "source_page": 743,
+        "printed_page": 723,
+        "source_block_ids": [
+          "p743:b3"
+        ],
+        "bbox": [
+          103.0,
+          911.0,
+          972.0,
+          1150.0
+        ]
+      }
+    },
+    {
+      "id": "25.4",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.4",
+      "placeholder": "[[FIGURE:25.4]]",
+      "see_placeholder": "[[SEE_FIGURE:25.4]]",
+      "asset_path": "figures/Genetics_25.4.png",
+      "caption": "Figure 25.4 The bivariate distribution of parent and offspring phenotypes on the underlying scale. The threshold value for the character is indicated by the dashed lines. The region denoted d marks combinations of parents and offspring that are unaffected, b denotes affected parents and offspring, a denotes unaffected parents and affected offspring, and c denotes affected parents and unaffected offspring. In the ideal case with no selection, the portions of the curves denoted a and c should be equal.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 745,
+      "raw_bbox": [
+        244.0,
+        132.0,
+        840.0,
+        694.0
+      ],
+      "source_block_ids": [
+        "p745:b2"
+      ],
+      "caption_block": {
+        "source_page": 745,
+        "printed_page": 725,
+        "source_block_ids": [
+          "p745:b3"
+        ],
+        "bbox": [
+          108.0,
+          723.0,
+          975.0,
+          930.0
+        ]
+      }
+    },
+    {
+      "id": "25.5",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.5",
+      "placeholder": "[[FIGURE:25.5]]",
+      "see_placeholder": "[[SEE_FIGURE:25.5]]",
+      "asset_path": "figures/Genetics_25.5.png",
+      "caption": "Figure 25.5 Upper panel: The phenotype distribution of a parental population on the underlying scale, assumed to be normal, with two thresholds determining the expression of three character states. The dashed line denotes the parental mean phenotype, $ \\mu_{p} $, whereas the two solid lines denote the thresholds. In the lower panel, the distribution on the left refers to offspring from parents above the wide threshold $ T_{1} $, whereas that on the right refers to offspring from parents above the narrow threshold $ T_{2} $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 749,
+      "raw_bbox": [
+        187.0,
+        134.0,
+        906.0,
+        1068.0
+      ],
+      "source_block_ids": [
+        "p749:b2"
+      ],
+      "caption_block": {
+        "source_page": 749,
+        "printed_page": 729,
+        "source_block_ids": [
+          "p749:b3"
+        ],
+        "bbox": [
+          109.0,
+          1105.0,
+          976.0,
+          1312.0
+        ]
+      }
+    },
+    {
+      "id": "25.6",
+      "chapter": "Genetics_chapter25",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter25:25.6",
+      "placeholder": "[[FIGURE:25.6]]",
+      "see_placeholder": "[[SEE_FIGURE:25.6]]",
+      "asset_path": "figures/Genetics_25.6.png",
+      "caption": "Figure 25.6 The ratio of heritabilities on observable $ (h_{o}^{2}) $ and underlying $ (h^{2}) $ scales as a function of the incidence of expression in the population $ (\\Phi_{p}) $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 755,
+      "raw_bbox": [
+        248.0,
+        138.0,
+        838.0,
+        611.0
+      ],
+      "source_block_ids": [
+        "p755:b2"
+      ],
+      "caption_block": {
+        "source_page": 755,
+        "printed_page": 735,
+        "source_block_ids": [
+          "p755:b3"
+        ],
+        "bbox": [
+          110.0,
+          644.0,
+          970.0,
+          708.0
+        ]
+      }
+    }
+  ]
+}

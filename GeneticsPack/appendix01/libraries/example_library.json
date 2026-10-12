@@ -1,0 +1,1249 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_appendix1",
+  "count": 25,
+  "examples": [
+    {
+      "example_id": "Genetics_appendix1:1",
+      "example_ref": "Genetics_appendix1:1",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 1",
+      "title": "Example 1. Consider the function $ f = \\sqrt{x} $. Here, $ \\partial f/\\partial x = 1/(2\\sqrt{x}) $ and $ \\partial^2 f/\\partial x^2 = -1/(4x^{3/2}) $, giving the second-order Taylor",
+      "source_file": "Genetics_appendix1_002.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_appendix1_002.json",
+      "end_block_index": 4,
+      "block_ids": [
+        "p820:b2",
+        "p820:b3"
+      ],
+      "content_markdown": "Example 1. Consider the function $ f = \\sqrt{x} $. Here, $ \\partial f/\\partial x = 1/(2\\sqrt{x}) $ and $ \\partial^2 f/\\partial x^2 = -1/(4x^{3/2}) $, giving the second-order Taylor series about $ c $ as\n\n[[FORMULA:Genetics_appendix1_formula002]]",
+      "content_plain": "Example 1. Consider the function  f = \\sqrt{x} . Here,  \\partial f/\\partial x = 1/(2\\sqrt{x})  and  \\partial^2 f/\\partial x^2 = -1/(4x^{3/2}) , giving the second-order Taylor series about  c  as\n\n[[FORMULA:Genetics_appendix1_formula002]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula002"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 820,
+          "y": 446.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 820
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:2",
+      "example_ref": "Genetics_appendix1:2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 2",
+      "title": "Example 2. By definition, the variance, $ \\sigma^2(x) $, is equal to the average value of $ (x_i - \\mu_x)^2 = x_i^2 - \\mu_x^2 $ in a population, where $ x_i $ denotes the measure f",
+      "source_file": "Genetics_appendix1_003.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_appendix1_003.json",
+      "end_block_index": 22,
+      "block_ids": [
+        "p821:b8",
+        "p821:b9",
+        "p821:b10",
+        "p821:b11",
+        "p821:b12",
+        "p822:b2",
+        "p822:b3",
+        "p822:b4",
+        "p822:b5",
+        "p822:b6",
+        "p822:b7",
+        "p822:b8",
+        "p822:b10"
+      ],
+      "content_markdown": "Example 2. By definition, the variance, $ \\sigma^2(x) $, is equal to the average value of $ (x_i - \\mu_x)^2 = x_i^2 - \\mu_x^2 $ in a population, where $ x_i $ denotes the measure for the ith individual. The population mean, $ \\mu_x $, is generally not known with certainty, but rather is estimated by $ \\overline{x} $. Thus, it is tempting to estimate the variance by using the mean value of $ x_i^2 - \\overline{x}^2 $. Here we show that this quantity gives a (slightly) downwardly biased estimate of $ \\sigma^2(x) $, and that there is a simple solution to the problem.\n\nExpanding $ x_{i}^{2} - \\overline{x}^{2} $, we wish to know whether the expected value of the function\n\n[[FORMULA:Genetics_appendix1_formula008]]\n\nis equal to $\\sigma^{2}(x)$. Under the assumption that the population has been sampled randomly, $\\mu_{x_{i}} = \\mu_{x_{j}} = \\mu_{x}, \\sigma^{2}(x_{i}) = \\sigma^{2}(x_{j}) = \\sigma^{2}(x)$, and $\\sigma(x_{i}, x_{j}) = 0$ for all $i, j$. Equation A1.4b then reduces to\n\n[[FORMULA:Genetics_appendix1_formula009]]\n\nThe required partial derivatives are\n\n[[FORMULA:Genetics_appendix1_formula010]]\n\n[[FORMULA:Genetics_appendix1_formula011]]\n\nSince all higher-order partials are equal to zero, Equation A1.5a is exact in this case. In addition, substitution of $ \\mu_x $ for $ x_i $ and all $ x_j $, shows that $ f_i(\\mu_x) = 0 $. Substituting the partial derivatives into Equation A1.5a gives\n\n[[FORMULA:Genetics_appendix1_formula012]]\n\nThis shows that the mean value of $ x_{i}^{2} - \\overline{x}^{2} $ gives a slightly downwardly biased estimate of the population variance, $ \\sigma^{2}(x) $. The problem is eliminated by simply multiplying the mean value of $ x_{i}^{2} - \\overline{x}^{2} $ by $ n/(n-1) $. Thus, an unbiased estimate of $ \\sigma^{2}(x) $ is\n\n[[FORMULA:Genetics_appendix1_formula013]]\n\n[[FORMULA:Genetics_appendix1_formula014]]",
+      "content_plain": "Example 2. By definition, the variance,  \\sigma^2(x) , is equal to the average value of  (x_i - \\mu_x)^2 = x_i^2 - \\mu_x^2  in a population, where  x_i  denotes the measure for the ith individual. The population mean,  \\mu_x , is generally not known with certainty, but rather is estimated by  \\overline{x} . Thus, it is tempting to estimate the variance by using the mean value of  x_i^2 - \\overline{x}^2 . Here we show that this quantity gives a (slightly) downwardly biased estimate of  \\sigma^2(x) , and that there is a simple solution to the problem.\n\nExpanding  x_{i}^{2} - \\overline{x}^{2} , we wish to know whether the expected value of the function\n\n[[FORMULA:Genetics_appendix1_formula008]]\n\nis equal to \\sigma^{2}(x). Under the assumption that the population has been sampled randomly, \\mu_{x_{i}} = \\mu_{x_{j}} = \\mu_{x}, \\sigma^{2}(x_{i}) = \\sigma^{2}(x_{j}) = \\sigma^{2}(x), and \\sigma(x_{i}, x_{j}) = 0 for all i, j. Equation A1.4b then reduces to\n\n[[FORMULA:Genetics_appendix1_formula009]]\n\nThe required partial derivatives are\n\n[[FORMULA:Genetics_appendix1_formula010]]\n\n[[FORMULA:Genetics_appendix1_formula011]]\n\nSince all higher-order partials are equal to zero, Equation A1.5a is exact in this case. In addition, substitution of  \\mu_x  for  x_i  and all  x_j , shows that  f_i(\\mu_x) = 0 . Substituting the partial derivatives into Equation A1.5a gives\n\n[[FORMULA:Genetics_appendix1_formula012]]\n\nThis shows that the mean value of  x_{i}^{2} - \\overline{x}^{2}  gives a slightly downwardly biased estimate of the population variance,  \\sigma^{2}(x) . The problem is eliminated by simply multiplying the mean value of  x_{i}^{2} - \\overline{x}^{2}  by  n/(n-1) . Thus, an unbiased estimate of  \\sigma^{2}(x)  is\n\n[[FORMULA:Genetics_appendix1_formula013]]\n\n[[FORMULA:Genetics_appendix1_formula014]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula008",
+        "Genetics_appendix1_formula009",
+        "Genetics_appendix1_formula010",
+        "Genetics_appendix1_formula011",
+        "Genetics_appendix1_formula012",
+        "Genetics_appendix1_formula013",
+        "Genetics_appendix1_formula014"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 822,
+          "y": 1045.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 821
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:3",
+      "example_ref": "Genetics_appendix1:3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 3",
+      "title": "Example 3. Imagine sampling a population many times independently for $n$ individuals, each time estimating the mean. Can we express the variance of the sample means, $\\sigma^{2}(\\",
+      "source_file": "Genetics_appendix1_004.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_appendix1_004.json",
+      "end_block_index": 19,
+      "block_ids": [
+        "p823:b10",
+        "p824:b2",
+        "p824:b3",
+        "p824:b4",
+        "p824:b5",
+        "p824:b7",
+        "p824:b8",
+        "p824:b10",
+        "p824:b11",
+        "p824:b12",
+        "p824:b14"
+      ],
+      "content_markdown": "Example 3. Imagine sampling a population many times independently for $n$ individuals, each time estimating the mean. Can we express the variance of the sample means, $\\sigma^{2}(\\overline{x})$, in terms of the variance of individual measures, $\\sigma^{2}(x)$?\n\nRecall that the definition of a sample estimate of the mean is\n\n[[FORMULA:Genetics_appendix1_formula019]]\n\nUnder the assumption that the population is sampled randomly, there is no covariance between the measures of different individuals, so that Equation A1.7c reduces to\n\n[[FORMULA:Genetics_appendix1_formula020]]\n\nwhere in this example $ f = \\overline{x} $. The partial derivative of $ \\overline{x} $ with respect to each individual measure $ x_i $ is simply 1/n, and assuming a homogeneous population, $ \\sigma^2(x_i) = \\sigma^2(x) $ for all i. Thus, substituting into Equation A1.8a, the sampling variance of a mean is\n\n[[FORMULA:Genetics_appendix1_formula021]]\n\ni.e., the sampling variance of a mean is equal to the variance of individual measures divided by the sample size.\n\nThe practical utility of this expression might be questioned since the parameter $ \\sigma^2(x) $ is something that we can only estimate. However, recall from Example 2 that an unbiased estimator of $ \\sigma^2(x) $ is $ \\text{Var}(x) = n(\\overline{x}^2 - \\overline{x}^2)/(n - 1) $. It follows that\n\n[[FORMULA:Genetics_appendix1_formula022]]\n\nis an unbiased estimator of $ \\sigma^{2}(\\overline{x}) $. The square root of $ \\operatorname{Var}(\\overline{x}) $ is known as the standard error of the mean.",
+      "content_plain": "Example 3. Imagine sampling a population many times independently for n individuals, each time estimating the mean. Can we express the variance of the sample means, \\sigma^{2}(\\overline{x}), in terms of the variance of individual measures, \\sigma^{2}(x)?\n\nRecall that the definition of a sample estimate of the mean is\n\n[[FORMULA:Genetics_appendix1_formula019]]\n\nUnder the assumption that the population is sampled randomly, there is no covariance between the measures of different individuals, so that Equation A1.7c reduces to\n\n[[FORMULA:Genetics_appendix1_formula020]]\n\nwhere in this example  f = \\overline{x} . The partial derivative of  \\overline{x}  with respect to each individual measure  x_i  is simply 1/n, and assuming a homogeneous population,  \\sigma^2(x_i) = \\sigma^2(x)  for all i. Thus, substituting into Equation A1.8a, the sampling variance of a mean is\n\n[[FORMULA:Genetics_appendix1_formula021]]\n\ni.e., the sampling variance of a mean is equal to the variance of individual measures divided by the sample size.\n\nThe practical utility of this expression might be questioned since the parameter  \\sigma^2(x)  is something that we can only estimate. However, recall from Example 2 that an unbiased estimator of  \\sigma^2(x)  is  \\text{Var}(x) = n(\\overline{x}^2 - \\overline{x}^2)/(n - 1) . It follows that\n\n[[FORMULA:Genetics_appendix1_formula022]]\n\nis an unbiased estimator of  \\sigma^{2}(\\overline{x}) . The square root of  \\operatorname{Var}(\\overline{x})  is known as the standard error of the mean.",
+      "formula_refs": [
+        "Genetics_appendix1_formula019",
+        "Genetics_appendix1_formula020",
+        "Genetics_appendix1_formula021",
+        "Genetics_appendix1_formula022"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 824,
+          "y": 1075.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 823
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:4",
+      "example_ref": "Genetics_appendix1:4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 4",
+      "title": "Example 4. Consider two linear functions of the set of variables $ (x_{1}, \\cdots, x_{n}) $",
+      "source_file": "Genetics_appendix1_005.json",
+      "start_block_index": 2,
+      "end_source_file": "Genetics_appendix1_005.json",
+      "end_block_index": 7,
+      "block_ids": [
+        "p825:b7",
+        "p825:b8",
+        "p825:b9",
+        "p825:b10",
+        "p825:b11",
+        "p825:b12"
+      ],
+      "content_markdown": "Example 4. Consider two linear functions of the set of variables $ (x_{1}, \\cdots, x_{n}) $\n\n[[FORMULA:Genetics_appendix1_formula024]]\n\n[[FORMULA:Genetics_appendix1_formula025]]\n\nWhat is the covariance between $f$ and $g$? The partial derivatives with respect to the $x_i$ variables are $\\partial f/\\partial x_i = \\alpha_i$ and $\\partial g/\\partial x_i = \\beta_i$. Substituting into Equation A1.9,\n\n[[FORMULA:Genetics_appendix1_formula026]]\n\nThis is an exact result, because here all of the higher-order partial derivatives are equal to zero.",
+      "content_plain": "Example 4. Consider two linear functions of the set of variables  (x_{1}, \\cdots, x_{n}) \n\n[[FORMULA:Genetics_appendix1_formula024]]\n\n[[FORMULA:Genetics_appendix1_formula025]]\n\nWhat is the covariance between f and g? The partial derivatives with respect to the x_i variables are \\partial f/\\partial x_i = \\alpha_i and \\partial g/\\partial x_i = \\beta_i. Substituting into Equation A1.9,\n\n[[FORMULA:Genetics_appendix1_formula026]]\n\nThis is an exact result, because here all of the higher-order partial derivatives are equal to zero.",
+      "formula_refs": [
+        "Genetics_appendix1_formula024",
+        "Genetics_appendix1_formula025",
+        "Genetics_appendix1_formula026"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 825,
+          "y": 1335.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 825
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:5",
+      "example_ref": "Genetics_appendix1:5",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 5",
+      "title": "Example 5. Here we consider the sampling variance of a variance estimate, i.e., $ \\sigma^{2}[\\mathrm{Var}(x)] $. This quantity can be thought of as the expected variance that would",
+      "source_file": "Genetics_appendix1_006.json",
+      "start_block_index": 2,
+      "end_source_file": "Genetics_appendix1_006.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p826:b3",
+        "p826:b4",
+        "p826:b5",
+        "p826:b6",
+        "p826:b7",
+        "p826:b8",
+        "p826:b9",
+        "p826:b11",
+        "p826:b12",
+        "p826:b14",
+        "p826:b15",
+        "p827:b2",
+        "p827:b3",
+        "p827:b4",
+        "p827:b5",
+        "p827:b6",
+        "p827:b7"
+      ],
+      "content_markdown": "Example 5. Here we consider the sampling variance of a variance estimate, i.e., $ \\sigma^{2}[\\mathrm{Var}(x)] $. This quantity can be thought of as the expected variance that would arise among variance estimates obtained from a large number of independent samples from the same population. With $ n $ observations $ (x_{1}, x_{2}, \\cdots, x_{n}) $,\n\n[[FORMULA:Genetics_appendix1_formula027]]\n\nProvided that the individual measures of $x$ are obtained from random members of the same population, the covariance between all measures is zero, and the variance associated with each measure is the same, $\\sigma^{2}(x)$. Thus, each of the $n$ observed variables makes an identical contribution to the variance of $\\operatorname{Var}(x)$. The partial derivatives with respect to measure $x_{i}$, evaluated at its mean, are\n\n[[FORMULA:Genetics_appendix1_formula028]]\n\n[[FORMULA:Genetics_appendix1_formula029]]\n\nSubstituting into Equation A1.7a, the variance of $ \\operatorname{Var}(x) $ caused by variation in the ith measure is $ [\\mu_{4x}-\\sigma^{4}(x)]/n^{2} $, and summing over all n measures,\n\n[[FORMULA:Genetics_appendix1_formula030]]\n\nWhen x is normally distributed, $ \\mu_{4x}=3\\sigma^{4}(x) $ (Kendall and Stuart 1977), giving\n\n[[FORMULA:Genetics_appendix1_formula031]]\n\nEquations A1.10a,b are exact expressions for the sampling variance of a variance because all partial derivatives higher than second order are equal to zero.\n\nOur final problem is to modify Equation A1.10b in such a way that an unbiased estimate of the sampling variance of the variance can be obtained from the sample statistic $ \\operatorname{Var}(x) $. It is tempting to simply substitute $ [\\operatorname{Var}(x)]^2 $ for $ \\sigma^4(x) $, but this is not quite correct. Recalling the definition of a variance, $ E(z^{2}) = \\sigma^{2}(z) + \\mu_{z}^{2} $, and substituting $ \\mathrm{Var}(x) $ for $ z $, and $ \\sigma^{2}(x) $ for $ \\mu_{z} $, we find that\n\n[[FORMULA:Genetics_appendix1_formula032]]\n\nSubstituting for $ \\sigma^{2}[\\mathrm{Var}(x)] $ from Equation A1.10b,\n\n[[FORMULA:Genetics_appendix1_formula033]]\n\nwhich shows that the quantity $ n\\left[\\mathrm{Var}(x)\\right]^{2}/(n+2) $, rather than $ \\left[\\mathrm{Var}(x)\\right]^{2} $, provides an unbiased estimate of $ \\sigma^{4}(x) $. Thus, an unbiased estimate of the sampling variance of a variance is given by\n\n[[FORMULA:Genetics_appendix1_formula034]]",
+      "content_plain": "Example 5. Here we consider the sampling variance of a variance estimate, i.e.,  \\sigma^{2}[\\mathrm{Var}(x)] . This quantity can be thought of as the expected variance that would arise among variance estimates obtained from a large number of independent samples from the same population. With  n  observations  (x_{1}, x_{2}, \\cdots, x_{n}) ,\n\n[[FORMULA:Genetics_appendix1_formula027]]\n\nProvided that the individual measures of x are obtained from random members of the same population, the covariance between all measures is zero, and the variance associated with each measure is the same, \\sigma^{2}(x). Thus, each of the n observed variables makes an identical contribution to the variance of \\operatorname{Var}(x). The partial derivatives with respect to measure x_{i}, evaluated at its mean, are\n\n[[FORMULA:Genetics_appendix1_formula028]]\n\n[[FORMULA:Genetics_appendix1_formula029]]\n\nSubstituting into Equation A1.7a, the variance of  \\operatorname{Var}(x)  caused by variation in the ith measure is  [\\mu_{4x}-\\sigma^{4}(x)]/n^{2} , and summing over all n measures,\n\n[[FORMULA:Genetics_appendix1_formula030]]\n\nWhen x is normally distributed,  \\mu_{4x}=3\\sigma^{4}(x)  (Kendall and Stuart 1977), giving\n\n[[FORMULA:Genetics_appendix1_formula031]]\n\nEquations A1.10a,b are exact expressions for the sampling variance of a variance because all partial derivatives higher than second order are equal to zero.\n\nOur final problem is to modify Equation A1.10b in such a way that an unbiased estimate of the sampling variance of the variance can be obtained from the sample statistic  \\operatorname{Var}(x) . It is tempting to simply substitute  [\\operatorname{Var}(x)]^2  for  \\sigma^4(x) , but this is not quite correct. Recalling the definition of a variance,  E(z^{2}) = \\sigma^{2}(z) + \\mu_{z}^{2} , and substituting  \\mathrm{Var}(x)  for  z , and  \\sigma^{2}(x)  for  \\mu_{z} , we find that\n\n[[FORMULA:Genetics_appendix1_formula032]]\n\nSubstituting for  \\sigma^{2}[\\mathrm{Var}(x)]  from Equation A1.10b,\n\n[[FORMULA:Genetics_appendix1_formula033]]\n\nwhich shows that the quantity  n\\left[\\mathrm{Var}(x)\\right]^{2}/(n+2) , rather than  \\left[\\mathrm{Var}(x)\\right]^{2} , provides an unbiased estimate of  \\sigma^{4}(x) . Thus, an unbiased estimate of the sampling variance of a variance is given by\n\n[[FORMULA:Genetics_appendix1_formula034]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula027",
+        "Genetics_appendix1_formula028",
+        "Genetics_appendix1_formula029",
+        "Genetics_appendix1_formula030",
+        "Genetics_appendix1_formula031",
+        "Genetics_appendix1_formula032",
+        "Genetics_appendix1_formula033",
+        "Genetics_appendix1_formula034"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 827,
+          "y": 678.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 826
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:5]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:6",
+      "example_ref": "Genetics_appendix1:6",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 6",
+      "title": "Example 6. What is the expected sampling variance of the directional selection differential S? In Chapter 3, it is shown that for any character whose phenotype is denoted by z, S i",
+      "source_file": "Genetics_appendix1_006.json",
+      "start_block_index": 34,
+      "end_source_file": "Genetics_appendix1_006.json",
+      "end_block_index": 41,
+      "block_ids": [
+        "p828:b14",
+        "p828:b15",
+        "p828:b16",
+        "p828:b17",
+        "p828:b18",
+        "p829:b2",
+        "p829:b3",
+        "p829:b4"
+      ],
+      "content_markdown": "Example 6. What is the expected sampling variance of the directional selection differential S? In Chapter 3, it is shown that for any character whose phenotype is denoted by z, S is equivalent to the covariance between z and relative fitness w, i.e., $ S = \\sigma(z, w) $. Applying Equation A1.14, we obtain\n\n[[FORMULA:Genetics_appendix1_formula041]]\n\nNote that Equation A1.14 assumes z and w are bivariate normally distributed, implying that we assume that fitness has some optimal value and falls off (roughly quadratically) around this optimun.\n\nSome insight into the relative magnitude of the sampling variance of S can be acquired by considering the coefficient of sampling variation,\n\n[[FORMULA:Genetics_appendix1_formula042]]\n\nwhere $E(S) = \\sigma(z, w)$. Letting $\\rho$ be the correlation between phenotype and relative fitness, this reduces to\n\n[[FORMULA:Genetics_appendix1_formula043]]\n\nThe minimum value of $ \\mathrm{CV}(S) $ arises when the character is the sole determinant of fitness, i.e., $ \\rho = 1 $, in which case $ \\mathrm{CV}(S) = \\sqrt{2/n} $. This shows that unless sample sizes are fairly high, the standard error of $ S $ relative to its expected value can be quite high — for $ n = 50 $, 100, and 250, the CVs are, respectively, $ \\geq 0.20 $, 0.14, and 0.09.",
+      "content_plain": "Example 6. What is the expected sampling variance of the directional selection differential S? In Chapter 3, it is shown that for any character whose phenotype is denoted by z, S is equivalent to the covariance between z and relative fitness w, i.e.,  S = \\sigma(z, w) . Applying Equation A1.14, we obtain\n\n[[FORMULA:Genetics_appendix1_formula041]]\n\nNote that Equation A1.14 assumes z and w are bivariate normally distributed, implying that we assume that fitness has some optimal value and falls off (roughly quadratically) around this optimun.\n\nSome insight into the relative magnitude of the sampling variance of S can be acquired by considering the coefficient of sampling variation,\n\n[[FORMULA:Genetics_appendix1_formula042]]\n\nwhere E(S) = \\sigma(z, w). Letting \\rho be the correlation between phenotype and relative fitness, this reduces to\n\n[[FORMULA:Genetics_appendix1_formula043]]\n\nThe minimum value of  \\mathrm{CV}(S)  arises when the character is the sole determinant of fitness, i.e.,  \\rho = 1 , in which case  \\mathrm{CV}(S) = \\sqrt{2/n} . This shows that unless sample sizes are fairly high, the standard error of  S  relative to its expected value can be quite high — for  n = 50 , 100, and 250, the CVs are, respectively,  \\geq 0.20 , 0.14, and 0.09.",
+      "formula_refs": [
+        "Genetics_appendix1_formula041",
+        "Genetics_appendix1_formula042",
+        "Genetics_appendix1_formula043"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 829,
+          "y": 524.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 828
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:6]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:7",
+      "example_ref": "Genetics_appendix1:7",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 7",
+      "title": "Example 7. Dickerson (1969) argued that because the numerator (the covariance) of a regression coefficient is estimated with much lower accuracy than the denominator (the variance)",
+      "source_file": "Genetics_appendix1_009.json",
+      "start_block_index": 7,
+      "end_source_file": "Genetics_appendix1_009.json",
+      "end_block_index": 9,
+      "block_ids": [
+        "p831:b10",
+        "p831:b11",
+        "p831:b12"
+      ],
+      "content_markdown": "Example 7. Dickerson (1969) argued that because the numerator (the covariance) of a regression coefficient is estimated with much lower accuracy than the denominator (the variance), the sampling variance of the latter can be safely ignored in computing the standard error of a regression coefficient. Under this assumption, the approximate sampling variance of a regression coefficient is simply $ \\sigma^2[\\text{Cov}(x, y)] / \\sigma^4(x) $, which upon substitution for $ \\sigma^2[\\text{Cov}(x, y)] $ becomes\n\n[[FORMULA:Genetics_appendix1_formula055]]\n\nComparing this to Equation A1.20a, it can be seen that ignoring the sampling variance in the denominator leads to a conservative estimate of the standard error of b, i.e., to a standard error that is upwardly biased. The ratio of the standard errors resulting from both expressions is $ \\left[(1-\\rho^{2})/(1+\\rho^{2})\\right]^{1/2} $. For \\rho = 0.5, the ratio is 0.77.",
+      "content_plain": "Example 7. Dickerson (1969) argued that because the numerator (the covariance) of a regression coefficient is estimated with much lower accuracy than the denominator (the variance), the sampling variance of the latter can be safely ignored in computing the standard error of a regression coefficient. Under this assumption, the approximate sampling variance of a regression coefficient is simply  \\sigma^2[\\text{Cov}(x, y)] / \\sigma^4(x) , which upon substitution for  \\sigma^2[\\text{Cov}(x, y)]  becomes\n\n[[FORMULA:Genetics_appendix1_formula055]]\n\nComparing this to Equation A1.20a, it can be seen that ignoring the sampling variance in the denominator leads to a conservative estimate of the standard error of b, i.e., to a standard error that is upwardly biased. The ratio of the standard errors resulting from both expressions is  \\left[(1-\\rho^{2})/(1+\\rho^{2})\\right]^{1/2} . For \\rho = 0.5, the ratio is 0.77.",
+      "formula_refs": [
+        "Genetics_appendix1_formula055"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 831,
+          "y": 1373.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 831
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:7]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:1:occ2",
+      "example_ref": "Genetics_appendix1:1:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 1",
+      "title": "Example 1. Consider the following system of equations",
+      "source_file": "Genetics_appendix1_021.json",
+      "start_block_index": 7,
+      "end_source_file": "Genetics_appendix1_021.json",
+      "end_block_index": 22,
+      "block_ids": [
+        "p849:b5",
+        "p849:b6",
+        "p849:b7",
+        "p849:b8",
+        "p849:b9",
+        "p849:b10",
+        "p849:b11",
+        "p849:b12",
+        "p849:b13",
+        "p849:b14",
+        "p849:b15",
+        "p849:b16",
+        "p849:b17",
+        "p850:b2",
+        "p850:b3",
+        "p850:b4"
+      ],
+      "content_markdown": "Example 1. Consider the following system of equations\n\n[[FORMULA:Genetics_appendix1_formula106]]\n\n[[FORMULA:Genetics_appendix1_formula107]]\n\nwhich can be written in matrix form as $ \\mathbf{A}\\mathbf{x}=\\mathbf{y} $, with\n\n[[FORMULA:Genetics_appendix1_formula108]]\n\nThe matrix\n\n[[FORMULA:Genetics_appendix1_formula109]]\n\nsatisfies $ \\mathbf{A}\\mathbf{A}^{-}\\mathbf{A}=\\mathbf{A} $ and thus is a generalized inverse of $ \\mathbf{A} $. Matrix multiplication shows that $ \\mathbf{A}\\mathbf{A}^{-}=\\mathbf{I} $, implying $ \\mathbf{A}\\mathbf{A}^{-}\\mathbf{y}=\\mathbf{y} $. Thus, Equation A3.3 is satisfied and this system of equations is consistent for any $ \\mathbf{y} $. One solution is $ \\mathbf{x}=\\mathbf{A}^{-}\\mathbf{y} $, or\n\n[[FORMULA:Genetics_appendix1_formula110]]\n\nMore generally, since\n\n[[FORMULA:Genetics_appendix1_formula111]]\n\nthen from Equation A3.4, any solution to this system of equations has the form\n\n[[FORMULA:Genetics_appendix1_formula112]]\n\nwhich reduces to\n\n[[FORMULA:Genetics_appendix1_formula113]]\n\nwhere c is an arbitrary constant. Substitution shows this to be a solution.",
+      "content_plain": "Example 1. Consider the following system of equations\n\n[[FORMULA:Genetics_appendix1_formula106]]\n\n[[FORMULA:Genetics_appendix1_formula107]]\n\nwhich can be written in matrix form as  \\mathbf{A}\\mathbf{x}=\\mathbf{y} , with\n\n[[FORMULA:Genetics_appendix1_formula108]]\n\nThe matrix\n\n[[FORMULA:Genetics_appendix1_formula109]]\n\nsatisfies  \\mathbf{A}\\mathbf{A}^{-}\\mathbf{A}=\\mathbf{A}  and thus is a generalized inverse of  \\mathbf{A} . Matrix multiplication shows that  \\mathbf{A}\\mathbf{A}^{-}=\\mathbf{I} , implying  \\mathbf{A}\\mathbf{A}^{-}\\mathbf{y}=\\mathbf{y} . Thus, Equation A3.3 is satisfied and this system of equations is consistent for any  \\mathbf{y} . One solution is  \\mathbf{x}=\\mathbf{A}^{-}\\mathbf{y} , or\n\n[[FORMULA:Genetics_appendix1_formula110]]\n\nMore generally, since\n\n[[FORMULA:Genetics_appendix1_formula111]]\n\nthen from Equation A3.4, any solution to this system of equations has the form\n\n[[FORMULA:Genetics_appendix1_formula112]]\n\nwhich reduces to\n\n[[FORMULA:Genetics_appendix1_formula113]]\n\nwhere c is an arbitrary constant. Substitution shows this to be a solution.",
+      "formula_refs": [
+        "Genetics_appendix1_formula106",
+        "Genetics_appendix1_formula107",
+        "Genetics_appendix1_formula108",
+        "Genetics_appendix1_formula109",
+        "Genetics_appendix1_formula110",
+        "Genetics_appendix1_formula111",
+        "Genetics_appendix1_formula112",
+        "Genetics_appendix1_formula113"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 850,
+          "y": 401.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 849
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:1:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:2:occ2",
+      "example_ref": "Genetics_appendix1:2:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 2",
+      "title": "Example 2. Consider the system of equations from Example 1. Is there a unique solution for the two linear contrasts $ c_1 = x_2 - 4x_1 $ and $ c_2 = x_3 + 3x_1 $? In matrix form,",
+      "source_file": "Genetics_appendix1_021.json",
+      "start_block_index": 31,
+      "end_source_file": "Genetics_appendix1_021.json",
+      "end_block_index": 43,
+      "block_ids": [
+        "p850:b15",
+        "p850:b16",
+        "p850:b17",
+        "p850:b18",
+        "p851:b2",
+        "p851:b3",
+        "p851:b4",
+        "p851:b5",
+        "p851:b6",
+        "p851:b7",
+        "p851:b8",
+        "p851:b9",
+        "p851:b10"
+      ],
+      "content_markdown": "Example 2. Consider the system of equations from Example 1. Is there a unique solution for the two linear contrasts $ c_1 = x_2 - 4x_1 $ and $ c_2 = x_3 + 3x_1 $? In matrix form,\n\n[[FORMULA:Genetics_appendix1_formula117]]\n\nwhere\n\n[[FORMULA:Genetics_appendix1_formula118]]\n\nUsing the generalized inverse for A from Example 1, matrix multiplication shows that\n\n[[FORMULA:Genetics_appendix1_formula119]]\n\nHence, the matrix version of Equation A3.5b gives the unique solution for this vector of contrasts as\n\n[[FORMULA:Genetics_appendix1_formula120]]\n\nTo see that this solution is indeed unique, note that we can rearrange the contrast equations to obtain $ x_{2} = c_{1} + 4x_{1} $ and $ x_{3} = c_{2} - 3x_{1} $. Substituting into the original set of equations (Example 1),\n\n[[FORMULA:Genetics_appendix1_formula121]]\n\nso that the original set of three equations and three unknowns reduces to a two equation-two unknown system. In matrix form this is\n\n[[FORMULA:Genetics_appendix1_formula122]]\n\nSince the coefficient matrix is invertible, there is a unique solution for this pair of contrasts $ (c_{1} = -8 $ and $ c_{2} = 7) $.",
+      "content_plain": "Example 2. Consider the system of equations from Example 1. Is there a unique solution for the two linear contrasts  c_1 = x_2 - 4x_1  and  c_2 = x_3 + 3x_1 ? In matrix form,\n\n[[FORMULA:Genetics_appendix1_formula117]]\n\nwhere\n\n[[FORMULA:Genetics_appendix1_formula118]]\n\nUsing the generalized inverse for A from Example 1, matrix multiplication shows that\n\n[[FORMULA:Genetics_appendix1_formula119]]\n\nHence, the matrix version of Equation A3.5b gives the unique solution for this vector of contrasts as\n\n[[FORMULA:Genetics_appendix1_formula120]]\n\nTo see that this solution is indeed unique, note that we can rearrange the contrast equations to obtain  x_{2} = c_{1} + 4x_{1}  and  x_{3} = c_{2} - 3x_{1} . Substituting into the original set of equations (Example 1),\n\n[[FORMULA:Genetics_appendix1_formula121]]\n\nso that the original set of three equations and three unknowns reduces to a two equation-two unknown system. In matrix form this is\n\n[[FORMULA:Genetics_appendix1_formula122]]\n\nSince the coefficient matrix is invertible, there is a unique solution for this pair of contrasts  (c_{1} = -8  and  c_{2} = 7) .",
+      "formula_refs": [
+        "Genetics_appendix1_formula117",
+        "Genetics_appendix1_formula118",
+        "Genetics_appendix1_formula119",
+        "Genetics_appendix1_formula120",
+        "Genetics_appendix1_formula121",
+        "Genetics_appendix1_formula122"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 851,
+          "y": 967.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 850
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:2:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:3:occ2",
+      "example_ref": "Genetics_appendix1:3:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 3",
+      "title": "Example 3. Consider the linear model $ y = X\\beta $, where",
+      "source_file": "Genetics_appendix1_023.json",
+      "start_block_index": 0,
+      "end_source_file": "Genetics_appendix1_023.json",
+      "end_block_index": 6,
+      "block_ids": [
+        "p852:b12",
+        "p852:b13",
+        "p852:b14",
+        "p852:b15",
+        "p852:b16",
+        "p852:b17",
+        "p853:b2"
+      ],
+      "content_markdown": "Example 3. Consider the linear model $ y = X\\beta $, where\n\n[[FORMULA:Genetics_appendix1_formula127]]\n\nNote that $ \\mathbf{X}^T\\mathbf{X} $ is singular, so we cannot obtain unique estimates of all three parameters. For this design matrix, are $ \\beta_3 $, $ \\beta_1 + \\beta_2 $, and $ \\beta_1 $ estimable? These three combinations correspond to vectors of $ \\mathbf{b}^T = (0, 0, 1) $, $ (1, 1, 0) $, and $ (1, 0, 0) $, respectively. For the first two $ \\mathbf{b} $ vectors, we can find a vector $ \\mathbf{a} $ that satisfies $ \\mathbf{X}^T\\mathbf{a} = \\mathbf{b} $, viz.,\n\n[[FORMULA:Genetics_appendix1_formula128]]\n\nso that, from Equation A3.6b, these two linear combinations, $ \\beta_{3} $ and $ (\\beta_{1} + \\beta_{2}) $, are estimable. However, since\n\n[[FORMULA:Genetics_appendix1_formula129]]\n\n$ \\beta_1 $ is not estimable as $ a_1 + a_2 $ cannot simultaneously equal zero and one, and hence there exists no vector $ \\mathbf{a} $ that satisfies $ \\mathbf{X}^T \\mathbf{a} = \\mathbf{b} $ for this particular $ \\mathbf{X} $ and $ \\mathbf{b} $.",
+      "content_plain": "Example 3. Consider the linear model  y = X\\beta , where\n\n[[FORMULA:Genetics_appendix1_formula127]]\n\nNote that  \\mathbf{X}^T\\mathbf{X}  is singular, so we cannot obtain unique estimates of all three parameters. For this design matrix, are  \\beta_3 ,  \\beta_1 + \\beta_2 , and  \\beta_1  estimable? These three combinations correspond to vectors of  \\mathbf{b}^T = (0, 0, 1) ,  (1, 1, 0) , and  (1, 0, 0) , respectively. For the first two  \\mathbf{b}  vectors, we can find a vector  \\mathbf{a}  that satisfies  \\mathbf{X}^T\\mathbf{a} = \\mathbf{b} , viz.,\n\n[[FORMULA:Genetics_appendix1_formula128]]\n\nso that, from Equation A3.6b, these two linear combinations,  \\beta_{3}  and  (\\beta_{1} + \\beta_{2}) , are estimable. However, since\n\n[[FORMULA:Genetics_appendix1_formula129]]\n\n \\beta_1  is not estimable as  a_1 + a_2  cannot simultaneously equal zero and one, and hence there exists no vector  \\mathbf{a}  that satisfies  \\mathbf{X}^T \\mathbf{a} = \\mathbf{b}  for this particular  \\mathbf{X}  and  \\mathbf{b} .",
+      "formula_refs": [
+        "Genetics_appendix1_formula127",
+        "Genetics_appendix1_formula128",
+        "Genetics_appendix1_formula129"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 853,
+          "y": 257.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 852
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:3:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:4:occ2",
+      "example_ref": "Genetics_appendix1:4:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 4",
+      "title": "Example 4. Since we have expressed $ \\operatorname{Var}(x) $ as a quadratic form, we can use Equation A3.12a to compute its expected value and Equation A3.12b (under the assumption",
+      "source_file": "Genetics_appendix1_028.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_appendix1_028.json",
+      "end_block_index": 33,
+      "block_ids": [
+        "p857:b2",
+        "p857:b3",
+        "p857:b4",
+        "p857:b5",
+        "p857:b6",
+        "p857:b7",
+        "p857:b8",
+        "p857:b9",
+        "p857:b10",
+        "p857:b11",
+        "p857:b12",
+        "p857:b13",
+        "p857:b14",
+        "p857:b15",
+        "p857:b16",
+        "p857:b17",
+        "p858:b2",
+        "p858:b3",
+        "p858:b4",
+        "p858:b5",
+        "p858:b6",
+        "p858:b7"
+      ],
+      "content_markdown": "Example 4. Since we have expressed $ \\operatorname{Var}(x) $ as a quadratic form, we can use Equation A3.12a to compute its expected value and Equation A3.12b (under the assumption of normality) to compute its sampling variance. If $ \\mathbf{x} \\sim (\\boldsymbol{\\mu}, \\mathbf{V}) $, the expected value of $ \\operatorname{Var}(x) $ is\n\n[[FORMULA:Genetics_appendix1_formula151]]\n\nTo compute this expression, first note from Equation A3.14b that\n\n[[FORMULA:Genetics_appendix1_formula152]]\n\nLikewise, from Equation A3.13b\n\n[[FORMULA:Genetics_appendix1_formula153]]\n\nwhich has diagonal elements\n\n[[FORMULA:Genetics_appendix1_formula154]]\n\nAfter some simplification, we have\n\n[[FORMULA:Genetics_appendix1_formula155]]\n\nPutting these results together gives\n\n[[FORMULA:Genetics_appendix1_formula156]]\n\nwhere $ \\overline{\\mu} = \\sum \\mu_i / n $. In the simple situation where all observations have the same mean and variance ( $ \\mu_i = \\mu, \\sigma^2(z_i) = \\sigma^2 $) and are uncorrelated, this reduces to\n\n[[FORMULA:Genetics_appendix1_formula157]]\n\nTurning now to the sample variance of $ \\operatorname{Var}(x) $, if we are willing to assume that x is multivariate normal, then from Equation A3.12b,\n\n[[FORMULA:Genetics_appendix1_formula158]]\n\nIf, for example, $ \\mathbf{V} = \\sigma^2 \\mathbf{I} $ (the $ x_i $ are uncorrelated with common variance), then\n\n[[FORMULA:Genetics_appendix1_formula159]]\n\nThe ijth element in $ J_{n\\times n}J_{n\\times n} $ is n, giving $ J_{n\\times n}^{2}=nJ_{n\\times n} $. Hence, the ith diagonal element of NVNV is\n\n[[FORMULA:Genetics_appendix1_formula160]]\n\ngiving $ \\text{tr}(\\mathbf{N}\\mathbf{V}\\mathbf{N}\\mathbf{V}) = \\sigma^{4}/(n-1) $. When all of the means are equal, it follows that $ \\mathbf{N}\\boldsymbol{\\mu} = \\mathbf{0} $ and the second term in Equation A3.12b vanishes, giving\n\n[[FORMULA:Genetics_appendix1_formula161]]",
+      "content_plain": "Example 4. Since we have expressed  \\operatorname{Var}(x)  as a quadratic form, we can use Equation A3.12a to compute its expected value and Equation A3.12b (under the assumption of normality) to compute its sampling variance. If  \\mathbf{x} \\sim (\\boldsymbol{\\mu}, \\mathbf{V}) , the expected value of  \\operatorname{Var}(x)  is\n\n[[FORMULA:Genetics_appendix1_formula151]]\n\nTo compute this expression, first note from Equation A3.14b that\n\n[[FORMULA:Genetics_appendix1_formula152]]\n\nLikewise, from Equation A3.13b\n\n[[FORMULA:Genetics_appendix1_formula153]]\n\nwhich has diagonal elements\n\n[[FORMULA:Genetics_appendix1_formula154]]\n\nAfter some simplification, we have\n\n[[FORMULA:Genetics_appendix1_formula155]]\n\nPutting these results together gives\n\n[[FORMULA:Genetics_appendix1_formula156]]\n\nwhere  \\overline{\\mu} = \\sum \\mu_i / n . In the simple situation where all observations have the same mean and variance (  \\mu_i = \\mu, \\sigma^2(z_i) = \\sigma^2 ) and are uncorrelated, this reduces to\n\n[[FORMULA:Genetics_appendix1_formula157]]\n\nTurning now to the sample variance of  \\operatorname{Var}(x) , if we are willing to assume that x is multivariate normal, then from Equation A3.12b,\n\n[[FORMULA:Genetics_appendix1_formula158]]\n\nIf, for example,  \\mathbf{V} = \\sigma^2 \\mathbf{I}  (the  x_i  are uncorrelated with common variance), then\n\n[[FORMULA:Genetics_appendix1_formula159]]\n\nThe ijth element in  J_{n\\times n}J_{n\\times n}  is n, giving  J_{n\\times n}^{2}=nJ_{n\\times n} . Hence, the ith diagonal element of NVNV is\n\n[[FORMULA:Genetics_appendix1_formula160]]\n\ngiving  \\text{tr}(\\mathbf{N}\\mathbf{V}\\mathbf{N}\\mathbf{V}) = \\sigma^{4}/(n-1) . When all of the means are equal, it follows that  \\mathbf{N}\\boldsymbol{\\mu} = \\mathbf{0}  and the second term in Equation A3.12b vanishes, giving\n\n[[FORMULA:Genetics_appendix1_formula161]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula151",
+        "Genetics_appendix1_formula152",
+        "Genetics_appendix1_formula153",
+        "Genetics_appendix1_formula154",
+        "Genetics_appendix1_formula155",
+        "Genetics_appendix1_formula156",
+        "Genetics_appendix1_formula157",
+        "Genetics_appendix1_formula158",
+        "Genetics_appendix1_formula159",
+        "Genetics_appendix1_formula160",
+        "Genetics_appendix1_formula161"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 858,
+          "y": 745.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 857
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:4:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:5:occ2",
+      "example_ref": "Genetics_appendix1:5:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 5",
+      "title": "Example 5. The OLS solution for a linear model is the value of $ \\beta $ that minimizes the residual sum of squares given y and X. In matrix form,",
+      "source_file": "Genetics_appendix1_032.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_appendix1_032.json",
+      "end_block_index": 15,
+      "block_ids": [
+        "p863:b18",
+        "p863:b19",
+        "p863:b20",
+        "p863:b21",
+        "p864:b2",
+        "p864:b3",
+        "p864:b4"
+      ],
+      "content_markdown": "Example 5. The OLS solution for a linear model is the value of $ \\beta $ that minimizes the residual sum of squares given y and X. In matrix form,\n\n[[FORMULA:Genetics_appendix1_formula194]]\n\nTaking the derivative with respect to $ \\beta $ and using Equation A3.25c (with $ \\mathbf{a} = \\mathbf{y} $, $ \\mathbf{B} = \\mathbf{X} $, and $ \\mathbf{x} = \\boldsymbol{\\beta} $) gives\n\n[[FORMULA:Genetics_appendix1_formula195]]\n\nSetting this equal to zero gives $ \\mathbf{X}^T\\mathbf{X}\\boldsymbol{\\beta} = \\mathbf{X}^T\\mathbf{y} $, or\n\nIf $ X^{T}X $ is singular, a generalized inverse is used instead.\n\n[[FORMULA:Genetics_appendix1_formula196]]",
+      "content_plain": "Example 5. The OLS solution for a linear model is the value of  \\beta  that minimizes the residual sum of squares given y and X. In matrix form,\n\n[[FORMULA:Genetics_appendix1_formula194]]\n\nTaking the derivative with respect to  \\beta  and using Equation A3.25c (with  \\mathbf{a} = \\mathbf{y} ,  \\mathbf{B} = \\mathbf{X} , and  \\mathbf{x} = \\boldsymbol{\\beta} ) gives\n\n[[FORMULA:Genetics_appendix1_formula195]]\n\nSetting this equal to zero gives  \\mathbf{X}^T\\mathbf{X}\\boldsymbol{\\beta} = \\mathbf{X}^T\\mathbf{y} , or\n\nIf  X^{T}X  is singular, a generalized inverse is used instead.\n\n[[FORMULA:Genetics_appendix1_formula196]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula194",
+        "Genetics_appendix1_formula195",
+        "Genetics_appendix1_formula196"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 864,
+          "y": 370.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 863
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:5:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:1:occ3",
+      "example_ref": "Genetics_appendix1:1:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 1",
+      "title": "Example 1. Suppose $n$ values, $z_1 \\cdots z_n$, are sampled independently from an underlying normal with unknown mean $\\mu$ and unit variance ($\\sigma^2 = 1$). Letting $\\mathbf{z}",
+      "source_file": "Genetics_appendix1_034.json",
+      "start_block_index": 5,
+      "end_source_file": "Genetics_appendix1_034.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p866:b6",
+        "p866:b7",
+        "p866:b9",
+        "p866:b10",
+        "p866:b12",
+        "p866:b13",
+        "p866:b15"
+      ],
+      "content_markdown": "Example 1. Suppose $n$ values, $z_1 \\cdots z_n$, are sampled independently from an underlying normal with unknown mean $\\mu$ and unit variance ($\\sigma^2 = 1$). Letting $\\mathbf{z} = (z_1, z_2, \\cdots, z_n)$, what is the MLE for $\\mu$ given $\\mathbf{z}$? Since the observations are independent, the resulting probability density function for $\\mathbf{z}$ is the product of $n$ normal density functions,\n\n[[FORMULA:Genetics_appendix1_formula199]]\n\nThe log-likelihood (or support) becomes\n\n[[FORMULA:Genetics_appendix1_formula200]]\n\nwhich has the score function\n\n[[FORMULA:Genetics_appendix1_formula201]]\n\nSetting the score equal to zero and solving gives the MLE, $ \\widehat{\\mu} = \\overline{z} $.",
+      "content_plain": "Example 1. Suppose n values, z_1 \\cdots z_n, are sampled independently from an underlying normal with unknown mean \\mu and unit variance (\\sigma^2 = 1). Letting \\mathbf{z} = (z_1, z_2, \\cdots, z_n), what is the MLE for \\mu given \\mathbf{z}? Since the observations are independent, the resulting probability density function for \\mathbf{z} is the product of n normal density functions,\n\n[[FORMULA:Genetics_appendix1_formula199]]\n\nThe log-likelihood (or support) becomes\n\n[[FORMULA:Genetics_appendix1_formula200]]\n\nwhich has the score function\n\n[[FORMULA:Genetics_appendix1_formula201]]\n\nSetting the score equal to zero and solving gives the MLE,  \\widehat{\\mu} = \\overline{z} .",
+      "formula_refs": [
+        "Genetics_appendix1_formula199",
+        "Genetics_appendix1_formula200",
+        "Genetics_appendix1_formula201"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 866,
+          "y": 1321.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 866
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:1:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:2:occ3",
+      "example_ref": "Genetics_appendix1:2:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 2",
+      "title": "Example 2. What is the large-sample variance of the MLE for $ \\mu $ from Example 1?",
+      "source_file": "Genetics_appendix1_035.json",
+      "start_block_index": 7,
+      "end_source_file": "Genetics_appendix1_035.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p867:b8",
+        "p867:b9",
+        "p867:b10",
+        "p867:b11",
+        "p867:b12"
+      ],
+      "content_markdown": "Example 2. What is the large-sample variance of the MLE for $ \\mu $ from Example 1?\n\n[[FORMULA:Genetics_appendix1_formula203]]\n\nApplying Equation A4.6,\n\n[[FORMULA:Genetics_appendix1_formula204]]\n\nUsing the asymptotic normality of MLEs, the approximate distribution of the MLE is $\\widehat{\\mu} \\sim \\mathrm{N}(\\mu, n^{-1})$, and the resulting 95 percent confidence interval for $\\mu$ is $\\widehat{\\mu} \\pm 1.96/\\sqrt{n}$.",
+      "content_plain": "Example 2. What is the large-sample variance of the MLE for  \\mu  from Example 1?\n\n[[FORMULA:Genetics_appendix1_formula203]]\n\nApplying Equation A4.6,\n\n[[FORMULA:Genetics_appendix1_formula204]]\n\nUsing the asymptotic normality of MLEs, the approximate distribution of the MLE is \\widehat{\\mu} \\sim \\mathrm{N}(\\mu, n^{-1}), and the resulting 95 percent confidence interval for \\mu is \\widehat{\\mu} \\pm 1.96/\\sqrt{n}.",
+      "formula_refs": [
+        "Genetics_appendix1_formula203",
+        "Genetics_appendix1_formula204"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 867,
+          "y": 1352.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 867
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:2:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:3:occ3",
+      "example_ref": "Genetics_appendix1:3:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 3",
+      "title": "Example 3. Suppose $n$ values are sampled independently from a normal with unknown mean and variance. What are the MLEs and their sampling variances? Here $\\boldsymbol{\\Theta} = (\\",
+      "source_file": "Genetics_appendix1_036.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_appendix1_036.json",
+      "end_block_index": 26,
+      "block_ids": [
+        "p868:b16",
+        "p868:b17",
+        "p868:b19",
+        "p868:b20",
+        "p868:b22",
+        "p868:b23",
+        "p869:b2",
+        "p869:b3",
+        "p869:b5",
+        "p869:b7",
+        "p869:b8",
+        "p869:b9",
+        "p869:b10",
+        "p869:b11",
+        "p869:b12",
+        "p869:b13",
+        "p869:b14"
+      ],
+      "content_markdown": "Example 3. Suppose $n$ values are sampled independently from a normal with unknown mean and variance. What are the MLEs and their sampling variances? Here $\\boldsymbol{\\Theta} = (\\mu, \\sigma)^T$. Noting that $\\sum_{i=1}^n (z_i - \\mu)^2 = n(\\overline{z^2} - 2\\overline{z}\\mu + \\mu^2)$, the same logic leading to Equation A4.3 shows that the log-likelihood function is\n\n[[FORMULA:Genetics_appendix1_formula210]]\n\nTaking derivatives, the score vector becomes\n\n[[FORMULA:Genetics_appendix1_formula211]]\n\nSolving $ \\mathbf{S}(\\widehat{\\boldsymbol{\\Theta}})=\\mathbf{0} $ gives the MLEs as\n\n[[FORMULA:Genetics_appendix1_formula212]]\n\nAs the first step towards computing the Hessian and Fisher matrices, the second partials are found to be\n\n[[FORMULA:Genetics_appendix1_formula213]]\n\n[[FORMULA:Genetics_appendix1_formula214]]\n\nSince $ E(\\overline{z}) = \\mu $, the first two derivatives have expected values of $ -n/\\sigma^2 $ and 0. Likewise, since $ E(\\overline{z^2}) = \\mu^2 + \\sigma^2 $, the expected value of Equation A4.8e becomes\n\n[[FORMULA:Genetics_appendix1_formula215]]\n\nWith the above results, the Fisher matrix becomes\n\n[[FORMULA:Genetics_appendix1_formula216]]\n\nAlternatively, evaluating the derivatives at the MLE, $ \\widehat{\\boldsymbol{\\Theta}} = (\\overline{z}, \\widehat{\\sigma}^{2})^{T} $, Equation A4.8d gives values of $ -n/\\widehat{\\sigma}^{2} $ and 0, while Equation A4.8e gives $ -n/(2\\widehat{\\sigma}^{4}) $, so that the value of the Hessian matrix evaluated at the MLE becomes\n\n[[FORMULA:Genetics_appendix1_formula217]]\n\nApplying Equation A4.7d gives the large-sample variances and covariance for the MLEs as\n\n[[FORMULA:Genetics_appendix1_formula218]]",
+      "content_plain": "Example 3. Suppose n values are sampled independently from a normal with unknown mean and variance. What are the MLEs and their sampling variances? Here \\boldsymbol{\\Theta} = (\\mu, \\sigma)^T. Noting that \\sum_{i=1}^n (z_i - \\mu)^2 = n(\\overline{z^2} - 2\\overline{z}\\mu + \\mu^2), the same logic leading to Equation A4.3 shows that the log-likelihood function is\n\n[[FORMULA:Genetics_appendix1_formula210]]\n\nTaking derivatives, the score vector becomes\n\n[[FORMULA:Genetics_appendix1_formula211]]\n\nSolving  \\mathbf{S}(\\widehat{\\boldsymbol{\\Theta}})=\\mathbf{0}  gives the MLEs as\n\n[[FORMULA:Genetics_appendix1_formula212]]\n\nAs the first step towards computing the Hessian and Fisher matrices, the second partials are found to be\n\n[[FORMULA:Genetics_appendix1_formula213]]\n\n[[FORMULA:Genetics_appendix1_formula214]]\n\nSince  E(\\overline{z}) = \\mu , the first two derivatives have expected values of  -n/\\sigma^2  and 0. Likewise, since  E(\\overline{z^2}) = \\mu^2 + \\sigma^2 , the expected value of Equation A4.8e becomes\n\n[[FORMULA:Genetics_appendix1_formula215]]\n\nWith the above results, the Fisher matrix becomes\n\n[[FORMULA:Genetics_appendix1_formula216]]\n\nAlternatively, evaluating the derivatives at the MLE,  \\widehat{\\boldsymbol{\\Theta}} = (\\overline{z}, \\widehat{\\sigma}^{2})^{T} , Equation A4.8d gives values of  -n/\\widehat{\\sigma}^{2}  and 0, while Equation A4.8e gives  -n/(2\\widehat{\\sigma}^{4}) , so that the value of the Hessian matrix evaluated at the MLE becomes\n\n[[FORMULA:Genetics_appendix1_formula217]]\n\nApplying Equation A4.7d gives the large-sample variances and covariance for the MLEs as\n\n[[FORMULA:Genetics_appendix1_formula218]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula210",
+        "Genetics_appendix1_formula211",
+        "Genetics_appendix1_formula212",
+        "Genetics_appendix1_formula213",
+        "Genetics_appendix1_formula214",
+        "Genetics_appendix1_formula215",
+        "Genetics_appendix1_formula216",
+        "Genetics_appendix1_formula217",
+        "Genetics_appendix1_formula218"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 869,
+          "y": 1170.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 868
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:3:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:4:occ3",
+      "example_ref": "Genetics_appendix1:4:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 4",
+      "title": "Example 4. Suppose we wish to test the hypothesis that $ \\mu = 0 $ in Example 1. Here the MLE is $ \\widehat{\\mu} = \\overline{z} $ and the LR test statistic becomes",
+      "source_file": "Genetics_appendix1_037.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_appendix1_037.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p870:b3",
+        "p870:b4",
+        "p870:b5",
+        "p870:b6",
+        "p870:b7",
+        "p870:b8",
+        "p870:b9",
+        "p870:b10",
+        "p871:b2"
+      ],
+      "content_markdown": "Example 4. Suppose we wish to test the hypothesis that $ \\mu = 0 $ in Example 1. Here the MLE is $ \\widehat{\\mu} = \\overline{z} $ and the LR test statistic becomes\n\n[[FORMULA:Genetics_appendix1_formula220]]\n\nThis test statistic is distributed as a $ \\chi^2 $ with one degree of freedom, as one parameter ( $ \\mu $) was assigned a fixed value in the reduced model. Since Prob( $ \\chi_1^2 > 3.84 $) = 0.05, the hypothesis $ \\mu = 0 $ is rejected at the 5% level if the test statistic exceeds 3.84.\n\nNow suppose we wish to test this hypothesis under the conditions of Example 3, where the variance is also unknown and hence must also be estimated. Here the MLEs for the full model are given by Equation A4.8c. Substituting $ \\mu = 0 $ into Equation A4.8b gives the score function for the restricted model as\n\n[[FORMULA:Genetics_appendix1_formula221]]\n\ngiving the MLE for $\\sigma^2$ under this restriction as $\\widehat{\\sigma}_r^2 = \\overline{z^2}$. Substituting the MLEs into the likelihood functions, and once again using the identity $\\sum(z_i - \\mu)^2 = n(\\overline{z^2} - 2\\overline{z}\\mu + \\mu^2)$ gives the LR test statistic as\n\n[[FORMULA:Genetics_appendix1_formula222]]\n\n[[FORMULA:Genetics_appendix1_formula223]]\n\nAgain, for large samples this follows a $ \\chi_{1}^{2} $ distribution as the value of one parameter is assigned a fixed value.",
+      "content_plain": "Example 4. Suppose we wish to test the hypothesis that  \\mu = 0  in Example 1. Here the MLE is  \\widehat{\\mu} = \\overline{z}  and the LR test statistic becomes\n\n[[FORMULA:Genetics_appendix1_formula220]]\n\nThis test statistic is distributed as a  \\chi^2  with one degree of freedom, as one parameter (  \\mu ) was assigned a fixed value in the reduced model. Since Prob(  \\chi_1^2 > 3.84 ) = 0.05, the hypothesis  \\mu = 0  is rejected at the 5% level if the test statistic exceeds 3.84.\n\nNow suppose we wish to test this hypothesis under the conditions of Example 3, where the variance is also unknown and hence must also be estimated. Here the MLEs for the full model are given by Equation A4.8c. Substituting  \\mu = 0  into Equation A4.8b gives the score function for the restricted model as\n\n[[FORMULA:Genetics_appendix1_formula221]]\n\ngiving the MLE for \\sigma^2 under this restriction as \\widehat{\\sigma}_r^2 = \\overline{z^2}. Substituting the MLEs into the likelihood functions, and once again using the identity \\sum(z_i - \\mu)^2 = n(\\overline{z^2} - 2\\overline{z}\\mu + \\mu^2) gives the LR test statistic as\n\n[[FORMULA:Genetics_appendix1_formula222]]\n\n[[FORMULA:Genetics_appendix1_formula223]]\n\nAgain, for large samples this follows a  \\chi_{1}^{2}  distribution as the value of one parameter is assigned a fixed value.",
+      "formula_refs": [
+        "Genetics_appendix1_formula220",
+        "Genetics_appendix1_formula221",
+        "Genetics_appendix1_formula222",
+        "Genetics_appendix1_formula223"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 871,
+          "y": 248.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 870
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:4:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:5:occ3",
+      "example_ref": "Genetics_appendix1:5:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 5",
+      "title": "Example 5. Suppose the $ y_{i} $ values are the means of n different populations, e.g., data from a series of populations being used in a line-cross analysis (Chapter 9). Assuming ",
+      "source_file": "Genetics_appendix1_039.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_appendix1_039.json",
+      "end_block_index": 14,
+      "block_ids": [
+        "p872:b15",
+        "p873:b2",
+        "p873:b3",
+        "p873:b4",
+        "p873:b5",
+        "p873:b7"
+      ],
+      "content_markdown": "Example 5. Suppose the $ y_{i} $ values are the means of n different populations, e.g., data from a series of populations being used in a line-cross analysis (Chapter 9). Assuming the means are independent but with potentially different variances (due to differences in sample sizes, among other things), V is a diagonal matrix whose ith element is the variance of the ith mean. Denoting the variance of the ith mean by $ \\operatorname{Var}(y_i) $, then recalling Equation A3.11c, the quadratic product in the LR test reduces to\n\n[[FORMULA:Genetics_appendix1_formula232]]\n\nHence, the likelihood-ratio test statistic for comparing a full model with a reduced model assuming fewer effects is given by\n\n[[FORMULA:Genetics_appendix1_formula233]]\n\nwhich is just the difference in the $ \\chi^{2} $ values for the fit of the full and reduced models. This test follows a $ \\chi^{2} $ distribution with degrees of freedom given by the difference in degrees of freedom for the full and reduced models.",
+      "content_plain": "Example 5. Suppose the  y_{i}  values are the means of n different populations, e.g., data from a series of populations being used in a line-cross analysis (Chapter 9). Assuming the means are independent but with potentially different variances (due to differences in sample sizes, among other things), V is a diagonal matrix whose ith element is the variance of the ith mean. Denoting the variance of the ith mean by  \\operatorname{Var}(y_i) , then recalling Equation A3.11c, the quadratic product in the LR test reduces to\n\n[[FORMULA:Genetics_appendix1_formula232]]\n\nHence, the likelihood-ratio test statistic for comparing a full model with a reduced model assuming fewer effects is given by\n\n[[FORMULA:Genetics_appendix1_formula233]]\n\nwhich is just the difference in the  \\chi^{2}  values for the fit of the full and reduced models. This test follows a  \\chi^{2}  distribution with degrees of freedom given by the difference in degrees of freedom for the full and reduced models.",
+      "formula_refs": [
+        "Genetics_appendix1_formula232",
+        "Genetics_appendix1_formula233"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 873,
+          "y": 664.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 872
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:5:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:6:occ2",
+      "example_ref": "Genetics_appendix1:6:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 6",
+      "title": "Example 6. As an example of accounting for missing marker information, consider QTL mapping in an $ F_2 $ design from an inbred-line cross (Chapter 15) using dominant markers (such",
+      "source_file": "Genetics_appendix1_044.json",
+      "start_block_index": 8,
+      "end_source_file": "Genetics_appendix1_044.json",
+      "end_block_index": 19,
+      "block_ids": [
+        "p878:b9",
+        "p878:b10",
+        "p878:b11",
+        "p879:b2",
+        "p879:b3",
+        "p879:b4",
+        "p879:b5",
+        "p879:b6",
+        "p879:b7",
+        "p879:b8",
+        "p879:b9",
+        "p879:b10"
+      ],
+      "content_markdown": "Example 6. As an example of accounting for missing marker information, consider QTL mapping in an $ F_2 $ design from an inbred-line cross (Chapter 15) using dominant markers (such as RAPDs). Suppose marker allele M is dominant to allele m, so that the observed marker genotypes are mm and M−, the later consisting of the genotypes MM and Mm. Since in the $ F_2 $, $ \\Pr(M-) = \\Pr(MM) + \\Pr(Mm) = 3/4 $,\n\n[[FORMULA:Genetics_appendix1_formula251]]\n\nand likewise $ \\Pr(Mm \\mid M-) = 2/3 $. The conditional probability $ \\Pr(QQ \\mid M-) $ that the QTL genotype is QQ given the marker genotype is M- becomes\n\n[[FORMULA:Genetics_appendix1_formula252]]\n\nFrom Example 1 from Chapter 15, for the $ F_2 $ design $ \\Pr(QQ \\mid MM) = (1 - c)^2 $ and $ \\Pr(QQ \\mid Mm) = c(1 - c) $, giving\n\n[[FORMULA:Genetics_appendix1_formula253]]\n\nSimilarly, it can be shown that\n\n[[FORMULA:Genetics_appendix1_formula254]]\n\nThus, for a given c value, these mixing proportions are fixed constants. Similar logic gives the values for individuals with marker genotype mm.\n\nTo obtain the weights for the EM method, first index the three QTL genotypes by $ k = 1, 2, 3 $ for QQ, Qq, and qq. Given a current estimate of the three QTL means $ \\widehat{\\mu}_{k}^{(t)} $ and variance $ \\widehat{\\sigma}^{2}(t) $, the updated weights are obtained from Equation A4.24. For example, the updated weight that an individual is genotype QQ given it has trait value z and marker genotype M- is\n\n[[FORMULA:Genetics_appendix1_formula255]]\n\nThe probabilities of the two other QTL genotypes follow similarly, as do the weights for individuals with marker genotype $ mm $. Using these updated weights, new estimates of the means and variance are obtained from Equations A4.22b, c.",
+      "content_plain": "Example 6. As an example of accounting for missing marker information, consider QTL mapping in an  F_2  design from an inbred-line cross (Chapter 15) using dominant markers (such as RAPDs). Suppose marker allele M is dominant to allele m, so that the observed marker genotypes are mm and M−, the later consisting of the genotypes MM and Mm. Since in the  F_2 ,  \\Pr(M-) = \\Pr(MM) + \\Pr(Mm) = 3/4 ,\n\n[[FORMULA:Genetics_appendix1_formula251]]\n\nand likewise  \\Pr(Mm \\mid M-) = 2/3 . The conditional probability  \\Pr(QQ \\mid M-)  that the QTL genotype is QQ given the marker genotype is M- becomes\n\n[[FORMULA:Genetics_appendix1_formula252]]\n\nFrom Example 1 from Chapter 15, for the  F_2  design  \\Pr(QQ \\mid MM) = (1 - c)^2  and  \\Pr(QQ \\mid Mm) = c(1 - c) , giving\n\n[[FORMULA:Genetics_appendix1_formula253]]\n\nSimilarly, it can be shown that\n\n[[FORMULA:Genetics_appendix1_formula254]]\n\nThus, for a given c value, these mixing proportions are fixed constants. Similar logic gives the values for individuals with marker genotype mm.\n\nTo obtain the weights for the EM method, first index the three QTL genotypes by  k = 1, 2, 3  for QQ, Qq, and qq. Given a current estimate of the three QTL means  \\widehat{\\mu}_{k}^{(t)}  and variance  \\widehat{\\sigma}^{2}(t) , the updated weights are obtained from Equation A4.24. For example, the updated weight that an individual is genotype QQ given it has trait value z and marker genotype M- is\n\n[[FORMULA:Genetics_appendix1_formula255]]\n\nThe probabilities of the two other QTL genotypes follow similarly, as do the weights for individuals with marker genotype  mm . Using these updated weights, new estimates of the means and variance are obtained from Equations A4.22b, c.",
+      "formula_refs": [
+        "Genetics_appendix1_formula251",
+        "Genetics_appendix1_formula252",
+        "Genetics_appendix1_formula253",
+        "Genetics_appendix1_formula254",
+        "Genetics_appendix1_formula255"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 879,
+          "y": 1471.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 878
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:6:occ2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:1:occ4",
+      "example_ref": "Genetics_appendix1:1:occ4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 1",
+      "title": "Example 1. One approach for detecting QTLs using a marker locus (with alleles M and m) in inbred-line crosses is to use the test statistic $ T = \\overline{z}_{MM} - \\overline{z}_{m",
+      "source_file": "Genetics_appendix1_048.json",
+      "start_block_index": 14,
+      "end_source_file": "Genetics_appendix1_048.json",
+      "end_block_index": 16,
+      "block_ids": [
+        "p885:b3",
+        "p885:b4",
+        "p885:b5"
+      ],
+      "content_markdown": "Example 1. One approach for detecting QTLs using a marker locus (with alleles M and m) in inbred-line crosses is to use the test statistic $ T = \\overline{z}_{MM} - \\overline{z}_{mm} $, which compares the mean trait values of alternate marker homozygotes (Chapter 15). This leads to a simple t-test.\n\nHow powerful is this method for detecting QTLs? Assuming the marker is completely linked to the QTL, the mean of $ T $ is $ \\mu_1 = 2a $, the difference between the means of alternate QTL homozygotes. As derived in Equation 15.34, $ \\sigma^2(T) = \\sigma_1^2 = 8(1 - r^2)\\sigma_z^2/n $, where $ r^2 $ is the fraction of the total of the total character variance accounted for by this QTL and $ n $ is the total number of offspring sampled (only 1/4 of the individuals are a particular homozygote, so that the expected sample size for each homozygote marker class is $ n/4 $). Under the null hypothesis of no linked QTL, $ \\mu_0 = 0 $ and $ \\sigma_0^2 = 8\\sigma_z^2/n $. This test is two-sided, as a significantly positive or negative $ T $ indicates a linked QTL. Substituting into Equation A5.7a with $ f_1^2 = 8(1 - r^2)\\sigma_z^2 $ and $ f_0^2 = 8\\sigma_z^2 $ gives the sample size required to have power $ 1 - \\beta $ in a test with significant level $ \\alpha $.\n\n[[FORMULA:Genetics_appendix1_formula274]]",
+      "content_plain": "Example 1. One approach for detecting QTLs using a marker locus (with alleles M and m) in inbred-line crosses is to use the test statistic  T = \\overline{z}_{MM} - \\overline{z}_{mm} , which compares the mean trait values of alternate marker homozygotes (Chapter 15). This leads to a simple t-test.\n\nHow powerful is this method for detecting QTLs? Assuming the marker is completely linked to the QTL, the mean of  T  is  \\mu_1 = 2a , the difference between the means of alternate QTL homozygotes. As derived in Equation 15.34,  \\sigma^2(T) = \\sigma_1^2 = 8(1 - r^2)\\sigma_z^2/n , where  r^2  is the fraction of the total of the total character variance accounted for by this QTL and  n  is the total number of offspring sampled (only 1/4 of the individuals are a particular homozygote, so that the expected sample size for each homozygote marker class is  n/4 ). Under the null hypothesis of no linked QTL,  \\mu_0 = 0  and  \\sigma_0^2 = 8\\sigma_z^2/n . This test is two-sided, as a significantly positive or negative  T  indicates a linked QTL. Substituting into Equation A5.7a with  f_1^2 = 8(1 - r^2)\\sigma_z^2  and  f_0^2 = 8\\sigma_z^2  gives the sample size required to have power  1 - \\beta  in a test with significant level  \\alpha .\n\n[[FORMULA:Genetics_appendix1_formula274]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula274"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 885,
+          "y": 1049.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 885
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:1:occ4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:2:occ4",
+      "example_ref": "Genetics_appendix1:2:occ4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 2",
+      "title": "Example 2. Suppose 200 (single) parent-offspring pairs are measured (N = 200, n = 1) for a character with $ h^2 = 0.2 $ and no epistasis or maternal effects. Assuming a test with $",
+      "source_file": "Genetics_appendix1_049.json",
+      "start_block_index": 6,
+      "end_source_file": "Genetics_appendix1_049.json",
+      "end_block_index": 24,
+      "block_ids": [
+        "p886:b11",
+        "p886:b12",
+        "p886:b13",
+        "p886:b14",
+        "p887:b2",
+        "p887:b3",
+        "p887:b4",
+        "p887:b5",
+        "p887:b6",
+        "p887:b7",
+        "p887:b8",
+        "p887:b9",
+        "p887:b10",
+        "p887:b11",
+        "p887:b12",
+        "p887:b13",
+        "p887:b14",
+        "p887:b15",
+        "p887:b16"
+      ],
+      "content_markdown": "Example 2. Suppose 200 (single) parent-offspring pairs are measured (N = 200, n = 1) for a character with $ h^2 = 0.2 $ and no epistasis or maternal effects. Assuming a test with $ \\alpha = 0.05 $, what is the power of this design to detect this regression as being significant? Here $ z_{(1-0.05)} = 1.65 $ and from Chapter 7,\n\n[[FORMULA:Genetics_appendix1_formula278]]\n\nAssuming parent and offspring have equal variance, $ \\sigma^{2}(z_{o}) = \\sigma^{2}(z_{p}) $, Equation A5.9 gives\n\n[[FORMULA:Genetics_appendix1_formula279]]\n\nwhile under the null hypothesis of zero slope, $ r_{op} = 0 $ and hence $ \\sigma^{2}(b_{op}) = 1/200 = 0.005 $. Equation A5.3 gives the power as\n\n[[FORMULA:Genetics_appendix1_formula280]]\n\nThe false-negative rate for this design is $ \\beta = 0.60 $, so that the majority of time the observed slope will not be judged to be significantly greater than zero.\n\nMeasuring only a single offspring per family $ (n = 1) $, how many families must be used to have 90% probability that the observed slope is significantly positive (using a test with $ \\alpha = 0.05 $? To make use of Equation A5.4, first note that here $ \\beta = 0.1 $, and from unit normal tables,\n\n[[FORMULA:Genetics_appendix1_formula281]]\n\nhence\n\n[[FORMULA:Genetics_appendix1_formula282]]\n\nSubstituting this result into Equation A5.10 gives the required N as\n\n[[FORMULA:Genetics_appendix1_formula283]]\n\nFor a single-parent regression, $ b_{op} = r_{op} = h^{2}/2 = 0.1 $, and the required number of single-parent families is\n\n[[FORMULA:Genetics_appendix1_formula284]]\n\nFor a midparent-offspring regression, $ b_{o\\overline{p}} = h^2 = 0.2 $, $ r_{o\\overline{p}}^2 = b_{o\\overline{p}}^2 / 2 = 0.02 $, and\n\n[[FORMULA:Genetics_appendix1_formula285]]\n\ngiving the required number of two-parent families as\n\n[[FORMULA:Genetics_appendix1_formula286]]",
+      "content_plain": "Example 2. Suppose 200 (single) parent-offspring pairs are measured (N = 200, n = 1) for a character with  h^2 = 0.2  and no epistasis or maternal effects. Assuming a test with  \\alpha = 0.05 , what is the power of this design to detect this regression as being significant? Here  z_{(1-0.05)} = 1.65  and from Chapter 7,\n\n[[FORMULA:Genetics_appendix1_formula278]]\n\nAssuming parent and offspring have equal variance,  \\sigma^{2}(z_{o}) = \\sigma^{2}(z_{p}) , Equation A5.9 gives\n\n[[FORMULA:Genetics_appendix1_formula279]]\n\nwhile under the null hypothesis of zero slope,  r_{op} = 0  and hence  \\sigma^{2}(b_{op}) = 1/200 = 0.005 . Equation A5.3 gives the power as\n\n[[FORMULA:Genetics_appendix1_formula280]]\n\nThe false-negative rate for this design is  \\beta = 0.60 , so that the majority of time the observed slope will not be judged to be significantly greater than zero.\n\nMeasuring only a single offspring per family  (n = 1) , how many families must be used to have 90% probability that the observed slope is significantly positive (using a test with  \\alpha = 0.05 ? To make use of Equation A5.4, first note that here  \\beta = 0.1 , and from unit normal tables,\n\n[[FORMULA:Genetics_appendix1_formula281]]\n\nhence\n\n[[FORMULA:Genetics_appendix1_formula282]]\n\nSubstituting this result into Equation A5.10 gives the required N as\n\n[[FORMULA:Genetics_appendix1_formula283]]\n\nFor a single-parent regression,  b_{op} = r_{op} = h^{2}/2 = 0.1 , and the required number of single-parent families is\n\n[[FORMULA:Genetics_appendix1_formula284]]\n\nFor a midparent-offspring regression,  b_{o\\overline{p}} = h^2 = 0.2 ,  r_{o\\overline{p}}^2 = b_{o\\overline{p}}^2 / 2 = 0.02 , and\n\n[[FORMULA:Genetics_appendix1_formula285]]\n\ngiving the required number of two-parent families as\n\n[[FORMULA:Genetics_appendix1_formula286]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula278",
+        "Genetics_appendix1_formula279",
+        "Genetics_appendix1_formula280",
+        "Genetics_appendix1_formula281",
+        "Genetics_appendix1_formula282",
+        "Genetics_appendix1_formula283",
+        "Genetics_appendix1_formula284",
+        "Genetics_appendix1_formula285",
+        "Genetics_appendix1_formula286"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 887,
+          "y": 1473.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 886
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:2:occ4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:3:occ4",
+      "example_ref": "Genetics_appendix1:3:occ4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 3",
+      "title": "Example 3. Consider a fixed-effect design with four factors (N = 4), and suppose that $ \\sigma_{\\tau}^2/\\sigma_e^2 = 1/3 $, so that the treatment effects account for 25% of the tot",
+      "source_file": "Genetics_appendix1_054.json",
+      "start_block_index": 19,
+      "end_source_file": "Genetics_appendix1_054.json",
+      "end_block_index": 35,
+      "block_ids": [
+        "p894:b7",
+        "p894:b8",
+        "p894:b9",
+        "p894:b10",
+        "p894:b11",
+        "p894:b12",
+        "p894:b13",
+        "p894:b14",
+        "p894:b15",
+        "p894:b16",
+        "p894:b17",
+        "p894:b18",
+        "p895:b2",
+        "p895:b3",
+        "p895:b4",
+        "p895:b5",
+        "p895:b6"
+      ],
+      "content_markdown": "Example 3. Consider a fixed-effect design with four factors (N = 4), and suppose that $ \\sigma_{\\tau}^2/\\sigma_e^2 = 1/3 $, so that the treatment effects account for 25% of the total variance ( $ \\sigma_{\\tau}^2 + \\sigma_e^2 $). If each treatment has a sample size of n = 5, what is the power to detect a significant treatment effect using a test of $ \\alpha = 0.05 $? Here $ N(n - 1) = 16 $, and we find from F distribution tables that\n\n[[FORMULA:Genetics_appendix1_formula320]]\n\nso that the critical value for the test is $ F_{3,16,[0.95]} = 3.24 $. Likewise, the noncentrality parameter is\n\n[[FORMULA:Genetics_appendix1_formula321]]\n\nand from noncentral F tables, the power is found to be\n\n[[FORMULA:Genetics_appendix1_formula322]]\n\nIn the absence of noncentral $F$ tables or programs, one could instead use the normal approximation given by Equation A5.17b. Just how good is this? Here $F_{o}=3.24$, and substituting the degrees of freedom and $\\lambda=5$ yields $A=1.625$ and $B=0.6075$, giving\n\n[[FORMULA:Genetics_appendix1_formula323]]\n\nand hence\n\n[[FORMULA:Genetics_appendix1_formula324]]\n\nshowing that this approximation works quite well.\n\nWhat sample size n is required to give this test 90% power? Here $ \\alpha = 0.05 $, $ N = 4 $, and $ \\sigma_{\\tau}^{2}/\\sigma_{e}^{2} = 1/3 $ are fixed values. For n = 15, we find that $ N(n - 1) = 56 $,\n\n$ \\lambda = 15 $, and (from central F tables) $ F_{3,56,[0.95]} = 2.769 $. Substituting these values into Equation A5.23 and using noncentral F tables gives\n\n[[FORMULA:Genetics_appendix1_formula325]]\n\nshowing that a test with this sample size has a power of 89.6%. Increasing n to 16, $ N(n-1)=60 $, $ \\lambda=16 $, and $ F_{3,60,[0.95]}=2.758 $, giving\n\n[[FORMULA:Genetics_appendix1_formula326]]\n\nfor a power of 91.7%.",
+      "content_plain": "Example 3. Consider a fixed-effect design with four factors (N = 4), and suppose that  \\sigma_{\\tau}^2/\\sigma_e^2 = 1/3 , so that the treatment effects account for 25% of the total variance (  \\sigma_{\\tau}^2 + \\sigma_e^2 ). If each treatment has a sample size of n = 5, what is the power to detect a significant treatment effect using a test of  \\alpha = 0.05 ? Here  N(n - 1) = 16 , and we find from F distribution tables that\n\n[[FORMULA:Genetics_appendix1_formula320]]\n\nso that the critical value for the test is  F_{3,16,[0.95]} = 3.24 . Likewise, the noncentrality parameter is\n\n[[FORMULA:Genetics_appendix1_formula321]]\n\nand from noncentral F tables, the power is found to be\n\n[[FORMULA:Genetics_appendix1_formula322]]\n\nIn the absence of noncentral F tables or programs, one could instead use the normal approximation given by Equation A5.17b. Just how good is this? Here F_{o}=3.24, and substituting the degrees of freedom and \\lambda=5 yields A=1.625 and B=0.6075, giving\n\n[[FORMULA:Genetics_appendix1_formula323]]\n\nand hence\n\n[[FORMULA:Genetics_appendix1_formula324]]\n\nshowing that this approximation works quite well.\n\nWhat sample size n is required to give this test 90% power? Here  \\alpha = 0.05 ,  N = 4 , and  \\sigma_{\\tau}^{2}/\\sigma_{e}^{2} = 1/3  are fixed values. For n = 15, we find that  N(n - 1) = 56 ,\n\n \\lambda = 15 , and (from central F tables)  F_{3,56,[0.95]} = 2.769 . Substituting these values into Equation A5.23 and using noncentral F tables gives\n\n[[FORMULA:Genetics_appendix1_formula325]]\n\nshowing that a test with this sample size has a power of 89.6%. Increasing n to 16,  N(n-1)=60 ,  \\lambda=16 , and  F_{3,60,[0.95]}=2.758 , giving\n\n[[FORMULA:Genetics_appendix1_formula326]]\n\nfor a power of 91.7%.",
+      "formula_refs": [
+        "Genetics_appendix1_formula320",
+        "Genetics_appendix1_formula321",
+        "Genetics_appendix1_formula322",
+        "Genetics_appendix1_formula323",
+        "Genetics_appendix1_formula324",
+        "Genetics_appendix1_formula325",
+        "Genetics_appendix1_formula326"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 895,
+          "y": 476.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 894
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:3:occ4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:4:occ4",
+      "example_ref": "Genetics_appendix1:4:occ4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 4",
+      "title": "Example 4. Suppose we have a completely linked QTL $ (c=0) $ with $ \\sigma_A^2/\\sigma_e^2=0.1 $. With $ N=20 $ sires and $ n=35 $ sibs/sire, what is the power of this test to detec",
+      "source_file": "Genetics_appendix1_055.json",
+      "start_block_index": 27,
+      "end_source_file": "Genetics_appendix1_055.json",
+      "end_block_index": 30,
+      "block_ids": [
+        "p897:b7",
+        "p897:b8",
+        "p897:b9",
+        "p897:b10"
+      ],
+      "content_markdown": "Example 4. Suppose we have a completely linked QTL $ (c=0) $ with $ \\sigma_A^2/\\sigma_e^2=0.1 $. With $ N=20 $ sires and $ n=35 $ sibs/sire, what is the power of this test to detect this QTL using a significance level of $ \\alpha=0.05 $? Here $ N(n-2)=560 $, and from central F tables, we find $ F_{20,560,[0.95]}=1.589 $. Since $ \\lambda=20\\cdot36\\cdot0.1/4=15 $, the power is\n\n[[FORMULA:Genetics_appendix1_formula340]]\n\nHow many sigs are required per sire to have 90% power? Solving with increasing n values, we find that for n = 53, $ N(n-2) = 1020 $, $ F_{20,1020,[0.95]} = 1.581 $, and $ \\lambda = 20 \\cdot 36 \\cdot 0.1 / 4 = 26.5 $ for a power of\n\n[[FORMULA:Genetics_appendix1_formula341]]",
+      "content_plain": "Example 4. Suppose we have a completely linked QTL  (c=0)  with  \\sigma_A^2/\\sigma_e^2=0.1 . With  N=20  sires and  n=35  sibs/sire, what is the power of this test to detect this QTL using a significance level of  \\alpha=0.05 ? Here  N(n-2)=560 , and from central F tables, we find  F_{20,560,[0.95]}=1.589 . Since  \\lambda=20\\cdot36\\cdot0.1/4=15 , the power is\n\n[[FORMULA:Genetics_appendix1_formula340]]\n\nHow many sigs are required per sire to have 90% power? Solving with increasing n values, we find that for n = 53,  N(n-2) = 1020 ,  F_{20,1020,[0.95]} = 1.581 , and  \\lambda = 20 \\cdot 36 \\cdot 0.1 / 4 = 26.5  for a power of\n\n[[FORMULA:Genetics_appendix1_formula341]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula340",
+        "Genetics_appendix1_formula341"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 897,
+          "y": 898.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 897
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:4:occ4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:5:occ4",
+      "example_ref": "Genetics_appendix1:5:occ4",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 5",
+      "title": "Example 5. Consider a random-effects model with design parameters similar to Example 3, with $ \\sigma_e^2 / \\sigma_e^2 = 1/3 $, $ N = 4 $, and $ n = 5 $. What is the power of this ",
+      "source_file": "Genetics_appendix1_056.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_appendix1_056.json",
+      "end_block_index": 19,
+      "block_ids": [
+        "p898:b19",
+        "p898:b20",
+        "p898:b21",
+        "p898:b22"
+      ],
+      "content_markdown": "Example 5. Consider a random-effects model with design parameters similar to Example 3, with $ \\sigma_e^2 / \\sigma_e^2 = 1/3 $, $ N = 4 $, and $ n = 5 $. What is the power of this design for a test with $ \\alpha = 0.05 $? Here $ F_{3,16,[0.95]} = 3.24 $ and $ 1 + n (\\sigma_t^2 / \\sigma_e^2) = 1 + 5/3 = 8/3 $. From Equation A5.30b, the power becomes\n\n[[FORMULA:Genetics_appendix1_formula350]]\n\nWhat value of $n$ is required to give 90% power? With increasing values of $n$, we find that for $n = 38$, $N(n - 1) = 148$, $1 + n(\\sigma_{t}^{2}/\\sigma_{e}^{2}) = 13.67$, and $F_{3,148,[0.95]} = 2.66$, giving\n\n[[FORMULA:Genetics_appendix1_formula351]]",
+      "content_plain": "Example 5. Consider a random-effects model with design parameters similar to Example 3, with  \\sigma_e^2 / \\sigma_e^2 = 1/3 ,  N = 4 , and  n = 5 . What is the power of this design for a test with  \\alpha = 0.05 ? Here  F_{3,16,[0.95]} = 3.24  and  1 + n (\\sigma_t^2 / \\sigma_e^2) = 1 + 5/3 = 8/3 . From Equation A5.30b, the power becomes\n\n[[FORMULA:Genetics_appendix1_formula350]]\n\nWhat value of n is required to give 90% power? With increasing values of n, we find that for n = 38, N(n - 1) = 148, 1 + n(\\sigma_{t}^{2}/\\sigma_{e}^{2}) = 13.67, and F_{3,148,[0.95]} = 2.66, giving\n\n[[FORMULA:Genetics_appendix1_formula351]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula350",
+        "Genetics_appendix1_formula351"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 898,
+          "y": 1533.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 898
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:5:occ4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:6:occ3",
+      "example_ref": "Genetics_appendix1:6:occ3",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 6",
+      "title": "Example 6. Suppose $ h^2 = 0.25 $, so that the sire variance is $ \\sigma_s^2 = h^2/4 = 0.0625 $. What is the probability of detecting a significant sire variance (with a test of $ ",
+      "source_file": "Genetics_appendix1_057.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_appendix1_057.json",
+      "end_block_index": 18,
+      "block_ids": [
+        "p899:b18",
+        "p899:b19",
+        "p899:b20",
+        "p900:b2",
+        "p900:b3",
+        "p900:b4",
+        "p900:b5"
+      ],
+      "content_markdown": "Example 6. Suppose $ h^2 = 0.25 $, so that the sire variance is $ \\sigma_s^2 = h^2/4 = 0.0625 $. What is the probability of detecting a significant sire variance (with a test of $ \\alpha = 0.05 $) using 10 sires, each mated to 5 dams? Here $ N = 10 $ and $ n = 5 $, and from $ F $ tables, the critical value of the test is $ F_{N-1,N(n-1),[1-\\alpha]} = F_{9,40,[0.95]} = 2.12 $. Applying Equation A5.33c, the power of this design to detect a sire variance at least this large is\n\n[[FORMULA:Genetics_appendix1_formula358]]\n\nHence the power is very poor, with the test indicating a significant sire effect only 15 percent of the time.\n\nIf we keep the number of dams/sire constant at 5, how many sires are required to give this test 90% power? Trial and error shows that with $N = 255$ sires, the critical value becomes $F_{N-1,N(n-1),[1-\\alpha]} = F_{254,1020,[0.95]} = 1.17$, and Equation A5.33c gives\n\n[[FORMULA:Genetics_appendix1_formula359]]\n\nNote from the form of Equation A5.33c that the number of dams/sire, n, appears to assert a more important role than N. Keeping N constant at 10, how many dams/sire are required to have 90% power? Again trial and error shows for n = 47 that $ F_{N-1,N(n-1),[1-\\alpha]} = F_{9,460,[0.95]} = 1.90 $, and Equation A5.33c gives\n\n[[FORMULA:Genetics_appendix1_formula360]]",
+      "content_plain": "Example 6. Suppose  h^2 = 0.25 , so that the sire variance is  \\sigma_s^2 = h^2/4 = 0.0625 . What is the probability of detecting a significant sire variance (with a test of  \\alpha = 0.05 ) using 10 sires, each mated to 5 dams? Here  N = 10  and  n = 5 , and from  F  tables, the critical value of the test is  F_{N-1,N(n-1),[1-\\alpha]} = F_{9,40,[0.95]} = 2.12 . Applying Equation A5.33c, the power of this design to detect a sire variance at least this large is\n\n[[FORMULA:Genetics_appendix1_formula358]]\n\nHence the power is very poor, with the test indicating a significant sire effect only 15 percent of the time.\n\nIf we keep the number of dams/sire constant at 5, how many sires are required to give this test 90% power? Trial and error shows that with N = 255 sires, the critical value becomes F_{N-1,N(n-1),[1-\\alpha]} = F_{254,1020,[0.95]} = 1.17, and Equation A5.33c gives\n\n[[FORMULA:Genetics_appendix1_formula359]]\n\nNote from the form of Equation A5.33c that the number of dams/sire, n, appears to assert a more important role than N. Keeping N constant at 10, how many dams/sire are required to have 90% power? Again trial and error shows for n = 47 that  F_{N-1,N(n-1),[1-\\alpha]} = F_{9,460,[0.95]} = 1.90 , and Equation A5.33c gives\n\n[[FORMULA:Genetics_appendix1_formula360]]",
+      "formula_refs": [
+        "Genetics_appendix1_formula358",
+        "Genetics_appendix1_formula359",
+        "Genetics_appendix1_formula360"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 900,
+          "y": 726.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 899
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:6:occ3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_appendix1:7:occ2",
+      "example_ref": "Genetics_appendix1:7:occ2",
+      "chapter": "Genetics_appendix1",
+      "label": "Example 7",
+      "title": "Example 7. For Example 6, where $ h^{2} = 0.25 $ and T = 50, the optimal number of dams/sire is $ 4/h^{2} = 16 $. Rounding up to approach T = 50, we take N = 3 and n = 17 for T = 5",
+      "source_file": "Genetics_appendix1_057.json",
+      "start_block_index": 22,
+      "end_source_file": "Genetics_appendix1_057.json",
+      "end_block_index": 22,
+      "block_ids": [
+        "p900:b10"
+      ],
+      "content_markdown": "Example 7. For Example 6, where $ h^{2} = 0.25 $ and T = 50, the optimal number of dams/sire is $ 4/h^{2} = 16 $. Rounding up to approach T = 50, we take N = 3 and n = 17 for T = 51. Under this design, the power is computed to be 0.234. For N = 2 and N = 25 (T = 50) the power is 0.224, while for N = 4 and n = 12 (T = 48) the power is 0.211. As expected, the optimal design (n = 17) does indeed show the largest power.",
+      "content_plain": "Example 7. For Example 6, where  h^{2} = 0.25  and T = 50, the optimal number of dams/sire is  4/h^{2} = 16 . Rounding up to approach T = 50, we take N = 3 and n = 17 for T = 51. Under this design, the power is computed to be 0.234. For N = 2 and N = 25 (T = 50) the power is 0.224, while for N = 4 and n = 12 (T = 48) the power is 0.211. As expected, the optimal design (n = 17) does indeed show the largest power.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 900,
+          "y": 1492.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 900
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_appendix1:7:occ2]]",
+      "book": "Genetics"
+    }
+  ]
+}

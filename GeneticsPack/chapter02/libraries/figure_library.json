@@ -1,0 +1,144 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter2",
+  "count": 4,
+  "figures": [
+    {
+      "id": "2.1",
+      "chapter": "Genetics_chapter2",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter2:2.1",
+      "placeholder": "[[FIGURE:2.1]]",
+      "see_placeholder": "[[SEE_FIGURE:2.1]]",
+      "asset_path": "figures/Genetics_2.1.png",
+      "caption": "Figure 2.1 Frequency histograms for the two univariate distributions in Table 2.1 and their normal approximations based on the observed means and variances.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 44,
+      "raw_bbox": [
+        168.0,
+        141.0,
+        904.0,
+        769.0
+      ],
+      "source_block_ids": [
+        "p44:b2",
+        "p44:b3"
+      ],
+      "caption_block": {
+        "source_page": 44,
+        "printed_page": 24,
+        "source_block_ids": [
+          "p44:b4"
+        ],
+        "bbox": [
+          90.0,
+          777.0,
+          957.0,
+          861.0
+        ]
+      }
+    },
+    {
+      "id": "2.2",
+      "chapter": "Genetics_chapter2",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter2:2.2",
+      "placeholder": "[[FIGURE:2.2]]",
+      "see_placeholder": "[[SEE_FIGURE:2.2]]",
+      "asset_path": "figures/Genetics_2.2.png",
+      "caption": "Figure 2.2 A truncated normal distribution (hatched area) with lower limit T and mean $ \\mu_{s} $. The total area to the right of T is denoted by $ \\Phi_{T} $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 46,
+      "raw_bbox": [
+        243.0,
+        114.0,
+        835.0,
+        543.0
+      ],
+      "source_block_ids": [
+        "p46:b2"
+      ],
+      "caption_block": {
+        "source_page": 46,
+        "printed_page": 26,
+        "source_block_ids": [
+          "p46:b3"
+        ],
+        "bbox": [
+          99.0,
+          568.0,
+          965.0,
+          651.0
+        ]
+      }
+    },
+    {
+      "id": "2.3",
+      "chapter": "Genetics_chapter2",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter2:2.3",
+      "placeholder": "[[FIGURE:2.3]]",
+      "see_placeholder": "[[SEE_FIGURE:2.3]]",
+      "asset_path": "figures/Genetics_2.3.png",
+      "caption": "Figure 2.3 The proportion $ \\Phi_T $ of individuals selected from an underlying normal distribution with lower truncation point $ T $, mean $ \\mu $, and variance $ \\sigma^2 $. As the truncation point moves to the right of the mean, i.e., as $ (T - \\mu)/\\sigma $ becomes larger, the fraction of the population to the right of the truncation point approaches zero.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 47,
+      "raw_bbox": [
+        264.0,
+        126.0,
+        994.0,
+        713.0
+      ],
+      "source_block_ids": [
+        "p47:b2"
+      ],
+      "caption_block": {
+        "source_page": 47,
+        "printed_page": 27,
+        "source_block_ids": [
+          "p47:b3"
+        ],
+        "bbox": [
+          202.0,
+          732.0,
+          1066.0,
+          870.0
+        ]
+      }
+    },
+    {
+      "id": "2.4",
+      "chapter": "Genetics_chapter2",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter2:2.4",
+      "placeholder": "[[FIGURE:2.4]]",
+      "see_placeholder": "[[SEE_FIGURE:2.4]]",
+      "asset_path": "figures/Genetics_2.4.png",
+      "caption": "Figure 2.4 The change in the mean phenotype (in units of phenotypic standard deviations) and in the phenotypic variance (relative to the variance prior to selection) as a function of the selection intensity. As the proportion of the population above the threshold ( $ \\Phi_{T} $) increases, the selection intensity decreases.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 48,
+      "raw_bbox": [
+        174.0,
+        129.0,
+        901.0,
+        705.0
+      ],
+      "source_block_ids": [
+        "p48:b2"
+      ],
+      "caption_block": {
+        "source_page": 48,
+        "printed_page": 28,
+        "source_block_ids": [
+          "p48:b3"
+        ],
+        "bbox": [
+          95.0,
+          736.0,
+          959.0,
+          873.0
+        ]
+      }
+    }
+  ]
+}

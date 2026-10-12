@@ -1,0 +1,414 @@
+{
+  "id": "Genetics_chapter19_002",
+  "metadata": {
+    "chapter": "Genetics_chapter19",
+    "section": "THE CLASSICAL APPROACH",
+    "subsections": [],
+    "section_level_1": "THE CLASSICAL APPROACH",
+    "section_level_2": null,
+    "heading_path": [
+      "THE CLASSICAL APPROACH"
+    ],
+    "display_heading": "THE CLASSICAL APPROACH",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b5"
+      ],
+      "bbox": [
+        130.0,
+        776.0,
+        525.0,
+        815.0
+      ],
+      "raw_text": "THE CLASSICAL APPROACH"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The most commonly used methodology for twin analysis relies on the simple one-way analysis of variance (Kempthorne and Osborne 1961, Haseman and Elston 1970, Christian et al. 1974, Kang et al. 1974, Eaves et al. 1978, Martin et al. 1978). Separate analyses are performed for monozygotic and dizygotic twins using the layout given in Table 19.1. Since twin groups always consist of two individuals, this is one of the few designs in quantitative-genetic analysis that is always perfectly balanced.",
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b6"
+      ],
+      "bbox": [
+        131.0,
+        831.0,
+        1093.0,
+        1074.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "For both types of twins, we start with the simple linear model",
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b7"
+      ],
+      "bbox": [
+        189.0,
+        1057.0,
+        931.0,
+        1103.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula001]]",
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b8"
+      ],
+      "bbox": [
+        511.0,
+        1123.0,
+        720.0,
+        1159.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ z_{ij} $ is the phenotype of the jth member (j = 1 or 2) of the ith pair, $ b_i $ is the effect of the ith pair, and $ e_{ij} $ is the residual error resulting from segregation (in the case of dizygotic twins) and environmental variance. As usual, we assume that the $ e_{ij} $ have zero expectations, are uncorrelated with each other, and have common variance within each family, $ \\sigma_e^2 $. The twin pairs within each analysis are also assumed to be a random sample of the entire population so that $ E(b_i) = 0 $. For monozygotic and dizygotic twin analyses respectively, we denote the variance among pairs by $ \\sigma_b^2(MZ) $ and $ \\sigma_b^2(DZ) $ and the variance within pairs by $ \\sigma_e^2(MZ) $ and $ \\sigma_e^2(DZ) $.",
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b10"
+      ],
+      "bbox": [
+        137.0,
+        1171.0,
+        1101.0,
+        1482.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As in the case of sib analysis (Chapter 18), estimates of the within- and among-pair components of variance are obtained by setting the observed mean squares equal to their expectations and solving. The observed variance components can, in turn, be used to derive inferences about causal sources of phenotypic variance. From Equation 19.1, it can be seen that under the assumption of independent residuals, the expected among-pair variance is equivalent to the covariance of members of the same pair, $ \\sigma(z_{i1}, z_{i2}) = \\sigma(b_i, b_i) = \\sigma_b^2 $. In causal terms, for monozygotic twins, this is equivalent to",
+      "source_page": 595,
+      "printed_page": 575,
+      "source_block_ids": [
+        "p595:b11",
+        "p596:b2"
+      ],
+      "bbox": [
+        144.0,
+        1461.0,
+        1105.0,
+        1545.0
+      ],
+      "source_page_end": 596
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula002]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b3"
+      ],
+      "bbox": [
+        398.0,
+        343.0,
+        710.0,
+        392.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\sigma_{G}^{2} $ is the total genetic variance, and $ \\sigma_{E_{c}}^{2} $ (MZ) is the variance due to common familial environment. The genetic covariance between monozygotic twins is equal to the total genetic variance because of the complete genetic identity of the individuals involved. For dizygotic twins,",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b5"
+      ],
+      "bbox": [
+        72.0,
+        398.0,
+        1034.0,
+        551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula003]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b6"
+      ],
+      "bbox": [
+        260.0,
+        559.0,
+        836.0,
+        633.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Separate notation is needed for the variance due to common familial environment because it is not necessarily the same in the two types of twins. Since $ \\sigma_{z}^{2} = \\sigma_{b}^{2} + \\sigma_{e}^{2} $, it follows that the remainder of the phenotypic variance is in the within-pair component. Therefore,",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b8"
+      ],
+      "bbox": [
+        65.0,
+        639.0,
+        1025.0,
+        784.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula004]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b9"
+      ],
+      "bbox": [
+        419.0,
+        771.0,
+        666.0,
+        818.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b11"
+      ],
+      "bbox": [
+        63.0,
+        817.0,
+        119.0,
+        847.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula005]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b12"
+      ],
+      "bbox": [
+        252.0,
+        845.0,
+        828.0,
+        917.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the terms $ \\sigma_{E_{s}}^{2} $ (MZ) and $ \\sigma_{E_{s}}^{2} $ (DZ) refer to the residual environmental variance, i.e., environmental variance not attributable to common familial effects (Chapter 6).",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b14"
+      ],
+      "bbox": [
+        59.0,
+        913.0,
+        1018.0,
+        1031.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "All of the procedures outlined in Chapter 18 for the one-way analysis of variance of sibs apply to twin analysis. From Table 19.1, it can be seen that the among-pair variance is estimated by",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b15"
+      ],
+      "bbox": [
+        55.0,
+        1009.0,
+        1018.0,
+        1128.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula006]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b16"
+      ],
+      "bbox": [
+        402.0,
+        1138.0,
+        661.0,
+        1210.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Taking the sampling variance of the mean squares to be approximately $ 2(\\text{MS})^{2}/N $ (from Equation 18.19), and recalling that the mean squares are distributed independently under a balanced design, the large-sample variance of $ \\text{Var}(b) $ is",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b18"
+      ],
+      "bbox": [
+        50.0,
+        1218.0,
+        1009.0,
+        1340.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula007]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b19"
+      ],
+      "bbox": [
+        138.0,
+        1343.0,
+        831.0,
+        1427.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The within-pair variance is approximated by",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b21"
+      ],
+      "bbox": [
+        44.0,
+        1427.0,
+        588.0,
+        1474.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula008]]",
+      "source_page": 596,
+      "printed_page": 576,
+      "source_block_ids": [
+        "p596:b22"
+      ],
+      "bbox": [
+        437.0,
+        1496.0,
+        606.0,
+        1534.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and its large-sample variance is",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b2"
+      ],
+      "bbox": [
+        120.0,
+        152.0,
+        505.0,
+        193.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula009]]",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b3"
+      ],
+      "bbox": [
+        440.0,
+        204.0,
+        760.0,
+        251.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Combining the estimators for $ \\sigma_{b}^{2} $ and $ \\sigma_{e}^{2} $, we obtain",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b5"
+      ],
+      "bbox": [
+        124.0,
+        272.0,
+        735.0,
+        321.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula010]]",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b6"
+      ],
+      "bbox": [
+        472.0,
+        330.0,
+        733.0,
+        404.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "as the estimator of $ \\sigma_{z}^{2} $. Its large-sample variance estimator is identical to that of $ \\mathrm{Var}(b) $. Confidence intervals for the within- and among-pair components of variance can be obtained by using Equations 18.22 and 18.23.",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b8"
+      ],
+      "bbox": [
+        127.0,
+        417.0,
+        1088.0,
+        536.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Recalling the arguments laid out in Chapter 18, the ratio of mean squares, $ F = MS_{b}/MS_{e} $, provides a test statistic for evaluating the significance of the among-pair component of variance. The null hypothesis of no pair effects is tested by referring to standard $ F $-distribution tables and comparing the observed $ F $ with the 5% or 1% critical values associated with $ (N - 1) $ and $ N $ degrees of freedom.",
+      "source_page": 597,
+      "printed_page": 577,
+      "source_block_ids": [
+        "p597:b9"
+      ],
+      "bbox": [
+        131.0,
+        514.0,
+        1090.0,
+        698.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3629 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter3",
+  "count": 44,
+  "formulas": [
+    {
+      "id": "3.1",
+      "label_format": "[3.1]",
+      "latex": "frac{(2N)!}{j!(2N-j)!}p^{j}q^{2N-j}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_002",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "source_pages": [
+          111
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p003:b8"
+        ],
+        "source_bboxes": [
+          [
+            172,
+            455,
+            678,
+            513
+          ]
+        ]
+      },
+      "context": "possible combinations of A and a.\nTo take a specific example, a population of nine diploid organisms arises from a sample of just 18 gametes, but the gametes can be thought of as being sampled from an essentially infinite pool of gametes. Because small samples are frequently not representative, an allele frequency in the sample may differ from that in the entire pool of gametes. Suppose, for example, that a pool of gametes contains the alleles A and a at frequencies p and q, respectively, with $ p + q = 1 $. Then if 2N gametes are drawn at random to produce the zygotes of the next generation, the probability that the sample contains exactly j alleles of type A is the binomial probability $$ \\Pr\\left\\{j a l l e l e s~o f~t y p e~A\\right\\}=\\binom{2N}{j}p^{j}q^{2N-j}=\\frac{(2N)!}{j!(2N-j)!}p^{j}q^{2N-j} $$ where $j$ can take on any integer value between 0 and 2N. The binomial coefficient (in parentheses in the middle expression) is often read as “two N choose $j$,” because it is the number of ways that exactly $j$ elements can be chosen from a total of 2N. After one generation of random sampling as embodied in Equation 3.1, the new allele frequency of $A$ in the population (call it $p$) is given by $j/(2N)$ because, by definition, the allele frequency of $A$ equals the number of $A$ alleles (in this case $j$) divided by the total (in this case 2N). In the subsequent generation, th",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 3,
+        "formula_bbox": [
+          172,
+          455,
+          678,
+          513
+        ],
+        "label_bbox": [
+          744,
+          468,
+          789,
+          491
+        ],
+        "api_label": "[3.1]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "3.1",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+      ],
+      "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING"
+        ],
+        "subsection": "3.1 RANDOM GENETIC DRIFT AND BINOMIAL SAMPLING",
+        "source_pages": [
+          111
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p003:b8"
+        ],
+        "source_bboxes": [
+          [
+            172,
+            455,
+            678,
+            513
+          ]
+        ],
+        "audit_evidence_sha256": "33641378930c1a64638ce5cb655400d9ee29581f11907866441447f890efbed9"
+      }
+    },
+    {
+      "id": "3.10",
+      "label_format": "[3.10]",
+      "latex": "Big]",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_007",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Absorption Time and Time to Fixation",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b17"
+        ],
+        "source_bboxes": [
+          [
+            419,
+            1048,
+            745,
+            1080
+          ]
+        ]
+      },
+      "context": "eventually lost). Assuming an initial allele frequency p, Kimura and Ohta (1969) showed that the mean time $ [\\tilde{t}_{1}(p) $, in generations] until the allele is fixed (given that it is eventually fixed) is $$ \\overline{t}_{1}(p)=-4N\\left(\\frac{1-p}{p}\\right)\\ln(1-p) $$\nSimilarly, they showed that the mean time to loss $ \\bar{t}_{0}(p) $ (given that the allele is eventually lost) is $$ \\overline{t}_{0}(p)=-4N\\left(\\frac{p}{1-p}\\right)\\ln(p) $$\nCombining Equations 3.8 and 3.9, the mean persistence time of an allele $ [\\bar{t}(p) $, the average length of time that a population is segregating for A and a] is given by $ \\bar{t}(p) = p\\bar{t}_{1}(p) + (1 - p)\\bar{t}_{0}(p) $, which equals $$ \\overline{t}(p)=-4N\\Big[(1-p)\\ln(1-p)+p\\ln(p)\\Big] $$ Figure 3.8 shows the average times to fixation, loss, and persistence of a neutral allele. An allele is expected to remain in a population for the longest time when its initial frequency is $ \\frac{1}{2} $. When $ p = \\frac{1}{2} $, the average time that a population remains unfixed is about 2.77N generations.\nEquations 3.8 and 3.9 are of particular interest when $ p = 1/(2N) $, that is, when a new neutral mutation has just occurred and there is only one copy in the population. In this case, the probability of eventual fixation is $ 1/(2N) $, and, given that the allele is eventually fixed, the average time to fixation is approximately 4N ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 18,
+        "formula_bbox": [
+          419,
+          1048,
+          745,
+          1080
+        ],
+        "label_bbox": [
+          864,
+          1061,
+          919,
+          1084
+        ],
+        "api_label": "(3.10)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 8.5
+      },
+      "equation_number": "3.10",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "Absorption Time and Time to Fixation"
+      ],
+      "subsection": "Absorption Time and Time to Fixation",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "subsection": "Absorption Time and Time to Fixation",
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b17"
+        ],
+        "source_bboxes": [
+          [
+            419,
+            1048,
+            745,
+            1080
+          ]
+        ],
+        "audit_evidence_sha256": "c562b861a457f7fd52be9f43cccfb340ccafd990d7b2a7aa9b51532e1ab485f2"
+      }
+    },
+    {
+      "id": "3.11",
+      "label_format": "[3.11]",
+      "latex": "F_{t}=\\frac{1}{2N}+\\left(1-\\frac{1}{2N}\\right)F_{t-1}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          130
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p022:b7"
+        ],
+        "source_bboxes": [
+          [
+            482,
+            1136,
+            682,
+            1189
+          ]
+        ]
+      },
+      "context": "0. This figure shows the 2N alleles in a breeding population of generation $ t-1 $. In sampling alleles for generation $ t $, the first allele chosen may be any of those present in generation $ t-1 $ with equal probability. Having chosen the first allele, the probability that the second allele chosen is of the same type as the first is $ 1/(2N) $ (in which case $ F=1 $), because this is the frequency of each allelic type in the pool of gamates; the probability that the second chosen allele is of a different type from the first is accordingly $ 1-1/(2N) $ (in which case $ F=F_{t-1} $). Putting these two possibilities together, the relationship between $ F_t $ and $ F_{t-1} $ is seen to be $$ F_{t}=\\frac{1}{2N}+\\left(1-\\frac{1}{2N}\\right)F_{t-1} $$ $$ \\begin{array}{ccc}t-1&\\bigcirc&\\bigcirc\\\\t&\\underbrace{\\bigcirc\\quad\\bigcirc}_{\\frac{1}{2N}}&\\underbrace{\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc}_{\\quad1-\\frac{1}{2N}}\\ $ F=1)&(\\quad)&(F=F_{t-1})\\end{array} $$\nMultiplying both sides by -1 and then adding 1 to each side leads to $$ 1-F_{t}=1-\\frac{1}{2N}-\\left(1-\\frac{1}{2N}\\right)F_{t-1}=\\left(1-\\frac{1}{2N}\\right)\\left(1-F_{t-1}\\right) $$ and so $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ or, when $ F_{0}=0, $ $$ F_{t}=1-\\left(1-\\frac{1}{2N}\\right)^{t} $$\nFigure 3.11 shows the rapid increase of $ F_t $ in small populations. Even though the",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 22,
+        "formula_bbox": [
+          482,
+          1136,
+          682,
+          1189
+        ],
+        "label_bbox": [
+          870,
+          1156,
+          927,
+          1180
+        ],
+        "api_label": "[3.11]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.5
+      },
+      "equation_number": "3.11",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          130
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p022:b7"
+        ],
+        "source_bboxes": [
+          [
+            482,
+            1136,
+            682,
+            1189
+          ]
+        ],
+        "audit_evidence_sha256": "9787f530c2298d773d1dc21a62bae28812d3dcccc7f1de59401bde6778688490"
+      }
+    },
+    {
+      "id": "3.12",
+      "label_format": "[3.12]",
+      "latex": "1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b12"
+        ],
+        "source_bboxes": [
+          [
+            330,
+            697,
+            554,
+            755
+          ]
+        ]
+      },
+      "context": "sen allele is of a different type from the first is accordingly $ 1-1/(2N) $ (in which case $ F=F_{t-1} $). Putting these two possibilities together, the relationship between $ F_t $ and $ F_{t-1} $ is seen to be $$ F_{t}=\\frac{1}{2N}+\\left(1-\\frac{1}{2N}\\right)F_{t-1} $$ $$ \\begin{array}{ccc}t-1&\\bigcirc&\\bigcirc\\\\t&\\underbrace{\\bigcirc\\quad\\bigcirc}_{\\frac{1}{2N}}&\\underbrace{\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc}_{\\quad1-\\frac{1}{2N}}\\ $ F=1)&(\\quad)&(F=F_{t-1})\\end{array} $$\nMultiplying both sides by -1 and then adding 1 to each side leads to $$ 1-F_{t}=1-\\frac{1}{2N}-\\left(1-\\frac{1}{2N}\\right)F_{t-1}=\\left(1-\\frac{1}{2N}\\right)\\left(1-F_{t-1}\\right) $$ and so $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ or, when $ F_{0}=0, $ $$ F_{t}=1-\\left(1-\\frac{1}{2N}\\right)^{t} $$\nFigure 3.11 shows the rapid increase of $ F_t $ in small populations. Even though the genotype frequencies in each individual subpopulation are in Hardy-Weinberg proportions, the frequency of homozygous genotypes in the overall population steadily increases. Conversely, as the frequency of homozygous genotypes increases, the frequency of heterozygous genotypes decreases until, when $ F_t = 1 $, there are no heterozygous genotypes left and all subpopulations are fixed for either A or a. At any time, the average frequency of heterozygous genotypes among the subpopu",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 23,
+        "formula_bbox": [
+          330,
+          697,
+          554,
+          755
+        ],
+        "label_bbox": [
+          726,
+          727,
+          782,
+          750
+        ],
+        "api_label": "[3.12]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 12.5
+      },
+      "equation_number": "3.12",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b12"
+        ],
+        "source_bboxes": [
+          [
+            330,
+            697,
+            554,
+            755
+          ]
+        ],
+        "audit_evidence_sha256": "fe53662bc3c0a5944cbb99b3304570b52d7961f6007d1163556a6273de4176bb"
+      }
+    },
+    {
+      "id": "3.13",
+      "label_format": "[3.13]",
+      "latex": "F_{t}=1-\\left(1-\\frac{1}{2N}\\right)^{t}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b13"
+        ],
+        "source_bboxes": [
+          [
+            362,
+            793,
+            519,
+            850
+          ]
+        ]
+      },
+      "context": "ase $ F=F_{t-1} $). Putting these two possibilities together, the relationship between $ F_t $ and $ F_{t-1} $ is seen to be $$ F_{t}=\\frac{1}{2N}+\\left(1-\\frac{1}{2N}\\right)F_{t-1} $$ $$ \\begin{array}{ccc}t-1&\\bigcirc&\\bigcirc\\\\t&\\underbrace{\\bigcirc\\quad\\bigcirc}_{\\frac{1}{2N}}&\\underbrace{\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc\\quad\\bigcirc}_{\\quad1-\\frac{1}{2N}}\\ $ F=1)&(\\quad)&(F=F_{t-1})\\end{array} $$\nMultiplying both sides by -1 and then adding 1 to each side leads to $$ 1-F_{t}=1-\\frac{1}{2N}-\\left(1-\\frac{1}{2N}\\right)F_{t-1}=\\left(1-\\frac{1}{2N}\\right)\\left(1-F_{t-1}\\right) $$ and so $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ or, when $ F_{0}=0, $ $$ F_{t}=1-\\left(1-\\frac{1}{2N}\\right)^{t} $$\nFigure 3.11 shows the rapid increase of $ F_t $ in small populations. Even though the genotype frequencies in each individual subpopulation are in Hardy-Weinberg proportions, the frequency of homozygous genotypes in the overall population steadily increases. Conversely, as the frequency of homozygous genotypes increases, the frequency of heterozygous genotypes decreases until, when $ F_t = 1 $, there are no heterozygous genotypes left and all subpopulations are fixed for either A or a. At any time, the average frequency of heterozygous genotypes among the subpopulations, $ H_t $, relative to what it would be without population subdivision, $ H_0 $, ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 23,
+        "formula_bbox": [
+          362,
+          793,
+          519,
+          850
+        ],
+        "label_bbox": [
+          725,
+          823,
+          780,
+          846
+        ],
+        "api_label": "(3.13)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 13.0
+      },
+      "equation_number": "3.13",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b13"
+        ],
+        "source_bboxes": [
+          [
+            362,
+            793,
+            519,
+            850
+          ]
+        ],
+        "audit_evidence_sha256": "aa5b806e69deebbe5fb08da10a4eab9c149d07895c44850eab01a324a6afafd2"
+      }
+    },
+    {
+      "id": "3.14",
+      "label_format": "[3.14]",
+      "latex": "H_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}H_{0}\\approx H_{0}e^{-t/2N}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b14"
+        ],
+        "source_bboxes": [
+          [
+            304,
+            1135,
+            570,
+            1191
+          ]
+        ]
+      },
+      "context": "l subpopulation are in Hardy-Weinberg proportions, the frequency of homozygous genotypes in the overall population steadily increases. Conversely, as the frequency of homozygous genotypes increases, the frequency of heterozygous genotypes decreases until, when $ F_t = 1 $, there are no heterozygous genotypes left and all subpopulations are fixed for either A or a. At any time, the average frequency of heterozygous genotypes among the subpopulations, $ H_t $, relative to what it would be without population subdivision, $ H_0 $, decreases linearly in $ F_t $, hence we have $ H_t / H_0 = 1 - F_t $, or $ H_t = (1 - F_t) H_0 $. Solving Equation 3.13 for $ 1 - F_t $ and substituting, we obtain $$ H_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}H_{0}\\approx H_{0}e^{-t/2N} $$\nWe emphasize again that each individual subpopulation undergoes random drift and remains in approximate Hardy-Weinberg proportions, and that the symbol $ H_t $ represents a sort of “virtual heterozygosity” in which the frequency of heterozygous genotypes is averaged across many subpopulations. Equation 3.14 shows that pure random drift should result in the heterozygosity decreasing at a geometric rate, since $ H_t $ is multiplied by the constant $ [1 - 1/(2N)] $ each generation. Experimental tests of this prediction are shown in Figure 3.12. Figure 3.12A shows how the heterozygosity averaged across the subpopulations in Figu",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 23,
+        "formula_bbox": [
+          304,
+          1135,
+          570,
+          1191
+        ],
+        "label_bbox": [
+          723,
+          1161,
+          779,
+          1184
+        ],
+        "api_label": "[3.14]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 9.5
+      },
+      "equation_number": "3.14",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          131
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p023:b14"
+        ],
+        "source_bboxes": [
+          [
+            304,
+            1135,
+            570,
+            1191
+          ]
+        ],
+        "audit_evidence_sha256": "85ec8c562e8d06228d6e84369abded8a7673254b151b6ba5e4a5d257caa7544a"
+      }
+    },
+    {
+      "id": "3.15a",
+      "label_format": "[3.15a]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b7"
+        ],
+        "source_bboxes": [
+          [
+            414,
+            676,
+            747,
+            706
+          ]
+        ]
+      },
+      "context": "alleles in an individual in generation t are not identical by descent is $ 1 - F_t $. Because $ p_0 $ is the overall allele frequency of A, averaged across all subpopulations, the probability that a randomly chosen individual will be genotypically AA is $ p_0^2(1 - F_t) $ [for the case of nonidentity by descent] + $ p_0F_t $ [for the case of identity by descent], which equals $ p_0^2(1 - F_t) + p_0F_t $. Similarly, the probability that the individual will be Aa equals $ 2p_0q_0(1 - F_t) $, and likewise the probability that the individual will be aa equals $ p_0(1 - F_t) + q_0F_t $. To summarize, the average genotype frequencies among subpopulations at any time t have the expected values: $$ \\begin{array}{r l}{A A:p_{0}^{2}(1-F_{t})+p_{0}F_{t}}&{{}=p_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l r l}{A a\\colon2p_{0}q_{0}(1-F_{t})}&{{}}&{}&{{}=2p_{0}q_{0}-2p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l}{a a\\colon q_{0}^{2}(1-F_{t})+q_{0}F_{t}}&{{}=q_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ where $ q_{0}=1-p_{0} $ is the average frequency of a, averaged across all subpopulations.\nNote that, while each individual subpopulation maintains Hardy-Weinberg frequencies, the average genotypic frequencies in the total population are different because there is an excess of homozygotes and a deficiency of heterozygotes. Equation 3.13 implies that the average heterozygosity a",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          414,
+          676,
+          747,
+          706
+        ],
+        "label_bbox": [
+          851,
+          677,
+          916,
+          700
+        ],
+        "api_label": "(3.15a)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "3.15a",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b7"
+        ],
+        "source_bboxes": [
+          [
+            414,
+            676,
+            747,
+            706
+          ]
+        ],
+        "audit_evidence_sha256": "fd373d6b1fcd2c70b37c55e0aff81d54928fe2b2f7adf3935f59f3b910a43cad"
+      }
+    },
+    {
+      "id": "3.15b",
+      "label_format": "[3.15b]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b8"
+        ],
+        "source_bboxes": [
+          [
+            426,
+            711,
+            779,
+            740
+          ]
+        ]
+      },
+      "context": "is the overall allele frequency of A, averaged across all subpopulations, the probability that a randomly chosen individual will be genotypically AA is $ p_0^2(1 - F_t) $ [for the case of nonidentity by descent] + $ p_0F_t $ [for the case of identity by descent], which equals $ p_0^2(1 - F_t) + p_0F_t $. Similarly, the probability that the individual will be Aa equals $ 2p_0q_0(1 - F_t) $, and likewise the probability that the individual will be aa equals $ p_0(1 - F_t) + q_0F_t $. To summarize, the average genotype frequencies among subpopulations at any time t have the expected values: $$ \\begin{array}{r l}{A A:p_{0}^{2}(1-F_{t})+p_{0}F_{t}}&{{}=p_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l r l}{A a\\colon2p_{0}q_{0}(1-F_{t})}&{{}}&{}&{{}=2p_{0}q_{0}-2p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l}{a a\\colon q_{0}^{2}(1-F_{t})+q_{0}F_{t}}&{{}=q_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ where $ q_{0}=1-p_{0} $ is the average frequency of a, averaged across all subpopulations.\nNote that, while each individual subpopulation maintains Hardy-Weinberg frequencies, the average genotypic frequencies in the total population are different because there is an excess of homozygotes and a deficiency of heterozygotes. Equation 3.13 implies that the average heterozygosity among subpopulations at time $ t $ equals $ 2p_0q_0(1-F_t)=2p_0q_0[1-1/(2N)]^t $, and this is the theor",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          426,
+          711,
+          779,
+          740
+        ],
+        "label_bbox": [
+          852,
+          711,
+          915,
+          734
+        ],
+        "api_label": "(3.15b)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "3.15b",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b8"
+        ],
+        "source_bboxes": [
+          [
+            426,
+            711,
+            779,
+            740
+          ]
+        ],
+        "audit_evidence_sha256": "a59c5af1e624848db34f5ec8f1564cf418b81a070fdc253ef1bec7939c46e342"
+      }
+    },
+    {
+      "id": "3.15c",
+      "label_format": "[3.15c]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_008",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b9"
+        ],
+        "source_bboxes": [
+          [
+            431,
+            744,
+            747,
+            775
+          ]
+        ]
+      },
+      "context": "individual will be genotypically AA is $ p_0^2(1 - F_t) $ [for the case of nonidentity by descent] + $ p_0F_t $ [for the case of identity by descent], which equals $ p_0^2(1 - F_t) + p_0F_t $. Similarly, the probability that the individual will be Aa equals $ 2p_0q_0(1 - F_t) $, and likewise the probability that the individual will be aa equals $ p_0(1 - F_t) + q_0F_t $. To summarize, the average genotype frequencies among subpopulations at any time t have the expected values: $$ \\begin{array}{r l}{A A:p_{0}^{2}(1-F_{t})+p_{0}F_{t}}&{{}=p_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l r l}{A a\\colon2p_{0}q_{0}(1-F_{t})}&{{}}&{}&{{}=2p_{0}q_{0}-2p_{0}q_{0}F_{t}}\\end{array} $$ $$ \\begin{array}{r l}{a a\\colon q_{0}^{2}(1-F_{t})+q_{0}F_{t}}&{{}=q_{0}^{2}+p_{0}q_{0}F_{t}}\\end{array} $$ where $ q_{0}=1-p_{0} $ is the average frequency of a, averaged across all subpopulations.\nNote that, while each individual subpopulation maintains Hardy-Weinberg frequencies, the average genotypic frequencies in the total population are different because there is an excess of homozygotes and a deficiency of heterozygotes. Equation 3.13 implies that the average heterozygosity among subpopulations at time $ t $ equals $ 2p_0q_0(1-F_t)=2p_0q_0[1-1/(2N)]^t $, and this is the theoretical curve plotted in Figure 3.12A (with $ p_0=q_0=\\frac{1}{2} $). Additionally, the comment about the variance",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          431,
+          744,
+          747,
+          775
+        ],
+        "label_bbox": [
+          852,
+          746,
+          916,
+          768
+        ],
+        "api_label": "[3.15c]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "3.15c",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+      ],
+      "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION"
+        ],
+        "subsection": "3.4 RANDOM DRIFT IN A SUBDIVIDED POPULATION",
+        "source_pages": [
+          134
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p026:b9"
+        ],
+        "source_bboxes": [
+          [
+            431,
+            744,
+            747,
+            775
+          ]
+        ],
+        "audit_evidence_sha256": "fa72ec33ad361f7e385a143d999b3bf378f52ef388daca1c1ea9932c8a457958"
+      }
+    },
+    {
+      "id": "3.16",
+      "label_format": "[3.16]",
+      "latex": "1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-F_{1}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b17"
+        ],
+        "source_bboxes": [
+          [
+            460,
+            245,
+            687,
+            304
+          ]
+        ]
+      },
+      "context": "Correction for fluctuating population size is important because natural populations actually do change in size, sometimes by a factor of 10 or more in a single generation. For the sake of simplicity, assume that the population is ideal in all respects except that its size is not constant. We will consider the situation over just two generations. Suppose that the population sizes in two successive generations are $ N_{0} $ and $ N_{1} $. The arguments laid out in Figure 3.10 imply that $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent appro",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          460,
+          245,
+          687,
+          304
+        ],
+        "label_bbox": [
+          857,
+          240,
+          913,
+          263
+        ],
+        "api_label": "[3.16]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 23.0
+      },
+      "equation_number": "3.16",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b17"
+        ],
+        "source_bboxes": [
+          [
+            460,
+            245,
+            687,
+            304
+          ]
+        ],
+        "audit_evidence_sha256": "2dda45a1f36d77c4cb3f02780dc1c87f7def0d912f8d725789f98e854d1c0749"
+      }
+    },
+    {
+      "id": "3.17",
+      "label_format": "[3.17]",
+      "latex": "1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b18"
+        ],
+        "source_bboxes": [
+          [
+            461,
+            391,
+            688,
+            452
+          ]
+        ]
+      },
+      "context": "Correction for fluctuating population size is important because natural populations actually do change in size, sometimes by a factor of 10 or more in a single generation. For the sake of simplicity, assume that the population is ideal in all respects except that its size is not constant. We will consider the situation over just two generations. Suppose that the population sizes in two successive generations are $ N_{0} $ and $ N_{1} $. The arguments laid out in Figure 3.10 imply that $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent appro",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          461,
+          391,
+          688,
+          452
+        ],
+        "label_bbox": [
+          859,
+          433,
+          915,
+          456
+        ],
+        "api_label": "[3.17]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 23.0
+      },
+      "equation_number": "3.17",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b18"
+        ],
+        "source_bboxes": [
+          [
+            461,
+            391,
+            688,
+            452
+          ]
+        ],
+        "audit_evidence_sha256": "5b12f31293610cbee5f1f47c0dfdffae129b9387c05437852ce94a96507c20c3"
+      }
+    },
+    {
+      "id": "3.18",
+      "label_format": "[3.18]",
+      "latex": "1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b19"
+        ],
+        "source_bboxes": [
+          [
+            420,
+            506,
+            735,
+            568
+          ]
+        ]
+      },
+      "context": "Correction for fluctuating population size is important because natural populations actually do change in size, sometimes by a factor of 10 or more in a single generation. For the sake of simplicity, assume that the population is ideal in all respects except that its size is not constant. We will consider the situation over just two generations. Suppose that the population sizes in two successive generations are $ N_{0} $ and $ N_{1} $. The arguments laid out in Figure 3.10 imply that $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent appro",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          420,
+          506,
+          735,
+          568
+        ],
+        "label_bbox": [
+          860,
+          520,
+          915,
+          544
+        ],
+        "api_label": "[3.18]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "3.18",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b19"
+        ],
+        "source_bboxes": [
+          [
+            420,
+            506,
+            735,
+            568
+          ]
+        ],
+        "audit_evidence_sha256": "48c750bc6826a7acc38a06bad7ed4cf4c822fe79a5b32d4f4e9f08de5c4a3c20"
+      }
+    },
+    {
+      "id": "3.19",
+      "label_format": "[3.19]",
+      "latex": "1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b20"
+        ],
+        "source_bboxes": [
+          [
+            464,
+            633,
+            689,
+            689
+          ]
+        ]
+      },
+      "context": "icity, assume that the population is ideal in all respects except that its size is not constant. We will consider the situation over just two generations. Suppose that the population sizes in two successive generations are $ N_{0} $ and $ N_{1} $. The arguments laid out in Figure 3.10 imply that $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent approximation. In general, $$ \\frac{1}{N_{e}}=\\frac{1}{t}\\left(\\frac{1}{N_{0}}+\\frac{1}{N_{1}}+\\cdots+\\frac{1}{N_{t-1}}\\right) $$ and so the effective size $ N_{e} $ is the harmonic mean of the actu",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          464,
+          633,
+          689,
+          689
+        ],
+        "label_bbox": [
+          860,
+          641,
+          916,
+          665
+        ],
+        "api_label": "[3.19]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 8.0
+      },
+      "equation_number": "3.19",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b20"
+        ],
+        "source_bboxes": [
+          [
+            464,
+            633,
+            689,
+            689
+          ]
+        ],
+        "audit_evidence_sha256": "36c3862dde8af5a096515589cb319e5289d76d6a16f9ee22af906c0f2f453103"
+      }
+    },
+    {
+      "id": "3.2",
+      "label_format": "[3.2]",
+      "latex": "T_{ij}=\\binom{2N}{j}\\left(\\frac{i}{2N}\\right)^{j}\\left(\\frac{2N-i}{2N}\\right)^{2N-j}=\\frac{(2N)!}{j!(2N-j)!}p^{j}q^{2N-j}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_003",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+        ],
+        "source_pages": [
+          116
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p008:b7"
+        ],
+        "source_bboxes": [
+          [
+            305,
+            828,
+            756,
+            889
+          ]
+        ]
+      },
+      "context": "e jump. To use an example from Figure 3.4, if 2N = 32, then the chance of drifting from 30 copies of gene A to 29 copies in one generation is 0.186, whereas the chance of drifting to 27 copies is 0.033. The probability of the population drifting from a state having i copies to j copies of allele A is known as the transition probability. The transition probability for the Wright-Fisher model is obtained directly from the binomial distribution (see Equation 3.1). In particular, if a population has i copies of allele A and 2N - i copies of allele a, then the transition probability, $ T_{ij} $, of going from i copies of A to j copies of A in one generation of random genetic drift is given by $$ T_{ij}=\\binom{2N}{j}\\left(\\frac{i}{2N}\\right)^{j}\\left(\\frac{2N-i}{2N}\\right)^{2N-j}=\\frac{(2N)!}{j!(2N-j)!}p^{j}q^{2N-j} $$ where $p = i/2N$ is the initial allele frequency of $A$ and $q = (2N - i)/2N$ is the initial allele frequency of $a$.\nThe transition probabilities can be put in a square matrix T, with elements $ T_{ij} $ giving the transition probability from state i to state j for i, $ j = 0, 1, 2, \\ldots, 2N $. The matrix T contains everything that is needed to predict the expected distribution of populations like those in Figure 3.4 over a series of generations. This type of model, expressed in terms of discrete states with fixed probabilities of going from one state to another, is",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 8,
+        "formula_bbox": [
+          305,
+          828,
+          756,
+          889
+        ],
+        "label_bbox": [
+          863,
+          843,
+          905,
+          866
+        ],
+        "api_label": "[3.2]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "3.2",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+      ],
+      "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+        ],
+        "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+        "source_pages": [
+          116
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p008:b7"
+        ],
+        "source_bboxes": [
+          [
+            305,
+            828,
+            756,
+            889
+          ]
+        ],
+        "audit_evidence_sha256": "e12c9149cec19fdf70c45dd46620fba5c856d018aa27b67b31618ec69b5145d4"
+      }
+    },
+    {
+      "id": "3.20",
+      "label_format": "[3.20]",
+      "latex": "1-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b21"
+        ],
+        "source_bboxes": [
+          [
+            462,
+            739,
+            692,
+            798
+          ]
+        ]
+      },
+      "context": "e population sizes in two successive generations are $ N_{0} $ and $ N_{1} $. The arguments laid out in Figure 3.10 imply that $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent approximation. In general, $$ \\frac{1}{N_{e}}=\\frac{1}{t}\\left(\\frac{1}{N_{0}}+\\frac{1}{N_{1}}+\\cdots+\\frac{1}{N_{t-1}}\\right) $$ and so the effective size $ N_{e} $ is the harmonic mean of the actual numbers—the reciprocal of the average of the reciprocals. As illustrated in the problem below, the harmonic mean tends to be dominated by the smallest terms. In biolog",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          462,
+          739,
+          692,
+          798
+        ],
+        "label_bbox": [
+          861,
+          761,
+          916,
+          785
+        ],
+        "api_label": "[3.20]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "3.20",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b21"
+        ],
+        "source_bboxes": [
+          [
+            462,
+            739,
+            692,
+            798
+          ]
+        ],
+        "audit_evidence_sha256": "c5394cfb7b37a3d19609b2ce449753217b77ca5e9ce4abfbf885d908c4e1c5ff"
+      }
+    },
+    {
+      "id": "3.21",
+      "label_format": "[3.21]",
+      "latex": "right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b22"
+        ],
+        "source_bboxes": [
+          [
+            443,
+            843,
+            715,
+            903
+          ]
+        ]
+      },
+      "context": "frac{1}{2N_{1}}\\right)\\binom{1-F_{1}}{.} $$ and $$ 1-F_{1}=\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nSubstituting from the second equation into the first leads to $$ 1-F_{2}=\\left(1-\\frac{1}{2N_{1}}\\right)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent approximation. In general, $$ \\frac{1}{N_{e}}=\\frac{1}{t}\\left(\\frac{1}{N_{0}}+\\frac{1}{N_{1}}+\\cdots+\\frac{1}{N_{t-1}}\\right) $$ and so the effective size $ N_{e} $ is the harmonic mean of the actual numbers—the reciprocal of the average of the reciprocals. As illustrated in the problem below, the harmonic mean tends to be dominated by the smallest terms. In biological reality, this means that a single period of small population size, called a bottleneck, can result in a serious loss in heterozygosity. Popula",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          443,
+          843,
+          715,
+          903
+        ],
+        "label_bbox": [
+          862,
+          860,
+          917,
+          883
+        ],
+        "api_label": "(3.21)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "3.21",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b22"
+        ],
+        "source_bboxes": [
+          [
+            443,
+            843,
+            715,
+            903
+          ]
+        ],
+        "audit_evidence_sha256": "6890336eb5f47ef98f140daad2c5aaabf5b95b59fa5739eae2560e27f59293d2"
+      }
+    },
+    {
+      "id": "3.22",
+      "label_format": "[3.22]",
+      "latex": "right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_010",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Fluctuation in Population Size",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b23"
+        ],
+        "source_bboxes": [
+          [
+            449,
+            953,
+            705,
+            1012
+          ]
+        ]
+      },
+      "context": "ht)\\left(1-\\frac{1}{2N_{0}}\\right)\\left(1-F_{0}\\right) $$\nBy analogy with the constant N case, it is appropriate to try to express this equation in the general form $$ 1-F_{t}=\\left(1-\\frac{1}{2N}\\right)^{t}\\left(1-F_{0}\\right) $$ where N is now the effective population size, usually symbolized as $ N_{e} $. In our example t = 2, so $$ \\dot{1}-F_{2}=\\left(1-\\frac{1}{2N}\\right)^{2}\\left(1-F_{0}\\right) $$\nSetting the two expressions for $1 - F_{2}$ equal to each other, we obtain $$ \\left(1-\\frac{1}{2N}\\right)^{2}=\\left(1-\\frac{1}{2N_{_{0}}}\\right)\\left(1-\\frac{1}{2N_{_{1}}}\\right) $$ from which $ 1/N = \\frac{1}{2}(1/N_{0} + 1/N_{1}) $ turns out to be an excellent approximation. In general, $$ \\frac{1}{N_{e}}=\\frac{1}{t}\\left(\\frac{1}{N_{0}}+\\frac{1}{N_{1}}+\\cdots+\\frac{1}{N_{t-1}}\\right) $$ and so the effective size $ N_{e} $ is the harmonic mean of the actual numbers—the reciprocal of the average of the reciprocals. As illustrated in the problem below, the harmonic mean tends to be dominated by the smallest terms. In biological reality, this means that a single period of small population size, called a bottleneck, can result in a serious loss in heterozygosity. Population bottlenecks are thought to account for the very low levels of polymorphism found in extant populations of the elephant seal (Bonnell and Selander 1974) and the cheetah (O'Brien et al. 1985, 1987). A severe popu",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 28,
+        "formula_bbox": [
+          449,
+          953,
+          705,
+          1012
+        ],
+        "label_bbox": [
+          863,
+          978,
+          918,
+          1001
+        ],
+        "api_label": "[3.22]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.0
+      },
+      "equation_number": "3.22",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Fluctuation in Population Size"
+      ],
+      "subsection": "Fluctuation in Population Size",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Fluctuation in Population Size"
+        ],
+        "subsection": "Fluctuation in Population Size",
+        "source_pages": [
+          136
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p028:b23"
+        ],
+        "source_bboxes": [
+          [
+            449,
+            953,
+            705,
+            1012
+          ]
+        ],
+        "audit_evidence_sha256": "3bdf36c1d450a40e746fc85a2d368e6141f6bf10f510dbdb9f17924a00a10b65"
+      }
+    },
+    {
+      "id": "3.23",
+      "label_format": "[3.23]",
+      "latex": "N_{a}=N_{m}+N_{f}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          137
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p029:b10"
+        ],
+        "source_bboxes": [
+          [
+            384,
+            1169,
+            510,
+            1200
+          ]
+        ]
+      },
+      "context": "io from equality will enhance the opportunity for random genetic drift. This situation is important in wildlife management, where, for many game animals (pheasants and deer come immediately to mind), the legal bag limit for males is much larger than for females. Although some management goals are served by such hunting regulations (for example, the species involved are usually polygamous, so one male can fertilize many females and overall actual population size can be maintained), it must be remembered that the resultant inequality in sex ratio reduces the effective population size. Specifically, if a sexual population consists of $ N_{m} $ males and $ N_{f} $ females, the actual size is $$ N_{a}=N_{m}+N_{f} $$\nHowever, the effective population size is $$ N_{e}=\\frac{4N_{m}N_{f}}{N_{m}+N_{f}} $$\nFigure 3.13 shows the relationship between sex ratio and the reduction in effective population size. To take a realistic example, if hunting is permitted to a level at which the number of surviving males is one-tenth the number of females, then the effective population size is a mere one-third of the actual number of individuals in the population. A related problem is the effective population size for an X-linked gene, in which case $ \\frac{2}{3} $ of the X chromosomes in any generation come from females in the previous generation and $ \\frac{1}{3} $ come from males. The variance effect",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 29,
+        "formula_bbox": [
+          384,
+          1169,
+          510,
+          1200
+        ],
+        "label_bbox": [
+          728,
+          1171,
+          784,
+          1194
+        ],
+        "api_label": "[3.23]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.0
+      },
+      "equation_number": "3.23",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          137
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p029:b10"
+        ],
+        "source_bboxes": [
+          [
+            384,
+            1169,
+            510,
+            1200
+          ]
+        ],
+        "audit_evidence_sha256": "be6573b1847a4a915e0ce7c2a310dac32029ddf64010b4be23e567de2596e28a"
+      }
+    },
+    {
+      "id": "3.24",
+      "label_format": "[3.24]",
+      "latex": "N_{e}=\\frac{4N_{m}N_{f}}{N_{m}+N_{f}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          138
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p030:b10"
+        ],
+        "source_bboxes": [
+          [
+            517,
+            742,
+            641,
+            803
+          ]
+        ]
+      },
+      "context": "rift. This situation is important in wildlife management, where, for many game animals (pheasants and deer come immediately to mind), the legal bag limit for males is much larger than for females. Although some management goals are served by such hunting regulations (for example, the species involved are usually polygamous, so one male can fertilize many females and overall actual population size can be maintained), it must be remembered that the resultant inequality in sex ratio reduces the effective population size. Specifically, if a sexual population consists of $ N_{m} $ males and $ N_{f} $ females, the actual size is $$ N_{a}=N_{m}+N_{f} $$\nHowever, the effective population size is $$ N_{e}=\\frac{4N_{m}N_{f}}{N_{m}+N_{f}} $$\nFigure 3.13 shows the relationship between sex ratio and the reduction in effective population size. To take a realistic example, if hunting is permitted to a level at which the number of surviving males is one-tenth the number of females, then the effective population size is a mere one-third of the actual number of individuals in the population. A related problem is the effective population size for an X-linked gene, in which case $ \\frac{2}{3} $ of the X chromosomes in any generation come from females in the previous generation and $ \\frac{1}{3} $ come from males. The variance effective population size for an X-linked gene is $$ N_{e}=\\frac{9N_{m}N",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 30,
+        "formula_bbox": [
+          517,
+          742,
+          641,
+          803
+        ],
+        "label_bbox": [
+          865,
+          754,
+          920,
+          777
+        ],
+        "api_label": "[3.24]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.0
+      },
+      "equation_number": "3.24",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          138
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p030:b10"
+        ],
+        "source_bboxes": [
+          [
+            517,
+            742,
+            641,
+            803
+          ]
+        ],
+        "audit_evidence_sha256": "b9f0f745144ced219d3f6473db09d3a8755add4725245191b81b2c2a44eb8f96"
+      }
+    },
+    {
+      "id": "3.25",
+      "label_format": "[3.25]",
+      "latex": "N_{e}=\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          138
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p030:b11"
+        ],
+        "source_bboxes": [
+          [
+            507,
+            1029,
+            651,
+            1089
+          ]
+        ]
+      },
+      "context": "ulation size is $$ N_{e}=\\frac{4N_{m}N_{f}}{N_{m}+N_{f}} $$\nFigure 3.13 shows the relationship between sex ratio and the reduction in effective population size. To take a realistic example, if hunting is permitted to a level at which the number of surviving males is one-tenth the number of females, then the effective population size is a mere one-third of the actual number of individuals in the population. A related problem is the effective population size for an X-linked gene, in which case $ \\frac{2}{3} $ of the X chromosomes in any generation come from females in the previous generation and $ \\frac{1}{3} $ come from males. The variance effective population size for an X-linked gene is $$ N_{e}=\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}} $$\nEquation 3.25 can be justified by noting that the sampling variance for the X chromosomes from males is $ p_{m}q_{m}/N_{m} $, whereas the sampling variance for X chromosomes from females is $ p_{f}q_{f}/2N_{f} $, in which $ p_{m} $ and $ p_{f} $ are the frequencies of allele A in males and females, respectively. The frequency of an A-bearing X chromosome in the population is $$ p=\\frac{1}{3}p_{m}+\\frac{2}{3}p_{f} $$ Now we use the fact that, if $a$ and $b$ are constants and $X$ and $Y$ are independent random variables, then $Var(aX + bY) = a^2Var(X) + b^2Var(Y)$. In this case $a = \\frac{1}{3}$, $b = \\frac{2}{3}$, and the variances of $p_m$ and $p_f$",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 30,
+        "formula_bbox": [
+          507,
+          1029,
+          651,
+          1089
+        ],
+        "label_bbox": [
+          866,
+          1034,
+          921,
+          1058
+        ],
+        "api_label": "[3.25]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 13.0
+      },
+      "equation_number": "3.25",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          138
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p030:b11"
+        ],
+        "source_bboxes": [
+          [
+            507,
+            1029,
+            651,
+            1089
+          ]
+        ],
+        "audit_evidence_sha256": "c0230e0fde03303cb5f049282b39c8dbcd2108a5fb1b8b81e1ad9f32f5a86ceb"
+      }
+    },
+    {
+      "id": "3.26",
+      "label_format": "[3.26]",
+      "latex": "p=\\frac{1}{3}p_{m}+\\frac{2}{3}p_{f}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b12"
+        ],
+        "source_bboxes": [
+          [
+            379,
+            182,
+            513,
+            223
+          ]
+        ]
+      },
+      "context": "lem is the effective population size for an X-linked gene, in which case $ \\frac{2}{3} $ of the X chromosomes in any generation come from females in the previous generation and $ \\frac{1}{3} $ come from males. The variance effective population size for an X-linked gene is $$ N_{e}=\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}} $$\nEquation 3.25 can be justified by noting that the sampling variance for the X chromosomes from males is $ p_{m}q_{m}/N_{m} $, whereas the sampling variance for X chromosomes from females is $ p_{f}q_{f}/2N_{f} $, in which $ p_{m} $ and $ p_{f} $ are the frequencies of allele A in males and females, respectively. The frequency of an A-bearing X chromosome in the population is $$ p=\\frac{1}{3}p_{m}+\\frac{2}{3}p_{f} $$ Now we use the fact that, if $a$ and $b$ are constants and $X$ and $Y$ are independent random variables, then $Var(aX + bY) = a^2Var(X) + b^2Var(Y)$. In this case $a = \\frac{1}{3}$, $b = \\frac{2}{3}$, and the variances of $p_m$ and $p_f$ are the binomial variances, and so $$ Var\\left(p\\right)=\\frac{1}{9}\\left(\\frac{p_{m}q_{m}}{N_{m}}\\right)+\\frac{4}{9}\\left(\\frac{p_{f}q_{f}}{2N_{f}}\\right) $$\nAt steady state, $ p_{m} = p_{f} = p $ and $ q_{m} = q_{f} = q $. Making these substitutions and factoring $ pq $ results in $$ Var\\left(p\\right)=pq\\left(\\frac{1}{9}\\frac{1}{N_{m}}+\\frac{4}{9}\\frac{1}{2N_{f}}\\right)=\\frac{pq}{2\\left[\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 31,
+        "formula_bbox": [
+          379,
+          182,
+          513,
+          223
+        ],
+        "label_bbox": [
+          728,
+          187,
+          784,
+          210
+        ],
+        "api_label": "[3.26]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "3.26",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b12"
+        ],
+        "source_bboxes": [
+          [
+            379,
+            182,
+            513,
+            223
+          ]
+        ],
+        "audit_evidence_sha256": "f3c5081d6ad6018a1b922ca1ad028de7c5af7d13102a0ed26565c3776c2036bd"
+      }
+    },
+    {
+      "id": "3.27",
+      "label_format": "[3.27]",
+      "latex": "Var\\left(p\\right)=\\frac{1}{9}\\left(\\frac{p_{m}q_{m}}{N_{m}}\\right)+\\frac{4}{9}\\left(\\frac{p_{f}q_{f}}{2N_{f}}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b13"
+        ],
+        "source_bboxes": [
+          [
+            315,
+            320,
+            576,
+            385
+          ]
+        ]
+      },
+      "context": " $$\nEquation 3.25 can be justified by noting that the sampling variance for the X chromosomes from males is $ p_{m}q_{m}/N_{m} $, whereas the sampling variance for X chromosomes from females is $ p_{f}q_{f}/2N_{f} $, in which $ p_{m} $ and $ p_{f} $ are the frequencies of allele A in males and females, respectively. The frequency of an A-bearing X chromosome in the population is $$ p=\\frac{1}{3}p_{m}+\\frac{2}{3}p_{f} $$ Now we use the fact that, if $a$ and $b$ are constants and $X$ and $Y$ are independent random variables, then $Var(aX + bY) = a^2Var(X) + b^2Var(Y)$. In this case $a = \\frac{1}{3}$, $b = \\frac{2}{3}$, and the variances of $p_m$ and $p_f$ are the binomial variances, and so $$ Var\\left(p\\right)=\\frac{1}{9}\\left(\\frac{p_{m}q_{m}}{N_{m}}\\right)+\\frac{4}{9}\\left(\\frac{p_{f}q_{f}}{2N_{f}}\\right) $$\nAt steady state, $ p_{m} = p_{f} = p $ and $ q_{m} = q_{f} = q $. Making these substitutions and factoring $ pq $ results in $$ Var\\left(p\\right)=pq\\left(\\frac{1}{9}\\frac{1}{N_{m}}+\\frac{4}{9}\\frac{1}{2N_{f}}\\right)=\\frac{pq}{2\\left[\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}}\\right]} $$\nThe term in the square brackets corresponds to the $ N_{e} $ in Equation 3.25. It shows why this is a variance effective size: The binomial sampling variance in an ideal population is $ pq/(2N_{e}) $.\nPROBLEM 3.8 What is the effective population size for mitochondrial DNA? (Assume transmission is excl",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 31,
+        "formula_bbox": [
+          315,
+          320,
+          576,
+          385
+        ],
+        "label_bbox": [
+          729,
+          344,
+          784,
+          369
+        ],
+        "api_label": "[3.27]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "3.27",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b13"
+        ],
+        "source_bboxes": [
+          [
+            315,
+            320,
+            576,
+            385
+          ]
+        ],
+        "audit_evidence_sha256": "154c6b6a8a51010345fd64766b0e88d8004f83f135e4937bcabff9ad39cfa956"
+      }
+    },
+    {
+      "id": "3.28",
+      "label_format": "[3.28]",
+      "latex": "Var\\left(p\\right)=pq\\left(\\frac{1}{9}\\frac{1}{N_{m}}+\\frac{4}{9}\\frac{1}{2N_{f}}\\right)=\\frac{pq}{2\\left[\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}}\\right]}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_011",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b14"
+        ],
+        "source_bboxes": [
+          [
+            250,
+            448,
+            639,
+            544
+          ]
+        ]
+      },
+      "context": "$ are the frequencies of allele A in males and females, respectively. The frequency of an A-bearing X chromosome in the population is $$ p=\\frac{1}{3}p_{m}+\\frac{2}{3}p_{f} $$ Now we use the fact that, if $a$ and $b$ are constants and $X$ and $Y$ are independent random variables, then $Var(aX + bY) = a^2Var(X) + b^2Var(Y)$. In this case $a = \\frac{1}{3}$, $b = \\frac{2}{3}$, and the variances of $p_m$ and $p_f$ are the binomial variances, and so $$ Var\\left(p\\right)=\\frac{1}{9}\\left(\\frac{p_{m}q_{m}}{N_{m}}\\right)+\\frac{4}{9}\\left(\\frac{p_{f}q_{f}}{2N_{f}}\\right) $$\nAt steady state, $ p_{m} = p_{f} = p $ and $ q_{m} = q_{f} = q $. Making these substitutions and factoring $ pq $ results in $$ Var\\left(p\\right)=pq\\left(\\frac{1}{9}\\frac{1}{N_{m}}+\\frac{4}{9}\\frac{1}{2N_{f}}\\right)=\\frac{pq}{2\\left[\\frac{9N_{m}N_{f}}{4N_{m}+2N_{f}}\\right]} $$\nThe term in the square brackets corresponds to the $ N_{e} $ in Equation 3.25. It shows why this is a variance effective size: The binomial sampling variance in an ideal population is $ pq/(2N_{e}) $.\nPROBLEM 3.8 What is the effective population size for mitochondrial DNA? (Assume transmission is exclusively from mothers to all offspring.) What is the effective population size for a gene on the Y chromosome, given that the population consists of N diploid individuals and is in all respects a theoretically ideal population? (Assume XX individual",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 31,
+        "formula_bbox": [
+          250,
+          448,
+          639,
+          544
+        ],
+        "label_bbox": [
+          728,
+          479,
+          783,
+          502
+        ],
+        "api_label": "[3.28]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.5
+      },
+      "equation_number": "3.28",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+      ],
+      "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes"
+        ],
+        "subsection": "Unequal Sex Ratio, Sex Chromosomes, Organelle Genes",
+        "source_pages": [
+          139
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p031:b14"
+        ],
+        "source_bboxes": [
+          [
+            250,
+            448,
+            639,
+            544
+          ]
+        ],
+        "audit_evidence_sha256": "82e32f2f306f367f651db01a9b8a2634f109ca753e9569db3fd35ae64d0b6476"
+      }
+    },
+    {
+      "id": "3.29",
+      "label_format": "[3.29]",
+      "latex": "right)^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_012",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Variance in Offspring Number",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "source_pages": [
+          140
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p032:b8"
+        ],
+        "source_bboxes": [
+          [
+            435,
+            680,
+            735,
+            742
+          ]
+        ]
+      },
+      "context": "r of progeny is usually unrealistic because, in real organisms, breeding individuals can manifest large differences in their number of progeny. A more realistic model is one in which there are N individuals in the population and in which the ith individual (i = 1, 2,..., N) produces $ n_i $ offspring. In this situation, the effective size of the population is defined as the reciprocal of the probability P that two randomly chosen gametes in the next generation come from the same parent in the previous generation (Crow and Kimura 1970). We will denote the mean and variance of the distribution of offspring number as $ \\xi $ (Greek xi) and $ \\sigma^2 $, respectively. With these definitions, $$ \\xi=\\frac{\\sum n_{1}}{N}\\quad\\text{and}\\quad\\sigma^{2}=\\frac{\\sum n_{1}}{N}-\\left(\\frac{\\sum n_{1}}{N}\\right)^{2} $$\nThe probability P that two randomly chosen gametes come from the same parent is given by $$ \\begin{aligned}P=&\\frac{\\Sigma\\binom{n_{i}}{2}}{\\binom{N\\xi}{2}}=\\frac{\\sum n_{i}(n_{i}-1)}{N\\xi(N\\xi-1)}=\\frac{\\sum n_{i}^{2}-\\sum n_{i}}{N\\xi(N\\xi-1)}\\\\。\\end{aligned} $$\nThe rationale for Equation 3.30 is that the numerator is the number of ways that two randomly chosen alleles can be present in offspring from the same parent, and the denominator is the number of ways that two randomly chosen alleles can have any parents. Substitution of Equation 3.29 into Equation 3.30 and a little r",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 32,
+        "formula_bbox": [
+          435,
+          680,
+          735,
+          742
+        ],
+        "label_bbox": [
+          873,
+          696,
+          928,
+          720
+        ],
+        "api_label": "[3.29]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "3.29",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Variance in Offspring Number"
+      ],
+      "subsection": "Variance in Offspring Number",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "subsection": "Variance in Offspring Number",
+        "source_pages": [
+          140
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p032:b8"
+        ],
+        "source_bboxes": [
+          [
+            435,
+            680,
+            735,
+            742
+          ]
+        ],
+        "audit_evidence_sha256": "df14429c2e61eb9011212074e3e0ae6f0eff2927e7e26c051eff39b053d785b6"
+      }
+    },
+    {
+      "id": "3.3",
+      "label_format": "[3.3]",
+      "latex": "T_{ii}=\\frac{i^{2}+(2N-i)^{2}}{(2N)^{2}}=p^{2}+q^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_003",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+        ],
+        "source_pages": [
+          118
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p010:b11"
+        ],
+        "source_bboxes": [
+          [
+            525,
+            570,
+            766,
+            629
+          ]
+        ]
+      },
+      "context": " process begins by sampling two individuals at random. The sampling is carried out \"with replacement,\" so the same individual could be chosen twice. If the two sampled individuals are different, pick one of them at random to produce a single offspring, and return the parent and the offspring to the population; discard the other individual. If the two sampled individuals are the same, then return only the offspring to the population. In the Moran model, if a population of 2N haploid individuals contains i of type A and 2N - i of type a, then the only nonzero transition probabilities are $ T_{ij} $ with $ j = i - 1 $, $ j = i $, or $ j = i + 1 $. These transition probabilities are given by $$ T_{ii}=\\frac{i^{2}+(2N-i)^{2}}{(2N)^{2}}=p^{2}+q^{2} $$ $$ T_{ij}=\\frac{i(2N-i)}{(2N)^{2}}=pq\\ for j=i+1or j=i-1 $$\nCalculate the transition probabilities in the Moran model for the examples in Problem 3.2.\nANSWER Applying Equation 3.3 to the case $ p = \\frac{4}{8} $, we obtain $ T_{34} = 0.25 $, $ T_{44} = 0.50 $, $ T_{45} = 0.25 $, and for the case $ p = \\frac{2}{8} $ we obtain $ T_{34} = 0.1875 $, $ T_{44} = 0.6250 $, $ T_{45} = 0.1875 $. Unlike the Wright-Fisher model, the transition probabilities, for either keeping the same number of alleles or else for increasing or decreasing by exactly 1, sum to 1.\nBoth the Wright-Fisher model and the Moran model incorporate an important feature of ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 10,
+        "formula_bbox": [
+          525,
+          570,
+          766,
+          629
+        ],
+        "label_bbox": [
+          868,
+          611,
+          911,
+          634
+        ],
+        "api_label": "[3.3]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 23.0
+      },
+      "equation_number": "3.3",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+      ],
+      "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT"
+        ],
+        "subsection": "3.2 THE WRIGHT-FISHER MODEL OF RANDOM GENETIC DRIFT",
+        "source_pages": [
+          118
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p010:b11"
+        ],
+        "source_bboxes": [
+          [
+            525,
+            570,
+            766,
+            629
+          ]
+        ],
+        "audit_evidence_sha256": "1abcc52c4166ba72a1e8503284bd2749afe566329c07553353ca3c8b6acb36ae"
+      }
+    },
+    {
+      "id": "3.30",
+      "label_format": "[3.30]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_012",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Variance in Offspring Number",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "source_pages": [
+          140
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p032:b9"
+        ],
+        "source_bboxes": [
+          [
+            398,
+            828,
+            753,
+            949
+          ]
+        ]
+      },
+      "context": " the population and in which the ith individual (i = 1, 2,..., N) produces $ n_i $ offspring. In this situation, the effective size of the population is defined as the reciprocal of the probability P that two randomly chosen gametes in the next generation come from the same parent in the previous generation (Crow and Kimura 1970). We will denote the mean and variance of the distribution of offspring number as $ \\xi $ (Greek xi) and $ \\sigma^2 $, respectively. With these definitions, $$ \\xi=\\frac{\\sum n_{1}}{N}\\quad\\text{and}\\quad\\sigma^{2}=\\frac{\\sum n_{1}}{N}-\\left(\\frac{\\sum n_{1}}{N}\\right)^{2} $$\nThe probability P that two randomly chosen gametes come from the same parent is given by $$ \\begin{aligned}P=&\\frac{\\Sigma\\binom{n_{i}}{2}}{\\binom{N\\xi}{2}}=\\frac{\\sum n_{i}(n_{i}-1)}{N\\xi(N\\xi-1)}=\\frac{\\sum n_{i}^{2}-\\sum n_{i}}{N\\xi(N\\xi-1)}\\\\。\\end{aligned} $$\nThe rationale for Equation 3.30 is that the numerator is the number of ways that two randomly chosen alleles can be present in offspring from the same parent, and the denominator is the number of ways that two randomly chosen alleles can have any parents. Substitution of Equation 3.29 into Equation 3.30 and a little rearrangement yields $$ P=\\frac{(\\sigma^{2}/\\xi)+(\\xi-1)}{N-1} $$ But since $ N_{e}=1/P $ by definition, we can write $$ N_{e}=\\frac{N-1}{(\\sigma^{2}/\\xi)+(\\xi-1)} $$ and so, when $ \\xi = 1 $, $ N_e $ is approx",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 32,
+        "formula_bbox": [
+          398,
+          828,
+          753,
+          949
+        ],
+        "label_bbox": [
+          873,
+          881,
+          928,
+          904
+        ],
+        "api_label": "(3.30)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "3.30",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Variance in Offspring Number"
+      ],
+      "subsection": "Variance in Offspring Number",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "subsection": "Variance in Offspring Number",
+        "source_pages": [
+          140
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p032:b9"
+        ],
+        "source_bboxes": [
+          [
+            398,
+            828,
+            753,
+            949
+          ]
+        ],
+        "audit_evidence_sha256": "9d826e9feb734dbe248094a3dcd59b51dad72cff14df07cf7b3f47ce2f245280"
+      }
+    },
+    {
+      "id": "3.31",
+      "label_format": "[3.31]",
+      "latex": "N_{e}=\\frac{N-1}{(\\sigma^{2}/\\xi)+(\\xi-1)}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_012",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Variance in Offspring Number",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "source_pages": [
+          141
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p033:b10"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            217,
+            533,
+            271
+          ]
+        ]
+      },
+      "context": " probability P that two randomly chosen gametes come from the same parent is given by $$ \\begin{aligned}P=&\\frac{\\Sigma\\binom{n_{i}}{2}}{\\binom{N\\xi}{2}}=\\frac{\\sum n_{i}(n_{i}-1)}{N\\xi(N\\xi-1)}=\\frac{\\sum n_{i}^{2}-\\sum n_{i}}{N\\xi(N\\xi-1)}\\\\。\\end{aligned} $$\nThe rationale for Equation 3.30 is that the numerator is the number of ways that two randomly chosen alleles can be present in offspring from the same parent, and the denominator is the number of ways that two randomly chosen alleles can have any parents. Substitution of Equation 3.29 into Equation 3.30 and a little rearrangement yields $$ P=\\frac{(\\sigma^{2}/\\xi)+(\\xi-1)}{N-1} $$ But since $ N_{e}=1/P $ by definition, we can write $$ N_{e}=\\frac{N-1}{(\\sigma^{2}/\\xi)+(\\xi-1)} $$ and so, when $ \\xi = 1 $, $ N_e $ is approximately equal to $ N/\\sigma^2 $. Therefore, a large variance in offspring number reduces the effective population size by a factor of $ 1/\\sigma^2 $, thereby speeding up the process of random genetic drift. The flip side of this principle suggests a management strategy for endangered species: Loss of genetic variation can be reduced when the variance in offspring number is minimized, because if $ \\sigma^2 $ is smaller than 1, the effective population size can be larger than the actual population size.\nVariance in offspring number can have a large effect on random genetic drift, as can be seen in particul",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 33,
+        "formula_bbox": [
+          351,
+          217,
+          533,
+          271
+        ],
+        "label_bbox": [
+          728,
+          230,
+          784,
+          254
+        ],
+        "api_label": "[3.31]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.0
+      },
+      "equation_number": "3.31",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Variance in Offspring Number"
+      ],
+      "subsection": "Variance in Offspring Number",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Variance in Offspring Number"
+        ],
+        "subsection": "Variance in Offspring Number",
+        "source_pages": [
+          141
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p033:b10"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            217,
+            533,
+            271
+          ]
+        ],
+        "audit_evidence_sha256": "3090a913f9bde35aef21cacd50290b7df6cbf8b848469120d0ebf0749a5a43a3"
+      }
+    },
+    {
+      "id": "3.32",
+      "label_format": "[3.32]",
+      "latex": "N_{e}=N D\\left(1+\\frac{1}{4N m}\\right)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_013",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Effective Size of a Subdivided Population",
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Effective Size of a Subdivided Population"
+        ],
+        "source_pages": [
+          141
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p033:b11"
+        ],
+        "source_bboxes": [
+          [
+            348,
+            960,
+            523,
+            1011
+          ]
+        ]
+      },
+      "context": "nsisting of N diploid individuals, with migration among demes measured by a quantity m equal to the probability that a randomly chosen allele in any deme originates from one of the remaining D−1 demes. The population subdivision creates a situation in which two levels of random drift take place simultaneously. There is a drift process within each deme, which takes place relatively rapidly, and another drift process in the population as a whole, which takes place more slowly. Since the mathematics is somewhat rough going (Wakeley 1999, 2000), we shall present only the main result, which is that, when D is reasonably large, the effective population size of the entire population is given by $$ N_{e}=N D\\left(1+\\frac{1}{4N m}\\right) $$\nIn this equation, the factor ND comes from the within-deme phase of the random genetic drift, and the factor $ 1 + 1/(4Nm) $ comes from the among-deme phase. An interesting and important feature of the model is that, unless $ 4Nm $ is very large, the effective population size ($ N_e $) is larger than the actual population size (ND). This seeming paradox results from the population subdivision. When there are many demes connected by low rates of migration, then even if one knew which allele in some deme is destined ultimately to become the common ancestor of all alleles in the population at some future time, the process by which this lucky allele spre",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 33,
+        "formula_bbox": [
+          348,
+          960,
+          523,
+          1011
+        ],
+        "label_bbox": [
+          722,
+          976,
+          778,
+          1000
+        ],
+        "api_label": "[3.32]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "3.32",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.5 EFFECTIVE POPULATION SIZE",
+        "Effective Size of a Subdivided Population"
+      ],
+      "subsection": "Effective Size of a Subdivided Population",
+      "audit_provenance": {
+        "heading_path": [
+          "3.5 EFFECTIVE POPULATION SIZE",
+          "Effective Size of a Subdivided Population"
+        ],
+        "subsection": "Effective Size of a Subdivided Population",
+        "source_pages": [
+          141
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p033:b11"
+        ],
+        "source_bboxes": [
+          [
+            348,
+            960,
+            523,
+            1011
+          ]
+        ],
+        "audit_evidence_sha256": "bf67bbab4191bba08c900152a00411e51e4bb83148671ffb7f2495d7bd3a22c0"
+      }
+    },
+    {
+      "id": "3.33",
+      "label_format": "[3.33]",
+      "latex": "binom{k}{2}}{2N}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          144
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p036:b9"
+        ],
+        "source_bboxes": [
+          [
+            440,
+            724,
+            690,
+            784
+          ]
+        ]
+      },
+      "context": "try of two alleles. The probability that the two alleles came from the same allele in the previous generation is $ \\frac{1}{(2N)} $ (in a diploid population of size N), so the chance that they came from two distinct alleles the previous generation is $ 1 - \\frac{1}{(2N)} $. Similarly, the probability that three alleles in any generation originate from three distinct ancestral alleles in the previous generation is Pr(alleles 1 and 2 have distinct ancestors)Pr(allele 3 has a different ancestor from those of allele 1 and allele 2) = $ \\frac{1}{1 - \\frac{1}{(2N)}} $[1 - $ \\frac{1}{2} $(2N)]. In general, the probability that k alleles had k distinct parental alleles the previous generation is $$ \\Pr(\\stackrel{i}{k})=\\prod_{i=1}^{k-1}\\left(1-\\frac{i}{2N}\\right)\\approx1-\\frac{(k)}{2N} $$\nIn each generation the sampling process occurs independently of what happened before, and so the probability that k alleles had k distinct parental alleles two generations ago is the square of the right-hand side of Equation 3.33. Consider two alleles again. Suppose we wish to know the probability that the common ancestor of these two alleles occurred exactly $ t + 1 $ generations ago. In this case there must have been no coalescence (i.e., two distinct ancestral lineages exist) for t generations, and then, in the next preceding generation, a coalescence occurred. The chance of two alleles not coalesc",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 36,
+        "formula_bbox": [
+          440,
+          724,
+          690,
+          784
+        ],
+        "label_bbox": [
+          850,
+          740,
+          905,
+          763
+        ],
+        "api_label": "[3.33]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 2.5
+      },
+      "equation_number": "3.33",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          144
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p036:b9"
+        ],
+        "source_bboxes": [
+          [
+            440,
+            724,
+            690,
+            784
+          ]
+        ],
+        "audit_evidence_sha256": "bf878e1cf45d80082f38266399f7451908b25bcff3cb79a1241d0722e72b3aec"
+      }
+    },
+    {
+      "id": "3.34",
+      "label_format": "[3.34]",
+      "latex": "=\\frac{1}{2N}\\left[1-\\left(\\frac{1}{2N}\\right)\\right]^{t}\\approx\\frac{1}{2N}e^{-t/(2N)}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          144
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p036:b10"
+        ],
+        "source_bboxes": [
+          [
+            432,
+            1081,
+            703,
+            1140
+          ]
+        ]
+      },
+      "context": "arental alleles two generations ago is the square of the right-hand side of Equation 3.33. Consider two alleles again. Suppose we wish to know the probability that the common ancestor of these two alleles occurred exactly $ t + 1 $ generations ago. In this case there must have been no coalescence (i.e., two distinct ancestral lineages exist) for t generations, and then, in the next preceding generation, a coalescence occurred. The chance of two alleles not coalescing for t generations is $ [1 - 1/(2N)]^t $, and the chance that they coalesce in the next generation is $ 1/(2N) $. The desired probability is the product of these or\nPr (two alleles had common ancestor $ t+1 $ generations ago) $$ =\\frac{1}{2N}\\left[1-\\left(\\frac{1}{2N}\\right)\\right]^{t}\\approx\\frac{1}{2N}e^{-t/(2N)} $$\nThe exponential is an approximation that is quite good when $ 1/(2N) $ is small. This distribution has a mean of 2N generations and a variance of $ 4N^{2} $. Note that the confidence interval around the mean time is not very tight, since the standard deviation of the distribution (2N) is equal to the mean.\nReturning to our sample of k alleles, the probability that the k alleles do not coalesce for t generations, and then one pair coalesces to give k - 1 alleles at $ t + 1 $ generations ago is as follows: $$ \\begin{aligned}&=\\Pr\\left(k\\right)^{\\mathrm{t}}\\left[1-\\Pr(k)\\right]\\\\&\\approx\\frac{\\binom{k}{2}",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 36,
+        "formula_bbox": [
+          432,
+          1081,
+          703,
+          1140
+        ],
+        "label_bbox": [
+          851,
+          1081,
+          906,
+          1103
+        ],
+        "api_label": "{3.34}",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 18.5
+      },
+      "equation_number": "3.34",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          144
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p036:b10"
+        ],
+        "source_bboxes": [
+          [
+            432,
+            1081,
+            703,
+            1140
+          ]
+        ],
+        "audit_evidence_sha256": "83822eb7527ed7bd0877fcb0dbe68a4b6ba4489145d7ca872fc1ad0a012c9587"
+      }
+    },
+    {
+      "id": "3.35",
+      "label_format": "[3.35]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          145
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p037:b9"
+        ],
+        "source_bboxes": [
+          [
+            372,
+            264,
+            539,
+            362
+          ]
+        ]
+      },
+      "context": "lity is the product of these or\nPr (two alleles had common ancestor $ t+1 $ generations ago) $$ =\\frac{1}{2N}\\left[1-\\left(\\frac{1}{2N}\\right)\\right]^{t}\\approx\\frac{1}{2N}e^{-t/(2N)} $$\nThe exponential is an approximation that is quite good when $ 1/(2N) $ is small. This distribution has a mean of 2N generations and a variance of $ 4N^{2} $. Note that the confidence interval around the mean time is not very tight, since the standard deviation of the distribution (2N) is equal to the mean.\nReturning to our sample of k alleles, the probability that the k alleles do not coalesce for t generations, and then one pair coalesces to give k - 1 alleles at $ t + 1 $ generations ago is as follows: $$ \\begin{aligned}&=\\Pr\\left(k\\right)^{\\mathrm{t}}\\left[1-\\Pr(k)\\right]\\\\&\\approx\\frac{\\binom{k}{2}}{2\\mathrm{N}}\\exp\\left[-\\frac{\\binom{k}{2}}{2\\mathrm{N}}t\\right]\\\\ \\end{aligned} $$\nThis approximation is valid if $ k \\ll N $ (that is, if the sample size is much smaller than the population size, which is usually the case). The distribution in Equation 3.35 has a mean and variance given by $$ Mean=\\frac{4N}{k(k-1)}generations\\quad Variance=\\frac{16N^{2}}{\\left[k(k-1)\\right]^{2}}generations^{2} $$\nFelsenstein, in his book Inferring Phylogenies (2004), gives a wonderful bugs-in-a-box analogy for the coalescent process that makes it simple and memorable, and we quote it with his permission.\nWe can",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 37,
+        "formula_bbox": [
+          372,
+          264,
+          539,
+          362
+        ],
+        "label_bbox": [
+          738,
+          307,
+          795,
+          329
+        ],
+        "api_label": "[3.35]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "3.35",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          145
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p037:b9"
+        ],
+        "source_bboxes": [
+          [
+            372,
+            264,
+            539,
+            362
+          ]
+        ],
+        "audit_evidence_sha256": "e01686c9f259e2d6ccce06ccdab34dfc245ed4c36345c1fac1dda3aba124244b"
+      }
+    },
+    {
+      "id": "3.36",
+      "label_format": "[3.36]",
+      "latex": "Mean=\\frac{4N}{k(k-1)}generations\\quad Variance=\\frac{16N^{2}}{\\left[k(k-1)\\right]^{2}}generations^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          145
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p037:b3"
+        ],
+        "source_bboxes": [
+          [
+            179,
+            455,
+            730,
+            521
+          ]
+        ]
+      },
+      "context": "n time is not very tight, since the standard deviation of the distribution (2N) is equal to the mean.\nReturning to our sample of k alleles, the probability that the k alleles do not coalesce for t generations, and then one pair coalesces to give k - 1 alleles at $ t + 1 $ generations ago is as follows: $$ \\begin{aligned}&=\\Pr\\left(k\\right)^{\\mathrm{t}}\\left[1-\\Pr(k)\\right]\\\\&\\approx\\frac{\\binom{k}{2}}{2\\mathrm{N}}\\exp\\left[-\\frac{\\binom{k}{2}}{2\\mathrm{N}}t\\right]\\\\ \\end{aligned} $$\nThis approximation is valid if $ k \\ll N $ (that is, if the sample size is much smaller than the population size, which is usually the case). The distribution in Equation 3.35 has a mean and variance given by $$ Mean=\\frac{4N}{k(k-1)}generations\\quad Variance=\\frac{16N^{2}}{\\left[k(k-1)\\right]^{2}}generations^{2} $$\nFelsenstein, in his book Inferring Phylogenies (2004), gives a wonderful bugs-in-a-box analogy for the coalescent process that makes it simple and memorable, and we quote it with his permission.\nWe can make a physical analogy (if a somewhat fanciful one) by considering a box containing hyperactive, indiscriminate, voracious, and insatiable bugs. We put k bugs into the box. They run about without paying any attention to where they are going. Occasionally two bugs collide. When they do, one instantly eats the other. Being insatiable, it then resumes running as quickly as before. It is obvi",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 37,
+        "formula_bbox": [
+          179,
+          455,
+          730,
+          521
+        ],
+        "label_bbox": [
+          737,
+          477,
+          793,
+          500
+        ],
+        "api_label": "[3.36]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "3.36",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          145
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p037:b3"
+        ],
+        "source_bboxes": [
+          [
+            179,
+            455,
+            730,
+            521
+          ]
+        ],
+        "audit_evidence_sha256": "59c40a8fe5babf3f638cbd72997d149da4d02e561460923450249356afdf5d9f"
+      }
+    },
+    {
+      "id": "3.37",
+      "label_format": "[3.37]",
+      "latex": "t=4N(1-1/k)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          146
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p038:b11",
+          "PopGen_chapter3:p038:b8"
+        ],
+        "source_bboxes": [
+          [
+            947.0,
+            1228.0,
+            1005.0,
+            1250.0
+          ],
+          [
+            553.0,
+            1227.0,
+            707.0,
+            1251.0
+          ]
+        ]
+      },
+      "context": "t times become longer as one goes back farther in time, and the last coalescent time (from 2 alleles to 1) is the longest. This pattern is typical of coalescence in a population of constant size. Quantitatively, it requires a fraction $ (1 - 1/n)/(1 - 1/k) $ of the total time for the last $ n $ of $ k $ alleles in a sample to coalesce (Felsenstein 2004). From this relationship it is easy to see that, if $ k $ is reasonably large (say, $ k \\geq 10 $), almost half the time is required to coalesce the last two alleles $ (n = 2) $.\nFor a sample of k alleles, the time to the coalescence of all of the alleles (i.e., the most recent time that the sample of k alleles shared a common ancestor) is $$ t=4N(1-1/k) $$ with variance $$ V=4N^{2}\\prod_{i=2}^{k}\\frac{1}{\\binom{i}{2}^{2}} $$\n(Kingman 1982a,b; Tajima 1983). As the sample size $ k $ increases toward the total population size, $ t $ approaches 4N, which equals the expected time to fixation for a newly arisen neutral mutation that is destined to be fixed.\nWhat is the probability that the most recent common ancestor of the sample (i.e., the allele to which all the lineages coalesce) to be also the most recent common ancestor of all the alleles in the entire population? The answer is given by the ratio $ (k-1)/(k+2) $ (Rosenberg and Nordborg 2002). This probability is surprisingly large even for relatively small values of k. For examp",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 38,
+        "formula_bbox": [
+          497,
+          1105,
+          640,
+          1130
+        ],
+        "label_bbox": [
+          853,
+          1106,
+          908,
+          1128
+        ],
+        "api_label": "[3.37]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "3.37",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          146
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p038:b11",
+          "PopGen_chapter3:p038:b8"
+        ],
+        "source_bboxes": [
+          [
+            947.0,
+            1228.0,
+            1005.0,
+            1250.0
+          ],
+          [
+            553.0,
+            1227.0,
+            707.0,
+            1251.0
+          ]
+        ],
+        "audit_evidence_sha256": "83e6f7ab6c1c57e52664cc3a6ffa14707085e5f3d658bc19948d6f6f0c3e11c6"
+      }
+    },
+    {
+      "id": "3.38",
+      "label_format": "[3.38]",
+      "latex": "V=4N^{2}\\prod_{i=2}^{k}\\frac{1}{\\binom{i}{2}^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_014",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "source_pages": [
+          146
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p038:b12"
+        ],
+        "source_bboxes": [
+          [
+            496,
+            1173,
+            640,
+            1231
+          ]
+        ]
+      },
+      "context": "s back farther in time, and the last coalescent time (from 2 alleles to 1) is the longest. This pattern is typical of coalescence in a population of constant size. Quantitatively, it requires a fraction $ (1 - 1/n)/(1 - 1/k) $ of the total time for the last $ n $ of $ k $ alleles in a sample to coalesce (Felsenstein 2004). From this relationship it is easy to see that, if $ k $ is reasonably large (say, $ k \\geq 10 $), almost half the time is required to coalesce the last two alleles $ (n = 2) $.\nFor a sample of k alleles, the time to the coalescence of all of the alleles (i.e., the most recent time that the sample of k alleles shared a common ancestor) is $$ t=4N(1-1/k) $$ with variance $$ V=4N^{2}\\prod_{i=2}^{k}\\frac{1}{\\binom{i}{2}^{2}} $$\n(Kingman 1982a,b; Tajima 1983). As the sample size $ k $ increases toward the total population size, $ t $ approaches 4N, which equals the expected time to fixation for a newly arisen neutral mutation that is destined to be fixed.\nWhat is the probability that the most recent common ancestor of the sample (i.e., the allele to which all the lineages coalesce) to be also the most recent common ancestor of all the alleles in the entire population? The answer is given by the ratio $ (k-1)/(k+2) $ (Rosenberg and Nordborg 2002). This probability is surprisingly large even for relatively small values of k. For example, for k = 5 it is already 67%,",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 38,
+        "formula_bbox": [
+          496,
+          1173,
+          640,
+          1231
+        ],
+        "label_bbox": [
+          853,
+          1187,
+          908,
+          1210
+        ],
+        "api_label": "[3.38]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.5
+      },
+      "equation_number": "3.38",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.6 GENE TREES AND COALESCENCE"
+      ],
+      "subsection": "3.6 GENE TREES AND COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.6 GENE TREES AND COALESCENCE"
+        ],
+        "subsection": "3.6 GENE TREES AND COALESCENCE",
+        "source_pages": [
+          146
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p038:b12"
+        ],
+        "source_bboxes": [
+          [
+            496,
+            1173,
+            640,
+            1231
+          ]
+        ],
+        "audit_evidence_sha256": "56044532317ae2a36739ab574a505000e3287ce6b0c9089506de866717d278e0"
+      }
+    },
+    {
+      "id": "3.39",
+      "label_format": "[3.39]",
+      "latex": "L=\\sum_{G}\\Pr\\left\\{D\\mid G,\\mu\\right\\}\\Pr\\left\\{G,\\alpha\\right\\}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_017",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Coalescent Models with Mutation",
+        "heading_path": [
+          "3.6 GENE TREES AND COALESCENCE",
+          "Coalescent Models with Mutation"
+        ],
+        "source_pages": [
+          150
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p042:b10"
+        ],
+        "source_bboxes": [
+          [
+            444,
+            896,
+            696,
+            942
+          ]
+        ]
+      },
+      "context": "d out in the laboratory with viruses or microbes in which a sample of genomes is isolated and preserved by freezing at intervals during the process. In other contexts when we want to make inferences about a single sample, we simulate a large number of genealogies consistent with the composition of the sample and then make inferences based on the relative likelihoods of these genealogies: To put the method more formally, what we are interested in is maximizing the likelihood L of observing the actual data D (typically DNA sequences) across all possible genealogies, given some model of mutation and population processes (Rosenberg and Nordborg 2002; Felsenstein 2004). Formally, we can write $$ L=\\sum_{G}\\Pr\\left\\{D\\mid G,\\mu\\right\\}\\Pr\\left\\{G,\\alpha\\right\\} $$ where G represents any particular genealogy, $ \\mu $ is the set of parameters that define the mutation model, and $ \\alpha $ is the set of parameters that characterize the population process (i.e., population size, growth rate, number of demes, migration rate, and so forth).\nEquation 3.39 is usually intractable analytically, and therefore simulation of many thousands of random genealogies is carried out instead. In order to simulate the genealogies and sequences of alleles in a sample, we need to specify some type of mutation model. One widely used model is known as the infinite-sites model, in which each allele is consider",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 42,
+        "formula_bbox": [
+          444,
+          896,
+          696,
+          942
+        ],
+        "label_bbox": [
+          855,
+          908,
+          914,
+          932
+        ],
+        "api_label": "[3.39]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "3.39",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.6 GENE TREES AND COALESCENCE",
+        "Coalescent Models with Mutation"
+      ],
+      "subsection": "Coalescent Models with Mutation",
+      "audit_provenance": {
+        "heading_path": [
+          "3.6 GENE TREES AND COALESCENCE",
+          "Coalescent Models with Mutation"
+        ],
+        "subsection": "Coalescent Models with Mutation",
+        "source_pages": [
+          150
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p042:b10"
+        ],
+        "source_bboxes": [
+          [
+            444,
+            896,
+            696,
+            942
+          ]
+        ],
+        "audit_evidence_sha256": "774b26945dc08b903ceef35ecff13be84afe95a165e32ba11e6629d515e5dccf"
+      }
+    },
+    {
+      "id": "3.4",
+      "label_format": "[3.4]",
+      "latex": "partial x^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_005",
+        "chapter": "PopGen_chapter3",
+        "subsection": "An Approach Looking Forward",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "source_pages": [
+          121
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p013:b11"
+        ],
+        "source_bboxes": [
+          [
+            221,
+            1108,
+            650,
+            1168
+          ]
+        ]
+      },
+      "context": "lta t $). On the right-hand side, the first term is the change in $ M\\phi $ ($ \\Delta M\\phi $) for a given change in $ x $ ($ \\Delta x $), and the second term is the change in the change in $ V\\phi $ ($ \\Delta V\\phi $) for a two-step change in $ x $ ($ \\Delta x $). In symbols, the difference equation can be written as $$ \\frac{\\Delta\\phi(p,x;t)}{\\Delta t}=-\\frac{\\Delta\\left[M(x)\\phi(p,x;t)\\right]}{\\Delta x}+\\frac{1}{2}\\frac{\\Delta\\left\\{\\Delta\\left[V(x)\\phi(p,x;t)\\right]\\right\\}}{\\Delta(\\Delta x)} $$\nAt this point we can take the limit as $ \\Delta t \\to 0 $ and $ \\Delta x \\to 0 $ (as we also overlook a number of technical details) to obtain what us called the Kolmogorov forward equation: $$ \\frac{\\partial\\phi(p,x;t)}{\\partial t}=-\\frac{\\partial\\left[M(x)\\phi(p,x;t)\\right]}{\\partial x}+\\frac{1}{2}\\frac{\\partial^{2}\\left[V(x)\\phi(p,x;t)\\right]}{\\partial x^{2}} $$ This is a $ \\frac{1}{2} $ $ \\frac{1}{2} $ $ \\frac{1}{2} $ $ \\frac{1}{2} $ $ 2\n$ M(x) $ or $ V(x) $ in terms that have any relation to population genetics. The function $ M(x) $ is a symbol for the change in allele frequency that occurs in one generation due to any systematic force such as mutation, migration, or selection. The function $ V(x) $ also has a straightforward biological interpretation; $ V(x) $ is the variance in allele frequency after one generation of binomial sampling of 2N alleles according to Equation 3.",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 13,
+        "formula_bbox": [
+          221,
+          1108,
+          650,
+          1168
+        ],
+        "label_bbox": [
+          732,
+          1128,
+          776,
+          1151
+        ],
+        "api_label": "[3.4]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "3.4",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Forward"
+      ],
+      "subsection": "An Approach Looking Forward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Forward"
+        ],
+        "subsection": "An Approach Looking Forward",
+        "source_pages": [
+          121
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p013:b11"
+        ],
+        "source_bboxes": [
+          [
+            221,
+            1108,
+            650,
+            1168
+          ]
+        ],
+        "audit_evidence_sha256": "fe2b985c09f43ef6f545c01fc7c06a676a8e96d6084f3b9476e512d8c9a9cffa"
+      }
+    },
+    {
+      "id": "3.40",
+      "label_format": "[3.40]",
+      "latex": "E(T)=E\\left(\\sum_{i=2}^{k}iT_{i}\\right)=\\sum_{i=2}^{k}iE(T_{i})=\\sum_{i=2}^{k}i\\frac{4N}{i(i-1)}=4N\\sum_{i=1}^{k-1}\\frac{1}{i}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_019",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b11"
+        ],
+        "source_bboxes": [
+          [
+            225,
+            248,
+            668,
+            314
+          ]
+        ]
+      },
+      "context": "The coalescent approach can be used to derive many fundamental principles in population genetics. For example, Equation 3.36 defines the expected length of each interval $ T_{k} $ in a coalescent tree (see also Figure 3.15), and so the expected sum of the branch lengths $ E(T) $ for the entire tree is given by $$ E(T)=E\\left(\\sum_{i=2}^{k}iT_{i}\\right)=\\sum_{i=2}^{k}iE(T_{i})=\\sum_{i=2}^{k}i\\frac{4N}{i(i-1)}=4N\\sum_{i=1}^{k-1}\\frac{1}{i} $$\nThe expected number of segregating sites, $ E(S) $, in a set of aligned DNA sequences is equal to the product of the mutation rate and the expected length of all the branches in the coalescent tree, or $ \\mu E(T) $. The expected number of segregating sites in a sample of k aligned sequences is therefore obtained from Equation 3.40 as $$ E(S)=\\mu E(T)=4N\\mu\\sum_{i=1}^{k-1}\\frac{1}{i}=\\theta\\sum_{i=1}^{k-1}\\frac{1}{i} $$ where $ \\theta = 4N\\mu $. This is the expected number of segregating sites in the infinite-sites model, which we shall discuss again in Chapter 4 in a different context. Note that $ \\mu $ is not the mutation rate per nucleotide site; rather it is the mutation rate across the entire length of the DNA sequence. As another example of the theoretical utility of the coalescent approach, consider a sample of alleles taken from population presently in equilibrium between mutation and random genetic drift, which means that new mutatio",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 45,
+        "formula_bbox": [
+          225,
+          248,
+          668,
+          314
+        ],
+        "label_bbox": [
+          733,
+          278,
+          788,
+          301
+        ],
+        "api_label": "[3.40]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 8.5
+      },
+      "equation_number": "3.40",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+      ],
+      "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b11"
+        ],
+        "source_bboxes": [
+          [
+            225,
+            248,
+            668,
+            314
+          ]
+        ],
+        "audit_evidence_sha256": "b39fe22c4a800b52746c268e74d7b80b81635f38c05546082880622ffb400392"
+      }
+    },
+    {
+      "id": "3.41",
+      "label_format": "[3.41]",
+      "latex": "E(S)=\\mu E(T)=4N\\mu\\sum_{i=1}^{k-1}\\frac{1}{i}=\\theta\\sum_{i=1}^{k-1}\\frac{1}{i}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_019",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b12"
+        ],
+        "source_bboxes": [
+          [
+            298,
+            456,
+            593,
+            515
+          ]
+        ]
+      },
+      "context": "ion genetics. For example, Equation 3.36 defines the expected length of each interval $ T_{k} $ in a coalescent tree (see also Figure 3.15), and so the expected sum of the branch lengths $ E(T) $ for the entire tree is given by $$ E(T)=E\\left(\\sum_{i=2}^{k}iT_{i}\\right)=\\sum_{i=2}^{k}iE(T_{i})=\\sum_{i=2}^{k}i\\frac{4N}{i(i-1)}=4N\\sum_{i=1}^{k-1}\\frac{1}{i} $$\nThe expected number of segregating sites, $ E(S) $, in a set of aligned DNA sequences is equal to the product of the mutation rate and the expected length of all the branches in the coalescent tree, or $ \\mu E(T) $. The expected number of segregating sites in a sample of k aligned sequences is therefore obtained from Equation 3.40 as $$ E(S)=\\mu E(T)=4N\\mu\\sum_{i=1}^{k-1}\\frac{1}{i}=\\theta\\sum_{i=1}^{k-1}\\frac{1}{i} $$ where $ \\theta = 4N\\mu $. This is the expected number of segregating sites in the infinite-sites model, which we shall discuss again in Chapter 4 in a different context. Note that $ \\mu $ is not the mutation rate per nucleotide site; rather it is the mutation rate across the entire length of the DNA sequence. As another example of the theoretical utility of the coalescent approach, consider a sample of alleles taken from population presently in equilibrium between mutation and random genetic drift, which means that new mutations in each generation occur at the same rate as old mutations are lost due to random",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 45,
+        "formula_bbox": [
+          298,
+          456,
+          593,
+          515
+        ],
+        "label_bbox": [
+          730,
+          475,
+          786,
+          498
+        ],
+        "api_label": "[3.41]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "3.41",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+      ],
+      "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b12"
+        ],
+        "source_bboxes": [
+          [
+            298,
+            456,
+            593,
+            515
+          ]
+        ],
+        "audit_evidence_sha256": "2a6a51966a2298bf02c5daa58cc624ffd5ca9bef74d6a84b93bca8d860f08a9d"
+      }
+    },
+    {
+      "id": "3.42",
+      "label_format": "[3.42]",
+      "latex": "F=\\frac{\\frac{1}{2N}}{\\frac{1}{2N}+2\\mu}=\\frac{1}{1+\\theta}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_019",
+        "chapter": "PopGen_chapter3",
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b13"
+        ],
+        "source_bboxes": [
+          [
+            345,
+            900,
+            543,
+            996
+          ]
+        ]
+      },
+      "context": "m between mutation and random genetic drift, which means that new mutations in each generation occur at the same rate as old mutations are lost due to random drift. Tracing any pair of alleles back to the previous generation, the pair of alleles could either coalesce, with probability 1/(2N), or failing to coalesce, one or the other allele could have undergone mutation with probability 2μ. (The factor 2 is necessary because either of the alleles could mutate.) These are the only two events that affect allele identity by descent, and the sum of their probabilities is 1/(2N) + 2μ. The probability of identity by descent (F) is therefore the fraction of the time that the alleles coalesce, or $$ F=\\frac{\\frac{1}{2N}}{\\frac{1}{2N}+2\\mu}=\\frac{1}{1+\\theta} $$\nThis expression will also be derived again in Chapter 4 using different methods.\nCoalescent methods are not limited to the consideration of the Wright-Fisher model. If one can develop a recursion equation for probabilities of recombination, migration, or other such phenomena in the context of a gene tree, then often powerful insights can be derived from coalescence approaches. For our purposes, suffice it to say that the method can generate classical results, often with much less difficulty, and as we have seen in the previous section, the coalescent approach is especially well suited to making infer- ences about samples drawn fr",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 45,
+        "formula_bbox": [
+          345,
+          900,
+          543,
+          996
+        ],
+        "label_bbox": [
+          724,
+          946,
+          779,
+          968
+        ],
+        "api_label": "[3.42]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 9.0
+      },
+      "equation_number": "3.42",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "RANDOM GENETIC DRIFT: Introduction",
+        "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+      ],
+      "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+      "audit_provenance": {
+        "heading_path": [
+          "RANDOM GENETIC DRIFT: Introduction",
+          "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE"
+        ],
+        "subsection": "3.7 THEORETICAL IMPLICATIONS OF COALESCENCE",
+        "source_pages": [
+          153
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p045:b13"
+        ],
+        "source_bboxes": [
+          [
+            345,
+            900,
+            543,
+            996
+          ]
+        ],
+        "audit_evidence_sha256": "6e6a34d1ac5853fa66c0ab0cd3c5655b60292100394084861d9f91d6fafb7d89"
+      }
+    },
+    {
+      "id": "3.5",
+      "label_format": "[3.5]",
+      "latex": "partial p^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_006",
+        "chapter": "PopGen_chapter3",
+        "subsection": "An Approach Looking Backward",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "source_pages": [
+          124
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p016:b11"
+        ],
+        "source_bboxes": [
+          [
+            381,
+            1134,
+            756,
+            1191
+          ]
+        ]
+      },
+      "context": "he change in $ \\phi $ ($ M\\Delta\\phi $) for a given change in $ p $ ($ \\Delta p $), and the second term is $ V(p) $ times the change in the change in $ \\phi $ ($ V\\Delta\\Delta\\phi $) for a two-step change in $ p $ ($ \\Delta\\Delta p $). In these terms, the difference equation can be written as $$ \\frac{\\Delta\\phi(p,x;t)}{\\Delta t}=M(p)\\frac{\\Delta\\phi(p,x;t)}{\\Delta p}+\\frac{V(p)}{2}\\frac{\\Delta\\left(\\Delta\\phi(p,x;t)\\right)}{\\Delta(\\Delta p)} $$\nOnce again we will ignore some technical requirements and simply assert that, in the limit as $ \\Delta t \\to 0 $ and $ \\Delta p \\to 0 $, the difference equation converges to a partial differential equation called the Kolmogorov backward equation: $$ \\frac{\\partial\\phi(p,x;t)}{\\partial t}=M(p)\\frac{\\partial\\phi(p,x;t)}{\\partial p}+\\frac{V(p)}{2}\\frac{\\partial^{2}\\phi(p,x;t)}{\\partial p^{2}} $$\nFor answering questions of population genetic interest in random drift, the Kolmogorov backward equation (see Equation 3.5) is often more useful\n[[SEE_TABLE:3.2]] than the forward equation (see Equation 3.4). The quantities of interest include the probability of ultimate fixation of an allele, the average time to fixation of alleles that are eventually fixed, and so forth. To give a sense of how the backward equation is used for these purposes, imagine the form of Equation 3.5 at a time so advanced that the distribution of allele frequencies $ \\phi",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 16,
+        "formula_bbox": [
+          381,
+          1134,
+          756,
+          1191
+        ],
+        "label_bbox": [
+          875,
+          1155,
+          918,
+          1178
+        ],
+        "api_label": "[3.5]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "3.5",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Backward"
+      ],
+      "subsection": "An Approach Looking Backward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "subsection": "An Approach Looking Backward",
+        "source_pages": [
+          124
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p016:b11"
+        ],
+        "source_bboxes": [
+          [
+            381,
+            1134,
+            756,
+            1191
+          ]
+        ],
+        "audit_evidence_sha256": "da34b5ee605b7af62d2c0d87b1302b21a59c1c9e3874b1a4852aee92d2821ae6"
+      }
+    },
+    {
+      "id": "3.6",
+      "label_format": "[3.6]",
+      "latex": "0=M(p)\\frac{d u(p)}{d p}+\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_006",
+        "chapter": "PopGen_chapter3",
+        "subsection": "An Approach Looking Backward",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b9"
+        ],
+        "source_bboxes": [
+          [
+            333,
+            864,
+            579,
+            920
+          ]
+        ]
+      },
+      "context": "on 3.5 at a time so advanced that the distribution of allele frequencies $ \\phi(p, x; t) $ is no longer changing. Since random drift will continue to change the allele frequencies as long as any subpopulations are still polymorphic, the statement that $ \\phi(p, x; t) $ is no longer changing means that all subpopulations have become fixed for one allele or the other, which furthermore implies that the left-hand side of Equation 3.5 equals 0 and that the right-hand side no longer depends on either x (because no populations are still segregating) or t. To emphasize that we are now dealing with a function of a single variable, population geneticists often rewrite this form of Equation 3.5 as $$ 0=M(p)\\frac{d u(p)}{d p}+\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}} $$\nIn this equation, the symbol $d$ is used instead of $\\partial$ to emphasize that $u(p)$ is a function of a single variable. In words, $u(p)$ is the probability of ultimate fixation of the allele $A$, given an initial frequency of $p$. Alternatively, $u(p)$ may be interpreted as the proportion of all subpopulations in which $A$ eventually becomes fixed. In the case of pure random drift with no systematic force, $M(p) = 0$. Equation 3.6 then becomes $$ 0=\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}} $$\nThis equation defines a family of curves, but the one of interest in population genetics has the property $ u(0) = 0 $, which says t",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 17,
+        "formula_bbox": [
+          333,
+          864,
+          579,
+          920
+        ],
+        "label_bbox": [
+          735,
+          887,
+          778,
+          909
+        ],
+        "api_label": "[3.6]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.0
+      },
+      "equation_number": "3.6",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Backward"
+      ],
+      "subsection": "An Approach Looking Backward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "subsection": "An Approach Looking Backward",
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b9"
+        ],
+        "source_bboxes": [
+          [
+            333,
+            864,
+            579,
+            920
+          ]
+        ],
+        "audit_evidence_sha256": "4d4ea334c149fdd0d4e014b41dd2c42ce9cce26e38b8ed92b48e09f29b62114d"
+      }
+    },
+    {
+      "id": "3.7",
+      "label_format": "[3.7]",
+      "latex": "0=\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_006",
+        "chapter": "PopGen_chapter3",
+        "subsection": "An Approach Looking Backward",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b10"
+        ],
+        "source_bboxes": [
+          [
+            373,
+            1083,
+            508,
+            1140
+          ]
+        ]
+      },
+      "context": "ons are still segregating) or t. To emphasize that we are now dealing with a function of a single variable, population geneticists often rewrite this form of Equation 3.5 as $$ 0=M(p)\\frac{d u(p)}{d p}+\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}} $$\nIn this equation, the symbol $d$ is used instead of $\\partial$ to emphasize that $u(p)$ is a function of a single variable. In words, $u(p)$ is the probability of ultimate fixation of the allele $A$, given an initial frequency of $p$. Alternatively, $u(p)$ may be interpreted as the proportion of all subpopulations in which $A$ eventually becomes fixed. In the case of pure random drift with no systematic force, $M(p) = 0$. Equation 3.6 then becomes $$ 0=\\frac{V(p)}{2}\\frac{d^{2}u(p)}{d p^{2}} $$\nThis equation defines a family of curves, but the one of interest in population genetics has the property $ u(0) = 0 $, which says that an allele that does not exist cannot be fixed, and the property $ u(1) = 1 $, which says that an allele that is already fixed is eventually fixed.\nPROBLEM 3.5 For an initial frequency of the A allele of $p$ ($0 < p < 1$), show that $u(p) = p$ is a solution of the differential equation (see Equation 3.7).\nANSWER What needs to be shown is that Equation 3.7 is satisfied when $ u(p) = p $. Although $ V(p) = p(1 - p)/2N $, this is not relevant to the solution. The solution follows from the fact that, when $ u(p) = p $,",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 17,
+        "formula_bbox": [
+          373,
+          1083,
+          508,
+          1140
+        ],
+        "label_bbox": [
+          730,
+          1109,
+          774,
+          1132
+        ],
+        "api_label": "[3.7]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 9.0
+      },
+      "equation_number": "3.7",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "An Approach Looking Backward"
+      ],
+      "subsection": "An Approach Looking Backward",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "An Approach Looking Backward"
+        ],
+        "subsection": "An Approach Looking Backward",
+        "source_pages": [
+          125
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p017:b10"
+        ],
+        "source_bboxes": [
+          [
+            373,
+            1083,
+            508,
+            1140
+          ]
+        ],
+        "audit_evidence_sha256": "a244bb52eddffdefe6844b60300681eb5744e7872b96c6b0782208f84ab1af16"
+      }
+    },
+    {
+      "id": "3.8",
+      "label_format": "[3.8]",
+      "latex": "ln(1-p)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_007",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Absorption Time and Time to Fixation",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b15"
+        ],
+        "source_bboxes": [
+          [
+            454,
+            773,
+            702,
+            829
+          ]
+        ]
+      },
+      "context": "For a selectively neutral allele, as indicated in Problem 3.5, the probability of ultimate fixation is equal to its initial allele frequency. Many other important results also follow from an analysis of the Kolmogorov backward equation (see Equation 3.5). These include the expected time for a neutral allele to go to fixation (given that it is eventually fixed) or to loss (given that it is eventually lost). Assuming an initial allele frequency p, Kimura and Ohta (1969) showed that the mean time $ [\\tilde{t}_{1}(p) $, in generations] until the allele is fixed (given that it is eventually fixed) is $$ \\overline{t}_{1}(p)=-4N\\left(\\frac{1-p}{p}\\right)\\ln(1-p) $$\nSimilarly, they showed that the mean time to loss $ \\bar{t}_{0}(p) $ (given that the allele is eventually lost) is $$ \\overline{t}_{0}(p)=-4N\\left(\\frac{p}{1-p}\\right)\\ln(p) $$\nCombining Equations 3.8 and 3.9, the mean persistence time of an allele $ [\\bar{t}(p) $, the average length of time that a population is segregating for A and a] is given by $ \\bar{t}(p) = p\\bar{t}_{1}(p) + (1 - p)\\bar{t}_{0}(p) $, which equals $$ \\overline{t}(p)=-4N\\Big[(1-p)\\ln(1-p)+p\\ln(p)\\Big] $$ Figure 3.8 shows the average times to fixation, loss, and persistence of a neutral allele. An allele is expected to remain in a population for the longest time when its initial frequency is $ \\frac{1}{2} $. When $ p = \\frac{1}{2} $, the average time that",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 18,
+        "formula_bbox": [
+          454,
+          773,
+          702,
+          829
+        ],
+        "label_bbox": [
+          874,
+          797,
+          917,
+          820
+        ],
+        "api_label": "[3.8]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.5
+      },
+      "equation_number": "3.8",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "Absorption Time and Time to Fixation"
+      ],
+      "subsection": "Absorption Time and Time to Fixation",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "subsection": "Absorption Time and Time to Fixation",
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b15"
+        ],
+        "source_bboxes": [
+          [
+            454,
+            773,
+            702,
+            829
+          ]
+        ],
+        "audit_evidence_sha256": "6a641c7ccf707f595cce46cf8b73e38977d4ee02b0167ee02cea7d21c7532760"
+      }
+    },
+    {
+      "id": "3.9",
+      "label_format": "[3.9]",
+      "latex": "ln(p)",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter3_007",
+        "chapter": "PopGen_chapter3",
+        "subsection": "Absorption Time and Time to Fixation",
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b16"
+        ],
+        "source_bboxes": [
+          [
+            470,
+            892,
+            688,
+            949
+          ]
+        ]
+      },
+      "context": "imate fixation is equal to its initial allele frequency. Many other important results also follow from an analysis of the Kolmogorov backward equation (see Equation 3.5). These include the expected time for a neutral allele to go to fixation (given that it is eventually fixed) or to loss (given that it is eventually lost). Assuming an initial allele frequency p, Kimura and Ohta (1969) showed that the mean time $ [\\tilde{t}_{1}(p) $, in generations] until the allele is fixed (given that it is eventually fixed) is $$ \\overline{t}_{1}(p)=-4N\\left(\\frac{1-p}{p}\\right)\\ln(1-p) $$\nSimilarly, they showed that the mean time to loss $ \\bar{t}_{0}(p) $ (given that the allele is eventually lost) is $$ \\overline{t}_{0}(p)=-4N\\left(\\frac{p}{1-p}\\right)\\ln(p) $$\nCombining Equations 3.8 and 3.9, the mean persistence time of an allele $ [\\bar{t}(p) $, the average length of time that a population is segregating for A and a] is given by $ \\bar{t}(p) = p\\bar{t}_{1}(p) + (1 - p)\\bar{t}_{0}(p) $, which equals $$ \\overline{t}(p)=-4N\\Big[(1-p)\\ln(1-p)+p\\ln(p)\\Big] $$ Figure 3.8 shows the average times to fixation, loss, and persistence of a neutral allele. An allele is expected to remain in a population for the longest time when its initial frequency is $ \\frac{1}{2} $. When $ p = \\frac{1}{2} $, the average time that a population remains unfixed is about 2.77N generations.\nEquations 3.8 and 3.9 are o",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter3.pdf",
+        "pdf_page": 18,
+        "formula_bbox": [
+          470,
+          892,
+          688,
+          949
+        ],
+        "label_bbox": [
+          875,
+          917,
+          918,
+          940
+        ],
+        "api_label": "{3.9}",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 8.0
+      },
+      "equation_number": "3.9",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "3.3 THE DIFFUSION APPROXIMATION",
+        "Absorption Time and Time to Fixation"
+      ],
+      "subsection": "Absorption Time and Time to Fixation",
+      "audit_provenance": {
+        "heading_path": [
+          "3.3 THE DIFFUSION APPROXIMATION",
+          "Absorption Time and Time to Fixation"
+        ],
+        "subsection": "Absorption Time and Time to Fixation",
+        "source_pages": [
+          126
+        ],
+        "source_block_ids": [
+          "PopGen_chapter3:p018:b16"
+        ],
+        "source_bboxes": [
+          [
+            470,
+            892,
+            688,
+            949
+          ]
+        ],
+        "audit_evidence_sha256": "8d8ed24273f987a68e76ab5187763caacc295e25e68a7745992130c18d37cbd9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter7",
+  "count": 10,
+  "figures": [
+    {
+      "id": "7.1",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.1",
+      "placeholder": "[[FIGURE:7.1]]",
+      "see_placeholder": "[[SEE_FIGURE:7.1]]",
+      "asset_path": "figures/Genetics_7.1.png",
+      "caption": "Figure 7.1 The transmittance of genes of two parents to two offspring. All $ A_{1} $ alleles are identical in state. However, of the two $ A_{1} $ genes carried by the offspring on the left, only the one in the square is identical by descent with the $ A_{1} $ allele carried by the offspring on the right.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 149,
+      "raw_bbox": [
+        242.0,
+        133.0,
+        839.0,
+        625.0
+      ],
+      "source_block_ids": [
+        "p149:b2"
+      ],
+      "caption_block": {
+        "source_page": 149,
+        "printed_page": 129,
+        "source_block_ids": [
+          "p149:b3"
+        ],
+        "bbox": [
+          107.0,
+          654.0,
+          969.0,
+          775.0
+        ]
+      }
+    },
+    {
+      "id": "7.2",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.2",
+      "placeholder": "[[FIGURE:7.2]]",
+      "see_placeholder": "[[SEE_FIGURE:7.2]]",
+      "asset_path": "figures/Genetics_7.2.png",
+      "caption": "Figure 7.2 The 15 possible states of identity by descent for a locus in individuals x and y, condensed into nine classes. Genes that are identical by descent are connected by lines.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 150,
+      "raw_bbox": [
+        288.0,
+        131.0,
+        996.0,
+        1320.0
+      ],
+      "source_block_ids": [
+        "p150:b4"
+      ],
+      "caption_block": {
+        "source_page": 150,
+        "printed_page": 130,
+        "source_block_ids": [
+          "p150:b5"
+        ],
+        "bbox": [
+          192.0,
+          1387.0,
+          1057.0,
+          1479.0
+        ]
+      }
+    },
+    {
+      "id": "7.3",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.3",
+      "placeholder": "[[FIGURE:7.3]]",
+      "see_placeholder": "[[SEE_FIGURE:7.3]]",
+      "asset_path": "figures/Genetics_7.3.png",
+      "caption": "Figure 7.3 The identity of genes by descent for a parent and offspring. Circles and squares represent, respectively, maternally and paternally derived genes. Left: The mother is not inbred and her mate is not a relative (so the offspring is not inbred). Center: The mother is inbred but unrelated to her mate. Right: In addition to the mother being inbred, she is related to her mate, so that her offspring is also inbred.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 152,
+      "raw_bbox": [
+        252.0,
+        135.0,
+        979.0,
+        375.0
+      ],
+      "source_block_ids": [
+        "p152:b2"
+      ],
+      "caption_block": {
+        "source_page": 152,
+        "printed_page": 132,
+        "source_block_ids": [
+          "p152:b3"
+        ],
+        "bbox": [
+          184.0,
+          402.0,
+          1047.0,
+          582.0
+        ]
+      }
+    },
+    {
+      "id": "7.4",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.4",
+      "placeholder": "[[FIGURE:7.4]]",
+      "see_placeholder": "[[SEE_FIGURE:7.4]]",
+      "asset_path": "figures/Genetics_7.4.png",
+      "caption": "Figure 7.4 Path diagrams for analyzing the probability that random genes from two full sibs are identical by descent. The path coefficients along single-headed arrows are always equal to 1/2. Left: The parents, m and f, are neither related nor inbred. Center: The parents are unrelated, but inbred. Right: In addition to being inbred, the parents are related with coefficient of coancestry $ \\Theta_{mf} $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 153,
+      "raw_bbox": [
+        153.0,
+        132.0,
+        933.0,
+        363.0
+      ],
+      "source_block_ids": [
+        "p153:b2"
+      ],
+      "caption_block": {
+        "source_page": 153,
+        "printed_page": 133,
+        "source_block_ids": [
+          "p153:b3"
+        ],
+        "bbox": [
+          109.0,
+          392.0,
+          971.0,
+          543.0
+        ]
+      }
+    },
+    {
+      "id": "7.5",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.5",
+      "placeholder": "[[FIGURE:7.5]]",
+      "see_placeholder": "[[SEE_FIGURE:7.5]]",
+      "asset_path": "figures/Genetics_7.5.png",
+      "caption": "Figure 7.5 The analysis of the identity by descent of genotypes of individuals x and y. $ f_{x} $ and $ f_{y} $ represent fathers (which may be the same individual) of x and y, respectively, whereas $ m_{x} $ and $ m_{y} $ represent their mothers. Double-headed arrows between two parents represent coefficients of coancestry.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 156,
+      "raw_bbox": [
+        318.0,
+        137.0,
+        905.0,
+        556.0
+      ],
+      "source_block_ids": [
+        "p156:b2"
+      ],
+      "caption_block": {
+        "source_page": 156,
+        "printed_page": 136,
+        "source_block_ids": [
+          "p156:b3"
+        ],
+        "bbox": [
+          180.0,
+          585.0,
+          1045.0,
+          707.0
+        ]
+      }
+    },
+    {
+      "id": "7.6",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.6",
+      "placeholder": "[[FIGURE:7.6]]",
+      "see_placeholder": "[[SEE_FIGURE:7.6]]",
+      "asset_path": "figures/Genetics_7.6.png",
+      "caption": "Figure 7.6 Inflation of the additive × additive covariance between relatives caused by linkage, obtained by use of the coefficients in Table 7.3.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 165,
+      "raw_bbox": [
+        177.0,
+        163.0,
+        899.0,
+        724.0
+      ],
+      "source_block_ids": [
+        "p165:b2"
+      ],
+      "caption_block": {
+        "source_page": 165,
+        "printed_page": 145,
+        "source_block_ids": [
+          "p165:b3"
+        ],
+        "bbox": [
+          103.0,
+          778.0,
+          966.0,
+          839.0
+        ]
+      }
+    },
+    {
+      "id": "7.7",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.7",
+      "placeholder": "[[FIGURE:7.7]]",
+      "see_placeholder": "[[SEE_FIGURE:7.7]]",
+      "asset_path": "figures/Genetics_7.7.png",
+      "caption": "Figure 7.7 Inflation of the additive genetic variance at equilibrium under assortative mating relative to that in an otherwise identical random-mating population. Solid and dashed lines refer to 10 and 20 effective loci, respectively.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 171,
+      "raw_bbox": [
+        174.0,
+        131.0,
+        900.0,
+        696.0
+      ],
+      "source_block_ids": [
+        "p171:b2"
+      ],
+      "caption_block": {
+        "source_page": 171,
+        "printed_page": 151,
+        "source_block_ids": [
+          "p171:b3"
+        ],
+        "bbox": [
+          100.0,
+          727.0,
+          963.0,
+          822.0
+        ]
+      }
+    },
+    {
+      "id": "7.8",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.8",
+      "placeholder": "[[FIGURE:7.8]]",
+      "see_placeholder": "[[SEE_FIGURE:7.8]]",
+      "asset_path": "figures/Genetics_7.8.png",
+      "caption": "Figure 7.8 Path diagrams for the phenotypic correlation between individuals x and y. All terms are defined in the text.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 181,
+      "raw_bbox": [
+        177.0,
+        171.0,
+        903.0,
+        1175.0
+      ],
+      "source_block_ids": [
+        "p181:b5"
+      ],
+      "caption_block": {
+        "source_page": 181,
+        "printed_page": 161,
+        "source_block_ids": [
+          "p181:b7"
+        ],
+        "bbox": [
+          107.0,
+          1201.0,
+          970.0,
+          1266.0
+        ]
+      }
+    },
+    {
+      "id": "7.9",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.9",
+      "placeholder": "[[FIGURE:7.9]]",
+      "see_placeholder": "[[SEE_FIGURE:7.9]]",
+      "asset_path": "figures/Genetics_7.9.png",
+      "caption": "Figure 7.9 The relationship between heritability estimated as 2 Cov(PO)/Var(z) from parent-offspring analysis and as 2 Cov(FS)/Var(z) from full-sib analysis, for studies in which both estimates are available. Individual data points are for physiological and morphological characters for various natural populations of animals. The straight line gives the expected pattern under a perfect correspondence of the two estimates. (From Mousseau and Roff 1987.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 189,
+      "raw_bbox": [
+        253.0,
+        133.0,
+        843.0,
+        593.0
+      ],
+      "source_block_ids": [
+        "p189:b2"
+      ],
+      "caption_block": {
+        "source_page": 189,
+        "printed_page": 169,
+        "source_block_ids": [
+          "p189:b3"
+        ],
+        "bbox": [
+          113.0,
+          619.0,
+          977.0,
+          799.0
+        ]
+      }
+    },
+    {
+      "id": "7.10",
+      "chapter": "Genetics_chapter7",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter7:7.10",
+      "placeholder": "[[FIGURE:7.10]]",
+      "see_placeholder": "[[SEE_FIGURE:7.10]]",
+      "asset_path": "figures/Genetics_7.10.png",
+      "caption": "Figure 7.10 Cumulative frequency distributions for heritability estimates derived from numerous wild animal populations. L = life history, B = behavior, P = physiology, M = morphology. These data, from Mousseau and Roff (1987), do not include Drosophila studies, which yield a similar pattern (Roff and Mousseau 1987).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 190,
+      "raw_bbox": [
+        320.0,
+        134.0,
+        919.0,
+        529.0
+      ],
+      "source_block_ids": [
+        "p190:b2"
+      ],
+      "caption_block": {
+        "source_page": 190,
+        "printed_page": 170,
+        "source_block_ids": [
+          "p190:b3"
+        ],
+        "bbox": [
+          185.0,
+          559.0,
+          1048.0,
+          708.0
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "Genetics_chapter8_021",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "OVERVIEW OF LINEAR MODELS",
+    "subsections": [
+      "Ordinary Least Squares"
+    ],
+    "section_level_1": "OVERVIEW OF LINEAR MODELS",
+    "section_level_2": "Ordinary Least Squares",
+    "heading_path": [
+      "OVERVIEW OF LINEAR MODELS",
+      "Ordinary Least Squares"
+    ],
+    "display_heading": "OVERVIEW OF LINEAR MODELS / Ordinary Least Squares",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b6"
+      ],
+      "bbox": [
+        148.0,
+        675.0,
+        446.0,
+        711.0
+      ],
+      "raw_text": "Ordinary Least Squares"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Estimates of the vector $ \\beta $ for the general linear model are usually obtained by the method of least-squares, which uses the observations y and X and makes special assumptions about the covariance structure of the vector of residual errors e. The method of ordinary least squares assumes that the residual errors are homoscedastic and uncorrelated, i.e., $ \\sigma^{2}(e_{i}) = \\sigma_{e}^{2} $ for all i, and $ \\sigma(e_{i}, e_{j}) = 0 $ for $ i \\neq j $.",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b7"
+      ],
+      "bbox": [
+        148.0,
+        702.0,
+        1107.0,
+        913.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Let b be an estimate of $ \\beta $, and denote the vector of y values predicted from this estimate by $ \\hat{y} = Xb $, so that the resulting vector of residual errors is",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b8"
+      ],
+      "bbox": [
+        151.0,
+        895.0,
+        1109.0,
+        978.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula114]]",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b9"
+      ],
+      "bbox": [
+        504.0,
+        998.0,
+        761.0,
+        1037.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The ordinary least-squares (OLS) estimate of $ \\beta $ is the b vector that minimizes the residual sum of squares,",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b10"
+      ],
+      "bbox": [
+        154.0,
+        1058.0,
+        1113.0,
+        1142.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula115]]",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b11"
+      ],
+      "bbox": [
+        414.0,
+        1165.0,
+        856.0,
+        1252.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Taking derivatives, it can be shown that our desired estimate satisfies",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b12"
+      ],
+      "bbox": [
+        161.0,
+        1269.0,
+        988.0,
+        1318.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula116]]",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b13"
+      ],
+      "bbox": [
+        522.0,
+        1332.0,
+        758.0,
+        1376.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Under the assumption that the residual errors are uncorrelated and homoscedastic (i.e., the covariance matrix of the residuals is $ \\sigma_{e}^{2} \\cdot \\mathbf{I} $), the covariance matrix of the elements of b is",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b15"
+      ],
+      "bbox": [
+        163.0,
+        1395.0,
+        1122.0,
+        1514.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula117]]",
+      "source_page": 216,
+      "printed_page": 196,
+      "source_block_ids": [
+        "p216:b16"
+      ],
+      "bbox": [
+        529.0,
+        1493.0,
+        759.0,
+        1540.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Hence, the OLS estimator of $ \\beta_{i} $ is the ith element of the column vector b, while the variance of this estimator is the ith diagonal element of the matrix $ V_{b} $. Likewise, the covariance of this estimator with the OLS estimator for $ \\beta_{j} $ is the ijth element of $ V_{b} $.",
+      "source_page": 217,
+      "printed_page": 197,
+      "source_block_ids": [
+        "p217:b2"
+      ],
+      "bbox": [
+        71.0,
+        126.0,
+        1030.0,
+        276.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If the residuals follow a multivariate normal distribution with $ e \\sim MVN(0, \\sigma_{e}^{2} \\cdot \\mathbf{I}) $, the OLS estimate is also the maximum-likelihood estimate. If $ \\mathbf{X}^{T} \\mathbf{X} $ is singular, Equations 8.33a,b still hold when a generalized inverse is used, although only certain linear combinations of fixed factors can be estimated (see Appendix 3 for details).",
+      "source_page": 217,
+      "printed_page": 197,
+      "source_block_ids": [
+        "p217:b3"
+      ],
+      "bbox": [
+        67.0,
+        254.0,
+        1024.0,
+        442.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:9]]",
+      "source_page": 217,
+      "source_block_ids": [
+        "p217:b4",
+        "p217:b5",
+        "p217:b6",
+        "p217:b7",
+        "p217:b8",
+        "p217:b9",
+        "p217:b10"
+      ],
+      "bbox": [
+        108.0,
+        513.0,
+        972.0,
+        622.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:10]]",
+      "source_page": 217,
+      "source_block_ids": [
+        "p217:b11",
+        "p217:b12",
+        "p218:b2",
+        "p218:b3",
+        "p218:b4",
+        "p218:b5",
+        "p218:b6",
+        "p218:b7",
+        "p218:b8",
+        "p218:b9",
+        "p218:b10",
+        "p218:b11",
+        "p218:b12"
+      ],
+      "bbox": [
+        90.0,
+        1201.0,
+        957.0,
+        1463.0
+      ]
+    }
+  ]
+}

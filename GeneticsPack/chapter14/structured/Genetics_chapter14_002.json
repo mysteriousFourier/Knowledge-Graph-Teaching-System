@@ -1,0 +1,54 @@
+{
+  "id": "Genetics_chapter14_002",
+  "metadata": {
+    "chapter": "Genetics_chapter14",
+    "section": "CLASSICAL APPROACHES",
+    "subsections": [],
+    "section_level_1": "CLASSICAL APPROACHES",
+    "section_level_2": null,
+    "heading_path": [
+      "CLASSICAL APPROACHES"
+    ],
+    "display_heading": "CLASSICAL APPROACHES",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 393,
+      "printed_page": 373,
+      "source_block_ids": [
+        "p393:b5"
+      ],
+      "bbox": [
+        68.0,
+        1399.0,
+        433.0,
+        1434.0
+      ],
+      "raw_text": "CLASSICAL APPROACHES"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In some species, the clever use of special biological features (e.g., balancer chromosomes and the lack of male recombination in Drosophila) allows one to assay the effects of whole chromosomes on characters of interest. Because such chromosomal assays can be done with just a few markers, they were the main method of marker-based trait analysis before the advent of molecular markers. Although restricted to a few species, such assays nonetheless have provided insight into the genetic architecture of a number of characters.",
+      "source_page": 393,
+      "printed_page": 373,
+      "source_block_ids": [
+        "p393:b6",
+        "p394:b2"
+      ],
+      "bbox": [
+        67.0,
+        1463.0,
+        1028.0,
+        1542.0
+      ],
+      "source_page_end": 394
+    }
+  ]
+}

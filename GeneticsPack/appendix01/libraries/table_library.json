@@ -1,0 +1,568 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_appendix1",
+  "count": 3,
+  "tables": [
+    {
+      "id": "A2.1",
+      "label_format": "Table A2.1",
+      "title": "Table A2.1 Correlations (above diagonal) and path contributions (diagonal and below) of growth components to weight on day 26 for a sample of 100 feral pigeons.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>w_{2}</td><td>$ \\Delta w_{2} $</td><td>$ \\Delta w_{8} $</td><td>$ \\Delta w_{14} $</td><td>$ \\Delta w_{20} $</td></tr><tr><td>w_{2}</td><td>0.014</td><td>0.232^{*}</td><td>0.100</td><td>-0.069</td><td>-0.186</td></tr><tr><td>$ \\Delta w_{2} $</td><td>0.027</td><td>0.255</td><td>-0.014</td><td>-0.316^{**}</td><td>-0.045</td></tr><tr><td>$ \\Delta w_{8} $</td><td>0.015</td><td>-0.010</td><td>0.437</td><td>-0.157</td><td>-0.096</td></tr><tr><td>$ \\Delta w_{14} $</td><td>-0.012</td><td>-0.244</td><td>-0.159</td><td>0.584</td><td>-0.167</td></tr><tr><td>$ \\Delta w_{20} $</td><td>-0.027</td><td>-0.028</td><td>-0.079</td><td>-0.158</td><td>0.385</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "w_{2}",
+          "$ \\Delta w_{2} $",
+          "$ \\Delta w_{8} $",
+          "$ \\Delta w_{14} $",
+          "$ \\Delta w_{20} $"
+        ],
+        [
+          "w_{2}",
+          "0.014",
+          "0.232^{*}",
+          "0.100",
+          "-0.069",
+          "-0.186"
+        ],
+        [
+          "$ \\Delta w_{2} $",
+          "0.027",
+          "0.255",
+          "-0.014",
+          "-0.316^{**}",
+          "-0.045"
+        ],
+        [
+          "$ \\Delta w_{8} $",
+          "0.015",
+          "-0.010",
+          "0.437",
+          "-0.157",
+          "-0.096"
+        ],
+        [
+          "$ \\Delta w_{14} $",
+          "-0.012",
+          "-0.244",
+          "-0.159",
+          "0.584",
+          "-0.167"
+        ],
+        [
+          "$ \\Delta w_{20} $",
+          "-0.027",
+          "-0.028",
+          "-0.079",
+          "-0.158",
+          "0.385"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: D. Droge, unpubl. data",
+          "source_page": 844,
+          "bbox": [
+            154.0,
+            1336.0,
+            488.0,
+            1366.0
+          ],
+          "source_block_ids": [
+            "p844:b7"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: * and ** denote correlations that are significance at the 5% and 1% levels. The diagonal elements (direct contributions to the variance of $ w_{26} $) are simply the squares of the respectively path coefficients given in Figure A2.5. The below-diagonal elements denote the contributions resulting from correlations between characters x and y, and are obtained as $ 2p_{x}\\rho_{xy}p_{y} $.",
+          "source_page": 844,
+          "bbox": [
+            154.0,
+            1361.0,
+            1112.0,
+            1517.0
+          ],
+          "source_block_ids": [
+            "p844:b8"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 844,
+          "title": "Table A2.1 Correlations (above diagonal) and path contributions (diagonal and below) of growth components to weight on day 26 for a sample of 100 feral pigeons.",
+          "html": "<table><tr><td></td><td>w_{2}</td><td>$ \\Delta w_{2} $</td><td>$ \\Delta w_{8} $</td><td>$ \\Delta w_{14} $</td><td>$ \\Delta w_{20} $</td></tr><tr><td>w_{2}</td><td>0.014</td><td>0.232^{*}</td><td>0.100</td><td>-0.069</td><td>-0.186</td></tr><tr><td>$ \\Delta w_{2} $</td><td>0.027</td><td>0.255</td><td>-0.014</td><td>-0.316^{**}</td><td>-0.045</td></tr><tr><td>$ \\Delta w_{8} $</td><td>0.015</td><td>-0.010</td><td>0.437</td><td>-0.157</td><td>-0.096</td></tr><tr><td>$ \\Delta w_{14} $</td><td>-0.012</td><td>-0.244</td><td>-0.159</td><td>0.584</td><td>-0.167</td></tr><tr><td>$ \\Delta w_{20} $</td><td>-0.027</td><td>-0.028</td><td>-0.079</td><td>-0.158</td><td>0.385</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "w_{2}",
+              "$ \\Delta w_{2} $",
+              "$ \\Delta w_{8} $",
+              "$ \\Delta w_{14} $",
+              "$ \\Delta w_{20} $"
+            ],
+            [
+              "w_{2}",
+              "0.014",
+              "0.232^{*}",
+              "0.100",
+              "-0.069",
+              "-0.186"
+            ],
+            [
+              "$ \\Delta w_{2} $",
+              "0.027",
+              "0.255",
+              "-0.014",
+              "-0.316^{**}",
+              "-0.045"
+            ],
+            [
+              "$ \\Delta w_{8} $",
+              "0.015",
+              "-0.010",
+              "0.437",
+              "-0.157",
+              "-0.096"
+            ],
+            [
+              "$ \\Delta w_{14} $",
+              "-0.012",
+              "-0.244",
+              "-0.159",
+              "0.584",
+              "-0.167"
+            ],
+            [
+              "$ \\Delta w_{20} $",
+              "-0.027",
+              "-0.028",
+              "-0.079",
+              "-0.158",
+              "0.385"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: D. Droge, unpubl. data",
+              "source_page": 844,
+              "bbox": [
+                154.0,
+                1336.0,
+                488.0,
+                1366.0
+              ],
+              "source_block_ids": [
+                "p844:b7"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: * and ** denote correlations that are significance at the 5% and 1% levels. The diagonal elements (direct contributions to the variance of $ w_{26} $) are simply the squares of the respectively path coefficients given in Figure A2.5. The below-diagonal elements denote the contributions resulting from correlations between characters x and y, and are obtained as $ 2p_{x}\\rho_{xy}p_{y} $.",
+              "source_page": 844,
+              "bbox": [
+                154.0,
+                1361.0,
+                1112.0,
+                1517.0
+              ],
+              "source_block_ids": [
+                "p844:b8"
+              ]
+            }
+          ],
+          "bbox": [
+            151.0,
+            1114.0,
+            1106.0,
+            1322.0
+          ],
+          "caption_bbox": [
+            150.0,
+            1032.0,
+            1106.0,
+            1100.0
+          ],
+          "source_block_ids": [
+            "p844:b6"
+          ],
+          "caption_source_block_ids": [
+            "p844:b5"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_appendix1",
+        "unit_id": "Genetics_appendix1_017",
+        "page": 844,
+        "pages": [
+          844
+        ],
+        "bbox": [
+          151.0,
+          1114.0,
+          1106.0,
+          1322.0
+        ],
+        "caption_bbox": [
+          150.0,
+          1032.0,
+          1106.0,
+          1100.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "A3.1",
+      "label_format": "Table A3.1",
+      "title": "Table A3.1 Summary of useful results for the general linear model, $ \\mathbf{y} = \\mathbf{X}\\beta + \\mathbf{e} $, under ordinary least-squares (OLS) and generalized least-squares (GLS) assumptions about the distribution of residuals.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>OLS</td><td>GLS</td></tr><tr><td>Assumed distribution of residuals</td><td>$ \\mathbf{e} \\sim (\\mathbf{0}, \\sigma_{e}^{2} \\mathbf{I}) $</td><td>$ \\mathbf{e} \\sim (\\mathbf{0}, \\mathbf{V}) $</td></tr><tr><td>Least-squares estimator of $ \\beta $</td><td>$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $</td><td>$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $</td></tr><tr><td>Var( $ \\widehat{\\boldsymbol{\\beta}} $)</td><td>$ (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\sigma_{e}^{2} $</td><td>$ (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} $</td></tr><tr><td>Predicted values, $ \\widehat{\\mathbf{y}} = \\mathbf{X} \\widehat{\\boldsymbol{\\beta}} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $</td></tr><tr><td>Var( $ \\widehat{\\mathbf{y}} $)</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\sigma_{e}^{2} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} $</td></tr><tr><td colspan=\"3\">Chi-square goodness-of-fit statistic (assuming $ \\mathbf{e} \\sim \\text{MVN}) $</td></tr><tr><td></td><td>$ \\chi^{2} = \\sum_{i=1}^{n} \\frac{(y_{i} - \\widehat{y}_{i})^{2}}{\\sigma_{e}^{2}} $</td><td>$ \\chi^{2} = (\\mathbf{y} - \\widehat{\\mathbf{y}})^{T} \\mathbf{V}^{-1} (\\mathbf{y} - \\widehat{\\mathbf{y}}) $</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "OLS",
+          "GLS"
+        ],
+        [
+          "Assumed distribution of residuals",
+          "$ \\mathbf{e} \\sim (\\mathbf{0}, \\sigma_{e}^{2} \\mathbf{I}) $",
+          "$ \\mathbf{e} \\sim (\\mathbf{0}, \\mathbf{V}) $"
+        ],
+        [
+          "Least-squares estimator of $ \\beta $",
+          "$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $",
+          "$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $"
+        ],
+        [
+          "Var( $ \\widehat{\\boldsymbol{\\beta}} $)",
+          "$ (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\sigma_{e}^{2} $",
+          "$ (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} $"
+        ],
+        [
+          "Predicted values, $ \\widehat{\\mathbf{y}} = \\mathbf{X} \\widehat{\\boldsymbol{\\beta}} $",
+          "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $",
+          "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $"
+        ],
+        [
+          "Var( $ \\widehat{\\mathbf{y}} $)",
+          "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\sigma_{e}^{2} $",
+          "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} $"
+        ],
+        [
+          "Chi-square goodness-of-fit statistic (assuming $ \\mathbf{e} \\sim \\text{MVN}) $"
+        ],
+        [
+          "",
+          "$ \\chi^{2} = \\sum_{i=1}^{n} \\frac{(y_{i} - \\widehat{y}_{i})^{2}}{\\sigma_{e}^{2}} $",
+          "$ \\chi^{2} = (\\mathbf{y} - \\widehat{\\mathbf{y}})^{T} \\mathbf{V}^{-1} (\\mathbf{y} - \\widehat{\\mathbf{y}}) $"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 855,
+          "title": "Table A3.1 Summary of useful results for the general linear model, $ \\mathbf{y} = \\mathbf{X}\\beta + \\mathbf{e} $, under ordinary least-squares (OLS) and generalized least-squares (GLS) assumptions about the distribution of residuals.",
+          "html": "<table><tr><td></td><td>OLS</td><td>GLS</td></tr><tr><td>Assumed distribution of residuals</td><td>$ \\mathbf{e} \\sim (\\mathbf{0}, \\sigma_{e}^{2} \\mathbf{I}) $</td><td>$ \\mathbf{e} \\sim (\\mathbf{0}, \\mathbf{V}) $</td></tr><tr><td>Least-squares estimator of $ \\beta $</td><td>$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $</td><td>$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $</td></tr><tr><td>Var( $ \\widehat{\\boldsymbol{\\beta}} $)</td><td>$ (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\sigma_{e}^{2} $</td><td>$ (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} $</td></tr><tr><td>Predicted values, $ \\widehat{\\mathbf{y}} = \\mathbf{X} \\widehat{\\boldsymbol{\\beta}} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $</td></tr><tr><td>Var( $ \\widehat{\\mathbf{y}} $)</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\sigma_{e}^{2} $</td><td>$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} $</td></tr><tr><td colspan=\"3\">Chi-square goodness-of-fit statistic (assuming $ \\mathbf{e} \\sim \\text{MVN}) $</td></tr><tr><td></td><td>$ \\chi^{2} = \\sum_{i=1}^{n} \\frac{(y_{i} - \\widehat{y}_{i})^{2}}{\\sigma_{e}^{2}} $</td><td>$ \\chi^{2} = (\\mathbf{y} - \\widehat{\\mathbf{y}})^{T} \\mathbf{V}^{-1} (\\mathbf{y} - \\widehat{\\mathbf{y}}) $</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "OLS",
+              "GLS"
+            ],
+            [
+              "Assumed distribution of residuals",
+              "$ \\mathbf{e} \\sim (\\mathbf{0}, \\sigma_{e}^{2} \\mathbf{I}) $",
+              "$ \\mathbf{e} \\sim (\\mathbf{0}, \\mathbf{V}) $"
+            ],
+            [
+              "Least-squares estimator of $ \\beta $",
+              "$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $",
+              "$ \\widehat{\\boldsymbol{\\beta}} = (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $"
+            ],
+            [
+              "Var( $ \\widehat{\\boldsymbol{\\beta}} $)",
+              "$ (\\mathbf{X}^{T} \\mathbf{X})^{-1} \\sigma_{e}^{2} $",
+              "$ (\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} $"
+            ],
+            [
+              "Predicted values, $ \\widehat{\\mathbf{y}} = \\mathbf{X} \\widehat{\\boldsymbol{\\beta}} $",
+              "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{y} $",
+              "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{y} $"
+            ],
+            [
+              "Var( $ \\widehat{\\mathbf{y}} $)",
+              "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{X})^{-1} \\mathbf{X}^{T} \\sigma_{e}^{2} $",
+              "$ \\mathbf{X}(\\mathbf{X}^{T} \\mathbf{V}^{-1} \\mathbf{X})^{-1} \\mathbf{X}^{T} $"
+            ],
+            [
+              "Chi-square goodness-of-fit statistic (assuming $ \\mathbf{e} \\sim \\text{MVN}) $"
+            ],
+            [
+              "",
+              "$ \\chi^{2} = \\sum_{i=1}^{n} \\frac{(y_{i} - \\widehat{y}_{i})^{2}}{\\sigma_{e}^{2}} $",
+              "$ \\chi^{2} = (\\mathbf{y} - \\widehat{\\mathbf{y}})^{T} \\mathbf{V}^{-1} (\\mathbf{y} - \\widehat{\\mathbf{y}}) $"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            58.0,
+            227.0,
+            1016.0,
+            837.0
+          ],
+          "caption_bbox": [
+            60.0,
+            137.0,
+            1017.0,
+            227.0
+          ],
+          "source_block_ids": [
+            "p855:b3"
+          ],
+          "caption_source_block_ids": [
+            "p855:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_appendix1",
+        "unit_id": "Genetics_appendix1_025",
+        "page": 855,
+        "pages": [
+          855
+        ],
+        "bbox": [
+          58.0,
+          227.0,
+          1016.0,
+          837.0
+        ],
+        "caption_bbox": [
+          60.0,
+          137.0,
+          1017.0,
+          227.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "A5.1",
+      "label_format": "Table A5.1",
+      "title": "Table A5.1 The power to detect a significant heritability under the optimal sampling scheme for a half-sib design as a function of $ h^{2} $ and the total number T of individuals measured.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">T</td><td colspan=\"5\">$ h^{2} $</td></tr><tr><td>0.1</td><td>0.25</td><td>0.5</td><td>0.75</td><td>1.0</td></tr><tr><td>50</td><td>0.12</td><td>0.22</td><td>0.36</td><td>0.44</td><td>0.59</td></tr><tr><td>100</td><td>0.22</td><td>0.36</td><td>0.58</td><td>0.68</td><td>0.82</td></tr><tr><td>250</td><td>0.35</td><td>0.65</td><td>0.87</td><td>0.95</td><td>0.99</td></tr><tr><td>500</td><td>0.57</td><td>0.86</td><td>0.99</td><td>1.00</td><td>1.00</td></tr><tr><td>750</td><td>0.70</td><td>0.95</td><td>1.00</td><td>1.00</td><td>1.00</td></tr><tr><td>1000</td><td>0.80</td><td>0.99</td><td>1.00</td><td>1.00</td><td>1.00</td></tr></table>",
+      "rows": [
+        [
+          "T",
+          "$ h^{2} $"
+        ],
+        [
+          "0.1",
+          "0.25",
+          "0.5",
+          "0.75",
+          "1.0"
+        ],
+        [
+          "50",
+          "0.12",
+          "0.22",
+          "0.36",
+          "0.44",
+          "0.59"
+        ],
+        [
+          "100",
+          "0.22",
+          "0.36",
+          "0.58",
+          "0.68",
+          "0.82"
+        ],
+        [
+          "250",
+          "0.35",
+          "0.65",
+          "0.87",
+          "0.95",
+          "0.99"
+        ],
+        [
+          "500",
+          "0.57",
+          "0.86",
+          "0.99",
+          "1.00",
+          "1.00"
+        ],
+        [
+          "750",
+          "0.70",
+          "0.95",
+          "1.00",
+          "1.00",
+          "1.00"
+        ],
+        [
+          "1000",
+          "0.80",
+          "0.99",
+          "1.00",
+          "1.00",
+          "1.00"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: For fixed $T$, the optimal number of dams per sire is $n = 4/h^{2}$, or 40, 16, 8, 5, and 4 under the above respective heritabilities. Power is computed using the design closest to these optimal values, given the constraint that the total number of individuals in the balanced design is $T$. For example, for $h^{2} = 0.1$, $n = 40$ is the optimal value. However, since design must have $N \\geq 2$, for $T = 50$, power is computed using $N = 2$ and $n = 25$.",
+          "source_page": 901,
+          "bbox": [
+            56.0,
+            537.0,
+            1014.0,
+            694.0
+          ],
+          "source_block_ids": [
+            "p901:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 901,
+          "title": "Table A5.1 The power to detect a significant heritability under the optimal sampling scheme for a half-sib design as a function of $ h^{2} $ and the total number T of individuals measured.",
+          "html": "<table><tr><td rowspan=\"2\">T</td><td colspan=\"5\">$ h^{2} $</td></tr><tr><td>0.1</td><td>0.25</td><td>0.5</td><td>0.75</td><td>1.0</td></tr><tr><td>50</td><td>0.12</td><td>0.22</td><td>0.36</td><td>0.44</td><td>0.59</td></tr><tr><td>100</td><td>0.22</td><td>0.36</td><td>0.58</td><td>0.68</td><td>0.82</td></tr><tr><td>250</td><td>0.35</td><td>0.65</td><td>0.87</td><td>0.95</td><td>0.99</td></tr><tr><td>500</td><td>0.57</td><td>0.86</td><td>0.99</td><td>1.00</td><td>1.00</td></tr><tr><td>750</td><td>0.70</td><td>0.95</td><td>1.00</td><td>1.00</td><td>1.00</td></tr><tr><td>1000</td><td>0.80</td><td>0.99</td><td>1.00</td><td>1.00</td><td>1.00</td></tr></table>",
+          "rows": [
+            [
+              "T",
+              "$ h^{2} $"
+            ],
+            [
+              "0.1",
+              "0.25",
+              "0.5",
+              "0.75",
+              "1.0"
+            ],
+            [
+              "50",
+              "0.12",
+              "0.22",
+              "0.36",
+              "0.44",
+              "0.59"
+            ],
+            [
+              "100",
+              "0.22",
+              "0.36",
+              "0.58",
+              "0.68",
+              "0.82"
+            ],
+            [
+              "250",
+              "0.35",
+              "0.65",
+              "0.87",
+              "0.95",
+              "0.99"
+            ],
+            [
+              "500",
+              "0.57",
+              "0.86",
+              "0.99",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "750",
+              "0.70",
+              "0.95",
+              "1.00",
+              "1.00",
+              "1.00"
+            ],
+            [
+              "1000",
+              "0.80",
+              "0.99",
+              "1.00",
+              "1.00",
+              "1.00"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: For fixed $T$, the optimal number of dams per sire is $n = 4/h^{2}$, or 40, 16, 8, 5, and 4 under the above respective heritabilities. Power is computed using the design closest to these optimal values, given the constraint that the total number of individuals in the balanced design is $T$. For example, for $h^{2} = 0.1$, $n = 40$ is the optimal value. However, since design must have $N \\geq 2$, for $T = 50$, power is computed using $N = 2$ and $n = 25$.",
+              "source_page": 901,
+              "bbox": [
+                56.0,
+                537.0,
+                1014.0,
+                694.0
+              ],
+              "source_block_ids": [
+                "p901:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            61.0,
+            233.0,
+            1010.0,
+            518.0
+          ],
+          "caption_bbox": [
+            59.0,
+            136.0,
+            1018.0,
+            227.0
+          ],
+          "source_block_ids": [
+            "p901:b3"
+          ],
+          "caption_source_block_ids": [
+            "p901:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_appendix1",
+        "unit_id": "Genetics_appendix1_057",
+        "page": 901,
+        "pages": [
+          901
+        ],
+        "bbox": [
+          61.0,
+          233.0,
+          1010.0,
+          518.0
+        ],
+        "caption_bbox": [
+          59.0,
+          136.0,
+          1018.0,
+          227.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

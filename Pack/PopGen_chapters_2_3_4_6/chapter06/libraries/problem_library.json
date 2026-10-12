@@ -1,0 +1,1943 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter6",
+  "count": 34,
+  "problems": [
+    {
+      "id": "PopGen_problem_6_1",
+      "number": "6.1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_004",
+          "block_index": 13,
+          "content": "PROBLEM 6.1 Plants able to undergo self-fertilization are said to be self-compatible. In a population of self-compatible plants, if each plant undergoes self-fertilization a fraction s of the time and otherwise mates randomly, then it can be shown (Crow and Kimura 1970; Hedrick and Cockerham 1986) that F very quickly attains the value  $ F = s/(2 - s) $. Phlox cuspidata is self-compatible, and for this species the amount of self-fertilization is estimated at approximately  $ s = 0.78 $ (Levin 1978). From s we can predict the inbreeding coefficient as  $ F = 0.78/(2 - 0.78) = 0.64 $. In a sample of 35 plants from a Texas population of P. cuspidata, two alleles of the phosphoglucomutase-2 gene were observed, which we will designate as the A and a alleles. The sample included were 15 AA, 6 Aa, and 14 aa genotypes (Levin 1978). Are these numbers consistent with the estimate  $ F = 0.64 $? (Note: The  $ \\chi^{2} $ in this case has one degree of freedom because only the allele frequency is estimated from the data; if F also were estimated from the data, rather than being calculated independently from the degree of self-fertilization, then there would be zero degrees of freedom and no goodness-of-fit test would be possible.)",
+          "source_pages": [
+            279
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p009:b1",
+            "PopGen_chapter6:p009:b3"
+          ],
+          "source_bboxes": [
+            [
+              128.0,
+              227.0,
+              556.0,
+              568.0
+            ],
+            [
+              582.0,
+              230.0,
+              1007.0,
+              571.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_004",
+          "block_index": 14,
+          "content": "ANSWER The allele frequencies of A and a are estimated as $ (30 + 6)/70 = 0.514 $ and $ 1 - 0.514 = 0.486 $, respectively. The hypothesis is that F = 0.64, and so 1 - F = 0.36. The expected numbers of the genotypes AA, Aa, and aa are, respectively, $ [(0.514)^2(0.36) + (0.514)(0.64)](35) = 14.8 $, $ [2(0.514)(0.486)(0.36)](35) = 6.3 $, and $ [(0.486)^2(0.36) + (0.486)(0.64)](35) = 13.9 $. With these expectations, the $ \\chi^2 = 0.02 $ with one degree of freedom, and the associated probability is about 0.96. The fit to the inbreeding model is excellent.",
+          "source_pages": [
+            279
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p009:b2",
+            "PopGen_chapter6:p009:b4"
+          ],
+          "source_bboxes": [
+            [
+              121.0,
+              616.0,
+              551.0,
+              763.0
+            ],
+            [
+              579.0,
+              618.0,
+              1004.0,
+              764.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_2",
+      "number": "6.2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_006",
+          "block_index": 4,
+          "content": "PROBLEM 6.2 The accompanying pedigree depicts two generations of brother-sister mating. Calculate the inbreeding coefficient of I, assuming that none of the common ancestors is inbred. (Altogether, there are four common ancestors and six paths.)\n\n[[FIGURE:problem_6.2]]",
+          "source_pages": [
+            285
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p015:b9",
+            "PopGen_chapter6:p015:b11"
+          ],
+          "source_bboxes": [
+            [
+              109.0,
+              979.0,
+              446.0,
+              1075.0
+            ],
+            [
+              646.0,
+              982.0,
+              992.0,
+              1078.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_006",
+          "block_index": 5,
+          "content": "ANSWER  $ F_{1} = \\left(\\frac{1}{2}\\right)^{3}(1 + F_{C}) + \\left(\\frac{1}{2}\\right)^{3}(1 + F_{D}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{A}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{B}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{A}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{B}) $. When the common ancestors are assumed to be noninbred, then $$ F_{A}=F_{B}=F_{C}=F_{D}=0 $$, and so $$ F_{I}=\\tfrac{3}{8} $$",
+          "source_pages": [
+            285
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p015:b10",
+            "PopGen_chapter6:p015:b12"
+          ],
+          "source_bboxes": [
+            [
+              103.0,
+              1277.0,
+              532.0,
+              1353.0
+            ],
+            [
+              560.0,
+              1280.0,
+              988.0,
+              1331.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.2",
+          "resolved_id": "problem_6.2",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            285
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p015:b8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_3",
+      "number": "6.3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 0,
+          "content": "PROBLEM 6.3 Show that $ F_{SR} $, $ F_{RT} $, and $ F_{ST} $ are related by the equation:\n$$1-F_{ST}=(1-F_{SR})(1-F_{RT})$$",
+          "source_pages": [
+            296
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b10",
+            "PopGen_chapter6:p026:b11"
+          ],
+          "source_bboxes": [
+            [
+              145.0,
+              1151.0,
+              825.0,
+              1181.0
+            ],
+            [
+              470.0,
+              1189.0,
+              707.0,
+              1216.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 1,
+          "content": "ANSWER From Equation 6.9, $ F_{SR} = 1 - (H_S / H_R) $, or $ 1 - F_{SR} = H_S / H_R $. Equation 6.10 implies that $ F_{RT} = 1 - (H_R / H_T) $, or $ 1 - F_{RT} = H_R / H_T $. Finally, Equation 6.11 implies that $ F_{ST} = 1 - (H_S / H_T) $, or $ 1 - F_{ST} = H_S / H_T $. Now multiply the expressions for $ 1 - F_{SR} $ and $ 1 - F_{RT} $ together to obtain $ (1 - F_{SR}) \\times (1 - F_{RT}) = (H_S / H_R) \\times (H_R / H_T) = H_S / H_T = (1 - F_{ST}) $.",
+          "source_pages": [
+            296
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b12"
+          ],
+          "source_bboxes": [
+            [
+              145.0,
+              1246.0,
+              1031.0,
+              1350.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "6.10",
+          "resolved_id": "6.10",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            296
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b14"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "6.11",
+          "resolved_id": "6.11",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            296
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b15"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "6.9",
+          "resolved_id": "6.9",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            295
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p025:b9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_4",
+      "number": "6.4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 7,
+          "content": "PROBLEM 6.4 One of the limitations of $ F_{ST} $ is that it is does not capture the full range of possibilities that can be found in natural populations. To see this for yourself, consider two subpopulations with two alleles each, $ A_1 $ and $ A_2 $; in one subpopulation the allele frequencies are $ (3 + \\sqrt{3})/6 = 0.788675 $ and $ (3 - \\sqrt{3})/6 = 0.211325 $, and in the other subpopulations the allele frequencies are reversed. (The choice of these allele frequencies may seem strange, but the rationale for the choice will become clear when you work the problem.) Now consider the same gene in two different subpopulations; one of these subpopulations has alleles $ A_1 $ and $ A_2 $ at frequencies $ \\frac{1}{2} $ and $ \\frac{1}{2} $, and the other has alleles $ A_3 $ and $ A_4 $ at frequencies $ \\frac{1}{2} $ and $ \\frac{1}{2} $. Use Equation 6.11 to calculate $ F_{ST} $ for both pairs of subpopulations, and explain why the result seems paradoxical.",
+          "source_pages": [
+            297
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b7",
+            "PopGen_chapter6:p027:b9"
+          ],
+          "source_bboxes": [
+            [
+              111.0,
+              843.0,
+              540.0,
+              1088.0
+            ],
+            [
+              566.0,
+              843.0,
+              993.0,
+              1084.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 8,
+          "content": "ANSWER In the first case, the heterozygosity in each subpopulation is $ 2 \\times (3 + \\sqrt{3})/6 \\times (3 - \\sqrt{3})/6 = \\frac{1}{3} $, and hence the average subpopulation heterozygosity is $ H_S = \\frac{1}{3} $. The average allele frequency for each allele is $ \\frac{1}{2} $, and hence the total heterozygosity is $ H_T = \\frac{1}{2} $. In this case, $ F_{ST} = \\left[\\left(\\frac{1}{2}\\right) - \\left(\\frac{1}{3}\\right)/(\\frac{1}{2}\\right) = \\frac{1}{3} $. In the second case, the heterozygosity in each subpopulation is $ 2 \\times \\left(\\frac{1}{2}\\right) \\times \\left(\\frac{1}{2}\\right) = \\frac{1}{2} $, and so $ H_S = \\frac{1}{2} $. The average allele frequencies are $ \\frac{1}{4} $ for each of the four alleles, and so $ H_T = 1 - \\left(\\frac{1}{4}\\right)^2 = \\frac{3}{4} $. In this case, $ F_{ST} = \\left[\\left(\\frac{3}{4}\\right) - \\left(\\frac{1}{2}\\right)/(\\frac{3}{4}\\right) = \\frac{1}{3} $, exactly the same as before. The paradox is that the subpopulations have the same value of $ F_{ST} $, when the first two subpopulations differ only in allele frequencies, whereas the second two are so different that they have no alleles in common.",
+          "source_pages": [
+            297
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b8",
+            "PopGen_chapter6:p027:b10"
+          ],
+          "source_bboxes": [
+            [
+              111.0,
+              1127.0,
+              541.0,
+              1352.0
+            ],
+            [
+              568.0,
+              1126.0,
+              996.0,
+              1346.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "6.11",
+          "resolved_id": "6.11",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            296
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_5",
+      "number": "6.5",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 9,
+          "content": "PROBLEM 6.5 Some subpopulations of Drosophila melanogaster show an altitudinal gradient in the allozymes of alcohol dehydrogenase in which the frequency of the Adh-F allele increases with altitude. The data in the accompanying table are estimates of the allele frequency of Adh-F in seven samples of adult flies captured either in the mountains, in the foothills, or on the plains of the Caucasus Mountains of the former Soviet Union. Each allele frequency is based on electrophoresis of approximately 300 adult flies (Grossman et al. 1970). Calculate the F statistics $ F_{SE} $ (subpopulations within elevations), $ F_{ET} $ (elevations within the total), and $ F_{ST} $ (subpopulations relative to the total). What do the magnitudes of the F statistics suggest regarding genetic differentiation among subpopulations in the frequency of Adh-F with respect to altitude?",
+          "source_pages": [
+            298
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p028:b1",
+            "PopGen_chapter6:p028:b2"
+          ],
+          "source_bboxes": [
+            [
+              137.0,
+              231.0,
+              567.0,
+              473.0
+            ],
+            [
+              594.0,
+              229.0,
+              1019.0,
+              472.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 10,
+          "content": "ANSWER Let $p$ represent the allele frequency of $Adh{-}F$. For each subpopulation, the HWE heterozygosity equals $2p(1 - p)$, which for the seven samples are $0.4359$ and $0.3498$ (mountain), $0.2277$ and $0.1942$ (foothill), and $0.1506$, $0.1605$, and $0.0676$ (plain). The average of these values is: $H_{S}$, which equals $0.2266$. At each of the elevations, the average allele frequency is the mean across the subpopulations sampled at that elevation. For mountain, foothill, and plain, these means equal $0.274$, $0.120$, and $0.068$, respectively, yielding the elevation HWE heterozygosities $0.3974$, $0.2112$, and $0.1273$, respectively. (Results may differ slightly according to the number of significant digits carried along.) The average of the elevation heterozygosities equals the mean elevation heterozygosity ($H_{E}$), and it is weighted average ($2 \\times 0.3974 + 2 \\times 0.2112 + 3 \\times 0.1273)/7 = 0.2285$. Finally, the allele frequency for the total heterozygosity is equal to the mean allele frequency across subpopulations, which is $0.142$, yielding a total HWE heterozygosity ($H_{T}$) of $0.2433$. The $F$ statistics are $F_{SE} = (H_{E} - H_{S})/H_{E} = 0.0081$, $F_{ET} = (H_{T} - H_{E})/H_{T} = 0.0609$, and $F_{ST} = (H_{T} - H_{S})/H_{T} = 0.0684$. [As a check, note that $(1 - F_{SE}) \\times (1 - F_{ET}) = 1 - F_{ST}$] Judging from the magnitudes of the $F$ statistics, we can see that most of the differentiation among subpopulations is correlated with altitude; there is very little genetic differentiation among subpopulations at each elevation.",
+          "source_pages": [
+            298
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p028:b4",
+            "PopGen_chapter6:p028:b5"
+          ],
+          "source_bboxes": [
+            [
+              136.0,
+              660.0,
+              568.0,
+              1075.0
+            ],
+            [
+              594.0,
+              658.0,
+              1023.0,
+              1071.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_6",
+      "number": "6.6",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_018",
+          "block_index": 4,
+          "content": "PROBLEM 6.6 Suppose a large population is subdivided into smaller subpopulations within which mating takes place at random, and that random genetic drift takes place until the probability of autozygosity in the subpopulations is $ F_{ST} = \\frac{1}{16} $, which is the value expected from the mating of first cousins. Now suppose that a first-cousin mating takes place in one of the subpopulations, so that inbred progeny have an inbreeding coefficient, relative to the subpopulation, of $ F_{IS} = \\frac{1}{16} $. What is the overall probability of autozygosity in the inbred offspring, $ F_{IT} $?",
+          "source_pages": [
+            308
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p038:b1",
+            "PopGen_chapter6:p038:b4"
+          ],
+          "source_bboxes": [
+            [
+              136.0,
+              230.0,
+              565.0,
+              401.0
+            ],
+            [
+              593.0,
+              229.0,
+              1018.0,
+              377.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_018",
+          "block_index": 5,
+          "content": "ANSWER Use Equation 6.17 with the values of $ F_{ST} $ and $ F_{IS} $ as given. The result is $ F_{IT} = 1 - \\left(\\frac{15}{16}\\right) \\times \\left(\\frac{15}{16}\\right) = \\frac{31}{256} = 0.121 $. Note that this is smaller than $ F_{IS} + F_{ST} $ by an amount equal to $ F_{IS} \\times F_{ST} $, because the two sources of autozygosity are not mutually exclusive.",
+          "source_pages": [
+            308
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p038:b2",
+            "PopGen_chapter6:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              136.0,
+              437.0,
+              567.0,
+              514.0
+            ],
+            [
+              594.0,
+              435.0,
+              1021.0,
+              508.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "6.17",
+          "resolved_id": "6.17",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            307
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p037:b12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E1",
+      "number": "6.E1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 0,
+          "content": "1. Explain why the concept of identity by descent (autozygosity) is fundamental to an understanding of the effects of inbreeding. Under what circumstances can the probability of autozygosity in a population increase without any increase in homozygosity?",
+          "source_pages": [
+            325
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p055:b7"
+          ],
+          "source_bboxes": [
+            [
+              124.0,
+              1009.0,
+              861.0,
+              1115.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 595,
+        "printed_page": 581,
+        "chapter": 6,
+        "answer_number": 1,
+        "anchor_text": "1.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E2",
+      "number": "6.E2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 1,
+          "content": "2. The coefficient of consanguinity between two individuals is the probability that two alleles of a gene, one drawn at random from each of the individuals, are identical by descent. How is the coefficient of consanguinity between two individuals related to the inbreeding coefficient of a hypothetical offspring of these two individuals?",
+          "source_pages": [
+            325
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p055:b8"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              1125.0,
+              860.0,
+              1258.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 2,
+        "anchor_text": "2.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E3",
+      "number": "6.E3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 2,
+          "content": "3. Consider two alleles A and a at frequencies $ \\frac{1}{2} $ and $ \\frac{1}{2} $ in a population in which the inbreeding coefficient equals $ F $. What value of $ F $ results in genotype frequencies of 1/3:1/3:1/3?",
+          "source_pages": [
+            325
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p055:b9"
+          ],
+          "source_bboxes": [
+            [
+              120.0,
+              1267.0,
+              858.0,
+              1348.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 3,
+        "anchor_text": "3.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E4",
+      "number": "6.E4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 3,
+          "content": "4. Show that $ p^2(1 - F) + pF = p^2 + pqF = p - (1 - F)pq $, when q = 1 - p.",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b1"
+          ],
+          "source_bboxes": [
+            [
+              282.0,
+              214.0,
+              952.0,
+              240.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 4,
+        "anchor_text": "4.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E5",
+      "number": "6.E5",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 4,
+          "content": "5. In a population of monoecious plants in Hardy-Weinberg proportions for two alleles with allele frequency p, what is the variance in allele frequency among plants? What is the variance if the population were completely inbred? If a random mating population were to undergo repeated self-fertilization, what would the variance be when the inbreeding coefficient equals F?",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b2"
+          ],
+          "source_bboxes": [
+            [
+              282.0,
+              250.0,
+              1019.0,
+              407.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 5,
+        "anchor_text": "5.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E6",
+      "number": "6.E6",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 5,
+          "content": "6. Equation 6.7 can also apply to the probability of autozygosity for X-linked genes provided that (a) males are regarded as having an inbreeding coefficient of 1, and (b) any path with two consecutive males is disregarded. Explain why these provisions are necessary.",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b3"
+          ],
+          "source_bboxes": [
+            [
+              283.0,
+              419.0,
+              1020.0,
+              526.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 6,
+        "anchor_text": "6.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "6.7",
+          "resolved_id": "6.7",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            285
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p015:b14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E7",
+      "number": "6.E7",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 6,
+          "content": "7. What is the inbreeding coefficient of individual K in the accompanying pedigree, assuming that none of the individuals at the top of the pedigree is inbred.\n\n[[FIGURE:problem_6.7]]",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b4",
+            "PopGen_chapter6:p056:b3"
+          ],
+          "source_bboxes": [
+            [
+              284.0,
+              536.0,
+              1020.0,
+              615.0
+            ],
+            [
+              283.0,
+              419.0,
+              1020.0,
+              526.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 7,
+        "anchor_text": "7.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.7",
+          "resolved_id": "problem_6.7",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E8",
+      "number": "6.E8",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 7,
+          "content": "8. The accompanying pedigree shows several generations of half-sib mating. Assuming that the individuals in generation 0 have $ F_{0}=0 $, what are the inbreeding coefficients of the individuals in generations 1, 2, 3, and 4?\n\n[[FIGURE:problem_6.8]]",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b6"
+          ],
+          "source_bboxes": [
+            [
+              285.0,
+              894.0,
+              1022.0,
+              994.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 8,
+        "anchor_text": "8.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.8",
+          "resolved_id": "problem_6.8",
+          "status": "linked",
+          "link_method": "shared_source_block",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            326
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p056:b7",
+            "PopGen_chapter6:p056:b6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E9",
+      "number": "6.E9",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 8,
+          "content": "9. Assuming $ F_{A}=F_{B}=0 $, calculate the inbreeding coefficient for each of the individuals C–I in the accompanying pedigree (see figure at right).\n\n[[FIGURE:problem_6.9]]",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b1",
+            "PopGen_chapter6:p057:b5"
+          ],
+          "source_bboxes": [
+            [
+              132.0,
+              205.0,
+              866.0,
+              259.0
+            ],
+            [
+              889.0,
+              212.0,
+              980.0,
+              479.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 596,
+        "printed_page": 582,
+        "chapter": 6,
+        "answer_number": 9,
+        "anchor_text": "9.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.9",
+          "resolved_id": "problem_6.9",
+          "status": "linked",
+          "link_method": "shared_source_block",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E10",
+      "number": "6.E10",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 9,
+          "content": "10. Derive a recursion equation for $ F_{t} $ for repeated parent-offspring mating, and calculate $ F_{t} $ for t = 0 to 5.",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b2",
+            "PopGen_chapter6:p057:b3",
+            "PopGen_chapter6:p057:b1"
+          ],
+          "source_bboxes": [
+            [
+              119.0,
+              267.0,
+              866.0,
+              319.0
+            ],
+            [
+              118.0,
+              329.0,
+              866.0,
+              408.0
+            ],
+            [
+              132.0,
+              205.0,
+              866.0,
+              259.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 10,
+        "anchor_text": "10.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E11",
+      "number": "6.E11",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 10,
+          "content": "11. For a gene with two alleles and $p = 0.3$, what are the expected genotype frequencies after five generations of sib mating? What are the expected genotype frequencies after one additional generation of random mating? ",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b3",
+            "PopGen_chapter6:p057:b2"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              329.0,
+              866.0,
+              408.0
+            ],
+            [
+              119.0,
+              267.0,
+              866.0,
+              319.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 11,
+        "anchor_text": "11.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E12",
+      "number": "6.E12",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 11,
+          "content": "12. With two alleles and $ p = \\frac{1}{2} $, what are the expected genotype frequencies in a random-mating population and among the offspring of first cousins? How great is the decrease in heterozygosity in the inbred population relative to the random-mating population?",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b4"
+          ],
+          "source_bboxes": [
+            [
+              117.0,
+              416.0,
+              864.0,
+              523.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 12,
+        "anchor_text": "12.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E13",
+      "number": "6.E13",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 12,
+          "content": "13. If the frequency of an autosomal recessive disorder is 1/1600 among unrelated parents, what is the expected frequency among the offspring of first cousins?",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b6"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              533.0,
+              862.0,
+              608.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 13,
+        "anchor_text": "13.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E14",
+      "number": "6.E14",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 13,
+          "content": "14. For a recessive allele at frequency q in a population in which one percent of the matings are between first cousins, but otherwise occur at random, the proportion of affected individuals having first-cousin parents is $ (1 + 15q)/(1 + 1599q) $. Calculate this ratio for q = 0.1, 0.05, 0.1, 0.005, and 0.001. Interpret the result when q = 1.",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b7"
+          ],
+          "source_bboxes": [
+            [
+              114.0,
+              622.0,
+              861.0,
+              754.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 14,
+        "anchor_text": "14.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E15",
+      "number": "6.E15",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 14,
+          "content": "15. Two-way hybrid corn is produced by crossing two different inbred lines; three-way hybrids are produced by crossing a two-way hybrid with an unrelated inbred; and four-way hybrids are produced by crossing two different two-way hybrids. What is the inbreeding coefficient of the offspring of randomly mated two-way, three-way, or four-way hybrids? (Hint: Consider the allele frequencies in gametes.)",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b8"
+          ],
+          "source_bboxes": [
+            [
+              112.0,
+              764.0,
+              858.0,
+              924.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 15,
+        "anchor_text": "15.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E16",
+      "number": "6.E16",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 15,
+          "content": "16. If a population is maintained by self-fertilization in even-numbered generations and by random mating in odd-numbered generations, what happens to the inbreeding coefficient?",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b9"
+          ],
+          "source_bboxes": [
+            [
+              108.0,
+              933.0,
+              856.0,
+              1013.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 16,
+        "anchor_text": "16.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E17",
+      "number": "6.E17",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 16,
+          "content": "17. Consider a population of plants in which, in each generation, a fraction S of the population (a random sample of all individuals) undergoes self-fertilization, and the remaining fraction 1 - S undergoes outcrossing (random mating). Assuming that there is no heredity tendency for the plants to self-fertilize or outcross, show that the magnitude of the inbreeding coefficient F at equilibrium equals $ S/(2 - S) $.",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b10"
+          ],
+          "source_bboxes": [
+            [
+              107.0,
+              1022.0,
+              855.0,
+              1183.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 17,
+        "anchor_text": "17.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E18",
+      "number": "6.E18",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 17,
+          "content": "18. Two diploid random mating populations have allele frequencies $ q + \\varepsilon $ and $ q - \\varepsilon $ for a recessive allele of a gene. What are the frequencies of homozygous recessives before and after population fusion?",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b11"
+          ],
+          "source_bboxes": [
+            [
+              105.0,
+              1192.0,
+              855.0,
+              1272.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 18,
+        "anchor_text": "18.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E19",
+      "number": "6.E19",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 18,
+          "content": "19. Show that $ F_{IT} = F_{IS} + F_{ST} - F_{IS}F_{ST} $ and interpret the expression.",
+          "source_pages": [
+            327
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p057:b12"
+          ],
+          "source_bboxes": [
+            [
+              104.0,
+              1280.0,
+              739.0,
+              1312.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 597,
+        "printed_page": 583,
+        "chapter": 6,
+        "answer_number": 19,
+        "anchor_text": "19.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E20",
+      "number": "6.E20",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 19,
+          "content": "20. Calculate $ F_{ST} $ among the three random-mating populations below based on the specified allele frequencies. What is the maximum value of $ F_{ST} $ in this situation?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b1"
+          ],
+          "source_bboxes": [
+            [
+              270.0,
+              203.0,
+              1021.0,
+              280.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 20,
+        "anchor_text": "20.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E21",
+      "number": "6.E21",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_029",
+          "block_index": 20,
+          "content": "21. Calculate $ F_{IS} $, $ F_{ST} $, and $ F_{IT} $ for the populations with the genotype frequencies shown in the following table:",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b3"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              429.0,
+              1024.0,
+              479.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 21,
+        "anchor_text": "21.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E22",
+      "number": "6.E22",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 0,
+          "content": "22. What is the inbreeding coefficient in a population of size 50 that undergoes",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b6"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              626.0,
+              1025.0,
+              678.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 1,
+          "content": "(a) exactly 47 generations of random mating followed by three generations of sib mating?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b7"
+          ],
+          "source_bboxes": [
+            [
+              309.0,
+              689.0,
+              1025.0,
+              739.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 2,
+          "content": "(b) 50 generations of random mating?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b8"
+          ],
+          "source_bboxes": [
+            [
+              311.0,
+              752.0,
+              691.0,
+              776.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 22,
+        "anchor_text": "22.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E23",
+      "number": "6.E23",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 3,
+          "content": "23. If a mainland population of snails has an allele frequency of 0.8 and an island population has a frequency of 0.2, how many generations are required for the island population to achieve an allele frequency of 0.5, given a migration rate of 0.01?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b9"
+          ],
+          "source_bboxes": [
+            [
+              273.0,
+              786.0,
+              1026.0,
+              892.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 23,
+        "anchor_text": "23.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E24",
+      "number": "6.E24",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 4,
+          "content": "24. If four populations with allele frequencies 0.2, 0.4, 0.6, and 0.8 undergo migration according to the island model with m = 0.05, what are the expected allele frequencies after 10 generations?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b10"
+          ],
+          "source_bboxes": [
+            [
+              274.0,
+              902.0,
+              1027.0,
+              981.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 24,
+        "anchor_text": "24.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E25",
+      "number": "6.E25",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 5,
+          "content": "25. In the island model of migration, how does the variance in allele frequency among populations at time t, $ \\sigma_{t}^{2} $, change as a function of m and t?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b11"
+          ],
+          "source_bboxes": [
+            [
+              274.0,
+              991.0,
+              1027.0,
+              1045.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 25,
+        "anchor_text": "25.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E26",
+      "number": "6.E26",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 6,
+          "content": "26. When random genetic drift is offset by migration among populations in the island model, what value of m is necessary to keep the equilibrium value of F smaller than 0.05?",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b12"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              1054.0,
+              1027.0,
+              1131.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 26,
+        "anchor_text": "26.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_6_E27",
+      "number": "6.E27",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 7,
+          "content": "27. Two island populations 1 and 2 are shown in the accompanying diagram. In population 1 the allele frequency of A in generation t is $ x_t $, and in population 2 it is $ y_t $. In every generation, a fraction u > 0 of the alleles in population 1 is removed and replaced with alleles from population 2, and a fraction v > 0 of the alleles in population 2 is removed and replaced with alleles from population 1.\n\n[[FIGURE:problem_6.27]]",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b13",
+            "PopGen_chapter6:p058:b14"
+          ],
+          "source_bboxes": [
+            [
+              271.0,
+              1143.0,
+              1028.0,
+              1301.0
+            ],
+            [
+              519.0,
+              1311.0,
+              787.0,
+              1411.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 8,
+          "content": "The equations relating $ x_{t} $ to $ x_{t-1} $ and $ y_{t} $ to $ y_{t-1} $ are $$ x_{t}=x_{t-1}(1-u)+y_{t-1}u $$ $$ y_{t}=y_{t-1}(1-v)+x_{t-1}v $$",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b1"
+          ],
+          "source_bboxes": [
+            [
+              155.0,
+              206.0,
+              634.0,
+              234.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 9,
+          "content": "(a) Derive an expression for $ x_t - y_t $ in terms of $ x_0 - y_0 $, and conclude that the equilibrium frequency $ \\hat{x} $ of A in population 1 equals the equilibrium frequency $ \\hat{y} $ of A in population 2.",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b3"
+          ],
+          "source_bboxes": [
+            [
+              152.0,
+              321.0,
+              865.0,
+              400.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 10,
+          "content": "(b) Derive an expression for $ vx_{t} + uy_{t} $ in terms of $ x_{0} $ and $ y_{0} $, and conclude that the equilibrium frequencies are given by $$ \\hat{x}=\\hat{y}=\\frac{v x_{0}+u y_{0}}{u+v} $$",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b4"
+          ],
+          "source_bboxes": [
+            [
+              152.0,
+              409.0,
+              865.0,
+              462.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 11,
+          "content": "(c) Explain how the approach to equilibrium differs between the case 0 < u + v < 1 and the case 1 < u + v < 2.",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b6"
+          ],
+          "source_bboxes": [
+            [
+              149.0,
+              536.0,
+              865.0,
+              585.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 598,
+        "printed_page": 584,
+        "chapter": 6,
+        "answer_number": 27,
+        "anchor_text": "27.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.27",
+          "resolved_id": "problem_6.27",
+          "status": "linked",
+          "link_method": "shared_source_block",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            328
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p058:b14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_6_E28",
+      "number": "6.E28",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter6",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 12,
+          "content": "28. In the Swabian Alps in Southern Germany, a verdant meadow serves as home to subpopulations of the incredible edible snail Helix pomatia. The subpopulations differ in the allele frequency of a mutation affecting shell coloration. A river meanders through the meadow from west to east, and a prominent knoll interrupts it from north to south. The accompanying crude diagram of the site shows the estimated allele frequency in a sample taken at each of 12 collection sites.\n\n[[FIGURE:problem_6.28]]",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b7"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              598.0,
+              863.0,
+              783.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 13,
+          "content": "Assuming that the differences in allele frequency are due mainly to random genetic drift, does the river or the knoll seem to be the stronger isolating barrier between the snail subpopulations? To solve this problem, first consider the subpopulation as divided into regions above (A) and below (B) the river (R), or as divided into regions west (W) or east (E) of the knoll (K). You should calculate $ F_{SR'} $, $ F_{KT} $, and $ F_{ST} $ for the division based on the river, and $ F_{SK'} $, $ F_{KT'} $, and $ F_{ST} $ for the division based on the knoll. The relative values of $ F_{SR} $ and $ F_{KT} $ should tell you whether the river or the knoll is the more significant barrier to genetic exchange.",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b9"
+          ],
+          "source_bboxes": [
+            [
+              143.0,
+              1089.0,
+              860.0,
+              1329.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 599,
+        "printed_page": 585,
+        "chapter": 6,
+        "answer_number": 28,
+        "anchor_text": "28.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_6.28",
+          "resolved_id": "problem_6.28",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            329
+          ],
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b10",
+            "PopGen_chapter6:p059:b8"
+          ]
+        }
+      ]
+    }
+  ]
+}

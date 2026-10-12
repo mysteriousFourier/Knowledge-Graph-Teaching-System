@@ -1,0 +1,52 @@
+{
+  "id": "Genetics_chapter15_021",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "SELECTED APPLICATIONS",
+    "subsections": [],
+    "section_level_1": "SELECTED APPLICATIONS",
+    "section_level_2": null,
+    "heading_path": [
+      "SELECTED APPLICATIONS"
+    ],
+    "display_heading": "SELECTED APPLICATIONS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 491,
+      "printed_page": 471,
+      "source_block_ids": [
+        "p491:b2"
+      ],
+      "bbox": [
+        87.0,
+        130.0,
+        453.0,
+        164.0
+      ],
+      "raw_text": "SELECTED APPLICATIONS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "We close by examining some selected applications of QTL mapping using inbred lines, followed by a summary of the conclusions that can be drawn from these studies to date.",
+      "source_page": 491,
+      "printed_page": 471,
+      "source_block_ids": [
+        "p491:b3"
+      ],
+      "bbox": [
+        85.0,
+        193.0,
+        1045.0,
+        302.0
+      ]
+    }
+  ]
+}

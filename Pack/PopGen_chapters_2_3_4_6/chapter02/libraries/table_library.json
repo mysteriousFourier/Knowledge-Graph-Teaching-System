@@ -1,0 +1,1384 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter2",
+  "count": 11,
+  "tables": [
+    {
+      "id": "2.1",
+      "label_format": "Table 2.1",
+      "title": "TABLE 2.1 Demonstration of the Hardy-Weinberg Principle",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Mating</td><td rowspan=\"2\">Frequency of mating (parents)</td><td colspan=\"3\">Frequency of zygotes (progeny)</td></tr><tr><td>AA</td><td>Aa</td><td>aa</td></tr><tr><td>AA $ \\times $ AA</td><td>$ P^{2} $</td><td>1</td><td>0</td><td>0</td></tr><tr><td>AA $ \\times $ Aa</td><td>2PQ</td><td>$ \\frac{1}{2} $</td><td>$ \\frac{1}{2} $</td><td>0</td></tr><tr><td>AA $ \\times $ aa</td><td>2PR</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Aa $ \\times $ Aa</td><td>$ Q^{2} $</td><td>$ \\frac{1}{4} $</td><td>$ \\frac{1}{2} $</td><td>$ \\frac{1}{4} $</td></tr><tr><td>Aa $ \\times $ aa</td><td>2QR</td><td>0</td><td>$ \\frac{1}{2} $</td><td>$ \\frac{1}{2} $</td></tr><tr><td>aa $ \\times $ aa</td><td>$ R^{2} $</td><td>0</td><td>0</td><td>1</td></tr><tr><td></td><td>Totals (next generation)</td><td>$ P' $</td><td>$ Q' $</td><td>$ R' $</td></tr><tr><td>therefore</td><td colspan=\"4\">$ P'=P^{2}+\\frac{2PQ}{2}+\\frac{Q^{2}}{4}=(P+\\frac{Q}{2})^{2}=p^{2} $</td></tr><tr><td></td><td colspan=\"4\">$ Q'=\\frac{2PQ}{2}+2PR+\\frac{Q^{2}}{2}+\\frac{2QR}{2}=2(P+\\frac{Q}{2})(R+\\frac{Q}{2})=2pq $</td></tr><tr><td></td><td colspan=\"4\">$ R'=\\frac{Q^{2}}{4}+\\frac{2QR}{2}+R^{2}=(R+\\frac{Q}{2})^{2}=q^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Mating",
+          "Frequency of mating (parents)",
+          "Frequency of zygotes (progeny)"
+        ],
+        [
+          "AA",
+          "Aa",
+          "aa"
+        ],
+        [
+          "AA $ \\times $ AA",
+          "$ P^{2} $",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "AA $ \\times $ Aa",
+          "2PQ",
+          "$ \\frac{1}{2} $",
+          "$ \\frac{1}{2} $",
+          "0"
+        ],
+        [
+          "AA $ \\times $ aa",
+          "2PR",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "Aa $ \\times $ Aa",
+          "$ Q^{2} $",
+          "$ \\frac{1}{4} $",
+          "$ \\frac{1}{2} $",
+          "$ \\frac{1}{4} $"
+        ],
+        [
+          "Aa $ \\times $ aa",
+          "2QR",
+          "0",
+          "$ \\frac{1}{2} $",
+          "$ \\frac{1}{2} $"
+        ],
+        [
+          "aa $ \\times $ aa",
+          "$ R^{2} $",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "",
+          "Totals (next generation)",
+          "$ P' $",
+          "$ Q' $",
+          "$ R' $"
+        ],
+        [
+          "therefore",
+          "$ P'=P^{2}+\\frac{2PQ}{2}+\\frac{Q^{2}}{4}=(P+\\frac{Q}{2})^{2}=p^{2} $"
+        ],
+        [
+          "",
+          "$ Q'=\\frac{2PQ}{2}+2PR+\\frac{Q^{2}}{2}+\\frac{2QR}{2}=2(P+\\frac{Q}{2})(R+\\frac{Q}{2})=2pq $"
+        ],
+        [
+          "",
+          "$ R'=\\frac{Q^{2}}{4}+\\frac{2QR}{2}+R^{2}=(R+\\frac{Q}{2})^{2}=q^{2} $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 7,
+        "bbox": [
+          100,
+          198,
+          777,
+          626
+        ],
+        "caption_bbox": [
+          103,
+          179,
+          754,
+          209
+        ],
+        "extraction_channel": "paddle_raw_layout_plus_visual_bottom_equations",
+        "unit_id": "PopGen_chapter2_005",
+        "subsection": "Random Mating of Genotypes versus Random Union of Gametes",
+        "has_physical_placeholder": true,
+        "heading_path": [
+          "2.2 THE HARDY-WEINBERG PRINCIPLE",
+          "Random Mating of Genotypes versus Random Union of Gametes"
+        ],
+        "source_pages": [
+          65
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p007:b1",
+          "PopGen_chapter2:p007:b3",
+          "PopGen_chapter2:p007:b4",
+          "PopGen_chapter2:p007:b5",
+          "PopGen_chapter2:p007:b6"
+        ],
+        "source_bboxes": [
+          [
+            115.0,
+            200.0,
+            833.0,
+            227.0
+          ],
+          [
+            104.0,
+            781.0,
+            859.0,
+            912.0
+          ],
+          [
+            102.0,
+            916.0,
+            858.0,
+            1127.0
+          ],
+          [
+            100.0,
+            1130.0,
+            855.0,
+            1371.0
+          ],
+          [
+            966.0,
+            136.0,
+            992.0,
+            155.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.1",
+      "heading_path": [
+        "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "Random Mating of Genotypes versus Random Union of Gametes"
+      ],
+      "subsection": "Random Mating of Genotypes versus Random Union of Gametes",
+      "audit_provenance": {
+        "heading_path": [
+          "2.2 THE HARDY-WEINBERG PRINCIPLE",
+          "Random Mating of Genotypes versus Random Union of Gametes"
+        ],
+        "subsection": "Random Mating of Genotypes versus Random Union of Gametes",
+        "source_pages": [
+          65
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p007:b1",
+          "PopGen_chapter2:p007:b3",
+          "PopGen_chapter2:p007:b4",
+          "PopGen_chapter2:p007:b5",
+          "PopGen_chapter2:p007:b6"
+        ],
+        "source_bboxes": [
+          [
+            115.0,
+            200.0,
+            833.0,
+            227.0
+          ],
+          [
+            104.0,
+            781.0,
+            859.0,
+            912.0
+          ],
+          [
+            102.0,
+            916.0,
+            858.0,
+            1127.0
+          ],
+          [
+            100.0,
+            1130.0,
+            855.0,
+            1371.0
+          ],
+          [
+            966.0,
+            136.0,
+            992.0,
+            155.0
+          ]
+        ],
+        "audit_evidence_sha256": "16b57137c5828e8fd831789e42aac62b7ade7dee1ac0ead6bca779b741749257"
+      }
+    },
+    {
+      "id": "2.2",
+      "label_format": "Table 2.2",
+      "title": "TABLE 2.2 Linkage Disequilibrium from Admixture of Subpopulations",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Chromosome</td><td>Frequency</td><td>Subpopulation 1</td><td>Subpopulation 2</td><td>Equal mixture</td></tr><tr><td>AB</td><td>$ P_{AB} $</td><td>0.0025</td><td>0.9025</td><td>0.4525</td></tr><tr><td>Ab</td><td>$ P_{Ab} $</td><td>0.0475</td><td>0.0475</td><td>0.0475</td></tr><tr><td>aB</td><td>$ P_{aB} $</td><td>0.0475</td><td>0.0475</td><td>0.0475</td></tr><tr><td>ab</td><td>$ P_{ab} $</td><td>0.9025</td><td>0.0025</td><td>0.4525</td></tr><tr><td>D=  $ P_{AB}P_{ab}-P_{Ab}P_{aB} $</td><td>0</td><td>0</td><td>0.2025</td><td></td></tr><tr><td>Dmin</td><td>-0.0025</td><td>-0.0025</td><td>-0.2500</td><td></td></tr><tr><td>Dmax</td><td>0.0475</td><td>0.0475</td><td>0.2500</td><td></td></tr></table>",
+      "rows": [
+        [
+          "Chromosome",
+          "Frequency",
+          "Subpopulation 1",
+          "Subpopulation 2",
+          "Equal mixture"
+        ],
+        [
+          "AB",
+          "$ P_{AB} $",
+          "0.0025",
+          "0.9025",
+          "0.4525"
+        ],
+        [
+          "Ab",
+          "$ P_{Ab} $",
+          "0.0475",
+          "0.0475",
+          "0.0475"
+        ],
+        [
+          "aB",
+          "$ P_{aB} $",
+          "0.0475",
+          "0.0475",
+          "0.0475"
+        ],
+        [
+          "ab",
+          "$ P_{ab} $",
+          "0.9025",
+          "0.0025",
+          "0.4525"
+        ],
+        [
+          "D= $ P_{AB}P_{ab}-P_{Ab}P_{aB} $",
+          "0",
+          "0",
+          "0.2025",
+          ""
+        ],
+        [
+          "Dmin",
+          "-0.0025",
+          "-0.0025",
+          "-0.2500",
+          ""
+        ],
+        [
+          "Dmax",
+          "0.0475",
+          "0.0475",
+          "0.2500",
+          ""
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 41,
+        "bbox": [
+          93,
+          941,
+          890,
+          1235
+        ],
+        "caption_bbox": [
+          94,
+          923,
+          847,
+          955
+        ],
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_019",
+        "subsection": "Linkage Disequilibrium Due to Population Admixture",
+        "physical_owner_rebound_by": "structured_fusion_embedded_table_reference_owner",
+        "has_physical_placeholder": true,
+        "physical_placeholder_inserted_by": "structured_fusion_numbered_table_materializer",
+        "physical_placeholder_insert_mode": "append_to_owner_unit",
+        "physical_placeholder_block_index": 3,
+        "heading_path": [
+          "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+          "Linkage Disequilibrium Due to Population Admixture"
+        ],
+        "source_pages": [
+          99
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p041:b5"
+        ],
+        "source_bboxes": [
+          [
+            105.0,
+            1027.0,
+            936.0,
+            1055.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.2",
+      "heading_path": [
+        "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+        "Linkage Disequilibrium Due to Population Admixture"
+      ],
+      "subsection": "Linkage Disequilibrium Due to Population Admixture",
+      "audit_provenance": {
+        "heading_path": [
+          "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+          "Linkage Disequilibrium Due to Population Admixture"
+        ],
+        "subsection": "Linkage Disequilibrium Due to Population Admixture",
+        "source_pages": [
+          99
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p041:b5"
+        ],
+        "source_bboxes": [
+          [
+            105.0,
+            1027.0,
+            936.0,
+            1055.0
+          ]
+        ],
+        "audit_evidence_sha256": "cfb481803aeec417cab8bef55f190589832aa1e0dbf5662bd0e5d56d5714570d"
+      }
+    },
+    {
+      "id": "inline_1",
+      "label_format": "Inline Table 1",
+      "title": "Inline Table 1",
+      "table_type": "inline",
+      "html": "<table><tr><td>$ A_{1}A_{1} $</td><td>$ p_{1}^{2} $</td><td>$ A_{1}A_{2} $</td><td>$ 2p_{1}p_{2} $</td><td>$ A_{2}A_{2} $</td><td>$ p_{2}^{2} $</td></tr><tr><td>$ A_{1}A_{3} $</td><td>$ 2p_{1}p_{3} $</td><td>$ A_{2}A_{3} $</td><td>$ 2p_{2}p_{3} $</td><td>$ A_{3}A_{3} $</td><td>$ p_{3}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "$ A_{1}A_{1} $",
+          "$ p_{1}^{2} $",
+          "$ A_{1}A_{2} $",
+          "$ 2p_{1}p_{2} $",
+          "$ A_{2}A_{2} $",
+          "$ p_{2}^{2} $"
+        ],
+        [
+          "$ A_{1}A_{3} $",
+          "$ 2p_{1}p_{3} $",
+          "$ A_{2}A_{3} $",
+          "$ 2p_{2}p_{3} $",
+          "$ A_{3}A_{3} $",
+          "$ p_{3}^{2} $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 23,
+        "bbox": [
+          171,
+          986,
+          707,
+          1051
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_012",
+        "subsection": "Three or More Alleles",
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "source_pages": [
+          81
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p023:b6"
+        ],
+        "source_bboxes": [
+          [
+            114.0,
+            956.0,
+            870.0,
+            1088.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_1",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "Three or More Alleles"
+      ],
+      "subsection": "Three or More Alleles",
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "subsection": "Three or More Alleles",
+        "source_pages": [
+          81
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p023:b6"
+        ],
+        "source_bboxes": [
+          [
+            114.0,
+            956.0,
+            870.0,
+            1088.0
+          ]
+        ],
+        "audit_evidence_sha256": "6a44d63874447ad111b10543c62d95303c3ab38352a32f6ce7ad9d1c716959ae"
+      }
+    },
+    {
+      "id": "inline_2",
+      "label_format": "Inline Table 2",
+      "title": "Inline Table 2",
+      "table_type": "inline",
+      "html": "<table><tr><td rowspan=\"2\">Punnett square show-einberg frequencies fornal alleles.</td><td>Allele</td><td>$ A_{1} $</td><td>$ A_{2} $</td><td>$ A_{3} $</td></tr><tr><td>Frequency</td><td>$ p_{1} $</td><td>$ p_{2} $</td><td>$ p_{3} $</td></tr><tr><td rowspan=\"4\">Allele</td><td>Frequency</td><td></td><td></td><td></td></tr><tr><td>$ A_{1}A_{1} $</td><td>$ A_{1}A_{2} $</td><td>$ A_{1}A_{3} $</td><td></td></tr><tr><td>$ p_{1}^{2} $</td><td>$ p_{1}p_{2} $</td><td>$ p_{1}p_{3} $</td><td></td></tr><tr><td>$ A_{2}A_{1} $</td><td>$ A_{2}A_{2} $</td><td>$ A_{2}A_{3} $</td><td></td></tr><tr><td rowspan=\"3\">Female gametes</td><td>$ p_{2} $</td><td>$ p_{2}p_{1} $</td><td>$ p_{2}^{2} $</td><td>$ p_{2}p_{3} $</td></tr><tr><td>$ A_{3}A_{1} $</td><td>$ A_{3}A_{2} $</td><td>$ A_{3}A_{3} $</td><td></td></tr><tr><td>$ p_{3} $</td><td>$ p_{3}p_{1} $</td><td>$ p_{3}p_{2} $</td><td>$ p_{3}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Punnett square show-einberg frequencies fornal alleles.",
+          "Allele",
+          "$ A_{1} $",
+          "$ A_{2} $",
+          "$ A_{3} $"
+        ],
+        [
+          "Frequency",
+          "$ p_{1} $",
+          "$ p_{2} $",
+          "$ p_{3} $"
+        ],
+        [
+          "Allele",
+          "Frequency",
+          "",
+          "",
+          ""
+        ],
+        [
+          "$ A_{1}A_{1} $",
+          "$ A_{1}A_{2} $",
+          "$ A_{1}A_{3} $",
+          ""
+        ],
+        [
+          "$ p_{1}^{2} $",
+          "$ p_{1}p_{2} $",
+          "$ p_{1}p_{3} $",
+          ""
+        ],
+        [
+          "$ A_{2}A_{1} $",
+          "$ A_{2}A_{2} $",
+          "$ A_{2}A_{3} $",
+          ""
+        ],
+        [
+          "Female gametes",
+          "$ p_{2} $",
+          "$ p_{2}p_{1} $",
+          "$ p_{2}^{2} $",
+          "$ p_{2}p_{3} $"
+        ],
+        [
+          "$ A_{3}A_{1} $",
+          "$ A_{3}A_{2} $",
+          "$ A_{3}A_{3} $",
+          ""
+        ],
+        [
+          "$ p_{3} $",
+          "$ p_{3}p_{1} $",
+          "$ p_{3}p_{2} $",
+          "$ p_{3}^{2} $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 24,
+        "bbox": [
+          230,
+          182,
+          914,
+          683
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_012",
+        "subsection": "Three or More Alleles",
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "source_pages": [
+          82
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p024:b1",
+          "PopGen_chapter2:p024:b9",
+          "PopGen_chapter2:p024:b8"
+        ],
+        "source_bboxes": [
+          [
+            130.0,
+            206.0,
+            474.0,
+            275.0
+          ],
+          [
+            572.0,
+            375.0,
+            1018.0,
+            745.0
+          ],
+          [
+            632.0,
+            313.0,
+            651.0,
+            331.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_2",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "Three or More Alleles"
+      ],
+      "subsection": "Three or More Alleles",
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "subsection": "Three or More Alleles",
+        "source_pages": [
+          82
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p024:b1",
+          "PopGen_chapter2:p024:b9",
+          "PopGen_chapter2:p024:b8"
+        ],
+        "source_bboxes": [
+          [
+            130.0,
+            206.0,
+            474.0,
+            275.0
+          ],
+          [
+            572.0,
+            375.0,
+            1018.0,
+            745.0
+          ],
+          [
+            632.0,
+            313.0,
+            651.0,
+            331.0
+          ]
+        ],
+        "audit_evidence_sha256": "9ef8a4c028447a37c80bf61bc25f72deeeba144fd3d5740ae0fa7201b8873682"
+      }
+    },
+    {
+      "id": "inline_3",
+      "label_format": "Inline Table 3",
+      "title": "Inline Table 3",
+      "table_type": "inline",
+      "html": "<table><tr><td rowspan=\"4\"></td><td colspan=\"3\">Male gametes</td></tr><tr><td colspan=\"2\">X-bearing</td><td>Y-bearing</td></tr><tr><td>Allele</td><td>X^{A}</td><td>X^{a}</td></tr><tr><td>Frequency</td><td>p</td><td>q</td></tr><tr><td rowspan=\"3\">Allele</td><td>Frequency</td><td></td><td></td></tr><tr><td>X^{A}X^{A}</td><td>X^{A}X^{a}</td><td>X^{A}Y</td></tr><tr><td>p^{2}</td><td>pq</td><td>p</td></tr><tr><td rowspan=\"3\">Female gametes</td><td></td><td></td><td></td></tr><tr><td>X^{a}X^{A}</td><td>X^{a}X^{a}</td><td>X^{a}Y</td></tr><tr><td>q</td><td>q^{2}</td><td>q</td></tr><tr><td rowspan=\"5\"></td><td colspan=\"3\">Summed frequencies in zygotes:</td></tr><tr><td>Females</td><td>Males</td><td></td></tr><tr><td>X^{A}X^{A}: p^{2}</td><td>X^{A}Y: p</td><td></td></tr><tr><td>X^{A}X^{a}: 2pq</td><td>X^{a}Y: q</td><td></td></tr><tr><td>X^{a}X^{a}: q^{2}</td><td></td><td></td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Male gametes"
+        ],
+        [
+          "X-bearing",
+          "Y-bearing"
+        ],
+        [
+          "Allele",
+          "X^{A}",
+          "X^{a}"
+        ],
+        [
+          "Frequency",
+          "p",
+          "q"
+        ],
+        [
+          "Allele",
+          "Frequency",
+          "",
+          ""
+        ],
+        [
+          "X^{A}X^{A}",
+          "X^{A}X^{a}",
+          "X^{A}Y"
+        ],
+        [
+          "p^{2}",
+          "pq",
+          "p"
+        ],
+        [
+          "Female gametes",
+          "",
+          "",
+          ""
+        ],
+        [
+          "X^{a}X^{A}",
+          "X^{a}X^{a}",
+          "X^{a}Y"
+        ],
+        [
+          "q",
+          "q^{2}",
+          "q"
+        ],
+        [
+          "",
+          "Summed frequencies in zygotes:"
+        ],
+        [
+          "Females",
+          "Males",
+          ""
+        ],
+        [
+          "X^{A}X^{A}: p^{2}",
+          "X^{A}Y: p",
+          ""
+        ],
+        [
+          "X^{A}X^{a}: 2pq",
+          "X^{a}Y: q",
+          ""
+        ],
+        [
+          "X^{a}X^{a}: q^{2}",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 27,
+        "bbox": [
+          89,
+          588,
+          778,
+          1163
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_013",
+        "subsection": "X-Linked Genes",
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "X-Linked Genes"
+        ],
+        "source_pages": [
+          85
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p027:b4"
+        ],
+        "source_bboxes": [
+          [
+            97.0,
+            1308.0,
+            843.0,
+            1381.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_3",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "X-Linked Genes"
+      ],
+      "subsection": "X-Linked Genes",
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "X-Linked Genes"
+        ],
+        "subsection": "X-Linked Genes",
+        "source_pages": [
+          85
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p027:b4"
+        ],
+        "source_bboxes": [
+          [
+            97.0,
+            1308.0,
+            843.0,
+            1381.0
+          ]
+        ],
+        "audit_evidence_sha256": "ac19f0f80728f72ea16a92a08762397e0b2e85c5b206cef1966459e9e02f3fdc"
+      }
+    },
+    {
+      "id": "inline_4",
+      "label_format": "Inline Table 4",
+      "title": "Inline Table 4",
+      "table_type": "inline",
+      "html": "<table><tr><td rowspan=\"2\">en</td><td colspan=\"2\">Alleles of A gene</td></tr><tr><td>Allele</td><td>A</td></tr><tr><td></td><td>Frequency</td><td>$ p_{A} $</td></tr><tr><td>Allele</td><td>Frequency</td><td>AB</td></tr><tr><td>B</td><td>$ p_{B} $</td><td>AB</td></tr><tr><td>Alleles of B gene</td><td>$ p_{A}p_{B} $</td><td>$ q_{A}p_{B} $</td></tr><tr><td>b</td><td>$ q_{b} $</td><td>ab</td></tr><tr><td></td><td>$ p_{A}q_{b} $</td><td>$ q_{a}q_{b} $</td></tr></table>",
+      "rows": [
+        [
+          "en",
+          "Alleles of A gene"
+        ],
+        [
+          "Allele",
+          "A"
+        ],
+        [
+          "",
+          "Frequency",
+          "$ p_{A} $"
+        ],
+        [
+          "Allele",
+          "Frequency",
+          "AB"
+        ],
+        [
+          "B",
+          "$ p_{B} $",
+          "AB"
+        ],
+        [
+          "Alleles of B gene",
+          "$ p_{A}p_{B} $",
+          "$ q_{A}p_{B} $"
+        ],
+        [
+          "b",
+          "$ q_{b} $",
+          "ab"
+        ],
+        [
+          "",
+          "$ p_{A}q_{b} $",
+          "$ q_{a}q_{b} $"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 30,
+        "bbox": [
+          494,
+          174,
+          934,
+          491
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_014",
+        "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+        ],
+        "source_pages": [
+          88
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p030:b1"
+        ],
+        "source_bboxes": [
+          [
+            558.0,
+            196.0,
+            1042.0,
+            545.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_4",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+      ],
+      "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+        ],
+        "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "source_pages": [
+          88
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p030:b1"
+        ],
+        "source_bboxes": [
+          [
+            558.0,
+            196.0,
+            1042.0,
+            545.0
+          ]
+        ],
+        "audit_evidence_sha256": "1ecece4d8bf8877555b68861aa910070a9a6f95a46e31ae1bf1e6c5f941f65a4"
+      }
+    },
+    {
+      "id": "inline_5",
+      "label_format": "Inline Table 5",
+      "title": "Inline Table 5",
+      "table_type": "inline",
+      "html": "<table><tr><td>Trait</td><td>Number of individuals affected per million individuals</td></tr><tr><td>(a)</td><td>2786</td></tr><tr><td>(b)</td><td>658</td></tr><tr><td>(c)</td><td>287</td></tr><tr><td>(d)</td><td>160</td></tr><tr><td>(e)</td><td>102</td></tr></table>",
+      "rows": [
+        [
+          "Trait",
+          "Number of individuals affected per million individuals"
+        ],
+        [
+          "(a)",
+          "2786"
+        ],
+        [
+          "(b)",
+          "658"
+        ],
+        [
+          "(c)",
+          "287"
+        ],
+        [
+          "(d)",
+          "160"
+        ],
+        [
+          "(e)",
+          "102"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 45,
+        "bbox": [
+          142,
+          497,
+          714,
+          636
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_023",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          103
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p045:b4"
+        ],
+        "source_bboxes": [
+          [
+            164.0,
+            552.0,
+            787.0,
+            573.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_5",
+      "heading_path": [
+        "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          103
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p045:b4"
+        ],
+        "source_bboxes": [
+          [
+            164.0,
+            552.0,
+            787.0,
+            573.0
+          ]
+        ],
+        "audit_evidence_sha256": "870f038f4f8586524d07501210970f3ee2cd159de870011cb6936f2ca72f8bc4"
+      }
+    },
+    {
+      "id": "inline_6",
+      "label_format": "Inline Table 6",
+      "title": "Inline Table 6",
+      "table_type": "inline",
+      "html": "<table><tr><td>Population</td><td>AA</td><td>Aa</td><td>aa</td></tr><tr><td>(a)</td><td>8</td><td>53</td><td>39</td></tr><tr><td>(b)</td><td>9</td><td>61</td><td>30</td></tr><tr><td>(c)</td><td>13</td><td>58</td><td>29</td></tr><tr><td>(d)</td><td>18</td><td>35</td><td>47</td></tr></table>",
+      "rows": [
+        [
+          "Population",
+          "AA",
+          "Aa",
+          "aa"
+        ],
+        [
+          "(a)",
+          "8",
+          "53",
+          "39"
+        ],
+        [
+          "(b)",
+          "9",
+          "61",
+          "30"
+        ],
+        [
+          "(c)",
+          "13",
+          "58",
+          "29"
+        ],
+        [
+          "(d)",
+          "18",
+          "35",
+          "47"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 45,
+        "bbox": [
+          144,
+          777,
+          609,
+          898
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_024",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          103
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p045:b6"
+        ],
+        "source_bboxes": [
+          [
+            122.0,
+            720.0,
+            863.0,
+            852.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_6",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          103
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p045:b6"
+        ],
+        "source_bboxes": [
+          [
+            122.0,
+            720.0,
+            863.0,
+            852.0
+          ]
+        ],
+        "audit_evidence_sha256": "872dc758e705dcb34a5c7920b3978b1ead0841a6b1ee7f65d9663b60f6d2c79d"
+      }
+    },
+    {
+      "id": "inline_7",
+      "label_format": "Inline Table 7",
+      "title": "Inline Table 7",
+      "table_type": "inline",
+      "html": "<table><tr><td>Population</td><td>$ P_{AB} $</td><td>$ P_{Ab} $</td><td>$ P_{aB} $</td><td>$ P_{ab} $</td></tr><tr><td>(a)</td><td>0.2598</td><td>0.5362</td><td>0.0792</td><td>0.1248</td></tr><tr><td>(b)</td><td>0.0008</td><td>0.0196</td><td>0.0694</td><td>0.9102</td></tr><tr><td>(c)</td><td>0.7332</td><td>0.0082</td><td>0.0230</td><td>0.2356</td></tr><tr><td>(d)</td><td>0.2363</td><td>0.3029</td><td>0.2183</td><td>0.2425</td></tr><tr><td>(e)</td><td>0.0237</td><td>0.3460</td><td>0.5574</td><td>0.0729</td></tr></table>",
+      "rows": [
+        [
+          "Population",
+          "$ P_{AB} $",
+          "$ P_{Ab} $",
+          "$ P_{aB} $",
+          "$ P_{ab} $"
+        ],
+        [
+          "(a)",
+          "0.2598",
+          "0.5362",
+          "0.0792",
+          "0.1248"
+        ],
+        [
+          "(b)",
+          "0.0008",
+          "0.0196",
+          "0.0694",
+          "0.9102"
+        ],
+        [
+          "(c)",
+          "0.7332",
+          "0.0082",
+          "0.0230",
+          "0.2356"
+        ],
+        [
+          "(d)",
+          "0.2363",
+          "0.3029",
+          "0.2183",
+          "0.2425"
+        ],
+        [
+          "(e)",
+          "0.0237",
+          "0.3460",
+          "0.5574",
+          "0.0729"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 47,
+        "bbox": [
+          140,
+          850,
+          667,
+          998
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "unit_id": "PopGen_chapter2_024",
+        "subsection": "PROBLEMS",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "source_pages": [
+          105
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p047:b6"
+        ],
+        "source_bboxes": [
+          [
+            103.0,
+            776.0,
+            856.0,
+            934.0
+          ]
+        ]
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_7",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          105
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p047:b6"
+        ],
+        "source_bboxes": [
+          [
+            103.0,
+            776.0,
+            856.0,
+            934.0
+          ]
+        ],
+        "audit_evidence_sha256": "612aa2228c07b2a0e4c212cded1afef65415551e192dde0965d3257946ed1e57"
+      }
+    },
+    {
+      "id": "inline_8",
+      "label_format": "Inline Table 8",
+      "title": "Inline Table 8",
+      "table_type": "inline",
+      "html": "<table><tr><td>Example</td><td>(a)</td><td>(b)</td><td>(c)</td></tr><tr><td>$ P1_{AA} $</td><td>0.0734</td><td>0.7220</td><td>0.0277</td></tr><tr><td>$ P1_{aB} $</td><td>0.6860</td><td>0.0082</td><td>0.0628</td></tr><tr><td>$ P1_{Ab} $</td><td>0.0232</td><td>0.2667</td><td>0.2786</td></tr><tr><td>$ P1_{ab} $</td><td>0.2174</td><td>0.0031</td><td>0.6309</td></tr><tr><td>$ P2_{AA} $</td><td>0.4082</td><td>0.0132</td><td>0.0281</td></tr><tr><td>$ P2_{aB} $</td><td>0.3380</td><td>0.0621</td><td>0.2959</td></tr><tr><td>$ P2_{Ab} $</td><td>0.1388</td><td>0.1622</td><td>0.0587</td></tr><tr><td>$ P2_{ab} $</td><td>0.1150</td><td>0.7625</td><td>0.6173</td></tr></table>",
+      "rows": [
+        [
+          "Example",
+          "(a)",
+          "(b)",
+          "(c)"
+        ],
+        [
+          "$ P1_{AA} $",
+          "0.0734",
+          "0.7220",
+          "0.0277"
+        ],
+        [
+          "$ P1_{aB} $",
+          "0.6860",
+          "0.0082",
+          "0.0628"
+        ],
+        [
+          "$ P1_{Ab} $",
+          "0.0232",
+          "0.2667",
+          "0.2786"
+        ],
+        [
+          "$ P1_{ab} $",
+          "0.2174",
+          "0.0031",
+          "0.6309"
+        ],
+        [
+          "$ P2_{AA} $",
+          "0.4082",
+          "0.0132",
+          "0.0281"
+        ],
+        [
+          "$ P2_{aB} $",
+          "0.3380",
+          "0.0621",
+          "0.2959"
+        ],
+        [
+          "$ P2_{Ab} $",
+          "0.1388",
+          "0.1622",
+          "0.0587"
+        ],
+        [
+          "$ P2_{ab} $",
+          "0.1150",
+          "0.7625",
+          "0.6173"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 48,
+        "bbox": [
+          321,
+          267,
+          824,
+          484
+        ],
+        "caption_bbox": null,
+        "extraction_channel": "paddle_raw_layout",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          106
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p048:b2"
+        ],
+        "source_bboxes": [
+          [
+            353.0,
+            296.0,
+            911.0,
+            536.0
+          ]
+        ],
+        "unit_id": "PopGen_chapter2_024"
+      },
+      "description": null,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_8",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "PROBLEMS"
+      ],
+      "subsection": "PROBLEMS",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          106
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p048:b2"
+        ],
+        "source_bboxes": [
+          [
+            353.0,
+            296.0,
+            911.0,
+            536.0
+          ]
+        ],
+        "audit_evidence_sha256": "a59a0e678747352151cb5847c420f85890a990dbc74e0bed89294e4e6ad7749d"
+      }
+    },
+    {
+      "id": "inline_p53_observed_expected",
+      "label_format": "Inline table",
+      "title": "Observed and expected p53 genotype counts",
+      "table_type": "inline",
+      "html": "<table><tr><th>Genotype</th><th>Observed number</th><th>Expected number</th></tr><tr><td>Arg/Arg</td><td>166</td><td>160.6</td></tr><tr><td>Arg/Pro</td><td>120</td><td>130.8</td></tr><tr><td>Pro/Pro</td><td>32</td><td>26.6</td></tr></table>",
+      "rows": [
+        [
+          "Genotype",
+          "Observed number",
+          "Expected number"
+        ],
+        [
+          "Arg/Arg",
+          "166",
+          "160.6"
+        ],
+        [
+          "Arg/Pro",
+          "120",
+          "130.8"
+        ],
+        [
+          "Pro/Pro",
+          "32",
+          "26.6"
+        ]
+      ],
+      "source": {
+        "chapter": "PopGen_chapter2",
+        "page": 11,
+        "bbox": [
+          137,
+          492,
+          743,
+          603
+        ],
+        "extraction_channel": "manual_visual_logical_table_recovery",
+        "unit_id": "PopGen_chapter2_007",
+        "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "has_physical_placeholder": true,
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+        ],
+        "source_pages": [
+          69
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p011:b2",
+          "PopGen_chapter2:p011:b3"
+        ],
+        "source_bboxes": [
+          [
+            152.0,
+            545.0,
+            830.0,
+            568.0
+          ],
+          [
+            150.0,
+            576.0,
+            823.0,
+            666.0
+          ]
+        ]
+      },
+      "description": "Three-column observed-versus-expected genotype count table printed on master page 69.",
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:inline_p53_observed_expected",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+      ],
+      "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+        ],
+        "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "source_pages": [
+          69
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p011:b2",
+          "PopGen_chapter2:p011:b3"
+        ],
+        "source_bboxes": [
+          [
+            152.0,
+            545.0,
+            830.0,
+            568.0
+          ],
+          [
+            150.0,
+            576.0,
+            823.0,
+            666.0
+          ]
+        ],
+        "audit_evidence_sha256": "2140ee567c723f15a9cc5650aab5cd7be0060b4496c11d7707a5607524c0f4f9"
+      }
+    }
+  ]
+}

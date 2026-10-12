@@ -1,0 +1,1522 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter4",
+  "count": 26,
+  "problems": [
+    {
+      "id": "PopGen_problem_4_1",
+      "number": "4.1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 8,
+          "content": "PROBLEM 4.1 A genetic factor has been described in Drosophila mauritiana that results in the spontaneous deletion of the transposable genetic element mariner at a frequency of approximately 1% per generation for each copy (Hartl 2001). In a population containing an autosomal site at which a mariner insertion is fixed (homozygous), how many generations would be required for the frequency of flies that are homozygous for a deletion of the element to exceed 5%? Assume that the population is large, that mating is random, that the excision factor is fixed, and that deletion of the element does not affect survival or reproduction.",
+          "source_pages": [
+            169
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b3",
+            "PopGen_chapter4:p005:b5"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              968.0,
+              548.0,
+              1164.0
+            ],
+            [
+              573.0,
+              970.0,
+              1000.0,
+              1139.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 9,
+          "content": "ANSWER. Let $ p_t $ be the frequency of chromosomes in which the mariner element remains undeleted in generation $ t $, and let $ \\mu = 0.01 $ be the probability of deletion of the element per generation. For this situation, Equation 4.1 applies with $ \\mu = 0.01 $ and $ p_0 = 1 $. The frequency of deletion homozygotes is greater than 5% when $ (1 - p_t)^2 > 0.05 $, or $ p_t < 1 - \\sqrt{(0.05)} = 0.776 $. Thus, $ t $ should be greater than $ \\ln(0.776)/\\ln(0.99) = 25.2 $ generations.",
+          "source_pages": [
+            169
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b4",
+            "PopGen_chapter4:p005:b6"
+          ],
+          "source_bboxes": [
+            [
+              114.0,
+              1202.0,
+              544.0,
+              1325.0
+            ],
+            [
+              571.0,
+              1204.0,
+              999.0,
+              1327.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "4.1",
+          "resolved_id": "4.1",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            167
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p003:b13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_2",
+      "number": "4.2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_004",
+          "block_index": 6,
+          "content": "PROBLEM 4.2 The bacterium Salmonella enterica has a genetic switching mechanism that regulates the production of alternative forms of a protein component of the cellular flagella. There are two alleles, which we will call A (for the \"specific-phase\" flagellar property) and a (for the \"group-phase\" flagellar property). Switching back and forth between A and a takes place rapidly enough that Equation 4.4 can be applied. The transition from A to a has a rate of $ \\mu = 8.6 \\times 10^{-4} $ per generation, and that of a to A has a rate of $ v = 4.7 \\times 10^{-3} $ per generation. These rates are orders of magnitude larger than mutation rates typically observed for other genes. The reason is that the change from A to a and back again does not result from mutation in the conventional sense but from intrachromosomal recombination (Simon et al. 1980). Formally, however, we can treat the system as one with reversible mutation. In cultures initially established with the frequency of A at $ p_0 = 0 $, Stocker (1949) found that the frequency increased to $ p = 0.16 $ after 30 generations and to $ p = 0.85 $ after 700 generations. In cultures initiated with $ p_0 = 1 $, the frequency decreased to 0.88 after 388 generations and to 0.86 after 700 generations. How do these values agree with those calculated from Equation 4.4 using the estimated mutation rates? What is the predicted equilibrium frequency of A?",
+          "source_pages": [
+            171
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p007:b4",
+            "PopGen_chapter4:p007:b5"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              950.0,
+              550.0,
+              1342.0
+            ],
+            [
+              576.0,
+              950.0,
+              1005.0,
+              1342.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_004",
+          "block_index": 7,
+          "content": "ANSWER Note that $ v/(\\mu + v) = 0.845 $. This is the predicted equilibrium frequency (Equation 4.5). Also, $ 1 - \\mu - v = 0.99444 $, and this quantity determines the rate of approach to equilibrium. For the cultures with $ p_0 = 0 $, the predicted values are $ p_{30} = 0.845 - (0.845)(0.99444)^{30} = 0.13 $ and $ p_{700} = 0.845 - (0.845)(0.99444)^{700} = 0.83 $. For the cultures with $ p_0 = 1 $, the predicted values are $ p_{388} = 0.845 + (0.155)(0.99444)^{388} = 0.86 $ and $ p_{700} = 0.845 + (0.155)(0.99444)^{700} = 0.85 $. The predicted values are in very good agreement with the observations.",
+          "source_pages": [
+            172
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p008:b1",
+            "PopGen_chapter4:p008:b2"
+          ],
+          "source_bboxes": [
+            [
+              125.0,
+              223.0,
+              558.0,
+              397.0
+            ],
+            [
+              584.0,
+              223.0,
+              1013.0,
+              370.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "4.4",
+          "resolved_id": "4.4",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            170
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p006:b15"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "4.5",
+          "resolved_id": "4.5",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            170
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p006:b16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_3",
+      "number": "4.3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 8,
+          "content": "PROBLEM 4.3 It is an oddity that Equations 4.10 and 4.11 predict the equilibrium homozygosity and heterozygosity without explicit reference to the allele frequencies. If the allele frequencies are estimated in a random-mating population, however, then the homozygosity and heterozygosity can be estimated using the Hardy-Weinberg principle from Chapter 2. In particular, the homozygosity is estimated as $ \\hat{F} = \\Sigma p_i^2 $, where the sum is over all allele frequencies $ p_i $, and the heterozygosity is estimated as $ 1 - \\hat{F} $. A study of electrophoretic protein variants in a Caribbean population of Drosophila willistoni (Ayala and Tracy 1974) yielded the following estimated allele frequencies for the loci Adk-1 (adenylate kinase-1), Lap-5 (leucine aminopeptidase-5), and Xdh (xanthine dehydrogenase):",
+          "source_pages": [
+            180
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p016:b1",
+            "PopGen_chapter4:p016:b3"
+          ],
+          "source_bboxes": [
+            [
+              129.0,
+              229.0,
+              556.0,
+              647.0
+            ],
+            [
+              582.0,
+              226.0,
+              1007.0,
+              274.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 9,
+          "content": "Estimate the homozygosity and heterozygosity for each gene, and give the corresponding estimate of $ \\theta $.",
+          "source_pages": [
+            180
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p016:b5"
+          ],
+          "source_bboxes": [
+            [
+              584.0,
+              546.0,
+              1010.0,
+              617.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 10,
+          "content": "ANSWER The homozygosity estimates are 0.438 for Adk-1, 0.673 for Lap-5, and 0.373 for Xdh, and the corresponding heterozygosities are 0.562, 0.327, and 0.626. Because the equilibrium homozygosity $ \\hat{F} $ equals $ 1/(1 + \\theta) $ [see Equation 4.10], then $ \\theta $ can be estimated as $ (1 - \\hat{F})/\\hat{F} $, which equals the ratio of the heterozygosity to the homozygosity. For these three genes the estimates of $ \\theta $ are 1.28, 0.49, and 1.68, respectively. These values are substantially greater than the average for electrophoretic polymorphisms in Drosophila (see Figure 1.8), which is about $ \\theta = 0.16 $.",
+          "source_pages": [
+            180
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p016:b2",
+            "PopGen_chapter4:p016:b6"
+          ],
+          "source_bboxes": [
+            [
+              129.0,
+              688.0,
+              557.0,
+              858.0
+            ],
+            [
+              584.0,
+              684.0,
+              1012.0,
+              831.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "1.8",
+          "resolved_id": "1.8",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            35
+          ],
+          "source_block_ids": [
+            "PopGen_chapter1:p019:b1",
+            "PopGen_chapter1:p019:b2"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "4.10",
+          "resolved_id": "4.10",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            178
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p014:b11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_4",
+      "number": "4.4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_013",
+          "block_index": 4,
+          "content": "PROBLEM 4.4 To make use of these ideas concrete, consider the example in [[SEE_TABLE:4.1]]. From these data, use Equations 4.23 and 4.24 to obtain estimates of $ \\theta $ based on the number of segregating sites and on the average number of pairwise mismatches. Then calculate $ II - S/a $ and interpret the results in terms of how the data depart from the expectations of the infinite-alleles model.",
+          "source_pages": [
+            191
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p027:b4",
+            "PopGen_chapter4:p027:b6"
+          ],
+          "source_bboxes": [
+            [
+              107.0,
+              919.0,
+              538.0,
+              1041.0
+            ],
+            [
+              565.0,
+              920.0,
+              993.0,
+              1014.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_013",
+          "block_index": 5,
+          "content": "ANSWER For the data in [[SEE_TABLE:4.1]] we have already calculated that $ S = 8 $ and $ \\Pi = 4 $. In this case, $ n = 4 $ so that $ a = 1 + \\frac{1}{2} + \\frac{1}{3} = 1.833 $. The estimate of $ \\theta $ from Equation 4.23 is therefore $ \\frac{16}{1.833} = 4.36 $, and that from Equation 4.24 is 4.00. Hence, in this example, $ \\Pi - S/a = 4.00 - 4.36 = -0.36 $. Because of the small sample size, there is little justification to carry out a formal statistical test of whether this value is significantly different from 0, but the small discrepancy from 0 suggests no significant excess of rare alleles. In practice, random coalescence in the infinite-sites model with neutral mutations can be generated using, for example, a program called ms (Hudson 2002). For each simulated sample, one calculates a realization of $ \\Pi - S/a $, and many such samples produce the null distribution of the test statistic assuming neutrality. If the observed value falls in the upper or lower 5% of the null distribution, then the $ P $-value for the test is regarded as significant ($ P < 0.05 $).",
+          "source_pages": [
+            191
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p027:b5",
+            "PopGen_chapter4:p027:b7"
+          ],
+          "source_bboxes": [
+            [
+              103.0,
+              1073.0,
+              535.0,
+              1343.0
+            ],
+            [
+              561.0,
+              1074.0,
+              992.0,
+              1343.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "table",
+          "id": "4.1",
+          "resolved_id": "4.1",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_table_library.json",
+          "source_pages": [
+            187
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p023:b6"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "4.23",
+          "resolved_id": "4.23",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            190
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b19"
+          ]
+        },
+        {
+          "type": "formula",
+          "id": "4.24",
+          "resolved_id": "4.24",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            190
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b20"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_E1",
+      "number": "4.E1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_022",
+          "block_index": 0,
+          "content": "1. Most protein-coding genes have a forward mutation rate (wildtype to mutant) that is at least an order of magnitude greater than the reverse mutation rate (mutant back to wildtype). Why should this be the case?",
+          "source_pages": [
+            206
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p042:b10"
+          ],
+          "source_bboxes": [
+            [
+              278.0,
+              1306.0,
+              1018.0,
+              1383.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 4,
+        "answer_number": 1,
+        "anchor_text": "1.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E2",
+      "number": "4.E2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_022",
+          "block_index": 1,
+          "content": "2. What is the Hill-Robertson effect and what causes it?",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b1"
+          ],
+          "source_bboxes": [
+            [
+              136.0,
+              201.0,
+              696.0,
+              223.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 4,
+        "answer_number": 2,
+        "anchor_text": "2.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E3",
+      "number": "4.E3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 0,
+          "content": "3. What is Muller’s ratchet and why is it important in populations that undergo frequent bottlenecks of population size?",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b2"
+          ],
+          "source_bboxes": [
+            [
+              136.0,
+              236.0,
+              873.0,
+              288.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 3,
+        "anchor_text": "3.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E4",
+      "number": "4.E4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 1,
+          "content": "4. A classical bacterial experiment demonstrated that mutations occur at random and not in response to specific selection pressures for them. The experiment used sterilized velvet to imprint the geometrical pattern of bacterial colonies on an agar surface in a petri dish (a \"plate\"), which was used to replicate the pattern by impressing the velvet on sterile nutrient agar in a selective plate containing an antibiotic. Colonies on the original plate giving resistant cells on the selective plate were dispersed into single cells, spread onto a nutrient agar plate without antibiotic, and allowed to multiply into colonies. This procedure was repeated until one or more colonies on the nonselective medium consisted exclusively of antibiotic-resistant cells. How does this experiment prove the point?",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b3"
+          ],
+          "source_bboxes": [
+            [
+              137.0,
+              299.0,
+              872.0,
+              590.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 4,
+        "anchor_text": "4.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E5",
+      "number": "4.E5",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 2,
+          "content": "5. Estimation of mutation rates from bacterial cultures can be tricky because, if a mutation occurs early in the life of a culture, the final frequency will be very high, but if it occurs late, the final frequency will be low. The fluctuation test is a method for getting around this problem by growing many smaller cultures and estimating the mutation rate from the proportion of cultures that contain no mutations using the zero term of the Poisson distribution $ P_0 = \\exp(-\\mu N) $, where $ P_0 $ is the proportion of cultures with no mutations, $ \\mu $ is the mutation rate, and N is the average number of cells per culture. In one experiment for bacteriophage T1 resistance, 11/20 cultures contained no mutations and the average number of cells per culture was $ 5.6 \\times 10^8 $. Estimate $ \\mu $.",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b4"
+          ],
+          "source_bboxes": [
+            [
+              129.0,
+              600.0,
+              868.0,
+              892.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 5,
+        "anchor_text": "5.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E6",
+      "number": "4.E6",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 3,
+          "content": "6. If recessive lethals occur independently in Drosophila autosomes, and the probability that an autosome contains one or more recessive lethals is 0.35 (a typical figure for chromosomes isolated from natural populations), what is the average number of recessive lethals per chromosome? Assume that the distribution of lethals is Poisson so that the probability of a chromosome containing exactly i lethals is $$ \\Pr\\left\\{\\text{exactly }i\\text{ lethals}\\right\\}=\\frac{m^{i}}{i!}e^{-m} $$ where m is the mean number of lethals per autosome.",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b5",
+            "PopGen_chapter4:p043:b6",
+            "PopGen_chapter4:p043:b7"
+          ],
+          "source_bboxes": [
+            [
+              129.0,
+              903.0,
+              865.0,
+              1061.0
+            ],
+            [
+              352.0,
+              1071.0,
+              632.0,
+              1123.0
+            ],
+            [
+              151.0,
+              1138.0,
+              686.0,
+              1161.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 6,
+        "anchor_text": "6.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E7",
+      "number": "4.E7",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 4,
+          "content": "7. The doubling dose of radiation is the quantity of radiation that induces as many mutations as occur spontaneously, so the total mutation rate of organisms exposed to the doubling dose equals two times the spontaneous mutation rate. Below are the induction rates per rad of x-rays (a standard measure of dose) for various genetic end points in irradiated male mice, along with the spontaneous rates. What are the corresponding doubling doses?",
+          "source_pages": [
+            207
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p043:b8"
+          ],
+          "source_bboxes": [
+            [
+              126.0,
+              1173.0,
+              863.0,
+              1359.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 7,
+        "anchor_text": "7.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E8",
+      "number": "4.E8",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 6,
+          "content": "8. For irreversible mutation with a forward mutation rate $ \\mu = 5 \\times 10^{-6} $, calculate the expected allele frequency $ p $ after 10, 100, 1000, and 10,000 generations, assuming $ p_0 = 1.0 $.",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b2"
+          ],
+          "source_bboxes": [
+            [
+              269.0,
+              379.0,
+              1007.0,
+              459.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 8,
+        "anchor_text": "8.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E9",
+      "number": "4.E9",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 7,
+          "content": "9. If a transposable genetic element becomes fixed at a particular site but undergoes deletion at the rate of 1% per generation, how many generations are required to decrease the frequency of the element at the site to 90%?",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b4",
+            "PopGen_chapter4:p044:b5",
+            "PopGen_chapter4:p044:b6",
+            "PopGen_chapter4:p044:b3"
+          ],
+          "source_bboxes": [
+            [
+              258.0,
+              585.0,
+              1008.0,
+              661.0
+            ],
+            [
+              295.0,
+              675.0,
+              812.0,
+              697.0
+            ],
+            [
+              295.0,
+              710.0,
+              961.0,
+              733.0
+            ],
+            [
+              269.0,
+              469.0,
+              1008.0,
+              571.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 9,
+        "anchor_text": "9.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E10",
+      "number": "4.E10",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_023",
+          "block_index": 8,
+          "content": "10. The following data give the frequency q of bacteria resistant to a bacteriophage after t generations of chemostat growth. At t = 12 hours a novel metabolite was added to the medium. (a) What is the basal rate of mutation to resistance? (b) What is the effect of the novel metabolite on the mutation rate? [[TABLE:inline_5]]",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b4",
+            "PopGen_chapter4:p044:b5",
+            "PopGen_chapter4:p044:b6"
+          ],
+          "source_bboxes": [
+            [
+              258.0,
+              585.0,
+              1008.0,
+              661.0
+            ],
+            [
+              295.0,
+              675.0,
+              812.0,
+              697.0
+            ],
+            [
+              295.0,
+              710.0,
+              961.0,
+              733.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 10,
+        "anchor_text": "10.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "table",
+          "id": "inline_5",
+          "resolved_id": "inline_5",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_table_library.json",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_E11",
+      "number": "4.E11",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 0,
+          "content": "11. In the model of forward and reverse mutation, what is the equilibrium frequency p of A if (a) $\\mu = 10^{-5}$ and $\\nu = 10^{-6}$? (b) $\\mu$ is increased tenfold? (c) $\\nu$ is increased tenfold? (d) both are increased tenfold?",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b8",
+            "PopGen_chapter4:p044:b9",
+            "PopGen_chapter4:p044:b10",
+            "PopGen_chapter4:p044:b11",
+            "PopGen_chapter4:p044:b12"
+          ],
+          "source_bboxes": [
+            [
+              258.0,
+              939.0,
+              1009.0,
+              990.0
+            ],
+            [
+              297.0,
+              1001.0,
+              551.0,
+              1026.0
+            ],
+            [
+              296.0,
+              1038.0,
+              559.0,
+              1061.0
+            ],
+            [
+              296.0,
+              1074.0,
+              557.0,
+              1096.0
+            ],
+            [
+              296.0,
+              1109.0,
+              607.0,
+              1132.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 11,
+        "anchor_text": "11.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E12",
+      "number": "4.E12",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 1,
+          "content": "12. In the model of forward and reverse mutation, show that the time required for the allele frequency to go halfway to equilibrium is approximately $ t = 0.69 / (\\mu + v) $ generations. Use the approximation that $ \\ln(1 - x) \\approx -x $ when $ x $ is small. What time is required to go halfway to equilibrium when $ \\mu = 10^{-5} $ and $ v = 10^{-6} $?",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b13"
+          ],
+          "source_bboxes": [
+            [
+              259.0,
+              1144.0,
+              1010.0,
+              1276.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 590,
+        "printed_page": 576,
+        "chapter": 4,
+        "answer_number": 12,
+        "anchor_text": "12.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E13",
+      "number": "4.E13",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 2,
+          "content": "13. In the model of irreversible mutation, what is the frequency $ q_{t} $ of allele a in generation t if the mutation rate changes from generation to generation? If the equation $ q_{t} = q_{0} + \\mu t $ is applied to this situation, what value corresponds to $ \\mu $?",
+          "source_pages": [
+            208
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p044:b14"
+          ],
+          "source_bboxes": [
+            [
+              260.0,
+              1287.0,
+              1011.0,
+              1392.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 591,
+        "printed_page": 577,
+        "chapter": 4,
+        "answer_number": 13,
+        "anchor_text": "13.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E14",
+      "number": "4.E14",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 3,
+          "content": "14. A population at steady state in the infinite-alleles neutral model has a homozygosity $F$ equal to 12.5%. What value of $\\theta = 4N\\mu$ is indicated? With random mating, how many equally frequent alleles would be required to produce the same level of homozygosity?",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b1"
+          ],
+          "source_bboxes": [
+            [
+              120.0,
+              202.0,
+              871.0,
+              307.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 591,
+        "printed_page": 577,
+        "chapter": 4,
+        "answer_number": 14,
+        "anchor_text": "14.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E15",
+      "number": "4.E15",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 4,
+          "content": "15. What sample values are compared in Tajima's D, and what is the rationale for the comparison?",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b2"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              317.0,
+              870.0,
+              366.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 591,
+        "printed_page": 577,
+        "chapter": 4,
+        "answer_number": 15,
+        "anchor_text": "15.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E16",
+      "number": "4.E16",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 5,
+          "content": "16. A sample of size n = 12 includes S = 50 segregating nucleotide sites. Assuming that the sample conforms to the expectations of the neutral infinite-sites model at steady state, what is the expected average number of pairwise mismatches $ \\Pi $? What is the average number of pairwise mismatches per segregating site? How many pairwise mismatches per segregating site would result from a singleton nucleotide?",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b3"
+          ],
+          "source_bboxes": [
+            [
+              119.0,
+              379.0,
+              870.0,
+              537.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 591,
+        "printed_page": 577,
+        "chapter": 4,
+        "answer_number": 16,
+        "anchor_text": "16.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E17",
+      "number": "4.E17",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 6,
+          "content": "17. What sample values are compared in the Fu and Li test, and what is the rationale for the comparison?",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b4"
+          ],
+          "source_bboxes": [
+            [
+              116.0,
+              548.0,
+              869.0,
+              597.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 591,
+        "printed_page": 577,
+        "chapter": 4,
+        "answer_number": 17,
+        "anchor_text": "17.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E18",
+      "number": "4.E18",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 7,
+          "content": "18. A sample of size $ n = 15 $ includes $ S = 75 $ segregating nucleotide sites. Assuming that the sample conforms to the expectations of the neutral infinite-sites model at steady state, what is the expected number of singleton nucleotide polymorphisms? What is the expected number of non-singleton nucleotide polymorphisms?",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b5"
+          ],
+          "source_bboxes": [
+            [
+              115.0,
+              610.0,
+              868.0,
+              742.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 592,
+        "printed_page": 578,
+        "chapter": 4,
+        "answer_number": 18,
+        "anchor_text": "18.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E19",
+      "number": "4.E19",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 8,
+          "content": "19. For neutral coalescence, show that the expected fraction of polymorphic nucleotides that are singletons equals $ 1/a $, where $ a = 1 + \\left(\\frac{1}{2}\\right) + \\left(\\frac{1}{3}\\right) + \\ldots + \\left[1/(n-1)\\right] $ and n is the number of alleles in the sample. Calculate this fraction for n = 2, 5, 10, 20, 50, and 100.",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b6"
+          ],
+          "source_bboxes": [
+            [
+              115.0,
+              752.0,
+              867.0,
+              857.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 592,
+        "printed_page": 578,
+        "chapter": 4,
+        "answer_number": 19,
+        "anchor_text": "19.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_4_E20",
+      "number": "4.E20",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 9,
+          "content": "20. The accompanying illustration shows a coalescent tree for a sample of size $n = 3$. What are the expected lengths, in units of generations, along each of the labeled branches? Show that the expected total length of all the branches taken together equals $4N a$, where $a = 1 + \\frac{1}{2} = \\frac{3}{2}$. Show also that the expected length of all the external branches equals $4N$ and that the expected length of all the internal branches equals $4N(a - 1)$. Use the principle that the expected time in generations for $k$ neutral alleles to coalesce into $k - 1$ alleles equals $4N/[k(k - 1)]$.\n\n[[FIGURE:problem_4.20]]",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b7",
+            "PopGen_chapter4:p045:b8"
+          ],
+          "source_bboxes": [
+            [
+              113.0,
+              868.0,
+              866.0,
+              1081.0
+            ],
+            [
+              261.0,
+              1117.0,
+              730.0,
+              1358.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 592,
+        "printed_page": 578,
+        "chapter": 4,
+        "answer_number": 20,
+        "anchor_text": "20.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "figure",
+          "id": "problem_4.20",
+          "resolved_id": "problem_4.20",
+          "status": "linked",
+          "link_method": "shared_source_block",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            209
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p045:b9",
+            "PopGen_chapter4:p045:b8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_E21",
+      "number": "4.E21",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 10,
+          "content": "21. One might naively think that samples from an infinite-alleles neutral model should contain roughly equal numbers of the alleles represented. But this is far from the truth. The expected sample configurations are very unequal, because the representation of each allele depends on the time in evolutionary history when it was created by mutation and the manner in which its frequency was affected by random genetic drift. To take a specific example, consider a sample of size $n = 6$ from a population evolving according to the infinite-alleles neutral model, and suppose that the sample contains only $k = 2$ different alleles. Let the configuration of alleles in the sample be represented as $(a_1, a_2, a_3, a_4, a_5)$, where $a_i$ is the number of alleles represented exactly $i$ times, with $\\Sigma a_i = 6$. It can be shown from Ewen's sampling formula that the probability of the configuration $(a_1, a_2, a_3, a_4, a_5)$ equals $$ \\Pr\\left\\{a_{1},a_{2},a_{3},a_{4},a_{5}\\mid k=2\\right\\}=\\frac{6!}{274\\times1^{a_{1}}2^{a_{2}}3^{a_{3}}4^{a_{4}}5^{a_{5}}\\times a_{1}!a_{2}!a_{3}!a_{4}!a_{5}!} $$ (Equation 9.30 in Ewens 2004). In this case only three sample configurations are possible, namely $ x = (1, 0, 0, 0, 1) $, $ y = (0, 1, 0, 1, 0) $, and $ z = (0, 0, 2, 0, 0) $. Calculate the probabilities of x, y, and z, and the expected proportion of samples in which the numbers of the two alleles are not equal.",
+          "source_pages": [
+            210
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p046:b1",
+            "PopGen_chapter4:p046:b2",
+            "PopGen_chapter4:p046:b3"
+          ],
+          "source_bboxes": [
+            [
+              261.0,
+              210.0,
+              1012.0,
+              560.0
+            ],
+            [
+              316.0,
+              577.0,
+              960.0,
+              636.0
+            ],
+            [
+              300.0,
+              666.0,
+              1014.0,
+              770.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 592,
+        "printed_page": 578,
+        "chapter": 4,
+        "answer_number": 21,
+        "anchor_text": "21.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "external_formula",
+          "id": "Ewens 2004 Eq. 9.30",
+          "formula_number": "9.30",
+          "citation": "Equation 9.30 in Ewens 2004",
+          "status": "external_reference",
+          "link_method": "explicit_external_citation",
+          "source_pages": [
+            210
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p046:b1",
+            "PopGen_chapter4:p046:b2",
+            "PopGen_chapter4:p046:b3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_4_E22",
+      "number": "4.E22",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter4",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter4_024",
+          "block_index": 11,
+          "content": "22. For the infinite-alleles neutral model, the probability that a sample of size n = 6 contains exactly k = 3 alleles in the configuration $ (a_{1}, a_{2}, a_{3}, a_{4}) $ is given by $$ \\Pr\\left\\{a_{1},a_{2},a_{3},a_{4}\\mid k=3\\right\\}=\\frac{6!}{225\\times1^{a_{1}}2^{a_{2}}3^{a_{3}}4^{a_{4}}\\times a_{1}!a_{2}!a_{3}!a_{4}!} $$ where $a_{i}$ is the number of alleles represented $i$ times in the sample, and $\\Sigma i a_{i}=6$ (Equation 9.30 in Ewens 2004). What sample configurations $(a_{1}, a_{2}, a_{3}, a_{4})$ are possible, and what are their probabilities?",
+          "source_pages": [
+            210
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p046:b4",
+            "PopGen_chapter4:p046:b5",
+            "PopGen_chapter4:p046:b6"
+          ],
+          "source_bboxes": [
+            [
+              263.0,
+              781.0,
+              1015.0,
+              861.0
+            ],
+            [
+              361.0,
+              862.0,
+              916.0,
+              920.0
+            ],
+            [
+              298.0,
+              935.0,
+              1015.0,
+              1017.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 592,
+        "printed_page": 578,
+        "chapter": 4,
+        "answer_number": 22,
+        "anchor_text": "22.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "external_formula",
+          "id": "Ewens 2004 Eq. 9.30",
+          "formula_number": "9.30",
+          "citation": "Equation 9.30 in Ewens 2004",
+          "status": "external_reference",
+          "link_method": "explicit_external_citation",
+          "source_pages": [
+            210
+          ],
+          "source_block_ids": [
+            "PopGen_chapter4:p046:b4",
+            "PopGen_chapter4:p046:b5",
+            "PopGen_chapter4:p046:b6"
+          ]
+        }
+      ]
+    }
+  ]
+}

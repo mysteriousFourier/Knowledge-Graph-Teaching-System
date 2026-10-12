@@ -1,0 +1,1032 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter2",
+  "count": 12,
+  "figures": [
+    {
+      "id": "2.1",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.1]]",
+      "see_placeholder": "[[SEE_FIGURE:2.1]]",
+      "asset_path": "figures/PopGen_2.1.png",
+      "caption": "FIGURE 2.1 The nonoverlapping generation model. The life history of the organism is assumed to be like that of an annual plant (or any short-lived organism), and the generations are assumed to be separated in time (discrete generations). Although the model is simple, it provides a convenient first approximation to populations with more complex life histories.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 3,
+      "raw_bbox": [
+        87.0,
+        752.0,
+        702.0,
+        1123.0
+      ],
+      "pdf_bbox": [
+        43.5,
+        375.79,
+        351.0,
+        561.19
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 3,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            101.0,
+            766.0,
+            688.0,
+            1109.0
+          ],
+          "block_id": 5,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 3,
+        "label": "figure_title",
+        "content": "FIGURE 2.1 The nonoverlapping generation model. The life history of the organism is assumed to be like that of an annual plant (or any short-lived organism), and the generations are assumed to be separated in time (discrete generations). Although the model is simple, it provides a convenient first approximation to populations with more complex life histories.",
+        "bbox": [
+          97.0,
+          1126.0,
+          752.0,
+          1237.0
+        ],
+        "block_id": 6,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.1",
+      "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "subsection": "Nonoverlapping Generations",
+      "heading_path": [
+        "2.1 RANDOM MATING",
+        "Nonoverlapping Generations"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.1 RANDOM MATING",
+          "Nonoverlapping Generations"
+        ],
+        "subsection": "Nonoverlapping Generations",
+        "source_pages": [
+          61
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p003:b5",
+          "PopGen_chapter2:p003:b6",
+          "PopGen_chapter2:p003:b4"
+        ],
+        "source_bboxes": [
+          [
+            87.0,
+            752.0,
+            702.0,
+            1123.0
+          ]
+        ],
+        "audit_evidence_sha256": "5bcbec5d1c4a3cca07cc75dd156dcfcb624281618fe7ba269843fb2e3f4e785c"
+      }
+    },
+    {
+      "id": "2.2",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.2]]",
+      "see_placeholder": "[[SEE_FIGURE:2.2]]",
+      "asset_path": "figures/PopGen_2.2.png",
+      "caption": "FIGURE 2.2 Cross-multiplication square showing Hardy-Weinberg frequencies resulting from random mating with two alleles. Such a square is often referred to as a Punnett square, named in honor of early geneticist Reginald C. Punnett (1875–1967).",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 5,
+      "raw_bbox": [
+        82.0,
+        657.0,
+        653.0,
+        1150.0
+      ],
+      "pdf_bbox": [
+        41.0,
+        328.32,
+        326.5,
+        574.68
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 5,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            96.0,
+            671.0,
+            639.0,
+            1136.0
+          ],
+          "block_id": 7,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 5,
+        "label": "figure_title",
+        "content": "FIGURE 2.2 Cross-multiplication square showing Hardy-Weinberg frequencies resulting from random mating with two alleles. Such a square is often referred to as a Punnett square, named in honor of early geneticist Reginald C. Punnett (1875–1967).",
+        "bbox": [
+          95.0,
+          1147.0,
+          759.0,
+          1236.0
+        ],
+        "block_id": 8,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.2",
+      "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.2 THE HARDY-WEINBERG PRINCIPLE"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.2 THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "source_pages": [
+          63
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p005:b7",
+          "PopGen_chapter2:p005:b6"
+        ],
+        "source_bboxes": [
+          [
+            973.0,
+            140.0,
+            1002.0,
+            159.0
+          ],
+          [
+            105.0,
+            1274.0,
+            842.0,
+            1367.0
+          ]
+        ],
+        "audit_evidence_sha256": "1378a8e2e379076b1e85ea4d1f292251daf393d4010f12ed42d337871cd51c57"
+      }
+    },
+    {
+      "id": "2.4",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.4]]",
+      "see_placeholder": "[[SEE_FIGURE:2.4]]",
+      "asset_path": "figures/PopGen_2.4.png",
+      "caption": "FIGURE 2.4 Melanic and nonmelanic moths, showing camouflage of light moths on light background and dark moths on dark. (Photograph by H. B. D. Kettlewell.)",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 21,
+      "raw_bbox": [
+        98.0,
+        173.0,
+        800.0,
+        612.0
+      ],
+      "pdf_bbox": [
+        49.0,
+        86.45,
+        400.0,
+        305.83
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 21,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            112.0,
+            187.0,
+            786.0,
+            598.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 21,
+        "label": "figure_title",
+        "content": "FIGURE 2.4 Melanic and nonmelanic moths, showing camouflage of light moths on light background and dark moths on dark. (Photograph by H. B. D. Kettlewell.)",
+        "bbox": [
+          104.0,
+          625.0,
+          759.0,
+          692.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.4",
+      "section": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+      "subsection": "Complications of Dominance",
+      "heading_path": [
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "Complications of Dominance"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Complications of Dominance"
+        ],
+        "subsection": "Complications of Dominance",
+        "source_pages": [
+          79
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p021:b2",
+          "PopGen_chapter2:p021:b1"
+        ],
+        "source_bboxes": [
+          [
+            98.0,
+            173.0,
+            800.0,
+            612.0
+          ]
+        ],
+        "audit_evidence_sha256": "9d71c068158419688db291425c96efb310f706c0b92fb60e1379c7f50b172842"
+      }
+    },
+    {
+      "id": "2.5",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.5]]",
+      "see_placeholder": "[[SEE_FIGURE:2.5]]",
+      "asset_path": "figures/PopGen_2.5.png",
+      "caption": "FIGURE 2.5 Frequencies of AA, Aa, and aa genotypes with HWE. Note that, as either allele becomes more rare, the frequency of homozygous genotypes for that allele is much lower than the frequency of heterozygous genotypes.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 23,
+      "raw_bbox": [
+        169.0,
+        184.0,
+        728.0,
+        581.0
+      ],
+      "pdf_bbox": [
+        84.5,
+        91.95,
+        364.0,
+        290.34
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 23,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            183.0,
+            198.0,
+            714.0,
+            567.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 23,
+        "label": "figure_title",
+        "content": "FIGURE 2.5 Frequencies of AA, Aa, and aa genotypes with HWE. Note that, as either allele becomes more rare, the frequency of homozygous genotypes for that allele is much lower than the frequency of heterozygous genotypes.",
+        "bbox": [
+          106.0,
+          584.0,
+          789.0,
+          653.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.5",
+      "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "subsection": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "subsection": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "source_pages": [
+          81
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p023:b2",
+          "PopGen_chapter2:p023:b3",
+          "PopGen_chapter2:p023:b1"
+        ],
+        "source_bboxes": [
+          [
+            169.0,
+            184.0,
+            728.0,
+            581.0
+          ]
+        ],
+        "audit_evidence_sha256": "7d3c2496b950f6354f8b5d401d1f0f6c1636647b24996d6c75e6c0bd29f07aba"
+      }
+    },
+    {
+      "id": "2.6",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.6]]",
+      "see_placeholder": "[[SEE_FIGURE:2.6]]",
+      "asset_path": "figures/PopGen_2.6.png",
+      "caption": "FIGURE 2.6 Punnett square showing Hardy-Weinberg frequencies for three autosomal alleles.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 24,
+      "raw_bbox": [
+        216.0,
+        168.0,
+        928.0,
+        697.0
+      ],
+      "pdf_bbox": [
+        108.0,
+        83.95,
+        464.0,
+        348.31
+      ],
+      "bbox_source": "nearest vertically overlapping figure body block",
+      "body_blocks": [
+        {
+          "page": 24,
+          "label": "table",
+          "content": "<table><tr><td rowspan=\"2\">Punnett square show-einberg frequencies fornal alleles.</td><td>Allele</td><td>$ A_{1} $</td><td>$ A_{2} $</td><td>$ A_{3} $</td></tr><tr><td>Frequency</td><td>$ p_{1} $</td><td>$ p_{2} $</td><td>$ p_{3} $</td></tr><tr><td rowspan=\"4\">Allele</td><td>Frequency</td><td></td><td></td><td></td></tr><tr><td>$ A_{1}A_{1} $</td><td>$ A_{1}A_{2} $</td><td>$ A_{1}A_{3} $</td><td></td></tr><tr><td>$ p_{1}^{2} $</td><td>$ p_{1}p_{2} $</td><td>$ p_{1}p_{3} $</td><td></td></tr><tr><td>$ A_{2}A_{1} $</td><td>$ A_{2}A_{2} $</td><td>$ A_{2}A_{3} $</td><td></td></tr><tr><td rowspan=\"3\">Female gametes</td><td>$ p_{2} $</td><td>$ p_{2}p_{1} $</td><td>$ p_{2}^{2} $</td><td>$ p_{2}p_{3} $</td></tr><tr><td>$ A_{3}A_{1} $</td><td>$ A_{3}A_{2} $</td><td>$ A_{3}A_{3} $</td><td></td></tr><tr><td>$ p_{3} $</td><td>$ p_{3}p_{1} $</td><td>$ p_{3}p_{2} $</td><td>$ p_{3}^{2} $</td></tr></table>",
+          "bbox": [
+            230.0,
+            182.0,
+            914.0,
+            683.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 24,
+        "label": "figure_title",
+        "content": "FIGURE 2.6 Punnett square showing Hardy-Weinberg frequencies for three autosomal alleles.",
+        "bbox": [
+          116.0,
+          186.0,
+          431.0,
+          253.0
+        ],
+        "block_id": 2,
+        "block_order": null
+      },
+      "confidence": 0.92,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.6",
+      "section": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+      "subsection": "Three or More Alleles",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "Three or More Alleles"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "subsection": "Three or More Alleles",
+        "source_pages": [
+          82
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p024:b1"
+        ],
+        "source_bboxes": [
+          [
+            216.0,
+            168.0,
+            928.0,
+            697.0
+          ]
+        ],
+        "audit_evidence_sha256": "ae2af870216dc1f384da55aced1fa7edd7998e84a6dee40700d22a95b0962451"
+      }
+    },
+    {
+      "id": "2.7",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.7]]",
+      "see_placeholder": "[[SEE_FIGURE:2.7]]",
+      "asset_path": "figures/PopGen_2.7.png",
+      "caption": "FIGURE 2.7 Consequences of random mating with X-linked genes. Genotype frequencies in females equal the Hardy-Weinberg frequencies, and genotype frequencies in males equal the allele frequencies in gametes.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 27,
+      "raw_bbox": [
+        75.0,
+        176.0,
+        798.0,
+        1177.0
+      ],
+      "pdf_bbox": [
+        37.5,
+        87.95,
+        399.0,
+        588.18
+      ],
+      "bbox_source": "nearest preceding non-caption layout block fallback",
+      "body_blocks": [
+        {
+          "page": 27,
+          "label": "text",
+          "content": "mosomes segregate, and so half the sperm from a male carry the X chromosome and half carry the Y chromosome. Although the Y chromosome carries very few genes other than those involved in the determination of sex and male fertility, the X chromosome carries as full a complement of genes as any other chromosome. Genes on the X chromosome are called X-linked genes, and the important consequence of X linkage is that a recessive allele on the X chromosome in a male is expressed phenotypically because the Y chromosome lacks any compensating allele. For X-linked genes with two alleles, therefore, there are three female genotypes (AA, Aa, and aa) but only two male genotypes (A and a).",
+          "bbox": [
+            99.0,
+            190.0,
+            784.0,
+            430.0
+          ],
+          "block_id": 2,
+          "block_order": 1
+        },
+        {
+          "page": 27,
+          "label": "text",
+          "content": "The consequences of random mating with two X-linked alleles are shown in Figure 2.7, where the alleles are denoted  $ X^{A} $ and  $ X^{a} $. Note that in females, which have two X chromosomes, the genotype frequencies are as given by the Hardy-Weinberg principle in Equation 2.1; in males, which have only one X chromosome, the genotype frequencies are equal to the allele frequencies.",
+          "bbox": [
+            96.0,
+            428.0,
+            782.0,
+            553.0
+          ],
+          "block_id": 3,
+          "block_order": 2
+        },
+        {
+          "page": 27,
+          "label": "table",
+          "content": "<table><tr><td rowspan=\"4\"></td><td colspan=\"3\">Male gametes</td></tr><tr><td colspan=\"2\">X-bearing</td><td>Y-bearing</td></tr><tr><td>Allele</td><td>X^{A}</td><td>X^{a}</td></tr><tr><td>Frequency</td><td>p</td><td>q</td></tr><tr><td rowspan=\"3\">Allele</td><td>Frequency</td><td></td><td></td></tr><tr><td>X^{A}X^{A}</td><td>X^{A}X^{a}</td><td>X^{A}Y</td></tr><tr><td>p^{2}</td><td>pq</td><td>p</td></tr><tr><td rowspan=\"3\">Female gametes</td><td></td><td></td><td></td></tr><tr><td>X^{a}X^{A}</td><td>X^{a}X^{a}</td><td>X^{a}Y</td></tr><tr><td>q</td><td>q^{2}</td><td>q</td></tr><tr><td rowspan=\"5\"></td><td colspan=\"3\">Summed frequencies in zygotes:</td></tr><tr><td>Females</td><td>Males</td><td></td></tr><tr><td>X^{A}X^{A}: p^{2}</td><td>X^{A}Y: p</td><td></td></tr><tr><td>X^{A}X^{a}: 2pq</td><td>X^{a}Y: q</td><td></td></tr><tr><td>X^{a}X^{a}: q^{2}</td><td></td><td></td></tr></table>",
+          "bbox": [
+            89.0,
+            588.0,
+            778.0,
+            1163.0
+          ],
+          "block_id": 4,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 27,
+        "label": "figure_title",
+        "content": "FIGURE 2.7 Consequences of random mating with X-linked genes. Genotype frequencies in females equal the Hardy-Weinberg frequencies, and genotype frequencies in males equal the allele frequencies in gametes.",
+        "bbox": [
+          89.0,
+          1178.0,
+          764.0,
+          1248.0
+        ],
+        "block_id": 5,
+        "block_order": null
+      },
+      "confidence": 0.72,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.7",
+      "section": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+      "subsection": "X-Linked Genes",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "X-Linked Genes"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "X-Linked Genes"
+        ],
+        "subsection": "X-Linked Genes",
+        "source_pages": [
+          85
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p027:b4",
+          "PopGen_chapter2:p027:b5"
+        ],
+        "source_bboxes": [
+          [
+            75.0,
+            176.0,
+            798.0,
+            1177.0
+          ]
+        ],
+        "audit_evidence_sha256": "1456abffd730c8158dce8e23b9efe96c1dcec6918b605e29c086b598bc827155"
+      }
+    },
+    {
+      "id": "2.8",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.8]]",
+      "see_placeholder": "[[SEE_FIGURE:2.8]]",
+      "asset_path": "figures/PopGen_2.8.png",
+      "caption": "FIGURE 2.8 Random-mating frequencies for an X-linked recessive allele $a$, for males, homozygous females, and heterozygous females. When the $a$ allele has a frequency of about $q = 0.1$ or smaller, the ratio of heterozygous to homozygous females is approximately 2/q, and that of $a$ males to $aa$ females is approximately 1/q.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 29,
+      "raw_bbox": [
+        157.0,
+        162.0,
+        718.0,
+        544.0
+      ],
+      "pdf_bbox": [
+        78.5,
+        80.96,
+        359.0,
+        271.85
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 29,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            171.0,
+            176.0,
+            704.0,
+            530.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 29,
+        "label": "figure_title",
+        "content": "FIGURE 2.8 Random-mating frequencies for an X-linked recessive allele $a$, for males, homozygous females, and heterozygous females. When the $a$ allele has a frequency of about $q = 0.1$ or smaller, the ratio of heterozygous to homozygous females is approximately 2/q, and that of $a$ males to $aa$ females is approximately 1/q.",
+        "bbox": [
+          97.0,
+          549.0,
+          772.0,
+          663.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.8",
+      "section": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+      "subsection": "X-Linked Genes",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "X-Linked Genes"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "X-Linked Genes"
+        ],
+        "subsection": "X-Linked Genes",
+        "source_pages": [
+          87
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p029:b2",
+          "PopGen_chapter2:p029:b1"
+        ],
+        "source_bboxes": [
+          [
+            157.0,
+            162.0,
+            718.0,
+            544.0
+          ]
+        ],
+        "audit_evidence_sha256": "14b4f7cfddbd634dbdd73b5b8514fa42b69ef5849047163c04291b0e4624fda8"
+      }
+    },
+    {
+      "id": "2.9",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.9]]",
+      "see_placeholder": "[[SEE_FIGURE:2.9]]",
+      "asset_path": "figures/PopGen_2.9.png",
+      "caption": "FIGURE 2.9 Random association between two alleles of each of two genes, showing expected gametic frequencies when the alleles are in linkage equilibrium.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 30,
+      "raw_bbox": [
+        480.0,
+        160.0,
+        948.0,
+        505.0
+      ],
+      "pdf_bbox": [
+        240.0,
+        79.96,
+        474.0,
+        252.36
+      ],
+      "bbox_source": "nearest vertically overlapping figure body block",
+      "body_blocks": [
+        {
+          "page": 30,
+          "label": "table",
+          "content": "<table><tr><td rowspan=\"2\">en</td><td colspan=\"2\">Alleles of A gene</td></tr><tr><td>Allele</td><td>A</td></tr><tr><td></td><td>Frequency</td><td>$ p_{A} $</td></tr><tr><td>Allele</td><td>Frequency</td><td>AB</td></tr><tr><td>B</td><td>$ p_{B} $</td><td>AB</td></tr><tr><td>Alleles of B gene</td><td>$ p_{A}p_{B} $</td><td>$ q_{A}p_{B} $</td></tr><tr><td>b</td><td>$ q_{b} $</td><td>ab</td></tr><tr><td></td><td>$ p_{A}q_{b} $</td><td>$ q_{a}q_{b} $</td></tr></table>",
+          "bbox": [
+            494.0,
+            174.0,
+            934.0,
+            491.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 30,
+        "label": "figure_title",
+        "content": "FIGURE 2.9 Random association between two alleles of each of two genes, showing expected gametic frequencies when the alleles are in linkage equilibrium.",
+        "bbox": [
+          134.0,
+          181.0,
+          513.0,
+          272.0
+        ],
+        "block_id": 2,
+        "block_order": null
+      },
+      "confidence": 0.92,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.9",
+      "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+        ],
+        "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "source_pages": [
+          88
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p030:b3",
+          "PopGen_chapter2:p030:b2",
+          "PopGen_chapter2:p030:b1"
+        ],
+        "source_bboxes": [
+          [
+            480.0,
+            160.0,
+            948.0,
+            505.0
+          ]
+        ],
+        "audit_evidence_sha256": "c1aec0d44618f7314e1bd93b2d88c7e70ffcfc329c302ac74cea65e2cab8c045"
+      }
+    },
+    {
+      "id": "2.10",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.10]]",
+      "see_placeholder": "[[SEE_FIGURE:2.10]]",
+      "asset_path": "figures/PopGen_2.10.png",
+      "caption": "FIGURE 2.10 Linkage disequilibrium between genes gradually disappears when mating is random, provided there is no countervailing force building it up. The rate of approach to linkage equilibrium depends on the recombination frequency between the genes. The disappearance of linkage disequilibrium is gradual even with free recombination ( $ r = \\frac{1}{2} $). In these examples, the frequencies of both alleles at both loci equal  $ \\frac{1}{2} $, and the initial linkage disequilibrium is either at its maximum ( $ D = 0.25 $) or minimum ( $ D = -0.25 $) value, given these allele frequencies.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 35,
+      "raw_bbox": [
+        84.0,
+        163.0,
+        796.0,
+        605.0
+      ],
+      "pdf_bbox": [
+        42.0,
+        81.46,
+        398.0,
+        302.33
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 35,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            103.0,
+            177.0,
+            782.0,
+            431.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        },
+        {
+          "page": 35,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            98.0,
+            411.0,
+            566.0,
+            591.0
+          ],
+          "block_id": 3,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 35,
+        "label": "figure_title",
+        "content": "FIGURE 2.10 Linkage disequilibrium between genes gradually disappears when mating is random, provided there is no countervailing force building it up. The rate of approach to linkage equilibrium depends on the recombination frequency between the genes. The disappearance of linkage disequilibrium is gradual even with free recombination ( $ r = \\frac{1}{2} $). In these examples, the frequencies of both alleles at both loci equal  $ \\frac{1}{2} $, and the initial linkage disequilibrium is either at its maximum ( $ D = 0.25 $) or minimum ( $ D = -0.25 $) value, given these allele frequencies.",
+        "bbox": [
+          93.0,
+          608.0,
+          764.0,
+          789.0
+        ],
+        "block_id": 4,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.10",
+      "section": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+      "subsection": "AB/ab and Ab/aB",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          93
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p035:b2",
+          "PopGen_chapter2:p035:b4",
+          "PopGen_chapter2:p035:b1"
+        ],
+        "source_bboxes": [
+          [
+            84.0,
+            163.0,
+            796.0,
+            605.0
+          ]
+        ],
+        "audit_evidence_sha256": "bfdb662eb7e04481a88bafe8d791055f06dd8a6446923ac58abeeca3493baee4"
+      }
+    },
+    {
+      "id": "2.11",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.11]]",
+      "see_placeholder": "[[SEE_FIGURE:2.11]]",
+      "asset_path": "figures/PopGen_2.11.png",
+      "caption": "2.11 Relationship between  $ D' $ and  $ r^{2} $ for 10,000 random, uniformly distributed values of the gametic frequencies.",
+      "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+      "page": 40,
+      "raw_bbox": [
+        267.0,
+        163.0,
+        836.0,
+        553.0
+      ],
+      "pdf_bbox": [
+        133.5,
+        81.46,
+        418.0,
+        276.35
+      ],
+      "bbox_source": "union of preceding figure body blocks",
+      "body_blocks": [
+        {
+          "page": 40,
+          "label": "chart",
+          "content": "",
+          "bbox": [
+            281.0,
+            177.0,
+            822.0,
+            539.0
+          ],
+          "block_id": 2,
+          "block_order": null
+        }
+      ],
+      "caption_block": {
+        "page": 40,
+        "label": "figure_title",
+        "content": "2.11 Relationship between  $ D' $ and  $ r^{2} $ for 10,000 random, uniformly distributed values of the gametic frequencies.",
+        "bbox": [
+          244.0,
+          549.0,
+          899.0,
+          597.0
+        ],
+        "block_id": 3,
+        "block_order": null
+      },
+      "confidence": 0.95,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:2.11",
+      "section": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+      "subsection": "Relative Measures of Linkage Disequilibrium: D' and r²",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "Relative Measures of Linkage Disequilibrium: D' and r²"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "Relative Measures of Linkage Disequilibrium: D' and r²"
+        ],
+        "subsection": "Relative Measures of Linkage Disequilibrium: D' and r²",
+        "source_pages": [
+          98
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p040:b2",
+          "PopGen_chapter2:p040:b1"
+        ],
+        "source_bboxes": [
+          [
+            267.0,
+            163.0,
+            836.0,
+            553.0
+          ]
+        ],
+        "audit_evidence_sha256": "7f8697f6a7da03c9ea158f94aa6a024c089f5247b57c0e406aa7f1ffd239ff3a"
+      }
+    },
+    {
+      "id": "problem_2.10",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:problem_2.10]]",
+      "see_placeholder": "[[SEE_FIGURE:problem_2.10]]",
+      "asset_path": "figures/PopGen_problem_2.10.png",
+      "caption": "Problem 2.10 diagram from the authoritative chapter PDF.",
+      "source_pdf": "data\\背景资料\\PopGen_chapter2.pdf",
+      "source_paddle_raw": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\intermediate\\paddle_raw_response.json",
+      "page": 46,
+      "raw_bbox": [
+        268.0,
+        1019.0,
+        868.0,
+        1201.0
+      ],
+      "bbox_source": "exact Paddle problem graphic block",
+      "body_blocks": [
+        {
+          "page": 46,
+          "label": "image",
+          "content": "",
+          "bbox": [
+            268.0,
+            1019.0,
+            868.0,
+            1201.0
+          ],
+          "block_id": 13,
+          "block_order": null
+        }
+      ],
+      "caption_block": null,
+      "confidence": 1.0,
+      "book": "PopGen",
+      "asset_key": "PopGen:PopGen_chapter2:problem_2.10",
+      "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "subsection": "PROBLEMS",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "PROBLEMS"
+      ],
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "PROBLEMS"
+        ],
+        "subsection": "PROBLEMS",
+        "source_pages": [
+          104
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p046:b9"
+        ],
+        "source_bboxes": [
+          [
+            268.0,
+            1019.0,
+            868.0,
+            1201.0
+          ]
+        ],
+        "audit_evidence_sha256": "21f69a4c8b39d9a9767f4627d4cc63b43b8fa6f740b7b6ca6483fd792c83d960"
+      }
+    },
+    {
+      "id": "2.3",
+      "chapter": "PopGen_chapter2",
+      "placeholder": "[[FIGURE:2.3]]",
+      "see_placeholder": "[[SEE_FIGURE:2.3]]",
+      "asset_path": "figures/PopGen_2.3.png",
+      "caption": "FIGURE 2.3 Graph of chi-square. To use the graph, find the value of chi-square along the horizontal axis, then read the probability value for the appropriate number of degrees of freedom from the vertical axis. Values of chi-square smaller than 1 are not shown, because these are never significant.",
+      "source_pdf": "PopGen_chapter2.pdf",
+      "source_paddle_raw": "paddle_raw_response.json",
+      "page": 13,
+      "source_pages": [
+        70,
+        71
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p012:b6",
+        "PopGen_chapter2:p013:b6"
+      ],
+      "raw_bbox": [
+        38,
+        370,
+        502,
+        694
+      ],
+      "pdf_bbox": [
+        38,
+        370,
+        502,
+        694
+      ],
+      "bbox_source": "manual PDF crop confirmed against raw source locators",
+      "body_blocks": [],
+      "caption_block": {
+        "source_id": "PopGen_chapter2:p012:b6"
+      },
+      "confidence": 0.98,
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+        ],
+        "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "source_pages": [
+          70,
+          71
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p013:b6",
+          "PopGen_chapter2:p012:b6"
+        ],
+        "source_bboxes": [
+          [
+            112.0,
+            781.0,
+            998.0,
+            1376.0
+          ],
+          [
+            278.0,
+            1276.0,
+            1052.0,
+            1373.0
+          ]
+        ],
+        "audit_evidence_sha256": "ce60dab9f47be1ed00d4ef08f91e7e0fabb03318754bcf3465f6e60f668b9075"
+      },
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+      ],
+      "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+    }
+  ]
+}

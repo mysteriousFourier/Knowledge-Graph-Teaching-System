@@ -1,0 +1,568 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter21",
+  "count": 3,
+  "tables": [
+    {
+      "id": "21.1",
+      "label_format": "Table 21.1",
+      "title": "Table 21.1 Summary of a nested analysis of covariance involving $N$ sires, $M_{i}$ dams within the $i$th sire, and $n_{ij}$ offspring within the $ij$th full-sib family.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Cross-products</td><td>E(MCP)</td></tr><tr><td>Sires</td><td>N-1</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1i}-\\overline{z}_{1})(\\overline{z}_{2i}-\\overline{z}_{2}) $</td><td>$ \\sigma_{e}(1,2)+k_{2}\\sigma_{d}(1,2) $</td></tr><tr><td>Dams (sires)</td><td>N(\\overline{M}-1)</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1ij}-\\overline{z}_{1i})(\\overline{z}_{2ij}-\\overline{z}_{2i}) $</td><td>$ \\sigma_{e}(1,2)+k_{1}\\sigma_{d}(1,2) $</td></tr><tr><td>Sibs (dams)</td><td>T-N $ \\overline{M} $</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{1ij})(z_{2ijk}-\\overline{z}_{2ij}) $</td><td>$ \\sigma_{e}(1,2) $</td></tr><tr><td>Total</td><td>T-1</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{x})(z_{2ijk}-\\overline{z}_{y}) $</td><td>$ \\sigma_{z}(1,2) $</td></tr></table>",
+      "rows": [
+        [
+          "Factor",
+          "df",
+          "Sums of Cross-products",
+          "E(MCP)"
+        ],
+        [
+          "Sires",
+          "N-1",
+          "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1i}-\\overline{z}_{1})(\\overline{z}_{2i}-\\overline{z}_{2}) $",
+          "$ \\sigma_{e}(1,2)+k_{2}\\sigma_{d}(1,2) $"
+        ],
+        [
+          "Dams (sires)",
+          "N(\\overline{M}-1)",
+          "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1ij}-\\overline{z}_{1i})(\\overline{z}_{2ij}-\\overline{z}_{2i}) $",
+          "$ \\sigma_{e}(1,2)+k_{1}\\sigma_{d}(1,2) $"
+        ],
+        [
+          "Sibs (dams)",
+          "T-N $ \\overline{M} $",
+          "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{1ij})(z_{2ijk}-\\overline{z}_{2ij}) $",
+          "$ \\sigma_{e}(1,2) $"
+        ],
+        [
+          "Total",
+          "T-1",
+          "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{x})(z_{2ijk}-\\overline{z}_{y}) $",
+          "$ \\sigma_{z}(1,2) $"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 646,
+          "title": "Table 21.1 Summary of a nested analysis of covariance involving $N$ sires, $M_{i}$ dams within the $i$th sire, and $n_{ij}$ offspring within the $ij$th full-sib family.",
+          "html": "<table><tr><td>Factor</td><td>df</td><td>Sums of Cross-products</td><td>E(MCP)</td></tr><tr><td>Sires</td><td>N-1</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1i}-\\overline{z}_{1})(\\overline{z}_{2i}-\\overline{z}_{2}) $</td><td>$ \\sigma_{e}(1,2)+k_{2}\\sigma_{d}(1,2) $</td></tr><tr><td>Dams (sires)</td><td>N(\\overline{M}-1)</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1ij}-\\overline{z}_{1i})(\\overline{z}_{2ij}-\\overline{z}_{2i}) $</td><td>$ \\sigma_{e}(1,2)+k_{1}\\sigma_{d}(1,2) $</td></tr><tr><td>Sibs (dams)</td><td>T-N $ \\overline{M} $</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{1ij})(z_{2ijk}-\\overline{z}_{2ij}) $</td><td>$ \\sigma_{e}(1,2) $</td></tr><tr><td>Total</td><td>T-1</td><td>$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{x})(z_{2ijk}-\\overline{z}_{y}) $</td><td>$ \\sigma_{z}(1,2) $</td></tr></table>",
+          "rows": [
+            [
+              "Factor",
+              "df",
+              "Sums of Cross-products",
+              "E(MCP)"
+            ],
+            [
+              "Sires",
+              "N-1",
+              "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1i}-\\overline{z}_{1})(\\overline{z}_{2i}-\\overline{z}_{2}) $",
+              "$ \\sigma_{e}(1,2)+k_{2}\\sigma_{d}(1,2) $"
+            ],
+            [
+              "Dams (sires)",
+              "N(\\overline{M}-1)",
+              "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}n_{ij}(\\overline{z}_{1ij}-\\overline{z}_{1i})(\\overline{z}_{2ij}-\\overline{z}_{2i}) $",
+              "$ \\sigma_{e}(1,2)+k_{1}\\sigma_{d}(1,2) $"
+            ],
+            [
+              "Sibs (dams)",
+              "T-N $ \\overline{M} $",
+              "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{1ij})(z_{2ijk}-\\overline{z}_{2ij}) $",
+              "$ \\sigma_{e}(1,2) $"
+            ],
+            [
+              "Total",
+              "T-1",
+              "$ \\sum_{i}^{N}\\sum_{j}^{M_{i}}\\sum_{k}^{n_{ij}}(z_{1ijk}-\\overline{z}_{x})(z_{2ijk}-\\overline{z}_{y}) $",
+              "$ \\sigma_{z}(1,2) $"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            138.0,
+            240.0,
+            1131.0,
+            766.0
+          ],
+          "caption_bbox": [
+            131.0,
+            161.0,
+            1093.0,
+            231.0
+          ],
+          "source_block_ids": [
+            "p646:b3"
+          ],
+          "caption_source_block_ids": [
+            "p646:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter21",
+        "unit_id": "Genetics_chapter21_005",
+        "page": 646,
+        "pages": [
+          646
+        ],
+        "bbox": [
+          138.0,
+          240.0,
+          1131.0,
+          766.0
+        ],
+        "caption_bbox": [
+          131.0,
+          161.0,
+          1093.0,
+          231.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "21.2",
+      "label_format": "Table 21.2",
+      "title": "Table 21.2 A comparison of chemoreceptive responses to prey odors by newborn garter snakes, Thamnophis elegans, from coastal and inland California.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td colspan=\"3\">Mean Tongue-flick Rate</td><td colspan=\"2\">Heritability</td></tr><tr><td></td><td>Coast</td><td>Inland</td><td>Difference</td><td>Coast</td><td>Inland</td></tr><tr><td>Slugs</td><td>30.9</td><td>4.3</td><td>1.72</td><td>0.2</td><td>0.2</td></tr><tr><td>Leeches</td><td>11.8</td><td>2.5</td><td>1.24</td><td>0.6</td><td>0.3</td></tr><tr><td>Salamanders</td><td>9.0</td><td>7.4</td><td>0.21</td><td>0.4</td><td>0.2</td></tr><tr><td>Frogs and tadpoles</td><td>30.5</td><td>25.8</td><td>0.17</td><td>0.4</td><td>0.3</td></tr><tr><td>Control</td><td>1.4</td><td>1.6</td><td>-0.26</td><td>0.0</td><td>0.1</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Mean Tongue-flick Rate",
+          "Heritability"
+        ],
+        [
+          "",
+          "Coast",
+          "Inland",
+          "Difference",
+          "Coast",
+          "Inland"
+        ],
+        [
+          "Slugs",
+          "30.9",
+          "4.3",
+          "1.72",
+          "0.2",
+          "0.2"
+        ],
+        [
+          "Leeches",
+          "11.8",
+          "2.5",
+          "1.24",
+          "0.6",
+          "0.3"
+        ],
+        [
+          "Salamanders",
+          "9.0",
+          "7.4",
+          "0.21",
+          "0.4",
+          "0.2"
+        ],
+        [
+          "Frogs and tadpoles",
+          "30.5",
+          "25.8",
+          "0.17",
+          "0.4",
+          "0.3"
+        ],
+        [
+          "Control",
+          "1.4",
+          "1.6",
+          "-0.26",
+          "0.0",
+          "0.1"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Arnold (1981a,c).",
+          "source_page": 661,
+          "bbox": [
+            59.0,
+            523.0,
+            327.0,
+            552.0
+          ],
+          "source_block_ids": [
+            "p661:b4"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: The difference between population mean phenotypes is in units of standard deviations of $ \\ln $-transformed values.",
+          "source_page": 661,
+          "bbox": [
+            59.0,
+            551.0,
+            1013.0,
+            612.0
+          ],
+          "source_block_ids": [
+            "p661:b5"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 661,
+          "title": "Table 21.2 A comparison of chemoreceptive responses to prey odors by newborn garter snakes, Thamnophis elegans, from coastal and inland California.",
+          "html": "<table><tr><td></td><td colspan=\"3\">Mean Tongue-flick Rate</td><td colspan=\"2\">Heritability</td></tr><tr><td></td><td>Coast</td><td>Inland</td><td>Difference</td><td>Coast</td><td>Inland</td></tr><tr><td>Slugs</td><td>30.9</td><td>4.3</td><td>1.72</td><td>0.2</td><td>0.2</td></tr><tr><td>Leeches</td><td>11.8</td><td>2.5</td><td>1.24</td><td>0.6</td><td>0.3</td></tr><tr><td>Salamanders</td><td>9.0</td><td>7.4</td><td>0.21</td><td>0.4</td><td>0.2</td></tr><tr><td>Frogs and tadpoles</td><td>30.5</td><td>25.8</td><td>0.17</td><td>0.4</td><td>0.3</td></tr><tr><td>Control</td><td>1.4</td><td>1.6</td><td>-0.26</td><td>0.0</td><td>0.1</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Mean Tongue-flick Rate",
+              "Heritability"
+            ],
+            [
+              "",
+              "Coast",
+              "Inland",
+              "Difference",
+              "Coast",
+              "Inland"
+            ],
+            [
+              "Slugs",
+              "30.9",
+              "4.3",
+              "1.72",
+              "0.2",
+              "0.2"
+            ],
+            [
+              "Leeches",
+              "11.8",
+              "2.5",
+              "1.24",
+              "0.6",
+              "0.3"
+            ],
+            [
+              "Salamanders",
+              "9.0",
+              "7.4",
+              "0.21",
+              "0.4",
+              "0.2"
+            ],
+            [
+              "Frogs and tadpoles",
+              "30.5",
+              "25.8",
+              "0.17",
+              "0.4",
+              "0.3"
+            ],
+            [
+              "Control",
+              "1.4",
+              "1.6",
+              "-0.26",
+              "0.0",
+              "0.1"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Arnold (1981a,c).",
+              "source_page": 661,
+              "bbox": [
+                59.0,
+                523.0,
+                327.0,
+                552.0
+              ],
+              "source_block_ids": [
+                "p661:b4"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: The difference between population mean phenotypes is in units of standard deviations of $ \\ln $-transformed values.",
+              "source_page": 661,
+              "bbox": [
+                59.0,
+                551.0,
+                1013.0,
+                612.0
+              ],
+              "source_block_ids": [
+                "p661:b5"
+              ]
+            }
+          ],
+          "bbox": [
+            59.0,
+            238.0,
+            1010.0,
+            517.0
+          ],
+          "caption_bbox": [
+            58.0,
+            157.0,
+            1018.0,
+            219.0
+          ],
+          "source_block_ids": [
+            "p661:b3"
+          ],
+          "caption_source_block_ids": [
+            "p661:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter21",
+        "unit_id": "Genetics_chapter21_014",
+        "page": 661,
+        "pages": [
+          661
+        ],
+        "bbox": [
+          59.0,
+          238.0,
+          1010.0,
+          517.0
+        ],
+        "caption_bbox": [
+          58.0,
+          157.0,
+          1018.0,
+          219.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "21.3",
+      "label_format": "Table 21.3",
+      "title": "Table 21.3 A comparison of the genetic correlations for chemoreceptive responses to prey odors in coastal (above diagonal) and inland (below diagonal) populations of Thamnophis elegans.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>Sl</td><td>Le</td><td>Sa</td><td>Fr</td><td>Co</td></tr><tr><td>Slugs</td><td>—</td><td>0.9</td><td>1.0</td><td>0.9</td><td>0.0</td></tr><tr><td>Leeches</td><td>0.9</td><td>—</td><td>0.8</td><td>0.9</td><td>0.2</td></tr><tr><td>Salamanders</td><td>0.5</td><td>0.8</td><td>—</td><td>0.9</td><td>0.6</td></tr><tr><td>Frogs and tadpoles</td><td>0.6</td><td>0.4</td><td>0.2</td><td>—</td><td>0.2</td></tr><tr><td>Controls</td><td>-0.4</td><td>0.0</td><td>0.3</td><td>-0.3</td><td>—</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "Sl",
+          "Le",
+          "Sa",
+          "Fr",
+          "Co"
+        ],
+        [
+          "Slugs",
+          "—",
+          "0.9",
+          "1.0",
+          "0.9",
+          "0.0"
+        ],
+        [
+          "Leeches",
+          "0.9",
+          "—",
+          "0.8",
+          "0.9",
+          "0.2"
+        ],
+        [
+          "Salamanders",
+          "0.5",
+          "0.8",
+          "—",
+          "0.9",
+          "0.6"
+        ],
+        [
+          "Frogs and tadpoles",
+          "0.6",
+          "0.4",
+          "0.2",
+          "—",
+          "0.2"
+        ],
+        [
+          "Controls",
+          "-0.4",
+          "0.0",
+          "0.3",
+          "-0.3",
+          "—"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Arnold (1981b).",
+          "source_page": 661,
+          "bbox": [
+            55.0,
+            1351.0,
+            308.0,
+            1380.0
+          ],
+          "source_block_ids": [
+            "p661:b9"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Standard errors of the estimates are on the order of 0.3. Sl = slugs, Le = leeches, Sa = salamanders, Fr = frogs and tadpoles, and Co = control.",
+          "source_page": 661,
+          "bbox": [
+            56.0,
+            1383.0,
+            1011.0,
+            1444.0
+          ],
+          "source_block_ids": [
+            "p661:b10"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 661,
+          "title": "Table 21.3 A comparison of the genetic correlations for chemoreceptive responses to prey odors in coastal (above diagonal) and inland (below diagonal) populations of Thamnophis elegans.",
+          "html": "<table><tr><td></td><td>Sl</td><td>Le</td><td>Sa</td><td>Fr</td><td>Co</td></tr><tr><td>Slugs</td><td>—</td><td>0.9</td><td>1.0</td><td>0.9</td><td>0.0</td></tr><tr><td>Leeches</td><td>0.9</td><td>—</td><td>0.8</td><td>0.9</td><td>0.2</td></tr><tr><td>Salamanders</td><td>0.5</td><td>0.8</td><td>—</td><td>0.9</td><td>0.6</td></tr><tr><td>Frogs and tadpoles</td><td>0.6</td><td>0.4</td><td>0.2</td><td>—</td><td>0.2</td></tr><tr><td>Controls</td><td>-0.4</td><td>0.0</td><td>0.3</td><td>-0.3</td><td>—</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "Sl",
+              "Le",
+              "Sa",
+              "Fr",
+              "Co"
+            ],
+            [
+              "Slugs",
+              "—",
+              "0.9",
+              "1.0",
+              "0.9",
+              "0.0"
+            ],
+            [
+              "Leeches",
+              "0.9",
+              "—",
+              "0.8",
+              "0.9",
+              "0.2"
+            ],
+            [
+              "Salamanders",
+              "0.5",
+              "0.8",
+              "—",
+              "0.9",
+              "0.6"
+            ],
+            [
+              "Frogs and tadpoles",
+              "0.6",
+              "0.4",
+              "0.2",
+              "—",
+              "0.2"
+            ],
+            [
+              "Controls",
+              "-0.4",
+              "0.0",
+              "0.3",
+              "-0.3",
+              "—"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Arnold (1981b).",
+              "source_page": 661,
+              "bbox": [
+                55.0,
+                1351.0,
+                308.0,
+                1380.0
+              ],
+              "source_block_ids": [
+                "p661:b9"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Standard errors of the estimates are on the order of 0.3. Sl = slugs, Le = leeches, Sa = salamanders, Fr = frogs and tadpoles, and Co = control.",
+              "source_page": 661,
+              "bbox": [
+                56.0,
+                1383.0,
+                1011.0,
+                1444.0
+              ],
+              "source_block_ids": [
+                "p661:b10"
+              ]
+            }
+          ],
+          "bbox": [
+            54.0,
+            1135.0,
+            1010.0,
+            1347.0
+          ],
+          "caption_bbox": [
+            55.0,
+            1027.0,
+            1012.0,
+            1118.0
+          ],
+          "source_block_ids": [
+            "p661:b8"
+          ],
+          "caption_source_block_ids": [
+            "p661:b7"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter21",
+        "unit_id": "Genetics_chapter21_014",
+        "page": 661,
+        "pages": [
+          661
+        ],
+        "bbox": [
+          54.0,
+          1135.0,
+          1010.0,
+          1347.0
+        ],
+        "caption_bbox": [
+          55.0,
+          1027.0,
+          1012.0,
+          1118.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

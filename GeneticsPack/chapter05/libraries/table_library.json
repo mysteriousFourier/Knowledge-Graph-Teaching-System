@@ -1,0 +1,244 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter5",
+  "count": 1,
+  "tables": [
+    {
+      "id": "5.1",
+      "label_format": "Table 5.1",
+      "title": "Table 5.1 Viability properties of homozygous intact chromosomes relative to homozygous recombinant chromosomes for five species of Drosophila.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Chromosome</td><td>% Viability Reduction</td><td>Reference</td></tr><tr><td rowspan=\"2\">D. melanogaster</td><td>II</td><td>$ -10 $</td><td rowspan=\"2\">Spiess & Allen 1961</td></tr><tr><td>III</td><td>8</td></tr><tr><td>D. persimilis</td><td></td><td></td><td></td></tr><tr><td>South Fork</td><td>II</td><td>13</td><td rowspan=\"2\">Spiess 1959</td></tr><tr><td>White Wolf</td><td>II</td><td>10</td></tr><tr><td>D. prosaltans</td><td></td><td></td><td></td></tr><tr><td>Pirassununga</td><td>II</td><td>8</td><td rowspan=\"2\">Dobzhansky et al. 1959</td></tr><tr><td>Rio</td><td>II</td><td>15</td></tr><tr><td>D. pseudoobscura</td><td></td><td></td><td></td></tr><tr><td>Texas</td><td>II</td><td>13</td><td rowspan=\"2\">Spassky et al. 1958</td></tr><tr><td>California</td><td>II</td><td>26</td></tr><tr><td>D. willistoni</td><td>II</td><td>3</td><td>Krimbas 1961</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Chromosome",
+          "% Viability Reduction",
+          "Reference"
+        ],
+        [
+          "D. melanogaster",
+          "II",
+          "$ -10 $",
+          "Spiess & Allen 1961"
+        ],
+        [
+          "III",
+          "8"
+        ],
+        [
+          "D. persimilis",
+          "",
+          "",
+          ""
+        ],
+        [
+          "South Fork",
+          "II",
+          "13",
+          "Spiess 1959"
+        ],
+        [
+          "White Wolf",
+          "II",
+          "10"
+        ],
+        [
+          "D. prosaltans",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Pirassununga",
+          "II",
+          "8",
+          "Dobzhansky et al. 1959"
+        ],
+        [
+          "Rio",
+          "II",
+          "15"
+        ],
+        [
+          "D. pseudoobscura",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Texas",
+          "II",
+          "13",
+          "Spassky et al. 1958"
+        ],
+        [
+          "California",
+          "II",
+          "26"
+        ],
+        [
+          "D. willistoni",
+          "II",
+          "3",
+          "Krimbas 1961"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: Only parental chromosomes with near normal viability scores were used.",
+          "source_page": 121,
+          "bbox": [
+            48.0,
+            679.0,
+            900.0,
+            730.0
+          ],
+          "source_block_ids": [
+            "p121:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 121,
+          "title": "Table 5.1 Viability properties of homozygous intact chromosomes relative to homozygous recombinant chromosomes for five species of Drosophila.",
+          "html": "<table><tr><td>Species</td><td>Chromosome</td><td>% Viability Reduction</td><td>Reference</td></tr><tr><td rowspan=\"2\">D. melanogaster</td><td>II</td><td>$ -10 $</td><td rowspan=\"2\">Spiess & Allen 1961</td></tr><tr><td>III</td><td>8</td></tr><tr><td>D. persimilis</td><td></td><td></td><td></td></tr><tr><td>South Fork</td><td>II</td><td>13</td><td rowspan=\"2\">Spiess 1959</td></tr><tr><td>White Wolf</td><td>II</td><td>10</td></tr><tr><td>D. prosaltans</td><td></td><td></td><td></td></tr><tr><td>Pirassununga</td><td>II</td><td>8</td><td rowspan=\"2\">Dobzhansky et al. 1959</td></tr><tr><td>Rio</td><td>II</td><td>15</td></tr><tr><td>D. pseudoobscura</td><td></td><td></td><td></td></tr><tr><td>Texas</td><td>II</td><td>13</td><td rowspan=\"2\">Spassky et al. 1958</td></tr><tr><td>California</td><td>II</td><td>26</td></tr><tr><td>D. willistoni</td><td>II</td><td>3</td><td>Krimbas 1961</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Chromosome",
+              "% Viability Reduction",
+              "Reference"
+            ],
+            [
+              "D. melanogaster",
+              "II",
+              "$ -10 $",
+              "Spiess & Allen 1961"
+            ],
+            [
+              "III",
+              "8"
+            ],
+            [
+              "D. persimilis",
+              "",
+              "",
+              ""
+            ],
+            [
+              "South Fork",
+              "II",
+              "13",
+              "Spiess 1959"
+            ],
+            [
+              "White Wolf",
+              "II",
+              "10"
+            ],
+            [
+              "D. prosaltans",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Pirassununga",
+              "II",
+              "8",
+              "Dobzhansky et al. 1959"
+            ],
+            [
+              "Rio",
+              "II",
+              "15"
+            ],
+            [
+              "D. pseudoobscura",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Texas",
+              "II",
+              "13",
+              "Spassky et al. 1958"
+            ],
+            [
+              "California",
+              "II",
+              "26"
+            ],
+            [
+              "D. willistoni",
+              "II",
+              "3",
+              "Krimbas 1961"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: Only parental chromosomes with near normal viability scores were used.",
+              "source_page": 121,
+              "bbox": [
+                48.0,
+                679.0,
+                900.0,
+                730.0
+              ],
+              "source_block_ids": [
+                "p121:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            51.0,
+            214.0,
+            1015.0,
+            705.0
+          ],
+          "caption_bbox": [
+            60.0,
+            139.0,
+            1019.0,
+            225.0
+          ],
+          "source_block_ids": [
+            "p121:b3"
+          ],
+          "caption_source_block_ids": [
+            "p121:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter5",
+        "unit_id": "Genetics_chapter5_008",
+        "page": 121,
+        "pages": [
+          121
+        ],
+        "bbox": [
+          51.0,
+          214.0,
+          1015.0,
+          705.0
+        ],
+        "caption_bbox": [
+          60.0,
+          139.0,
+          1019.0,
+          225.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

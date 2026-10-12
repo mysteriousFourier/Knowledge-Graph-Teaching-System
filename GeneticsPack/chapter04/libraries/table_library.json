@@ -1,0 +1,510 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter4",
+  "count": 3,
+  "tables": [
+    {
+      "id": "4.1",
+      "label_format": "Table 4.1",
+      "title": "Table 4.1 Properties of a single segregating diallelic locus under random mating.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">.</td><td colspan=\"7\">Gene</td><td rowspan=\"3\">Dominance Deviation</td></tr><tr><td>Content (N)</td><td colspan=\"4\">Genotypic</td><td rowspan=\"2\">Regression Value ( \\widehat{G})</td><td rowspan=\"2\">Dominance Deviation ( \\delta = G - \\widehat{G})</td></tr><tr><td>Genotype</td><td></td><td>Value (G)</td><td>Freq.</td><td>G · N</td><td>$ N^{2} $</td></tr><tr><td>$ B_{1}B_{1} $</td><td>0</td><td>0</td><td>$ p_{1}^{2} $</td><td>0</td><td>0</td><td>$ \\iota $</td><td>$ -\\iota $</td><td></td></tr><tr><td>$ B_{1}B_{2} $</td><td>1</td><td>$ (1 + k)a $</td><td>$ 2p_{1}p_{2} $</td><td>$ (1 + k)a $</td><td>1</td><td>$ \\iota + \\alpha $</td><td>$ (1 + k)a - \\iota - \\alpha $</td><td></td></tr><tr><td>$ B_{2}B_{2} $</td><td>2</td><td>2a</td><td>$ p_{2}^{2} $</td><td>4a</td><td>4</td><td>$ \\iota + 2\\alpha $</td><td>$ 2a - \\iota - 2\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ \\mu_{N} = 2p_{1}p_{2}(1) + p_{2}^{2}(2) $</td><td colspan=\"3\">$ \\mu_{\\widehat{G}} = \\iota + 2p_{1}p_{2}\\alpha + 2p_{2}^{2}\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2} $</td><td colspan=\"3\">$ \\iota + 2p_{2}\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ E(N^{2}) = 2p_{1}p_{2}(1) + p_{2}^{2}(4) $</td><td colspan=\"3\">$ \\mu_{\\delta} = -\\iota + 2p_{1}p_{2}[(1 + k)a - \\alpha] $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}(1 + p_{2}) $</td><td colspan=\"3\">$ +2p_{2}^{2}(a - \\alpha) = 0 $</td><td></td></tr><tr><td colspan=\"5\">$ \\mu_{G} = 2p_{1}p_{2}a(1 + k) + 2p_{2}^{2}a $</td><td colspan=\"3\">$ E(\\widehat{G}^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}(\\iota + \\alpha)^{2} + p_{2}^{2}(\\iota + 2\\alpha)^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}a(1 + p_{1}k) $</td><td colspan=\"3\">$ \\iota^{2} + 4p_{2}\\alpha\\iota + 2p_{2}\\alpha^{2}(1 + p_{2}) $</td><td></td></tr><tr><td colspan=\"5\">$ E(GN) = 2p_{1}p_{2}a(1 + k) + 4p_{2}^{2}a $</td><td colspan=\"3\">$ E(\\delta^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}[(1 + k)a - \\iota - \\alpha]^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}a[2p_{2} + p_{1}(1 + k)] $</td><td colspan=\"3\">$ +p_{2}^{2}(2a - \\iota - 2\\alpha)^{2} = (2p_{1}p_{2}ak)^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ \\sigma(G,N) = E(GN) - \\mu_{G}\\mu_{N} $</td><td colspan=\"3\">$ \\sigma_{A}^{2} = E(\\widehat{G}^{2}) - \\mu_{\\widehat{G}}^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{1}p_{2}a[1 + k(p_{1} - p_{2})] $</td><td colspan=\"3\"></td><td></td></tr><tr><td colspan=\"5\">$ \\sigma^{2}(N) = E(N^{2}) - \\mu_{N}^{2} $</td><td colspan=\"3\">$ \\sigma_{D}^{2} = E(\\delta^{2}) - \\mu_{\\delta}^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{1}p_{2} $</td><td colspan=\"3\"></td><td></td></tr></table>",
+      "rows": [
+        [
+          ".",
+          "Gene",
+          "Dominance Deviation"
+        ],
+        [
+          "Content (N)",
+          "Genotypic",
+          "Regression Value ( \\widehat{G})",
+          "Dominance Deviation ( \\delta = G - \\widehat{G})"
+        ],
+        [
+          "Genotype",
+          "",
+          "Value (G)",
+          "Freq.",
+          "G · N",
+          "$ N^{2} $"
+        ],
+        [
+          "$ B_{1}B_{1} $",
+          "0",
+          "0",
+          "$ p_{1}^{2} $",
+          "0",
+          "0",
+          "$ \\iota $",
+          "$ -\\iota $",
+          ""
+        ],
+        [
+          "$ B_{1}B_{2} $",
+          "1",
+          "$ (1 + k)a $",
+          "$ 2p_{1}p_{2} $",
+          "$ (1 + k)a $",
+          "1",
+          "$ \\iota + \\alpha $",
+          "$ (1 + k)a - \\iota - \\alpha $",
+          ""
+        ],
+        [
+          "$ B_{2}B_{2} $",
+          "2",
+          "2a",
+          "$ p_{2}^{2} $",
+          "4a",
+          "4",
+          "$ \\iota + 2\\alpha $",
+          "$ 2a - \\iota - 2\\alpha $",
+          ""
+        ],
+        [
+          "$ \\mu_{N} = 2p_{1}p_{2}(1) + p_{2}^{2}(2) $",
+          "$ \\mu_{\\widehat{G}} = \\iota + 2p_{1}p_{2}\\alpha + 2p_{2}^{2}\\alpha $",
+          ""
+        ],
+        [
+          "$ = 2p_{2} $",
+          "$ \\iota + 2p_{2}\\alpha $",
+          ""
+        ],
+        [
+          "$ E(N^{2}) = 2p_{1}p_{2}(1) + p_{2}^{2}(4) $",
+          "$ \\mu_{\\delta} = -\\iota + 2p_{1}p_{2}[(1 + k)a - \\alpha] $",
+          ""
+        ],
+        [
+          "$ = 2p_{2}(1 + p_{2}) $",
+          "$ +2p_{2}^{2}(a - \\alpha) = 0 $",
+          ""
+        ],
+        [
+          "$ \\mu_{G} = 2p_{1}p_{2}a(1 + k) + 2p_{2}^{2}a $",
+          "$ E(\\widehat{G}^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}(\\iota + \\alpha)^{2} + p_{2}^{2}(\\iota + 2\\alpha)^{2} $",
+          ""
+        ],
+        [
+          "$ = 2p_{2}a(1 + p_{1}k) $",
+          "$ \\iota^{2} + 4p_{2}\\alpha\\iota + 2p_{2}\\alpha^{2}(1 + p_{2}) $",
+          ""
+        ],
+        [
+          "$ E(GN) = 2p_{1}p_{2}a(1 + k) + 4p_{2}^{2}a $",
+          "$ E(\\delta^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}[(1 + k)a - \\iota - \\alpha]^{2} $",
+          ""
+        ],
+        [
+          "$ = 2p_{2}a[2p_{2} + p_{1}(1 + k)] $",
+          "$ +p_{2}^{2}(2a - \\iota - 2\\alpha)^{2} = (2p_{1}p_{2}ak)^{2} $",
+          ""
+        ],
+        [
+          "$ \\sigma(G,N) = E(GN) - \\mu_{G}\\mu_{N} $",
+          "$ \\sigma_{A}^{2} = E(\\widehat{G}^{2}) - \\mu_{\\widehat{G}}^{2} $",
+          ""
+        ],
+        [
+          "$ = 2p_{1}p_{2}a[1 + k(p_{1} - p_{2})] $",
+          "",
+          ""
+        ],
+        [
+          "$ \\sigma^{2}(N) = E(N^{2}) - \\mu_{N}^{2} $",
+          "$ \\sigma_{D}^{2} = E(\\delta^{2}) - \\mu_{\\delta}^{2} $",
+          ""
+        ],
+        [
+          "$ = 2p_{1}p_{2} $",
+          "",
+          ""
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 83,
+          "title": "Table 4.1 Properties of a single segregating diallelic locus under random mating.",
+          "html": "<table><tr><td rowspan=\"2\">.</td><td colspan=\"7\">Gene</td><td rowspan=\"3\">Dominance Deviation</td></tr><tr><td>Content (N)</td><td colspan=\"4\">Genotypic</td><td rowspan=\"2\">Regression Value ( \\widehat{G})</td><td rowspan=\"2\">Dominance Deviation ( \\delta = G - \\widehat{G})</td></tr><tr><td>Genotype</td><td></td><td>Value (G)</td><td>Freq.</td><td>G · N</td><td>$ N^{2} $</td></tr><tr><td>$ B_{1}B_{1} $</td><td>0</td><td>0</td><td>$ p_{1}^{2} $</td><td>0</td><td>0</td><td>$ \\iota $</td><td>$ -\\iota $</td><td></td></tr><tr><td>$ B_{1}B_{2} $</td><td>1</td><td>$ (1 + k)a $</td><td>$ 2p_{1}p_{2} $</td><td>$ (1 + k)a $</td><td>1</td><td>$ \\iota + \\alpha $</td><td>$ (1 + k)a - \\iota - \\alpha $</td><td></td></tr><tr><td>$ B_{2}B_{2} $</td><td>2</td><td>2a</td><td>$ p_{2}^{2} $</td><td>4a</td><td>4</td><td>$ \\iota + 2\\alpha $</td><td>$ 2a - \\iota - 2\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ \\mu_{N} = 2p_{1}p_{2}(1) + p_{2}^{2}(2) $</td><td colspan=\"3\">$ \\mu_{\\widehat{G}} = \\iota + 2p_{1}p_{2}\\alpha + 2p_{2}^{2}\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2} $</td><td colspan=\"3\">$ \\iota + 2p_{2}\\alpha $</td><td></td></tr><tr><td colspan=\"5\">$ E(N^{2}) = 2p_{1}p_{2}(1) + p_{2}^{2}(4) $</td><td colspan=\"3\">$ \\mu_{\\delta} = -\\iota + 2p_{1}p_{2}[(1 + k)a - \\alpha] $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}(1 + p_{2}) $</td><td colspan=\"3\">$ +2p_{2}^{2}(a - \\alpha) = 0 $</td><td></td></tr><tr><td colspan=\"5\">$ \\mu_{G} = 2p_{1}p_{2}a(1 + k) + 2p_{2}^{2}a $</td><td colspan=\"3\">$ E(\\widehat{G}^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}(\\iota + \\alpha)^{2} + p_{2}^{2}(\\iota + 2\\alpha)^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}a(1 + p_{1}k) $</td><td colspan=\"3\">$ \\iota^{2} + 4p_{2}\\alpha\\iota + 2p_{2}\\alpha^{2}(1 + p_{2}) $</td><td></td></tr><tr><td colspan=\"5\">$ E(GN) = 2p_{1}p_{2}a(1 + k) + 4p_{2}^{2}a $</td><td colspan=\"3\">$ E(\\delta^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}[(1 + k)a - \\iota - \\alpha]^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{2}a[2p_{2} + p_{1}(1 + k)] $</td><td colspan=\"3\">$ +p_{2}^{2}(2a - \\iota - 2\\alpha)^{2} = (2p_{1}p_{2}ak)^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ \\sigma(G,N) = E(GN) - \\mu_{G}\\mu_{N} $</td><td colspan=\"3\">$ \\sigma_{A}^{2} = E(\\widehat{G}^{2}) - \\mu_{\\widehat{G}}^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{1}p_{2}a[1 + k(p_{1} - p_{2})] $</td><td colspan=\"3\"></td><td></td></tr><tr><td colspan=\"5\">$ \\sigma^{2}(N) = E(N^{2}) - \\mu_{N}^{2} $</td><td colspan=\"3\">$ \\sigma_{D}^{2} = E(\\delta^{2}) - \\mu_{\\delta}^{2} $</td><td></td></tr><tr><td colspan=\"5\">$ = 2p_{1}p_{2} $</td><td colspan=\"3\"></td><td></td></tr></table>",
+          "rows": [
+            [
+              ".",
+              "Gene",
+              "Dominance Deviation"
+            ],
+            [
+              "Content (N)",
+              "Genotypic",
+              "Regression Value ( \\widehat{G})",
+              "Dominance Deviation ( \\delta = G - \\widehat{G})"
+            ],
+            [
+              "Genotype",
+              "",
+              "Value (G)",
+              "Freq.",
+              "G · N",
+              "$ N^{2} $"
+            ],
+            [
+              "$ B_{1}B_{1} $",
+              "0",
+              "0",
+              "$ p_{1}^{2} $",
+              "0",
+              "0",
+              "$ \\iota $",
+              "$ -\\iota $",
+              ""
+            ],
+            [
+              "$ B_{1}B_{2} $",
+              "1",
+              "$ (1 + k)a $",
+              "$ 2p_{1}p_{2} $",
+              "$ (1 + k)a $",
+              "1",
+              "$ \\iota + \\alpha $",
+              "$ (1 + k)a - \\iota - \\alpha $",
+              ""
+            ],
+            [
+              "$ B_{2}B_{2} $",
+              "2",
+              "2a",
+              "$ p_{2}^{2} $",
+              "4a",
+              "4",
+              "$ \\iota + 2\\alpha $",
+              "$ 2a - \\iota - 2\\alpha $",
+              ""
+            ],
+            [
+              "$ \\mu_{N} = 2p_{1}p_{2}(1) + p_{2}^{2}(2) $",
+              "$ \\mu_{\\widehat{G}} = \\iota + 2p_{1}p_{2}\\alpha + 2p_{2}^{2}\\alpha $",
+              ""
+            ],
+            [
+              "$ = 2p_{2} $",
+              "$ \\iota + 2p_{2}\\alpha $",
+              ""
+            ],
+            [
+              "$ E(N^{2}) = 2p_{1}p_{2}(1) + p_{2}^{2}(4) $",
+              "$ \\mu_{\\delta} = -\\iota + 2p_{1}p_{2}[(1 + k)a - \\alpha] $",
+              ""
+            ],
+            [
+              "$ = 2p_{2}(1 + p_{2}) $",
+              "$ +2p_{2}^{2}(a - \\alpha) = 0 $",
+              ""
+            ],
+            [
+              "$ \\mu_{G} = 2p_{1}p_{2}a(1 + k) + 2p_{2}^{2}a $",
+              "$ E(\\widehat{G}^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}(\\iota + \\alpha)^{2} + p_{2}^{2}(\\iota + 2\\alpha)^{2} $",
+              ""
+            ],
+            [
+              "$ = 2p_{2}a(1 + p_{1}k) $",
+              "$ \\iota^{2} + 4p_{2}\\alpha\\iota + 2p_{2}\\alpha^{2}(1 + p_{2}) $",
+              ""
+            ],
+            [
+              "$ E(GN) = 2p_{1}p_{2}a(1 + k) + 4p_{2}^{2}a $",
+              "$ E(\\delta^{2}) = p_{1}^{2}\\iota^{2} + 2p_{1}p_{2}[(1 + k)a - \\iota - \\alpha]^{2} $",
+              ""
+            ],
+            [
+              "$ = 2p_{2}a[2p_{2} + p_{1}(1 + k)] $",
+              "$ +p_{2}^{2}(2a - \\iota - 2\\alpha)^{2} = (2p_{1}p_{2}ak)^{2} $",
+              ""
+            ],
+            [
+              "$ \\sigma(G,N) = E(GN) - \\mu_{G}\\mu_{N} $",
+              "$ \\sigma_{A}^{2} = E(\\widehat{G}^{2}) - \\mu_{\\widehat{G}}^{2} $",
+              ""
+            ],
+            [
+              "$ = 2p_{1}p_{2}a[1 + k(p_{1} - p_{2})] $",
+              "",
+              ""
+            ],
+            [
+              "$ \\sigma^{2}(N) = E(N^{2}) - \\mu_{N}^{2} $",
+              "$ \\sigma_{D}^{2} = E(\\delta^{2}) - \\mu_{\\delta}^{2} $",
+              ""
+            ],
+            [
+              "$ = 2p_{1}p_{2} $",
+              "",
+              ""
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            45.0,
+            722.0,
+            1022.0,
+            1464.0
+          ],
+          "caption_bbox": [
+            52.0,
+            685.0,
+            935.0,
+            736.0
+          ],
+          "source_block_ids": [
+            "p83:b13"
+          ],
+          "caption_source_block_ids": [
+            "p83:b12"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter4",
+        "unit_id": "Genetics_chapter4_010",
+        "page": 83,
+        "pages": [
+          83
+        ],
+        "bbox": [
+          45.0,
+          722.0,
+          1022.0,
+          1464.0
+        ],
+        "caption_bbox": [
+          52.0,
+          685.0,
+          935.0,
+          736.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "4.2",
+      "label_format": "Table 4.2",
+      "title": "Table 4.2 Conditional mean genotypic values of progeny under random mating, and their deviations from the mean genotypic value in the population, $ \\mu_{G}=2ap_{2}(1+p_{1}k) $.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Parental Genotype</td><td>Breeding Value</td><td>Mean Genotypic Value of Progeny</td><td>Deviation of Expected Progeny Mean from $ \\mu_{G} $</td></tr><tr><td>$ B_{2}B_{2} $</td><td>$ 2\\alpha_{2} $</td><td>$ a[2p_{2} + p_{1}(1 + k)] $</td><td>$ \\alpha_{2} $</td></tr><tr><td>$ B_{1}B_{2} $</td><td>$ \\alpha_{1} + \\alpha_{2} $</td><td>$ a[p_{2} + (1 + k)/2] $</td><td>$ (\\alpha_{1} + \\alpha_{2})/2 $</td></tr><tr><td>$ B_{1}B_{1} $</td><td>$ 2\\alpha_{1} $</td><td>$ ap_{2}(1 + k) $</td><td>$ \\alpha_{1} $</td></tr></table>",
+      "rows": [
+        [
+          "Parental Genotype",
+          "Breeding Value",
+          "Mean Genotypic Value of Progeny",
+          "Deviation of Expected Progeny Mean from $ \\mu_{G} $"
+        ],
+        [
+          "$ B_{2}B_{2} $",
+          "$ 2\\alpha_{2} $",
+          "$ a[2p_{2} + p_{1}(1 + k)] $",
+          "$ \\alpha_{2} $"
+        ],
+        [
+          "$ B_{1}B_{2} $",
+          "$ \\alpha_{1} + \\alpha_{2} $",
+          "$ a[p_{2} + (1 + k)/2] $",
+          "$ (\\alpha_{1} + \\alpha_{2})/2 $"
+        ],
+        [
+          "$ B_{1}B_{1} $",
+          "$ 2\\alpha_{1} $",
+          "$ ap_{2}(1 + k) $",
+          "$ \\alpha_{1} $"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 90,
+          "title": "Table 4.2 Conditional mean genotypic values of progeny under random mating, and their deviations from the mean genotypic value in the population, $ \\mu_{G}=2ap_{2}(1+p_{1}k) $.",
+          "html": "<table><tr><td>Parental Genotype</td><td>Breeding Value</td><td>Mean Genotypic Value of Progeny</td><td>Deviation of Expected Progeny Mean from $ \\mu_{G} $</td></tr><tr><td>$ B_{2}B_{2} $</td><td>$ 2\\alpha_{2} $</td><td>$ a[2p_{2} + p_{1}(1 + k)] $</td><td>$ \\alpha_{2} $</td></tr><tr><td>$ B_{1}B_{2} $</td><td>$ \\alpha_{1} + \\alpha_{2} $</td><td>$ a[p_{2} + (1 + k)/2] $</td><td>$ (\\alpha_{1} + \\alpha_{2})/2 $</td></tr><tr><td>$ B_{1}B_{1} $</td><td>$ 2\\alpha_{1} $</td><td>$ ap_{2}(1 + k) $</td><td>$ \\alpha_{1} $</td></tr></table>",
+          "rows": [
+            [
+              "Parental Genotype",
+              "Breeding Value",
+              "Mean Genotypic Value of Progeny",
+              "Deviation of Expected Progeny Mean from $ \\mu_{G} $"
+            ],
+            [
+              "$ B_{2}B_{2} $",
+              "$ 2\\alpha_{2} $",
+              "$ a[2p_{2} + p_{1}(1 + k)] $",
+              "$ \\alpha_{2} $"
+            ],
+            [
+              "$ B_{1}B_{2} $",
+              "$ \\alpha_{1} + \\alpha_{2} $",
+              "$ a[p_{2} + (1 + k)/2] $",
+              "$ (\\alpha_{1} + \\alpha_{2})/2 $"
+            ],
+            [
+              "$ B_{1}B_{1} $",
+              "$ 2\\alpha_{1} $",
+              "$ ap_{2}(1 + k) $",
+              "$ \\alpha_{1} $"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            149.0,
+            608.0,
+            1106.0,
+            863.0
+          ],
+          "caption_bbox": [
+            143.0,
+            532.0,
+            1099.0,
+            610.0
+          ],
+          "source_block_ids": [
+            "p90:b4"
+          ],
+          "caption_source_block_ids": [
+            "p90:b3"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter4",
+        "unit_id": "Genetics_chapter4_012",
+        "page": 90,
+        "pages": [
+          90
+        ],
+        "bbox": [
+          149.0,
+          608.0,
+          1106.0,
+          863.0
+        ],
+        "caption_bbox": [
+          143.0,
+          532.0,
+          1099.0,
+          610.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "4.3",
+      "label_format": "Table 4.3",
+      "title": "Table 4.3 Summary of quantities used to measure genetic effects.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Homozygous effect, $ a $</td><td>Intrinsic properties of allelic products.</td></tr><tr><td>Dominance coefficient, $ k $</td><td>Not functions of allele frequencies, but may vary with genetic background.</td></tr><tr><td>Additive effect, $ \\alpha_{i} $</td><td>Properties of alleles in a particular population.</td></tr><tr><td>Average excess, $ \\alpha_{i}^{*} $</td><td>Functions of homozygous effects, dominance coefficients, and genotype frequencies.</td></tr><tr><td>Breeding value, $ A $</td><td>Property of a particular individual in reference to a particular population. Sum of the additive effects of an individual's alleles.</td></tr><tr><td>Additive genetic variance, $ \\sigma_{A}^{2} $</td><td>Property of a particular population. Variance of the breeding values of individuals within the population.</td></tr></table>",
+      "rows": [
+        [
+          "Homozygous effect, $ a $",
+          "Intrinsic properties of allelic products."
+        ],
+        [
+          "Dominance coefficient, $ k $",
+          "Not functions of allele frequencies, but may vary with genetic background."
+        ],
+        [
+          "Additive effect, $ \\alpha_{i} $",
+          "Properties of alleles in a particular population."
+        ],
+        [
+          "Average excess, $ \\alpha_{i}^{*} $",
+          "Functions of homozygous effects, dominance coefficients, and genotype frequencies."
+        ],
+        [
+          "Breeding value, $ A $",
+          "Property of a particular individual in reference to a particular population. Sum of the additive effects of an individual's alleles."
+        ],
+        [
+          "Additive genetic variance, $ \\sigma_{A}^{2} $",
+          "Property of a particular population. Variance of the breeding values of individuals within the population."
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 95,
+          "title": "Table 4.3 Summary of quantities used to measure genetic effects.",
+          "html": "<table><tr><td>Homozygous effect, $ a $</td><td>Intrinsic properties of allelic products.</td></tr><tr><td>Dominance coefficient, $ k $</td><td>Not functions of allele frequencies, but may vary with genetic background.</td></tr><tr><td>Additive effect, $ \\alpha_{i} $</td><td>Properties of alleles in a particular population.</td></tr><tr><td>Average excess, $ \\alpha_{i}^{*} $</td><td>Functions of homozygous effects, dominance coefficients, and genotype frequencies.</td></tr><tr><td>Breeding value, $ A $</td><td>Property of a particular individual in reference to a particular population. Sum of the additive effects of an individual's alleles.</td></tr><tr><td>Additive genetic variance, $ \\sigma_{A}^{2} $</td><td>Property of a particular population. Variance of the breeding values of individuals within the population.</td></tr></table>",
+          "rows": [
+            [
+              "Homozygous effect, $ a $",
+              "Intrinsic properties of allelic products."
+            ],
+            [
+              "Dominance coefficient, $ k $",
+              "Not functions of allele frequencies, but may vary with genetic background."
+            ],
+            [
+              "Additive effect, $ \\alpha_{i} $",
+              "Properties of alleles in a particular population."
+            ],
+            [
+              "Average excess, $ \\alpha_{i}^{*} $",
+              "Functions of homozygous effects, dominance coefficients, and genotype frequencies."
+            ],
+            [
+              "Breeding value, $ A $",
+              "Property of a particular individual in reference to a particular population. Sum of the additive effects of an individual's alleles."
+            ],
+            [
+              "Additive genetic variance, $ \\sigma_{A}^{2} $",
+              "Property of a particular population. Variance of the breeding values of individuals within the population."
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            64.0,
+            171.0,
+            1017.0,
+            671.0
+          ],
+          "caption_bbox": [
+            66.0,
+            122.0,
+            782.0,
+            172.0
+          ],
+          "source_block_ids": [
+            "p95:b3"
+          ],
+          "caption_source_block_ids": [
+            "p95:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter4",
+        "unit_id": "Genetics_chapter4_016",
+        "page": 95,
+        "pages": [
+          95
+        ],
+        "bbox": [
+          64.0,
+          171.0,
+          1017.0,
+          671.0
+        ],
+        "caption_bbox": [
+          66.0,
+          122.0,
+          782.0,
+          172.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

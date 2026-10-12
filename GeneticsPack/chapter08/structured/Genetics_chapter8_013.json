@@ -1,0 +1,46 @@
+{
+  "id": "Genetics_chapter8_013",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Determinants and Minors"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Determinants and Minors",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Determinants and Minors"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Determinants and Minors",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    }
+  },
+  "blocks": [
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter8:4]]",
+      "source_page": 206,
+      "source_block_ids": [
+        "p206:b5",
+        "p206:b6",
+        "p206:b7",
+        "p206:b8",
+        "p206:b9",
+        "p206:b10",
+        "p206:b11"
+      ],
+      "bbox": [
+        193.0,
+        702.0,
+        652.0,
+        735.0
+      ]
+    }
+  ]
+}

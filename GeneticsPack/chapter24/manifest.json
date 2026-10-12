@@ -1,0 +1,14 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter24",
+  "counts": {
+    "structured": 6,
+    "formulas": 20,
+    "tables": 1,
+    "figures": 0,
+    "examples": 3,
+    "image_files": 0
+  },
+  "textbook": "textbook.md",
+  "figures": []
+}

@@ -1,0 +1,287 @@
+{
+  "id": "PopGen_chapter2_014",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "subsections": [
+      "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "section_level_2": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+    "heading_path": [
+      "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+    ],
+    "display_heading": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "With random mating, the alleles of any gene are combined at random into genotypes according to frequencies given by the Hardy-Weinberg proportions. To be specific, imagine a gene with two alleles, call them A and a, at frequencies $ p_A $ and $ q_a $, respectively, where $ p_A + q_a = 1 $. Then the Hardy-Weinberg principle tells us that genotypes AA, Aa, and aa are expected in the proportions $ p_A^2 $, $ 2p_A q_a $, and $ q_a^2 $, respectively, provided that mating is random.",
+      "source_page": 87,
+      "source_pages": [
+        87,
+        88
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p029:b6",
+        "PopGen_chapter2:p030:b3"
+      ],
+      "source_bboxes": [
+        [
+          95.0,
+          1323.0,
+          846.0,
+          1379.0
+        ],
+        [
+          288.0,
+          630.0,
+          1042.0,
+          739.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+      "source_locator_mode": "exact",
+      "inline_styles": [
+        {
+          "start": 349,
+          "end": 351,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 87,
+          "source_block_ids": [
+            "PopGen_chapter2:p029:b6",
+            "PopGen_chapter2:p030:b3"
+          ],
+          "source_bboxes": [
+            [
+              95.0,
+              1323.0,
+              846.0,
+              1379.0
+            ],
+            [
+              288.0,
+              630.0,
+              1042.0,
+              739.0
+            ]
+          ],
+          "source_content_sha256": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p029:b6": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+            "PopGen_chapter2:p030:b3": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d"
+          }
+        },
+        {
+          "start": 353,
+          "end": 355,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 87,
+          "source_block_ids": [
+            "PopGen_chapter2:p029:b6",
+            "PopGen_chapter2:p030:b3"
+          ],
+          "source_bboxes": [
+            [
+              95.0,
+              1323.0,
+              846.0,
+              1379.0
+            ],
+            [
+              288.0,
+              630.0,
+              1042.0,
+              739.0
+            ]
+          ],
+          "source_content_sha256": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p029:b6": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+            "PopGen_chapter2:p030:b3": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d"
+          }
+        },
+        {
+          "start": 361,
+          "end": 363,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 87,
+          "source_block_ids": [
+            "PopGen_chapter2:p029:b6",
+            "PopGen_chapter2:p030:b3"
+          ],
+          "source_bboxes": [
+            [
+              95.0,
+              1323.0,
+              846.0,
+              1379.0
+            ],
+            [
+              288.0,
+              630.0,
+              1042.0,
+              739.0
+            ]
+          ],
+          "source_content_sha256": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p029:b6": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d",
+            "PopGen_chapter2:p030:b3": "c462279613a22a83ccbdece48b02cd415d7b0601720f80e12c4eebf75090ae4d"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Similarly, we may consider a different gene with alleles B and b at frequencies $ p_{B} $ and $ q_{b} $, respectively, where $ p_{B} + q_{b} = 1 $. Then the Hardy-Weinberg principle tells us again that the genotype frequencies of BB, Bb, and bb are expected in the proportions $ p_{B}^{2} $, $ 2p_{B}q_{b} $, and $ q_{b}^{2} $, respectively, provided that mating is random. Thus, the A allele is in random association with the a allele, and the B allele is in random association with the b allele. Strange as it may seem, the alleles of the A gene may nevertheless fail to be in random association with the alleles of the B gene. The precise meaning of “random association” is illustrated in Figure 2.9. In this figure the squares refer to the alleles present in gametes, not to genotypes as in earlier diagrams. When the alleles of the genes are in random association, the frequency of a gamete carrying any particular combination of alleles equals the product of the frequencies of those alleles. Genes that are in random association are said to be in a state of linkage equilibrium, and genes not in random association are said to be in linkage disequilibrium. With linkage equilibrium, therefore, the gametic frequencies are: $$ \\begin{array}{ll} AB: & p_{A}\\times p_{B}\\\\Ab: & p_{A}\\times q_{b}\\\\aB: & q_{a}\\times p_{B}\\\\ab: & q_{a}\\times q_{b}\\end{array} $$ With random mating and the other simplifying assumptions listed earlier (including a large population with no mutation, migration, or selection), linkage equilibrium between genes is eventually attained. However, linkage equilibrium is attained gradually, and the rate of approach can be very slow. The slow approach to linkage equilibrium stands in contrast to the attainment of HWE with alleles of a single gene, which typically requires just one generation (when generations are nonoverlapping) or a relatively small number of generations (when generations are overlapping).",
+      "source_page": 88,
+      "source_pages": [
+        88,
+        89
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p030:b4",
+        "PopGen_chapter2:p030:b5",
+        "PopGen_chapter2:p031:b1"
+      ],
+      "source_bboxes": [
+        [
+          288.0,
+          738.0,
+          1043.0,
+          1167.0
+        ],
+        [
+          529.0,
+          1191.0,
+          707.0,
+          1371.0
+        ],
+        [
+          110.0,
+          200.0,
+          862.0,
+          412.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "bce944f9cd4d062d6178fe806bb29018f68a946eea6eb8b3047a74140ef6681d",
+      "inline_styles": [
+        {
+          "start": 1065,
+          "end": 1084,
+          "style": "bold",
+          "text": "linkage equilibrium",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          }
+        },
+        {
+          "start": 1140,
+          "end": 1162,
+          "style": "bold",
+          "text": "linkage disequilibrium",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          }
+        },
+        {
+          "start": 1169,
+          "end": 1188,
+          "style": "bold",
+          "text": "linkage equilibrium",
+          "source_page": 88,
+          "source_block_ids": [
+            "PopGen_chapter2:p030:b4"
+          ],
+          "source_bboxes": [
+            [
+              288,
+              738,
+              1043,
+              1167
+            ]
+          ],
+          "source_content_sha256": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p030:b4": "5e61e863f80d7343030950fc8cbda72aea9cb38487d316806243d62a1a6e5016"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "discussion",
+      "content": "The rate of approach to linkage equilibrium depends on the rate of recombination in genotypes heterozygous for both genes. There are two types of double heterozygotes:",
+      "source_page": 89,
+      "source_pages": [
+        89
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p031:b2",
+        "PopGen_chapter2:p031:b3"
+      ],
+      "source_bboxes": [
+        [
+          108.0,
+          415.0,
+          860.0,
+          490.0
+        ],
+        [
+          390.0,
+          507.0,
+          580.0,
+          528.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "7f26e5de94ae388835fbd90cbd6e304717d467b1c7fb1b615656615a11a39272",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

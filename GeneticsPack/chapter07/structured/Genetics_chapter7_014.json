@@ -1,0 +1,220 @@
+{
+  "id": "Genetics_chapter7_014",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "THE HERITABILITY CONCEPT",
+    "subsections": [
+      "Evolvability"
+    ],
+    "section_level_1": "THE HERITABILITY CONCEPT",
+    "section_level_2": "Evolvability",
+    "heading_path": [
+      "THE HERITABILITY CONCEPT",
+      "Evolvability"
+    ],
+    "display_heading": "THE HERITABILITY CONCEPT / Evolvability",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b4"
+      ],
+      "bbox": [
+        68.0,
+        768.0,
+        228.0,
+        801.0
+      ],
+      "raw_text": "Evolvability"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In comparing evolvabilities of different traits/species, it is clearly desirable to use a dimensionless parameter, and one such measure is the heritability. Recall the traditional expression for the rate of evolution of a trait,",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b5"
+      ],
+      "bbox": [
+        66.0,
+        812.0,
+        1024.0,
+        910.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula046]]",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b6"
+      ],
+      "bbox": [
+        481.0,
+        917.0,
+        611.0,
+        951.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "This equation neatly separates the forces of selection from the properties of inheritance, such that $ h^{2} $ can be viewed as the efficiency of the response to selection. The change in the mean relative to the phenotypic standard deviation provides another useful descriptor of evolvability, and in this case,",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b8"
+      ],
+      "bbox": [
+        64.0,
+        961.0,
+        1023.0,
+        1093.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula047]]",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b9"
+      ],
+      "bbox": [
+        481.0,
+        1100.0,
+        607.0,
+        1165.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ i = S/\\sigma_{z} $ is the standardized selection differential, i.e., the change in the mean caused by selection in units of phenotypic standard deviations. Again, the heritability provides a measure of the efficiency of response to selection.",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b11"
+      ],
+      "bbox": [
+        61.0,
+        1170.0,
+        1021.0,
+        1270.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Houle (1992) has suggested that heritability may not be the best measure of the evolvability of a trait, arguing for the use of the coefficient of additive genetic variation, i.e., $ \\sigma_{A}/\\mu $, where $ \\sigma_{A} $ is the square root of the additive genetic variance and $ \\mu $ is the mean of the trait. Here we show that the utility of this metric is limited to a very special situation. Dividing both sides of Equation 7.31a by the mean phenotype yields an expression for the proportional change of the trait,",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b12"
+      ],
+      "bbox": [
+        60.0,
+        1267.0,
+        1022.0,
+        1463.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula048]]",
+      "source_page": 191,
+      "printed_page": 171,
+      "source_block_ids": [
+        "p191:b13"
+      ],
+      "bbox": [
+        444.0,
+        1467.0,
+        638.0,
+        1540.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "This suggests that the dimensionless parameter $ \\sigma_{A}^{2}/(\\mu\\sigma_{z}) $, the ratio of the additive genetic variance to the product of the phenotypic mean and standard deviation, is an appropriate parameter for comparing evolvability when proportional change is the measure of interest. Unlike heritability, this ratio does not have a simple biological interpretation.",
+      "source_page": 192,
+      "printed_page": 172,
+      "source_block_ids": [
+        "p192:b2"
+      ],
+      "bbox": [
+        131.0,
+        133.0,
+        1089.0,
+        295.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Now consider the special case in which the character is fitness (W). Recall from Chapter 3 that the selection differential is equivalent to the phenotypic covariance between the character and relative fitness (w = W/W), i.e., $ S = \\sigma(z, W)/\\overline{W} $, where $ \\overline{W} $ is mean fitness on the absolute scale. If z is fitness, then $ S = \\sigma_z^2(W)/\\overline{W} $, where $ \\sigma_z^2(W) $ is the phenotypic variance of fitness. Equation 7.31c then reduces to",
+      "source_page": 192,
+      "printed_page": 172,
+      "source_block_ids": [
+        "p192:b3"
+      ],
+      "bbox": [
+        132.0,
+        295.0,
+        1090.0,
+        485.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula049]]",
+      "source_page": 192,
+      "printed_page": 172,
+      "source_block_ids": [
+        "p192:b4"
+      ],
+      "bbox": [
+        464.0,
+        478.0,
+        763.0,
+        551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\sigma_{A}^{2}(W) $ and $ \\sigma_{A}^{2}(w) $ are the additive genetic variances of absolute and relative fitness. Thus, the proportional rate of evolution in mean fitness is equal to the squared coefficient of additive genetic variation of absolute fitness, or equivalently, to the additive genetic variance of relative fitness. This is Fisher's (1958) fundamental theorem of natural selection.",
+      "source_page": 192,
+      "printed_page": 172,
+      "source_block_ids": [
+        "p192:b6"
+      ],
+      "bbox": [
+        133.0,
+        566.0,
+        1093.0,
+        728.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "These alternative formulations merely serve to illustrate that there are several ways to measure evolvability, each of which has its own merits in particular contexts. All of the measures are interchangeable provided that information is available on the phenotypic variance, additive genetic variance, and mean phenotype. As emphasized by Houle (1992), however, many quantitative-genetic studies simply report the heritability of a trait, with no mention of the mean or variance components. This greatly limits the scope of investigation that can be performed with published data.",
+      "source_page": 192,
+      "printed_page": 172,
+      "source_block_ids": [
+        "p192:b7"
+      ],
+      "bbox": [
+        136.0,
+        728.0,
+        1096.0,
+        989.0
+      ]
+    }
+  ]
+}

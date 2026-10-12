@@ -1,0 +1,247 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter12",
+  "count": 7,
+  "figures": [
+    {
+      "id": "12.1",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.1",
+      "placeholder": "[[FIGURE:12.1]]",
+      "see_placeholder": "[[SEE_FIGURE:12.1]]",
+      "asset_path": "figures/Genetics_12.1.png",
+      "caption": "Figure 12.1 Some of the molecular processes that influence genome structure. In unequal crossing-over, copy-number changes result from recombination between tandemly repeated sequences (usually on sister chromosomes) that are aligned out of register. Gene conversion, the nonreciprocal exchange of DNA between two sequences, can change the number of copies of a particular allele that an individual carries. Transposition occurs when a mobile genetic element inserts into a new site, usually (but not exclusively) while still retaining a copy in the original position. Replication slippage is a rough analog of unequal crossing-over, with the single stands of an individual DNA mispairing during replication.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 339,
+      "raw_bbox": [
+        185.0,
+        128.0,
+        913.0,
+        753.0
+      ],
+      "source_block_ids": [
+        "p339:b2"
+      ],
+      "caption_block": {
+        "source_page": 339,
+        "printed_page": 319,
+        "source_block_ids": [
+          "p339:b3"
+        ],
+        "bbox": [
+          108.0,
+          775.0,
+          980.0,
+          1051.0
+        ]
+      }
+    },
+    {
+      "id": "12.2",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.2",
+      "placeholder": "[[FIGURE:12.2]]",
+      "see_placeholder": "[[SEE_FIGURE:12.2]]",
+      "asset_path": "figures/Genetics_12.2.png",
+      "caption": "Figure 12.2 Association between chromosomes containing at least one insertional variant in the achaete-scute region and sternopleural (top) and abdominal (bottom) bristle numbers. Squares denote samples from a natural population at Raleigh, NC, and circles denote samples from Texas. Open symbols denote extracted chromosomes containing at least one insertional variant (+), while filled symbols denote chromosomes without insertions (−). The arrows denote the mean bristle number associated with + and − chromosomes and the mean for the entire sample. (From Mackay and Langley 1990.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 340,
+      "raw_bbox": [
+        254.0,
+        131.0,
+        992.0,
+        1113.0
+      ],
+      "source_block_ids": [
+        "p340:b2",
+        "p340:b3"
+      ],
+      "caption_block": {
+        "source_page": 340,
+        "printed_page": 320,
+        "source_block_ids": [
+          "p340:b4"
+        ],
+        "bbox": [
+          186.0,
+          1145.0,
+          1055.0,
+          1386.0
+        ]
+      }
+    },
+    {
+      "id": "12.3",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.3",
+      "placeholder": "[[FIGURE:12.3]]",
+      "see_placeholder": "[[SEE_FIGURE:12.3]]",
+      "asset_path": "figures/Genetics_12.3.png",
+      "caption": "Figure 12.3 The frequency distribution for the fraction of 28S rDNA repeats on the X chromosome that contain an insertion of the mobile element R1 in a population of Drosophila mercatorum near Kamuela, Hawaii. 1036 X chromosomes were assayed. (From Hollocher et al. 1992.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 342,
+      "raw_bbox": [
+        251.0,
+        160.0,
+        969.0,
+        629.0
+      ],
+      "source_block_ids": [
+        "p342:b2"
+      ],
+      "caption_block": {
+        "source_page": 342,
+        "printed_page": 322,
+        "source_block_ids": [
+          "p342:b3"
+        ],
+        "bbox": [
+          178.0,
+          663.0,
+          1042.0,
+          784.0
+        ]
+      }
+    },
+    {
+      "id": "12.4",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.4",
+      "placeholder": "[[FIGURE:12.4]]",
+      "see_placeholder": "[[SEE_FIGURE:12.4]]",
+      "asset_path": "figures/Genetics_12.4.png",
+      "caption": "Figure 12.4 Responses to 125 generations of selection for bristle numbers in Drosophila melanogaster. For each character, results are given for three upwardly selected and three downwardly selected lines. Up to generation 63, the 10 extreme males and 10 extreme females were selected from a total of 40 measured individuals of each sex; thereafter, 10 pairs were selected from 20 measured individuals of each sex. (From Mackay et al. 1994.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 348,
+      "raw_bbox": [
+        255.0,
+        128.0,
+        977.0,
+        1174.0
+      ],
+      "source_block_ids": [
+        "p348:b2",
+        "p348:b3"
+      ],
+      "caption_block": {
+        "source_page": 348,
+        "printed_page": 328,
+        "source_block_ids": [
+          "p348:b4"
+        ],
+        "bbox": [
+          191.0,
+          1201.0,
+          1058.0,
+          1389.0
+        ]
+      }
+    },
+    {
+      "id": "12.5",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.5",
+      "placeholder": "[[FIGURE:12.5]]",
+      "see_placeholder": "[[SEE_FIGURE:12.5]]",
+      "asset_path": "figures/Genetics_12.5.png",
+      "caption": "Figure 12.5 The distributions of sternopleural bristle numbers for control, homozygous P-element insert lines, and heterozygous P-element insert lines, in Drosophila melanogaster. Each insert line carries a single P-element insertion, as revealed by cytogenetic analysis. The open bars denote second chromosome line means, while the closed bars denote the results for chromosome three. All chromosomes were evaluated on a constant genetic background. (From Lyman et al. 1996.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 350,
+      "raw_bbox": [
+        158.0,
+        144.0,
+        1069.0,
+        1307.0
+      ],
+      "source_block_ids": [
+        "p350:b2"
+      ],
+      "caption_block": {
+        "source_page": 350,
+        "printed_page": 330,
+        "source_block_ids": [
+          "p350:b3"
+        ],
+        "bbox": [
+          186.0,
+          1318.0,
+          1052.0,
+          1528.0
+        ]
+      }
+    },
+    {
+      "id": "12.6",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.6",
+      "placeholder": "[[FIGURE:12.6]]",
+      "see_placeholder": "[[SEE_FIGURE:12.6]]",
+      "asset_path": "figures/Genetics_12.6.png",
+      "caption": "Figure 12.6 Decrease in mean viability and increase in genotypic variance in viability starting from a uniform base population. Second chromosomes of Drosophila melanogaster were kept sheltered over a balancer (see Figure 5.7) and passed through males (which do not exhibit recombination in Drosophila). By this means, mutations were accumulated on essentially clonally propagated chromosomes for a number of generations before being extracted and made homozygous. The mean viability of these sheltered chromosomes decreased with increasing number of generations of mutation accumulation, while the variance among lines increased. $ \\Delta M $ is estimated from the slope of the regression of mean on numbers of generations of mutation accumulation, while $ \\Delta V $ is estimated from the slope of the variance regression. (From Mukai et al. 1972.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 358,
+      "raw_bbox": [
+        186.0,
+        143.0,
+        1047.0,
+        686.0
+      ],
+      "source_block_ids": [
+        "p358:b2"
+      ],
+      "caption_block": {
+        "source_page": 358,
+        "printed_page": 338,
+        "source_block_ids": [
+          "p358:b3"
+        ],
+        "bbox": [
+          187.0,
+          718.0,
+          1057.0,
+          1047.0
+        ]
+      }
+    },
+    {
+      "id": "12.7",
+      "chapter": "Genetics_chapter12",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter12:12.7",
+      "placeholder": "[[FIGURE:12.7]]",
+      "see_placeholder": "[[SEE_FIGURE:12.7]]",
+      "asset_path": "figures/Genetics_12.7.png",
+      "caption": "Figure 12.7 Similar plots to Figure 12.6 for 50 lines of the bacterium E. coli taken through daily single-cell bottlenecks for 300 days (with approximately 22 cell divisions per day). Here fitness is measured as the exponential rate of clonal expansion in liquid medium. (From Kibota and Lynch 1996.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 359,
+      "raw_bbox": [
+        87.0,
+        130.0,
+        997.0,
+        605.0
+      ],
+      "source_block_ids": [
+        "p359:b2"
+      ],
+      "caption_block": {
+        "source_page": 359,
+        "printed_page": 339,
+        "source_block_ids": [
+          "p359:b3"
+        ],
+        "bbox": [
+          104.0,
+          632.0,
+          969.0,
+          757.0
+        ]
+      }
+    }
+  ]
+}

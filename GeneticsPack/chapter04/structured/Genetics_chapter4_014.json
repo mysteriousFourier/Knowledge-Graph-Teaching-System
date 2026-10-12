@@ -1,0 +1,138 @@
+{
+  "id": "Genetics_chapter4_014",
+  "metadata": {
+    "chapter": "Genetics_chapter4",
+    "section": "EXTENSIONS FOR MULTIPLE ALLELES AND NONRANDOM MATING",
+    "subsections": [
+      "Average Excess"
+    ],
+    "section_level_1": "EXTENSIONS FOR MULTIPLE ALLELES AND NONRANDOM MATING",
+    "section_level_2": "Average Excess",
+    "heading_path": [
+      "EXTENSIONS FOR MULTIPLE ALLELES AND NONRANDOM MATING",
+      "Average Excess"
+    ],
+    "display_heading": "EXTENSIONS FOR MULTIPLE ALLELES AND NONRANDOM MATING / Average Excess",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 90,
+      "printed_page": 70,
+      "source_block_ids": [
+        "p90:b7"
+      ],
+      "bbox": [
+        166.0,
+        1269.0,
+        362.0,
+        1305.0
+      ],
+      "raw_text": "Average Excess"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "When n alleles are present, the average excess, $ \\alpha_{i}^{*} $, for any allele $ B_{i} $ is given by",
+      "source_page": 90,
+      "printed_page": 70,
+      "source_block_ids": [
+        "p90:b8"
+      ],
+      "bbox": [
+        165.0,
+        1293.0,
+        1101.0,
+        1348.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter4_formula035]]",
+      "source_page": 90,
+      "printed_page": 70,
+      "source_block_ids": [
+        "p90:b9"
+      ],
+      "bbox": [
+        502.0,
+        1374.0,
+        791.0,
+        1463.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $P_{ij|i}$ is the conditional probability of a $B_iB_j$ genotype given that one allele is $ B_{i} $. Under random mating, this reduces to",
+      "source_page": 90,
+      "printed_page": 70,
+      "source_block_ids": [
+        "p90:b11",
+        "p91:b2"
+      ],
+      "bbox": [
+        168.0,
+        1485.0,
+        1130.0,
+        1543.0
+      ],
+      "source_page_end": 91
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter4_formula036]]",
+      "source_page": 91,
+      "printed_page": 71,
+      "source_block_ids": [
+        "p91:b3"
+      ],
+      "bbox": [
+        412.0,
+        179.0,
+        673.0,
+        270.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ p_{j} $ is the frequency of the jth allele.",
+      "source_page": 91,
+      "printed_page": 71,
+      "source_block_ids": [
+        "p91:b5"
+      ],
+      "bbox": [
+        61.0,
+        270.0,
+        558.0,
+        317.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter4:5]]",
+      "source_page": 91,
+      "source_block_ids": [
+        "p91:b6",
+        "p91:b7",
+        "p91:b8",
+        "p91:b9",
+        "p91:b10",
+        "p91:b11",
+        "p91:b13",
+        "p91:b14"
+      ],
+      "bbox": [
+        104.0,
+        401.0,
+        967.0,
+        513.0
+      ]
+    }
+  ]
+}

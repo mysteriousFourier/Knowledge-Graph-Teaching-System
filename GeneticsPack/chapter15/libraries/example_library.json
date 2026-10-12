@@ -1,0 +1,593 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter15",
+  "count": 13,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter15:1",
+      "example_ref": "Genetics_chapter15:1",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 1",
+      "title": "Example 1. Consider a single-marker analysis using the $ F_2 $ formed by crossing two inbred lines, $ MMQQ \\times mmqq $. If the recombination frequency between the marker locus an",
+      "source_file": "Genetics_chapter15_004.json",
+      "start_block_index": 5,
+      "end_source_file": "Genetics_chapter15_004.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p448:b4",
+        "p448:b5",
+        "p448:b6",
+        "p448:b7",
+        "p448:b8",
+        "p448:b9",
+        "p448:b10",
+        "p449:b2",
+        "p449:b3",
+        "p449:b4",
+        "p449:b5",
+        "p449:b6",
+        "p449:b7",
+        "p449:b9"
+      ],
+      "content_markdown": "Example 1. Consider a single-marker analysis using the $ F_2 $ formed by crossing two inbred lines, $ MMQQ \\times mmqq $. If the recombination frequency between the marker locus and the QTL is $ c $, the expected $ F_1 $ gamete frequencies are\n\n[[FORMULA:Genetics_chapter15_formula002]]\n\nThe probability that an F₂ individual is MMQQ is Pr(MQ) · Pr(MQ) = [(1 - c)/2]². Likewise, 2 · Pr(MQ) · Pr(mQ) = 2(c/2)[(1 - c)/2] is the probability of an MmQQ individual, and so on. Since the probabilities of the marker genotypes MM, Mm, and mm are 1/4, 1/2, and 1/4, Equation 15.1 gives the F₂ conditional probabilities as\n\n[[FORMULA:Genetics_chapter15_formula003]]\n\n[[FORMULA:Genetics_chapter15_formula004]]\n\n[[FORMULA:Genetics_chapter15_formula005]]\n\nThis same logic extends to multiple marker loci. Suppose the QTL is flanked by two scored markers, and consider the $ F_2 $ in a cross of lines fixed for $ M_1QM_2 $ and $ m_1qm_2 $. What are the conditional probabilities of the three QTL genotypes when the marker genotype is $ M_1M_1M_2M_2 $? Since all $ F_1 $s are $ M_1QM_2/m_1qm_2 $, under the assumptions of no interference, the frequency of $ F_1 $ gametes involving $ M_1M_2 $ are\n\n[[FORMULA:Genetics_chapter15_formula006]]\n\ngiving expected frequencies in the F₂ of M₁M₁M₂M₂ offspring as\n\n[[FORMULA:Genetics_chapter15_formula007]]\n\nwhere $ c_2 = (c_{12} - c_1)/(1 - 2c_1) $. The overall frequency of $ M_1M_1M_2M_2 $ individuals, $ \\Pr(M_1M_1M_2M_2) $, is the sum of the three above terms, or $ (1 - c_{12})^2/4 $. Substituting into Equation 15.1 gives\n\n[[FORMULA:Genetics_chapter15_formula008]]\n\nConditional probabilities for other marker genotypes are computed in a similar fashion. Since $ c_1c_2 $ is usually very small if $ c_{12} $ is moderate to small, essentially all $ M_1M_1M_2M_2 $ individuals are QQ. For example, assuming $ c_1 = c_2 = c_{12}/2 $ (the worst case), the conditional probabilities of an $ M_1M_1M_2M_2 $ individual being QQ are 0.96, 0.98, and 0.99 for $ c_1 = c_2 = 0.25 $, 0.2, and 0.1.",
+      "content_plain": "Example 1. Consider a single-marker analysis using the  F_2  formed by crossing two inbred lines,  MMQQ \\times mmqq . If the recombination frequency between the marker locus and the QTL is  c , the expected  F_1  gamete frequencies are\n\n[[FORMULA:Genetics_chapter15_formula002]]\n\nThe probability that an F₂ individual is MMQQ is Pr(MQ) · Pr(MQ) = [(1 - c)/2]². Likewise, 2 · Pr(MQ) · Pr(mQ) = 2(c/2)[(1 - c)/2] is the probability of an MmQQ individual, and so on. Since the probabilities of the marker genotypes MM, Mm, and mm are 1/4, 1/2, and 1/4, Equation 15.1 gives the F₂ conditional probabilities as\n\n[[FORMULA:Genetics_chapter15_formula003]]\n\n[[FORMULA:Genetics_chapter15_formula004]]\n\n[[FORMULA:Genetics_chapter15_formula005]]\n\nThis same logic extends to multiple marker loci. Suppose the QTL is flanked by two scored markers, and consider the  F_2  in a cross of lines fixed for  M_1QM_2  and  m_1qm_2 . What are the conditional probabilities of the three QTL genotypes when the marker genotype is  M_1M_1M_2M_2 ? Since all  F_1 s are  M_1QM_2/m_1qm_2 , under the assumptions of no interference, the frequency of  F_1  gametes involving  M_1M_2  are\n\n[[FORMULA:Genetics_chapter15_formula006]]\n\ngiving expected frequencies in the F₂ of M₁M₁M₂M₂ offspring as\n\n[[FORMULA:Genetics_chapter15_formula007]]\n\nwhere  c_2 = (c_{12} - c_1)/(1 - 2c_1) . The overall frequency of  M_1M_1M_2M_2  individuals,  \\Pr(M_1M_1M_2M_2) , is the sum of the three above terms, or  (1 - c_{12})^2/4 . Substituting into Equation 15.1 gives\n\n[[FORMULA:Genetics_chapter15_formula008]]\n\nConditional probabilities for other marker genotypes are computed in a similar fashion. Since  c_1c_2  is usually very small if  c_{12}  is moderate to small, essentially all  M_1M_1M_2M_2  individuals are QQ. For example, assuming  c_1 = c_2 = c_{12}/2  (the worst case), the conditional probabilities of an  M_1M_1M_2M_2  individual being QQ are 0.96, 0.98, and 0.99 for  c_1 = c_2 = 0.25 , 0.2, and 0.1.",
+      "formula_refs": [
+        "Genetics_chapter15_formula002",
+        "Genetics_chapter15_formula003",
+        "Genetics_chapter15_formula004",
+        "Genetics_chapter15_formula005",
+        "Genetics_chapter15_formula006",
+        "Genetics_chapter15_formula007",
+        "Genetics_chapter15_formula008"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 449,
+          "y": 1044.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 448
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:2",
+      "example_ref": "Genetics_chapter15:2",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 2",
+      "title": "Example 2. Consider the single-marker $ F_{2} $ design with a single QTL linked (at recombination frequency c) to the marker. Denote the QTL genotypic values by",
+      "source_file": "Genetics_chapter15_005.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_chapter15_005.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p451:b7",
+        "p451:b8",
+        "p451:b9",
+        "p451:b10",
+        "p451:b11",
+        "p451:b12",
+        "p451:b13",
+        "p451:b14",
+        "p451:b16",
+        "p451:b18",
+        "p451:b19",
+        "p452:b2",
+        "p452:b3",
+        "p452:b5",
+        "p452:b7"
+      ],
+      "content_markdown": "Example 2. Consider the single-marker $ F_{2} $ design with a single QTL linked (at recombination frequency c) to the marker. Denote the QTL genotypic values by\n\n[[FORMULA:Genetics_chapter15_formula016]]\n\nwhere a measures the additive value and k the degree of dominance. Applying the conditional probabilities developed in Example 1 to Equation 15.6, the mean values for the marker genotypes are\n\n[[FORMULA:Genetics_chapter15_formula017]]\n\n[[FORMULA:Genetics_chapter15_formula018]]\n\n[[FORMULA:Genetics_chapter15_formula019]]\n\nIf the marker and QTL are unlinked (c = 1/2), all markers have the same mean, $ \\mu + a[1 + (k/2)] $. Rearranging these equations gives\n\n[[FORMULA:Genetics_chapter15_formula020]]\n\n[[FORMULA:Genetics_chapter15_formula021]]\n\nHence, one strategy for detecting QTLs is to test for significant differences between the mean trait values associated with different marker genotypes. This is the basis for QTL detection via regression or ANOVA, which we generically refer to as linear model approaches.\n\nThis example shows that while contrasts of single-marker means can be used to estimate both $ a^{*} $ and $ k^{*} $, these underestimate the magnitude of a and k by the (unknown) fraction 1 - 2c. If the marker and QTL are tightly linked, this error is small, but it increases rather dramatically as c approaches 1/2. A small difference between marker-homozygote means is thus compatible with either a tightly linked QTL of small effect or a loosely linked QTL of large effect. As we will show shortly, when multilocus marker genotypes are considered, the use of appropriate combinations of marker means allows for separate estimates of QTL effect and position.\n\nIf there are N QTLs linked to the marker, the ith of which is at recombination frequency $ c_{i} $ from the marker and has associated additive and dominance effects $ a_{i} $ and $ k_{i} $, then (from Edwards et al. 1987),\n\n[[FORMULA:Genetics_chapter15_formula022]]\n\n[[FORMULA:Genetics_chapter15_formula023]]\n\nwhere $ a_{i}^{*}=a_{i}(1-2c_{i}) $ and $ k_{i}^{*}=k_{i}(1-2c_{i}) $. If some of the linked QTLs have effects of opposite sign, some cancellation occurs, reducing the marker-trait association. Moreover, with multiple linked QTLs, the degrees of dominance ( $ k_{i} $) are confounded with the homozygous effects ( $ a_{i} $).",
+      "content_plain": "Example 2. Consider the single-marker  F_{2}  design with a single QTL linked (at recombination frequency c) to the marker. Denote the QTL genotypic values by\n\n[[FORMULA:Genetics_chapter15_formula016]]\n\nwhere a measures the additive value and k the degree of dominance. Applying the conditional probabilities developed in Example 1 to Equation 15.6, the mean values for the marker genotypes are\n\n[[FORMULA:Genetics_chapter15_formula017]]\n\n[[FORMULA:Genetics_chapter15_formula018]]\n\n[[FORMULA:Genetics_chapter15_formula019]]\n\nIf the marker and QTL are unlinked (c = 1/2), all markers have the same mean,  \\mu + a[1 + (k/2)] . Rearranging these equations gives\n\n[[FORMULA:Genetics_chapter15_formula020]]\n\n[[FORMULA:Genetics_chapter15_formula021]]\n\nHence, one strategy for detecting QTLs is to test for significant differences between the mean trait values associated with different marker genotypes. This is the basis for QTL detection via regression or ANOVA, which we generically refer to as linear model approaches.\n\nThis example shows that while contrasts of single-marker means can be used to estimate both  a^{}  and  k^{} , these underestimate the magnitude of a and k by the (unknown) fraction 1 - 2c. If the marker and QTL are tightly linked, this error is small, but it increases rather dramatically as c approaches 1/2. A small difference between marker-homozygote means is thus compatible with either a tightly linked QTL of small effect or a loosely linked QTL of large effect. As we will show shortly, when multilocus marker genotypes are considered, the use of appropriate combinations of marker means allows for separate estimates of QTL effect and position.\n\nIf there are N QTLs linked to the marker, the ith of which is at recombination frequency  c_{i}  from the marker and has associated additive and dominance effects  a_{i}  and  k_{i} , then (from Edwards et al. 1987),\n\n[[FORMULA:Genetics_chapter15_formula022]]\n\n[[FORMULA:Genetics_chapter15_formula023]]\n\nwhere  a_{i}^{}=a_{i}(1-2c_{i})  and  k_{i}^{}=k_{i}(1-2c_{i}) . If some of the linked QTLs have effects of opposite sign, some cancellation occurs, reducing the marker-trait association. Moreover, with multiple linked QTLs, the degrees of dominance (  k_{i} ) are confounded with the homozygous effects (  a_{i} ).",
+      "formula_refs": [
+        "Genetics_chapter15_formula016",
+        "Genetics_chapter15_formula017",
+        "Genetics_chapter15_formula018",
+        "Genetics_chapter15_formula019",
+        "Genetics_chapter15_formula020",
+        "Genetics_chapter15_formula021",
+        "Genetics_chapter15_formula022",
+        "Genetics_chapter15_formula023"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 452,
+          "y": 609.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 451
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:3",
+      "example_ref": "Genetics_chapter15:3",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 3",
+      "title": "Example 3. Edwards et al. (1987) examined two $ F_{2} $ maize populations. Cross 1 consisted of 1776 individuals scored for 16 markers, while Cross 2 used a different set of parent",
+      "source_file": "Genetics_chapter15_008.json",
+      "start_block_index": 12,
+      "end_source_file": "Genetics_chapter15_008.json",
+      "end_block_index": 16,
+      "block_ids": [
+        "p458:b2",
+        "p458:b3",
+        "p458:b4",
+        "p458:b5",
+        "p458:b6"
+      ],
+      "content_markdown": "Example 3. Edwards et al. (1987) examined two $ F_{2} $ maize populations. Cross 1 consisted of 1776 individuals scored for 16 markers, while Cross 2 used a different set of parental lines and consisted of 1930 individuals scored for 20 markers. As the frequency distribution (below) shows, the detected marker effects (measured by the fraction $ r^{2} $ of total $ F_{2} $ phenotypic variance accounted for by each significant marker-trait association) were generally quite small.\n\n![Source illustration p458 b3](figures/examples/Genetics_p458_b3.png)\n\nA total of 82 vegetative characters were examined, with 60% (Cross 1) and 64% (Cross 2) of all possible marker-trait combinations showing significant effects (at the $ \\alpha = 0.05 $ level) using single-marker ANOVA. On average, each trait showed 10 (Cross 1) and 14 (Cross 2) significant marker associations. Dominance was common, while pairwise epistasis, as tested by incorporating a marker × marker interaction term into the linear model (Equation 15.14c), was rare.\n\nThe same two $ F_2 $ populations were used by Stuber et al. (1987) to examine 25 yield-related characters, with similar results. In that study, most marker-trait combinations were significant (66% and 72% at the $ \\alpha = 0.05 $ level), and most marker effects were small (over half of the significant associations having $ r^2 $ values less than two percent). As a group, yield-related traits displayed more dominance than vegetative traits, but many yield traits were still largely additive.\n\nA more recent study by Edwards et al. (1992) examined a subset of the vegetative characters in Cross 2, using a much larger number of markers (114 RFLPs). While only 187 $ F_{2} $ individuals were scored, 15% of marker-trait associations were significant, and the overall results with respect to the distribution of effects were similar to those for the 1987 experiments.",
+      "content_plain": "Example 3. Edwards et al. (1987) examined two  F_{2}  maize populations. Cross 1 consisted of 1776 individuals scored for 16 markers, while Cross 2 used a different set of parental lines and consisted of 1930 individuals scored for 20 markers. As the frequency distribution (below) shows, the detected marker effects (measured by the fraction  r^{2}  of total  F_{2}  phenotypic variance accounted for by each significant marker-trait association) were generally quite small.\n\n![Source illustration p458 b3](figures/examples/Genetics_p458_b3.png)\n\nA total of 82 vegetative characters were examined, with 60% (Cross 1) and 64% (Cross 2) of all possible marker-trait combinations showing significant effects (at the  \\alpha = 0.05  level) using single-marker ANOVA. On average, each trait showed 10 (Cross 1) and 14 (Cross 2) significant marker associations. Dominance was common, while pairwise epistasis, as tested by incorporating a marker × marker interaction term into the linear model (Equation 15.14c), was rare.\n\nThe same two  F_2  populations were used by Stuber et al. (1987) to examine 25 yield-related characters, with similar results. In that study, most marker-trait combinations were significant (66% and 72% at the  \\alpha = 0.05  level), and most marker effects were small (over half of the significant associations having  r^2  values less than two percent). As a group, yield-related traits displayed more dominance than vegetative traits, but many yield traits were still largely additive.\n\nA more recent study by Edwards et al. (1992) examined a subset of the vegetative characters in Cross 2, using a much larger number of markers (114 RFLPs). While only 187  F_{2}  individuals were scored, 15% of marker-trait associations were significant, and the overall results with respect to the distribution of effects were similar to those for the 1987 experiments.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p458_b3.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 458,
+          "y": 1518.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 458
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:4",
+      "example_ref": "Genetics_chapter15:4",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 4",
+      "title": "Example 4. Consider the single-marker $ F_{2} $ design with a single QTL linked to the marker. Making the standard assumption that phenotypes are normally distributed about each QT",
+      "source_file": "Genetics_chapter15_009.json",
+      "start_block_index": 4,
+      "end_source_file": "Genetics_chapter15_009.json",
+      "end_block_index": 8,
+      "block_ids": [
+        "p459:b8",
+        "p460:b2",
+        "p460:b3",
+        "p460:b4",
+        "p460:b5",
+        "p460:b6"
+      ],
+      "content_markdown": "Example 4. Consider the single-marker $ F_{2} $ design with a single QTL linked to the marker. Making the standard assumption that phenotypes are normally distributed about each QTL genotype, substitution of the $ F_{2} $ conditional probabilities (Example 1) into Equation 15.15 gives the likelihood functions for the three different marker genotypes as\n\n[[FORMULA:Genetics_chapter15_formula044]]\n\nas obtained by Weller (1986). The total likelihood for $n$ $F_{2}$ individuals is the product of the individual likelihoods,\n\n[[FORMULA:Genetics_chapter15_formula045]]\n\nWhile rather complex, the total likelihood is a function of just five parameters: the QTL position (c), the three QTL means ( $ \\mu_{QQ} $, $ \\mu_{Qq} $, $ \\mu_{qq} $), and the common variance ( $ \\sigma^{2} $).",
+      "content_plain": "Example 4. Consider the single-marker  F_{2}  design with a single QTL linked to the marker. Making the standard assumption that phenotypes are normally distributed about each QTL genotype, substitution of the  F_{2}  conditional probabilities (Example 1) into Equation 15.15 gives the likelihood functions for the three different marker genotypes as\n\n[[FORMULA:Genetics_chapter15_formula044]]\n\nas obtained by Weller (1986). The total likelihood for n F_{2} individuals is the product of the individual likelihoods,\n\n[[FORMULA:Genetics_chapter15_formula045]]\n\nWhile rather complex, the total likelihood is a function of just five parameters: the QTL position (c), the three QTL means (  \\mu_{QQ} ,  \\mu_{Qq} ,  \\mu_{qq} ), and the common variance (  \\sigma^{2} ).",
+      "formula_refs": [
+        "Genetics_chapter15_formula044",
+        "Genetics_chapter15_formula045"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 460,
+          "y": 733.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 459
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:5",
+      "example_ref": "Genetics_chapter15:5",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 5",
+      "title": "Example 5. Likelihood functions for interval mapping follow by substituting the appropriate conditional probabilities into Equation 15.15. For example, consider the $ F_{2} $ forme",
+      "source_file": "Genetics_chapter15_012.json",
+      "start_block_index": 1,
+      "end_source_file": "Genetics_chapter15_012.json",
+      "end_block_index": 4,
+      "block_ids": [
+        "p464:b6",
+        "p465:b2",
+        "p465:b3",
+        "p465:b4"
+      ],
+      "content_markdown": "Example 5. Likelihood functions for interval mapping follow by substituting the appropriate conditional probabilities into Equation 15.15. For example, consider the $ F_{2} $ formed by crossing two inbred lines. Assuming no interference, from\n\nEquation 15.2 the likelihood for marker genotype $ M_{1}M_{1}M_{2}M_{2} $ is\n\n[[FORMULA:Genetics_chapter15_formula048]]\n\nLikelihoods for the other eight flanking-marker genotypes follow similarly and can be found in Luo and Kearsey (1992), Carbonell et al. (1992), and van Ooijen (1992). Even though these likelihoods involve three recombination parameters $ (c_{12}, c_{1}, c_{2}) $, the distance between markers $ (c_{12}) $ is usually taken as known, and hence $ c_{2} = (c_{12} - c_{1}) / (1 - 2c_{1}) $ (assuming no interference) or $ c_{2} = c_{12} - c_{1} $ (complete interference). This leaves five parameters to estimate: three QTL means, the common variance $ \\sigma^{2} $, and the position $ c_{1} $ of the putative QTL within the interval. Likelihoods for other designs follow using the appropriate conditional probabilities.",
+      "content_plain": "Example 5. Likelihood functions for interval mapping follow by substituting the appropriate conditional probabilities into Equation 15.15. For example, consider the  F_{2}  formed by crossing two inbred lines. Assuming no interference, from\n\nEquation 15.2 the likelihood for marker genotype  M_{1}M_{1}M_{2}M_{2}  is\n\n[[FORMULA:Genetics_chapter15_formula048]]\n\nLikelihoods for the other eight flanking-marker genotypes follow similarly and can be found in Luo and Kearsey (1992), Carbonell et al. (1992), and van Ooijen (1992). Even though these likelihoods involve three recombination parameters  (c_{12}, c_{1}, c_{2}) , the distance between markers  (c_{12})  is usually taken as known, and hence  c_{2} = (c_{12} - c_{1}) / (1 - 2c_{1})  (assuming no interference) or  c_{2} = c_{12} - c_{1}  (complete interference). This leaves five parameters to estimate: three QTL means, the common variance  \\sigma^{2} , and the position  c_{1}  of the putative QTL within the interval. Likelihoods for other designs follow using the appropriate conditional probabilities.",
+      "formula_refs": [
+        "Genetics_chapter15_formula048"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 465,
+          "y": 849.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 464
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:5]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:6",
+      "example_ref": "Genetics_chapter15:6",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 6",
+      "title": "Example 6. Suppose five chromosomes are used for ML-interval mapping in an $ F_2 $ design. Chromosomes 1 through 5 have 10, 5, 20, 30, and 40 markers, respectively. In order to ach",
+      "source_file": "Genetics_chapter15_012.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_chapter15_012.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p466:b6",
+        "p466:b7"
+      ],
+      "content_markdown": "Example 6. Suppose five chromosomes are used for ML-interval mapping in an $ F_2 $ design. Chromosomes 1 through 5 have 10, 5, 20, 30, and 40 markers, respectively. In order to achieve a genome-wide level of significance of $ \\gamma = 0.10 $, what are the approximate critical values for each chromosome? Applying Equation 15.17, the overall level of significance for each chromosome is $ 1 - (1 - 0.1)^{1/5} = 0.021 $.\n\nThe critical values for each chromosome vary with the number of markers. For chromosome 1, the significance levels for each test become approximately 0.021/10 = 0.0021. Recall that the degrees of freedom for the test of no QTLs in an $ F_2 $ design are 5–2 = 3. Since $ \\Pr(\\chi_3^2 > 14.71) = 0.0021 $, this implies that the critical values for the likelihood ratios for chromosome 1 is 14.7. Similarly, the critical values for the remaining four chromosomes are 13.2, 16.2, 17.0, and 17.6.",
+      "content_plain": "Example 6. Suppose five chromosomes are used for ML-interval mapping in an  F_2  design. Chromosomes 1 through 5 have 10, 5, 20, 30, and 40 markers, respectively. In order to achieve a genome-wide level of significance of  \\gamma = 0.10 , what are the approximate critical values for each chromosome? Applying Equation 15.17, the overall level of significance for each chromosome is  1 - (1 - 0.1)^{1/5} = 0.021 .\n\nThe critical values for each chromosome vary with the number of markers. For chromosome 1, the significance levels for each test become approximately 0.021/10 = 0.0021. Recall that the degrees of freedom for the test of no QTLs in an  F_2  design are 5–2 = 3. Since  \\Pr(\\chi_3^2 > 14.71) = 0.0021 , this implies that the critical values for the likelihood ratios for chromosome 1 is 14.7. Similarly, the critical values for the remaining four chromosomes are 13.2, 16.2, 17.0, and 17.6.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 466,
+          "y": 1470.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 466
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:6]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:7",
+      "example_ref": "Genetics_chapter15:7",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 7",
+      "title": "Example 7. Consider the following hypothetical data set: 10 F₂ individuals scored for flanking marker genotypes M₁/m₁ and M₂/m₂, separated by recombination frequency c₁₂ = 0.30. Th",
+      "source_file": "Genetics_chapter15_013.json",
+      "start_block_index": 22,
+      "end_source_file": "Genetics_chapter15_013.json",
+      "end_block_index": 37,
+      "block_ids": [
+        "p469:b6",
+        "p469:b7",
+        "p469:b8",
+        "p469:b9",
+        "p469:b10",
+        "p469:b11",
+        "p470:b2",
+        "p470:b3",
+        "p470:b4",
+        "p470:b5",
+        "p470:b6",
+        "p470:b7",
+        "p470:b8",
+        "p470:b9",
+        "p470:b10",
+        "p471:b2"
+      ],
+      "content_markdown": "Example 7. Consider the following hypothetical data set: 10 F₂ individuals scored for flanking marker genotypes M₁/m₁ and M₂/m₂, separated by recombination frequency c₁₂ = 0.30. The following marker genotypes and their associated character values are observed:\n\n[[FORMULA:Genetics_chapter15_formula060]]\n\nThis yields the observation vector\n\n[[FORMULA:Genetics_chapter15_formula061]]\n\nAssuming no interference, $ c_2 = (0.3 - c_1) / (1 - 2c_1) $. For each $ c_1 $ value ( $ 0 \\leq c_1 \\leq 0.3 $), a regression is fitted by first using Equation 15.20 to compute the elements of the design matrix for that value of $ c_1 $ and then using Equation 15.21 to obtain the regression coefficients. For example, consider three different QTL positions: $ c_1 = 0 $ (QTL at marker $ M_1 $), $ c_1 = 0.15 $ (QTL in the middle), and $ c_1 = 0.3 $ (QTL at marker $ M_2 $). The resulting regressions for these three $ c_1 $ values are\n\n<table><tr><td>$ c_{1} $</td><td>$ \\widehat{\\mu} $</td><td>$ \\widehat{a} $</td><td>$ \\widehat{d} $</td><td>$ r^{2} $</td></tr><tr><td>0.00</td><td>3.97</td><td>1.47</td><td>-0.33</td><td>0.730</td></tr><tr><td>0.15</td><td>3.70</td><td>1.89</td><td>-0.26</td><td>0.732</td></tr><tr><td>0.30</td><td>2.75</td><td>1.65</td><td>1.35</td><td>0.597</td></tr></table>\n\nThese regressions are obtained using the design matrices\n\n[[FORMULA:Genetics_chapter15_formula062]]\n\nTo complete the analysis, regressions are computed for the full range of $ c_{1} $ values, generating the following plot of regression $ r^{2} $ as a function of $ c_{1} $.\n\n![Source illustration p470 b5](figures/examples/Genetics_p470_b5.png)\n\nThe maximum value of $ r^2 $ (0.76) occurs at $ c_1 = 0.09 $, and the associated regression coefficients are $ \\widehat{\\mu} = 3.90 $, $ \\widehat{a} = 1.76 $ and $ \\widehat{d} = -0.46 $. Hence, the data suggest that a QTL lies between these two markers at recombination fraction $ c_1 = 0.09 $ from marker locus $ M_1 $, with estimated genotypic means\n\n[[FORMULA:Genetics_chapter15_formula063]]\n\nDoes this example show significant evidence of a QTL? From Equation 15.22, with $n = 10$ and $r^2 = 0.76$, the likelihood ratio (LR) becomes $-\\ln(1-0.76^2) = 14.27$. Note that only two QTL parameters are fitted ($a$ and $d$) because the reduced model fits a mean $\\mu$. Hence, the critical value for the likelihood ratio is a $\\chi^2$ with three degrees of freedom (for $a$, $d$, $c_1$),\n\n[[FORMULA:Genetics_chapter15_formula064]]\n\nshowing that the QTL effect is indeed significant.\n\nApproximate confidence intervals can be constructed by using those values giving scores within one LOD of the maximum value. We can translate $ r^2 $ values into LOD scores by using LOD = LR/4.61 = $ -n \\ln(1 - r^2)/4.61 $. The MLE has $ r^2 = 0.76 $ and $ n = 10 $, for a LOD score of $ -10 \\ln(1 - 0.76^2)/4.61 = 3.10 $. Hence any $ c_1 $ value with a LOD score of 2.10 or greater is in the one-LOD support interval for QTL position. The resulting interval is $ c_1 = 0 $ to 0.28, so that although there is very strong evidence for a QTL, there is extreme uncertainty as to its position within the interval. This is not surprising given the very small sample size.",
+      "content_plain": "Example 7. Consider the following hypothetical data set: 10 F₂ individuals scored for flanking marker genotypes M₁/m₁ and M₂/m₂, separated by recombination frequency c₁₂ = 0.30. The following marker genotypes and their associated character values are observed:\n\n[[FORMULA:Genetics_chapter15_formula060]]\n\nThis yields the observation vector\n\n[[FORMULA:Genetics_chapter15_formula061]]\n\nAssuming no interference,  c_2 = (0.3 - c_1) / (1 - 2c_1) . For each  c_1  value (  0 \\leq c_1 \\leq 0.3 ), a regression is fitted by first using Equation 15.20 to compute the elements of the design matrix for that value of  c_1  and then using Equation 15.21 to obtain the regression coefficients. For example, consider three different QTL positions:  c_1 = 0  (QTL at marker  M_1 ),  c_1 = 0.15  (QTL in the middle), and  c_1 = 0.3  (QTL at marker  M_2 ). The resulting regressions for these three  c_1  values are\n\n<table><tr><td> c_{1} </td><td> \\widehat{\\mu} </td><td> \\widehat{a} </td><td> \\widehat{d} </td><td> r^{2} </td></tr><tr><td>0.00</td><td>3.97</td><td>1.47</td><td>-0.33</td><td>0.730</td></tr><tr><td>0.15</td><td>3.70</td><td>1.89</td><td>-0.26</td><td>0.732</td></tr><tr><td>0.30</td><td>2.75</td><td>1.65</td><td>1.35</td><td>0.597</td></tr></table>\n\nThese regressions are obtained using the design matrices\n\n[[FORMULA:Genetics_chapter15_formula062]]\n\nTo complete the analysis, regressions are computed for the full range of  c_{1}  values, generating the following plot of regression  r^{2}  as a function of  c_{1} .\n\n![Source illustration p470 b5](figures/examples/Genetics_p470_b5.png)\n\nThe maximum value of  r^2  (0.76) occurs at  c_1 = 0.09 , and the associated regression coefficients are  \\widehat{\\mu} = 3.90 ,  \\widehat{a} = 1.76  and  \\widehat{d} = -0.46 . Hence, the data suggest that a QTL lies between these two markers at recombination fraction  c_1 = 0.09  from marker locus  M_1 , with estimated genotypic means\n\n[[FORMULA:Genetics_chapter15_formula063]]\n\nDoes this example show significant evidence of a QTL? From Equation 15.22, with n = 10 and r^2 = 0.76, the likelihood ratio (LR) becomes -\\ln(1-0.76^2) = 14.27. Note that only two QTL parameters are fitted (a and d) because the reduced model fits a mean \\mu. Hence, the critical value for the likelihood ratio is a \\chi^2 with three degrees of freedom (for a, d, c_1),\n\n[[FORMULA:Genetics_chapter15_formula064]]\n\nshowing that the QTL effect is indeed significant.\n\nApproximate confidence intervals can be constructed by using those values giving scores within one LOD of the maximum value. We can translate  r^2  values into LOD scores by using LOD = LR/4.61 =  -n \\ln(1 - r^2)/4.61 . The MLE has  r^2 = 0.76  and  n = 10 , for a LOD score of  -10 \\ln(1 - 0.76^2)/4.61 = 3.10 . Hence any  c_1  value with a LOD score of 2.10 or greater is in the one-LOD support interval for QTL position. The resulting interval is  c_1 = 0  to 0.28, so that although there is very strong evidence for a QTL, there is extreme uncertainty as to its position within the interval. This is not surprising given the very small sample size.",
+      "formula_refs": [
+        "Genetics_chapter15_formula060",
+        "Genetics_chapter15_formula061",
+        "Genetics_chapter15_formula062",
+        "Genetics_chapter15_formula063",
+        "Genetics_chapter15_formula064"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p470_b5.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 471,
+          "y": 421.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 469
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:7]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:8",
+      "example_ref": "Genetics_chapter15:8",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 8",
+      "title": "Example 8. Lin et al. (1995) examined flowering date through ML interval mapping of 370 F₂ individuals from a cross between cultivated and exotic sorghum (Sorghum bicolor × S. prop",
+      "source_file": "Genetics_chapter15_014.json",
+      "start_block_index": 5,
+      "end_source_file": "Genetics_chapter15_014.json",
+      "end_block_index": 5,
+      "block_ids": [
+        "p472:b5",
+        "p473:b2"
+      ],
+      "content_markdown": "Example 8. Lin et al. (1995) examined flowering date through ML interval mapping of 370 F₂ individuals from a cross between cultivated and exotic sorghum (Sorghum bicolor × S. propinquum). Only a single QTL for flowering date was detected, and this accounted for 85.7% of the total variance. The data were then adjusted to account for the effects of this major gene by using (z - bᵢ) in place of the trait value z for an individual with genotype i at a marker linked to the major gene. Here, the bᵢ (1 ≤ i ≤ 3) are the regression coefficients generated by a standard marker-trait regression using this marker locus. While the uncorrected F₂ phenotypic distribution was clearly bimodal, the adjusted data did not deviate from normality. Using the marker-adjusted data, two additional QTLs for flowering time were found (both unlinked to the original QTL), accounting for an additional 8.3% and 4.2% of the total variance. This example illustrates the potential importance of including additional marker information into the analy- sis when multiple QTLs are present. In this case, removing the effects of a major unlinked QTL reduced the residual variance sufficiently to enable detection of additional QTLs.",
+      "content_plain": "Example 8. Lin et al. (1995) examined flowering date through ML interval mapping of 370 F₂ individuals from a cross between cultivated and exotic sorghum (Sorghum bicolor × S. propinquum). Only a single QTL for flowering date was detected, and this accounted for 85.7% of the total variance. The data were then adjusted to account for the effects of this major gene by using (z - bᵢ) in place of the trait value z for an individual with genotype i at a marker linked to the major gene. Here, the bᵢ (1 ≤ i ≤ 3) are the regression coefficients generated by a standard marker-trait regression using this marker locus. While the uncorrected F₂ phenotypic distribution was clearly bimodal, the adjusted data did not deviate from normality. Using the marker-adjusted data, two additional QTLs for flowering time were found (both unlinked to the original QTL), accounting for an additional 8.3% and 4.2% of the total variance. This example illustrates the potential importance of including additional marker information into the analy- sis when multiple QTLs are present. In this case, removing the effects of a major unlinked QTL reduced the residual variance sufficiently to enable detection of additional QTLs.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 473,
+          "y": 275.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 472
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:8]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:9",
+      "example_ref": "Genetics_chapter15:9",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 9",
+      "title": "Example 9. Consider the following hypothetical data (plotted in Figure 15.4) generated by assuming a single QTL with effect $a = 2.0$ at map position 60 cM along a chromosome conta",
+      "source_file": "Genetics_chapter15_015.json",
+      "start_block_index": 20,
+      "end_source_file": "Genetics_chapter15_015.json",
+      "end_block_index": 28,
+      "block_ids": [
+        "p475:b6",
+        "p475:b7",
+        "p475:b8",
+        "p475:b9",
+        "p475:b10",
+        "p476:b2",
+        "p476:b3",
+        "p476:b4",
+        "p476:b5",
+        "p476:b6"
+      ],
+      "content_markdown": "Example 9. Consider the following hypothetical data (plotted in Figure 15.4) generated by assuming a single QTL with effect $a = 2.0$ at map position 60 cM along a chromosome containing six markers:\n\n<table><tr><td>Marker Position (cM)</td><td>$ \\overline{z}(M_{i}M_{i}) - \\overline{z}(m_{i}m_{i}) $</td></tr><tr><td>10</td><td>1.26</td></tr><tr><td>25</td><td>2.06</td></tr><tr><td>50</td><td>3.04</td></tr><tr><td>65</td><td>3.54</td></tr><tr><td>75</td><td>2.90</td></tr><tr><td>90</td><td>2.15</td></tr></table>\n\nWe assume that the variance associated with each marker class is the same with $ \\operatorname{Var}(M_x) = 5 $, and that 50 individuals of each marker class are scored, giving $ V_{ii} = 2 \\cdot 5 / 50 = 0.2 $. Using this and the $ c_{ij} $ values with Equation 15.25d fills out the rest of V. For a MDR analysis, one computes a separate regression for each possible QTL position. Consider the regression for a QTL assumed to be at map position 50 cM. For the first marker, the QTL-marker map distance is 40 cM, which (assuming a Haldane map distance, Equation 14.3) translates into a recombination frequency of\n1. $ (-2.04) $\n\n[[FORMULA:Genetics_chapter15_formula072]]\n\ngiving $ x_{1} = (1 - 2c_{1}) = 0.45 $, and the data point associated this marker becomes $ (0.45, 1.26) $. Computing the remaining data points and applying Equations 15.25 and 15.26 gives a regression with $ SS_E = 11.03 $. After this procedure is repeated for all positions along the chromosome, the resulting plot of $ SS_E $ vs. putative QTL position (shown below) exhibits a minimum value (0.43) at map position 61, and hence $ r^2 $ is maximized at this position (see Equation A3.15).\n\n![Source illustration p476 b3](figures/examples/Genetics_p476_b3.png)\n\nWhether the fit under the single-QTL model is a significant improvement over a model assuming no QTL can be assessed by comparing the error sum of squares of the QTL model $ (SS_E = 0.43) $ with the error sum of squares of the reduced (no QTL) model $ y_i = \\mu + e_i $. Since the QTL model fits an extra parameter, the difference in sums of squares follows a $ \\chi^2 $ distribution with one degree of freedom (one df) under the hypothesis of no QTL effect. For the reduced model, $ SS_E = 19.16 $, which is obtained by setting X equal to a vector of ones and applying Equation 15.25a. Hence, the QTL effect is highly significant as $ \\Pr(\\chi_1^2 > 19.16 - 0.43) < 0.001 $.\n\nThe adequacy of the single-QTL model can be assessed by noting that if this model is correct, $ SS_E $ follows a $ \\chi_4^2 $ distribution (there are six data points and two fitted parameters, for four df). Since $ \\Pr(\\chi_4^2 > 0.43) = 0.99 $, $ SS_E $ is not larger than expected by chance, suggesting that there is no need to consider additional QTLs.\n\nUsing the estimated map position, the resulting regression has slope 3.84, giving the estimated QTL effect as $ \\widehat{a} = 3.84/2 = 1.92 $. From Equation 15.25b, we have $ \\sigma^2(2\\widehat{a}) = (\\mathbf{X}^T\\mathbf{V}^{-1}\\mathbf{X})^{-1} = 0.16 $, giving the standard error of $ \\widehat{a} $ as $ \\sqrt{0.16}/2 = 0.20 $. Since $ SS_E $ follows a $ \\chi^2 $ distribution, the 95% confidence interval for QTL position contains those values giving regressions with $ SS_E $ not exceeding $ \\chi^2(0.05) = 3.84 $ of the minimal $ SS_E $ value of 0.43 (i.e., $ SS_E $ values less than 4.27). This gives the confidence interval for the QTL position as 54 to 69 cM (see figure).",
+      "content_plain": "Example 9. Consider the following hypothetical data (plotted in Figure 15.4) generated by assuming a single QTL with effect a = 2.0 at map position 60 cM along a chromosome containing six markers:\n\n<table><tr><td>Marker Position (cM)</td><td> \\overline{z}(M_{i}M_{i}) - \\overline{z}(m_{i}m_{i}) </td></tr><tr><td>10</td><td>1.26</td></tr><tr><td>25</td><td>2.06</td></tr><tr><td>50</td><td>3.04</td></tr><tr><td>65</td><td>3.54</td></tr><tr><td>75</td><td>2.90</td></tr><tr><td>90</td><td>2.15</td></tr></table>\n\nWe assume that the variance associated with each marker class is the same with  \\operatorname{Var}(M_x) = 5 , and that 50 individuals of each marker class are scored, giving  V_{ii} = 2 \\cdot 5 / 50 = 0.2 . Using this and the  c_{ij}  values with Equation 15.25d fills out the rest of V. For a MDR analysis, one computes a separate regression for each possible QTL position. Consider the regression for a QTL assumed to be at map position 50 cM. For the first marker, the QTL-marker map distance is 40 cM, which (assuming a Haldane map distance, Equation 14.3) translates into a recombination frequency of\n1.  (-2.04) \n\n[[FORMULA:Genetics_chapter15_formula072]]\n\ngiving  x_{1} = (1 - 2c_{1}) = 0.45 , and the data point associated this marker becomes  (0.45, 1.26) . Computing the remaining data points and applying Equations 15.25 and 15.26 gives a regression with  SS_E = 11.03 . After this procedure is repeated for all positions along the chromosome, the resulting plot of  SS_E  vs. putative QTL position (shown below) exhibits a minimum value (0.43) at map position 61, and hence  r^2  is maximized at this position (see Equation A3.15).\n\n![Source illustration p476 b3](figures/examples/Genetics_p476_b3.png)\n\nWhether the fit under the single-QTL model is a significant improvement over a model assuming no QTL can be assessed by comparing the error sum of squares of the QTL model  (SS_E = 0.43)  with the error sum of squares of the reduced (no QTL) model  y_i = \\mu + e_i . Since the QTL model fits an extra parameter, the difference in sums of squares follows a  \\chi^2  distribution with one degree of freedom (one df) under the hypothesis of no QTL effect. For the reduced model,  SS_E = 19.16 , which is obtained by setting X equal to a vector of ones and applying Equation 15.25a. Hence, the QTL effect is highly significant as  \\Pr(\\chi_1^2 > 19.16 - 0.43) < 0.001 .\n\nThe adequacy of the single-QTL model can be assessed by noting that if this model is correct,  SS_E  follows a  \\chi_4^2  distribution (there are six data points and two fitted parameters, for four df). Since  \\Pr(\\chi_4^2 > 0.43) = 0.99 ,  SS_E  is not larger than expected by chance, suggesting that there is no need to consider additional QTLs.\n\nUsing the estimated map position, the resulting regression has slope 3.84, giving the estimated QTL effect as  \\widehat{a} = 3.84/2 = 1.92 . From Equation 15.25b, we have  \\sigma^2(2\\widehat{a}) = (\\mathbf{X}^T\\mathbf{V}^{-1}\\mathbf{X})^{-1} = 0.16 , giving the standard error of  \\widehat{a}  as  \\sqrt{0.16}/2 = 0.20 . Since  SS_E  follows a  \\chi^2  distribution, the 95% confidence interval for QTL position contains those values giving regressions with  SS_E  not exceeding  \\chi^2(0.05) = 3.84  of the minimal  SS_E  value of 0.43 (i.e.,  SS_E  values less than 4.27). This gives the confidence interval for the QTL position as 54 to 69 cM (see figure).",
+      "formula_refs": [
+        "Genetics_chapter15_formula072"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p476_b3.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 476,
+          "y": 1533.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 475
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:9]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:10",
+      "example_ref": "Genetics_chapter15:10",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 10",
+      "title": "Example 10. Whittaker et al. (1996) used a simulation study to generate 2000 $ F_2 $ progeny in a setting with three chromosomes, each with five markers evenly spaced at 25 cM (imp",
+      "source_file": "Genetics_chapter15_017.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_chapter15_017.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p482:b2",
+        "p482:b3",
+        "p482:b4",
+        "p482:b5",
+        "p482:b6",
+        "p482:b7",
+        "p483:b2",
+        "p483:b3",
+        "p483:b4"
+      ],
+      "content_markdown": "Example 10. Whittaker et al. (1996) used a simulation study to generate 2000 $ F_2 $ progeny in a setting with three chromosomes, each with five markers evenly spaced at 25 cM (implying $ c \\simeq 0.2 $ under Haldane's mapping function). QTLs were placed in the intervals flanked by markers (1, 2), (4, 5), (7, 8), (13, 14), and (14, 15). The multiple regression involving all 15 markers (Equation 15.32) had associated regression coefficients of:\n\n<table><tr><td>Marker</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>$ b_{i} $</td><td>-0.2996</td><td>-0.1422</td><td>-0.0221</td><td>0.2209</td><td>0.1956</td></tr><tr><td>Marker</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>$ b_{i} $</td><td>-0.0189</td><td>-0.1922</td><td>-0.2404</td><td>0.0100</td><td>-0.0108</td></tr><tr><td>Marker</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>$ b_{i} $</td><td>-0.0254</td><td>0.0371</td><td>0.3019</td><td>0.2644</td><td>0.3370</td></tr></table>\n\nLooking for pairs of adjacent regression coefficients that have the same sign and are both significantly different from zero (as judged using standard regression tests, not shown) suggests evidence for QTLs in the intervals (1, 2), (4, 5), (7, 8), (13, 14), and (14, 15). The regression using just these nine markers had essentially the same $ SS_{E} $ as the full regression using all 15 markers, suggesting that none of the omitted markers are adjacent to QTLs (or they are adjacent to multiple linked QTLs whose effects cancel). However, removal of any one of the nine markers results in a regression with a significantly greater error sum of squares, supporting the hypothesis that all of these markers are adjacent to QTLs. Using these nine markers only, the new regression coefficients become\n\n<table><tr><td>Marker</td><td>1</td><td>2</td><td>4</td><td>5</td></tr><tr><td>$ b_{i} $</td><td>-0.2975</td><td>-0.1323</td><td>0.2296</td><td>0.1962</td></tr><tr><td>Marker</td><td>7</td><td>8</td><td></td><td></td></tr><tr><td>$ b_{i} $</td><td>-0.2407</td><td>-0.2377</td><td></td><td></td></tr><tr><td>Marker</td><td>13</td><td>14</td><td>15</td><td></td></tr><tr><td>$ b_{i} $</td><td>0.3145</td><td>0.2640</td><td>0.3355</td><td></td></tr></table>\n\nSince the QTLs in intervals (1, 2), (4, 5), and (7, 8) appear to be isolated (no evidence for QTLs in adjacent intervals), Equations 15.33a,b can be used to estimate their effects and positions. For the QTL in the interval flanked by markers 1 and 2,\n\n[[FORMULA:Genetics_chapter15_formula084]]\n\nand the estimate of the squared effect of the QTL is\n\n[[FORMULA:Genetics_chapter15_formula085]]\n\nimplying $a_{1} = -0.442$ (since the regression coefficients $b_{1}, b_{2} < 0$). Similarly, the estimates for the QTL in the interval $(4, 5)$ are $c_{4} = 0.105$ and $a_{4} = 0.440$, while for the QTL in $(7, 8)$, we find $c_{7} = 0.112$ and $a_{7} = -0.494$. The estimated values were rather close to the true values used in the simulations ($a_{4} = -a_{7} = -a_{1} = 0.447$, $c_{1} = 0.07$, $c_{4} = 0.11$, and $c_{7} = 0.11$).",
+      "content_plain": "Example 10. Whittaker et al. (1996) used a simulation study to generate 2000  F_2  progeny in a setting with three chromosomes, each with five markers evenly spaced at 25 cM (implying  c \\simeq 0.2  under Haldane's mapping function). QTLs were placed in the intervals flanked by markers (1, 2), (4, 5), (7, 8), (13, 14), and (14, 15). The multiple regression involving all 15 markers (Equation 15.32) had associated regression coefficients of:\n\n<table><tr><td>Marker</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td> b_{i} </td><td>-0.2996</td><td>-0.1422</td><td>-0.0221</td><td>0.2209</td><td>0.1956</td></tr><tr><td>Marker</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td> b_{i} </td><td>-0.0189</td><td>-0.1922</td><td>-0.2404</td><td>0.0100</td><td>-0.0108</td></tr><tr><td>Marker</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td> b_{i} </td><td>-0.0254</td><td>0.0371</td><td>0.3019</td><td>0.2644</td><td>0.3370</td></tr></table>\n\nLooking for pairs of adjacent regression coefficients that have the same sign and are both significantly different from zero (as judged using standard regression tests, not shown) suggests evidence for QTLs in the intervals (1, 2), (4, 5), (7, 8), (13, 14), and (14, 15). The regression using just these nine markers had essentially the same  SS_{E}  as the full regression using all 15 markers, suggesting that none of the omitted markers are adjacent to QTLs (or they are adjacent to multiple linked QTLs whose effects cancel). However, removal of any one of the nine markers results in a regression with a significantly greater error sum of squares, supporting the hypothesis that all of these markers are adjacent to QTLs. Using these nine markers only, the new regression coefficients become\n\n<table><tr><td>Marker</td><td>1</td><td>2</td><td>4</td><td>5</td></tr><tr><td> b_{i} </td><td>-0.2975</td><td>-0.1323</td><td>0.2296</td><td>0.1962</td></tr><tr><td>Marker</td><td>7</td><td>8</td><td></td><td></td></tr><tr><td> b_{i} </td><td>-0.2407</td><td>-0.2377</td><td></td><td></td></tr><tr><td>Marker</td><td>13</td><td>14</td><td>15</td><td></td></tr><tr><td> b_{i} </td><td>0.3145</td><td>0.2640</td><td>0.3355</td><td></td></tr></table>\n\nSince the QTLs in intervals (1, 2), (4, 5), and (7, 8) appear to be isolated (no evidence for QTLs in adjacent intervals), Equations 15.33a,b can be used to estimate their effects and positions. For the QTL in the interval flanked by markers 1 and 2,\n\n[[FORMULA:Genetics_chapter15_formula084]]\n\nand the estimate of the squared effect of the QTL is\n\n[[FORMULA:Genetics_chapter15_formula085]]\n\nimplying a_{1} = -0.442 (since the regression coefficients b_{1}, b_{2} < 0). Similarly, the estimates for the QTL in the interval (4, 5) are c_{4} = 0.105 and a_{4} = 0.440, while for the QTL in (7, 8), we find c_{7} = 0.112 and a_{7} = -0.494. The estimated values were rather close to the true values used in the simulations (a_{4} = -a_{7} = -a_{1} = 0.447, c_{1} = 0.07, c_{4} = 0.11, and c_{7} = 0.11).",
+      "formula_refs": [
+        "Genetics_chapter15_formula084",
+        "Genetics_chapter15_formula085"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 483,
+          "y": 533.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 482
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:10]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:11",
+      "example_ref": "Genetics_chapter15:11",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 11",
+      "title": "Example 11. What sample sizes are required to detect a completely linked QTL using a test with $ \\alpha = 0.05 $ and $ \\beta = 0.1 $ (i.e., a 5% probability of a false positive and",
+      "source_file": "Genetics_chapter15_018.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_chapter15_018.json",
+      "end_block_index": 18,
+      "block_ids": [
+        "p485:b5",
+        "p485:b6",
+        "p485:b7"
+      ],
+      "content_markdown": "Example 11. What sample sizes are required to detect a completely linked QTL using a test with $ \\alpha = 0.05 $ and $ \\beta = 0.1 $ (i.e., a 5% probability of a false positive and a 10% probability of missing a true association)? From normal tables, Pr(U < 1.96) = 0.975 and Pr(U < 1.28) = 0.9, so that $ z_{(1-[\\alpha/2])} = z_{(0.975)} = 1.96 $ and $ z_{(1-\\beta)} = z_{(0.9)} = 1.28 $. Substituting these into Equation 15.37 gives the following sample sizes for a completely additive $ (k = 0) $ and a completely dominant or completely recessive $ (k \\pm 1) $ QTL whose segregation accounts for $ r^2 $ of the total $ F_2 $ variance:\n\n<table><tr><td>$ r^{2} $</td><td>0.5</td><td>0.3</td><td>0.1</td><td>0.05</td><td>0.01</td></tr><tr><td>Additive QTL</td><td>16</td><td>31</td><td>101</td><td>206</td><td>1046</td></tr><tr><td>Dominant QTL</td><td>25</td><td>46</td><td>151</td><td>309</td><td>1568</td></tr></table>\n\nNote that the presence of dominance can significantly inflate the required $ F_{2} $ sample size.",
+      "content_plain": "Example 11. What sample sizes are required to detect a completely linked QTL using a test with  \\alpha = 0.05  and  \\beta = 0.1  (i.e., a 5% probability of a false positive and a 10% probability of missing a true association)? From normal tables, Pr(U < 1.96) = 0.975 and Pr(U < 1.28) = 0.9, so that  z_{(1-[\\alpha/2])} = z_{(0.975)} = 1.96  and  z_{(1-\\beta)} = z_{(0.9)} = 1.28 . Substituting these into Equation 15.37 gives the following sample sizes for a completely additive  (k = 0)  and a completely dominant or completely recessive  (k \\pm 1)  QTL whose segregation accounts for  r^2  of the total  F_2  variance:\n\n<table><tr><td> r^{2} </td><td>0.5</td><td>0.3</td><td>0.1</td><td>0.05</td><td>0.01</td></tr><tr><td>Additive QTL</td><td>16</td><td>31</td><td>101</td><td>206</td><td>1046</td></tr><tr><td>Dominant QTL</td><td>25</td><td>46</td><td>151</td><td>309</td><td>1568</td></tr></table>\n\nNote that the presence of dominance can significantly inflate the required  F_{2}  sample size.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 485,
+          "y": 1043.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 485
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:11]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:12",
+      "example_ref": "Genetics_chapter15:12",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 12",
+      "title": "Example 12. Suppose we wish to have a 90% chance of detecting (using a test with $ \\alpha = 0.05 $) a QTL whose segregation accounts for 10% the total $ F_2 $ variance. Further ass",
+      "source_file": "Genetics_chapter15_018.json",
+      "start_block_index": 29,
+      "end_source_file": "Genetics_chapter15_018.json",
+      "end_block_index": 29,
+      "block_ids": [
+        "p486:b7"
+      ],
+      "content_markdown": "Example 12. Suppose we wish to have a 90% chance of detecting (using a test with $ \\alpha = 0.05 $) a QTL whose segregation accounts for 10% the total $ F_2 $ variance. Further assume that all of the genetic variation at this locus is additive. From Example 11, 101 individuals are required to detect this QTL using a completely linked marker. With a marker at recombination frequency c from the QTL, $ n = 101/(1-2c)^2 $, giving sample sizes of 281, 158, and 125 for c = 0.2, 0.1, 0.05, respectively.",
+      "content_plain": "Example 12. Suppose we wish to have a 90% chance of detecting (using a test with  \\alpha = 0.05 ) a QTL whose segregation accounts for 10% the total  F_2  variance. Further assume that all of the genetic variation at this locus is additive. From Example 11, 101 individuals are required to detect this QTL using a completely linked marker. With a marker at recombination frequency c from the QTL,  n = 101/(1-2c)^2 , giving sample sizes of 281, 158, and 125 for c = 0.2, 0.1, 0.05, respectively.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 486,
+          "y": 1529.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 486
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:12]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter15:13",
+      "example_ref": "Genetics_chapter15:13",
+      "chapter": "Genetics_chapter15",
+      "label": "Example 13",
+      "title": "Example 13. As mentioned in Example 3, Edwards et al. (1987, 1992) examined the same cross of two maize strains with two different designs. The 1987 design used 1,776 F₂ individual",
+      "source_file": "Genetics_chapter15_018.json",
+      "start_block_index": 34,
+      "end_source_file": "Genetics_chapter15_018.json",
+      "end_block_index": 36,
+      "block_ids": [
+        "p487:b7",
+        "p487:b8",
+        "p487:b9"
+      ],
+      "content_markdown": "Example 13. As mentioned in Example 3, Edwards et al. (1987, 1992) examined the same cross of two maize strains with two different designs. The 1987 design used 1,776 F₂ individuals and 17 markers, while the 1992 design used 187 F₂ individuals and 114 markers. The two designs represent a tradeoff between increased marker density (1992 design) and increased sample size (1987 design), as both examined a somewhat similar number of total marker genotypes (1776 × 17 = 30,200 vs. 187 × 114 = 21,300). Comparisons of c values in the two studies is problematic, given that only a fraction of the genome was covered in the 1987 study (about 40% of the genome was within 20 cM of a marker), while under the 1992 design most of the genome was 5 to 10 cM from a marker. Choosing c = 0.25 (1987 design) and c = 0.08 (1992 design), from Equation 15.40 the expected ratio of t statistics becomes\n\n[[FORMULA:Genetics_chapter15_formula097]]\n\nshowing that (for these c values) the 1987 design had greater power.",
+      "content_plain": "Example 13. As mentioned in Example 3, Edwards et al. (1987, 1992) examined the same cross of two maize strains with two different designs. The 1987 design used 1,776 F₂ individuals and 17 markers, while the 1992 design used 187 F₂ individuals and 114 markers. The two designs represent a tradeoff between increased marker density (1992 design) and increased sample size (1987 design), as both examined a somewhat similar number of total marker genotypes (1776 × 17 = 30,200 vs. 187 × 114 = 21,300). Comparisons of c values in the two studies is problematic, given that only a fraction of the genome was covered in the 1987 study (about 40% of the genome was within 20 cM of a marker), while under the 1992 design most of the genome was 5 to 10 cM from a marker. Choosing c = 0.25 (1987 design) and c = 0.08 (1992 design), from Equation 15.40 the expected ratio of t statistics becomes\n\n[[FORMULA:Genetics_chapter15_formula097]]\n\nshowing that (for these c values) the 1987 design had greater power.",
+      "formula_refs": [
+        "Genetics_chapter15_formula097"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 487,
+          "y": 1530.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 487
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter15:13]]",
+      "book": "Genetics"
+    }
+  ]
+}

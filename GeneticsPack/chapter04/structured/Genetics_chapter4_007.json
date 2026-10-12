@@ -1,0 +1,119 @@
+{
+  "id": "Genetics_chapter4_007",
+  "metadata": {
+    "chapter": "Genetics_chapter4",
+    "section": "THE TRANSMISSION OF GENETIC INFORMATION",
+    "subsections": [
+      "Testing for Hardy-Weinberg Proportions"
+    ],
+    "section_level_1": "THE TRANSMISSION OF GENETIC INFORMATION",
+    "section_level_2": "Testing for Hardy-Weinberg Proportions",
+    "heading_path": [
+      "THE TRANSMISSION OF GENETIC INFORMATION",
+      "Testing for Hardy-Weinberg Proportions"
+    ],
+    "display_heading": "THE TRANSMISSION OF GENETIC INFORMATION / Testing for Hardy-Weinberg Proportions",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b6"
+      ],
+      "bbox": [
+        150.0,
+        974.0,
+        655.0,
+        1017.0
+      ],
+      "raw_text": "Testing for Hardy-Weinberg Proportions"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "When data are available on genotype frequencies in a population, it is standard practice to cross-check these with the Hardy-Weinberg expectations. Lack of concordance between the two implies that at least one of the assumptions of the Hardy-Weinberg model is violated and often instigates further investigation. Several different statistical techniques have been proposed (Weir 1996), the most popular by far being the $ \\chi^{2} $ (Chi-square) test. However, the likelihood-ratio test is now becoming more common and appears to be at least as reliable as the former. Likelihood-based tests have a number of desirable statistical features (Appendix 4). Letting $ N_{ij} $ and $ \\hat{N}_{ij} $ be the observed and expected numbers of genotype $ B_{i}B_{j} $ in a sample, then the likelihood-ratio test statistic",
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b7"
+      ],
+      "bbox": [
+        150.0,
+        1007.0,
+        1114.0,
+        1355.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter4_formula012]]",
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b8"
+      ],
+      "bbox": [
+        461.0,
+        1360.0,
+        813.0,
+        1457.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "has a sampling distribution very similar to the well-known $ \\chi^{2} $ distribution. That is, if a population in Hardy-Weinberg equilibrium is sampled many different times and G calculated each time, the frequency distribution of the observed G values will be nearly $ \\chi^{2} $ distributed. Thus, the test for Hardy-Weinberg proportions compares the observed statistic G with the cumulative $ \\chi^{2} $ distribution. If G exceeds the level at which there is a 5% chance of obtaining a higher $ \\chi^{2} $, then one can reject the null hypothesis of Hardy-Weinberg proportions with 95% confidence.",
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b10",
+        "p77:b2"
+      ],
+      "bbox": [
+        161.0,
+        1468.0,
+        1121.0,
+        1557.0
+      ],
+      "source_page_end": 77
+    },
+    {
+      "type": "discussion",
+      "content": "Regardless of which approach to testing for Hardy-Weinberg frequencies is taken, it should be kept in mind that some of the conditions underlying the Hardy-Weinberg theorem may be violated without causing detectable departures of observations from expectations. For example, if the product of the survivorships of the two homozygotes is equal to the square of the heterozygote survival, the zygotic frequencies after selection will still be in Hardy-Weinberg proportions (Lewontin and Cockerham 1959). Thus, a failure to reject the Hardy-Weinberg model should be interpreted with caution.",
+      "source_page": 77,
+      "printed_page": 57,
+      "source_block_ids": [
+        "p77:b3"
+      ],
+      "bbox": [
+        49.0,
+        295.0,
+        1013.0,
+        585.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter4:2]]",
+      "source_page": 77,
+      "source_block_ids": [
+        "p77:b4",
+        "p77:b5",
+        "p77:b6",
+        "p77:b7"
+      ],
+      "bbox": [
+        90.0,
+        652.0,
+        953.0,
+        737.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "Genetics_chapter21_003",
+  "metadata": {
+    "chapter": "Genetics_chapter21",
+    "section": "ESTIMATION OF THE GENETIC CORRELATION",
+    "subsections": [],
+    "section_level_1": "ESTIMATION OF THE GENETIC CORRELATION",
+    "section_level_2": null,
+    "heading_path": [
+      "ESTIMATION OF THE GENETIC CORRELATION"
+    ],
+    "display_heading": "ESTIMATION OF THE GENETIC CORRELATION",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 644,
+      "printed_page": 624,
+      "source_block_ids": [
+        "p644:b3"
+      ],
+      "bbox": [
+        142.0,
+        289.0,
+        781.0,
+        326.0
+      ],
+      "raw_text": "ESTIMATION OF THE GENETIC CORRELATION"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "All of the regression and ANOVA techniques for estimating components of variance reviewed in the last four chapters extend readily to the decomposition of the covariance between two traits, as first recognized by Hazel (1943). Three of the most frequently used approaches will be covered here.",
+      "source_page": 644,
+      "printed_page": 624,
+      "source_block_ids": [
+        "p644:b4"
+      ],
+      "bbox": [
+        142.0,
+        351.0,
+        1102.0,
+        490.0
+      ]
+    }
+  ]
+}

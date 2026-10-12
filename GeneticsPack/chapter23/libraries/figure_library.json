@@ -1,0 +1,180 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter23",
+  "count": 5,
+  "figures": [
+    {
+      "id": "23.1",
+      "chapter": "Genetics_chapter23",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter23:23.1",
+      "placeholder": "[[FIGURE:23.1]]",
+      "see_placeholder": "[[SEE_FIGURE:23.1]]",
+      "asset_path": "figures/Genetics_23.1.png",
+      "caption": "Figure 23.1 Path diagram (Appendix 2) representing the determination of the phenotype $ z_x $ of an individual $ x $ by direct genetic effects $ G_{ox} $, direct environmental effects, $ E_{ox} $, and maternal effects $ M_x $. The mother of $ x $ is denoted by $ w $; $ r_{om} $ is the genetic correlation between direct and maternal effects. Assuming $ x $ is female, its genetic maternal effect, $ G_{mx} $, is expressed in its offspring.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 700,
+      "raw_bbox": [
+        339.0,
+        164.0,
+        917.0,
+        562.0
+      ],
+      "source_block_ids": [
+        "p700:b2"
+      ],
+      "caption_block": {
+        "source_page": 700,
+        "printed_page": 680,
+        "source_block_ids": [
+          "p700:b3"
+        ],
+        "bbox": [
+          190.0,
+          589.0,
+          1056.0,
+          741.0
+        ]
+      }
+    },
+    {
+      "id": "23.2",
+      "chapter": "Genetics_chapter23",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter23:23.2",
+      "placeholder": "[[FIGURE:23.2]]",
+      "see_placeholder": "[[SEE_FIGURE:23.2]]",
+      "asset_path": "figures/Genetics_23.2.png",
+      "caption": "Figure 23.2 Regressions of offspring phenotypes on those of true parents and on those of foster parents. Data on the left are for beak depth in a natural population of song sparrows (Smith and Dhondt 1980). Those on the right are for wing length in a population of the collared flycatcher (Gustafsson and Merilä 1994). In both cases, the true parent-offspring regression is significant, while the foster-parent regression is not.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 710,
+      "raw_bbox": [
+        134.0,
+        135.0,
+        1096.0,
+        826.0
+      ],
+      "source_block_ids": [
+        "p710:b2",
+        "p710:b3"
+      ],
+      "caption_block": {
+        "source_page": 710,
+        "printed_page": 690,
+        "source_block_ids": [
+          "p710:b4"
+        ],
+        "bbox": [
+          179.0,
+          856.0,
+          1046.0,
+          1035.0
+        ]
+      }
+    },
+    {
+      "id": "23.3",
+      "chapter": "Genetics_chapter23",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter23:23.3",
+      "placeholder": "[[FIGURE:23.3]]",
+      "see_placeholder": "[[SEE_FIGURE:23.3]]",
+      "asset_path": "figures/Genetics_23.3.png",
+      "caption": "Figure 23.3 Ontogenetic changes in components of variance for body size in mice, determined from cross-fostering experiments. Solid lines are for data from Rutledge et al. (1972); dashed lines are for data from Riska et al. (1984, 1985).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 713,
+      "raw_bbox": [
+        193.0,
+        136.0,
+        916.0,
+        1304.0
+      ],
+      "source_block_ids": [
+        "p713:b2",
+        "p713:b3",
+        "p713:b4"
+      ],
+      "caption_block": {
+        "source_page": 713,
+        "printed_page": 693,
+        "source_block_ids": [
+          "p713:b5"
+        ],
+        "bbox": [
+          114.0,
+          1362.0,
+          981.0,
+          1457.0
+        ]
+      }
+    },
+    {
+      "id": "23.4",
+      "chapter": "Genetics_chapter23",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter23:23.4",
+      "placeholder": "[[FIGURE:23.4]]",
+      "see_placeholder": "[[SEE_FIGURE:23.4]]",
+      "asset_path": "figures/Genetics_23.4.png",
+      "caption": "Figure 23.4 Pedigree structure for families employed in the three experimental designs of Bondari et al. (1978).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 716,
+      "raw_bbox": [
+        304.0,
+        137.0,
+        926.0,
+        1035.0
+      ],
+      "source_block_ids": [
+        "p716:b2"
+      ],
+      "caption_block": {
+        "source_page": 716,
+        "printed_page": 696,
+        "source_block_ids": [
+          "p716:b3"
+        ],
+        "bbox": [
+          180.0,
+          1060.0,
+          1046.0,
+          1124.0
+        ]
+      }
+    },
+    {
+      "id": "23.5",
+      "chapter": "Genetics_chapter23",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter23:23.5",
+      "placeholder": "[[FIGURE:23.5]]",
+      "see_placeholder": "[[SEE_FIGURE:23.5]]",
+      "asset_path": "figures/Genetics_23.5.png",
+      "caption": "Figure 23.5 The consequences of experimental modifications of maternal clutch size for the mean clutch size of resultant daughters in their first year of breeding. Data are for the collared flycatcher (Ficedula albicollis). (From Schluter and Gustafsson 1993.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 721,
+      "raw_bbox": [
+        259.0,
+        133.0,
+        850.0,
+        621.0
+      ],
+      "source_block_ids": [
+        "p721:b2"
+      ],
+      "caption_block": {
+        "source_page": 721,
+        "printed_page": 701,
+        "source_block_ids": [
+          "p721:b3"
+        ],
+        "bbox": [
+          119.0,
+          651.0,
+          983.0,
+          771.0
+        ]
+      }
+    }
+  ]
+}

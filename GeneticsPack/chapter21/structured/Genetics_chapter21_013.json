@@ -1,0 +1,52 @@
+{
+  "id": "Genetics_chapter21_013",
+  "metadata": {
+    "chapter": "Genetics_chapter21",
+    "section": "APPLICATIONS",
+    "subsections": [],
+    "section_level_1": "APPLICATIONS",
+    "section_level_2": null,
+    "heading_path": [
+      "APPLICATIONS"
+    ],
+    "display_heading": "APPLICATIONS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 660,
+      "printed_page": 640,
+      "source_block_ids": [
+        "p660:b2"
+      ],
+      "bbox": [
+        143.0,
+        160.0,
+        360.0,
+        188.0
+      ],
+      "raw_text": "APPLICATIONS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "These warnings are not meant to be totally discouraging. Studies that are appropriately designed and meet with the appropriate precautions can yield substantial insight into the constraints on the evolution of multivariate phenotypes. The following examples will provide a feeling for the diversity of problems that can be evaluated with a genetic covariance analysis.",
+      "source_page": 660,
+      "printed_page": 640,
+      "source_block_ids": [
+        "p660:b3"
+      ],
+      "bbox": [
+        141.0,
+        224.0,
+        1103.0,
+        384.0
+      ]
+    }
+  ]
+}

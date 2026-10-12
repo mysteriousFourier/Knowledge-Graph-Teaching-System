@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -72,6 +73,10 @@ def dispatch_tool(name: str, arguments: Optional[Dict[str, Any]] = None) -> Any:
             rebuild_vector=bool(args.get("rebuild_vector", True)),
         )
 
+    if name == "list_graphs":
+        from KGTS.core.graph_registry import registry_statistics
+        return registry_statistics()
+
     graph = _service_graph(args.get("db_path"))
     memory = _service_memory()
 
@@ -94,6 +99,16 @@ def dispatch_tool(name: str, arguments: Optional[Dict[str, Any]] = None) -> Any:
     if name == "search_nodes":
         return graph.search_nodes(args.get("keyword", ""), args.get("node_type"), int(args.get("limit", 20)))
     if name == "semantic_search":
+        if not args.get("db_path") and not args.get("allowed_node_ids"):
+            from KGTS.core.graph_registry import cross_graph_search, graph_entries
+            explicit_single_graph = bool(os.getenv("GRAPH_DB_PATH") or os.getenv("KNOWLEDGE_GRAPH_DB_PATH") or os.getenv("APP_DATA_DIR"))
+            if not explicit_single_graph and len(graph_entries()) > 1 and str(os.getenv("KGTS_CROSS_GRAPH_RETRIEVAL", "1")).lower() not in {"0", "false", "no", "off"}:
+                return cross_graph_search(
+                    args.get("query", ""),
+                    node_type=args.get("node_type"),
+                    top_k=int(args.get("top_k", 10)),
+                    allowed_graph_ids=args.get("allowed_graph_ids"),
+                )
         return graph.semantic_search(
             args.get("query", ""),
             args.get("node_type"),

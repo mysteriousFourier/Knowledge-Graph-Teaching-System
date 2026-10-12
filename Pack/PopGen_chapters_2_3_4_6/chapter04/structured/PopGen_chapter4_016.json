@@ -1,0 +1,128 @@
+{
+  "id": "PopGen_chapter4_016",
+  "metadata": {
+    "chapter": "PopGen_chapter4",
+    "section": "4.6 MUTATION AND RECOMBINATION",
+    "subsections": [
+      "A Model for the Evolutionary Benefit of Recombination"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter4_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "4.6 MUTATION AND RECOMBINATION",
+    "section_level_2": "A Model for the Evolutionary Benefit of Recombination",
+    "heading_path": [
+      "4.6 MUTATION AND RECOMBINATION",
+      "A Model for the Evolutionary Benefit of Recombination"
+    ],
+    "display_heading": "A Model for the Evolutionary Benefit of Recombination",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter4:p033:b2"
+      ]
+    },
+    "chapter_title": "Mutation and the Neutral Theory"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Evolutionary biologists have emphasized for a long time that recombination can accelerate the rate of formation of beneficial gene combinations, and it has been suggested that this acceleration is the reason why recombination evolved <sup>[202,487]</sup>. A graphical representation of the Fisher-Muller model is illustrated in Figure 4.15. In part A are two large populations, one with no recombination (an asexual species) and one with recombination (a sexual species). Each has three favorable mutations, a, b, and c, which ultimately become incorporated into the genome. In the asexual species, the mutations are incorporated sequentially because each favorable mutation must take place in the genetic background of the one before. The process is shown as being slow because each favorable mutation must be nearly fixed before there is a high chance that the next favorable mutation takes place in the proper genetic background. In experimental populations of bacteria with no recombination, the process in which a lineage containing a favorable mutation displaces other lineages, including those containing less favorable mutations, is known as clonal interference <sup>[216,268]</sup>.",
+      "source_page": 197,
+      "source_pages": [
+        197
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p033:b3"
+      ],
+      "source_bboxes": [
+        [
+          113.0,
+          472.0,
+          868.0,
+          921.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "8242efabf27d729944e935aa8305bcf814a2ec13bf2fc429338949d24bcde492",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "A similar type of interference between favorable alleles occurs to a smaller extent even in the presence of recombination, which is called the Hill-Robertson effect <sup>[272]</sup>. The Hill-Robertson effect occurs because two different favorable mutations (call them A and B) are likely to arise in different genetic backgrounds, and as the favored alleles increase in frequency, they bring about negative linkage disequilibrium (D in Equation 2.13 in Chapter 2), in which the product of the frequencies of gametes carrying one favorable and one unfavorable allele (A b and a B) is greater than that of gametes carrying both favorable alleles (A B, virtually nonexistent) or both unfavorable alleles (a B). Because of the genetic backgrounds they are in, the increase in frequency of the favorable alleles also increases the magnitude of the negative linkage disequilibrium, and the effect is greatest with a low frequency of recombination or a small effective population size. Under these conditions there is selection for increased recombination <sup>[32,547,619]</sup>, and when the frequency of recombination is high, different favorable alleles can be brought together in rapid succession (Figure 4.15). On the other hand, if the rate of favorable mutation is so low that an asexual population can fix any favorable allele before the next one occurs, then the advantage of recombination illustrated in Figure 4.15 is very much reduced <sup>[110]</sup>.",
+      "source_page": 197,
+      "source_pages": [
+        197,
+        198,
+        199
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p033:b4",
+        "PopGen_chapter4:p034:b1",
+        "PopGen_chapter4:p034:b2",
+        "PopGen_chapter4:p034:b3",
+        "PopGen_chapter4:p035:b1"
+      ],
+      "source_bboxes": [
+        [
+          108.0,
+          925.0,
+          863.0,
+          1379.0
+        ],
+        [
+          358.0,
+          205.0,
+          531.0,
+          228.0
+        ],
+        [
+          359.0,
+          242.0,
+          951.0,
+          980.0
+        ],
+        [
+          272.0,
+          1002.0,
+          1018.0,
+          1262.0
+        ],
+        [
+          114.0,
+          203.0,
+          870.0,
+          280.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "22959646fc8317c00d2ba2eb3d4dd4f239d5902c5de35f3df35ce58ee57ed7a4",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The advantage of recombination in the Fisher-Muller model is also affected by the size of the population. In very small populations, multiple favorable mutations are unlikely to be present simultaneously, and so the fixation of the favorable alleles proceeds sequentially in a sexual as well as in an asexual species (Figure 4.15B). But there is an offsetting process, which is the negative linkage disequilibrium discussed in connection with the Hill-Robertson effect. Although the magnitude of the disequilibrium is small when the favorable alleles are rare, the increase in frequency of these alleles due to selection amplifies the linkage disequilibrium, and genetic factors that increase the frequency of recombination are favored <sup>[32]</sup>. In a single population, the extent of linkage disequilibrium built up diminishes as the population size increases, and so the advantage of recombination decreases. The subdivision of a large population into many smaller subpopulations counteracts this effect, and in this case substantial amounts of linkage disequilibrium can accumulate even in a large population <sup>[447]</sup>.",
+      "source_page": 199,
+      "source_pages": [
+        199
+      ],
+      "source_block_ids": [
+        "PopGen_chapter4:p035:b2"
+      ],
+      "source_bboxes": [
+        [
+          111.0,
+          283.0,
+          868.0,
+          704.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "4ee7abfdf73ea5f291ccc145a0699924d47a5ed3591e039401bf54afbcc3dc76",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

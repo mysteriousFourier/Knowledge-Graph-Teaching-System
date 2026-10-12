@@ -1,0 +1,131 @@
+{
+  "id": "Genetics_chapter13_011",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "COMPLEX SEGREGATION ANALYSIS",
+    "subsections": [],
+    "section_level_1": "COMPLEX SEGREGATION ANALYSIS",
+    "section_level_2": null,
+    "heading_path": [
+      "COMPLEX SEGREGATION ANALYSIS"
+    ],
+    "display_heading": "COMPLEX SEGREGATION ANALYSIS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 378,
+      "printed_page": 358,
+      "source_block_ids": [
+        "p378:b3"
+      ],
+      "bbox": [
+        130.0,
+        452.0,
+        632.0,
+        489.0
+      ],
+      "raw_text": "COMPLEX SEGREGATION ANALYSIS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Starting with Elston and Stewart (1971) and Morton and MacLean (1974), human population geneticists have developed the method of complex segregation analysis, or CSA, to test between alternative modes of inheritance. As we will see in the next few sections, CSA extends the simple mixture model (Equation 13.6a) by using pedigree information to modify the mixture proportions. Assumptions about the mode of inheritance specify the mixture distribution weights, allowing likelihood-ratio tests for different models of transmission (a single major gene, no major gene but background polygenes, major gene plus background polygenes, and so forth). We illustrate some of these applications below, showing how known relationships among relatives define the transmission probabilities of both major genes and polygenes.",
+      "source_page": 378,
+      "printed_page": 358,
+      "source_block_ids": [
+        "p378:b4"
+      ],
+      "bbox": [
+        129.0,
+        512.0,
+        1094.0,
+        879.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The extensive literature on complex segregation analysis is reviewed by Elston and Rao (1978), Boyle and Elston (1979), Elston (1980, 1981a, 1990a), and Morton et al. (1983). While the bulk of the literature deals with human populations, Le Roy et al. (1990) and Knott et al. (1991a,b) examine applications in animal breeding. Tourjee et al. (1995) give an application to plants, examining the genetic basis of flower color in Gerbera jamesonii. Similar likelihood methods for major loci have been developed for F₂ segregation in crosses between inbred lines (Tan and Chang 1972, Elston and Stewart 1973, Tan and D'Angelo 1979, Elston 1984, Janss and Van Der Werf 1992, Loisel et al. 1994, Changjian et al. 1994).",
+      "source_page": 378,
+      "printed_page": 358,
+      "source_block_ids": [
+        "p378:b5"
+      ],
+      "bbox": [
+        138.0,
+        867.0,
+        1100.0,
+        1167.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "While complex segregation analysis is the most assumption-burdened test for detecting major genes, it is also the most powerful of the marker-free methods when the assumptions hold (MacCluer et al. 1983, MacCluer and Kammerer 1984). For example, the commingling tests discussed above (e.g., Example 2) that simply fit a mixture of normals and use no information from relatives can easily miss major genes that segregation analysis can detect (Kwon et al. 1990).",
+      "source_page": 378,
+      "printed_page": 358,
+      "source_block_ids": [
+        "p378:b6"
+      ],
+      "bbox": [
+        144.0,
+        1154.0,
+        1104.0,
+        1360.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Complex segregation analysis assumes normality of the underlying distributions, which greatly simplifies the form of the likelihood function. If this assumption is violated, false detection of a major locus can occur (MacLean et al. 1975, Go et al. 1978, Morton 1984). As mentioned above, if the underlying distributions are suspected to be nonnormal, one strategy is to use a likelihood approach that incor- porates a transformation parameter for each underlying distribution. Instead of individually transforming each underlying distribution (through the likelihood function), one could simply apply a single transform to the observed distribution. However, this approach can raise serious issues of interpretation (e.g., Asamoah et al. 1987). While the use of transformations is not a resolved issue, Demenais et al. (1986) suggest that tests that incorporate estimates of transmission probabilities (see Example 4 below) remove the need to transform the data before performing segregation analysis. A final complication is that when significant genotype × environment interaction is present, the power to detect a major gene is greatly reduced (Eaves 1984, Tiret et al. 1993).",
+      "source_page": 378,
+      "printed_page": 358,
+      "source_block_ids": [
+        "p378:b7",
+        "p379:b2"
+      ],
+      "bbox": [
+        148.0,
+        1346.0,
+        1107.0,
+        1522.0
+      ],
+      "source_page_end": 379
+    },
+    {
+      "type": "discussion",
+      "content": "The following sections illustrate some general approaches for constructing likelihood functions for full-sib families under increasingly more general genetic models. We start by assuming only a single diallelic major locus, and then consider separately common family effects and background segregation of polygenic loci. Likelihoods for more complicated pedigrees or other experimental designs (such as inbred-line crosses) follow using similar arguments. Before proceeding, an example will show the types of hypotheses that can be addressed and the types of parameters that need to be incorporated into the likelihood functions underlying complex segregation analysis.",
+      "source_page": 379,
+      "printed_page": 359,
+      "source_block_ids": [
+        "p379:b3"
+      ],
+      "bbox": [
+        73.0,
+        449.0,
+        1035.0,
+        754.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter13:3]]",
+      "source_page": 379,
+      "source_block_ids": [
+        "p379:b4",
+        "p379:b5",
+        "p380:b2",
+        "p380:b3"
+      ],
+      "bbox": [
+        109.0,
+        835.0,
+        980.0,
+        1292.0
+      ]
+    }
+  ]
+}

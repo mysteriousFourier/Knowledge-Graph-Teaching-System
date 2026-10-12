@@ -1,0 +1,462 @@
+{
+  "id": "PopGen_chapter6_007",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.1 INBREEDING",
+    "subsections": [
+      "Regular Systems of Mating"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "6.1 INBREEDING",
+    "section_level_2": "Regular Systems of Mating",
+    "heading_path": [
+      "6.1 INBREEDING",
+      "Regular Systems of Mating"
+    ],
+    "display_heading": "Regular Systems of Mating",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p016:b3"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In plant and animal breeding, it is often important to know how rapidly the inbreeding coefficient increases when a strain is propagated by a regular system of mating, a systematic and repeated pattern of inbreeding, such as self-fertilization, sib mating, or backcrossing to a standard strain. The reasoning involved in calculating the inbreeding coefficient for any generation is illustrated in Figure 6.10 for repeated self-fertilization. In this figure, the labels t - 1 and t refer to the inbred organisms after t - 1 and t generations of self-fertilization. The loop around the ancestor in generation t - 1 designates the probability that the two indicated alleles are identical by descent. Here the formula in Equation 6.7 applies with only one path and only one ancestor in the path, and so $ F_t = \\left(\\frac{1}{2}\\right)^t(1 + F_{t-1}) $, where $ F_t $ is the inbreeding coefficient in generation $ t $. This equation is easy to solve in terms of the quantity $ 1 - F_t $, which is often called the panmictic index (panmixia) is an old-fashioned word for random mating). Multiplying both sides of the equation for $ F_t $ by -1 and then adding +1 to each side leads to $ 1 - F_t = 1 - \\left(\\frac{1}{2}\\right)(1 + F_{t-1}) = 1 - \\left(\\frac{1}{2}\\right) - \\left(\\frac{1}{2}\\right)F_{t-1} = \\left(\\frac{1}{2}\\right)(1 - F_{t-1}) $, or $$ 1-F_{t}=(\\frac{1}{2})^{t}(1-F_{0}) $$ where $ F_0 $ is the inbreeding coefficient in the initial generation when the repeated self-fertilization begins. Self-fertilization therefore leads to an extremely rapid increase in the inbreeding coefficient. When $ F_0 = 0 $, then $ F_1 = \\frac{1}{2} $, $ F_2 = \\frac{3}{4} $, $ F_3 = \\frac{7}{8} $, $ F_4 = \\frac{15}{16} $, and so on. The increase in $ F $ under self-fertilization and several other regular systems of mating is shown in Figure 6.11. No matter how much inbreeding has taken place in a population, a single generation of random mating completely erases the effects, and the genotype frequencies return to the Hardy-Weinberg proportions.",
+      "source_page": 286,
+      "source_pages": [
+        286,
+        287,
+        288
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p016:b4",
+        "PopGen_chapter6:p017:b3",
+        "PopGen_chapter6:p017:b4",
+        "PopGen_chapter6:p017:b5",
+        "PopGen_chapter6:p018:b1"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          1171.0,
+          1021.0,
+          1411.0
+        ],
+        [
+          112.0,
+          495.0,
+          863.0,
+          682.0
+        ],
+        [
+          397.0,
+          685.0,
+          582.0,
+          713.0
+        ],
+        [
+          112.0,
+          735.0,
+          864.0,
+          869.0
+        ],
+        [
+          267.0,
+          206.0,
+          1020.0,
+          284.0
+        ]
+      ],
+      "provenance_score": 0.894843,
+      "content_sha256": "962dceb0498a85321e6f92b27cc5c33e4279aaadd298687e3ee0e5baf5650676",
+      "inline_styles": [
+        {
+          "start": 1010,
+          "end": 1025,
+          "style": "italic",
+          "text": "panmictic index",
+          "source_page": 287,
+          "source_block_ids": [
+            "PopGen_chapter6:p017:b3"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              495,
+              863,
+              682
+            ]
+          ],
+          "source_content_sha256": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p017:b3": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf"
+          }
+        },
+        {
+          "start": 1027,
+          "end": 1035,
+          "style": "italic",
+          "text": "panmixia",
+          "source_page": 287,
+          "source_block_ids": [
+            "PopGen_chapter6:p017:b3"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              495,
+              863,
+              682
+            ]
+          ],
+          "source_content_sha256": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p017:b3": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Many plants reproduce predominantly by self-fertilization, including crop plants such as soybeans, sorghum, barley, and wheat. As expected of highly self-fertilizing species, each plant is highly homozygous for alleles. Yet in comparing different populations, the proportion of polymorphic genes is comparable to that found in outcrossing species. Polymorphisms are found because self-fertilization does not eliminate genetic variation; it simply reorganizes genetic variation into homozygous genotypes. On the other hand, self-fertilizing species do contain fewer deleterious recessives than do outcrossing species, presumably because the increased frequency of homozygous recessive genotypes permits deleterious mutations to be eliminated from the population by natural selection. The high frequency of homozygous genotypes in naturally self-fertilizing species also impedes recombination producing new gametic types not already present in the parent. Therefore, a predominance of self-fertilization has the effect of slowing the approach to linkage equilibrium because the approach to linkage equilibrium is through recombination in double heterozygotes (A B/a b and A b/a B in the case of two alleles at each locus); with extreme inbreeding, such doubly heterozygous genotypes are rare. Indeed, the most extreme examples of linkage disequilibrium have been found in predominantly self-fertilizing species such as barley (Hordeum vulgare) and wild oats (Avena barbata).",
+      "source_page": 288,
+      "source_pages": [
+        288
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p018:b2"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          288.0,
+          1022.0,
+          821.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "c147ef4172781a25837916a5372429238229ddec426e85200159a63757ed2559",
+      "inline_styles": [
+        {
+          "start": 1425,
+          "end": 1440,
+          "style": "italic",
+          "text": "Hordeum vulgare",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b2"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              288,
+              1022,
+              821
+            ]
+          ],
+          "source_content_sha256": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b2": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23"
+          }
+        },
+        {
+          "start": 1457,
+          "end": 1470,
+          "style": "italic",
+          "text": "Avena barbata",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b2"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              288,
+              1022,
+              821
+            ]
+          ],
+          "source_content_sha256": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b2": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Barley, which regularly undergoes more than 99% self-fertilization, provides an extreme example of linkage disequilibrium between two unlinked esterase genes <sup>[124]</sup>. A population that had originated as a complex cross was maintained for 26 generations under normal agricultural conditions without conscious selection. The population was polymorphic for two alleles of an Esterase-B gene, which we will designate as alleles A and a, and also polymorphic for two alleles of an Esterase-D gene, which we will designate as alleles B and b. The gametic types were found in the following proportions. For all practical purposes, these numbers also refer to homozygous genotypes because there is such close inbreeding. $$ AB\\quad 1501\\quad (1642.6) $$ $$ Ab\\quad 754\\quad (613.7) $$ $$ aB\\quad 720\\quad (577.1) $$ $$ ab\\quad 74\\quad (215.6) $$",
+      "source_page": 288,
+      "source_pages": [
+        288
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p018:b3"
+      ],
+      "source_bboxes": [
+        [
+          269.0,
+          824.0,
+          1024.0,
+          1090.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ed9bac0d2e2b451fc20573243165ec0b58119a63fc2e6dd22de396abfea0f1a2",
+      "inline_styles": [
+        {
+          "start": 384,
+          "end": 394,
+          "style": "italic",
+          "text": "Esterase-B",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        },
+        {
+          "start": 436,
+          "end": 437,
+          "style": "italic",
+          "text": "A",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        },
+        {
+          "start": 442,
+          "end": 443,
+          "style": "italic",
+          "text": "a",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        },
+        {
+          "start": 488,
+          "end": 498,
+          "style": "italic",
+          "text": "Esterase-D",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        },
+        {
+          "start": 540,
+          "end": 541,
+          "style": "italic",
+          "text": "B",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        },
+        {
+          "start": 546,
+          "end": 547,
+          "style": "italic",
+          "text": "b",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "proposition",
+      "content": "(The numbers in parentheses are the expected numbers based on the assumption of linkage equilibrium, calculated as in Chapter 2.) The $ \\chi^{2} $ value in this case is 172.7 with one degree of freedom. The associated probability is much less than 0.0001, and so there is undoubtedly linkage disequilibrium. For the above data, the linkage disequilibrium parameter (see [[see_formula:2.13]]) is D = -0.046, which is about 66% of its theoretical minimum. On the other hand, in spite of the small amount of outcrossing in natural populations of barley, the DNA sequences of most genes show evidence for recombination <sup>[481]</sup>.",
+      "source_page": 288,
+      "source_pages": [
+        288,
+        289
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p018:b5",
+        "PopGen_chapter6:p019:b1"
+      ],
+      "source_bboxes": [
+        [
+          270.0,
+          1252.0,
+          1025.0,
+          1383.0
+        ],
+        [
+          117.0,
+          202.0,
+          868.0,
+          304.0
+        ]
+      ],
+      "provenance_score": 0.991935,
+      "content_sha256": "16c02cd60c4fd56949473e8a84cb55272beb6dfb0fdcc77aad80f5a590aea7b2",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "One of the dramatic successes of plant breeding has come from the crossing of inbred lines to produce high-yielding hybrid corn. Yield of a genetically heterogeneous, outcrossing variety of corn can be improved by selecting the plants with the highest yields in each generation to be the progenitors of the next generation; such artificial selection results in only gradual improvement, however (see Chapter 9). If a large number of self-fertilized lines are established from a heterogeneous population, each line declines in yield as inbreeding proceeds, because of the forced homozygosity of deleterious recessives. Many lines become so inferior that they have to be discontinued. Self-fertilized lines are not likely to become homozygous for exactly the same set of deleterious recessives, however, and when different lines are crossed to produce a hybrid, the hybrid becomes heterozygous for these genes. Alleles favoring high yield in corn are generally dominant, and there may also be genes in which the heterozygous genotypes have a more favorable effect on yield than do the homozygous genotypes; in any case, the hybrid has a much higher yield than either inbred parent. The phenomenon of enhanced hybrid performance is called hybrid vigor or heterosis. In practice, inbred lines are crossed in many combinations to identify those that produce the best hybrids. Yields of hybrid corn are typically 15–35% greater than yields of outcrossing varieties, and the successful introduction of hybrid corn has been remarkable. Virtually all corn acreage in the United States today is planted with hybrids, as compared to 0.4% of the acreage in 1933 <sup>[682]</sup>.",
+      "source_page": 289,
+      "source_pages": [
+        289
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p019:b2"
+      ],
+      "source_bboxes": [
+        [
+          112.0,
+          309.0,
+          864.0,
+          921.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "31cc6662022a01b9053b235998c1bed8ed96c8eca166ee8484598a8ecfbf35c1",
+      "inline_styles": [
+        {
+          "start": 1236,
+          "end": 1248,
+          "style": "bold",
+          "text": "hybrid vigor",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b2"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              309,
+              864,
+              921
+            ]
+          ],
+          "source_content_sha256": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b2": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd"
+          },
+          "subject_index": null
+        },
+        {
+          "start": 1252,
+          "end": 1261,
+          "style": "bold",
+          "text": "heterosis",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b2"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              309,
+              864,
+              921
+            ]
+          ],
+          "source_content_sha256": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b2": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd"
+          },
+          "subject_index": null
+        }
+      ],
+      "source_locator_mode": "matched"
+    }
+  ]
+}

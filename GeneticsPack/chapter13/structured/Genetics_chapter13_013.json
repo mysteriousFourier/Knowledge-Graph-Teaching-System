@@ -1,0 +1,160 @@
+{
+  "id": "Genetics_chapter13_013",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "COMPLEX SEGREGATION ANALYSIS",
+    "subsections": [
+      "Common-family Effects"
+    ],
+    "section_level_1": "COMPLEX SEGREGATION ANALYSIS",
+    "section_level_2": "Common-family Effects",
+    "heading_path": [
+      "COMPLEX SEGREGATION ANALYSIS",
+      "Common-family Effects"
+    ],
+    "display_heading": "COMPLEX SEGREGATION ANALYSIS / Common-family Effects",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 384,
+      "printed_page": 364,
+      "source_block_ids": [
+        "p384:b4"
+      ],
+      "bbox": [
+        139.0,
+        1092.0,
+        439.0,
+        1127.0
+      ],
+      "raw_text": "Common-family Effects"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Members of full-sib families usually share environmental effects, and likelihood functions accounting for these have been developed (Morton and MacLean 1974; Knott and Haley 1992a,b). Let the ith family have a common effect $ c_i $, and assume that these effects are normally distributed among families with mean zero and variance $ \\sigma_c^2 $. With this modification, the expected phenotypic value of an offspring with genotype $ g_o $ from family i is $ \\mu_{g_o} + c_i $. As before, we assume that the phenotypic values for each genotype (conditional on $ c_i $) are normally distributed with variance $ \\sigma^2 $, giving the conditional likelihood for the $ n_i $ offspring from this family as",
+      "source_page": 384,
+      "printed_page": 364,
+      "source_block_ids": [
+        "p384:b5"
+      ],
+      "bbox": [
+        138.0,
+        1125.0,
+        1100.0,
+        1423.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula032]]",
+      "source_page": 384,
+      "printed_page": 364,
+      "source_block_ids": [
+        "p384:b6"
+      ],
+      "bbox": [
+        182.0,
+        1415.0,
+        980.0,
+        1524.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Averaging over all possible values of the common-family effect $ c_{i} $ gives",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b2"
+      ],
+      "bbox": [
+        91.0,
+        126.0,
+        943.0,
+        174.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula033]]",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b3"
+      ],
+      "bbox": [
+        264.0,
+        192.0,
+        871.0,
+        273.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Finally, using the above expression for $\\ell(z_{i}.\\,|\\,g_{f},\\,g_{m})$, averaging over all possible parental genotypes gives the unconditional likelihood for this family (Equation 13.11b). Assuming the QTL genotypes are in Hardy-Weinberg proportions, the unconditional likelihood has six unknown parameters: the three genotypic means, the allele frequency $p$, and the variances $\\sigma^{2}$ and $\\sigma_{c}^{2}$. Assuming the $n_{f}$ families in our pedigree are unrelated, the total likelihood is the product of the individual family likelihoods (Equation 13.13).",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b5"
+      ],
+      "bbox": [
+        84.0,
+        292.0,
+        1047.0,
+        530.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The likelihood for the ith family under the restricted model assuming common-family effects, but no major genes, is",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b6"
+      ],
+      "bbox": [
+        82.0,
+        517.0,
+        1040.0,
+        596.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula034]]",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b7"
+      ],
+      "bbox": [
+        220.0,
+        614.0,
+        847.0,
+        802.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A test for common-family effects but no major gene is given by the likelihood-ratio test using Equation 13.18 versus the likelihood function with $ \\sigma_c^2 = 0 $. The latter is just the likelihood function assuming a single underlying normal, which has its maximum value given by Equation 13.8. Likewise, the likelihood-ratio test for a major gene but no common-family effects uses the full likelihood and a restricted likelihood assuming $ \\sigma_c^2 = 0 $.",
+      "source_page": 385,
+      "printed_page": 365,
+      "source_block_ids": [
+        "p385:b9"
+      ],
+      "bbox": [
+        73.0,
+        822.0,
+        1037.0,
+        1030.0
+      ]
+    }
+  ]
+}

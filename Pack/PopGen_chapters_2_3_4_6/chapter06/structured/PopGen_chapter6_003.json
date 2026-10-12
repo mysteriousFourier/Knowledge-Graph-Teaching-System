@@ -1,0 +1,368 @@
+{
+  "id": "PopGen_chapter6_003",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.1 INBREEDING",
+    "subsections": [
+      "The Inbreeding Coefficient"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "inline_3"
+    ],
+    "section_level_1": "6.1 INBREEDING",
+    "section_level_2": "The Inbreeding Coefficient",
+    "heading_path": [
+      "6.1 INBREEDING",
+      "The Inbreeding Coefficient"
+    ],
+    "display_heading": "The Inbreeding Coefficient",
+    "table_reference_keys": [
+      "popgen_chapter6:inline_3"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p001:b3",
+        "PopGen_chapter6:p002:b2"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "To make the discussion specific, consider the pedigree in Figure 6.1. It represents the closest degree of inbreeding possible, namely self-fertilization. The curved lines emanating from individual A in generation 0 represent gametes, which join to produce the individual I in generation 1. The black dots on the lines represent the alleles of a gene present in the gametes, which come together to form the genotype of the locus in individual I. The dots are both black to symbolize that they are identical by descent, which means that they arose from replication of the same DNA molecule in a previous generation, in this case in generation 0. The inbreeding coefficient, typically denoted by the symbol F, is defined as the probability that the two alleles at a locus in an inbred individual are identical by descent. Later in this chapter we will have a need to denote the inbreeding coefficient as $ F_{IS} $, but for now we do not need the subscript and will suppress it.",
+      "source_page": 272,
+      "source_pages": [
+        272
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p002:b3"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          443.0,
+          1029.0,
+          789.0
+        ]
+      ],
+      "provenance_score": 0.997455,
+      "content_sha256": "a601df1173004d95d59fce4d7035969e3d1873bef1d65f1a229193de91ed0a73",
+      "inline_styles": [
+        {
+          "start": 496,
+          "end": 516,
+          "style": "bold",
+          "text": "identical by descent",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              443,
+              1029,
+              789
+            ]
+          ],
+          "source_content_sha256": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b3": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13"
+          }
+        },
+        {
+          "start": 648,
+          "end": 670,
+          "style": "bold",
+          "text": "inbreeding coefficient",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              443,
+              1029,
+              789
+            ]
+          ],
+          "source_content_sha256": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b3": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The concept of identity by descent conceals a subtlety that requires some explanation. As one traces the ancestries of alleles into the past, their ancestral lineages come together, or coalesce, reducing the number of ancestral alleles, until ultimately only one common ancestral allele remains. Details of the coalescent process are examined in Chapter 3. Because of coalescence, every allele shares a common ancestral allele with every other allele, and they all are related through DNA replication. Superficially, the coalescent process seems to undermine the concept of the inbreeding coefficient, or at least to render it ambiguous. The ambiguity can be resolved by choosing some arbitrary time in the past and declaring that, at that time, every allele in the population is to be considered as being not identical by descent with any other. This clears the slate because it sets F = 0 for all individuals, and thereafter what the inbreeding coefficient actually refers to is the probability of identity by descent subsequent to the time the slate was cleared.",
+      "source_page": 272,
+      "source_pages": [
+        272
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p002:b4"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          792.0,
+          1030.0,
+          1162.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a5808c73132df0fffc75f8c4c6405ff2e843042f2d8ab7ad62455e7f5b360f0b",
+      "inline_styles": [
+        {
+          "start": 185,
+          "end": 193,
+          "style": "italic",
+          "text": "coalesce",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              792,
+              1030,
+              1162
+            ]
+          ],
+          "source_content_sha256": "bf86ba234c7e86d0015f3f4dc92a509701dc7e02e95d69e3bd951e742c5dda3c",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b4": "bf86ba234c7e86d0015f3f4dc92a509701dc7e02e95d69e3bd951e742c5dda3c"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "definition",
+      "content": "In Figure 6.1, the arbitrary time when all alleles are defined as distinct (not identical by descent) is generation 0. Hence we can write the genotype of individual A in generation 0 as $ \\alpha_1\\alpha_2 $, and so by definition $ \\alpha_1 $ and $ \\alpha_2 $ are not identical by descent. The probability that the alleles in the inbred offspring I are identical by descent can then be deduced from first principles. Individual I has any one of four possible genotypes with the following probabilities: $ \\frac{1}{4} $ $ \\alpha_1\\alpha_1 $, $ \\frac{1}{4} $ $ \\alpha_1\\alpha_2 $, $ \\frac{1}{4} $ $ \\alpha_2\\alpha_1 $, and $ \\frac{1}{4} $ $ \\alpha_2\\alpha_2 $. In the cases $ \\alpha_1\\alpha_1 $ and $ \\alpha_2\\alpha_2 $, the alleles are identical by descent, and the individual is said to be autozygous (the prefix auto means self).",
+      "source_page": 272,
+      "source_pages": [
+        272,
+        273
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p002:b5",
+        "PopGen_chapter6:p003:b3"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          1166.0,
+          1031.0,
+          1377.0
+        ],
+        [
+          434.0,
+          201.0,
+          853.0,
+          364.0
+        ]
+      ],
+      "provenance_score": 0.818182,
+      "content_sha256": "f25a507baf378f05f05c4647538797c5baf0b7bb0bad853762ab0d7123190648",
+      "inline_styles": [
+        {
+          "start": 789,
+          "end": 799,
+          "style": "bold",
+          "text": "autozygous",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b5"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1166,
+              1031,
+              1377
+            ]
+          ],
+          "source_content_sha256": "1991cb4d2f3331cace9b8ba0c7cb9d093dac5b4cf5ddcf27f8b960be03b26aa8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b5": "1991cb4d2f3331cace9b8ba0c7cb9d093dac5b4cf5ddcf27f8b960be03b26aa8"
+          }
+        },
+        {
+          "start": 812,
+          "end": 827,
+          "style": "italic",
+          "text": "auto means self",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "In the cases $\\alpha_{1}\\alpha_{2}$ and $\\alpha_{2}\\alpha_{1}$, the alleles are not identical by descent, and the individual is said to be allozygous (the prefix allo means other). Note that the concepts of autozygosity and allozygosity have nothing to do with the state of an allele—whether the allele is $A$ or $a$, for example. The concepts are concerned only with common ancestry. If the alleles are replicas of a single allele in a common ancestor, they are autozygous; otherwise, they are allozygous. Because the inbreeding coefficient is equal to the probability of autozygosity, the inbreeding coefficient of individual I is given by $ F = \\frac{1}{2} $; or to state the result in somewhat different terms, $ F = \\frac{1}{2} $ is the inbreeding coefficient resulting from one generation of self-fertilization. Two equally valid interpretations of F are:\n\n- F is the probability that any particular gene in an inbred individual has alleles that are identical by descent, or",
+      "source_page": 273,
+      "source_pages": [
+        273
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p003:b4",
+        "PopGen_chapter6:p003:b5",
+        "PopGen_chapter6:p003:b6"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          548.0,
+          863.0,
+          730.0
+        ],
+        [
+          105.0,
+          735.0,
+          861.0,
+          862.0
+        ],
+        [
+          107.0,
+          881.0,
+          834.0,
+          931.0
+        ]
+      ],
+      "provenance_score": 0.959318,
+      "content_sha256": "7db05ea98ae8e4d5fee5b61f97e0afe705cebc4c072f9aa861e8dad3b02717eb",
+      "inline_styles": [
+        {
+          "start": 139,
+          "end": 149,
+          "style": "bold",
+          "text": "allozygous",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          }
+        },
+        {
+          "start": 162,
+          "end": 178,
+          "style": "italic",
+          "text": "allo means other",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "- F is the overall proportion of genes in an inbred individual that have alleles that are identical by descent.\n\nBecause $ F = \\frac{1}{2} $ in Figure 6.1, this value means that one generation of self-fertilization results in an inbred individual in which 50% of the genes have alleles that are identical by descent (autozygous). Because the span of time in a pedigree is usually short, in this case only one generation, mutation can safely be ignored. Autozygous genotypes must therefore be homozygous, whereas allozygous genotypes can be either homozygous or heterozygous.",
+      "source_page": 273,
+      "source_pages": [
+        273
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p003:b7",
+        "PopGen_chapter6:p003:b8"
+      ],
+      "source_bboxes": [
+        [
+          106.0,
+          936.0,
+          856.0,
+          984.0
+        ],
+        [
+          101.0,
+          1001.0,
+          858.0,
+          1164.0
+        ]
+      ],
+      "provenance_score": 0.989107,
+      "content_sha256": "8baedddff07563f070bea98bfba64e025e25314cdac4095618e88152577cf0e6",
+      "inline_styles": [
+        {
+          "start": 452,
+          "end": 472,
+          "style": "bold",
+          "text": "Autozygous genotypes",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b8"
+          ],
+          "source_bboxes": [
+            [
+              101,
+              1001,
+              858,
+              1164
+            ]
+          ],
+          "source_content_sha256": "a974895de73e14b66f8e98824e38122359e22c85d7b3d73bdffc9869b5d5929c",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b8": "a974895de73e14b66f8e98824e38122359e22c85d7b3d73bdffc9869b5d5929c"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    }
+  ]
+}

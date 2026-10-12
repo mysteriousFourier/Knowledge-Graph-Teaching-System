@@ -1,0 +1,123 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter19",
+  "count": 3,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter19:1",
+      "example_ref": "Genetics_chapter19:1",
+      "chapter": "Genetics_chapter19",
+      "label": "Example 1",
+      "title": "Example 1. Reed et al. (1975) performed an analysis of total fingerprint ridge count for N = 260 pairs of monozygotic twins, obtaining the observed mean squares MS $ _{b} $ = 3619.",
+      "source_file": "Genetics_chapter19_003.json",
+      "start_block_index": 7,
+      "end_source_file": "Genetics_chapter19_003.json",
+      "end_block_index": 7,
+      "block_ids": [
+        "p597:b21",
+        "p598:b2"
+      ],
+      "content_markdown": "Example 1. Reed et al. (1975) performed an analysis of total fingerprint ridge count for N = 260 pairs of monozygotic twins, obtaining the observed mean squares MS $ _{b} $ = 3619.2 and MS $ _{e} $ = 82.9. From Equations 19.7a,b, we obtain the estimate $ H^2 = 0.955 $ and the standard error $ \\mathrm{SE}(H^2) = 0.005 $. With an $ F $ ratio of 43.66, this heritability estimate is highly significant. To obtain the 99% confidence interval for $ H^2 $, we first find $ F_U = F_{259,260,0.005} \\simeq 1.4 $ and $ F_L = 1/F_{260,259,0.005} \\simeq 0.7 $. Substituting these values into Equation 19.7c, the lower and upper confidence limits are found to be 0.937 and 0.984.",
+      "content_plain": "Example 1. Reed et al. (1975) performed an analysis of total fingerprint ridge count for N = 260 pairs of monozygotic twins, obtaining the observed mean squares MS  _{b}  = 3619.2 and MS  _{e}  = 82.9. From Equations 19.7a,b, we obtain the estimate  H^2 = 0.955  and the standard error  \\mathrm{SE}(H^2) = 0.005 . With an  F  ratio of 43.66, this heritability estimate is highly significant. To obtain the 99% confidence interval for  H^2 , we first find  F_U = F_{259,260,0.005} \\simeq 1.4  and  F_L = 1/F_{260,259,0.005} \\simeq 0.7 . Substituting these values into Equation 19.7c, the lower and upper confidence limits are found to be 0.937 and 0.984.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 598,
+          "y": 329.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 597
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter19:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter19:2",
+      "example_ref": "Genetics_chapter19:2",
+      "chapter": "Genetics_chapter19",
+      "label": "Example 2",
+      "title": "Example 2. Fingerprint traits have long been employed in studies of polygenic inheritance in man (Holt 1968). They are easily assayed, and many permanent records of them exist for ",
+      "source_file": "Genetics_chapter19_004.json",
+      "start_block_index": 13,
+      "end_source_file": "Genetics_chapter19_004.json",
+      "end_block_index": 16,
+      "block_ids": [
+        "p603:b7",
+        "p604:b2",
+        "p604:b3",
+        "p604:b4",
+        "p604:b5"
+      ],
+      "content_markdown": "Example 2. Fingerprint traits have long been employed in studies of polygenic inheritance in man (Holt 1968). They are easily assayed, and many permanent records of them exist for deceased and living individuals. The broad-sense heritabilities of dermatoglyphic traits tend to be close to 1.0, so standard errors of genetic variance estimates are relatively low. Fingerprints do not change with age, and they are not subject to assortative mating or to common postnatal environmental effects.\n\n![Source illustration p604 b3](figures/examples/Genetics_p604_b3.png)\n\nIn order to illustrate some of the concepts of this chapter and their broader utility, we will consider some of the results for total dermal ridge count (TDRC), the sum of the ridges in the central cores of all ten fingertips. The above figure (from Holt 1955) gives the observed distribution for a sample of 825 British males and the fitted normal curve. The phenotype distribution for this character is approximately normal, and there is a wide range of variation. Correlations between a variety of relatives from several independent studies (with sample sizes ranging from 100 to 700) are recorded below. The results are highly consistent across studies.\n\n<table><tr><td>Relationship</td><td>r</td><td>Reference</td></tr><tr><td rowspan=\"3\">Monozygotic twins</td><td>0.96</td><td>Lamy et al. 1957</td></tr><tr><td>0.95</td><td>Holt 1968</td></tr><tr><td>0.96</td><td>Reed et al. 1975</td></tr><tr><td rowspan=\"3\">Dizygotic twins</td><td>0.45</td><td>Lamy et al. 1957</td></tr><tr><td>0.49</td><td>Holt 1968</td></tr><tr><td>0.54</td><td>Reed et al. 1975</td></tr><tr><td rowspan=\"3\">Full sibs</td><td>0.50</td><td>Holt 1968</td></tr><tr><td>0.43</td><td>Mi and Rashad 1975</td></tr><tr><td>0.46</td><td>Reed et al. 1979</td></tr><tr><td rowspan=\"2\">Half sibs</td><td>0.16</td><td>Reed et al. 1979</td></tr><tr><td>0.16</td><td>Nance 1979</td></tr><tr><td rowspan=\"3\">Mother-offspring</td><td>0.41</td><td>Mi and Rashad 1975</td></tr><tr><td>0.40</td><td>Reed et al. 1979</td></tr><tr><td>0.39</td><td>Matsuda 1973</td></tr><tr><td rowspan=\"3\">Father-offspring</td><td>0.41</td><td>Mi and Rashad 1975</td></tr><tr><td>0.40</td><td>Reed et al. 1979</td></tr><tr><td>0.48</td><td>Matsuda 1973</td></tr></table>",
+      "content_plain": "Example 2. Fingerprint traits have long been employed in studies of polygenic inheritance in man (Holt 1968). They are easily assayed, and many permanent records of them exist for deceased and living individuals. The broad-sense heritabilities of dermatoglyphic traits tend to be close to 1.0, so standard errors of genetic variance estimates are relatively low. Fingerprints do not change with age, and they are not subject to assortative mating or to common postnatal environmental effects.\n\n![Source illustration p604 b3](figures/examples/Genetics_p604_b3.png)\n\nIn order to illustrate some of the concepts of this chapter and their broader utility, we will consider some of the results for total dermal ridge count (TDRC), the sum of the ridges in the central cores of all ten fingertips. The above figure (from Holt 1955) gives the observed distribution for a sample of 825 British males and the fitted normal curve. The phenotype distribution for this character is approximately normal, and there is a wide range of variation. Correlations between a variety of relatives from several independent studies (with sample sizes ranging from 100 to 700) are recorded below. The results are highly consistent across studies.\n\n<table><tr><td>Relationship</td><td>r</td><td>Reference</td></tr><tr><td rowspan=\"3\">Monozygotic twins</td><td>0.96</td><td>Lamy et al. 1957</td></tr><tr><td>0.95</td><td>Holt 1968</td></tr><tr><td>0.96</td><td>Reed et al. 1975</td></tr><tr><td rowspan=\"3\">Dizygotic twins</td><td>0.45</td><td>Lamy et al. 1957</td></tr><tr><td>0.49</td><td>Holt 1968</td></tr><tr><td>0.54</td><td>Reed et al. 1975</td></tr><tr><td rowspan=\"3\">Full sibs</td><td>0.50</td><td>Holt 1968</td></tr><tr><td>0.43</td><td>Mi and Rashad 1975</td></tr><tr><td>0.46</td><td>Reed et al. 1979</td></tr><tr><td rowspan=\"2\">Half sibs</td><td>0.16</td><td>Reed et al. 1979</td></tr><tr><td>0.16</td><td>Nance 1979</td></tr><tr><td rowspan=\"3\">Mother-offspring</td><td>0.41</td><td>Mi and Rashad 1975</td></tr><tr><td>0.40</td><td>Reed et al. 1979</td></tr><tr><td>0.39</td><td>Matsuda 1973</td></tr><tr><td rowspan=\"3\">Father-offspring</td><td>0.41</td><td>Mi and Rashad 1975</td></tr><tr><td>0.40</td><td>Reed et al. 1979</td></tr><tr><td>0.48</td><td>Matsuda 1973</td></tr></table>",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p604_b3.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 604,
+          "y": 906.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 603
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter19:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter19:3",
+      "example_ref": "Genetics_chapter19:3",
+      "chapter": "Genetics_chapter19",
+      "label": "Example 3",
+      "title": "Example 3. An application of nested ANOVA to a clonal population of the microcrustacean Daphnia pulex is given in the table below (data provided by K. Spitze). A group of 77 clones",
+      "source_file": "Genetics_chapter19_005.json",
+      "start_block_index": 6,
+      "end_source_file": "Genetics_chapter19_005.json",
+      "end_block_index": 7,
+      "block_ids": [
+        "p607:b3",
+        "p607:b4"
+      ],
+      "content_markdown": "Example 3. An application of nested ANOVA to a clonal population of the microcrustacean Daphnia pulex is given in the table below (data provided by K. Spitze). A group of 77 clones from a single pond were grown in the laboratory under controlled food and temperature conditions. Prior to analysis, each clone was split into two sublines for a generation, and two offspring from each subline (within each clone) were measured daily for growth in the first three instars. (There is a decline in clone number between instars because of mortality.)\n\n<table><tr><td></td><td>df</td><td>Sums of Squares</td><td>Mean Squares</td><td>Expected MS</td><td>Variance Estimates ( $ \\times 10^{4} $)</td></tr><tr><td>Instar 1</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>76</td><td>0.2580</td><td>0.00340</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} $</td><td>Var(a) = 4.8**</td></tr><tr><td>Sublines (clone)</td><td>77</td><td>0.1152</td><td>0.00150</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $</td><td>Var(b) = 5.2**</td></tr><tr><td>Replicates</td><td>154</td><td>0.0700</td><td>0.00045</td><td>$ \\sigma_{e}^{2} $</td><td>Var(e) = 4.5</td></tr><tr><td>Instar 2</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>52</td><td>0.4595</td><td>0.00884</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} $</td><td>Var(a) = 9.4*</td></tr><tr><td>Sublines (clone)</td><td>53</td><td>0.2682</td><td>0.00506</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $</td><td>Var(b) = 14.6**</td></tr><tr><td>Replicates</td><td>106</td><td>0.2270</td><td>0.00214</td><td>$ \\sigma_{e}^{2} $</td><td>Var(e) = 21.4</td></tr><tr><td>Instar 3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>35</td><td>0.4754</td><td>0.01358</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} $</td><td>Var(a) = 20.1*</td></tr><tr><td>Sublines (clone)</td><td>36</td><td>0.1998</td><td>0.00555</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $</td><td>Var(b) = -2.7</td></tr><tr><td>Replicates</td><td>72</td><td>0.4390</td><td>0.00610</td><td>$ \\sigma_{e}^{2} $</td><td>Var(e) = 61.0</td></tr></table>",
+      "content_plain": "Example 3. An application of nested ANOVA to a clonal population of the microcrustacean Daphnia pulex is given in the table below (data provided by K. Spitze). A group of 77 clones from a single pond were grown in the laboratory under controlled food and temperature conditions. Prior to analysis, each clone was split into two sublines for a generation, and two offspring from each subline (within each clone) were measured daily for growth in the first three instars. (There is a decline in clone number between instars because of mortality.)\n\n<table><tr><td></td><td>df</td><td>Sums of Squares</td><td>Mean Squares</td><td>Expected MS</td><td>Variance Estimates (  \\times 10^{4} )</td></tr><tr><td>Instar 1</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>76</td><td>0.2580</td><td>0.00340</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} </td><td>Var(a) = 4.8</td></tr><tr><td>Sublines (clone)</td><td>77</td><td>0.1152</td><td>0.00150</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} </td><td>Var(b) = 5.2</td></tr><tr><td>Replicates</td><td>154</td><td>0.0700</td><td>0.00045</td><td> \\sigma_{e}^{2} </td><td>Var(e) = 4.5</td></tr><tr><td>Instar 2</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>52</td><td>0.4595</td><td>0.00884</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} </td><td>Var(a) = 9.4</td></tr><tr><td>Sublines (clone)</td><td>53</td><td>0.2682</td><td>0.00506</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} </td><td>Var(b) = 14.6</td></tr><tr><td>Replicates</td><td>106</td><td>0.2270</td><td>0.00214</td><td> \\sigma_{e}^{2} </td><td>Var(e) = 21.4</td></tr><tr><td>Instar 3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Clone</td><td>35</td><td>0.4754</td><td>0.01358</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} + 4\\sigma_{a}^{2} </td><td>Var(a) = 20.1</td></tr><tr><td>Sublines (clone)</td><td>36</td><td>0.1998</td><td>0.00555</td><td> \\sigma_{e}^{2} + 2\\sigma_{b}^{2} </td><td>Var(b) = -2.7</td></tr><tr><td>Replicates</td><td>72</td><td>0.4390</td><td>0.00610</td><td> \\sigma_{e}^{2} </td><td>Var(e) = 61.0</td></tr></table>",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 607,
+          "y": 533.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 607
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter19:3]]",
+      "book": "Genetics"
+    }
+  ]
+}

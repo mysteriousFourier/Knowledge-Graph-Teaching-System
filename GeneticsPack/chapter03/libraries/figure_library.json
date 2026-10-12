@@ -1,0 +1,147 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter3",
+  "count": 4,
+  "figures": [
+    {
+      "id": "3.1",
+      "chapter": "Genetics_chapter3",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter3:3.1",
+      "placeholder": "[[FIGURE:3.1]]",
+      "see_placeholder": "[[SEE_FIGURE:3.1]]",
+      "asset_path": "figures/Genetics_3.1.png",
+      "caption": "Figure 3.1 Scatterplots for the variables x and y. Each point in the x-y plane corresponds to a single pair of observations $ (x, y) $. The line drawn through the scatterplot gives the expected value of y given a specified value of x. (A) There is no linear tendency for large x values to be associated with large (or small) y values, so $ \\sigma(x, y) = 0 $. (B) As x increases, the conditional expectation of y given x, $ E(y|x) $, also increases, and $ \\sigma(x, y) > 0 $. (C) As x increases, the conditional expectation of y given x decreases, and $ \\sigma(x, y) < 0 $.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 53,
+      "raw_bbox": [
+        130.0,
+        125.0,
+        995.0,
+        378.0
+      ],
+      "source_block_ids": [
+        "p53:b3",
+        "p53:b4",
+        "p53:b5"
+      ],
+      "caption_block": {
+        "source_page": 53,
+        "printed_page": 33,
+        "source_block_ids": [
+          "p53:b6"
+        ],
+        "bbox": [
+          101.0,
+          400.0,
+          970.0,
+          624.0
+        ]
+      }
+    },
+    {
+      "id": "3.2",
+      "chapter": "Genetics_chapter3",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter3:3.2",
+      "placeholder": "[[FIGURE:3.2]]",
+      "see_placeholder": "[[SEE_FIGURE:3.2]]",
+      "asset_path": "figures/Genetics_3.2.png",
+      "caption": "Figure 3.2 A bivariate plot of the relationship between maternal weight and number of offspring for the sample of rats summarized in Table 2.2. Differenti-sized circles refer to different numbers of individuals in the bivariate classes.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 56,
+      "raw_bbox": [
+        268.0,
+        127.0,
+        1002.0,
+        813.0
+      ],
+      "source_block_ids": [
+        "p56:b2"
+      ],
+      "caption_block": {
+        "source_page": 56,
+        "printed_page": 36,
+        "source_block_ids": [
+          "p56:b3"
+        ],
+        "bbox": [
+          204.0,
+          828.0,
+          1071.0,
+          938.0
+        ]
+      }
+    },
+    {
+      "id": "3.3",
+      "chapter": "Genetics_chapter3",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter3:3.3",
+      "placeholder": "[[FIGURE:3.3]]",
+      "see_placeholder": "[[SEE_FIGURE:3.3]]",
+      "asset_path": "figures/Genetics_3.3.png",
+      "caption": "Figure 3.3 A linear least-squares fit to an inherently nonlinear data set. Although there is a systematic relationship between the residual error (e) and the predictor variable (x), the two are uncorrelated (show no net linear trend) when viewed over the entire range of x. The mean residual error ( $ \\overline{e} = 0 $) is denoted by the dashed line on the right graph.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 58,
+      "raw_bbox": [
+        157.0,
+        114.0,
+        1068.0,
+        525.0
+      ],
+      "source_block_ids": [
+        "p58:b2",
+        "p58:b3"
+      ],
+      "caption_block": {
+        "source_page": 58,
+        "printed_page": 38,
+        "source_block_ids": [
+          "p58:b4"
+        ],
+        "bbox": [
+          191.0,
+          543.0,
+          1058.0,
+          710.0
+        ]
+      }
+    },
+    {
+      "id": "3.4",
+      "chapter": "Genetics_chapter3",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter3:3.4",
+      "placeholder": "[[FIGURE:3.4]]",
+      "see_placeholder": "[[SEE_FIGURE:3.4]]",
+      "asset_path": "figures/Genetics_3.4.png",
+      "caption": "Figure 3.4 The dispersion of residual errors around a regression. (A) The regression is homoscedastic — the variance of residuals given x is a constant. (B) The regression is heteroscedastic — the variance of residuals increases with x. In this case, higher x values predict y with less certainty.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 59,
+      "raw_bbox": [
+        228.0,
+        132.0,
+        896.0,
+        435.0
+      ],
+      "source_block_ids": [
+        "p59:b3",
+        "p59:b4"
+      ],
+      "caption_block": {
+        "source_page": 59,
+        "printed_page": 39,
+        "source_block_ids": [
+          "p59:b5"
+        ],
+        "bbox": [
+          106.0,
+          453.0,
+          970.0,
+          591.0
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "id": "Genetics_chapter15_013",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+    "subsections": [
+      "Approximating ML Interval Mapping by Haley-Knott Regressions"
+    ],
+    "section_level_1": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+    "section_level_2": "Approximating ML Interval Mapping by Haley-Knott Regressions",
+    "heading_path": [
+      "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD",
+      "Approximating ML Interval Mapping by Haley-Knott Regressions"
+    ],
+    "display_heading": "QTL DETECTION AND ESTIMATION VIA MAXIMUM LIKELIHOOD / Approximating ML Interval Mapping by Haley-Knott Regressions",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b4"
+      ],
+      "bbox": [
+        84.0,
+        673.0,
+        907.0,
+        707.0
+      ],
+      "raw_text": "Approximating ML Interval Mapping by Haley-Knott Regressions"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "One problem with ML estimators is that they can be rather computationally demanding. Among other things, this limits the applicability of resampling methods, which require thousands of ML estimates to be computed per experiment. Fortunately, a simple regression procedure gives an excellent approximation of the likelihood map for ML interval mapping (Haley and Knott 1992, Martínez and Curnow 1992). This procedure greatly facilitates matters, as regressions are easily computed. Haley and Knott's (1992) idea is to express the regression coefficients as a function of the unknown QTL parameters. Using the Falconer parameterization for genotypic means,",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b5"
+      ],
+      "bbox": [
+        80.0,
+        715.0,
+        1043.0,
+        1006.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula050]]",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b6"
+      ],
+      "bbox": [
+        273.0,
+        1027.0,
+        849.0,
+        1063.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "this is done by considering the regression",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b8"
+      ],
+      "bbox": [
+        81.0,
+        1079.0,
+        584.0,
+        1117.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula051]]",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b9"
+      ],
+      "bbox": [
+        350.0,
+        1141.0,
+        770.0,
+        1176.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The variables x and y, which depend on both the flanking-marker genotype of the individual (M) and the assumed map position of the putative QTL, are obtained as follows. Taking the expectation of Equation 15.18b over all individuals with marker genotype $ M_{i} $ gives",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b11"
+      ],
+      "bbox": [
+        79.0,
+        1194.0,
+        1040.0,
+        1326.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula052]]",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b12"
+      ],
+      "bbox": [
+        366.0,
+        1348.0,
+        749.0,
+        1383.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "From Equation 15.6,",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b14"
+      ],
+      "bbox": [
+        79.0,
+        1401.0,
+        326.0,
+        1434.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula053]]",
+      "source_page": 467,
+      "printed_page": 447,
+      "source_block_ids": [
+        "p467:b15"
+      ],
+      "bbox": [
+        150.0,
+        1457.0,
+        954.0,
+        1535.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Equating like terms in Equations 15.19a and 15.19b gives",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b2"
+      ],
+      "bbox": [
+        117.0,
+        148.0,
+        799.0,
+        182.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula054]]",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b3"
+      ],
+      "bbox": [
+        192.0,
+        206.0,
+        918.0,
+        244.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Thus, the x and y values are functions of the conditional QTL probabilities given the flanking-marker genotypes. For example, for the $ F_{2} $ design with no interference, Equation 15.2 gives",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b5"
+      ],
+      "bbox": [
+        117.0,
+        269.0,
+        1076.0,
+        368.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula055]]",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b6"
+      ],
+      "bbox": [
+        331.0,
+        390.0,
+        860.0,
+        463.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula056]]",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b7"
+      ],
+      "bbox": [
+        334.0,
+        508.0,
+        811.0,
+        578.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Haley and Knott give expressions for the eight other $ F_{2} $ marker genotypes, and values for other designs easily follow when the appropriate conditional probabilities are employed. This regression approach was independently suggested by Martínez and Curnow (1992) for the analysis of backcross populations. These authors also detail how missing marker information can be accommodated (Martínez and Curnow 1994a).",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b8"
+      ],
+      "bbox": [
+        119.0,
+        602.0,
+        1077.0,
+        795.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "By analogy with likelihood maps, the regression given by Equation 15.18b is computed for each $ c_1 $ value within the $ M_1 - M_2 $ interval, with that value giving the regression with the largest $ r^2 $ being taken as the estimate of QTL position. For each $ c_1 $ value, Equation 15.20 yields the set of $ x $ and $ y $ values, allowing $ \\mu $, $ a $, and $ d $ to be estimated by ordinary least-squares regression (Equation 8.33a),",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b9"
+      ],
+      "bbox": [
+        118.0,
+        795.0,
+        1078.0,
+        956.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula057]]",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b10"
+      ],
+      "bbox": [
+        392.0,
+        981.0,
+        806.0,
+        1080.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the ith row of the design matrix $ \\mathbf{X}_{c_1} $ is $ (1, x(M_i, c_1), y(M_i, c_1)) $.",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b12"
+      ],
+      "bbox": [
+        120.0,
+        1106.0,
+        948.0,
+        1140.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Haley and Knott show that $ r^{2} $ plots for this regression are related to likelihood plots. Assuming that phenotypes are normally distributed about each QTL genotype, then if the QTL is completely linked to either marker ( $ c_{1}=0 $ or $ c_{1}=c $), the residuals for the regression given by Equation 15.18b are normally distributed. In this case, the regression estimates are also ML estimates and the likelihood-ratio test can be expressed as",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b13"
+      ],
+      "bbox": [
+        120.0,
+        1139.0,
+        1081.0,
+        1333.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula058]]",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b14"
+      ],
+      "bbox": [
+        387.0,
+        1358.0,
+        814.0,
+        1426.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ SS_{T} $ and $ SS_{E} $ are the total and error (or residual) sums of squares associated with the regression (Equations A3.16a,c), with the second equality following from Equation A3.15. If the QTL is not completely linked to either marker, the distribution of residuals follows a mixture of normals, as some marker genotype classes will contain different QTL genotypes. However, Haley and Knott (1992) and Rebai et al. (1995) show that the function given by Equation 15.22 gives extremely similar values to the true likelihood ratio. Haley and Knott suggest that the number of degrees of freedom appropriate for this test is the number of estimated QTL parameters plus an additional degree of freedom for map position $ c_{1} $. Xu (1995) notes that this regression approach tends to overestimate the residual variance, and presents a correction. More generally, if the linear model has additional factors (accounting for, say, differences due to sex and age), the LR test is modified to become",
+      "source_page": 468,
+      "printed_page": 448,
+      "source_block_ids": [
+        "p468:b16",
+        "p469:b2"
+      ],
+      "bbox": [
+        121.0,
+        1451.0,
+        1083.0,
+        1548.0
+      ],
+      "source_page_end": 469
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter15_formula059]]",
+      "source_page": 469,
+      "printed_page": 449,
+      "source_block_ids": [
+        "p469:b3"
+      ],
+      "bbox": [
+        390.0,
+        449.0,
+        732.0,
+        521.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the error sums of squares are now for the full model and the reduced model (the latter incorporating all factors but the QTL effects).",
+      "source_page": 469,
+      "printed_page": 449,
+      "source_block_ids": [
+        "p469:b5"
+      ],
+      "bbox": [
+        84.0,
+        528.0,
+        1040.0,
+        605.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter15:7]]",
+      "source_page": 469,
+      "source_block_ids": [
+        "p469:b6",
+        "p469:b7",
+        "p469:b8",
+        "p469:b9",
+        "p469:b10",
+        "p469:b11",
+        "p470:b2",
+        "p470:b3",
+        "p470:b4",
+        "p470:b5",
+        "p470:b6",
+        "p470:b7",
+        "p470:b8",
+        "p470:b9",
+        "p470:b10",
+        "p471:b2"
+      ],
+      "bbox": [
+        127.0,
+        721.0,
+        990.0,
+        851.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter2",
+  "count": 5,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter2:1",
+      "example_ref": "Genetics_chapter2:1",
+      "chapter": "Genetics_chapter2",
+      "label": "Example 1",
+      "title": "Example 1. Suppose that z is continuously distributed in the range of 0 to $ \\infty $ with probability density function",
+      "source_file": "Genetics_chapter2_002.json",
+      "start_block_index": 7,
+      "end_source_file": "Genetics_chapter2_002.json",
+      "end_block_index": 14,
+      "block_ids": [
+        "p38:b6",
+        "p38:b7",
+        "p38:b8",
+        "p38:b9",
+        "p38:b10",
+        "p38:b11",
+        "p38:b12",
+        "p38:b13"
+      ],
+      "content_markdown": "Example 1. Suppose that z is continuously distributed in the range of 0 to $ \\infty $ with probability density function\n\n[[FORMULA:Genetics_chapter2_formula002]]\n\nThis is the negative exponential distribution in which the density has a maximum at $z = 0$ and declines to zero as $z \\to \\infty$. Since the integral of $p(z)$ is $-e^{-z/\\lambda}$,\n\n[[FORMULA:Genetics_chapter2_formula003]]\n\nshowing that $ p(z) $ fulfills the properties of a probability density.\n\nWhat is the probability that a randomly drawn individual will have z in the range of 1/4 to 1/2?\n\n[[FORMULA:Genetics_chapter2_formula004]]\n\nThe numerical answer depends on the parameter $ \\lambda $. If, for example, $ \\lambda = 1/2 $, then $ P(1/4 \\leq z \\leq 1/2) = 0.239 $.",
+      "content_plain": "Example 1. Suppose that z is continuously distributed in the range of 0 to  \\infty  with probability density function\n\n[[FORMULA:Genetics_chapter2_formula002]]\n\nThis is the negative exponential distribution in which the density has a maximum at z = 0 and declines to zero as z \\to \\infty. Since the integral of p(z) is -e^{-z/\\lambda},\n\n[[FORMULA:Genetics_chapter2_formula003]]\n\nshowing that  p(z)  fulfills the properties of a probability density.\n\nWhat is the probability that a randomly drawn individual will have z in the range of 1/4 to 1/2?\n\n[[FORMULA:Genetics_chapter2_formula004]]\n\nThe numerical answer depends on the parameter  \\lambda . If, for example,  \\lambda = 1/2 , then  P(1/4 \\leq z \\leq 1/2) = 0.239 .",
+      "formula_refs": [
+        "Genetics_chapter2_formula002",
+        "Genetics_chapter2_formula003",
+        "Genetics_chapter2_formula004"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 38,
+          "y": 1265.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 38
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter2:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter2:2",
+      "example_ref": "Genetics_chapter2:2",
+      "chapter": "Genetics_chapter2",
+      "label": "Example 2",
+      "title": "Example 2. What is the mean of the distribution discussed in Example 1? Since the integral of $ (z/\\lambda)e^{-z/\\lambda} $ is $ -(z+\\lambda)e^{-z/\\lambda} $,",
+      "source_file": "Genetics_chapter2_002.json",
+      "start_block_index": 21,
+      "end_source_file": "Genetics_chapter2_002.json",
+      "end_block_index": 23,
+      "block_ids": [
+        "p39:b8",
+        "p39:b9",
+        "p39:b10"
+      ],
+      "content_markdown": "Example 2. What is the mean of the distribution discussed in Example 1? Since the integral of $ (z/\\lambda)e^{-z/\\lambda} $ is $ -(z+\\lambda)e^{-z/\\lambda} $,\n\n[[FORMULA:Genetics_chapter2_formula007]]\n\nThus, the parameter $ \\lambda $ is the mean of the distribution defined by the density function $ p(x) = (1/\\lambda) e^{-z/\\lambda} $.",
+      "content_plain": "Example 2. What is the mean of the distribution discussed in Example 1? Since the integral of  (z/\\lambda)e^{-z/\\lambda}  is  -(z+\\lambda)e^{-z/\\lambda} ,\n\n[[FORMULA:Genetics_chapter2_formula007]]\n\nThus, the parameter  \\lambda  is the mean of the distribution defined by the density function  p(x) = (1/\\lambda) e^{-z/\\lambda} .",
+      "formula_refs": [
+        "Genetics_chapter2_formula007"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 39,
+          "y": 1228.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 39
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter2:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter2:3",
+      "example_ref": "Genetics_chapter2:3",
+      "chapter": "Genetics_chapter2",
+      "label": "Example 3",
+      "title": "Example 3. Utilizing the data for maternal weight from Table 2.1, we now summarize the procedures for obtaining estimates of the first three moments.",
+      "source_file": "Genetics_chapter2_002.json",
+      "start_block_index": 46,
+      "end_source_file": "Genetics_chapter2_002.json",
+      "end_block_index": 61,
+      "block_ids": [
+        "p42:b2",
+        "p42:b3",
+        "p42:b4",
+        "p42:b5",
+        "p42:b6",
+        "p42:b7",
+        "p42:b8",
+        "p42:b9",
+        "p42:b10",
+        "p43:b2",
+        "p43:b3",
+        "p43:b4",
+        "p43:b5",
+        "p43:b6",
+        "p43:b7",
+        "p43:b8"
+      ],
+      "content_markdown": "Example 3. Utilizing the data for maternal weight from Table 2.1, we now summarize the procedures for obtaining estimates of the first three moments.\n\n<table><tr><td>grams $ ^{*} $</td><td>z</td><td>n(z)</td><td>z n(z)</td><td>z^{2} n(z)</td><td>z^{3} n(z)</td></tr><tr><td>50-</td><td>55</td><td>5</td><td>275</td><td>15,125</td><td>831,875</td></tr><tr><td>60-</td><td>65</td><td>9</td><td>585</td><td>38,025</td><td>2,471,625</td></tr><tr><td>70-</td><td>75</td><td>46</td><td>3,450</td><td>258,750</td><td>19,406,250</td></tr><tr><td>80-</td><td>85</td><td>63</td><td>5,355</td><td>455,175</td><td>38,689,875</td></tr><tr><td>90-</td><td>95</td><td>108</td><td>10,260</td><td>974,700</td><td>92,596,500</td></tr><tr><td>100-</td><td>105</td><td>146</td><td>15,330</td><td>1,609,650</td><td>169,013,250</td></tr><tr><td>110-</td><td>115</td><td>148</td><td>17,020</td><td>1,957,300</td><td>225,089,500</td></tr><tr><td>120-</td><td>125</td><td>151</td><td>18,875</td><td>2,359,375</td><td>294,921,875</td></tr><tr><td>130-</td><td>135</td><td>136</td><td>18,360</td><td>2,478,600</td><td>334,611,000</td></tr><tr><td>140-</td><td>145</td><td>83</td><td>12,035</td><td>1,745,075</td><td>253,035,875</td></tr><tr><td>150-</td><td>155</td><td>43</td><td>6,665</td><td>1,033,075</td><td>160,126,625</td></tr><tr><td>160-</td><td>165</td><td>41</td><td>6,765</td><td>1,116,225</td><td>184,177,125</td></tr><tr><td>170-</td><td>175</td><td>15</td><td>2,625</td><td>459,375</td><td>80,390,625</td></tr><tr><td>180-</td><td>185</td><td>8</td><td>1,480</td><td>273,800</td><td>50,653,000</td></tr><tr><td>190-</td><td>195</td><td>1</td><td>195</td><td>38,025</td><td>7,414,875</td></tr><tr><td>Totals</td><td></td><td>n =</td><td>$ \\sum z n(z) = $</td><td>$ \\sum z^{2} n(z) = $</td><td>$ \\sum z^{3} n(z) = $</td></tr><tr><td></td><td></td><td>1,003</td><td>119,255</td><td>14,812,275</td><td>1,913,429,875</td></tr></table>\n\n* For each weight category, $z$ is taken arbitrarily to be the midpoint of the measurement interval, so that for the interval 50-60, we take $z = 55$. The frequency of observations in each category, $f(z)$, is equal to $n(z)/n$, where $n(z)$ is the number of observations with phenotype $z$, and $n = \\sum n(z)$ is the total sample size.\n\nThe moments about the origin are obtained by dividing the weighted sums in the table by n,\n\n[[FORMULA:Genetics_chapter2_formula016]]\n\n[[FORMULA:Genetics_chapter2_formula017]]\n\n[[FORMULA:Genetics_chapter2_formula018]]\n\nThe variance estimated from the pooled data is\n\n[[FORMULA:Genetics_chapter2_formula019]]\n\nand application of Sheppard's correction, with $ \\omega = 10 $, reduces this to\n\n[[FORMULA:Genetics_chapter2_formula020]]\n\nThe coefficient of variation is then\n\n[[FORMULA:Genetics_chapter2_formula021]]\n\nFinally, the skewness and coefficient of skewness are\n\n[[FORMULA:Genetics_chapter2_formula022]]\n\n[[FORMULA:Genetics_chapter2_formula023]]",
+      "content_plain": "Example 3. Utilizing the data for maternal weight from Table 2.1, we now summarize the procedures for obtaining estimates of the first three moments.\n\n<table><tr><td>grams  ^{} </td><td>z</td><td>n(z)</td><td>z n(z)</td><td>z^{2} n(z)</td><td>z^{3} n(z)</td></tr><tr><td>50-</td><td>55</td><td>5</td><td>275</td><td>15,125</td><td>831,875</td></tr><tr><td>60-</td><td>65</td><td>9</td><td>585</td><td>38,025</td><td>2,471,625</td></tr><tr><td>70-</td><td>75</td><td>46</td><td>3,450</td><td>258,750</td><td>19,406,250</td></tr><tr><td>80-</td><td>85</td><td>63</td><td>5,355</td><td>455,175</td><td>38,689,875</td></tr><tr><td>90-</td><td>95</td><td>108</td><td>10,260</td><td>974,700</td><td>92,596,500</td></tr><tr><td>100-</td><td>105</td><td>146</td><td>15,330</td><td>1,609,650</td><td>169,013,250</td></tr><tr><td>110-</td><td>115</td><td>148</td><td>17,020</td><td>1,957,300</td><td>225,089,500</td></tr><tr><td>120-</td><td>125</td><td>151</td><td>18,875</td><td>2,359,375</td><td>294,921,875</td></tr><tr><td>130-</td><td>135</td><td>136</td><td>18,360</td><td>2,478,600</td><td>334,611,000</td></tr><tr><td>140-</td><td>145</td><td>83</td><td>12,035</td><td>1,745,075</td><td>253,035,875</td></tr><tr><td>150-</td><td>155</td><td>43</td><td>6,665</td><td>1,033,075</td><td>160,126,625</td></tr><tr><td>160-</td><td>165</td><td>41</td><td>6,765</td><td>1,116,225</td><td>184,177,125</td></tr><tr><td>170-</td><td>175</td><td>15</td><td>2,625</td><td>459,375</td><td>80,390,625</td></tr><tr><td>180-</td><td>185</td><td>8</td><td>1,480</td><td>273,800</td><td>50,653,000</td></tr><tr><td>190-</td><td>195</td><td>1</td><td>195</td><td>38,025</td><td>7,414,875</td></tr><tr><td>Totals</td><td></td><td>n =</td><td> \\sum z n(z) = </td><td> \\sum z^{2} n(z) = </td><td> \\sum z^{3} n(z) = </td></tr><tr><td></td><td></td><td>1,003</td><td>119,255</td><td>14,812,275</td><td>1,913,429,875</td></tr></table>\n\n For each weight category, z is taken arbitrarily to be the midpoint of the measurement interval, so that for the interval 50-60, we take z = 55. The frequency of observations in each category, f(z), is equal to n(z)/n, where n(z) is the number of observations with phenotype z, and n = \\sum n(z) is the total sample size.\n\nThe moments about the origin are obtained by dividing the weighted sums in the table by n,\n\n[[FORMULA:Genetics_chapter2_formula016]]\n\n[[FORMULA:Genetics_chapter2_formula017]]\n\n[[FORMULA:Genetics_chapter2_formula018]]\n\nThe variance estimated from the pooled data is\n\n[[FORMULA:Genetics_chapter2_formula019]]\n\nand application of Sheppard's correction, with  \\omega = 10 , reduces this to\n\n[[FORMULA:Genetics_chapter2_formula020]]\n\nThe coefficient of variation is then\n\n[[FORMULA:Genetics_chapter2_formula021]]\n\nFinally, the skewness and coefficient of skewness are\n\n[[FORMULA:Genetics_chapter2_formula022]]\n\n[[FORMULA:Genetics_chapter2_formula023]]",
+      "formula_refs": [
+        "Genetics_chapter2_formula016",
+        "Genetics_chapter2_formula017",
+        "Genetics_chapter2_formula018",
+        "Genetics_chapter2_formula019",
+        "Genetics_chapter2_formula020",
+        "Genetics_chapter2_formula021",
+        "Genetics_chapter2_formula022",
+        "Genetics_chapter2_formula023"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 43,
+          "y": 791.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 42
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter2:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter2:4",
+      "example_ref": "Genetics_chapter2:4",
+      "chapter": "Genetics_chapter2",
+      "label": "Example 4",
+      "title": "Example 4. It is known that if $y$ is a function of $z$, denoted by $f(z)$, then its probability density function is",
+      "source_file": "Genetics_chapter2_003.json",
+      "start_block_index": 8,
+      "end_source_file": "Genetics_chapter2_003.json",
+      "end_block_index": 12,
+      "block_ids": [
+        "p45:b6",
+        "p45:b7",
+        "p45:b8",
+        "p45:b9",
+        "p45:b10"
+      ],
+      "content_markdown": "Example 4. It is known that if $y$ is a function of $z$, denoted by $f(z)$, then its probability density function is\n\n[[FORMULA:Genetics_chapter2_formula026]]\n\nwhere $ \\left|\\cdots\\right| $ denotes absolute value. This transformation is valid provided that $ df(z)/dz $ exists and is nonzero for all $ z $ values for which $ p(z) > 0 $. This criterion is met by the standard normal deviate.\n\nLetting $ z' = f(z) = (z - \\mu)/\\sigma $, then $ df(z)/dz = \\sigma^{-1} $. Substituting the normal probability density function for $ p(z) $ recovers the standard normal or (unit normal) distribution,\n\n[[FORMULA:Genetics_chapter2_formula027]]",
+      "content_plain": "Example 4. It is known that if y is a function of z, denoted by f(z), then its probability density function is\n\n[[FORMULA:Genetics_chapter2_formula026]]\n\nwhere  \\left|\\cdots\\right|  denotes absolute value. This transformation is valid provided that  df(z)/dz  exists and is nonzero for all  z  values for which  p(z) > 0 . This criterion is met by the standard normal deviate.\n\nLetting  z' = f(z) = (z - \\mu)/\\sigma , then  df(z)/dz = \\sigma^{-1} . Substituting the normal probability density function for  p(z)  recovers the standard normal or (unit normal) distribution,\n\n[[FORMULA:Genetics_chapter2_formula027]]",
+      "formula_refs": [
+        "Genetics_chapter2_formula026",
+        "Genetics_chapter2_formula027"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 45,
+          "y": 1300.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 45
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter2:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter2:5",
+      "example_ref": "Genetics_chapter2:5",
+      "chapter": "Genetics_chapter2",
+      "label": "Example 5",
+      "title": "Example 5. Equation 2.14 can be used to answer another interesting question. What is the average absolute deviation from the mean, $ E(|z - \\mu|) $, for an individual drawn randoml",
+      "source_file": "Genetics_chapter2_004.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_chapter2_004.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p49:b2",
+        "p49:b3"
+      ],
+      "content_markdown": "Example 5. Equation 2.14 can be used to answer another interesting question. What is the average absolute deviation from the mean, $ E(|z - \\mu|) $, for an individual drawn randomly from a normally distributed population?\n\nSince the normal distribution is symmetrical, we can set $ \\Phi_T = 0.5 $ to obtain the average deviation to the right of the mean; the average deviation to the left of the mean will be identical in absolute value, but opposite in sign. Since the truncation point is the mean, $ z' = 0 $, which when applied to Equation 2.11 yields $ p_T = (2\\pi)^{-1/2} e^0 = 0.399 $. Substituting into Equation 2.14, we obtain $ (\\mu_s - \\mu) = 0.798 \\sigma $. Thus, the average absolute value of individual deviations from the mean is about 80% of the standard deviation. This quantity is known as the most probable error. Early in this century it was widely used by statisticians, but now the simple standard deviation is usually reported.",
+      "content_plain": "Example 5. Equation 2.14 can be used to answer another interesting question. What is the average absolute deviation from the mean,  E(|z - \\mu|) , for an individual drawn randomly from a normally distributed population?\n\nSince the normal distribution is symmetrical, we can set  \\Phi_T = 0.5  to obtain the average deviation to the right of the mean; the average deviation to the left of the mean will be identical in absolute value, but opposite in sign. Since the truncation point is the mean,  z' = 0 , which when applied to Equation 2.11 yields  p_T = (2\\pi)^{-1/2} e^0 = 0.399 . Substituting into Equation 2.14, we obtain  (\\mu_s - \\mu) = 0.798 \\sigma . Thus, the average absolute value of individual deviations from the mean is about 80% of the standard deviation. This quantity is known as the most probable error. Early in this century it was widely used by statisticians, but now the simple standard deviation is usually reported.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 49,
+          "y": 626.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 49
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter2:5]]",
+      "book": "Genetics"
+    }
+  ]
+}

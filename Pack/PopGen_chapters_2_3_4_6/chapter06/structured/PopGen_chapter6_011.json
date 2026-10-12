@@ -1,0 +1,285 @@
+{
+  "id": "PopGen_chapter6_011",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "6.2 POPULATION SUBDIVISION",
+    "subsections": [
+      "Wright's F Statistics"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "6.3"
+    ],
+    "section_level_1": "6.2 POPULATION SUBDIVISION",
+    "section_level_2": "Wright's F Statistics",
+    "heading_path": [
+      "6.2 POPULATION SUBDIVISION",
+      "Wright's F Statistics"
+    ],
+    "display_heading": "Wright's F Statistics",
+    "table_reference_keys": [
+      "chapter6:6.3"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p025:b4"
+      ],
+      "source_blocks": [
+        {
+          "source_block_id": "PopGen_chapter6:p025:b4",
+          "source_page": 295,
+          "bbox": [
+            108.0,
+            913.0,
+            366.0,
+            936.0
+          ],
+          "source_content_sha256": "d2c75333ebb63f2602f9695f6e0a412f2b872deb9925f74255ddcfa444235b56"
+        }
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "To quantify the inbreeding effect of population subdivision, Wright <sup>[780]</sup> defined what has come to be called the fixation index. This index equals the reduction in heterozygosity expected with random mating at any one level of a population hierarchy relative to another, more inclusive level of the hierarchy. The fixation index is a useful index of genetic differentiation because it allows an objective comparison of the overall effect of population structure among different organisms without getting into details of allele frequencies, observed levels of heterozygosity, and so forth. The genetic symbol for a fixation index is F embellished with subscripts denoting the levels of the hierarchy being compared. For example, $ F_{SR} $ is the fixation index of the subpopulations relative to the regional aggregates: $$ E_{SR}=\\frac{H_{R}-H_{S}}{H_{R}} $$",
+      "source_page": 295,
+      "source_pages": [
+        295
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p025:b5"
+      ],
+      "source_bboxes": [
+        [
+          102.0,
+          947.0,
+          859.0,
+          1241.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "97138451be85cecb7903bafa01c90c52707a7caf6325da3a8a234d0a1277ef7e",
+      "inline_styles": [
+        {
+          "start": 114,
+          "end": 128,
+          "style": "bold",
+          "text": "fixation index",
+          "source_page": 295,
+          "source_block_ids": [
+            "PopGen_chapter6:p025:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              947,
+              859,
+              1241
+            ]
+          ],
+          "source_content_sha256": "2808722eb6ffb78b02559738a64f5d6eec1536a5ae0380a69efbcca2f6b37b2e",
+          "source_content_hashes": {
+            "PopGen_chapter6:p025:b5": "2808722eb6ffb78b02559738a64f5d6eec1536a5ae0380a69efbcca2f6b37b2e"
+          },
+          "subject_index": null
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "discussion",
+      "content": "In words, Equation 6.9 defines $ F_{SR} $ as the decrease of heterozygosity among subpopulations within regions $ (H_{R}-H_{S}) $, relative to the heterozygosity among regions $ (H_{R}) $. For the Linanthus example in [[see_table:6.3]], $ F_{SR} = (0.1589 - 0.1424)/0.1589 = 0.1036 $.",
+      "source_page": 295,
+      "source_pages": [
+        295,
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p025:b7",
+        "PopGen_chapter6:p026:b1"
+      ],
+      "source_bboxes": [
+        [
+          101.0,
+          1322.0,
+          856.0,
+          1378.0
+        ],
+        [
+          274.0,
+          202.0,
+          1025.0,
+          253.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "cc45d2d632be30af7af9d9f4ca2181045658b774810803465f4a0e6cf09b16a9",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "At the next level of the hierarchy, we may define the fixation index $ F_{RT} $ as the proportionate reduction in heterozygosity of the regional aggregates relative to the total combined population: $$ F_{RT}=\\frac{H_{T}-H_{R}}{H_{T}} $$",
+      "source_page": 296,
+      "source_pages": [
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p026:b2",
+        "PopGen_chapter6:p026:b3"
+      ],
+      "source_bboxes": [
+        [
+          275.0,
+          256.0,
+          1026.0,
+          335.0
+        ],
+        [
+          577.0,
+          343.0,
+          726.0,
+          401.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "3469d817539a99945fdc1d0e93b0756a64450e68ec93cb1e4bf8abc413448808",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The data in [[see_table:6.3]] indicate that $ F_{RT} = (0.2371 - 0.1589)/0.2371 = 0.3299 $. Comparison of this value with $ F_{SR} $ above already makes it clear that there is substantially more variation among regions (as measured by $ F_{RT} $) than there is among subpopulations within regions (as measured by $ F_{SR} $). The comparison of the fixation indices at the two levels gives quantitative expression to the regional differences apparent in [[see_figure:6.13]].",
+      "source_page": 296,
+      "source_pages": [
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p026:b4"
+      ],
+      "source_bboxes": [
+        [
+          275.0,
+          416.0,
+          1026.0,
+          576.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "5501a06f5ff5e3ecafc181ad958cd95d15a4f15e6e131efbf668ab9a53925492",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The fixation index $ F_{ST} $ compares the least inclusive to the most inclusive levels of the population hierarchy and measures all effects of population structure combined: $$ F_{ST}=\\frac{H_{T}-H_{S}}{H_{T}} $$ From [[see_table:6.3]], $ F_{ST} = (0.2371 - 0.1424) / 0.2371 = 0.3993 $. The overall reduction in average heterozygosity is therefore close to 40% of the total heterozygosity—a very substantial effect.",
+      "source_page": 296,
+      "source_pages": [
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p026:b5",
+        "PopGen_chapter6:p026:b6",
+        "PopGen_chapter6:p026:b7"
+      ],
+      "source_bboxes": [
+        [
+          276.0,
+          579.0,
+          1027.0,
+          655.0
+        ],
+        [
+          580.0,
+          661.0,
+          723.0,
+          719.0
+        ],
+        [
+          276.0,
+          739.0,
+          1028.0,
+          818.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "8c7e549d53b9eaf1a9f8133e189ed55ebb83568219f167a681f4cb748727ff06",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The hierarchical F-statistics defined in Equations 6.9 through 6.11 are all types of fixation indices, but they differ in the reference populations: $ F_{SR} $ is concerned with subpopulations (S) relative to the regional aggregates (R), $ F_{RT} $ is concerned with the regional groupings relative to the total population (T), and $ F_{ST} $ is concerned with the subpopulations relative to the total population. The index $ F_{ST} $ is the most inclusive measure of population subdivision.",
+      "source_page": 296,
+      "source_pages": [
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p026:b8"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          820.0,
+          1030.0,
+          979.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "da1657e30be9cf8b7cd2585039c3c40d8c2dd4f6098281c59341f79a8b50bcb6",
+      "inline_styles": [
+        {
+          "start": 4,
+          "end": 29,
+          "style": "bold",
+          "text": "hierarchical F-statistics",
+          "source_page": 296,
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b8"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              820,
+              1030,
+              979
+            ]
+          ],
+          "source_content_sha256": "69fb05b028c3eed5bd669b3e062047b3b1b8ebfc221b38edfc538d98e025320a",
+          "source_content_hashes": {
+            "PopGen_chapter6:p026:b8": "69fb05b028c3eed5bd669b3e062047b3b1b8ebfc221b38edfc538d98e025320a"
+          },
+          "subject_index": null
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "discussion",
+      "content": "The mathematical relation between the three types of F statistics is demonstrated in the following problem.",
+      "source_page": 296,
+      "source_pages": [
+        296
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p026:b9"
+      ],
+      "source_bboxes": [
+        [
+          277.0,
+          980.0,
+          1029.0,
+          1032.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "3c27ecaa1808355af874fda26f443ab1c3ac10c1b86e83992d2b7192b410ae6a",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

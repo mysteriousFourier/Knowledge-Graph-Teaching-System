@@ -1,0 +1,1380 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter4",
+  "count": 31,
+  "terms": [
+    {
+      "id": "PopGen_term_0186",
+      "text": "allelic configuration",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_009",
+          "block_index": 1,
+          "start": 511,
+          "end": 532,
+          "context": "nd six alleles each represented only once. Such a description of the sample is called the allelic configuration of the sample. A remarkable finding of Ewens (1972) was that the expected allelic configu",
+          "source_page": 181,
+          "source_block_ids": [
+            "PopGen_chapter4:p017:b2"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              412,
+              870,
+              781
+            ]
+          ],
+          "source_content_sha256": "ccc7fd8130c2583230ad760f775269c146a43e563459cfa7b8721bf2bb9f4c46",
+          "source_content_hashes": {
+            "PopGen_chapter4:p017:b2": "ccc7fd8130c2583230ad760f775269c146a43e563459cfa7b8721bf2bb9f4c46"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0184",
+      "text": "allozygous",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 3,
+          "start": 207,
+          "end": 217,
+          "context": "to be autozygous, and one in which the alleles are not identical by descent is said to be allozygous. There is some ambiguity in the concept of identity by descent, because the coalescent pr",
+          "source_page": 177,
+          "source_block_ids": [
+            "PopGen_chapter4:p013:b2"
+          ],
+          "source_bboxes": [
+            [
+              116,
+              435,
+              871,
+              671
+            ]
+          ],
+          "source_content_sha256": "861dd5665899e96a549260427ab95d72ecbf28809d107fb76013ad9ddd044dd7",
+          "source_content_hashes": {
+            "PopGen_chapter4:p013:b2": "861dd5665899e96a549260427ab95d72ecbf28809d107fb76013ad9ddd044dd7"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 3,
+          "start": 139,
+          "end": 149,
+          "context": "2}\\alpha_{1}$, the alleles are not identical by descent, and the individual is said to be allozygous (the prefix allo means other). Note that the concepts of autozygosity and allozygosity ha",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0183",
+      "text": "autozygous",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 3,
+          "start": 123,
+          "end": 133,
+          "context": "enetics, a genotype in which the alleles are identical by descent is sometimes said to be autozygous, and one in which the alleles are not identical by descent is said to be allozygous. Ther",
+          "source_page": 177,
+          "source_block_ids": [
+            "PopGen_chapter4:p013:b2"
+          ],
+          "source_bboxes": [
+            [
+              116,
+              435,
+              871,
+              671
+            ]
+          ],
+          "source_content_sha256": "861dd5665899e96a549260427ab95d72ecbf28809d107fb76013ad9ddd044dd7",
+          "source_content_hashes": {
+            "PopGen_chapter4:p013:b2": "861dd5665899e96a549260427ab95d72ecbf28809d107fb76013ad9ddd044dd7"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 2,
+          "start": 789,
+          "end": 799,
+          "context": "alpha_2\\alpha_2 $, the alleles are identical by descent, and the individual is said to be autozygous (the prefix auto means self).",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b5"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1166,
+              1031,
+              1377
+            ]
+          ],
+          "source_content_sha256": "1991cb4d2f3331cace9b8ba0c7cb9d093dac5b4cf5ddcf27f8b960be03b26aa8",
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b5": "1991cb4d2f3331cace9b8ba0c7cb9d093dac5b4cf5ddcf27f8b960be03b26aa8"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0196",
+      "text": "conjugation",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 0,
+          "start": 453,
+          "end": 464,
+          "context": "DNA fragment is carried from the donor to the recipient by means of a virus particle; and conjugation, in which a replica of the chromosome from a donor cell is transferred into a recipient c",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0176",
+      "text": "Drosophila mauritiana",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 8,
+          "start": 51,
+          "end": 72,
+          "context": "PROBLEM 4.1 A genetic factor has been described in Drosophila mauritiana that results in the spontaneous deletion of the transposable genetic element mariner at a",
+          "source_page": 169,
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              968,
+              548,
+              1164
+            ]
+          ],
+          "source_content_sha256": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251",
+          "source_content_hashes": {
+            "PopGen_chapter4:p005:b3": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_022",
+          "block_index": 1,
+          "start": 580,
+          "end": 601,
+          "context": "li 1995). From an extensive set of experiments in which discrete regions of the genome of Drosophila mauritiana were introduced (introgressed) into the genome of its sibling species D. simulans, the de",
+          "source_page": 510,
+          "source_block_ids": [
+            "PopGen_chapter9:p028:b1"
+          ],
+          "source_bboxes": [
+            [
+              199.0,
+              143.0,
+              709.0,
+              362.0
+            ]
+          ],
+          "source_content_sha256": "8ed653537c0cbc6632cc0c9a1270c70856d5e017de00d8461cfa0045585f6d51",
+          "source_content_hashes": {
+            "PopGen_chapter9:p028:b1": "8ed653537c0cbc6632cc0c9a1270c70856d5e017de00d8461cfa0045585f6d51"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0198",
+      "text": "E. coli",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 1,
+          "start": 540,
+          "end": 547,
+          "context": "s (DuBose et al. 1988). An example from the phoA gene, coding for alkaline phosphatase in E. coli, is illustrated in Figure 4.17. Among the polymorphic nucleotide sites indicated, the uni",
+          "source_page": 202,
+          "source_block_ids": [
+            "PopGen_chapter4:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              825,
+              1019,
+              1275
+            ]
+          ],
+          "source_content_sha256": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812",
+          "source_content_hashes": {
+            "PopGen_chapter4:p038:b5": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 403,
+          "end": 410,
+          "context": "cipient chromosome, and the linkage phase between more distant alleles is maintained. The E. coli chromosome, therefore, consists of clonal segments from a common ancestor, which is calle",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1158,
+          "end": 1165,
+          "context": "erent genes having different coalescent histories. Although gene trees in species such as E. coli and Hemophilus influenzae show good congruence, the gene trees for a sample of genes from",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_021",
+          "block_index": 7,
+          "start": 53,
+          "end": 60,
+          "context": "10. The genomes of some species of bacteria, such as E. coli, show extensive linkage disequilibrium over long genetic distances in spite of the fact t",
+          "source_page": 206,
+          "source_block_ids": [
+            "PopGen_chapter4:p042:b7"
+          ],
+          "source_bboxes": [
+            [
+              264,
+              928,
+              1018,
+              1057
+            ]
+          ],
+          "source_content_sha256": "f55113bdc900d9c4cec067f7be044d757b65ec6034b6cfb59c477df18e4c90fa",
+          "source_content_hashes": {
+            "PopGen_chapter4:p042:b7": "f55113bdc900d9c4cec067f7be044d757b65ec6034b6cfb59c477df18e4c90fa"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_023",
+          "block_index": 1,
+          "start": 714,
+          "end": 721,
+          "context": "substitutions away from this codon.Application of this kind of approach for codon bias in E. coli suggested an average selection coefficient against disfavored codons of about s = 7.3 × 1",
+          "source_page": 364,
+          "source_block_ids": [
+            "PopGen_chapter7:p034:b2"
+          ],
+          "source_bboxes": [
+            [
+              183.0,
+              424.0,
+              700.0,
+              697.0
+            ]
+          ],
+          "source_content_sha256": "5aab5ef736e1461b9c5822bfb33eed72d3525a5dbc40215a9181a18540e58e8b",
+          "source_content_hashes": {
+            "PopGen_chapter7:p034:b2": "5aab5ef736e1461b9c5822bfb33eed72d3525a5dbc40215a9181a18540e58e8b"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_027",
+          "block_index": 1,
+          "start": 46,
+          "end": 53,
+          "context": "Population models of transposable elements in E. coli are greatly simplified because the organism has asexual reproduction, a low rate of recom",
+          "source_page": 516,
+          "source_block_ids": [
+            "PopGen_chapter9:p034:b3"
+          ],
+          "source_bboxes": [
+            [
+              186.0,
+              397.0,
+              703.0,
+              507.0
+            ]
+          ],
+          "source_content_sha256": "ed71b52560f0eb4503038c00d400ade8a98b9654f4b2c500ceac8d3b351061e0",
+          "source_content_hashes": {
+            "PopGen_chapter9:p034:b3": "ed71b52560f0eb4503038c00d400ade8a98b9654f4b2c500ceac8d3b351061e0"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_027",
+          "block_index": 8,
+          "start": 78,
+          "end": 85,
+          "context": "Equation 9.3 can be applied to the concrete case of insertion sequence IS30in E. coli, in which the distribution of numbers among 71 strains fits a model with α = 1/2 and φ = ",
+          "source_page": 517,
+          "source_block_ids": [
+            "PopGen_chapter9:p035:b3"
+          ],
+          "source_bboxes": [
+            [
+              85.0,
+              711.0,
+              603.0,
+              968.0
+            ]
+          ],
+          "source_content_sha256": "3b55a568fbc7c74ec5ba7dcb96e68cf5210948578a6d6da55dd9f397712a47c1",
+          "source_content_hashes": {
+            "PopGen_chapter9:p035:b3": "3b55a568fbc7c74ec5ba7dcb96e68cf5210948578a6d6da55dd9f397712a47c1"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0178",
+      "text": "equilibrium value",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_004",
+          "block_index": 3,
+          "start": 499,
+          "end": 516,
+          "context": "value that remains the same generation after generation. Such a value of $p$ is called an equilibrium value, which we will denote by $\\hat{p}$. In case of reversible mutation, the equilibrium is fo",
+          "source_page": 170,
+          "source_block_ids": [
+            "PopGen_chapter4:p006:b9"
+          ],
+          "source_bboxes": [
+            [
+              255,
+              956,
+              1013,
+              1194
+            ]
+          ],
+          "source_content_sha256": "182dfdd639224e349b2625c67c8daf7325c3db5105e9b3bb341caa26721e3a8c",
+          "source_content_hashes": {
+            "PopGen_chapter4:p006:b9": "182dfdd639224e349b2625c67c8daf7325c3db5105e9b3bb341caa26721e3a8c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0199",
+      "text": "Hemophilus influenzae",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1170,
+          "end": 1191,
+          "context": "having different coalescent histories. Although gene trees in species such as E. coli and Hemophilus influenzae show good congruence, the gene trees for a sample of genes from Serratia marcescens, Neis",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0185",
+      "text": "identity",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_009",
+          "block_index": 0,
+          "start": 1545,
+          "end": 1553,
+          "context": "hat, even though the most common allele is expected to have a frequency of $ p_{1} $, the identity of the most common allele will change with time. In the steady-state population, not all ",
+          "source_page": 181,
+          "source_block_ids": [
+            "PopGen_chapter4:p017:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              199,
+              874,
+              408
+            ]
+          ],
+          "source_content_sha256": "a2e90b20db53b4c932e8510a06d74f6404fa9cec917dd46aa945d7fce208d3e9",
+          "source_content_hashes": {
+            "PopGen_chapter4:p017:b1": "a2e90b20db53b4c932e8510a06d74f6404fa9cec917dd46aa945d7fce208d3e9"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0182",
+      "text": "identity by descent",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 2,
+          "start": 193,
+          "end": 212,
+          "context": "cent because of the assumption that each mutation creates a unique allele. The concept of identity by descent may be made clear with reference to Figure 4.5, where each allele is assigned a unique id",
+          "source_page": 176,
+          "source_block_ids": [
+            "PopGen_chapter4:p012:b6"
+          ],
+          "source_bboxes": [
+            [
+              265,
+              1272,
+              1020,
+              1377
+            ]
+          ],
+          "source_content_sha256": "5f3fe5c18f2a8fc5a8610c8859c1aca126e8c1fde895506aad4a0f793ae970c1",
+          "source_content_hashes": {
+            "PopGen_chapter4:p012:b6": "5f3fe5c18f2a8fc5a8610c8859c1aca126e8c1fde895506aad4a0f793ae970c1"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0181",
+      "text": "infinite-alleles model",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_008",
+          "block_index": 1,
+          "start": 555,
+          "end": 577,
+          "context": "ation creates an allele that does not already exist in the population. This is called the infinite-alleles model of mutation. The infinite-alleles model is but one way to specify the characteristics of ",
+          "source_page": 176,
+          "source_block_ids": [
+            "PopGen_chapter4:p012:b5"
+          ],
+          "source_bboxes": [
+            [
+              263,
+              951,
+              1019,
+              1268
+            ]
+          ],
+          "source_content_sha256": "8f5334ee3867badf4f57c6d9bc5c003a6db47a0caebb3d9d26e8bf8eabf114cc",
+          "source_content_hashes": {
+            "PopGen_chapter4:p012:b5": "8f5334ee3867badf4f57c6d9bc5c003a6db47a0caebb3d9d26e8bf8eabf114cc"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_004",
+          "block_index": 2,
+          "start": 440,
+          "end": 462,
+          "context": "tral mutation rate. The model of mutation in which each new allele is novel is called the infinite-alleles model of mutation. The quantity 4N µ, which appears frequently in the neutral theory, is often ",
+          "source_page": 334,
+          "source_block_ids": [
+            "PopGen_chapter7:p004:b5"
+          ],
+          "source_bboxes": [
+            [
+              191.0,
+              672.0,
+              702.0,
+              928.0
+            ]
+          ],
+          "source_content_sha256": "4903010e2fb896b0ece4f7313c94c38eea1b60730fb2f4c106309bc0bfed4ab5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p004:b5": "4903010e2fb896b0ece4f7313c94c38eea1b60730fb2f4c106309bc0bfed4ab5"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_004",
+          "block_index": 2,
+          "start": 736,
+          "end": 758,
+          "context": "osity equals one minus the homozygosity, the average heterozygosity at equilibrium in the infinite-alleles model equals θ/(1 + θ). Larger populations are expected to have a higher heterozygosity, as ref",
+          "source_page": 334,
+          "source_block_ids": [
+            "PopGen_chapter7:p004:b5"
+          ],
+          "source_bboxes": [
+            [
+              191.0,
+              672.0,
+              702.0,
+              928.0
+            ]
+          ],
+          "source_content_sha256": "4903010e2fb896b0ece4f7313c94c38eea1b60730fb2f4c106309bc0bfed4ab5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p004:b5": "4903010e2fb896b0ece4f7313c94c38eea1b60730fb2f4c106309bc0bfed4ab5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0175",
+      "text": "irreversible",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 1,
+          "start": 343,
+          "end": 355,
+          "context": "tion does not appreciably influence their frequency. We will also assume that mutation is irreversible, which means that a cannot reverse-mutate to A. To avoid complications resulting from cha",
+          "source_page": 166,
+          "source_block_ids": [
+            "PopGen_chapter4:p002:b4"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              880,
+              1022,
+              1090
+            ]
+          ],
+          "source_content_sha256": "556a4dbf0e2a433a34bd499109255ca61b2a75db0f8283dd4d08f1acff7bc71a",
+          "source_content_hashes": {
+            "PopGen_chapter4:p002:b4": "556a4dbf0e2a433a34bd499109255ca61b2a75db0f8283dd4d08f1acff7bc71a"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0177",
+      "text": "mariner",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 8,
+          "start": 150,
+          "end": 157,
+          "context": "a mauritiana that results in the spontaneous deletion of the transposable genetic element mariner at a frequency of approximately 1% per generation for each copy (Hartl 2001). In a popula",
+          "source_page": 169,
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              968,
+              548,
+              1164
+            ]
+          ],
+          "source_content_sha256": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251",
+          "source_content_hashes": {
+            "PopGen_chapter4:p005:b3": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 8,
+          "start": 292,
+          "end": 299,
+          "context": "ation for each copy (Hartl 2001). In a population containing an autosomal site at which a mariner insertion is fixed (homozygous), how many generations would be required for the frequency",
+          "source_page": 169,
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              968,
+              548,
+              1164
+            ]
+          ],
+          "source_content_sha256": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251",
+          "source_content_hashes": {
+            "PopGen_chapter4:p005:b3": "f86d983ed62cb1307050f1936c686ec53567066d2aafd221425c62971a939251"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 9,
+          "start": 65,
+          "end": 72,
+          "context": "ANSWER. Let $ p_t $ be the frequency of chromosomes in which the mariner element remains undeleted in generation $ t $, and let $ \\mu = 0.01 $ be the probability ",
+          "source_page": 169,
+          "source_block_ids": [
+            "PopGen_chapter4:p005:b4"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              1202,
+              544,
+              1325
+            ]
+          ],
+          "source_content_sha256": "d45ba9398f8b28096c3965456ca367301a323a2fd78597c53cf42856365324bf",
+          "source_content_hashes": {
+            "PopGen_chapter4:p005:b4": "d45ba9398f8b28096c3965456ca367301a323a2fd78597c53cf42856365324bf"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0193",
+      "text": "Muller's ratchet",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_017",
+          "block_index": 1,
+          "start": 97,
+          "end": 113,
+          "context": "ual organisms, the accumulation of deleterious mutations in small populations is known as Muller's ratchet (Muller 1964). To understand this process, consider the experiment diagrammed in Figure 4",
+          "source_page": 199,
+          "source_block_ids": [
+            "PopGen_chapter4:p035:b5"
+          ],
+          "source_bboxes": [
+            [
+              104,
+              1245,
+              862,
+              1378
+            ]
+          ],
+          "source_content_sha256": "14ea70245fb61408b342840fba95ed296bad17ae638725f5c68c1d279e5e8262",
+          "source_content_hashes": {
+            "PopGen_chapter4:p035:b5": "14ea70245fb61408b342840fba95ed296bad17ae638725f5c68c1d279e5e8262"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0174",
+      "text": "mutation pressure",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_003",
+          "block_index": 0,
+          "start": 863,
+          "end": 880,
+          "context": "Hence, the tendency for allele frequency to change as a result of recurrent mutation (the mutation pressure) is very small. On the other hand, the cumulative effects of mutation over long periods o",
+          "source_page": 166,
+          "source_block_ids": [
+            "PopGen_chapter4:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              532,
+              1021,
+              877
+            ]
+          ],
+          "source_content_sha256": "b5bfc3559b1edd513fc671dd3d2f1c96aa1e2b12d4209bdd89aa1b0037186717",
+          "source_content_hashes": {
+            "PopGen_chapter4:p002:b3": "b5bfc3559b1edd513fc671dd3d2f1c96aa1e2b12d4209bdd89aa1b0037186717"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0201",
+      "text": "Neisseria meningitidis",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1277,
+          "end": 1299,
+          "context": "nzae show good congruence, the gene trees for a sample of genes from Serratia marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphylococcus aureus show no bett",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0180",
+      "text": "neutral theory",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_007",
+          "block_index": 0,
+          "start": 184,
+          "end": 198,
+          "context": "ned by a balance between the effects of mutation and random genetic drift is known as the neutral theory (Kimura 1968a; King and Jukes 1969). Mutation introduces new alleles into a population, a",
+          "source_page": 175,
+          "source_block_ids": [
+            "PopGen_chapter4:p011:b4"
+          ],
+          "source_bboxes": [
+            [
+              111,
+              784,
+              864,
+              1019
+            ]
+          ],
+          "source_content_sha256": "0fc34bd7abae39185f1eb4fa0827eef39a3d50298558e7c811f070db8d7f1727",
+          "source_content_hashes": {
+            "PopGen_chapter4:p011:b4": "0fc34bd7abae39185f1eb4fa0827eef39a3d50298558e7c811f070db8d7f1727"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0192",
+      "text": "nonsingleton polymorphism",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_014",
+          "block_index": 6,
+          "start": 231,
+          "end": 256,
+          "context": "lymorphism in the sample. Similarly, every mutation along an internal branch results in a nonsingleton polymorphism in the sample. Therefore, the numbers of singleton and nonsingleton polymorphisms in the ",
+          "source_page": 194,
+          "source_block_ids": [
+            "PopGen_chapter4:p030:b8"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              929,
+              1028,
+              1087
+            ]
+          ],
+          "source_content_sha256": "795a05716c4226273a95d9eba997e7359bad44d408b09d2b025bee8ee3de663c",
+          "source_content_hashes": {
+            "PopGen_chapter4:p030:b8": "795a05716c4226273a95d9eba997e7359bad44d408b09d2b025bee8ee3de663c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0189",
+      "text": "nucleotide diversity",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_012",
+          "block_index": 2,
+          "start": 197,
+          "end": 217,
+          "context": "is quantity does have an established symbol, namely $ \\pi = \\Pi/L $, and it is called the nucleotide diversity (Nei and Li 1979). Because L is a constant, the mean and variance of $ \\pi $ are given by",
+          "source_page": 190,
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b4"
+          ],
+          "source_bboxes": [
+            [
+              270,
+              635,
+              1022,
+              739
+            ]
+          ],
+          "source_content_sha256": "19e2cd9ebe3ec863c73afa124962f197e6177d0f36c8122c1b6d3e6840a4a1ab",
+          "source_content_hashes": {
+            "PopGen_chapter4:p026:b4": "19e2cd9ebe3ec863c73afa124962f197e6177d0f36c8122c1b6d3e6840a4a1ab"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0188",
+      "text": "nucleotide polymorphism",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_012",
+          "block_index": 0,
+          "start": 673,
+          "end": 696,
+          "context": "als S/L. There is no established symbol for this quantity, but it is sometimes called the nucleotide polymorphism. For the sake of consistency, we shall denote the nucleotide polymorphism by the symbol $",
+          "source_page": 190,
+          "source_block_ids": [
+            "PopGen_chapter4:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              205,
+              1020,
+              444
+            ]
+          ],
+          "source_content_sha256": "56a512e5ecb368a9208f7b9de3838be9df0d6497ef0f8f94eb37480dc4cae281",
+          "source_content_hashes": {
+            "PopGen_chapter4:p026:b1": "56a512e5ecb368a9208f7b9de3838be9df0d6497ef0f8f94eb37480dc4cae281"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0197",
+      "text": "phoA",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 1,
+          "start": 494,
+          "end": 498,
+          "context": " segments have different phylogenetic histories (DuBose et al. 1988). An example from the phoA gene, coding for alkaline phosphatase in E. coli, is illustrated in Figure 4.17. Among th",
+          "source_page": 202,
+          "source_block_ids": [
+            "PopGen_chapter4:p038:b5"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              825,
+              1019,
+              1275
+            ]
+          ],
+          "source_content_sha256": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812",
+          "source_content_hashes": {
+            "PopGen_chapter4:p038:b5": "89b8b046d60f164fcee480926f0bbc9d18e35ac020b5c8a8b0153830723c6812"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0179",
+      "text": "Salmonella enterica",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_004",
+          "block_index": 6,
+          "start": 26,
+          "end": 45,
+          "context": "PROBLEM 4.2 The bacterium Salmonella enterica has a genetic switching mechanism that regulates the production of alternative forms of a",
+          "source_page": 171,
+          "source_block_ids": [
+            "PopGen_chapter4:p007:b4"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              950,
+              550,
+              1342
+            ]
+          ],
+          "source_content_sha256": "270fa63b47ed1f9a5523af73734faf70b0cd2e25d59dffc9bfe3ec1b7ae14c79",
+          "source_content_hashes": {
+            "PopGen_chapter4:p007:b4": "270fa63b47ed1f9a5523af73734faf70b0cd2e25d59dffc9bfe3ec1b7ae14c79"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_017",
+          "block_index": 3,
+          "start": 815,
+          "end": 834,
+          "context": "xation of spontaneous deletions. In an experiment like that in Figure 4.16 carried out in Salmonella enterica, observed deletions ranged in size from 1–200 kb, and the average rate of DNA loss per ge",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b2"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              337,
+              876,
+              707
+            ]
+          ],
+          "source_content_sha256": "fe10bc667a826f12ff8eba57ae1f1c5c0911440b002b2663b7e7fcbdbeb2c6d5",
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b2": "fe10bc667a826f12ff8eba57ae1f1c5c0911440b002b2663b7e7fcbdbeb2c6d5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0187",
+      "text": "segregating sites",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_011",
+          "block_index": 2,
+          "start": 716,
+          "end": 733,
+          "context": "tide sites in the sample that are occupied by two or more nucleotides. These are known as segregating sites, and in Chapters 1 and 3 we denoted the number of segregating sites as S. Among the four ",
+          "source_page": 187,
+          "source_block_ids": [
+            "PopGen_chapter4:p023:b1"
+          ],
+          "source_bboxes": [
+            [
+              122,
+              203,
+              866,
+              334
+            ]
+          ],
+          "source_content_sha256": "0eb41b9f35ffac0e9939dbd4461382ffcba41f1d7f07da8dd205ba5895e304bd",
+          "source_content_hashes": {
+            "PopGen_chapter4:p023:b1": "0eb41b9f35ffac0e9939dbd4461382ffcba41f1d7f07da8dd205ba5895e304bd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0200",
+      "text": "Serratia marcescens",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1256,
+          "end": 1275,
+          "context": "and Hemophilus influenzae show good congruence, the gene trees for a sample of genes from Serratia marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphyloco",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0191",
+      "text": "singleton polymorphism",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_014",
+          "block_index": 6,
+          "start": 129,
+          "end": 151,
+          "context": "branches from internal braches is that any mutation along an external branch results in a singleton polymorphism in the sample. Similarly, every mutation along an internal branch results in a nonsinglet",
+          "source_page": 194,
+          "source_block_ids": [
+            "PopGen_chapter4:p030:b8"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              929,
+              1028,
+              1087
+            ]
+          ],
+          "source_content_sha256": "795a05716c4226273a95d9eba997e7359bad44d408b09d2b025bee8ee3de663c",
+          "source_content_hashes": {
+            "PopGen_chapter4:p030:b8": "795a05716c4226273a95d9eba997e7359bad44d408b09d2b025bee8ee3de663c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0204",
+      "text": "Staphylococcus aureus",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1355,
+          "end": 1376,
+          "context": "marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphylococcus aureus show no better congruence with each other than with trees of random topology (Feil et al.",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0202",
+      "text": "Streptococcus pneumoniae",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1301,
+          "end": 1325,
+          "context": "e, the gene trees for a sample of genes from Serratia marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphylococcus aureus show no better congruence with each ot",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0203",
+      "text": "Streptococcus pyogenes",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 2,
+          "start": 1327,
+          "end": 1349,
+          "context": "mple of genes from Serratia marcescens, Neisseria meningitidis, Streptococcus pneumoniae, Streptococcus pyogenes, and Staphylococcus aureus show no better congruence with each other than with trees of r",
+          "source_page": 203,
+          "source_block_ids": [
+            "PopGen_chapter4:p039:b1"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              206,
+              872,
+              631
+            ]
+          ],
+          "source_content_sha256": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405",
+          "source_content_hashes": {
+            "PopGen_chapter4:p039:b1": "2e7037d2a0a7336558f845ff361b29c3a51fe93b2aaf22290000d3e0ca200405"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0190",
+      "text": "Tajima’s D",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_013",
+          "block_index": 7,
+          "start": 222,
+          "end": 232,
+          "context": "multiple of the standard deviation of the difference. The resulting statistic is known as Tajima’s D: $$ D=\\frac{\\prod-S/a}{\\sqrt{V(\\prod-S/a)}} $$",
+          "source_page": 192,
+          "source_block_ids": [
+            "PopGen_chapter4:p028:b2"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              472,
+              1021,
+              575
+            ]
+          ],
+          "source_content_sha256": "c673d186bc8afa7d7109ef0eb4e32a9a1ee7d74487c203ff1b80ec298aa605a5",
+          "source_content_hashes": {
+            "PopGen_chapter4:p028:b2": "c673d186bc8afa7d7109ef0eb4e32a9a1ee7d74487c203ff1b80ec298aa605a5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0195",
+      "text": "transduction",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 0,
+          "start": 338,
+          "end": 350,
+          "context": "ansformation, in which free DNA is taken up by the recipient from the surrounding medium; transduction, in which a DNA fragment is carried from the donor to the recipient by means of a virus p",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0194",
+      "text": "transformation",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_018",
+          "block_index": 0,
+          "start": 246,
+          "end": 260,
+          "context": "sferred from a donor cell into a recipient cell (Redfield 2001). These mechanisms include transformation, in which free DNA is taken up by the recipient from the surrounding medium; transduction",
+          "source_page": 201,
+          "source_block_ids": [
+            "PopGen_chapter4:p037:b5"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              1058,
+              871,
+              1380
+            ]
+          ],
+          "source_content_sha256": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70",
+          "source_content_hashes": {
+            "PopGen_chapter4:p037:b5": "8692b9fb9732bc549f3f40aa5ed8df03fda3ad5a6af2d32a2c9f66b9c80bcc70"
+          },
+          "subject_index": null
+        }
+      ]
+    }
+  ]
+}

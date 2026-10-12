@@ -1,0 +1,252 @@
+{
+  "id": "Genetics_chapter26_017",
+  "metadata": {
+    "chapter": "Genetics_chapter26",
+    "section": "JOINT ESTIMATION OF SEVERAL VECTORS OF RANDOM EFFECTS",
+    "subsections": [
+      "Maternal Effects"
+    ],
+    "section_level_1": "JOINT ESTIMATION OF SEVERAL VECTORS OF RANDOM EFFECTS",
+    "section_level_2": "Maternal Effects",
+    "heading_path": [
+      "JOINT ESTIMATION OF SEVERAL VECTORS OF RANDOM EFFECTS",
+      "Maternal Effects"
+    ],
+    "display_heading": "JOINT ESTIMATION OF SEVERAL VECTORS OF RANDOM EFFECTS / Maternal Effects",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b3"
+      ],
+      "bbox": [
+        64.0,
+        253.0,
+        276.0,
+        288.0
+      ],
+      "raw_text": "Maternal Effects"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As discussed in detail in Chapter 23, for species with maternal care, the phenotype of an individual can depend on both genetic and environmental components of maternal effects, in addition to the individual's direct additive genetic value and a random environmental deviation. As first pointed out by Quaas and Pollak (1981), Willham's (1963) model for maternal effects is readily incorporated into a mixed-model framework, allowing the estimation of breeding values as well as maternal genetic and environmental effects. Here we simply consider the animal-model framework, although application of the reduced animal model is also straightforward (Mrode 1996). The structure of the model is very similar to that provided above for dominance and for repeated measures, the main difference being the addition of a third vector of random effects.",
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b4"
+      ],
+      "bbox": [
+        56.0,
+        296.0,
+        1018.0,
+        665.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Letting $ \\beta $ denote the vector of fixed effects, a the vector of breeding (direct additive genetic) values, m the vector of genetic maternal effects, and c the vector of environmental maternal effects, the mixed-model becomes",
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b5"
+      ],
+      "bbox": [
+        53.0,
+        647.0,
+        1011.0,
+        760.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter26_formula111]]",
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b6"
+      ],
+      "bbox": [
+        330.0,
+        757.0,
+        731.0,
+        796.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\mathbf{Z}_{1} $, $ \\mathbf{Z}_{2} $, and $ \\mathbf{Z}_{3} $ are, respectively, the incidence matrices for random breeding values, genetic maternal effects, and environmental maternal effects. Assuming there are n individuals in the observation vector y (each with a single measure) and m mothers in the analysis (not all of which may have been observed), the vector of breeding values a contains q elements, where q is the total number of observations plus the number of unobserved mothers. The vectors of genetic maternal effects and environmental maternal effects are also $ q \\times 1 $, while that for residual deviations is $ n \\times 1 $. Assuming a single observation for each individual, $ \\mathbf{Z}_{1} $ has dimensionality $ n \\times q $ with all elements in each row being equal to zero except for a one in the column denoting the individual. $ \\mathbf{Z}_{2} $ also has dimensionality $ n \\times q $, and again consists entirely of zeros, with a one in each row denoting the individual's mother. Finally, $ \\mathbf{Z}_{3} $ has dimensionality $ n \\times q $, with all elements being equal to zero, except a single one in each row denoting the individual's mother. (Note that with this latter treatment, we assume that environmental maternal effects are not transmitted across generations. With cross-generational transmission, as in Falconer's model (Chapter 23), elements in $ \\mathbf{Z}_{3} $ involving maternal grandmothers and others in the maternal line may take on nonzero values.)\nThe breeding values genetic and environmental maternal effects are given by:",
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b8"
+      ],
+      "bbox": [
+        39.0,
+        793.0,
+        1010.0,
+        1357.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The breeding values, genetic and environmental maternal effects, and residual environmental effects are assumed to be random with respective variances $ \\sigma_{A_o}^2 $, $ \\sigma_{A_m}^2 $, $ \\sigma_{E_m}^2 $, and $ \\sigma_{E_s}^2 $. All effects are also assumed to be distributed independently except for the direct and maternal genetic effects, which may have covariance $ \\sigma_{A_o, A_m} $ due to pleiotropic gene effects. Letting $ \\mathbf{A} $ be the $ q \\times q $ relationship matrix, the covariance matrix of breeding values is $ \\sigma_{A_o}^2 \\mathbf{A} $, the covariance matrix of genetic maternal effects is $ \\sigma_{A_{m}}^{2} $ A, and the covariance matrix of direct and maternal genetic effects is $ \\sigma_{A_{o},A_{m}} $ A.",
+      "source_page": 785,
+      "printed_page": 765,
+      "source_block_ids": [
+        "p785:b9",
+        "p786:b2"
+      ],
+      "bbox": [
+        36.0,
+        1333.0,
+        995.0,
+        1548.0
+      ],
+      "source_page_end": 786
+    },
+    {
+      "type": "discussion",
+      "content": "The BLUEs and BLUPs for this model are the solutions to the following mixed-model equations:",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b3"
+      ],
+      "bbox": [
+        137.0,
+        187.0,
+        1095.0,
+        268.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter26_formula112]]",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b4"
+      ],
+      "bbox": [
+        218.0,
+        274.0,
+        1023.0,
+        781.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Letting the covariance matrix of direct and maternal genetic effects be",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b6"
+      ],
+      "bbox": [
+        149.0,
+        783.0,
+        983.0,
+        831.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter26_formula113]]",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b7"
+      ],
+      "bbox": [
+        472.0,
+        850.0,
+        781.0,
+        959.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and its inverse be",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b8"
+      ],
+      "bbox": [
+        155.0,
+        989.0,
+        374.0,
+        1024.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter26_formula114]]",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b9"
+      ],
+      "bbox": [
+        513.0,
+        1003.0,
+        750.0,
+        1079.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "then",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b10"
+      ],
+      "bbox": [
+        157.0,
+        1101.0,
+        222.0,
+        1132.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter26_formula115]]",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b11"
+      ],
+      "bbox": [
+        455.0,
+        1110.0,
+        818.0,
+        1190.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and $ \\lambda_{4}=\\sigma_{E_{s}}^{2}/\\sigma_{C}^{2}. $",
+      "source_page": 786,
+      "printed_page": 766,
+      "source_block_ids": [
+        "p786:b12"
+      ],
+      "bbox": [
+        159.0,
+        1207.0,
+        377.0,
+        1248.0
+      ]
+    }
+  ]
+}

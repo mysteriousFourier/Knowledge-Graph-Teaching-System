@@ -1,0 +1,146 @@
+{
+  "id": "Genetics_chapter5_002",
+  "metadata": {
+    "chapter": "Genetics_chapter5",
+    "section": "EPISTASIS",
+    "subsections": [],
+    "section_level_1": "EPISTASIS",
+    "section_level_2": null,
+    "heading_path": [
+      "EPISTASIS"
+    ],
+    "display_heading": "EPISTASIS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b4"
+      ],
+      "bbox": [
+        147.0,
+        523.0,
+        295.0,
+        557.0
+      ],
+      "raw_text": "EPISTASIS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "In the preceding chapter, the dominance effect at a locus was defined to be the deviation of the observed genotypic value from the expectation based on additive effects. Viewed in this manner, dominance is a measure of nonadditivity of allelic effects within loci. Epistasis describes the nonadditivity of effects between loci.",
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b5"
+      ],
+      "bbox": [
+        147.0,
+        569.0,
+        1107.0,
+        718.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A striking example of epistasis is responsible for a polymorphism in flower morphology in tristylous plants, a group including species of Eichhornia, Lythrum, Oxalis, and Pontederia (Weller 1976, Ganders 1979). Long-style morphs have short-and medium-length stamens, mid-style morphs have short and long stamens, and short-style morphs have medium and long stamens (Figure 5.1). Each morph is incompatible with plants of its own type but can freely cross with members of the other types. The polymorphism is determined by two diallelic loci, short and medium. The presence of an S allele at the first locus results in short-style plants regardless of the genotype at the second locus, whereas ss individuals are mid-styles if they carry an M allele but long-styles if they are mm. Thus, M is dominant to m, but the epistatic interaction of an S allele overrules this relationship.",
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b6"
+      ],
+      "bbox": [
+        150.0,
+        696.0,
+        1117.0,
+        1072.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "To provide a more quantitative description of epistasis, consider an individual with alleles $ A_i $ and $ A_j $ at one locus and $ B_k $ and $ B_l $ at another. Expanding from Equation 4.26, the genotypic value, $ G_{ijkl} $, can be written as the sum of the effects within loci and a deviation $ \\epsilon $ due to interaction between loci,",
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b7"
+      ],
+      "bbox": [
+        160.0,
+        1048.0,
+        1120.0,
+        1202.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter5_formula001]]",
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b8"
+      ],
+      "bbox": [
+        330.0,
+        1246.0,
+        961.0,
+        1295.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "When written in this manner, Equation 5.1 glosses over the considerable complexity of epistatic interactions. With only two loci, there are actually three ways in which interactions can arise between loci: additive × additive ( $ \\alpha\\alpha $), additive × dominance ( $ \\alpha\\delta $), and dominance × dominance ( $ \\delta\\delta $). With three loci, there are four additional types of epistasis, ( $ \\alpha\\alpha\\alpha $), ( $ \\alpha\\alpha\\delta $), ( $ \\alpha\\delta\\delta $), and ( $ \\delta\\delta\\delta $), and the number steadily grows with additional loci.",
+      "source_page": 98,
+      "printed_page": 78,
+      "source_block_ids": [
+        "p98:b10"
+      ],
+      "bbox": [
+        169.0,
+        1325.0,
+        1131.0,
+        1543.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:5.2]]",
+      "source_page": 99,
+      "printed_page": 79,
+      "source_block_ids": [
+        "p99:b3"
+      ],
+      "bbox": [
+        84.0,
+        1358.0,
+        952.0,
+        1495.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter5:1]]",
+      "source_page": 100,
+      "source_block_ids": [
+        "p100:b2",
+        "p100:b3",
+        "p100:b4",
+        "p100:b5",
+        "p100:b6",
+        "p101:b2"
+      ],
+      "bbox": [
+        180.0,
+        188.0,
+        1048.0,
+        502.0
+      ]
+    }
+  ]
+}

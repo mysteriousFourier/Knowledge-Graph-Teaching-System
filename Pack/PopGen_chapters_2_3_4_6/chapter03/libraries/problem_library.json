@@ -1,0 +1,1632 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter3",
+  "count": 30,
+  "problems": [
+    {
+      "id": "PopGen_problem_3_1",
+      "number": "3.1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 9,
+          "content": "PROBLEM 3.1 Consider a self-pollinating plant population consisting of a single heterozygous (Aa) individual on a small barren island. Suppose the plant reproduces and dies, so that the generations are discrete and the population can only consist of a single plant. What is the probability that the population is homozygous at this genetic locus by the second generation?",
+          "source_pages": [
+            115
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p007:b3",
+            "PopGen_chapter3:p007:b5"
+          ],
+          "source_bboxes": [
+            [
+              120.0,
+              982.0,
+              547.0,
+              1105.0
+            ],
+            [
+              574.0,
+              985.0,
+              1001.0,
+              1081.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 10,
+          "content": "ANSWER The chance that the first generation offspring is AA is $ \\frac{1}{4} $ and the chance that it is aa is also $ \\frac{1}{4} $, so the chance of fixation in one generation is $ \\frac{1}{2} $. If the first generation offspring is Aa, then the probability of fixation in the second generation (given that the population is not fixed in the first generation) is again $ \\frac{1}{2} $. The probability of not fixing in generation 1 and then fixing in generation 2 is $ \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4} $. Add to this the chance of fixing in one generation $ \\left(\\frac{1}{2}\\right) $, and we get $ \\frac{1}{2} + \\frac{1}{4} = \\frac{3}{4} $ as the probability of fixation by two generations. Note that the probability of not going to fixation each generation is $ \\frac{1}{2} $, and so the chance of not fixing for two generations is $ \\frac{1}{2} \\times \\frac{1}{2} $, which equals $ 1 - \\frac{3}{4} $.",
+          "source_pages": [
+            115
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p007:b4",
+            "PopGen_chapter3:p007:b6"
+          ],
+          "source_bboxes": [
+            [
+              116.0,
+              1146.0,
+              544.0,
+              1344.0
+            ],
+            [
+              570.0,
+              1149.0,
+              999.0,
+              1348.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_2",
+      "number": "3.2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 2,
+          "content": "PROBLEM 3.2 Consider a population of four diploid individuals. Calculate the probability that a population with four copies of allele A (allele frequency $ p = \\frac{1}{2} $) drifts in one generation to having three copies. What is the probability that the population will have four copies of A? Five copies? Now consider a population of the same size, but initially with two copies of A. What is its probability of drifting to one, two, or three copies?",
+          "source_pages": [
+            117
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p009:b3",
+            "PopGen_chapter3:p009:b4"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1173.0,
+              531.0,
+              1296.0
+            ],
+            [
+              558.0,
+              1176.0,
+              984.0,
+              1299.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 3,
+          "content": "ANSWER Applying Equation 3.2, we get $ T_{43} = [8!/(5!3!)](\\frac{1}{2})^8 = 7/32 = 0.219 $. $ T_{44} = [8!/(4!4!)](\\frac{1}{2})^8 = 70/256 = 0.273 $. $ T_{45} = 0.219 = T_{43} $. (Note that the binomial distribution is symmetric when $ p = \\frac{1}{2} $ so there is equal probability for samples that are symmetrically divergent from $ p = \\frac{1}{2} $.) In the case when the initial frequency is $ \\frac{1}{8} $ we get $ T_{21} = [8!/1!7!](\\frac{1}{4})(\\frac{3}{4})^7 = 0.267 $, $ T_{22} = [8!/(2!6!)](\\frac{1}{4})^2(\\frac{3}{4})^6 = 0.311 $, and $ T_{23} = [8!/(3!5!)](\\frac{1}{4})^3(\\frac{3}{4})^5 = 0.208 $.",
+          "source_pages": [
+            118
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p010:b1",
+            "PopGen_chapter3:p010:b4"
+          ],
+          "source_bboxes": [
+            [
+              120.0,
+              219.0,
+              550.0,
+              344.0
+            ],
+            [
+              577.0,
+              217.0,
+              1008.0,
+              343.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.2",
+          "resolved_id": "3.2",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            116
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p008:b7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_3",
+      "number": "3.3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 4,
+          "content": "PROBLEM 3.3 An alternative formulation of random genetic drift is due to Moran (1958). This model has considerable intuitive appeal, and it also permits explicit expressions to be derived for various quantities of evolutionary interest (Ewens 2004). The Moran model strictly applies only to haploid populations, but to make it comparable to the Wright-Fisher model we will suppose a population of 2N haploid individuals. In each generation, the drift process begins by sampling two individuals at random. The sampling is carried out \"with replacement,\" so the same individual could be chosen twice. If the two sampled individuals are different, pick one of them at random to produce a single offspring, and return the parent and the offspring to the population; discard the other individual. If the two sampled individuals are the same, then return only the offspring to the population. In the Moran model, if a population of 2N haploid individuals contains i of type A and 2N - i of type a, then the only nonzero transition probabilities are $ T_{ij} $ with $ j = i - 1 $, $ j = i $, or $ j = i + 1 $. These transition probabilities are given by $$ T_{ii}=\\frac{i^{2}+(2N-i)^{2}}{(2N)^{2}}=p^{2}+q^{2} $$ $$ T_{ij}=\\frac{i(2N-i)}{(2N)^{2}}=pq\\ for j=i+1 \\text{ or } j=i-1 $$",
+          "source_pages": [
+            118
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p010:b2",
+            "PopGen_chapter3:p010:b5"
+          ],
+          "source_bboxes": [
+            [
+              120.0,
+              424.0,
+              552.0,
+              866.0
+            ],
+            [
+              579.0,
+              421.0,
+              1008.0,
+              617.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 5,
+          "content": "Calculate the transition probabilities in the Moran model for the examples in Problem 3.2.",
+          "source_pages": [
+            118
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p010:b7"
+          ],
+          "source_bboxes": [
+            [
+              580.0,
+              774.0,
+              1009.0,
+              846.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 6,
+          "content": "ANSWER Applying Equation 3.3 to the case $ p = \\frac{4}{8} $, we obtain $ T_{34} = 0.25 $, $ T_{44} = 0.50 $, $ T_{45} = 0.25 $, and for the case $ p = \\frac{2}{8} $ we obtain $ T_{34} = 0.1875 $, $ T_{44} = 0.6250 $, $ T_{45} = 0.1875 $. Unlike the Wright-Fisher model, the transition probabilities, for either keeping the same number of alleles or else for increasing or decreasing by exactly 1, sum to 1.",
+          "source_pages": [
+            118
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p010:b3",
+            "PopGen_chapter3:p010:b8"
+          ],
+          "source_bboxes": [
+            [
+              123.0,
+              901.0,
+              553.0,
+              1003.0
+            ],
+            [
+              581.0,
+              897.0,
+              1010.0,
+              995.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.3",
+          "resolved_id": "3.3",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            118
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p010:b11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_4",
+      "number": "3.4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 8,
+          "content": "PROBLEM 3.4 Simulating random drift can be a very time-consuming proposition. If one wants to simulate a population of 1000 individuals for 1000 generations, one has to draw $ 10^6 $ random numbers and for each decide whether to accept or reject each genotype. Kimura (1980b) came up with a shortcut that relates very closely to how the diffusion approximation works (see the next section). The trick is to use the recursion: $ p' = p + (2U - 1) \\sqrt{(3pq/2N)} $, where U is a random number uniformly distributed in the range between 0 and 1. In each generation, you pick a random number U, and then calculate the realization of the next generation's allele frequency from the above recursion. Why does this approach work? (Hint: The variance in a uniform distribution is the square of the range divided by 12.)",
+          "source_pages": [
+            119
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p011:b2",
+            "PopGen_chapter3:p011:b4"
+          ],
+          "source_bboxes": [
+            [
+              108.0,
+              456.0,
+              540.0,
+              700.0
+            ],
+            [
+              566.0,
+              458.0,
+              992.0,
+              680.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 9,
+          "content": "ANSWER The expression 2U - 1, where U is a number between 0 and 1, yields a value from $ -1 $ to $ +1 $, or a range of 2. The range of $ (2U - 1)\\sqrt{(3pq/2N)} $ is therefore $ 2\\sqrt{(3pq/2N)} $. Squaring this expression and dividing by 12, the variance of this uniform random variable equals $ pq/2N $, which is exactly that from a binomial sampling distribution. Each generation the allele frequency has an equal chance of increasing or decreasing, and the variance in the allele frequency change is $ pq/2N $. Even though the distribution of change in allele frequency is uniform in the pseudosampling simulation instead of binomial (as it is in the Wright-Fisher model), this process can reproduce most of the results of the complete brute-force simulation at a tiny fraction of the computer time. The trade-off is that one must be a little careful when near the fixation states, because the algorithm as described can yield allele frequencies less than 0 or greater than 1.",
+          "source_pages": [
+            119
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p011:b3",
+            "PopGen_chapter3:p011:b5"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              738.0,
+              537.0,
+              1007.0
+            ],
+            [
+              562.0,
+              741.0,
+              989.0,
+              1008.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_5",
+      "number": "3.5",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_006",
+          "block_index": 7,
+          "content": "PROBLEM 3.5 For an initial frequency of the A allele of $p$ ($0 < p < 1$), show that $u(p) = p$ is a solution of the differential equation (see Equation 3.7).",
+          "source_pages": [
+            126
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p018:b1",
+            "PopGen_chapter3:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              127.0,
+              227.0,
+              559.0,
+              277.0
+            ],
+            [
+              587.0,
+              224.0,
+              1011.0,
+              273.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_006",
+          "block_index": 8,
+          "content": "ANSWER What needs to be shown is that Equation 3.7 is satisfied when $ u(p) = p $. Although $ V(p) = p(1 - p)/2N $, this is not relevant to the solution. The solution follows from the fact that, when $ u(p) = p $, then $ du(p)/dp = 1 $ and $ d^2u(p)/dp^2 = 0 $. Hence $ u(p) = p $ is a solution of Equation 3.7 so long as $ V(p) \\neq 0 $. The biological meaning of $ u(p) = p $ is that, because of random genetic drift, an allele present in a population at frequency $ p $ will ultimately be fixed with probability $ p $ and lost with probability $ 1 - p $, provided it has no effects on the organisms' ability to survive and reproduce (such alleles are often called selectively neutral alleles).",
+          "source_pages": [
+            126
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p018:b2",
+            "PopGen_chapter3:p018:b4"
+          ],
+          "source_bboxes": [
+            [
+              127.0,
+              312.0,
+              557.0,
+              509.0
+            ],
+            [
+              585.0,
+              309.0,
+              1012.0,
+              481.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.7",
+          "resolved_id": "3.7",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            125
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p017:b10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_6",
+      "number": "3.6",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 11,
+          "content": "PROBLEM 3.6 Use Equation 3.14 to determine the average length of time it would take for a finite population of size N to reduce its initial heterozygosity by a factor of two.",
+          "source_pages": [
+            133
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p025:b5",
+            "PopGen_chapter3:p025:b7"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              1018.0,
+              548.0,
+              1066.0
+            ],
+            [
+              576.0,
+              1018.0,
+              1003.0,
+              1067.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 12,
+          "content": "ANSWER Set $ H_t = \\frac{1}{2} H_0 = H_0 e^{-(t/2N)} $. Now divide both sides by $ H_0 $ and take the natural logarithm (base $ e $) to obtain $ \\ln(\\frac{1}{2}) = -t/(2N) $, or $ t = -2N \\ln(\\frac{1}{2}) = 1.39N $ generations. In words, this result says that it requires an average of 1.39N generations to halve the heterozygosity, whatever its initial value. Fisher (1918) showed that it also takes 1.39N generations to halve what he called the genic variance in the population. Since the variance of a binomial sample is $ pq/2N $, and the average heterozygosity in a population decreases in proportion to the variance in allele frequency among subpopulations, it follows that the average heterozygosity decreases at the same rate as the variance in allele frequency among subpopulations increases.",
+          "source_pages": [
+            133
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p025:b6",
+            "PopGen_chapter3:p025:b8"
+          ],
+          "source_bboxes": [
+            [
+              114.0,
+              1099.0,
+              545.0,
+              1322.0
+            ],
+            [
+              572.0,
+              1099.0,
+              1002.0,
+              1294.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.14",
+          "resolved_id": "3.14",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            131
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p023:b14"
+          ]
+        },
+        {
+          "type": "figure",
+          "id": "3.12",
+          "resolved_id": "3.12",
+          "status": "linked",
+          "link_method": "shared_source_block",
+          "library": "PopGen_figure_library.json",
+          "source_pages": [
+            133
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p025:b3",
+            "PopGen_chapter3:p025:b2",
+            "PopGen_chapter3:p025:b4",
+            "PopGen_chapter3:p025:b5",
+            "PopGen_chapter3:p025:b1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_7",
+      "number": "3.7",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_010",
+          "block_index": 4,
+          "content": "PROBLEM 3.7 Suppose a population went through a bottleneck as follows: $ N_{0} = 1000 $, $ N_{1} = 10 $, and $ N_{2} = 1000 $. Calculate the effective size of this population across all three generations.",
+          "source_pages": [
+            137
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p029:b2",
+            "PopGen_chapter3:p029:b4"
+          ],
+          "source_bboxes": [
+            [
+              123.0,
+              596.0,
+              552.0,
+              675.0
+            ],
+            [
+              581.0,
+              595.0,
+              1004.0,
+              643.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_010",
+          "block_index": 5,
+          "content": "ANSWER Using Equation 3.22, we get $ 1/N_e = \\left(\\frac{1}{3}\\right)\\left(\\frac{1}{1000} + \\frac{1}{10} + \\frac{1}{1000}\\right) = 0.034 $, or $ N_e = \\frac{1}{10.034} = 29.4 $. The average effective number over the three-generation period is only 29.4, whereas the arithmetic average number of individuals is $ \\left(\\frac{1}{3}\\right)(1000 + 10 + 1000) = 670 $.",
+          "source_pages": [
+            137
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p029:b3",
+            "PopGen_chapter3:p029:b5"
+          ],
+          "source_bboxes": [
+            [
+              121.0,
+              705.0,
+              551.0,
+              776.0
+            ],
+            [
+              578.0,
+              704.0,
+              1004.0,
+              778.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.22",
+          "resolved_id": "3.22",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            136
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p028:b23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_8",
+      "number": "3.8",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_011",
+          "block_index": 6,
+          "content": "PROBLEM 3.8 What is the effective population size for mitochondrial DNA? (Assume transmission is exclusively from mothers to all offspring.) What is the effective population size for a gene on the Y chromosome, given that the population consists of N diploid individuals and is in all respects a theoretically ideal population? (Assume XX individuals are female and XY individuals are male.)",
+          "source_pages": [
+            139
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p031:b7",
+            "PopGen_chapter3:p031:b9"
+          ],
+          "source_bboxes": [
+            [
+              114.0,
+              819.0,
+              545.0,
+              940.0
+            ],
+            [
+              572.0,
+              818.0,
+              997.0,
+              914.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_011",
+          "block_index": 7,
+          "content": "ANSWER Mitochondrial DNA is transmitted essentially exclusively by females, and therefore the chance of drawing two mtDNAs that are identical by descent is $ 1/N_f $, where $ N_f $ is the number of females in the population. However, the probability that two randomly chosen autosomal genes are identical by descent is $ 1/(2N_e) $. Equating $ 1/(2N_e) = 1/N_f $ yields $ N_e = N_f / 2 $ as the effective size for the population of mitochondrial DNA molecules. Since $ N_f = N/2 $ in an ideal population, the effective size for mitochondrial DNA, relative to an autosomal gene in an ideal population, is $ N/4 $. Similarly, the effective population size for the Y chromosome is $ N_m / 2 $, where $ N_m $ is the number of males in the population. As with mitochondrial DNA, the effective size for Y chromosomal DNA, relative to an autosomal gene in an ideal population, is $ N/4 $. Note that, when $ N_f = N_m $, even though mtDNA is present in all individuals, whereas the Y chromosome is present only in males, the effective size of mtDNA is not larger than that of the Y chromosome. The effective size depends on the sampling properties of a gene, which depends not only on how many individuals carry the gene but also on the gene's mode of transmission.",
+          "source_pages": [
+            139
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p031:b8",
+            "PopGen_chapter3:p031:b10"
+          ],
+          "source_bboxes": [
+            [
+              111.0,
+              978.0,
+              543.0,
+              1322.0
+            ],
+            [
+              569.0,
+              978.0,
+              997.0,
+              1320.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_9",
+      "number": "3.9",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_019",
+          "block_index": 4,
+          "content": "PROBLEM 3.9 In a model of pure random drift, the probability distribution for the number of generations back to the first coalescence in a sample of k genes taken from a haploid population of size N is approximately: Pr $ \\left\\{ \\text{first coalescence occurred } t \\text{ generations ago} \\right\\} $",
+          "source_pages": [
+            154
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p046:b2",
+            "PopGen_chapter3:p046:b3"
+          ],
+          "source_bboxes": [
+            [
+              129.0,
+              415.0,
+              556.0,
+              538.0
+            ],
+            [
+              139.0,
+              557.0,
+              550.0,
+              630.0
+            ]
+          ]
+        },
+        {
+          "unit_id": "PopGen_chapter3_019",
+          "block_index": 5,
+          "content": "$ = ze^{-2t} \\text{ where } z = \\binom{k}{2} / N $ From this one can show that the mean number of generations back to the first coalescence is 1/z. The more genes in the sample, the more likely it will be that a coalescence occurred recently. Calculate the expected time to first coalescence in a population of N = 450 for a sample of 10 genes. How many genes would you have to sample to reduce this coalescence time by half?",
+          "source_pages": [
+            154
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p046:b9"
+          ],
+          "source_bboxes": [
+            [
+              584.0,
+              412.0,
+              1010.0,
+              632.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_019",
+          "block_index": 6,
+          "content": "ANSWER The expected time to first coalescence in a population of N = 450 for a sample of 10 genes is $$ \\begin{aligned}N/\\binom{k}{2}&=450/\\binom{10}{2}=450/(10\\times9/2)\\\\&=10\\text{generations}\\end{aligned} $$",
+          "source_pages": [
+            154
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p046:b9",
+            "PopGen_chapter3:p046:b4"
+          ],
+          "source_bboxes": [
+            [
+              584.0,
+              412.0,
+              1010.0,
+              632.0
+            ],
+            [
+              128.0,
+              682.0,
+              557.0,
+              755.0
+            ]
+          ]
+        }
+      ],
+      "status": "complete",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E1",
+      "number": "3.E1",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_024",
+          "block_index": 0,
+          "content": "1. Describe the Wright-Fisher model of random genetic drift. The elements $ T_{ij} $ of the transition matrix are probabilities. How should $ T_{ij} $ be interpreted?",
+          "source_pages": [
+            160
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p052:b7"
+          ],
+          "source_bboxes": [
+            [
+              274.0,
+              1039.0,
+              1020.0,
+              1116.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 1,
+        "anchor_text": "1.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E2",
+      "number": "3.E2",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_024",
+          "block_index": 1,
+          "content": "2. Explain how the basic concept behind the Kolmogorov forward equation differs from that underlying the Kolmogorov backward equation.",
+          "source_pages": [
+            160
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p052:b8"
+          ],
+          "source_bboxes": [
+            [
+              278.0,
+              1128.0,
+              1020.0,
+              1179.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 2,
+        "anchor_text": "2.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E3",
+      "number": "3.E3",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 0,
+          "content": "3. Explain why, in any population model in which random genetic drift plays a role, \"backward\" computer simulation, which starts with the alleles present in the current population and traces their coalescence backward in time, is computationally much simpler than \"forward\" simulation, which starts with the alleles present in the original population and simulates random genetic drift moving forward in time.",
+          "source_pages": [
+            160
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p052:b9"
+          ],
+          "source_bboxes": [
+            [
+              278.0,
+              1190.0,
+              1021.0,
+              1348.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 3,
+        "anchor_text": "3.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E4",
+      "number": "3.E4",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 1,
+          "content": "4. In an ideal diploid population of size 50, what is the probability that a neutral allele present in exactly one copy will be lost in the next generation? What is the answer if the allele is present in two copies?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b1"
+          ],
+          "source_bboxes": [
+            [
+              123.0,
+              204.0,
+              863.0,
+              281.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 4,
+        "anchor_text": "4.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E5",
+      "number": "3.E5",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 2,
+          "content": "5. Suppose that a diploid population of size 50 undergoes a change in average heterozygosity across loci from 0.50 to 0.42 in a single generation. Is it plausible to attribute this magnitude of change to random drift alone?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b2"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              293.0,
+              862.0,
+              370.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 5,
+        "anchor_text": "5.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E6",
+      "number": "3.E6",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 3,
+          "content": "6. How many generations of random genetic drift are required to reduce the expected heterozygosity to 5% of its initial value in a diploid randomly mating population of size 10? Of size 50?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b3"
+          ],
+          "source_bboxes": [
+            [
+              122.0,
+              382.0,
+              862.0,
+              459.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 587,
+        "printed_page": 573,
+        "chapter": 3,
+        "answer_number": 6,
+        "anchor_text": "6.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E7",
+      "number": "3.E7",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 4,
+          "content": "7. An autosomal gene in a colony of 28 Asian wild mice, Mus castaneus, undergoes mutation to a new neutral allele. Assuming that the population conforms to the Wright-Fisher model, what is the probability that the allele eventually becomes fixed? What is the probability that it eventually becomes lost? What is the average time to loss, given that the allele is eventually lost. What is the average time to fixation, given that it is eventually fixed?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b4"
+          ],
+          "source_bboxes": [
+            [
+              121.0,
+              470.0,
+              861.0,
+              653.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 7,
+        "anchor_text": "7.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E8",
+      "number": "3.E8",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 5,
+          "content": "8. What are the answers to Problem 3.7 if the mutant gene is X-linked and the population consists of equal numbers of males and females? What if the gene is Y-linked?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b5"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              665.0,
+              860.0,
+              742.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 8,
+        "anchor_text": "8.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E9",
+      "number": "3.E9",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 6,
+          "content": "9. An isolated population of alpine edelweiss (Leontopodium alpinum) loses half its heterozygosity in 30 generations. What is its effective population size?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b6"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              754.0,
+              859.0,
+              830.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 9,
+        "anchor_text": "9.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E10",
+      "number": "3.E10",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 7,
+          "content": "10. Remote Pitcairn Island in the South Pacific was settled in 1789 by Fletcher Christian and eight fellow mutineers from HMS Bounty, along with a small number of Polynesian women. Although many descendants have left the island in the intervening years, there has been essentially no immigration. Assuming an effective size of 20 in each of the eight generations since the island's settlement, what value of $ F_{t} $ would be expected in today's population from random genetic drift?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b7"
+          ],
+          "source_bboxes": [
+            [
+              105.0,
+              843.0,
+              858.0,
+              1029.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 10,
+        "anchor_text": "10.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E11",
+      "number": "3.E11",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 8,
+          "content": "11. Show that random genetic drift requires an average of $ t = 2N \\ln(x) $ generations to reduce the expected heterozygosity from $ H_0 $ to $ H_0/x $.",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b8"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1040.0,
+              857.0,
+              1093.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 11,
+        "anchor_text": "11.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E12",
+      "number": "3.E12",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 9,
+          "content": "12. A large randomly mating diploid population with two neutral alleles A and a at allele frequencies $ p_0 = \\frac{1}{3} $ and $ q_0 = \\frac{2}{3} $, respectively, splits into a large number of isolated subpopulations each of effective size 50. Within each subpopulation mating is random, but the allele frequencies diverge due to random genetic drift. After 69 generations, what are the expected genotype frequencies of AA, Aa, and aa, averaged across the subpopulations? In one of the subpopulations, the allele frequency of A equals 0.3. What are the expected genotype frequencies in this individual subpopulation?",
+          "source_pages": [
+            161
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b9"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1102.0,
+              857.0,
+              1339.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 588,
+        "printed_page": 574,
+        "chapter": 3,
+        "answer_number": 12,
+        "anchor_text": "12.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E13",
+      "number": "3.E13",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 10,
+          "content": "13. Two inbred strains of the azuki bean beetle Callosobruchus chinensis are crossed and their progeny allowed to mate at random each generation thereafter. Among 100 single-nucleotide polymorphisms differing in the original inbred strains, what number would be expected to remain segregating after 10 generations, assuming an effective population size of 80 individuals? How many would be expected to remain unfixed after 50 generations?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b1"
+          ],
+          "source_bboxes": [
+            [
+              266.0,
+              206.0,
+              1015.0,
+              393.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 13,
+        "anchor_text": "13.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E14",
+      "number": "3.E14",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 11,
+          "content": "14. Use Equation 3.14 to show that approximately 2N generations of random genetic drift are required to reduce the number of segregating genes by a factor of $ e(e = 2.71828 \\ldots) $ given initial allele frequencies close to 0.5.",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b2"
+          ],
+          "source_bboxes": [
+            [
+              267.0,
+              403.0,
+              1016.0,
+              481.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 14,
+        "anchor_text": "14.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": [
+        {
+          "type": "formula",
+          "id": "3.14",
+          "resolved_id": "3.14",
+          "status": "linked",
+          "link_method": "explicit_reference",
+          "library": "PopGen_formula_library.json",
+          "source_pages": [
+            131
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p023:b14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PopGen_problem_3_E15",
+      "number": "3.E15",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 12,
+          "content": "15. What is the effective population number in a population of African lions, Panthera leo, in which each breeding male controls a harem of five females and the total population consists of 200 males and 200 females?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b3"
+          ],
+          "source_bboxes": [
+            [
+              267.0,
+              492.0,
+              1016.0,
+              571.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 15,
+        "anchor_text": "15.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E16",
+      "number": "3.E16",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 13,
+          "content": "16. What is the effective population size of a herd of 10 dairy cows and 1 bull? What is it for 40 cows and 1 bull? For 10 cows and 2 bulls?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b4"
+          ],
+          "source_bboxes": [
+            [
+              266.0,
+              582.0,
+              1015.0,
+              631.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 16,
+        "anchor_text": "16.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E17",
+      "number": "3.E17",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 14,
+          "content": "17. What is the variance effective population size for an X-linked gene in a population consisting of 100 females and 10 males? In a population of 10 females and 100 males?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b5"
+          ],
+          "source_bboxes": [
+            [
+              267.0,
+              645.0,
+              1017.0,
+              720.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 17,
+        "anchor_text": "17.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E18",
+      "number": "3.E18",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 15,
+          "content": "18. In a haploid population of constant effective size 50, what is the probability that two randomly drawn alleles shared a common ancestor exactly 100 generations ago?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b6"
+          ],
+          "source_bboxes": [
+            [
+              268.0,
+              733.0,
+              1017.0,
+              814.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 18,
+        "anchor_text": "18.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E19",
+      "number": "3.E19",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 16,
+          "content": "19. In a population of effective size 30, how many generations are required on the average to coalesce from 4 alleles to 3? From 3 alleles to 2? From 2 alleles to 1?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b7"
+          ],
+          "source_bboxes": [
+            [
+              268.0,
+              823.0,
+              1017.0,
+              899.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 19,
+        "anchor_text": "19.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E20",
+      "number": "3.E20",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 17,
+          "content": "20. In a haploid population of effective size 50, how many sequences k should be present in a sample for the first coalescence to have an average time of 10 generations.",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b8"
+          ],
+          "source_bboxes": [
+            [
+              267.0,
+              912.0,
+              1018.0,
+              991.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 20,
+        "anchor_text": "20.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    },
+    {
+      "id": "PopGen_problem_3_E21",
+      "number": "3.E21",
+      "book": "PopGen",
+      "chapter": "PopGen_chapter3",
+      "question_blocks": [
+        {
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 18,
+          "content": "21. In the infinite-sites model, if $ \\theta = 10 $, how many segregating sites are expected in a sample of size 10? 20? 50?",
+          "source_pages": [
+            162
+          ],
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b9"
+          ],
+          "source_bboxes": [
+            [
+              267.0,
+              1001.0,
+              1018.0,
+              1055.0
+            ]
+          ]
+        }
+      ],
+      "answer_blocks": [],
+      "status": "answer_key_linked",
+      "answer_key_reference": {
+        "source_pdf": "data/背景资料/Principle of population genetics 4th ed - Hartl and Clark.pdf",
+        "source_pdf_sha256": "4e1cc6c5eaabd3c33bb0e6e51089440eb8f1d52e1ee6e4e713a0992d22e2d388",
+        "master_page": 589,
+        "printed_page": 575,
+        "chapter": 3,
+        "answer_number": 21,
+        "anchor_text": "21.",
+        "locator_kind": "printed_answer_number_on_master_pdf_page",
+        "answer_text_status": "source_located_not_transcribed"
+      },
+      "answer_source_status": "answer_key_reference",
+      "answer_text_status": "source_located_not_transcribed",
+      "related_resources": []
+    }
+  ]
+}

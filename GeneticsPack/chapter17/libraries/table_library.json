@@ -1,0 +1,374 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter17",
+  "count": 1,
+  "tables": [
+    {
+      "id": "17.1",
+      "label_format": "Table 17.1",
+      "title": "Table 17.1 Heritability estimates ( $ \\pm $SE) for natural populations of birds obtained by parent-offspring regression.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Mother-Daughter</td><td>Father-Son</td><td>Reference</td></tr><tr><td>Clutch size</td><td></td><td></td><td></td></tr><tr><td>Anser caerulescens</td><td>0.61 $ \\pm $ 0.19</td><td>—</td><td>Findlay and Cooke 1983</td></tr><tr><td>Ficedula albicollis</td><td>0.32 $ \\pm $ 0.14</td><td>—</td><td>Gustafsson 1986</td></tr><tr><td>Geospiza fortis</td><td>$ -0.17 \\pm 0.12 $</td><td>—</td><td>Gibbs 1988</td></tr><tr><td>Parus major</td><td>0.48 $ \\pm $ 0.10</td><td>—</td><td>Perrins and Jones 1974</td></tr><tr><td></td><td>0.37 $ \\pm $ 0.12</td><td>—</td><td>van Noordwijk et al. 1981</td></tr><tr><td>Sturnus vulgaris</td><td>0.34 $ \\pm $ 0.08</td><td>—</td><td>Flux and Flux 1982</td></tr><tr><td>Tarsus length</td><td></td><td></td><td></td></tr><tr><td>Ficedula albicollis</td><td>0.50 $ \\pm $ 0.22</td><td>0.43 $ \\pm $ 0.14</td><td>Gustafsson 1986</td></tr><tr><td></td><td>0.65 $ \\pm $ 0.07</td><td>0.53 $ \\pm $ 0.04</td><td>Merilä and Gustafsson 1993</td></tr><tr><td>Ficedula hypoleuca $ ^{*} $</td><td>0.50 $ \\pm $ 0.22</td><td>—</td><td>Alatalo and Lundberg 1986</td></tr><tr><td>Geospiza fortis</td><td>0.38 $ \\pm $ 0.30</td><td>0.46 $ \\pm $ 0.31</td><td>Boag and Grant 1978</td></tr><tr><td>Geospiza scandens</td><td>0.94 $ \\pm $ 0.39</td><td>1.26 $ \\pm $ 0.36</td><td>Boag 1983</td></tr><tr><td>Melospiza melodia $ ^{*} $</td><td>1.12 $ \\pm $ 0.37</td><td>0.90 $ \\pm $ 0.33</td><td>Smith and Dhondt 1980</td></tr><tr><td></td><td>0.34 $ \\pm $ 0.15</td><td>0.37 $ \\pm $ 0.18</td><td>Smith and Zach 1979</td></tr><tr><td>Parus caerulescens $ ^{*} $</td><td>0.78 $ \\pm $ 0.26</td><td>0.62 $ \\pm $ 0.28</td><td>Dhondt 1982</td></tr><tr><td>Bill length</td><td></td><td></td><td></td></tr><tr><td>Ficedula albicollis</td><td>0.43 $ \\pm $ 0.12</td><td>0.37 $ \\pm $ 0.12</td><td>Gustafsson 1986</td></tr><tr><td></td><td>0.43 $ \\pm $ 0.07</td><td>0.44 $ \\pm $ 0.06</td><td>Merilä and Gustafsson 1993</td></tr><tr><td>Geospiza fortis</td><td>1.09 $ \\pm $ 0.42</td><td>1.06 $ \\pm $ 0.27</td><td>Boag and Grant 1978</td></tr><tr><td>Geospiza scandens</td><td>$ -0.18 \\pm 0.70 $</td><td>0.44 $ \\pm $ 0.41</td><td>Boag 1983</td></tr><tr><td>Melospiza melodia $ ^{*} $</td><td>0.22 $ \\pm $ 0.34</td><td>0.59 $ \\pm $ 0.24</td><td>Smith and Dhondt 1980</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Mother-Daughter",
+          "Father-Son",
+          "Reference"
+        ],
+        [
+          "Clutch size",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Anser caerulescens",
+          "0.61 $ \\pm $ 0.19",
+          "—",
+          "Findlay and Cooke 1983"
+        ],
+        [
+          "Ficedula albicollis",
+          "0.32 $ \\pm $ 0.14",
+          "—",
+          "Gustafsson 1986"
+        ],
+        [
+          "Geospiza fortis",
+          "$ -0.17 \\pm 0.12 $",
+          "—",
+          "Gibbs 1988"
+        ],
+        [
+          "Parus major",
+          "0.48 $ \\pm $ 0.10",
+          "—",
+          "Perrins and Jones 1974"
+        ],
+        [
+          "",
+          "0.37 $ \\pm $ 0.12",
+          "—",
+          "van Noordwijk et al. 1981"
+        ],
+        [
+          "Sturnus vulgaris",
+          "0.34 $ \\pm $ 0.08",
+          "—",
+          "Flux and Flux 1982"
+        ],
+        [
+          "Tarsus length",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ficedula albicollis",
+          "0.50 $ \\pm $ 0.22",
+          "0.43 $ \\pm $ 0.14",
+          "Gustafsson 1986"
+        ],
+        [
+          "",
+          "0.65 $ \\pm $ 0.07",
+          "0.53 $ \\pm $ 0.04",
+          "Merilä and Gustafsson 1993"
+        ],
+        [
+          "Ficedula hypoleuca $ ^{*} $",
+          "0.50 $ \\pm $ 0.22",
+          "—",
+          "Alatalo and Lundberg 1986"
+        ],
+        [
+          "Geospiza fortis",
+          "0.38 $ \\pm $ 0.30",
+          "0.46 $ \\pm $ 0.31",
+          "Boag and Grant 1978"
+        ],
+        [
+          "Geospiza scandens",
+          "0.94 $ \\pm $ 0.39",
+          "1.26 $ \\pm $ 0.36",
+          "Boag 1983"
+        ],
+        [
+          "Melospiza melodia $ ^{*} $",
+          "1.12 $ \\pm $ 0.37",
+          "0.90 $ \\pm $ 0.33",
+          "Smith and Dhondt 1980"
+        ],
+        [
+          "",
+          "0.34 $ \\pm $ 0.15",
+          "0.37 $ \\pm $ 0.18",
+          "Smith and Zach 1979"
+        ],
+        [
+          "Parus caerulescens $ ^{*} $",
+          "0.78 $ \\pm $ 0.26",
+          "0.62 $ \\pm $ 0.28",
+          "Dhondt 1982"
+        ],
+        [
+          "Bill length",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Ficedula albicollis",
+          "0.43 $ \\pm $ 0.12",
+          "0.37 $ \\pm $ 0.12",
+          "Gustafsson 1986"
+        ],
+        [
+          "",
+          "0.43 $ \\pm $ 0.07",
+          "0.44 $ \\pm $ 0.06",
+          "Merilä and Gustafsson 1993"
+        ],
+        [
+          "Geospiza fortis",
+          "1.09 $ \\pm $ 0.42",
+          "1.06 $ \\pm $ 0.27",
+          "Boag and Grant 1978"
+        ],
+        [
+          "Geospiza scandens",
+          "$ -0.18 \\pm 0.70 $",
+          "0.44 $ \\pm $ 0.41",
+          "Boag 1983"
+        ],
+        [
+          "Melospiza melodia $ ^{*} $",
+          "0.22 $ \\pm $ 0.34",
+          "0.59 $ \\pm $ 0.24",
+          "Smith and Dhondt 1980"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: * indicates that the progeny were cross-fostered to minimize postnatal maternal effects. Anser caerulescens is the lesser snow goose, Geospiza sps. are Darwin's finches, Ficedula sps. are flycatchers, Melospiza melodia is the song sparrow, Parus sps. are tits, and Sturnus vulgaris is the starling.",
+          "source_page": 563,
+          "bbox": [
+            95.0,
+            976.0,
+            1054.0,
+            1100.0
+          ],
+          "source_block_ids": [
+            "p563:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 563,
+          "title": "Table 17.1 Heritability estimates ( $ \\pm $SE) for natural populations of birds obtained by parent-offspring regression.",
+          "html": "<table><tr><td>Species</td><td>Mother-Daughter</td><td>Father-Son</td><td>Reference</td></tr><tr><td>Clutch size</td><td></td><td></td><td></td></tr><tr><td>Anser caerulescens</td><td>0.61 $ \\pm $ 0.19</td><td>—</td><td>Findlay and Cooke 1983</td></tr><tr><td>Ficedula albicollis</td><td>0.32 $ \\pm $ 0.14</td><td>—</td><td>Gustafsson 1986</td></tr><tr><td>Geospiza fortis</td><td>$ -0.17 \\pm 0.12 $</td><td>—</td><td>Gibbs 1988</td></tr><tr><td>Parus major</td><td>0.48 $ \\pm $ 0.10</td><td>—</td><td>Perrins and Jones 1974</td></tr><tr><td></td><td>0.37 $ \\pm $ 0.12</td><td>—</td><td>van Noordwijk et al. 1981</td></tr><tr><td>Sturnus vulgaris</td><td>0.34 $ \\pm $ 0.08</td><td>—</td><td>Flux and Flux 1982</td></tr><tr><td>Tarsus length</td><td></td><td></td><td></td></tr><tr><td>Ficedula albicollis</td><td>0.50 $ \\pm $ 0.22</td><td>0.43 $ \\pm $ 0.14</td><td>Gustafsson 1986</td></tr><tr><td></td><td>0.65 $ \\pm $ 0.07</td><td>0.53 $ \\pm $ 0.04</td><td>Merilä and Gustafsson 1993</td></tr><tr><td>Ficedula hypoleuca $ ^{*} $</td><td>0.50 $ \\pm $ 0.22</td><td>—</td><td>Alatalo and Lundberg 1986</td></tr><tr><td>Geospiza fortis</td><td>0.38 $ \\pm $ 0.30</td><td>0.46 $ \\pm $ 0.31</td><td>Boag and Grant 1978</td></tr><tr><td>Geospiza scandens</td><td>0.94 $ \\pm $ 0.39</td><td>1.26 $ \\pm $ 0.36</td><td>Boag 1983</td></tr><tr><td>Melospiza melodia $ ^{*} $</td><td>1.12 $ \\pm $ 0.37</td><td>0.90 $ \\pm $ 0.33</td><td>Smith and Dhondt 1980</td></tr><tr><td></td><td>0.34 $ \\pm $ 0.15</td><td>0.37 $ \\pm $ 0.18</td><td>Smith and Zach 1979</td></tr><tr><td>Parus caerulescens $ ^{*} $</td><td>0.78 $ \\pm $ 0.26</td><td>0.62 $ \\pm $ 0.28</td><td>Dhondt 1982</td></tr><tr><td>Bill length</td><td></td><td></td><td></td></tr><tr><td>Ficedula albicollis</td><td>0.43 $ \\pm $ 0.12</td><td>0.37 $ \\pm $ 0.12</td><td>Gustafsson 1986</td></tr><tr><td></td><td>0.43 $ \\pm $ 0.07</td><td>0.44 $ \\pm $ 0.06</td><td>Merilä and Gustafsson 1993</td></tr><tr><td>Geospiza fortis</td><td>1.09 $ \\pm $ 0.42</td><td>1.06 $ \\pm $ 0.27</td><td>Boag and Grant 1978</td></tr><tr><td>Geospiza scandens</td><td>$ -0.18 \\pm 0.70 $</td><td>0.44 $ \\pm $ 0.41</td><td>Boag 1983</td></tr><tr><td>Melospiza melodia $ ^{*} $</td><td>0.22 $ \\pm $ 0.34</td><td>0.59 $ \\pm $ 0.24</td><td>Smith and Dhondt 1980</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Mother-Daughter",
+              "Father-Son",
+              "Reference"
+            ],
+            [
+              "Clutch size",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Anser caerulescens",
+              "0.61 $ \\pm $ 0.19",
+              "—",
+              "Findlay and Cooke 1983"
+            ],
+            [
+              "Ficedula albicollis",
+              "0.32 $ \\pm $ 0.14",
+              "—",
+              "Gustafsson 1986"
+            ],
+            [
+              "Geospiza fortis",
+              "$ -0.17 \\pm 0.12 $",
+              "—",
+              "Gibbs 1988"
+            ],
+            [
+              "Parus major",
+              "0.48 $ \\pm $ 0.10",
+              "—",
+              "Perrins and Jones 1974"
+            ],
+            [
+              "",
+              "0.37 $ \\pm $ 0.12",
+              "—",
+              "van Noordwijk et al. 1981"
+            ],
+            [
+              "Sturnus vulgaris",
+              "0.34 $ \\pm $ 0.08",
+              "—",
+              "Flux and Flux 1982"
+            ],
+            [
+              "Tarsus length",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Ficedula albicollis",
+              "0.50 $ \\pm $ 0.22",
+              "0.43 $ \\pm $ 0.14",
+              "Gustafsson 1986"
+            ],
+            [
+              "",
+              "0.65 $ \\pm $ 0.07",
+              "0.53 $ \\pm $ 0.04",
+              "Merilä and Gustafsson 1993"
+            ],
+            [
+              "Ficedula hypoleuca $ ^{*} $",
+              "0.50 $ \\pm $ 0.22",
+              "—",
+              "Alatalo and Lundberg 1986"
+            ],
+            [
+              "Geospiza fortis",
+              "0.38 $ \\pm $ 0.30",
+              "0.46 $ \\pm $ 0.31",
+              "Boag and Grant 1978"
+            ],
+            [
+              "Geospiza scandens",
+              "0.94 $ \\pm $ 0.39",
+              "1.26 $ \\pm $ 0.36",
+              "Boag 1983"
+            ],
+            [
+              "Melospiza melodia $ ^{*} $",
+              "1.12 $ \\pm $ 0.37",
+              "0.90 $ \\pm $ 0.33",
+              "Smith and Dhondt 1980"
+            ],
+            [
+              "",
+              "0.34 $ \\pm $ 0.15",
+              "0.37 $ \\pm $ 0.18",
+              "Smith and Zach 1979"
+            ],
+            [
+              "Parus caerulescens $ ^{*} $",
+              "0.78 $ \\pm $ 0.26",
+              "0.62 $ \\pm $ 0.28",
+              "Dhondt 1982"
+            ],
+            [
+              "Bill length",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Ficedula albicollis",
+              "0.43 $ \\pm $ 0.12",
+              "0.37 $ \\pm $ 0.12",
+              "Gustafsson 1986"
+            ],
+            [
+              "",
+              "0.43 $ \\pm $ 0.07",
+              "0.44 $ \\pm $ 0.06",
+              "Merilä and Gustafsson 1993"
+            ],
+            [
+              "Geospiza fortis",
+              "1.09 $ \\pm $ 0.42",
+              "1.06 $ \\pm $ 0.27",
+              "Boag and Grant 1978"
+            ],
+            [
+              "Geospiza scandens",
+              "$ -0.18 \\pm 0.70 $",
+              "0.44 $ \\pm $ 0.41",
+              "Boag 1983"
+            ],
+            [
+              "Melospiza melodia $ ^{*} $",
+              "0.22 $ \\pm $ 0.34",
+              "0.59 $ \\pm $ 0.24",
+              "Smith and Dhondt 1980"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: * indicates that the progeny were cross-fostered to minimize postnatal maternal effects. Anser caerulescens is the lesser snow goose, Geospiza sps. are Darwin's finches, Ficedula sps. are flycatchers, Melospiza melodia is the song sparrow, Parus sps. are tits, and Sturnus vulgaris is the starling.",
+              "source_page": 563,
+              "bbox": [
+                95.0,
+                976.0,
+                1054.0,
+                1100.0
+              ],
+              "source_block_ids": [
+                "p563:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            91.0,
+            196.0,
+            1057.0,
+            977.0
+          ],
+          "caption_bbox": [
+            93.0,
+            136.0,
+            1051.0,
+            202.0
+          ],
+          "source_block_ids": [
+            "p563:b3"
+          ],
+          "caption_source_block_ids": [
+            "p563:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter17",
+        "unit_id": "Genetics_chapter17_008",
+        "page": 563,
+        "pages": [
+          563
+        ],
+        "bbox": [
+          91.0,
+          196.0,
+          1057.0,
+          977.0
+        ],
+        "caption_bbox": [
+          93.0,
+          136.0,
+          1051.0,
+          202.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

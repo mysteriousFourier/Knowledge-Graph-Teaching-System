@@ -1,0 +1,85 @@
+{
+  "id": "Genetics_chapter15_024",
+  "metadata": {
+    "chapter": "Genetics_chapter15",
+    "section": "SELECTED APPLICATIONS",
+    "subsections": [
+      "QTLs Involved in Protein Regulation"
+    ],
+    "section_level_1": "SELECTED APPLICATIONS",
+    "section_level_2": "QTLs Involved in Protein Regulation",
+    "heading_path": [
+      "SELECTED APPLICATIONS",
+      "QTLs Involved in Protein Regulation"
+    ],
+    "display_heading": "SELECTED APPLICATIONS / QTLs Involved in Protein Regulation",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 492,
+      "printed_page": 472,
+      "source_block_ids": [
+        "p492:b7"
+      ],
+      "bbox": [
+        129.0,
+        1228.0,
+        596.0,
+        1267.0
+      ],
+      "raw_text": "QTLs Involved in Protein Regulation"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Quantitative-genetic approaches are often thought to be restricted to phenotypic characters such as body weight, height, or some measure of shape. However, they apply equally well to molecular characters. Damerval et al. (1994) analyzed the spot volumes of 72 anonymous proteins (from a specific seed tissue in maize) separated by high-resolution 2-D polyacrylamide gel electrophoresis. Genes controlling protein volume are, by definition, regulatory genes influencing the amount of that protein. Sixty $ F_{2} $ individuals were scored with 76 RFLP markers, and both",
+      "source_page": 492,
+      "printed_page": 472,
+      "source_block_ids": [
+        "p492:b8"
+      ],
+      "bbox": [
+        128.0,
+        1265.0,
+        1094.0,
+        1504.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:15.3]]",
+      "source_page": 493,
+      "printed_page": 473,
+      "source_block_ids": [
+        "p493:b3"
+      ],
+      "bbox": [
+        80.0,
+        243.0,
+        1031.0,
+        737.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "ML-interval mapping and single-marker ANOVA detected a total of 70 QTLs affecting 46 of the 72 proteins. Of these 46 proteins, 25 were influenced by two or more QTLs (up to a maximum of five). Of the 70 detected QTLs, 33 showed strict additivity, while the remaining 37 showed at least some dominance. The amount of variation in protein volume accounted for by a single QTL ranged from 16% (the lower detection limit for this sample size) to 67%, and the cumulative variation accounted for by all detected QTLs for each protein ranged from 37% to 90%. Perhaps the most striking observation was the presence of significant epistasis. Four proteins had QTLs that were only detected through epistasis (their single-locus effects were not significant). In all, 14% of the 72 proteins showed detectable epistasis (Figure 15.10).",
+      "source_page": 493,
+      "printed_page": 473,
+      "source_block_ids": [
+        "p493:b5"
+      ],
+      "bbox": [
+        63.0,
+        890.0,
+        1030.0,
+        1255.0
+      ]
+    }
+  ]
+}

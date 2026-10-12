@@ -1,0 +1,501 @@
+{
+  "id": "Genetics_chapter9_002",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "EXPECTATIONS FOR LINE-CROSS MEANS",
+    "subsections": [],
+    "section_level_1": "EXPECTATIONS FOR LINE-CROSS MEANS",
+    "section_level_2": null,
+    "heading_path": [
+      "EXPECTATIONS FOR LINE-CROSS MEANS"
+    ],
+    "display_heading": "EXPECTATIONS FOR LINE-CROSS MEANS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b3"
+      ],
+      "bbox": [
+        142.0,
+        351.0,
+        708.0,
+        395.0
+      ],
+      "raw_text": "EXPECTATIONS FOR LINE-CROSS MEANS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "We start with two parental populations ( $ P_{1} $ and $ P_{2} $), each with loci assumed to be in Hardy-Weinberg and gametic phase equilibrium. For the time being, we also assume that the loci differentiating the two populations are unlinked. An $ F_{1} $ population is obtained by crossing the $ P_{1} $ and $ P_{2} $ lines, and subsequent random mating of $ F_{1} $ individuals results in an $ F_{2} $ generation. Since the $ F_{2} $ population will be in Hardy-Weinberg and gametic phase equilibrium for unlinked loci, both for genes derived within and between populations, it is logical to treat it as a point of reference for the definition of genetic effects.",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b4"
+      ],
+      "bbox": [
+        143.0,
+        410.0,
+        1105.0,
+        684.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In previous chapters, we have presented definitions of additive, dominance, and epistatic effects for specific genes and gene combinations within randomly mating populations. The statistical machinery underlying line-cross analysis has parallels with this approach. The questions here, however, are whether there is a net difference between the additive effects of the genes in the $ P_{1} $ and $ P_{2} $ populations, whether the genes in $ P_{1} $ tend on average to be dominant over those in $ P_{2} $, and whether there are net directional epistatic interactions between $ P_{1} $ and $ P_{2} $ genes. Before explicitly defining these composite effects, it will be useful to have some indices to describe the gene content and the degree of hybridity of line-cross derivatives.",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b5"
+      ],
+      "bbox": [
+        150.0,
+        667.0,
+        1110.0,
+        1003.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "For any pair of lines and their derivatives, the genotypes at a locus can be partitioned into three classes: (1) both alleles are from a random sample of $ P_{1} $ genes, (2) both alleles are from a random sample of $ P_{2} $ genes, and (3) one allele is from a random sample of $ P_{1} $ genes, while the other is from the $ P_{2} $ pool of genes. Let S be the fraction of $ P_{1} $ genes in a line, and H be the probability that a member of the line has one $ P_{1} $ and one $ P_{2} $ gene at a locus. These two indices uniquely specify the expected frequencies of the three classes of genotypes at any autosomal locus:",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b6"
+      ],
+      "bbox": [
+        154.0,
+        990.0,
+        1117.0,
+        1231.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula001]]",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b7"
+      ],
+      "bbox": [
+        241.0,
+        1242.0,
+        970.0,
+        1307.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula002]]",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b8"
+      ],
+      "bbox": [
+        301.0,
+        1304.0,
+        1084.0,
+        1353.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula003]]",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b9"
+      ],
+      "bbox": [
+        199.0,
+        1361.0,
+        973.0,
+        1429.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Composite effects are formally defined in a least-squares framework, similar to that used for effects at single loci (Chapter 4). Consider first the composite additive effects, defined as the difference of additive effects of $ P_{1} $ vs. $ P_{2} $ alleles.",
+      "source_page": 222,
+      "printed_page": 202,
+      "source_block_ids": [
+        "p222:b10"
+      ],
+      "bbox": [
+        163.0,
+        1428.0,
+        1124.0,
+        1542.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "summed over all loci. A simple expression for this can be obtained by recalling Equation 4.9 — for a diallelic locus, the additive effects of the $B_1$ and $B_2$ alleles can be written as $-p_2\\alpha$ and $p_1\\alpha$, where $\\alpha$ is the average effect of allelic substitution, and $p_1$ and $p_2$ are the frequencies of the $B_1$ and $B_2$ alleles. These expressions apply to a randomly mating population, precisely the situation in the $F_2$ generation. Noting that the $F_2$ consists of 50% $P_1$ and 50% $P_2$ genes, the frequencies of all contrasting alleles (of $P_1$ vs. $P_2$ origin) are 0.5. Thus, the composite additive effects of $P_1$ and $P_2$ genes in the $F_2$ reference population are equal in absolute value but opposite in sign, and we denote them respectively as $+\\alpha^c/2$ and $- \\alpha^c/2$, where the superscript $c$ denotes composite (as opposed to single-gene) effects. The total composite additive effect in the $F_2$ generation, $[(\\alpha^c - \\alpha^c)/2]$, is then equal to zero, which is what we desire for a reference population. The total composite additive effect in the $F_1$ generation is also equal to zero, since every locus contains one $P_1$ and one $P_2$ allele. In the $P_1$ population, however, there are only $P_1$ alleles, each of which contributes $\\alpha^c/2$, giving the total composite additive effect as $(\\alpha^c + \\alpha^c)/2 = \\alpha^c$. In contrast, as each $P_2$ allele contributes $- \\alpha^c/2$, the total composite effect in the $P_2$ population is $- \\alpha^c$. More generally, the contribution of composite additive effects to the mean genotypic value of any line-cross derivative is",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b2"
+      ],
+      "bbox": [
+        61.0,
+        127.0,
+        1028.0,
+        715.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula004]]",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b3"
+      ],
+      "bbox": [
+        117.0,
+        731.0,
+        957.0,
+        815.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\theta_S = 2S - 1 $ denotes the source index. The three terms on the left represent, respectively, the contributions from $ P_1 $ homozygotes, $ P_1P_2 $ heterozygotes, and $ P_2 $ homozygotes. The index $ \\theta_S $ contrasts the expected number of $ P_1 $ alleles at a locus in a particular line (2S) with that in the $ F_2 $ reference population (1).",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b4"
+      ],
+      "bbox": [
+        53.0,
+        829.0,
+        1010.0,
+        977.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The composite dominance effect is obtained in a similar manner, again treating the $ F_2 $ population as a reference. Returning to Table 4.2, it can be shown that when the frequencies of the two alleles are equal to 0.5, the dominance deviations from the regression on gene content are $ -ak/2 $ for both homozygotes and $ ak/2 $ for the heterozygote. An analogous situation exists for the $ F_2 $ of a line cross, which consists of 25% $ P_1P_1 $, 50% $ P_1P_2 $, and 25% $ P_2P_2 $ individuals at each locus. Thus, we denote the composite dominance effects associated with crossbred ( $ P_1P_2 $) and purebred ( $ P_1P_1 $, $ P_2P_2 $) loci as $ + \\delta^c $ and $ - \\delta^c $, respectively. More generally, the contribution of composite dominance effects to the genotypic mean of a particular line is",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b5"
+      ],
+      "bbox": [
+        44.0,
+        958.0,
+        1010.0,
+        1295.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula005]]",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b6"
+      ],
+      "bbox": [
+        90.0,
+        1300.0,
+        957.0,
+        1385.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\theta_H = 2H - 1 $ is the hybridity index. Thus, $ \\theta_H \\delta^c $ yields a value of $ \\delta^c $ for the $ F_1 $ population, which consists entirely of hybrids, $ -\\delta^c $ for the parental lines, and zero for the $ F_2 $, maintaining the property that the average composite effects are defined to be zero in the reference population.",
+      "source_page": 223,
+      "printed_page": 203,
+      "source_block_ids": [
+        "p223:b7"
+      ],
+      "bbox": [
+        38.0,
+        1396.0,
+        998.0,
+        1542.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "There are three important points to note about this approach to interpreting line-cross means. First, the composite effects are denoted as such because they summarize the total effects over all loci. Since some of the effects of individual genes in population $ P_{1} $ may be positive and others negative, there is a possibility of considerable cancellation of locus-specific effects. A comparison of the variances within different line-cross derivatives can shed some light on this problem (Mather and Jinks 1982), but we will not take this up here.",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b2"
+      ],
+      "bbox": [
+        133.0,
+        122.0,
+        1095.0,
+        363.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Second, provided there is no mating with close relatives, the definition of composite effects does not require that the parental populations be pure (completely homozygous) lines. For any line-cross derivative, the subset of individuals with two $ P_{1} $ genes at a particular locus will have the same expected Hardy-Weinberg genotype distribution of $ P_{1} $ genotypes as the $ P_{1} $ generation. The same argument applies to loci with two $ P_{2} $ genes. Thus, in the absence of inbreeding (which alters the genotypic frequencies within classes, see Chapter 10), differences between the means of various line-cross derivatives cannot be due to a shift in the genotype frequencies within the groups $ P_{1}P_{1} $, $ P_{1}P_{2} $, and $ P_{2}P_{2} $. It can only be caused by a shift in the relative abundances of these three groups.",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b3"
+      ],
+      "bbox": [
+        140.0,
+        348.0,
+        1101.0,
+        682.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Third, the source and hybridity indices are all that are needed to define the contributions of composite epistatic effects to line means. To obtain the general expression, we let $ \\left(\\alpha_{n}^{c}\\delta_{m}^{c}\\right) $ denote the composite effect involving the interaction of n additive and m dominance effects. (Note that this notation does not imply that $ \\left(\\alpha_{n}^{c}\\delta_{m}^{c}\\right)=\\alpha_{n}^{c}\\cdot\\delta_{m}^{c} $.) The general expression for the mean genotypic value of a line is then",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b4"
+      ],
+      "bbox": [
+        148.0,
+        666.0,
+        1107.0,
+        876.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula006]]",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b5"
+      ],
+      "bbox": [
+        290.0,
+        919.0,
+        973.0,
+        969.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Note that the coefficients for the composite effects are of the form $ \\theta_{S}^{n}\\theta_{H}^{m} $. Hill (1982a) provides a formal derivation of Equation 9.1, and alternative modes of presentation appear in Cockerham (1980), Lynch (1991), and Schnell and Cockerham (1992). Example 1 (below) provides a derivation of the result for the additive × additive component of epistasis. The compositions of the expected line means for common types of crossbreds are given in Table 9.1.",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b7"
+      ],
+      "bbox": [
+        156.0,
+        1015.0,
+        1115.0,
+        1220.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The preceding model applies in the presence of linkage as long as there is no epistasis. However, linked genes tend to be inherited as a unit, although they are gradually rendered independent by crossing-over. This process has the effect of altering the likelihood of specific epistatic interactions through progressive rounds of recombination (see the following example). Provided the parental lines are in gametic phase equilibrium, the expressions for the $ P_{1} $, $ P_{2} $, and $ F_{1} $ lines still hold, since there is no opportunity for recombination between chromosomes of different parental lines, but those for all subsequent line-cross derivatives will be biased to an extent depending on the map structure of the constituent",
+      "source_page": 224,
+      "printed_page": 204,
+      "source_block_ids": [
+        "p224:b8"
+      ],
+      "bbox": [
+        160.0,
+        1205.0,
+        1121.0,
+        1510.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.1]]",
+      "source_page": 225,
+      "printed_page": 205,
+      "source_block_ids": [
+        "p225:b3"
+      ],
+      "bbox": [
+        38.0,
+        166.0,
+        1021.0,
+        1420.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "loci. For a pair of loci with recombination fraction c, the following modifications need to be applied to the expressions for the $ F_{2} $ and backcross means,",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b2"
+      ],
+      "bbox": [
+        127.0,
+        116.0,
+        1088.0,
+        206.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula007]]",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b3"
+      ],
+      "bbox": [
+        212.0,
+        233.0,
+        763.0,
+        311.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula008]]",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b5"
+      ],
+      "bbox": [
+        214.0,
+        327.0,
+        1015.0,
+        409.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula009]]",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b7"
+      ],
+      "bbox": [
+        215.0,
+        424.0,
+        1018.0,
+        505.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "(see the following example for a derivation). The expressions for more advanced crosses (e.g., $ B_{1} \\times F_{1} $) are complicated because additional generations of recombination must be accounted for.",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b9"
+      ],
+      "bbox": [
+        139.0,
+        530.0,
+        1099.0,
+        643.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Assuming that the epistatic effects between loci are independent of c, these expressions also apply to the total composite effects of all loci when $ \\bar{c} $, the mean recombination frequency between all pairs of loci, is substituted for c. Since we generally do not know c for any pair of loci, let alone for all of the loci underlying a quantitative trait, the best we can provide is a heuristic guide to the potential significance of linkage. Assuming that the genes are uniformly distributed across all chromosomes, then",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b10"
+      ],
+      "bbox": [
+        143.0,
+        626.0,
+        1105.0,
+        870.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter9_formula010]]",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b11"
+      ],
+      "bbox": [
+        447.0,
+        894.0,
+        803.0,
+        1018.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $N$ is the number of chromosomes in a haploid set, $L_i$ is the genetic map length of the $i$th chromosome (in Morgans), and $L = \\sum L_i$ is the total map length (Zeng et al. 1990). This expression is based on Haldane's mapping function, $c_{ij} = 0.5(1 - e^{-2L_{ij}})$, which relates the recombination frequency to the genetic map length between two linked loci, $i$ and $j$ (Chapter 14). Estimates of $\\bar{c}$ are given in Table 9.2 for several species for which the genetic maps are reasonably well resolved. For species with a very small number of chromosomes and/or restricted recombination in males, as in Drosophila and the mosquito Aedes, $\\bar{c}$ can be somewhat less than 0.40, but when $N$ exceeds six or so, it tends to be greater than 0.45. For most mammals, $N$ is typically on the order of 15 or more, so most pairs of genes are on different chromosomes, and $\\bar{c}$ is very close to 0.5. With $\\bar{c} > 0.45$, Equations 9.2a-c are quite close to the expressions in Table 9.1. Thus, unless the genes underlying quantitative traits tend to be aggregated on chromosomes, linkage is unlikely to cause much bias in the interpretation of line-cross means, except perhaps in the case of species such as Drosophila.",
+      "source_page": 226,
+      "printed_page": 206,
+      "source_block_ids": [
+        "p226:b13"
+      ],
+      "bbox": [
+        149.0,
+        1047.0,
+        1116.0,
+        1543.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.2]]",
+      "source_page": 227,
+      "printed_page": 207,
+      "source_block_ids": [
+        "p227:b3"
+      ],
+      "bbox": [
+        51.0,
+        204.0,
+        1024.0,
+        1192.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter9:1]]",
+      "source_page": 228,
+      "source_block_ids": [
+        "p228:b2",
+        "p228:b3",
+        "p228:b4",
+        "p228:b6",
+        "p228:b7",
+        "p228:b9",
+        "p228:b10",
+        "p228:b11",
+        "p228:b12",
+        "p228:b13",
+        "p228:b14",
+        "p228:b15",
+        "p229:b2",
+        "p229:b3",
+        "p229:b4",
+        "p229:b5"
+      ],
+      "bbox": [
+        175.0,
+        192.0,
+        1045.0,
+        590.0
+      ]
+    }
+  ]
+}

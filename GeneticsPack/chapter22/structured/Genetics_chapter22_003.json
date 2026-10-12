@@ -1,0 +1,151 @@
+{
+  "id": "Genetics_chapter22_003",
+  "metadata": {
+    "chapter": "Genetics_chapter22",
+    "section": "GENETIC CORRELATION ACROSS TWO ENVIRONMENTS",
+    "subsections": [
+      "Estimation Procedures"
+    ],
+    "section_level_1": "GENETIC CORRELATION ACROSS TWO ENVIRONMENTS",
+    "section_level_2": "Estimation Procedures",
+    "heading_path": [
+      "GENETIC CORRELATION ACROSS TWO ENVIRONMENTS",
+      "Estimation Procedures"
+    ],
+    "display_heading": "GENETIC CORRELATION ACROSS TWO ENVIRONMENTS / Estimation Procedures",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 675,
+      "printed_page": 655,
+      "source_block_ids": [
+        "p675:b7"
+      ],
+      "bbox": [
+        61.0,
+        861.0,
+        345.0,
+        891.0
+      ],
+      "raw_text": "Estimation Procedures"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "To obtain an estimate of the genetic correlation across environments, $ r_{\\times} $, estimates of the among-family variances are required for both environments, as is an estimate of the covariance of family means across environments. The simplest way of procuring such estimates is to split the families, assaying for each family one set of individuals in one environment and another set in the second environment. Methods for estimating the among-family components of variance within single environments, $ \\sigma_{G}^{2}(1) $ and $ \\sigma_{G}^{2}(2) $, have been presented in previous chapters (e.g., one-way ANOVA), so we will consider that issue no further. Via (1984) reviews several procedures for estimating $ \\sigma_{G}(1,2) $, the most straightforward of which is the simple computation of the covariance of family means in the different environments. In all such analyses, care should be taken to avoid the use of families containing individuals that share family environmental effects, i.e., individuals that share the same mothers. After the among-family variances and covariances have been estimated, the estimate $ r_{\\times} $ is obtained by substituting observed values for their expectations in Equation 22.6.",
+      "source_page": 675,
+      "printed_page": 655,
+      "source_block_ids": [
+        "p675:b8"
+      ],
+      "bbox": [
+        58.0,
+        905.0,
+        1021.0,
+        1388.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As in the case of other genetic correlation estimators encountered in Chapter 21, this indirect way of estimating $ \\rho_{\\times} $ is not equivalent to the computation of a product-moment correlation, and as a consequence, sampling error can cause estimates to exceed the natural boundaries of $ \\pm1 $. For purposes of hypothesis testing, however, a product-moment correlation, $ r(\\overline{z}_{1j}, \\overline{z}_{2j}) $, can be obtained from the simple regression of family means (i.e., $ \\overline{z}_{1j} $ on $ \\overline{z}_{2j} $). The significance level associated with such a regression provides a conservative test as to whether $ r_{\\times} $ is significantly different from zero, since the correlation coefficient will be biased towards zero by the inclusion of residual variance in the denominator (see below).",
+      "source_page": 675,
+      "printed_page": 655,
+      "source_block_ids": [
+        "p675:b9",
+        "p676:b2"
+      ],
+      "bbox": [
+        55.0,
+        1387.0,
+        1018.0,
+        1547.0
+      ],
+      "source_page_end": 676
+    },
+    {
+      "type": "discussion",
+      "content": "Based on the arguments in the preceding section, a more interesting question in the analysis of genotype × environment interaction is whether the correlation across environments is significantly different from +1. For this purpose, the jackknife and bootstrap procedures discussed in the previous chapter may be exploited profitably. If the true genetic correlation across environments were +1, one would expect the distribution of estimates of $ \\rho_{\\times} $ derived from bootstrap samples to significantly overlap +1.",
+      "source_page": 676,
+      "printed_page": 656,
+      "source_block_ids": [
+        "p676:b3"
+      ],
+      "bbox": [
+        139.0,
+        267.0,
+        1099.0,
+        492.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A number of investigators have used the correlation of observed family means, $ r(\\overline{z}_{1j}, \\overline{z}_{2j}) $, as an estimate of the genetic correlation across environments. As noted above and in Chapter 21, the absolute value of any such estimate will be biased downwardly relative to $ \\rho_{\\times} $ since the variances of family means will be inflated by contributions from measurement error and environmental variance. Thus, although this procedure does not affect the sign of the correlation (since the covariance is still estimated in the way we just outlined), it does artifactually create a tendency towards falsely concluding that genotype × environment interaction is present. A slight modification of Equation 21.9 shows the magnitude of the bias,",
+      "source_page": 676,
+      "printed_page": 656,
+      "source_block_ids": [
+        "p676:b4"
+      ],
+      "bbox": [
+        139.0,
+        493.0,
+        1101.0,
+        815.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter22_formula015]]",
+      "source_page": 676,
+      "printed_page": 656,
+      "source_block_ids": [
+        "p676:b5"
+      ],
+      "bbox": [
+        376.0,
+        817.0,
+        860.0,
+        904.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\phi = 2\\Theta(n - 1) $, and $ h_1^2 = \\sigma_A^2(1)/\\sigma_z^2(1) $ and $ h_2^2 = \\sigma_A^2(2)/\\sigma_z^2(2) $ are the heritabilities of the trait as expressed in the two environments. Note that with moderately large sample sizes ( $ n \\geq 10 $ in each environment) and assuming the heritabilities in both environments are approximately the same, the quantity in brackets is approximately $ \\phi h^2/(\\phi h^2 + 1) $. Thus, the correlation between family means can substantially underestimate $ \\rho_\\times $ unless $ \\phi h^2 >> 1 $. That is, unless the heritabilities in both environments are quite high, large family sizes $ [n >> 1/(2\\Theta h^2)] $ are essential to reduce the sampling bias of the correlation of family means to a reasonable level. The following empirical example demonstrates the misleading nature of correlations of family means.",
+      "source_page": 676,
+      "printed_page": 656,
+      "source_block_ids": [
+        "p676:b7"
+      ],
+      "bbox": [
+        141.0,
+        923.0,
+        1102.0,
+        1250.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter22:1]]",
+      "source_page": 676,
+      "source_block_ids": [
+        "p676:b8",
+        "p677:b2",
+        "p677:b3",
+        "p677:b4",
+        "p677:b5",
+        "p677:b6"
+      ],
+      "bbox": [
+        190.0,
+        1313.0,
+        1054.0,
+        1548.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": "Genetics_chapter7_011",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "POLYPLOIDY",
+    "subsections": [],
+    "section_level_1": "POLYPLOIDY",
+    "section_level_2": null,
+    "heading_path": [
+      "POLYPLOIDY"
+    ],
+    "display_heading": "POLYPLOIDY",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b3"
+      ],
+      "bbox": [
+        62.0,
+        489.0,
+        247.0,
+        519.0
+      ],
+      "raw_text": "POLYPLOIDY"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Because of the high incidence of polyploidy in plants, some attention needs to be given to its effects on the covariance between relatives. We will confine our comments to single-locus effects in a randomly mating tetraploid population and assume that the four alleles at each locus assort independently during meiosis. The results for this special case were first worked out by Kempthorne (1953, 1957).",
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b4"
+      ],
+      "bbox": [
+        60.0,
+        556.0,
+        1018.0,
+        716.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As in the case of diploids, the genotypic values of tetraploids can be partitioned into several independent effects defined in a least-squares sense. However, because four alleles are present at each locus, in addition to additive (single-gene) and dominance (gene-pair) effects, trialellelic and quadra-allelic effects must be considered (Chapter 5). Thus, the single-locus genotypic value of individual x is written",
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b5"
+      ],
+      "bbox": [
+        59.0,
+        718.0,
+        1018.0,
+        908.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula033]]",
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b6"
+      ],
+      "bbox": [
+        114.0,
+        929.0,
+        955.0,
+        1006.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As in the case of diploids, the expected value of each of the effects is zero. Thus, the additive and dominance genetic variances for a locus are defined to be $ \\sigma_A^2 = 4E(\\alpha^2) $ and $ \\sigma_D^2 = 6E(\\delta^2) $, while the trigenic and quadragenic variances are $ \\sigma_T^2 = 4E(\\gamma^2) $ and $ \\sigma_Q^2 = E(\\tau^2) $.",
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b8"
+      ],
+      "bbox": [
+        55.0,
+        1024.0,
+        1014.0,
+        1153.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The covariances between tetraploid relatives are obtained in the same manner as in the case of diploids. For example, the additive genetic covariance involves 16 cross-products of additive effects (four in individual $ x \\times $ four in individual $ y $). Each of these cross-products has expectation $ E(\\alpha^2) $ if the two genes are identical by descent, the probability of which is $ \\Theta_{xy} $, and expectation zero otherwise. Thus, the expected additive genetic covariance between relatives is $ 16\\Theta_{xy}E(\\alpha^2) = 4\\Theta_{xy}\\sigma_A^2 $. In the case of digenic interaction, there are 36 cross-products to consider, each of which has expectation $ E(\\delta^2) $ if both members of the pair of alleles in $ x $ are identical by descent with those in the pair from $ y $ (probability $ \\Delta_{xy} $). Therefore, the digenic covariance is $ 36\\Delta_{xy}E(\\delta^2) = 6\\Delta_{xy}\\sigma_D^2 $. Letting $ \\varphi_{xy} $ be the probability that all members of random three-gene sets are identical by descent, and $ \\phi_{xy} $ be",
+      "source_page": 177,
+      "printed_page": 157,
+      "source_block_ids": [
+        "p177:b9"
+      ],
+      "bbox": [
+        55.0,
+        1156.0,
+        1015.0,
+        1505.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:7.5]]",
+      "source_page": 178,
+      "printed_page": 158,
+      "source_block_ids": [
+        "p178:b3"
+      ],
+      "bbox": [
+        142.0,
+        212.0,
+        1092.0,
+        547.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "the probability that the complete single-locus tetraploid genotypes of x and y are identical by descent, the trigenic and quadragenic covariances between relatives are $ 4\\varphi_{xy}\\sigma_{T}^{2} $ and $ \\phi_{xy}\\sigma_{Q}^{2} $. Thus, assuming random mating, and no epistasis, linkage, or gametic phase disequilibrium, the covariance between tetraploid relatives can be summarized as",
+      "source_page": 178,
+      "printed_page": 158,
+      "source_block_ids": [
+        "p178:b5"
+      ],
+      "bbox": [
+        141.0,
+        670.0,
+        1103.0,
+        832.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula034]]",
+      "source_page": 178,
+      "printed_page": 158,
+      "source_block_ids": [
+        "p178:b6"
+      ],
+      "bbox": [
+        325.0,
+        859.0,
+        917.0,
+        899.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The coefficients for a number of common relationships are given in Table 7.5.",
+      "source_page": 178,
+      "printed_page": 158,
+      "source_block_ids": [
+        "p178:b8"
+      ],
+      "bbox": [
+        143.0,
+        928.0,
+        1060.0,
+        959.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An interesting consequence of polyploidy is that the covariance between non-collateral relatives (individuals that do not share both parents) can be influenced by dominance. This effect occurs because parents pass two alleles on to their progeny. Thus, the covariance between parent and offspring is $ \\sigma_A^2/2 + \\sigma_D^2/6 $, as compared to $ \\sigma_A^2/2 $ in the case of diploidy. Only the resemblance between collateral relatives is influenced by trigenic and quadragenic variance.",
+      "source_page": 178,
+      "printed_page": 158,
+      "source_block_ids": [
+        "p178:b9"
+      ],
+      "bbox": [
+        142.0,
+        962.0,
+        1102.0,
+        1154.0
+      ]
+    }
+  ]
+}

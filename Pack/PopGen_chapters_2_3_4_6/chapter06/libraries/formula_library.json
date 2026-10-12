@@ -1,0 +1,2303 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter6",
+  "count": 28,
+  "formulas": [
+    {
+      "id": "6.10",
+      "label_format": "[6.10]",
+      "latex": "F_{RT}=\\frac{H_{T}-H_{R}}{H_{T}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_011",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Wright's F Statistics",
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "source_pages": [
+          296
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p026:b14"
+        ],
+        "source_bboxes": [
+          [
+            518,
+            308,
+            656,
+            365
+          ]
+        ]
+      },
+      "context": "subscripts denoting the levels of the hierarchy being compared. For example, $ F_{SR} $ is the fixation index of the subpopulations relative to the regional aggregates: $$ E_{SR}=\\frac{H_{R}-H_{S}}{H_{R}} $$\nIn words, Equation 6.9 defines $ F_{SR} $ as the decrease of heterozygosity among subpopulations within regions $ (H_{R}-H_{S}) $, relative to the heterozygosity. ity among regions $ (H_{R}) $. For the Linanthus example in [[SEE_TABLE:6.3]], $ F_{SR} = (0.1589 - 0.1424)/0.1589 = 0.1036 $.\nAt the next level of the hierarchy, we may define the fixation index $ F_{RT} $ as the proportionate reduction in heterozygosity of the regional aggregates relative to the total combined population: $$ F_{RT}=\\frac{H_{T}-H_{R}}{H_{T}} $$\nThe data in [[SEE_TABLE:6.3]] indicate that $ F_{RT} = (0.2371 - 0.1589)/0.2371 = 0.3299 $. Comparison of this value with $ F_{SR} $ above already makes it clear that there is substantially more variation among regions (as measured by $ F_{RT} $) than there is among subpopulations within regions (as measured by $ F_{SR} $). The comparison of the fixation indices at the two levels gives quantitative expression to the regional differences apparent in Figure 6.13.\nThe fixation index $ F_{ST} $ compares the least inclusive to the most inclusive levels of the population hierarchy and measures all effects of population structure combined: $$ F_{ST}=\\frac{H_{T}-H",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          518,
+          308,
+          656,
+          365
+        ],
+        "label_bbox": [
+          870,
+          326,
+          926,
+          349
+        ],
+        "api_label": "[6.10]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "6.10",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION",
+        "Wright's F Statistics"
+      ],
+      "subsection": "Wright's F Statistics",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "subsection": "Wright's F Statistics",
+        "source_pages": [
+          296
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p026:b14"
+        ],
+        "source_bboxes": [
+          [
+            518,
+            308,
+            656,
+            365
+          ]
+        ],
+        "audit_evidence_sha256": "eb800154e385677e7e1ebded7626420f2c5828670808d16eacf328b069cdc661"
+      }
+    },
+    {
+      "id": "6.11",
+      "label_format": "[6.11]",
+      "latex": "F_{ST}=\\frac{H_{T}-H_{S}}{H_{T}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_011",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Wright's F Statistics",
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "source_pages": [
+          296
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p026:b15"
+        ],
+        "source_bboxes": [
+          [
+            521,
+            595,
+            653,
+            651
+          ]
+        ]
+      },
+      "context": "ined population: $$ F_{RT}=\\frac{H_{T}-H_{R}}{H_{T}} $$\nThe data in [[SEE_TABLE:6.3]] indicate that $ F_{RT} = (0.2371 - 0.1589)/0.2371 = 0.3299 $. Comparison of this value with $ F_{SR} $ above already makes it clear that there is substantially more variation among regions (as measured by $ F_{RT} $) than there is among subpopulations within regions (as measured by $ F_{SR} $). The comparison of the fixation indices at the two levels gives quantitative expression to the regional differences apparent in Figure 6.13.\nThe fixation index $ F_{ST} $ compares the least inclusive to the most inclusive levels of the population hierarchy and measures all effects of population structure combined: $$ F_{ST}=\\frac{H_{T}-H_{S}}{H_{T}} $$ From [[SEE_TABLE:6.3]], $ F_{ST} = (0.2371 - 0.1424) / 0.2371 = 0.3993 $. The overall reduction in average heterozygosity is therefore close to 40% of the total heterozygosity—a very substantial effect.\nThe hierarchical F-statistics defined in Equations 6.9 through 6.11 are all types of fixation indices, but they differ in the reference populations: $ F_{SR} $ is concerned with subpopulations (S) relative to the regional aggregates (R), $ F_{RT} $ is concerned with the regional groupings relative to the total population (T), and $ F_{ST} $ is concerned with the subpopulations relative to the total population. The index $ F_{ST} $ is the most inclusive meas",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 26,
+        "formula_bbox": [
+          521,
+          595,
+          653,
+          651
+        ],
+        "label_bbox": [
+          872,
+          616,
+          927,
+          639
+        ],
+        "api_label": "[6.11]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "6.11",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION",
+        "Wright's F Statistics"
+      ],
+      "subsection": "Wright's F Statistics",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "subsection": "Wright's F Statistics",
+        "source_pages": [
+          296
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p026:b15"
+        ],
+        "source_bboxes": [
+          [
+            521,
+            595,
+            653,
+            651
+          ]
+        ],
+        "audit_evidence_sha256": "4fb4b82c37868aee7f77699fa4e76d194db7c4bb5c80c7c91f0fffbf447ae415"
+      }
+    },
+    {
+      "id": "6.12",
+      "label_format": "[6.12]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_015",
+        "chapter": "PopGen_chapter6",
+        "subsection": "6.3 THE WAHLUND PRINCIPLE",
+        "heading_path": [
+          "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+          "6.3 THE WAHLUND PRINCIPLE"
+        ],
+        "source_pages": [
+          303
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p033:b7"
+        ],
+        "source_bboxes": [
+          [
+            270,
+            958,
+            617,
+            1099
+          ]
+        ]
+      },
+      "context": " the left are two subpopulations, each undergoing random mating, in which the frequency of the recessive allele and the frequency of homozygous recessive genotypes are indicated. The average frequency of the homozygous recessive genotype across both subpopulations equals $ (q_1^2 + q_2^2)/2 $. The result of fusion and random mating of the subpopulations is shown on the right. Assuming that the subpopulations are equal in size, the allele frequency in the combined population is $ \\bar{q} = (q_1 + q_2)/2 $, and the frequency of the homozygous recessive genotype equals $ \\bar{q}^2 $. Therefore, subpopulation fusion and random mating reduces the average frequency of homozygous recessives by: $$ \\begin{aligned}R_{separate}-R_{fused}&=\\frac{q_{1}^{2}+q_{2}^{2}}{2}-\\overline{q}^{2}\\\\&=\\frac{1}{2}(q_{1}-\\overline{q})^{2}+\\frac{1}{2}(q_{2}-\\overline{q})^{2}\\\\&=\\sigma_{q}^{2}\\end{aligned} $$\nWe leave it as an exercise to verify that the expressions in $q_{1}$ and $q_{2}$ on the first and second lines are equal. The symbol $\\sigma_{q}^{2}$ is the variance in allele frequency among the original subpopulations. Because the variance is always nonnegative, isolate breaking decreases the homozygosity and increases the heterozygosity, unless the allele frequencies are equal to begin with.\nFurthermore, the result in Equation 6.12 is true for any number of subpopulations of equal or unequal size;",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 33,
+        "formula_bbox": [
+          270,
+          958,
+          617,
+          1099
+        ],
+        "label_bbox": [
+          728,
+          1031,
+          782,
+          1054
+        ],
+        "api_label": "[6.12]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 14.0
+      },
+      "equation_number": "6.12",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+        "6.3 THE WAHLUND PRINCIPLE"
+      ],
+      "subsection": "6.3 THE WAHLUND PRINCIPLE",
+      "audit_provenance": {
+        "heading_path": [
+          "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+          "6.3 THE WAHLUND PRINCIPLE"
+        ],
+        "subsection": "6.3 THE WAHLUND PRINCIPLE",
+        "source_pages": [
+          303
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p033:b7"
+        ],
+        "source_bboxes": [
+          [
+            270,
+            958,
+            617,
+            1099
+          ]
+        ],
+        "audit_evidence_sha256": "97e534449cf74272c1be61ea2ac72b5a3549f62e1f001d3165a10c239c9f6193"
+      }
+    },
+    {
+      "id": "6.13",
+      "label_format": "[6.13]",
+      "latex": "P_{s e p a r a t e}-P_{f u s e d}=\\sigma_{p}^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_016",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Wahlund's Principle and the Fixation Index",
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Wahlund's Principle and the Fixation Index"
+        ],
+        "source_pages": [
+          305
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p035:b13"
+        ],
+        "source_bboxes": [
+          [
+            358,
+            350,
+            529,
+            384
+          ]
+        ]
+      },
+      "context": "Equation 6.12 applies equally well to AA homozygotes as to aa homozygotes. Therefore, letting P represent the frequency of homozygous AA genotypes, we can write $$ P_{s e p a r a t e}-P_{f u s e d}=\\sigma_{p}^{2} $$\nWhen there are only two alleles, the total reduction in homozygosity must be the summation of Equations 6.12 and 6.13, which equals $ \\sigma_p^2 + \\sigma_q^2 $. Because there are only two alleles, it is also true that $ \\sigma_p^2 = \\sigma_q^2 $, which we will write as $ \\sigma^2 $. Hence, the total reduction in homozygosity from the Wahlund effect upon population fusion and random mating can be expressed as follows: $$ \\mathrm{R e d u c t i o n~i n~t o t a l~h o m o z y g o s i t y}=2\\sigma^{2} $$\nOn the other hand, the reduction in total homozygosity with population fusion must also equal the increase in heterozygosity $ H_T - H_S $, which Equation 6.11 says is the numerator of $ F_{ST} $. Hence, $ F_{ST} = (H_T - H_S) / H_T = 2\\sigma^2 / H_T $. However, $ H_T $ is the heterozygosity with random mating when the allele frequencies equal the average allele frequencies across subpopulations, $ \\bar{p} $ and $ \\bar{q} $. Therefore, the connection between the fixation index $ F_{ST} $ and the variance in allele frequency is given by $$ F_{S T}=\\frac{\\sigma^{2}}{\\overline{{p}}\\overline{{q}}} $$\nConsequently, the $F$ statistics at the various levels of a hierarchical pop",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 35,
+        "formula_bbox": [
+          358,
+          350,
+          529,
+          384
+        ],
+        "label_bbox": [
+          727,
+          356,
+          783,
+          379
+        ],
+        "api_label": "[6.13]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "6.13",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.3 THE WAHLUND PRINCIPLE",
+        "Wahlund's Principle and the Fixation Index"
+      ],
+      "subsection": "Wahlund's Principle and the Fixation Index",
+      "audit_provenance": {
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Wahlund's Principle and the Fixation Index"
+        ],
+        "subsection": "Wahlund's Principle and the Fixation Index",
+        "source_pages": [
+          305
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p035:b13"
+        ],
+        "source_bboxes": [
+          [
+            358,
+            350,
+            529,
+            384
+          ]
+        ],
+        "audit_evidence_sha256": "7867789448506a83733223bc266e24e8380e4fe70d5367d612dc8676c24cfe34"
+      }
+    },
+    {
+      "id": "6.14",
+      "label_format": "[6.14]",
+      "latex": "F_{S T}=\\frac{\\sigma^{2}}{\\overline{{p}}\\overline{{q}}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_016",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Wahlund's Principle and the Fixation Index",
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Wahlund's Principle and the Fixation Index"
+        ],
+        "source_pages": [
+          305
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p035:b14"
+        ],
+        "source_bboxes": [
+          [
+            396,
+            751,
+            486,
+            808
+          ]
+        ]
+      },
+      "context": "t upon population fusion and random mating can be expressed as follows: $$ \\mathrm{R e d u c t i o n~i n~t o t a l~h o m o z y g o s i t y}=2\\sigma^{2} $$\nOn the other hand, the reduction in total homozygosity with population fusion must also equal the increase in heterozygosity $ H_T - H_S $, which Equation 6.11 says is the numerator of $ F_{ST} $. Hence, $ F_{ST} = (H_T - H_S) / H_T = 2\\sigma^2 / H_T $. However, $ H_T $ is the heterozygosity with random mating when the allele frequencies equal the average allele frequencies across subpopulations, $ \\bar{p} $ and $ \\bar{q} $. Therefore, the connection between the fixation index $ F_{ST} $ and the variance in allele frequency is given by $$ F_{S T}=\\frac{\\sigma^{2}}{\\overline{{p}}\\overline{{q}}} $$\nConsequently, the $F$ statistics at the various levels of a hierarchical population are related to the variances in allele frequencies among the subpopulations grouped together at the various levels. Equation 6.14 affords a convenient method of estimating $F_{ST}$ from allele-frequency data. For example, among the subpopulations of Linanthus in Figure 6.13, the variance in allele frequency is 0.0473. Earlier we calculated the average allele frequencies as $\\bar{p} = 0.8626$ and $\\bar{q} = 0.1374$. Hence, $\\sigma^{2}/(\\bar{p} \\times \\bar{q}) = 0.3993$, which confirms the previous calculation that $F_{ST} = 0.3993$. (The values as stat",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 35,
+        "formula_bbox": [
+          396,
+          751,
+          486,
+          808
+        ],
+        "label_bbox": [
+          723,
+          773,
+          779,
+          796
+        ],
+        "api_label": "[6.14]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "6.14",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.3 THE WAHLUND PRINCIPLE",
+        "Wahlund's Principle and the Fixation Index"
+      ],
+      "subsection": "Wahlund's Principle and the Fixation Index",
+      "audit_provenance": {
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Wahlund's Principle and the Fixation Index"
+        ],
+        "subsection": "Wahlund's Principle and the Fixation Index",
+        "source_pages": [
+          305
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p035:b14"
+        ],
+        "source_bboxes": [
+          [
+            396,
+            751,
+            486,
+            808
+          ]
+        ],
+        "audit_evidence_sha256": "117e07ae6333d1196ea494204317b97e8bf249745f85377826fa39212fea0d5a"
+      }
+    },
+    {
+      "id": "6.15",
+      "label_format": "[6.15]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_017",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies in Subdivided Populations",
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Genotype Frequencies in Subdivided Populations"
+        ],
+        "source_pages": [
+          306
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p036:b9"
+        ],
+        "source_bboxes": [
+          [
+            512,
+            514,
+            667,
+            645
+          ]
+        ]
+      },
+      "context": "notype frequency of aa across subpopulations must equal $ \\bar{q}^2 + F_{\\mathrm{ST}} \\bar{p} \\bar{q} $. Because every genotype that is not homozygous must be heterozygous, the average genotype frequency of heterozygotes across subpopulations is given by $ 1 - (\\overline{p}^2 + F_{ST} \\overline{p} \\overline{q}) - (\\overline{q}^2 + F_{ST} \\overline{p} \\overline{q}) $. Note that $ 1 - \\overline{p}^2 - \\overline{q}^2 = 2 \\overline{p} \\overline{q} $, and so the average frequency of heterozygotes simplifies to $ 2 \\overline{p} \\overline{q} - 2 \\overline{p} \\overline{q} F_{ST} $.\nConsequently, the genotype frequencies averaged across subpopulations in a subdivided population can be written as: $$ \\begin{aligned}&a a:\\overline{q}^{2}+\\overline{p}\\overline{q}F_{ST}\\\\ &\\\\ &Aa:2\\overline{p}\\overline{q}-2\\overline{p}\\overline{q}F_{ST}\\\\ &\\\\ &aa:\\overline{q}^{2}+\\overline{p}\\overline{q}F_{ST}\\\\ \\end{aligned} $$\nThese genotype frequencies depart from the Hardy-Weinberg principle in having an excess of homozygotes and a deficiency of heterozygotes. This result may seem somewhat paradoxical because, within any particular subpopulation, mating is random and the genotype frequencies do obey the Hardy-Weinberg principle. The reason for the departure from Hardy-Weinberg equilibrium in the population as a whole is that the subpopulations differ in allele frequency. Because the allele frequencies d",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 36,
+        "formula_bbox": [
+          512,
+          514,
+          667,
+          645
+        ],
+        "label_bbox": [
+          866,
+          567,
+          922,
+          590
+        ],
+        "api_label": "(6.15)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "6.15",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.3 THE WAHLUND PRINCIPLE",
+        "Genotype Frequencies in Subdivided Populations"
+      ],
+      "subsection": "Genotype Frequencies in Subdivided Populations",
+      "audit_provenance": {
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Genotype Frequencies in Subdivided Populations"
+        ],
+        "subsection": "Genotype Frequencies in Subdivided Populations",
+        "source_pages": [
+          306
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p036:b9"
+        ],
+        "source_bboxes": [
+          [
+            512,
+            514,
+            667,
+            645
+          ]
+        ],
+        "audit_evidence_sha256": "768d5e8efc6eed6c6f8f4b5b772cbe3730a10f14e2dd6eac479a70822caf0fad"
+      }
+    },
+    {
+      "id": "6.16",
+      "label_format": "[6.16]",
+      "latex": "F_{IT}=\\frac{H_{T}-H_{I}}{H_{T}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_018",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Relation between the Inbreeding Coefficient and the F Statistics"
+        ],
+        "source_pages": [
+          307
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p037:b11"
+        ],
+        "source_bboxes": [
+          [
+            368,
+            882,
+            499,
+            938
+          ]
+        ]
+      },
+      "context": "tozygosity due to population structure.\nEquation 6.11 implies that $ 1 - F_{ST} = H_{S} / H_{T} $, where $ F_{ST} $ is the reduction in heterozygosity in the subpopulation, relative to that expected with random mating in the population as a whole. The value of $ F_{ST} $ takes into account only the autozygosity due to population subdivision.\nTo take both inbreeding and population structure into account, we can define another measure of autozygosity, denoted $ F_{IT} $, which measures the probability of autozygosity of an inbred individual relative to the population as a whole, were all the subpopulations to fuse and undergo random mating. Equation 6.16 asserts that $ F_{IT} $ is equal to $$ F_{IT}=\\frac{H_{T}-H_{I}}{H_{T}} $$ which implies that $1 - F_{IT} = H_{I} / H_{T}$. Considering this expression in light of $1 - F_{IS} = H_{I} / H_{S}$ and $1 - F_{ST} = H_{S} / H_{T}$, it follows that $$ (1-F_{IS})(1-F_{ST})=1-F_{IT} $$\nHence, if we know both $ F_{IS} $ and $ F_{ST} $, then we can obtain $ F_{IT} $ from Equation 6.17. The value of $ F_{ST} $ measures the autozygosity resulting from random genetic drift in a finite subpopulation, and the value of $ F_{IS} $ measures the autozygosity resulting from inbreeding above and beyond that accounted for in $ F_{ST} $. The value of $ F_{IT} $ is the probability of autozygosity taking both processes into account.\nPROBLEM 6.6 Suppose a",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 37,
+        "formula_bbox": [
+          368,
+          882,
+          499,
+          938
+        ],
+        "label_bbox": [
+          718,
+          910,
+          776,
+          933
+        ],
+        "api_label": "[6.16]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 11.5
+      },
+      "equation_number": "6.16",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.3 THE WAHLUND PRINCIPLE",
+        "Relation between the Inbreeding Coefficient and the F Statistics"
+      ],
+      "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+      "audit_provenance": {
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Relation between the Inbreeding Coefficient and the F Statistics"
+        ],
+        "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+        "source_pages": [
+          307
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p037:b11"
+        ],
+        "source_bboxes": [
+          [
+            368,
+            882,
+            499,
+            938
+          ]
+        ],
+        "audit_evidence_sha256": "3633705151304d686d8caaf89a777d9974b1681a182a5e0765c51edb0e6fb237"
+      }
+    },
+    {
+      "id": "6.17",
+      "label_format": "[6.17]",
+      "latex": "(1-F_{IS})(1-F_{ST})=1-F_{IT}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_018",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Relation between the Inbreeding Coefficient and the F Statistics"
+        ],
+        "source_pages": [
+          307
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p037:b12"
+        ],
+        "source_bboxes": [
+          [
+            329,
+            1023,
+            544,
+            1052
+          ]
+        ]
+      },
+      "context": "dom mating in the population as a whole. The value of $ F_{ST} $ takes into account only the autozygosity due to population subdivision.\nTo take both inbreeding and population structure into account, we can define another measure of autozygosity, denoted $ F_{IT} $, which measures the probability of autozygosity of an inbred individual relative to the population as a whole, were all the subpopulations to fuse and undergo random mating. Equation 6.16 asserts that $ F_{IT} $ is equal to $$ F_{IT}=\\frac{H_{T}-H_{I}}{H_{T}} $$ which implies that $1 - F_{IT} = H_{I} / H_{T}$. Considering this expression in light of $1 - F_{IS} = H_{I} / H_{S}$ and $1 - F_{ST} = H_{S} / H_{T}$, it follows that $$ (1-F_{IS})(1-F_{ST})=1-F_{IT} $$\nHence, if we know both $ F_{IS} $ and $ F_{ST} $, then we can obtain $ F_{IT} $ from Equation 6.17. The value of $ F_{ST} $ measures the autozygosity resulting from random genetic drift in a finite subpopulation, and the value of $ F_{IS} $ measures the autozygosity resulting from inbreeding above and beyond that accounted for in $ F_{ST} $. The value of $ F_{IT} $ is the probability of autozygosity taking both processes into account.\nPROBLEM 6.6 Suppose a large population is subdivided into smaller subpopulations within which mating takes place at random, and that random genetic drift takes place until the probability of autozygosity in the subpopulations is",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 37,
+        "formula_bbox": [
+          329,
+          1023,
+          544,
+          1052
+        ],
+        "label_bbox": [
+          718,
+          1022,
+          774,
+          1045
+        ],
+        "api_label": "[6.17]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "6.17",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.3 THE WAHLUND PRINCIPLE",
+        "Relation between the Inbreeding Coefficient and the F Statistics"
+      ],
+      "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+      "audit_provenance": {
+        "heading_path": [
+          "6.3 THE WAHLUND PRINCIPLE",
+          "Relation between the Inbreeding Coefficient and the F Statistics"
+        ],
+        "subsection": "Relation between the Inbreeding Coefficient and the F Statistics",
+        "source_pages": [
+          307
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p037:b12"
+        ],
+        "source_bboxes": [
+          [
+            329,
+            1023,
+            544,
+            1052
+          ]
+        ],
+        "audit_evidence_sha256": "c1629e780ecd78d8813754204df9678f61e71fd2b83a236a521ede2db34d8af1"
+      }
+    },
+    {
+      "id": "6.18",
+      "label_format": "[6.18]",
+      "latex": "p^{\\prime}=(1-m)p+m p^{*}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_021",
+        "chapter": "PopGen_chapter6",
+        "subsection": "One-Way Migration",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "One-Way Migration"
+        ],
+        "source_pages": [
+          309
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p039:b14"
+        ],
+        "source_bboxes": [
+          [
+            352,
+            839,
+            526,
+            866
+          ]
+        ]
+      },
+      "context": "m one population into another, without an equal amount of migration in the reverse direction, then there is said to be one-way migration. An illustration of one-way migration between a large mainland population and a small island subpopulation is shown in Figure 6.16. For simplicity, we consider a gene with two alleles, A and a, with respective frequencies $ p^{*} $ and $ q^{*} $ on the mainland and p and q on the island. Suppose that, in any generation, a proportion m of zygotes in the island subpopulation originates as a random sample of organisms from the mainland. Then, if p and $ p' $ are the frequencies of A in the island subpopulation in two successive generations, it follows that $$ p^{\\prime}=(1-m)p+m p^{*} $$\nIn Equation 6.18, m is called the migration rate between the mainland and the island. Subtracting $ p^{*} $ from both sides of Equation 6.18 and simplifying leads to the expression $ p' - p^{*} = (1 - m)(p - p^{*}) $, and from this expression it follows that $ p_{t} - p^{*} = (1 - m)^{t}(p_{0} - p^{*}) $, where $ p_{t} $ is the frequency of A in the island subpopulation in generation t. Hence, $$ p_{t}=p^{*}+(1-m)^{t}(p_{0}-p^{*}) $$\nEquation 6.19 expresses mathematically what should be clear intuitively: With one-way migration, the allele frequency of A in the island subpopulation gradually approaches that of the mainland population, and the rate of approach is ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 39,
+        "formula_bbox": [
+          352,
+          839,
+          526,
+          866
+        ],
+        "label_bbox": [
+          720,
+          834,
+          776,
+          857
+        ],
+        "api_label": "[6.18]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.0
+      },
+      "equation_number": "6.18",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "One-Way Migration"
+      ],
+      "subsection": "One-Way Migration",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "One-Way Migration"
+        ],
+        "subsection": "One-Way Migration",
+        "source_pages": [
+          309
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p039:b14"
+        ],
+        "source_bboxes": [
+          [
+            352,
+            839,
+            526,
+            866
+          ]
+        ],
+        "audit_evidence_sha256": "8eb4313127833dd8031c5ae5677d8f9696830a5deae43bdde3735bae4dc77c30"
+      }
+    },
+    {
+      "id": "6.19",
+      "label_format": "[6.19]",
+      "latex": "p_{t}=p^{*}+(1-m)^{t}(p_{0}-p^{*})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_021",
+        "chapter": "PopGen_chapter6",
+        "subsection": "One-Way Migration",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "One-Way Migration"
+        ],
+        "source_pages": [
+          310
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p040:b9"
+        ],
+        "source_bboxes": [
+          [
+            469,
+            746,
+            689,
+            775
+          ]
+        ]
+      },
+      "context": "pose that, in any generation, a proportion m of zygotes in the island subpopulation originates as a random sample of organisms from the mainland. Then, if p and $ p' $ are the frequencies of A in the island subpopulation in two successive generations, it follows that $$ p^{\\prime}=(1-m)p+m p^{*} $$\nIn Equation 6.18, m is called the migration rate between the mainland and the island. Subtracting $ p^{*} $ from both sides of Equation 6.18 and simplifying leads to the expression $ p' - p^{*} = (1 - m)(p - p^{*}) $, and from this expression it follows that $ p_{t} - p^{*} = (1 - m)^{t}(p_{0} - p^{*}) $, where $ p_{t} $ is the frequency of A in the island subpopulation in generation t. Hence, $$ p_{t}=p^{*}+(1-m)^{t}(p_{0}-p^{*}) $$\nEquation 6.19 expresses mathematically what should be clear intuitively: With one-way migration, the allele frequency of A in the island subpopulation gradually approaches that of the mainland population, and the rate of approach is m per generation. As a check on Equation 6.19, note that, when t = 0, then $ p_t = p_0 $, as must be the case, and as t becomes large, $ p_t $ goes to $ p^* $. As an evolutionary process that brings potentially new alleles into a population, migration is qualitatively similar to mutation. The major difference is quantitative: Generally speaking, the rate of migration among subpopulations of a species is vastly greater than th",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 40,
+        "formula_bbox": [
+          469,
+          746,
+          689,
+          775
+        ],
+        "label_bbox": [
+          866,
+          745,
+          921,
+          768
+        ],
+        "api_label": "[6.19]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "6.19",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "One-Way Migration"
+      ],
+      "subsection": "One-Way Migration",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "One-Way Migration"
+        ],
+        "subsection": "One-Way Migration",
+        "source_pages": [
+          310
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p040:b9"
+        ],
+        "source_bboxes": [
+          [
+            469,
+            746,
+            689,
+            775
+          ]
+        ],
+        "audit_evidence_sha256": "192f78def1c4676feb9ad8fbff770cc685ec8e9c647b05db4db02d6ec963139e"
+      }
+    },
+    {
+      "id": "6.1a",
+      "label_format": "[6.1a]",
+      "latex": "AA:\\quad p^{2}(1-F)+pF=\\quad p^{2}\\ +pqF",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b7"
+        ],
+        "source_bboxes": [
+          [
+            208,
+            790,
+            515,
+            819
+          ]
+        ]
+      },
+      "context": "hance, the inbreeding has not affected this particular gene. On the other hand, if the alleles are autozygous, then the chosen organism must be homozygous, and the probability of homozygosity for any particular allele is simply the frequency of the allele in the subpopulation as a whole. (Because the alleles in question are autozygous, knowing which allele is present in one chromosome immediately tells you that an identical allele is in the homologous chromosome.) These considerations hold regardless of the number of alleles, but to simplify matters, we consider the case of two alleles A and a at frequencies p and q (with $ p + q = 1 $). In this case the genotype frequencies are given by $$ AA:\\quad p^{2}(1-F)+pF=\\quad p^{2}\\ +pqF $$ $$ \\begin{array}{r l r}{A\\dot{a}{:}}&{{}2p q(1-F)}&{{}\\quad=\\quad2p q-2p q F}\\end{array} $$ $$ aa:\\quad q^{2}(1-F)+pF~=~q^{2}~+pqF $$\nEquation 6.1a is the probability that an organism has genotype AA; the first term refers to cases in which the alleles are allozygous and the second to cases in which the alleles are autozygous. Similarly, Equation 6.1c is the probability that an organism has genotype aa. Heterozygous Aa genotypes then have the frequency given by Equation 6.1b, since alleles that are heterozygous must be allozygous. The expressions at the far right in Equations 6.1a–c can be obtained by multiplying out those on the left and rememberi",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 5,
+        "formula_bbox": [
+          208,
+          790,
+          515,
+          819
+        ],
+        "label_bbox": [
+          725,
+          794,
+          778,
+          816
+        ],
+        "api_label": "[6.1a]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "6.1a",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b7"
+        ],
+        "source_bboxes": [
+          [
+            208,
+            790,
+            515,
+            819
+          ]
+        ],
+        "audit_evidence_sha256": "cd25a86bb75c3f60a6106b1d6dfd5288f885fc9b473087b919cdda72b4875b60"
+      }
+    },
+    {
+      "id": "6.1b",
+      "label_format": "[6.1b]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b8"
+        ],
+        "source_bboxes": [
+          [
+            213,
+            826,
+            529,
+            853
+          ]
+        ]
+      },
+      "context": "ticular gene. On the other hand, if the alleles are autozygous, then the chosen organism must be homozygous, and the probability of homozygosity for any particular allele is simply the frequency of the allele in the subpopulation as a whole. (Because the alleles in question are autozygous, knowing which allele is present in one chromosome immediately tells you that an identical allele is in the homologous chromosome.) These considerations hold regardless of the number of alleles, but to simplify matters, we consider the case of two alleles A and a at frequencies p and q (with $ p + q = 1 $). In this case the genotype frequencies are given by $$ AA:\\quad p^{2}(1-F)+pF=\\quad p^{2}\\ +pqF $$ $$ \\begin{array}{r l r}{A\\dot{a}{:}}&{{}2p q(1-F)}&{{}\\quad=\\quad2p q-2p q F}\\end{array} $$ $$ aa:\\quad q^{2}(1-F)+pF~=~q^{2}~+pqF $$\nEquation 6.1a is the probability that an organism has genotype AA; the first term refers to cases in which the alleles are allozygous and the second to cases in which the alleles are autozygous. Similarly, Equation 6.1c is the probability that an organism has genotype aa. Heterozygous Aa genotypes then have the frequency given by Equation 6.1b, since alleles that are heterozygous must be allozygous. The expressions at the far right in Equations 6.1a–c can be obtained by multiplying out those on the left and remembering that $ p(1-p)=q(1-q)=pq $.\nApplying Equation",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 5,
+        "formula_bbox": [
+          213,
+          826,
+          529,
+          853
+        ],
+        "label_bbox": [
+          723,
+          828,
+          778,
+          850
+        ],
+        "api_label": "[6.1b]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "6.1b",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b8"
+        ],
+        "source_bboxes": [
+          [
+            213,
+            826,
+            529,
+            853
+          ]
+        ],
+        "audit_evidence_sha256": "2cb278d6d627562586e9457dcc7740bbe9a5af5226e00874c79f44419e1dc24c"
+      }
+    },
+    {
+      "id": "6.1c",
+      "label_format": "[6.1c]",
+      "latex": "aa:\\quad q^{2}(1-F)+pF~=~q^{2}~+pqF",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b9"
+        ],
+        "source_bboxes": [
+          [
+            218,
+            859,
+            512,
+            888
+          ]
+        ]
+      },
+      "context": "t be homozygous, and the probability of homozygosity for any particular allele is simply the frequency of the allele in the subpopulation as a whole. (Because the alleles in question are autozygous, knowing which allele is present in one chromosome immediately tells you that an identical allele is in the homologous chromosome.) These considerations hold regardless of the number of alleles, but to simplify matters, we consider the case of two alleles A and a at frequencies p and q (with $ p + q = 1 $). In this case the genotype frequencies are given by $$ AA:\\quad p^{2}(1-F)+pF=\\quad p^{2}\\ +pqF $$ $$ \\begin{array}{r l r}{A\\dot{a}{:}}&{{}2p q(1-F)}&{{}\\quad=\\quad2p q-2p q F}\\end{array} $$ $$ aa:\\quad q^{2}(1-F)+pF~=~q^{2}~+pqF $$\nEquation 6.1a is the probability that an organism has genotype AA; the first term refers to cases in which the alleles are allozygous and the second to cases in which the alleles are autozygous. Similarly, Equation 6.1c is the probability that an organism has genotype aa. Heterozygous Aa genotypes then have the frequency given by Equation 6.1b, since alleles that are heterozygous must be allozygous. The expressions at the far right in Equations 6.1a–c can be obtained by multiplying out those on the left and remembering that $ p(1-p)=q(1-q)=pq $.\nApplying Equation 6.1 to the example in Figure 6.2, we have already shown that $ F = \\frac{1}{2} $ and also t",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 5,
+        "formula_bbox": [
+          218,
+          859,
+          512,
+          888
+        ],
+        "label_bbox": [
+          725,
+          863,
+          778,
+          885
+        ],
+        "api_label": "[6.1c]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "6.1c",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          275
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p005:b9"
+        ],
+        "source_bboxes": [
+          [
+            218,
+            859,
+            512,
+            888
+          ]
+        ],
+        "audit_evidence_sha256": "d4816b8d59b4f4aa7819ce2cb268e345fdccf93a166069823ce7da631d8a18b8"
+      }
+    },
+    {
+      "id": "6.20",
+      "label_format": "[6.20]",
+      "latex": "p_{t}=p_{t-1}(1-m)+\\overline{p}m",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_022",
+        "chapter": "PopGen_chapter6",
+        "subsection": "The Island Model of Migration",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "The Island Model of Migration"
+        ],
+        "source_pages": [
+          312
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p042:b9"
+        ],
+        "source_bboxes": [
+          [
+            489,
+            636,
+            678,
+            664
+          ]
+        ]
+      },
+      "context": " randomly chosen allele in any subpopulation comes from a migrant. Let us consider a particular subpopulation with an allele frequency of A equal to $ p_t $ in generation t. For a randomly chosen allele in this subpopulation in generation t, the allele could have come from the same subpopulation in generation t - 1 with probability 1 - m, in which case it is an A allele with probability $ p_{t-1} $. Alternatively, the allele could have come from the migrant pool in generation t - 1 with probability m, in which case it is an A allele with probability $ \\vec{p} $. Because all evolutionary processes other than migration are ignored, $ \\vec{p} $ stays the same in all generations. Altogether, $$ p_{t}=p_{t-1}(1-m)+\\overline{p}m $$\nEquation 6.20 is similar to Equation 4.2 for mutation, and its solution in terms of $ p_{0} $ is $$ p_{t}=\\overline{p}+(1-m)^{t}(p_{0}-\\overline{p}) $$\nThe similarity with Equation 6.19 is apparent: In fact, the equations are identical except that the role of $ p^* $ in one-way migration is replaced with $ \\overline{p} $ in the island model. Perhaps less obvious is the similarity with Equation 4.4 for reversible mutation, in which case $ v/(\\mu + v) $ plays the role of $ \\overline{p} $ and $ \\mu + v $ plays the role of m. The correspondence between the equations again emphasizes the similarity between the effects of migration and those of mutation. The pro",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 42,
+        "formula_bbox": [
+          489,
+          636,
+          678,
+          664
+        ],
+        "label_bbox": [
+          868,
+          632,
+          923,
+          655
+        ],
+        "api_label": "[6.20]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.5
+      },
+      "equation_number": "6.20",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "The Island Model of Migration"
+      ],
+      "subsection": "The Island Model of Migration",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "The Island Model of Migration"
+        ],
+        "subsection": "The Island Model of Migration",
+        "source_pages": [
+          312
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p042:b9"
+        ],
+        "source_bboxes": [
+          [
+            489,
+            636,
+            678,
+            664
+          ]
+        ],
+        "audit_evidence_sha256": "700fed8ba43c346ef9ba094df22dde36a7f88f5731153e965bb84ae09d34ddcb"
+      }
+    },
+    {
+      "id": "6.21",
+      "label_format": "[6.21]",
+      "latex": "p_{t}=\\overline{p}+(1-m)^{t}(p_{0}-\\overline{p})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_022",
+        "chapter": "PopGen_chapter6",
+        "subsection": "The Island Model of Migration",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "The Island Model of Migration"
+        ],
+        "source_pages": [
+          312
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p042:b10"
+        ],
+        "source_bboxes": [
+          [
+            479,
+            731,
+            685,
+            763
+          ]
+        ]
+      },
+      "context": "f A equal to $ p_t $ in generation t. For a randomly chosen allele in this subpopulation in generation t, the allele could have come from the same subpopulation in generation t - 1 with probability 1 - m, in which case it is an A allele with probability $ p_{t-1} $. Alternatively, the allele could have come from the migrant pool in generation t - 1 with probability m, in which case it is an A allele with probability $ \\vec{p} $. Because all evolutionary processes other than migration are ignored, $ \\vec{p} $ stays the same in all generations. Altogether, $$ p_{t}=p_{t-1}(1-m)+\\overline{p}m $$\nEquation 6.20 is similar to Equation 4.2 for mutation, and its solution in terms of $ p_{0} $ is $$ p_{t}=\\overline{p}+(1-m)^{t}(p_{0}-\\overline{p}) $$\nThe similarity with Equation 6.19 is apparent: In fact, the equations are identical except that the role of $ p^* $ in one-way migration is replaced with $ \\overline{p} $ in the island model. Perhaps less obvious is the similarity with Equation 4.4 for reversible mutation, in which case $ v/(\\mu + v) $ plays the role of $ \\overline{p} $ and $ \\mu + v $ plays the role of m. The correspondence between the equations again emphasizes the similarity between the effects of migration and those of mutation. The processes result in similar mathematical expressions because both mutation and migration act linearly on allele frequency, which means that",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 42,
+        "formula_bbox": [
+          479,
+          731,
+          685,
+          763
+        ],
+        "label_bbox": [
+          869,
+          728,
+          924,
+          751
+        ],
+        "api_label": "(6.21)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.5
+      },
+      "equation_number": "6.21",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "The Island Model of Migration"
+      ],
+      "subsection": "The Island Model of Migration",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "The Island Model of Migration"
+        ],
+        "subsection": "The Island Model of Migration",
+        "source_pages": [
+          312
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p042:b10"
+        ],
+        "source_bboxes": [
+          [
+            479,
+            731,
+            685,
+            763
+          ]
+        ],
+        "audit_evidence_sha256": "d733813d9a038bf0a38edc2d21c399be274f12c3604ecaaeff25addd9ef231a2"
+      }
+    },
+    {
+      "id": "6.22",
+      "label_format": "[6.22]",
+      "latex": "F_{t}=\\left(\\frac{1}{2N}\\right)(1-m)^{2}+\\left(1-\\frac{1}{2N}\\right)(1-m)^{2}F_{t-1}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_023",
+        "chapter": "PopGen_chapter6",
+        "subsection": "How Migration Limits Genetic Divergence",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "source_pages": [
+          313
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p043:b9"
+        ],
+        "source_bboxes": [
+          [
+            244,
+            1095,
+            611,
+            1150
+          ]
+        ]
+      },
+      "context": " by, for example, the fixation index $ F_{ST} $. To understand the homogenizing effect of migration, consider the model in Figure 4.5, in which two alleles drawn at random from a subpopulation in generation $ t + 1 $ are replicas of the same allele in generation $ t $ with probability $ 1/(2N) $ and replicas of different alleles in generation $ t $ with probability $ 1 - 1/(2N) $. In the first case, the alleles are necessarily identical by descent; in the second case, they are identical by descent with probability $ F_{t-1} $, where $ F $ is shorthand for $ F_{ST} $. In either case, the identity by descent is unbroken only if neither allele is replaced by an allele from a migrant, and so $$ F_{t}=\\left(\\frac{1}{2N}\\right)(1-m)^{2}+\\left(1-\\frac{1}{2N}\\right)(1-m)^{2}F_{t-1} $$\nIllustrating again the analogy between migration and mutation, Equation 6.22 is identical to Equation 4.8 measuring the effect of mutation on the probability of identity by descent, except that m replaces $ \\mu $. The equilibrium value$\\hat{F}$ of $F$ can be found by setting $\\hat{F}=F_{t}=F_{t-1}$; after expanding the squared terms on the right-hand side, and assuming that $m$ is small enough and $N$ large enough, and that terms in $m^{2}$ and $m/N$ can be ignored, some rearrangement leads to $$ \\hat{F}=\\frac{1}{1+4Nm} $$ As might be expected, Equation 5.17 is identical in form to Equation 4.9 for mutati",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 43,
+        "formula_bbox": [
+          244,
+          1095,
+          611,
+          1150
+        ],
+        "label_bbox": [
+          710,
+          1117,
+          765,
+          1140
+        ],
+        "api_label": "[6.22]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.0
+      },
+      "equation_number": "6.22",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "How Migration Limits Genetic Divergence"
+      ],
+      "subsection": "How Migration Limits Genetic Divergence",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "subsection": "How Migration Limits Genetic Divergence",
+        "source_pages": [
+          313
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p043:b9"
+        ],
+        "source_bboxes": [
+          [
+            244,
+            1095,
+            611,
+            1150
+          ]
+        ],
+        "audit_evidence_sha256": "79896278631db3f99a85ee9c61a96c0cfb8f5ab17d75bf54b6877b7ac20c5cf4"
+      }
+    },
+    {
+      "id": "6.23",
+      "label_format": "[6.23]",
+      "latex": "frac{1}{1+4Nm}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_023",
+        "chapter": "PopGen_chapter6",
+        "subsection": "How Migration Limits Genetic Divergence",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "source_pages": [
+          314
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p044:b14"
+        ],
+        "source_bboxes": [
+          [
+            530,
+            289,
+            643,
+            338
+          ]
+        ]
+      },
+      "context": "the identity by descent is unbroken only if neither allele is replaced by an allele from a migrant, and so $$ F_{t}=\\left(\\frac{1}{2N}\\right)(1-m)^{2}+\\left(1-\\frac{1}{2N}\\right)(1-m)^{2}F_{t-1} $$\nIllustrating again the analogy between migration and mutation, Equation 6.22 is identical to Equation 4.8 measuring the effect of mutation on the probability of identity by descent, except that m replaces $ \\mu $. The equilibrium value$\\hat{F}$ of $F$ can be found by setting $\\hat{F}=F_{t}=F_{t-1}$; after expanding the squared terms on the right-hand side, and assuming that $m$ is small enough and $N$ large enough, and that terms in $m^{2}$ and $m/N$ can be ignored, some rearrangement leads to $$ \\hat{F}=\\frac{1}{1+4Nm} $$ As might be expected, Equation 5.17 is identical in form to Equation 4.9 for mutation, but the biological implications are very different owing to the fact that the rate of migration is typically much greater than the rate of mutation.\nThe product Nm in Equation 6.23 has a straightforward biological interpretation. The total number of alleles in a subpopulation of size N diploid organisms is 2N. In any generation, the proportion of alleles that are replaced by alleles from migrant organisms is m; hence the number of migrant alleles in any generation equals 2Nm. However, 2Nm is also the total number of alleles in Nm diploid organisms, and so Nm can be interpreted as",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 44,
+        "formula_bbox": [
+          530,
+          289,
+          643,
+          338
+        ],
+        "label_bbox": [
+          870,
+          301,
+          926,
+          325
+        ],
+        "api_label": "[6.23]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.5
+      },
+      "equation_number": "6.23",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "How Migration Limits Genetic Divergence"
+      ],
+      "subsection": "How Migration Limits Genetic Divergence",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "How Migration Limits Genetic Divergence"
+        ],
+        "subsection": "How Migration Limits Genetic Divergence",
+        "source_pages": [
+          314
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p044:b14"
+        ],
+        "source_bboxes": [
+          [
+            530,
+            289,
+            643,
+            338
+          ]
+        ],
+        "audit_evidence_sha256": "a52f84711b18a317183d5bd09269dd898a0cf829309ba3773bb06040c3679987"
+      }
+    },
+    {
+      "id": "6.24",
+      "label_format": "[6.24]",
+      "latex": "mid P_{0})}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_025",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Coalescence-Based Estimates of Migration",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "Coalescence-Based Estimates of Migration"
+        ],
+        "source_pages": [
+          318
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p048:b8"
+        ],
+        "source_bboxes": [
+          [
+            476,
+            972,
+            714,
+            1031
+          ]
+        ]
+      },
+      "context": "s illustrated in Figure 6.23, in which the merging events are depicted as solid lines and the migration events (in this case only one) are denoted by dashed lines.\nIn this formulation, we consider three kinds of objects: $D$ is a set consisting of the data, $P$ is a set of parameters in the model (in this case, effective population numbers and migration rates), and $G$ is a genealogy of the ancestral history of alleles in the sample. The objective of the analysis is to maximize the likelihood of the data parameters $P$ given the data $D$, which is represented as $L(P|D)$, through an analysis of all possible genealogies $G$. Rendered as an equation, the method seeks to find the maximum of $$ \\frac{L(P\\mid D)}{L(P_{0}\\mid D)}\\cong\\frac{1}{g}\\sum_{i=1}^{g}\\frac{\\mathrm{Prob}(G_{i}\\mid P)}{\\mathrm{Prob}(G_{i}\\mid P_{0})} $$ where the summation is across all possible genealogies, and $ P_{\\theta} $ is the set of parameters used to generate the genealogies.\nA method for generating genealogies with random topologies and branch lengths was discussed in Chapter 3. There are infinitely many such topologies, so inferences about the values of the parameters must be based on a sample of genealogies. Even so, the space of possible genealogies is so large that purely random genealogies are likely to be far from the region in which Equation 6.24 is maximized. What is needed is a method for sys",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 48,
+        "formula_bbox": [
+          476,
+          972,
+          714,
+          1031
+        ],
+        "label_bbox": [
+          877,
+          983,
+          932,
+          1006
+        ],
+        "api_label": "[6.24]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.0
+      },
+      "equation_number": "6.24",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "Coalescence-Based Estimates of Migration"
+      ],
+      "subsection": "Coalescence-Based Estimates of Migration",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "Coalescence-Based Estimates of Migration"
+        ],
+        "subsection": "Coalescence-Based Estimates of Migration",
+        "source_pages": [
+          318
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p048:b8"
+        ],
+        "source_bboxes": [
+          [
+            476,
+            972,
+            714,
+            1031
+          ]
+        ],
+        "audit_evidence_sha256": "211a77ddd95803547b78db11bd185f9cfca154df74f68165240ccd898dd653a9"
+      }
+    },
+    {
+      "id": "6.25",
+      "label_format": "[6.25]",
+      "latex": "frac{-spq[q+h(p-q)]}{1-sq(2hp+q)}+m_{i}q^{*}-m_{o}q",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_026",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Migration-Selection Balance",
+        "heading_path": [
+          "6.5 MIGRATION",
+          "Migration-Selection Balance"
+        ],
+        "source_pages": [
+          322
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p052:b9"
+        ],
+        "source_bboxes": [
+          [
+            431,
+            633,
+            734,
+            686
+          ]
+        ]
+      },
+      "context": "and h is the degree of dominance of a. When h = 0 the a allele is completely recessive, and when $ h = \\frac{1}{2} $ the relative fitness of Aa is the arithmetic mean of those of AA and aa, indicating additive effects of A and a. Let p and q be the allele frequencies of A and a, with $ p + q = 1 $, and suppose that the selection is sufficiently weak, or the recessive allele sufficiently rare, and that the three genotypes are approximately in the Hardy-Weinberg frequencies of $ p^2 $, 2pq, and $ q^2 $.\nThis model was originally studied by Haldane (1930) and Wright (1931), who showed that the change $ \\Delta q $ in the allele frequency of a in the region where it is deleterious is given by $$ \\Delta q=\\frac{-spq[q+h(p-q)]}{1-sq(2hp+q)}+m_{i}q^{*}-m_{o}q $$ where $ m_{i} $ is the rate of in-migration of individuals from outside the population, among whom the allele frequency is $ q^{*} $, and $ m_{o} $ is the rate of out-migration of individuals who leave the population.\nAn ingenious application of Equation 6.25 is reported in Hoekstra et al. (2004). These authors studied rock-pocket mice (Chaetodipus intermedius) in southern Arizona, where there is a gradient in habitat color from the presence of dark-colored volcanic lava, whereas surrounding regions are light-colored granitic rocks. The mice inhabiting the volcanic rock have dark coats composed of uniformly melanic hair, wherea",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 52,
+        "formula_bbox": [
+          431,
+          633,
+          734,
+          686
+        ],
+        "label_bbox": [
+          869,
+          639,
+          924,
+          662
+        ],
+        "api_label": "[6.25]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 9.0
+      },
+      "equation_number": "6.25",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.5 MIGRATION",
+        "Migration-Selection Balance"
+      ],
+      "subsection": "Migration-Selection Balance",
+      "audit_provenance": {
+        "heading_path": [
+          "6.5 MIGRATION",
+          "Migration-Selection Balance"
+        ],
+        "subsection": "Migration-Selection Balance",
+        "source_pages": [
+          322
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p052:b9"
+        ],
+        "source_bboxes": [
+          [
+            431,
+            633,
+            734,
+            686
+          ]
+        ],
+        "audit_evidence_sha256": "10c6effc0eeec15e83a908a53e8edabf57296f220f600892b09cd8879092844d"
+      }
+    },
+    {
+      "id": "6.2a",
+      "label_format": "[6.2a]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b8"
+        ],
+        "source_bboxes": [
+          [
+            210,
+            808,
+            564,
+            838
+          ]
+        ]
+      },
+      "context": "At the population level, Figure 6.2 illustrates how the concepts of autozygosity and allozygosity are related to those of homozygosity and heterozygosity in a population of inbred organisms. The small circles represent the individuals in a population, with their genotypes indicated for one locus. The population is assumed to be infinite, but to make matters concrete we will focus on these 32 individuals and assume that they are a perfectly rep- representative sample. Some of the circles are shaded, and these represent autozygous genotypes whose alleles are identical by descent. Other circles are unshaded, and these represent allozygous genotypes whose alleles are not identical by descent. Disregarding the possibility of mutation since the time that F was declared to equal 0 (clearing the slate), all autozygous genotypes must be homozygous, but allozygous genotypes may be either homozygous or heterozygous (see Figure 6.2). Since F is the probability of identity by descent, it is also the proportion of individuals whose alleles are autozygous. In this example, $ F = \\frac{16}{32} = \\frac{1}{2} $, which can be determined by counting. Normally one would not be able to distinguish which homozygous genotypes were autozygous and which were allozygous, and here we have chosen them arbitrarily.\nThe essential point of Figure 6.2 is that two alleles can be identical by state, which means ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 7,
+        "formula_bbox": [
+          210,
+          808,
+          564,
+          838
+        ],
+        "label_bbox": [
+          725,
+          811,
+          778,
+          833
+        ],
+        "api_label": "[6.2a]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "6.2a",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b8"
+        ],
+        "source_bboxes": [
+          [
+            210,
+            808,
+            564,
+            838
+          ]
+        ],
+        "audit_evidence_sha256": "67e0b79130d23bb54cb153ebc7686c8aaf1cb90a34c9ab182241e64fcce1b754"
+      }
+    },
+    {
+      "id": "6.2b",
+      "label_format": "[6.2b]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b9"
+        ],
+        "source_bboxes": [
+          [
+            210,
+            842,
+            541,
+            873
+          ]
+        ]
+      },
+      "context": "is principle requires the assumption that all genotypes have the same fitness, which is to say that no natural selection takes place. If there is selection, then the allele frequencies can change with inbreeding.\nEquation 6.1 generalizes to multiple alleles in a straightforward way. If a gene has multiple alleles $ A_1, A_2, \\ldots A_n $ at respective frequencies $ p_1, p_2, \\ldots p_n $ (with $ p_1 + p_2 + \\cdots + p_n = 1 $), then in a population with inbreeding coefficient $ F $, the frequencies of $ A_i A_j $ homozygotes and $ A_i A_j $ heterozygotes are as follows: $$ \\begin{array}{r l}{A_{i}A_{i}\\colon}&{{}p_{i}^{2}(1-F)+p_{i}F=p_{i}^{2}\\;+\\; p_{i}(1-p_{i})\\mathrm{F}}\\end{array} $$ $$ \\begin{array}{r l r l}{A_{i}A_{j}:}&{{}2p_{i}p_{j}(1-F)}&{}&{{}=2p_{i}p_{j}-2p_{i}p_{j}F}\\end{array} $$\nCORRELATION BETWEEN UNITING GAMETES Wright's (1922) original conception of the inbreeding coefficient F was as a measure of the correlation between uniting gametes. That this concept is consistent with the probability interpretation is shown for gene with two alleles in [[SEE_TABLE:6.2]]. The upper part of the table shows all possible pairs of uniting gametes and their frequencies with inbreeding, with the female gamete on the left and the male gamete on the right. The alleles have been coded with numerical values, A with a value 1 and a with value 0. Any arbitrary numerical values lead to",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 7,
+        "formula_bbox": [
+          210,
+          842,
+          541,
+          873
+        ],
+        "label_bbox": [
+          725,
+          843,
+          777,
+          865
+        ],
+        "api_label": "[6.2b]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.5
+      },
+      "equation_number": "6.2b",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          277
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p007:b9"
+        ],
+        "source_bboxes": [
+          [
+            210,
+            842,
+            541,
+            873
+          ]
+        ],
+        "audit_evidence_sha256": "0205e833ed62dca3417fccd986da869844c75e54ebdc795e2f5206535c700bf3"
+      }
+    },
+    {
+      "id": "6.3",
+      "label_format": "[6.3]",
+      "latex": "r_{UG}=\\frac{Cov(x,y)}{\\sqrt{V(x)V(y)}}=\\frac{pqF}{pq}=F",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b9"
+        ],
+        "source_bboxes": [
+          [
+            466,
+            564,
+            712,
+            623
+          ]
+        ]
+      },
+      "context": "uencies with inbreeding, with the female gamete on the left and the male gamete on the right. The alleles have been coded with numerical values, A with a value 1 and a with value 0. Any arbitrary numerical values lead to the same conclusion, but the assignments in [[SEE_TABLE:6.2]] simplify the formulas. The bottom part of the table shows how various expected values are calculated, with the goal of deducing $ Cov(xy) $, the covariance between x and y, as well as $ V(x) $ and $ V(y) $, the variances. By definition, the correlation between uniting gametes $ r_{UG}(UG $ for uniting gametes) is the ratio of the covariance to the product of the standard deviations, and hence\n[[SEE_TABLE:6.2]] $$ r_{UG}=\\frac{Cov(x,y)}{\\sqrt{V(x)V(y)}}=\\frac{pqF}{pq}=F $$\nWright, to the end of his long and extraordinarily productive life (he died in 1988 at the age of 98), always preferred his own interpretation of F as a correlation, because under some exceptional circumstances $ r_{UG} $ can be negative, and in these cases the probability interpretations fails because a probability cannot be negative.\nREDUCTION IN THE FREQUENCY OF HETEROZYGOUS GENOTYPES One of the main effects of inbreeding is that a group of inbred individuals has reduced frequency of heterozygous genotypes, relative to a group of noninbred individuals (see Equation 6.1b). To examine this effect quantitatively, let $ H_1 $ denote ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 8,
+        "formula_bbox": [
+          466,
+          564,
+          712,
+          623
+        ],
+        "label_bbox": [
+          884,
+          587,
+          928,
+          612
+        ],
+        "api_label": "[6.3]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.0
+      },
+      "equation_number": "6.3",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b9"
+        ],
+        "source_bboxes": [
+          [
+            466,
+            564,
+            712,
+            623
+          ]
+        ],
+        "audit_evidence_sha256": "be76eb5d28ece56bb28406405b7a4d6b3e0812a8062c3c68dd1ec7ee16b704e3"
+      }
+    },
+    {
+      "id": "6.4",
+      "label_format": "[6.4]",
+      "latex": "F_{IS}=\\frac{H_{S}-H_{I}}{H_{S}}=\\frac{2pq-(2pq-2pqF)}{2pq}=F",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_004",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b10"
+        ],
+        "source_bboxes": [
+          [
+            418,
+            1077,
+            762,
+            1134
+          ]
+        ]
+      },
+      "context": "roup of inbred individuals has reduced frequency of heterozygous genotypes, relative to a group of noninbred individuals (see Equation 6.1b). To examine this effect quantitatively, let $ H_1 $ denote the probability that a gene in an inbred individual is heterozygous, and let $ H_5 $ denote the proportion of heterozygous genotypes expected with random mating in the subpopulation of which I is a member. With two alleles, Equation 6.1b implies that $ H_1 = 2pq - 2pqF $, and the Hardy-Weinberg principle implies that $ H_5 = 2pq $. The proportionate reduction in heterozygosity due to inbreeding, relative to the subpopulation as a whole, is symbolized as $ F_{15} $ and given by the expression $$ F_{IS}=\\frac{H_{S}-H_{I}}{H_{S}}=\\frac{2pq-(2pq-2pqF)}{2pq}=F $$ As we shall see Section 6.2, this formulation is particularly useful in thinking about subdivided populations, when both inbreeding and random genetic drift contribute to the overall probability of identity by descent. of P. cuspidata, two alleles of the phosphoglucomutase-2 gene were observed, which we will designate as the A and a alleles. The sample included were 15 AA, 6 Aa, and 14 aa genotypes (Levin 1978). Are these numbers consistent with the estimate $ F = 0.64 $? (Note: The $ \\chi^{2} $ in this case has one degree of freedom because only the allele frequency is estimated from the data; if F also were estimated from the",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 8,
+        "formula_bbox": [
+          418,
+          1077,
+          762,
+          1134
+        ],
+        "label_bbox": [
+          885,
+          1091,
+          929,
+          1114
+        ],
+        "api_label": "[6.4]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "6.4",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genotype Frequencies with Inbreeding"
+      ],
+      "subsection": "Genotype Frequencies with Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genotype Frequencies with Inbreeding"
+        ],
+        "subsection": "Genotype Frequencies with Inbreeding",
+        "source_pages": [
+          278
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p008:b10"
+        ],
+        "source_bboxes": [
+          [
+            418,
+            1077,
+            762,
+            1134
+          ]
+        ],
+        "audit_evidence_sha256": "3ef55835f8afd4457398d0e253916034abf45a730a5c62462c961504007c4964"
+      }
+    },
+    {
+      "id": "6.5",
+      "label_format": "[6.5]",
+      "latex": "+}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_005",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genetic Effects of Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genetic Effects of Inbreeding"
+        ],
+        "source_pages": [
+          280
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p010:b7"
+        ],
+        "source_bboxes": [
+          [
+            528,
+            335,
+            643,
+            394
+          ]
+        ]
+      },
+      "context": " and so the theoretically expected progeny are Cy/+i (with curly wings) and +i/+i (with straight wings) in a ratio of $ \\frac{2}{3}: \\frac{1}{3} $. If the wildtype chromosome carries one or more mutations that decrease survivorship, then there will be fewer than $ \\frac{1}{3} $ straight-wing flies, and if the chromosome carries a recessive lethal mutation, then straight-wing flies will be absent. Control crosses are of the form $ Cy/+_i \\times Cy/+_j $, where the $ +\\_i $ and $ +\\_j $ chromosomes are not identical by descent. For either type of mating, an estimate $ \\hat{v} $ of the viability (survivorship) of the $ +\\_/+ $ genotype, relative to that of the $ Cy/+ $ genotype, is given by $$ \\hat{v}=\\frac{2n_{+/-}}{1+n_{Cy/+}} $$ where $ n_{+/+} $ and $ n_{Cy/+} $ are the counts of wildtype and Curly offspring, respectively (Haldane 1956). The addition of 1 to the denominator makes the estimate of v almost unbiased. When the total number of offspring is large, $ \\hat{v} $ is essentially equal to two times the number of wildtype offspring divided by the number of Curly offspring.\nResults of such experiment to estimate the viabilities of autozygous (homozygous) and allozygous (heterozygous) wildtype chromosomes from a natural population are shown in Figure 6.4. It is evident that the homozygous genotypes (shaded histogram) are relatively poor in viability. In fact, about 37% of th",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 10,
+        "formula_bbox": [
+          528,
+          335,
+          643,
+          394
+        ],
+        "label_bbox": [
+          881,
+          354,
+          925,
+          377
+        ],
+        "api_label": "[6.5]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "6.5",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genetic Effects of Inbreeding"
+      ],
+      "subsection": "Genetic Effects of Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genetic Effects of Inbreeding"
+        ],
+        "subsection": "Genetic Effects of Inbreeding",
+        "source_pages": [
+          280
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p010:b7"
+        ],
+        "source_bboxes": [
+          [
+            528,
+            335,
+            643,
+            394
+          ]
+        ],
+        "audit_evidence_sha256": "1d49e8a4f15b7530fead75bb96fc7680d795bd834aed9ef2278fd9171d07f8fa"
+      }
+    },
+    {
+      "id": "6.6",
+      "label_format": "[6.6]",
+      "latex": "frac{c(1+15q)}{c+16q-cq}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_005",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Genetic Effects of Inbreeding",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genetic Effects of Inbreeding"
+        ],
+        "source_pages": [
+          281
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p011:b7"
+        ],
+        "source_bboxes": [
+          [
+            265,
+            1170,
+            597,
+            1232
+          ]
+        ]
+      },
+      "context": " from the genotype frequency given in Equation 6.1c. For the offspring of a first-cousin mating, $ F = \\frac{1}{16} $, as will be shown in the next section. Suppose that a is a rare deleterious recessive allele with an allele frequency of q. Then, among the children of first-cousin matings, the frequency of aa is expected to be $ q^2 + pq(\\frac{1}{16}) $. On the other hand, among the offspring of matings that take place at random, the frequency of homozygous recessives equals $ q^2 $.\nNow if c is the proportion of first-cousin matings in a population, then the expected proportion of homozygous aa offspring in the population as a whole that result from the first-cousin matings is given by $$ \\frac{c(q^{2}+pq\\left/16\\right.)}{q^{2}(1-c)+c(q^{2}+pq\\left/16\\right.)}=\\frac{c(1+15q)}{c+16q-cq} $$\nFigure 6.5 shows plots of this proportion for c = 0.01 and c = 0.06, a range that includes most human populations. Note that, as the recessive allele becomes more rare, the first-cousin matings account for an increasing proportion of all affected children. Consider albinism as an example, which is due to a rare recessive mutation. Although the allele frequency differs among human subpopulations, we will take q = 0.005 as typical, which predicts a frequency among the children of nonrelatives of $ q^2 = 0.0025% $, or about one in 40,000. The curves in Figure 6.5 imply that, when the frequency ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 11,
+        "formula_bbox": [
+          265,
+          1170,
+          597,
+          1232
+        ],
+        "label_bbox": [
+          725,
+          1191,
+          769,
+          1214
+        ],
+        "api_label": "[6.6]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "6.6",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Genetic Effects of Inbreeding"
+      ],
+      "subsection": "Genetic Effects of Inbreeding",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Genetic Effects of Inbreeding"
+        ],
+        "subsection": "Genetic Effects of Inbreeding",
+        "source_pages": [
+          281
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p011:b7"
+        ],
+        "source_bboxes": [
+          [
+            265,
+            1170,
+            597,
+            1232
+          ]
+        ],
+        "audit_evidence_sha256": "78d2ec140c7245e1824fdfd9f7a44190d9081d7bd0713220edd82281accc3c52"
+      }
+    },
+    {
+      "id": "6.7",
+      "label_format": "[6.7]",
+      "latex": "F_{I}=\\sum_{A}\\left(\\frac{1}{2}\\right)^{i}(1+F_{A})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_006",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Calculation of the Inbreeding Coefficient from Pedigrees",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Calculation of the Inbreeding Coefficient from Pedigrees"
+        ],
+        "source_pages": [
+          285
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p015:b14"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            637,
+            524,
+            698
+          ]
+        ]
+      },
+      "context": "t-cousin mating, there are two common ancestors (A and B) and two paths (one each through A and B). The total inbreeding coefficient of I is the sum of the two separate contributions shown in Figure 6.8. If A and B are both noninbred, then $F_A = F_B = 0$, and so $F_I = \\left(\\frac{1}{2}\\right)^5 + \\left(\\frac{1}{2}\\right)^5 = \\frac{1}{16}$. The result $F_I = \\frac{1}{16}$ is the probability that I is autozygous at the specified locus; alternatively, $F_I$ can be interpreted as the average proportion of all genes in I in which the alleles present are autozygous.\nIn general, for any autosomal gene, the formula for calculating the inbreeding coefficient $ F_{1} $ of an inbred organism I is $$ F_{I}=\\sum_{A}\\left(\\frac{1}{2}\\right)^{i}(1+F_{A}) $$ in which the summation over A means summation over all possible paths through all common ancestors, i is the number of organisms in each path, and A is the common ancestor in each path. Figure 6.9 gives the inbreeding coefficient of an offspring produced by mating between any of several common types of relatives in human pedigrees. assuming that none of the common ancestors is inbred. (Altogether, there are four common ancestors and six paths.) ANSWER $ F_{1} = \\left(\\frac{1}{2}\\right)^{3}(1 + F_{C}) + \\left(\\frac{1}{2}\\right)^{3}(1 + F_{D}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{A}) + \\left(\\frac{1}{2}\\right)^{5}(1 + F_{B}) + \\left(\\frac",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 15,
+        "formula_bbox": [
+          351,
+          637,
+          524,
+          698
+        ],
+        "label_bbox": [
+          734,
+          657,
+          778,
+          681
+        ],
+        "api_label": "[6.7]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "6.7",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Calculation of the Inbreeding Coefficient from Pedigrees"
+      ],
+      "subsection": "Calculation of the Inbreeding Coefficient from Pedigrees",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Calculation of the Inbreeding Coefficient from Pedigrees"
+        ],
+        "subsection": "Calculation of the Inbreeding Coefficient from Pedigrees",
+        "source_pages": [
+          285
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p015:b14"
+        ],
+        "source_bboxes": [
+          [
+            351,
+            637,
+            524,
+            698
+          ]
+        ],
+        "audit_evidence_sha256": "d3b7696283ffdc9b459fcef4e739cb0e113670754ac999b2bf07f68fd55f18ba"
+      }
+    },
+    {
+      "id": "6.8",
+      "label_format": "[6.8]",
+      "latex": "1-F_{t}=(\\frac{1}{2})^{t}(1-F_{0})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_007",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Regular Systems of Mating",
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Regular Systems of Mating"
+        ],
+        "source_pages": [
+          287
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p017:b9"
+        ],
+        "source_bboxes": [
+          [
+            356,
+            618,
+            526,
+            647
+          ]
+        ]
+      },
+      "context": " two indicated alleles are identical by descent. Here the formula in Equation 6.7 applies with only one path and only one ancestor in the path, and so $ F_t = \\left(\\frac{1}{2}\\right)^t(1 + F_{t-1}) $, where $ F_t $ is the inbreeding coefficient in generation $ t $. This equation is easy to solve in terms of the quantity $ 1 - F_t $, which is often called the panmictic index (panmixia) is an old-fashioned word for random mating). Multiplying both sides of the equation for $ F_t $ by -1 and then adding +1 to each side leads to $ 1 - F_t = 1 - \\left(\\frac{1}{2}\\right)(1 + F_{t-1}) = 1 - \\left(\\frac{1}{2}\\right) - \\left(\\frac{1}{2}\\right)F_{t-1} = \\left(\\frac{1}{2}\\right)(1 - F_{t-1}) $, or $$ 1-F_{t}=(\\frac{1}{2})^{t}(1-F_{0}) $$ where $ F_0 $ is the inbreeding coefficient in the initial generation when the repeated self-fertilization begins. Self-fertilization therefore leads to an extremely rapid increase in the inbreeding coefficient. When $ F_0 = 0 $, then $ F_1 = \\frac{1}{2} $, $ F_2 = \\frac{3}{4} $, $ F_3 = \\frac{7}{8} $, $ F_4 = \\frac{15}{16} $, and so on. The increase in $ F $ under self-fertilization and several other regular systems of mating is shown in Figure 6.11. No mat- ter how much inbreeding has taken place in a population, a single generation of random mating completely erases the effects, and the genotype frequencies return to the Hardy-Weinberg proportions.\nMa",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 17,
+        "formula_bbox": [
+          356,
+          618,
+          526,
+          647
+        ],
+        "label_bbox": [
+          734,
+          621,
+          778,
+          642
+        ],
+        "api_label": "[6.8]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.0
+      },
+      "equation_number": "6.8",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.1 INBREEDING",
+        "Regular Systems of Mating"
+      ],
+      "subsection": "Regular Systems of Mating",
+      "audit_provenance": {
+        "heading_path": [
+          "6.1 INBREEDING",
+          "Regular Systems of Mating"
+        ],
+        "subsection": "Regular Systems of Mating",
+        "source_pages": [
+          287
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p017:b9"
+        ],
+        "source_bboxes": [
+          [
+            356,
+            618,
+            526,
+            647
+          ]
+        ],
+        "audit_evidence_sha256": "6d0cba05e706efdae09e59f2aa6b5b6676464e02cc0b098ec33db9579ea65c1c"
+      }
+    },
+    {
+      "id": "6.9",
+      "label_format": "[6.9]",
+      "latex": "E_{SR}=\\frac{H_{R}-H_{S}}{H_{R}}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter6_011",
+        "chapter": "PopGen_chapter6",
+        "subsection": "Wright's F Statistics",
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "source_pages": [
+          295
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p025:b9"
+        ],
+        "source_bboxes": [
+          [
+            364,
+            1127,
+            496,
+            1184
+          ]
+        ]
+      },
+      "context": "ndex. This index equals the reduction in heterozygosity expected with random mating at any one level of a population hierarchy relative to another, more inclusive level of the hierarchy. The fixation index is a useful index of genetic differentiation because it allows an objective comparison of the overall effect of population structure among different organisms without getting into details of allele frequencies, observed levels of heterozygosity, and so forth. The genetic symbol for a fixation index is F embellished with subscripts denoting the levels of the hierarchy being compared. For example, $ F_{SR} $ is the fixation index of the subpopulations relative to the regional aggregates: $$ E_{SR}=\\frac{H_{R}-H_{S}}{H_{R}} $$\nIn words, Equation 6.9 defines $ F_{SR} $ as the decrease of heterozygosity among subpopulations within regions $ (H_{R}-H_{S}) $, relative to the heterozygosity. ity among regions $ (H_{R}) $. For the Linanthus example in [[SEE_TABLE:6.3]], $ F_{SR} = (0.1589 - 0.1424)/0.1589 = 0.1036 $.\nAt the next level of the hierarchy, we may define the fixation index $ F_{RT} $ as the proportionate reduction in heterozygosity of the regional aggregates relative to the total combined population: $$ F_{RT}=\\frac{H_{T}-H_{R}}{H_{T}} $$\nThe data in [[SEE_TABLE:6.3]] indicate that $ F_{RT} = (0.2371 - 0.1589)/0.2371 = 0.3299 $. Comparison of this value with $ F_{SR} $ abo",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter6.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          364,
+          1127,
+          496,
+          1184
+        ],
+        "label_bbox": [
+          729,
+          1151,
+          773,
+          1174
+        ],
+        "api_label": "[6.9]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 7.0
+      },
+      "equation_number": "6.9",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "6.2 POPULATION SUBDIVISION",
+        "Wright's F Statistics"
+      ],
+      "subsection": "Wright's F Statistics",
+      "audit_provenance": {
+        "heading_path": [
+          "6.2 POPULATION SUBDIVISION",
+          "Wright's F Statistics"
+        ],
+        "subsection": "Wright's F Statistics",
+        "source_pages": [
+          295
+        ],
+        "source_block_ids": [
+          "PopGen_chapter6:p025:b9"
+        ],
+        "source_bboxes": [
+          [
+            364,
+            1127,
+            496,
+            1184
+          ]
+        ],
+        "audit_evidence_sha256": "1aa727a43187db8983a138589dff0bf7a1ec364c53755425c1470f80550e501f"
+      }
+    }
+  ]
+}

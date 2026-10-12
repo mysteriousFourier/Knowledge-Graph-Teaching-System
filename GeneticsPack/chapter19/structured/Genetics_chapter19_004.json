@@ -1,0 +1,280 @@
+{
+  "id": "Genetics_chapter19_004",
+  "metadata": {
+    "chapter": "Genetics_chapter19",
+    "section": "THE MONOZYGOTIC-TWIN HALF-SIB METHOD",
+    "subsections": [],
+    "section_level_1": "THE MONOZYGOTIC-TWIN HALF-SIB METHOD",
+    "section_level_2": null,
+    "heading_path": [
+      "THE MONOZYGOTIC-TWIN HALF-SIB METHOD"
+    ],
+    "display_heading": "THE MONOZYGOTIC-TWIN HALF-SIB METHOD",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 600,
+      "printed_page": 580,
+      "source_block_ids": [
+        "p600:b11"
+      ],
+      "bbox": [
+        46.0,
+        1292.0,
+        695.0,
+        1343.0
+      ],
+      "raw_text": "THE MONOZYGOTIC-TWIN HALF-SIB METHOD"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Nance and Corey (1976) introduced a clever method of twin analysis that eliminates many of the uncertainties of the classical method. Children produced by two monozygotic twins are cousins socially, but genetically they are related as half sibs (Figure 19.1). Moreover, unlike their monozygotic-twin parents, such",
+      "source_page": 600,
+      "printed_page": 580,
+      "source_block_ids": [
+        "p600:b12"
+      ],
+      "bbox": [
+        38.0,
+        1355.0,
+        1001.0,
+        1515.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:19.1]]",
+      "source_page": 601,
+      "printed_page": 581,
+      "source_block_ids": [
+        "p601:b3"
+      ],
+      "bbox": [
+        178.0,
+        521.0,
+        1042.0,
+        633.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "half sibs are not raised in a common home. When data are available for the progeny of many pairs of such twins, a nested analysis of variance can be performed, analogous to that described previously for the full-sib, half-sib design (Table 18.3). The linear model to be analyzed is",
+      "source_page": 601,
+      "printed_page": 581,
+      "source_block_ids": [
+        "p601:b4"
+      ],
+      "bbox": [
+        136.0,
+        673.0,
+        1095.0,
+        827.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter19_formula017]]",
+      "source_page": 601,
+      "printed_page": 581,
+      "source_block_ids": [
+        "p601:b5"
+      ],
+      "bbox": [
+        469.0,
+        834.0,
+        769.0,
+        873.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ z_{ijk} $ is the phenotype of the kth offspring of the jth member (j = 1 or 2) of the ith twin pair, $ a_i $ is the effect of the ith pair, $ b_{ij} $ is the effect of the jth family within the ith pair (resulting from genetic differences between the unrelated parents and from common environmental effects), and $ e_{ijk} $ is the residual deviation resulting from segregation and special environmental effects. As usual under the assumption that individuals are random members of the population, $ a_i $, $ b_{ij} $, and $ e_{ijk} $ are defined to have means equal to zero and to be uncorrelated with each other. $ \\sigma_a^2 $, the variance between monozygotic-twin half-sibships, is equivalent to the covariance among half-sibs living in different homes. $ \\sigma_b^2 $ is the variance between full-sibships within half-sibships, and $ \\sigma_e^2 $ is the variance within full-sibships. Estimates of these variance components are obtainable from the observed mean squares of a nested ANOVA in the manner described in Chapter 18. Their causal components are summarized in Table 19.4.",
+      "source_page": 601,
+      "printed_page": 581,
+      "source_block_ids": [
+        "p601:b6"
+      ],
+      "bbox": [
+        144.0,
+        878.0,
+        1110.0,
+        1316.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The monozygotic-twin half-sib (MTHS) method has several major advantages over classical twin analysis. First, since it is performed on normal singleton children, the potential problem of environmental effects specific to twin phenotypes is eliminated. Second, the MTHS method removes the necessity of relying on data from both monozygotic and dizygotic twins. Third, when separate analyses are performed on female and male twins, it becomes possible to estimate the",
+      "source_page": 601,
+      "printed_page": 581,
+      "source_block_ids": [
+        "p601:b7"
+      ],
+      "bbox": [
+        155.0,
+        1293.0,
+        1118.0,
+        1513.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:19.4]]",
+      "source_page": 602,
+      "printed_page": 582,
+      "source_block_ids": [
+        "p602:b3"
+      ],
+      "bbox": [
+        79.0,
+        223.0,
+        1039.0,
+        607.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "genetic variance for maternal effects, $\\sigma_{G_{m}}^{2}$. As described in Table 19.4, the causal components of $\\sigma_{a}^{2}$ are identical for maternal and paternal half-sibships except that $\\sigma_{G_{m}}^{2}$ makes no contribution in the latter case (since the “half sibs” have different maternal genotypes). The opposite holds for $\\sigma_{b}^{2}$. Thus, $\\sigma_{b}^{2}(PHS) - \\sigma_{b}^{2}(MHS)$ and $\\sigma_{a}^{2}(MHS) - \\sigma_{a}^{2}(PHS)$ both provide estimates of $\\sigma_{G_{m}}^{2}$. Using this relationship, Nance (1979) was able to show that genetic maternal effects are responsible for about 22% of the variance in human height. (A more in-depth discussion of the analysis of maternal effects is provided in Chapter 23, where it is shown that $\\sigma_{G_{m}}^{2}$ actually contains several subsidiary components.)",
+      "source_page": 602,
+      "printed_page": 582,
+      "source_block_ids": [
+        "p602:b4"
+      ],
+      "bbox": [
+        69.0,
+        631.0,
+        1031.0,
+        938.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The variance due to common environmental effects is partitioned into two components in Table 19.4. $ \\sigma_{E_c'}^2 $ is equivalent to the covariance between half sibs due to common environmental effects. Even though the half sibs do not live in the same home, $ \\sigma_{E_c'}^2 $ may be nonzero in the MTHS design if monozygotic twins raise their offspring in a similar manner due to common cultural inheritance. (Although it is not shown in the table, $ \\sigma_{E_c'}^2 $ could also vary between paternal and maternal half-sibships). $ \\sigma_{E_c}^2 $ is the covariance between full sibs due to common maternal environment, in excess of $ \\sigma_{E_c'}^2 $.",
+      "source_page": 602,
+      "printed_page": 582,
+      "source_block_ids": [
+        "p602:b5"
+      ],
+      "bbox": [
+        61.0,
+        919.0,
+        1024.0,
+        1210.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In all, there are three sources of environmental variance as well as several sources of genetic variance in Table 19.4, but only five equations. Thus, not all of the parameters can be estimated with the nested design. However, when data are also recorded on the twins themselves, six other types of relationships can be evaluated (Table 19.5). Estimates of the variance components can then be obtained in the usual way by the solution of simultaneous equations, although it should be noted that the observed covariances are not all independent since they share common individuals.",
+      "source_page": 602,
+      "printed_page": 582,
+      "source_block_ids": [
+        "p602:b6"
+      ],
+      "bbox": [
+        49.0,
+        1186.0,
+        1016.0,
+        1467.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:19.5]]",
+      "source_page": 603,
+      "printed_page": 583,
+      "source_block_ids": [
+        "p603:b3"
+      ],
+      "bbox": [
+        116.0,
+        197.0,
+        1075.0,
+        560.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Nance and Corey (1976) and Haley et al. (1981) have pointed out that when separate analyses are performed on male and female progeny, the additive and dominance components of variance due to sex-linked loci can be determined with the MTHS design. For example, when an analysis is restricted to male progeny, in maternal half-sibships $ \\sigma_{a}^{2} $ contains additive genetic variance associated with the X chromosome since the male progeny within the sibship derive their X chromosomes from identical maternal genotypes, whereas $ \\sigma_{b}^{2} $ contains no variance associated with the X chromosome. On the other hand, in paternal half-sibships $ \\sigma_{b}^{2} $ contains additive genetic variance associated with the X chromosome since the male progeny in related half-sib families derive their X chromosomes from different mothers, whereas $ \\sigma_{a}^{2} $ contains no variance associated with the X chromosome since the paternal X chromosome is not inherited in the male offspring. (See Chapter 24 for further discussion of methods for estimating genetic variance due to sex-linked loci.)",
+      "source_page": 603,
+      "printed_page": 583,
+      "source_block_ids": [
+        "p603:b5"
+      ],
+      "bbox": [
+        130.0,
+        721.0,
+        1099.0,
+        1189.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An even more elaborate analysis than the preceding one has been outlined by (Haley and Last 1981), incorporating both dizygotic and monozygotic twins. The progeny of different dizygotic twins are genetically equivalent to first cousins.",
+      "source_page": 603,
+      "printed_page": 583,
+      "source_block_ids": [
+        "p603:b6"
+      ],
+      "bbox": [
+        143.0,
+        1166.0,
+        1103.0,
+        1292.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter19:2]]",
+      "source_page": 603,
+      "source_block_ids": [
+        "p603:b7",
+        "p604:b2",
+        "p604:b3",
+        "p604:b4",
+        "p604:b5"
+      ],
+      "bbox": [
+        197.0,
+        1358.0,
+        1065.0,
+        1533.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "TDRC appears to be almost completely genetically determined with a broad-sense heritability very close to 0.96. The correlations between ordinary full sibs and between dizygotic twins are essentially the same (averaging 0.46 and 0.49 respectively). In the absence of dominance and maternal effects, this would also be the expected correlation between parent and offspring. However, the latter appears to be very close to 0.42. Since the average mother-offspring correlation is less than the father-offspring regression, maternal effects appear to be unimportant. Thus, since $ \\sigma_{D}^{2}/4 $ contributes to the covariance between full sibs but not between parent and offspring, $ (0.48 - 0.42) \\times 4 = 0.24 $ provides an estimate of the proportion of the total phenotypic variance that is attributable to dominance (ignoring epistatic terms involving dominance).",
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b2"
+      ],
+      "bbox": [
+        167.0,
+        121.0,
+        1035.0,
+        465.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Epistasis may also play an important role in the expression of TDRC (Nance 1979). The genetic covariance for parent and offspring is $ (\\sigma_{A}^{2}/2) + (\\sigma_{AA}^{2}/4) + \\cdots $, while that for half sibs is $ (\\sigma_{A}^{2}/4) + (\\sigma_{AA}^{2}/16) + \\cdots $. Thus, in the presence of epistatic genetic variance, the phenotypic correlation $ r_{PO} $ is expected to be greater than $ 2r_{HS} $. Using the estimates for $ r_{HS} $ in the table, which are from analyses of the offspring of monozygotic twins, $ r_{PO} - 2r_{HS} \\simeq 0.10 $, provides an estimate of $ [(\\sigma_{AA}^{2}/8) + \\cdots]/\\sigma_{z}^{2} $. This result suggests that approximately $ 8 \\times 10\\% = 80\\% $ of the phenotypic variance is attributable to epistatic genetic variance, leaving little room for simple additive genetic variance. This estimate may be substantially inflated by sampling error. However, Heath et al. (1984) provide convincing evidence that about 40% of the variance of another trait, total finger pattern intensity, results from additive × additive epistatic interactions.",
+      "source_page": 605,
+      "printed_page": 585,
+      "source_block_ids": [
+        "p605:b3"
+      ],
+      "bbox": [
+        175.0,
+        480.0,
+        1048.0,
+        854.0
+      ]
+    }
+  ]
+}

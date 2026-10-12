@@ -1,0 +1,70 @@
+{
+  "id": "Genetics_chapter4_006",
+  "metadata": {
+    "chapter": "Genetics_chapter4",
+    "section": "THE TRANSMISSION OF GENETIC INFORMATION",
+    "subsections": [
+      "Age Structure"
+    ],
+    "section_level_1": "THE TRANSMISSION OF GENETIC INFORMATION",
+    "section_level_2": "Age Structure",
+    "heading_path": [
+      "THE TRANSMISSION OF GENETIC INFORMATION",
+      "Age Structure"
+    ],
+    "display_heading": "THE TRANSMISSION OF GENETIC INFORMATION / Age Structure",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b3"
+      ],
+      "bbox": [
+        133.0,
+        268.0,
+        312.0,
+        305.0
+      ],
+      "raw_text": "Age Structure"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "One final complication with respect to the idealized model is age structure. Up to now we have been assuming a population with discrete, nonoverlapping generations, such as an annual plant with no seed carry-over across years. In populations composed of several age classes (the majority of higher plants and animals), the generations overlap, and this causes the approach of genotype frequencies towards the Hardy-Weinberg expectations to be gradual, even in the case of an autosomal locus. This property arises because the genotypes of new recruits are a function of the allele frequencies specific to the reproductive age classes. Juvenile age classes only influence the change in genotype frequencies through mortality, but as they mature they begin to add copies of their genes to the population. The genotype frequencies become stable only after the allele frequencies become homogenized across age classes and sexes.",
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b4"
+      ],
+      "bbox": [
+        133.0,
+        293.0,
+        1099.0,
+        700.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Of equal significance is the fact that the allele frequencies themselves can be unstable in an age-structured population even in the absence of genotypic differences in age-specific survival and reproduction. Further complexities are introduced by the scheme of mating between the various age classes. All of these subjects are taken up in detail by Charlesworth (1974, 1994) and Gregorius (1976). The important point to remember is that when newly founded populations have significant age structure, fluctuations in both gene and genotype frequencies may occur for a substantial period of time even in the absence of selection.",
+      "source_page": 76,
+      "printed_page": 56,
+      "source_block_ids": [
+        "p76:b5"
+      ],
+      "bbox": [
+        143.0,
+        680.0,
+        1106.0,
+        960.0
+      ]
+    }
+  ]
+}

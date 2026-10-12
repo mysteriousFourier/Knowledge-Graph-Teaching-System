@@ -1,0 +1,1034 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter19",
+  "count": 5,
+  "tables": [
+    {
+      "id": "19.1",
+      "label_format": "Table 19.1",
+      "title": "Table 19.1 Summary of a one-way ANOVA involving N independent pairs of twins.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Source of Variance</td><td>df</td><td>Sums of Squares</td><td>Observed Mean Squares</td><td>E(MS)</td></tr><tr><td>Among pairs</td><td>N - 1</td><td>$ SS_{b} = 2 \\sum_{i=1}^{N} (\\overline{z}_{i} - \\overline{z})^{2} $</td><td>$ SS_{b}/(N - 1) $</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $</td></tr><tr><td>Within pairs</td><td>N</td><td>$ SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z}_{i})^{2} $</td><td>$ SS_{e}/N $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td>Total</td><td>T - 1</td><td>$ SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z})^{2} $</td><td>$ SS_{T}/(T - 1) $</td><td>$ \\sigma_{z}^{2} $</td></tr></table>",
+      "rows": [
+        [
+          "Source of Variance",
+          "df",
+          "Sums of Squares",
+          "Observed Mean Squares",
+          "E(MS)"
+        ],
+        [
+          "Among pairs",
+          "N - 1",
+          "$ SS_{b} = 2 \\sum_{i=1}^{N} (\\overline{z}_{i} - \\overline{z})^{2} $",
+          "$ SS_{b}/(N - 1) $",
+          "$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $"
+        ],
+        [
+          "Within pairs",
+          "N",
+          "$ SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z}_{i})^{2} $",
+          "$ SS_{e}/N $",
+          "$ \\sigma_{e}^{2} $"
+        ],
+        [
+          "Total",
+          "T - 1",
+          "$ SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z})^{2} $",
+          "$ SS_{T}/(T - 1) $",
+          "$ \\sigma_{z}^{2} $"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: This general description applies to both monozygotic and dizygotic analyses. The total sample size is $ T = 2N $, $ z_{ij} $ is the observed phenotype of the $ j^{th} $ member of the $ i^{th} $ pair of twins, $ \\overline{z}_{i} $ is the mean phenotype of the $ i^{th} $ pair, and $ E(\\text{MS}) $ denotes the expected mean squares.",
+          "source_page": 595,
+          "bbox": [
+            125.0,
+            561.0,
+            1084.0,
+            702.0
+          ],
+          "source_block_ids": [
+            "p595:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 595,
+          "title": "Table 19.1 Summary of a one-way ANOVA involving N independent pairs of twins.",
+          "html": "<table><tr><td>Source of Variance</td><td>df</td><td>Sums of Squares</td><td>Observed Mean Squares</td><td>E(MS)</td></tr><tr><td>Among pairs</td><td>N - 1</td><td>$ SS_{b} = 2 \\sum_{i=1}^{N} (\\overline{z}_{i} - \\overline{z})^{2} $</td><td>$ SS_{b}/(N - 1) $</td><td>$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $</td></tr><tr><td>Within pairs</td><td>N</td><td>$ SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z}_{i})^{2} $</td><td>$ SS_{e}/N $</td><td>$ \\sigma_{e}^{2} $</td></tr><tr><td>Total</td><td>T - 1</td><td>$ SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z})^{2} $</td><td>$ SS_{T}/(T - 1) $</td><td>$ \\sigma_{z}^{2} $</td></tr></table>",
+          "rows": [
+            [
+              "Source of Variance",
+              "df",
+              "Sums of Squares",
+              "Observed Mean Squares",
+              "E(MS)"
+            ],
+            [
+              "Among pairs",
+              "N - 1",
+              "$ SS_{b} = 2 \\sum_{i=1}^{N} (\\overline{z}_{i} - \\overline{z})^{2} $",
+              "$ SS_{b}/(N - 1) $",
+              "$ \\sigma_{e}^{2} + 2\\sigma_{b}^{2} $"
+            ],
+            [
+              "Within pairs",
+              "N",
+              "$ SS_{e} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z}_{i})^{2} $",
+              "$ SS_{e}/N $",
+              "$ \\sigma_{e}^{2} $"
+            ],
+            [
+              "Total",
+              "T - 1",
+              "$ SS_{T} = \\sum_{i=1}^{N} \\sum_{j=1}^{2} (z_{ij} - \\overline{z})^{2} $",
+              "$ SS_{T}/(T - 1) $",
+              "$ \\sigma_{z}^{2} $"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: This general description applies to both monozygotic and dizygotic analyses. The total sample size is $ T = 2N $, $ z_{ij} $ is the observed phenotype of the $ j^{th} $ member of the $ i^{th} $ pair of twins, $ \\overline{z}_{i} $ is the mean phenotype of the $ i^{th} $ pair, and $ E(\\text{MS}) $ denotes the expected mean squares.",
+              "source_page": 595,
+              "bbox": [
+                125.0,
+                561.0,
+                1084.0,
+                702.0
+              ],
+              "source_block_ids": [
+                "p595:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            115.0,
+            161.0,
+            1076.0,
+            571.0
+          ],
+          "caption_bbox": [
+            114.0,
+            122.0,
+            1041.0,
+            173.0
+          ],
+          "source_block_ids": [
+            "p595:b3"
+          ],
+          "caption_source_block_ids": [
+            "p595:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter19",
+        "unit_id": "Genetics_chapter19_001",
+        "page": 595,
+        "pages": [
+          595
+        ],
+        "bbox": [
+          115.0,
+          161.0,
+          1076.0,
+          571.0
+        ],
+        "caption_bbox": [
+          114.0,
+          122.0,
+          1041.0,
+          173.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "19.2",
+      "label_format": "Table 19.2",
+      "title": "Table 19.2 Intraclass correlations for monozygotic twins raised together $ (t_{\\mathrm{MZT}}) $ and raised apart $ (t_{\\mathrm{MZA}}) $, both obtained by use of Equation 19.7a.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Character</td><td>$ t_{MZT} $</td><td>$ t_{MZA} $</td><td>$ t_{MZT} - t_{MZA} $</td></tr><tr><td>Fingerprint ridge count</td><td>0.96</td><td>0.97</td><td>-0.01</td></tr><tr><td>Height</td><td>0.93</td><td>0.86</td><td>0.07</td></tr><tr><td>Weight</td><td>0.83</td><td>0.73</td><td>0.10</td></tr><tr><td>Blood pressure</td><td>0.70</td><td>0.64</td><td>0.06</td></tr><tr><td>Heart rate</td><td>0.54</td><td>0.49</td><td>0.05</td></tr><tr><td>IQ</td><td>0.88</td><td>0.69</td><td>0.19</td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "$ t_{MZT} $",
+          "$ t_{MZA} $",
+          "$ t_{MZT} - t_{MZA} $"
+        ],
+        [
+          "Fingerprint ridge count",
+          "0.96",
+          "0.97",
+          "-0.01"
+        ],
+        [
+          "Height",
+          "0.93",
+          "0.86",
+          "0.07"
+        ],
+        [
+          "Weight",
+          "0.83",
+          "0.73",
+          "0.10"
+        ],
+        [
+          "Blood pressure",
+          "0.70",
+          "0.64",
+          "0.06"
+        ],
+        [
+          "Heart rate",
+          "0.54",
+          "0.49",
+          "0.05"
+        ],
+        [
+          "IQ",
+          "0.88",
+          "0.69",
+          "0.19"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Bouchard et al. 1990.",
+          "source_page": 599,
+          "bbox": [
+            126.0,
+            456.0,
+            433.0,
+            495.0
+          ],
+          "source_block_ids": [
+            "p599:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 599,
+          "title": "Table 19.2 Intraclass correlations for monozygotic twins raised together $ (t_{\\mathrm{MZT}}) $ and raised apart $ (t_{\\mathrm{MZA}}) $, both obtained by use of Equation 19.7a.",
+          "html": "<table><tr><td>Character</td><td>$ t_{MZT} $</td><td>$ t_{MZA} $</td><td>$ t_{MZT} - t_{MZA} $</td></tr><tr><td>Fingerprint ridge count</td><td>0.96</td><td>0.97</td><td>-0.01</td></tr><tr><td>Height</td><td>0.93</td><td>0.86</td><td>0.07</td></tr><tr><td>Weight</td><td>0.83</td><td>0.73</td><td>0.10</td></tr><tr><td>Blood pressure</td><td>0.70</td><td>0.64</td><td>0.06</td></tr><tr><td>Heart rate</td><td>0.54</td><td>0.49</td><td>0.05</td></tr><tr><td>IQ</td><td>0.88</td><td>0.69</td><td>0.19</td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "$ t_{MZT} $",
+              "$ t_{MZA} $",
+              "$ t_{MZT} - t_{MZA} $"
+            ],
+            [
+              "Fingerprint ridge count",
+              "0.96",
+              "0.97",
+              "-0.01"
+            ],
+            [
+              "Height",
+              "0.93",
+              "0.86",
+              "0.07"
+            ],
+            [
+              "Weight",
+              "0.83",
+              "0.73",
+              "0.10"
+            ],
+            [
+              "Blood pressure",
+              "0.70",
+              "0.64",
+              "0.06"
+            ],
+            [
+              "Heart rate",
+              "0.54",
+              "0.49",
+              "0.05"
+            ],
+            [
+              "IQ",
+              "0.88",
+              "0.69",
+              "0.19"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Bouchard et al. 1990.",
+              "source_page": 599,
+              "bbox": [
+                126.0,
+                456.0,
+                433.0,
+                495.0
+              ],
+              "source_block_ids": [
+                "p599:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            119.0,
+            198.0,
+            1073.0,
+            455.0
+          ],
+          "caption_bbox": [
+            113.0,
+            116.0,
+            1072.0,
+            204.0
+          ],
+          "source_block_ids": [
+            "p599:b3"
+          ],
+          "caption_source_block_ids": [
+            "p599:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter19",
+        "unit_id": "Genetics_chapter19_003",
+        "page": 599,
+        "pages": [
+          599
+        ],
+        "bbox": [
+          119.0,
+          198.0,
+          1073.0,
+          455.0
+        ],
+        "caption_bbox": [
+          113.0,
+          116.0,
+          1072.0,
+          204.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "19.3",
+      "label_format": "Table 19.3",
+      "title": "Table 19.3 Broad-sense heritability estimates for size-related characters in humans, obtained by use of Equation 19.8.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Character</td><td>MS $ _{e} $(DZ)</td><td>MS $ _{e} $(MZ)</td><td>Var(z)</td><td>$ \\widetilde{H}^{2} $</td></tr><tr><td>Height</td><td>1620.3</td><td>195.4</td><td>3031.7</td><td>0.94</td></tr><tr><td>Arm span</td><td>2132.0</td><td>317.7</td><td>3944.1</td><td>0.92</td></tr><tr><td>Middle finger length</td><td>11.9</td><td>1.4</td><td>22.3</td><td>0.94</td></tr><tr><td>Foot length</td><td>58.5</td><td>10.9</td><td>105.8</td><td>0.90</td></tr><tr><td>Chest circumference</td><td>1098.8</td><td>423.7</td><td>1776.6</td><td>0.76</td></tr><tr><td>Head breadth</td><td>14.9</td><td>4.2</td><td>25.5</td><td>0.84</td></tr></table>",
+      "rows": [
+        [
+          "Character",
+          "MS $ _{e} $(DZ)",
+          "MS $ _{e} $(MZ)",
+          "Var(z)",
+          "$ \\widetilde{H}^{2} $"
+        ],
+        [
+          "Height",
+          "1620.3",
+          "195.4",
+          "3031.7",
+          "0.94"
+        ],
+        [
+          "Arm span",
+          "2132.0",
+          "317.7",
+          "3944.1",
+          "0.92"
+        ],
+        [
+          "Middle finger length",
+          "11.9",
+          "1.4",
+          "22.3",
+          "0.94"
+        ],
+        [
+          "Foot length",
+          "58.5",
+          "10.9",
+          "105.8",
+          "0.90"
+        ],
+        [
+          "Chest circumference",
+          "1098.8",
+          "423.7",
+          "1776.6",
+          "0.76"
+        ],
+        [
+          "Head breadth",
+          "14.9",
+          "4.2",
+          "25.5",
+          "0.84"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Source: Clark 1956.",
+          "source_page": 599,
+          "bbox": [
+            137.0,
+            901.0,
+            345.0,
+            935.0
+          ],
+          "source_block_ids": [
+            "p599:b7"
+          ]
+        },
+        {
+          "marker": "",
+          "content": "Note: Data are from 44 pairs of monozygotic twins and 37 pairs of dizygotic twins of the same sex in Michigan high schools and junior high schools.",
+          "source_page": 599,
+          "bbox": [
+            137.0,
+            912.0,
+            1095.0,
+            998.0
+          ],
+          "source_block_ids": [
+            "p599:b8"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 599,
+          "title": "Table 19.3 Broad-sense heritability estimates for size-related characters in humans, obtained by use of Equation 19.8.",
+          "html": "<table><tr><td>Character</td><td>MS $ _{e} $(DZ)</td><td>MS $ _{e} $(MZ)</td><td>Var(z)</td><td>$ \\widetilde{H}^{2} $</td></tr><tr><td>Height</td><td>1620.3</td><td>195.4</td><td>3031.7</td><td>0.94</td></tr><tr><td>Arm span</td><td>2132.0</td><td>317.7</td><td>3944.1</td><td>0.92</td></tr><tr><td>Middle finger length</td><td>11.9</td><td>1.4</td><td>22.3</td><td>0.94</td></tr><tr><td>Foot length</td><td>58.5</td><td>10.9</td><td>105.8</td><td>0.90</td></tr><tr><td>Chest circumference</td><td>1098.8</td><td>423.7</td><td>1776.6</td><td>0.76</td></tr><tr><td>Head breadth</td><td>14.9</td><td>4.2</td><td>25.5</td><td>0.84</td></tr></table>",
+          "rows": [
+            [
+              "Character",
+              "MS $ _{e} $(DZ)",
+              "MS $ _{e} $(MZ)",
+              "Var(z)",
+              "$ \\widetilde{H}^{2} $"
+            ],
+            [
+              "Height",
+              "1620.3",
+              "195.4",
+              "3031.7",
+              "0.94"
+            ],
+            [
+              "Arm span",
+              "2132.0",
+              "317.7",
+              "3944.1",
+              "0.92"
+            ],
+            [
+              "Middle finger length",
+              "11.9",
+              "1.4",
+              "22.3",
+              "0.94"
+            ],
+            [
+              "Foot length",
+              "58.5",
+              "10.9",
+              "105.8",
+              "0.90"
+            ],
+            [
+              "Chest circumference",
+              "1098.8",
+              "423.7",
+              "1776.6",
+              "0.76"
+            ],
+            [
+              "Head breadth",
+              "14.9",
+              "4.2",
+              "25.5",
+              "0.84"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Source: Clark 1956.",
+              "source_page": 599,
+              "bbox": [
+                137.0,
+                901.0,
+                345.0,
+                935.0
+              ],
+              "source_block_ids": [
+                "p599:b7"
+              ]
+            },
+            {
+              "marker": "",
+              "content": "Note: Data are from 44 pairs of monozygotic twins and 37 pairs of dizygotic twins of the same sex in Michigan high schools and junior high schools.",
+              "source_page": 599,
+              "bbox": [
+                137.0,
+                912.0,
+                1095.0,
+                998.0
+              ],
+              "source_block_ids": [
+                "p599:b8"
+              ]
+            }
+          ],
+          "bbox": [
+            131.0,
+            630.0,
+            1088.0,
+            900.0
+          ],
+          "caption_bbox": [
+            126.0,
+            553.0,
+            1083.0,
+            638.0
+          ],
+          "source_block_ids": [
+            "p599:b6"
+          ],
+          "caption_source_block_ids": [
+            "p599:b5"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter19",
+        "unit_id": "Genetics_chapter19_003",
+        "page": 599,
+        "pages": [
+          599
+        ],
+        "bbox": [
+          131.0,
+          630.0,
+          1088.0,
+          900.0
+        ],
+        "caption_bbox": [
+          126.0,
+          553.0,
+          1083.0,
+          638.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "19.4",
+      "label_format": "Table 19.4",
+      "title": "Table 19.4 Coefficients for the causal components of variance that contribute to the expected variance components $ \\sigma_{a}^{2} $, $ \\sigma_{b}^{2} $, and $ \\sigma_{e}^{2} $ extracted from the nested ANOVA in a monozygotic-twin half-sib design.",
+      "table_type": "numbered",
+      "html": "<table><tr><td></td><td>$ \\sigma_{A}^{2} $</td><td>$ \\sigma_{D}^{2} $</td><td>$ \\sigma_{AA}^{2} $</td><td>$ \\sigma_{AD}^{2} $</td><td>$ \\sigma_{DD}^{2} $</td><td>$ \\sigma_{G_{m}}^{2} $</td><td>$ \\sigma_{E_{c}^{\\prime}}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{s}}^{2} $</td></tr><tr><td colspan=\"10\">Female twins (maternal half sibships)</td></tr><tr><td>$ \\sigma_{a}^{2} $</td><td>1/4</td><td>0</td><td>1/16</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\sigma_{b}^{2} $</td><td>1/4</td><td>1/4</td><td>3/16</td><td>1/8</td><td>1/16</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td colspan=\"10\">Male twins (paternal half sibships)</td></tr><tr><td>$ \\sigma_{a}^{2} $</td><td>1/4</td><td>0</td><td>1/16</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\sigma_{b}^{2} $</td><td>1/4</td><td>1/4</td><td>3/16</td><td>1/8</td><td>1/16</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td colspan=\"10\">General</td></tr><tr><td>$ \\sigma_{e}^{2} $</td><td>1/2</td><td>3/4</td><td>3/4</td><td>7/8</td><td>5/16</td><td>0</td><td>0</td><td>0</td><td>1</td></tr></table>",
+      "rows": [
+        [
+          "",
+          "$ \\sigma_{A}^{2} $",
+          "$ \\sigma_{D}^{2} $",
+          "$ \\sigma_{AA}^{2} $",
+          "$ \\sigma_{AD}^{2} $",
+          "$ \\sigma_{DD}^{2} $",
+          "$ \\sigma_{G_{m}}^{2} $",
+          "$ \\sigma_{E_{c}^{\\prime}}^{2} $",
+          "$ \\sigma_{E_{c}}^{2} $",
+          "$ \\sigma_{E_{s}}^{2} $"
+        ],
+        [
+          "Female twins (maternal half sibships)"
+        ],
+        [
+          "$ \\sigma_{a}^{2} $",
+          "1/4",
+          "0",
+          "1/16",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "$ \\sigma_{b}^{2} $",
+          "1/4",
+          "1/4",
+          "3/16",
+          "1/8",
+          "1/16",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "Male twins (paternal half sibships)"
+        ],
+        [
+          "$ \\sigma_{a}^{2} $",
+          "1/4",
+          "0",
+          "1/16",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "$ \\sigma_{b}^{2} $",
+          "1/4",
+          "1/4",
+          "3/16",
+          "1/8",
+          "1/16",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "General"
+        ],
+        [
+          "$ \\sigma_{e}^{2} $",
+          "1/2",
+          "3/4",
+          "3/4",
+          "7/8",
+          "5/16",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 602,
+          "title": "Table 19.4 Coefficients for the causal components of variance that contribute to the expected variance components $ \\sigma_{a}^{2} $, $ \\sigma_{b}^{2} $, and $ \\sigma_{e}^{2} $ extracted from the nested ANOVA in a monozygotic-twin half-sib design.",
+          "html": "<table><tr><td></td><td>$ \\sigma_{A}^{2} $</td><td>$ \\sigma_{D}^{2} $</td><td>$ \\sigma_{AA}^{2} $</td><td>$ \\sigma_{AD}^{2} $</td><td>$ \\sigma_{DD}^{2} $</td><td>$ \\sigma_{G_{m}}^{2} $</td><td>$ \\sigma_{E_{c}^{\\prime}}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{s}}^{2} $</td></tr><tr><td colspan=\"10\">Female twins (maternal half sibships)</td></tr><tr><td>$ \\sigma_{a}^{2} $</td><td>1/4</td><td>0</td><td>1/16</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\sigma_{b}^{2} $</td><td>1/4</td><td>1/4</td><td>3/16</td><td>1/8</td><td>1/16</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td colspan=\"10\">Male twins (paternal half sibships)</td></tr><tr><td>$ \\sigma_{a}^{2} $</td><td>1/4</td><td>0</td><td>1/16</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr><td>$ \\sigma_{b}^{2} $</td><td>1/4</td><td>1/4</td><td>3/16</td><td>1/8</td><td>1/16</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td colspan=\"10\">General</td></tr><tr><td>$ \\sigma_{e}^{2} $</td><td>1/2</td><td>3/4</td><td>3/4</td><td>7/8</td><td>5/16</td><td>0</td><td>0</td><td>0</td><td>1</td></tr></table>",
+          "rows": [
+            [
+              "",
+              "$ \\sigma_{A}^{2} $",
+              "$ \\sigma_{D}^{2} $",
+              "$ \\sigma_{AA}^{2} $",
+              "$ \\sigma_{AD}^{2} $",
+              "$ \\sigma_{DD}^{2} $",
+              "$ \\sigma_{G_{m}}^{2} $",
+              "$ \\sigma_{E_{c}^{\\prime}}^{2} $",
+              "$ \\sigma_{E_{c}}^{2} $",
+              "$ \\sigma_{E_{s}}^{2} $"
+            ],
+            [
+              "Female twins (maternal half sibships)"
+            ],
+            [
+              "$ \\sigma_{a}^{2} $",
+              "1/4",
+              "0",
+              "1/16",
+              "0",
+              "0",
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "$ \\sigma_{b}^{2} $",
+              "1/4",
+              "1/4",
+              "3/16",
+              "1/8",
+              "1/16",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "Male twins (paternal half sibships)"
+            ],
+            [
+              "$ \\sigma_{a}^{2} $",
+              "1/4",
+              "0",
+              "1/16",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "$ \\sigma_{b}^{2} $",
+              "1/4",
+              "1/4",
+              "3/16",
+              "1/8",
+              "1/16",
+              "1",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "General"
+            ],
+            [
+              "$ \\sigma_{e}^{2} $",
+              "1/2",
+              "3/4",
+              "3/4",
+              "7/8",
+              "5/16",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            79.0,
+            223.0,
+            1039.0,
+            607.0
+          ],
+          "caption_bbox": [
+            88.0,
+            117.0,
+            1047.0,
+            233.0
+          ],
+          "source_block_ids": [
+            "p602:b3"
+          ],
+          "caption_source_block_ids": [
+            "p602:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter19",
+        "unit_id": "Genetics_chapter19_004",
+        "page": 602,
+        "pages": [
+          602
+        ],
+        "bbox": [
+          79.0,
+          223.0,
+          1039.0,
+          607.0
+        ],
+        "caption_bbox": [
+          88.0,
+          117.0,
+          1047.0,
+          233.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "19.5",
+      "label_format": "Table 19.5",
+      "title": "Table 19.5 Additional covariances between relatives that can be observed with a MTHS design, and their causal components, when the parents are measured.",
+      "table_type": "numbered",
+      "html": "<table><tr><td rowspan=\"2\">Covariance</td><td colspan=\"9\">Variance Component</td></tr><tr><td>$ \\sigma_{A}^{2} $</td><td>$ \\sigma_{D}^{2} $</td><td>$ \\sigma_{AA}^{2} $</td><td>$ \\sigma_{AD}^{2} $</td><td>$ \\sigma_{DD}^{2} $</td><td>$ \\sigma_{Gm}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{s}}^{2} $</td></tr><tr><td>MZ twins</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Mother-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>1/2</td><td>b_{1}</td><td>0</td><td>0</td></tr><tr><td>Father-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>0</td><td>b_{2}</td><td>0</td><td>0</td></tr><tr><td>Twin aunt-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>1/2</td><td>b_{3}</td><td>0</td><td>0</td></tr><tr><td>Twin uncle-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>0</td><td>b_{4}</td><td>0</td><td>0</td></tr><tr><td>Variance within MZ twin pairs</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr></table>",
+      "rows": [
+        [
+          "Covariance",
+          "Variance Component"
+        ],
+        [
+          "$ \\sigma_{A}^{2} $",
+          "$ \\sigma_{D}^{2} $",
+          "$ \\sigma_{AA}^{2} $",
+          "$ \\sigma_{AD}^{2} $",
+          "$ \\sigma_{DD}^{2} $",
+          "$ \\sigma_{Gm}^{2} $",
+          "$ \\sigma_{E_{c}}^{2} $",
+          "$ \\sigma_{E_{c}}^{2} $",
+          "$ \\sigma_{E_{s}}^{2} $"
+        ],
+        [
+          "MZ twins",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "Mother-offspring",
+          "1/2",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/2",
+          "b_{1}",
+          "0",
+          "0"
+        ],
+        [
+          "Father-offspring",
+          "1/2",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "b_{2}",
+          "0",
+          "0"
+        ],
+        [
+          "Twin aunt-offspring",
+          "1/2",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "1/2",
+          "b_{3}",
+          "0",
+          "0"
+        ],
+        [
+          "Twin uncle-offspring",
+          "1/2",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "0",
+          "b_{4}",
+          "0",
+          "0"
+        ],
+        [
+          "Variance within MZ twin pairs",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "notes": [
+        {
+          "marker": "",
+          "content": "Note: To account for the possibility that cultural inheritance across generations is a source of resemblance between relatives, arbitrary coefficients $ (b_{1}, \\ldots, b_{4}) $ have been denoted for $ \\sigma_{E_{c}}^{2} $; these may or may not be equal.",
+          "source_page": 603,
+          "bbox": [
+            126.0,
+            554.0,
+            1084.0,
+            677.0
+          ],
+          "source_block_ids": [
+            "p603:b4"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "page": 603,
+          "title": "Table 19.5 Additional covariances between relatives that can be observed with a MTHS design, and their causal components, when the parents are measured.",
+          "html": "<table><tr><td rowspan=\"2\">Covariance</td><td colspan=\"9\">Variance Component</td></tr><tr><td>$ \\sigma_{A}^{2} $</td><td>$ \\sigma_{D}^{2} $</td><td>$ \\sigma_{AA}^{2} $</td><td>$ \\sigma_{AD}^{2} $</td><td>$ \\sigma_{DD}^{2} $</td><td>$ \\sigma_{Gm}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{c}}^{2} $</td><td>$ \\sigma_{E_{s}}^{2} $</td></tr><tr><td>MZ twins</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Mother-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>1/2</td><td>b_{1}</td><td>0</td><td>0</td></tr><tr><td>Father-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>0</td><td>b_{2}</td><td>0</td><td>0</td></tr><tr><td>Twin aunt-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>1/2</td><td>b_{3}</td><td>0</td><td>0</td></tr><tr><td>Twin uncle-offspring</td><td>1/2</td><td>0</td><td>1/4</td><td>0</td><td>0</td><td>0</td><td>b_{4}</td><td>0</td><td>0</td></tr><tr><td>Variance within MZ twin pairs</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr></table>",
+          "rows": [
+            [
+              "Covariance",
+              "Variance Component"
+            ],
+            [
+              "$ \\sigma_{A}^{2} $",
+              "$ \\sigma_{D}^{2} $",
+              "$ \\sigma_{AA}^{2} $",
+              "$ \\sigma_{AD}^{2} $",
+              "$ \\sigma_{DD}^{2} $",
+              "$ \\sigma_{Gm}^{2} $",
+              "$ \\sigma_{E_{c}}^{2} $",
+              "$ \\sigma_{E_{c}}^{2} $",
+              "$ \\sigma_{E_{s}}^{2} $"
+            ],
+            [
+              "MZ twins",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "Mother-offspring",
+              "1/2",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "1/2",
+              "b_{1}",
+              "0",
+              "0"
+            ],
+            [
+              "Father-offspring",
+              "1/2",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "b_{2}",
+              "0",
+              "0"
+            ],
+            [
+              "Twin aunt-offspring",
+              "1/2",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "1/2",
+              "b_{3}",
+              "0",
+              "0"
+            ],
+            [
+              "Twin uncle-offspring",
+              "1/2",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "b_{4}",
+              "0",
+              "0"
+            ],
+            [
+              "Variance within MZ twin pairs",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "notes": [
+            {
+              "marker": "",
+              "content": "Note: To account for the possibility that cultural inheritance across generations is a source of resemblance between relatives, arbitrary coefficients $ (b_{1}, \\ldots, b_{4}) $ have been denoted for $ \\sigma_{E_{c}}^{2} $; these may or may not be equal.",
+              "source_page": 603,
+              "bbox": [
+                126.0,
+                554.0,
+                1084.0,
+                677.0
+              ],
+              "source_block_ids": [
+                "p603:b4"
+              ]
+            }
+          ],
+          "bbox": [
+            116.0,
+            197.0,
+            1075.0,
+            560.0
+          ],
+          "caption_bbox": [
+            112.0,
+            113.0,
+            1071.0,
+            207.0
+          ],
+          "source_block_ids": [
+            "p603:b3"
+          ],
+          "caption_source_block_ids": [
+            "p603:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter19",
+        "unit_id": "Genetics_chapter19_004",
+        "page": 603,
+        "pages": [
+          603
+        ],
+        "bbox": [
+          116.0,
+          197.0,
+          1075.0,
+          560.0
+        ],
+        "caption_bbox": [
+          112.0,
+          113.0,
+          1071.0,
+          207.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

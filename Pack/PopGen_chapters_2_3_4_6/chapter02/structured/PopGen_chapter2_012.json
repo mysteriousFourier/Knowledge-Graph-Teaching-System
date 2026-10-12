@@ -1,0 +1,1435 @@
+{
+  "id": "PopGen_chapter2_012",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+    "subsections": [
+      "Three or More Alleles"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [
+      "inline_1",
+      "inline_7"
+    ],
+    "section_level_1": "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+    "section_level_2": "Three or More Alleles",
+    "heading_path": [
+      "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+      "Three or More Alleles"
+    ],
+    "display_heading": "Three or More Alleles",
+    "table_reference_keys": [
+      "popgen_chapter2:inline_1",
+      "popgen_chapter2:inline_7"
+    ],
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p023:b5"
+      ],
+      "source_blocks": [
+        {
+          "source_block_id": "PopGen_chapter2:p023:b5",
+          "source_page": 81,
+          "bbox": [
+            119.0,
+            921.0,
+            390.0,
+            943.0
+          ],
+          "source_content_sha256": "e17b251d68068640bf9b1d8d632cf6b93df353c76c6438e16adc8bfe674f5e8f"
+        }
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Genotype frequencies under random mating for genes with three alleles are shown in Figure 2.6. Here it is convenient to label the alleles as $ A_{1} $, $ A_{2} $, and $ A_{3} $ and the corresponding allele frequencies as $ p_{1} $, $ p_{2} $, and $ p_{3} $. Because there are only three alleles, $ p_{1} + p_{2} + p_{3} = 1 $. With three alleles there are six diploid genotypes, and under random mating their expected frequencies are as follows:",
+      "source_page": 81,
+      "source_pages": [
+        81
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p023:b6",
+        "PopGen_chapter2:p023:b7",
+        "PopGen_chapter2:p023:b8"
+      ],
+      "source_bboxes": [
+        [
+          114.0,
+          956.0,
+          870.0,
+          1088.0
+        ],
+        [
+          186.0,
+          1096.0,
+          783.0,
+          1163.0
+        ],
+        [
+          112.0,
+          1171.0,
+          866.0,
+          1221.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "exact",
+      "content_sha256": "9440b28eec6af086927b10879e79a63c8fb16aea6a9adafd00d42347993c3e50",
+      "inline_styles": []
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_1]]",
+      "source_page": 81,
+      "source_pages": [
+        81
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p023:b6"
+      ],
+      "source_bboxes": [
+        [
+          114.0,
+          956.0,
+          870.0,
+          1088.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "exact",
+      "content_sha256": "4c37e9575d810c4d88b108f80926c5980c4fa644203dbed80415f3b561d2e30c",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": " These frequencies can be obtained by expanding $ (p_{1}A_{1}+p_{2}A_{2}+p_{3}A_{3})^{2} $, which the cross-multiplication square in Figure 2.6 does automatically.",
+      "source_page": 81,
+      "source_pages": [
+        81,
+        82
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p023:b8",
+        "PopGen_chapter2:p024:b12"
+      ],
+      "source_bboxes": [
+        [
+          112.0,
+          1171.0,
+          866.0,
+          1221.0
+        ],
+        [
+          746.0,
+          789.0,
+          841.0,
+          836.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "source_locator_mode": "matched",
+      "content_sha256": "d9befc9bc5d36589f8967a3ba3237128d7cc3be09784e3925813f1b55014764e",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Application of Figure 2.6 can be illustrated with the familiar ABO blood groups in humans. These red-cell antigens are by far the most important in blood transfusions, and they are controlled by the product of a single gene in chromosome 9. More than 70 molecularly distinct alleles are known, but most of them can be assigned to one of three broad classes known as I°, I^A, and I^B <sup>[806]</sup>. The I^A and I^B alleles encode transferase enzymes that attach",
+      "source_page": 81,
+      "source_pages": [
+        81
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p023:b9"
+      ],
+      "source_bboxes": [
+        [
+          110.0,
+          1224.0,
+          867.0,
+          1383.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "104d09fed5663d9f92f5add69ea7b57a1dd8f52aeb8267652061d0204770bed0",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Summed frequencies in zygotes: $ A_{i}A_{i}:p_{i}^{2} $ $ A_{i}A_{j}:2p_{i}p_{j} $ different substrates to a complex carbohydrate, which is the basis of the antigenic difference between A red cells and B red cells. The diagnostic difference between the $ I^{A} $ and $ I^{B} $ classes of alleles consists of four amino acid replacements, and that distinguishing the $ I^{O} $ class is a single-nucleotide deletion in the initial part of the coding sequence, which shifts the translational reading frame and results in an inactive product.",
+      "source_page": 82,
+      "source_pages": [
+        82
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p024:b12",
+        "PopGen_chapter2:p024:b15"
+      ],
+      "source_bboxes": [
+        [
+          746.0,
+          789.0,
+          841.0,
+          836.0
+        ],
+        [
+          263.0,
+          904.0,
+          1017.0,
+          1061.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "330adc1af3e5a31c6779b5a908f8f7b3a2facd693daf406ef9a311e538f42f1d",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Since blood type is determined by presence or absence of the A and B antigens, the genotypes $ I^{A}I^{A} $ and $ I^{A}I^{O} $ have blood type A, genotypes $ I^{B}I^{B} $ and $ I^{B}I^{O} $ have blood type B, genotype $ I^{O}I^{O} $ has blood type O, and genotype $ I^{A}I^{B} $ has blood type AB. The situation is essentially one of three alleles, complicated at the phenotypic level by the dominance of $ I^{A} $ and $ I^{B} $ over $ I^{O} $. In one test for presence of A and B red-cell antigens among 6313 Caucasians in Iowa City, the counts of blood types A, B, O, and AB were 2625, 570, 2892, and 226, respectively <sup>[483]</sup>. The best estimates of allele frequency in this case are $ \\hat{p}_{1} = 0.2593 $ (for $ I^{A} $), $ \\hat{p}_{2} = 0.0625 $ (for $ I^{B} $), and $ \\hat{p}_{3} = 0.6755 $ (for $ I^{O} $). <sup>[93]</sup>",
+      "source_page": 82,
+      "source_pages": [
+        82,
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p024:b16",
+        "PopGen_chapter2:p025:b1"
+      ],
+      "source_bboxes": [
+        [
+          264.0,
+          1065.0,
+          1019.0,
+          1384.0
+        ],
+        [
+          111.0,
+          208.0,
+          866.0,
+          259.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430",
+      "source_locator_mode": "exact",
+      "inline_styles": [
+        {
+          "start": 294,
+          "end": 296,
+          "style": "italic",
+          "text": "AB",
+          "source_page": 82,
+          "source_block_ids": [
+            "PopGen_chapter2:p024:b16",
+            "PopGen_chapter2:p025:b1"
+          ],
+          "source_bboxes": [
+            [
+              264.0,
+              1065.0,
+              1019.0,
+              1384.0
+            ],
+            [
+              111.0,
+              208.0,
+              866.0,
+              259.0
+            ]
+          ],
+          "source_content_sha256": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p024:b16": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430",
+            "PopGen_chapter2:p025:b1": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430"
+          }
+        },
+        {
+          "start": 574,
+          "end": 576,
+          "style": "italic",
+          "text": "AB",
+          "source_page": 82,
+          "source_block_ids": [
+            "PopGen_chapter2:p024:b16",
+            "PopGen_chapter2:p025:b1"
+          ],
+          "source_bboxes": [
+            [
+              264.0,
+              1065.0,
+              1019.0,
+              1384.0
+            ],
+            [
+              111.0,
+              208.0,
+              866.0,
+              259.0
+            ]
+          ],
+          "source_content_sha256": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p024:b16": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430",
+            "PopGen_chapter2:p025:b1": "a2bff567f0632e306a5b8d6b0b04add5d8b89d4f18a6b95503a80719520d3430"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The expected (and observed) numbers of the four blood-type phenotypes are therefore: $$ \\begin{aligned}A:&\\quad[(0.2593)^{2}+2\\times0.2593\\times0.6755]\\times6313=2636.0\\quad(observed\\ 2625)\\end{aligned} $$ $$ \\begin{aligned}B:&\\quad[(0.0652)^{2}+2\\times0.0652\\times0.6755]\\times6313=582.9\\end{aligned} $$ $$ \\mathrm{O}:\\quad[(0.6755)^{2}\\times6313]=2880.6 $$",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b1",
+        "PopGen_chapter2:p025:b2"
+      ],
+      "source_bboxes": [
+        [
+          111.0,
+          208.0,
+          866.0,
+          259.0
+        ],
+        [
+          138.0,
+          274.0,
+          844.0,
+          409.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "249c0352913abdf5d15b48773b05b7a8c112796c59344096ce1eef0b2b808f49",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "(observed 2892) $$ AB:\\quad(2\\times0.2593\\times0.0652)\\times6313=213.5 $$ (observed 226)",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b2"
+      ],
+      "source_bboxes": [
+        [
+          138.0,
+          274.0,
+          844.0,
+          409.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "e847e540466b9c1bb766f173c051caebbed99843779bb32c7956580080f83725",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The $\\chi^{2}$ for goodness of fit to Hardy-Weinberg proportions is 1.11. There is one degree of freedom for this test: 4 (to start with) - 1 (for fixing the total at 6313) - 1 (for estimating $\\hat{p}_{1}$ from the data) - 1 (for estimating $\\hat{p}_{2}$ from the data); note that a degree of freedom is not deducted for estimating $\\hat{p}_{3}$ because $\\hat{p}_{3} = 1 - \\hat{p}_{1} - \\hat{p}_{2}$. (More generally, when there are $n$ alleles and $m$ possible phenotypes ($m > n$), then the number of degrees of freedom in a chi-square test for HWE is $m - 1 - (n - 1) = m - n$.) For a $\\chi^{2}$ of 1.11 with one degree of freedom, the associated probability from Figure 2.3 is about 0.29, and so the Iowa City population gives no evidence against Hardy-Weinberg proportions for this gene.",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b3"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          421.0,
+          864.0,
+          685.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "f453e46740b0d4beb1f832eeda3c5d8bae27c0d11918ae0ef83eccccfb4d817f",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 2.7 In a sample of 1617 Spanish Basques, the numbers of A, B, O, and AB blood types observed were 724, 110, 763, and 20, respectively. The best estimates of allele frequency are $ \\hat{p}_1 = 0.2661 $ (for $ I^A $), $ \\hat{p}_2 = 0.0411 $ (for $ I^B $), and $ \\hat{p}_3 = 0.6928 $ (for $ I^O $). Calculate the expected numbers of the four phenotypes and carry out a $ \\chi^2 $ test for goodness of fit to the Hardy-Weinberg expectations.",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b4",
+        "PopGen_chapter2:p025:b6"
+      ],
+      "source_bboxes": [
+        [
+          107.0,
+          754.0,
+          540.0,
+          879.0
+        ],
+        [
+          567.0,
+          757.0,
+          994.0,
+          855.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a93fa136b98a90e8b65365b0af030ac7570a9ba97e1cda4ceda1f63a18800b7b",
+      "problem_id": "2.7",
+      "source_locator_mode": "exact",
+      "inline_styles": [
+        {
+          "start": 77,
+          "end": 79,
+          "style": "italic",
+          "text": "AB",
+          "source_page": 83,
+          "source_block_ids": [
+            "PopGen_chapter2:p025:b4",
+            "PopGen_chapter2:p025:b6"
+          ],
+          "source_bboxes": [
+            [
+              107.0,
+              754.0,
+              540.0,
+              879.0
+            ],
+            [
+              567.0,
+              757.0,
+              994.0,
+              855.0
+            ]
+          ],
+          "source_content_sha256": "a93fa136b98a90e8b65365b0af030ac7570a9ba97e1cda4ceda1f63a18800b7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p025:b4": "a93fa136b98a90e8b65365b0af030ac7570a9ba97e1cda4ceda1f63a18800b7b",
+            "PopGen_chapter2:p025:b6": "a93fa136b98a90e8b65365b0af030ac7570a9ba97e1cda4ceda1f63a18800b7b"
+          }
+        }
+      ]
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER The expected numbers of A, B, O, and AB are 710.7, 94.8, 776.1, and 35.4, respectively. The $ \\chi^{2} $ equals 9.61 with one degree of freedom, for which the corresponding probability is 0.002. Because a deviation as large or larger than that observed would be expected by chance in only 0.002 samples (that is, about 1 in 500), there is very good reason to reject the hypothesis that the genotypes are in Hardy-Weinberg proportions in this population. The reason for the discrepancy is not known. One likely possibility is migration into the population by people with allele frequencies that are significantly different from those among the Basques themselves.",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b5",
+        "PopGen_chapter2:p025:b7"
+      ],
+      "source_bboxes": [
+        [
+          104.0,
+          934.0,
+          536.0,
+          1131.0
+        ],
+        [
+          563.0,
+          936.0,
+          992.0,
+          1129.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "b7be68f0a3b41931f9e3a8fff6b5750e597505b2872f544bd24d9d866b2882e9",
+      "problem_id": "2.7",
+      "source_locator_mode": "exact",
+      "inline_styles": [
+        {
+          "start": 44,
+          "end": 46,
+          "style": "italic",
+          "text": "AB",
+          "source_page": 83,
+          "source_block_ids": [
+            "PopGen_chapter2:p025:b5",
+            "PopGen_chapter2:p025:b7"
+          ],
+          "source_bboxes": [
+            [
+              104.0,
+              934.0,
+              536.0,
+              1131.0
+            ],
+            [
+              563.0,
+              936.0,
+              992.0,
+              1129.0
+            ]
+          ],
+          "source_content_sha256": "b7be68f0a3b41931f9e3a8fff6b5750e597505b2872f544bd24d9d866b2882e9",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p025:b5": "b7be68f0a3b41931f9e3a8fff6b5750e597505b2872f544bd24d9d866b2882e9",
+            "PopGen_chapter2:p025:b7": "b7be68f0a3b41931f9e3a8fff6b5750e597505b2872f544bd24d9d866b2882e9"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "More generally, in a population that is undergoing random mating for a gene with $n$ alleles $A_1, A_2, \\ldots A_n$ having respective frequencies $p_1, p_2, \\ldots p_n$ (with $p_1 + p_2 + \\cdots + p_n = 1$), then the expected genotype frequencies with HWE are $$ p_{i}^{2}\\quad\\mathrm{~\\ \\ \\ \\ }\\quad\\mathrm{f o r~}A_{i}A_{i}\\mathrm{~h o m o z y g o t e s} $$ $$ \\begin{array}{r l r}{2p_{i}p_{j}}&{{}}&{\\mathrm{f o r~}A_{i}A_{j}\\mathrm{~h e t e r o z y g o t e s~}}\\end{array} $$",
+      "source_page": 83,
+      "source_pages": [
+        83
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p025:b8",
+        "PopGen_chapter2:p025:b9"
+      ],
+      "source_bboxes": [
+        [
+          101.0,
+          1197.0,
+          858.0,
+          1295.0
+        ],
+        [
+          259.0,
+          1311.0,
+          593.0,
+          1380.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "dd34284474d8cd2d48a286dbb088223cf3388153ace869f5b27895ce20d23575",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The expressions in Equation 2.7 may be applied to data on allozyme polymorphisms in Drosophila persimilis in California. One sample of 108 adult flies from the Fish Creek population included four alleles of the gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.08 $, $ \\hat{p}_2 = 0.21 $, $ \\hat{p}_3 = 0.62 $, and $ \\hat{p}_4 = 0.09 $ <sup>[567]</sup>. With four alleles, there are four possible homozygotes (for example, Xdh-1/Xdh-1) and six possible heterozygotes (for example, Xdh-1/Xdh-2). In a random-mating population, the frequency of any homozygous genotype is expected to be the square of the corresponding allele frequency, for example, $ p_1^2 $ for Xdh-1/Xdh-1; and the frequency of any heterozygous genotype is expected to be two times the product of the corresponding allele frequencies, for example, $ 2p_1p_2 $ for Xdh-1/Xdh-2. The Hardy-Weinberg frequencies for all 10 possible genotypes can be obtained by expanding the expression $ (0.08 \\times Xdh{-}1 + 0.21 \\times Xdh{-}2 + 0.62 \\times Xdh{-}3 + 0.09 \\times Xdh{-}4)^2 $. Note that this is an example in which the expected number of some of the genotypes is small (< 1 in many cases), so a test for HWE would have to be based on the exact probabilities or on random permutations.",
+      "source_page": 84,
+      "source_pages": [
+        84
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p026:b1"
+      ],
+      "source_bboxes": [
+        [
+          286.0,
+          212.0,
+          1037.0,
+          693.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "b1a0f49219226dc1b20d7af979d3fc1cf7b663f7ae1a51c51347045c8942c74c",
+      "inline_styles": [
+        {
+          "start": 84,
+          "end": 105,
+          "style": "italic",
+          "text": "Drosophila persimilis",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 216,
+          "end": 219,
+          "style": "italic",
+          "text": "Xdh",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 285,
+          "end": 290,
+          "style": "italic",
+          "text": "Xdh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 292,
+          "end": 297,
+          "style": "italic",
+          "text": "Xdh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 299,
+          "end": 304,
+          "style": "italic",
+          "text": "Xdh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 310,
+          "end": 315,
+          "style": "italic",
+          "text": "Xdh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 540,
+          "end": 545,
+          "style": "italic",
+          "text": "Xdh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 546,
+          "end": 551,
+          "style": "italic",
+          "text": "Xdh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        },
+        {
+          "start": 604,
+          "end": 609,
+          "style": "italic",
+          "text": "Xdh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b1"
+          ],
+          "source_bboxes": [
+            [
+              286,
+              212,
+              1037,
+              693
+            ]
+          ],
+          "source_content_sha256": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b1": "abecfdd32192b14be693c56b525fac49dc249e66e497c40a34f7f0f22563ec7b"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 2.8 Four alleles of the gene Adh coding for alcohol dehydrogenase were found in a Texas population of Phlox cuspidata <sup>[400]</sup>. The alleles may be designated Adh-1, Adh-2, Adh-3, and Adh-4. Their frequencies were estimated as 0.11, 0.84, 0.01, and 0.04, respectively. What are the expected Hardy-Weinberg proportions of the 10 genotypes?",
+      "source_page": 84,
+      "source_pages": [
+        84
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p026:b2",
+        "PopGen_chapter2:p026:b4"
+      ],
+      "source_bboxes": [
+        [
+          157.0,
+          760.0,
+          584.0,
+          881.0
+        ],
+        [
+          612.0,
+          758.0,
+          1037.0,
+          856.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "7e606deffcf616fb8f614e81e2b4e3aa238b4c8d04163f38c54ed9adb079432e",
+      "problem_id": "2.8",
+      "inline_styles": [
+        {
+          "start": 37,
+          "end": 40,
+          "style": "italic",
+          "text": "Adh",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        },
+        {
+          "start": 110,
+          "end": 125,
+          "style": "italic",
+          "text": "Phlox cuspidata",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        },
+        {
+          "start": 170,
+          "end": 175,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        },
+        {
+          "start": 177,
+          "end": 182,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        },
+        {
+          "start": 184,
+          "end": 189,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        },
+        {
+          "start": 195,
+          "end": 200,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b2"
+          ],
+          "source_bboxes": [
+            [
+              157,
+              760,
+              584,
+              881
+            ]
+          ],
+          "source_content_sha256": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b2": "e4b561ed1ecef902704229a41b61fa7d0b991317c4781a4f65ed126127355b8d"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER Adh-1/Adh-1: 0.11² = 0.0121; Adh-1/Adh-2: 2(0.11)(0.84) = 0.1848; Adh-2/Adh-2 = 0.84² = 0.7056; Adh-1/Adh-3 = 2(0.11)(0.01) = 0.0022; Adh-2/Adh-3 = 2(0.84)(0.01) = 0.0168; Adh-3/Adh-3 = 0.01² = 0.0001; Adh-1/Adh-4 = 2(0.11)(0.04) = 0.0088; Adh-2/Adh-4 = 2(0.84)(0.04) = 0.0672; Adh-3/Adh-4 = 2(0.01)(0.04) = 0.0008; Adh-4/Adh-4 = 0.04² = 0.0016. It should be pointed out that the observed genotype frequencies were nowhere near the Hardy-Weinberg expectations because Phlox cuspidata undergoes a substantial frequency of self-fertilization (about 78%), which violates the assumption of random mating. The question of how to deal with such departures from random mating is discussed in Chapter 6.",
+      "source_page": 84,
+      "source_pages": [
+        84
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p026:b3",
+        "PopGen_chapter2:p026:b5"
+      ],
+      "source_bboxes": [
+        [
+          156.0,
+          944.0,
+          584.0,
+          1164.0
+        ],
+        [
+          611.0,
+          939.0,
+          1038.0,
+          1161.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "6359c6c939d192a3bdab858825c0606538e3a1ecc83a2aeef193db86955184c1",
+      "problem_id": "2.8",
+      "inline_styles": [
+        {
+          "start": 7,
+          "end": 12,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 42,
+          "end": 47,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 73,
+          "end": 78,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 79,
+          "end": 84,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 103,
+          "end": 108,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 109,
+          "end": 114,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 141,
+          "end": 146,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 147,
+          "end": 152,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 179,
+          "end": 184,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 185,
+          "end": 190,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 209,
+          "end": 214,
+          "style": "italic",
+          "text": "Adh-1",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 215,
+          "end": 220,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 247,
+          "end": 252,
+          "style": "italic",
+          "text": "Adh-2",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 253,
+          "end": 258,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 285,
+          "end": 290,
+          "style": "italic",
+          "text": "Adh-3",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 291,
+          "end": 296,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 323,
+          "end": 328,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 329,
+          "end": 334,
+          "style": "italic",
+          "text": "Adh-4",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b3"
+          ],
+          "source_bboxes": [
+            [
+              156,
+              944,
+              584,
+              1164
+            ]
+          ],
+          "source_content_sha256": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b3": "96312978ed1ea1a265cb65a1c1047652a1ef301364221425bb7a09b352070ccd"
+          }
+        },
+        {
+          "start": 475,
+          "end": 490,
+          "style": "italic",
+          "text": "Phlox cuspidata",
+          "source_page": 84,
+          "source_block_ids": [
+            "PopGen_chapter2:p026:b5"
+          ],
+          "source_bboxes": [
+            [
+              611,
+              939,
+              1038,
+              1161
+            ]
+          ],
+          "source_content_sha256": "cb2210054b73cd1c921c62eca8e7106e0c5b4f9d35e5b0defdac4d62ef7609a7",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p026:b5": "cb2210054b73cd1c921c62eca8e7106e0c5b4f9d35e5b0defdac4d62ef7609a7"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    }
+  ]
+}

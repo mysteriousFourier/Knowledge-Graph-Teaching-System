@@ -1,0 +1,23 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_appendix1",
+  "counts": {
+    "structured": 61,
+    "formulas": 361,
+    "tables": 3,
+    "figures": 8,
+    "examples": 25,
+    "image_files": 8
+  },
+  "textbook": "textbook.md",
+  "figures": [
+    "figures/Genetics_A2.1.png",
+    "figures/Genetics_A2.2.png",
+    "figures/Genetics_A2.3.png",
+    "figures/Genetics_A2.4.png",
+    "figures/Genetics_A2.5.png",
+    "figures/Genetics_A5.1.png",
+    "figures/Genetics_A5.2.png",
+    "figures/Genetics_A5.3.png"
+  ]
+}

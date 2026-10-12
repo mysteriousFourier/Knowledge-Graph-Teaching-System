@@ -1,0 +1,665 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter6",
+  "count": 2,
+  "tables": [
+    {
+      "id": "6.1",
+      "label_format": "Table 6.1",
+      "title": "Table 6.1 Summary of studies on the relationship of fluctuating asymmetry to levels of inbreeding and crossbreeding.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Organism</td><td>Basis of Comparison</td><td>Character(s)</td><td>Reference</td></tr><tr><td colspan=\"4\">FA enhanced in inbreds</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>Inbred line crosses</td><td>Bristle number</td><td>Mather 1953</td></tr><tr><td>Inbreeding variable base population</td><td>Wing length</td><td>Reeve 1960</td></tr><tr><td>Marine copepod</td><td>Inbreeding variable base population</td><td>Thoracic leg lengths</td><td>Clarke et al. 1986</td></tr><tr><td>Freshwater bivalves</td><td>Natural pops.</td><td>Plicae on palps</td><td>Kat 1982</td></tr><tr><td>Poeciliopsis monacha (a fish)</td><td>Natural pops.</td><td>Fin ray, scale, tooth number</td><td>Vrijenhoek & Lerman 1982</td></tr><tr><td>Trout (3 species)</td><td>Individuals varying in heterozygosity</td><td>Fin ray, gill raker, mandibular pores</td><td>Leary et al. 1983 1984, 1987</td></tr><tr><td>Rainbow trout</td><td>Inbreeding variable base population</td><td>Fin ray, gill raker, mandibular pores</td><td>Leary et al. 1985</td></tr><tr><td>Side-blotched lizard</td><td>Natural pops.</td><td>Scale counts</td><td>Soulé 1979</td></tr><tr><td>House mouse</td><td>Inbred line cross</td><td>Osteometric traits</td><td>Leamy 1984, 1992</td></tr><tr><td>Tamarins</td><td>Natural pops.</td><td>Cranial measures</td><td>Hutchison & Cheverud 1995</td></tr><tr><td colspan=\"4\">FA approximately equal in inbreds and outbreds, or variable results</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>Inbred line cross</td><td>Bristle number</td><td>Beardmore 1960</td></tr><tr><td>Inbreeding variable base population</td><td></td><td>Fowler & Whitlock 1994</td></tr><tr><td rowspan=\"2\">Honeybees</td><td rowspan=\"2\">Inbreeding variable base population</td><td rowspan=\"2\">Wing vein length</td><td>Brückner 1976</td></tr><tr><td>Clarke et al. 1986</td></tr><tr><td>Rainbow trout</td><td>Hatchery strain crosses</td><td>Fin ray, gill raker counts</td><td>Ferguson 1986</td></tr><tr><td>Bluegill sunfish</td><td>Subspecies crosses</td><td>Fin ray, scale counts</td><td>Felley 1980</td></tr><tr><td>Fence lizard</td><td>Interspecific hybrid zone</td><td>Scale counts</td><td>Jackson 1973</td></tr><tr><td>House mouse</td><td>Inbred line crosses natural pops.</td><td>Molar width</td><td>Bader 1965</td></tr><tr><td rowspan=\"3\">Large cats</td><td rowspan=\"3\">Species varying in heterozygosity</td><td>Craniometric traits</td><td>Wayne et al. 1986</td></tr><tr><td rowspan=\"2\">Dental dimensions</td><td>Modi et al. 1987</td></tr><tr><td>Kieser & Groeneveld 1991</td></tr></table>",
+      "rows": [
+        [
+          "Organism",
+          "Basis of Comparison",
+          "Character(s)",
+          "Reference"
+        ],
+        [
+          "FA enhanced in inbreds"
+        ],
+        [
+          "Drosophila melanogaster",
+          "Inbred line crosses",
+          "Bristle number",
+          "Mather 1953"
+        ],
+        [
+          "Inbreeding variable base population",
+          "Wing length",
+          "Reeve 1960"
+        ],
+        [
+          "Marine copepod",
+          "Inbreeding variable base population",
+          "Thoracic leg lengths",
+          "Clarke et al. 1986"
+        ],
+        [
+          "Freshwater bivalves",
+          "Natural pops.",
+          "Plicae on palps",
+          "Kat 1982"
+        ],
+        [
+          "Poeciliopsis monacha (a fish)",
+          "Natural pops.",
+          "Fin ray, scale, tooth number",
+          "Vrijenhoek & Lerman 1982"
+        ],
+        [
+          "Trout (3 species)",
+          "Individuals varying in heterozygosity",
+          "Fin ray, gill raker, mandibular pores",
+          "Leary et al. 1983 1984, 1987"
+        ],
+        [
+          "Rainbow trout",
+          "Inbreeding variable base population",
+          "Fin ray, gill raker, mandibular pores",
+          "Leary et al. 1985"
+        ],
+        [
+          "Side-blotched lizard",
+          "Natural pops.",
+          "Scale counts",
+          "Soulé 1979"
+        ],
+        [
+          "House mouse",
+          "Inbred line cross",
+          "Osteometric traits",
+          "Leamy 1984, 1992"
+        ],
+        [
+          "Tamarins",
+          "Natural pops.",
+          "Cranial measures",
+          "Hutchison & Cheverud 1995"
+        ],
+        [
+          "FA approximately equal in inbreds and outbreds, or variable results"
+        ],
+        [
+          "Drosophila melanogaster",
+          "Inbred line cross",
+          "Bristle number",
+          "Beardmore 1960"
+        ],
+        [
+          "Inbreeding variable base population",
+          "",
+          "Fowler & Whitlock 1994"
+        ],
+        [
+          "Honeybees",
+          "Inbreeding variable base population",
+          "Wing vein length",
+          "Brückner 1976"
+        ],
+        [
+          "Clarke et al. 1986"
+        ],
+        [
+          "Rainbow trout",
+          "Hatchery strain crosses",
+          "Fin ray, gill raker counts",
+          "Ferguson 1986"
+        ],
+        [
+          "Bluegill sunfish",
+          "Subspecies crosses",
+          "Fin ray, scale counts",
+          "Felley 1980"
+        ],
+        [
+          "Fence lizard",
+          "Interspecific hybrid zone",
+          "Scale counts",
+          "Jackson 1973"
+        ],
+        [
+          "House mouse",
+          "Inbred line crosses natural pops.",
+          "Molar width",
+          "Bader 1965"
+        ],
+        [
+          "Large cats",
+          "Species varying in heterozygosity",
+          "Craniometric traits",
+          "Wayne et al. 1986"
+        ],
+        [
+          "Dental dimensions",
+          "Modi et al. 1987"
+        ],
+        [
+          "Kieser & Groeneveld 1991"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 130,
+          "title": "Table 6.1 Summary of studies on the relationship of fluctuating asymmetry to levels of inbreeding and crossbreeding.",
+          "html": "<table><tr><td>Organism</td><td>Basis of Comparison</td><td>Character(s)</td><td>Reference</td></tr><tr><td colspan=\"4\">FA enhanced in inbreds</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>Inbred line crosses</td><td>Bristle number</td><td>Mather 1953</td></tr><tr><td>Inbreeding variable base population</td><td>Wing length</td><td>Reeve 1960</td></tr><tr><td>Marine copepod</td><td>Inbreeding variable base population</td><td>Thoracic leg lengths</td><td>Clarke et al. 1986</td></tr><tr><td>Freshwater bivalves</td><td>Natural pops.</td><td>Plicae on palps</td><td>Kat 1982</td></tr><tr><td>Poeciliopsis monacha (a fish)</td><td>Natural pops.</td><td>Fin ray, scale, tooth number</td><td>Vrijenhoek & Lerman 1982</td></tr><tr><td>Trout (3 species)</td><td>Individuals varying in heterozygosity</td><td>Fin ray, gill raker, mandibular pores</td><td>Leary et al. 1983 1984, 1987</td></tr><tr><td>Rainbow trout</td><td>Inbreeding variable base population</td><td>Fin ray, gill raker, mandibular pores</td><td>Leary et al. 1985</td></tr><tr><td>Side-blotched lizard</td><td>Natural pops.</td><td>Scale counts</td><td>Soulé 1979</td></tr><tr><td>House mouse</td><td>Inbred line cross</td><td>Osteometric traits</td><td>Leamy 1984, 1992</td></tr><tr><td>Tamarins</td><td>Natural pops.</td><td>Cranial measures</td><td>Hutchison & Cheverud 1995</td></tr><tr><td colspan=\"4\">FA approximately equal in inbreds and outbreds, or variable results</td></tr><tr><td rowspan=\"2\">Drosophila melanogaster</td><td>Inbred line cross</td><td>Bristle number</td><td>Beardmore 1960</td></tr><tr><td>Inbreeding variable base population</td><td></td><td>Fowler & Whitlock 1994</td></tr><tr><td rowspan=\"2\">Honeybees</td><td rowspan=\"2\">Inbreeding variable base population</td><td rowspan=\"2\">Wing vein length</td><td>Brückner 1976</td></tr><tr><td>Clarke et al. 1986</td></tr><tr><td>Rainbow trout</td><td>Hatchery strain crosses</td><td>Fin ray, gill raker counts</td><td>Ferguson 1986</td></tr><tr><td>Bluegill sunfish</td><td>Subspecies crosses</td><td>Fin ray, scale counts</td><td>Felley 1980</td></tr><tr><td>Fence lizard</td><td>Interspecific hybrid zone</td><td>Scale counts</td><td>Jackson 1973</td></tr><tr><td>House mouse</td><td>Inbred line crosses natural pops.</td><td>Molar width</td><td>Bader 1965</td></tr><tr><td rowspan=\"3\">Large cats</td><td rowspan=\"3\">Species varying in heterozygosity</td><td>Craniometric traits</td><td>Wayne et al. 1986</td></tr><tr><td rowspan=\"2\">Dental dimensions</td><td>Modi et al. 1987</td></tr><tr><td>Kieser & Groeneveld 1991</td></tr></table>",
+          "rows": [
+            [
+              "Organism",
+              "Basis of Comparison",
+              "Character(s)",
+              "Reference"
+            ],
+            [
+              "FA enhanced in inbreds"
+            ],
+            [
+              "Drosophila melanogaster",
+              "Inbred line crosses",
+              "Bristle number",
+              "Mather 1953"
+            ],
+            [
+              "Inbreeding variable base population",
+              "Wing length",
+              "Reeve 1960"
+            ],
+            [
+              "Marine copepod",
+              "Inbreeding variable base population",
+              "Thoracic leg lengths",
+              "Clarke et al. 1986"
+            ],
+            [
+              "Freshwater bivalves",
+              "Natural pops.",
+              "Plicae on palps",
+              "Kat 1982"
+            ],
+            [
+              "Poeciliopsis monacha (a fish)",
+              "Natural pops.",
+              "Fin ray, scale, tooth number",
+              "Vrijenhoek & Lerman 1982"
+            ],
+            [
+              "Trout (3 species)",
+              "Individuals varying in heterozygosity",
+              "Fin ray, gill raker, mandibular pores",
+              "Leary et al. 1983 1984, 1987"
+            ],
+            [
+              "Rainbow trout",
+              "Inbreeding variable base population",
+              "Fin ray, gill raker, mandibular pores",
+              "Leary et al. 1985"
+            ],
+            [
+              "Side-blotched lizard",
+              "Natural pops.",
+              "Scale counts",
+              "Soulé 1979"
+            ],
+            [
+              "House mouse",
+              "Inbred line cross",
+              "Osteometric traits",
+              "Leamy 1984, 1992"
+            ],
+            [
+              "Tamarins",
+              "Natural pops.",
+              "Cranial measures",
+              "Hutchison & Cheverud 1995"
+            ],
+            [
+              "FA approximately equal in inbreds and outbreds, or variable results"
+            ],
+            [
+              "Drosophila melanogaster",
+              "Inbred line cross",
+              "Bristle number",
+              "Beardmore 1960"
+            ],
+            [
+              "Inbreeding variable base population",
+              "",
+              "Fowler & Whitlock 1994"
+            ],
+            [
+              "Honeybees",
+              "Inbreeding variable base population",
+              "Wing vein length",
+              "Brückner 1976"
+            ],
+            [
+              "Clarke et al. 1986"
+            ],
+            [
+              "Rainbow trout",
+              "Hatchery strain crosses",
+              "Fin ray, gill raker counts",
+              "Ferguson 1986"
+            ],
+            [
+              "Bluegill sunfish",
+              "Subspecies crosses",
+              "Fin ray, scale counts",
+              "Felley 1980"
+            ],
+            [
+              "Fence lizard",
+              "Interspecific hybrid zone",
+              "Scale counts",
+              "Jackson 1973"
+            ],
+            [
+              "House mouse",
+              "Inbred line crosses natural pops.",
+              "Molar width",
+              "Bader 1965"
+            ],
+            [
+              "Large cats",
+              "Species varying in heterozygosity",
+              "Craniometric traits",
+              "Wayne et al. 1986"
+            ],
+            [
+              "Dental dimensions",
+              "Modi et al. 1987"
+            ],
+            [
+              "Kieser & Groeneveld 1991"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            146.0,
+            205.0,
+            1100.0,
+            1525.0
+          ],
+          "caption_bbox": [
+            144.0,
+            130.0,
+            1107.0,
+            200.0
+          ],
+          "source_block_ids": [
+            "p130:b3"
+          ],
+          "caption_source_block_ids": [
+            "p130:b2"
+          ]
+        },
+        {
+          "page": 131,
+          "title": "Table 6.1 (Continued).",
+          "html": "<table><tr><td>Organism</td><td>Basis of Comparison</td><td>Character(s)</td><td>Reference</td></tr><tr><td colspan=\"4\">FA enhanced in outbreds</td></tr><tr><td>Sticklebacks</td><td>Hybrids between natural pops.</td><td>Scale counts</td><td>Zakharov 1981</td></tr><tr><td>Banded sunfish</td><td>Interspecific hybrid zone</td><td>Fin ray, scale, morph. traits</td><td>Graham & Felley 1985</td></tr></table>",
+          "rows": [
+            [
+              "Organism",
+              "Basis of Comparison",
+              "Character(s)",
+              "Reference"
+            ],
+            [
+              "FA enhanced in outbreds"
+            ],
+            [
+              "Sticklebacks",
+              "Hybrids between natural pops.",
+              "Scale counts",
+              "Zakharov 1981"
+            ],
+            [
+              "Banded sunfish",
+              "Interspecific hybrid zone",
+              "Fin ray, scale, morph. traits",
+              "Graham & Felley 1985"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            50.0,
+            183.0,
+            1007.0,
+            451.0
+          ],
+          "caption_bbox": [
+            54.0,
+            135.0,
+            323.0,
+            166.0
+          ],
+          "source_block_ids": [
+            "p131:b3"
+          ],
+          "caption_source_block_ids": [
+            "p131:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_004",
+        "page": 130,
+        "pages": [
+          130,
+          131
+        ],
+        "bbox": [
+          146.0,
+          205.0,
+          1100.0,
+          1525.0
+        ],
+        "caption_bbox": [
+          144.0,
+          130.0,
+          1107.0,
+          200.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    },
+    {
+      "id": "6.2",
+      "label_format": "Table 6.2",
+      "title": "Table 6.2 Survey of studies of phenotypic variation in inbred parental lines and their $ F_{1} $ hybrids.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Species</td><td>Characters</td><td>Reference</td></tr><tr><td>$ F_{1} $ less variable</td><td></td><td></td></tr><tr><td rowspan=\"3\">Drosophila</td><td>Bristle number and wing length</td><td>Robertson & Reeve 1952</td></tr><tr><td>Viability</td><td>Dobzhansky & Spassky 1954</td></tr><tr><td></td><td>Dobzhansky & Levene 1955</td></tr><tr><td rowspan=\"4\">Mice</td><td>Behavioral traits</td><td>Hyde 1973</td></tr><tr><td>Skeletal traits</td><td>Leamy & Thorpe 1984</td></tr><tr><td>Time to maturity</td><td>Yoon 1955</td></tr><tr><td>Weight</td><td>Chai 1957</td></tr><tr><td>Rats</td><td>Weight</td><td>Livesay 1930</td></tr><tr><td>Cotton</td><td>Fiber properties</td><td>Meredith et al. 1970</td></tr><tr><td rowspan=\"2\">Corn</td><td rowspan=\"2\">Vegetative and reproductive traits</td><td>Adams & Shank 1959</td></tr><tr><td>Shank & Adams 1960</td></tr><tr><td>Tobacco</td><td>Vegetative and reproductive traits</td><td>Jinks & Mather 1955</td></tr><tr><td>Rye</td><td>Grain production, and plant weight</td><td>Pfahler 1966</td></tr><tr><td rowspan=\"2\">Sorghum</td><td rowspan=\"2\">Grain production</td><td>Reich & Atkins 1970</td></tr><tr><td>Jowett 1972</td></tr><tr><td>Tomato</td><td>Growth rate</td><td>Lewis 1954</td></tr><tr><td>Equivocal results</td><td></td><td></td></tr><tr><td>Guppies</td><td>Scale and fin ray counts</td><td>Angus & Schultz 1983</td></tr><tr><td>Arabidopsis</td><td>Plant weight</td><td>Pederson 1968</td></tr><tr><td>Tomato</td><td>Reproductive traits</td><td>Williams 1960</td></tr><tr><td>$ F_{1} $ more variable</td><td></td><td></td></tr><tr><td>Drosophila</td><td>Bristle number</td><td>Lewontin 1957</td></tr><tr><td>Corn</td><td>Grain production</td><td>Rowe & Anderson 1964</td></tr></table>",
+      "rows": [
+        [
+          "Species",
+          "Characters",
+          "Reference"
+        ],
+        [
+          "$ F_{1} $ less variable",
+          "",
+          ""
+        ],
+        [
+          "Drosophila",
+          "Bristle number and wing length",
+          "Robertson & Reeve 1952"
+        ],
+        [
+          "Viability",
+          "Dobzhansky & Spassky 1954"
+        ],
+        [
+          "",
+          "Dobzhansky & Levene 1955"
+        ],
+        [
+          "Mice",
+          "Behavioral traits",
+          "Hyde 1973"
+        ],
+        [
+          "Skeletal traits",
+          "Leamy & Thorpe 1984"
+        ],
+        [
+          "Time to maturity",
+          "Yoon 1955"
+        ],
+        [
+          "Weight",
+          "Chai 1957"
+        ],
+        [
+          "Rats",
+          "Weight",
+          "Livesay 1930"
+        ],
+        [
+          "Cotton",
+          "Fiber properties",
+          "Meredith et al. 1970"
+        ],
+        [
+          "Corn",
+          "Vegetative and reproductive traits",
+          "Adams & Shank 1959"
+        ],
+        [
+          "Shank & Adams 1960"
+        ],
+        [
+          "Tobacco",
+          "Vegetative and reproductive traits",
+          "Jinks & Mather 1955"
+        ],
+        [
+          "Rye",
+          "Grain production, and plant weight",
+          "Pfahler 1966"
+        ],
+        [
+          "Sorghum",
+          "Grain production",
+          "Reich & Atkins 1970"
+        ],
+        [
+          "Jowett 1972"
+        ],
+        [
+          "Tomato",
+          "Growth rate",
+          "Lewis 1954"
+        ],
+        [
+          "Equivocal results",
+          "",
+          ""
+        ],
+        [
+          "Guppies",
+          "Scale and fin ray counts",
+          "Angus & Schultz 1983"
+        ],
+        [
+          "Arabidopsis",
+          "Plant weight",
+          "Pederson 1968"
+        ],
+        [
+          "Tomato",
+          "Reproductive traits",
+          "Williams 1960"
+        ],
+        [
+          "$ F_{1} $ more variable",
+          "",
+          ""
+        ],
+        [
+          "Drosophila",
+          "Bristle number",
+          "Lewontin 1957"
+        ],
+        [
+          "Corn",
+          "Grain production",
+          "Rowe & Anderson 1964"
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 133,
+          "title": "Table 6.2 Survey of studies of phenotypic variation in inbred parental lines and their $ F_{1} $ hybrids.",
+          "html": "<table><tr><td>Species</td><td>Characters</td><td>Reference</td></tr><tr><td>$ F_{1} $ less variable</td><td></td><td></td></tr><tr><td rowspan=\"3\">Drosophila</td><td>Bristle number and wing length</td><td>Robertson & Reeve 1952</td></tr><tr><td>Viability</td><td>Dobzhansky & Spassky 1954</td></tr><tr><td></td><td>Dobzhansky & Levene 1955</td></tr><tr><td rowspan=\"4\">Mice</td><td>Behavioral traits</td><td>Hyde 1973</td></tr><tr><td>Skeletal traits</td><td>Leamy & Thorpe 1984</td></tr><tr><td>Time to maturity</td><td>Yoon 1955</td></tr><tr><td>Weight</td><td>Chai 1957</td></tr><tr><td>Rats</td><td>Weight</td><td>Livesay 1930</td></tr><tr><td>Cotton</td><td>Fiber properties</td><td>Meredith et al. 1970</td></tr><tr><td rowspan=\"2\">Corn</td><td rowspan=\"2\">Vegetative and reproductive traits</td><td>Adams & Shank 1959</td></tr><tr><td>Shank & Adams 1960</td></tr><tr><td>Tobacco</td><td>Vegetative and reproductive traits</td><td>Jinks & Mather 1955</td></tr><tr><td>Rye</td><td>Grain production, and plant weight</td><td>Pfahler 1966</td></tr><tr><td rowspan=\"2\">Sorghum</td><td rowspan=\"2\">Grain production</td><td>Reich & Atkins 1970</td></tr><tr><td>Jowett 1972</td></tr><tr><td>Tomato</td><td>Growth rate</td><td>Lewis 1954</td></tr><tr><td>Equivocal results</td><td></td><td></td></tr><tr><td>Guppies</td><td>Scale and fin ray counts</td><td>Angus & Schultz 1983</td></tr><tr><td>Arabidopsis</td><td>Plant weight</td><td>Pederson 1968</td></tr><tr><td>Tomato</td><td>Reproductive traits</td><td>Williams 1960</td></tr><tr><td>$ F_{1} $ more variable</td><td></td><td></td></tr><tr><td>Drosophila</td><td>Bristle number</td><td>Lewontin 1957</td></tr><tr><td>Corn</td><td>Grain production</td><td>Rowe & Anderson 1964</td></tr></table>",
+          "rows": [
+            [
+              "Species",
+              "Characters",
+              "Reference"
+            ],
+            [
+              "$ F_{1} $ less variable",
+              "",
+              ""
+            ],
+            [
+              "Drosophila",
+              "Bristle number and wing length",
+              "Robertson & Reeve 1952"
+            ],
+            [
+              "Viability",
+              "Dobzhansky & Spassky 1954"
+            ],
+            [
+              "",
+              "Dobzhansky & Levene 1955"
+            ],
+            [
+              "Mice",
+              "Behavioral traits",
+              "Hyde 1973"
+            ],
+            [
+              "Skeletal traits",
+              "Leamy & Thorpe 1984"
+            ],
+            [
+              "Time to maturity",
+              "Yoon 1955"
+            ],
+            [
+              "Weight",
+              "Chai 1957"
+            ],
+            [
+              "Rats",
+              "Weight",
+              "Livesay 1930"
+            ],
+            [
+              "Cotton",
+              "Fiber properties",
+              "Meredith et al. 1970"
+            ],
+            [
+              "Corn",
+              "Vegetative and reproductive traits",
+              "Adams & Shank 1959"
+            ],
+            [
+              "Shank & Adams 1960"
+            ],
+            [
+              "Tobacco",
+              "Vegetative and reproductive traits",
+              "Jinks & Mather 1955"
+            ],
+            [
+              "Rye",
+              "Grain production, and plant weight",
+              "Pfahler 1966"
+            ],
+            [
+              "Sorghum",
+              "Grain production",
+              "Reich & Atkins 1970"
+            ],
+            [
+              "Jowett 1972"
+            ],
+            [
+              "Tomato",
+              "Growth rate",
+              "Lewis 1954"
+            ],
+            [
+              "Equivocal results",
+              "",
+              ""
+            ],
+            [
+              "Guppies",
+              "Scale and fin ray counts",
+              "Angus & Schultz 1983"
+            ],
+            [
+              "Arabidopsis",
+              "Plant weight",
+              "Pederson 1968"
+            ],
+            [
+              "Tomato",
+              "Reproductive traits",
+              "Williams 1960"
+            ],
+            [
+              "$ F_{1} $ more variable",
+              "",
+              ""
+            ],
+            [
+              "Drosophila",
+              "Bristle number",
+              "Lewontin 1957"
+            ],
+            [
+              "Corn",
+              "Grain production",
+              "Rowe & Anderson 1964"
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            46.0,
+            219.0,
+            1006.0,
+            1325.0
+          ],
+          "caption_bbox": [
+            54.0,
+            142.0,
+            1009.0,
+            213.0
+          ],
+          "source_block_ids": [
+            "p133:b3"
+          ],
+          "caption_source_block_ids": [
+            "p133:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter6",
+        "unit_id": "Genetics_chapter6_005",
+        "page": 133,
+        "pages": [
+          133
+        ],
+        "bbox": [
+          46.0,
+          219.0,
+          1006.0,
+          1325.0
+        ],
+        "caption_bbox": [
+          54.0,
+          142.0,
+          1009.0,
+          213.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

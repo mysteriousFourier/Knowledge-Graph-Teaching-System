@@ -1,0 +1,70 @@
+{
+  "id": "Genetics_chapter9_006",
+  "metadata": {
+    "chapter": "Genetics_chapter9",
+    "section": "ESTIMATION OF COMPOSITE EFFECTS",
+    "subsections": [
+      "Additional Data"
+    ],
+    "section_level_1": "ESTIMATION OF COMPOSITE EFFECTS",
+    "section_level_2": "Additional Data",
+    "heading_path": [
+      "ESTIMATION OF COMPOSITE EFFECTS",
+      "Additional Data"
+    ],
+    "display_heading": "ESTIMATION OF COMPOSITE EFFECTS / Additional Data",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 237,
+      "printed_page": 217,
+      "source_block_ids": [
+        "p237:b7"
+      ],
+      "bbox": [
+        36.0,
+        1177.0,
+        245.0,
+        1212.0
+      ],
+      "raw_text": "Additional Data"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "A summary of results from some other line-cross studies is given in Table 9.5. In most cases, the parental lines are conspecific isolates known at the outset to differ (often substantially) in mean phenotypes. The main message is consistent with the Nicotiana results — differentiation of divergent lines almost always involves epistatic effects. We will see in Chapter 11 that epistatic interactions can sometimes be removed by a suitable scale transformation, but it is unlikely that this would be successful for all the tabulated studies.",
+      "source_page": 237,
+      "printed_page": 217,
+      "source_block_ids": [
+        "p237:b8"
+      ],
+      "bbox": [
+        28.0,
+        1220.0,
+        998.0,
+        1462.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:9.5]]",
+      "source_page": 238,
+      "printed_page": 218,
+      "source_block_ids": [
+        "p238:b3"
+      ],
+      "bbox": [
+        140.0,
+        170.0,
+        1131.0,
+        1100.0
+      ]
+    }
+  ]
+}

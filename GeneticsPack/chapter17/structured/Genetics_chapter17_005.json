@@ -1,0 +1,129 @@
+{
+  "id": "Genetics_chapter17_005",
+  "metadata": {
+    "chapter": "Genetics_chapter17",
+    "section": "PRECISION OF ESTIMATES",
+    "subsections": [],
+    "section_level_1": "PRECISION OF ESTIMATES",
+    "section_level_2": null,
+    "heading_path": [
+      "PRECISION OF ESTIMATES"
+    ],
+    "display_heading": "PRECISION OF ESTIMATES",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 556,
+      "printed_page": 536,
+      "source_block_ids": [
+        "p556:b7"
+      ],
+      "bbox": [
+        110.0,
+        1394.0,
+        479.0,
+        1425.0
+      ],
+      "raw_text": "PRECISION OF ESTIMATES"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As in all attempts to estimate parameters, it is always desirable to ascertain the degree of precision of heritability estimates. Since the statistical properties of least-squares regression are well known, this is relatively easy to do with parent-offspring analysis. Provided the data have been measured or transformed so that the joint distribution of parent and offspring phenotypes is bivariate normal, the sampling variance of the single parent-single offspring regression is, from Equation A1.20a, approximately",
+      "source_page": 556,
+      "printed_page": 536,
+      "source_block_ids": [
+        "p556:b8",
+        "p557:b2"
+      ],
+      "bbox": [
+        109.0,
+        1459.0,
+        1068.0,
+        1525.0
+      ],
+      "source_page_end": 557
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter17_formula012]]",
+      "source_page": 557,
+      "printed_page": 537,
+      "source_block_ids": [
+        "p557:b3"
+      ],
+      "bbox": [
+        396.0,
+        318.0,
+        730.0,
+        392.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where N is the number of parent-offspring pairs. This expression reduces to $ (1 - r^{2})/N $ when the phenotypic variances in the two generations are equal.",
+      "source_page": 557,
+      "printed_page": 537,
+      "source_block_ids": [
+        "p557:b5"
+      ],
+      "bbox": [
+        87.0,
+        412.0,
+        1043.0,
+        477.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Equation 17.6 also applies to regressions involving midparents if $ \\operatorname{Var}(\\overline{z}_p) = \\operatorname{Var}(z_p)/2 $ is substituted for $ \\operatorname{Var}(z_p) $ and $ r_{o\\overline{p}} $ for $ r_{op} $, and it applies to regressions involving multiple progeny when $ \\operatorname{Var}(z_o) \\cdot [t + (1 - t)/n] $ is substituted for $ \\operatorname{Var}(z_o) $. For unequal family sizes, Kempthorne and Tandon (1953) show that, when the convergent regression coefficient has been attained,",
+      "source_page": 557,
+      "printed_page": 537,
+      "source_block_ids": [
+        "p557:b6"
+      ],
+      "bbox": [
+        86.0,
+        476.0,
+        1045.0,
+        638.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter17_formula013]]",
+      "source_page": 557,
+      "printed_page": 537,
+      "source_block_ids": [
+        "p557:b7"
+      ],
+      "bbox": [
+        406.0,
+        655.0,
+        725.0,
+        779.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Provided the joint distribution of offspring and parent phenotypes is bivariate normal, the sampling distribution of a regression coefficient is also normal. The standard error of $b$ can then be used to construct a confidence interval for the heritability estimate. Provided the number of families $N > 15$ (which is generally necessary for any reasonable degree of precision), the 95% confidence interval for a regression coefficient is approximately $b \\pm 2SE(b)$, where $SE(b) = \\sqrt{\\mathrm{Var}(b)}$. For a midparent-offspring regression, the confidence interval for the slope is also the confidence interval for $h^{2}$. For a regression involving single parents, the confidence interval for $h^{2}$ is twice that of the regression coefficient.",
+      "source_page": 557,
+      "printed_page": 537,
+      "source_block_ids": [
+        "p557:b9"
+      ],
+      "bbox": [
+        85.0,
+        800.0,
+        1047.0,
+        1091.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "id": "PopGen_chapter2_021",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+    "subsections": [
+      "SUMMARY"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+    "section_level_2": "SUMMARY",
+    "heading_path": [
+      "2.6 CAUSES OF LINKAGE DISEQUILIBRIUM",
+      "SUMMARY"
+    ],
+    "display_heading": "SUMMARY",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b1"
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "1. For a gene with two alleles A and a in a random-mating population, the expected genotype frequencies of AA, Aa, and aa are given by $ p^{2} $, $ 2pq $, and $ q^{2} $, respectively, where p and q are the allele frequencies of A and a, respectively, with $ p + q = 1 $. These expected genotype frequencies constitute the Hardy-Weinberg equilibrium (HWE).",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b2"
+      ],
+      "source_bboxes": [
+        [
+          266.0,
+          239.0,
+          1009.0,
+          370.0
+        ]
+      ],
+      "provenance_score": 0.996109,
+      "content_sha256": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 107,
+          "end": 109,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 102,
+          "source_block_ids": [
+            "PopGen_chapter2:p044:b2"
+          ],
+          "source_bboxes": [
+            [
+              266.0,
+              239.0,
+              1009.0,
+              370.0
+            ]
+          ],
+          "source_content_sha256": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p044:b2": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4"
+          }
+        },
+        {
+          "start": 111,
+          "end": 113,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 102,
+          "source_block_ids": [
+            "PopGen_chapter2:p044:b2"
+          ],
+          "source_bboxes": [
+            [
+              266.0,
+              239.0,
+              1009.0,
+              370.0
+            ]
+          ],
+          "source_content_sha256": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p044:b2": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4"
+          }
+        },
+        {
+          "start": 119,
+          "end": 121,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 102,
+          "source_block_ids": [
+            "PopGen_chapter2:p044:b2"
+          ],
+          "source_bboxes": [
+            [
+              266.0,
+              239.0,
+              1009.0,
+              370.0
+            ]
+          ],
+          "source_content_sha256": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p044:b2": "47b8474762d05726afa110fc4d4583a7d143f12d43dd98aa8bf839fcb91fbfd4"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "2. One of the principal implications of the HWE is that the allele frequencies and the genotype frequencies remain constant from generation to generation, hence genetic variation is maintained.",
+      "source_page": 102,
+      "source_pages": [
+        102
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p044:b3"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          374.0,
+          1010.0,
+          451.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a3a8cfd7d27658abd386e50930173014ee3a56652bbd601b7e5c1a16865d4c45",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

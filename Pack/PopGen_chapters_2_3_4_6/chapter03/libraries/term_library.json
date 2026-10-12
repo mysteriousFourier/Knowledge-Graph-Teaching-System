@@ -1,0 +1,1783 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter3",
+  "count": 48,
+  "terms": [
+    {
+      "id": "PopGen_term_0132",
+      "text": "absorbing states",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 0,
+          "start": 858,
+          "end": 874,
+          "context": "mutation (and for the moment we exclude this possibility). The states 0 and 2N are called absorbing states. From any nonfixed allele frequency, it is possible for the population to drift to any ot",
+          "source_page": 116,
+          "source_block_ids": [
+            "PopGen_chapter3:p008:b2"
+          ],
+          "source_bboxes": [
+            [
+              248,
+              283,
+              1002,
+              901
+            ]
+          ],
+          "source_content_sha256": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0",
+          "source_content_hashes": {
+            "PopGen_chapter3:p008:b2": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0161",
+      "text": "ancestral recombination graph",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_020",
+          "block_index": 3,
+          "start": 568,
+          "end": 597,
+          "context": "osomes recreating their ancestral parental types. A graph such as that in C is called the ancestral recombination graph for the haplotypes in the sample.",
+          "source_page": 156,
+          "source_block_ids": [
+            "PopGen_chapter3:p048:b1"
+          ],
+          "source_bboxes": [
+            [
+              257,
+              206,
+              1009,
+              446
+            ]
+          ],
+          "source_content_sha256": "ec6e7e9a9331410a668de7a5623dd6339ab11f87663ad0538186e6b50b075467",
+          "source_content_hashes": {
+            "PopGen_chapter3:p048:b1": "ec6e7e9a9331410a668de7a5623dd6339ab11f87663ad0538186e6b50b075467"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0130",
+      "text": "average",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 5,
+          "start": 119,
+          "end": 126,
+          "context": "equency due to random genetic drift in any individual population may defy prediction, the average behavior of allele frequencies in a large number of populations can be predicted. Conside",
+          "source_page": 111,
+          "source_block_ids": [
+            "PopGen_chapter3:p003:b6"
+          ],
+          "source_bboxes": [
+            [
+              113,
+              1212,
+              870,
+              1373
+            ]
+          ],
+          "source_content_sha256": "d0f7eb7b571b09b0f36acf5fafde28c0053083920ac2088f976112f5d0d088d4",
+          "source_content_hashes": {
+            "PopGen_chapter3:p003:b6": "d0f7eb7b571b09b0f36acf5fafde28c0053083920ac2088f976112f5d0d088d4"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0153",
+      "text": "backward",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_014",
+          "block_index": 0,
+          "start": 267,
+          "end": 275,
+          "context": "me. It is equally valid to think about the ancestry of alleles as the genealogies proceed backward in time, and for some purposes this manner of thinking is much more powerful. A set of al",
+          "source_page": 142,
+          "source_block_ids": [
+            "PopGen_chapter3:p034:b3"
+          ],
+          "source_bboxes": [
+            [
+              265,
+              397,
+              1019,
+              930
+            ]
+          ],
+          "source_content_sha256": "b9833fbadee7b0cd4a0ca1e4269151a67a16dd0d61ee7122d974c07a8cd89958",
+          "source_content_hashes": {
+            "PopGen_chapter3:p034:b3": "b9833fbadee7b0cd4a0ca1e4269151a67a16dd0d61ee7122d974c07a8cd89958"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0127",
+      "text": "binomial distribution",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 1,
+          "start": 477,
+          "end": 498,
+          "context": "ies being the a allele. The probability of each of the nine possibilities is given by the binomial distribution, corresponding to successive terms in the expansion of $ (\\frac{1}{2} A + \\frac{1}{2} a)^",
+          "source_page": 110,
+          "source_block_ids": [
+            "PopGen_chapter3:p002:b3",
+            "PopGen_chapter3:p002:b2"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              766.0,
+              1014.0,
+              1005.0
+            ],
+            [
+              256.0,
+              363.0,
+              1013.0,
+              763.0
+            ]
+          ],
+          "source_content_sha256": "e8ef9a47411df16b3a4a5450662e183cfc3abfe41e62db6d8c367f656513b35d",
+          "source_content_hashes": {
+            "PopGen_chapter3:p002:b3": "e8ef9a47411df16b3a4a5450662e183cfc3abfe41e62db6d8c367f656513b35d",
+            "PopGen_chapter3:p002:b2": "8bd81b6289de90d2bceaa2bcc385494a879e2ccf760ed68147140323def2e843"
+          },
+          "subject_index": {
+            "entry": "binomial distributions",
+            "printed_pages": [
+              96
+            ],
+            "master_pages": [
+              110
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0151",
+      "text": "bottleneck",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_010",
+          "block_index": 3,
+          "start": 712,
+          "end": 722,
+          "context": "In biological reality, this means that a single period of small population size, called a bottleneck, can result in a serious loss in heterozygosity. Population bottlenecks are thought to ac",
+          "source_page": 136,
+          "source_block_ids": [
+            "PopGen_chapter3:p028:b15"
+          ],
+          "source_bboxes": [
+            [
+              262,
+              1145,
+              1018,
+              1357
+            ]
+          ],
+          "source_content_sha256": "7b4c3acb5f9c17963517e682de56bdbe3ef3a8f4cafa3cfab0fa9867992935df",
+          "source_content_hashes": {
+            "PopGen_chapter3:p028:b15": "7b4c3acb5f9c17963517e682de56bdbe3ef3a8f4cafa3cfab0fa9867992935df"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0172",
+      "text": "Callosobruchus chinensis",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 10,
+          "start": 48,
+          "end": 72,
+          "context": "13. Two inbred strains of the azuki bean beetle Callosobruchus chinensis are crossed and their progeny allowed to mate at random each generation thereafter. Among",
+          "source_page": 162,
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b1"
+          ],
+          "source_bboxes": [
+            [
+              266,
+              206,
+              1015,
+              393
+            ]
+          ],
+          "source_content_sha256": "118c0bb50e8e2660e987f3232b9e1844b5b498ef06b44d61f9641d2fa32d40c6",
+          "source_content_hashes": {
+            "PopGen_chapter3:p054:b1": "118c0bb50e8e2660e987f3232b9e1844b5b498ef06b44d61f9641d2fa32d40c6"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0168",
+      "text": "cases",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_021",
+          "block_index": 2,
+          "start": 540,
+          "end": 545,
+          "context": " disequilibrium. In essence, such studies examine a large sample of affected individuals (cases) and an equally large number of matched, nonaffected individuals (controls). The individu",
+          "source_page": 159,
+          "source_block_ids": [
+            "PopGen_chapter3:p051:b1"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              202,
+              870,
+              784
+            ]
+          ],
+          "source_content_sha256": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab",
+          "source_content_hashes": {
+            "PopGen_chapter3:p051:b1": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0154",
+      "text": "coalescence",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_014",
+          "block_index": 0,
+          "start": 814,
+          "end": 825,
+          "context": " ago, or the alleles may have had a common ancestor hundreds of generations ago. The term coalescence refers to the process in which, looking backward in time, the genealogies of two alleles ",
+          "source_page": 142,
+          "source_block_ids": [
+            "PopGen_chapter3:p034:b3"
+          ],
+          "source_bboxes": [
+            [
+              265,
+              397,
+              1019,
+              930
+            ]
+          ],
+          "source_content_sha256": "b9833fbadee7b0cd4a0ca1e4269151a67a16dd0d61ee7122d974c07a8cd89958",
+          "source_content_hashes": {
+            "PopGen_chapter3:p034:b3": "b9833fbadee7b0cd4a0ca1e4269151a67a16dd0d61ee7122d974c07a8cd89958"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0156",
+      "text": "coalescent effective size",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_015",
+          "block_index": 0,
+          "start": 197,
+          "end": 222,
+          "context": "tion to coalesce into a single common ancestral allele is approximately $4N$. This is the coalescent effective size, which (when it exists) equals the inbreeding effective size (Sjodin et al. 2005).",
+          "source_page": 147,
+          "source_block_ids": [
+            "PopGen_chapter3:p039:b4"
+          ],
+          "source_bboxes": [
+            [
+              119,
+              597,
+              871,
+              701
+            ]
+          ],
+          "source_content_sha256": "e243dd2fb68094d5dbb46002f8d4c7cdb8b051408e7dc637d6dbe1fecff30451",
+          "source_content_hashes": {
+            "PopGen_chapter3:p039:b4": "e243dd2fb68094d5dbb46002f8d4c7cdb8b051408e7dc637d6dbe1fecff30451"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0155",
+      "text": "coalescent event",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_014",
+          "block_index": 2,
+          "start": 759,
+          "end": 775,
+          "context": "n the same or decrease, and each reduction in the number of ancestral alleles is called a coalescent event.",
+          "source_page": 143,
+          "source_block_ids": [
+            "PopGen_chapter3:p035:b3"
+          ],
+          "source_bboxes": [
+            [
+              120,
+              950,
+              877,
+              1159
+            ]
+          ],
+          "source_content_sha256": "c0650f5c1061c464268bae1698680ccf260e4477f32097fe8569a0d0fa83a45c",
+          "source_content_hashes": {
+            "PopGen_chapter3:p035:b3": "c0650f5c1061c464268bae1698680ccf260e4477f32097fe8569a0d0fa83a45c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0165",
+      "text": "composite likelihood",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_020",
+          "block_index": 8,
+          "start": 535,
+          "end": 555,
+          "context": "s is itself sometimes difficult to compute. Instead of calculating the full likelihood, a composite likelihood is sometimes used, in which the simpler problem of calculating the likelihood for each in",
+          "source_page": 157,
+          "source_block_ids": [
+            "PopGen_chapter3:p049:b2"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              625,
+              867,
+              1050
+            ]
+          ],
+          "source_content_sha256": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941",
+          "source_content_hashes": {
+            "PopGen_chapter3:p049:b2": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0169",
+      "text": "controls",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_021",
+          "block_index": 2,
+          "start": 612,
+          "end": 620,
+          "context": "cted individuals (cases) and an equally large number of matched, nonaffected individuals (controls). The individuals are genotyped for hundreds of thousands of SNPs across the genome, and ",
+          "source_page": 159,
+          "source_block_ids": [
+            "PopGen_chapter3:p051:b1"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              202,
+              870,
+              784
+            ]
+          ],
+          "source_content_sha256": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab",
+          "source_content_hashes": {
+            "PopGen_chapter3:p051:b1": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0146",
+      "text": "effective population size",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_009",
+          "block_index": 0,
+          "start": 778,
+          "end": 803,
+          "context": "f the population and using this value in the theory for an ideal population. That is, the effective population size of an actual population is the number of individuals in a theoretically ideal population ",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              390,
+              872,
+              867
+            ]
+          ],
+          "source_content_sha256": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1",
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b3": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0144",
+      "text": "effective size",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 10,
+          "start": 1077,
+          "end": 1091,
+          "context": "lation size of $ N = 9 $ rather than its actual size of $ N = 16 $. We call $ N = 9 $ the effective size of the subpopulations, as distinct from the actual size (see Section 3.5). The theory als",
+          "source_page": 132,
+          "source_block_ids": [
+            "PopGen_chapter3:p024:b3"
+          ],
+          "source_bboxes": [
+            [
+              267,
+              878,
+              1020,
+              1359
+            ]
+          ],
+          "source_content_sha256": "d60ed0da697a3dc2d239f20908a0f5c085874501b04ff8515235b6c350ba7d84",
+          "source_content_hashes": {
+            "PopGen_chapter3:p024:b3": "d60ed0da697a3dc2d239f20908a0f5c085874501b04ff8515235b6c350ba7d84"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_009",
+          "block_index": 0,
+          "start": 672,
+          "end": 686,
+          "context": "in allele frequencies and rates of allele fixation can be approximated by calculating the effective size of the population and using this value in the theory for an ideal population. That is, th",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              390,
+              872,
+              867
+            ]
+          ],
+          "source_content_sha256": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1",
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b3": "f69b455a621e9d70142a55b42c81498003440ddb345fafd9da43ca16dfee5de1"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0149",
+      "text": "eigenvalue effective size",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_009",
+          "block_index": 0,
+          "start": 1309,
+          "end": 1334,
+          "context": "ity. These are called the inbreeding effective size, the variance effective size, and the eigenvalue effective size, respectively.",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0143",
+      "text": "fixation index",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 5,
+          "start": 137,
+          "end": 151,
+          "context": "al are identical by descent is often denoted F, following Wright (1922) who called it the fixation index. In the context of population subdivision, F as used in this chapter is the same quantity",
+          "source_page": 130,
+          "source_block_ids": [
+            "PopGen_chapter3:p022:b2"
+          ],
+          "source_bboxes": [
+            [
+              266,
+              418,
+              1021,
+              606
+            ]
+          ],
+          "source_content_sha256": "81c37cd9c591432351adb66c040e433ebc0f3db9058980976bb0491ba72762aa",
+          "source_content_hashes": {
+            "PopGen_chapter3:p022:b2": "81c37cd9c591432351adb66c040e433ebc0f3db9058980976bb0491ba72762aa"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_011",
+          "block_index": 0,
+          "start": 114,
+          "end": 128,
+          "context": "ng effect of population subdivision, Wright (1921) defined what has come to be called the fixation index. This index equals the reduction in heterozygosity expected with random mating at any one",
+          "source_page": 295,
+          "source_block_ids": [
+            "PopGen_chapter6:p025:b5"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              947,
+              859,
+              1241
+            ]
+          ],
+          "source_content_sha256": "2808722eb6ffb78b02559738a64f5d6eec1536a5ae0380a69efbcca2f6b37b2e",
+          "source_content_hashes": {
+            "PopGen_chapter6:p025:b5": "2808722eb6ffb78b02559738a64f5d6eec1536a5ae0380a69efbcca2f6b37b2e"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0152",
+      "text": "founder effect",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_010",
+          "block_index": 3,
+          "start": 1184,
+          "end": 1198,
+          "context": "ation found a new subpopulation; the accompanying random genetic drift is then known as a founder effect (see Holgate 1966; Nei et al. 1975; Chakraborty and Nei 1977; Neel and Thompson 1978). Fo",
+          "source_page": 137,
+          "source_block_ids": [
+            "PopGen_chapter3:p029:b1"
+          ],
+          "source_bboxes": [
+            [
+              121,
+              199,
+              873,
+              571
+            ]
+          ],
+          "source_content_sha256": "ba61a23fa0662c86feacad2c46a9422267e1904c4e54010e231b4f0b49fab37e",
+          "source_content_hashes": {
+            "PopGen_chapter3:p029:b1": "ba61a23fa0662c86feacad2c46a9422267e1904c4e54010e231b4f0b49fab37e"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter9",
+          "unit_id": "PopGen_chapter9_010",
+          "block_index": 5,
+          "start": 204,
+          "end": 218,
+          "context": "ructure (Charlesworth et al. 2003;Haddrill et al. 2005). One such demographic effect is a founder effect,because a small number of individuals who initiate a subpopulation will contribute dispro",
+          "source_page": 496,
+          "source_block_ids": [
+            "PopGen_chapter9:p014:b4"
+          ],
+          "source_bboxes": [
+            [
+              189.0,
+              676.0,
+              709.0,
+              952.0
+            ]
+          ],
+          "source_content_sha256": "96061509f381bcc5f5fe2d14184c5a41f4e7e379e9709e2089633a304bdaf806",
+          "source_content_hashes": {
+            "PopGen_chapter9:p014:b4": "96061509f381bcc5f5fe2d14184c5a41f4e7e379e9709e2089633a304bdaf806"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0139",
+      "text": "gene flow",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 0,
+          "start": 473,
+          "end": 482,
+          "context": "to some migration, or movement, of individuals among the subpopulations, which results in gene flow, or exchange of genes, between them. Nevertheless, random genetic drift will tend to caus",
+          "source_page": 127,
+          "source_block_ids": [
+            "PopGen_chapter3:p019:b5"
+          ],
+          "source_bboxes": [
+            [
+              95,
+              1184,
+              849,
+              1370
+            ]
+          ],
+          "source_content_sha256": "392b14600762b04938b2c6bfa48966293efe20efc4bfe0028b06768c44967379",
+          "source_content_hashes": {
+            "PopGen_chapter3:p019:b5": "392b14600762b04938b2c6bfa48966293efe20efc4bfe0028b06768c44967379"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0167",
+      "text": "genetic risk factors",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_021",
+          "block_index": 2,
+          "start": 350,
+          "end": 370,
+          "context": "nes with mutant alleles that predispose to the disease. These mutant alleles are known as genetic risk factors for the disease, and the measure of association is the magnitude of the linkage disequili",
+          "source_page": 159,
+          "source_block_ids": [
+            "PopGen_chapter3:p051:b1"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              202,
+              870,
+              784
+            ]
+          ],
+          "source_content_sha256": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab",
+          "source_content_hashes": {
+            "PopGen_chapter3:p051:b1": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0145",
+      "text": "genic variance",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 12,
+          "start": 447,
+          "end": 461,
+          "context": "ue. Fisher (1918) showed that it also takes 1.39N generations to halve what he called the genic variance in the population. Since the variance of a binomial sample is $ pq/2N $, and the average ",
+          "source_page": 133,
+          "source_block_ids": [
+            "PopGen_chapter3:p025:b6"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              1099,
+              545,
+              1322
+            ]
+          ],
+          "source_content_sha256": "3e469072b0ada393ee8d58c837545083c440cbc7696e8d82e9a104010590637d",
+          "source_content_hashes": {
+            "PopGen_chapter3:p025:b6": "3e469072b0ada393ee8d58c837545083c440cbc7696e8d82e9a104010590637d"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0150",
+      "text": "harmonic mean",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_010",
+          "block_index": 3,
+          "start": 436,
+          "end": 449,
+          "context": "c{1}{N_{1}}+\\cdots+\\frac{1}{N_{t-1}}\\right) $$ and so the effective size $ N_{e} $ is the harmonic mean of the actual numbers—the reciprocal of the average of the reciprocals. As illustrated in",
+          "source_page": 136,
+          "source_block_ids": [
+            "PopGen_chapter3:p028:b15"
+          ],
+          "source_bboxes": [
+            [
+              262,
+              1145,
+              1018,
+              1357
+            ]
+          ],
+          "source_content_sha256": "7b4c3acb5f9c17963517e682de56bdbe3ef3a8f4cafa3cfab0fa9867992935df",
+          "source_content_hashes": {
+            "PopGen_chapter3:p028:b15": "7b4c3acb5f9c17963517e682de56bdbe3ef3a8f4cafa3cfab0fa9867992935df"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0140",
+      "text": "identical by descent",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 3,
+          "start": 236,
+          "end": 256,
+          "context": "ntly, we need to introduce a concept known as allele identity by descent. Two alleles are identical by descent if they are replicas (by DNA replication) of a gene present in some previous generation. ",
+          "source_page": 129,
+          "source_block_ids": [
+            "PopGen_chapter3:p021:b3"
+          ],
+          "source_bboxes": [
+            [
+              93,
+              978,
+              851,
+              1325
+            ]
+          ],
+          "source_content_sha256": "2bc84c145f6ef3aa5df597b9cf9c48d14bb1180cf3f26d9cbe9014963404d6ea",
+          "source_content_hashes": {
+            "PopGen_chapter3:p021:b3": "2bc84c145f6ef3aa5df597b9cf9c48d14bb1180cf3f26d9cbe9014963404d6ea"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 0,
+          "start": 496,
+          "end": 516,
+          "context": "genotype of the locus in individual I. The dots are both black to symbolize that they are identical by descent, which means that they arose from replication of the same DNA molecule in a previous gene",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              443,
+              1029,
+              789
+            ]
+          ],
+          "source_content_sha256": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13",
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b3": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0141",
+      "text": "identical by kind",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 4,
+          "start": 686,
+          "end": 703,
+          "context": "but their status in regard to identity by descent is unknown. Such alleles are said to be identical by kind or identical by state.",
+          "source_page": 130,
+          "source_block_ids": [
+            "PopGen_chapter3:p022:b1"
+          ],
+          "source_bboxes": [
+            [
+              264,
+              203,
+              1019,
+              415
+            ]
+          ],
+          "source_content_sha256": "b48fc87ab24089ef3bf481ff55d30bdd83a535516523f669fd5f39445326e040",
+          "source_content_hashes": {
+            "PopGen_chapter3:p022:b1": "b48fc87ab24089ef3bf481ff55d30bdd83a535516523f669fd5f39445326e040"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0142",
+      "text": "identical by state",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 4,
+          "start": 707,
+          "end": 725,
+          "context": "egard to identity by descent is unknown. Such alleles are said to be identical by kind or identical by state.",
+          "source_page": 130,
+          "source_block_ids": [
+            "PopGen_chapter3:p022:b1"
+          ],
+          "source_bboxes": [
+            [
+              264,
+              203,
+              1019,
+              415
+            ]
+          ],
+          "source_content_sha256": "b48fc87ab24089ef3bf481ff55d30bdd83a535516523f669fd5f39445326e040",
+          "source_content_hashes": {
+            "PopGen_chapter3:p022:b1": "b48fc87ab24089ef3bf481ff55d30bdd83a535516523f669fd5f39445326e040"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_004",
+          "block_index": 1,
+          "start": 61,
+          "end": 79,
+          "context": "The essential point of Figure 6.2 is that two alleles can be identical by state, which means that they have the same sequence of nucleotides along the DNA, without being",
+          "source_page": 274,
+          "source_block_ids": [
+            "PopGen_chapter6:p004:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1251,
+              1027,
+              1384
+            ]
+          ],
+          "source_content_sha256": "76f0ccafad513dcf4dbfedb33b8a4c8bf5d92adee751b39ad80691621155c018",
+          "source_content_hashes": {
+            "PopGen_chapter6:p004:b4": "76f0ccafad513dcf4dbfedb33b8a4c8bf5d92adee751b39ad80691621155c018"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0147",
+      "text": "inbreeding effective size",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_009",
+          "block_index": 0,
+          "start": 1245,
+          "end": 1270,
+          "context": "ance in allele frequency, or (3) the rate of loss of heterozygosity. These are called the inbreeding effective size, the variance effective size, and the eigenvalue effective size, respectively.",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0160",
+      "text": "infinite-sites model",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_017",
+          "block_index": 1,
+          "start": 301,
+          "end": 321,
+          "context": "le, we need to specify some type of mutation model. One widely used model is known as the infinite-sites model, in which each allele is considered as a sequence of nucleotides with mutation altering a",
+          "source_page": 150,
+          "source_block_ids": [
+            "PopGen_chapter3:p042:b8"
+          ],
+          "source_bboxes": [
+            [
+              255,
+              1173,
+              1011,
+              1387
+            ]
+          ],
+          "source_content_sha256": "0956bcf3fe3112e4e8cadcc3df786f68448aff013f93c397cc9bf3952f813077",
+          "source_content_hashes": {
+            "PopGen_chapter3:p042:b8": "0956bcf3fe3112e4e8cadcc3df786f68448aff013f93c397cc9bf3952f813077"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter4",
+          "unit_id": "PopGen_chapter4_011",
+          "block_index": 0,
+          "start": 47,
+          "end": 67,
+          "context": "When DNA sequence data are available, then the infinite-sites model is intuitively more appealing than the infinite-alleles model. The infinite-sites model, ",
+          "source_page": 186,
+          "source_block_ids": [
+            "PopGen_chapter4:p022:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              448,
+              1025,
+              928
+            ]
+          ],
+          "source_content_sha256": "7397f8692368b1ee72235d053fa7148411f54f3873f5f715d1a266ebd8ce4fe3",
+          "source_content_hashes": {
+            "PopGen_chapter4:p022:b3": "7397f8692368b1ee72235d053fa7148411f54f3873f5f715d1a266ebd8ce4fe3"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0136",
+      "text": "Kolmogorov backward equation",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_006",
+          "block_index": 2,
+          "start": 217,
+          "end": 245,
+          "context": " \\to 0 $, the difference equation converges to a partial differential equation called the Kolmogorov backward equation: $$ \\frac{\\partial\\phi(p,x;t)}{\\partial t}=M(p)\\frac{\\partial\\phi(p,x;t)}{\\partial p}+\\fr",
+          "source_page": 124,
+          "source_block_ids": [
+            "PopGen_chapter3:p016:b7"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              1171,
+              1019,
+              1253
+            ]
+          ],
+          "source_content_sha256": "f29fd6212772097affcdc9eaf5799bd06b4e69d3dbb281abf880763a10e6359b",
+          "source_content_hashes": {
+            "PopGen_chapter3:p016:b7": "f29fd6212772097affcdc9eaf5799bd06b4e69d3dbb281abf880763a10e6359b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0135",
+      "text": "Kolmogorov forward equation",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_005",
+          "block_index": 5,
+          "start": 162,
+          "end": 189,
+          "context": " \\to 0 $ (as we also overlook a number of technical details) to obtain what is called the Kolmogorov forward equation: $$ \\frac{\\partial\\phi(p,x;t)}{\\partial t}=-\\frac{\\partial\\left[M(x)\\phi(p,x;t)\\right]}{\\",
+          "source_page": 121,
+          "source_block_ids": [
+            "PopGen_chapter3:p013:b7"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              1136,
+              863,
+              1213
+            ]
+          ],
+          "source_content_sha256": "676d4f9340dab9220fa248415df5e50ed6f9eb8fa35483c5894cc03a4e5d007e",
+          "source_content_hashes": {
+            "PopGen_chapter3:p013:b7": "676d4f9340dab9220fa248415df5e50ed6f9eb8fa35483c5894cc03a4e5d007e"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0171",
+      "text": "Leontopodium alpinum",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 6,
+          "start": 47,
+          "end": 67,
+          "context": "9. An isolated population of alpine edelweiss (Leontopodium alpinum) loses half its heterozygosity in 30 generations. What is its effective population size?",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b6"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              754,
+              859,
+              830
+            ]
+          ],
+          "source_content_sha256": "68c13830c837b439d6505127941531cc03739366300e3c14dff9397acdf1cc14",
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b6": "68c13830c837b439d6505127941531cc03739366300e3c14dff9397acdf1cc14"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0166",
+      "text": "linkage disequilibrium mapping",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_021",
+          "block_index": 2,
+          "start": 105,
+          "end": 135,
+          "context": " associations between SNPs and complex diseases that have a genetic component is known as linkage disequilibrium mapping. This approach will be examined in some detail in Chapter 10. Its goal is to identify ind",
+          "source_page": 159,
+          "source_block_ids": [
+            "PopGen_chapter3:p051:b1"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              202,
+              870,
+              784
+            ]
+          ],
+          "source_content_sha256": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab",
+          "source_content_hashes": {
+            "PopGen_chapter3:p051:b1": "aa61711f524a1fc35304027b3eee29b24c2150b7e82ddcd410e07c6d1af2b9ab"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0134",
+      "text": "Markov chain",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 1,
+          "start": 469,
+          "end": 481,
+          "context": "iscrete states with fixed probabilities of going from one state to another, is known as a Markov chain, and it has some very elegant mathematical properties. Iterations of the Wright-Fisher mo",
+          "source_page": 116,
+          "source_block_ids": [
+            "PopGen_chapter3:p008:b5"
+          ],
+          "source_bboxes": [
+            [
+              251,
+              1062,
+              1005,
+              1328
+            ]
+          ],
+          "source_content_sha256": "9e6a8e9120f5670b39236f9876378aed8727c7670cddf5e52e70d28e97977f57",
+          "source_content_hashes": {
+            "PopGen_chapter3:p008:b5": "9e6a8e9120f5670b39236f9876378aed8727c7670cddf5e52e70d28e97977f57"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0163",
+      "text": "Markov Chain Monte Carlo",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_020",
+          "block_index": 8,
+          "start": 184,
+          "end": 208,
+          "context": "he computer to spend more time in the \"most promising\" regions of the parameter space are Markov Chain Monte Carlo (MCMC) and sequential importance sampling. Even these methods are challenged with the lar",
+          "source_page": 157,
+          "source_block_ids": [
+            "PopGen_chapter3:p049:b2"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              625,
+              867,
+              1050
+            ]
+          ],
+          "source_content_sha256": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941",
+          "source_content_hashes": {
+            "PopGen_chapter3:p049:b2": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0158",
+      "text": "mid-depth point",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_016",
+          "block_index": 2,
+          "start": 599,
+          "end": 614,
+          "context": "trees had three or fewer nodes between the root and the mid-depth point of the tree. (The mid-depth point of a tree is halfway between the tree's root and its tips.) A smoothed version of their s",
+          "source_page": 149,
+          "source_block_ids": [
+            "PopGen_chapter3:p041:b2"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              397,
+              870,
+              742
+            ]
+          ],
+          "source_content_sha256": "ba611d877a0956f2eddea728df2327ff57a69503ca8386f00cfaf578b149c657",
+          "source_content_hashes": {
+            "PopGen_chapter3:p041:b2": "ba611d877a0956f2eddea728df2327ff57a69503ca8386f00cfaf578b149c657"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0138",
+      "text": "migration",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_008",
+          "block_index": 0,
+          "start": 391,
+          "end": 400,
+          "context": "in nature, the subpopulations are not genetically isolated from one another owing to some migration, or movement, of individuals among the subpopulations, which results in gene flow, or exc",
+          "source_page": 127,
+          "source_block_ids": [
+            "PopGen_chapter3:p019:b5"
+          ],
+          "source_bboxes": [
+            [
+              95,
+              1184,
+              849,
+              1370
+            ]
+          ],
+          "source_content_sha256": "392b14600762b04938b2c6bfa48966293efe20efc4bfe0028b06768c44967379",
+          "source_content_hashes": {
+            "PopGen_chapter3:p019:b5": "392b14600762b04938b2c6bfa48966293efe20efc4bfe0028b06768c44967379"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0170",
+      "text": "Mus castaneus",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 4,
+          "start": 56,
+          "end": 69,
+          "context": "7. An autosomal gene in a colony of 28 Asian wild mice, Mus castaneus, undergoes mutation to a new neutral allele. Assuming that the population conforms to the",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b4"
+          ],
+          "source_bboxes": [
+            [
+              121,
+              470,
+              861,
+              653
+            ]
+          ],
+          "source_content_sha256": "a470d9f34327bc2eab66121e78cc3f052b5316220572e67c3293504452c8f92a",
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b4": "a470d9f34327bc2eab66121e78cc3f052b5316220572e67c3293504452c8f92a"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0173",
+      "text": "Panthera leo",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_025",
+          "block_index": 12,
+          "start": 78,
+          "end": 90,
+          "context": "15. What is the effective population number in a population of African lions, Panthera leo, in which each breeding male controls a harem of five females and the total population co",
+          "source_page": 162,
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b3"
+          ],
+          "source_bboxes": [
+            [
+              267,
+              492,
+              1016,
+              571
+            ]
+          ],
+          "source_content_sha256": "0e5262a0fc0968dcece838e0d06a62d206a83f01fdf500c5dc2fa0cc6002f77c",
+          "source_content_hashes": {
+            "PopGen_chapter3:p054:b3": "0e5262a0fc0968dcece838e0d06a62d206a83f01fdf500c5dc2fa0cc6002f77c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0162",
+      "text": "posterior distribution",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_020",
+          "block_index": 7,
+          "start": 1123,
+          "end": 1145,
+          "context": "ample are accepted. Repeating the simulated sampling many times yields what is called the posterior distribution of the parameter estimates.",
+          "source_page": 157,
+          "source_block_ids": [
+            "PopGen_chapter3:p049:b1"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              198,
+              872,
+              621
+            ]
+          ],
+          "source_content_sha256": "94992cce44571c20e06d3259e8f0e075c5bf0113913a1f1c5a216382141035cc",
+          "source_content_hashes": {
+            "PopGen_chapter3:p049:b1": "94992cce44571c20e06d3259e8f0e075c5bf0113913a1f1c5a216382141035cc"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0126",
+      "text": "random genetic drift",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_001",
+          "block_index": 0,
+          "start": 489,
+          "end": 509,
+          "context": "does not change the allele frequencies in any predetermined way, this process is known as random genetic drift. The subtlety and importance of random genetic drift are the subject of this chapter.",
+          "source_page": 109,
+          "source_block_ids": [
+            "PopGen_chapter3:p001:b2"
+          ],
+          "source_bboxes": [
+            [
+              102,
+              785,
+              855,
+              999
+            ]
+          ],
+          "source_content_sha256": "3cf2c85fcaed612510dd8ab25e9730b7313342211a61546fb3b8c3c2726c6ab4",
+          "source_content_hashes": {
+            "PopGen_chapter3:p001:b2": "3cf2c85fcaed612510dd8ab25e9730b7313342211a61546fb3b8c3c2726c6ab4"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0129",
+      "text": "segregating",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 4,
+          "start": 490,
+          "end": 501,
+          "context": "ations, A becomes lost (that is, p = 0). In the other eight populations remain unfixed or segregating for both A and a; however, the final allele frequency among the unfixed populations is as",
+          "source_page": 111,
+          "source_block_ids": [
+            "PopGen_chapter3:p003:b5"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              865,
+              871,
+              1210
+            ]
+          ],
+          "source_content_sha256": "15501a02217af928f4f08e854ecf42f33b2bacb266d0591fdd9603ba60ffd62f",
+          "source_content_hashes": {
+            "PopGen_chapter3:p003:b5": "15501a02217af928f4f08e854ecf42f33b2bacb266d0591fdd9603ba60ffd62f"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0137",
+      "text": "selectively neutral alleles",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_006",
+          "block_index": 8,
+          "start": 667,
+          "end": 694,
+          "context": "effects on the organisms' ability to survive and reproduce (such alleles are often called selectively neutral alleles).",
+          "source_page": 126,
+          "source_block_ids": [
+            "PopGen_chapter3:p018:b4"
+          ],
+          "source_bboxes": [
+            [
+              585,
+              309,
+              1012,
+              481
+            ]
+          ],
+          "source_content_sha256": "f1bafc3c4f4be7c635e50ece4a12fe3b2aaf637863902a7915daf581f2a78e04",
+          "source_content_hashes": {
+            "PopGen_chapter3:p018:b4": "f1bafc3c4f4be7c635e50ece4a12fe3b2aaf637863902a7915daf581f2a78e04"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0164",
+      "text": "sequential importance sampling",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_020",
+          "block_index": 8,
+          "start": 220,
+          "end": 250,
+          "context": "e \"most promising\" regions of the parameter space are Markov Chain Monte Carlo (MCMC) and sequential importance sampling. Even these methods are challenged with the large size of currently available data sets. ",
+          "source_page": 157,
+          "source_block_ids": [
+            "PopGen_chapter3:p049:b2"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              625,
+              867,
+              1050
+            ]
+          ],
+          "source_content_sha256": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941",
+          "source_content_hashes": {
+            "PopGen_chapter3:p049:b2": "5109286262bf4f2c4aa368fb401e5735765753390767eb37ece97b19b1d3a941"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0157",
+      "text": "star phylogeny",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_016",
+          "block_index": 1,
+          "start": 768,
+          "end": 782,
+          "context": " r, the coalescences all take place very near the root, resulting in what is often called star phylogeny. (Thinking forward in time about a rapidly expanding population, the lineage of each alle",
+          "source_page": 148,
+          "source_block_ids": [
+            "PopGen_chapter3:p040:b5"
+          ],
+          "source_bboxes": [
+            [
+              267,
+              1033,
+              1024,
+              1381
+            ]
+          ],
+          "source_content_sha256": "3289d515e26e179c2076349e7b31cee07e367ec306baed395fe261dc893e1ae3",
+          "source_content_hashes": {
+            "PopGen_chapter3:p040:b5": "3289d515e26e179c2076349e7b31cee07e367ec306baed395fe261dc893e1ae3"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0133",
+      "text": "transition probability",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 0,
+          "start": 1396,
+          "end": 1418,
+          "context": " population drifting from a state having i copies to j copies of allele A is known as the transition probability. The transition probability for the Wright-Fisher model is obtained directly from the bin",
+          "source_page": 116,
+          "source_block_ids": [
+            "PopGen_chapter3:p008:b2"
+          ],
+          "source_bboxes": [
+            [
+              248,
+              283,
+              1002,
+              901
+            ]
+          ],
+          "source_content_sha256": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0",
+          "source_content_hashes": {
+            "PopGen_chapter3:p008:b2": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0159",
+      "text": "true",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_017",
+          "block_index": 0,
+          "start": 230,
+          "end": 234,
+          "context": " of the Wright-Fisher model. It is important to emphasize that we do not usually know the true ancestral relationships among the alleles. The only cases in which the true ancestries ar",
+          "source_page": 150,
+          "source_block_ids": [
+            "PopGen_chapter3:p042:b4"
+          ],
+          "source_bboxes": [
+            [
+              253,
+              558,
+              1007,
+              850
+            ]
+          ],
+          "source_content_sha256": "f3d28db71016f818b6509b7f63aa94e9a21adb2975a0242b0ee3f2e68746cf89",
+          "source_content_hashes": {
+            "PopGen_chapter3:p042:b4": "f3d28db71016f818b6509b7f63aa94e9a21adb2975a0242b0ee3f2e68746cf89"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_017",
+          "block_index": 0,
+          "start": 306,
+          "end": 310,
+          "context": "ally know the true ancestral relationships among the alleles. The only cases in which the true ancestries are known come from experimental evolution studies carried out in the laborato",
+          "source_page": 150,
+          "source_block_ids": [
+            "PopGen_chapter3:p042:b4"
+          ],
+          "source_bboxes": [
+            [
+              253,
+              558,
+              1007,
+              850
+            ]
+          ],
+          "source_content_sha256": "f3d28db71016f818b6509b7f63aa94e9a21adb2975a0242b0ee3f2e68746cf89",
+          "source_content_hashes": {
+            "PopGen_chapter3:p042:b4": "f3d28db71016f818b6509b7f63aa94e9a21adb2975a0242b0ee3f2e68746cf89"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0128",
+      "text": "unfixed",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_002",
+          "block_index": 4,
+          "start": 479,
+          "end": 486,
+          "context": " five populations, A becomes lost (that is, p = 0). In the other eight populations remain unfixed or segregating for both A and a; however, the final allele frequency among the unfixed po",
+          "source_page": 111,
+          "source_block_ids": [
+            "PopGen_chapter3:p003:b5"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              865,
+              871,
+              1210
+            ]
+          ],
+          "source_content_sha256": "15501a02217af928f4f08e854ecf42f33b2bacb266d0591fdd9603ba60ffd62f",
+          "source_content_hashes": {
+            "PopGen_chapter3:p003:b5": "15501a02217af928f4f08e854ecf42f33b2bacb266d0591fdd9603ba60ffd62f"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0148",
+      "text": "variance effective size",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_009",
+          "block_index": 0,
+          "start": 1276,
+          "end": 1299,
+          "context": ") the rate of loss of heterozygosity. These are called the inbreeding effective size, the variance effective size, and the eigenvalue effective size, respectively.",
+          "source_page": 135,
+          "source_block_ids": [
+            "PopGen_chapter3:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              870,
+              869,
+              1162
+            ]
+          ],
+          "source_content_sha256": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5",
+          "source_content_hashes": {
+            "PopGen_chapter3:p027:b4": "446af061df8b03671d37da232e186b0344dcba71fe2c3372dfaf774c69cbddd5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0131",
+      "text": "Wright-Fisher model",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter3",
+          "unit_id": "PopGen_chapter3_003",
+          "block_index": 0,
+          "start": 99,
+          "end": 118,
+          "context": " of random genetic drift with binomial sampling described in Equation 3.1 is known as the Wright-Fisher model because Fisher (1930) and Wright (1931) derived the expected distribution of allele frequ",
+          "source_page": 116,
+          "source_block_ids": [
+            "PopGen_chapter3:p008:b2"
+          ],
+          "source_bboxes": [
+            [
+              248,
+              283,
+              1002,
+              901
+            ]
+          ],
+          "source_content_sha256": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0",
+          "source_content_hashes": {
+            "PopGen_chapter3:p008:b2": "a4829de50224c7ab8f80546d5a20d8a769a6e1ec4be573651ed4e54d2cee20c0"
+          },
+          "subject_index": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "book_pack_index.v1",
+  "packages": [
+    {
+      "directory": "PopGen_chapters_2_3_4_6",
+      "book": "PopGen",
+      "section_count": 4,
+      "valid": true,
+      "tree_sha256": "3107000f1fce955e6532f2254b9e9baa93a5beaa944c179df7445c2380768e68"
+    }
+  ]
+}

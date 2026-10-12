@@ -1,0 +1,143 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter9",
+  "count": 4,
+  "figures": [
+    {
+      "id": "9.1",
+      "chapter": "Genetics_chapter9",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter9:9.1",
+      "placeholder": "[[FIGURE:9.1]]",
+      "see_placeholder": "[[SEE_FIGURE:9.1]]",
+      "asset_path": "figures/Genetics_9.1.png",
+      "caption": "Figure 9.1 Observed vs. fitted mean phenotypes for 14 line-cross derivatives from two pure parental lines of tobacco. The diagonal line gives the expected pattern if observed and predicted line means were identical. (From Jinks and Perkins 1969.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 236,
+      "raw_bbox": [
+        172.0,
+        137.0,
+        1085.0,
+        578.0
+      ],
+      "source_block_ids": [
+        "p236:b2"
+      ],
+      "caption_block": {
+        "source_page": 236,
+        "printed_page": 216,
+        "source_block_ids": [
+          "p236:b3"
+        ],
+        "bbox": [
+          197.0,
+          610.0,
+          1058.0,
+          734.0
+        ]
+      }
+    },
+    {
+      "id": "9.2",
+      "chapter": "Genetics_chapter9",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter9:9.2",
+      "placeholder": "[[FIGURE:9.2]]",
+      "see_placeholder": "[[SEE_FIGURE:9.2]]",
+      "asset_path": "figures/Genetics_9.2.png",
+      "caption": "Figure 9.2 Observed means and variances ( $ \\pm $ twice the standard errors) of human skin color in relation to the predictions of the additive model. The maximum-likelihood predictions are given by the line on the left graph and the open circles on the triangle on the right graph. (From Harrison and Owens 1964.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 248,
+      "raw_bbox": [
+        160.0,
+        124.0,
+        1095.0,
+        673.0
+      ],
+      "source_block_ids": [
+        "p248:b2"
+      ],
+      "caption_block": {
+        "source_page": 248,
+        "printed_page": 228,
+        "source_block_ids": [
+          "p248:b3"
+        ],
+        "bbox": [
+          202.0,
+          701.0,
+          1070.0,
+          834.0
+        ]
+      }
+    },
+    {
+      "id": "9.3",
+      "chapter": "Genetics_chapter9",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter9:9.3",
+      "placeholder": "[[FIGURE:9.3]]",
+      "see_placeholder": "[[SEE_FIGURE:9.3]]",
+      "asset_path": "figures/Genetics_9.3.png",
+      "caption": "Figure 9.3 The crossing scheme involved in the genotype assay technique of Jinks and Towey (1976). Progeny from all generations beyond the $ F_{1} $ are obtained by selfing. In generation $ k + 2 $, multiple progeny are assayed from each of two sublines for each of the isolated selfed lineages.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 263,
+      "raw_bbox": [
+        172.0,
+        131.0,
+        906.0,
+        817.0
+      ],
+      "source_block_ids": [
+        "p263:b2"
+      ],
+      "caption_block": {
+        "source_page": 263,
+        "printed_page": 243,
+        "source_block_ids": [
+          "p263:b3"
+        ],
+        "bbox": [
+          106.0,
+          838.0,
+          971.0,
+          968.0
+        ]
+      }
+    },
+    {
+      "id": "9.4",
+      "chapter": "Genetics_chapter9",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter9:9.4",
+      "placeholder": "[[FIGURE:9.4]]",
+      "see_placeholder": "[[SEE_FIGURE:9.4]]",
+      "asset_path": "figures/Genetics_9.4.png",
+      "caption": "Figure 9.4 The expected fraction of individuals in the $ F_{2} $, $ F_{3} $, and $ F_{5} $ generations detected as segregating by a genotype assay on their grandchildren, under the assumptions leading to Equation 9.32. (From Jinks and Towey 1976.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 264,
+      "raw_bbox": [
+        318.0,
+        129.0,
+        918.0,
+        712.0
+      ],
+      "source_block_ids": [
+        "p264:b2"
+      ],
+      "caption_block": {
+        "source_page": 264,
+        "printed_page": 244,
+        "source_block_ids": [
+          "p264:b3"
+        ],
+        "bbox": [
+          190.0,
+          737.0,
+          1053.0,
+          838.0
+        ]
+      }
+    }
+  ]
+}

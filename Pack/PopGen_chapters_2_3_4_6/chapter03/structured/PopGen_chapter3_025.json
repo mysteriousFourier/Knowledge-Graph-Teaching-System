@@ -1,0 +1,668 @@
+{
+  "id": "PopGen_chapter3_025",
+  "metadata": {
+    "chapter": "PopGen_chapter3",
+    "section": "RANDOM GENETIC DRIFT: Introduction",
+    "subsections": [
+      "PROBLEMS"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "RANDOM GENETIC DRIFT: Introduction",
+    "section_level_2": "PROBLEMS",
+    "heading_path": [
+      "RANDOM GENETIC DRIFT: Introduction",
+      "PROBLEMS"
+    ],
+    "display_heading": "PROBLEMS",
+    "heading_source": {
+      "source_block_ids": []
+    },
+    "chapter_title": "Random Genetic Drift"
+  },
+  "blocks": [
+    {
+      "type": "problem",
+      "content": "3. Explain why, in any population model in which random genetic drift plays a role, \"backward\" computer simulation, which starts with the alleles present in the current population and traces their coalescence backward in time, is computationally much simpler than \"forward\" simulation, which starts with the alleles present in the original population and simulates random genetic drift moving forward in time.",
+      "source_page": 160,
+      "source_pages": [
+        160
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p052:b9"
+      ],
+      "source_bboxes": [
+        [
+          278.0,
+          1190.0,
+          1021.0,
+          1348.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "99604a7178c04afd5cc48903bb1f5f6429a254e3a29d89f0989c9e0f3ba5f4f3",
+      "problem_id": "3.E3",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "4. In an ideal diploid population of size 50, what is the probability that a neutral allele present in exactly one copy will be lost in the next generation? What is the answer if the allele is present in two copies?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b1"
+      ],
+      "source_bboxes": [
+        [
+          123.0,
+          204.0,
+          863.0,
+          281.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a648cfbda01fc188f83dde71e821547feb6baf32bccc12e288eeb3950241a740",
+      "problem_id": "3.E4",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "5. Suppose that a diploid population of size 50 undergoes a change in average heterozygosity across loci from 0.50 to 0.42 in a single generation. Is it plausible to attribute this magnitude of change to random drift alone?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b2"
+      ],
+      "source_bboxes": [
+        [
+          122.0,
+          293.0,
+          862.0,
+          370.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "670deb42fd672ff2f1a08f2683833c60b442d45e02e76d3db178fe5f41cf7436",
+      "problem_id": "3.E5",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "6. How many generations of random genetic drift are required to reduce the expected heterozygosity to 5% of its initial value in a diploid randomly mating population of size 10? Of size 50?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b3"
+      ],
+      "source_bboxes": [
+        [
+          122.0,
+          382.0,
+          862.0,
+          459.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "2ee389a3f03bc4d808b77dc188522e30e6dadc13fb8c353c31676474f0846435",
+      "problem_id": "3.E6",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "7. An autosomal gene in a colony of 28 Asian wild mice, Mus castaneus, undergoes mutation to a new neutral allele. Assuming that the population conforms to the Wright-Fisher model, what is the probability that the allele eventually becomes fixed? What is the probability that it eventually becomes lost? What is the average time to loss, given that the allele is eventually lost. What is the average time to fixation, given that it is eventually fixed?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b4"
+      ],
+      "source_bboxes": [
+        [
+          121.0,
+          470.0,
+          861.0,
+          653.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "0634521133d807539a8bc6a3ac8d8393a9d5db931b17bc03dc398fdbe05de14b",
+      "problem_id": "3.E7",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 56,
+          "end": 69,
+          "style": "italic",
+          "text": "Mus castaneus",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b4"
+          ],
+          "source_bboxes": [
+            [
+              121,
+              470,
+              861,
+              653
+            ]
+          ],
+          "source_content_sha256": "a470d9f34327bc2eab66121e78cc3f052b5316220572e67c3293504452c8f92a",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b4": "a470d9f34327bc2eab66121e78cc3f052b5316220572e67c3293504452c8f92a"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "8. What are the answers to Problem 3.7 if the mutant gene is X-linked and the population consists of equal numbers of males and females? What if the gene is Y-linked?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b5"
+      ],
+      "source_bboxes": [
+        [
+          118.0,
+          665.0,
+          860.0,
+          742.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "495dee6034121569c3665a365749dcd6e85e90f72d2ab8fe3dadcd0870b3195e",
+      "problem_id": "3.E8",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "9. An isolated population of alpine edelweiss (Leontopodium alpinum) loses half its heterozygosity in 30 generations. What is its effective population size?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b6"
+      ],
+      "source_bboxes": [
+        [
+          118.0,
+          754.0,
+          859.0,
+          830.0
+        ]
+      ],
+      "provenance_score": 0.992308,
+      "content_sha256": "9c59c939d2f4ac10650ea4a13b61314fd409499f5cd8e77b923eebb9761275ea",
+      "problem_id": "3.E9",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 47,
+          "end": 67,
+          "style": "italic",
+          "text": "Leontopodium alpinum",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b6"
+          ],
+          "source_bboxes": [
+            [
+              118,
+              754,
+              859,
+              830
+            ]
+          ],
+          "source_content_sha256": "68c13830c837b439d6505127941531cc03739366300e3c14dff9397acdf1cc14",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b6": "68c13830c837b439d6505127941531cc03739366300e3c14dff9397acdf1cc14"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "10. Remote Pitcairn Island in the South Pacific was settled in 1789 by Fletcher Christian and eight fellow mutineers from HMS Bounty, along with a small number of Polynesian women. Although many descendants have left the island in the intervening years, there has been essentially no immigration. Assuming an effective size of 20 in each of the eight generations since the island's settlement, what value of $ F_{t} $ would be expected in today's population from random genetic drift?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b7"
+      ],
+      "source_bboxes": [
+        [
+          105.0,
+          843.0,
+          858.0,
+          1029.0
+        ]
+      ],
+      "provenance_score": 0.997449,
+      "content_sha256": "693a836aca5c68247b4cff8a0472ad512f199b1aa60647b30e3ad1cdce6e6561",
+      "problem_id": "3.E10",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "11. Show that random genetic drift requires an average of $ t = 2N \\ln(x) $ generations to reduce the expected heterozygosity from $ H_0 $ to $ H_0/x $.",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b8"
+      ],
+      "source_bboxes": [
+        [
+          102.0,
+          1040.0,
+          857.0,
+          1093.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "1483a1a05c8056aea8a6455237620f23cf41beb08fc22329aa188606212e71f8",
+      "problem_id": "3.E11",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "12. A large randomly mating diploid population with two neutral alleles A and a at allele frequencies $ p_0 = \\frac{1}{3} $ and $ q_0 = \\frac{2}{3} $, respectively, splits into a large number of isolated subpopulations each of effective size 50. Within each subpopulation mating is random, but the allele frequencies diverge due to random genetic drift. After 69 generations, what are the expected genotype frequencies of AA, Aa, and aa, averaged across the subpopulations? In one of the subpopulations, the allele frequency of A equals 0.3. What are the expected genotype frequencies in this individual subpopulation?",
+      "source_page": 161,
+      "source_pages": [
+        161
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p053:b9"
+      ],
+      "source_bboxes": [
+        [
+          102.0,
+          1102.0,
+          857.0,
+          1339.0
+        ]
+      ],
+      "provenance_score": 0.97541,
+      "content_sha256": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534",
+      "problem_id": "3.E12",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 422,
+          "end": 424,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b9"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1102.0,
+              857.0,
+              1339.0
+            ]
+          ],
+          "source_content_sha256": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b9": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534"
+          }
+        },
+        {
+          "start": 426,
+          "end": 428,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b9"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1102.0,
+              857.0,
+              1339.0
+            ]
+          ],
+          "source_content_sha256": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b9": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534"
+          }
+        },
+        {
+          "start": 434,
+          "end": 436,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 161,
+          "source_block_ids": [
+            "PopGen_chapter3:p053:b9"
+          ],
+          "source_bboxes": [
+            [
+              102.0,
+              1102.0,
+              857.0,
+              1339.0
+            ]
+          ],
+          "source_content_sha256": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p053:b9": "d80ca3d49195e14b8d1574afaaa33cf479a176ca5aacd1e1dd1032ad15c2c534"
+          }
+        }
+      ]
+    },
+    {
+      "type": "problem",
+      "content": "13. Two inbred strains of the azuki bean beetle Callosobruchus chinensis are crossed and their progeny allowed to mate at random each generation thereafter. Among 100 single-nucleotide polymorphisms differing in the original inbred strains, what number would be expected to remain segregating after 10 generations, assuming an effective population size of 80 individuals? How many would be expected to remain unfixed after 50 generations?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b1"
+      ],
+      "source_bboxes": [
+        [
+          266.0,
+          206.0,
+          1015.0,
+          393.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "0f9fdea9feb214f120c8b8b5545144a85f2552c661a1bb30f34bf10d19179ff3",
+      "problem_id": "3.E13",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 48,
+          "end": 72,
+          "style": "italic",
+          "text": "Callosobruchus chinensis",
+          "source_page": 162,
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b1"
+          ],
+          "source_bboxes": [
+            [
+              266,
+              206,
+              1015,
+              393
+            ]
+          ],
+          "source_content_sha256": "118c0bb50e8e2660e987f3232b9e1844b5b498ef06b44d61f9641d2fa32d40c6",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p054:b1": "118c0bb50e8e2660e987f3232b9e1844b5b498ef06b44d61f9641d2fa32d40c6"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "14. Use Equation 3.14 to show that approximately 2N generations of random genetic drift are required to reduce the number of segregating genes by a factor of $ e(e = 2.71828 \\ldots) $ given initial allele frequencies close to 0.5.",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b2"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          403.0,
+          1016.0,
+          481.0
+        ]
+      ],
+      "provenance_score": 0.972222,
+      "content_sha256": "cac3ef79e0869fb74d02d0837ad723ab0a3b8175af7fc669b8f6091d5b4c6805",
+      "problem_id": "3.E14",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "15. What is the effective population number in a population of African lions, Panthera leo, in which each breeding male controls a harem of five females and the total population consists of 200 males and 200 females?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b3"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          492.0,
+          1016.0,
+          571.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "9fe6bef01e1b1f5d296446914e17f73bb90eb4a5aed820b100359479a9f86fc0",
+      "problem_id": "3.E15",
+      "answer_source_status": "not_in_master_source",
+      "inline_styles": [
+        {
+          "start": 78,
+          "end": 90,
+          "style": "italic",
+          "text": "Panthera leo",
+          "source_page": 162,
+          "source_block_ids": [
+            "PopGen_chapter3:p054:b3"
+          ],
+          "source_bboxes": [
+            [
+              267,
+              492,
+              1016,
+              571
+            ]
+          ],
+          "source_content_sha256": "0e5262a0fc0968dcece838e0d06a62d206a83f01fdf500c5dc2fa0cc6002f77c",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p054:b3": "0e5262a0fc0968dcece838e0d06a62d206a83f01fdf500c5dc2fa0cc6002f77c"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "16. What is the effective population size of a herd of 10 dairy cows and 1 bull? What is it for 40 cows and 1 bull? For 10 cows and 2 bulls?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b4"
+      ],
+      "source_bboxes": [
+        [
+          266.0,
+          582.0,
+          1015.0,
+          631.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "2068c313d66bfbc6b33b200231eb49e671f167169fb39fdcdfd4c847e1cdc2ed",
+      "problem_id": "3.E16",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "17. What is the variance effective population size for an X-linked gene in a population consisting of 100 females and 10 males? In a population of 10 females and 100 males?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b5"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          645.0,
+          1017.0,
+          720.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "7feffbf2ba6c60e0e22e8f566b74d73f3d6f2633c22e43b3c58d2214f660d45d",
+      "problem_id": "3.E17",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "18. In a haploid population of constant effective size 50, what is the probability that two randomly drawn alleles shared a common ancestor exactly 100 generations ago?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b6"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          733.0,
+          1017.0,
+          814.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ae1976c9d1c4a15bcaf273f684d97466b5835f9595773b7b041107fce2baa9fc",
+      "problem_id": "3.E18",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "19. In a population of effective size 30, how many generations are required on the average to coalesce from 4 alleles to 3? From 3 alleles to 2? From 2 alleles to 1?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b7"
+      ],
+      "source_bboxes": [
+        [
+          268.0,
+          823.0,
+          1017.0,
+          899.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "6d9dbabf814441bc8cba3aa7d9ccccb3b48c2ab140f2237dc36e3a6c17c374a5",
+      "problem_id": "3.E19",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "20. In a haploid population of effective size 50, how many sequences k should be present in a sample for the first coalescence to have an average time of 10 generations.",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b8"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          912.0,
+          1018.0,
+          991.0
+        ]
+      ],
+      "provenance_score": 0.992647,
+      "content_sha256": "a009066c608c5f764042d14d74bed7fac32e39f3566e4c1118b847126650fec4",
+      "problem_id": "3.E20",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "content": "21. In the infinite-sites model, if $ \\theta = 10 $, how many segregating sites are expected in a sample of size 10? 20? 50?",
+      "source_page": 162,
+      "source_pages": [
+        162
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p054:b9"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          1001.0,
+          1018.0,
+          1055.0
+        ]
+      ],
+      "provenance_score": 0.94382,
+      "content_sha256": "a4949dc011cca3aa569458914af60976323dcd3a80127d6930a38550d8665eeb",
+      "problem_id": "3.E21",
+      "answer_source_status": "not_in_master_source",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter11",
+  "count": 5,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter11:1",
+      "example_ref": "Genetics_chapter11:1",
+      "chapter": "Genetics_chapter11",
+      "label": "Example 1",
+      "title": "Example 1. Fisher (1958) gives the following data set (based on unpublished work of Ford and Bull) on the number of vertebrae in herrings. Ignoring the discrete nature of the data,",
+      "source_file": "Genetics_chapter11_004.json",
+      "start_block_index": 16,
+      "end_source_file": "Genetics_chapter11_004.json",
+      "end_block_index": 17,
+      "block_ids": [
+        "p313:b2",
+        "p313:b3"
+      ],
+      "content_markdown": "Example 1. Fisher (1958) gives the following data set (based on unpublished work of Ford and Bull) on the number of vertebrae in herrings. Ignoring the discrete nature of the data, does the normal distribution give a reasonable fit?\n\n<table><tr><td rowspan=\"2\"></td><td colspan=\"6\">Number of vertebrae</td></tr><tr><td>53</td><td>54</td><td>55</td><td>56</td><td>57</td><td>58</td></tr><tr><td>Population frequency (%)</td><td>0.08</td><td>1.06</td><td>28.36</td><td>61.30</td><td>8.91</td><td>0.29</td></tr><tr><td>Cumulative frequency, $ q $ (%)</td><td>0.08</td><td>1.14</td><td>29.50</td><td>90.80</td><td>99.71</td><td>100.00</td></tr><tr><td>prb( $ q $)</td><td>-3.14</td><td>-1.22</td><td>-0.54</td><td>1.33</td><td>2.76</td><td>$ \\infty $</td></tr></table>",
+      "content_plain": "Example 1. Fisher (1958) gives the following data set (based on unpublished work of Ford and Bull) on the number of vertebrae in herrings. Ignoring the discrete nature of the data, does the normal distribution give a reasonable fit?\n\n<table><tr><td rowspan=\"2\"></td><td colspan=\"6\">Number of vertebrae</td></tr><tr><td>53</td><td>54</td><td>55</td><td>56</td><td>57</td><td>58</td></tr><tr><td>Population frequency (%)</td><td>0.08</td><td>1.06</td><td>28.36</td><td>61.30</td><td>8.91</td><td>0.29</td></tr><tr><td>Cumulative frequency,  q  (%)</td><td>0.08</td><td>1.14</td><td>29.50</td><td>90.80</td><td>99.71</td><td>100.00</td></tr><tr><td>prb(  q )</td><td>-3.14</td><td>-1.22</td><td>-0.54</td><td>1.33</td><td>2.76</td><td> \\infty </td></tr></table>",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 313,
+          "y": 395.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 313
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter11:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter11:2",
+      "example_ref": "Genetics_chapter11:2",
+      "chapter": "Genetics_chapter11",
+      "label": "Example 2",
+      "title": "Example 2. Consider the $ U_{ta} $ data in Figure 11.4. The intercept and slope of the least-squares regression, $ \\mathrm{SD}(z) = 0.33 + 0.052\\overline{z} $, are highly significa",
+      "source_file": "Genetics_chapter11_006.json",
+      "start_block_index": 2,
+      "end_source_file": "Genetics_chapter11_006.json",
+      "end_block_index": 4,
+      "block_ids": [
+        "p315:b4",
+        "p315:b5",
+        "p315:b6"
+      ],
+      "content_markdown": "Example 2. Consider the $ U_{ta} $ data in Figure 11.4. The intercept and slope of the least-squares regression, $ \\mathrm{SD}(z) = 0.33 + 0.052\\overline{z} $, are highly significant (W. C. Kerfoot, pers. comm.). Since the relationship between the standard deviation and the mean closely approximates linearity, the transformation\n\n[[FORMULA:Genetics_chapter11_formula011]]\n\nrenders the variance of different populations independent of the mean.",
+      "content_plain": "Example 2. Consider the  U_{ta}  data in Figure 11.4. The intercept and slope of the least-squares regression,  \\mathrm{SD}(z) = 0.33 + 0.052\\overline{z} , are highly significant (W. C. Kerfoot, pers. comm.). Since the relationship between the standard deviation and the mean closely approximates linearity, the transformation\n\n[[FORMULA:Genetics_chapter11_formula011]]\n\nrenders the variance of different populations independent of the mean.",
+      "formula_refs": [
+        "Genetics_chapter11_formula011"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 315,
+          "y": 1019.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 315
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter11:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter11:3",
+      "example_ref": "Genetics_chapter11:3",
+      "chapter": "Genetics_chapter11",
+      "label": "Example 3",
+      "title": "Example 3. Suppose $\\mathrm{SD}(z) = a + b\\bar{z}$. Applying Equation 11.8, the variance-stabilizing transform is given by",
+      "source_file": "Genetics_chapter11_007.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_chapter11_007.json",
+      "end_block_index": 5,
+      "block_ids": [
+        "p316:b2",
+        "p316:b3",
+        "p316:b4"
+      ],
+      "content_markdown": "Example 3. Suppose $\\mathrm{SD}(z) = a + b\\bar{z}$. Applying Equation 11.8, the variance-stabilizing transform is given by\n\n[[FORMULA:Genetics_chapter11_formula013]]\n\nNote that there is no unique solution for y, as we can multiply y by any constant and still have a variance-stabilizing transform. Letting $C = b$ recovers Kleck-owski's correction, $y = \\ln(z + a/b)$.",
+      "content_plain": "Example 3. Suppose \\mathrm{SD}(z) = a + b\\bar{z}. Applying Equation 11.8, the variance-stabilizing transform is given by\n\n[[FORMULA:Genetics_chapter11_formula013]]\n\nNote that there is no unique solution for y, as we can multiply y by any constant and still have a variance-stabilizing transform. Letting C = b recovers Kleck-owski's correction, y = \\ln(z + a/b).",
+      "formula_refs": [
+        "Genetics_chapter11_formula013"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 316,
+          "y": 477.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 316
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter11:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter11:4",
+      "example_ref": "Genetics_chapter11:4",
+      "chapter": "Genetics_chapter11",
+      "label": "Example 4",
+      "title": "Example 4. Suppose the genotypes BB, Bb, and bb have genotypic values of 1, 4, and 9 on the original scale of measurement. Applying the square-root transformation, the genotypic va",
+      "source_file": "Genetics_chapter11_011.json",
+      "start_block_index": 1,
+      "end_source_file": "Genetics_chapter11_011.json",
+      "end_block_index": 1,
+      "block_ids": [
+        "p322:b3"
+      ],
+      "content_markdown": "Example 4. Suppose the genotypes BB, Bb, and bb have genotypic values of 1, 4, and 9 on the original scale of measurement. Applying the square-root transformation, the genotypic values on this new scale of measurement become 1, 2, and 3. Thus, while B is slightly dominant to b on the original scale, the gene action is perfectly additive on the transformed scale. The square-root transformation condensed the scale between Bb and bb relative to that between BB and Bb, resulting in additivity on the new scale. Provided the genotypic value of Bb lies within the range of BB and bb, a scale will always exist for which Bb can be made exactly intermediate to BB and bb.",
+      "content_plain": "Example 4. Suppose the genotypes BB, Bb, and bb have genotypic values of 1, 4, and 9 on the original scale of measurement. Applying the square-root transformation, the genotypic values on this new scale of measurement become 1, 2, and 3. Thus, while B is slightly dominant to b on the original scale, the gene action is perfectly additive on the transformed scale. The square-root transformation condensed the scale between Bb and bb relative to that between BB and Bb, resulting in additivity on the new scale. Provided the genotypic value of Bb lies within the range of BB and bb, a scale will always exist for which Bb can be made exactly intermediate to BB and bb.",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 322,
+          "y": 777.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 322
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter11:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter11:5",
+      "example_ref": "Genetics_chapter11:5",
+      "chapter": "Genetics_chapter11",
+      "label": "Example 5",
+      "title": "Example 5. Sheldon et al. (1964) examined scutellar bristle number in Drosophila melanogaster in a number of isogenic lines derived from a common ancestral population. Consider the",
+      "source_file": "Genetics_chapter11_013.json",
+      "start_block_index": 14,
+      "end_source_file": "Genetics_chapter11_013.json",
+      "end_block_index": 15,
+      "block_ids": [
+        "p326:b8",
+        "p327:b2"
+      ],
+      "content_markdown": "Example 5. Sheldon et al. (1964) examined scutellar bristle number in Drosophila melanogaster in a number of isogenic lines derived from a common ancestral population. Consider the following data for females from their isogenic line 5, which have 3, 4, or 5 bristles with the following frequencies:\n\n<table><tr><td>Class</td><td>Observed</td><td>Frequency</td><td>Cumulative frequency</td><td>$ \\text{prb}[q(m)] $</td></tr><tr><td>3</td><td>1</td><td>0.00012</td><td>0.00012</td><td>-3.70</td></tr><tr><td>4</td><td>8124</td><td>0.99693</td><td>0.99705</td><td>2.74</td></tr><tr><td>5</td><td>24</td><td>0.00295</td><td>1.00000</td><td>—</td></tr></table>",
+      "content_plain": "Example 5. Sheldon et al. (1964) examined scutellar bristle number in Drosophila melanogaster in a number of isogenic lines derived from a common ancestral population. Consider the following data for females from their isogenic line 5, which have 3, 4, or 5 bristles with the following frequencies:\n\n<table><tr><td>Class</td><td>Observed</td><td>Frequency</td><td>Cumulative frequency</td><td> \\text{prb}[q(m)] </td></tr><tr><td>3</td><td>1</td><td>0.00012</td><td>0.00012</td><td>-3.70</td></tr><tr><td>4</td><td>8124</td><td>0.99693</td><td>0.99705</td><td>2.74</td></tr><tr><td>5</td><td>24</td><td>0.00295</td><td>1.00000</td><td>—</td></tr></table>",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 327,
+          "y": 155.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 326
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter11:5]]",
+      "book": "Genetics"
+    }
+  ]
+}

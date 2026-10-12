@@ -1,0 +1,1237 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter2",
+  "count": 15,
+  "formulas": [
+    {
+      "id": "2.1",
+      "label_format": "[2.1]",
+      "latex": "AA:p^{2}\\qquad Aa:2pq\\qquad aa:q^{2}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_004",
+        "chapter": "PopGen_chapter2",
+        "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.2 THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "source_pages": [
+          63
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p005:b8"
+        ],
+        "source_bboxes": [
+          [
+            299,
+            237,
+            594,
+            267
+          ]
+        ]
+      },
+      "context": "o alleles.\n• The allele frequencies are identical in males and females.\n• Mating is random.\n• Population size is very large (in theory, infinite).\n• Migration is negligible.\n• Mutation can be ignored.\n• Natural selection does not affect the alleles under consideration.\nCollectively, these assumptions summarize the Hardy-Weinberg model, named after the English mathematician G. H. Hardy (1877–1947) and the German physiologist Wilhelm Weinberg (1862–1937), who, in 1908, independently formulated the model and deduced its theoretical predictions of genotype frequency.\nIn the Hardy-Weinberg model, the mathematical relation between the allele frequencies and the genotype frequencies is given by $$ AA:p^{2}\\qquad Aa:2pq\\qquad aa:q^{2} $$ in which $ p^{2} $, $ 2pq $, and $ q^{2} $ are the frequencies of the genotypes AA, Aa, and aa in zygotes of any generation, p and q are the allele frequencies of A and a in gametes of the previous generation, and $ p + q = 1 $. The frequencies displayed in Equation 2.1 constitute the Hardy-Weinberg principle or the Hardy-Weinberg equilibrium (HWE).\nOne rationale for the Hardy-Weinberg principle displayed in Equation 2.1 is based on the outcome of repeated and independent trials. With random mating, the choices of male gamete and female gamete are independent trials, and so pairs of gametes carrying the alleles AA, Aa, or aa are expected in proportions",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 5,
+        "formula_bbox": [
+          299,
+          237,
+          594,
+          267
+        ],
+        "label_bbox": [
+          741,
+          242,
+          786,
+          265
+        ],
+        "api_label": "[2.1]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 1.5
+      },
+      "equation_number": "2.1",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.2 THE HARDY-WEINBERG PRINCIPLE"
+      ],
+      "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.2 THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "source_pages": [
+          63
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p005:b8"
+        ],
+        "source_bboxes": [
+          [
+            299,
+            237,
+            594,
+            267
+          ]
+        ],
+        "audit_evidence_sha256": "39a5f685801a156191ef791b8c2ada17bd31e3450db33715b429a9b4062825c9"
+      }
+    },
+    {
+      "id": "2.10",
+      "label_format": "[2.10]",
+      "latex": "cdots=(1-r)^{n}D_{0}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          91
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p033:b14"
+        ],
+        "source_bboxes": [
+          [
+            193,
+            1100,
+            609,
+            1135
+          ]
+        ]
+      },
+      "context": "fore, the frequency of AB in any generation, call it $ p_{AB}' $, is related to the frequency $ P_{AB} $ in the previous generation by the equation $$ \\begin{aligned}P_{AB}^{^{\\prime}}&=(1-r)\\times P_{AB}\\quad&[for the nonrecombinants]\\\\ &+r\\times p_{A}p_{B}\\quad&[for the recombinants]\\\\ \\end{aligned} $$\nSubtraction of $ p_{A}p_{B} $ from both sides leads to $$ P_{AB}^{^{\\prime}}-p_{A}p_{B}=(1-r)(P_{AB}-p_{A}p_{B}) $$\nEquation 2.9 becomes simplified somewhat by defining $D$ as the difference $P_{AB}-p_{A}p_{B}$. Then $D_{n}$ is the value of $D$ in the $n$th generation, and Equation 2.9 implies that $D_{n}=(1-r)D_{n-1}$. The solution of this equation is found by successive substitution as $$ \\dot{D}_{n}=(1-r)D_{n-1}=(1-r)^{2}D_{n-2}=\\cdots=(1-r)^{n}D_{0} $$ where $D_{0}$ is the value of $D$ in the founding population. Because $1-r<1$, $(1-r)^{n}$ goes to zero as $n$ becomes large, but how rapidly $(1-r)^{n}$ goes to zero depends on $r$; the closer $r$ is to zero, the slower the rate.\nThis pattern of decrease is known as geometric, and it is closely approximated by exponential decay because $ (1 - r)^n \\approx e^{-r n} $, for small r. The geometric decay in linkage disequilibrium is illustrated in Figure 2.10. Recall here that $ r = 0.5 $ corresponds either to genes far apart in the same chromosome or to genes in different chromosomes. The key point is that linkage disequilibrium",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 33,
+        "formula_bbox": [
+          193,
+          1100,
+          609,
+          1135
+        ],
+        "label_bbox": [
+          715,
+          1111,
+          770,
+          1134
+        ],
+        "api_label": "[2.10]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.0
+      },
+      "equation_number": "2.10",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          91
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p033:b14"
+        ],
+        "source_bboxes": [
+          [
+            193,
+            1100,
+            609,
+            1135
+          ]
+        ],
+        "audit_evidence_sha256": "8e1a75809cd6bec7be27bfba4582d3e2a1663bb8b8312225b3a2a110ce1dae82"
+      }
+    },
+    {
+      "id": "2.11",
+      "label_format": "[2.11]",
+      "latex": "P_{A b}=p_{A}q_{b}-D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\leq p_{A}q_{b})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b11"
+        ],
+        "source_bboxes": [
+          [
+            319,
+            737,
+            705,
+            769
+          ]
+        ]
+      },
+      "context": "s choose to call linkage disequilibrium by the term gametic phase disequilibrium. Because $ (1-r)^n $ goes to zero, $ D $ goes to zero, and therefore $ P_{AB} $ goes to $ p_{A}p_{B} $ unless there are other offsetting processes. Analogous arguments hold for gametes containing $ Ab $, $ aB $, or $ ab $, and so $ P_{Ab} $, $ P_{aB'} $ and $ P_{ab} $ go to $ p_{A}q_{b} $, $ q_{a}p_{B} $, and $ q_{a}q_{b} $, respectively. Thus, linkage equilibrium is attained at a rate determined by the value of $ r $.\nThe value of $D$ that holds for $P_{11}-p_{1}q_{1}$ also holds for the other possible gametes, as follows: $$ P_{A B}=p_{A}p_{B}+D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\geq-p_{A}p_{B}) $$ $$ P_{A b}=p_{A}q_{b}-D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\leq p_{A}q_{b}) $$ $$ P_{a B}=q_{a}p_{B}-D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\leq q_{a}p_{B}) $$ $$ P_{a\\; b}=q_{a}q_{b}+D\\;(which\\; implies\\; that\\; D\\geq-q_{a}q_{b}) $$\nThe quantity $D$ is often called the linkage disequilibrium parameter. The implications about the magnitude of $D$ in parentheses in the equations above follow from the fact that each of the gametic frequencies $P_{AB'}, P_{Ab'}, P_{aB'}$ and $P_{aB}$ must be greater than or equal to 0. Because of these implications, the minimum and maximum values of $D$ must satisfy $$ D_{m i n}=\\mathrm{t h e~l a r g e r~o f}-p_{A}p_{B}\\mathrm{a n d}-q_{a}q_{b} $$ $$ D",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 34,
+        "formula_bbox": [
+          319,
+          737,
+          705,
+          769
+        ],
+        "label_bbox": [
+          866,
+          761,
+          922,
+          783
+        ],
+        "api_label": "(2.11)",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 19.0
+      },
+      "equation_number": "2.11",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b11"
+        ],
+        "source_bboxes": [
+          [
+            319,
+            737,
+            705,
+            769
+          ]
+        ],
+        "audit_evidence_sha256": "1cf0351363e4887b3ad351e39712514c0b329cde49f01842b9c5a880163f483a"
+      }
+    },
+    {
+      "id": "2.12",
+      "label_format": "[2.12]",
+      "latex": "D_{m i n}=\\mathrm{t h e~l a r g e r~o f}-p_{A}p_{B}\\mathrm{a n d}-q_{a}q_{b}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b12"
+        ],
+        "source_bboxes": [
+          [
+            321,
+            1011,
+            637,
+            1041
+          ]
+        ]
+      },
+      "context": "{A B}=p_{A}p_{B}+D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\geq-p_{A}p_{B}) $$ $$ P_{A b}=p_{A}q_{b}-D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\leq p_{A}q_{b}) $$ $$ P_{a B}=q_{a}p_{B}-D\\mathrm{(w h i c h~i m p l i e s~t h a t~}D\\leq q_{a}p_{B}) $$ $$ P_{a\\; b}=q_{a}q_{b}+D\\;(which\\; implies\\; that\\; D\\geq-q_{a}q_{b}) $$\nThe quantity $D$ is often called the linkage disequilibrium parameter. The implications about the magnitude of $D$ in parentheses in the equations above follow from the fact that each of the gametic frequencies $P_{AB'}, P_{Ab'}, P_{aB'}$ and $P_{aB}$ must be greater than or equal to 0. Because of these implications, the minimum and maximum values of $D$ must satisfy $$ D_{m i n}=\\mathrm{t h e~l a r g e r~o f}-p_{A}p_{B}\\mathrm{a n d}-q_{a}q_{b} $$ $$ D_{m a x}=\\mathrm{t h e~s m a l l e r~o f~}p_{A}q_{b}\\mathrm{~a n d~}q_{a}p_{B} $$\nFurthermore, it follows from the Equations 2.11 that D can also be written as $$ D=P_{A B}P_{a b}-P_{A b}P_{a B} $$ With random mating and no countervailing forces, the value of D changes according to Equation 2.10, and D = 0 corresponds to linkage equilibrium.\nLinkage disequilibrium is often observed between closely linked single nucleotide polymorphisms or SNPs (The International HapMap Consortium 2005). As an example, consider SNPs in the coding sequence of each of two closely linked genes in human chromosome 4 that encode th",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 34,
+        "formula_bbox": [
+          321,
+          1011,
+          637,
+          1041
+        ],
+        "label_bbox": [
+          870,
+          1031,
+          926,
+          1053
+        ],
+        "api_label": "[2.12]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 16.0
+      },
+      "equation_number": "2.12",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b12"
+        ],
+        "source_bboxes": [
+          [
+            321,
+            1011,
+            637,
+            1041
+          ]
+        ],
+        "audit_evidence_sha256": "be512ae0f385fb7f33ae1ddfaab413ba40c80d3a092edc023fe96b7871f68bac"
+      }
+    },
+    {
+      "id": "2.13",
+      "label_format": "[2.13]",
+      "latex": "D=P_{A B}P_{a b}-P_{A b}P_{a B}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b13"
+        ],
+        "source_bboxes": [
+          [
+            321,
+            1143,
+            488,
+            1174
+          ]
+        ]
+      },
+      "context": "}) $$ $$ P_{a\\; b}=q_{a}q_{b}+D\\;(which\\; implies\\; that\\; D\\geq-q_{a}q_{b}) $$\nThe quantity $D$ is often called the linkage disequilibrium parameter. The implications about the magnitude of $D$ in parentheses in the equations above follow from the fact that each of the gametic frequencies $P_{AB'}, P_{Ab'}, P_{aB'}$ and $P_{aB}$ must be greater than or equal to 0. Because of these implications, the minimum and maximum values of $D$ must satisfy $$ D_{m i n}=\\mathrm{t h e~l a r g e r~o f}-p_{A}p_{B}\\mathrm{a n d}-q_{a}q_{b} $$ $$ D_{m a x}=\\mathrm{t h e~s m a l l e r~o f~}p_{A}q_{b}\\mathrm{~a n d~}q_{a}p_{B} $$\nFurthermore, it follows from the Equations 2.11 that D can also be written as $$ D=P_{A B}P_{a b}-P_{A b}P_{a B} $$ With random mating and no countervailing forces, the value of D changes according to Equation 2.10, and D = 0 corresponds to linkage equilibrium.\nLinkage disequilibrium is often observed between closely linked single nucleotide polymorphisms or SNPs (The International HapMap Consortium 2005). As an example, consider SNPs in the coding sequence of each of two closely linked genes in human chromosome 4 that encode the proteins for glycophorin A and glycophorin B found on the surface of red blood cells. One SNP is an A to G substitution, which results in an amino acid replacement of serine to leucine (one of two amino acid replacements that distinguish the M a",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 34,
+        "formula_bbox": [
+          321,
+          1143,
+          488,
+          1174
+        ],
+        "label_bbox": [
+          869,
+          1141,
+          925,
+          1163
+        ],
+        "api_label": "[2.13]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 6.5
+      },
+      "equation_number": "2.13",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          92
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p034:b13"
+        ],
+        "source_bboxes": [
+          [
+            321,
+            1143,
+            488,
+            1174
+          ]
+        ],
+        "audit_evidence_sha256": "8f50b06a48d53b6c6501c3b73e0c05f4c5c7202c82bf22673b41bce91029a767"
+      }
+    },
+    {
+      "id": "2.14",
+      "label_format": "[2.14]",
+      "latex": "r^{2}=D^{2}/(p_{A}q_{a}p_{B}q_{b})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          95
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p037:b11"
+        ],
+        "source_bboxes": [
+          [
+            350,
+            358,
+            518,
+            389
+          ]
+        ]
+      },
+      "context": "rganisms that regularly avoid extreme inbreeding (mating between relatives) values of $D$ are typically zero or close to zero (indicating linkage equilibrium) unless the genes are very closely linked.\nAnother widely used measure of linkage disequilibrium is related to but distinct from D. This measure is usually symbolized as $ r^{2} $, which can potentially cause confusion because the symbol r is also widely used for the frequency of recombination between genes. In the context of linkage disequilibrium, the square symbol in $ r^{2} $ is extremely important, because it signals a measure of linkage disequilibrium rather than a measure of recombination. The value of $ r^{2} $ is defined as $$ r^{2}=D^{2}/(p_{A}q_{a}p_{B}q_{b}) $$\nThere is a nice intuitive biological interpretation of $ r^2 $ in that its square root (that is, $ \\sqrt{r^2} $) is the correlation coefficient in allelic state between alleles in the same gamete. The value of $ r^2 $ is also useful for calculating the $ \\chi^2 $ value from the counts of haplotypes, because the value of $ \\chi^2 $ is numerically equal to $ r^2N $, where N is the total number of chromosomes examined. This application of $ r^2 $ is illustrated in the problems below.\nPROBLEM 2.11 Natural populations of Drosophila melanogaster are polymorphic for coding SNPs that result in amino acid replacements in the enzymes esterase 6, esterase C, and oc",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 37,
+        "formula_bbox": [
+          350,
+          358,
+          518,
+          389
+        ],
+        "label_bbox": [
+          718,
+          365,
+          774,
+          388
+        ],
+        "api_label": "[2.14]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "2.14",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          95
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p037:b11"
+        ],
+        "source_bboxes": [
+          [
+            350,
+            358,
+            518,
+            389
+          ]
+        ],
+        "audit_evidence_sha256": "7cf4b25ec6b5550fcbde149f6e93bb98a79993cd0f3f62c81daac5d2fd5d56af"
+      }
+    },
+    {
+      "id": "2.15",
+      "label_format": "[2.15]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_017",
+        "chapter": "PopGen_chapter2",
+        "subsection": "Relative Measures of Linkage Disequilibrium: D' and r²",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "Relative Measures of Linkage Disequilibrium: D' and r²"
+        ],
+        "source_pages": [
+          97
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p039:b9"
+        ],
+        "source_bboxes": [
+          [
+            259,
+            980,
+            514,
+            1042
+          ]
+        ]
+      },
+      "context": "The value of D as a measure of linkage disequilibrium has the limitation that it depends on the allele frequencies, and its minimum and maximum values are defined in Equation 2.12. For this reason, the magnitude of linkage disequilibrium is often described by a quantity usually called $ D' $, which is defined as $$ \\begin{aligned}&D^{\\prime}=D/D_{max}\\text{if}D\\text{is positive}\\\\&D^{\\prime}=D/D_{min}\\text{if}D\\text{is negative}\\\\ \\end{aligned} $$\nThe use of $D'$ as a measure of linkage disequilibrium allows comparison of relative values across genomic regions or even among organisms. Another often-used measure of linkage disequilibrium makes use of the quantity $r^2 = D^2 / (p_A q_a p_B q_b)$ defined in Equation 2.14. Recall that the square root of $r^2$ ($\\sqrt{r^2}$) is equal to the correlation coefficient in the allelic state between alleles in the same gamete.\nBoth $ D' $ and $ r^{2} $ are used to describe the amount of linkage disequilibrium because they capture somewhat different aspects of the gametic associations.\nThis is apparent in Figure 2.11, which shows a plot of $ D' $ against $ r^2 $ for 10,000 random, uniformly distributed values of $ P_{AB'} $, $ P_{Ab'} $, $ P_{ab'} $, and $ P_{ab'} $. It is clear that, when $ D' $ is close to 0, $ r^2 $ is also close to 0. However, as $ D' $ increases, $ r^2 $ can take on any value between 0 and $ (D')^2 $. The greater range",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 39,
+        "formula_bbox": [
+          259,
+          980,
+          514,
+          1042
+        ],
+        "label_bbox": [
+          712,
+          996,
+          768,
+          1020
+        ],
+        "api_label": "[2.15]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "2.15",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "Relative Measures of Linkage Disequilibrium: D' and r²"
+      ],
+      "subsection": "Relative Measures of Linkage Disequilibrium: D' and r²",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "Relative Measures of Linkage Disequilibrium: D' and r²"
+        ],
+        "subsection": "Relative Measures of Linkage Disequilibrium: D' and r²",
+        "source_pages": [
+          97
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p039:b9"
+        ],
+        "source_bboxes": [
+          [
+            259,
+            980,
+            514,
+            1042
+          ]
+        ],
+        "audit_evidence_sha256": "5fedfb880db3302d9bb0b096d8b8f4b0c31d86c454e9acb2f11d1a461d18a55c"
+      }
+    },
+    {
+      "id": "2.2",
+      "label_format": "[2.2]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_005",
+        "chapter": "PopGen_chapter2",
+        "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.2 THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "source_pages": [
+          64
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p006:b11"
+        ],
+        "source_bboxes": [
+          [
+            460,
+            1014,
+            722,
+            1077
+          ]
+        ]
+      },
+      "context": "Figure 2.2 implicitly assumes the important premise that random mating of genotypes is equivalent to random union of gametes. A demonstration of this premise in the case of two alleles is outlined in [[SEE_TABLE:2.1]], in which pairs of genotypes are chosen at random to form matings. The genotype frequencies of AA, Aa, and aa in the parental generation are written as P, Q, and R, respectively, where $ P + Q + R = 1 $. In terms of the genotype frequencies, the allele frequencies p of A and q of a are as follows: $$ \\begin{aligned}&p=(2\\times P+Q)/2=P+Q/2\\\\&q=(2\\times R+Q)/2=R+Q/2\\\\ \\end{aligned} $$\nNote that $ p + q = P + Q + R = 1.0 $; this result is a consequence of the fact that the gene has only two alleles. With two alleles of a gene, there are six possible types of matings. When mating is random, these matings take place in proportion to the genotypic frequencies in the population, and the types of mating pairs are given by successive terms in the expansion of $ (P\\, AA + Q\\, Aa + R\\, aa)^2 $. For example, the pro-\n[[SEE_TABLE:2.1]] therefore $$ P^{\\prime}=P^{2}+\\frac{2PQ}{2}+\\frac{Q^{2}}{4}=(P+\\frac{Q}{2})^{2}=p^{2} $$ $$ Q^{\\prime}=\\frac{2PQ}{2}+2PR+\\frac{Q^{2}}{2}+\\frac{2QR}{2}=2(P+\\frac{Q}{2})(R+\\frac{Q}{2})=2pq $$ $$ R^{\\prime}=\\frac{Q^{2}}{4}+\\frac{2Q R}{2}+R^{2}=(R+\\frac{Q}{2})^{2}=q^{2} $$ portion of $ AA \\times AA $ matings is $ P \\times P = P^2 $. Similarly, the ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 6,
+        "formula_bbox": [
+          460,
+          1014,
+          722,
+          1077
+        ],
+        "label_bbox": [
+          907,
+          1025,
+          951,
+          1049
+        ],
+        "api_label": "[2.2]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 8.5
+      },
+      "equation_number": "2.2",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.2 THE HARDY-WEINBERG PRINCIPLE"
+      ],
+      "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.2 THE HARDY-WEINBERG PRINCIPLE"
+        ],
+        "subsection": "2.2 THE HARDY-WEINBERG PRINCIPLE",
+        "source_pages": [
+          64
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p006:b11"
+        ],
+        "source_bboxes": [
+          [
+            460,
+            1014,
+            722,
+            1077
+          ]
+        ],
+        "audit_evidence_sha256": "5614f12be70d8790c3916d11ee22258c494d34a57df0b55394385c4eb593a1dc"
+      }
+    },
+    {
+      "id": "2.3",
+      "label_format": "[2.3]",
+      "latex": "frac{(observed-expected)^{2}}{expected}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_007",
+        "chapter": "PopGen_chapter2",
+        "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+        ],
+        "source_pages": [
+          69
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p011:b10"
+        ],
+        "source_bboxes": [
+          [
+            326,
+            814,
+            558,
+            867
+          ]
+        ]
+      },
+      "context": "cted number 160.6\nArg/Pro Observed number 120\nExpected number 130.8\nPro/Pro Observed number 32 Expected number 26.6 With the data so arrayed, it is evident that the fit between the observed numbers and the expected numbers, though not perfect because of chance statistical fluctuations in the number of each genotype that may be included in any given sample, is nevertheless very close. To verify this conclusion, we will apply a conventional statistical test to the data in order to assess quantitatively the closeness of fit. A test commonly employed in population genetics is called the chi-square test, which is based on the value of a number, called $ \\chi^{2} $, calculated from the data as $$ \\chi^{2}=\\sum\\frac{(observed-expected)^{2}}{expected} $$ where observed and expected refer to the observed and expected numbers in any genotypic class, and the $ \\Sigma $ sign denotes that the values are to be summed over all genotypic classes. In the case at hand, $$ \\begin{aligned}\\chi^{2}&=(166-160.6)^{2}/160.6\\\\&\\quad+(120-130.8)^{2}/130.8\\\\&\\quad+(32-26.6)^{2}/26.6\\\\&=2.17\\end{aligned} $$\nTo be completely unambiguous, some statisticians prefer use of the symbol $ \\chi^{2} $ for the realized value of the test statistic defined Equation 2.3, in order to distinguish between the test statistic and the true $ \\chi^{2} $ distribution itself. The distinction should certainly be kept in mind, b",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 11,
+        "formula_bbox": [
+          326,
+          814,
+          558,
+          867
+        ],
+        "label_bbox": [
+          740,
+          825,
+          782,
+          847
+        ],
+        "api_label": "[2.3]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "2.3",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+      ],
+      "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+        ],
+        "subsection": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "source_pages": [
+          69
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p011:b10"
+        ],
+        "source_bboxes": [
+          [
+            326,
+            814,
+            558,
+            867
+          ]
+        ],
+        "audit_evidence_sha256": "6ab2da9a1443f1351765c2dfe9e5af18b7222b39f8f62fa2a8dec62d9d5e5e79"
+      }
+    },
+    {
+      "id": "2.4",
+      "label_format": "[2.4]",
+      "latex": "right)^{2}}{expected}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_008",
+        "chapter": "PopGen_chapter2",
+        "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+        ],
+        "source_pages": [
+          72
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p014:b8"
+        ],
+        "source_bboxes": [
+          [
+            442,
+            810,
+            736,
+            866
+          ]
+        ]
+      },
+      "context": " only 4.7. With such small numbers, chance alone can have a substantial effect on the composition of any actual sample. This is a problem for the formula in Equation 2.3, because this expression has a chi-square distribution only when each of the classes of data has a sufficiently large expected number. What “sufficiently large” means is a matter of judgment, but most statisticians agree that the standard chi-square test should not be trusted when any of the expected numbers is smaller than 5. The $ CCR5\\Delta $ example violates this convention. In such cases, many statisticians recommend calculating a chi-square value that is somewhat more conservative than that in Equation 2.3, namely, $$ \\chi^{2}=\\sum\\frac{\\left(\\left|observed-expected\\right|-0.5\\right)^{2}}{expected} $$\nIn this expression, the vertical bars mean absolute value (the magnitude of the enclosed number disregarding the sign). The fact that 0.5 is subtracted from each difference in the numerator before taking the square serves to reduce the value of the chi-square. In the CCR5Δ example, Equation 2.4 yields $ (2.1 - 0.5)^2 / 262.9 + (4.4 - 0.5)^2 / 70.4 + (2.3 - 0.5)^2 / 4.7 = 0.915 $. This value is not found on the chart in Figure 2.3 because the graph begins at $ \\chi^2 = 1 $ for clarity. In practice, values of $ \\chi^2 $ smaller than 1 are often found (as in the present example), but they are never significant.",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 14,
+        "formula_bbox": [
+          442,
+          810,
+          736,
+          866
+        ],
+        "label_bbox": [
+          887,
+          826,
+          931,
+          850
+        ],
+        "api_label": "[2.4]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 0.0
+      },
+      "equation_number": "2.4",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+      ],
+      "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+      "audit_provenance": {
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+        ],
+        "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+        "source_pages": [
+          72
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p014:b8"
+        ],
+        "source_bboxes": [
+          [
+            442,
+            810,
+            736,
+            866
+          ]
+        ],
+        "audit_evidence_sha256": "0fe25144de35561e3311f08abf8e94b6b735d388a9530693aee9a56de2aeaff0"
+      }
+    },
+    {
+      "id": "2.5",
+      "label_format": "[2.5]",
+      "latex": "right)}2^{n_{12}}.",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_008",
+        "chapter": "PopGen_chapter2",
+        "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+        ],
+        "source_pages": [
+          73
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p015:b10"
+        ],
+        "source_bboxes": [
+          [
+            279,
+            409,
+            620,
+            466
+          ]
+        ]
+      },
+      "context": "} $, and $ n_{22} $, respectively. The total sample size is therefore $ n = n_{11} + n_{12} + n_{22} $, and the observed numbers of A and a alleles are $ n_{1} = 2 \\times n_{11} + n_{12} $ and $ n_{2} = n_{12} + 2 \\times n_{22} $, respectively. We wish to calculate the probability of any sample configuration ($ n_{11} $, $ n_{12} $, $ n_{22} $) for a fixed sample size n and fixed allele counts $ n_{1} $ and $ n_{2} $. Since the allele counts are fixed, any sample is uniquely specified by the number of heterozygotes observed. In fact, the exact probability of the sample configuration ($ n_{11} $, $ n_{12} $, $ n_{22} $), conditional on the allele counts ($ n_{1} $, $ n_{2} $), is given by $$ \\Pr\\left\\{n_{12}\\left|n_{1},n_{2}\\right.\\right\\}=\\frac{n!/\\left(n_{11}!n_{12}!n_{22}!\\right)}{\\left(2n\\right)!/\\left(n_{1}!n_{2}!\\right)}2^{n_{12}}. $$\n(Emigh 1980; Weir 1996; and see Guo and Thompson 1992 for a multiple-allele version). Once these conditional probabilities have been calculated for all possible values of $ n_{12} $, they are arranged in increasing order, and a cutoff is chosen such that the cumulative probability of all outcomes above the cut-off equals 0.05 (or the number nearest to, but smaller than, 0.05). If the observed genotype counts fall below the cutoff, the hypothesis of HWE is rejected. As an example, consider a sample of size $n=8$ diploid individuals with fixed ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 15,
+        "formula_bbox": [
+          279,
+          409,
+          620,
+          466
+        ],
+        "label_bbox": [
+          746,
+          421,
+          790,
+          445
+        ],
+        "api_label": "[2.5]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.5
+      },
+      "equation_number": "2.5",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+      ],
+      "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+      "audit_provenance": {
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Difficulties in Testing for Hardy-Weinberg Equilibrium"
+        ],
+        "subsection": "Difficulties in Testing for Hardy-Weinberg Equilibrium",
+        "source_pages": [
+          73
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p015:b10"
+        ],
+        "source_bboxes": [
+          [
+            279,
+            409,
+            620,
+            466
+          ]
+        ],
+        "audit_evidence_sha256": "1d1ad1af05c2c070352311576897783fe46c5e963669cea9c552ae5d72ad8b2c"
+      }
+    },
+    {
+      "id": "2.6",
+      "label_format": "[2.6]",
+      "latex": "end{aligned}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_009",
+        "chapter": "PopGen_chapter2",
+        "subsection": "Complications of Dominance",
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Complications of Dominance"
+        ],
+        "source_pages": [
+          77
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p019:b7"
+        ],
+        "source_bboxes": [
+          [
+            374,
+            742,
+            502,
+            836
+          ]
+        ]
+      },
+      "context": "h⁺ phenotypes are RhD/RhD and what proportion are RhD/Rhd. However, if we are willing to assume random mating, then the relative proportions RhD/RhD and RhD/Rhd genotypes are given by the Hardy-Weinberg principle. Assuming random mating and HWE, the genotype frequencies are given by p², 2pq, and q², where p is the allele frequency of RhD and q that of the RhD deletion. An estimate of q can therefore be obtained by setting q² = 0.142 (the frequency of the homozygous recessive phenotype), and so $ \\hat{q} = \\sqrt{0.142} = 0.3768 $. More generally, if R is the frequency of homozygous recessive genotypes found in sample of n organisms, then $ \\hat{q} $ and its standard error are estimated as $$ \\begin{aligned}\\hat{q}&=\\sqrt{R}\\quad.\\\\SE(\\hat{q})&=\\sqrt{\\frac{1-R}{4n}}\\end{aligned} $$\nThe expression for the standard error comes from the large-sample formula that the variance of a function $f(x)$, $Var[f(x)]$, is given by $[df(x)/dx]^2 \\times Var(x)$. In this case, we know the variance of $R$: It is the binomial variance $R(1 - R)/n$, and what we desire is the variance of $f(R) = \\sqrt{R}$. Since $d\\sqrt{R/dR} = (\\frac{1}{2}\\sqrt{R})$, it follows that $Var(\\sqrt{R}) = (\\frac{1}{2}\\sqrt{R})^2 \\times R(1 - R)/n = (1 - R)/4n$. Taking the square root of both sides yields the standard error in Equation 2.6. With $\\hat{q}$ estimated from Equation 2.6 as 0.3768, then $\\hat{p}=1-0.3768=0.623",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 19,
+        "formula_bbox": [
+          374,
+          742,
+          502,
+          836
+        ],
+        "label_bbox": [
+          736,
+          775,
+          780,
+          797
+        ],
+        "api_label": "[2.6]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 3.0
+      },
+      "equation_number": "2.6",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+        "Complications of Dominance"
+      ],
+      "subsection": "Complications of Dominance",
+      "audit_provenance": {
+        "heading_path": [
+          "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+          "Complications of Dominance"
+        ],
+        "subsection": "Complications of Dominance",
+        "source_pages": [
+          77
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p019:b7"
+        ],
+        "source_bboxes": [
+          [
+            374,
+            742,
+            502,
+            836
+          ]
+        ],
+        "audit_evidence_sha256": "d2a7eb5c1d3bc9febfc96a0dbb1483fe98d30fef72797db19e2d5bc5c5cd6bc3"
+      }
+    },
+    {
+      "id": "2.7",
+      "label_format": "[2.7]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_012",
+        "chapter": "PopGen_chapter2",
+        "subsection": "Three or More Alleles",
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "source_pages": [
+          83
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p025:b11"
+        ],
+        "source_bboxes": [
+          [
+            235,
+            1213,
+            540,
+            1246
+          ]
+        ]
+      },
+      "context": "0), there is very good reason to reject the hypothesis that the genotypes are in Hardy-Weinberg proportions in this population. The reason for the discrepancy is not known. One likely possibility is migration into the population by people with allele frequencies that are significantly different from those among the Basques themselves.\nMore generally, in a population that is undergoing random mating for a gene with $n$ alleles $A_1, A_2, \\ldots A_n$ having respective frequencies $p_1, p_2, \\ldots p_n$ (with $p_1 + p_2 + \\cdots + p_n = 1$), then the expected genotype frequencies with HWE are $$ p_{i}^{2}\\quad\\mathrm{~\\ \\ \\ \\ }\\quad\\mathrm{f o r~}A_{i}A_{i}\\mathrm{~h o m o z y g o t e s} $$ $$ \\begin{array}{r l r}{2p_{i}p_{j}}&{{}}&{\\mathrm{f o r~}A_{i}A_{j}\\mathrm{~h e t e r o z y g o t e s~}}\\end{array} $$\nThe expressions in Equation 2.7 may be applied to data on allozyme polymorphisms in Drosophila persimilis in California. One sample of 108 adult flies from the Fish Creek population included four alleles of the gene Xdh, which codes for xanthine dehydrogenase. We may call the alleles Xdh-1, Xdh-2, Xdh-3, and Xdh-4; their respective frequencies were estimated as $ \\hat{p}_1 = 0.08 $, $ \\hat{p}_2 = 0.21 $, $ \\hat{p}_3 = 0.62 $, and $ \\hat{p}_4 = 0.09 $ (Prakash 1977). With four alleles, there are four possible homozygotes (for example, Xdh-1/Xdh-1) and six possible heterozygotes",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 25,
+        "formula_bbox": [
+          235,
+          1213,
+          540,
+          1246
+        ],
+        "label_bbox": [
+          726,
+          1202,
+          771,
+          1226
+        ],
+        "api_label": "[2.7]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 15.5
+      },
+      "equation_number": "2.7",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+        "Three or More Alleles"
+      ],
+      "subsection": "Three or More Alleles",
+      "audit_provenance": {
+        "heading_path": [
+          "2.4 EXTENSIONS OF THE HARDY-WEINBERG PRINCIPLE",
+          "Three or More Alleles"
+        ],
+        "subsection": "Three or More Alleles",
+        "source_pages": [
+          83
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p025:b11"
+        ],
+        "source_bboxes": [
+          [
+            235,
+            1213,
+            540,
+            1246
+          ]
+        ],
+        "audit_evidence_sha256": "04fce4a35584c7a608f9724d33b0555125f96fefa5b3b985f8d17388e34ca1d5"
+      }
+    },
+    {
+      "id": "2.8",
+      "label_format": "[2.8]",
+      "latex": "end{array}",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_014",
+        "chapter": "PopGen_chapter2",
+        "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+        ],
+        "source_pages": [
+          88
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p030:b7"
+        ],
+        "source_bboxes": [
+          [
+            476,
+            1072,
+            638,
+            1239
+          ]
+        ]
+      },
+      "context": " of the A gene may nevertheless fail to be in random association with the alleles of the B gene. The precise meaning of “random association” is illustrated in Figure 2.9. In this figure the squares refer to the alleles present in gametes, not to genotypes as in earlier diagrams. When the alleles of the genes are in random association, the frequency of a gamete carrying any particular combination of alleles equals the product of the frequencies of those alleles. Genes that are in random association are said to be in a state of linkage equilibrium, and genes not in random association are said to be in linkage disequilibrium. With linkage equilibrium, therefore, the gametic frequencies are: $$ \\begin{array}{ll} AB: & p_{A}\\times p_{B}\\\\Ab: & p_{A}\\times q_{b}\\\\aB: & q_{a}\\times p_{B}\\\\ab: & q_{a}\\times q_{b}\\end{array} $$ With random mating and the other simplifying assumptions listed earlier (including a large population with no mutation, migration, or selection), linkage equilibrium between genes is eventually attained. However, linkage equilibrium is attained gradually, and the rate of approach can be very slow. The slow approach to linkage equilibrium stands in contrast to the attainment of HWE with alleles of a single gene, which typically requires just one generation (when generations are nonoverlapping) or a relatively small",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 30,
+        "formula_bbox": [
+          476,
+          1072,
+          638,
+          1239
+        ],
+        "label_bbox": [
+          897,
+          1138,
+          941,
+          1162
+        ],
+        "api_label": "[2.8]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 5.5
+      },
+      "equation_number": "2.8",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "ORGANIZATION OF GENETIC VARIATION: Introduction",
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+      ],
+      "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+      "audit_provenance": {
+        "heading_path": [
+          "ORGANIZATION OF GENETIC VARIATION: Introduction",
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM"
+        ],
+        "subsection": "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "source_pages": [
+          88
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p030:b7"
+        ],
+        "source_bboxes": [
+          [
+            476,
+            1072,
+            638,
+            1239
+          ]
+        ],
+        "audit_evidence_sha256": "5cb28213e26e9a1f69f11d8ff43972eb2cbaf444d5594e655ead9b27c75e8ea3"
+      }
+    },
+    {
+      "id": "2.9",
+      "label_format": "[2.9]",
+      "latex": "P_{AB}^{^{\\prime}}-p_{A}p_{B}=(1-r)(P_{AB}-p_{A}p_{B})",
+      "formula_type": "block",
+      "source": {
+        "unit_id": "PopGen_chapter2_015",
+        "chapter": "PopGen_chapter2",
+        "subsection": "AB/ab and Ab/aB",
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "source_pages": [
+          91
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p033:b13"
+        ],
+        "source_bboxes": [
+          [
+            197,
+            957,
+            469,
+            990
+          ]
+        ]
+      },
+      "context": "e same as it was in the previous generation ($ P_{AB} $); and among the chromosomes that did undergo recombination, the frequency of AB chromosomes is simply the product of the frequencies of the A and B alleles in the previous generation ($ p_{A}p_{B} $), because the recombination joins alleles from two independent chromosomes. Therefore, the frequency of AB in any generation, call it $ p_{AB}' $, is related to the frequency $ P_{AB} $ in the previous generation by the equation $$ \\begin{aligned}P_{AB}^{^{\\prime}}&=(1-r)\\times P_{AB}\\quad&[for the nonrecombinants]\\\\ &+r\\times p_{A}p_{B}\\quad&[for the recombinants]\\\\ \\end{aligned} $$\nSubtraction of $ p_{A}p_{B} $ from both sides leads to $$ P_{AB}^{^{\\prime}}-p_{A}p_{B}=(1-r)(P_{AB}-p_{A}p_{B}) $$\nEquation 2.9 becomes simplified somewhat by defining $D$ as the difference $P_{AB}-p_{A}p_{B}$. Then $D_{n}$ is the value of $D$ in the $n$th generation, and Equation 2.9 implies that $D_{n}=(1-r)D_{n-1}$. The solution of this equation is found by successive substitution as $$ \\dot{D}_{n}=(1-r)D_{n-1}=(1-r)^{2}D_{n-2}=\\cdots=(1-r)^{n}D_{0} $$ where $D_{0}$ is the value of $D$ in the founding population. Because $1-r<1$, $(1-r)^{n}$ goes to zero as $n$ becomes large, but how rapidly $(1-r)^{n}$ goes to zero depends on $r$; the closer $r$ is to zero, the slower the rate.\nThis pattern of decrease is known as geometric, and it is closely ",
+      "description": null,
+      "book": "PopGen",
+      "source_evidence": {
+        "evidence_type": "paddleocr_vl_layout",
+        "source_pdf": "data/背景资料/PopGen_chapter2.pdf",
+        "pdf_page": 33,
+        "formula_bbox": [
+          197,
+          957,
+          469,
+          990
+        ],
+        "label_bbox": [
+          730,
+          966,
+          773,
+          989
+        ],
+        "api_label": "[2.9]",
+        "raw_response": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full/intermediate/paddle_raw_response.json",
+        "vertical_pairing_distance": 4.0
+      },
+      "equation_number": "2.9",
+      "number_status": "verified_paddleocr_layout",
+      "render_mode": "numbered_equation",
+      "heading_path": [
+        "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+        "AB/ab and Ab/aB"
+      ],
+      "subsection": "AB/ab and Ab/aB",
+      "audit_provenance": {
+        "heading_path": [
+          "2.5 LINKAGE AND LINKAGE DISEQUILIBRIUM",
+          "AB/ab and Ab/aB"
+        ],
+        "subsection": "AB/ab and Ab/aB",
+        "source_pages": [
+          91
+        ],
+        "source_block_ids": [
+          "PopGen_chapter2:p033:b13"
+        ],
+        "source_bboxes": [
+          [
+            197,
+            957,
+            469,
+            990
+          ]
+        ],
+        "audit_evidence_sha256": "9132ce39d89779350e41abeeff40adb552e98b337cf30e6977037ca6eb9f1e56"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "Genetics_chapter8_005",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [
+      "Basic Notation"
+    ],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": "Basic Notation",
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA",
+      "Basic Notation"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA / Basic Notation",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b6"
+      ],
+      "bbox": [
+        144.0,
+        1079.0,
+        332.0,
+        1111.0
+      ],
+      "raw_text": "Basic Notation"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "A matrix is simply a rectangular array of numbers. Some examples are:",
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b7"
+      ],
+      "bbox": [
+        143.0,
+        1118.0,
+        993.0,
+        1155.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula011]]",
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b8"
+      ],
+      "bbox": [
+        165.0,
+        1177.0,
+        1070.0,
+        1285.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A matrix with $r$ rows and $c$ columns is said to have dimensionality $r \\times c$ (a useful mnemonic for remembering this is railroad car). In the examples above, D has three rows and two columns, and is thus a $3 \\times 2$ matrix. An $r \\times 1$ matrix, such as a, is a column vector, while a $1 \\times c$ matrix, such as b, is a row vector. A matrix in which the number of rows equals the number of columns, such as C, is called a square matrix. Numbers are also matrices (of dimensionality $1 \\times 1$) and are often referred to as scalars.",
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b9"
+      ],
+      "bbox": [
+        143.0,
+        1308.0,
+        1105.0,
+        1536.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "A matrix is completely specified by the elements that comprise it, with $ M_{ij} $ denoting the element in the ith row and jth column of matrix M. Using the sample matrices above, $ C_{23} = 4 $ is the element in the second row and third column of C. Likewise, $ C_{32} = 1 $ is the element in the third row and second column. Two matrices are equal if and only if all of their corresponding elements are equal.",
+      "source_page": 199,
+      "printed_page": 179,
+      "source_block_ids": [
+        "p199:b2"
+      ],
+      "bbox": [
+        62.0,
+        133.0,
+        1025.0,
+        299.0
+      ]
+    }
+  ]
+}

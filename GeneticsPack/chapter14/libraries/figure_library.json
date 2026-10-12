@@ -1,0 +1,383 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter14",
+  "count": 11,
+  "figures": [
+    {
+      "id": "14.1",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.1",
+      "placeholder": "[[FIGURE:14.1]]",
+      "see_placeholder": "[[SEE_FIGURE:14.1]]",
+      "asset_path": "figures/Genetics_14.1.png",
+      "caption": "Figure 14.1 Location of head and thoracic bristles in adult Drosophila. The most frequently studied bristle systems in quantitative-genetic experiments are sternopleural bristles (ST) on the side of the thorax between the first and second legs, abdominal bristles on the underside of the abdomen (AB), and scutellar bristles (SC) on the upper side of the last thoracic region. Ocellar bristles (O) on the top of the head are also occasionally used.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 399,
+      "raw_bbox": [
+        174.0,
+        135.0,
+        921.0,
+        929.0
+      ],
+      "source_block_ids": [
+        "p399:b2"
+      ],
+      "caption_block": {
+        "source_page": 399,
+        "printed_page": 379,
+        "source_block_ids": [
+          "p399:b3"
+        ],
+        "bbox": [
+          106.0,
+          953.0,
+          972.0,
+          1138.0
+        ]
+      }
+    },
+    {
+      "id": "14.2",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.2",
+      "placeholder": "[[FIGURE:14.2]]",
+      "see_placeholder": "[[SEE_FIGURE:14.2]]",
+      "asset_path": "figures/Genetics_14.2.png",
+      "caption": "Figure 14.2 Distribution of the effects on sternopleural bristles of Drosophila melanogaster third chromosome factors isolated by Shrimpton and Robertson (1988b). This distribution is biased towards large factors, as effects under roughly 0.3 phenotypic standard deviations were not statistically detectable in this study.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 400,
+      "raw_bbox": [
+        253.0,
+        131.0,
+        972.0,
+        582.0
+      ],
+      "source_block_ids": [
+        "p400:b2"
+      ],
+      "caption_block": {
+        "source_page": 400,
+        "printed_page": 380,
+        "source_block_ids": [
+          "p400:b4"
+        ],
+        "bbox": [
+          184.0,
+          636.0,
+          1046.0,
+          763.0
+        ]
+      }
+    },
+    {
+      "id": "14.3",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.3",
+      "placeholder": "[[FIGURE:14.3]]",
+      "see_placeholder": "[[SEE_FIGURE:14.3]]",
+      "asset_path": "figures/Genetics_14.3.png",
+      "caption": "Figure 14.3 Locating male-sterility genes in D. simulans/mauritiana hybrids with chromosomal assays. Fertility is measured by the proportion of males with motile sperm, with chromosome segments from D. simulans being shown in black, and those from D. mauritiana in white. L and R refer to the left and right arms of chromosomes 2 and 3. All genotypes have a D. simulans Y chromosome. Asterisks denote genotypes that produced progeny when crossed to D. simulans females. (From Coyne 1984.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 402,
+      "raw_bbox": [
+        257.0,
+        160.0,
+        1003.0,
+        1125.0
+      ],
+      "source_block_ids": [
+        "p402:b2"
+      ],
+      "caption_block": {
+        "source_page": 402,
+        "printed_page": 382,
+        "source_block_ids": [
+          "p402:b3"
+        ],
+        "bbox": [
+          204.0,
+          1132.0,
+          1072.0,
+          1365.0
+        ]
+      }
+    },
+    {
+      "id": "14.4",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.4",
+      "placeholder": "[[FIGURE:14.4]]",
+      "see_placeholder": "[[SEE_FIGURE:14.4]]",
+      "asset_path": "figures/Genetics_14.4.png",
+      "caption": "Figure 14.4 A variety of mutational events generate variation in restriction fragment lengths, scored by the distances between restriction sites. Single (or multiple) base-pair changes can create or destroy restriction sites, (A) vs. (B). Insertions of mobile genetic elements can create dramatic size differences (C). DNA sequences often exist as tandem arrays of short repeated sequences. Unequal crossing over and/or replication slippage creates variation in the size of such arrays, (D) vs. (E).",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 405,
+      "raw_bbox": [
+        254.0,
+        159.0,
+        843.0,
+        595.0
+      ],
+      "source_block_ids": [
+        "p405:b2"
+      ],
+      "caption_block": {
+        "source_page": 405,
+        "printed_page": 385,
+        "source_block_ids": [
+          "p405:b3"
+        ],
+        "bbox": [
+          114.0,
+          620.0,
+          981.0,
+          833.0
+        ]
+      }
+    },
+    {
+      "id": "14.5",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.5",
+      "placeholder": "[[FIGURE:14.5]]",
+      "see_placeholder": "[[SEE_FIGURE:14.5]]",
+      "asset_path": "figures/Genetics_14.5.png",
+      "caption": "Figure 14.5 Top: RFLPs, restriction fragment length polymorphisms, variable lengths of restriction fragments in a particular region of the genome, are revealed by use of a probe for that region. This marker system is codominant (all marker genotypes can be distinguished), as an RFLP heterozygote shows fragments of both lengths. Middle: RAPDs, randomly amplified polymorphic DNAs, are revealed by the use of a random primer sequence. A successful PCR reaction requires sequences complementary to the primer in opposite orientation at sufficiently close distance. Running these products out on a gel, both AA and Aa exhibit a fragment and the site is scored as present, while the fragment does not amplify in aa individuals and the site is scored as absent. Hence, RAPDs are dominant markers. Bottom: Microsatellite DNAs exhibit variation in the array lengths of short sequences of tandemly repeated DNAs. Fragment length is scored, so that these markers are also codominant. Codominance occurs even when variation is scored via PCR with primers that flank the repeat region.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 406,
+      "raw_bbox": [
+        370.0,
+        129.0,
+        848.0,
+        1056.0
+      ],
+      "source_block_ids": [
+        "p406:b3"
+      ],
+      "caption_block": {
+        "source_page": 406,
+        "printed_page": 386,
+        "source_block_ids": [
+          "p406:b4"
+        ],
+        "bbox": [
+          186.0,
+          1107.0,
+          1057.0,
+          1531.0
+        ]
+      }
+    },
+    {
+      "id": "14.6",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.6",
+      "placeholder": "[[FIGURE:14.6]]",
+      "see_placeholder": "[[SEE_FIGURE:14.6]]",
+      "asset_path": "figures/Genetics_14.6.png",
+      "caption": "Figure 14.6 Comparison of the Haldane, Kosambi, and simple recombination-frequency (m = c) mapping functions, which translate an observed recombination frequency c into an estimate of the expected number of crossovers (the map distance m). The different functions make different assumptions about interference. Haldane's function assumes none, Kosambi's assumes a moderate amount, and the simple recombination-frequency model assumes complete interference ( $ \\delta = 1 $ in Equation 14.2). For a given c, the Haldane map distance is largest, and the recombination-frequency distance is the smallest. For c < 0.15, all three are extremely similar, while the Kosambi and simple function are close for c < 0.25.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 410,
+      "raw_bbox": [
+        245.0,
+        129.0,
+        973.0,
+        711.0
+      ],
+      "source_block_ids": [
+        "p410:b2"
+      ],
+      "caption_block": {
+        "source_page": 410,
+        "printed_page": 390,
+        "source_block_ids": [
+          "p410:b3"
+        ],
+        "bbox": [
+          180.0,
+          728.0,
+          1047.0,
+          1014.0
+        ]
+      }
+    },
+    {
+      "id": "14.7",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.7",
+      "placeholder": "[[FIGURE:14.7]]",
+      "see_placeholder": "[[SEE_FIGURE:14.7]]",
+      "asset_path": "figures/Genetics_14.7.png",
+      "caption": "Figure 14.7 Bulked segregant analysis for mapping QTLs. Assume that a major QTL with alleles Q/q is tightly linked to a marker locus with alleles M/m. If we cross two inbred populations (MMQQ and mmqq) and then sample the extreme tails of the $ F_{2} $ phenotype distribution, the lower tail is enriched for qq, and the upper tail is enriched for QQ. Since the marker is closely linked to the QTL, the lower tail is enriched for marker allele m and depleted for M, while the opposite is true in the upper tail.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 416,
+      "raw_bbox": [
+        302.0,
+        131.0,
+        887.0,
+        736.0
+      ],
+      "source_block_ids": [
+        "p416:b2"
+      ],
+      "caption_block": {
+        "source_page": 416,
+        "printed_page": 396,
+        "source_block_ids": [
+          "p416:b3"
+        ],
+        "bbox": [
+          166.0,
+          765.0,
+          1030.0,
+          974.0
+        ]
+      }
+    },
+    {
+      "id": "14.8",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.8",
+      "placeholder": "[[FIGURE:14.8]]",
+      "see_placeholder": "[[SEE_FIGURE:14.8]]",
+      "asset_path": "figures/Genetics_14.8.png",
+      "caption": "Figure 14.8 Top: Construction of a nearly isogenic line (NIL) containing a region of interest, obtained by selecting on a marker M while backcrossing to a standard stock. Since the final lines are constructed by selfing, we follow a single (haploid) chromosome, as the NIL has two identical copies of this chromosome. Clear regions are from the donor parent, solid from the recurrent parent. Bottom: If several lines are independently selected for the marker, the resulting NILs will contain different retained regions around M. With a dense marker map, crosses between such lines allow for finer mapping of the region around M.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 422,
+      "raw_bbox": [
+        316.0,
+        163.0,
+        909.0,
+        906.0
+      ],
+      "source_block_ids": [
+        "p422:b2"
+      ],
+      "caption_block": {
+        "source_page": 422,
+        "printed_page": 402,
+        "source_block_ids": [
+          "p422:b3"
+        ],
+        "bbox": [
+          185.0,
+          934.0,
+          1048.0,
+          1174.0
+        ]
+      }
+    },
+    {
+      "id": "14.9",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.9",
+      "placeholder": "[[FIGURE:14.9]]",
+      "see_placeholder": "[[SEE_FIGURE:14.9]]",
+      "asset_path": "figures/Genetics_14.9.png",
+      "caption": "Figure 14.9 Selecting on flanking markers can greatly accelerate the elimination of donor DNA around a selected donor marker M. Left: Reduction of donor material around a single selected marker leads to an expected value of around 2 cM following 100 generations of selection and backcrossing to the recurrent parent. Right: Two generations of selection using a dense marker map can also reduce the introgressed segment to under 2 cM. First, choose two flanking markers (a and b) from the recurrent parent that are both within 1 cM of M, with the donor and recurrent genotypes being AMB and amb, respectively. In generation one, we select an individual that is either AMB or aMB. Using this individual as the parent for the second generation, we then select for the recombinant on the opposite side, giving an aMb individual with an introgressed region containing M that is less than 2 cM. (After Tanksley et al. 1989.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 425,
+      "raw_bbox": [
+        200.0,
+        717.0,
+        909.0,
+        1122.0
+      ],
+      "source_block_ids": [
+        "p425:b5",
+        "p425:b7"
+      ],
+      "caption_block": {
+        "source_page": 425,
+        "printed_page": 405,
+        "source_block_ids": [
+          "p425:b8"
+        ],
+        "bbox": [
+          119.0,
+          1154.0,
+          986.0,
+          1505.0
+        ]
+      }
+    },
+    {
+      "id": "14.10",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.10",
+      "placeholder": "[[FIGURE:14.10]]",
+      "see_placeholder": "[[SEE_FIGURE:14.10]]",
+      "asset_path": "figures/Genetics_14.10.png",
+      "caption": "Figure 14.10 Inferred cladogram of haplotypes for a region surrounding the Drosophila melanogaster ADH gene. Numbers refer to different haplotypes, while \"0\" refers to intermediate haplotypes not present in the sample but required to interconnect the existing haplotypes. Distance between two haplotypes on the cladogram provides a measured of relatedness, so that haplotypes 8 and 9 are more closely related than 9 and 6 (one step vs. three steps). Using the hierarchical structure implied by this cladogram, a nested ANOVA was performed, with ANOVA levels set by the number of cladogram steps that haplotypes differ by. Four cladogram regions, denoted with asterisks, were found to be associated with significant phenotypic effects. (After Templeton et al. 1987.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 439,
+      "raw_bbox": [
+        265.0,
+        127.0,
+        841.0,
+        573.0
+      ],
+      "source_block_ids": [
+        "p439:b2"
+      ],
+      "caption_block": {
+        "source_page": 439,
+        "printed_page": 419,
+        "source_block_ids": [
+          "p439:b3"
+        ],
+        "bbox": [
+          104.0,
+          580.0,
+          975.0,
+          908.0
+        ]
+      }
+    },
+    {
+      "id": "14.11",
+      "chapter": "Genetics_chapter14",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter14:14.11",
+      "placeholder": "[[FIGURE:14.11]]",
+      "see_placeholder": "[[SEE_FIGURE:14.11]]",
+      "asset_path": "figures/Genetics_14.11.png",
+      "caption": "Figure 14.11 One approach to positional cloning of a QTL using a series of NILs. (A): First the QTL (which increases character value by a scaled value of one) is localized to an interval (typically 30–50 cM). (B): A much finer map of markers is then generated within this interval, and NILs are constructed by marker selection. (C): Comparing this series of NILs, the QTL position is narrowed to the region indicated by *. If this region is not sufficiently small for further analysis, steps (B) and (C) are repeated until the desired size is obtained. This region is then cloned, and the genes within it are examined for potential clues as to which loci should be considered (or rejected) as candidates.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 441,
+      "raw_bbox": [
+        264.0,
+        134.0,
+        840.0,
+        463.0
+      ],
+      "source_block_ids": [
+        "p441:b2",
+        "p441:b3"
+      ],
+      "caption_block": {
+        "source_page": 441,
+        "printed_page": 421,
+        "source_block_ids": [
+          "p441:b4"
+        ],
+        "bbox": [
+          114.0,
+          501.0,
+          982.0,
+          773.0
+        ]
+      }
+    }
+  ]
+}

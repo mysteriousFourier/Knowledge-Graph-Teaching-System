@@ -1,0 +1,502 @@
+{
+  "id": "PopGen_chapter2_009",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+    "subsections": [
+      "Complications of Dominance"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+    "section_level_2": "Complications of Dominance",
+    "heading_path": [
+      "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+      "Complications of Dominance"
+    ],
+    "display_heading": "Complications of Dominance",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p018:b5"
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Dominance obscures a one-to-one relation between phenotype and genotype, but the allele frequencies can still be estimated if one is willing to assume HWE. For a polymorphic gene with two alleles in which one of the alleles is dominant, only two phenotypic classes can be distinguished—the dominant phenotype and the recessive phenotype. An example is found in the Rhesus (Rh) blood groups, which are products of two closely linked genes denoted RhD and RhCE that originated as a gene duplication during primate evolution <sup>[449]</sup>. The human RhD allele encodes a product that elicits formation of antibodies in Rhesus monkeys, whereas a common mutant allele, Rhd, is a deletion. When the phenotype of individuals is assayed by means of cross-reaction with the anti-D antibody, blood cells from genotypes RhD/RhD and RhD/Rhd genotypes cross react and are said to be Rh+ (Rh positive), whereas blood cells from RhD/Rhd genotypes fail to react and are said to be Rh− (Rh negative).",
+      "source_page": 76,
+      "source_pages": [
+        76,
+        77
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p018:b6",
+        "PopGen_chapter2:p019:b0",
+        "PopGen_chapter2:p019:b1"
+      ],
+      "source_bboxes": [
+        [
+          287.0,
+          1226.0,
+          1039.0,
+          1359.0
+        ],
+        [
+          597.0,
+          148.0,
+          941.0,
+          171.0
+        ],
+        [
+          117.0,
+          208.0,
+          869.0,
+          445.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "71cc52a595a080b88735f001683c4b3002b6458abbd23a841154ca7fabcc470f",
+      "inline_styles": [
+        {
+          "start": 446,
+          "end": 449,
+          "style": "italic",
+          "text": "RhD",
+          "source_page": 77,
+          "source_block_ids": [
+            "PopGen_chapter2:p019:b1"
+          ],
+          "source_bboxes": [
+            [
+              117.0,
+              208.0,
+              869.0,
+              445.0
+            ]
+          ],
+          "source_content_sha256": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p019:b1": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b"
+          }
+        },
+        {
+          "start": 454,
+          "end": 458,
+          "style": "italic",
+          "text": "RhCE",
+          "source_page": 77,
+          "source_block_ids": [
+            "PopGen_chapter2:p019:b1"
+          ],
+          "source_bboxes": [
+            [
+              117.0,
+              208.0,
+              869.0,
+              445.0
+            ]
+          ],
+          "source_content_sha256": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p019:b1": "4f55b6928c99a6f4a24f0e0e6dd61f174c1aa5d38664d9546819c01ed8158c5b"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Among American Caucasians, the frequency of Rh⁺ is about 85.8% and the frequency of Rh⁻ is about 14.2% <sup>[617]</sup>. Given only the phenotype frequencies, the data cannot be used to calculate the genotype frequencies because we have no way of knowing what proportion of Rh⁺ phenotypes are RhD/RhD and what proportion are RhD/Rhd. However, if we are willing to assume random mating, then the relative proportions RhD/RhD and RhD/Rhd genotypes are given by the Hardy-Weinberg principle. Assuming random mating and HWE, the genotype frequencies are given by p², 2pq, and q², where p is the allele frequency of RhD and q that of the RhD deletion. An estimate of q can therefore be obtained by setting q² = 0.142 (the frequency of the homozygous recessive phenotype), and so $ \\hat{q} = \\sqrt{0.142} = 0.3768 $. More generally, if R is the frequency of homozygous recessive genotypes found in sample of n organisms, then $ \\hat{q} $ and its standard error are estimated as $$ \\begin{aligned}\\hat{q}&=\\sqrt{R}\\quad.\\\\SE(\\hat{q})&=\\sqrt{\\frac{1-R}{4n}}\\end{aligned} $$",
+      "source_page": 77,
+      "source_pages": [
+        77
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p019:b2",
+        "PopGen_chapter2:p019:b3"
+      ],
+      "source_bboxes": [
+        [
+          113.0,
+          449.0,
+          866.0,
+          817.0
+        ],
+        [
+          415.0,
+          823.0,
+          555.0,
+          922.0
+        ]
+      ],
+      "provenance_score": 0.944853,
+      "content_sha256": "fb7c7abc50146a05b8e6accc76a8959e45e86bc50a4a70a592b9437a8c7faa91",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The expression for the standard error comes from the large-sample formula that the variance of a function $f(x)$, $Var[f(x)]$, is given by $[df(x)/dx]^2 \\times Var(x)$. In this case, we know the variance of $R$: It is the binomial variance $R(1 - R)/n$, and what we desire is the variance of $f(R) = \\sqrt{R}$. Since $d\\sqrt{R/dR} = (\\frac{1}{2}\\sqrt{R})$, it follows that $Var(\\sqrt{R}) = (\\frac{1}{2}\\sqrt{R})^2 \\times R(1 - R)/n = (1 - R)/4n$. Taking the square root of both sides yields the standard error in Equation 2.6. With $\\hat{q}$ estimated from Equation 2.6 as 0.3768, then $\\hat{p}=1-0.3768=0.6232$, and the frequencies of RhD/RhD, RhD/RhD, and Rhd/RhD are expected to be $p^{2}=(0.6232)^{2}=0.3884$, $2pq=2(0.6232)(0.3768)=0.4696$, and $q^{2}=(0.3768)^{2}=0.1420$, respectively. The proportion of Rh+ individuals that are actually heterozygous is therefore $0.4696/(0.4696+0.3884)=54.7%$. However, when there is dominance, there is no possibility for a $\\chi^{2}$ test of goodness of fit to HWE because there are 0 degrees of freedom. Because of the lack of degrees of freedom, the calculated frequencies of Rh+ and Rh- $(0.3884+0.4696=0.858$ and 0.142, respectively) fit the observed frequencies exactly.",
+      "source_page": 77,
+      "source_pages": [
+        77
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p019:b4",
+        "PopGen_chapter2:p019:b5"
+      ],
+      "source_bboxes": [
+        [
+          109.0,
+          955.0,
+          861.0,
+          1112.0
+        ],
+        [
+          106.0,
+          1116.0,
+          861.0,
+          1356.0
+        ]
+      ],
+      "provenance_score": 0.937352,
+      "content_sha256": "b071879522c9b3769880177e63dab6325f4efb95ea2dc35090f31254e4745e1e",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "problem",
+      "problem_id": "2.4",
+      "content": "PROBLEM 2.4 The Basque people, who live in the Pyrenees mountains between France and Spain, have one of the highest frequencies of the Rhd deletion so far reported. In one study of 400 Basques, 230 were found to be Rh⁺ and 170 Rh⁻ <sup>[483]</sup>. Assuming HWE, estimate the frequencies of the RhD and Rhd alleles, the genotype frequencies, and the proportion of Rh⁺ individuals who are heterozygous Dd. What is the standard error of the estimate $ \\hat{q} $?",
+      "source_page": 78,
+      "source_pages": [
+        78
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p020:b1"
+      ],
+      "source_bboxes": [
+        [
+          140.0,
+          220.0,
+          1029.0,
+          517.0
+        ]
+      ],
+      "provenance_score": 0.342541,
+      "content_sha256": "774f55a67e1043c98a623569906fcdac83c957ebc74fc2acaf5faadc486890a7",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER $ \\hat{q} = \\sqrt{170/400} = 0.65 $, $ \\hat{p} = 0.35 $, and the estimated genotype frequencies of RhD/RhD, RhD/Rhd, and Rhd/Rhd are 0.121, 0.454, and 0.425, respectively. The proportion of RhD/Rhd among Rh⁺ phenotypes in the Basque population is 0.454/(0.121 + 0.454) = 79%. The standard error of $ \\hat{q} $ equals $ \\sqrt{[(1 - 0.425)/1600]} = 0.02 $.",
+      "source_page": 78,
+      "source_pages": [
+        78
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p020:b1"
+      ],
+      "source_bboxes": [
+        [
+          140.0,
+          220.0,
+          1029.0,
+          517.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ab4c5d23a8ebfbdc86dfa99bc5f4c7db22e4cc8376a3b479f1ffcf6c3abcb8a5",
+      "problem_id": "2.4",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The Hardy-Weinberg principle also finds application in studies of industrial melanism, one of the most famous and best-studied cases of evolution in action <sup>[330]</sup>. Industrial melanism refers to the evolution of black (melanic) color patterns in several species of moths that accompanied progressive pollution of the environment by coal soot during the industrial revolution. (The various color forms of the moths are known as morphs.) The evolution of melanism has been observed in Great Britain, West Germany, Eastern Europe, the United States, and in other heavily industrialized areas. The species that evolve melanism are typically large night-flying moths. Of nearly 800 species of large moths in the British Isles, where industrial melanism has been most intensively studied, about 100 species are industrial melanics <sup>[57]</sup>. The best known of these are the peppered moth (Biston betularia) and the scalloped hazel moth (Gonodontis bidentata). The inference that selection has driven the evolution of industrial melanism is strongly supported by the observation that, in both the United Kingdom and the United States, improved air quality due to emissions regulations has been accompanied by a decrease in the frequency of the melanic forms <sup>[237]</sup>. In fact, the decrease in frequency is more thoroughly documented than the previous increase <sup>[236]</sup>.",
+      "source_page": 78,
+      "source_pages": [
+        78
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p020:b2"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          634.0,
+          1028.0,
+          1139.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "e800351f3950dc29fbab4dbe43b8dacb1ea274445f35b0bc168c08b8ca86df91",
+      "inline_styles": [
+        {
+          "start": 175,
+          "end": 194,
+          "style": "bold",
+          "text": "Industrial melanism",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          }
+        },
+        {
+          "start": 437,
+          "end": 443,
+          "style": "italic",
+          "text": "morphs",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          }
+        },
+        {
+          "start": 906,
+          "end": 922,
+          "style": "italic",
+          "text": "Biston betularia",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          }
+        },
+        {
+          "start": 954,
+          "end": 974,
+          "style": "italic",
+          "text": "Gonodontis bidentata",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              634,
+              1028,
+              1139
+            ]
+          ],
+          "source_content_sha256": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b2": "4ab80a6be91a7ec2b3c647cf3d5ea44de6fa8c4059f9289af7f05297c4a89718"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "The agent of selection was once universally thought to be bird predation, because the morphs are dramatically different in conspicuousness on different background (Figure 2.4). The light forms are concealed on normal bark, whereas the dark forms are concealed on bark that is blackened with soot. The problem is that, while birds are visual predators, the moths fly only at night, and when they rest during the day, they do not rest on the trunks of trees. These concerns tend to undermine classic experiments showing differential bird predation by deliberately placing the different morphs at high density on light and dark tree trunks in the daylight hours <sup>[134,438]</sup>. But these are not the only experiments implicating differential bird predation as a selective agent <sup>[236,438]</sup>. On the other hand, bird predation may not be the whole story, because there are also environmental correlates of the decline in frequency of the dark morph, most notably a reduction in the level of atmospheric sulfur dioxide <sup>[237]</sup>.",
+      "source_page": 78,
+      "source_pages": [
+        78,
+        79
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p020:b3",
+        "PopGen_chapter2:p021:b3"
+      ],
+      "source_bboxes": [
+        [
+          273.0,
+          1142.0,
+          1028.0,
+          1380.0
+        ],
+        [
+          114.0,
+          845.0,
+          867.0,
+          976.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "0f270e988a628cb2ca406367427e99ce63744ecc1cdb9fa9812664110b0822f0",
+      "inline_styles": [
+        {
+          "start": 86,
+          "end": 92,
+          "style": "italic",
+          "text": "morphs",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b3"
+          ],
+          "source_bboxes": [
+            [
+              273,
+              1142,
+              1028,
+              1380
+            ]
+          ],
+          "source_content_sha256": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b3": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d"
+          }
+        },
+        {
+          "start": 584,
+          "end": 590,
+          "style": "italic",
+          "text": "morphs",
+          "source_page": 78,
+          "source_block_ids": [
+            "PopGen_chapter2:p020:b3"
+          ],
+          "source_bboxes": [
+            [
+              273,
+              1142,
+              1028,
+              1380
+            ]
+          ],
+          "source_content_sha256": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p020:b3": "6f042bef220ec6dc6c0c78de0f018bd261d41e881a009c1bc029d3c3bef23b9d"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 2.5 In most cases in which the genetic basis of industrial melanism has been analyzed, the melanic color pattern has been found to be due to a single dominant allele. In one study of a heavily polluted area near Birmingham, England, Kettlewell <sup>[329]</sup> observed a frequency of 87% melanic Biston betularia. Estimate the frequency of the dominant allele leading to melanism in this population and the frequency of melanics that are heterozygous.",
+      "source_page": 79,
+      "source_pages": [
+        79
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p021:b4",
+        "PopGen_chapter2:p021:b6"
+      ],
+      "source_bboxes": [
+        [
+          115.0,
+          1053.0,
+          546.0,
+          1200.0
+        ],
+        [
+          573.0,
+          1055.0,
+          998.0,
+          1176.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "965b19c05312700b5b5625b0235ae367e7de53b1a34247193cc7f8b146170184",
+      "problem_id": "2.5",
+      "inline_styles": [
+        {
+          "start": 295,
+          "end": 311,
+          "style": "italic",
+          "text": "Biston betularia",
+          "source_page": 79,
+          "source_block_ids": [
+            "PopGen_chapter2:p021:b6"
+          ],
+          "source_bboxes": [
+            [
+              573,
+              1055,
+              998,
+              1176
+            ]
+          ],
+          "source_content_sha256": "cb5711394c724140634c62b0dc9f72051e44be7034a60c3aecc3316476ee3e40",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p021:b6": "cb5711394c724140634c62b0dc9f72051e44be7034a60c3aecc3316476ee3e40"
+          }
+        }
+      ],
+      "source_locator_mode": "exact"
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER The observed frequency of homozygous recessives is $R = 0.13$, and so the frequency of recessive allele is estimated as $\\hat{q} = \\sqrt{(0.13)} = 0.36$. Assuming random mating, the expected frequencies of dominant homozygotes, heterozygotes, and recessive homozygotes are 0.41, 0.46, and 0.13, respectively. The proportion of melanics that are heterozygous is 0.46/0.87 = 52.9%.",
+      "source_page": 79,
+      "source_pages": [
+        79
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p021:b5",
+        "PopGen_chapter2:p021:b7"
+      ],
+      "source_bboxes": [
+        [
+          112.0,
+          1234.0,
+          543.0,
+          1356.0
+        ],
+        [
+          570.0,
+          1236.0,
+          997.0,
+          1333.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "a8264335515007abd2fda53506941e6d6060d4916098da61a376d8ff11e6c64c",
+      "problem_id": "2.5",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

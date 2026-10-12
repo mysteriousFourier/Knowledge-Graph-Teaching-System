@@ -1,0 +1,121 @@
+{
+  "id": "PopGen_chapter3_013",
+  "metadata": {
+    "chapter": "PopGen_chapter3",
+    "section": "3.5 EFFECTIVE POPULATION SIZE",
+    "subsections": [
+      "Effective Size of a Subdivided Population"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter3_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "3.5 EFFECTIVE POPULATION SIZE",
+    "section_level_2": "Effective Size of a Subdivided Population",
+    "heading_path": [
+      "3.5 EFFECTIVE POPULATION SIZE",
+      "Effective Size of a Subdivided Population"
+    ],
+    "display_heading": "Effective Size of a Subdivided Population",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter3:p033:b5"
+      ]
+    },
+    "chapter_title": "Random Genetic Drift"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Finally we will consider a model in which a population is subdivided into D subpopulations (demes), each consisting of N diploid individuals, with migration among demes measured by a quantity m equal to the probability that a randomly chosen allele in any deme originates from one of the remaining D−1 demes. The population subdivision creates a situation in which two levels of random drift take place simultaneously. There is a drift process within each deme, which takes place relatively rapidly, and another drift process in the population as a whole, which takes place more slowly. Since the mathematics is somewhat rough going <sup>[747,748]</sup>, we shall present only the main result, which is that, when D is reasonably large, the effective population size of the entire population is given by $$ N_{e}=N D\\left(1+\\frac{1}{4N m}\\right) $$",
+      "source_page": 141,
+      "source_pages": [
+        141
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p033:b6",
+        "PopGen_chapter3:p033:b7",
+        "PopGen_chapter3:p033:b8"
+      ],
+      "source_bboxes": [
+        [
+          104.0,
+          764.0,
+          863.0,
+          1058.0
+        ],
+        [
+          387.0,
+          1065.0,
+          577.0,
+          1118.0
+        ],
+        [
+          101.0,
+          1138.0,
+          860.0,
+          1379.0
+        ]
+      ],
+      "provenance_score": 0.992614,
+      "content_sha256": "a6959571bf40918dd58eb41744ac05badcefbf81a92e68935e38b81b25424551",
+      "inline_styles": [
+        {
+          "start": 92,
+          "end": 97,
+          "style": "bold",
+          "text": "demes",
+          "source_page": 141,
+          "source_block_ids": [
+            "PopGen_chapter3:p033:b6"
+          ],
+          "source_bboxes": [
+            [
+              104,
+              764,
+              863,
+              1058
+            ]
+          ],
+          "source_content_sha256": "019d19a35e5c6769911445d75778adcfa7b13974112e74786e67a57bbe3f1b20",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter3:p033:b6": "019d19a35e5c6769911445d75778adcfa7b13974112e74786e67a57bbe3f1b20"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "In this equation, the factor ND comes from the within-deme phase of the random genetic drift, and the factor $ 1 + 1/(4Nm) $ comes from the among-deme phase. An interesting and important feature of the model is that, unless $ 4Nm $ is very large, the effective population size ($ N_e $) is larger than the actual population size (ND). This seeming paradox results from the population subdivision. When there are many demes connected by low rates of migration, then even if one knew which allele in some deme is destined ultimately to become the common ancestor of all alleles in the population at some future time, the process by which this lucky allele spreads among the demes takes a very long time. To put this in another way, when a population is subdivided, it can take a very long time for any two alleles in different demes to trace their lineages back to some common allele in a single deme in some ancestral population.",
+      "source_page": 141,
+      "source_pages": [
+        141,
+        142
+      ],
+      "source_block_ids": [
+        "PopGen_chapter3:p033:b8",
+        "PopGen_chapter3:p034:b1"
+      ],
+      "source_bboxes": [
+        [
+          101.0,
+          1138.0,
+          860.0,
+          1379.0
+        ],
+        [
+          266.0,
+          209.0,
+          1018.0,
+          314.0
+        ]
+      ],
+      "provenance_score": 0.998636,
+      "content_sha256": "4f961ebc1fb15f34e848adc62a552bb76970689013af2678caba50162a50d31f",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

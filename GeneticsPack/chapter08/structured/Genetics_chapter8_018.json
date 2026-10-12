@@ -1,0 +1,262 @@
+{
+  "id": "Genetics_chapter8_018",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "THE MULTIVARIATE NORMAL DISTRIBUTION",
+    "subsections": [],
+    "section_level_1": "THE MULTIVARIATE NORMAL DISTRIBUTION",
+    "section_level_2": null,
+    "heading_path": [
+      "THE MULTIVARIATE NORMAL DISTRIBUTION"
+    ],
+    "display_heading": "THE MULTIVARIATE NORMAL DISTRIBUTION",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 210,
+      "printed_page": 190,
+      "source_block_ids": [
+        "p210:b16"
+      ],
+      "bbox": [
+        148.0,
+        1000.0,
+        781.0,
+        1039.0
+      ],
+      "raw_text": "THE MULTIVARIATE NORMAL DISTRIBUTION"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As we have seen above, matrix notation provides a compact way to express vectors of random variables. We now consider the most commonly assumed distribution for such vectors, the multivariate analog of the normal distribution discussed in Chapter 2. Much of the theory for the evolution of quantitative traits is based on this distribution, which we hereafter denote as the MVN.",
+      "source_page": 210,
+      "printed_page": 190,
+      "source_block_ids": [
+        "p210:b17"
+      ],
+      "bbox": [
+        149.0,
+        1065.0,
+        1108.0,
+        1234.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Consider the probability density function for $n$ independent normal random variables, where $x_{i}$ is normally distributed with mean $\\mu_{i}$ and variance $\\sigma_{i}^{2}$. In this case, because the variables are independent, the joint probability density function is simply the product of each univariate density,",
+      "source_page": 210,
+      "printed_page": 190,
+      "source_block_ids": [
+        "p210:b18"
+      ],
+      "bbox": [
+        150.0,
+        1223.0,
+        1111.0,
+        1366.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula083]]",
+      "source_page": 210,
+      "printed_page": 190,
+      "source_block_ids": [
+        "p210:b19"
+      ],
+      "bbox": [
+        289.0,
+        1364.0,
+        920.0,
+        1551.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We can express this equation more compactly in matrix form by defining the matrices",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b2"
+      ],
+      "bbox": [
+        62.0,
+        126.0,
+        1023.0,
+        213.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula084]]",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b3"
+      ],
+      "bbox": [
+        226.0,
+        186.0,
+        851.0,
+        347.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Since V is diagonal, its determinant is simply the product of the diagonal elements",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b4"
+      ],
+      "bbox": [
+        58.0,
+        339.0,
+        1017.0,
+        396.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula085]]",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b5"
+      ],
+      "bbox": [
+        459.0,
+        402.0,
+        613.0,
+        491.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Likewise, using quadratic products, note that",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b6"
+      ],
+      "bbox": [
+        55.0,
+        495.0,
+        603.0,
+        541.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula086]]",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b7"
+      ],
+      "bbox": [
+        294.0,
+        555.0,
+        767.0,
+        643.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Putting these together, Equation 8.23 can be rewritten as",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b8"
+      ],
+      "bbox": [
+        50.0,
+        651.0,
+        726.0,
+        699.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula087]]",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b9"
+      ],
+      "bbox": [
+        185.0,
+        709.0,
+        866.0,
+        795.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We will also write this density as $p(\\mathbf{x}, \\mu, \\mathbf{V})$ when we wish to stress that it is a function of the mean vector $\\mu$ and the covariance matrix $\\mathbf{V}$.",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b11"
+      ],
+      "bbox": [
+        47.0,
+        795.0,
+        1005.0,
+        878.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "More generally, when the elements of x are correlated, Equation 8.24 gives the probability density function for a vector of multivariate normally distributed random variables, with mean vector $ \\mu $ and covariance matrix V. We denote this by",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b12"
+      ],
+      "bbox": [
+        42.0,
+        860.0,
+        1006.0,
+        1005.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula088]]",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b13"
+      ],
+      "bbox": [
+        412.0,
+        996.0,
+        631.0,
+        1034.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the subscript indicating the dimensionality of x is usually omitted. The multivariate normal distribution is also referred to as the Gaussian distribution.",
+      "source_page": 211,
+      "printed_page": 191,
+      "source_block_ids": [
+        "p211:b14"
+      ],
+      "bbox": [
+        41.0,
+        1033.0,
+        1001.0,
+        1121.0
+      ]
+    }
+  ]
+}

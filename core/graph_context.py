@@ -141,6 +141,22 @@ def _build_graphrag_context_uncached(
     else:
         vector_error = None
 
+    # Cross-graph hits carry their own evidence because the active frontend graph
+    # is backed by the legacy default DB. Keep independent books searchable
+    # without merging their SQLite files or colliding same-named node IDs.
+    for hit in vector_hits:
+        hit_id = str(hit.get("node_id") or "").strip()
+        if not hit_id or hit_id in node_by_id:
+            continue
+        metadata = dict(hit.get("metadata") or {})
+        node_by_id[hit_id] = {
+            "id": hit_id,
+            "label": metadata.get("label") or hit_id,
+            "content": metadata.get("content") or metadata.get("label") or hit_id,
+            "type": metadata.get("type") or "concept",
+            "metadata": metadata,
+        }
+
     try:
         keyword_hits = [] if lightweight else search_nodes(query, limit=top_k)
         if allowed_set is not None:

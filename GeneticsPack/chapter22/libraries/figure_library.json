@@ -1,0 +1,144 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter22",
+  "count": 4,
+  "figures": [
+    {
+      "id": "22.1",
+      "chapter": "Genetics_chapter22",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter22:22.1",
+      "placeholder": "[[FIGURE:22.1]]",
+      "see_placeholder": "[[SEE_FIGURE:22.1]]",
+      "asset_path": "figures/Genetics_22.1.png",
+      "caption": "Figure 22.1 Reaction norms for three genotypes in response to two environments. (A) No genotype × environment interaction. (B) Genotype × environment interaction is due entirely to a change in scale. (C) Genotype × environment interaction is due to a change in ranking. (D) There is a change of scale as well as a change in ranking.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 670,
+      "raw_bbox": [
+        249.0,
+        136.0,
+        980.0,
+        879.0
+      ],
+      "source_block_ids": [
+        "p670:b2"
+      ],
+      "caption_block": {
+        "source_page": 670,
+        "printed_page": 650,
+        "source_block_ids": [
+          "p670:b3"
+        ],
+        "bbox": [
+          166.0,
+          902.0,
+          1031.0,
+          1069.0
+        ]
+      }
+    },
+    {
+      "id": "22.2",
+      "chapter": "Genetics_chapter22",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter22:22.2",
+      "placeholder": "[[FIGURE:22.2]]",
+      "see_placeholder": "[[SEE_FIGURE:22.2]]",
+      "asset_path": "figures/Genetics_22.2.png",
+      "caption": "Figure 22.2 Left: The reaction norms for yield $ (\\overline{z}_{ij}) $ for four varieties of barley $ (j = A, B, C, D) $ as a function of site-specific mean yields for all varieties $ (\\overline{z}_{i}) $, where i is an index of the sites. The dashed line denotes the average population performance. Right: The relationship between the response to environmental change $ (B_j) $ and mean performance $ (\\overline{z}_{.j}) $ for 277 barley varieties. (From Finlay and Wilkinson 1963.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 686,
+      "raw_bbox": [
+        153.0,
+        130.0,
+        1069.0,
+        586.0
+      ],
+      "source_block_ids": [
+        "p686:b2",
+        "p686:b3"
+      ],
+      "caption_block": {
+        "source_page": 686,
+        "printed_page": 666,
+        "source_block_ids": [
+          "p686:b4"
+        ],
+        "bbox": [
+          179.0,
+          619.0,
+          1040.0,
+          800.0
+        ]
+      }
+    },
+    {
+      "id": "22.3",
+      "chapter": "Genetics_chapter22",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter22:22.3",
+      "placeholder": "[[FIGURE:22.3]]",
+      "see_placeholder": "[[SEE_FIGURE:22.3]]",
+      "asset_path": "figures/Genetics_22.3.png",
+      "caption": "Figure 22.3 Joint regressions for 12 clones of the green alga Chlamydomonas reinhardtii. All of the clones were derived from a single cross between two parental strains, and assayed in eight environments varying in nitrogen, phosphorus, and carbon availability. The mean phenotype, $ \\log(r) $, is the logarithm of the rate of exponential growth at low density. The dashed line represents the common regression with a slope equal to one. Note that the variance in performance among clones increases with increasing environmental value. The clonal performances converge to similar values in intermediate environments and then diverge as environmental conditions become progressively worse, i.e., there is a tendency for the joint-regression lines to cross. (From Bell 1991; see also Bell 1990.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 687,
+      "raw_bbox": [
+        80.0,
+        135.0,
+        1004.0,
+        829.0
+      ],
+      "source_block_ids": [
+        "p687:b2"
+      ],
+      "caption_block": {
+        "source_page": 687,
+        "printed_page": 667,
+        "source_block_ids": [
+          "p687:b3"
+        ],
+        "bbox": [
+          102.0,
+          861.0,
+          970.0,
+          1158.0
+        ]
+      }
+    },
+    {
+      "id": "22.4",
+      "chapter": "Genetics_chapter22",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter22:22.4",
+      "placeholder": "[[FIGURE:22.4]]",
+      "see_placeholder": "[[SEE_FIGURE:22.4]]",
+      "asset_path": "figures/Genetics_22.4.png",
+      "caption": "Figure 22.4 Reaction norms for mean fruit weight (mg) for seven genotypes extracted from a single population of the herbaceous annual plant Polygonum persicaria. The genotypes were propagated clonally and grown with replication under four nutrient conditions. Two-way ANOVA revealed significant genotype × environment interaction for this trait. (From Sultan and Bazzaz 1993.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 691,
+      "raw_bbox": [
+        252.0,
+        131.0,
+        847.0,
+        725.0
+      ],
+      "source_block_ids": [
+        "p691:b2"
+      ],
+      "caption_block": {
+        "source_page": 691,
+        "printed_page": 671,
+        "source_block_ids": [
+          "p691:b3"
+        ],
+        "bbox": [
+          114.0,
+          760.0,
+          981.0,
+          908.0
+        ]
+      }
+    }
+  ]
+}

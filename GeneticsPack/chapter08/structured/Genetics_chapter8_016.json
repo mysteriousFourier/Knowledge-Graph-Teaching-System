@@ -1,0 +1,232 @@
+{
+  "id": "Genetics_chapter8_016",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "EXPECTATIONS OF RANDOM VECTORS AND MATRICES",
+    "subsections": [],
+    "section_level_1": "EXPECTATIONS OF RANDOM VECTORS AND MATRICES",
+    "section_level_2": null,
+    "heading_path": [
+      "EXPECTATIONS OF RANDOM VECTORS AND MATRICES"
+    ],
+    "display_heading": "EXPECTATIONS OF RANDOM VECTORS AND MATRICES",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b4"
+      ],
+      "bbox": [
+        142.0,
+        445.0,
+        907.0,
+        495.0
+      ],
+      "raw_text": "EXPECTATIONS OF RANDOM VECTORS AND MATRICES"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Matrix algebra provides a powerful approach for analyzing linear combinations of random variables. Let x be a column vector containing n random variables, $ \\mathbf{x} = (x_1, x_2, \\cdots, x_n)^T $. We may wish to construct a new univariate (scalar) random variable y by taking some linear combination of the elements of $ \\mathbf{x} $,",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b5"
+      ],
+      "bbox": [
+        142.0,
+        507.0,
+        1102.0,
+        657.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula069]]",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b6"
+      ],
+      "bbox": [
+        506.0,
+        675.0,
+        744.0,
+        765.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\mathbf{a} = (a_1, a_2, \\cdots, a_n)^T $ is a column vector of constants. Likewise, we can construct a new $ k $-dimensional vector $ \\mathbf{y} $ by premultiplying $ \\mathbf{x} $ by a $ k \\times n $ matrix $ \\mathbf{A} $ of constants, $ \\mathbf{y} = \\mathbf{A}\\mathbf{x} $. More generally, an $ (n \\times k) $ matrix $ \\mathbf{X} $ of random variables can be transformed into a new $ m \\times \\ell $ dimensional matrix $ \\mathbf{Y} $ of elements consisting of linear combinations of the elements of $ \\mathbf{X} $ by",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b7"
+      ],
+      "bbox": [
+        149.0,
+        787.0,
+        1108.0,
+        965.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula070]]",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b8"
+      ],
+      "bbox": [
+        473.0,
+        984.0,
+        791.0,
+        1023.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the matrices A and B are constants with dimensions as subscripted.",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b10"
+      ],
+      "bbox": [
+        154.0,
+        1044.0,
+        1046.0,
+        1091.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "If X is a matrix whose elements are random variables, then the expected value of X is a matrix $ E(\\mathbf{X}) $ containing the expected value of each element of X. If X and Z are matrices of the same dimension, then",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b11"
+      ],
+      "bbox": [
+        155.0,
+        1074.0,
+        1113.0,
+        1190.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula071]]",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b12"
+      ],
+      "bbox": [
+        476.0,
+        1208.0,
+        797.0,
+        1248.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "This easily follows since the ijth element of $E(\\mathbf{X}+\\mathbf{Z})$ is $E(x_{ij}+z_{ij})=E(x_{ij})+E(z_{ij})$. Similarly, the expectation of Y as defined in Equation 8.14 is",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b14"
+      ],
+      "bbox": [
+        160.0,
+        1266.0,
+        1115.0,
+        1353.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula072]]",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b15"
+      ],
+      "bbox": [
+        457.0,
+        1368.0,
+        826.0,
+        1410.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "For example, for y = Xb where b is an $ n \\times 1 $ column vector,",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b17"
+      ],
+      "bbox": [
+        164.0,
+        1435.0,
+        883.0,
+        1480.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula073]]",
+      "source_page": 208,
+      "printed_page": 188,
+      "source_block_ids": [
+        "p208:b18"
+      ],
+      "bbox": [
+        492.0,
+        1497.0,
+        799.0,
+        1537.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Likewise, for $ y = \\mathbf{a}^T \\mathbf{x} = \\sum_i^n a_i x_i $,",
+      "source_page": 209,
+      "printed_page": 189,
+      "source_block_ids": [
+        "p209:b2"
+      ],
+      "bbox": [
+        66.0,
+        125.0,
+        470.0,
+        171.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter8_formula074]]",
+      "source_page": 209,
+      "printed_page": 189,
+      "source_block_ids": [
+        "p209:b3"
+      ],
+      "bbox": [
+        384.0,
+        191.0,
+        702.0,
+        233.0
+      ]
+    }
+  ]
+}

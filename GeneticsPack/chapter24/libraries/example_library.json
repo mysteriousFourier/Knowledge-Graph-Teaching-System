@@ -1,0 +1,127 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter24",
+  "count": 3,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter24:1",
+      "example_ref": "Genetics_chapter24:1",
+      "chapter": "Genetics_chapter24",
+      "label": "Example 1",
+      "title": "Example 1. In one of the few attempts to evaluate the contribution of sex-linked loci and sex-modified gene expression to patterns of phenotypic variation, Cowley et al. (1986) and",
+      "source_file": "Genetics_chapter24_005.json",
+      "start_block_index": 23,
+      "end_source_file": "Genetics_chapter24_005.json",
+      "end_block_index": 27,
+      "block_ids": [
+        "p735:b9",
+        "p735:b10",
+        "p735:b11",
+        "p736:b2",
+        "p736:b3",
+        "p736:b4"
+      ],
+      "content_markdown": "Example 1. In one of the few attempts to evaluate the contribution of sex-linked loci and sex-modified gene expression to patterns of phenotypic variation, Cowley et al. (1986) and Cowley and Atchley (1988) performed a nested sib analysis on various morphological traits in Drosophila melanogaster. The experiment was quite large, involving analyses on 1482 flies of each sex, sampled from 988 full-sib families and 494 paternal half-sib families. By scoring phenotypes in both male and female progeny, six estimates of covariance between relatives were obtained — full sibs and paternal half sibs, within each sex and between the sexes.\n\nUnder the assumptions that the autosomal additive genetic variance and the variance due to common environment was the same in both sexes, and that there was no significant dominance genetic variance, the causal relationships outlined in Table 24.1 were used to obtain estimates of $ \\sigma^{2}(A) $, $ \\sigma^{2}(A'_{M}) $, $ \\sigma^{2}(A'_{F}) $, $ \\sigma(A_{M}, A_{F}) $, and $ \\sigma(A'_{M}, A'_{F}) $.\n\nThe results in the following table are averages for groups of adult characters derived from different imaginal disks (the embryonic precursors of adult tissues). The heritabilities are defined as $ [\\mathrm{Var}(A) + \\mathrm{Var}(A_x')] / \\mathrm{Var}(z_x) $, where $ \\mathrm{Var}(A_x') $ and $ \\mathrm{Var}(z_x) $ are, respectively, the sex-linked additive genetic variance and the total phenotypic variance in the xth sex. The genetic correlations across the sexes include both the autosomal and sex-linked components of additive genetic covariance and variance, i.e., they are estimates of\n\n[[FORMULA:Genetics_chapter24_formula018]]\n\n<table><tr><td></td><td colspan=\"2\">Heritability</td><td colspan=\"2\">$ \\text{Var}(A'_{x})/\\text{Var}(z_{x}) $</td><td rowspan=\"2\">$ r_{FM}(A+A') $</td></tr><tr><td>Disc</td><td>Males</td><td>Females</td><td>Males</td><td>Females</td></tr><tr><td>Labial</td><td>0.38</td><td>0.36</td><td>0.12</td><td>0.05</td><td>0.67</td></tr><tr><td>Clypeo-labral</td><td>0.66</td><td>0.65</td><td>0.20</td><td>0.18</td><td>0.84</td></tr><tr><td>Eye/antenna</td><td>0.43</td><td>0.44</td><td>0.07</td><td>0.08</td><td>0.91</td></tr><tr><td>Wing</td><td>0.54</td><td>0.44</td><td>0.08</td><td>0.00</td><td>0.76</td></tr><tr><td>Mesothoracic leg</td><td>0.44</td><td>0.42</td><td>0.12</td><td>0.07</td><td>0.86</td></tr></table>",
+      "content_plain": "Example 1. In one of the few attempts to evaluate the contribution of sex-linked loci and sex-modified gene expression to patterns of phenotypic variation, Cowley et al. (1986) and Cowley and Atchley (1988) performed a nested sib analysis on various morphological traits in Drosophila melanogaster. The experiment was quite large, involving analyses on 1482 flies of each sex, sampled from 988 full-sib families and 494 paternal half-sib families. By scoring phenotypes in both male and female progeny, six estimates of covariance between relatives were obtained — full sibs and paternal half sibs, within each sex and between the sexes.\n\nUnder the assumptions that the autosomal additive genetic variance and the variance due to common environment was the same in both sexes, and that there was no significant dominance genetic variance, the causal relationships outlined in Table 24.1 were used to obtain estimates of  \\sigma^{2}(A) ,  \\sigma^{2}(A'_{M}) ,  \\sigma^{2}(A'_{F}) ,  \\sigma(A_{M}, A_{F}) , and  \\sigma(A'_{M}, A'_{F}) .\n\nThe results in the following table are averages for groups of adult characters derived from different imaginal disks (the embryonic precursors of adult tissues). The heritabilities are defined as  [\\mathrm{Var}(A) + \\mathrm{Var}(A_x')] / \\mathrm{Var}(z_x) , where  \\mathrm{Var}(A_x')  and  \\mathrm{Var}(z_x)  are, respectively, the sex-linked additive genetic variance and the total phenotypic variance in the xth sex. The genetic correlations across the sexes include both the autosomal and sex-linked components of additive genetic covariance and variance, i.e., they are estimates of\n\n[[FORMULA:Genetics_chapter24_formula018]]\n\n<table><tr><td></td><td colspan=\"2\">Heritability</td><td colspan=\"2\"> \\text{Var}(A'_{x})/\\text{Var}(z_{x}) </td><td rowspan=\"2\"> r_{FM}(A+A') </td></tr><tr><td>Disc</td><td>Males</td><td>Females</td><td>Males</td><td>Females</td></tr><tr><td>Labial</td><td>0.38</td><td>0.36</td><td>0.12</td><td>0.05</td><td>0.67</td></tr><tr><td>Clypeo-labral</td><td>0.66</td><td>0.65</td><td>0.20</td><td>0.18</td><td>0.84</td></tr><tr><td>Eye/antenna</td><td>0.43</td><td>0.44</td><td>0.07</td><td>0.08</td><td>0.91</td></tr><tr><td>Wing</td><td>0.54</td><td>0.44</td><td>0.08</td><td>0.00</td><td>0.76</td></tr><tr><td>Mesothoracic leg</td><td>0.44</td><td>0.42</td><td>0.12</td><td>0.07</td><td>0.86</td></tr></table>",
+      "formula_refs": [
+        "Genetics_chapter24_formula018"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 736,
+          "y": 385.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 735
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter24:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter24:2",
+      "example_ref": "Genetics_chapter24:2",
+      "chapter": "Genetics_chapter24",
+      "label": "Example 2",
+      "title": "Example 2. Under the assumptions of no dominance or epistasis and no contribution from sex-linked loci, Eisen and Legates (1966) estimated the components of Equation 24.9 by perfor",
+      "source_file": "Genetics_chapter24_006.json",
+      "start_block_index": 4,
+      "end_source_file": "Genetics_chapter24_006.json",
+      "end_block_index": 5,
+      "block_ids": [
+        "p737:b6",
+        "p737:b7"
+      ],
+      "content_markdown": "Example 2. Under the assumptions of no dominance or epistasis and no contribution from sex-linked loci, Eisen and Legates (1966) estimated the components of Equation 24.9 by performing a nested sib analysis on a laboratory strain of random-bred mice. As in the preceding example, the design was quite large, involving approximately 100 sires, 200 dams, and 800 male and 800 female offspring. As can be seen in the second and third columns of the following table, significant sexual dimorphism exists for body weight in the mouse, and this becomes more pronounced as the animals mature. Significant additive genetic variation exists in both of the sexes, but the additive effects of the genes in the two sexes are correlated nearly perfectly. Consequently, the estimated additive genetic variance for sexual dimorphism, $ V(A_{M-F}) $, is not significantly different from zero, although it approaches significance at 8 weeks. Similar conclusions were reached by Hanrahan and Eisen (1973) in a later, even larger study with the same strain.\n\n<table><tr><td></td><td colspan=\"2\">Mean Weight (g)</td><td rowspan=\"2\">V(A_{M})</td><td rowspan=\"2\">V(A_{F})</td><td rowspan=\"2\">C(A_{F}, A_{M})</td><td rowspan=\"2\">r_{FM}(A)</td><td rowspan=\"2\">V(A_{M-F})</td></tr><tr><td>Age</td><td>Male</td><td>Female</td></tr><tr><td>3</td><td>11.4 (0.1)</td><td>11.1 (0.1)</td><td>0.04 (1.1)</td><td>0.02 (0.9)</td><td>0.02 (0.9)</td><td>0.64 (0.4)</td><td>0.02 (1.0)</td></tr><tr><td>6</td><td>30.0 (0.1)</td><td>25.4 (0.1)</td><td>4.52 (2.0)</td><td>1.40 (0.9)</td><td>2.27 (1.0)</td><td>0.90 (0.1)</td><td>1.38 (1.0)</td></tr><tr><td>8</td><td>34.0 (0.1)</td><td>27.8 (0.1)</td><td>5.76 (2.3)</td><td>1.39 (1.0)</td><td>2.25 (1.0)</td><td>0.80 (0.1)</td><td>2.65 (1.4)</td></tr></table>",
+      "content_plain": "Example 2. Under the assumptions of no dominance or epistasis and no contribution from sex-linked loci, Eisen and Legates (1966) estimated the components of Equation 24.9 by performing a nested sib analysis on a laboratory strain of random-bred mice. As in the preceding example, the design was quite large, involving approximately 100 sires, 200 dams, and 800 male and 800 female offspring. As can be seen in the second and third columns of the following table, significant sexual dimorphism exists for body weight in the mouse, and this becomes more pronounced as the animals mature. Significant additive genetic variation exists in both of the sexes, but the additive effects of the genes in the two sexes are correlated nearly perfectly. Consequently, the estimated additive genetic variance for sexual dimorphism,  V(A_{M-F}) , is not significantly different from zero, although it approaches significance at 8 weeks. Similar conclusions were reached by Hanrahan and Eisen (1973) in a later, even larger study with the same strain.\n\n<table><tr><td></td><td colspan=\"2\">Mean Weight (g)</td><td rowspan=\"2\">V(A_{M})</td><td rowspan=\"2\">V(A_{F})</td><td rowspan=\"2\">C(A_{F}, A_{M})</td><td rowspan=\"2\">r_{FM}(A)</td><td rowspan=\"2\">V(A_{M-F})</td></tr><tr><td>Age</td><td>Male</td><td>Female</td></tr><tr><td>3</td><td>11.4 (0.1)</td><td>11.1 (0.1)</td><td>0.04 (1.1)</td><td>0.02 (0.9)</td><td>0.02 (0.9)</td><td>0.64 (0.4)</td><td>0.02 (1.0)</td></tr><tr><td>6</td><td>30.0 (0.1)</td><td>25.4 (0.1)</td><td>4.52 (2.0)</td><td>1.40 (0.9)</td><td>2.27 (1.0)</td><td>0.90 (0.1)</td><td>1.38 (1.0)</td></tr><tr><td>8</td><td>34.0 (0.1)</td><td>27.8 (0.1)</td><td>5.76 (2.3)</td><td>1.39 (1.0)</td><td>2.25 (1.0)</td><td>0.80 (0.1)</td><td>2.65 (1.4)</td></tr></table>",
+      "formula_refs": [],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 737,
+          "y": 1187.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 737
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter24:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter24:3",
+      "example_ref": "Genetics_chapter24:3",
+      "chapter": "Genetics_chapter24",
+      "label": "Example 3",
+      "title": "Example 3. Simmons and Ward (1991) estimated the four possible parent-offspring regressions for hind tibia length (a measure of body size) in a population of dung flies (Scathophag",
+      "source_file": "Genetics_chapter24_006.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_chapter24_006.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p738:b4",
+        "p738:b5",
+        "p738:b6"
+      ],
+      "content_markdown": "Example 3. Simmons and Ward (1991) estimated the four possible parent-offspring regressions for hind tibia length (a measure of body size) in a population of dung flies (Scathophaga stercoraria) raised in a common laboratory environment. Prior to analysis, male and female data were transformed to have equal variances. The regressions of sons on fathers ( $ b_{sf} = 0.24 $) and daughters on mothers ( $ b_{dm} = 0.21 $) were much larger than those for sons on mothers ( $ b_{sm} = 0.11 $) and daughters on fathers ( $ b_{df} = 0.05 $). Assuming the resemblance between relatives is due entirely to autosomal additive gene effects, the expected value of the regressions across the sexes are $ \\sigma(A_F, A_M)/2\\sigma_z^2 $, whereas the expectations for the same-sex regressions are $ E(b_{sf}) = \\sigma^2(A_M)/2\\sigma_z^2 $ and $ E(b_{dm}) = \\sigma^2(A_F)/2\\sigma_z^2 $. Therefore, an estimate of the genetic correlation across the sexes is\n\n[[FORMULA:Genetics_chapter24_formula020]]\n\nThe fact that $ r_{FM}(A) $ is much less than one implies the existence of substantial genetic variation for sexual dimorphism in body size in this species. The character studied did exhibit sexual dimorphism, with females being $ \\sim 80\\% $ of the size of males.",
+      "content_plain": "Example 3. Simmons and Ward (1991) estimated the four possible parent-offspring regressions for hind tibia length (a measure of body size) in a population of dung flies (Scathophaga stercoraria) raised in a common laboratory environment. Prior to analysis, male and female data were transformed to have equal variances. The regressions of sons on fathers (  b_{sf} = 0.24 ) and daughters on mothers (  b_{dm} = 0.21 ) were much larger than those for sons on mothers (  b_{sm} = 0.11 ) and daughters on fathers (  b_{df} = 0.05 ). Assuming the resemblance between relatives is due entirely to autosomal additive gene effects, the expected value of the regressions across the sexes are  \\sigma(A_F, A_M)/2\\sigma_z^2 , whereas the expectations for the same-sex regressions are  E(b_{sf}) = \\sigma^2(A_M)/2\\sigma_z^2  and  E(b_{dm}) = \\sigma^2(A_F)/2\\sigma_z^2 . Therefore, an estimate of the genetic correlation across the sexes is\n\n[[FORMULA:Genetics_chapter24_formula020]]\n\nThe fact that  r_{FM}(A)  is much less than one implies the existence of substantial genetic variation for sexual dimorphism in body size in this species. The character studied did exhibit sexual dimorphism, with females being  \\sim 80\\%  of the size of males.",
+      "formula_refs": [
+        "Genetics_chapter24_formula020"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 738,
+          "y": 1524.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 738
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter24:3]]",
+      "book": "Genetics"
+    }
+  ]
+}

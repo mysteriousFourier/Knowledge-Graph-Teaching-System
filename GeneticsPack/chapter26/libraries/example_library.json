@@ -1,0 +1,557 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter26",
+  "count": 10,
+  "examples": [
+    {
+      "example_id": "Genetics_chapter26:1",
+      "example_ref": "Genetics_chapter26:1",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 1",
+      "title": "Example 1. Suppose that three sires are chosen at random from a population, and each mated to a randomly chosen dam. Two offspring from each mating are evaluated, some in environme",
+      "source_file": "Genetics_chapter26_003.json",
+      "start_block_index": 3,
+      "end_source_file": "Genetics_chapter26_003.json",
+      "end_block_index": 11,
+      "block_ids": [
+        "p758:b9",
+        "p759:b2",
+        "p759:b3",
+        "p759:b4",
+        "p759:b5",
+        "p759:b6",
+        "p759:b7",
+        "p759:b8",
+        "p759:b9",
+        "p759:b10"
+      ],
+      "content_markdown": "Example 1. Suppose that three sires are chosen at random from a population, and each mated to a randomly chosen dam. Two offspring from each mating are evaluated, some in environment 1 and some in environment 2. Let $ y_{ijk} $ denote the phenotypic value of the kth offspring of sire i in environment j. The model is then\n\n[[FORMULA:Genetics_chapter26_formula002]]\n\nThis model has three random effects $ (u_{1}, u_{2}, u_{3}) $, which measure the contribution from each sire, and two fixed effects $ (\\beta_{1}, \\beta_{2}) $, which describe the influence of the two environments. The model assumes an absence of sire $ \\times $ environment interaction.\n\nAs noted above, a total of six offspring were measured. One offspring of sire 1 was assigned to environment 1 and had phenotypic value $ y_{1,1,1} = 9 $, while the second offspring was assigned to environment 2 and had phenotypic value $ y_{1,2,1} = 12 $. The two offspring of sire 2 were both assigned to environment 1 and had values of $ y_{2,1,1} = 11 $ and $ y_{2,1,2} = 6 $. One offspring of sire 3 was assigned to environment 1 and had phenotypic value $ y_{3,1,1} = 7 $, while the second offspring was assigned to environment 2 and had phenotypic value $ y_{3,2,1} = 14 $. The resulting vector of observations can be written as\n\n[[FORMULA:Genetics_chapter26_formula003]]\n\ngiving the mixed model as\n\n[[FORMULA:Genetics_chapter26_formula004]]\n\nwhere the incidence matrices for fixed and random effects and the vectors of these effects are respectively\n\n[[FORMULA:Genetics_chapter26_formula005]]",
+      "content_plain": "Example 1. Suppose that three sires are chosen at random from a population, and each mated to a randomly chosen dam. Two offspring from each mating are evaluated, some in environment 1 and some in environment 2. Let  y_{ijk}  denote the phenotypic value of the kth offspring of sire i in environment j. The model is then\n\n[[FORMULA:Genetics_chapter26_formula002]]\n\nThis model has three random effects  (u_{1}, u_{2}, u_{3}) , which measure the contribution from each sire, and two fixed effects  (\\beta_{1}, \\beta_{2}) , which describe the influence of the two environments. The model assumes an absence of sire  \\times  environment interaction.\n\nAs noted above, a total of six offspring were measured. One offspring of sire 1 was assigned to environment 1 and had phenotypic value  y_{1,1,1} = 9 , while the second offspring was assigned to environment 2 and had phenotypic value  y_{1,2,1} = 12 . The two offspring of sire 2 were both assigned to environment 1 and had values of  y_{2,1,1} = 11  and  y_{2,1,2} = 6 . One offspring of sire 3 was assigned to environment 1 and had phenotypic value  y_{3,1,1} = 7 , while the second offspring was assigned to environment 2 and had phenotypic value  y_{3,2,1} = 14 . The resulting vector of observations can be written as\n\n[[FORMULA:Genetics_chapter26_formula003]]\n\ngiving the mixed model as\n\n[[FORMULA:Genetics_chapter26_formula004]]\n\nwhere the incidence matrices for fixed and random effects and the vectors of these effects are respectively\n\n[[FORMULA:Genetics_chapter26_formula005]]",
+      "formula_refs": [
+        "Genetics_chapter26_formula002",
+        "Genetics_chapter26_formula003",
+        "Genetics_chapter26_formula004",
+        "Genetics_chapter26_formula005"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 759,
+          "y": 1373.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 758
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:1]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:2",
+      "example_ref": "Genetics_chapter26:2",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 2",
+      "title": "Example 2. What are the BLUP values for the sire effects $(u_1, u_2, u_3)$ in Example 1? In order to proceed, we require the covariance matrices for sire effects and errors. We ass",
+      "source_file": "Genetics_chapter26_004.json",
+      "start_block_index": 6,
+      "end_source_file": "Genetics_chapter26_004.json",
+      "end_block_index": 12,
+      "block_ids": [
+        "p761:b10",
+        "p761:b11",
+        "p762:b2",
+        "p762:b3",
+        "p762:b4",
+        "p762:b5",
+        "p762:b6"
+      ],
+      "content_markdown": "Example 2. What are the BLUP values for the sire effects $(u_1, u_2, u_3)$ in Example 1? In order to proceed, we require the covariance matrices for sire effects and errors. We assume that the residual variances within both environments are the same $(\\sigma_E^2)$, so $\\mathbf{R} = \\sigma_E^2 \\mathbf{I}$, where $\\mathbf{I}$ is the $6 \\times 6$ identity matrix. Assuming that all three sires are unrelated and drawn from the same population, $\\mathbf{G} = \\sigma_S^2 \\mathbf{I}$, where $\\mathbf{I}$ is the $3 \\times 3$ identity matrix and $\\sigma_S^2$ is the variance of sire effects. Assuming only additive genetic variance, the sire effects (breeding values) are half the sires' additive genetic values. Thus, since the sires are sampled randomly from an outbred base population, $\\sigma_S^2 = \\sigma_A^2 / 4$, where $\\sigma_A^2$ is the additive genetic variance. Assuming that $\\sigma_A^2 = 8$ and $\\sigma_E^2 = 6$, the covariance matrix $\\mathbf{V}$ for the vector of observations $\\mathbf{y}$ is given by $\\mathbf{Z}\\mathbf{G}\\mathbf{Z}^T + \\mathbf{R}$, or\n\n[[FORMULA:Genetics_chapter26_formula012]]\n\n[[FORMULA:Genetics_chapter26_formula013]]\n\nUsing this result, a few simple matrix calculations give\n\n[[FORMULA:Genetics_chapter26_formula014]]\n\nand\n\n[[FORMULA:Genetics_chapter26_formula015]]",
+      "content_plain": "Example 2. What are the BLUP values for the sire effects (u_1, u_2, u_3) in Example 1? In order to proceed, we require the covariance matrices for sire effects and errors. We assume that the residual variances within both environments are the same (\\sigma_E^2), so \\mathbf{R} = \\sigma_E^2 \\mathbf{I}, where \\mathbf{I} is the 6 \\times 6 identity matrix. Assuming that all three sires are unrelated and drawn from the same population, \\mathbf{G} = \\sigma_S^2 \\mathbf{I}, where \\mathbf{I} is the 3 \\times 3 identity matrix and \\sigma_S^2 is the variance of sire effects. Assuming only additive genetic variance, the sire effects (breeding values) are half the sires' additive genetic values. Thus, since the sires are sampled randomly from an outbred base population, \\sigma_S^2 = \\sigma_A^2 / 4, where \\sigma_A^2 is the additive genetic variance. Assuming that \\sigma_A^2 = 8 and \\sigma_E^2 = 6, the covariance matrix \\mathbf{V} for the vector of observations \\mathbf{y} is given by \\mathbf{Z}\\mathbf{G}\\mathbf{Z}^T + \\mathbf{R}, or\n\n[[FORMULA:Genetics_chapter26_formula012]]\n\n[[FORMULA:Genetics_chapter26_formula013]]\n\nUsing this result, a few simple matrix calculations give\n\n[[FORMULA:Genetics_chapter26_formula014]]\n\nand\n\n[[FORMULA:Genetics_chapter26_formula015]]",
+      "formula_refs": [
+        "Genetics_chapter26_formula012",
+        "Genetics_chapter26_formula013",
+        "Genetics_chapter26_formula014",
+        "Genetics_chapter26_formula015"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 762,
+          "y": 742.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 761
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:2]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:3",
+      "example_ref": "Genetics_chapter26:3",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 3",
+      "title": "Example 3. As mentioned in Chapter 13, the effects of different genotypes at a single QTL are often estimated by ordinary least squares (OLS), using the model",
+      "source_file": "Genetics_chapter26_004.json",
+      "start_block_index": 13,
+      "end_source_file": "Genetics_chapter26_004.json",
+      "end_block_index": 27,
+      "block_ids": [
+        "p762:b7",
+        "p762:b8",
+        "p762:b9",
+        "p762:b10",
+        "p763:b2",
+        "p763:b3",
+        "p763:b4",
+        "p763:b5",
+        "p763:b6",
+        "p763:b7",
+        "p763:b8",
+        "p763:b9",
+        "p763:b10",
+        "p763:b11",
+        "p763:b12"
+      ],
+      "content_markdown": "Example 3. As mentioned in Chapter 13, the effects of different genotypes at a single QTL are often estimated by ordinary least squares (OLS), using the model\n\n[[FORMULA:Genetics_chapter26_formula016]]\n\nwhere $ y_{ij} $ is the observed phenotype of the jth individual of genotype i, $ g_i $ is the mean genotypic value for the ith genotype at the locus of interest, and $ e_{ij} $ is a residual deviation assumed to be independently distributed among individuals. While this model may be reasonable for a random collection of individuals from a large population, when some sampled individuals are relatives, the sharing of alleles at other loci influencing the trait will induce correlations between residuals. If this is the case, OLS analysis can produce biased estimates of the QTL effects. When one of the QTL genotypes is very rare, as is often the case, the sampled individuals may be intentionally selected from the same pedigree, so the problem of bias is not trivial.\n\nUse of a mixed model provides a means for accounting for associations among background QTLs in a way that eliminates bias in estimates of QTL effects. If the relatives in question share only additive effects (as in a pedigree with no full sibs or double first cousins, or when there is no nonadditive gene action), the correlations among residuals are accounted for by the additive genetic relationship matrix A, where $ A_{ij} $ is twice the coefficient of coancestry, $ 2\\Theta_{ij} $. When sibs are included and dominance is present at background QTLs, both A and a dominance relationship matrix (see below) are required.\n\nHere we assume that all of the background genetic effects are additive, in which case the simplest mixed model can be applied,\n\n[[FORMULA:Genetics_chapter26_formula017]]\n\nwith the contribution from the different single-locus genotypes ($g_i$) being treated as fixed effects. The additive genetic background effects ($a_{ij}$) and the residual environmental deviations ($e_{ij}$) are treated as random effects, both with expected values equal to zero, and with respective variances $\\sigma_A^2$ and $\\sigma_E^2$. Note that $\\sigma_A^2$ is the background additive genetic variance for the trait in excess of that caused by the QTL.\n\nIn matrix form,\n\n[[FORMULA:Genetics_chapter26_formula018]]\n\nIf there is a single observation for each individual, as we assume below, then $ \\mathbf{Z} = \\mathbf{I} $ and the covariance matrix for the vector of observations (y) is\n\n[[FORMULA:Genetics_chapter26_formula019]]\n\nThus, the covariance between the residual errors of two individuals (i and j) is just $ 2\\Theta_{ij}\\sigma_A^2 $, while the variance of individual errors is $ \\sigma_A^2 + \\sigma_E^2 $. The error in using OLS to estimate single gene effects is that $ \\mathbf{A} $ is assumed to equal an identity matrix, so that $ \\mathbf{V} $ is incorrectly assumed to be a diagonal matrix.\n\nFrom Equation 26.3, the estimates of the QTL means are given by\n\n[[FORMULA:Genetics_chapter26_formula020]]\n\nKennedy et al. (1992) showed that mixed-model estimates of QTL effects are much more reliable than OLS estimates, especially in small selected populations. Building on this approach, several authors (Hoeschele 1988, Hofer and Kennedy 1993, Kinghorn et al. 1993) have proposed BLUP-based segregation analysis for estimating the effects of an unknown major gene. Here the elements in the design matrix X associated with $ g_{i} $ are probabilistic estimates for the major-locus genotypes of each individual.",
+      "content_plain": "Example 3. As mentioned in Chapter 13, the effects of different genotypes at a single QTL are often estimated by ordinary least squares (OLS), using the model\n\n[[FORMULA:Genetics_chapter26_formula016]]\n\nwhere  y_{ij}  is the observed phenotype of the jth individual of genotype i,  g_i  is the mean genotypic value for the ith genotype at the locus of interest, and  e_{ij}  is a residual deviation assumed to be independently distributed among individuals. While this model may be reasonable for a random collection of individuals from a large population, when some sampled individuals are relatives, the sharing of alleles at other loci influencing the trait will induce correlations between residuals. If this is the case, OLS analysis can produce biased estimates of the QTL effects. When one of the QTL genotypes is very rare, as is often the case, the sampled individuals may be intentionally selected from the same pedigree, so the problem of bias is not trivial.\n\nUse of a mixed model provides a means for accounting for associations among background QTLs in a way that eliminates bias in estimates of QTL effects. If the relatives in question share only additive effects (as in a pedigree with no full sibs or double first cousins, or when there is no nonadditive gene action), the correlations among residuals are accounted for by the additive genetic relationship matrix A, where  A_{ij}  is twice the coefficient of coancestry,  2\\Theta_{ij} . When sibs are included and dominance is present at background QTLs, both A and a dominance relationship matrix (see below) are required.\n\nHere we assume that all of the background genetic effects are additive, in which case the simplest mixed model can be applied,\n\n[[FORMULA:Genetics_chapter26_formula017]]\n\nwith the contribution from the different single-locus genotypes (g_i) being treated as fixed effects. The additive genetic background effects (a_{ij}) and the residual environmental deviations (e_{ij}) are treated as random effects, both with expected values equal to zero, and with respective variances \\sigma_A^2 and \\sigma_E^2. Note that \\sigma_A^2 is the background additive genetic variance for the trait in excess of that caused by the QTL.\n\nIn matrix form,\n\n[[FORMULA:Genetics_chapter26_formula018]]\n\nIf there is a single observation for each individual, as we assume below, then  \\mathbf{Z} = \\mathbf{I}  and the covariance matrix for the vector of observations (y) is\n\n[[FORMULA:Genetics_chapter26_formula019]]\n\nThus, the covariance between the residual errors of two individuals (i and j) is just  2\\Theta_{ij}\\sigma_A^2 , while the variance of individual errors is  \\sigma_A^2 + \\sigma_E^2 . The error in using OLS to estimate single gene effects is that  \\mathbf{A}  is assumed to equal an identity matrix, so that  \\mathbf{V}  is incorrectly assumed to be a diagonal matrix.\n\nFrom Equation 26.3, the estimates of the QTL means are given by\n\n[[FORMULA:Genetics_chapter26_formula020]]\n\nKennedy et al. (1992) showed that mixed-model estimates of QTL effects are much more reliable than OLS estimates, especially in small selected populations. Building on this approach, several authors (Hoeschele 1988, Hofer and Kennedy 1993, Kinghorn et al. 1993) have proposed BLUP-based segregation analysis for estimating the effects of an unknown major gene. Here the elements in the design matrix X associated with  g_{i}  are probabilistic estimates for the major-locus genotypes of each individual.",
+      "formula_refs": [
+        "Genetics_chapter26_formula016",
+        "Genetics_chapter26_formula017",
+        "Genetics_chapter26_formula018",
+        "Genetics_chapter26_formula019",
+        "Genetics_chapter26_formula020"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 763,
+          "y": 1330.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 762
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:3]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:4",
+      "example_ref": "Genetics_chapter26:4",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 4",
+      "title": "Example 4. Using the values from Examples 1 and 2, we find that",
+      "source_file": "Genetics_chapter26_005.json",
+      "start_block_index": 0,
+      "end_source_file": "Genetics_chapter26_005.json",
+      "end_block_index": 7,
+      "block_ids": [
+        "p764:b7",
+        "p764:b8",
+        "p764:b9",
+        "p764:b10",
+        "p764:b11",
+        "p765:b2",
+        "p765:b3",
+        "p765:b4"
+      ],
+      "content_markdown": "Example 4. Using the values from Examples 1 and 2, we find that\n\n[[FORMULA:Genetics_chapter26_formula022]]\n\n[[FORMULA:Genetics_chapter26_formula023]]\n\nThus, after factoring out 1/6 from both sides, the mixed-model equations for these data become\n\n[[FORMULA:Genetics_chapter26_formula024]]\n\nTaking the inverse gives the solution\n\n[[FORMULA:Genetics_chapter26_formula025]]\n\nwhich is identical to the results obtained in Example 2.",
+      "content_plain": "Example 4. Using the values from Examples 1 and 2, we find that\n\n[[FORMULA:Genetics_chapter26_formula022]]\n\n[[FORMULA:Genetics_chapter26_formula023]]\n\nThus, after factoring out 1/6 from both sides, the mixed-model equations for these data become\n\n[[FORMULA:Genetics_chapter26_formula024]]\n\nTaking the inverse gives the solution\n\n[[FORMULA:Genetics_chapter26_formula025]]\n\nwhich is identical to the results obtained in Example 2.",
+      "formula_refs": [
+        "Genetics_chapter26_formula022",
+        "Genetics_chapter26_formula023",
+        "Genetics_chapter26_formula024",
+        "Genetics_chapter26_formula025"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 765,
+          "y": 457.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 764
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:4]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:5",
+      "example_ref": "Genetics_chapter26:5",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 5",
+      "title": "Example 5. Consider the mixed-model equation from Example 4. Here for the fixed factors $ \\beta_{1}, \\beta_{2} $ and the random effects $ u_{1}, u_{2}, u_{3} $, the inverse of the ",
+      "source_file": "Genetics_chapter26_007.json",
+      "start_block_index": 9,
+      "end_source_file": "Genetics_chapter26_007.json",
+      "end_block_index": 16,
+      "block_ids": [
+        "p766:b17",
+        "p767:b2",
+        "p767:b3",
+        "p767:b4",
+        "p767:b5",
+        "p767:b6",
+        "p767:b7",
+        "p767:b8"
+      ],
+      "content_markdown": "Example 5. Consider the mixed-model equation from Example 4. Here for the fixed factors $ \\beta_{1}, \\beta_{2} $ and the random effects $ u_{1}, u_{2}, u_{3} $, the inverse of the coefficient matrix is\n\n[[FORMULA:Genetics_chapter26_formula033]]\n\nHence,\n\n[[FORMULA:Genetics_chapter26_formula034]]\n\nso that, for example,\n\n[[FORMULA:Genetics_chapter26_formula035]]\n\nand, likewise,\n\n[[FORMULA:Genetics_chapter26_formula036]]",
+      "content_plain": "Example 5. Consider the mixed-model equation from Example 4. Here for the fixed factors  \\beta_{1}, \\beta_{2}  and the random effects  u_{1}, u_{2}, u_{3} , the inverse of the coefficient matrix is\n\n[[FORMULA:Genetics_chapter26_formula033]]\n\nHence,\n\n[[FORMULA:Genetics_chapter26_formula034]]\n\nso that, for example,\n\n[[FORMULA:Genetics_chapter26_formula035]]\n\nand, likewise,\n\n[[FORMULA:Genetics_chapter26_formula036]]",
+      "formula_refs": [
+        "Genetics_chapter26_formula033",
+        "Genetics_chapter26_formula034",
+        "Genetics_chapter26_formula035",
+        "Genetics_chapter26_formula036"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 767,
+          "y": 883.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 766
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:5]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:6",
+      "example_ref": "Genetics_chapter26:6",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 6",
+      "title": "Example 6. Consider the pedigree of individuals given in the figure below, where each individual has a single measurement and the only fixed factor is the mean.",
+      "source_file": "Genetics_chapter26_009.json",
+      "start_block_index": 10,
+      "end_source_file": "Genetics_chapter26_009.json",
+      "end_block_index": 22,
+      "block_ids": [
+        "p768:b12",
+        "p769:b2",
+        "p769:b3",
+        "p769:b4",
+        "p769:b5",
+        "p769:b6",
+        "p769:b7",
+        "p769:b8",
+        "p769:b9",
+        "p769:b10",
+        "p769:b11",
+        "p769:b12",
+        "p770:b2"
+      ],
+      "content_markdown": "Example 6. Consider the pedigree of individuals given in the figure below, where each individual has a single measurement and the only fixed factor is the mean.\n\n![Source illustration p769 b2](figures/examples/Genetics_p769_b2.png)\n\nWith the vector of observations,\n\n[[FORMULA:Genetics_chapter26_formula041]]\n\nwe can use Equation 26.9b with $ \\hat{u}^{*} $ = $ (\\widehat{a}_{1}, \\widehat{a}_{2}, \\widehat{a}_{3}, \\widehat{a}_{4}, \\widehat{a}_{5}) $. Assuming that individuals 1, 2, and 3 are unrelated and not inbred, the relationship matrix becomes\n\n[[FORMULA:Genetics_chapter26_formula042]]\n\nSuppose it is known that $ \\sigma_{E}^{2}=\\sigma_{A}^{2} $, so that $ \\lambda=1 $. Then,\n\n[[FORMULA:Genetics_chapter26_formula043]]\n\nSince $n = 5$ and $\\sum y_i = 41$, Equation 26.9b gives the mixed-model equations for these data as\n\n[[FORMULA:Genetics_chapter26_formula044]]\n\nthe solutions of which are\n\n[[FORMULA:Genetics_chapter26_formula045]]\n\nNote that the average breeding value in the base population (individuals 1, 2, and 3) is zero (as expected for a random sample of the population). This is no longer the case once we leave the base population, unless all base-population individuals contribute equally to progeny production.",
+      "content_plain": "Example 6. Consider the pedigree of individuals given in the figure below, where each individual has a single measurement and the only fixed factor is the mean.\n\n![Source illustration p769 b2](figures/examples/Genetics_p769_b2.png)\n\nWith the vector of observations,\n\n[[FORMULA:Genetics_chapter26_formula041]]\n\nwe can use Equation 26.9b with  \\hat{u}^{}  =  (\\widehat{a}_{1}, \\widehat{a}_{2}, \\widehat{a}_{3}, \\widehat{a}_{4}, \\widehat{a}_{5}) . Assuming that individuals 1, 2, and 3 are unrelated and not inbred, the relationship matrix becomes\n\n[[FORMULA:Genetics_chapter26_formula042]]\n\nSuppose it is known that  \\sigma_{E}^{2}=\\sigma_{A}^{2} , so that  \\lambda=1 . Then,\n\n[[FORMULA:Genetics_chapter26_formula043]]\n\nSince n = 5 and \\sum y_i = 41, Equation 26.9b gives the mixed-model equations for these data as\n\n[[FORMULA:Genetics_chapter26_formula044]]\n\nthe solutions of which are\n\n[[FORMULA:Genetics_chapter26_formula045]]\n\nNote that the average breeding value in the base population (individuals 1, 2, and 3) is zero (as expected for a random sample of the population). This is no longer the case once we leave the base population, unless all base-population individuals contribute equally to progeny production.",
+      "formula_refs": [
+        "Genetics_chapter26_formula041",
+        "Genetics_chapter26_formula042",
+        "Genetics_chapter26_formula043",
+        "Genetics_chapter26_formula044",
+        "Genetics_chapter26_formula045"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p769_b2.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 770,
+          "y": 297.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 768
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:6]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:7",
+      "example_ref": "Genetics_chapter26:7",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 7",
+      "title": "Example 7. We now reconsider Example 6, modeling the data with the reduced animal model. Here, the only genetic parameters to estimate are the three parental breeding values. The r",
+      "source_file": "Genetics_chapter26_011.json",
+      "start_block_index": 13,
+      "end_source_file": "Genetics_chapter26_011.json",
+      "end_block_index": 36,
+      "block_ids": [
+        "p772:b8",
+        "p772:b9",
+        "p772:b10",
+        "p772:b11",
+        "p773:b2",
+        "p773:b3",
+        "p773:b4",
+        "p773:b5",
+        "p773:b6",
+        "p773:b7",
+        "p773:b8",
+        "p773:b9",
+        "p773:b10",
+        "p773:b11",
+        "p773:b12",
+        "p773:b13",
+        "p773:b14",
+        "p773:b15",
+        "p774:b2",
+        "p774:b3",
+        "p774:b4",
+        "p774:b5",
+        "p774:b6",
+        "p774:b7"
+      ],
+      "content_markdown": "Example 7. We now reconsider Example 6, modeling the data with the reduced animal model. Here, the only genetic parameters to estimate are the three parental breeding values. The resulting model has $ \\beta $ and X as in Example 6, but\n\n[[FORMULA:Genetics_chapter26_formula056]]\n\ngiving\n\n[[FORMULA:Genetics_chapter26_formula057]]\n\nSince the three parents were assumed to be unrelated and noninbred, $ \\mathbf{G} = \\sigma_A^2 \\mathbf{A} = (\\sigma_E^2 / \\lambda) \\mathbf{A} $, where\n\n[[FORMULA:Genetics_chapter26_formula058]]\n\nNote that by restricting attention to just the parents, the relationship matrix $ \\mathbf{A} $ is much simpler than that in Example 6 where parents and offspring are considered jointly. Since the parents are assumed to be noninbred,\n\n[[FORMULA:Genetics_chapter26_formula059]]\n\nBecause we assumed $ \\lambda = 1 $, $ \\mathbf{R} $ is diagonal with elements $ \\sigma_E^2 \\times (1, 1, 1, 3/2, 3/2) $, so that $ \\mathbf{R}^{-1} $ is diagonal, with elements $ \\sigma_E^{-2} \\times (1, 1, 1, 2/3, 2/3) $. To obtain the mixed-model equations (ignoring the factor $ \\sigma_E^{-2} $ common to all equations), we first obtain\n\n[[FORMULA:Genetics_chapter26_formula060]]\n\n[[FORMULA:Genetics_chapter26_formula061]]\n\n[[FORMULA:Genetics_chapter26_formula062]]\n\ngiving the final form of the mixed-model Equation 26.5 as\n\n[[FORMULA:Genetics_chapter26_formula063]]\n\nwhich has solutions\n\n[[FORMULA:Genetics_chapter26_formula064]]\n\nTo obtain the estimates of the offspring breeding values by use of Equation 26.15, first note that neither offspring has inbred parents and that $ \\lambda = 1 $, so that the within-family heritability is\n\n[[FORMULA:Genetics_chapter26_formula065]]\n\nHence,\n\n[[FORMULA:Genetics_chapter26_formula066]]\n\ngiving the BLUPs for the offspring breeding values as\n\n[[FORMULA:Genetics_chapter26_formula067]]\n\n[[FORMULA:Genetics_chapter26_formula068]]\n\nThese estimates are identical to those obtained from the full animal model (Example 6). This result is expected, as the RAM and full models are equivalent (Appendix 3).",
+      "content_plain": "Example 7. We now reconsider Example 6, modeling the data with the reduced animal model. Here, the only genetic parameters to estimate are the three parental breeding values. The resulting model has  \\beta  and X as in Example 6, but\n\n[[FORMULA:Genetics_chapter26_formula056]]\n\ngiving\n\n[[FORMULA:Genetics_chapter26_formula057]]\n\nSince the three parents were assumed to be unrelated and noninbred,  \\mathbf{G} = \\sigma_A^2 \\mathbf{A} = (\\sigma_E^2 / \\lambda) \\mathbf{A} , where\n\n[[FORMULA:Genetics_chapter26_formula058]]\n\nNote that by restricting attention to just the parents, the relationship matrix  \\mathbf{A}  is much simpler than that in Example 6 where parents and offspring are considered jointly. Since the parents are assumed to be noninbred,\n\n[[FORMULA:Genetics_chapter26_formula059]]\n\nBecause we assumed  \\lambda = 1 ,  \\mathbf{R}  is diagonal with elements  \\sigma_E^2 \\times (1, 1, 1, 3/2, 3/2) , so that  \\mathbf{R}^{-1}  is diagonal, with elements  \\sigma_E^{-2} \\times (1, 1, 1, 2/3, 2/3) . To obtain the mixed-model equations (ignoring the factor  \\sigma_E^{-2}  common to all equations), we first obtain\n\n[[FORMULA:Genetics_chapter26_formula060]]\n\n[[FORMULA:Genetics_chapter26_formula061]]\n\n[[FORMULA:Genetics_chapter26_formula062]]\n\ngiving the final form of the mixed-model Equation 26.5 as\n\n[[FORMULA:Genetics_chapter26_formula063]]\n\nwhich has solutions\n\n[[FORMULA:Genetics_chapter26_formula064]]\n\nTo obtain the estimates of the offspring breeding values by use of Equation 26.15, first note that neither offspring has inbred parents and that  \\lambda = 1 , so that the within-family heritability is\n\n[[FORMULA:Genetics_chapter26_formula065]]\n\nHence,\n\n[[FORMULA:Genetics_chapter26_formula066]]\n\ngiving the BLUPs for the offspring breeding values as\n\n[[FORMULA:Genetics_chapter26_formula067]]\n\n[[FORMULA:Genetics_chapter26_formula068]]\n\nThese estimates are identical to those obtained from the full animal model (Example 6). This result is expected, as the RAM and full models are equivalent (Appendix 3).",
+      "formula_refs": [
+        "Genetics_chapter26_formula056",
+        "Genetics_chapter26_formula057",
+        "Genetics_chapter26_formula058",
+        "Genetics_chapter26_formula059",
+        "Genetics_chapter26_formula060",
+        "Genetics_chapter26_formula061",
+        "Genetics_chapter26_formula062",
+        "Genetics_chapter26_formula063",
+        "Genetics_chapter26_formula064",
+        "Genetics_chapter26_formula065",
+        "Genetics_chapter26_formula066",
+        "Genetics_chapter26_formula067",
+        "Genetics_chapter26_formula068"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 774,
+          "y": 621.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 772
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:7]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:8",
+      "example_ref": "Genetics_chapter26:8",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 8",
+      "title": "Example 8. Consider the additive genetic relationship matrix A for the five measured individuals in the pedigree given in the following figure.",
+      "source_file": "Genetics_chapter26_012.json",
+      "start_block_index": 6,
+      "end_source_file": "Genetics_chapter26_012.json",
+      "end_block_index": 18,
+      "block_ids": [
+        "p775:b10",
+        "p775:b11",
+        "p775:b12",
+        "p775:b13",
+        "p776:b2",
+        "p776:b3",
+        "p776:b4",
+        "p776:b5",
+        "p776:b6",
+        "p776:b7",
+        "p776:b8",
+        "p776:b9",
+        "p776:b10"
+      ],
+      "content_markdown": "Example 8. Consider the additive genetic relationship matrix A for the five measured individuals in the pedigree given in the following figure.\n\n![Source illustration p775 b11](figures/examples/Genetics_p775_b11.png)\n\nHere, measured individuals 1 and 2 as well as the unmeasured (and potentially unknown) individual x are assumed to be unrelated members of a noninbred base population. Since 1 and 2 are unrelated and noninbred, $ A_{11} = A_{22} = 1 $ and $ A_{12} = A_{21} = 0 $. Likewise, $ A_{xx} = 1 $, $ A_{x1} = A_{x2} = 0 $. Now consider individual 3, whose parents are 1 and x. Applying Equations 26.16a,b, we have $ A_{33} = 1 + A_{x1}/2 = 1 $ and\n\n[[FORMULA:Genetics_chapter26_formula071]]\n\nIndividual 4 has parents 1 and 2, giving $ A_{44}=1+A_{12}/2=1 $ and\n\n[[FORMULA:Genetics_chapter26_formula072]]\n\nand\n\n[[FORMULA:Genetics_chapter26_formula073]]\n\nTurning to individual 5, whose parents are 3 and 4, $ A_{55} = 1 + A_{34} / 2 = 1 + 1 / 8 = 1.25 $, and\n\n[[FORMULA:Genetics_chapter26_formula074]]\n\n[[FORMULA:Genetics_chapter26_formula075]]\n\nThus,\n\n[[FORMULA:Genetics_chapter26_formula076]]",
+      "content_plain": "Example 8. Consider the additive genetic relationship matrix A for the five measured individuals in the pedigree given in the following figure.\n\n![Source illustration p775 b11](figures/examples/Genetics_p775_b11.png)\n\nHere, measured individuals 1 and 2 as well as the unmeasured (and potentially unknown) individual x are assumed to be unrelated members of a noninbred base population. Since 1 and 2 are unrelated and noninbred,  A_{11} = A_{22} = 1  and  A_{12} = A_{21} = 0 . Likewise,  A_{xx} = 1 ,  A_{x1} = A_{x2} = 0 . Now consider individual 3, whose parents are 1 and x. Applying Equations 26.16a,b, we have  A_{33} = 1 + A_{x1}/2 = 1  and\n\n[[FORMULA:Genetics_chapter26_formula071]]\n\nIndividual 4 has parents 1 and 2, giving  A_{44}=1+A_{12}/2=1  and\n\n[[FORMULA:Genetics_chapter26_formula072]]\n\nand\n\n[[FORMULA:Genetics_chapter26_formula073]]\n\nTurning to individual 5, whose parents are 3 and 4,  A_{55} = 1 + A_{34} / 2 = 1 + 1 / 8 = 1.25 , and\n\n[[FORMULA:Genetics_chapter26_formula074]]\n\n[[FORMULA:Genetics_chapter26_formula075]]\n\nThus,\n\n[[FORMULA:Genetics_chapter26_formula076]]",
+      "formula_refs": [
+        "Genetics_chapter26_formula071",
+        "Genetics_chapter26_formula072",
+        "Genetics_chapter26_formula073",
+        "Genetics_chapter26_formula074",
+        "Genetics_chapter26_formula075",
+        "Genetics_chapter26_formula076"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [
+        "figures/examples/Genetics_p775_b11.png"
+      ],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 776,
+          "y": 877.0
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 775
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:8]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:9",
+      "example_ref": "Genetics_chapter26:9",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 9",
+      "title": "Example 9. Recall the pedigree given in Example 6, where the inverse of the relationship matrix was",
+      "source_file": "Genetics_chapter26_012.json",
+      "start_block_index": 29,
+      "end_source_file": "Genetics_chapter26_012.json",
+      "end_block_index": 35,
+      "block_ids": [
+        "p778:b2",
+        "p778:b3",
+        "p778:b4",
+        "p778:b5",
+        "p778:b6",
+        "p778:b7",
+        "p778:b8"
+      ],
+      "content_markdown": "Example 9. Recall the pedigree given in Example 6, where the inverse of the relationship matrix was\n\n[[FORMULA:Genetics_chapter26_formula079]]\n\nThis can also be obtained by applying Equation 26.17b. Because the parents of individuals 1, 2, and 3 are unknown, while both parents of individuals 4 and 5 are contained within the observed pedigree, D is diagonal with elements (1.0, 1.0, 1.0, 0.5, 0.5). The inverse of D is therefore diagonal with elements (1.0, 1.0, 1.0, 2.0, 2.0). Following the rules outlined above, the gene-flow matrix is\n\n[[FORMULA:Genetics_chapter26_formula080]]\n\nNote that within a given column, below the diagonal, the elements equal to 0.5 denote parent-offspring relationships. Taking the inverse directly,\n\n[[FORMULA:Genetics_chapter26_formula081]]\n\nT $ ^{-1} $ can also be obtained by the shorter route — below the diagonal, within each individual's row, each known parent is denoted with a -0.5. Using Equation 26.17b, the inverse of A (given above) is recovered.",
+      "content_plain": "Example 9. Recall the pedigree given in Example 6, where the inverse of the relationship matrix was\n\n[[FORMULA:Genetics_chapter26_formula079]]\n\nThis can also be obtained by applying Equation 26.17b. Because the parents of individuals 1, 2, and 3 are unknown, while both parents of individuals 4 and 5 are contained within the observed pedigree, D is diagonal with elements (1.0, 1.0, 1.0, 0.5, 0.5). The inverse of D is therefore diagonal with elements (1.0, 1.0, 1.0, 2.0, 2.0). Following the rules outlined above, the gene-flow matrix is\n\n[[FORMULA:Genetics_chapter26_formula080]]\n\nNote that within a given column, below the diagonal, the elements equal to 0.5 denote parent-offspring relationships. Taking the inverse directly,\n\n[[FORMULA:Genetics_chapter26_formula081]]\n\nT  ^{-1}  can also be obtained by the shorter route — below the diagonal, within each individual's row, each known parent is denoted with a -0.5. Using Equation 26.17b, the inverse of A (given above) is recovered.",
+      "formula_refs": [
+        "Genetics_chapter26_formula079",
+        "Genetics_chapter26_formula080",
+        "Genetics_chapter26_formula081"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 778,
+          "y": 1182.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 778
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:9]]",
+      "book": "Genetics"
+    },
+    {
+      "example_id": "Genetics_chapter26:10",
+      "example_ref": "Genetics_chapter26:10",
+      "chapter": "Genetics_chapter26",
+      "label": "Example 10",
+      "title": "Example 10. To compare the two different methods for dealing with repeated records, suppose three unrelated and noninbred individuals are measured, with two observations on individ",
+      "source_file": "Genetics_chapter26_016.json",
+      "start_block_index": 17,
+      "end_source_file": "Genetics_chapter26_016.json",
+      "end_block_index": 37,
+      "block_ids": [
+        "p783:b8",
+        "p783:b9",
+        "p783:b10",
+        "p783:b11",
+        "p783:b12",
+        "p783:b13",
+        "p783:b14",
+        "p783:b15",
+        "p784:b2",
+        "p784:b3",
+        "p784:b4",
+        "p784:b5",
+        "p784:b6",
+        "p784:b7",
+        "p784:b8",
+        "p784:b9",
+        "p784:b10",
+        "p784:b11",
+        "p784:b12",
+        "p784:b13",
+        "p785:b2"
+      ],
+      "content_markdown": "Example 10. To compare the two different methods for dealing with repeated records, suppose three unrelated and noninbred individuals are measured, with two observations on individual one $ (y_1 = 7, y_2 = 8) $, three observations on individual two $ (y_3 = 6, y_4 = 6, y_5 = 5) $, and one observation on individual three $ (y_6 = 9) $. Assume that the only fixed factor is the mean and that the character has heritability $ h^2 = 0.4 $ and repeatability $ r = 0.5 $, giving $ 1 - h^2 = 0.6 $ and $ r - h^2 = 0.1 $. For either formulation, we have\n\n[[FORMULA:Genetics_chapter26_formula099]]\n\nSince all three individuals are assumed to be unrelated, $ \\mathbf{A} = \\mathbf{I} $.\n\nTo apply the permanent-effects model $ y_{i} = \\mu + a_{i} + p_{i} + e_{i} $, note that\n\n[[FORMULA:Genetics_chapter26_formula100]]\n\n[[FORMULA:Genetics_chapter26_formula101]]\n\n[[FORMULA:Genetics_chapter26_formula102]]\n\n[[FORMULA:Genetics_chapter26_formula103]]\n\ngiving the MMEs (Equation 26.28a) as\n\n[[FORMULA:Genetics_chapter26_formula104]]\n\nwhich has solutions\n\n[[FORMULA:Genetics_chapter26_formula105]]\n\nConversely, applying the simple animal model $ y_{i} = \\mu + a_{i} + e_{i} $, from Equation 26.25 the covariance matrix for the residual errors becomes\n\n[[FORMULA:Genetics_chapter26_formula106]]\n\nLikewise, $ \\mathbf{G} = h^2 \\sigma_y^2 \\mathbf{I} $, and hence $ \\mathbf{G}^{-1} = (h^2 \\sigma_y^2)^{-1} \\mathbf{I} $. Removing the factor $ \\sigma_y^2 $ common to all expressions gives\n\n[[FORMULA:Genetics_chapter26_formula107]]\n\n[[FORMULA:Genetics_chapter26_formula108]]\n\n[[FORMULA:Genetics_chapter26_formula109]]\n\nSubstituting into Equation 26.5 gives the MMEs\n\n[[FORMULA:Genetics_chapter26_formula110]]\n\nwhich gives the same estimates as obtained with the permanent-effects model.",
+      "content_plain": "Example 10. To compare the two different methods for dealing with repeated records, suppose three unrelated and noninbred individuals are measured, with two observations on individual one  (y_1 = 7, y_2 = 8) , three observations on individual two  (y_3 = 6, y_4 = 6, y_5 = 5) , and one observation on individual three  (y_6 = 9) . Assume that the only fixed factor is the mean and that the character has heritability  h^2 = 0.4  and repeatability  r = 0.5 , giving  1 - h^2 = 0.6  and  r - h^2 = 0.1 . For either formulation, we have\n\n[[FORMULA:Genetics_chapter26_formula099]]\n\nSince all three individuals are assumed to be unrelated,  \\mathbf{A} = \\mathbf{I} .\n\nTo apply the permanent-effects model  y_{i} = \\mu + a_{i} + p_{i} + e_{i} , note that\n\n[[FORMULA:Genetics_chapter26_formula100]]\n\n[[FORMULA:Genetics_chapter26_formula101]]\n\n[[FORMULA:Genetics_chapter26_formula102]]\n\n[[FORMULA:Genetics_chapter26_formula103]]\n\ngiving the MMEs (Equation 26.28a) as\n\n[[FORMULA:Genetics_chapter26_formula104]]\n\nwhich has solutions\n\n[[FORMULA:Genetics_chapter26_formula105]]\n\nConversely, applying the simple animal model  y_{i} = \\mu + a_{i} + e_{i} , from Equation 26.25 the covariance matrix for the residual errors becomes\n\n[[FORMULA:Genetics_chapter26_formula106]]\n\nLikewise,  \\mathbf{G} = h^2 \\sigma_y^2 \\mathbf{I} , and hence  \\mathbf{G}^{-1} = (h^2 \\sigma_y^2)^{-1} \\mathbf{I} . Removing the factor  \\sigma_y^2  common to all expressions gives\n\n[[FORMULA:Genetics_chapter26_formula107]]\n\n[[FORMULA:Genetics_chapter26_formula108]]\n\n[[FORMULA:Genetics_chapter26_formula109]]\n\nSubstituting into Equation 26.5 gives the MMEs\n\n[[FORMULA:Genetics_chapter26_formula110]]\n\nwhich gives the same estimates as obtained with the permanent-effects model.",
+      "formula_refs": [
+        "Genetics_chapter26_formula099",
+        "Genetics_chapter26_formula100",
+        "Genetics_chapter26_formula101",
+        "Genetics_chapter26_formula102",
+        "Genetics_chapter26_formula103",
+        "Genetics_chapter26_formula104",
+        "Genetics_chapter26_formula105",
+        "Genetics_chapter26_formula106",
+        "Genetics_chapter26_formula107",
+        "Genetics_chapter26_formula108",
+        "Genetics_chapter26_formula109",
+        "Genetics_chapter26_formula110"
+      ],
+      "table_refs": [],
+      "figure_refs": [],
+      "external_refs": [],
+      "image_refs": [],
+      "evidence": {
+        "source": "source_pdf_visual_rule_and_paddle_layout_blocks",
+        "detection_method": "chapter_stream_example_heading_plus_pdf_lower_rule",
+        "lower_rule": {
+          "page": 785,
+          "y": 217.5
+        },
+        "confidence": 0.99
+      },
+      "metadata": {
+        "needs_review": false,
+        "source_page": 783
+      },
+      "placeholder": "[[SEE_EXAMPLE:Genetics_chapter26:10]]",
+      "book": "Genetics"
+    }
+  ]
+}

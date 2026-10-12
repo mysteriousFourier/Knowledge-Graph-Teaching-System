@@ -1,0 +1,372 @@
+{
+  "id": "Genetics_chapter16_017",
+  "metadata": {
+    "chapter": "Genetics_chapter16",
+    "section": "THE HASEMAN-ELSTON REGRESSION",
+    "subsections": [
+      "Interval Mapping by a Modified Haseman-Elston Regression"
+    ],
+    "section_level_1": "THE HASEMAN-ELSTON REGRESSION",
+    "section_level_2": "Interval Mapping by a Modified Haseman-Elston Regression",
+    "heading_path": [
+      "THE HASEMAN-ELSTON REGRESSION",
+      "Interval Mapping by a Modified Haseman-Elston Regression"
+    ],
+    "display_heading": "THE HASEMAN-ELSTON REGRESSION / Interval Mapping by a Modified Haseman-Elston Regression",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 532,
+      "printed_page": 512,
+      "source_block_ids": [
+        "p532:b5"
+      ],
+      "bbox": [
+        125.0,
+        1214.0,
+        879.0,
+        1252.0
+      ],
+      "raw_text": "Interval Mapping by a Modified Haseman-Elston Regression"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Fulker and Cardon (1994) proposed an interval mapping modification that allows separate estimates of QTL effect ( $ \\sigma_{A}^{2} $) and position (c) by considering two linked markers simultaneously. Recall Equation 16.36,",
+      "source_page": 532,
+      "printed_page": 512,
+      "source_block_ids": [
+        "p532:b6"
+      ],
+      "bbox": [
+        125.0,
+        1255.0,
+        1082.0,
+        1358.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula063]]",
+      "source_page": 532,
+      "printed_page": 512,
+      "source_block_ids": [
+        "p532:b7"
+      ],
+      "bbox": [
+        244.0,
+        1370.0,
+        966.0,
+        1414.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Fulker and Cardon show that the proportion $ \\pi_{jt} $ of alleles ibd at the trait locus can be estimated by using a regression on $ \\pi_{jm}^{(1)} $ and $ \\pi_{jm}^{(2)} $, the proportion of alleles ibd at two marker loci flanking the QTL, where",
+      "source_page": 532,
+      "printed_page": 512,
+      "source_block_ids": [
+        "p532:b8"
+      ],
+      "bbox": [
+        127.0,
+        1428.0,
+        1084.0,
+        1537.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula064]]",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b2"
+      ],
+      "bbox": [
+        343.0,
+        158.0,
+        786.0,
+        220.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b4"
+      ],
+      "bbox": [
+        86.0,
+        232.0,
+        143.0,
+        260.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula065]]",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b5"
+      ],
+      "bbox": [
+        100.0,
+        284.0,
+        1026.0,
+        357.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Here, as elsewhere, $c_1$ is the recombination frequency between the first marker and the QTL, $c_2$ between the QTL and second marker, and $c$ between markers (assumed known). As in Chapter 15, $c_2$ follows directly from $c_1$ and $c$ under various assumptions about interference (e.g., with complete interference $c_2 = c - c_1$), leaving the $\\beta_i$ as functions of only one unknown parameter, $c_1$. When the markers are reasonably close ($c < 0.2$), these coefficients simplify to $\\beta_{m,1} \\simeq c_2/c$ and $\\beta_{m,2} \\simeq c_1/c$. Substituting into Equation 16.36,",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b6"
+      ],
+      "bbox": [
+        84.0,
+        383.0,
+        1046.0,
+        609.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula066]]",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b7"
+      ],
+      "bbox": [
+        333.0,
+        636.0,
+        790.0,
+        687.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b9"
+      ],
+      "bbox": [
+        81.0,
+        712.0,
+        170.0,
+        743.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula067]]",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b10"
+      ],
+      "bbox": [
+        388.0,
+        743.0,
+        732.0,
+        784.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Following the approach of Haley and Knott (1992), Fulker and Cardon compute this regression for each value of $ c_{1} $ ( $ 0 \\leq c_{1} \\leq c $), with that value giving the regression with the largest $ r^{2} $ taken to be the estimate of map position, and $ 2\\sigma_{A}^{2} $ estimated from the associated regression coefficients. This method offers increased power for QTL detection relative to the standard Haseman-Elston method (Fulker and Cardon 1994, Cardon and Fulker 1994). This increase is small when the single-marker power is either very poor or very high, but can be considerable when single-marker power is modest. As with the single-marker regression, selective genotyping further increases power (Cardon and Fulker 1994).",
+      "source_page": 533,
+      "printed_page": 513,
+      "source_block_ids": [
+        "p533:b11"
+      ],
+      "bbox": [
+        80.0,
+        795.0,
+        1041.0,
+        1090.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter16:5]]",
+      "source_page": 533,
+      "source_block_ids": [
+        "p533:b12",
+        "p533:b13",
+        "p534:b2",
+        "p534:b3"
+      ],
+      "bbox": [
+        126.0,
+        1179.0,
+        991.0,
+        1359.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Standard (i.e., two-marker) interval mapping can be extended to multipoint interval mapping by considering all linked markers on a chromosome (Fulker et al. 1995, Kruglyak and Lander 1995b). In the approach of Fulker et al., the two-marker regression estimate of the QTL ibd status (Equation 16.43) is replaced by a multiple regression that incorporates all n linked markers on a chromosome,",
+      "source_page": 534,
+      "printed_page": 514,
+      "source_block_ids": [
+        "p534:b4"
+      ],
+      "bbox": [
+        115.0,
+        1084.0,
+        1077.0,
+        1252.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula068]]",
+      "source_page": 534,
+      "printed_page": 514,
+      "source_block_ids": [
+        "p534:b5"
+      ],
+      "bbox": [
+        469.0,
+        1300.0,
+        725.0,
+        1383.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where the fraction $ \\widehat{\\pi}_{jt} $ of ibd QTL alleles for the jth pair is predicted using the fractions $ \\pi_{jm}^{(k)} $ of ibd alleles at each of the n marker loci on the chromosome containing the putative QTL. The $ \\beta_{k} $ are obtained from standard GLS regressions (Chapter",
+      "source_page": 534,
+      "printed_page": 514,
+      "source_block_ids": [
+        "p534:b7"
+      ],
+      "bbox": [
+        119.0,
+        1432.0,
+        1081.0,
+        1540.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "8), where the vector $ \\boldsymbol{\\beta}^{T} = (\\boldsymbol{\\beta}_{1}, \\cdots, \\boldsymbol{\\beta}_{n}) $ satisfies $ \\boldsymbol{\\beta} = \\mathbf{V}^{-1}\\mathbf{C} $, where",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b2"
+      ],
+      "bbox": [
+        81.0,
+        131.0,
+        861.0,
+        168.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula069]]",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b3"
+      ],
+      "bbox": [
+        99.0,
+        188.0,
+        920.0,
+        296.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "and",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b5"
+      ],
+      "bbox": [
+        81.0,
+        315.0,
+        136.0,
+        343.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter16_formula070]]",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b6"
+      ],
+      "bbox": [
+        296.0,
+        336.0,
+        764.0,
+        391.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Here $ \\operatorname{Var}(\\pi_m^{(i)}) $ is the observed sample variance for ibd status at the ith marker (i.e., the sample variance of the $ \\pi_{jm}^{(i)} $ over all included pairs), $ c_{ik} $ is the distance between markers i and k (assumed known), and $ c_i $ is the (unknown) distance between the QTL and marker i.",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b8"
+      ],
+      "bbox": [
+        79.0,
+        406.0,
+        1036.0,
+        544.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Again the regression is computed by first assuming a particular position for the QTL along the chromosome, computing $ \\widehat{\\pi}_{jt} $ using Equation 16.45, and substituting this value into the standard Haseman-Elston regression (Equation 16.36). This process is repeated for all possible positions of the QTL along the chromosome, with the estimate of QTL position taken as that which gives the regression with the largest $ r^{2} $ value. (This is equivalent to the regression giving the largest t statistic.) Fulker et al. show that this method offers high precision for mapping and (unlike two-locus interval mapping) accounts for differences in the information content of adjacent markers. When only two markers are used, Fulker et al. show that QTL position is biased towards the more informative marker. Multipoint interval mapping avoids this problem by incorporating all the marker information along the entire chromosome. Since the multipoint regression is easily computed, there is little reason to prefer simple interval mapping (Equation 16.43) over multipoint mapping (Equation 16.45).",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b9"
+      ],
+      "bbox": [
+        75.0,
+        544.0,
+        1037.0,
+        992.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "An improved multipoint estimator is given by Kruglyak and Lander (1995b). While Equation 16.45 uses marker information to estimate the mean value of $ \\pi_{jt} $, Kruglyak and Lander use all the marker information to provide an ML estimate at each point along a chromosome of the actual distribution of ibd values (i.e., the probabilities at any particular chromosomal position that the pair shares zero, one, or two ibd alleles). An EM method (Appendix 4) is then used to compute the regression using this distribution, resulting in greater power than in an analysis one based simply on the estimated mean of $ \\pi_{jt} $. As before, regressions are computed at each point along a chromosome, generating a t statistic plot for the regression significance as a function of putative QTL position.",
+      "source_page": 535,
+      "printed_page": 515,
+      "source_block_ids": [
+        "p535:b10"
+      ],
+      "bbox": [
+        72.0,
+        990.0,
+        1035.0,
+        1315.0
+      ]
+    }
+  ]
+}

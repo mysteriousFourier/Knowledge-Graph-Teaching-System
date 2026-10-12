@@ -1,0 +1,115 @@
+{
+  "id": "Genetics_chapter13_016",
+  "metadata": {
+    "chapter": "Genetics_chapter13",
+    "section": "COMPLEX SEGREGATION ANALYSIS",
+    "subsections": [
+      "Ascertainment Bias"
+    ],
+    "section_level_1": "COMPLEX SEGREGATION ANALYSIS",
+    "section_level_2": "Ascertainment Bias",
+    "heading_path": [
+      "COMPLEX SEGREGATION ANALYSIS",
+      "Ascertainment Bias"
+    ],
+    "display_heading": "COMPLEX SEGREGATION ANALYSIS / Ascertainment Bias",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b2"
+      ],
+      "bbox": [
+        123.0,
+        137.0,
+        369.0,
+        169.0
+      ],
+      "raw_text": "Ascertainment Bias"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The preceding likelihood functions assume that families (or more generally, pedigrees) are chosen at random from the population as a whole. In many cases non-random sampling is much more efficient, as even a large random sample can miss pedigrees segregating a rare major gene. When pedigrees are not chosen at random, the likelihood function must be modified to account for how the observed pedigrees were sampled (ascertained). Pedigrees are ascertained through probands, individuals who cause a particular pedigree to enter the sample. As first noted by Weinberg (1927), failure to account for how probands are ascertained can bias the analysis.",
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b3"
+      ],
+      "bbox": [
+        121.0,
+        171.0,
+        1083.0,
+        470.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "To see the importance of correctly accounting for the sampling scheme, let $ \\ell(z_i \\cdot | g_f, g_m) $ denote the likelihood function for the $ i $th family, conditioned on the major-locus genotypes of the parents (Equation 13.11a). To obtain the unconditional likelihood, we compute the expectation of this likelihood over all possible parental genotypes giving Equation 13.11b,",
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b4"
+      ],
+      "bbox": [
+        125.0,
+        460.0,
+        1085.0,
+        637.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter13_formula041]]",
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b5"
+      ],
+      "bbox": [
+        385.0,
+        660.0,
+        830.0,
+        733.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In our previous treatment, we assumed that parents are chosen at random, so that (for a random-mating population) $ \\Pr(g_f, g_m) $ is entirely determined by p, the frequency of allele Q. However, if parents are not chosen at random, $ \\Pr(g_f, g_m) $ is no longer just a function of p, but also of how the parents were sampled.",
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b6"
+      ],
+      "bbox": [
+        131.0,
+        763.0,
+        1090.0,
+        900.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Unfortunately, using an incorrect model of ascertainment can create as much bias as performing an analysis without considering ascertainment problems. Ascertainment correction is a very complicated subject, the details of which we will not pursue further. Some basic concepts are reviewed by Morton (1959), Cavalli-Sforza and Bodmer (1971, see their Appendix II), and Elston (1980, 1981a). Recent important papers include Cannings and Thompson (1977), Elston and Sobel (1979), Ewens and Shute (1986), Shute and Ewens (1988a,b), Hodge (1988), and Vieland and Hodge (1995). A nice discussion of some of the subtleties inherent in defining ascertainment schemes is given by Greenberg (1986).",
+      "source_page": 388,
+      "printed_page": 368,
+      "source_block_ids": [
+        "p388:b7"
+      ],
+      "bbox": [
+        133.0,
+        891.0,
+        1096.0,
+        1193.0
+      ]
+    }
+  ]
+}

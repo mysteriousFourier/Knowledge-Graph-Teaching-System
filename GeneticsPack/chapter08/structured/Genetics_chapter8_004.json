@@ -1,0 +1,52 @@
+{
+  "id": "Genetics_chapter8_004",
+  "metadata": {
+    "chapter": "Genetics_chapter8",
+    "section": "ELEMENTARY MATRIX ALGEBRA",
+    "subsections": [],
+    "section_level_1": "ELEMENTARY MATRIX ALGEBRA",
+    "section_level_2": null,
+    "heading_path": [
+      "ELEMENTARY MATRIX ALGEBRA"
+    ],
+    "display_heading": "ELEMENTARY MATRIX ALGEBRA",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b4"
+      ],
+      "bbox": [
+        141.0,
+        857.0,
+        593.0,
+        890.0
+      ],
+      "raw_text": "ELEMENTARY MATRIX ALGEBRA"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The solutions of systems of linear equations generally involve the use of matrices and vectors of variables. For those with little familiarity with such constructs and their manipulations, the next few pages provide an overview of the basic tools of matrix algebra.",
+      "source_page": 198,
+      "printed_page": 178,
+      "source_block_ids": [
+        "p198:b5"
+      ],
+      "bbox": [
+        139.0,
+        919.0,
+        1100.0,
+        1053.0
+      ]
+    }
+  ]
+}

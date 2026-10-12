@@ -1,0 +1,432 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter24",
+  "count": 1,
+  "tables": [
+    {
+      "id": "24.1",
+      "label_format": "Table 24.1",
+      "title": "Table 24.1 Coefficients needed for the expressions describing the expected phenotypic covariance between relatives in a model that includes sex-linkage and sex-dependent gene expression.",
+      "table_type": "numbered",
+      "html": "<table><tr><td>Male-male relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>$ \\phi_{xy} $</td><td></td></tr><tr><td>Father-son</td><td>1/2</td><td>0</td><td>1/4</td><td></td></tr><tr><td>Full brothers</td><td>1/2</td><td>1/4</td><td>1/2</td><td></td></tr><tr><td>Paternal half brothers</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal half brothers</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandfather-grandson</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandfather-grandson</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Monozygotic twins</td><td>1</td><td>1</td><td>1</td><td></td></tr><tr><td>Female-female relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>2 $ \\Theta'_{xy} $</td><td>$ \\Delta'_{xy} $</td></tr><tr><td>Mother-daughter</td><td>1/2</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Full sisters</td><td>1/2</td><td>1/4</td><td>3/4</td><td>1/2</td></tr><tr><td>Paternal half sisters</td><td>1/4</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Maternal half sisters</td><td>1/4</td><td>0</td><td>1/4</td><td>0</td></tr><tr><td>Paternal grandmother-granddaughter</td><td>1/4</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Maternal grandmother-granddaughter</td><td>1/4</td><td>0</td><td>1/4</td><td>0</td></tr><tr><td>Monozygotic twins</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Male-female relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>$ \\gamma_{xy} $</td><td></td></tr><tr><td>Father-daughter</td><td>1/2</td><td>0</td><td>1</td><td></td></tr><tr><td>Mother-son</td><td>1/2</td><td>0</td><td>1</td><td></td></tr><tr><td>Full brother and sister</td><td>1/2</td><td>1/4</td><td>1/2</td><td></td></tr><tr><td>Paternal half brother and sister</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal half brother and sister</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandfather-granddaughter</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandfather-granddaughter</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandmother-grandson</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandmother-grandson</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr></table>",
+      "rows": [
+        [
+          "Male-male relationships",
+          "2 $ \\Theta_{xy} $",
+          "$ \\Delta_{xy} $",
+          "$ \\phi_{xy} $",
+          ""
+        ],
+        [
+          "Father-son",
+          "1/2",
+          "0",
+          "1/4",
+          ""
+        ],
+        [
+          "Full brothers",
+          "1/2",
+          "1/4",
+          "1/2",
+          ""
+        ],
+        [
+          "Paternal half brothers",
+          "1/4",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Maternal half brothers",
+          "1/4",
+          "0",
+          "1/2",
+          ""
+        ],
+        [
+          "Paternal grandfather-grandson",
+          "1/4",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Maternal grandfather-grandson",
+          "1/4",
+          "0",
+          "1/2",
+          ""
+        ],
+        [
+          "Monozygotic twins",
+          "1",
+          "1",
+          "1",
+          ""
+        ],
+        [
+          "Female-female relationships",
+          "2 $ \\Theta_{xy} $",
+          "$ \\Delta_{xy} $",
+          "2 $ \\Theta'_{xy} $",
+          "$ \\Delta'_{xy} $"
+        ],
+        [
+          "Mother-daughter",
+          "1/2",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "Full sisters",
+          "1/2",
+          "1/4",
+          "3/4",
+          "1/2"
+        ],
+        [
+          "Paternal half sisters",
+          "1/4",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "Maternal half sisters",
+          "1/4",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "Paternal grandmother-granddaughter",
+          "1/4",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "Maternal grandmother-granddaughter",
+          "1/4",
+          "0",
+          "1/4",
+          "0"
+        ],
+        [
+          "Monozygotic twins",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "Male-female relationships",
+          "2 $ \\Theta_{xy} $",
+          "$ \\Delta_{xy} $",
+          "$ \\gamma_{xy} $",
+          ""
+        ],
+        [
+          "Father-daughter",
+          "1/2",
+          "0",
+          "1",
+          ""
+        ],
+        [
+          "Mother-son",
+          "1/2",
+          "0",
+          "1",
+          ""
+        ],
+        [
+          "Full brother and sister",
+          "1/2",
+          "1/4",
+          "1/2",
+          ""
+        ],
+        [
+          "Paternal half brother and sister",
+          "1/4",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Maternal half brother and sister",
+          "1/4",
+          "0",
+          "1/2",
+          ""
+        ],
+        [
+          "Paternal grandfather-granddaughter",
+          "1/4",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Maternal grandfather-granddaughter",
+          "1/4",
+          "0",
+          "1/2",
+          ""
+        ],
+        [
+          "Paternal grandmother-grandson",
+          "1/4",
+          "0",
+          "0",
+          ""
+        ],
+        [
+          "Maternal grandmother-grandson",
+          "1/4",
+          "0",
+          "1/2",
+          ""
+        ]
+      ],
+      "notes": [],
+      "parts": [
+        {
+          "page": 733,
+          "title": "Table 24.1 Coefficients needed for the expressions describing the expected phenotypic covariance between relatives in a model that includes sex-linkage and sex-dependent gene expression.",
+          "html": "<table><tr><td>Male-male relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>$ \\phi_{xy} $</td><td></td></tr><tr><td>Father-son</td><td>1/2</td><td>0</td><td>1/4</td><td></td></tr><tr><td>Full brothers</td><td>1/2</td><td>1/4</td><td>1/2</td><td></td></tr><tr><td>Paternal half brothers</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal half brothers</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandfather-grandson</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandfather-grandson</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Monozygotic twins</td><td>1</td><td>1</td><td>1</td><td></td></tr><tr><td>Female-female relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>2 $ \\Theta'_{xy} $</td><td>$ \\Delta'_{xy} $</td></tr><tr><td>Mother-daughter</td><td>1/2</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Full sisters</td><td>1/2</td><td>1/4</td><td>3/4</td><td>1/2</td></tr><tr><td>Paternal half sisters</td><td>1/4</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Maternal half sisters</td><td>1/4</td><td>0</td><td>1/4</td><td>0</td></tr><tr><td>Paternal grandmother-granddaughter</td><td>1/4</td><td>0</td><td>1/2</td><td>0</td></tr><tr><td>Maternal grandmother-granddaughter</td><td>1/4</td><td>0</td><td>1/4</td><td>0</td></tr><tr><td>Monozygotic twins</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Male-female relationships</td><td>2 $ \\Theta_{xy} $</td><td>$ \\Delta_{xy} $</td><td>$ \\gamma_{xy} $</td><td></td></tr><tr><td>Father-daughter</td><td>1/2</td><td>0</td><td>1</td><td></td></tr><tr><td>Mother-son</td><td>1/2</td><td>0</td><td>1</td><td></td></tr><tr><td>Full brother and sister</td><td>1/2</td><td>1/4</td><td>1/2</td><td></td></tr><tr><td>Paternal half brother and sister</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal half brother and sister</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandfather-granddaughter</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandfather-granddaughter</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr><tr><td>Paternal grandmother-grandson</td><td>1/4</td><td>0</td><td>0</td><td></td></tr><tr><td>Maternal grandmother-grandson</td><td>1/4</td><td>0</td><td>1/2</td><td></td></tr></table>",
+          "rows": [
+            [
+              "Male-male relationships",
+              "2 $ \\Theta_{xy} $",
+              "$ \\Delta_{xy} $",
+              "$ \\phi_{xy} $",
+              ""
+            ],
+            [
+              "Father-son",
+              "1/2",
+              "0",
+              "1/4",
+              ""
+            ],
+            [
+              "Full brothers",
+              "1/2",
+              "1/4",
+              "1/2",
+              ""
+            ],
+            [
+              "Paternal half brothers",
+              "1/4",
+              "0",
+              "0",
+              ""
+            ],
+            [
+              "Maternal half brothers",
+              "1/4",
+              "0",
+              "1/2",
+              ""
+            ],
+            [
+              "Paternal grandfather-grandson",
+              "1/4",
+              "0",
+              "0",
+              ""
+            ],
+            [
+              "Maternal grandfather-grandson",
+              "1/4",
+              "0",
+              "1/2",
+              ""
+            ],
+            [
+              "Monozygotic twins",
+              "1",
+              "1",
+              "1",
+              ""
+            ],
+            [
+              "Female-female relationships",
+              "2 $ \\Theta_{xy} $",
+              "$ \\Delta_{xy} $",
+              "2 $ \\Theta'_{xy} $",
+              "$ \\Delta'_{xy} $"
+            ],
+            [
+              "Mother-daughter",
+              "1/2",
+              "0",
+              "1/2",
+              "0"
+            ],
+            [
+              "Full sisters",
+              "1/2",
+              "1/4",
+              "3/4",
+              "1/2"
+            ],
+            [
+              "Paternal half sisters",
+              "1/4",
+              "0",
+              "1/2",
+              "0"
+            ],
+            [
+              "Maternal half sisters",
+              "1/4",
+              "0",
+              "1/4",
+              "0"
+            ],
+            [
+              "Paternal grandmother-granddaughter",
+              "1/4",
+              "0",
+              "1/2",
+              "0"
+            ],
+            [
+              "Maternal grandmother-granddaughter",
+              "1/4",
+              "0",
+              "1/4",
+              "0"
+            ],
+            [
+              "Monozygotic twins",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "Male-female relationships",
+              "2 $ \\Theta_{xy} $",
+              "$ \\Delta_{xy} $",
+              "$ \\gamma_{xy} $",
+              ""
+            ],
+            [
+              "Father-daughter",
+              "1/2",
+              "0",
+              "1",
+              ""
+            ],
+            [
+              "Mother-son",
+              "1/2",
+              "0",
+              "1",
+              ""
+            ],
+            [
+              "Full brother and sister",
+              "1/2",
+              "1/4",
+              "1/2",
+              ""
+            ],
+            [
+              "Paternal half brother and sister",
+              "1/4",
+              "0",
+              "0",
+              ""
+            ],
+            [
+              "Maternal half brother and sister",
+              "1/4",
+              "0",
+              "1/2",
+              ""
+            ],
+            [
+              "Paternal grandfather-granddaughter",
+              "1/4",
+              "0",
+              "0",
+              ""
+            ],
+            [
+              "Maternal grandfather-granddaughter",
+              "1/4",
+              "0",
+              "1/2",
+              ""
+            ],
+            [
+              "Paternal grandmother-grandson",
+              "1/4",
+              "0",
+              "0",
+              ""
+            ],
+            [
+              "Maternal grandmother-grandson",
+              "1/4",
+              "0",
+              "1/2",
+              ""
+            ]
+          ],
+          "notes": [],
+          "bbox": [
+            59.0,
+            239.0,
+            1020.0,
+            1244.0
+          ],
+          "caption_bbox": [
+            61.0,
+            135.0,
+            1021.0,
+            228.0
+          ],
+          "source_block_ids": [
+            "p733:b3"
+          ],
+          "caption_source_block_ids": [
+            "p733:b2"
+          ]
+        }
+      ],
+      "book": "Genetics",
+      "source": {
+        "chapter": "Genetics_chapter24",
+        "unit_id": "Genetics_chapter24_005",
+        "page": 733,
+        "pages": [
+          733
+        ],
+        "bbox": [
+          59.0,
+          239.0,
+          1020.0,
+          1244.0
+        ],
+        "caption_bbox": [
+          61.0,
+          135.0,
+          1021.0,
+          228.0
+        ],
+        "source_pdf": "data/背景资料/Genetics.pdf",
+        "extraction_channel": "paddleocr_layout"
+      }
+    }
+  ]
+}

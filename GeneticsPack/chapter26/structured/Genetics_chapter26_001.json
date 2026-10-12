@@ -1,0 +1,38 @@
+{
+  "id": "Genetics_chapter26_001",
+  "metadata": {
+    "chapter": "Genetics_chapter26",
+    "section": "Genetics_chapter26",
+    "subsections": [],
+    "section_level_1": "Genetics_chapter26",
+    "section_level_2": null,
+    "heading_path": [
+      "Genetics_chapter26"
+    ],
+    "display_heading": "Genetics_chapter26",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "26",
+      "source_page": 757,
+      "printed_page": 737,
+      "source_block_ids": [
+        "p757:b0"
+      ],
+      "bbox": [
+        506.0,
+        69.0,
+        597.0,
+        137.0
+      ]
+    }
+  ]
+}

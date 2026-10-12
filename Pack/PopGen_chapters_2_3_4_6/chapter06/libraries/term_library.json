@@ -1,0 +1,1679 @@
+{
+  "book": "PopGen",
+  "chapter": "PopGen_chapter6",
+  "count": 41,
+  "terms": [
+    {
+      "id": "PopGen_term_0218",
+      "text": "A",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 436,
+          "end": 437,
+          "context": "was polymorphic for two alleles of an Esterase-B gene, which we will designate as alleles A and a, and also polymorphic for two alleles of an Esterase-D gene, which we will designat",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 442,
+          "end": 443,
+          "context": "lymorphic for two alleles of an Esterase-B gene, which we will designate as alleles A and a, and also polymorphic for two alleles of an Esterase-D gene, which we will designate as a",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_046",
+          "block_index": 7,
+          "start": 30,
+          "end": 31,
+          "context": "8. Consider sequences of gene A and gene B from each of two species. The fraction of sites that differ in gene A is 0.05 ",
+          "source_page": 394,
+          "source_block_ids": [
+            "PopGen_chapter7:p064:b9"
+          ],
+          "source_bboxes": [
+            [
+              192.0,
+              673.0,
+              700.0,
+              781.0
+            ]
+          ],
+          "source_content_sha256": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p064:b9": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_046",
+          "block_index": 7,
+          "start": 111,
+          "end": 112,
+          "context": " of gene A and gene B from each of two species. The fraction of sites that differ in gene A is 0.05 and the fraction of nucleotide sites that differ in gene B is 0.70. Apply the Juk",
+          "source_page": 394,
+          "source_block_ids": [
+            "PopGen_chapter7:p064:b9"
+          ],
+          "source_bboxes": [
+            [
+              192.0,
+              673.0,
+              700.0,
+              781.0
+            ]
+          ],
+          "source_content_sha256": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p064:b9": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0209",
+      "text": "allo means other",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 3,
+          "start": 162,
+          "end": 178,
+          "context": "les are not identical by descent, and the individual is said to be allozygous (the prefix allo means other). Note that the concepts of autozygosity and allozygosity have nothing to do with the sta",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0208",
+      "text": "auto means self",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 2,
+          "start": 812,
+          "end": 827,
+          "context": "alleles are identical by descent, and the individual is said to be autozygous (the prefix auto means self).",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              548,
+              863,
+              730
+            ]
+          ],
+          "source_content_sha256": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79",
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b4": "5524c3e5972cb43ad9884c09dbb94f3304b622856d2b74d662e3d98502cddb79"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0210",
+      "text": "Autozygous genotypes",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 4,
+          "start": 452,
+          "end": 472,
+          "context": "igree is usually short, in this case only one generation, mutation can safely be ignored. Autozygous genotypes must therefore be homozygous, whereas allozygous genotypes can be either homozygous or he",
+          "source_page": 273,
+          "source_block_ids": [
+            "PopGen_chapter6:p003:b8"
+          ],
+          "source_bboxes": [
+            [
+              101,
+              1001,
+              858,
+              1164
+            ]
+          ],
+          "source_content_sha256": "a974895de73e14b66f8e98824e38122359e22c85d7b3d73bdffc9869b5d5929c",
+          "source_content_hashes": {
+            "PopGen_chapter6:p003:b8": "a974895de73e14b66f8e98824e38122359e22c85d7b3d73bdffc9869b5d5929c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0216",
+      "text": "Avena barbata",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 1,
+          "start": 1457,
+          "end": 1470,
+          "context": "in predominantly self-fertilizing species such as barley (Hordeum vulgare) and wild oats (Avena barbata).",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b2"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              288,
+              1022,
+              821
+            ]
+          ],
+          "source_content_sha256": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b2": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0220",
+      "text": "B",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 540,
+          "end": 541,
+          "context": "lso polymorphic for two alleles of an Esterase-D gene, which we will designate as alleles B and b. The gametic types were found in the following proportions. For all practical purpo",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 546,
+          "end": 547,
+          "context": "lymorphic for two alleles of an Esterase-D gene, which we will designate as alleles B and b. The gametic types were found in the following proportions. For all practical purposes, t",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_046",
+          "block_index": 7,
+          "start": 41,
+          "end": 42,
+          "context": "8. Consider sequences of gene A and gene B from each of two species. The fraction of sites that differ in gene A is 0.05 and the fra",
+          "source_page": 394,
+          "source_block_ids": [
+            "PopGen_chapter7:p064:b9"
+          ],
+          "source_bboxes": [
+            [
+              192.0,
+              673.0,
+              700.0,
+              781.0
+            ]
+          ],
+          "source_content_sha256": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p064:b9": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter7",
+          "unit_id": "PopGen_chapter7_046",
+          "block_index": 7,
+          "start": 178,
+          "end": 179,
+          "context": "es that differ in gene A is 0.05 and the fraction of nucleotide sites that differ in gene B is 0.70. Apply the Jukes-Cantor correction for multiple hits to obtain the estimate of th",
+          "source_page": 394,
+          "source_block_ids": [
+            "PopGen_chapter7:p064:b9"
+          ],
+          "source_bboxes": [
+            [
+              192.0,
+              673.0,
+              700.0,
+              781.0
+            ]
+          ],
+          "source_content_sha256": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5",
+          "source_content_hashes": {
+            "PopGen_chapter7:p064:b9": "50e0c1c3e8502f46f889ef7e8732316e728089d5d5e5daf7accc2c771b4540d5"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0243",
+      "text": "Chaetodipus intermedius",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_026",
+          "block_index": 3,
+          "start": 121,
+          "end": 144,
+          "context": "ation 6.25 is reported in Hoekstra et al. (2004). These authors studied rock-pocket mice (Chaetodipus intermedius) in southern Arizona, where there is a gradient in habitat color from the presence of dar",
+          "source_page": 322,
+          "source_block_ids": [
+            "PopGen_chapter6:p052:b6"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              851,
+              1025,
+              1248
+            ]
+          ],
+          "source_content_sha256": "0b41db3c94db4459af8bef72911c96de492f7bb9d354c17a46fea3dd20a6d814",
+          "source_content_hashes": {
+            "PopGen_chapter6:p052:b6": "0b41db3c94db4459af8bef72911c96de492f7bb9d354c17a46fea3dd20a6d814"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0207",
+      "text": "coalesce",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 1,
+          "start": 185,
+          "end": 193,
+          "context": "races the ancestries of alleles into the past, their ancestral lineages come together, or coalesce, reducing the number of ancestral alleles, until ultimately only one common ancestral all",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              792,
+              1030,
+              1162
+            ]
+          ],
+          "source_content_sha256": "bf86ba234c7e86d0015f3f4dc92a509701dc7e02e95d69e3bd951e742c5dda3c",
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b4": "bf86ba234c7e86d0015f3f4dc92a509701dc7e02e95d69e3bd951e742c5dda3c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0242",
+      "text": "D. persimilis",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_025",
+          "block_index": 5,
+          "start": 1677,
+          "end": 1690,
+          "context": " analyzed data from many loci in the closely related species Drosophila pseudoobscura and D. persimilis. They estimate the divergence time at $ \\sim600{,}000 $ years, very close to the conventi",
+          "source_page": 321,
+          "source_block_ids": [
+            "PopGen_chapter6:p051:b3"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              867,
+              871,
+              1185
+            ]
+          ],
+          "source_content_sha256": "394d87ad393f00504fbb75db4a047017a48c05a0090c4b150cba99a2ba301a01",
+          "source_content_hashes": {
+            "PopGen_chapter6:p051:b3": "394d87ad393f00504fbb75db4a047017a48c05a0090c4b150cba99a2ba301a01"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0217",
+      "text": "Esterase-B",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 384,
+          "end": 394,
+          "context": "ditions without conscious selection. The population was polymorphic for two alleles of an Esterase-B gene, which we will designate as alleles A and a, and also polymorphic for two alleles of",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0219",
+      "text": "Esterase-D",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 2,
+          "start": 488,
+          "end": 498,
+          "context": "e, which we will designate as alleles A and a, and also polymorphic for two alleles of an Esterase-D gene, which we will designate as alleles B and b. The gametic types were found in the fol",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              824,
+              1024,
+              1090
+            ]
+          ],
+          "source_content_sha256": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b3": "193556fefa90434572d929b8616e6d4d5bcadcf3d7ea3a23b7d14c8699705c89"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0225",
+      "text": "genetic differentiation",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_008",
+          "block_index": 0,
+          "start": 410,
+          "end": 433,
+          "context": "es of aggregations. When there is population subdivision, there is almost inevitably some genetic differentiation among the subpopulations. By genetic differentiation we mean that the allele frequencies ",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              1002,
+              859,
+              1378
+            ]
+          ],
+          "source_content_sha256": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b4": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_008",
+          "block_index": 0,
+          "start": 463,
+          "end": 486,
+          "context": "ion, there is almost inevitably some genetic differentiation among the subpopulations. By genetic differentiation we mean that the allele frequencies among the subpopulations become different. Genetic di",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              1002,
+              859,
+              1378
+            ]
+          ],
+          "source_content_sha256": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b4": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0232",
+      "text": "great",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 4,
+          "start": 35,
+          "end": 40,
+          "context": "• The range 0.15 to 0.25 indicates great genetic differentiation.",
+          "source_page": 297,
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b4"
+          ],
+          "source_bboxes": [
+            [
+              117,
+              481,
+              728,
+              504
+            ]
+          ],
+          "source_content_sha256": "beb8b8c0552504ec98968ecbcf2caac5974e8ca65594e7438001c3e8f8586594",
+          "source_content_hashes": {
+            "PopGen_chapter6:p027:b4": "beb8b8c0552504ec98968ecbcf2caac5974e8ca65594e7438001c3e8f8586594"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0245",
+      "text": "Helix pomatia",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_030",
+          "block_index": 12,
+          "start": 126,
+          "end": 139,
+          "context": "Germany, a verdant meadow serves as home to subpopulations of the incredible edible snail Helix pomatia. The subpopulations differ in the allele frequency of a mutation affecting shell colorati",
+          "source_page": 329,
+          "source_block_ids": [
+            "PopGen_chapter6:p059:b7"
+          ],
+          "source_bboxes": [
+            [
+              113,
+              598,
+              863,
+              783
+            ]
+          ],
+          "source_content_sha256": "0344a8c342235a33373486279e047b43390c886b21029d8f792ea5fde195be1b",
+          "source_content_hashes": {
+            "PopGen_chapter6:p059:b7": "0344a8c342235a33373486279e047b43390c886b21029d8f792ea5fde195be1b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0222",
+      "text": "heterosis",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 4,
+          "start": 1252,
+          "end": 1261,
+          "context": "er inbred parent. The phenomenon of enhanced hybrid performance is called hybrid vigor or heterosis. In practice, inbred lines are crossed in many combinations to identify those that produc",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b2"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              309,
+              864,
+              921
+            ]
+          ],
+          "source_content_sha256": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b2": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0229",
+      "text": "hierarchical F-statistics",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_011",
+          "block_index": 5,
+          "start": 4,
+          "end": 29,
+          "context": "The hierarchical F-statistics defined in Equations 6.9 through 6.11 are all types of fixation indices, but they differ ",
+          "source_page": 296,
+          "source_block_ids": [
+            "PopGen_chapter6:p026:b8"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              820,
+              1030,
+              979
+            ]
+          ],
+          "source_content_sha256": "69fb05b028c3eed5bd669b3e062047b3b1b8ebfc221b38edfc538d98e025320a",
+          "source_content_hashes": {
+            "PopGen_chapter6:p026:b8": "69fb05b028c3eed5bd669b3e062047b3b1b8ebfc221b38edfc538d98e025320a"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0226",
+      "text": "hierarchical population structure",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_008",
+          "block_index": 2,
+          "start": 24,
+          "end": 57,
+          "context": "Many populations have a hierarchical population structure, which means that the subpopulations can be grouped into progressively inclusive levels i",
+          "source_page": 290,
+          "source_block_ids": [
+            "PopGen_chapter6:p020:b2"
+          ],
+          "source_bboxes": [
+            [
+              276,
+              582,
+              1032,
+              1141
+            ]
+          ],
+          "source_content_sha256": "10ebf6ebde8a6eb5edcc70908cfed5440a95c6ff68799f93d4f156232d226256",
+          "source_content_hashes": {
+            "PopGen_chapter6:p020:b2": "10ebf6ebde8a6eb5edcc70908cfed5440a95c6ff68799f93d4f156232d226256"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0215",
+      "text": "Hordeum vulgare",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 1,
+          "start": 1425,
+          "end": 1440,
+          "context": " disequilibrium have been found in predominantly self-fertilizing species such as barley (Hordeum vulgare) and wild oats (Avena barbata).",
+          "source_page": 288,
+          "source_block_ids": [
+            "PopGen_chapter6:p018:b2"
+          ],
+          "source_bboxes": [
+            [
+              268,
+              288,
+              1022,
+              821
+            ]
+          ],
+          "source_content_sha256": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23",
+          "source_content_hashes": {
+            "PopGen_chapter6:p018:b2": "c0045fe761caec0bb2f40397a70935f8c422c80141803cae9056bac100b66d23"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0221",
+      "text": "hybrid vigor",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 4,
+          "start": 1236,
+          "end": 1248,
+          "context": " yield than either inbred parent. The phenomenon of enhanced hybrid performance is called hybrid vigor or heterosis. In practice, inbred lines are crossed in many combinations to identify thos",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b2"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              309,
+              864,
+              921
+            ]
+          ],
+          "source_content_sha256": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b2": "1a7788b1e37a3cbe5c28f2d4b27dc8d900bb2dce9986f50c1328cc131eb316bd"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0211",
+      "text": "identity by descent",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_004",
+          "block_index": 1,
+          "start": 207,
+          "end": 226,
+          "context": "sequence of nucleotides along the DNA, without being identical by descent. The concept of identity by descent pertains to the ancestral origin of an allele and not to its chemical makeup.",
+          "source_page": 274,
+          "source_block_ids": [
+            "PopGen_chapter6:p004:b4"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              1251,
+              1027,
+              1384
+            ]
+          ],
+          "source_content_sha256": "76f0ccafad513dcf4dbfedb33b8a4c8bf5d92adee751b39ad80691621155c018",
+          "source_content_hashes": {
+            "PopGen_chapter6:p004:b4": "76f0ccafad513dcf4dbfedb33b8a4c8bf5d92adee751b39ad80691621155c018"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0240",
+      "text": "IM model",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_025",
+          "block_index": 5,
+          "start": 366,
+          "end": 374,
+          "context": "o this situation, too, using the model diagrammed in Figure 6.25. The model is called the IM model, where IM stands for isolation with migration (Nielsen and Wakeley 2001; Hey and Nielsen ",
+          "source_page": 320,
+          "source_block_ids": [
+            "PopGen_chapter6:p050:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              1015,
+              1027,
+              1391
+            ]
+          ],
+          "source_content_sha256": "ad5fe44e29827fb98b382d9cc4d4e70629debacb971d119cd7545bcfdcda50c0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p050:b3": "ad5fe44e29827fb98b382d9cc4d4e70629debacb971d119cd7545bcfdcda50c0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0206",
+      "text": "inbreeding coefficient",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_003",
+          "block_index": 0,
+          "start": 648,
+          "end": 670,
+          "context": "tion of the same DNA molecule in a previous generation, in this case in generation 0. The inbreeding coefficient, typically denoted by the symbol F, is defined as the probability that the two alleles at",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b3"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              443,
+              1029,
+              789
+            ]
+          ],
+          "source_content_sha256": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13",
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b3": "f28b91f48adff2c49a2032ba7a90cde7c696cb8885e2df2a11082b560a845f13"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0205",
+      "text": "inbreeding coefficient",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_002",
+          "block_index": 0,
+          "start": 747,
+          "end": 769,
+          "context": "eering insight is due to Wright (1922), who formulated a measure of inbreeding called the inbreeding coefficient in terms of the correlation between uniting gametes. A later interpretation of the inbree",
+          "source_page": 272,
+          "source_block_ids": [
+            "PopGen_chapter6:p002:b1"
+          ],
+          "source_bboxes": [
+            [
+              277,
+              201,
+              1028,
+              388
+            ]
+          ],
+          "source_content_sha256": "8f50dc94f88393953484a68e63dfbf01c9d2faae9fa5c631f7bfff6a544543f2",
+          "source_content_hashes": {
+            "PopGen_chapter6:p002:b1": "8f50dc94f88393953484a68e63dfbf01c9d2faae9fa5c631f7bfff6a544543f2"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0212",
+      "text": "inbreeding depression",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_005",
+          "block_index": 2,
+          "start": 42,
+          "end": 63,
+          "context": "Detrimental effects of inbreeding, called inbreeding depression, are found in virtually all outcrossing species, and the more intense the inbreeding, the",
+          "source_page": 280,
+          "source_block_ids": [
+            "PopGen_chapter6:p010:b5"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              1099,
+              1028,
+              1393
+            ]
+          ],
+          "source_content_sha256": "03c9ba82fff64646e200b43c0a5a59005cb4f85462cbc9e76bd82278ca4e2932",
+          "source_content_hashes": {
+            "PopGen_chapter6:p010:b5": "03c9ba82fff64646e200b43c0a5a59005cb4f85462cbc9e76bd82278ca4e2932"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0236",
+      "text": "industrial melanism",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_023",
+          "block_index": 6,
+          "start": 348,
+          "end": 367,
+          "context": ". Both species have evolved melanic (blackened) forms in response to heavy air pollution (industrial melanism, see Chapter 2), and the graphs give the frequency of the melanic forms in the two specie",
+          "source_page": 316,
+          "source_block_ids": [
+            "PopGen_chapter6:p046:b1"
+          ],
+          "source_bboxes": [
+            [
+              271,
+              212,
+              1021,
+              506
+            ]
+          ],
+          "source_content_sha256": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b",
+          "source_content_hashes": {
+            "PopGen_chapter6:p046:b1": "95880ccedc61e23836ae7053c08bf3f6a22ee253807001f7b5163615dcd9f72b"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0239",
+      "text": "introgression",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_025",
+          "block_index": 5,
+          "start": 215,
+          "end": 228,
+          "context": " Migration resulting in genes flowing from one species into a related species is known as introgression. The principles of coalescence can be applied to this situation, too, using the model dia",
+          "source_page": 320,
+          "source_block_ids": [
+            "PopGen_chapter6:p050:b3"
+          ],
+          "source_bboxes": [
+            [
+              269,
+              1015,
+              1027,
+              1391
+            ]
+          ],
+          "source_content_sha256": "ad5fe44e29827fb98b382d9cc4d4e70629debacb971d119cd7545bcfdcda50c0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p050:b3": "ad5fe44e29827fb98b382d9cc4d4e70629debacb971d119cd7545bcfdcda50c0"
+          },
+          "subject_index": {
+            "entry": "introgression",
+            "printed_pages": [
+              306,
+              496
+            ],
+            "master_pages": [
+              320,
+              510
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0228",
+      "text": "isolation by distance",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_010",
+          "block_index": 6,
+          "start": 155,
+          "end": 176,
+          "context": " levels of heterozygosity were originally developed by Wright (1943a,b), in his theory of isolation by distance, to quantify genetic differences among subgroups at the various levels. The motivation fo",
+          "source_page": 295,
+          "source_block_ids": [
+            "PopGen_chapter6:p025:b1"
+          ],
+          "source_bboxes": [
+            [
+              114,
+              201,
+              867,
+              332
+            ]
+          ],
+          "source_content_sha256": "23aaf2c9ce21e0da6950e1880c928584b61e46398bfa320ccd827e5c1b3069e8",
+          "source_content_hashes": {
+            "PopGen_chapter6:p025:b1": "23aaf2c9ce21e0da6950e1880c928584b61e46398bfa320ccd827e5c1b3069e8"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0234",
+      "text": "L. parryae",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_013",
+          "block_index": 0,
+          "start": 44,
+          "end": 54,
+          "context": "Studies of subpopulation differentiation in L. parryae have been carried out for over 60 years, and the history is thoroughly documented in Sche",
+          "source_page": 299,
+          "source_block_ids": [
+            "PopGen_chapter6:p029:b3"
+          ],
+          "source_bboxes": [
+            [
+              110,
+              334,
+              861,
+              624
+            ]
+          ],
+          "source_content_sha256": "c5879bb7bbe9b19d87ec8a10972e40b8ad5cafab05d3440b8702c5114ddc3c08",
+          "source_content_hashes": {
+            "PopGen_chapter6:p029:b3": "c5879bb7bbe9b19d87ec8a10972e40b8ad5cafab05d3440b8702c5114ddc3c08"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_013",
+          "block_index": 0,
+          "start": 830,
+          "end": 840,
+          "context": "om genetic drift. But Epling was not so sure. He went on to demonstrate that the seeds of L. parryae can survive in the soil and germinate for as long as at least seven years (Epling et al. ",
+          "source_page": 299,
+          "source_block_ids": [
+            "PopGen_chapter6:p029:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              628,
+              859,
+              997
+            ]
+          ],
+          "source_content_sha256": "b11db454d1d1faa33e3fa14bb7af8b04e8b23a89f41a94b28f224c7118700366",
+          "source_content_hashes": {
+            "PopGen_chapter6:p029:b4": "b11db454d1d1faa33e3fa14bb7af8b04e8b23a89f41a94b28f224c7118700366"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_013",
+          "block_index": 1,
+          "start": 11,
+          "end": 21,
+          "context": "Studies of L. parryae in the Mojave desert were taken up again in 1988 by Schemske and Bierzychudek (2001), who",
+          "source_page": 299,
+          "source_block_ids": [
+            "PopGen_chapter6:p029:b5"
+          ],
+          "source_bboxes": [
+            [
+              104,
+              1002,
+              857,
+              1375
+            ]
+          ],
+          "source_content_sha256": "a7c4eb16736d9010670370ac55bf89de0f19ad0d4e148fba936d35c06c2eff8c",
+          "source_content_hashes": {
+            "PopGen_chapter6:p029:b5": "a7c4eb16736d9010670370ac55bf89de0f19ad0d4e148fba936d35c06c2eff8c"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0235",
+      "text": "Linanthus",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_013",
+          "block_index": 0,
+          "start": 1376,
+          "end": 1385,
+          "context": "etic drift. But Wright remained unconvinced, and he was not about to give up. He had made Linanthus the observational cornerstone of his theory of isolation by distance (Wright 1943b), and ",
+          "source_page": 299,
+          "source_block_ids": [
+            "PopGen_chapter6:p029:b4"
+          ],
+          "source_bboxes": [
+            [
+              107,
+              628,
+              859,
+              997
+            ]
+          ],
+          "source_content_sha256": "b11db454d1d1faa33e3fa14bb7af8b04e8b23a89f41a94b28f224c7118700366",
+          "source_content_hashes": {
+            "PopGen_chapter6:p029:b4": "b11db454d1d1faa33e3fa14bb7af8b04e8b23a89f41a94b28f224c7118700366"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0227",
+      "text": "Linanthus parryae",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_010",
+          "block_index": 0,
+          "start": 60,
+          "end": 77,
+          "context": "In the Mojave desert, local populations of the annual plant Linanthus parryae are polymorphic for white versus blue flowers. The plant is diminutive, averaging just 1 ",
+          "source_page": 292,
+          "source_block_ids": [
+            "PopGen_chapter6:p022:b4"
+          ],
+          "source_bboxes": [
+            [
+              272,
+              987,
+              1026,
+              1225
+            ]
+          ],
+          "source_content_sha256": "d30ad9bad02741348eac8882c7ed3e60fe9396165c54d75edc04a5fb2d5d5050",
+          "source_content_hashes": {
+            "PopGen_chapter6:p022:b4": "d30ad9bad02741348eac8882c7ed3e60fe9396165c54d75edc04a5fb2d5d5050"
+          },
+          "subject_index": null
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_028",
+          "block_index": 4,
+          "start": 79,
+          "end": 96,
+          "context": "7. A blue versus white polymorphism in flower color in the “desert snow” plant Linanthus parryae in the Mojave desert became the classic example of isolation by distance in an organism w",
+          "source_page": 324,
+          "source_block_ids": [
+            "PopGen_chapter6:p054:b7"
+          ],
+          "source_bboxes": [
+            [
+              330,
+              1052,
+              1074,
+              1288
+            ]
+          ],
+          "source_content_sha256": "8f62584b90fefff4a3e1b71e916bb017ff202f2dd720af64b9521fe7870ac0e6",
+          "source_content_hashes": {
+            "PopGen_chapter6:p054:b7": "8f62584b90fefff4a3e1b71e916bb017ff202f2dd720af64b9521fe7870ac0e6"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0230",
+      "text": "little",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 2,
+          "start": 582,
+          "end": 588,
+          "context": "r the interpretation of $ F_{ST} $: - The range 0 to 0.05 may be considered as indicating little genetic differentiation.",
+          "source_page": 297,
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b2"
+          ],
+          "source_bboxes": [
+            [
+              117,
+              401,
+              771,
+              449
+            ]
+          ],
+          "source_content_sha256": "245f52ebb1051bc0c267e49a0ff7d18d088b811662175c2cddd816f5dccb64c7",
+          "source_content_hashes": {
+            "PopGen_chapter6:p027:b2": "245f52ebb1051bc0c267e49a0ff7d18d088b811662175c2cddd816f5dccb64c7"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0244",
+      "text": "Mc1r",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_026",
+          "block_index": 5,
+          "start": 312,
+          "end": 316,
+          "context": "ly on the mitochondrial markers and an estimate of the effective population size. Their $ Mc1r $ sequences provided values for $ q $, the frequency of the recessive nonmelanic allele $",
+          "source_page": 323,
+          "source_block_ids": [
+            "PopGen_chapter6:p053:b7"
+          ],
+          "source_bboxes": [
+            [
+              108,
+              786,
+              864,
+              1026
+            ]
+          ],
+          "source_content_sha256": "8b3d78a06dcde31c164fb3ec6c9dbaf02cb1c9057c8dffeb89507238d705c8f4",
+          "source_content_hashes": {
+            "PopGen_chapter6:p053:b7": "8b3d78a06dcde31c164fb3ec6c9dbaf02cb1c9057c8dffeb89507238d705c8f4"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0241",
+      "text": "Metropolis–Hastings Markov chain Monte Carlo",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_025",
+          "block_index": 5,
+          "start": 1322,
+          "end": 1366,
+          "context": "and G is a genealogy based on some particular set of parameters $ P_{0} $. Application of Metropolis–Hastings Markov chain Monte Carlo to this situation is described by Hey and Nielsen (2004). In their analysis they also exp",
+          "source_page": 321,
+          "source_block_ids": [
+            "PopGen_chapter6:p051:b3"
+          ],
+          "source_bboxes": [
+            [
+              115,
+              867,
+              871,
+              1185
+            ]
+          ],
+          "source_content_sha256": "394d87ad393f00504fbb75db4a047017a48c05a0090c4b150cba99a2ba301a01",
+          "source_content_hashes": {
+            "PopGen_chapter6:p051:b3": "394d87ad393f00504fbb75db4a047017a48c05a0090c4b150cba99a2ba301a01"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0231",
+      "text": "moderate",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 3,
+          "start": 35,
+          "end": 43,
+          "context": "• The range 0.05 to 0.15 indicates moderate genetic differentiation.",
+          "source_page": 297,
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b3"
+          ],
+          "source_bboxes": [
+            [
+              117,
+              454,
+              762,
+              477
+            ]
+          ],
+          "source_content_sha256": "b71e149728a8d309b5f1d1b0ee76f032505b3e164e7187589950bfd775c2cc39",
+          "source_content_hashes": {
+            "PopGen_chapter6:p027:b3": "b71e149728a8d309b5f1d1b0ee76f032505b3e164e7187589950bfd775c2cc39"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0213",
+      "text": "panmictic index",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 0,
+          "start": 1010,
+          "end": 1025,
+          "context": "equation is easy to solve in terms of the quantity $ 1 - F_t $, which is often called the panmictic index (panmixia) is an old-fashioned word for random mating). Multiplying both sides of the equ",
+          "source_page": 287,
+          "source_block_ids": [
+            "PopGen_chapter6:p017:b3"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              495,
+              863,
+              682
+            ]
+          ],
+          "source_content_sha256": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf",
+          "source_content_hashes": {
+            "PopGen_chapter6:p017:b3": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0214",
+      "text": "panmixia",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_007",
+          "block_index": 0,
+          "start": 1027,
+          "end": 1035,
+          "context": "to solve in terms of the quantity $ 1 - F_t $, which is often called the panmictic index (panmixia) is an old-fashioned word for random mating). Multiplying both sides of the equation for ",
+          "source_page": 287,
+          "source_block_ids": [
+            "PopGen_chapter6:p017:b3"
+          ],
+          "source_bboxes": [
+            [
+              112,
+              495,
+              863,
+              682
+            ]
+          ],
+          "source_content_sha256": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf",
+          "source_content_hashes": {
+            "PopGen_chapter6:p017:b3": "ea29e760892f89a9e88d2d6f65146442d75eb308a246025ee86166f535f361bf"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0223",
+      "text": "population structure",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_008",
+          "block_index": 0,
+          "start": 122,
+          "end": 142,
+          "context": "o smaller subpopulations within which mating usually takes place. Such grouping is called population structure or population subdivision, and it is almost universal among organisms. Many organisms nat",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              1002,
+              859,
+              1378
+            ]
+          ],
+          "source_content_sha256": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b4": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0224",
+      "text": "population subdivision",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_008",
+          "block_index": 0,
+          "start": 146,
+          "end": 168,
+          "context": " within which mating usually takes place. Such grouping is called population structure or population subdivision, and it is almost universal among organisms. Many organisms naturally form subpopulations",
+          "source_page": 289,
+          "source_block_ids": [
+            "PopGen_chapter6:p019:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              1002,
+              859,
+              1378
+            ]
+          ],
+          "source_content_sha256": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0",
+          "source_content_hashes": {
+            "PopGen_chapter6:p019:b4": "baa4c35de6881553cefc7722728df2cc6e4966b05370626d5ba6a3048ec51fc0"
+          },
+          "subject_index": null
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0237",
+      "text": "private allele",
+      "style": "bold",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_023",
+          "block_index": 7,
+          "start": 813,
+          "end": 827,
+          "context": "nough to be dispersed by migration. An allele found in only one subpopulation is called a private allele. Next we shall see that the rate of migration can be estimated by an examination of the f",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b2"
+          ],
+          "source_bboxes": [
+            [
+              111,
+              604,
+              861,
+              686
+            ]
+          ],
+          "source_content_sha256": "315a49c794a852aac5a0b8a7de905defc9ea0dc582faf902da30dfef2b6b5347",
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b2": "315a49c794a852aac5a0b8a7de905defc9ea0dc582faf902da30dfef2b6b5347"
+          },
+          "subject_index": {
+            "entry": "private alleles",
+            "printed_pages": [
+              302,
+              303
+            ],
+            "master_pages": [
+              316,
+              317
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0238",
+      "text": "private alleles",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_024",
+          "block_index": 0,
+          "start": 215,
+          "end": 230,
+          "context": "rithm of $ N_m $ decreases approximately as a linear function of the average frequency of private alleles in samples from the subpopulations (Slatkin 1985). Data on the average frequency of priva",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              739,
+              857,
+              1003
+            ]
+          ],
+          "source_content_sha256": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a",
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b4": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a"
+          },
+          "subject_index": {
+            "entry": "private alleles",
+            "printed_pages": [
+              302,
+              303
+            ],
+            "master_pages": [
+              316,
+              317
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        },
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_024",
+          "block_index": 0,
+          "start": 315,
+          "end": 330,
+          "context": "leles in samples from the subpopulations (Slatkin 1985). Data on the average frequency of private alleles has been compiled and analyzed by Slatkin (1985), and the resulting estimates of $ N_m $ ",
+          "source_page": 317,
+          "source_block_ids": [
+            "PopGen_chapter6:p047:b4"
+          ],
+          "source_bboxes": [
+            [
+              106,
+              739,
+              857,
+              1003
+            ]
+          ],
+          "source_content_sha256": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a",
+          "source_content_hashes": {
+            "PopGen_chapter6:p047:b4": "2d11c97fa0bfc8d09203776c996d42bf3c8fdf47567e62a8a00f9af1afcefe5a"
+          },
+          "subject_index": {
+            "entry": "private alleles",
+            "printed_pages": [
+              302,
+              303
+            ],
+            "master_pages": [
+              316,
+              317
+            ],
+            "evidence": "tmp/book_audits/PopGen/source/subject_index_rapidocr/rapidocr.json"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PopGen_term_0233",
+      "text": "very great",
+      "style": "italic",
+      "book": "PopGen",
+      "occurrences": [
+        {
+          "chapter": "PopGen_chapter6",
+          "unit_id": "PopGen_chapter6_012",
+          "block_index": 5,
+          "start": 43,
+          "end": 53,
+          "context": "• Values of $ F_{ST} $ above 0.25 indicate very great genetic differentiation.",
+          "source_page": 297,
+          "source_block_ids": [
+            "PopGen_chapter6:p027:b5"
+          ],
+          "source_bboxes": [
+            [
+              116,
+              508,
+              784,
+              533
+            ]
+          ],
+          "source_content_sha256": "3d63ca333ffd5501524d66a41dadb88952d02b26df5c1ceea3d73e7403c6890c",
+          "source_content_hashes": {
+            "PopGen_chapter6:p027:b5": "3d63ca333ffd5501524d66a41dadb88952d02b26df5c1ceea3d73e7403c6890c"
+          },
+          "subject_index": null
+        }
+      ]
+    }
+  ]
+}

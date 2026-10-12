@@ -1,0 +1,521 @@
+{
+  "id": "PopGen_chapter2_007",
+  "metadata": {
+    "chapter": "PopGen_chapter2",
+    "section": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "subsections": [
+      "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter2_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "ORGANIZATION OF GENETIC VARIATION: Introduction",
+    "section_level_2": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+    "heading_path": [
+      "ORGANIZATION OF GENETIC VARIATION: Introduction",
+      "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM"
+    ],
+    "display_heading": "2.3 TESTING FOR HARDY-WEINBERG EQUILIBRIUM",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter2:p010:b4"
+      ]
+    },
+    "chapter_title": "Organization of Genetic Variation"
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As a concrete example of the application of the Hardy-Weinberg principle, we will use a common polymorphism in the human gene encoding a multifunctional transcription factor protein known as p53. This protein is one of the genome's key players in preventing cancer, as evidenced by the observation that mutations in p53 are among the most common genetic changes found in cancers. The p53 protein is activated by DNA damage or other problems in DNA synthesis. When activated, p53 turns on transcription of a number of other genes encoding proteins that interrupt the cell cycle until the damage can be repaired; if the damage cannot be repaired, the proteins cause the cell to undergo programmed cell death. The p53 protein also helps regulate the formation of blood vessels and is a mediator of pregnancy by estrogen and progesterone activation.",
+      "source_page": 68,
+      "source_pages": [
+        68
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p010:b5"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          811.0,
+          1026.0,
+          1129.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "bb3d6dd7338071eb7c4766dad1e4636431e76ec33fb6c3e02353b917a12bc3aa",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The human population has a common amino acid polymorphism in p53, in which the amino acid at position 72 can be either arginine (Arg) or proline (Pro). It will be convenient to call these the corresponding alleles Arg and Pro. In homozygous genotypes, the Arg allele is weakly associated with cutaneous melanoma <sup>[653]</sup>, whereas the Pro allele is weakly associated with recurrent spontaneous abortions <sup>[557]</sup>.",
+      "source_page": 68,
+      "source_pages": [
+        68
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p010:b6"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          1133.0,
+          1027.0,
+          1289.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "26b2fdd9bfd454c9ed0fa35a83a66d190fdbd58b355e16a22200e6bfa68cd866",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "In one study of the p53 polymorphism among 318 Caucasians <sup>[557]</sup>, the observed number for each genotype was 166 Arg/Arg, 120 Arg/Pro, and 32 Pro/Pro. To determine whether these genotype frequencies are in accord with HWE, the allele frequencies of Arg and Pro must first be estimated. The estimated allele frequency $ \\hat{p} $ of Arg is $ (2 \\times 166 + 120)/(2 \\times 318) = 0.7107 $ and the frequency $ \\hat{q} $ of Pro is $ (120 + 2 \\times 32 + 120)/(2 \\times 318) = 0.2893 $. Were the population in HWE, we would expect the genotype frequencies of Arg/Arg, Arg/Pro, and Pro/Pro to be $ p^2 $, $ 2pq $, and $ q^2 $, respectively, where p and q are the allele frequencies in the underlying population from which the sample was drawn. Because p and q are parameters, their true values are unknown. However, in testing for HWE we can substitute the estimated values to obtain the expected proportions Arg/Arg: $ (0.7107)^2 = 0.5051 $, Arg/Pro: $ 2(0.7107)(0.2893) = 0.4112 $, and Pro/Pro: $ (0.2893)^2 = 0.0837 $, respectively. Because the sample size is 318, the expected numbers of the Arg/Arg, Arg/Pro, and Pro/Pro genotypes are $ 0.5051 \\times 318 = 160.6 $, $ 0.4112 \\times 318 = 130.8 $, and $ 0.0837 \\times 318 = 26.6 $, respectively.",
+      "source_page": 68,
+      "source_pages": [
+        68,
+        69
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p010:b7",
+        "PopGen_chapter2:p011:b1"
+      ],
+      "source_bboxes": [
+        [
+          273.0,
+          1293.0,
+          1028.0,
+          1371.0
+        ],
+        [
+          119.0,
+          198.0,
+          871.0,
+          540.0
+        ]
+      ],
+      "provenance_score": 0.951165,
+      "content_sha256": "43966e7b3f394aa2cf86d9b196658e754eb54e9e25d9127aa6d795f3d12adee8",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "At this point, it is convenient to tabulate the data into three columns:",
+      "source_page": 69,
+      "source_pages": [
+        69
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p011:b2"
+      ],
+      "source_bboxes": [
+        [
+          152.0,
+          545.0,
+          830.0,
+          568.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "18b65d3f9b48f134244a952c149afb77090ede9ff8f808fe4e8e4c97745ec204",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "table",
+      "content": "[[see_table:inline_p53_observed_expected]]",
+      "source_page": 69,
+      "source_pages": [
+        69
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p011:b2",
+        "PopGen_chapter2:p011:b3"
+      ],
+      "source_bboxes": [
+        [
+          152.0,
+          545.0,
+          830.0,
+          568.0
+        ],
+        [
+          150.0,
+          576.0,
+          823.0,
+          666.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "fe5e632396a84e4485eaa5ad45b255e0d504b96a243dee9918b761f878dc9f41",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "With the data so arrayed, it is evident that the fit between the observed numbers and the expected numbers, though not perfect because of chance statistical fluctuations in the number of each genotype that may be included in any given sample, is nevertheless very close. To verify this conclusion, we will apply a conventional statistical test to the data in order to assess quantitatively the closeness of fit. A test commonly employed in population genetics is called the chi-square test, which is based on the value of a number, called $ \\chi^{2} $, calculated from the data as $$ \\chi^{2}=\\sum\\frac{(observed-expected)^{2}}{expected} $$ where observed and expected refer to the observed and expected numbers in any genotypic class, and the $ \\Sigma $ sign denotes that the values are to be summed over all genotypic classes. In the case at hand, $$ \\begin{aligned}\\chi^{2}&=(166-160.6)^{2}/160.6\\\\&\\quad+(120-130.8)^{2}/130.8\\\\&\\quad+(32-26.6)^{2}/26.6\\\\&=2.17\\end{aligned} $$",
+      "source_page": 69,
+      "source_pages": [
+        69
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p011:b4",
+        "PopGen_chapter2:p011:b5",
+        "PopGen_chapter2:p011:b6",
+        "PopGen_chapter2:p011:b7"
+      ],
+      "source_bboxes": [
+        [
+          115.0,
+          678.0,
+          867.0,
+          889.0
+        ],
+        [
+          362.0,
+          904.0,
+          618.0,
+          959.0
+        ],
+        [
+          113.0,
+          972.0,
+          865.0,
+          1050.0
+        ],
+        [
+          362.0,
+          1064.0,
+          629.0,
+          1207.0
+        ]
+      ],
+      "provenance_score": 0.936314,
+      "content_sha256": "fc37f73eee1d506500c0667a4f1bb292e6db8846d1b10989ed607268678597e1",
+      "inline_styles": [
+        {
+          "start": 474,
+          "end": 489,
+          "style": "bold",
+          "text": "chi-square test",
+          "source_page": 69,
+          "source_block_ids": [
+            "PopGen_chapter2:p011:b4"
+          ],
+          "source_bboxes": [
+            [
+              115.0,
+              678.0,
+              867.0,
+              889.0
+            ]
+          ],
+          "source_content_sha256": "5cfcdb1bfe6f71f48315391d8c6ad1a63d639801ad5a8ef6cf107cfdff51275e",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p011:b4": "5cfcdb1bfe6f71f48315391d8c6ad1a63d639801ad5a8ef6cf107cfdff51275e"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "To be completely unambiguous, some statisticians prefer use of the symbol $ \\chi^{2} $ for the realized value of the test statistic defined Equation 2.3, in order to distinguish between the test statistic and the true $ \\chi^{2} $ distribution itself. The distinction should certainly be kept in mind, but we will not recognize it formally with different symbols.",
+      "source_page": 69,
+      "source_pages": [
+        69
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p011:b8"
+      ],
+      "source_bboxes": [
+        [
+          110.0,
+          1240.0,
+          863.0,
+          1373.0
+        ]
+      ],
+      "provenance_score": 0.979094,
+      "content_sha256": "d775cee5d082a1924672e9d700a5c5f2798f73fcb966705b8d7b5cb16cdd8794",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Associated with any $ \\chi^{2} $ value is a second number called the degrees of freedom for that $ \\chi^{2} $. In general, the number of degrees of freedom (df) associated with a $ \\chi^{2} $ value equals $$ \\begin{aligned}df&=Number of classes of data\\\\&-Number of parameters estimated from the data\\\\&-1\\end{aligned} $$",
+      "source_page": 70,
+      "source_pages": [
+        70
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p012:b1",
+        "PopGen_chapter2:p012:b2"
+      ],
+      "source_bboxes": [
+        [
+          272.0,
+          198.0,
+          1027.0,
+          279.0
+        ],
+        [
+          385.0,
+          295.0,
+          918.0,
+          389.0
+        ]
+      ],
+      "provenance_score": 0.899563,
+      "content_sha256": "d79bcf658024e4b4d33c150f18651907ded8274e9e35abc069031731f28e09ef",
+      "inline_styles": [
+        {
+          "start": 69,
+          "end": 87,
+          "style": "bold",
+          "text": "degrees of freedom",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b1"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              198.0,
+              1027.0,
+              279.0
+            ]
+          ],
+          "source_content_sha256": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b1": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f"
+          }
+        },
+        {
+          "start": 137,
+          "end": 155,
+          "style": "bold",
+          "text": "degrees of freedom",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b1"
+          ],
+          "source_bboxes": [
+            [
+              272.0,
+              198.0,
+              1027.0,
+              279.0
+            ]
+          ],
+          "source_content_sha256": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b1": "9a8531e0d4e04632aea50b0ee2e07c42831d43d7b94b7af0c88c10cf1c7e2a7f"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "In the p53 example, there are three classes of data and one parameter (p) estimated from the data, and so $ df = 3 - 1 - 1 = 1 $. Note that a degree of freedom is not subtracted for estimating q because of the relation $ q = 1 - p $; that is, once p has been estimated, the estimate of q is automatically determined, and so we deduct just the one degree of freedom corresponding to p.",
+      "source_page": 70,
+      "source_pages": [
+        70
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p012:b3"
+      ],
+      "source_bboxes": [
+        [
+          274.0,
+          413.0,
+          1030.0,
+          546.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "91c15aea67365f7e27be5e98026946fc7a4d8bcdf70f944b291f190cfd109693",
+      "inline_styles": [
+        {
+          "start": 7,
+          "end": 10,
+          "style": "italic",
+          "text": "p53",
+          "source_page": 70,
+          "source_block_ids": [
+            "PopGen_chapter2:p012:b3"
+          ],
+          "source_bboxes": [
+            [
+              274.0,
+              413.0,
+              1030.0,
+              546.0
+            ]
+          ],
+          "source_content_sha256": "9e937fa97f5bfc59728e2aef103e90af7121f42ece1c0043ee6478cbda72f315",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p012:b3": "9e937fa97f5bfc59728e2aef103e90af7121f42ece1c0043ee6478cbda72f315"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "discussion",
+      "content": "Calculation of $ \\chi^{2} $ and its associated degrees of freedom is carried out in order to obtain a number for assessing goodness of fit, and this number can be determined from Figure 2.3. To use the chart, find the value of $ \\chi^{2} $ along the horizontal axis, then move vertically from this value until the line for the number of degree of freedom is intersected, then move horizontally from the point of intersection to the vertical axis and read the corresponding probability value P. In our case, with $ \\chi^{2}=2.17 $ and one degree of freedom, the corresponding probability value is about P=0.14. (Rather than use Figure 2.3 for the P value, you can search for “chi-square calculator” on your favorite web browser, then pick a site and follow the instructions.)",
+      "source_page": 70,
+      "source_pages": [
+        70
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p012:b3",
+        "PopGen_chapter2:p012:b4"
+      ],
+      "source_bboxes": [
+        [
+          274.0,
+          413.0,
+          1030.0,
+          546.0
+        ],
+        [
+          275.0,
+          548.0,
+          1031.0,
+          814.0
+        ]
+      ],
+      "provenance_score": 0.953411,
+      "content_sha256": "0ee75bdd26fcb35e70a1814daebdbb14bea54389bcd275fd2731b4f06ecec680",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The probability associated with a particular $ \\chi^{2} $ test has the following interpretation: The P value is the probability that chance alone could produce a deviation between the observed and expected values at least as great as the deviation actually realized. Thus, if the probability is large, it means that chance alone could account for the deviation, and it strengthens our confidence in the validity of the model used to obtain the expectations—in this case, the Hardy-Weinberg model. On the other hand, if the probability associated with the $ \\chi^{2} $ is small, it means that chance alone is not likely to lead to a deviation as large as actually realized, and it undermines our confidence in the validity of the model. Where exactly the cutoff should be between a \"large\" probability and a \"small\" one is, of course, not obvious, but there is an established guideline to follow. If the probability is less than 0.05, then the goodness of fit is considered sufficiently poor that the model is judged invalid for the data; alternatively, if the probability is greater than 0.05, the fit is considered sufficiently close that the model is not rejected. Because the probability in the p53 example is 0.14, which is greater than 0.05, we have no reason to reject the hypothesis that the genotype frequencies are in Hardy-Weinberg proportions for this gene.",
+      "source_page": 70,
+      "source_pages": [
+        70,
+        71
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p012:b5",
+        "PopGen_chapter2:p013:b1"
+      ],
+      "source_bboxes": [
+        [
+          275.0,
+          815.0,
+          1034.0,
+          1215.0
+        ],
+        [
+          118.0,
+          207.0,
+          874.0,
+          287.0
+        ]
+      ],
+      "provenance_score": 0.992694,
+      "content_sha256": "f8764dda66ea049c3a2af1113207470b6c490d735a5afddf68971e7f53bf372d",
+      "inline_styles": [
+        {
+          "start": 1198,
+          "end": 1201,
+          "style": "italic",
+          "text": "p53",
+          "source_page": 71,
+          "source_block_ids": [
+            "PopGen_chapter2:p013:b1"
+          ],
+          "source_bboxes": [
+            [
+              118.0,
+              207.0,
+              874.0,
+              287.0
+            ]
+          ],
+          "source_content_sha256": "dd5a49b8934e82e51fb906ceb8afe9a0d6bcc4f6994464d0e1098eadecb5a4c5",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter2:p013:b1": "dd5a49b8934e82e51fb906ceb8afe9a0d6bcc4f6994464d0e1098eadecb5a4c5"
+          }
+        }
+      ],
+      "source_locator_mode": "matched"
+    },
+    {
+      "type": "problem",
+      "content": "PROBLEM 2.3 The gene CCR5 encodes a protein coreceptor used by the AIDS virus for entry into certain white blood cells. Many populations are polymorphic for a deletion of part of the coding sequence that results in an inactive protein. This polymorphism was originally discovered among persons infected with the virus who had remained free of the AIDS disease for at least 10 years. The protective effect of the deletion, denoted CCR5Δ, is at least a factor of two. In one study of 338 individuals from Denmark and nearby Germany <sup>[426]</sup>, the observed numbers of the genotypes were as follows: 265 nonmutant CCR5/CCR5 homozygotes, 66 CCR5/CCR5Δ heterozygotes, and 7 CCR5Δ/CCR5Δ homozygotes. Estimate the allele frequencies of CCR5 (p) and CCR5Δ (q) and carry out a chi-square test of goodness of fit between the observed genotype frequencies and their Hardy-Weinberg expectations. Is there any reason to reject the hypothesis of Hardy-Weinberg proportions for this gene?",
+      "source_page": 71,
+      "source_pages": [
+        71
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p013:b2",
+        "PopGen_chapter2:p013:b4"
+      ],
+      "source_bboxes": [
+        [
+          119.0,
+          325.0,
+          551.0,
+          617.0
+        ],
+        [
+          578.0,
+          326.0,
+          1004.0,
+          619.0
+        ]
+      ],
+      "provenance_score": 0.997506,
+      "content_sha256": "15357ae161bf58fd2942b1fcee66f332de887d0607eafec919cfdc4f71ee1915",
+      "problem_id": "2.3",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "answer",
+      "content": "ANSWER $ \\hat{p}=0.882 $ and $ \\hat{q}=0.118 $. The expected numbers of CCR5/CCR5, CCR5/CCR5 $ \\Delta $, and CCR5 $ \\Delta $/CCR5 $ \\Delta $ are 262.9, 70.4, and 4.7, respectively. The $ \\chi^{2}=1.42 $ with one degree of freedom. The associated probability from Figure 2.3 is about 0.25, so there is no reason to reject the hypothesis of HWE.",
+      "source_page": 71,
+      "source_pages": [
+        71
+      ],
+      "source_block_ids": [
+        "PopGen_chapter2:p013:b3",
+        "PopGen_chapter2:p013:b5"
+      ],
+      "source_bboxes": [
+        [
+          116.0,
+          652.0,
+          549.0,
+          750.0
+        ],
+        [
+          576.0,
+          651.0,
+          1002.0,
+          746.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "dd6c477db9fc2875a19a0dd5e3c9f76d0c2bf3bcc1822f2eb324241a319d775e",
+      "problem_id": "2.3",
+      "source_locator_mode": "exact",
+      "inline_styles": []
+    }
+  ]
+}

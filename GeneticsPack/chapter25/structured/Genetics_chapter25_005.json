@@ -1,0 +1,280 @@
+{
+  "id": "Genetics_chapter25_005",
+  "metadata": {
+    "chapter": "Genetics_chapter25",
+    "section": "GENETIC CORRELATIONS AMONG THRESHOLD TRAITS",
+    "subsections": [],
+    "section_level_1": "GENETIC CORRELATIONS AMONG THRESHOLD TRAITS",
+    "section_level_2": null,
+    "heading_path": [
+      "GENETIC CORRELATIONS AMONG THRESHOLD TRAITS"
+    ],
+    "display_heading": "GENETIC CORRELATIONS AMONG THRESHOLD TRAITS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 751,
+      "printed_page": 731,
+      "source_block_ids": [
+        "p751:b3"
+      ],
+      "bbox": [
+        64.0,
+        485.0,
+        841.0,
+        517.0
+      ],
+      "raw_text": "GENETIC CORRELATIONS AMONG THRESHOLD TRAITS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "The various applications of genetic correlations encountered in previous chapters are useful in many contexts with threshold traits. For example, in insects with wing dimorphisms, wing development is often highly dependent on photoperiod or other environmental conditions (Roff 1986, 1994). Salamanders in the genus Ambystoma may develop cannibalistic morphs or exhibit paedomorphosis under specific environmental conditions. Many species of zooplankton are known to modify their morphologies in the presence of predators (Havel 1987). Situations like these raise questions as to whether the genotypes that respond to one set of environmental cues are the same as those that respond to a second set of stimuli.",
+      "source_page": 751,
+      "printed_page": 731,
+      "source_block_ids": [
+        "p751:b4"
+      ],
+      "bbox": [
+        62.0,
+        549.0,
+        1024.0,
+        838.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "As noted in Chapter 24, another application of the genetic correlation concerns the expression of characters in the different sexes. For threshold characters, it has often been noted that when the incidence of affected individuals differs between the sexes, the sex with lower incidence has a higher frequency of affected relatives (Table 25.2). One potential explanation for such a reversal in frequencies is that affected members of the sex with the lower incidence tend to have a higher liability due to a displacement of the threshold to the right of the mean phenotype on the underlying scale.",
+      "source_page": 751,
+      "printed_page": 731,
+      "source_block_ids": [
+        "p751:b5"
+      ],
+      "bbox": [
+        61.0,
+        838.0,
+        1024.0,
+        1092.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "When separate data are available for the two sexes, four separate regressions can be calculated using Equations 25.1a, 25.2, or 25.3: one for males only $ (b_{MM}) $,",
+      "source_page": 751,
+      "printed_page": 731,
+      "source_block_ids": [
+        "p751:b6"
+      ],
+      "bbox": [
+        61.0,
+        1092.0,
+        1020.0,
+        1159.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:25.2]]",
+      "source_page": 751,
+      "printed_page": 731,
+      "source_block_ids": [
+        "p751:b8"
+      ],
+      "bbox": [
+        65.0,
+        1285.0,
+        1015.0,
+        1507.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "one for females only $ (b_{FF}) $, one for male propositi and female relatives $ (b_{FM}) $, and vice versa $ (b_{MF}) $. Ignoring nonadditive sources of variance and sex linkage, and assuming an absence of common environmental effects, the male-male and female-female regression coefficients will have expected values",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b2"
+      ],
+      "bbox": [
+        140.0,
+        138.0,
+        1100.0,
+        269.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula008]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b3"
+      ],
+      "bbox": [
+        498.0,
+        293.0,
+        737.0,
+        366.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula009]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b5"
+      ],
+      "bbox": [
+        510.0,
+        375.0,
+        731.0,
+        448.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\Theta $ is the coefficient of coancestry for the relatives, $ \\sigma^{2}(A_{M}) $ and $ \\sigma^{2}(z_{M}) $ are the additive genetic variance and phenotypic variance for males, and $ \\sigma^{2}(A_{F}) $ and $ \\sigma^{2}(z_{F}) $ are those for females. The regressions of males on females and females on males have expectations",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b7"
+      ],
+      "bbox": [
+        139.0,
+        472.0,
+        1100.0,
+        600.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula010]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b8"
+      ],
+      "bbox": [
+        475.0,
+        627.0,
+        759.0,
+        700.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula011]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b10"
+      ],
+      "bbox": [
+        476.0,
+        710.0,
+        758.0,
+        782.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\sigma^{2}(A_{M}, A_{F}) $ is the additive genetic covariance between the sexes. The genetic correlation across the sexes can be estimated as",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b12"
+      ],
+      "bbox": [
+        138.0,
+        805.0,
+        1097.0,
+        873.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula012]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b13"
+      ],
+      "bbox": [
+        470.0,
+        893.0,
+        765.0,
+        966.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The preceding expressions are completely generalizable. For example, instead of pertaining to the expression of a trait in male and female relatives in the same environment, they may refer to male relatives in two different environments, to female relatives in different environments, or to male and female relatives in different environments. Thus, a formula of the form of Equation 23.6a can be used to estimate the genetic correlation across environments for the expression of a dichotomous trait. Moreover, the same approach can be used to obtain the genetic correlation between two different dichotomous traits, e.g., survivorship and the presence/absence of a morphological trait. For two characters x and y,",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b15"
+      ],
+      "bbox": [
+        138.0,
+        987.0,
+        1101.0,
+        1277.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter25_formula013]]",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b16"
+      ],
+      "bbox": [
+        493.0,
+        1303.0,
+        743.0,
+        1385.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Finally, it is relatively straightforward to compute the genetic correlation between a dichotomous and a continuously distributed character. Denoting two such traits as d and c, Equation 25.6b still applies. The regression for the dichotomous character $ (b_{dd}) $ can be obtained by the methods discussed earlier in this chapter, while the regression for the continuously distributed trait $(b_{cc})$ can be obtained by conventional methods outlined in previous chapters, e.g., parent-offspring regression. The regression involving the two traits, $b_{cd}$, can be obtained by dividing the deviation of the mean of the continuously distributed trait in relatives of affected individuals from the mean in the population at large $(\\overline{z}_{cr} - \\overline{z}_{cp})$ by the mean of the affected individuals for the dichotomous trait on the underlying scale $(\\overline{z}_{dr} = x_{dp} - x_{do})$, with a similar definition applying to $b_{dc}$.",
+      "source_page": 752,
+      "printed_page": 732,
+      "source_block_ids": [
+        "p752:b18",
+        "p753:b2"
+      ],
+      "bbox": [
+        141.0,
+        1411.0,
+        1102.0,
+        1539.0
+      ],
+      "source_page_end": 753
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter25:3]]",
+      "source_page": 753,
+      "source_block_ids": [
+        "p753:b3",
+        "p753:b4",
+        "p753:b5"
+      ],
+      "bbox": [
+        110.0,
+        456.0,
+        976.0,
+        754.0
+      ]
+    }
+  ]
+}

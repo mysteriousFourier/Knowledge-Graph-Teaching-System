@@ -1,0 +1,62 @@
+{
+  "id": "Genetics_chapter26_005",
+  "metadata": {
+    "chapter": "Genetics_chapter26",
+    "section": "THE GENERAL MIXED MODEL",
+    "subsections": [
+      "Estimating Fixed Effects and Predicting Random Effects"
+    ],
+    "section_level_1": "THE GENERAL MIXED MODEL",
+    "section_level_2": "Estimating Fixed Effects and Predicting Random Effects",
+    "heading_path": [
+      "THE GENERAL MIXED MODEL",
+      "Estimating Fixed Effects and Predicting Random Effects"
+    ],
+    "display_heading": "THE GENERAL MIXED MODEL / Estimating Fixed Effects and Predicting Random Effects",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    }
+  },
+  "blocks": [
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter26:4]]",
+      "source_page": 764,
+      "source_block_ids": [
+        "p764:b7",
+        "p764:b8",
+        "p764:b9",
+        "p764:b10",
+        "p764:b11",
+        "p765:b2",
+        "p765:b3",
+        "p765:b4"
+      ],
+      "bbox": [
+        198.0,
+        957.0,
+        923.0,
+        999.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Although the method of predicting random effects using BLUP methodology was first discussed by Henderson (1949, 1950), the expression “best linear unbiased predictor” was apparently first used by Goldberger (1962), with the acronym BLUP due to Henderson (1973). In a relatively short time, BLUP has become the method of choice for estimating the breeding values of individuals from field records of large and complex pedigrees. For BLUPs to be the best unbiased estimates, the appropriate genetic variances must be known without error. Kackar and Harville (1981) show that BLUP estimates remain unbiased when estimates of genetic variances are used in place of actual values (as is usually the case), although they are not guaranteed to be the best of all unbiased linear estimators.",
+      "source_page": 765,
+      "printed_page": 745,
+      "source_block_ids": [
+        "p765:b5"
+      ],
+      "bbox": [
+        50.0,
+        492.0,
+        1013.0,
+        834.0
+      ]
+    }
+  ]
+}

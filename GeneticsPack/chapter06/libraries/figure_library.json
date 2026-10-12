@@ -1,0 +1,245 @@
+{
+  "book": "Genetics",
+  "chapter": "Genetics_chapter6",
+  "count": 7,
+  "figures": [
+    {
+      "id": "6.1",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.1",
+      "placeholder": "[[FIGURE:6.1]]",
+      "see_placeholder": "[[SEE_FIGURE:6.1]]",
+      "asset_path": "figures/Genetics_6.1.png",
+      "caption": "Figure 6.1 The mean single-locus genetic variance within two parental lines relative to that within the $ F_{1} $ hybrid population. $ p_{1} $ and $ p_{2} $ are the frequencies of the dominant allele in the two populations. Results are given for complete $ (k=1) $ and partial $ (k=0.5) $ dominance and for two allele frequencies within parental population 2, $ p_{2}=0.7 $ and 0.9.",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 135,
+      "raw_bbox": [
+        171.0,
+        135.0,
+        888.0,
+        816.0
+      ],
+      "source_block_ids": [
+        "p135:b2"
+      ],
+      "caption_block": {
+        "source_page": 135,
+        "printed_page": 115,
+        "source_block_ids": [
+          "p135:b3"
+        ],
+        "bbox": [
+          95.0,
+          846.0,
+          959.0,
+          1000.0
+        ]
+      }
+    },
+    {
+      "id": "6.2",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.2",
+      "placeholder": "[[FIGURE:6.2]]",
+      "see_placeholder": "[[SEE_FIGURE:6.2]]",
+      "asset_path": "figures/Genetics_6.2.png",
+      "caption": "Figure 6.2 Growth trajectories for members of a clone of Daphnia pulex raised under various nutritional conditions. The first letter of the key indicates the diet of the mother (H = high, and L = low food conditions); the second letter refers to the diet of the measured progeny. (From Lynch and Ennis 1983.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 140,
+      "raw_bbox": [
+        330.0,
+        134.0,
+        927.0,
+        583.0
+      ],
+      "source_block_ids": [
+        "p140:b2"
+      ],
+      "caption_block": {
+        "source_page": 140,
+        "printed_page": 120,
+        "source_block_ids": [
+          "p140:b3"
+        ],
+        "bbox": [
+          196.0,
+          614.0,
+          1059.0,
+          735.0
+        ]
+      }
+    },
+    {
+      "id": "6.3",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.3",
+      "placeholder": "[[FIGURE:6.3]]",
+      "see_placeholder": "[[SEE_FIGURE:6.3]]",
+      "asset_path": "figures/Genetics_6.3.png",
+      "caption": "Figure 6.3 Mean offspring sizes for crosses involving Illinois (I) and North Carolina (N) populations of mosquito fish (Gambusia affinis). F₁ refers to a hybrid mother. Vertical lines denote ±2SE. (From Reznick 1981.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 141,
+      "raw_bbox": [
+        181.0,
+        134.0,
+        900.0,
+        570.0
+      ],
+      "source_block_ids": [
+        "p141:b2"
+      ],
+      "caption_block": {
+        "source_page": 141,
+        "printed_page": 121,
+        "source_block_ids": [
+          "p141:b3"
+        ],
+        "bbox": [
+          106.0,
+          599.0,
+          970.0,
+          691.0
+        ]
+      }
+    },
+    {
+      "id": "6.4",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.4",
+      "placeholder": "[[FIGURE:6.4]]",
+      "see_placeholder": "[[SEE_FIGURE:6.4]]",
+      "asset_path": "figures/Genetics_6.4.png",
+      "caption": "Figure 6.4 Estimated fractions of the phenotypic variance attributable to additive gene action for caudal fin ray number in a laboratory population of guppies. Cohorts of progeny were obtained from groups of parents of various ages. (From Beardmore and Shami 1976.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 141,
+      "raw_bbox": [
+        175.0,
+        1048.0,
+        896.0,
+        1391.0
+      ],
+      "source_block_ids": [
+        "p141:b6"
+      ],
+      "caption_block": {
+        "source_page": 141,
+        "printed_page": 121,
+        "source_block_ids": [
+          "p141:b7"
+        ],
+        "bbox": [
+          101.0,
+          1420.0,
+          963.0,
+          1537.0
+        ]
+      }
+    },
+    {
+      "id": "6.5",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.5",
+      "placeholder": "[[FIGURE:6.5]]",
+      "see_placeholder": "[[SEE_FIGURE:6.5]]",
+      "asset_path": "figures/Genetics_6.5.png",
+      "caption": "Figure 6.5 The number of generations until extinction as a function of the age at reproduction of orthoclones of the rotifer Philodina citrina (Lansing 1947, 1948). The nth orthoclone is a line in which each generation is started from progeny produced by mothers of age n. (After Lints 1978.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 142,
+      "raw_bbox": [
+        264.0,
+        127.0,
+        991.0,
+        806.0
+      ],
+      "source_block_ids": [
+        "p142:b2"
+      ],
+      "caption_block": {
+        "source_page": 142,
+        "printed_page": 122,
+        "source_block_ids": [
+          "p142:b3"
+        ],
+        "bbox": [
+          193.0,
+          836.0,
+          1055.0,
+          959.0
+        ]
+      }
+    },
+    {
+      "id": "6.6",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.6",
+      "placeholder": "[[FIGURE:6.6]]",
+      "see_placeholder": "[[SEE_FIGURE:6.6]]",
+      "asset_path": "figures/Genetics_6.6.png",
+      "caption": "Figure 6.6 The response of development time in the leaf-mining insect Liriomyza sativae to a change in larval food plant. Left: Paternal half-sib families of one population. Right: Four population means. Differences in the slopes, which result from genotype × environment interaction, are significant for half-sib families, but not for population means. (From Via 1984.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 144,
+      "raw_bbox": [
+        262.0,
+        162.0,
+        982.0,
+        504.0
+      ],
+      "source_block_ids": [
+        "p144:b2"
+      ],
+      "caption_block": {
+        "source_page": 144,
+        "printed_page": 124,
+        "source_block_ids": [
+          "p144:b3"
+        ],
+        "bbox": [
+          190.0,
+          535.0,
+          1054.0,
+          688.0
+        ]
+      }
+    },
+    {
+      "id": "6.7",
+      "chapter": "Genetics_chapter6",
+      "book": "Genetics",
+      "asset_key": "Genetics:Genetics_chapter6:6.7",
+      "placeholder": "[[FIGURE:6.7]]",
+      "see_placeholder": "[[SEE_FIGURE:6.7]]",
+      "asset_path": "figures/Genetics_6.7.png",
+      "caption": "Figure 6.7 The response of adult longevity to density treatment for lines of Drosophila melanogaster selected for short and long life spans and for their $ F_{1} $ hybrids. Genotype × environment interaction is indicated by the nonparallel response of the short-lived line. (From Clare and Luckinbill 1985.)",
+      "source_pdf": "data/背景资料/Genetics.pdf",
+      "page": 144,
+      "raw_bbox": [
+        332.0,
+        814.0,
+        921.0,
+        1394.0
+      ],
+      "source_block_ids": [
+        "p144:b4"
+      ],
+      "caption_block": {
+        "source_page": 144,
+        "printed_page": 124,
+        "source_block_ids": [
+          "p144:b5"
+        ],
+        "bbox": [
+          196.0,
+          1419.0,
+          1058.0,
+          1541.0
+        ]
+      }
+    }
+  ]
+}

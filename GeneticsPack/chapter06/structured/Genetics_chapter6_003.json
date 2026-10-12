@@ -1,0 +1,54 @@
+{
+  "id": "Genetics_chapter6_003",
+  "metadata": {
+    "chapter": "Genetics_chapter6",
+    "section": "SPECIAL ENVIRONMENTAL EFFECTS",
+    "subsections": [],
+    "section_level_1": "SPECIAL ENVIRONMENTAL EFFECTS",
+    "section_level_2": null,
+    "heading_path": [
+      "SPECIAL ENVIRONMENTAL EFFECTS"
+    ],
+    "display_heading": "SPECIAL ENVIRONMENTAL EFFECTS",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 127,
+      "printed_page": 107,
+      "source_block_ids": [
+        "p127:b6"
+      ],
+      "bbox": [
+        43.0,
+        1413.0,
+        551.0,
+        1444.0
+      ],
+      "raw_text": "SPECIAL ENVIRONMENTAL EFFECTS"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "As noted above, two sources contribute to the special environmental effects variance — internal developmental noise and external microenvironmental hetero- geneity. Both sources of variation are generally unpredictable from the standpoint of the individual. Both are unique properties of the population under investigation and can be modified by changing the environmental setting.",
+      "source_page": 127,
+      "printed_page": 107,
+      "source_block_ids": [
+        "p127:b7",
+        "p128:b2"
+      ],
+      "bbox": [
+        42.0,
+        1476.0,
+        1002.0,
+        1542.0
+      ],
+      "source_page_end": 128
+    }
+  ]
+}

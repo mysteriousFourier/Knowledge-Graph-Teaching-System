@@ -1,0 +1,399 @@
+{
+  "id": "Genetics_chapter7_010",
+  "metadata": {
+    "chapter": "Genetics_chapter7",
+    "section": "ASSORTATIVE MATING",
+    "subsections": [],
+    "section_level_1": "ASSORTATIVE MATING",
+    "section_level_2": null,
+    "heading_path": [
+      "ASSORTATIVE MATING"
+    ],
+    "display_heading": "ASSORTATIVE MATING",
+    "source_file": "",
+    "source_pdf": "data/背景资料/Genetics.pdf",
+    "source_title": "Genetics and Analysis of Quantitative Traits",
+    "rebuild_provenance": {
+      "method": "paddle_layout_block_rebuild",
+      "remote_llm_calls": 0
+    },
+    "heading_source": {
+      "source_page": 169,
+      "printed_page": 149,
+      "source_block_ids": [
+        "p169:b6"
+      ],
+      "bbox": [
+        49.0,
+        891.0,
+        375.0,
+        924.0
+      ],
+      "raw_text": "ASSORTATIVE MATING"
+    }
+  },
+  "blocks": [
+    {
+      "type": "discussion",
+      "content": "Although we have assumed a randomly mating population though this chapter, it is not unusual for mate choice to be based on aspects of the phenotype. Often, individuals will choose mates whose phenotype resembles their own (positive assortative mating). In humans, for example, there is significant correlation between mates with respect to height, skin color, IQ, social status, religion, and some conditions such as deafness (Spuhler 1968, Vandenberg 1972). In plants, assortative mating based on flowering time is common since individuals often produce viable pollen for only short periods of time. Negative or disassortative mating is less common.",
+      "source_page": 169,
+      "printed_page": 149,
+      "source_block_ids": [
+        "p169:b7"
+      ],
+      "bbox": [
+        43.0,
+        955.0,
+        1006.0,
+        1252.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Many assortative mating systems are selective, such that some phenotypes of one or both sexes have a greater ability to attract mates than others (discussed in our next volume). For the time being, however, we will confine our attention to nonselective assortative mating, i.e., we assume that all individuals have an equal opportunity to reproduce, the phenotypic distribution of their available mates being the only limitation. This is the type of assortative mating that Fisher (1918) and Wright (1921d) had in mind when they first attacked the problem from a quantitative-genetic perspective. Almost all of the basic results of the theory were produced by these two men. Fisher's (1918) elaborate treatment of the subject is notoriously difficult, and some uncertainty still exists as to exactly what he meant to say (Moran and Smith 1966, Wilson 1973, Vetta and Smith 1974).",
+      "source_page": 169,
+      "printed_page": 149,
+      "source_block_ids": [
+        "p169:b8",
+        "p170:b2"
+      ],
+      "bbox": [
+        38.0,
+        1244.0,
+        1003.0,
+        1543.0
+      ],
+      "source_page_end": 170
+    },
+    {
+      "type": "discussion",
+      "content": "In some ways, positive assortative mating is like inbreeding, but in other ways it is very different. A simple way to discriminate between the two is to note that inbreeding is choice of mates based on similar genotypes, while assortative mating is based on phenotypes. If there is genetic variance for the characters that are the targets of mate choice, then positive assortative mating must cause identical alleles to come together more often than in the case of random mating. This will cause an increase in the homozygosity of the population, just as inbreeding does. However, while prolonged inbreeding can result in a completely homozygous population, positive assortative mating will not generally induce such an extreme genetic structure. It definitely will not if there are many loci underlying the character upon which mate choice depends, if there is any variation for the trait due to things other than additive genetic variance, or if the correlation between mates is less than perfect.",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b3"
+      ],
+      "bbox": [
+        140.0,
+        192.0,
+        1104.0,
+        616.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "It was shown in Chapter 4 (Equation 4.23c) that inbreeding can inflate the genetic variance of a population up to twofold in the absence of epistasis. Strong positive assortative mating has the potential to cause an even greater inflation, while disassortative mating induces a reduction of the genetic variance. The change in variance brought about by assortative mating is primarily a consequence of a directional build-up of gametic phase disequilibria. Positive assortative mating increases the coupling of genes with similar effects, i.e., induces a positive covariance between allelic effects at different loci, while disassortative mating leads to the proliferation of repulsion gametes, in which positive effects at one locus are balanced by negative effects at another. Inbreeding also causes a build-up of gametic phase disequilibrium, but there is no tendency for extreme gamete types to be formed at the expense of balanced ones, or vice versa.",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b4"
+      ],
+      "bbox": [
+        145.0,
+        607.0,
+        1108.0,
+        1000.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "We now take a more quantitative look at these matters, starting with the consequences of assortative mating for the additive genetic variance. We will restrict our attention to the situation in which interactions between loci are additive, since epistasis has not yet been incorporated into the theory. We define $ \\rho_{z} $ and $ \\rho_{g} $ to be the phenotypic and genetic correlations between mates and assume that the regression of phenotypes of mates is linear. We also suppose that there are $ n $ loci, each contributing equally to the genetic variance of the trait, and define the parameter $ \\gamma = 1 - [1/(2n)] $.",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b5"
+      ],
+      "bbox": [
+        151.0,
+        992.0,
+        1112.0,
+        1257.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Starting from a random-mating base population in gametic phase equilibrium with additive genetic variance $ \\sigma_{A}^{2} $, a single generation of assortative mating will shift the additive genetic variance to",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b6"
+      ],
+      "bbox": [
+        154.0,
+        1245.0,
+        1113.0,
+        1352.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula029]]",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b7"
+      ],
+      "bbox": [
+        486.0,
+        1368.0,
+        783.0,
+        1443.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ h^{2} = \\sigma_{A}^{2} / \\sigma_{z}^{2} $ (Crow and Kimura 1970). With continued assortative mating,",
+      "source_page": 170,
+      "printed_page": 150,
+      "source_block_ids": [
+        "p170:b9"
+      ],
+      "bbox": [
+        159.0,
+        1463.0,
+        1114.0,
+        1508.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FIGURE:7.7]]",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b3"
+      ],
+      "bbox": [
+        100.0,
+        727.0,
+        963.0,
+        822.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "the variance asymptotically approaches the equilibrium",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b4"
+      ],
+      "bbox": [
+        50.0,
+        879.0,
+        720.0,
+        916.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula030]]",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b5"
+      ],
+      "bbox": [
+        441.0,
+        932.0,
+        613.0,
+        1007.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "where $ \\widehat{\\rho}_{g} = \\rho_{z} \\widehat{\\sigma}_{A}^{2} / \\widehat{\\sigma}_{z}^{2} $ is the equilibrium genetic correlation between mates. This solution was first obtained by Wright (1921d) for unlinked loci with equivalent effects. Later, Crow and Felsenstein (1968), Bulmer (1980), and Nagylaki (1982) showed that the same result holds with linked loci with arbitrary effects, as long as n is replaced by $ n_{e} $, the effective number of loci. Thus, the general form of Equation 7.19a holds regardless of the map structure of loci. Gimelfarb (1984) proved that the equilibrium is stable. Equation 7.19a can be rewritten as",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b7"
+      ],
+      "bbox": [
+        47.0,
+        1021.0,
+        1011.0,
+        1253.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula031]]",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b8"
+      ],
+      "bbox": [
+        274.0,
+        1270.0,
+        778.0,
+        1360.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "which gives the inflation of the additive equilibrium genetic variance relative to that in the random-mating base population (Figure 7.7). The difference $ \\widehat{\\sigma}_{A}^{2} - \\sigma_{A}^{2} $ is the additive disequilibrium covariance, $ \\sigma_{A,A} $, maintained by assortative mating.",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b10"
+      ],
+      "bbox": [
+        45.0,
+        1373.0,
+        1002.0,
+        1470.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "Three points can be gleaned from Figure 7.7. First, there is an asymmetry in the response to positive and negative assortative mating. Very strong positive assortative mating can inflate the additive genetic variance to nearly $ 2n_e\\sigma_A^2 $ if $ h^2 $ is also very high. However, negative assortative mating can depress the variance to no less than $ \\sigma_A^2/2 $. The little empirical work that has been done in this area is qualitatively consistent with this expectation (Breese 1956, McBride and Robertson 1963; see also the following example). Second, assortative mating must be fairly strong ( $ \\rho_z^2 \\geq 0.2 $) and combined with high $ h^2 $ to induce much change in the variance. Third, the effective number of loci has a negligible effect unless it is very small.",
+      "source_page": 171,
+      "printed_page": 151,
+      "source_block_ids": [
+        "p171:b11",
+        "p172:b2"
+      ],
+      "bbox": [
+        44.0,
+        1466.0,
+        1006.0,
+        1539.0
+      ],
+      "source_page_end": 172
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter7:4]]",
+      "source_page": 172,
+      "source_block_ids": [
+        "p172:b3",
+        "p172:b4",
+        "p172:b5",
+        "p173:b2",
+        "p173:b3"
+      ],
+      "bbox": [
+        192.0,
+        478.0,
+        1055.0,
+        689.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "To this point, we have said nothing about the dominance component of variance. When only two loci contribute to the trait, $ \\sigma_{D}^{2} $ can change with assortative mating (Reeve 1961). However, Fisher (1918) argued that if the number of loci is even moderate, the effect will be negligible, and this was later confirmed by Vetta (1976). Thus, for all practical purposes, we can assume that the dominance genetic variance is unaltered by assortative mating.",
+      "source_page": 173,
+      "printed_page": 153,
+      "source_block_ids": [
+        "p173:b4"
+      ],
+      "bbox": [
+        50.0,
+        638.0,
+        1012.0,
+        839.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In addition to creating gametic phase disequilibrium, assortative mating causes the genotype frequencies for the selected trait to deviate from Hardy-Weinberg expectations. Positive assortative mating leads to a heterozygote deficit, while negative assortative mating leads to a heterozygote excess. Wright (1921d) and Nagylaki (1982) showed that if the effective number of loci is large, Hardy-Weinberg deviations will be minor unless both the phenotypic correlation between mates and $ h^{2} $ are very large. This implies that the vast majority of the change in genetic variance induced by assortative mating is a consequence of gametic phase disequilibrium rather than Hardy-Weinberg disequilibrium, i.e., of allelic associations within rather than between gametes.",
+      "source_page": 173,
+      "printed_page": 153,
+      "source_block_ids": [
+        "p173:b5"
+      ],
+      "bbox": [
+        45.0,
+        833.0,
+        1010.0,
+        1156.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "The covariance between relatives in a population undergoing assortative mating has been considered by Fisher (1918), Crow and Felsenstein (1968), and Gimelfarb (1981). Nagylaki (1978) uses path analysis to yield a particularly lucid overview for the case of additive gene action. The coefficients of the additive and dominance components of covariance are given for common types of relationships in Table 7.4. Positive assortative mating inflates the additive genetic covariance between all types of relatives, while disassortative mating depresses it. Moreover, for some types of relationships (uncle-nephew, first and second cousins), assortative mating induces dominance genetic covariance where there otherwise would be none. We emphasize that the additive variance appearing in the resemblance",
+      "source_page": 173,
+      "printed_page": 153,
+      "source_block_ids": [
+        "p173:b6"
+      ],
+      "bbox": [
+        39.0,
+        1150.0,
+        1005.0,
+        1478.0
+      ]
+    },
+    {
+      "type": "table",
+      "content": "[[TABLE:7.4]]",
+      "source_page": 174,
+      "printed_page": 154,
+      "source_block_ids": [
+        "p174:b3"
+      ],
+      "bbox": [
+        143.0,
+        208.0,
+        1096.0,
+        750.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "between relatives is $ \\widehat{\\sigma}_{A}^{2} $, the variance in the current assortatively mating population, not $ \\sigma_{A}^{2} $, the variance that would exist in a random-mating population. The latter can always be obtained by rearranging Equation 7.19a. Assuming large $ n_{e} $,",
+      "source_page": 174,
+      "printed_page": 154,
+      "source_block_ids": [
+        "p174:b5"
+      ],
+      "bbox": [
+        148.0,
+        909.0,
+        1107.0,
+        1015.0
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "[[FORMULA:Genetics_chapter7_formula032]]",
+      "source_page": 174,
+      "printed_page": 154,
+      "source_block_ids": [
+        "p174:b6"
+      ],
+      "bbox": [
+        496.0,
+        1067.0,
+        764.0,
+        1143.0
+      ]
+    },
+    {
+      "type": "example",
+      "content": "[[EXAMPLE:Genetics_chapter7:5]]",
+      "source_page": 174,
+      "source_block_ids": [
+        "p174:b8",
+        "p175:b2",
+        "p175:b3",
+        "p175:b4",
+        "p175:b5",
+        "p175:b6",
+        "p176:b2",
+        "p176:b3",
+        "p176:b4",
+        "p176:b5",
+        "p176:b6",
+        "p177:b2"
+      ],
+      "bbox": [
+        202.0,
+        1296.0,
+        1070.0,
+        1537.0
+      ]
+    }
+  ]
+}

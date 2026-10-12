@@ -1,0 +1,476 @@
+{
+  "id": "PopGen_chapter6_015",
+  "metadata": {
+    "chapter": "PopGen_chapter6",
+    "section": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "subsections": [
+      "6.3 THE WAHLUND PRINCIPLE"
+    ],
+    "source_file": "tmp/book_audits/PopGen/source/paddle/PopGen_chapter6_full\\main.tex",
+    "source_title": "Principles of Population Genetics, Fourth Edition",
+    "formula_references": [],
+    "table_references": [],
+    "section_level_1": "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+    "section_level_2": "6.3 THE WAHLUND PRINCIPLE",
+    "heading_path": [
+      "INBREEDING, POPULATION SUBDIVISION, AND MIGRATION: Introduction",
+      "6.3 THE WAHLUND PRINCIPLE"
+    ],
+    "display_heading": "6.3 THE WAHLUND PRINCIPLE",
+    "heading_source": {
+      "source_block_ids": [
+        "PopGen_chapter6:p032:b4"
+      ]
+    },
+    "chapter_title": "Inbreeding, Population Subdivision, and Migration"
+  },
+  "blocks": [
+    {
+      "type": "proposition",
+      "content": "The flip side of the coin of heterozygosity is homozygosity, because a gene in a diploid organism that is not heterozygous must be homozygous. Mathematically, homozygosity = 1 - heterozygosity. Therefore, a corollary of the deficit in average heterozygosity that results from population subdivision is that there is an equal excess in average homozygosity. If the population subdivision were eliminated and the former subpopulations allowed to undergo random mating, the average homozygosity would decrease and the average heterozygosity increase by an equal amount. The phenomenon that the average homozygosity decreases when subpopulations join together is called isolate breaking or the Wahlund principle, after the Swedish statistician and human geneticist Sten Gösta William Wahlund (1901–1976) who first described the effect <sup>[744]</sup>.",
+      "source_page": 302,
+      "source_pages": [
+        302
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p032:b5"
+      ],
+      "source_bboxes": [
+        [
+          255.0,
+          1006.0,
+          1012.0,
+          1322.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "71fd91aaaff4d4e514085b9ebd507e7d36a899cf560daff1494ca66c60e2aaa2",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The subpopulations of hypothetical mice in Figure 6.12 afford an illustration of the Wahlund principle. As long as the cats keep the subpopulations separate, the homozygosity equals 1 because the west subpopulation is genotypically AA and the east subpopulation is genotypically aa. If the cats were to disappear and the subpopulations of mice came together and practiced random mating, the genotype frequencies would be $ \\frac{1}{4} $ AA, $ \\frac{1}{2} $ Aa, and $ \\frac{1}{4} $ aa. The homozygosity in the fused population is $ \\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{4}\\right) = \\frac{1}{2} $, which is a substantial decrease over the average in the subpopulation prior to fusion and random mating. Not only is the total homozygosity reduced by population fusion, so is the average frequency of each homozygous genotype. Consider aa, for example. Prior to fusion, the average frequency of aa across both subpopulations equals $ \\frac{1}{2} $; after fusion and random mating, the frequency of aa equals $ \\frac{1}{4} $.",
+      "source_page": 302,
+      "source_pages": [
+        302,
+        303
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p032:b6",
+        "PopGen_chapter6:p033:b1"
+      ],
+      "source_bboxes": [
+        [
+          257.0,
+          1326.0,
+          1011.0,
+          1378.0
+        ],
+        [
+          121.0,
+          197.0,
+          875.0,
+          463.0
+        ]
+      ],
+      "provenance_score": 0.927481,
+      "content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+      "source_locator_mode": "matched",
+      "inline_styles": [
+        {
+          "start": 232,
+          "end": 234,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 279,
+          "end": 281,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 437,
+          "end": 439,
+          "style": "italic",
+          "text": "AA",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 457,
+          "end": 459,
+          "style": "italic",
+          "text": "Aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 481,
+          "end": 483,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 836,
+          "end": 838,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 895,
+          "end": 897,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        },
+        {
+          "start": 998,
+          "end": 1000,
+          "style": "italic",
+          "text": "aa",
+          "source_page": 302,
+          "source_block_ids": [
+            "PopGen_chapter6:p032:b6",
+            "PopGen_chapter6:p033:b1"
+          ],
+          "source_bboxes": [
+            [
+              257.0,
+              1326.0,
+              1011.0,
+              1378.0
+            ],
+            [
+              121.0,
+              197.0,
+              875.0,
+              463.0
+            ]
+          ],
+          "source_content_sha256": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+          "subject_index": null,
+          "source_content_hashes": {
+            "PopGen_chapter6:p032:b6": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8",
+            "PopGen_chapter6:p033:b1": "8398b221c4b5de8a4306623116b93d759ebfc9b5e5837045dd9953c9375783e8"
+          }
+        }
+      ]
+    },
+    {
+      "type": "discussion",
+      "content": "In human population genetics, the Wahlund principle is usually cited for its implication that fusion of subpopulations results in a decrease in the average frequency of children born with a genetic disease resulting from homozygosity for a rare recessive allele, particularly an allele with a relatively high frequency in one of the subpopulations. Examples of harmful recessive alleles at high frequency in some human subpopulations include the alleles for $ \\alpha_1 $-antitrypsin deficiency ($ q \\approx 0.024 $) and cystic fibrosis ($ q \\approx 0.022 $) in Europeans, sickle-cell anemia ($ q \\approx 0.05 $ in African Americans, up to $ q \\approx 0.1 $ in some African subpopulations), albinism ($ q \\approx 0.07 $ in the Hopi and some other Southwest Native American subpopulations), and Tay-Sachs disease ($ q \\approx 0.013 $ in Ashkenazi Jews).",
+      "source_page": 303,
+      "source_pages": [
+        303
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p033:b2"
+      ],
+      "source_bboxes": [
+        [
+          117.0,
+          465.0,
+          872.0,
+          755.0
+        ]
+      ],
+      "provenance_score": 0.938531,
+      "content_sha256": "f8967e2fea116d0737e82148e74a9e9447693078a069f3c2813f6b128963882e",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "The Wahlund principle for a recessive allele in two subpopulations is illustrated in Figure 6.15. On the left are two subpopulations, each undergoing random mating, in which the frequency of the recessive allele and the frequency of homozygous recessive genotypes are indicated. The average frequency of the homozygous recessive genotype across both subpopulations equals $ (q_1^2 + q_2^2)/2 $. The result of fusion and random mating of the subpopulations is shown on the right. Assuming that the subpopulations are equal in size, the allele frequency in the combined population is $ \\bar{q} = (q_1 + q_2)/2 $, and the frequency of the homozygous recessive genotype equals $ \\bar{q}^2 $. Therefore, subpopulation fusion and random mating reduces the average frequency of homozygous recessives by: $$ \\begin{aligned}R_{separate}-R_{fused}&=\\frac{q_{1}^{2}+q_{2}^{2}}{2}-\\overline{q}^{2}\\\\&=\\frac{1}{2}(q_{1}-\\overline{q})^{2}+\\frac{1}{2}(q_{2}-\\overline{q})^{2}\\\\&=\\sigma_{q}^{2}\\end{aligned} $$",
+      "source_page": 303,
+      "source_pages": [
+        303
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p033:b3",
+        "PopGen_chapter6:p033:b4",
+        "PopGen_chapter6:p033:b5"
+      ],
+      "source_bboxes": [
+        [
+          114.0,
+          758.0,
+          870.0,
+          1050.0
+        ],
+        [
+          300.0,
+          1061.0,
+          682.0,
+          1219.0
+        ],
+        [
+          109.0,
+          1239.0,
+          866.0,
+          1373.0
+        ]
+      ],
+      "provenance_score": 0.908844,
+      "content_sha256": "43c02ae84efb0492a68368751d90b436ef671d0bdc1f8dfe682fbacb58a5deb4",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "We leave it as an exercise to verify that the expressions in $q_{1}$ and $q_{2}$ on the first and second lines are equal. The symbol $\\sigma_{q}^{2}$ is the variance in allele frequency among the original subpopulations. Because the variance is always nonnegative, isolate breaking decreases the homozygosity and increases the heterozygosity, unless the allele frequencies are equal to begin with.",
+      "source_page": 303,
+      "source_pages": [
+        303
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p033:b5"
+      ],
+      "source_bboxes": [
+        [
+          109.0,
+          1239.0,
+          866.0,
+          1373.0
+        ]
+      ],
+      "provenance_score": 0.974522,
+      "content_sha256": "69f15b21df2ada0155bda3f2f6dae32cf2923f322ddda31526747bc7a3869b06",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "Furthermore, the result in Equation 6.12 is true for any number of subpopulations of equal or unequal size; in words, the Wahlund principle states that: Fusion and random mating of subpopulations decreases the average frequency of homozygous recessives by an amount equal to the variance in allele frequency among the original subpopulations.",
+      "source_page": 304,
+      "source_pages": [
+        304
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p034:b3",
+        "PopGen_chapter6:p034:b4"
+      ],
+      "source_bboxes": [
+        [
+          266.0,
+          952.0,
+          1017.0,
+          1005.0
+        ],
+        [
+          298.0,
+          1025.0,
+          1018.0,
+          1099.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "10f648b92411ffff9703a6a613da9a30cb3ba6532fdba7a50414d308ca425f7b",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    },
+    {
+      "type": "discussion",
+      "content": "To illustrate the effect of isolate breaking, imagine a subpopulation of gray squirrels that has a high frequency of autosomal-recessive albinism equal to 16%. In a nearby forest there is another subpopulation of equal size in which the albino mutation is absent, so that the allele frequency in this subpopulation is 0. Overall, the average frequency of albinos in the two populations is $ (0.16 + 0)/2 = 8% $. If the two subpopulations underwent fusion and random mating, the allele frequency of the albino mutation in the fused population would be $ (0.4 + 0)/2 = 0.2 $, and the frequency of the homozygous recessive would equal $ (0.2)^2 = 4% $. Note that the frequency of albinos in the fused population is substantially smaller than the average frequency in the original subpopulations.",
+      "source_page": 304,
+      "source_pages": [
+        304,
+        305
+      ],
+      "source_block_ids": [
+        "PopGen_chapter6:p034:b5",
+        "PopGen_chapter6:p035:b1"
+      ],
+      "source_bboxes": [
+        [
+          267.0,
+          1112.0,
+          1019.0,
+          1353.0
+        ],
+        [
+          115.0,
+          201.0,
+          868.0,
+          252.0
+        ]
+      ],
+      "provenance_score": 1.0,
+      "content_sha256": "ea44bf3da93a0bb3ae7fa073c490180e187bdfd1cf51c505cbf01f57393d61e0",
+      "source_locator_mode": "matched",
+      "inline_styles": []
+    }
+  ]
+}

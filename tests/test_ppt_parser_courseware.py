@@ -3,14 +3,21 @@ from __future__ import annotations
 import base64
 import io
 import sys
+import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from KGTS.education.ppt_parser import build_ppt_lecture_prompt_data, parse_courseware
-from KGTS.education.router import _animation_group_context, _transcript_excerpt_for_slide
+from KGTS.education.router import (
+    _animation_group_context,
+    _attach_rendered_pages_to_slides,
+    _slide_vision_image_urls,
+    _transcript_excerpt_for_slide,
+)
 
 
 TINY_PNG = base64.b64decode(
@@ -19,6 +26,21 @@ TINY_PNG = base64.b64decode(
 
 
 class CoursewareParserTest(unittest.TestCase):
+    def test_rendered_first_page_is_attached_as_vision_input(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            page_dir = Path(temp_dir) / "ft01"
+            page_dir.mkdir()
+            (page_dir / "page_001.png").write_bytes(TINY_PNG)
+            slides = [{"index": 1, "rendered_page_index": 0}]
+            pages = [{"page_index": 0, "image": "/api/education/rendered-pages/ft01/page_001.png?v=abc"}]
+
+            with patch("KGTS.education.router.RENDERED_PAGE_DIR", Path(temp_dir)):
+                hydrated = _attach_rendered_pages_to_slides(slides, pages)
+                images = _slide_vision_image_urls(hydrated, hydrated[0])
+
+        self.assertEqual(len(images), 1)
+        self.assertTrue(images[0].startswith("data:image/png;base64,"))
+
     def test_transcript_excerpt_is_topic_scoped(self):
         transcript = """# Model: iic/SenseVoiceSmall
 [00:00:01 - 00:00:04] 这里先回顾遗传方差和加性方差。

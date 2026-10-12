@@ -667,6 +667,7 @@ export interface GenerateSlideLecturesRequest {
   teacher_profile_id?: string
   allow_no_node?: boolean
   slides: PptSlideDetail[]
+  rendered_pages?: RenderedCoursewarePage[]
   tex_content?: string
   style?: string
   target_duration_minutes?: number

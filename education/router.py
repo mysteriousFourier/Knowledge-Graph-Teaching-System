@@ -938,6 +938,8 @@ async def _generate_slide_lectures_sync(
         if progress:
             progress(stage, message)
 
+    # Rebuild this server-side so Azure/reloaded clients always provide vision input.
+    request.slides = _attach_rendered_pages_to_slides(request.slides, request.rendered_pages)
     source_node_ids = _normalize_source_node_ids(request.source_node_id, request.source_node_ids)
     transcript_text = _normalize_transcript_text(request.transcript_text)
     if not source_node_ids:
@@ -2092,6 +2094,48 @@ def _slide_vision_image_urls(slides: List[Dict[str, Any]], slide: Dict[str, Any]
         if len(result) >= 3:
             break
     return result
+
+
+def _attach_rendered_pages_to_slides(
+    slides: List[Dict[str, Any]], rendered_pages: Any,
+) -> List[Dict[str, Any]]:
+    """Hydrate compiled page images when a client omitted them on individual slides."""
+    if not isinstance(rendered_pages, list) or not rendered_pages:
+        return slides
+    by_slide_id = {
+        str(page.get("slide_id")): page
+        for page in rendered_pages
+        if isinstance(page, dict) and str(page.get("slide_id") or "").strip()
+    }
+    by_page_index = {
+        int(page.get("page_index")): page
+        for page in rendered_pages
+        if isinstance(page, dict)
+        and page.get("page_index") is not None
+        and str(page.get("page_index")).lstrip("-").isdigit()
+    }
+    hydrated: List[Dict[str, Any]] = []
+    for slide in slides:
+        if not isinstance(slide, dict):
+            continue
+        item = dict(slide)
+        existing = item.get("rendered_page")
+        if not isinstance(existing, dict) or not str(existing.get("image") or "").strip():
+            page = by_slide_id.get(str(item.get("slide_id") or ""))
+            if page is None:
+                try:
+                    page = by_page_index.get(int(item.get("rendered_page_index")))
+                except (TypeError, ValueError):
+                    page = None
+            if page is None:
+                try:
+                    page = by_page_index.get(int(item.get("index")) - 1)
+                except (TypeError, ValueError):
+                    page = None
+            if page is not None:
+                item["rendered_page"] = page
+        hydrated.append(item)
+    return hydrated
 
 
 def _compact_source_for_response(item: Any, content_chars: int = 180) -> Dict[str, Any]:
@@ -3327,7 +3371,7 @@ async def upload_ppt(
         )
         chapter_content = prompt_data["chapter_content"]
         transcript_text = _normalize_transcript_text(transcript_text)
-        slide_details = prompt_data["slide_details"]
+        slide_details = _attach_rendered_pages_to_slides(prompt_data["slide_details"], rendered_pages)
         normalized_source_node_ids = _normalize_source_node_ids(source_node_id, source_node_ids)
         auto_selected_nodes = False
         if not normalized_source_node_ids and not allow_no_node:

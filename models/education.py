@@ -84,6 +84,7 @@ class GenerateSlideLecturesRequest(BaseModel):
     teacher_profile_id: Optional[str] = Field(None, description="Optional teacher pedagogy profile ID")
     allow_no_node: bool = Field(False, description="Allow generation without graph nodes")
     slides: List[Dict[str, Any]] = Field(default_factory=list, description="Generated slide/page details")
+    rendered_pages: Optional[List[Dict[str, Any]]] = Field(None, description="Rendered page images used as authoritative visual input")
     tex_content: Optional[str] = Field(None, description="Generated TeX source")
     style: str = Field("引导式教学", description="Teaching style")
     target_duration_minutes: Optional[float] = Field(135, ge=0.1, le=180, description="Target lecture duration for the whole courseware")

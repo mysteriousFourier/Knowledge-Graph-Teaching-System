@@ -122,6 +122,13 @@ SLIDE_LECTURE_JOBS: Dict[str, Dict[str, Any]] = {}
 SLIDE_LECTURE_JOB_TTL_SECONDS = 60 * 60 * 4
 
 
+def _uploaded_courseware_title(filename: str) -> str:
+    """Use the uploaded file name as the courseware title."""
+    name = posixpath.basename(str(filename or "").replace("\\", "/")).strip()
+    stem = Path(name).stem.strip()
+    return stem or "未命名课件"
+
+
 def _courseware_image_warning(parse_result: Dict[str, Any]) -> str:
     missing_refs = [str(ref).strip() for ref in (parse_result.get("missing_image_refs") or []) if str(ref).strip()]
     if not missing_refs:
@@ -2229,20 +2236,23 @@ def _fallback_slide_learning_plan(
 
 
 def _fallback_slide_lecture_text(*, chapter_title: str, slide: Dict[str, Any], slide_text: str) -> str:
-    title = str(slide.get("title") or f"第 {slide.get('index', '?')} 页").strip()
+    slide_title = str(slide.get("title") or "").strip()
     clean_lines = [
         line.strip(" -\t")
         for line in re.split(r"[\n\r]+", str(slide_text or ""))
         if line.strip(" -\t")
     ]
-    body_lines = clean_lines[:6] or [title]
+    clean_lines = [
+        line
+        for line in clean_lines
+        if not line.lower().startswith("标题:")
+        and re.sub(r"^#+\s*", "", line).strip() != slide_title
+    ]
+    body_lines = clean_lines[:4]
+    if not body_lines:
+        return "本页没有可提取的文字，请结合页面中的图示、公式或动画变化进行简要说明。"
     bullets = "\n".join(f"- {line}" for line in body_lines)
-    return (
-        f"这一页围绕 **{title}** 展开。课堂讲解时可以先把它放回《{chapter_title}》的整体脉络中，"
-        "说明本页要解决的问题，再逐条解释页面上的关键概念。\n\n"
-        f"{bullets}\n\n"
-        "讲授时建议最后用一句话收束：本页的核心作用是帮助学生把这些要点和前后页面的知识链条连接起来。"
-    )
+    return f"{bullets}\n\n请围绕这些要点补充必要解释，并点出它们之间的关系。"
 
 
 def _normalize_slide_lecture_duration_minutes(value: Optional[float]) -> float:
@@ -3343,6 +3353,9 @@ async def upload_ppt(
             raise HTTPException(status_code=400, detail=parse_result.get("error", "课件解析失败"))
 
         prompt_data = build_ppt_lecture_prompt_data(parse_result)
+        # The uploaded file is the courseware identity. A cover or first
+        # slide title is page content and must not become the chapter title.
+        prompt_data["chapter_title"] = _uploaded_courseware_title(file.filename or "")
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         is_pdf_upload = file.filename.lower().endswith(".pdf")
@@ -3742,8 +3755,8 @@ async def _generate_per_slide_lectures(
             "Inspect every attached slide image directly. Describe and explain meaningful visual evidence such as axes, labels, arrows, highlighted regions, diagrams, equations, and changes revealed by the animation; never infer image content from the filename alone.",
             "When two slide images are attached, the first is the previous animation step and the second is the current step. Focus the lecture on what becomes newly visible or changes in the second image, without repeating the unchanged visual content.",
             "If you mention a figure such as Figure 26.5, it must appear in the current slide text or current slide image metadata. Otherwise do not mention it.",
-            "Start with a concise overview of this slide's topic. When helpful, add one sentence explaining how the previous slide leads into this slide.",
-            "When the slide is a bullet list, first restate the visible bullet points in your own classroom wording, then explain each point. Do not skip bullet restatement.",
+            "Begin directly with the key explanation. Do not announce, quote, or repeat the slide title, and do not say phrases such as '这一页围绕' or '本页标题是'.",
+            "Keep the script compact: explain only the central idea and the minimum supporting details needed for understanding. Do not mechanically restate every visible bullet point.",
             "Explain this slide in accessible classroom language.",
             "Expand important biological and mathematical concepts enough to make the bullet points clear, using the expansion as a brief review of prior knowledge, but keep the expansion anchored to this slide.",
             "Use the graph relation paths as the main teaching order when they are relevant.",
@@ -3751,7 +3764,7 @@ async def _generate_per_slide_lectures(
             "When the same symbol can mean different things elsewhere, explain only the meaning in this slide/chapter scope.",
             "If a formula is derived from earlier formulas, mention the immediate derivation dependency in teacher-friendly language.",
             "Use the neighboring-slide context only to add one natural transition sentence when helpful; do not teach the previous or next slide here.",
-            "For consecutive animation steps, skip introductions and transition language. Explain only what is newly revealed or changed on this step.",
+            "For consecutive animation steps, skip introductions, slide-title mentions, and transition language. Explain only what is newly revealed or changed on this step; never repeat the unchanged background, bullets, formula, or conclusion from an earlier step.",
             "The speech transcript is noisy reference evidence. Use it to recover the lecturer's terminology and emphasis, but correct obvious ASR errors against the slide, PDF, and graph; never copy uncertain wording as fact.",
             "State every concept, conclusion, and instruction once. Do not repeat a sentence, restate a key point, or add emphasis by saying the same thing again.",
             "If you ask a classroom question, answer it immediately after asking. Keep the question supportive rather than requiring students to solve a new open-ended problem alone.",
@@ -4310,6 +4323,7 @@ async def _upload_zip_preview_streaming(file: UploadFile) -> dict[str, Any]:
         if not parse_result.get("success"):
             raise HTTPException(status_code=400, detail=parse_result.get("error", "ZIP parse failed"))
         prompt_data = build_ppt_lecture_prompt_data(parse_result)
+        prompt_data["chapter_title"] = _uploaded_courseware_title(file.filename or "")
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         namespace = await asyncio.to_thread(_file_md5, staged_zip_path)
@@ -4374,6 +4388,7 @@ async def upload_ppt_preview(file: UploadFile = File(...)):
             raise HTTPException(status_code=400, detail=parse_result.get("error", "课件解析失败"))
 
         prompt_data = build_ppt_lecture_prompt_data(parse_result)
+        prompt_data["chapter_title"] = _uploaded_courseware_title(file.filename or "")
         editable_model = build_editable_model(parse_result, prompt_data)
         image_warning = _courseware_image_warning(parse_result)
         is_pdf_upload = file.filename.lower().endswith(".pdf")

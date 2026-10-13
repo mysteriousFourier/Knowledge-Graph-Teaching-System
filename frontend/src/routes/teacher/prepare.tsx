@@ -2024,7 +2024,8 @@ function TeacherPreparePage() {
     resetGeneratedLectures({ preserveSlideLectures: true })
     setStatus("")
     const result = await previewPpt.mutateAsync(selectedFile)
-    applyPreviewResult(result, selectedFile.name.replace(/\.[^.]+$/, ""))
+    const uploadedTitle = selectedFile.name.replace(/\.[^.]+$/, "")
+    applyPreviewResult({ ...result, chapter_title: uploadedTitle }, uploadedTitle)
     const inheritedSlideLectures = inheritSlideLecturesForSlides(result.slides, previousSlideLectures)
     slideLecturesRef.current = inheritedSlideLectures
     setSlideLectures(inheritedSlideLectures)
@@ -2064,9 +2065,10 @@ function TeacherPreparePage() {
         setStatus(result.message || result.error || "上传课件逐页讲解生成失败")
         return
       }
+      const uploadedTitle = file.name.replace(/\.[^.]+$/, "")
       applyPreviewResult({
         success: result.success,
-        chapter_title: result.chapter_title,
+        chapter_title: uploadedTitle,
         slide_count: result.slide_count,
         slides: result.slides,
         full_text: result.full_text,

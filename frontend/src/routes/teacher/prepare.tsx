@@ -1853,7 +1853,9 @@ function TeacherPreparePage() {
     setEditableModel(editable)
     setAssetMap(result.asset_map || editable?.assets || {})
     resetTexState(result.tex_content || result.source_tex || "")
-    setChapterTitle(result.chapter_title || fallbackTitle || chapterTitle)
+    // An uploaded file name is the course identity. Older preview responses
+    // may still use the first slide heading (for example "第 1 页").
+    setChapterTitle(fallbackTitle?.trim() || result.chapter_title || chapterTitle)
     setSelectedIndex(result.slides[0]?.index || 1)
   }
 

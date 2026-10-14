@@ -1263,6 +1263,98 @@ def _merge_slide_lectures(slide_lectures: List[Dict[str, Any]]) -> str:
     )
 
 
+_SLIDE_LECTURE_HEADING_RE = re.compile(
+    r"^[ \t]*(?:##[ \t]+)?第[ \t]*(\d+)[ \t]*页(?:[：:][ \t]*([^\r\n]*))?[ \t]*$",
+    re.MULTILINE,
+)
+
+
+def _parse_slide_lecture_sections(content: str) -> Dict[int, Dict[str, str]]:
+    """Parse pasted per-page lecture text without requiring separator lines."""
+    matches = list(_SLIDE_LECTURE_HEADING_RE.finditer(str(content or "")))
+    sections: Dict[int, Dict[str, str]] = {}
+    for position, match in enumerate(matches):
+        index = int(match.group(1))
+        next_start = matches[position + 1].start() if position + 1 < len(matches) else len(str(content or ""))
+        body = str(content or "")[match.end():next_start]
+        body = re.sub(r"^\s*---\s*", "", body, count=1)
+        body = re.sub(r"\s*---\s*$", "", body, count=1).strip()
+        if body == "_本页未生成文案_":
+            body = ""
+        sections[index] = {
+            "title": str(match.group(2) or "").strip(),
+            "lecture": body,
+        }
+    return sections
+
+
+def _expand_saved_slide_lectures(
+    existing_chapter: Dict[str, Any],
+    lecture_content: str,
+    slide_lectures: Any,
+) -> Any:
+    """Keep slide lectures aligned with a pasted multi-page lecture document."""
+    if slide_lectures is None:
+        slide_lectures = []
+    if not isinstance(slide_lectures, list):
+        return slide_lectures
+    sections = _parse_slide_lecture_sections(lecture_content)
+    if not sections:
+        return slide_lectures
+
+    deck = existing_chapter.get("ppt_slides") or []
+    if not isinstance(deck, list) or not deck:
+        model = existing_chapter.get("editable_model") or {}
+        deck = model.get("slides") if isinstance(model, dict) else []
+    deck = deck if isinstance(deck, list) else []
+
+    submitted_by_index = {
+        int(item.get("index")): item
+        for item in slide_lectures
+        if isinstance(item, dict) and str(item.get("index") or "").isdigit()
+    }
+    submitted_by_id = {
+        str(item.get("slide_id")): item
+        for item in slide_lectures
+        if isinstance(item, dict) and str(item.get("slide_id") or "").strip()
+    }
+
+    # A saved courseware deck is authoritative for page count and metadata.
+    if deck:
+        expanded: List[Dict[str, Any]] = []
+        for position, slide in enumerate(deck, start=1):
+            if not isinstance(slide, dict):
+                continue
+            index = int(slide.get("index") or position)
+            slide_id = str(slide.get("slide_id") or "").strip()
+            submitted = submitted_by_id.get(slide_id) if slide_id else None
+            submitted = submitted or submitted_by_index.get(index) or {}
+            section = sections.get(index)
+            item = dict(submitted)
+            item["index"] = index
+            if slide_id:
+                item["slide_id"] = slide_id
+            item["title"] = str(item.get("title") or slide.get("title") or f"第 {index} 页")
+            if section is not None:
+                item["lecture"] = section["lecture"]
+            else:
+                item["lecture"] = str(item.get("lecture") or "")
+            expanded.append(item)
+        if expanded:
+            return expanded
+
+    # Text-only chapters still benefit from expanding records by heading index.
+    expanded = []
+    for index in sorted(set(sections) | set(submitted_by_index)):
+        item = dict(submitted_by_index.get(index) or {})
+        section = sections.get(index) or {}
+        item["index"] = index
+        item["title"] = str(item.get("title") or section.get("title") or f"第 {index} 页")
+        item["lecture"] = section.get("lecture", str(item.get("lecture") or ""))
+        expanded.append(item)
+    return expanded
+
+
 def _nonempty_slide_lecture_count(slide_lectures: List[Dict[str, Any]]) -> int:
     return sum(1 for item in slide_lectures if str((item or {}).get("lecture") or "").strip())
 
@@ -3269,6 +3361,7 @@ async def save_lecture(request: SaveLectureRequest):
                 if isinstance(item, dict) else item
                 for item in request.slide_lectures
             ]
+        cleaned_slide_lectures = _expand_saved_slide_lectures(existing_chapter, cleaned_content, cleaned_slide_lectures)
         learning_plan = request.learning_plan if request.learning_plan is not None else existing_chapter.get("lecture_learning_plan")
         if not isinstance(learning_plan, dict) and isinstance(request.slide_lectures, list):
             plans = [item.get("learning_plan") for item in request.slide_lectures if isinstance(item, dict) and isinstance(item.get("learning_plan"), dict)]

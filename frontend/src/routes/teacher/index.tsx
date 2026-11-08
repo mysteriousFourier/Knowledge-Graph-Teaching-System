@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router"
-import { BookOpen, FileText, FolderOpen, Pencil, Plus, Trash2 } from "lucide-react"
+import { ArrowDown, ArrowUp, BookOpen, FileText, FolderOpen, Pencil, Plus, Trash2 } from "lucide-react"
 import { useState, type FormEvent } from "react"
 import { useCourses, useCreateCourse, useUpdateCourse } from "@/api/courses"
 import { useCoursewareProjects, useDeleteCoursewareProject } from "@/api/education"
 import { useQueryClient } from "@tanstack/react-query"
-import { useDeleteChapter, useTeacherChapters } from "@/api/teacher"
+import { useDeleteChapter, useReorderLessons, useTeacherChapters } from "@/api/teacher"
 import { EmptyState } from "@/components/common/EmptyState"
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import type { Chapter } from "@/types/chapter"
@@ -60,7 +60,7 @@ function TeacherPage() {
             <h2 className="text-lg font-semibold">我的课程</h2>
             <span className="mono text-xs text-muted-foreground">{courses.length} 门课程</span>
           </div>
-          <div className="grid gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             {courses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
@@ -73,12 +73,39 @@ function TeacherPage() {
 
 function CourseCard({ course }: { course: Course }) {
   const [editing, setEditing] = useState(false)
+  const [lessonOrder, setLessonOrder] = useState<Chapter[] | null>(null)
+  const [orderError, setOrderError] = useState("")
+  const reorder = useReorderLessons()
   const { data, isLoading } = useTeacherChapters(course.id)
   const { data: projectsData } = useCoursewareProjects(course.id)
   const deleteProject = useDeleteCoursewareProject()
   const queryClient = useQueryClient()
   const chapters = data?.chapters || []
   const projects = projectsData?.projects || []
+  const displayedChapters = lessonOrder ?? chapters
+  const moveLesson = (index: number, direction: number) => {
+    if (!lessonOrder || reorder.isPending) return
+    const next = [...lessonOrder]
+    const target = index + direction
+    if (target < 0 || target >= next.length) return
+    ;[next[index], next[target]] = [next[target], next[index]]
+    setLessonOrder(next)
+  }
+  const saveOrder = async () => {
+    if (!lessonOrder) return
+    setOrderError("")
+    try {
+      const result = await reorder.mutateAsync({ courseId: course.id, chapterIds: lessonOrder.map((chapter) => chapter.id) })
+      queryClient.setQueryData(["teacher-chapters", course.id], result)
+      setLessonOrder(null)
+      await Promise.all([
+        queryClient.invalidateQueries({ queryKey: ["teacher-chapters"] }),
+        queryClient.invalidateQueries({ queryKey: ["student-chapters"] }),
+      ])
+    } catch (cause) {
+      setOrderError(cause instanceof Error ? cause.message : "排序保存失败，请重试")
+    }
+  }
   const handleDeleteProject = async (project: { id: string; title?: string }) => {
     if (!window.confirm(`删除课件“${project.title || project.id}”？`)) return
     try {
@@ -92,7 +119,7 @@ function CourseCard({ course }: { course: Course }) {
   }
 
   return (
-    <article className="flex min-h-64 flex-col border bg-card p-5 transition-colors hover:border-primary/50">
+    <article className="flex min-h-64 min-w-0 flex-col border bg-card p-5 transition-colors hover:border-primary/50">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <span className="mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">Course</span>
@@ -116,12 +143,21 @@ function CourseCard({ course }: { course: Course }) {
       {editing && <CourseEditor course={course} onClose={() => setEditing(false)} />}
 
       <div className="mt-5 border-t pt-4">
-        <div className="mb-3 flex items-center justify-between">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <h4 className="text-sm font-semibold">课节</h4>
-          <span className="mono text-xs text-muted-foreground">
+          <div className="flex items-center gap-3"><span className="mono text-xs text-muted-foreground">
             {isLoading ? "读取中" : `${chapters.length} 节`}
           </span>
+          {!lessonOrder && chapters.length > 1 && <button type="button" onClick={() => { setOrderError(""); setLessonOrder([...chapters]) }} className="border px-2.5 py-1.5 text-xs hover:bg-accent">调整顺序</button>}
+          </div>
         </div>
+        {lessonOrder && <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+          <span className="text-muted-foreground">用箭头调整授课顺序</span>
+          <button type="button" disabled={reorder.isPending} onClick={() => setLessonOrder([...lessonOrder].sort((a, b) => a.title.replace(/[_-]/g, " ").localeCompare(b.title.replace(/[_-]/g, " "), "zh-CN", { numeric: true })))} className="border px-2.5 py-1.5 hover:bg-accent disabled:opacity-50">按名称排序</button>
+          <button type="button" disabled={reorder.isPending} onClick={() => void saveOrder()} className="border bg-primary px-2.5 py-1.5 text-primary-foreground disabled:opacity-50">{reorder.isPending ? "保存中..." : "保存顺序"}</button>
+          <button type="button" disabled={reorder.isPending} onClick={() => { setLessonOrder(null); setOrderError("") }} className="border px-2.5 py-1.5 hover:bg-accent disabled:opacity-50">取消</button>
+        </div>}
+        {orderError && <p role="alert" className="mb-3 text-sm text-destructive">{orderError}</p>}
         {isLoading ? (
           <div className="flex min-h-16 items-center text-sm text-muted-foreground">
             <LoadingSpinner size={16} text="正在读取课节..." />
@@ -132,8 +168,10 @@ function CourseCard({ course }: { course: Course }) {
           </p>
         ) : (
           <div className="space-y-2">
-            {chapters.map((chapter, index) => (
-              <LessonRow key={chapter.id} chapter={chapter} index={index} courseId={course.id} />
+            {displayedChapters.map((chapter, index) => (
+              <LessonRow key={chapter.id} chapter={chapter} index={index} courseId={course.id}
+                sorting={Boolean(lessonOrder)} first={index === 0} last={index === displayedChapters.length - 1}
+                orderPending={reorder.isPending} onMove={(direction) => moveLesson(index, direction)} />
             ))}
           </div>
         )}
@@ -185,7 +223,7 @@ function CourseEditor({ course, onClose }: { course?: Course; onClose: () => voi
   </form>
 }
 
-function LessonRow({ chapter, index, courseId }: { chapter: Chapter; index: number; courseId: string }) {
+function LessonRow({ chapter, index, courseId, sorting, first, last, orderPending, onMove }: { chapter: Chapter; index: number; courseId: string; sorting: boolean; first: boolean; last: boolean; orderPending: boolean; onMove: (direction: number) => void }) {
   const hasLecture = Boolean(chapter.has_lecture_content || chapter.lecture_content)
   const deleteChapter = useDeleteChapter()
   const queryClient = useQueryClient()
@@ -215,6 +253,10 @@ function LessonRow({ chapter, index, courseId }: { chapter: Chapter; index: numb
         </p>
       </div>
       <div className="ml-auto flex shrink-0 flex-wrap items-center gap-1.5">
+        {sorting ? <>
+          <button type="button" disabled={first || orderPending} onClick={() => onMove(-1)} aria-label={`上移 ${chapter.title}`} className="inline-flex h-11 w-11 items-center justify-center border hover:bg-accent disabled:opacity-40"><ArrowUp size={16} /></button>
+          <button type="button" disabled={last || orderPending} onClick={() => onMove(1)} aria-label={`下移 ${chapter.title}`} className="inline-flex h-11 w-11 items-center justify-center border hover:bg-accent disabled:opacity-40"><ArrowDown size={16} /></button>
+        </> : <>
         <Link
           to="/teacher/prepare"
           search={{ chapterId: chapter.id, nodeId: "", courseId }}
@@ -236,6 +278,7 @@ function LessonRow({ chapter, index, courseId }: { chapter: Chapter; index: numb
         <button type="button" onClick={handleDelete} disabled={deleteChapter.isPending} aria-label={`删除课件 ${chapter.title}`} className="inline-flex h-8 items-center gap-1 border px-2.5 text-xs font-medium text-destructive hover:bg-destructive/10 disabled:opacity-50">
           <Trash2 size={14} />{deleteChapter.isPending ? "删除中..." : "删除"}
         </button>
+        </>}
       </div>
     </div>
   )

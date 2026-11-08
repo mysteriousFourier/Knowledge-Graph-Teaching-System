@@ -1,5 +1,7 @@
 export interface Chapter {
   course_id?: string
+  source_project_id?: string
+  course_order?: number
   id: string
   title: string
   content?: string
@@ -52,6 +54,7 @@ export interface Exercise {
 
 export interface SaveChapterRequest {
   course_id?: string
+  source_project_id?: string
   chapter_id: string
   title: string
   content?: string

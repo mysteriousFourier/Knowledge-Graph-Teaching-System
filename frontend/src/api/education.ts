@@ -238,6 +238,7 @@ export const useSaveCoursewareProject = () => {
   return useMutation({
     mutationFn: (data: {
       project_id?: string
+      chapter_id?: string
       course_id?: string
       title: string
       editable_model: EditableSlideModel

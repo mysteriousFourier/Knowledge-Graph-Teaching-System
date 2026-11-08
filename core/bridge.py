@@ -83,6 +83,13 @@ def _chapter_sort_value(chapter: Dict[str, Any]) -> float:
     return _timestamp_value(chapter.get("updated_at") or chapter.get("created_at"))
 
 
+def _course_lesson_sort_key(chapter: Dict[str, Any]) -> tuple:
+    order = chapter.get("course_order")
+    title = re.sub(r"[\s_-]+", " ", str(chapter.get("title") or "").casefold())
+    natural = tuple((1, int(part)) if part.isdigit() else (0, part) for part in re.split(r"(\d+)", title))
+    return (order if isinstance(order, int) else float("inf"), natural, str(chapter.get("id") or ""))
+
+
 def _strip_chapter_prefix(value: Any) -> str:
     text = str(value or "").strip()
     if not text:
@@ -1078,6 +1085,7 @@ class ChapterStore:
         graph_data: Optional[Dict[str, Any]] = None,
         chapter_id: Optional[str] = None,
         course_id: Optional[str] = None,
+        source_project_id: Optional[str] = None,
         source_type: Optional[str] = None,
         source_node_ids: Optional[List[str]] = None,
         source_scope: Optional[Dict[str, Any]] = None,
@@ -1098,6 +1106,16 @@ class ChapterStore:
         sync_backend: bool = True,
     ) -> Dict[str, Any]:
         chapters = self._load_chapters()
+        # Publishing the same saved project again updates its lesson, even
+        # when a client supplies a fresh temporary chapter id.
+        if source_project_id and course_id:
+            linked = [item for item in chapters.values() if isinstance(item, dict)
+                      and not item.get("archived_into")
+                      and item.get("course_id") == course_id
+                      and (item.get("source_project_id") == source_project_id
+                           or source_project_id in (item.get("source_project_ids") or []))]
+            if linked:
+                chapter_id = max(linked, key=_chapter_sort_value)["id"]
         title_based_id = canonical_chapter_id(title=title)
         resolved_id = _resolve_chapter_storage_id(chapter_id, title) or f"chapter_{uuid.uuid4().hex[:8]}"
         self._clear_deleted_chapter_ids(chapter_id or "", resolved_id, title_based_id or "")
@@ -1124,6 +1142,8 @@ class ChapterStore:
             {
                 "id": resolved_id,
                 "course_id": course_id if course_id is not None else record.get("course_id", ""),
+                "source_project_id": source_project_id or record.get("source_project_id", ""),
+                "source_project_ids": list(dict.fromkeys(value for value in [*(record.get("source_project_ids") or []), record.get("source_project_id"), source_project_id] if value)),
                 "title": title,
                 "content": content if content is not None else record.get("content", ""),
                 "graph_data": graph_data if graph_data is not None else record.get("graph_data"),
@@ -1491,14 +1511,37 @@ class ChapterStore:
         self._save_chapters(chapters)
         return chapter
 
+    def link_courseware_project(self, chapter_id: str, project_id: str, course_id: str) -> None:
+        chapters = self._load_chapters()
+        chapter = chapters.get(canonical_chapter_id(chapter_id) or chapter_id)
+        if not chapter or chapter.get("course_id", "") != course_id or chapter.get("archived_into"):
+            raise ValueError("课节不存在或不属于当前课程")
+        chapter["source_project_ids"] = list(dict.fromkeys(value for value in [*(chapter.get("source_project_ids") or []), chapter.get("source_project_id"), project_id] if value))
+        chapter["source_project_id"] = project_id
+        self._save_chapters(chapters)
+
+    def reorder_chapters(self, course_id: str, chapter_ids: List[str]) -> List[Dict[str, Any]]:
+        current = self.list_chapters(course_id)
+        if len(chapter_ids) != len(set(chapter_ids)) or set(chapter_ids) != {item["id"] for item in current}:
+            raise ValueError("课节列表已变更，请刷新后重新排序")
+        chapters = self._load_chapters()
+        for position, chapter_id in enumerate(chapter_ids):
+            chapters[chapter_id]["course_order"] = position
+        self._save_chapters(chapters)
+        return self.list_chapters(course_id)
+
     def list_chapters(self, course_id: Optional[str] = None) -> List[Dict[str, Any]]:
         chapters = self._load_chapters()
         deleted = self._load_deleted_chapter_ids()
+        archived = {str(item.get("id") or key) for key, item in chapters.items()
+                    if isinstance(item, dict) and item.get("archived_into")}
         course_filter = str(course_id).strip() if course_id is not None else ""
         merged_chapters: Dict[str, Dict[str, Any]] = {}
         changed = False
         for key, chapter in chapters.items():
             if not isinstance(chapter, dict):
+                continue
+            if chapter.get("archived_into"):
                 continue
             if _is_placeholder_chapter({**chapter, "id": chapter.get("id") or key}):
                 continue
@@ -1518,7 +1561,7 @@ class ChapterStore:
                 if str(record.get("course_id") or "").strip() == course_filter
             ]
             records = _dedupe_chapters(records)
-            records.sort(key=_chapter_sort_value, reverse=True)
+            records.sort(key=_course_lesson_sort_key)
             return records
         try:
             graph = build_frontend_graph()
@@ -1530,7 +1573,7 @@ class ChapterStore:
             if _is_graph_chapter_list_shell(node):
                 continue
             chapter_id = canonical_chapter_id(str(node.get("id")), _node_label(node)) or str(node.get("id"))
-            if chapter_id in deleted or str(node.get("id") or "") in deleted:
+            if chapter_id in deleted or str(node.get("id") or "") in deleted or chapter_id in archived:
                 continue
             if chapter_id in merged_chapters:
                 continue
@@ -1548,13 +1591,14 @@ class ChapterStore:
                 "updated_at": node.get("updated_at") or _now(),
             }
             changed = True
-        if changed or set(merged_chapters.keys()) != set(chapters.keys()):
+        if changed or set(merged_chapters.keys()) | archived != set(chapters.keys()):
             try:
-                self._save_chapters(merged_chapters)
+                # Archived versions remain readable through their original URL.
+                self._save_chapters({**{key: item for key, item in chapters.items() if isinstance(item, dict) and item.get("archived_into")}, **merged_chapters})
             except OSError:
                 pass
         records = _dedupe_chapters(list(merged_chapters.values()))
-        records.sort(key=_chapter_sort_value, reverse=True)
+        records.sort(key=lambda item: (str(item.get("course_id") or ""), _course_lesson_sort_key(item)))
         return records
 
     def get_chapter(self, chapter_id: str) -> Optional[Dict[str, Any]]:

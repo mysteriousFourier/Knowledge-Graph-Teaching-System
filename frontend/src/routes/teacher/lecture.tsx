@@ -7,6 +7,8 @@ import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
 import { EmptyState } from "@/components/common/EmptyState"
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import { PlaybackProgress } from "@/components/common/PlaybackProgress"
+import { CoursewarePageSlider } from "@/components/common/CoursewarePageSlider"
+import { RenderedSlideImage } from "@/components/common/RenderedSlideImage"
 import { RichTextContent } from "@/components/renderers/RichTextContent"
 import { useLecturePlayback } from "@/hooks/useLecturePlayback"
 import { cn } from "@/lib/utils"
@@ -645,14 +647,11 @@ function Pager({
           <span>第 {current + 1} 页</span>
           <span>共 {total} 页</span>
         </div>
-        <input
-          type="range"
-          min={1}
-          max={Math.max(total, 1)}
-          step={1}
-          value={current + 1}
-          aria-label="课件页面"
-          onChange={(event) => onJump(Number(event.target.value) - 1)}
+        <CoursewarePageSlider
+          current={current}
+          total={total}
+          label="课件页面"
+          onJump={onJump}
           disabled={disabled}
           className="h-3 w-full cursor-pointer accent-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50"
         />
@@ -724,7 +723,6 @@ function LectureFullscreenView({
   const hasVisualContent = Boolean(slide.title || slide.content || slide.raw_text || images.length || slide.tables?.length)
   const canSeek = Boolean(playback.audioPosition.seekable)
   const pageAspect = renderedPageAspectNumber(slide.rendered_page)
-  const coursePercent = total > 0 ? ((current + 1) / total) * 100 : 0
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow
@@ -744,16 +742,12 @@ function LectureFullscreenView({
                 <span>课程进度</span>
                 <span>第 {current + 1} / {total} 页</span>
               </div>
-              <input
-                type="range"
-                min={1}
-                max={Math.max(total, 1)}
-                step={1}
-                value={current + 1}
-                aria-label="全屏课程进度"
-                onChange={(event) => onJump(Number(event.target.value) - 1)}
+              <CoursewarePageSlider
+                current={current}
+                total={total}
+                label="全屏课程进度"
+                onJump={onJump}
                 className="h-2 w-full cursor-pointer accent-primary"
-                style={{ backgroundSize: `${coursePercent}% 100%` }}
               />
             </div>
             <button type="button" onClick={onPrev} disabled={current === 0} className="inline-flex min-h-8 items-center gap-1 rounded-md border border-white/15 bg-white/8 px-2 text-xs font-medium text-white hover:bg-white/15 disabled:opacity-35">
@@ -947,14 +941,7 @@ function ReadonlySlideFrame({ slide, images, assetMap }: { slide: PptSlideDetail
 
 function CompiledSlideFrame({ slide }: { slide: PptSlideDetail }) {
   return (
-    <div className="h-full w-full bg-white">
-      <img
-        src={slide.rendered_page?.image || ""}
-        alt={slide.title || `PDF rendered slide ${slide.index}`}
-        className="h-full w-full object-contain"
-        draggable={false}
-      />
-    </div>
+    <RenderedSlideImage src={slide.rendered_page?.image || ""} title={slide.title || `PDF rendered slide ${slide.index}`} />
   )
 }
 

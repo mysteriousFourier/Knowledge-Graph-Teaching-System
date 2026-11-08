@@ -100,6 +100,14 @@ export const useDeleteChapter = () => {
   })
 }
 
+export const useReorderLessons = () => useMutation({
+  mutationFn: ({ courseId, chapterIds }: { courseId: string; chapterIds: string[] }) =>
+    educationClient.put<{ success: boolean; chapters: Chapter[] }>(
+      `/api/education/courses/${encodeURIComponent(courseId)}/lesson-order`,
+      { chapter_ids: chapterIds },
+    ).then((response) => response.data),
+})
+
 export const useGenerateExercises = () => {
   return useMutation({
     mutationFn: (data: {

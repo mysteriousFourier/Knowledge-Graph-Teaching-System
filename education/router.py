@@ -25,6 +25,7 @@ from KGTS.education.courseware_transport import pack_courseware
 
 from KGTS.models.education import (
     CourseCreateRequest,
+    CourseLessonOrderRequest,
     CourseUpdateRequest,
     CoursewareExportPptxRequest,
     CoursewareProjectSaveRequest,
@@ -297,6 +298,17 @@ async def update_course(course_id: str, request: CourseUpdateRequest):
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     except Exception as exc:
         raise HTTPException(status_code=500, detail=f"Course update failed: {exc}") from exc
+
+
+@router.put("/education/courses/{course_id}/lesson-order")
+async def reorder_course_lessons(course_id: str, request: CourseLessonOrderRequest):
+    if not course_store.get(course_id):
+        raise HTTPException(status_code=404, detail="Course not found")
+    try:
+        chapters = chapter_store.reorder_chapters(course_id, request.chapter_ids)
+    except ValueError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    return {"success": True, "chapters": [_chapter_list_item(chapter) for chapter in chapters]}
 
 
 @router.delete("/education/courses/{course_id}")
@@ -2104,6 +2116,8 @@ def _chapter_list_item(chapter: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "id": chapter.get("id"),
         "course_id": chapter.get("course_id"),
+        "course_order": chapter.get("course_order"),
+        "source_project_id": chapter.get("source_project_id"),
         "title": chapter.get("title"),
         "content": content[:240],
         "content_preview": content[:240],
@@ -3250,6 +3264,7 @@ async def save_chapter(request: SaveChapterRequest):
             content=request.content,
             graph_data=request.graph_data,
             chapter_id=request.chapter_id,
+            source_project_id=request.source_project_id,
             course_id=request.course_id,
             source_type=request.source_type,
             source_node_ids=source_node_ids or request.source_node_ids,
@@ -3396,7 +3411,12 @@ async def save_lecture(request: SaveLectureRequest):
                 if isinstance(item, dict) else item
                 for item in request.slide_lectures
             ]
-        cleaned_slide_lectures = _expand_saved_slide_lectures(existing_chapter, cleaned_content, cleaned_slide_lectures)
+        # A page deletion submits a new deck and renumbered lectures together.
+        # Expand against that deck rather than restoring pages from the old one.
+        lecture_deck = existing_chapter
+        if request.ppt_slides is not None:
+            lecture_deck = {**existing_chapter, "ppt_slides": request.ppt_slides}
+        cleaned_slide_lectures = _expand_saved_slide_lectures(lecture_deck, cleaned_content, cleaned_slide_lectures)
         learning_plan = request.learning_plan if request.learning_plan is not None else existing_chapter.get("lecture_learning_plan")
         if not isinstance(learning_plan, dict) and isinstance(request.slide_lectures, list):
             plans = [item.get("learning_plan") for item in request.slide_lectures if isinstance(item, dict) and isinstance(item.get("learning_plan"), dict)]
@@ -4693,6 +4713,8 @@ async def save_courseware_project_route(request: CoursewareProjectSaveRequest):
                 "slide_lectures": request.slide_lectures,
             }
         )
+        if request.chapter_id:
+            chapter_store.link_courseware_project(request.chapter_id, record["id"], request.course_id or "")
         return {"success": True, "project": record, "project_id": record["id"], "message": "课件项目保存成功"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"课件项目保存失败: {str(e)}")

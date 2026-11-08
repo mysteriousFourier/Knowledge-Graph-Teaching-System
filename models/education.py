@@ -15,6 +15,10 @@ class CourseUpdateRequest(BaseModel):
     description: Optional[str] = Field(None, max_length=1000, description="Course description")
 
 
+class CourseLessonOrderRequest(BaseModel):
+    chapter_ids: List[str] = Field(..., description="All active lessons in the requested order")
+
+
 class GenerateLectureRequest(BaseModel):
     chapter_id: str = Field(..., description="Chapter ID")
     course_id: Optional[str] = Field(None, description="Course ID used to resolve a teacher pedagogy profile")
@@ -55,6 +59,7 @@ class PreviewTexRequest(BaseModel):
 
 class CoursewareProjectSaveRequest(BaseModel):
     project_id: Optional[str] = Field(None, description="Existing project ID to update")
+    chapter_id: Optional[str] = Field(None, description="Published lesson linked to this project")
     course_id: Optional[str] = Field(None, description="Course that owns this courseware project")
     title: str = Field("未命名课件", description="Project title")
     editable_model: Dict[str, Any] = Field(default_factory=dict, description="Structured editable slide model")
@@ -188,6 +193,7 @@ class GenerateReviewRequest(BaseModel):
 
 class SaveChapterRequest(BaseModel):
     chapter_id: Optional[str] = Field(None, description="Chapter ID")
+    source_project_id: Optional[str] = Field(None, description="Stable saved courseware project identity")
     course_id: Optional[str] = Field(None, description="Course that owns this chapter")
     title: str = Field(..., description="Chapter title")
     content: Optional[str] = Field(None, description="Chapter content")

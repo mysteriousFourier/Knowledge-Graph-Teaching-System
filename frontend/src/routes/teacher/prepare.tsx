@@ -64,6 +64,7 @@ import {
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import { PlaybackProgress } from "@/components/common/PlaybackProgress"
 import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
+import { DeleteSlideDialog } from "@/components/common/DeleteSlideDialog"
 import { LectureAlignmentDialog } from "@/components/common/LectureAlignmentDialog"
 import { LectureAlignmentSummary } from "@/components/common/LectureAlignmentSummary"
 import type { LectureMaterial } from "@/types/lectureAlignment"
@@ -86,6 +87,7 @@ import type {
 import type { Chapter } from "@/types/chapter"
 import { getRuntimeConfig } from "@/lib/config"
 import { cn } from "@/lib/utils"
+import { findSlideLecture, reindexPageDrafts, removeCoursewarePage } from "@/lib/coursewarePages"
 
 export const Route = createFileRoute("/teacher/prepare")({
   component: TeacherPreparePage,
@@ -1379,6 +1381,7 @@ function TeacherPreparePage() {
   const slideLecturesRef = useRef<PptSlideLecture[]>([])
   const [editingLectureIndex, setEditingLectureIndex] = useState<number | null>(null)
   const [lectureDraft, setLectureDraft] = useState("")
+  const [deletingSlideIndex, setDeletingSlideIndex] = useState<number | null>(null)
   const [selectedIndex, setSelectedIndex] = useState(1)
   const [pptNodeIds, setPptNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
   const [lectureNodeIds, setLectureNodeIds] = useState<string[]>(nodeId ? [nodeId] : [])
@@ -1454,7 +1457,7 @@ function TeacherPreparePage() {
   const { data: lectureNodeContext, isLoading: lectureContextLoading } = useGraphNodeContext(lectureNodeIds, shouldLoadGraphScope)
 
   const selectedSlide = preview?.slides.find((slide) => slide.index === selectedIndex)
-  const selectedLecture = slideLectures.find((lecture) => lecture.slide_id === selectedSlide?.slide_id) || slideLectures.find((lecture) => lecture.index === selectedIndex)
+  const selectedLecture = selectedSlide ? findSlideLecture(slideLectures, selectedSlide) : undefined
   const isEditingSelectedLecture = editingLectureIndex === selectedIndex
   const selectedSlideFeedback = selectedSlide ? slideFeedbackDrafts[selectedSlide.index] || "" : ""
   const nodes = useMemo(() => scopeTreeData?.nodes || [], [scopeTreeData?.nodes])
@@ -2512,16 +2515,78 @@ function TeacherPreparePage() {
       setStatus("至少保留一页课件")
       return
     }
-    if (!window.confirm(`删除第 ${selectedSlide.index} 页？此操作只删除当前编辑页，不修改源 TeX。`)) return
-    const deletedIndex = selectedSlide.index
-    const nextSlides = preview.slides
-      .filter((slide) => slide.index !== deletedIndex)
-      .map((slide, index) => ({ ...slide, index: index + 1 }))
-    setPreview({ ...preview, slides: nextSlides })
-    setEditableModel((model) => model ? { ...model, slides: model.slides.filter((slide) => slide.index !== deletedIndex).map((slide, index) => ({ ...slide, index: index + 1 })) } : model)
-    setSlideLectures((items) => items.filter((item) => item.index !== deletedIndex).map((item, index) => ({ ...item, index: index + 1 })))
-    setSelectedIndex(Math.min(deletedIndex, nextSlides.length))
-    setStatus(`已删除第 ${deletedIndex} 页。图片资源已保留，浏览内容已修复。`)
+    if (isGeneratingPpt || isGeneratingLectures || ["queued", "running"].includes(preview.render_status || "")) {
+      setStatus("课件或讲稿正在生成，请完成后再删除页面")
+      return
+    }
+    lecturePlayback.pause()
+    setDeletingSlideIndex(selectedSlide.index)
+  }
+
+  const handleConfirmDeleteSlide = async (drafts: Record<number, string>) => {
+    if (!preview || deletingSlideIndex === null) return
+    const next = removeCoursewarePage(preview, editableModel, slideLectures, deletingSlideIndex, drafts)
+    const title = effectiveCoursewareTitle()
+    const modelForSave = next.model ? { ...next.model, title, assets: mergedAssetMap } : undefined
+    const estimatedChars = next.lectures.reduce((sum, item) => sum + (item.lecture?.length || 0), 0)
+    const pacing = { ...currentLecturePacingForSave(), estimated_chars: estimatedChars, estimated_duration_seconds: Math.round(estimatedChars / DEFAULT_SPEECH_RATE_CPM * 60) }
+    const pageData = {
+      slide_lectures: next.lectures,
+      editable_model: modelForSave,
+      asset_map: mergedAssetMap,
+      tex_content: texContent || undefined,
+      rendered_pages: next.preview.rendered_pages || [],
+      render_source: next.preview.render_source,
+      render_error: next.preview.render_error,
+      lecture_pacing: pacing,
+    }
+    // Persist the complete new deck in one request before committing local state.
+    if (chapterId && !chapterId.startsWith("cw_")) {
+      const result = await saveLecture.mutateAsync({
+        ...pageData,
+        chapter_id: chapterId,
+        course_id: courseId || undefined,
+        lecture_content: next.preview.slides.map((slide) =>
+          `## 第${slide.index} 页：${slide.title || ""}\n\n${findSlideLecture(next.lectures, slide)?.lecture || ""}`,
+        ).join("\n\n---\n\n"),
+        ppt_slides: next.preview.slides,
+      })
+      if (!result.success) throw new Error("删除页面保存失败，请重试")
+    } else if (projectId || chapterId.startsWith("cw_")) {
+      const result = await saveCoursewareProject.mutateAsync({
+        ...pageData,
+        project_id: projectId || chapterId,
+        course_id: courseId || undefined,
+        title,
+        editable_model: modelForSave || { version: 1, slides: [] },
+        slides: next.preview.slides,
+        ppt_artifact: pptArtifact || undefined,
+        source_node_ids: pptNodeIds,
+        lecture_target_duration_minutes: targetDurationMinutes,
+        lecture_speech_rate_cpm: DEFAULT_SPEECH_RATE_CPM,
+      })
+      if (!result.success) throw new Error("删除页面保存失败，请重试")
+    }
+    resetGeneratedLectures({ preserveSlideLectures: true })
+    setPreview(next.preview)
+    setEditableModel(next.model)
+    setSlideLectures(next.lectures)
+    slideLecturesRef.current = next.lectures
+    setFrameDrafts((previous) => reindexPageDrafts(previous, next.indexMap))
+    setSlideFeedbackDrafts((previous) => reindexPageDrafts(previous, next.indexMap))
+    setEditingLectureIndex(null)
+    setLectureDraft("")
+    setSelectedIndex(Math.min(deletingSlideIndex, next.preview.slides.length))
+    setDeletingSlideIndex(null)
+    setStatus(`已删除第 ${deletingSlideIndex} 页，页面与讲稿已同步更新${chapterId || projectId ? "并保存" : "，请保存课件"}。`)
+    // Refetch failures must not turn a successful deletion into a failed dialog.
+    void Promise.all([
+      queryClient.invalidateQueries({ queryKey: ["teacher-chapter", chapterId] }),
+      queryClient.invalidateQueries({ queryKey: ["courseware-project", projectId || chapterId] }),
+      queryClient.invalidateQueries({ queryKey: ["courseware-projects"] }),
+      queryClient.invalidateQueries({ queryKey: ["teacher-chapters"] }),
+      queryClient.invalidateQueries({ queryKey: ["student-chapters"] }),
+    ]).catch(() => undefined)
   }
 
   const handleEditableObjectDuplicate = (slideIndex: number, objectId: string) => {
@@ -2704,7 +2769,8 @@ function TeacherPreparePage() {
     if (!modelForSave) return
     const result = await saveCoursewareProject.mutateAsync({
       // Keep the loaded project's identity when the route was opened directly.
-      project_id: projectId || (chapterId.startsWith("cw_") ? chapterId : undefined),
+      project_id: projectId || savedTeacherChapter.data?.chapter?.source_project_id || (chapterId.startsWith("cw_") ? chapterId : undefined),
+      chapter_id: chapterId && !chapterId.startsWith("cw_") ? chapterId : undefined,
       course_id: courseId || undefined,
       title,
       editable_model: modelForSave,
@@ -2774,6 +2840,7 @@ function TeacherPreparePage() {
     const modelForSave = currentEditableModelForSave(title)
     const chapterResult = await saveChapter.mutateAsync({
       course_id: courseId || undefined,
+      source_project_id: projectId || (chapterId.startsWith("cw_") ? chapterId : undefined),
       chapter_id: targetChapterId,
       title,
       content: preview.full_text,
@@ -3429,6 +3496,16 @@ function TeacherPreparePage() {
           </div>
         </section>
       </div>
+      {preview && deletingSlideIndex !== null && (
+        <DeleteSlideDialog
+          slides={preview.slides}
+          lectures={slideLectures}
+          targetIndex={deletingSlideIndex}
+          initialDraft={editingLectureIndex === deletingSlideIndex ? lectureDraft : undefined}
+          onCancel={() => setDeletingSlideIndex(null)}
+          onConfirm={handleConfirmDeleteSlide}
+        />
+      )}
     </div>
   )
 }
@@ -3902,7 +3979,7 @@ function SlidePreview({
             <button
               type="button"
               onClick={onDeleteSlide}
-              disabled={!canEdit}
+              disabled={isPending}
               className="inline-flex items-center gap-1.5 rounded-lg border border-destructive/40 px-2.5 py-1.5 text-xs font-medium text-destructive hover:bg-destructive/10 disabled:opacity-50"
               title="删除当前课件页"
             >

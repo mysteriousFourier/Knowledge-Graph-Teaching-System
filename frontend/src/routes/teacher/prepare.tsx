@@ -64,6 +64,9 @@ import {
 import { LoadingSpinner } from "@/components/common/LoadingSpinner"
 import { PlaybackProgress } from "@/components/common/PlaybackProgress"
 import { SourceNodeSummary } from "@/components/common/SourceNodeSummary"
+import { LectureAlignmentDialog } from "@/components/common/LectureAlignmentDialog"
+import { LectureAlignmentSummary } from "@/components/common/LectureAlignmentSummary"
+import type { LectureMaterial } from "@/types/lectureAlignment"
 import { RichTextContent } from "@/components/renderers/RichTextContent"
 import { TTS_CHUNK_CHARS, useLecturePlayback } from "@/hooks/useLecturePlayback"
 import type {
@@ -1382,8 +1385,9 @@ function TeacherPreparePage() {
   const [expandedNodeIds, setExpandedNodeIds] = useState<Set<string>>(new Set(["toc::root"]))
   const [treeSearch, setTreeSearch] = useState("")
   const [teacherGuidance, setTeacherGuidance] = useState("")
-  const [transcriptText, setTranscriptText] = useState("")
-  const [transcriptFileName, setTranscriptFileName] = useState("")
+  const [alignmentDialogOpen, setAlignmentDialogOpen] = useState(false)
+  const [isReplacingCourseware, setIsReplacingCourseware] = useState(false)
+  const replaceCoursewareInputRef = useRef<HTMLInputElement>(null)
   const [allowNoNodeGeneration, setAllowNoNodeGeneration] = useState(false)
   const [slideFeedbackDrafts, setSlideFeedbackDrafts] = useState<Record<number, string>>({})
   const [styleReference, setStyleReference] = useState<CoursewareStyleReference | null>(null)
@@ -1469,7 +1473,7 @@ function TeacherPreparePage() {
   }, [tree])
   const isGraphLoading = shouldLoadGraphScope && scopeTreeLoading
   const isGeneratingPpt = generatePptTex.isPending || previewPpt.isPending || previewTex.isPending
-  const isGeneratingLectures = isGeneratingSlideLecturesBatch || generateSlideLectures.isPending || generateUploadedPptLectures.isPending
+  const isGeneratingLectures = isReplacingCourseware || isGeneratingSlideLecturesBatch || generateSlideLectures.isPending || generateUploadedPptLectures.isPending
   const hasGeneratedSlideLectures = useMemo(() => slideLectures.some(hasUsableSlideLecture), [slideLectures])
   const durationDraftChanged = durationDraftMinutes !== targetDurationMinutes
   const selectedLectureError = selectedLecture?.error?.trim() || ""
@@ -2003,11 +2007,59 @@ function TeacherPreparePage() {
     setStatus(result.render_error ? `LaTeX 编译未成功，当前为解析预览：${result.render_error}` : result.warning || "已根据图谱课程树生成 PPT/TeX 页面内容")
   }
 
+  const waitForCoursewarePages = async (input: PptPreviewResponse) => {
+    if (!input.success) throw new Error(input.error || "课件读取失败")
+    let result = input
+    while (result.render_job_id && ["queued", "running"].includes(result.render_status || "queued")) {
+      setStatus("正在等待课件实际页面渲染，以便逐页对齐…")
+      const job = await getCoursewareRenderJob(result.render_job_id)
+      if (job.status === "failed") throw new Error(job.render_error || "课件渲染失败，请检查课件后重试")
+      result = { ...result, render_status: job.status, rendered_pages: job.rendered_pages || result.rendered_pages }
+      if (job.status !== "completed") await new Promise((resolve) => window.setTimeout(resolve, 2000))
+    }
+    if (result.render_status === "failed") throw new Error(result.render_error || "课件渲染失败")
+    if (result.rendered_pages?.length && result.rendered_pages.length !== result.slides.length) {
+      throw new Error(`解析得到 ${result.slides.length} 页，实际渲染有 ${result.rendered_pages.length} 页，请直接上传渲染后的 PDF，以免遗漏动画帧`)
+    }
+    return attachRenderedPagesToPreview(result)
+  }
+
+  const runLectureWorkflow = async (nextPreview: PptPreviewResponse, workflow: "align" | "reflow", materials: LectureMaterial[], existing: PptSlideLecture[] = []) => {
+    setStatus(workflow === "reflow" ? "正在按新课件重新拆分、合并原稿…" : "正在匹配原稿并逐页补全…")
+    const result = await generateSlideLectures.mutateAsync({
+      chapter_title: nextPreview.chapter_title || effectiveCoursewareTitle(),
+      slides: nextPreview.slides.map(compactSlideForLectureRequest),
+      rendered_pages: nextPreview.rendered_pages || [],
+      lecture_workflow: workflow,
+      lecture_materials: materials,
+      existing_slide_lectures: existing,
+      allow_no_node: true,
+      teacher_guidance: teacherGuidance,
+      target_duration_minutes: targetDurationMinutes,
+      speech_rate_cpm: DEFAULT_SPEECH_RATE_CPM,
+      onProgress: (job) => setStatus(formatSlideLectureJobProgress(job)),
+    })
+    if (!result.success) throw new Error(result.warning || result.message || result.error || "文案处理未完成，原稿已保留")
+    return result
+  }
+
+  const applyUploadedCourseware = (selectedFile: File, result: PptPreviewResponse, lectures: PptSlideLecture[]) => {
+    setMode("upload")
+    setFile(selectedFile)
+    setProjectId("")
+    setPptArtifact(null)
+    resetGeneratedLectures({ preserveSlideLectures: true })
+    const uploadedTitle = selectedFile.name.replace(/\.[^.]+$/, "")
+    applyPreviewResult({ ...result, chapter_title: uploadedTitle }, uploadedTitle)
+    slideLecturesRef.current = lectures
+    setSlideLectures(lectures)
+    setLectureNodeIds(pptNodeIds)
+  }
+
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0]
-    if (!selectedFile) return
-    // Keep the existing per-page copy when only the visual courseware is
-    // replaced. Audio remains derived state and is regenerated separately.
+    event.target.value = ""
+    if (!selectedFile || isGeneratingLectures || isGeneratingPpt || editingLectureIndex !== null || courseAudioProgress.running) return
     const persistedSlideLectures = chapterId.startsWith("cw_")
       ? savedCoursewareProject.data?.project?.slide_lectures || []
       : savedTeacherChapter.data?.chapter?.slide_lectures || []
@@ -2016,36 +2068,44 @@ function TeacherPreparePage() {
       : slideLecturesRef.current.length
         ? slideLecturesRef.current
         : persistedSlideLectures
-    setMode("upload")
-    setFile(selectedFile)
-    setProjectId("")
-    resetTexState("")
-    setEditableModel(null)
-    setAssetMap({})
-    setPptArtifact(null)
-    resetGeneratedLectures({ preserveSlideLectures: true })
-    setStatus("")
-    const result = await previewPpt.mutateAsync(selectedFile)
-    const uploadedTitle = selectedFile.name.replace(/\.[^.]+$/, "")
-    applyPreviewResult({ ...result, chapter_title: uploadedTitle }, uploadedTitle)
-    const inheritedSlideLectures = inheritSlideLecturesForSlides(result.slides, previousSlideLectures)
-    slideLecturesRef.current = inheritedSlideLectures
-    setSlideLectures(inheritedSlideLectures)
-    setLectureNodeIds(pptNodeIds)
-    setStatus(
-      result.render_job_id
-        ? `课件已解析，PDF 预览正在排队${inheritedSlideLectures.length ? `；已继承 ${inheritedSlideLectures.length} 页原文案` : ""}`
-        : result.warning || (inheritedSlideLectures.length ? `已继承 ${inheritedSlideLectures.length} 页原文案` : ""),
-    )
+    setIsReplacingCourseware(true)
+    try {
+      const result = await waitForCoursewarePages(await previewPpt.mutateAsync(selectedFile))
+      const previousCount = preview?.slides.length || previousSlideLectures.length
+      if (previousSlideLectures.some(hasUsableSlideLecture) && result.slides.length !== previousCount) {
+        const reflowed = await runLectureWorkflow(result, "reflow", [], previousSlideLectures)
+        applyUploadedCourseware(selectedFile, result, reflowed.slide_lectures)
+        setStatus(`课件由 ${previousCount} 页改为 ${result.slides.length} 页；原稿 ${reflowed.lecture_alignment_audit?.original_chars || 0} 字，重排后 ${reflowed.lecture_alignment_audit?.chars || 0} 字。${reflowed.warning || "全部原文已保留"}`)
+      } else {
+        const inherited = inheritSlideLecturesForSlides(result.slides, previousSlideLectures)
+        applyUploadedCourseware(selectedFile, result, inherited)
+        setStatus(inherited.length ? `课件已更改，页数相同，已保留 ${inherited.length} 页原文案` : "课件已载入")
+      }
+    } catch (cause) {
+      setStatus(`更改课件失败，原课件与文稿已保留：${errorMessage(cause)}`)
+    } finally {
+      setIsReplacingCourseware(false)
+    }
   }
 
-  const handleTranscriptChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = event.target.files?.[0]
-    if (!selectedFile) return
-    const text = await selectedFile.text()
-    setTranscriptText(text.slice(0, 120000))
-    setTranscriptFileName(selectedFile.name)
-    setStatus(`已载入逐字稿：${selectedFile.name}`)
+  const handleAlignMaterials = async (materials: LectureMaterial[], courseware: File | null) => {
+    setIsReplacingCourseware(true)
+    try {
+      const nextPreview = await waitForCoursewarePages(courseware ? await previewPpt.mutateAsync(courseware) : preview!)
+      const result = await runLectureWorkflow(nextPreview, "align", materials)
+      if (courseware) applyUploadedCourseware(courseware, nextPreview, result.slide_lectures)
+      else {
+        resetGeneratedLectures({ preserveSlideLectures: true })
+        slideLecturesRef.current = result.slide_lectures
+        setSlideLectures(result.slide_lectures)
+      }
+      setLectureSourceScope(null)
+      setDriftReport(null)
+      setStatus([result.message, result.warning].filter(Boolean).join("；"))
+      setAlignmentDialogOpen(false)
+    } finally {
+      setIsReplacingCourseware(false)
+    }
   }
 
   const handleGenerateLectures = async () => {
@@ -2060,7 +2120,6 @@ function TeacherPreparePage() {
         speechRateCpm: DEFAULT_SPEECH_RATE_CPM,
         sourceNodeIds: lectureNodeIds.length ? lectureNodeIds : pptNodeIds,
         teacherGuidance,
-        transcriptText,
         allowNoNode: allowNoNodeGeneration,
       })
       if (!result.success) {
@@ -2111,7 +2170,6 @@ function TeacherPreparePage() {
         source_node_ids: sourceNodeIds,
         graph_scope: "subtree",
         teacher_guidance: teacherGuidance,
-        transcript_text: transcriptText || undefined,
         style_reference: styleReference,
         ppt_source_node_ids: pptNodeIds,
         ppt_source_scope: pptSourceScope,
@@ -2817,6 +2875,14 @@ function TeacherPreparePage() {
 
   return (
     <div className="teacher-prepare-workbench space-y-6">
+      {alignmentDialogOpen && <LectureAlignmentDialog
+        pageCount={preview?.slides.length || 0}
+        busy={isGeneratingLectures}
+        progress={status}
+        coursewareAccept={COURSEWARE_ACCEPT}
+        onClose={() => setAlignmentDialogOpen(false)}
+        onSubmit={handleAlignMaterials}
+      />}
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <h1 className="text-2xl font-bold">备课工作台</h1>
@@ -3014,6 +3080,7 @@ function TeacherPreparePage() {
           <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(180px,0.26fr)_minmax(220px,0.3fr)_minmax(190px,0.22fr)_minmax(0,1fr)_auto_auto_auto]">
             <input
               value={chapterTitle}
+              aria-label="课程名称"
               onChange={(event) => setChapterTitle(event.target.value)}
               placeholder="可选：覆盖课件标题"
               className="w-full rounded-lg border bg-background px-3 py-2 text-sm"
@@ -3100,8 +3167,17 @@ function TeacherPreparePage() {
             <label className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent">
               <FileUp size={16} />
               上传课件
-              <input type="file" accept={COURSEWARE_ACCEPT} onChange={handleFileChange} className="hidden" />
+              <input type="file" accept={COURSEWARE_ACCEPT} onChange={handleFileChange} disabled={isGeneratingLectures || isGeneratingPpt || editingLectureIndex !== null || courseAudioProgress.running} className="hidden" />
             </label>
+            {preview && <>
+              <button type="button" onClick={() => replaceCoursewareInputRef.current?.click()}
+                disabled={isGeneratingLectures || isGeneratingPpt || editingLectureIndex !== null || courseAudioProgress.running}
+                title="页数变化时自动重新拆分或合并文稿，完整保留原文字数"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50">
+                {isReplacingCourseware ? <LoadingSpinner size={16} /> : <RotateCcw size={16} />}更改课件
+              </button>
+              <input ref={replaceCoursewareInputRef} aria-label="选择更改后的课件" type="file" accept={COURSEWARE_ACCEPT} onChange={handleFileChange} className="hidden" />
+            </>}
             <label className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent">
               {uploadCoursewareStyleReference.isPending ? <LoadingSpinner size={16} /> : <Wand2 size={16} />}
               参考风格
@@ -3112,11 +3188,11 @@ function TeacherPreparePage() {
               图片包
               <input type="file" accept=".zip,.png,.jpg,.jpeg,.gif,.webp,.bmp,.tif,.tiff,.svg" onChange={handleAssetUpload} className="hidden" />
             </label>
-            <label className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent">
+            <button type="button" onClick={() => setAlignmentDialogOpen(true)} disabled={isGeneratingLectures || isGeneratingPpt || editingLectureIndex !== null || courseAudioProgress.running}
+              className="inline-flex items-center justify-center gap-2 rounded-lg border bg-card px-3 py-2 text-sm font-medium hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50">
               <FileText size={16} />
-              载入逐字稿
-              <input type="file" accept=".txt,.md" onChange={handleTranscriptChange} className="hidden" />
-            </label>
+              已有文案拆分补全
+            </button>
           </div>
             {styleReference?.profile ? (
               <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border bg-muted/30 px-3 py-2 text-xs text-muted-foreground">
@@ -3145,7 +3221,7 @@ function TeacherPreparePage() {
           ) : (
             <div className="mt-3 text-xs text-muted-foreground">可上传已有 {COURSEWARE_FORMAT_LABEL} 课件，也可直接由图谱生成。</div>
           )}
-          {transcriptFileName ? <div className="mt-1 text-xs text-muted-foreground">已载入逐字稿参考：{transcriptFileName}</div> : null}
+          <LectureAlignmentSummary title={effectiveCoursewareTitle()} slides={preview?.slides || []} lectures={slideLectures} />
           <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border bg-muted/30 px-3 py-2 text-xs text-muted-foreground">
             <span>总预算约 {totalTargetChars} 字</span>
             <span>已生成约 {generatedLectureChars} 字 / {formatDuration(generatedLectureSeconds)}</span>

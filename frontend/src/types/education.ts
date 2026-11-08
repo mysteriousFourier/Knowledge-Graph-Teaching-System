@@ -1,3 +1,5 @@
+import type { LectureMaterial, LectureAlignmentProvenance, LectureAlignmentAudit } from "./lectureAlignment"
+
 export interface GenerateLectureRequest {
   chapter_id?: string
   course_id?: string
@@ -522,6 +524,7 @@ export interface PptSlideLecture {
   completion_model?: string
   completion_added_chars?: number
   completion_error?: string
+  alignment?: LectureAlignmentProvenance
 }
 
 export interface PlanSlideSpeechRequest {
@@ -677,6 +680,8 @@ export interface GenerateSlideLecturesRequest {
   graph_scope?: "subtree" | string
   teacher_guidance?: string
   transcript_text?: string
+  lecture_workflow?: "align" | "reflow"
+  lecture_materials?: LectureMaterial[]
   slide_feedback?: Record<number, string>
   style_reference?: CoursewareStyleReference | null
   target_slide_indices?: number[]
@@ -696,6 +701,7 @@ export interface SourceDriftReport {
 }
 
 export interface PptUploadResponse extends PptTexGenerateResponse {
+  lecture_alignment_audit?: LectureAlignmentAudit
   lecture_content: string
   slide_lectures: PptSlideLecture[]
   lecture_pacing?: SlideLecturePacingSummary

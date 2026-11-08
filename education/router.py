@@ -101,6 +101,7 @@ from KGTS.education.courseware_editor import (
 from KGTS.education.courseware_style import build_style_reference_guidance, build_style_reference_profile
 from KGTS.education.teacher_profile import merge_teacher_guidance
 from KGTS.education.course_store import course_store
+from KGTS.education.lecture_alignment import extract_materials, generate_aligned_lectures, MAX_UPLOAD_BYTES, MAX_TEXT_CHARS
 from KGTS.education.beamer_full_router import UPLOAD_DIR, _compile_latex_file_to_pdf_bytes, _compile_latex_to_pdf_bytes, _render_pdf_bytes_to_pages, _resolve_uploaded_asset_path
 
 load_root_env()
@@ -822,6 +823,25 @@ async def generate_ppt_tex(request: GeneratePptTexRequest):
         raise HTTPException(status_code=500, detail=f"PPT/TeX 生成失败: {str(e)}")
 
 
+@router.post("/education/lecture-materials")
+async def upload_lecture_materials(files: List[UploadFile] = File(...), role: str = Form("transcript")):
+    if not 1 <= len(files) <= 20:
+        raise HTTPException(status_code=400, detail="每次请选择 1—20 个材料文件")
+    materials = []
+    try:
+        for file in files:
+            data = await file.read(MAX_UPLOAD_BYTES + 1)
+            materials.extend(await asyncio.to_thread(extract_materials, data, file.filename or "材料.txt", role))
+        if len(materials) > 40 or sum(len(item["text"]) for item in materials) > MAX_TEXT_CHARS:
+            raise ValueError("材料最多 40 份、合计 20 万字符，请按课节分批处理")
+        return {"success": True, "materials": materials, "chars": sum(len(item["text"]) for item in materials)}
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    finally:
+        for file in files:
+            await file.close()
+
+
 @router.post("/education/generate-slide-lectures")
 async def generate_slide_lectures(request: GenerateSlideLecturesRequest):
     return await _generate_slide_lectures_sync(request)
@@ -947,6 +967,21 @@ async def _generate_slide_lectures_sync(
 
     # Rebuild this server-side so Azure/reloaded clients always provide vision input.
     request.slides = _attach_rendered_pages_to_slides(request.slides, request.rendered_pages)
+    if request.lecture_workflow:
+        if request.rendered_pages and len(request.rendered_pages) != len(request.slides):
+            raise HTTPException(status_code=400, detail="解析页数与实际渲染页数不同，请上传渲染后的 PDF 再处理")
+        client = DeepSeekAPIClient(api_key=request.api_key, model=request.model or get_deepseek_model("pro"))
+        try:
+            return _compact_slide_lecture_response(await generate_aligned_lectures(
+                client, request.slides, [item.model_dump() for item in request.lecture_materials or []],
+                workflow=request.lecture_workflow, existing=request.existing_slide_lectures or [],
+                title=request.chapter_title or "逐页课堂讲稿", guidance=request.teacher_guidance or "",
+                duration=request.target_duration_minutes or DEFAULT_SLIDE_LECTURE_DURATION_MINUTES,
+                speech_rate=request.speech_rate_cpm or DEFAULT_SLIDE_LECTURE_SPEECH_RATE_CPM,
+                image_urls=lambda slide: _slide_vision_image_urls(request.slides, slide), progress=progress,
+            ))
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
     source_node_ids = _normalize_source_node_ids(request.source_node_id, request.source_node_ids)
     transcript_text = _normalize_transcript_text(request.transcript_text)
     if not source_node_ids:

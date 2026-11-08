@@ -375,6 +375,15 @@ export const getSlideLectureJob = (jobId: string) =>
     }>(`/api/education/generate-slide-lectures/jobs/${encodeURIComponent(jobId)}`)
     .then((r) => r.data)
 
+export const uploadLectureMaterials = async (files: File[], role: "transcript" | "reference") => {
+  const data = new FormData()
+  files.forEach((file) => data.append("files", file))
+  data.append("role", role)
+  return educationClient.post<{ success: boolean; materials: import("@/types/lectureAlignment").LectureMaterial[] }>(
+    "/api/education/lecture-materials", data, { headers: { "Content-Type": "multipart/form-data" } },
+  ).then((response) => response.data)
+}
+
 export const usePlanSlideSpeech = () => {
   return useMutation({
     mutationFn: (data: PlanSlideSpeechRequest) =>

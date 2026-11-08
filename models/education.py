@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Literal, Optional
 
 from pydantic import BaseModel, Field
 
@@ -78,6 +78,12 @@ class CoursewareExportPptxRequest(BaseModel):
     source_node_ids: Optional[List[str]] = Field(None, description="Graph node IDs used as sources")
 
 
+class LectureMaterial(BaseModel):
+    name: str = Field(..., min_length=1, max_length=300)
+    role: Literal["transcript", "reference"] = "transcript"
+    text: str = Field(..., min_length=1, max_length=200000)
+
+
 class GenerateSlideLecturesRequest(BaseModel):
     chapter_title: str = Field("", description="Generated PPT/TeX title")
     course_id: Optional[str] = Field(None, description="Course ID used to resolve a teacher pedagogy profile")
@@ -94,6 +100,8 @@ class GenerateSlideLecturesRequest(BaseModel):
     graph_scope: Optional[str] = Field("subtree", description="Graph source scope, currently subtree")
     teacher_guidance: Optional[str] = Field(None, description="Optional teacher guidance for emphasis, selection, and pacing")
     transcript_text: Optional[str] = Field(None, max_length=200000, description="Optional timestamped speech transcript used as noisy teaching reference")
+    lecture_workflow: Optional[Literal["align", "reflow"]] = None
+    lecture_materials: Optional[List[LectureMaterial]] = Field(None, max_length=40)
     slide_feedback: Optional[Dict[str, str]] = Field(None, description="Optional per-slide regeneration feedback keyed by slide ID")
     style_reference: Optional[Dict[str, Any]] = Field(None, description="Compact courseware style reference profile/guidance")
     target_slide_indices: Optional[List[int]] = Field(None, description="Slide indices to regenerate; empty means all slides")
